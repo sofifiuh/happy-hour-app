@@ -1,6 +1,6 @@
 const STORAGE_KEY = "happyHourVenues";
 const SEED_VERSION_KEY = "happyHourSeedVersion";
-const SEED_VERSION = "2026-vancouver-10-places-schema-photos-amenities";
+const SEED_VERSION = "2026-vancouver-10-places-schema-photo-gallery";
 const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const SOON_THRESHOLD_MS = 60 * 60 * 1000; // "Soon" = starting within the next hour
 

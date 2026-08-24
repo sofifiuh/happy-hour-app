@@ -176,7 +176,20 @@ const VENUES_SEED = [
     rating: null,
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
-    photos: [],
+    photos: [
+      {
+        url: "https://static.wixstatic.com/media/fc95b3_bd8f4b64f6f147adb3e101cb8c08d604~mv2.jpg/v1/fill/w_613,h_460,fp_0.45_0.63,q_90,enc_avif,quality_auto/fc95b3_bd8f4b64f6f147adb3e101cb8c08d604~mv2.jpg",
+        credit_name: "Homer St. Cafe and Bar",
+        credit_url: "https://www.homerstreetcafebar.com/",
+        source: "official_website",
+      },
+      {
+        url: "https://static.wixstatic.com/media/fc95b3_9aeb8b3113b449fba5f90dffe439ced9~mv2.jpg/v1/fill/w_613,h_460,q_90,enc_avif,quality_auto/fc95b3_9aeb8b3113b449fba5f90dffe439ced9~mv2.jpg",
+        credit_name: "Homer St. Cafe and Bar",
+        credit_url: "https://www.homerstreetcafebar.com/",
+        source: "official_website",
+      },
+    ],
     cover_image: {
       url: "https://static.wixstatic.com/media/fc95b3_a90972eda53b4d9785a37282f5584515~mv2.jpeg",
       credit_name: "Homer St. Cafe and Bar",
@@ -237,7 +250,20 @@ const VENUES_SEED = [
     rating: null,
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
-    photos: [],
+    photos: [
+      {
+        url: "https://hapaizakaya.com/wp-content/uploads/hapa_izakaya_yaletown_bar.jpg",
+        credit_name: "Hapa Izakaya Yaletown",
+        credit_url: "https://hapaizakaya.com/locations-yaletown/",
+        source: "official_website",
+      },
+      {
+        url: "https://hapaizakaya.com/wp-content/uploads/hapa_izakaya_yaletown.jpg",
+        credit_name: "Hapa Izakaya Yaletown",
+        credit_url: "https://hapaizakaya.com/locations-yaletown/",
+        source: "official_website",
+      },
+    ],
     cover_image: {
       url: "https://hapaizakaya.com/wp-content/uploads/hapa_izakaya_yaletown_patio.jpg",
       credit_name: "Hapa Izakaya Yaletown",
@@ -363,7 +389,20 @@ const VENUES_SEED = [
     rating: null,
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
-    photos: [],
+    photos: [
+      {
+        url: "https://www.chambar.com/media/DINNER_LO_Mussels_Scott%20Little%20IMG_1313.jpg",
+        credit_name: "Chambar Belgian Restaurant",
+        credit_url: "https://www.chambar.com/",
+        source: "official_website",
+      },
+      {
+        url: "https://www.chambar.com/media/DINNER_LO_Halibut_Jlow_1H2A2525.jpg",
+        credit_name: "Chambar Belgian Restaurant",
+        credit_url: "https://www.chambar.com/",
+        source: "official_website",
+      },
+    ],
     cover_image: {
       url: "https://www.chambar.com/media/740x9999/COCKTAIL_LO_BlueFig_ScottLittle_IMG_5848%20Annecdote%20Blue%20Fig.jpg",
       credit_name: "Chambar Belgian Restaurant",
@@ -430,7 +469,20 @@ const VENUES_SEED = [
     rating: null,
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
-    photos: [],
+    photos: [
+      {
+        url: "https://static.wixstatic.com/media/93f176_93e9b668ed06483ea0aa7ea600e78499~mv2.jpg/v1/fill/w_241,h_363,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC00622.jpg",
+        credit_name: "D/6 Lounge",
+        credit_url: "https://www.parqcasino.com/d-6-lounge",
+        source: "official_website",
+      },
+      {
+        url: "https://static.wixstatic.com/media/93f176_467f1b37761545eab5722a9f72709723~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/93f176_467f1b37761545eab5722a9f72709723~mv2.jpg",
+        credit_name: "D/6 Lounge",
+        credit_url: "https://www.parqcasino.com/d-6-lounge",
+        source: "official_website",
+      },
+    ],
     cover_image: {
       url: "https://static.wixstatic.com/media/6eb957_a0b0c870489f44fd823ac376555b0126~mv2.jpg",
       credit_name: "D/6 Lounge",
@@ -501,7 +553,20 @@ const VENUES_SEED = [
     rating: null,
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
-    photos: [],
+    photos: [
+      {
+        url: "https://images.squarespace-cdn.com/content/v1/5dc5cfa1f5318a3348ec2af7/1737403701670-I3UG0H7TWTKTE2QHUSUF/havana-vancouver-interior.jpeg",
+        credit_name: "Havana Vancouver",
+        credit_url: "https://www.havanavancouver.com/",
+        source: "official_website",
+      },
+      {
+        url: "https://images.squarespace-cdn.com/content/v1/5dc5cfa1f5318a3348ec2af7/1723504679194-0M6M717KIKHFR89H14JV/sharing-with-friends-havana-vancouver.jpg",
+        credit_name: "Havana Vancouver",
+        credit_url: "https://www.havanavancouver.com/",
+        source: "official_website",
+      },
+    ],
     cover_image: {
       url: "https://images.squarespace-cdn.com/content/5dc5cfa1f5318a3348ec2af7/1737403669798-S9OBN78HPKPZY25SCABA/havana-vancouver-dining.jpeg",
       credit_name: "Havana Vancouver",
@@ -628,7 +693,20 @@ const VENUES_SEED = [
     rating: null,
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
-    photos: [],
+    photos: [
+      {
+        url: "https://www.glowbalgroup.com/img/glow-img/resto-gallery/img1.jpg",
+        credit_name: "Glowbal",
+        credit_url: "https://www.glowbalgroup.com/glowbal/",
+        source: "official_website",
+      },
+      {
+        url: "https://www.glowbalgroup.com/img/glow-img/food-gallery/img1.jpg",
+        credit_name: "Glowbal",
+        credit_url: "https://www.glowbalgroup.com/glowbal/",
+        source: "official_website",
+      },
+    ],
     cover_image: {
       url: "https://www.glowbalgroup.com/img/glow-img/resto-gallery/img2.jpg",
       credit_name: "Glowbal",

@@ -137,7 +137,8 @@ if (!venue) {
 }
 
 function initGallery(venue) {
-  const photos = (venue.photos?.length ? venue.photos : [venue.cover_image]).filter((p) => p?.url);
+  const rest = (venue.photos || []).filter((p) => p?.url && p.url !== venue.cover_image?.url);
+  const photos = [venue.cover_image, ...rest].filter((p) => p?.url);
   if (!photos.length) {
     els.menuPhotoCounter.classList.add("hidden");
     return;
