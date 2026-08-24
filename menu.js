@@ -28,6 +28,25 @@ function getDeals(venue) {
   return venue.happy_hour?.deals || [];
 }
 
+// Only ever asserts amenities we've verified true — a missing/null field
+// stays silent rather than being shown as "not available".
+const AMENITY_BADGES = [
+  { key: "outdoor_seating", icon: "🌳", label: "Patio" },
+  { key: "gluten_free_options", icon: "🌾", label: "Gluten-free options" },
+  { key: "wheelchair_accessible_entrance", icon: "♿", label: "Wheelchair accessible" },
+  { key: "parking", icon: "🅿️", label: "Parking available" },
+  { key: "transit", icon: "🚇", label: "Near transit" },
+];
+
+function getAmenityBadges(venue) {
+  const a = venue.amenities || {};
+  return AMENITY_BADGES.filter(({ key }) => {
+    if (key === "parking") return !!a.parking && Object.values(a.parking).some(Boolean);
+    if (key === "transit") return a.transit?.walkable === true;
+    return a[key] === true;
+  });
+}
+
 const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 function renderSchedule(venue) {
@@ -84,6 +103,14 @@ const els = {
   venuePhone: document.getElementById("venuePhone"),
   verifiedBadge: document.getElementById("verifiedBadge"),
   verifiedLink: document.getElementById("verifiedLink"),
+  amenitiesList: document.getElementById("amenitiesList"),
+  menuPhotoCounter: document.getElementById("menuPhotoCounter"),
+  galleryOverlay: document.getElementById("galleryOverlay"),
+  galleryClose: document.getElementById("galleryClose"),
+  galleryTrack: document.getElementById("galleryTrack"),
+  galleryCounter: document.getElementById("galleryCounter"),
+  galleryPrev: document.getElementById("galleryPrev"),
+  galleryNext: document.getElementById("galleryNext"),
   scheduleList: document.getElementById("scheduleList"),
   suggestUpdateLink: document.getElementById("suggestUpdateLink"),
   menuTabs: document.getElementById("menuTabs"),
@@ -107,6 +134,51 @@ if (!venue) {
   ].forEach((sel) => document.querySelector(sel)?.classList.add("hidden"));
 } else {
   init(venue);
+}
+
+function initGallery(venue) {
+  const photos = (venue.photos?.length ? venue.photos : [venue.cover_image]).filter((p) => p?.url);
+  if (!photos.length) {
+    els.menuPhotoCounter.classList.add("hidden");
+    return;
+  }
+
+  let index = 0;
+
+  els.galleryTrack.innerHTML = "";
+  for (const photo of photos) {
+    const slide = document.createElement("div");
+    slide.className = "gallery-slide";
+    slide.style.backgroundImage = `url("${photo.url}")`;
+    els.galleryTrack.appendChild(slide);
+  }
+
+  function update() {
+    els.galleryCounter.textContent = `${index + 1}/${photos.length}`;
+    els.menuPhotoCounter.textContent = `${index + 1}/${photos.length}`;
+    els.galleryTrack.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  els.galleryPrev.classList.toggle("hidden", photos.length < 2);
+  els.galleryNext.classList.toggle("hidden", photos.length < 2);
+  update();
+
+  els.menuPhoto.addEventListener("click", (e) => {
+    if (e.target.closest(".menu-back")) return;
+    els.galleryOverlay.classList.remove("hidden");
+  });
+  els.galleryClose.addEventListener("click", () => els.galleryOverlay.classList.add("hidden"));
+  els.galleryOverlay.addEventListener("click", (e) => {
+    if (e.target === els.galleryOverlay) els.galleryOverlay.classList.add("hidden");
+  });
+  els.galleryPrev.addEventListener("click", () => {
+    index = (index - 1 + photos.length) % photos.length;
+    update();
+  });
+  els.galleryNext.addEventListener("click", () => {
+    index = (index + 1) % photos.length;
+    update();
+  });
 }
 
 function init(venue) {
@@ -145,6 +217,19 @@ function init(venue) {
     els.verifiedBadge.classList.remove("hidden");
   }
 
+  const badges = getAmenityBadges(venue);
+  if (badges.length) {
+    els.amenitiesList.innerHTML = "";
+    for (const { icon, label } of badges) {
+      const pill = document.createElement("span");
+      pill.className = "menu-amenity-pill";
+      pill.innerHTML = `<span>${icon}</span><span>${escapeHtml(label)}</span>`;
+      els.amenitiesList.appendChild(pill);
+    }
+    els.amenitiesList.classList.remove("hidden");
+  }
+
+  initGallery(venue);
   renderSchedule(venue);
 
   els.suggestUpdateLink.href =

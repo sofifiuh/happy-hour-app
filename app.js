@@ -328,6 +328,22 @@ function applyFilters(occurrences) {
   return filtered;
 }
 
+// Groups cards by the hour their happy hour starts (per the "Weekly View"
+// reference: https://figma.com/design/.../?node-id=1708-35683) — e.g. a
+// 2:00pm and a 2:30pm start both land in the "Starts at 2pm" bucket, while
+// the exact range still shows on each card's own pill.
+function startHourBucket(venue) {
+  const [h] = getStart(venue).split(":").map(Number);
+  const label = new Date(`1970-01-01T${pad(h)}:00`).toLocaleTimeString([], { hour: "numeric" });
+  return { key: h, label: `Starts at ${label.replace(" ", "").toLowerCase()}` };
+}
+
+function shortAddress(venue) {
+  const c = venue.address_components;
+  if (c?.route) return c.street_number ? `${c.street_number} ${c.route}` : c.route;
+  return getAddress(venue).split(",")[0] || "";
+}
+
 function renderList(occurrences, now) {
   let filtered = applyFilters(occurrences);
 
@@ -353,88 +369,88 @@ function renderList(occurrences, now) {
     return;
   }
 
-  for (const { venue, occ } of filtered) {
-    els.venueList.appendChild(renderVenueCard(venue, occ, now));
+  const groups = new Map();
+  for (const item of filtered) {
+    const bucket = startHourBucket(item.venue);
+    if (!groups.has(bucket.key)) groups.set(bucket.key, { label: bucket.label, items: [] });
+    groups.get(bucket.key).items.push(item);
+  }
+
+  for (const key of [...groups.keys()].sort((a, b) => a - b)) {
+    const { label, items } = groups.get(key);
+
+    const group = document.createElement("div");
+    group.className = "time-group";
+
+    const heading = document.createElement("p");
+    heading.className = "time-group-label";
+    heading.textContent = label;
+    group.appendChild(heading);
+
+    const row = document.createElement("div");
+    row.className = "time-group-row";
+    for (const { venue, occ } of items) {
+      row.appendChild(renderWeeklyCard(venue, occ, now));
+    }
+    group.appendChild(row);
+
+    els.venueList.appendChild(group);
   }
 }
 
-function renderVenueCard(venue, occ, now) {
-  const row = document.createElement("div");
-  row.className = "venue-row";
-  row.addEventListener("click", () => {
+function renderWeeklyCard(venue, occ, now) {
+  const card = document.createElement("div");
+  card.className = "weekly-card";
+  card.addEventListener("click", () => {
     window.location.href = `menu.html?id=${encodeURIComponent(venue.id)}`;
   });
 
-  const icon = document.createElement("div");
-  icon.className = "venue-row-icon";
+  const photo = document.createElement("div");
+  photo.className = "weekly-card-photo";
   if (venue.cover_image?.url) {
-    icon.style.backgroundImage = `url("${venue.cover_image.url}")`;
+    photo.style.backgroundImage = `url("${venue.cover_image.url}")`;
   } else {
-    icon.textContent = "🍸";
-  }
-  row.appendChild(icon);
-
-  const main = document.createElement("div");
-  main.className = "venue-row-main";
-
-  const name = document.createElement("p");
-  name.className = "venue-row-name";
-  name.textContent = venue.name;
-  main.appendChild(name);
-
-  const sub = document.createElement("p");
-  sub.className = "venue-row-sub";
-  const address = getAddress(venue);
-  sub.textContent = address ? `${address} · ${scheduleText(venue)}` : scheduleText(venue);
-  main.appendChild(sub);
-
-  const deals = getDeals(venue);
-  if (deals.length) {
-    const dealsEl = document.createElement("p");
-    dealsEl.className = "venue-row-deals";
-    const first = deals[0];
-    const preview = `${first.name}${first.price ? " · " + first.price : ""}`;
-    const extra = deals.length > 1 ? ` +${deals.length - 1} more` : "";
-    dealsEl.innerHTML = `${escapeHtml(preview)}<b>${extra}</b>`;
-    main.appendChild(dealsEl);
+    photo.classList.add("placeholder");
+    photo.textContent = "🍸";
   }
 
-  row.appendChild(main);
-
-  const end = document.createElement("div");
-  end.className = "venue-row-end";
-
-  const status = document.createElement("span");
-  status.className = `venue-row-status ${occ.status === "live" ? "live" : occ.status === "upcoming" ? "upcoming" : "done"}`;
-  if (occ.status === "live") {
-    status.textContent = `Live\n${formatDuration(occ.end - now)}`;
-  } else if (occ.status === "upcoming") {
-    status.textContent = formatDayTime(occ.start, now);
-  } else {
-    status.textContent = "No date";
-  }
-  status.style.whiteSpace = "pre-line";
-  end.appendChild(status);
+  const pill = document.createElement("span");
+  pill.className = `weekly-card-pill ${occ.status === "live" ? "live" : ""}`;
+  pill.textContent = `${formatShortTime(getStart(venue))}–${formatShortTime(getEnd(venue))}`;
+  photo.appendChild(pill);
 
   const editBtn = document.createElement("button");
   editBtn.type = "button";
-  editBtn.className = "venue-row-edit";
+  editBtn.className = "weekly-card-edit";
   editBtn.setAttribute("aria-label", "Edit spot");
   editBtn.textContent = "✎";
   editBtn.addEventListener("click", (e) => {
     e.stopPropagation();
     openModal(venue);
   });
-  end.appendChild(editBtn);
+  photo.appendChild(editBtn);
 
-  const chevron = document.createElement("span");
-  chevron.className = "venue-row-chevron";
-  chevron.textContent = "›";
-  end.appendChild(chevron);
+  card.appendChild(photo);
 
-  row.appendChild(end);
+  const name = document.createElement("p");
+  name.className = "weekly-card-name";
+  name.textContent = venue.name;
+  card.appendChild(name);
 
-  return row;
+  const meta = document.createElement("p");
+  meta.className = "weekly-card-meta";
+  meta.textContent = shortAddress(venue);
+  card.appendChild(meta);
+
+  return card;
+}
+
+function formatShortTime(hhmm) {
+  const [h, m] = hhmm.split(":").map(Number);
+  const period = h >= 12 ? "pm" : "am";
+  const hour12 = h % 12 === 0 ? 12 : h % 12;
+  const time = m === 0 ? `${hour12}` : `${hour12}:${pad(m)}`;
+  return `${time}${period}`;
 }
 
 // ---------- Map view ----------

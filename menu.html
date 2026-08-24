@@ -8,7 +8,7 @@
 <meta http-equiv="Expires" content="0" />
 <title>Happy Hour Menu</title>
 <link rel="stylesheet" href="styles.css?v=11" />
-<link rel="stylesheet" href="menu.css?v=4" />
+<link rel="stylesheet" href="menu.css?v=5" />
 </head>
 <body>
   <div class="menu-app">
@@ -16,7 +16,7 @@
       <a href="index.html" class="menu-back" aria-label="Back">‹</a>
       <div class="menu-photo-icon" id="menuPhotoIcon">🍹</div>
       <a class="menu-photo-credit hidden" id="menuPhotoCredit" target="_blank" rel="noopener"></a>
-      <div class="menu-photo-counter">1/1</div>
+      <button type="button" class="menu-photo-counter" id="menuPhotoCounter">1/1</button>
     </div>
 
     <div class="menu-info">
@@ -27,12 +27,22 @@
         <a id="verifiedLink" target="_blank" rel="noopener">✓ Verified against official menu</a>
       </p>
 
+      <div id="amenitiesList" class="menu-amenities hidden"></div>
+
       <div class="menu-tabs" id="menuTabs">
         <button class="menu-tab active" data-cat="food">Food</button>
         <button class="menu-tab" data-cat="drink">Drinks</button>
       </div>
 
       <div id="dealsList" class="menu-deals-list"></div>
+    </div>
+
+    <div id="galleryOverlay" class="gallery-overlay hidden">
+      <button type="button" class="gallery-close" id="galleryClose" aria-label="Close gallery">✕</button>
+      <div class="gallery-track" id="galleryTrack"></div>
+      <div class="gallery-counter" id="galleryCounter">1/1</div>
+      <button type="button" class="gallery-nav gallery-prev" id="galleryPrev" aria-label="Previous photo">‹</button>
+      <button type="button" class="gallery-nav gallery-next" id="galleryNext" aria-label="Next photo">›</button>
     </div>
 
     <div class="menu-schedule-section">
@@ -66,6 +76,6 @@
   <div id="toast" class="menu-toast hidden">Link copied</div>
 
   <script src="venues-data.js?v=3"></script>
-  <script src="menu.js?v=4"></script>
+  <script src="menu.js?v=5"></script>
 </body>
 </html>

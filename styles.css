@@ -314,103 +314,119 @@ body {
   font-weight: 600;
 }
 
-/* ---------- Venue rows ---------- */
+/* ---------- Venue list: grouped by start-hour, horizontal card rows ----------
+   Pattern from the Figma "Weekly View" reference (node 1708:35683): venues
+   bucketed by the hour their happy hour starts, each bucket a horizontally
+   scrolling row of photo cards. */
 
 .venue-list {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  margin: 0 -20px;
 }
 
-.venue-row {
+.time-group-label {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+  padding: 0 20px;
+}
+
+.time-group-row {
   display: flex;
-  align-items: center;
-  gap: 14px;
-  padding: 16px 4px;
-  border-bottom: 1px solid var(--card-border);
+  gap: 10px;
+  overflow-x: auto;
+  padding: 0 20px 4px;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+}
+.time-group-row::-webkit-scrollbar {
+  display: none;
+}
+
+.weekly-card {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  width: 152px;
+  background: var(--sheet-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(20, 20, 15, 0.1);
+  padding: 8px;
   cursor: pointer;
 }
-.venue-row:active {
-  opacity: 0.7;
+.weekly-card:active {
+  opacity: 0.85;
 }
 
-.venue-row-icon {
-  flex-shrink: 0;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
+.weekly-card-photo {
+  position: relative;
+  height: 130px;
+  border-radius: 8px;
   background-color: var(--accent-dim);
   background-size: cover;
   background-position: center;
+  margin-bottom: 8px;
+}
+.weekly-card-photo.placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
-.venue-row-main {
-  flex: 1;
-  min-width: 0;
-}
-
-.venue-row-name {
-  font-size: 1.02rem;
+.weekly-card-pill {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 24px;
+  padding: 4px 9px;
+  font-size: 0.68rem;
   font-weight: 700;
-  margin: 0;
-}
-
-.venue-row-sub {
-  font-size: 0.82rem;
-  color: var(--text-dim);
-  margin: 2px 0 0;
-  line-height: 1.35;
-}
-
-.venue-row-deals {
-  font-size: 0.8rem;
-  color: var(--text-dim);
-  margin: 2px 0 0;
-  line-height: 1.35;
-}
-.venue-row-deals b {
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.venue-row-end {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
-}
-
-.venue-row-status {
-  font-size: 0.75rem;
-  font-weight: 700;
+  color: #1c1b1a;
   white-space: nowrap;
-  text-align: right;
 }
-.venue-row-status.live { color: var(--green); }
-.venue-row-status.upcoming { color: var(--accent); }
-.venue-row-status.done { color: var(--text-dim); }
-
-.venue-row-chevron {
-  color: var(--text-dim);
-  font-size: 1.3rem;
-  line-height: 1;
+.weekly-card-pill.live {
+  background: rgba(15, 157, 104, 0.9);
+  color: #fff;
 }
 
-.venue-row-edit {
-  font-family: inherit;
-  background: transparent;
+.weekly-card-edit {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
   border: none;
-  color: var(--text-dim);
-  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  color: #1c1b1a;
+  font-size: 0.8rem;
   line-height: 1;
   cursor: pointer;
-  padding: 4px;
 }
-.venue-row-edit:hover {
-  color: var(--accent);
+
+.weekly-card-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.weekly-card-meta {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .empty-state {
