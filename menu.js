@@ -17,11 +17,23 @@ function formatShortTime(hhmm, showPeriod = true) {
   return showPeriod ? `${time}${period}` : time;
 }
 
+// Venue records mirror the Google Places API shape (see venues-data.js).
+function getAddress(venue) {
+  return venue.formatted_address || "";
+}
+function getPhone(venue) {
+  return venue.formatted_phone_number || "";
+}
+function getDeals(venue) {
+  return venue.happy_hour?.deals || [];
+}
+
 function hoursLabel(venue) {
-  const startPeriod = venue.start.split(":")[0] >= 12 ? "pm" : "am";
-  const endPeriod = venue.end.split(":")[0] >= 12 ? "pm" : "am";
+  const { start, end } = venue.happy_hour;
+  const startPeriod = start.split(":")[0] >= 12 ? "pm" : "am";
+  const endPeriod = end.split(":")[0] >= 12 ? "pm" : "am";
   const samePeriod = startPeriod === endPeriod;
-  return `${formatShortTime(venue.start, !samePeriod)}–${formatShortTime(venue.end, true)}`;
+  return `${formatShortTime(start, !samePeriod)}–${formatShortTime(end, true)}`;
 }
 
 function escapeHtml(str) {
@@ -68,30 +80,32 @@ function init(venue) {
 
   els.venueName.textContent = venue.name;
 
-  if (venue.address) {
-    els.venueAddress.textContent = venue.address;
-    els.venueAddress.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venue.address)}`;
+  const address = getAddress(venue);
+  if (address) {
+    els.venueAddress.textContent = address;
+    els.venueAddress.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
   } else {
     els.venueAddress.remove();
   }
 
-  if (venue.phone) {
-    els.venuePhone.textContent = venue.phone;
-    els.venuePhone.href = `tel:${venue.phone.replace(/[^\d+]/g, "")}`;
+  const phone = getPhone(venue);
+  if (phone) {
+    els.venuePhone.textContent = phone;
+    els.venuePhone.href = `tel:${phone.replace(/[^\d+]/g, "")}`;
   } else {
     els.venuePhone.remove();
   }
 
   els.hoursLabel.textContent = hoursLabel(venue);
 
-  if (venue.address) {
-    els.mapFrame.src = `https://maps.google.com/maps?q=${encodeURIComponent(venue.address)}&output=embed`;
-    els.mapLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(venue.address)}`;
+  if (address) {
+    els.mapFrame.src = `https://maps.google.com/maps?q=${encodeURIComponent(address)}&output=embed`;
+    els.mapLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
   } else {
     document.querySelector(".menu-map-section")?.classList.add("hidden");
   }
 
-  const deals = venue.deals || [];
+  const deals = getDeals(venue);
   const hasFood = deals.some((d) => (d.category || "food") === "food");
   const hasDrink = deals.some((d) => (d.category || "food") === "drink");
 

@@ -171,6 +171,29 @@ body {
   padding: 20px 20px 120px;
 }
 
+.view-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.view-tab {
+  font-family: inherit;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  color: var(--text-dim);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  flex: 1;
+}
+.view-tab.active {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--sheet-bg);
+}
+
 .filters {
   display: flex;
   gap: 8px;
@@ -294,6 +317,40 @@ body {
   text-align: center;
   color: var(--text-dim);
   padding: 40px 20px;
+}
+
+/* ---------- Map view ---------- */
+
+.map-view {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+}
+
+#map {
+  height: 420px;
+  width: 100%;
+  background: var(--card);
+}
+
+.map-pin span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.leaflet-popup-content {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #1c1b1a;
+}
+.leaflet-popup-content a {
+  color: var(--menu-accent, #4f39ff);
+  font-weight: 600;
 }
 
 /* ---------- Fixed CTA pill ---------- */

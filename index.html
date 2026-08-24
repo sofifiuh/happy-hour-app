@@ -4,7 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Happy Hour</title>
-<link rel="stylesheet" href="styles.css?v=4" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
   <div class="app">
@@ -24,13 +25,25 @@
     </header>
 
     <section class="sheet">
+      <div class="view-tabs">
+        <button class="view-tab active" data-view="list">☰ List</button>
+        <button class="view-tab" data-view="map">📍 Map</button>
+      </div>
+
       <div class="filters">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="active">Happening Now</button>
         <button class="filter-btn" data-filter="upcoming">Upcoming</button>
       </div>
 
-      <section id="venueList" class="venue-list"></section>
+      <div id="listView">
+        <section id="venueList" class="venue-list"></section>
+      </div>
+
+      <div id="mapView" class="map-view hidden">
+        <div id="map"></div>
+        <p id="mapEmpty" class="empty-state hidden">None of your spots have map coordinates yet.</p>
+      </div>
     </section>
   </div>
 
@@ -94,6 +107,9 @@
     </div>
   </div>
 
-  <script src="app.js?v=4"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="config.js"></script>
+  <script src="venues-data.js?v=1"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>

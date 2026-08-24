@@ -1,16 +1,55 @@
 const STORAGE_KEY = "happyHourVenues";
+const SEED_VERSION_KEY = "happyHourSeedVersion";
+const SEED_VERSION = "2026-vancouver-10-places-schema";
 const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+// ---------- Venue accessors ----------
+// Venue records mirror the Google Places API response shape (see
+// venues-data.js). These accessors are the one place that knows how to
+// read that shape, so a future real Places API sync only has to keep
+// this file's contract, not every call site.
+
+function getAddress(venue) {
+  return venue.formatted_address || "";
+}
+function getPhone(venue) {
+  return venue.formatted_phone_number || "";
+}
+function getLat(venue) {
+  return venue.geometry?.location?.lat;
+}
+function getLng(venue) {
+  return venue.geometry?.location?.lng;
+}
+function getDays(venue) {
+  return venue.happy_hour.days;
+}
+function getStart(venue) {
+  return venue.happy_hour.start;
+}
+function getEnd(venue) {
+  return venue.happy_hour.end;
+}
+function getDeals(venue) {
+  return venue.happy_hour.deals || [];
+}
 
 let venues = loadVenues();
 let currentFilter = "all";
+let currentView = "list";
 let selectedDays = new Set();
 let editingId = null;
+let map = null;
+let mapMarkers = [];
 
 const els = {
   countdownLabel: document.getElementById("countdownLabel"),
   countdownTimer: document.getElementById("countdownTimer"),
   countdownSub: document.getElementById("countdownSub"),
   venueList: document.getElementById("venueList"),
+  listView: document.getElementById("listView"),
+  mapView: document.getElementById("mapView"),
+  mapEmpty: document.getElementById("mapEmpty"),
   modal: document.getElementById("venueModal"),
   modalTitle: document.getElementById("modalTitle"),
   form: document.getElementById("venueForm"),
@@ -28,45 +67,46 @@ const els = {
 function loadVenues() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
+    const seenVersion = localStorage.getItem(SEED_VERSION_KEY);
+    if (raw && seenVersion === SEED_VERSION) return JSON.parse(raw);
   } catch {
     // fall through to sample data
   }
   const sample = sampleVenues();
   localStorage.setItem(STORAGE_KEY, JSON.stringify(sample));
+  localStorage.setItem(SEED_VERSION_KEY, SEED_VERSION);
   return sample;
 }
 
+// Real Vancouver happy hour spots — see venues-data.js for the schema
+// and sourcing notes. Deep-cloned so in-session edits never mutate the
+// shared seed constant.
 function sampleVenues() {
-  return [
-    {
-      id: crypto.randomUUID(),
-      name: "The Tipsy Fox",
-      address: "123 Main St, Vancouver, BC",
-      phone: "604 239 9304",
-      days: [1, 2, 3, 4, 5],
-      start: "16:00",
-      end: "18:00",
-      deals: [
-        { name: "Draft beers", price: "$4", category: "drink", description: "" },
-        { name: "House wine", price: "$6", category: "drink", description: "" },
-        { name: "Loaded fries", price: "$7", category: "food", description: "Crispy fries, cheese curds, gravy." },
-      ],
-    },
-    {
-      id: crypto.randomUUID(),
-      name: "Harbor Social",
-      address: "88 Dockside Ave, Vancouver, BC",
-      phone: "604 555 0134",
-      days: [4, 5, 6],
-      start: "17:00",
-      end: "19:30",
-      deals: [
-        { name: "Oysters", price: "$1 ea", category: "food", description: "Fresh-shucked, mignonette on the side." },
-        { name: "Well cocktails", price: "$8", category: "drink", description: "" },
-      ],
-    },
-  ];
+  return JSON.parse(JSON.stringify(VENUES_SEED));
+}
+
+function newManualVenue() {
+  return {
+    id: crypto.randomUUID(),
+    place_id: null,
+    name: "",
+    formatted_address: "",
+    address_components: null,
+    geometry: null,
+    formatted_phone_number: "",
+    international_phone_number: null,
+    website: null,
+    types: [],
+    business_status: "OPERATIONAL",
+    price_level: null,
+    rating: null,
+    user_ratings_total: null,
+    opening_hours: { weekday_text: [] },
+    photos: [],
+    happy_hour: { days: [1, 2, 3, 4, 5], start: "16:00", end: "18:00", deals: [] },
+    data_source: "manual",
+    last_synced_at: null,
+  };
 }
 
 function saveVenues() {
@@ -98,10 +138,10 @@ function getVenueOccurrence(venue, now) {
   for (let offset = -1; offset <= 7; offset++) {
     const day = addDays(now, offset);
     const dow = day.getDay();
-    if (!venue.days.includes(dow)) continue;
+    if (!getDays(venue).includes(dow)) continue;
 
-    let start = setTimeOnDate(day, venue.start);
-    let end = setTimeOnDate(day, venue.end);
+    let start = setTimeOnDate(day, getStart(venue));
+    let end = setTimeOnDate(day, getEnd(venue));
     if (end <= start) end = addDays(end, 1); // overnight happy hour
 
     if (now >= start && now < end) {
@@ -137,6 +177,7 @@ function formatDayTime(date, now) {
 }
 
 function compressDays(days) {
+  if (days.length === 7) return "Daily";
   const sorted = [...days].sort((a, b) => a - b);
   const runs = [];
   let run = [sorted[0]];
@@ -158,24 +199,34 @@ function compressDays(days) {
 }
 
 function scheduleText(venue) {
-  const dayLabels = compressDays(venue.days);
-  const startLabel = new Date(`1970-01-01T${venue.start}`).toLocaleTimeString([], {
+  const dayLabels = compressDays(getDays(venue));
+  const startLabel = new Date(`1970-01-01T${getStart(venue)}`).toLocaleTimeString([], {
     hour: "numeric",
     minute: "2-digit",
   });
-  const endLabel = new Date(`1970-01-01T${venue.end}`).toLocaleTimeString([], {
+  const endLabel = new Date(`1970-01-01T${getEnd(venue)}`).toLocaleTimeString([], {
     hour: "numeric",
     minute: "2-digit",
   });
   return `${dayLabels} · ${startLabel}–${endLabel}`;
 }
 
-function render() {
+function getOccurrences() {
   const now = new Date();
-  const occurrences = venues.map((v) => ({ venue: v, occ: getVenueOccurrence(v, now) }));
+  return venues.map((v) => ({ venue: v, occ: getVenueOccurrence(v, now) }));
+}
 
-  renderCountdown(occurrences, now);
-  renderList(occurrences, now);
+// Runs every second: cheap DOM updates only (countdown + list).
+function render() {
+  const occurrences = getOccurrences();
+  renderCountdown(occurrences, new Date());
+  renderList(occurrences, new Date());
+}
+
+// Runs only when venues/filter/view actually change — rebuilding Leaflet
+// markers every second would close open popups and reset the viewport.
+function renderMapView() {
+  if (currentView === "map") renderMap(getOccurrences());
 }
 
 function renderCountdown(occurrences, now) {
@@ -206,13 +257,14 @@ function renderCountdown(occurrences, now) {
   }
 }
 
+function filterByStatus(occurrences) {
+  if (currentFilter === "active") return occurrences.filter((o) => o.occ.status === "live");
+  if (currentFilter === "upcoming") return occurrences.filter((o) => o.occ.status === "upcoming");
+  return occurrences;
+}
+
 function renderList(occurrences, now) {
-  let filtered = occurrences;
-  if (currentFilter === "active") {
-    filtered = occurrences.filter((o) => o.occ.status === "live");
-  } else if (currentFilter === "upcoming") {
-    filtered = occurrences.filter((o) => o.occ.status === "upcoming");
-  }
+  let filtered = filterByStatus(occurrences);
 
   filtered = [...filtered].sort((a, b) => {
     const rank = { live: 0, upcoming: 1, none: 2 };
@@ -263,17 +315,19 @@ function renderVenueCard(venue, occ, now) {
 
   const sub = document.createElement("p");
   sub.className = "venue-row-sub";
-  sub.textContent = venue.address ? `${venue.address} · ${scheduleText(venue)}` : scheduleText(venue);
+  const address = getAddress(venue);
+  sub.textContent = address ? `${address} · ${scheduleText(venue)}` : scheduleText(venue);
   main.appendChild(sub);
 
-  if (venue.deals && venue.deals.length) {
-    const deals = document.createElement("p");
-    deals.className = "venue-row-deals";
-    const first = venue.deals[0];
+  const deals = getDeals(venue);
+  if (deals.length) {
+    const dealsEl = document.createElement("p");
+    dealsEl.className = "venue-row-deals";
+    const first = deals[0];
     const preview = `${first.name}${first.price ? " · " + first.price : ""}`;
-    const extra = venue.deals.length > 1 ? ` +${venue.deals.length - 1} more` : "";
-    deals.innerHTML = `${escapeHtml(preview)}<b>${extra}</b>`;
-    main.appendChild(deals);
+    const extra = deals.length > 1 ? ` +${deals.length - 1} more` : "";
+    dealsEl.innerHTML = `${escapeHtml(preview)}<b>${extra}</b>`;
+    main.appendChild(dealsEl);
   }
 
   row.appendChild(main);
@@ -314,6 +368,73 @@ function renderVenueCard(venue, occ, now) {
   return row;
 }
 
+// ---------- Map view ----------
+
+// MAPBOX_TOKEN comes from config.js, which is generated at deploy time
+// from a GitHub Actions secret and is NOT committed to the repo — see
+// config.example.js and .github/workflows/deploy.yml.
+const MAPBOX_STYLE = "dark-v11";
+
+function ensureMap() {
+  if (map) return map;
+  map = L.map("map", { attributionControl: true }).setView([49.2698, -123.1207], 13);
+  L.tileLayer(
+    `https://api.mapbox.com/styles/v1/mapbox/${MAPBOX_STYLE}/tiles/{z}/{x}/{y}{r}?access_token=${MAPBOX_TOKEN}`,
+    {
+      maxZoom: 19,
+      tileSize: 512,
+      zoomOffset: -1,
+      attribution:
+        '&copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }
+  ).addTo(map);
+  return map;
+}
+
+function markerColor(status) {
+  if (status === "live") return "#34d399";
+  if (status === "upcoming") return "#ff9f43";
+  return "#9a9aa5";
+}
+
+function renderMap(occurrences) {
+  if (currentView !== "map") return;
+  const m = ensureMap();
+
+  mapMarkers.forEach((marker) => marker.remove());
+  mapMarkers = [];
+
+  const located = filterByStatus(occurrences).filter(
+    (o) => typeof getLat(o.venue) === "number" && typeof getLng(o.venue) === "number"
+  );
+
+  for (const { venue, occ } of located) {
+    const color = markerColor(occ.status);
+    const icon = L.divIcon({
+      className: "map-pin",
+      html: `<span style="background:${color}"></span>`,
+      iconSize: [18, 18],
+      iconAnchor: [9, 9],
+    });
+    const marker = L.marker([getLat(venue), getLng(venue)], { icon }).addTo(m);
+    const statusText =
+      occ.status === "live" ? "Live now" : occ.status === "upcoming" ? "Upcoming" : "No upcoming date";
+    marker.bindPopup(
+      `<strong>${escapeHtml(venue.name)}</strong><br>${escapeHtml(scheduleText(venue))}<br>${statusText}<br><a href="menu.html?id=${encodeURIComponent(venue.id)}">View menu</a>`
+    );
+    mapMarkers.push(marker);
+  }
+
+  els.mapEmpty.classList.toggle("hidden", located.length > 0);
+
+  if (located.length > 0) {
+    const bounds = L.latLngBounds(located.map((o) => [getLat(o.venue), getLng(o.venue)]));
+    m.fitBounds(bounds, { padding: [30, 30], maxZoom: 15 });
+  }
+
+  setTimeout(() => m.invalidateSize(), 0);
+}
+
 // ---------- Modal handling ----------
 
 function openModal(venue) {
@@ -323,17 +444,16 @@ function openModal(venue) {
 
   els.venueId.value = venue ? venue.id : "";
   els.venueName.value = venue ? venue.name : "";
-  els.venueAddress.value = venue ? venue.address || "" : "";
-  els.venuePhone.value = venue ? venue.phone || "" : "";
-  els.startTime.value = venue ? venue.start : "16:00";
-  els.endTime.value = venue ? venue.end : "18:00";
+  els.venueAddress.value = venue ? getAddress(venue) : "";
+  els.venuePhone.value = venue ? getPhone(venue) : "";
+  els.startTime.value = venue ? getStart(venue) : "16:00";
+  els.endTime.value = venue ? getEnd(venue) : "18:00";
 
-  selectedDays = new Set(venue ? venue.days : [1, 2, 3, 4, 5]);
+  selectedDays = new Set(venue ? getDays(venue) : [1, 2, 3, 4, 5]);
   renderDayPicker();
 
   els.dealsList.innerHTML = "";
-  const deals =
-    venue && venue.deals && venue.deals.length ? venue.deals : [{ name: "", price: "", category: "food", description: "" }];
+  const deals = venue && getDeals(venue).length ? getDeals(venue) : [{ name: "", price: "", category: "food", description: "" }];
   for (const d of deals) addDealRow(d.name, d.price, d.category, d.description);
 
   els.modal.classList.remove("hidden");
@@ -402,6 +522,7 @@ els.deleteBtn.addEventListener("click", () => {
   saveVenues();
   closeModal();
   render();
+  renderMapView();
 });
 
 els.form.addEventListener("submit", (e) => {
@@ -423,11 +544,19 @@ els.form.addEventListener("submit", (e) => {
     }))
     .filter((d) => d.name);
 
-  const venueData = {
-    id: editingId || crypto.randomUUID(),
-    name,
-    address: els.venueAddress.value.trim(),
-    phone: els.venuePhone.value.trim(),
+  // Start from the existing Places-schema record (preserving place_id,
+  // geometry, rating, photos, etc. — none of which this simple form edits)
+  // and only overlay the fields the form actually owns. Editing the
+  // address here does NOT re-geocode it; that would need a real Places
+  // API/geocoder call, which isn't wired up yet.
+  const existing = editingId ? venues.find((v) => v.id === editingId) : null;
+  const venueData = existing ? JSON.parse(JSON.stringify(existing)) : newManualVenue();
+
+  venueData.id = editingId || venueData.id;
+  venueData.name = name;
+  venueData.formatted_address = els.venueAddress.value.trim();
+  venueData.formatted_phone_number = els.venuePhone.value.trim();
+  venueData.happy_hour = {
     days: [...selectedDays].sort(),
     start: els.startTime.value,
     end: els.endTime.value,
@@ -443,6 +572,7 @@ els.form.addEventListener("submit", (e) => {
   saveVenues();
   closeModal();
   render();
+  renderMapView();
 });
 
 document.querySelectorAll(".filter-btn").forEach((btn) => {
@@ -451,8 +581,22 @@ document.querySelectorAll(".filter-btn").forEach((btn) => {
     btn.classList.add("active");
     currentFilter = btn.dataset.filter;
     render();
+    renderMapView();
+  });
+});
+
+document.querySelectorAll(".view-tab").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".view-tab").forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    currentView = btn.dataset.view;
+    els.listView.classList.toggle("hidden", currentView !== "list");
+    els.mapView.classList.toggle("hidden", currentView !== "map");
+    render();
+    renderMapView();
   });
 });
 
 render();
+renderMapView();
 setInterval(render, 1000);
