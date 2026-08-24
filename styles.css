@@ -408,7 +408,13 @@ body {
 
 .map-view {
   position: fixed;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* dvh accounts for the mobile browser's address bar collapsing/expanding —
+     inset:0 alone leaves the bottom of the map hidden behind it on iOS Safari. */
+  height: 100vh;
+  height: 100dvh;
   z-index: 30;
 }
 
@@ -443,10 +449,28 @@ body {
   transform: scale(0.97);
 }
 
+.map-filters {
+  position: fixed;
+  top: 70px;
+  left: 16px;
+  right: 16px;
+  z-index: 1100;
+  margin-bottom: 0;
+}
+.map-filters .filter-btn {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+.map-filters .filter-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
 body.map-fullscreen .hero,
 body.map-fullscreen .search-row,
 body.map-fullscreen .view-tabs,
-body.map-fullscreen .filters {
+body.map-fullscreen .sheet > .filters {
   display: none;
 }
 body.map-fullscreen .sheet {

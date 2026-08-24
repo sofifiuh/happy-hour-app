@@ -2,7 +2,6 @@ const STORAGE_KEY = "happyHourVenues";
 const SEED_VERSION_KEY = "happyHourSeedVersion";
 const SEED_VERSION = "2026-vancouver-10-places-schema-photo-gallery";
 const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-const SOON_THRESHOLD_MS = 60 * 60 * 1000; // "Soon" = starting within the next hour
 
 // ---------- Venue accessors ----------
 // Venue records mirror the Google Places API response shape (see
@@ -192,10 +191,7 @@ function getVenueOccurrence(venue, now) {
   }
 
   if (activeOccurrence) return { status: "live", ...activeOccurrence };
-  if (bestUpcoming) {
-    const soon = bestUpcoming.start - now <= SOON_THRESHOLD_MS;
-    return { status: "upcoming", soon, ...bestUpcoming };
-  }
+  if (bestUpcoming) return { status: "upcoming", ...bestUpcoming };
   return { status: "none" };
 }
 
@@ -268,10 +264,8 @@ function applyFilters(occurrences) {
 
   if (currentFilter === "active") {
     filtered = filtered.filter((o) => o.occ.status === "live");
-  } else if (currentFilter === "soon") {
-    filtered = filtered.filter((o) => o.occ.status === "upcoming" && o.occ.soon);
   } else if (currentFilter === "upcoming") {
-    filtered = filtered.filter((o) => o.occ.status === "upcoming" && !o.occ.soon);
+    filtered = filtered.filter((o) => o.occ.status === "upcoming");
   }
 
   const query = searchQuery.trim().toLowerCase();
@@ -663,11 +657,14 @@ els.form.addEventListener("submit", (e) => {
   renderMapView();
 });
 
+// Two filter-chip bars exist in the DOM (list view + the floating one over
+// the map) and must stay in sync — toggle by matching data-filter rather
+// than the single clicked node, so whichever bar the user last touched wins
+// everywhere.
 document.querySelectorAll(".filter-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
-    document.querySelectorAll(".filter-btn").forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
     currentFilter = btn.dataset.filter;
+    document.querySelectorAll(".filter-btn").forEach((b) => b.classList.toggle("active", b.dataset.filter === currentFilter));
     render();
     renderMapView();
   });
