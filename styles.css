@@ -422,9 +422,7 @@ body {
 /* ---------- Map view ---------- */
 
 .map-view {
-  border-radius: 14px;
-  overflow: hidden;
-  border: 1px solid var(--card-border);
+  margin: 0 -20px;
 }
 
 .map-frame {
@@ -432,7 +430,7 @@ body {
 }
 
 #map {
-  height: 420px;
+  height: min(70vh, 640px);
   width: 100%;
   background: var(--card);
 }
@@ -446,7 +444,7 @@ body {
   bottom: 24px;
   max-width: 448px;
   margin: 0 auto;
-  z-index: 45;
+  z-index: 1200;
   background: #fff;
   border-radius: 16px;
   padding: 16px;
