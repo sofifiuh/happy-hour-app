@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Hour Menu</title>
+<link rel="stylesheet" href="styles.css?v=4" />
+<link rel="stylesheet" href="menu.css?v=1" />
+</head>
+<body>
+  <div class="menu-app">
+    <div class="menu-photo">
+      <a href="index.html" class="menu-back" aria-label="Back">‹</a>
+      <div class="menu-photo-icon">🍹</div>
+      <div class="menu-photo-counter">1/1</div>
+    </div>
+
+    <div class="menu-info">
+      <h1 class="menu-name" id="venueName">Venue name</h1>
+      <a class="menu-address" id="venueAddress" target="_blank" rel="noopener"></a>
+      <a class="menu-phone" id="venuePhone"></a>
+
+      <div class="menu-tabs" id="menuTabs">
+        <button class="menu-tab active" data-cat="food">Food</button>
+        <button class="menu-tab" data-cat="drink">Drinks</button>
+      </div>
+
+      <div id="dealsList" class="menu-deals-list"></div>
+    </div>
+
+    <div class="menu-sticky-bar" id="stickyBar">
+      <span class="menu-hours" id="hoursLabel">Hours</span>
+      <button class="menu-share-btn" id="shareBtn">Share</button>
+    </div>
+
+    <div class="menu-map-section">
+      <h2>Find us here</h2>
+      <div class="menu-map-frame">
+        <iframe
+          id="mapFrame"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <a id="mapLink" class="menu-map-link" target="_blank" rel="noopener">Open in Maps</a>
+    </div>
+
+    <div id="notFound" class="empty-state hidden">
+      Spot not found. <a href="index.html">Back to list</a>
+    </div>
+  </div>
+
+  <div id="toast" class="menu-toast hidden">Link copied</div>
+
+  <script src="menu.js?v=1"></script>
+</body>
+</html>

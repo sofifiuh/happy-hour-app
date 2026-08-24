@@ -1,0 +1,223 @@
+.menu-app {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--sheet-bg);
+  padding-bottom: 40px;
+}
+
+/* ---------- Photo header ---------- */
+
+.menu-photo {
+  position: relative;
+  height: 260px;
+  background:
+    radial-gradient(120% 100% at 15% 0%, rgba(255, 190, 110, 0.35), transparent 55%),
+    linear-gradient(160deg, #6b3a1f 0%, #2c1810 55%, #17110d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-photo-icon {
+  font-size: 3.5rem;
+  opacity: 0.9;
+}
+
+.menu-back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fdf6ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.menu-photo-counter {
+  position: absolute;
+  bottom: 14px;
+  right: 16px;
+  color: rgba(253, 246, 238, 0.85);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ---------- Info ---------- */
+
+.menu-info {
+  padding: 20px;
+}
+
+.menu-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+}
+
+.menu-address,
+.menu-phone {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+.menu-address:hover,
+.menu-phone:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.menu-tabs {
+  display: flex;
+  gap: 20px;
+  margin: 22px 0 4px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.menu-tab {
+  font-family: inherit;
+  background: transparent;
+  border: none;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 2px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+
+.menu-tab.active {
+  color: var(--text);
+  border-bottom-color: var(--menu-accent, #3d2bff);
+}
+
+/* ---------- Deals list ---------- */
+
+.menu-deals-list {
+  padding-top: 6px;
+}
+
+.menu-deal-row {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.menu-deal-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+
+.menu-deal-price {
+  flex-shrink: 0;
+  color: var(--text);
+}
+
+.menu-deal-description {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+/* ---------- Sticky hours/share bar ---------- */
+
+.menu-sticky-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: var(--menu-accent, #3d2bff);
+  color: #fff;
+}
+
+.menu-hours {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.menu-share-btn {
+  font-family: inherit;
+  background: #fff;
+  color: var(--menu-accent, #3d2bff);
+  border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.menu-share-btn:active {
+  transform: scale(0.97);
+}
+
+/* ---------- Map section ---------- */
+
+.menu-map-section {
+  padding: 24px 20px 0;
+}
+
+.menu-map-section h2 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+.menu-map-frame {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  height: 200px;
+}
+.menu-map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.menu-map-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--menu-accent, #3d2bff);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.menu-map-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Toast ---------- */
+
+.menu-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  background: #1c1b1a;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  z-index: 100;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+.menu-toast.hidden {
+  display: none;
+}

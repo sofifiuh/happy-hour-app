@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Hour</title>
+<link rel="stylesheet" href="styles.css?v=4" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <div class="hero-bar">
+        <span class="hero-icon-btn">☰</span>
+        <span class="hero-icon-btn">🍹</span>
+      </div>
+      <h1 class="hero-title">HAPPY<br />HOUR<span class="hero-dot">.</span></h1>
+      <p class="hero-tagline">Never miss a deal again.</p>
+
+      <div class="hero-countdown">
+        <div class="countdown-label" id="countdownLabel">No happy hours yet</div>
+        <div class="countdown-timer" id="countdownTimer">--:--:--</div>
+        <div class="countdown-sub" id="countdownSub">Add a spot to get started</div>
+      </div>
+    </header>
+
+    <section class="sheet">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Happening Now</button>
+        <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+      </div>
+
+      <section id="venueList" class="venue-list"></section>
+    </section>
+  </div>
+
+  <button id="addVenueBtn" class="cta-pill">
+    <span>Add a Spot</span>
+    <span class="cta-arrow">→</span>
+  </button>
+
+  <div id="venueModal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Add a Spot</h2>
+        <button id="closeModalBtn" class="btn-icon">&times;</button>
+      </div>
+      <form id="venueForm">
+        <input type="hidden" id="venueId" />
+
+        <label>Name</label>
+        <input type="text" id="venueName" placeholder="e.g. The Tipsy Fox" required />
+
+        <label>Address (optional)</label>
+        <input type="text" id="venueAddress" placeholder="e.g. 123 Main St" />
+
+        <label>Phone (optional)</label>
+        <input type="text" id="venuePhone" placeholder="e.g. 604 239 9304" />
+
+        <label>Days</label>
+        <div class="day-picker" id="dayPicker">
+          <button type="button" class="day-btn" data-day="0">Sun</button>
+          <button type="button" class="day-btn" data-day="1">Mon</button>
+          <button type="button" class="day-btn" data-day="2">Tue</button>
+          <button type="button" class="day-btn" data-day="3">Wed</button>
+          <button type="button" class="day-btn" data-day="4">Thu</button>
+          <button type="button" class="day-btn" data-day="5">Fri</button>
+          <button type="button" class="day-btn" data-day="6">Sat</button>
+        </div>
+
+        <div class="time-row">
+          <div>
+            <label>Start Time</label>
+            <input type="time" id="startTime" required />
+          </div>
+          <div>
+            <label>End Time</label>
+            <input type="time" id="endTime" required />
+          </div>
+        </div>
+
+        <label>Deals</label>
+        <div id="dealsList" class="deals-edit-list"></div>
+        <button type="button" id="addDealBtn" class="btn-secondary">+ Add Deal</button>
+
+        <div class="modal-actions">
+          <button type="button" id="deleteVenueBtn" class="btn-danger hidden">Delete</button>
+          <div class="modal-actions-right">
+            <button type="button" id="cancelBtn" class="btn-secondary">Cancel</button>
+            <button type="submit" class="btn-primary">Save Spot</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js?v=4"></script>
+</body>
+</html>
