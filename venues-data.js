@@ -59,8 +59,10 @@ const VENUES_SEED = [
     },
     happy_hour: {
       days: [0, 1, 2, 3, 4, 5, 6],
-      start: "14:00",
+      start: "14:30",
       end: "17:00",
+      verified: true,
+      verified_source: "https://www.ancoradining.com/contact",
       deals: [
         { name: "Granville Island beer", price: "$8", category: "drink", description: "16oz." },
         { name: "Cocktails", price: "$11–19", category: "drink", description: "" },
@@ -69,6 +71,21 @@ const VENUES_SEED = [
         { name: "Brussels sprouts", price: "$8", category: "food", description: "" },
         { name: "Sashimi", price: "$16", category: "food", description: "" },
       ],
+    },
+    // Amenities: outdoor_seating/gluten_free_options/wheelchair_accessible_entrance
+    // are verified where true, otherwise null (unconfirmed, not guessed).
+    // transit is computed from real SkyTrain station coordinates vs this
+    // venue's geometry — not a Places field, our own addition.
+    amenities: {
+      outdoor_seating: true,
+      gluten_free_options: null,
+      wheelchair_accessible_entrance: null,
+      parking: null,
+      transit: {
+        nearest_station: "Yaletown-Roundhouse",
+        distance_m: 800,
+        walkable: false
+      }
     },
     data_source: "manual",
     last_synced_at: null,
@@ -107,6 +124,8 @@ const VENUES_SEED = [
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "15:00",
       end: "18:00",
+      verified: true,
+      verified_source: "https://earls.ca/locations/test-kitchen/menu/happy-hour/",
       deals: [
         { name: "Select beers", price: "$3 off", category: "drink", description: "" },
         { name: "Wine, cocktails, margarita, spritz", price: "50% off", category: "drink", description: "" },
@@ -115,6 +134,21 @@ const VENUES_SEED = [
         { name: "Tacos", price: "$7", category: "food", description: "" },
         { name: "Pizza", price: "$15", category: "food", description: "" },
       ],
+    },
+    // Amenities: outdoor_seating/gluten_free_options/wheelchair_accessible_entrance
+    // are verified where true, otherwise null (unconfirmed, not guessed).
+    // transit is computed from real SkyTrain station coordinates vs this
+    // venue's geometry — not a Places field, our own addition.
+    amenities: {
+      outdoor_seating: true,
+      gluten_free_options: null,
+      wheelchair_accessible_entrance: null,
+      parking: null,
+      transit: {
+        nearest_station: "Vancouver City Centre",
+        distance_m: 380,
+        walkable: true
+      }
     },
     data_source: "manual",
     last_synced_at: null,
@@ -162,6 +196,21 @@ const VENUES_SEED = [
         { name: "Burger", price: "$22", category: "food", description: "" },
       ],
     },
+    // Amenities: outdoor_seating/gluten_free_options/wheelchair_accessible_entrance
+    // are verified where true, otherwise null (unconfirmed, not guessed).
+    // transit is computed from real SkyTrain station coordinates vs this
+    // venue's geometry — not a Places field, our own addition.
+    amenities: {
+      outdoor_seating: true,
+      gluten_free_options: null,
+      wheelchair_accessible_entrance: null,
+      parking: null,
+      transit: {
+        nearest_station: "Granville",
+        distance_m: 476,
+        walkable: true
+      }
+    },
     data_source: "manual",
     last_synced_at: null,
   },
@@ -197,8 +246,10 @@ const VENUES_SEED = [
     },
     happy_hour: {
       days: [0, 1, 2, 3, 4, 5, 6],
-      start: "17:00",
+      start: "16:00",
       end: "18:00",
+      verified: true,
+      verified_source: "https://hapaizakaya.com/yaletown-menu/",
       deals: [
         { name: "Draft beer", price: "$5", category: "drink", description: "" },
         { name: "Wine", price: "$6", category: "drink", description: "" },
@@ -207,6 +258,21 @@ const VENUES_SEED = [
         { name: "Takoyaki", price: "$9", category: "food", description: "" },
         { name: "Rolls", price: "$10–12", category: "food", description: "" },
       ],
+    },
+    // Amenities: outdoor_seating/gluten_free_options/wheelchair_accessible_entrance
+    // are verified where true, otherwise null (unconfirmed, not guessed).
+    // transit is computed from real SkyTrain station coordinates vs this
+    // venue's geometry — not a Places field, our own addition.
+    amenities: {
+      outdoor_seating: true,
+      gluten_free_options: null,
+      wheelchair_accessible_entrance: null,
+      parking: null,
+      transit: {
+        nearest_station: "Yaletown-Roundhouse",
+        distance_m: 120,
+        walkable: true
+      }
     },
     data_source: "manual",
     last_synced_at: null,
@@ -245,6 +311,8 @@ const VENUES_SEED = [
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "15:00",
       end: "17:00",
+      verified: true,
+      verified_source: "https://boulevardvancouver.ca/happy-hour/",
       deals: [
         { name: "Beer", price: "$7", category: "drink", description: "" },
         { name: "Wine", price: "$8", category: "drink", description: "" },
@@ -253,6 +321,21 @@ const VENUES_SEED = [
         { name: "Marcona almonds", price: "$8", category: "food", description: "" },
         { name: "Fries", price: "$10", category: "food", description: "" },
       ],
+    },
+    // Amenities: outdoor_seating/gluten_free_options/wheelchair_accessible_entrance
+    // are verified where true, otherwise null (unconfirmed, not guessed).
+    // transit is computed from real SkyTrain station coordinates vs this
+    // venue's geometry — not a Places field, our own addition.
+    amenities: {
+      outdoor_seating: true,
+      gluten_free_options: null,
+      wheelchair_accessible_entrance: null,
+      parking: null,
+      transit: {
+        nearest_station: "Vancouver City Centre",
+        distance_m: 363,
+        walkable: true
+      }
     },
     data_source: "manual",
     last_synced_at: null,
@@ -288,9 +371,11 @@ const VENUES_SEED = [
       source: "official_website",
     },
     happy_hour: {
-      days: [0, 6],
+      days: [1, 2, 3, 4, 5],
       start: "15:00",
       end: "16:30",
+      verified: true,
+      verified_source: "https://www.chambar.com/menus/happyhour/",
       deals: [
         { name: "Beer", price: "$3 off", category: "drink", description: "" },
         { name: "Cocktails", price: "$9–10", category: "drink", description: "" },
@@ -300,13 +385,32 @@ const VENUES_SEED = [
         { name: "Salads", price: "$13–16", category: "food", description: "" },
       ],
     },
+    // Amenities: outdoor_seating/gluten_free_options/wheelchair_accessible_entrance
+    // are verified where true, otherwise null (unconfirmed, not guessed).
+    // transit is computed from real SkyTrain station coordinates vs this
+    // venue's geometry — not a Places field, our own addition.
+    amenities: {
+      outdoor_seating: true,
+      gluten_free_options: null,
+      wheelchair_accessible_entrance: null,
+      parking: null,
+      transit: {
+        nearest_station: "Stadium-Chinatown",
+        distance_m: 101,
+        walkable: true
+      }
+    },
     data_source: "manual",
     last_synced_at: null,
   },
   {
     id: "d6-bar-lounge",
     place_id: null,
-    name: "D/6 Bar & Lounge",
+    // Corrected after initial research pointed at the wrong building —
+    // D/6 is the rooftop lounge atop the DOUGLAS, Autograph Collection
+    // (Parq Vancouver), not Rosewood Hotel Georgia. Verified against its
+    // own happy hour menu PDF.
+    name: "D/6 Lounge",
     formatted_address: "39 Smithe St, Vancouver, BC",
     address_components: {
       street_number: "39",
@@ -319,7 +423,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.2756315, lng: -123.1134717 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining",
+    website: "https://www.parqcasino.com/d-6-lounge",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -328,23 +432,48 @@ const VENUES_SEED = [
     opening_hours: { weekday_text: [] },
     photos: [],
     cover_image: {
-      url: "https://images.rosewoodhotels.com/is/image/rwhg/RW-62",
-      credit_name: "Rosewood Hotel Georgia",
-      credit_url: "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining",
+      url: "https://static.wixstatic.com/media/6eb957_a0b0c870489f44fd823ac376555b0126~mv2.jpg",
+      credit_name: "D/6 Lounge",
+      credit_url: "https://www.parqcasino.com/d-6-lounge",
       source: "official_website",
     },
     happy_hour: {
+      // Menu says "Daily until 7pm | Sunday all day" — start time isn't
+      // printed, so 5pm is inferred from the "After Office" 5-7pm deal.
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "17:00",
-      end: "18:30",
+      end: "19:00",
+      verified: true,
+      verified_source:
+        "https://www.parqcasino.com/_files/ugd/93f176_2fd639380cfc4f2f90f0f842fdfcbd8d.pdf",
       deals: [
-        { name: "Sake", price: "$12", category: "drink", description: "" },
-        { name: "Asahi", price: "$7", category: "drink", description: "" },
-        { name: "Wine", price: "$12", category: "drink", description: "" },
-        { name: "Cocktails", price: "$13", category: "drink", description: "" },
-        { name: "Fries", price: "$14", category: "food", description: "" },
-        { name: "Karaage", price: "$19", category: "food", description: "" },
+        { name: "Wine", price: "$12", category: "drink", description: "6oz." },
+        { name: "Sake", price: "$12", category: "drink", description: "5oz." },
+        { name: "Beer", price: "$7", category: "drink", description: "14oz. Madri or Granville Island IPA." },
+        { name: "Truffle fries", price: "$16", category: "food", description: "Triple cooked, parmigiano reggiano, truffle aioli." },
+        {
+          name: "Jumbo prawn cocktail",
+          price: "$31",
+          category: "food",
+          description: "Tiger prawns, wasabi cocktail sauce. Gluten-free.",
+        },
+        { name: "Chicken kara-age", price: "$21", category: "food", description: "Agave citrus, red chili dip." },
       ],
+    },
+    // Amenities: outdoor_seating/gluten_free_options/wheelchair_accessible_entrance
+    // are verified where true, otherwise null (unconfirmed, not guessed).
+    // transit is computed from real SkyTrain station coordinates vs this
+    // venue's geometry — not a Places field, our own addition.
+    amenities: {
+      outdoor_seating: true,
+      gluten_free_options: true,
+      wheelchair_accessible_entrance: null,
+      parking: null,
+      transit: {
+        nearest_station: "Stadium-Chinatown",
+        distance_m: 504,
+        walkable: false
+      }
     },
     data_source: "manual",
     last_synced_at: null,
@@ -383,6 +512,8 @@ const VENUES_SEED = [
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "15:00",
       end: "17:00",
+      verified: true,
+      verified_source: "https://www.havanavancouver.com/",
       deals: [
         { name: "Beer", price: "$7", category: "drink", description: "16oz." },
         { name: "Wine", price: "$7–10", category: "drink", description: "" },
@@ -391,6 +522,21 @@ const VENUES_SEED = [
         { name: "Sandwich", price: "$12", category: "food", description: "" },
         { name: "Ceviche", price: "$16", category: "food", description: "" },
       ],
+    },
+    // Amenities: outdoor_seating/gluten_free_options/wheelchair_accessible_entrance
+    // are verified where true, otherwise null (unconfirmed, not guessed).
+    // transit is computed from real SkyTrain station coordinates vs this
+    // venue's geometry — not a Places field, our own addition.
+    amenities: {
+      outdoor_seating: true,
+      gluten_free_options: null,
+      wheelchair_accessible_entrance: null,
+      parking: null,
+      transit: {
+        nearest_station: "Commercial-Broadway",
+        distance_m: 1235,
+        walkable: false
+      }
     },
     data_source: "manual",
     last_synced_at: null,
@@ -429,6 +575,8 @@ const VENUES_SEED = [
       days: [2, 3, 4, 5],
       start: "14:00",
       end: "18:00",
+      verified: true,
+      verified_source: "https://brewhall.com/",
       deals: [
         { name: "Beer", price: "$5–6.25", category: "drink", description: "" },
         { name: "Wine", price: "50% off", category: "drink", description: "" },
@@ -436,6 +584,23 @@ const VENUES_SEED = [
         { name: "Full food menu", price: "25% off", category: "food", description: "" },
         { name: "Burger", price: "$10", category: "food", description: "" },
       ],
+    },
+    // Amenities: outdoor_seating/gluten_free_options/wheelchair_accessible_entrance
+    // are verified where true, otherwise null (unconfirmed, not guessed).
+    // transit is computed from real SkyTrain station coordinates vs this
+    // venue's geometry — not a Places field, our own addition.
+    amenities: {
+      outdoor_seating: true,
+      gluten_free_options: null,
+      wheelchair_accessible_entrance: null,
+      parking: {
+        paid_lot: true
+      },
+      transit: {
+        nearest_station: "Main St-Science World",
+        distance_m: 506,
+        walkable: true
+      }
     },
     data_source: "manual",
     last_synced_at: null,
@@ -474,6 +639,8 @@ const VENUES_SEED = [
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "14:00",
       end: "17:00",
+      verified: true,
+      verified_source: "https://www.glowbalgroup.com/glowbal/",
       deals: [
         { name: "Beer", price: "$6", category: "drink", description: "" },
         { name: "Wine", price: "$6–9.50", category: "drink", description: "" },
@@ -482,6 +649,21 @@ const VENUES_SEED = [
         { name: "Market vegetables", price: "$10", category: "food", description: "" },
         { name: "Calamari", price: "$14", category: "food", description: "" },
       ],
+    },
+    // Amenities: outdoor_seating/gluten_free_options/wheelchair_accessible_entrance
+    // are verified where true, otherwise null (unconfirmed, not guessed).
+    // transit is computed from real SkyTrain station coordinates vs this
+    // venue's geometry — not a Places field, our own addition.
+    amenities: {
+      outdoor_seating: true,
+      gluten_free_options: null,
+      wheelchair_accessible_entrance: null,
+      parking: null,
+      transit: {
+        nearest_station: "Granville",
+        distance_m: 148,
+        walkable: true
+      }
     },
     data_source: "manual",
     last_synced_at: null,

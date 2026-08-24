@@ -1,6 +1,6 @@
 const STORAGE_KEY = "happyHourVenues";
 const SEED_VERSION_KEY = "happyHourSeedVersion";
-const SEED_VERSION = "2026-vancouver-10-places-schema-photos";
+const SEED_VERSION = "2026-vancouver-10-places-schema-photos-amenities";
 const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 // ---------- Venue accessors ----------
