@@ -8,7 +8,7 @@
 <meta http-equiv="Expires" content="0" />
 <title>Happy Hour</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<link rel="stylesheet" href="styles.css?v=8" />
+<link rel="stylesheet" href="styles.css?v=10" />
 </head>
 <body>
   <div class="app">
@@ -63,7 +63,33 @@
       </div>
 
       <div id="mapView" class="map-view hidden">
-        <div id="map"></div>
+        <div class="map-frame">
+          <div id="map"></div>
+
+          <div id="mapDetailCard" class="map-detail-card hidden">
+            <button id="mapDetailClose" class="map-detail-close" aria-label="Close">✕</button>
+            <div class="map-detail-body">
+              <h3 id="mapDetailName" class="map-detail-name">Venue name</h3>
+              <div class="map-detail-meta">
+                <span id="mapDetailDot" class="map-detail-dot"></span>
+                <span id="mapDetailHours"></span>
+                <span class="map-detail-sep">·</span>
+                <span id="mapDetailAddress"></span>
+              </div>
+              <div class="map-detail-actions">
+                <a id="mapDetailDirections" class="map-detail-action" target="_blank" rel="noopener">
+                  <span class="map-detail-action-icon">🧭</span>
+                  <span>Get directions</span>
+                </a>
+                <a id="mapDetailMenu" class="map-detail-action">
+                  <span class="map-detail-action-icon">📋</span>
+                  <span>View menu</span>
+                </a>
+              </div>
+            </div>
+            <a id="mapDetailArrow" class="map-detail-arrow-btn" aria-label="View menu">→</a>
+          </div>
+        </div>
         <p id="mapEmpty" class="empty-state hidden">None of your spots have map coordinates yet.</p>
       </div>
     </section>
@@ -175,6 +201,6 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="config.js"></script>
   <script src="venues-data.js?v=3"></script>
-  <script src="app.js?v=9"></script>
+  <script src="app.js?v=10"></script>
 </body>
 </html>

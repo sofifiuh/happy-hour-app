@@ -92,6 +92,15 @@ const els = {
   filterBtn: document.getElementById("filterBtn"),
   filterCount: document.getElementById("filterCount"),
   filterModal: document.getElementById("filterModal"),
+  mapDetailCard: document.getElementById("mapDetailCard"),
+  mapDetailClose: document.getElementById("mapDetailClose"),
+  mapDetailName: document.getElementById("mapDetailName"),
+  mapDetailDot: document.getElementById("mapDetailDot"),
+  mapDetailHours: document.getElementById("mapDetailHours"),
+  mapDetailAddress: document.getElementById("mapDetailAddress"),
+  mapDetailDirections: document.getElementById("mapDetailDirections"),
+  mapDetailMenu: document.getElementById("mapDetailMenu"),
+  mapDetailArrow: document.getElementById("mapDetailArrow"),
 };
 
 function loadVenues() {
@@ -449,12 +458,15 @@ function renderMap(occurrences) {
   if (currentView !== "map") return;
   const m = ensureMap();
 
+  els.mapDetailCard.classList.add("hidden");
   mapMarkers.forEach((marker) => marker.remove());
   mapMarkers = [];
 
   const located = applyFilters(occurrences).filter(
     (o) => typeof getLat(o.venue) === "number" && typeof getLng(o.venue) === "number"
   );
+
+  const now = new Date();
 
   for (const { venue, occ } of located) {
     const color = markerColor(occ.status);
@@ -465,11 +477,7 @@ function renderMap(occurrences) {
       iconAnchor: [9, 9],
     });
     const marker = L.marker([getLat(venue), getLng(venue)], { icon }).addTo(m);
-    const statusText =
-      occ.status === "live" ? "Live now" : occ.status === "upcoming" ? "Upcoming" : "No upcoming date";
-    marker.bindPopup(
-      `<strong>${escapeHtml(venue.name)}</strong><br>${escapeHtml(scheduleText(venue))}<br>${statusText}<br><a href="menu.html?id=${encodeURIComponent(venue.id)}">View menu</a>`
-    );
+    marker.on("click", () => showMapDetailCard(venue, occ, now));
     mapMarkers.push(marker);
   }
 
@@ -482,6 +490,43 @@ function renderMap(occurrences) {
 
   setTimeout(() => m.invalidateSize(), 0);
 }
+
+function showMapDetailCard(venue, occ, now) {
+  els.mapDetailName.textContent = venue.name;
+
+  els.mapDetailDot.className = "map-detail-dot";
+  if (occ.status === "upcoming") els.mapDetailDot.classList.add("upcoming");
+  if (occ.status === "none") els.mapDetailDot.classList.add("none");
+
+  if (occ.status === "live") {
+    els.mapDetailHours.textContent = `Ends ${formatDayTime(occ.end, now)}`;
+  } else if (occ.status === "upcoming") {
+    els.mapDetailHours.textContent = `Starts ${formatDayTime(occ.start, now)}`;
+  } else {
+    els.mapDetailHours.textContent = "No upcoming date";
+  }
+
+  const address = getAddress(venue);
+  els.mapDetailAddress.textContent = address;
+  els.mapDetailAddress.classList.toggle("hidden", !address);
+
+  if (address) {
+    els.mapDetailDirections.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    els.mapDetailDirections.classList.remove("hidden");
+  } else {
+    els.mapDetailDirections.classList.add("hidden");
+  }
+
+  const menuUrl = `menu.html?id=${encodeURIComponent(venue.id)}`;
+  els.mapDetailMenu.href = menuUrl;
+  els.mapDetailArrow.href = menuUrl;
+
+  els.mapDetailCard.classList.remove("hidden");
+}
+
+els.mapDetailClose.addEventListener("click", () => {
+  els.mapDetailCard.classList.add("hidden");
+});
 
 // ---------- Modal handling ----------
 

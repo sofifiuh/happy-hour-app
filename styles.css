@@ -421,10 +421,134 @@ body {
   border: 1px solid var(--card-border);
 }
 
+.map-frame {
+  position: relative;
+}
+
 #map {
   height: 420px;
   width: 100%;
   background: var(--card);
+}
+
+/* ---------- Map pin detail card ---------- */
+
+.map-detail-card {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 24px;
+  max-width: 448px;
+  margin: 0 auto;
+  z-index: 45;
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.map-detail-close {
+  position: absolute;
+  top: -46px;
+  right: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: #1c1b1a;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.map-detail-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.map-detail-name {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1c1b1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.map-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: #706c66;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 12px;
+}
+.map-detail-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+}
+.map-detail-dot.upcoming {
+  background: var(--accent);
+}
+.map-detail-dot.none {
+  background: #9a9aa5;
+}
+.map-detail-sep {
+  flex-shrink: 0;
+}
+
+.map-detail-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.map-detail-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1c1b1a;
+  text-decoration: none;
+}
+.map-detail-action-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #f7f5f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.map-detail-arrow-btn {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--pill);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.map-detail-arrow-btn:active {
+  transform: scale(0.96);
 }
 
 .map-pin span {
@@ -434,17 +558,6 @@ body {
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-}
-
-.leaflet-popup-content {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 0.85rem;
-  line-height: 1.4;
-  color: var(--text);
-}
-.leaflet-popup-content a {
-  color: var(--accent);
-  font-weight: 600;
 }
 
 /* ---------- Fixed CTA pill ---------- */
