@@ -99,7 +99,7 @@
 
 .menu-tab.active {
   color: var(--text);
-  border-bottom-color: var(--menu-accent, #3d2bff);
+  border-bottom-color: var(--accent);
 }
 
 /* ---------- Deals list ---------- */
@@ -143,7 +143,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 14px 20px;
-  background: var(--menu-accent, #3d2bff);
+  background: var(--pill);
   color: #fff;
 }
 
@@ -155,7 +155,7 @@
 .menu-share-btn {
   font-family: inherit;
   background: #fff;
-  color: var(--menu-accent, #3d2bff);
+  color: var(--pill);
   border: none;
   border-radius: 999px;
   padding: 8px 18px;
@@ -194,7 +194,7 @@
 .menu-map-link {
   display: inline-block;
   margin-top: 12px;
-  color: var(--menu-accent, #3d2bff);
+  color: var(--accent);
   font-weight: 600;
   font-size: 0.9rem;
   text-decoration: none;

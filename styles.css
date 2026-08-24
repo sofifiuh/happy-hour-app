@@ -1,60 +1,25 @@
+/**
+ * Design system tokens — see DESIGN_SYSTEM.md for the documented version
+ * (color roles, type scale, component patterns). This is a single fixed
+ * light brand look (no dark-mode variant) modeled on an editorial
+ * food-app reference: bold display type, a warm full-bleed hero, a
+ * white "paper" content sheet, and one black pill surface reserved for
+ * the primary floating action (never used for inline buttons — those
+ * stay amber).
+ */
 :root {
-  --bg: #101014;
-  --card: #1a1a20;
-  --card-border: #2a2a32;
-  --text: #f2f2f5;
-  --text-dim: #9a9aa5;
-  --accent: #ff9f43;
-  --accent-dim: #7a5230;
-  --green: #34d399;
-  --red: #f87171;
-  --sheet-bg: #17171c;
-  --menu-accent: #4f39ff;
+  --bg: #ffffff; /* page canvas */
+  --sheet-bg: #ffffff; /* content sheet below the hero */
+  --card: #f7f5f1; /* inset surfaces: inputs, chips at rest */
+  --card-border: #eae7e0; /* hairline dividers/borders */
+  --text: #14140f; /* ink — primary text */
+  --text-dim: #6b6a63; /* secondary/muted text */
+  --accent: #e0781f; /* amber — brand accent for badges, tabs, inline buttons */
+  --accent-dim: #ffe3c2; /* soft amber tint for icon circles */
+  --pill: #14140f; /* black — reserved for the one floating CTA pill/bar */
+  --green: #0f9d68; /* live/success status */
+  --red: #d64545; /* destructive */
   --radius: 14px;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #f6f5f2;
-    --card: #ffffff;
-    --card-border: #ece9e2;
-    --text: #1c1b1a;
-    --text-dim: #706c66;
-    --accent: #e0781f;
-    --accent-dim: #ffe3c2;
-    --green: #0f9d68;
-    --red: #d64545;
-    --sheet-bg: #ffffff;
-    --menu-accent: #4f39ff;
-  }
-}
-
-:root[data-theme="dark"] {
-  --bg: #101014;
-  --card: #1a1a20;
-  --card-border: #2a2a32;
-  --text: #f2f2f5;
-  --text-dim: #9a9aa5;
-  --accent: #ff9f43;
-  --accent-dim: #7a5230;
-  --green: #34d399;
-  --red: #f87171;
-  --sheet-bg: #17171c;
-  --menu-accent: #4f39ff;
-}
-
-:root[data-theme="light"] {
-  --bg: #f6f5f2;
-  --card: #ffffff;
-  --card-border: #ece9e2;
-  --text: #1c1b1a;
-  --text-dim: #706c66;
-  --accent: #e0781f;
-  --accent-dim: #ffe3c2;
-  --green: #0f9d68;
-  --red: #d64545;
-  --sheet-bg: #ffffff;
-  --menu-accent: #4f39ff;
 }
 
 * { box-sizing: border-box; }
@@ -346,10 +311,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.85rem;
   line-height: 1.4;
-  color: #1c1b1a;
+  color: var(--text);
 }
 .leaflet-popup-content a {
-  color: var(--menu-accent, #4f39ff);
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -362,7 +327,7 @@ body {
   transform: translateX(-50%);
   width: calc(100% - 48px);
   max-width: 432px;
-  background: #16130f;
+  background: var(--pill);
   color: #fdf6ee;
   border: none;
   border-radius: 999px;
