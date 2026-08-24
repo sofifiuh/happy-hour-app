@@ -8,7 +8,7 @@
 <meta http-equiv="Expires" content="0" />
 <title>Happy Hour</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<link rel="stylesheet" href="styles.css?v=11" />
+<link rel="stylesheet" href="styles.css?v=12" />
 </head>
 <body>
   <div class="app">
@@ -19,12 +19,6 @@
       </div>
       <h1 class="hero-title">HAPPY<br />HOUR<span class="hero-dot">.</span></h1>
       <p class="hero-tagline">Never miss a deal again.</p>
-
-      <div class="hero-countdown">
-        <div class="countdown-label" id="countdownLabel">No happy hours yet</div>
-        <div class="countdown-timer" id="countdownTimer">--:--:--</div>
-        <div class="countdown-sub" id="countdownSub">Add a spot to get started</div>
-      </div>
 
       <a
         class="hero-credit"
@@ -64,6 +58,7 @@
       </div>
 
       <div id="mapView" class="map-view hidden">
+        <button id="mapBackToListBtn" class="map-back-pill">☰ List</button>
         <div class="map-frame">
           <div id="map"></div>
         </div>
@@ -95,11 +90,6 @@
       </div>
     </section>
   </div>
-
-  <button id="addVenueBtn" class="cta-pill">
-    <span>Add a Spot</span>
-    <span class="cta-arrow">→</span>
-  </button>
 
   <div id="venueModal" class="modal hidden">
     <div class="modal-content">
@@ -202,6 +192,6 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="config.js"></script>
   <script src="venues-data.js?v=3"></script>
-  <script src="app.js?v=11"></script>
+  <script src="app.js?v=12"></script>
 </body>
 </html>

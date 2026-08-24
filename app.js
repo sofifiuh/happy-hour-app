@@ -70,13 +70,11 @@ let map = null;
 let mapMarkers = [];
 
 const els = {
-  countdownLabel: document.getElementById("countdownLabel"),
-  countdownTimer: document.getElementById("countdownTimer"),
-  countdownSub: document.getElementById("countdownSub"),
   venueList: document.getElementById("venueList"),
   listView: document.getElementById("listView"),
   mapView: document.getElementById("mapView"),
   mapEmpty: document.getElementById("mapEmpty"),
+  mapBackToListBtn: document.getElementById("mapBackToListBtn"),
   modal: document.getElementById("venueModal"),
   modalTitle: document.getElementById("modalTitle"),
   form: document.getElementById("venueForm"),
@@ -201,15 +199,6 @@ function getVenueOccurrence(venue, now) {
   return { status: "none" };
 }
 
-function formatDuration(ms) {
-  const totalSeconds = Math.max(0, Math.floor(ms / 1000));
-  const h = Math.floor(totalSeconds / 3600);
-  const m = Math.floor((totalSeconds % 3600) / 60);
-  const s = totalSeconds % 60;
-  if (h > 0) return `${pad(h)}:${pad(m)}:${pad(s)}`;
-  return `${pad(m)}:${pad(s)}`;
-}
-
 function formatDayTime(date, now) {
   const sameDay = date.toDateString() === now.toDateString();
   const timeStr = date.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
@@ -259,10 +248,12 @@ function getOccurrences() {
   return venues.map((v) => ({ venue: v, occ: getVenueOccurrence(v, now) }));
 }
 
-// Runs every second: cheap DOM updates only (countdown + list).
+// Re-render on real state changes only (filter/search/venue edits). A live
+// happy-hour's status can still flip between renders, so a coarse interval
+// below catches that — but nothing redraws every second anymore, since that
+// was tearing down and rebuilding the horizontal card rows mid-scroll.
 function render() {
   const occurrences = getOccurrences();
-  renderCountdown(occurrences, new Date());
   renderList(occurrences, new Date());
 }
 
@@ -270,34 +261,6 @@ function render() {
 // markers every second would close open popups and reset the viewport.
 function renderMapView() {
   if (currentView === "map") renderMap(getOccurrences());
-}
-
-function renderCountdown(occurrences, now) {
-  const live = occurrences
-    .filter((o) => o.occ.status === "live")
-    .sort((a, b) => a.occ.end - b.occ.end);
-  const upcoming = occurrences
-    .filter((o) => o.occ.status === "upcoming")
-    .sort((a, b) => a.occ.start - b.occ.start);
-
-  els.countdownTimer.classList.remove("live");
-
-  if (live.length > 0) {
-    const target = live[0];
-    els.countdownLabel.textContent = `🟢 Happening now at ${target.venue.name}`;
-    els.countdownTimer.textContent = formatDuration(target.occ.end - now);
-    els.countdownTimer.classList.add("live");
-    els.countdownSub.textContent = `Ends ${formatDayTime(target.occ.end, now)}`;
-  } else if (upcoming.length > 0) {
-    const target = upcoming[0];
-    els.countdownLabel.textContent = `Next happy hour: ${target.venue.name}`;
-    els.countdownTimer.textContent = formatDuration(target.occ.start - now);
-    els.countdownSub.textContent = formatDayTime(target.occ.start, now);
-  } else {
-    els.countdownLabel.textContent = venues.length ? "No upcoming happy hours" : "No happy hours yet";
-    els.countdownTimer.textContent = "--:--:--";
-    els.countdownSub.textContent = venues.length ? "Add days and times to a spot" : "Add a spot to get started";
-  }
 }
 
 function applyFilters(occurrences) {
@@ -511,12 +474,17 @@ function renderMap(occurrences) {
 
   els.mapEmpty.classList.toggle("hidden", located.length > 0);
 
-  if (located.length > 0) {
-    const bounds = L.latLngBounds(located.map((o) => [getLat(o.venue), getLng(o.venue)]));
-    m.fitBounds(bounds, { padding: [30, 30], maxZoom: 15 });
-  }
-
-  setTimeout(() => m.invalidateSize(), 0);
+  // invalidateSize() must run before fitBounds() — the map view is now
+  // position:fixed/full-viewport, so the container's true size (and thus
+  // which tiles Leaflet loads) is only correct after that recalculation.
+  // Fitting bounds first left it centered on stale, mostly-blank tiles.
+  setTimeout(() => {
+    m.invalidateSize();
+    if (located.length > 0) {
+      const bounds = L.latLngBounds(located.map((o) => [getLat(o.venue), getLng(o.venue)]));
+      m.fitBounds(bounds, { padding: [30, 30], maxZoom: 15 });
+    }
+  }, 0);
 }
 
 function showMapDetailCard(venue, occ, now) {
@@ -628,7 +596,6 @@ function escapeHtml(str) {
   return div.innerHTML;
 }
 
-document.getElementById("addVenueBtn").addEventListener("click", () => openModal(null));
 document.getElementById("closeModalBtn").addEventListener("click", closeModal);
 document.getElementById("cancelBtn").addEventListener("click", closeModal);
 document.getElementById("addDealBtn").addEventListener("click", () => addDealRow());
@@ -706,17 +673,21 @@ document.querySelectorAll(".filter-btn").forEach((btn) => {
   });
 });
 
+function setView(view) {
+  currentView = view;
+  document.querySelectorAll(".view-tab").forEach((b) => b.classList.toggle("active", b.dataset.view === view));
+  els.listView.classList.toggle("hidden", view !== "list");
+  els.mapView.classList.toggle("hidden", view !== "map");
+  document.body.classList.toggle("map-fullscreen", view === "map");
+  render();
+  renderMapView();
+}
+
 document.querySelectorAll(".view-tab").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".view-tab").forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-    currentView = btn.dataset.view;
-    els.listView.classList.toggle("hidden", currentView !== "list");
-    els.mapView.classList.toggle("hidden", currentView !== "map");
-    render();
-    renderMapView();
-  });
+  btn.addEventListener("click", () => setView(btn.dataset.view));
 });
+
+els.mapBackToListBtn.addEventListener("click", () => setView("list"));
 
 // ---------- Search + filters ----------
 
@@ -776,4 +747,7 @@ document.getElementById("clearFiltersBtn").addEventListener("click", () => {
 
 render();
 renderMapView();
-setInterval(render, 1000);
+// Coarse refresh so a card's live/upcoming status catches up to the clock —
+// no need for per-second precision now that the countdown display is gone,
+// and a rare interval far outruns the odds of landing mid-scroll.
+setInterval(render, 60000);
