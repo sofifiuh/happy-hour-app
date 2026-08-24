@@ -479,16 +479,39 @@ body.map-fullscreen .sheet {
   border-radius: 0;
 }
 
-/* ---------- Map pin detail card ---------- */
+/* ---------- Map card carousel ----------
+   A persistent swipeable strip of every located venue, kept in sync with
+   the map pins in both directions: tapping a pin scrolls the carousel to
+   its card (scrollIntoView), and swiping a card into view pans the map to
+   it and highlights its pin (IntersectionObserver — see app.js). */
+
+.map-card-carousel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1200;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  padding: 16px;
+  scrollbar-width: none;
+}
+.map-card-carousel::-webkit-scrollbar {
+  display: none;
+}
+.map-card-carousel.hidden {
+  display: none;
+}
 
 .map-detail-card {
-  position: fixed;
-  left: 16px;
-  right: 16px;
-  bottom: 24px;
-  max-width: 448px;
-  margin: 0 auto;
-  z-index: 1200;
+  flex: 0 0 auto;
+  width: calc(100vw - 64px);
+  max-width: 400px;
+  scroll-snap-align: center;
   background: #fff;
   border-radius: 16px;
   padding: 16px;
@@ -496,21 +519,7 @@ body.map-fullscreen .sheet {
   align-items: center;
   gap: 12px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
-}
-
-.map-detail-close {
-  position: absolute;
-  top: -46px;
-  right: 0;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: none;
-  background: #fff;
-  color: #1c1b1a;
-  font-size: 0.9rem;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .map-detail-body {
@@ -606,6 +615,11 @@ body.map-fullscreen .sheet {
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.map-pin.map-pin-active span {
+  transform: scale(1.35);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.45), 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 /* ---------- Generic buttons (modal) ---------- */

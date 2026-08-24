@@ -66,7 +66,8 @@ let activeAmenityFilters = new Set();
 let selectedDays = new Set();
 let editingId = null;
 let map = null;
-let mapMarkers = [];
+let mapMarkers = new Map(); // venue id -> Leaflet marker
+let mapCardObserver = null;
 
 const els = {
   venueList: document.getElementById("venueList"),
@@ -90,15 +91,7 @@ const els = {
   filterBtn: document.getElementById("filterBtn"),
   filterCount: document.getElementById("filterCount"),
   filterModal: document.getElementById("filterModal"),
-  mapDetailCard: document.getElementById("mapDetailCard"),
-  mapDetailClose: document.getElementById("mapDetailClose"),
-  mapDetailName: document.getElementById("mapDetailName"),
-  mapDetailDot: document.getElementById("mapDetailDot"),
-  mapDetailHours: document.getElementById("mapDetailHours"),
-  mapDetailAddress: document.getElementById("mapDetailAddress"),
-  mapDetailDirections: document.getElementById("mapDetailDirections"),
-  mapDetailMenu: document.getElementById("mapDetailMenu"),
-  mapDetailArrow: document.getElementById("mapDetailArrow"),
+  mapCardCarousel: document.getElementById("mapCardCarousel"),
 };
 
 function loadVenues() {
@@ -443,9 +436,10 @@ function renderMap(occurrences) {
   if (currentView !== "map") return;
   const m = ensureMap();
 
-  els.mapDetailCard.classList.add("hidden");
+  if (mapCardObserver) mapCardObserver.disconnect();
   mapMarkers.forEach((marker) => marker.remove());
-  mapMarkers = [];
+  mapMarkers = new Map();
+  els.mapCardCarousel.innerHTML = "";
 
   const located = applyFilters(occurrences).filter(
     (o) => typeof getLat(o.venue) === "number" && typeof getLng(o.venue) === "number"
@@ -462,11 +456,29 @@ function renderMap(occurrences) {
       iconAnchor: [9, 9],
     });
     const marker = L.marker([getLat(venue), getLng(venue)], { icon }).addTo(m);
-    marker.on("click", () => showMapDetailCard(venue, occ, now));
-    mapMarkers.push(marker);
+    marker.on("click", () => selectVenue(venue.id, { pan: true, scrollCarousel: true }));
+    mapMarkers.set(venue.id, marker);
+
+    els.mapCardCarousel.appendChild(buildMapCard(venue, occ, now));
   }
 
   els.mapEmpty.classList.toggle("hidden", located.length > 0);
+  els.mapCardCarousel.classList.toggle("hidden", located.length === 0);
+
+  // Swiping a card into view pans the map + highlights its pin, without
+  // re-scrolling the carousel (that would fight the user's own swipe).
+  // threshold 0.6 means "mostly centered", which is what scroll-snap settles on.
+  let firstFire = true;
+  mapCardObserver = new IntersectionObserver(
+    (entries) => {
+      const visible = entries.find((e) => e.isIntersecting && e.intersectionRatio >= 0.6);
+      if (!visible) return;
+      selectVenue(visible.target.dataset.venueId, { pan: !firstFire, scrollCarousel: false });
+      firstFire = false;
+    },
+    { root: els.mapCardCarousel, threshold: 0.6 }
+  );
+  els.mapCardCarousel.querySelectorAll(".map-detail-card").forEach((card) => mapCardObserver.observe(card));
 
   // invalidateSize() must run before fitBounds() — the map view is now
   // position:fixed/full-viewport, so the container's true size (and thus
@@ -481,42 +493,95 @@ function renderMap(occurrences) {
   }, 0);
 }
 
-function showMapDetailCard(venue, occ, now) {
-  els.mapDetailName.textContent = venue.name;
+function buildMapCard(venue, occ, now) {
+  const card = document.createElement("div");
+  card.className = "map-detail-card";
+  card.dataset.venueId = venue.id;
+  card.addEventListener("click", () => {
+    window.location.href = `menu.html?id=${encodeURIComponent(venue.id)}`;
+  });
 
-  els.mapDetailDot.className = "map-detail-dot";
-  if (occ.status === "upcoming") els.mapDetailDot.classList.add("upcoming");
-  if (occ.status === "none") els.mapDetailDot.classList.add("none");
+  const body = document.createElement("div");
+  body.className = "map-detail-body";
+  card.appendChild(body);
 
-  if (occ.status === "live") {
-    els.mapDetailHours.textContent = `Ends ${formatDayTime(occ.end, now)}`;
-  } else if (occ.status === "upcoming") {
-    els.mapDetailHours.textContent = `Starts ${formatDayTime(occ.start, now)}`;
-  } else {
-    els.mapDetailHours.textContent = "No upcoming date";
-  }
+  const name = document.createElement("h3");
+  name.className = "map-detail-name";
+  name.textContent = venue.name;
+  body.appendChild(name);
 
+  const meta = document.createElement("div");
+  meta.className = "map-detail-meta";
+  const dot = document.createElement("span");
+  dot.className = "map-detail-dot";
+  if (occ.status === "upcoming") dot.classList.add("upcoming");
+  if (occ.status === "none") dot.classList.add("none");
+  meta.appendChild(dot);
+  const hours = document.createElement("span");
+  if (occ.status === "live") hours.textContent = `Ends ${formatDayTime(occ.end, now)}`;
+  else if (occ.status === "upcoming") hours.textContent = `Starts ${formatDayTime(occ.start, now)}`;
+  else hours.textContent = "No upcoming date";
+  meta.appendChild(hours);
   const address = getAddress(venue);
-  els.mapDetailAddress.textContent = address;
-  els.mapDetailAddress.classList.toggle("hidden", !address);
+  if (address) {
+    const sep = document.createElement("span");
+    sep.className = "map-detail-sep";
+    sep.textContent = "·";
+    meta.appendChild(sep);
+    const addressEl = document.createElement("span");
+    addressEl.textContent = address;
+    meta.appendChild(addressEl);
+  }
+  body.appendChild(meta);
+
+  const actions = document.createElement("div");
+  actions.className = "map-detail-actions";
+  body.appendChild(actions);
 
   if (address) {
-    els.mapDetailDirections.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
-    els.mapDetailDirections.classList.remove("hidden");
-  } else {
-    els.mapDetailDirections.classList.add("hidden");
+    const directions = document.createElement("a");
+    directions.className = "map-detail-action";
+    directions.target = "_blank";
+    directions.rel = "noopener";
+    directions.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    directions.addEventListener("click", (e) => e.stopPropagation());
+    directions.innerHTML = `<span class="map-detail-action-icon">🧭</span><span>Get directions</span>`;
+    actions.appendChild(directions);
   }
 
   const menuUrl = `menu.html?id=${encodeURIComponent(venue.id)}`;
-  els.mapDetailMenu.href = menuUrl;
-  els.mapDetailArrow.href = menuUrl;
+  const viewMenu = document.createElement("a");
+  viewMenu.className = "map-detail-action";
+  viewMenu.href = menuUrl;
+  viewMenu.innerHTML = `<span class="map-detail-action-icon">📋</span><span>View menu</span>`;
+  actions.appendChild(viewMenu);
 
-  els.mapDetailCard.classList.remove("hidden");
+  const arrow = document.createElement("a");
+  arrow.className = "map-detail-arrow-btn";
+  arrow.href = menuUrl;
+  arrow.setAttribute("aria-label", "View menu");
+  arrow.textContent = "→";
+  arrow.addEventListener("click", (e) => e.stopPropagation());
+  card.appendChild(arrow);
+
+  return card;
 }
 
-els.mapDetailClose.addEventListener("click", () => {
-  els.mapDetailCard.classList.add("hidden");
-});
+function selectVenue(venueId, { pan = false, scrollCarousel = false } = {}) {
+  const marker = mapMarkers.get(venueId);
+  if (!marker) return;
+
+  mapMarkers.forEach((mk, id) => {
+    mk.getElement()?.classList.toggle("map-pin-active", id === venueId);
+  });
+
+  if (pan) map.panTo(marker.getLatLng(), { animate: true });
+
+  if (scrollCarousel) {
+    const card = els.mapCardCarousel.querySelector(`[data-venue-id="${CSS.escape(venueId)}"]`);
+    card?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+  }
+}
 
 // ---------- Modal handling ----------
 
