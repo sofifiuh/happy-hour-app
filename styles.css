@@ -152,6 +152,117 @@ body {
   padding: 20px 20px 120px;
 }
 
+.search-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.search-field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+.search-icon {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.search-field input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  outline: none;
+}
+.search-field input::placeholder {
+  color: var(--text-dim);
+}
+
+.filter-toggle-btn {
+  position: relative;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-toggle-btn.has-active {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.filter-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--pill);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-toggle-list {
+  display: flex;
+  flex-direction: column;
+}
+.filter-toggle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-family: inherit;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--card-border);
+  padding: 16px 4px;
+  font-size: 0.98rem;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+}
+.filter-toggle-check {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  border: 1.5px solid var(--card-border);
+  flex-shrink: 0;
+}
+.filter-toggle-row.active .filter-toggle-check {
+  background: var(--accent);
+  border-color: var(--accent);
+  position: relative;
+}
+.filter-toggle-row.active .filter-toggle-check::after {
+  content: "✓";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a1200;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
 .view-tabs {
   display: flex;
   gap: 8px;

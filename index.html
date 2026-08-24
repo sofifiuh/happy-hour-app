@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Happy Hour</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<link rel="stylesheet" href="styles.css?v=7" />
+<link rel="stylesheet" href="styles.css?v=8" />
 </head>
 <body>
   <div class="app">
@@ -33,6 +33,17 @@
     </header>
 
     <section class="sheet">
+      <div class="search-row">
+        <div class="search-field">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="Search for restaurants…" autocomplete="off" />
+        </div>
+        <button id="filterBtn" class="filter-toggle-btn" aria-label="Filters">
+          <span class="filter-toggle-icon">⚙</span>
+          <span id="filterCount" class="filter-count hidden">0</span>
+        </button>
+      </div>
+
       <div class="view-tabs">
         <button class="view-tab active" data-view="list">☰ List</button>
         <button class="view-tab" data-view="map">📍 Map</button>
@@ -115,9 +126,52 @@
     </div>
   </div>
 
+  <div id="filterModal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Filters</h2>
+        <button id="closeFilterModalBtn" class="btn-icon">&times;</button>
+      </div>
+
+      <div class="filter-toggle-list">
+        <button type="button" class="filter-toggle-row" data-amenity="outdoor_seating">
+          <span>🌳 Patio</span>
+          <span class="filter-toggle-check"></span>
+        </button>
+        <button type="button" class="filter-toggle-row" data-amenity="gluten_free_options">
+          <span>🌾 Gluten-free options</span>
+          <span class="filter-toggle-check"></span>
+        </button>
+        <button type="button" class="filter-toggle-row" data-amenity="has_food">
+          <span>🍽️ Food deals</span>
+          <span class="filter-toggle-check"></span>
+        </button>
+        <button type="button" class="filter-toggle-row" data-amenity="has_drink">
+          <span>🍸 Drink deals</span>
+          <span class="filter-toggle-check"></span>
+        </button>
+        <button type="button" class="filter-toggle-row" data-amenity="near_transit">
+          <span>🚇 Near transit</span>
+          <span class="filter-toggle-check"></span>
+        </button>
+        <button type="button" class="filter-toggle-row" data-amenity="parking">
+          <span>🅿️ Parking available</span>
+          <span class="filter-toggle-check"></span>
+        </button>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" id="clearFiltersBtn" class="btn-secondary">Clear all</button>
+        <div class="modal-actions-right">
+          <button type="button" id="doneFiltersBtn" class="btn-primary">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="config.js"></script>
   <script src="venues-data.js?v=3"></script>
-  <script src="app.js?v=8"></script>
+  <script src="app.js?v=9"></script>
 </body>
 </html>

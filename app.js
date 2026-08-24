@@ -34,9 +34,35 @@ function getDeals(venue) {
   return venue.happy_hour.deals || [];
 }
 
+// Amenity checks used by the filter panel. outdoor_seating/gluten_free_options
+// read straight off amenities; has_food/has_drink/near_transit/parking are
+// computed (from deals categories, transit.walkable, and "any parking key
+// is true") rather than being amenity fields themselves.
+function hasAmenity(venue, key) {
+  const amenities = venue.amenities || {};
+  switch (key) {
+    case "outdoor_seating":
+      return amenities.outdoor_seating === true;
+    case "gluten_free_options":
+      return amenities.gluten_free_options === true;
+    case "has_food":
+      return getDeals(venue).some((d) => (d.category || "food") === "food");
+    case "has_drink":
+      return getDeals(venue).some((d) => (d.category || "food") === "drink");
+    case "near_transit":
+      return amenities.transit?.walkable === true;
+    case "parking":
+      return !!amenities.parking && Object.values(amenities.parking).some(Boolean);
+    default:
+      return false;
+  }
+}
+
 let venues = loadVenues();
 let currentFilter = "all";
 let currentView = "list";
+let searchQuery = "";
+let activeAmenityFilters = new Set();
 let selectedDays = new Set();
 let editingId = null;
 let map = null;
@@ -62,6 +88,10 @@ const els = {
   endTime: document.getElementById("endTime"),
   dealsList: document.getElementById("dealsList"),
   deleteBtn: document.getElementById("deleteVenueBtn"),
+  searchInput: document.getElementById("searchInput"),
+  filterBtn: document.getElementById("filterBtn"),
+  filterCount: document.getElementById("filterCount"),
+  filterModal: document.getElementById("filterModal"),
 };
 
 function loadVenues() {
@@ -257,14 +287,28 @@ function renderCountdown(occurrences, now) {
   }
 }
 
-function filterByStatus(occurrences) {
-  if (currentFilter === "active") return occurrences.filter((o) => o.occ.status === "live");
-  if (currentFilter === "upcoming") return occurrences.filter((o) => o.occ.status === "upcoming");
-  return occurrences;
+function applyFilters(occurrences) {
+  let filtered = occurrences;
+
+  if (currentFilter === "active") filtered = filtered.filter((o) => o.occ.status === "live");
+  else if (currentFilter === "upcoming") filtered = filtered.filter((o) => o.occ.status === "upcoming");
+
+  const query = searchQuery.trim().toLowerCase();
+  if (query) {
+    filtered = filtered.filter(
+      (o) => o.venue.name.toLowerCase().includes(query) || getAddress(o.venue).toLowerCase().includes(query)
+    );
+  }
+
+  for (const key of activeAmenityFilters) {
+    filtered = filtered.filter((o) => hasAmenity(o.venue, key));
+  }
+
+  return filtered;
 }
 
 function renderList(occurrences, now) {
-  let filtered = filterByStatus(occurrences);
+  let filtered = applyFilters(occurrences);
 
   filtered = [...filtered].sort((a, b) => {
     const rank = { live: 0, upcoming: 1, none: 2 };
@@ -408,7 +452,7 @@ function renderMap(occurrences) {
   mapMarkers.forEach((marker) => marker.remove());
   mapMarkers = [];
 
-  const located = filterByStatus(occurrences).filter(
+  const located = applyFilters(occurrences).filter(
     (o) => typeof getLat(o.venue) === "number" && typeof getLng(o.venue) === "number"
   );
 
@@ -599,6 +643,62 @@ document.querySelectorAll(".view-tab").forEach((btn) => {
     render();
     renderMapView();
   });
+});
+
+// ---------- Search + filters ----------
+
+els.searchInput.addEventListener("input", () => {
+  searchQuery = els.searchInput.value;
+  render();
+  renderMapView();
+});
+
+function updateFilterButton() {
+  const count = activeAmenityFilters.size;
+  els.filterBtn.classList.toggle("has-active", count > 0);
+  els.filterCount.classList.toggle("hidden", count === 0);
+  els.filterCount.textContent = String(count);
+}
+
+function renderFilterToggles() {
+  document.querySelectorAll(".filter-toggle-row").forEach((row) => {
+    row.classList.toggle("active", activeAmenityFilters.has(row.dataset.amenity));
+  });
+}
+
+els.filterBtn.addEventListener("click", () => {
+  renderFilterToggles();
+  els.filterModal.classList.remove("hidden");
+});
+
+document.getElementById("closeFilterModalBtn").addEventListener("click", () => {
+  els.filterModal.classList.add("hidden");
+});
+document.getElementById("doneFiltersBtn").addEventListener("click", () => {
+  els.filterModal.classList.add("hidden");
+});
+els.filterModal.addEventListener("click", (e) => {
+  if (e.target === els.filterModal) els.filterModal.classList.add("hidden");
+});
+
+document.querySelectorAll(".filter-toggle-row").forEach((row) => {
+  row.addEventListener("click", () => {
+    const key = row.dataset.amenity;
+    if (activeAmenityFilters.has(key)) activeAmenityFilters.delete(key);
+    else activeAmenityFilters.add(key);
+    row.classList.toggle("active");
+    updateFilterButton();
+    render();
+    renderMapView();
+  });
+});
+
+document.getElementById("clearFiltersBtn").addEventListener("click", () => {
+  activeAmenityFilters.clear();
+  renderFilterToggles();
+  updateFilterButton();
+  render();
+  renderMapView();
 });
 
 render();
