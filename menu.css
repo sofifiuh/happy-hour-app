@@ -95,6 +95,20 @@
   text-decoration: underline;
 }
 
+.menu-verified {
+  margin: 8px 0 0;
+}
+.menu-verified a {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--green);
+  text-decoration: none;
+}
+.menu-verified a:hover {
+  text-decoration: underline;
+}
+
 .menu-tabs {
   display: flex;
   gap: 20px;
@@ -183,6 +197,67 @@
 }
 .menu-share-btn:active {
   transform: scale(0.97);
+}
+
+/* ---------- Schedule section ---------- */
+
+.menu-schedule-section {
+  padding: 24px 20px 0;
+}
+.menu-schedule-section h2 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0 0 12px;
+}
+
+.menu-schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu-schedule-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  font-size: 0.88rem;
+}
+.menu-schedule-row.today {
+  border-color: var(--green);
+  background: rgba(15, 157, 104, 0.08);
+}
+.menu-schedule-day {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+.menu-schedule-today-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--green);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.menu-schedule-hours {
+  color: var(--text-dim);
+}
+.menu-schedule-row.today .menu-schedule-hours {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.menu-suggest-link {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  text-decoration: underline;
+  text-align: center;
 }
 
 /* ---------- Map section ---------- */

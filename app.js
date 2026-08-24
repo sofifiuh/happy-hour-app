@@ -2,6 +2,7 @@ const STORAGE_KEY = "happyHourVenues";
 const SEED_VERSION_KEY = "happyHourSeedVersion";
 const SEED_VERSION = "2026-vancouver-10-places-schema-photos-amenities";
 const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const SOON_THRESHOLD_MS = 60 * 60 * 1000; // "Soon" = starting within the next hour
 
 // ---------- Venue accessors ----------
 // Venue records mirror the Google Places API response shape (see
@@ -193,7 +194,10 @@ function getVenueOccurrence(venue, now) {
   }
 
   if (activeOccurrence) return { status: "live", ...activeOccurrence };
-  if (bestUpcoming) return { status: "upcoming", ...bestUpcoming };
+  if (bestUpcoming) {
+    const soon = bestUpcoming.start - now <= SOON_THRESHOLD_MS;
+    return { status: "upcoming", soon, ...bestUpcoming };
+  }
   return { status: "none" };
 }
 
@@ -299,13 +303,21 @@ function renderCountdown(occurrences, now) {
 function applyFilters(occurrences) {
   let filtered = occurrences;
 
-  if (currentFilter === "active") filtered = filtered.filter((o) => o.occ.status === "live");
-  else if (currentFilter === "upcoming") filtered = filtered.filter((o) => o.occ.status === "upcoming");
+  if (currentFilter === "active") {
+    filtered = filtered.filter((o) => o.occ.status === "live");
+  } else if (currentFilter === "soon") {
+    filtered = filtered.filter((o) => o.occ.status === "upcoming" && o.occ.soon);
+  } else if (currentFilter === "upcoming") {
+    filtered = filtered.filter((o) => o.occ.status === "upcoming" && !o.occ.soon);
+  }
 
   const query = searchQuery.trim().toLowerCase();
   if (query) {
     filtered = filtered.filter(
-      (o) => o.venue.name.toLowerCase().includes(query) || getAddress(o.venue).toLowerCase().includes(query)
+      (o) =>
+        o.venue.name.toLowerCase().includes(query) ||
+        getAddress(o.venue).toLowerCase().includes(query) ||
+        getDeals(o.venue).some((d) => d.name.toLowerCase().includes(query))
     );
   }
 

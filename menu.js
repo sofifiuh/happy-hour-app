@@ -28,6 +28,32 @@ function getDeals(venue) {
   return venue.happy_hour?.deals || [];
 }
 
+const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+function renderSchedule(venue) {
+  const days = venue.happy_hour?.days || [];
+  const today = new Date().getDay();
+
+  els.scheduleList.innerHTML = "";
+  for (let d = 0; d < 7; d++) {
+    const row = document.createElement("div");
+    row.className = "menu-schedule-row";
+    if (d === today) row.classList.add("today");
+
+    const dayEl = document.createElement("span");
+    dayEl.className = "menu-schedule-day";
+    dayEl.innerHTML = escapeHtml(DAY_NAMES[d]) + (d === today ? ` <span class="menu-schedule-today-badge">Today</span>` : "");
+
+    const hoursEl = document.createElement("span");
+    hoursEl.className = "menu-schedule-hours";
+    hoursEl.textContent = days.includes(d) ? hoursLabel(venue) : "Closed";
+
+    row.appendChild(dayEl);
+    row.appendChild(hoursEl);
+    els.scheduleList.appendChild(row);
+  }
+}
+
 function hoursLabel(venue) {
   const { start, end } = venue.happy_hour;
   const startPeriod = start.split(":")[0] >= 12 ? "pm" : "am";
@@ -56,6 +82,10 @@ const els = {
   venueName: document.getElementById("venueName"),
   venueAddress: document.getElementById("venueAddress"),
   venuePhone: document.getElementById("venuePhone"),
+  verifiedBadge: document.getElementById("verifiedBadge"),
+  verifiedLink: document.getElementById("verifiedLink"),
+  scheduleList: document.getElementById("scheduleList"),
+  suggestUpdateLink: document.getElementById("suggestUpdateLink"),
   menuTabs: document.getElementById("menuTabs"),
   dealsList: document.getElementById("dealsList"),
   hoursLabel: document.getElementById("hoursLabel"),
@@ -71,6 +101,7 @@ if (!venue) {
   [
     ".menu-photo",
     ".menu-info",
+    ".menu-schedule-section",
     "#stickyBar",
     ".menu-map-section",
   ].forEach((sel) => document.querySelector(sel)?.classList.add("hidden"));
@@ -108,6 +139,17 @@ function init(venue) {
   } else {
     els.venuePhone.remove();
   }
+
+  if (venue.happy_hour?.verified && venue.happy_hour.verified_source) {
+    els.verifiedLink.href = venue.happy_hour.verified_source;
+    els.verifiedBadge.classList.remove("hidden");
+  }
+
+  renderSchedule(venue);
+
+  els.suggestUpdateLink.href =
+    `mailto:sofiaalvarenga.m@gmail.com?subject=${encodeURIComponent(`Happy hour update: ${venue.name}`)}` +
+    `&body=${encodeURIComponent(`Hi! I'd like to suggest an update for ${venue.name}'s happy hour info:\n\n`)}`;
 
   els.hoursLabel.textContent = hoursLabel(venue);
 

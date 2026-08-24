@@ -7,8 +7,8 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 <title>Happy Hour Menu</title>
-<link rel="stylesheet" href="styles.css?v=7" />
-<link rel="stylesheet" href="menu.css?v=3" />
+<link rel="stylesheet" href="styles.css?v=10" />
+<link rel="stylesheet" href="menu.css?v=4" />
 </head>
 <body>
   <div class="menu-app">
@@ -23,6 +23,9 @@
       <h1 class="menu-name" id="venueName">Venue name</h1>
       <a class="menu-address" id="venueAddress" target="_blank" rel="noopener"></a>
       <a class="menu-phone" id="venuePhone"></a>
+      <p id="verifiedBadge" class="menu-verified hidden">
+        <a id="verifiedLink" target="_blank" rel="noopener">✓ Verified against official menu</a>
+      </p>
 
       <div class="menu-tabs" id="menuTabs">
         <button class="menu-tab active" data-cat="food">Food</button>
@@ -30,6 +33,12 @@
       </div>
 
       <div id="dealsList" class="menu-deals-list"></div>
+    </div>
+
+    <div class="menu-schedule-section">
+      <h2>Happy Hour Times</h2>
+      <div id="scheduleList" class="menu-schedule-list"></div>
+      <a id="suggestUpdateLink" class="menu-suggest-link">Suggest an update</a>
     </div>
 
     <div class="menu-sticky-bar" id="stickyBar">
@@ -57,6 +66,6 @@
   <div id="toast" class="menu-toast hidden">Link copied</div>
 
   <script src="venues-data.js?v=3"></script>
-  <script src="menu.js?v=3"></script>
+  <script src="menu.js?v=4"></script>
 </body>
 </html>
