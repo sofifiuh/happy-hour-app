@@ -1,6 +1,6 @@
 const STORAGE_KEY = "happyHourVenues";
 const SEED_VERSION_KEY = "happyHourSeedVersion";
-const SEED_VERSION = "2026-vancouver-10-places-schema";
+const SEED_VERSION = "2026-vancouver-10-places-schema-photos";
 const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 // ---------- Venue accessors ----------
@@ -302,7 +302,11 @@ function renderVenueCard(venue, occ, now) {
 
   const icon = document.createElement("div");
   icon.className = "venue-row-icon";
-  icon.textContent = "🍸";
+  if (venue.cover_image?.url) {
+    icon.style.backgroundImage = `url("${venue.cover_image.url}")`;
+  } else {
+    icon.textContent = "🍸";
+  }
   row.appendChild(icon);
 
   const main = document.createElement("div");

@@ -50,6 +50,9 @@ const venue = venues.find((v) => v.id === venueId);
 const els = {
   app: document.querySelector(".menu-app"),
   notFound: document.getElementById("notFound"),
+  menuPhoto: document.getElementById("menuPhoto"),
+  menuPhotoIcon: document.getElementById("menuPhotoIcon"),
+  menuPhotoCredit: document.getElementById("menuPhotoCredit"),
   venueName: document.getElementById("venueName"),
   venueAddress: document.getElementById("venueAddress"),
   venuePhone: document.getElementById("venuePhone"),
@@ -77,6 +80,16 @@ if (!venue) {
 
 function init(venue) {
   document.title = `${venue.name} – Happy Hour Menu`;
+
+  if (venue.cover_image?.url) {
+    els.menuPhoto.style.backgroundImage =
+      `linear-gradient(180deg, rgba(20,12,6,0.15) 0%, rgba(15,10,7,0.35) 60%, rgba(10,7,5,0.75) 100%), ` +
+      `url("${venue.cover_image.url}")`;
+    els.menuPhotoIcon.classList.add("hidden");
+    els.menuPhotoCredit.textContent = `Photo: ${venue.cover_image.credit_name}`;
+    els.menuPhotoCredit.href = venue.cover_image.credit_url;
+    els.menuPhotoCredit.classList.remove("hidden");
+  }
 
   els.venueName.textContent = venue.name;
 

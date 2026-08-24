@@ -16,6 +16,12 @@
  *
  * `happy_hour` is our own extension — Google has no concept of it — and
  * is the only block a real Places sync should never overwrite.
+ *
+ * `cover_image` is also our own extension, not a Places field: a photo
+ * pulled from the venue's own official website (never scraped from
+ * Google/Yelp — see their respective ToS), used for display until a real
+ * Places `photos` sync exists. `website` values were verified by hand
+ * against each restaurant's real site, independent of any Places sync.
  */
 
 const PLACE_TYPES_RESTAURANT_BAR = ["restaurant", "bar", "food", "point_of_interest", "establishment"];
@@ -37,7 +43,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.2738039, lng: -123.1326024 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: null,
+    website: "https://www.ancoradining.com/falsecreek",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -45,6 +51,12 @@ const VENUES_SEED = [
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
     photos: [],
+    cover_image: {
+      url: "https://static.wixstatic.com/media/fe927f_e8401739db154961a768366f355e2d5d.jpg",
+      credit_name: "Ancora Waterfront Dining and Patio",
+      credit_url: "https://www.ancoradining.com/falsecreek",
+      source: "official_website",
+    },
     happy_hour: {
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "14:00",
@@ -77,7 +89,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.2815936, lng: -123.123754 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: null,
+    website: "https://earls.ca/locations/test-kitchen/",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -85,6 +97,12 @@ const VENUES_SEED = [
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
     photos: [],
+    cover_image: {
+      url: "https://earls.ca/wp-content/uploads/2025/03/edit_testkitchen_0144.jpg__2000x0_q80_crop-smart_subsampling-2_upscale.jpg",
+      credit_name: "Earls Test Kitchen",
+      credit_url: "https://earls.ca/locations/test-kitchen/",
+      source: "official_website",
+    },
     happy_hour: {
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "15:00",
@@ -117,7 +135,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.2784178, lng: -123.118217 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: null,
+    website: "https://www.homerstreetcafebar.com/",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -125,6 +143,12 @@ const VENUES_SEED = [
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
     photos: [],
+    cover_image: {
+      url: "https://static.wixstatic.com/media/fc95b3_a90972eda53b4d9785a37282f5584515~mv2.jpeg",
+      credit_name: "Homer St. Cafe and Bar",
+      credit_url: "https://www.homerstreetcafebar.com/",
+      source: "official_website",
+    },
     happy_hour: {
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "14:30",
@@ -157,7 +181,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.275171, lng: -123.122572 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: null,
+    website: "https://hapaizakaya.com/locations-yaletown/",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -165,6 +189,12 @@ const VENUES_SEED = [
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
     photos: [],
+    cover_image: {
+      url: "https://hapaizakaya.com/wp-content/uploads/hapa_izakaya_yaletown_patio.jpg",
+      credit_name: "Hapa Izakaya Yaletown",
+      credit_url: "https://hapaizakaya.com/locations-yaletown/",
+      source: "official_website",
+    },
     happy_hour: {
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "17:00",
@@ -197,7 +227,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.2829266, lng: -123.123798 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: null,
+    website: "https://boulevardvancouver.ca/",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -205,6 +235,12 @@ const VENUES_SEED = [
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
     photos: [],
+    cover_image: {
+      url: "https://boulevardvancouver.ca/wp-content/uploads/2024/12/Best-seafood-restaurant-in-vancouver-BC-Boulevard-Kitchen-and-Oyster-Bar-e1733947768621.jpg",
+      credit_name: "Boulevard Kitchen & Oyster Bar",
+      credit_url: "https://boulevardvancouver.ca/",
+      source: "official_website",
+    },
     happy_hour: {
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "15:00",
@@ -237,7 +273,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.2801513, lng: -123.109872 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: null,
+    website: "https://www.chambar.com/",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -245,6 +281,12 @@ const VENUES_SEED = [
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
     photos: [],
+    cover_image: {
+      url: "https://www.chambar.com/media/740x9999/COCKTAIL_LO_BlueFig_ScottLittle_IMG_5848%20Annecdote%20Blue%20Fig.jpg",
+      credit_name: "Chambar Belgian Restaurant",
+      credit_url: "https://www.chambar.com/",
+      source: "official_website",
+    },
     happy_hour: {
       days: [0, 6],
       start: "15:00",
@@ -277,7 +319,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.2756315, lng: -123.1134717 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: null,
+    website: "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -285,6 +327,12 @@ const VENUES_SEED = [
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
     photos: [],
+    cover_image: {
+      url: "https://images.rosewoodhotels.com/is/image/rwhg/RW-62",
+      credit_name: "Rosewood Hotel Georgia",
+      credit_url: "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining",
+      source: "official_website",
+    },
     happy_hour: {
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "17:00",
@@ -317,7 +365,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.273703, lng: -123.0693627 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: null,
+    website: "https://www.havanavancouver.com/",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -325,6 +373,12 @@ const VENUES_SEED = [
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
     photos: [],
+    cover_image: {
+      url: "https://images.squarespace-cdn.com/content/5dc5cfa1f5318a3348ec2af7/1737403669798-S9OBN78HPKPZY25SCABA/havana-vancouver-dining.jpeg",
+      credit_name: "Havana Vancouver",
+      credit_url: "https://www.havanavancouver.com/",
+      source: "official_website",
+    },
     happy_hour: {
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "15:00",
@@ -357,7 +411,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.2695303, lng: -123.1036822 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: null,
+    website: "https://brewhall.com/",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -365,6 +419,12 @@ const VENUES_SEED = [
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
     photos: [],
+    cover_image: {
+      url: "https://brewhall.com/wp-content/uploads/2026/05/KristinaLorissaPhotography-24.png",
+      credit_name: "Brewhall",
+      credit_url: "https://brewhall.com/",
+      source: "official_website",
+    },
     happy_hour: {
       days: [2, 3, 4, 5],
       start: "14:00",
@@ -396,7 +456,7 @@ const VENUES_SEED = [
     geometry: { location: { lat: 49.2814683, lng: -123.117244 } },
     formatted_phone_number: null,
     international_phone_number: null,
-    website: null,
+    website: "https://www.glowbalgroup.com/glowbal/",
     types: PLACE_TYPES_RESTAURANT_BAR,
     business_status: "OPERATIONAL",
     price_level: null,
@@ -404,6 +464,12 @@ const VENUES_SEED = [
     user_ratings_total: null,
     opening_hours: { weekday_text: [] },
     photos: [],
+    cover_image: {
+      url: "https://www.glowbalgroup.com/img/glow-img/resto-gallery/img2.jpg",
+      credit_name: "Glowbal",
+      credit_url: "https://www.glowbalgroup.com/glowbal/",
+      source: "official_website",
+    },
     happy_hour: {
       days: [0, 1, 2, 3, 4, 5, 6],
       start: "14:00",

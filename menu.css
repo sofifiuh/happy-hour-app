@@ -11,9 +11,14 @@
 .menu-photo {
   position: relative;
   height: 260px;
-  background:
+  /* Fallback when a venue has no cover_image — menu.js overrides this
+     inline with a real photo + the same darkening overlay when one exists. */
+  background-image:
     radial-gradient(120% 100% at 15% 0%, rgba(255, 190, 110, 0.35), transparent 55%),
     linear-gradient(160deg, #6b3a1f 0%, #2c1810 55%, #17110d 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,6 +27,19 @@
 .menu-photo-icon {
   font-size: 3.5rem;
   opacity: 0.9;
+}
+
+.menu-photo-credit {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 0.65rem;
+  color: rgba(253, 246, 238, 0.65);
+  text-decoration: none;
+  max-width: 60%;
+}
+.menu-photo-credit:hover {
+  color: rgba(253, 246, 238, 0.9);
 }
 
 .menu-back {

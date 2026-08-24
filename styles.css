@@ -44,13 +44,29 @@ body {
 /* ---------- Hero ---------- */
 
 .hero {
-  background:
-    radial-gradient(120% 100% at 15% 0%, rgba(255, 190, 110, 0.35), transparent 55%),
-    linear-gradient(160deg, #6b3a1f 0%, #2c1810 55%, #17110d 100%);
+  background-image:
+    radial-gradient(120% 100% at 15% 0%, rgba(255, 190, 110, 0.25), transparent 55%),
+    linear-gradient(180deg, rgba(20, 12, 6, 0.35) 0%, rgba(15, 10, 7, 0.55) 60%, rgba(10, 7, 5, 0.85) 100%),
+    url("https://images.unsplash.com/photo-1597290282695-edc43d0e7129?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600");
+  background-size: auto, auto, cover;
+  background-position: center, center, center;
+  background-repeat: no-repeat;
   color: #fdf6ee;
   padding: 20px 24px 32px;
   position: relative;
   overflow: hidden;
+}
+
+.hero-credit {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 0.65rem;
+  color: rgba(253, 246, 238, 0.6);
+  text-decoration: none;
+}
+.hero-credit:hover {
+  color: rgba(253, 246, 238, 0.9);
 }
 
 .hero-bar {
@@ -205,7 +221,9 @@ body {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: var(--accent-dim);
+  background-color: var(--accent-dim);
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
