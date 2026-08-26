@@ -540,29 +540,45 @@ body.map-fullscreen .sheet {
 .map-detail-meta {
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.8rem;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.map-detail-status {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #9a9aa5;
+  color: #fff;
+}
+.map-detail-status.live {
+  background: var(--green);
+}
+.map-detail-status.upcoming {
+  background: var(--accent);
+  color: #1a1200;
+}
+.map-detail-time {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1c1b1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.map-detail-address {
+  font-size: 0.78rem;
   color: #706c66;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 12px;
-}
-.map-detail-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--green);
-  flex-shrink: 0;
-}
-.map-detail-dot.upcoming {
-  background: var(--accent);
-}
-.map-detail-dot.none {
-  background: #9a9aa5;
-}
-.map-detail-sep {
-  flex-shrink: 0;
 }
 
 .map-detail-actions {

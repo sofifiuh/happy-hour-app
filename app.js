@@ -188,15 +188,6 @@ function getVenueOccurrence(venue, now) {
   return { status: "none" };
 }
 
-function formatDayTime(date, now) {
-  const sameDay = date.toDateString() === now.toDateString();
-  const timeStr = date.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
-  if (sameDay) return `Today, ${timeStr}`;
-  const tomorrow = addDays(now, 1);
-  if (date.toDateString() === tomorrow.toDateString()) return `Tomorrow, ${timeStr}`;
-  return `${DAY_NAMES[date.getDay()]}, ${timeStr}`;
-}
-
 function compressDays(days) {
   if (days.length === 7) return "Daily";
   const sorted = [...days].sort((a, b) => a - b);
@@ -445,8 +436,6 @@ function renderMap(occurrences) {
     (o) => typeof getLat(o.venue) === "number" && typeof getLng(o.venue) === "number"
   );
 
-  const now = new Date();
-
   for (const { venue, occ } of located) {
     const color = markerColor(occ.status);
     const icon = L.divIcon({
@@ -459,7 +448,7 @@ function renderMap(occurrences) {
     marker.on("click", () => selectVenue(venue.id, { pan: true, scrollCarousel: true }));
     mapMarkers.set(venue.id, marker);
 
-    els.mapCardCarousel.appendChild(buildMapCard(venue, occ, now));
+    els.mapCardCarousel.appendChild(buildMapCard(venue, occ));
   }
 
   els.mapEmpty.classList.toggle("hidden", located.length > 0);
@@ -493,7 +482,7 @@ function renderMap(occurrences) {
   }, 0);
 }
 
-function buildMapCard(venue, occ, now) {
+function buildMapCard(venue, occ) {
   const card = document.createElement("div");
   card.className = "map-detail-card";
   card.dataset.venueId = venue.id;
@@ -512,27 +501,32 @@ function buildMapCard(venue, occ, now) {
 
   const meta = document.createElement("div");
   meta.className = "map-detail-meta";
-  const dot = document.createElement("span");
-  dot.className = "map-detail-dot";
-  if (occ.status === "upcoming") dot.classList.add("upcoming");
-  if (occ.status === "none") dot.classList.add("none");
-  meta.appendChild(dot);
-  const hours = document.createElement("span");
-  if (occ.status === "live") hours.textContent = `Ends ${formatDayTime(occ.end, now)}`;
-  else if (occ.status === "upcoming") hours.textContent = `Starts ${formatDayTime(occ.start, now)}`;
-  else hours.textContent = "No upcoming date";
-  meta.appendChild(hours);
+  const status = document.createElement("span");
+  status.className = "map-detail-status";
+  if (occ.status === "live") {
+    status.classList.add("live");
+    status.textContent = "Live now";
+  } else if (occ.status === "upcoming") {
+    status.classList.add("upcoming");
+    status.textContent = "Upcoming";
+  } else {
+    status.textContent = "No date";
+  }
+  meta.appendChild(status);
+  const time = document.createElement("span");
+  time.className = "map-detail-time";
+  time.textContent =
+    occ.status === "none" ? "" : `${formatShortTime(getStart(venue))}–${formatShortTime(getEnd(venue))}`;
+  meta.appendChild(time);
+  body.appendChild(meta);
+
   const address = getAddress(venue);
   if (address) {
-    const sep = document.createElement("span");
-    sep.className = "map-detail-sep";
-    sep.textContent = "·";
-    meta.appendChild(sep);
-    const addressEl = document.createElement("span");
+    const addressEl = document.createElement("div");
+    addressEl.className = "map-detail-address";
     addressEl.textContent = address;
-    meta.appendChild(addressEl);
+    body.appendChild(addressEl);
   }
-  body.appendChild(meta);
 
   const actions = document.createElement("div");
   actions.className = "map-detail-actions";
