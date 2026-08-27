@@ -53,8 +53,16 @@ body {
   background-repeat: no-repeat;
   color: #fdf6ee;
   padding: 20px 24px 32px;
-  position: relative;
   overflow: hidden;
+  /* Pinned behind the sheet — as the list scrolls, the opaque sheet rises
+     up over this fixed layer instead of the hero scrolling away with it. */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 480px;
+  margin: 0 auto;
+  z-index: 0;
 }
 
 .hero-credit {
@@ -111,8 +119,11 @@ body {
 .sheet {
   background: var(--sheet-bg);
   border-radius: 24px 24px 0 0;
-  margin-top: -18px;
+  /* --hero-height is measured in JS (the fixed hero no longer occupies flow
+     space) so the sheet starts right below it, then scrolls up to cover it. */
+  margin-top: calc(var(--hero-height, 300px) - 18px);
   position: relative;
+  z-index: 1;
   padding: 20px 20px 32px;
 }
 

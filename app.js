@@ -807,3 +807,15 @@ renderMapView();
 // no need for per-second precision now that the countdown display is gone,
 // and a rare interval far outruns the odds of landing mid-scroll.
 setInterval(render, 60000);
+
+// The hero is position:fixed (pinned behind the sheet so the sheet scrolls
+// up to cover it) and so no longer reserves flow space on its own — measure
+// its real height and feed it to the --hero-height var the sheet's
+// margin-top depends on. Re-measure on resize since the title's clamp()
+// sizing shifts the hero's height as viewport width changes.
+const heroEl = document.querySelector(".hero");
+function updateHeroHeight() {
+  document.documentElement.style.setProperty("--hero-height", `${heroEl.offsetHeight}px`);
+}
+updateHeroHeight();
+window.addEventListener("resize", updateHeroHeight);
