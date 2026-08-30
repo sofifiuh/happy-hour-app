@@ -5,7 +5,7 @@ import path from "node:path";
 import { loadSeed, parseArgs, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
 
 const args = parseArgs(process.argv.slice(2));
-const extracted = JSON.parse(fs.readFileSync(path.join(RESULTS_DIR, "extracted.json"), "utf8"));
+const extracted = JSON.parse(fs.readFileSync(path.join(RESULTS_DIR, args.in || "extracted.json"), "utf8"));
 const venues = loadSeed();
 
 const toMin = (t) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5));

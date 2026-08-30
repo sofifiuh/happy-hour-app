@@ -13,7 +13,7 @@ const args = parseArgs(process.argv.slice(2));
 const MODEL = args.model || DEFAULT_MODEL;
 const PER_PAGE_CHARS = 12000;
 const TOTAL_CHARS = 45000;
-const OUT_FILE = path.join(RESULTS_DIR, "extracted.json");
+const OUT_FILE = path.join(RESULTS_DIR, args.out || "extracted.json");
 
 const venues = loadSeed().filter((v) => !args.only || v.id === args.only);
 fs.mkdirSync(RESULTS_DIR, { recursive: true });

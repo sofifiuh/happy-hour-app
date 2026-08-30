@@ -12,7 +12,7 @@ export const DEFAULT_MODEL = "claude-haiku-4-5";
  * tool (needed for PDF menus in the cache dir); otherwise all tools are off.
  * Resolves { ok, text, costUsd, error }.
  */
-export function callClaude(prompt, { model = DEFAULT_MODEL, allowRead = false, cwd, timeoutMs = 300000 } = {}) {
+export function callClaude(prompt, { model = DEFAULT_MODEL, allowRead = false, cwd, timeoutMs = 600000 } = {}) {
   return new Promise((resolve) => {
     const args = ["-p", "--model", model, "--output-format", "json"];
     if (allowRead) args.push("--allowedTools", "Read");
