@@ -346,15 +346,82 @@ function init(venue) {
   }
 
   let activeCat = hasFood ? "food" : "drink";
+  function setCategory(cat, slideDir) {
+    if (cat === activeCat) return;
+    if ((cat === "food" && !hasFood) || (cat === "drink" && !hasDrink)) return;
+    activeCat = cat;
+    els.menuTabs.querySelectorAll(".menu-tab").forEach((b) => b.classList.toggle("active", b.dataset.cat === cat));
+    renderDeals(deals, activeCat, venue.happy_hour?.deals_source);
+    if (slideDir) {
+      els.dealsList.classList.remove("slide-in-left", "slide-in-right");
+      void els.dealsList.offsetWidth; // restart the animation
+      els.dealsList.classList.add(slideDir === "left" ? "slide-in-left" : "slide-in-right");
+    }
+  }
   renderDeals(deals, activeCat, venue.happy_hour?.deals_source);
 
   els.menuTabs.addEventListener("click", (e) => {
     const btn = e.target.closest(".menu-tab");
-    if (!btn) return;
-    activeCat = btn.dataset.cat;
-    els.menuTabs.querySelectorAll(".menu-tab").forEach((b) => b.classList.toggle("active", b === btn));
-    renderDeals(deals, activeCat, venue.happy_hour?.deals_source);
+    if (btn) setCategory(btn.dataset.cat);
   });
+
+  // Swipe horizontally across the deals list to flip Food <-> Drinks.
+  if (hasFood && hasDrink) {
+    let t = null;
+    els.dealsList.addEventListener("touchstart", (e) => {
+      t = e.touches.length === 1 ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null;
+    }, { passive: true });
+    els.dealsList.addEventListener("touchend", (e) => {
+      if (!t) return;
+      const dx = e.changedTouches[0].clientX - t.x;
+      const dy = e.changedTouches[0].clientY - t.y;
+      t = null;
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        setCategory(dx < 0 ? "drink" : "food", dx < 0 ? "left" : "right");
+      }
+    });
+  }
+
+  // Long swipe down — page at its top, gallery closed — goes back to the
+  // map/list. history.back() restores the map view via bfcache when you
+  // arrived from a map card; direct visitors fall back to the app home.
+  const backFromPull = () => {
+    if (history.length > 1 && document.referrer.startsWith(location.origin)) history.back();
+    else window.location.href = "index.html";
+  };
+  let pull = null;
+  document.addEventListener("touchstart", (e) => {
+    const blocked = e.touches.length !== 1 ||
+      !els.galleryOverlay.classList.contains("hidden") ||
+      window.scrollY > 0;
+    pull = blocked ? null : { x: e.touches[0].clientX, y: e.touches[0].clientY, engaged: false };
+  }, { passive: true });
+  document.addEventListener("touchmove", (e) => {
+    if (!pull) return;
+    const dx = e.touches[0].clientX - pull.x;
+    const dy = e.touches[0].clientY - pull.y;
+    if (!pull.engaged) {
+      // Engage only on a clearly-downward drag; bail on upward scrolls and
+      // horizontal gestures (the deals swipe owns those).
+      if (dy < -12 || Math.abs(dx) > 24) { pull = null; return; }
+      if (dy < 12 || Math.abs(dy) < Math.abs(dx) * 1.2) return;
+      pull.engaged = true;
+      els.app.classList.add("pulling");
+    }
+    e.preventDefault(); // own the gesture — no native scroll/refresh underneath
+    els.app.style.transform = `translateY(${Math.max(0, dy) * 0.5}px)`;
+  }, { passive: false });
+  const endPull = (e) => {
+    if (!pull) return;
+    const dy = e.changedTouches ? e.changedTouches[0].clientY - pull.y : 0;
+    const engaged = pull.engaged;
+    pull = null;
+    els.app.classList.remove("pulling");
+    if (engaged && dy > 160) backFromPull();
+    else els.app.style.transform = "";
+  };
+  document.addEventListener("touchend", endPull);
+  document.addEventListener("touchcancel", endPull);
 
   els.shareBtn.addEventListener("click", () => shareVenue(venue));
 }
