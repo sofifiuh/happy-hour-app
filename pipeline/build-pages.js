@@ -7,6 +7,14 @@ import path from "node:path";
 import { readJson, REPO_ROOT } from "./lib/venues.js";
 
 const BASE = "https://sofifiuh.github.io/happy-hour-app/";
+
+// Covers are either absolute (venue's own og:image) or repo-relative
+// ("photos/x.jpg" from the Places backfill); spot pages live in spots/, so
+// relative ones must be absolutized.
+const coverUrl = (v) => {
+  const u = v.cover_image?.url;
+  return u ? (u.startsWith("http") ? u : BASE + u) : null;
+};
 const { venues } = readJson(path.join(REPO_ROOT, "venues.json"));
 const OUT = path.join(REPO_ROOT, "spots");
 fs.mkdirSync(OUT, { recursive: true });
@@ -70,7 +78,7 @@ function venuePage(v) {
     ...(v.geometry?.location ? { geo: { "@type": "GeoCoordinates", latitude: v.geometry.location.lat, longitude: v.geometry.location.lng } } : {}),
     ...(v.website ? { url: v.website } : {}),
     ...(v.formatted_phone_number ? { telephone: v.formatted_phone_number } : {}),
-    ...(v.cover_image?.url ? { image: v.cover_image.url } : {}),
+    ...(coverUrl(v) ? { image: coverUrl(v) } : {}),
     ...(v.price_level ? { priceRange: "$".repeat(v.price_level) } : {}),
   };
   return `<!doctype html>
@@ -83,7 +91,7 @@ function venuePage(v) {
 <link rel="canonical" href="${url}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
-${v.cover_image?.url ? `<meta property="og:image" content="${esc(v.cover_image.url)}">` : ""}
+${coverUrl(v) ? `<meta property="og:image" content="${esc(coverUrl(v))}">` : ""}
 <meta property="og:url" content="${url}">
 <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
 <style>${CSS}</style>
@@ -94,7 +102,7 @@ ${v.cover_image?.url ? `<meta property="og:image" content="${esc(v.cover_image.u
   <h1>${esc(v.name)}</h1>
   ${v.rating ? `<p class="meta"><span class="rating">★ ${v.rating}</span>${v.user_ratings_total ? ` (${Number(v.user_ratings_total).toLocaleString()} Google reviews)` : ""}${v.price_level ? ` · ${"$".repeat(v.price_level)}` : ""}</p>` : ""}
   <p class="meta">${esc(v.formatted_address)}${v.formatted_phone_number ? ` · ${esc(v.formatted_phone_number)}` : ""}</p>
-  ${v.cover_image?.url ? `<img class="cover" src="${esc(v.cover_image.url)}" alt="${esc(v.name)}">
+  ${coverUrl(v) ? `<img class="cover" src="${esc(coverUrl(v))}" alt="${esc(v.name)}">
   <p class="credit">Photo: <a href="${esc(v.cover_image.credit_url || v.website || "#")}" rel="noopener">${esc(v.cover_image.credit_name || v.name)}</a></p>` : ""}
 
   <h2>Happy hour times</h2>

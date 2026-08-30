@@ -1,5 +1,5 @@
 {
- "data_version": "2026-08-30-e763eb1e",
+ "data_version": "2026-08-30-43f47de2",
  "venues": [
   {
    "id": "ancora",
@@ -5249,7 +5249,12 @@
     "source_url": "https://themainonmain.com/happy-hour.php",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-main.jpg",
+    "credit_name": "The Main",
+    "credit_url": "https://maps.google.com/maps/contrib/104347832924380010368",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-08-30"
   },
   {
@@ -5509,7 +5514,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/carano.jpg",
+    "credit_name": "Carano",
+    "credit_url": "https://maps.google.com/maps/contrib/101499607235924301501",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-08-30"
   },
   {
@@ -5758,7 +5768,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/hynes-irish-pub.jpg",
+    "credit_name": "Hynes' Irish Pub",
+    "credit_url": "https://maps.google.com/maps/contrib/106798217105155305723",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-08-30"
   },
   {
@@ -5934,7 +5949,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/meet-on-main.jpg",
+    "credit_name": "MeeT on Main",
+    "credit_url": "https://maps.google.com/maps/contrib/115312865156626525354",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-08-30"
   },
   {
@@ -6429,7 +6449,12 @@
     "source_url": "http://www.alley16.com/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/alley-16.jpg",
+    "credit_name": "Alley 16 (十六堂)",
+    "credit_url": "https://maps.google.com/maps/contrib/104407920948102569111",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-08-30"
   },
   {
@@ -6817,7 +6842,12 @@
     "deals": []
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/dublin-calling.jpg",
+    "credit_name": "Dublin Calling",
+    "credit_url": "https://maps.google.com/maps/contrib/114135645099621135114",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJD6OOP9ZzhlQRtZ51tB6locg",
@@ -7085,7 +7115,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/la-terrazza.jpg",
+    "credit_name": "La Terrazza",
+    "credit_url": "https://maps.google.com/maps/contrib/105722636803007655097",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJSTSvjuFzhlQRXNTxktdwp9U",
@@ -8471,7 +8506,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/bellaggio-cafe.jpg",
+    "credit_name": "Bellaggio Cafe",
+    "credit_url": "https://maps.google.com/maps/contrib/101458838219081368824",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJIZ-EdbpzhlQRqQRe82W0TKo",
@@ -8534,7 +8574,12 @@
     "deals": []
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/maxine-s-cafe-bar.jpg",
+    "credit_name": "Maxine's Cafe & Bar",
+    "credit_url": "https://maps.google.com/maps/contrib/110061022780265383542",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJP0wBP3hxhlQR5bMiXWGm6Zs",
@@ -9105,7 +9150,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/steamworks-mount-pleasant.jpg",
+    "credit_name": "Steamworks Mount Pleasant",
+    "credit_url": "https://maps.google.com/maps/contrib/115210882756144522352",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJR3HVAnhxhlQRcMRDk1a_rIM",
@@ -9393,7 +9443,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/desi-indian-lounge.jpg",
+    "credit_name": "Desi Indian Lounge",
+    "credit_url": "https://maps.google.com/maps/contrib/104822011438452994545",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJJ19lwkFzhlQRGXt2bHZcRpQ",
@@ -9584,7 +9639,12 @@
     "deals": []
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/the-king-s-head-public-house.jpg",
+    "credit_name": "Reza Omidi",
+    "credit_url": "https://maps.google.com/maps/contrib/107224103226393356729",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJ1-V8VYFxhlQRrV7eXCmKzDg",
@@ -11429,7 +11489,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/between-2-buns-burgers.jpg",
+    "credit_name": "Between 2 Buns Burgers",
+    "credit_url": "https://maps.google.com/maps/contrib/107224427349471205809",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJc6oZR4JxhlQRRoI_dkj6Jko",
@@ -11638,7 +11703,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/carlos-o-bryan-s-neighborhood-pub.jpg",
+    "credit_name": "Carlos O'Bryan's Neighborhood Pub",
+    "credit_url": "https://maps.google.com/maps/contrib/110912716569355752954",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJ0z_tUz9xhlQRX7t01nVfqL4",
@@ -11868,7 +11938,12 @@
     "deals": []
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/memphis-blues-barbeque-house.jpg",
+    "credit_name": "A Sabbagh",
+    "credit_url": "https://maps.google.com/maps/contrib/109472182224609566677",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJ1dHk_txzhlQREPMrE5srBLM",
@@ -13307,7 +13382,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/switch.jpg",
+    "credit_name": "Jenny Tao",
+    "credit_url": "https://maps.google.com/maps/contrib/105704413599332763301",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJs6ZIdONzhlQR2rsnThDtbAI",
@@ -13389,7 +13469,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/uncle-abe-s.jpg",
+    "credit_name": "Wheels",
+    "credit_url": "https://maps.google.com/maps/contrib/101249338434805733587",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJr6-OKxtzhlQRpqNS4iSd4B0",
@@ -13766,7 +13851,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/mum-s-the-word.jpg",
+    "credit_name": "Mum's The Word",
+    "credit_url": "https://maps.google.com/maps/contrib/115538058209436016296",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJEwXWQndxhlQRRKy4phazLq0",
@@ -13895,7 +13985,12 @@
     "deals": []
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/dae-bak-bon-ga.jpg",
+    "credit_name": "Aa Aa",
+    "credit_url": "https://maps.google.com/maps/contrib/104422288212949352575",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJj6Jmb85zhlQR8ho06uTUy6U",
@@ -14053,7 +14148,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/the-sandbar-seafood-restaurant.jpg",
+    "credit_name": "The Sandbar Seafood Restaurant",
+    "credit_url": "https://maps.google.com/maps/contrib/116235635832545934709",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJ9xLK-dZzhlQRIghtObN7n-A",
@@ -14482,7 +14582,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/the-vancouver-fish-company.jpg",
+    "credit_name": "The Vancouver Fish Company",
+    "credit_url": "https://maps.google.com/maps/contrib/101780433099205882351",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJVQQVMn9xhlQRfFSHaGDN_EY",
@@ -14771,7 +14876,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/the-pawn-shop-yvr-taco-bar.jpg",
+    "credit_name": "The Pawn Shop YVR Taco Bar",
+    "credit_url": "https://maps.google.com/maps/contrib/102006524971378217212",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJdUiOqXBxhlQR9xz4YULOF10",
@@ -15018,7 +15128,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/burgoo.jpg",
+    "credit_name": "H S Madan",
+    "credit_url": "https://maps.google.com/maps/contrib/110907936149115116277",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJ9eGJ9fVxhlQRDbLkgdEI9Co",
@@ -15081,7 +15196,12 @@
     "deals": []
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/skewers-souvlaki-pita-bar.jpg",
+    "credit_name": "Sid D",
+    "credit_url": "https://maps.google.com/maps/contrib/107400996340882692132",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJqyN6rDhxhlQRqg9-Y5l1Zaw",
@@ -15456,7 +15576,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/nook-kitsilano.jpg",
+    "credit_name": "Nook Kitsilano",
+    "credit_url": "https://maps.google.com/maps/contrib/103317633036454777667",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJVSOOhhxxhlQRhMw5pYnZh_s",
@@ -15706,7 +15831,12 @@
     "deals": []
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/big-way-hot-pot-robson.jpg",
+    "credit_name": "Big Way Hot Pot (Robson)",
+    "credit_url": "https://maps.google.com/maps/contrib/105551324003421573265",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJda43-9FzhlQR8bDraTrZvXo",
@@ -16816,7 +16946,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/lavantine-restaurant-skybar.jpg",
+    "credit_name": "Lavantine Restaurant & Skybar",
+    "credit_url": "https://maps.google.com/maps/contrib/101389715094537443895",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJ79MWkpxxhlQRvkJLkRIt0yU",
@@ -16964,7 +17099,12 @@
     ]
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/nook-coal-harbour.jpg",
+    "credit_name": "Nook Coal Harbour",
+    "credit_url": "https://maps.google.com/maps/contrib/108196795447358191408",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJzZFcYSdxhlQRBEix0Q2qvxg",
@@ -17471,7 +17611,12 @@
     "amenity": "restaurant"
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/fanny-bay-oyster-bar.jpg",
+    "credit_name": "Fanny Bay Oyster Bar & Shellfish Market",
+    "credit_url": "https://maps.google.com/maps/contrib/107840746268648706221",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJP9IvbIJxhlQRMbVReWghV0E",
@@ -18369,7 +18514,12 @@
     "amenity": "restaurant"
    },
    "last_synced_at": "2026-08-30",
-   "cover_image": null
+   "cover_image": {
+    "url": "photos/joe-fortes.jpg",
+    "credit_name": "Joe Fortes Seafood & Chop House",
+    "credit_url": "https://maps.google.com/maps/contrib/114495899722095633472",
+    "source": "google_places"
+   }
   },
   {
    "place_id": "ChIJ7YoURvJxhlQRzNjtcdoRHcU",
