@@ -1141,5 +1141,131 @@
     "business_status": "OPERATIONAL",
     "matched_name": "Amber Gastown",
     "synced_at": "2026-08-30"
+  },
+  "sula-indian-restaurant-main-street": {
+    "place_id": "ChIJrQYJEzdzhlQRs1CzxiXdqLw",
+    "rating": 4.5,
+    "user_ratings_total": 3066,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Sula Indian Restaurant, Main Street",
+    "synced_at": "2026-08-30"
+  },
+  "catch-122-cafe-bistro": {
+    "place_id": "ChIJ3QdMiXlxhlQRp3roxm24JZ4",
+    "rating": 4.4,
+    "user_ratings_total": 1835,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Catch 122 Cafe Bistro",
+    "synced_at": "2026-08-30"
+  },
+  "the-main": {
+    "place_id": "ChIJ0wcWcvdzhlQRL7d6DXBUfbg",
+    "rating": 3.9,
+    "user_ratings_total": 1217,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Main",
+    "synced_at": "2026-08-30"
+  },
+  "king-taps": {
+    "place_id": "ChIJD6e1muRxhlQR7-6P33WeoEk",
+    "rating": 4.4,
+    "user_ratings_total": 884,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "King Taps",
+    "synced_at": "2026-08-30"
+  },
+  "carano": {
+    "place_id": "ChIJf99CWQd0hlQRUHD6OgbXNjc",
+    "rating": 4.6,
+    "user_ratings_total": 691,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Carano",
+    "synced_at": "2026-08-30"
+  },
+  "browns-socialhouse-point-grey": {
+    "place_id": "ChIJ_dfEyv9yhlQRbkYUfVD_TRg",
+    "rating": 4.2,
+    "user_ratings_total": 685,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Browns Socialhouse Point Grey",
+    "synced_at": "2026-08-30"
+  },
+  "provisions-italiana-at-seaside-hotel": {
+    "place_id": "ChIJ5XadYLlxhlQRCJl1jr1K80Y",
+    "rating": 4.4,
+    "user_ratings_total": 655,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Provisions Italiana at Seaside Hotel",
+    "synced_at": "2026-08-30"
+  },
+  "hynes-irish-pub": {
+    "place_id": "ChIJ0SudFRJzhlQRoCX7ZS0Ymy4",
+    "rating": 4.5,
+    "user_ratings_total": 264,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Hynes' Irish Pub",
+    "synced_at": "2026-08-30"
+  },
+  "meet-on-main": {
+    "place_id": "ChIJ_Wj-oPdzhlQRz30MQolrOa0",
+    "rating": 4.5,
+    "user_ratings_total": 3184,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "MeeT on Main",
+    "synced_at": "2026-08-30"
+  },
+  "bin-4-burger-lounge": {
+    "place_id": "ChIJA4KAIr9zhlQRiJTB-fSnrbg",
+    "rating": 4.4,
+    "user_ratings_total": 2964,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Bin 4 Burger Lounge",
+    "synced_at": "2026-08-30"
+  },
+  "fishworks": {
+    "place_id": "ChIJKUWr90xwhlQRrfrHgcmcXf0",
+    "rating": 4.5,
+    "user_ratings_total": 1647,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Fishworks",
+    "synced_at": "2026-08-30"
+  },
+  "alley-16": {
+    "place_id": "ChIJs-YzRndzhlQRSib__WeEWDI",
+    "rating": 4.8,
+    "user_ratings_total": 976,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Alley 16 (十六堂)",
+    "synced_at": "2026-08-30"
+  },
+  "bar-bravo": {
+    "place_id": "ChIJByCNoBl1hlQRAHHkoEfWfxQ",
+    "rating": 4.8,
+    "user_ratings_total": 559,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Bar Bravo",
+    "synced_at": "2026-08-30"
+  },
+  "collective-goods": {
+    "place_id": "ChIJqwhNSMF3hlQRiswagagGOIA",
+    "rating": 4.5,
+    "user_ratings_total": 433,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Collective Goods",
+    "synced_at": "2026-08-30"
   }
 }
