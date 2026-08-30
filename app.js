@@ -129,7 +129,12 @@ function sampleVenues() {
     if (!x?.deals?.length) return v;
     return {
       ...v,
-      happy_hour: { ...v.happy_hour, deals: x.deals, deals_source: { url: x.source_url, extracted_at: x.extracted_at } },
+      happy_hour: {
+        ...v.happy_hour,
+        deals: x.deals,
+        ...(x.extra_windows?.length ? { extra_windows: x.extra_windows } : {}),
+        deals_source: { url: x.source_url, extracted_at: x.extracted_at },
+      },
     };
   }).concat(discovered);
   // Google Places identity overlay: fills the Places-shaped fields the seed
@@ -137,6 +142,8 @@ function sampleVenues() {
   const withPlaces = merged.map((v) => {
     const g = places[v.id];
     if (!g) return v;
+    const va = v.amenities || {};
+    const ga = g.amenities || {};
     return {
       ...v,
       place_id: g.place_id ?? v.place_id,
@@ -144,6 +151,16 @@ function sampleVenues() {
       user_ratings_total: g.user_ratings_total ?? v.user_ratings_total,
       price_level: g.price_level ?? v.price_level,
       business_status: g.business_status ?? v.business_status,
+      // Places amenity attributes fill gaps only — hand-verified values win.
+      amenities: {
+        ...va,
+        outdoor_seating: va.outdoor_seating ?? ga.outdoor_seating ?? null,
+        serves_cocktails: va.serves_cocktails ?? ga.serves_cocktails ?? null,
+        serves_beer: va.serves_beer ?? ga.serves_beer ?? null,
+        serves_wine: va.serves_wine ?? ga.serves_wine ?? null,
+        live_music: va.live_music ?? ga.live_music ?? null,
+        good_for_groups: va.good_for_groups ?? ga.good_for_groups ?? null,
+      },
     };
   });
   return JSON.parse(JSON.stringify(withPlaces));
@@ -194,25 +211,40 @@ function addDays(date, n) {
   return d;
 }
 
-// Returns { status: 'live'|'upcoming'|'none', start, end } for a venue relative to now
+// All of a venue's recurring windows: the primary plus any extra_windows
+// (late-night etc.). A null end means "until close" — treated as 23:59.
+function venueWindows(venue) {
+  const hh = venue.happy_hour;
+  const windows = [{ days: hh.days, start: hh.start, end: hh.end }];
+  for (const w of hh.extra_windows || []) {
+    if (w?.days?.length && w.start) windows.push({ days: w.days, start: w.start, end: w.end || "23:59" });
+  }
+  return windows;
+}
+
+// Returns { status: 'live'|'upcoming'|'none', start, end } for a venue relative
+// to now, considering every window it advertises.
 function getVenueOccurrence(venue, now) {
   let bestUpcoming = null;
   let activeOccurrence = null;
+  const windows = venueWindows(venue);
 
   for (let offset = -1; offset <= 7; offset++) {
     const day = addDays(now, offset);
     const dow = day.getDay();
-    if (!getDays(venue).includes(dow)) continue;
+    for (const win of windows) {
+      if (!win.days.includes(dow)) continue;
 
-    let start = setTimeOnDate(day, getStart(venue));
-    let end = setTimeOnDate(day, getEnd(venue));
-    if (end <= start) end = addDays(end, 1); // overnight happy hour
+      let start = setTimeOnDate(day, win.start);
+      let end = setTimeOnDate(day, win.end);
+      if (end <= start) end = addDays(end, 1); // overnight happy hour
 
-    if (now >= start && now < end) {
-      activeOccurrence = { start, end };
-    } else if (start > now) {
-      if (!bestUpcoming || start < bestUpcoming.start) {
-        bestUpcoming = { start, end };
+      if (now >= start && now < end) {
+        if (!activeOccurrence || end > activeOccurrence.end) activeOccurrence = { start, end };
+      } else if (start > now) {
+        if (!bestUpcoming || start < bestUpcoming.start) {
+          bestUpcoming = { start, end };
+        }
       }
     }
   }

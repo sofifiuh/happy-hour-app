@@ -47,6 +47,17 @@
       ],
       "start": "14:30",
       "end": "17:30",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            6
+          ],
+          "start": "14:30",
+          "end": "17:00",
+          "label": "Weekend"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://sulaindianrestaurant.com/happy-hour-vancouver/",
@@ -55,19 +66,19 @@
           "name": "Spicy Laguna Lime",
           "price": "$8 / $10.50",
           "category": "drink",
-          "description": "California-style margarita with tequila, jalapeno, triple sec, agave. 1oz or 2oz pour."
+          "description": "California-style margarita with tequila, jalapeno, triple sec, agave. Poured 1oz or 2oz."
         },
         {
           "name": "Classic Giggle Juice",
           "price": "$9 / $11",
           "category": "drink",
-          "description": "Pink lemonade, Moscato, vodka, strawberry, and lime. 1oz or 2oz pour."
+          "description": "Pink lemonade, Moscato, vodka, strawberry, and lime. Poured 1oz or 2oz."
         },
         {
           "name": "Nimbu Garden",
           "price": "$7 / $10",
           "category": "drink",
-          "description": "Bombay Sapphire Mediterranean lemon gin, mint, and soda. 1oz or 2oz pour."
+          "description": "Bombay Sapphire Mediterranean lemon gin, mint, and soda. Poured 1oz or 2oz."
         },
         {
           "name": "Very Cherry Sangria",
@@ -91,13 +102,13 @@
           "name": "Monsoon Season",
           "price": "$6",
           "category": "drink",
-          "description": "Spirit-free: makrut lime, honey, acid mix, coconut soda."
+          "description": "Spirit free: makrut lime, honey, acid mix, coconut soda."
         },
         {
           "name": "Mango Passionfruit Bellini",
           "price": "$7",
           "category": "drink",
-          "description": "Spirit-free: Alfonso mango, passionfruit, and lemon."
+          "description": "Spirit free: Alfonso mango, passionfruit, and lemon."
         },
         {
           "name": "Sula Lager",
@@ -163,27 +174,33 @@
           "name": "Sev Puri",
           "price": "$11",
           "category": "food",
-          "description": "Street-food chaat topped with potatoes, chutneys, onions, and crunchy sev."
+          "description": "Street-food chaat with potatoes, chutneys, onions, and crunchy sev."
         },
         {
           "name": "Channa Saag Bowl",
           "price": "$19.50",
           "category": "food",
-          "description": "Slow-simmered chickpeas in spinach gravy, served with basmati rice, salad, onion bhajia, and raita."
+          "description": "Slow-simmered chickpeas in spinach gravy; served with basmati rice, salad, onion bhajia, and raita."
         },
         {
           "name": "Butter Chicken Bowl",
           "price": "$21",
           "category": "food",
-          "description": "Signature butter chicken curry with basmati rice, salad, onion bhajia, and raita."
+          "description": "Signature butter chicken curry; served with basmati rice, salad, onion bhajia, and raita."
         },
         {
           "name": "Chicken Tikka Bowl",
           "price": "$24",
           "category": "food",
-          "description": "Tandoor-cooked chicken tikka with basmati rice, salad, onion bhajia, and raita."
+          "description": "Tandoor-cooked chicken; served with basmati rice, salad, onion bhajia, and raita."
         }
       ]
+    },
+    "cover_image": {
+      "url": "https://sulaindianrestaurant.com/wp-content/uploads/2026/03/Best-Indian-Restaurant-Vancouver.jpg",
+      "credit_name": "Sula Indian Restaurant, Main Street",
+      "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -233,6 +250,7 @@
       ],
       "start": "15:00",
       "end": "17:00",
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.catch122.ca/home/happy-hour",
@@ -265,7 +283,7 @@
           "name": "Flat Bread Margherita",
           "price": "$15",
           "category": "food",
-          "description": "House-made thin crust pizza dough, pomodoro, basil, arugula, balsamic reduction, cheddar cheese (vegetarian; add prosciutto +8, add mushroom +6)"
+          "description": "House-made thin crust dough, pomodoro, basil, arugula, balsamic reduction, cheddar (vegetarian; add prosciutto +8, mushroom +6)"
         },
         {
           "name": "Catch Burger & Parm Fries",
@@ -274,10 +292,10 @@
           "description": "6 oz beef patty, pasilla miso aioli, grilled pineapple pico de gallo, white cheddar, arugula, house-made milk bun, parmesan fries (add house-smoked bacon +3)"
         },
         {
-          "name": "Taco",
-          "price": "$5 each",
+          "name": "Tacos",
+          "price": "$5 ea",
           "category": "food",
-          "description": "Pineapple pico de gallo, avocado aioli, pickled onion, corn tortillas; choice of pork belly, Baja fish (crispy cod), or beer battered cauliflower (vegetarian)"
+          "description": "Pork belly, baja fish (crispy cod), or cauliflower (vegetarian); pineapple pico de gallo, avocado aioli, pickled onion, corn tortillas"
         },
         {
           "name": "Truffle Fries",
@@ -307,21 +325,27 @@
           "name": "Wine by the glass",
           "price": "$8 / $11",
           "category": "drink",
-          "description": "6 oz / 9 oz; Lost Inhibitions White (Church and State Wines), Glow Rose (Bench 1775), Cabernet Sauvignon Merlot (Bench 1775)"
+          "description": "6 oz / 9 oz; Lost Inhibitions White (Church and State), Glow Rose (Bench 1775), Cabernet Sauvignon Merlot (Bench 1775)"
         },
         {
           "name": "Craft beer on tap",
           "price": "$5 / $7 / $9",
           "category": "drink",
-          "description": "12 oz / 16 oz / 22 oz; Wildeye Brewing Czech Pilsner 4.8%, North Point Brewing Strawberry Blonde Ale 5.5%"
+          "description": "12 oz / 16 oz / 22 oz; Wildeye Czech Pilsner 4.8%, North Point Strawberry Blonde Ale 5.5%"
         },
         {
           "name": "Spritz",
           "price": "$7 / $9",
           "category": "drink",
-          "description": "1 oz / 2 oz; Campari soda, sweet vermouth soda, or Aperol soda"
+          "description": "1 oz / 2 oz; Campari soda, sweet vermouth soda, Aperol soda"
         }
       ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6a4fc22b918b212e8c661cd2/t/6a4fc24b918b212e8c662b1b/1758668855137/Capa_2.png?format=1500w",
+      "credit_name": "Catch 122 Cafe Bistro",
+      "credit_url": "http://www.catch122.ca/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -375,11 +399,35 @@
       ],
       "start": "15:00",
       "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "start": "21:30",
+          "end": "23:00",
+          "label": "Late night"
+        },
+        {
+          "days": [
+            4,
+            5,
+            6
+          ],
+          "start": "21:30",
+          "end": "01:00",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://themainonmain.com/happy-hour.php",
       "deals": []
     },
+    "cover_image": null,
     "last_synced_at": "2026-08-30"
   },
   {
@@ -432,10 +480,32 @@
       ],
       "start": "14:00",
       "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://kingtaps.com/locations/lonsdale-quay/",
       "deals": []
+    },
+    "cover_image": {
+      "url": "https://kingtaps.com/wp-content/uploads/2025/05/KTLQ_LocationPage_860x410.jpg",
+      "credit_name": "King Taps",
+      "credit_url": "https://kingtaps.com/locations/lonsdale-quay/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -480,15 +550,31 @@
     "happy_hour": {
       "days": [
         0,
-        1,
-        2,
-        3,
-        4,
         5,
         6
       ],
       "start": "12:00",
       "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            2,
+            3,
+            4
+          ],
+          "start": "15:00",
+          "end": "17:00",
+          "label": "Open to 5pm"
+        },
+        {
+          "days": [
+            1
+          ],
+          "start": "12:00",
+          "end": "21:00",
+          "label": "All day Monday"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://pizzacarano.com/menu",
@@ -497,7 +583,7 @@
           "name": "Lager",
           "price": "$6",
           "category": "drink",
-          "description": "16 oz tap lager pour"
+          "description": "16 oz draught lager"
         },
         {
           "name": "Pineapple daiquiri",
@@ -521,7 +607,7 @@
           "name": "Negroni",
           "price": "$8",
           "category": "drink",
-          "description": "2oz classic or carano roasted"
+          "description": "2oz classic or Carano roasted"
         },
         {
           "name": "Olives",
@@ -533,13 +619,13 @@
           "name": "Meatball",
           "price": "$3",
           "category": "food",
-          "description": "Seasoned beef & pork meatball with marinara"
+          "description": "Seasoned beef & pork meatball"
         },
         {
           "name": "Garlic toast",
           "price": "$3",
           "category": "food",
-          "description": "House focaccia with garlic butter"
+          "description": "House focaccia, garlic butter"
         },
         {
           "name": "Anchovy toast",
@@ -557,7 +643,7 @@
           "name": "Caesar",
           "price": "$12",
           "category": "food",
-          "description": "Classic caesar salad (contains anchovies)"
+          "description": "Romaine, grana padano, mung beans, croutons, caesar dressing"
         },
         {
           "name": "Cacio e pepe",
@@ -569,28 +655,29 @@
           "name": "Alla vodka",
           "price": "$16",
           "category": "food",
-          "description": "Radiatori alla vodka"
+          "description": "Radiatori, vodka sauce, burrata, calabrian chili"
         },
         {
           "name": "Margherita",
           "price": "$16",
           "category": "food",
-          "description": "Red sauce, fior di latte, grana padano, fresh basil pizza"
+          "description": "Red sauce, fior di latte, grana padano, fresh basil"
         },
         {
           "name": "Funghi",
           "price": "$16",
           "category": "food",
-          "description": "White sauce, seasonal mushroom mix, fior di latte, chive, sherry/truffle oil pizza"
+          "description": "White sauce, seasonal mushroom mix, fior di latte, chive, sherry/truffle oil"
         },
         {
           "name": "Spicy pep",
           "price": "$16",
           "category": "food",
-          "description": "Red sauce, pepperoni, mozzarella, chili, basil, fermented honey pizza"
+          "description": "Red sauce, pepperoni, mozzarella, chili, basil, fermented honey"
         }
       ]
     },
+    "cover_image": null,
     "last_synced_at": "2026-08-30"
   },
   {
@@ -643,10 +730,39 @@
       ],
       "start": "14:00",
       "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Late night"
+        },
+        {
+          "days": [
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "00:00",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://brownssocialhouse.com/point-grey",
       "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/638a8838854a8c585e1b4594/t/63c85a2049d2b604cdc6d67b/1674074656466/STACKED+LOGO+2022+-+Black+Orange+-+Framed.png?format=1500w",
+      "credit_name": "Browns Socialhouse Point Grey",
+      "credit_url": "https://brownssocialhouse.com/point-grey",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -698,10 +814,30 @@
       ],
       "start": "15:00",
       "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.provisionsitaliana.com/menus",
       "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/66426f626fe3227dc6a2a5b6/t/698e292cec10d973a8f285d5/1770924332214/Provisions+Italiana+Logo.png?format=1500w",
+      "credit_name": "Provisions Italiana at Seaside Hotel",
+      "credit_url": "https://www.provisionsitaliana.com/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -753,6 +889,16 @@
       ],
       "start": "15:00",
       "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            4
+          ],
+          "start": "12:00",
+          "end": null,
+          "label": "Thursday all day"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "http://www.hynesirishpub.com/",
@@ -761,10 +907,11 @@
           "name": "Buckets",
           "price": "$32",
           "category": "drink",
-          "description": "Bucket of beers advertised at $32 during happy hour; contents and count not specified on the site."
+          "description": "Bucket of beers advertised alongside the happy hour listing"
         }
       ]
     },
+    "cover_image": null,
     "last_synced_at": "2026-08-30"
   },
   {
@@ -817,6 +964,22 @@
       ],
       "start": "15:00",
       "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://eatmeet.ca/happy-hour-menu/",
@@ -831,25 +994,25 @@
           "name": "Cheezy TeeM Poutine",
           "price": "$11.50",
           "category": "food",
-          "description": "Crispy fries with cashew miso gravy, whipped feta and mozza, finished with scallions (contains nuts). Add crispy onion rings $2.25"
+          "description": "Crispy fries with cashew miso gravy, whipped feta and mozza, finished with scallions (contains nuts); add crispy onion rings $2.25"
         },
         {
           "name": "The Happy Burger",
           "price": "$15.75",
           "category": "food",
-          "description": "Signature burger patty on a toasted bun with lettuce, tomato, mayo and pickles, served with crispy fries (contains gluten). Gluten-friendly bun & patty +$2.75; add cheez +$3"
+          "description": "Signature burger patty on a toasted bun with lettuce, tomato, mayo and pickles, served with crispy fries (contains gluten); gluten-friendly bun & patty +$2.75, add cheez +$3"
         },
         {
           "name": "Butter Chikkin Noodz",
           "price": "$15.75",
           "category": "food",
-          "description": "Rice noodles tossed in creamy tomato chikkin curry, topped with kachumber-spiced tomato, onion, cucumber and mint, finished with cilantro"
+          "description": "Rice noodles in creamy tomato chikkin curry, topped with kachumber-spiced tomato, onion, cucumber and mint, finished with cilantro"
         },
         {
           "name": "Mac N' Cheez Bowl",
           "price": "$13.50",
           "category": "food",
-          "description": "Macaroni in cashew cheez sauce with rawmesan, scallions and smoked salt (contains nuts). Hack your Mac +$5.75 with Italian sausage or butter chikkin"
+          "description": "Macaroni in cashew cheez sauce with rawmesan, scallions and smoked salt (contains nuts); Hack Your Mac add Italian sausage or butter chikkin $5.75"
         },
         {
           "name": "Lemon Tart",
@@ -861,7 +1024,7 @@
           "name": "Chocolate Chip Cookie & Mousse",
           "price": "$7.75",
           "category": "food",
-          "description": "In-house baked GF chocolate chip cookie with light chocolate mousse for dipping"
+          "description": "In-house baked GF chocolate chip cookie with fluffy chocolate mousse for dipping"
         },
         {
           "name": "Cucumber Elderflower Spritz",
@@ -873,7 +1036,7 @@
           "name": "Pineapple Basil Smash",
           "price": "$9.75",
           "category": "drink",
-          "description": "Beefeater gin, basil syrup and fresh pineapple juice (2oz)"
+          "description": "Signature cocktail: Beefeater gin, basil syrup and fresh pineapple juice (2oz)"
         },
         {
           "name": "Spicy Margarita",
@@ -891,19 +1054,19 @@
           "name": "Vodka Seltzer",
           "price": "$5.25",
           "category": "drink",
-          "description": "Vodka with blackberry, elderflower or peach, topped with soda spritz (1oz)"
+          "description": "Vodka with blackberry, elderflower or peach, topped with soda (1oz)"
         },
         {
           "name": "Gin Seltzer",
           "price": "$5.25",
           "category": "drink",
-          "description": "Gin with blackberry, elderflower or peach, topped with soda spritz (1oz)"
+          "description": "Gin with blackberry, elderflower or peach, topped with soda (1oz)"
         },
         {
           "name": "Tequila Seltzer",
           "price": "$5.25",
           "category": "drink",
-          "description": "Tequila with blackberry, elderflower or peach, topped with soda spritz (1oz)"
+          "description": "Tequila with blackberry, elderflower or peach, topped with soda (1oz)"
         },
         {
           "name": "Phillips Tilt Lager",
@@ -912,13 +1075,14 @@
           "description": "Draught beer, 8oz halfer $3 / 16oz sleeve $5.75"
         },
         {
-          "name": "Stone Road Red / White / Rose Blend",
+          "name": "Stone Road Red / White / Rose",
           "price": "$5 / $8.75 / $19.50",
           "category": "drink",
-          "description": "5oz glass $5 / 9oz glass $8.75 / bottle $19.50"
+          "description": "Blend by the 5oz glass $5, 9oz glass $8.75, bottle $19.50"
         }
       ]
     },
+    "cover_image": null,
     "last_synced_at": "2026-08-30"
   },
   {
@@ -971,6 +1135,36 @@
       ],
       "start": "15:00",
       "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "15:00",
+          "end": "17:00",
+          "label": "Smashed Hour burgers"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://bin4burgerlounge.com/happy-hour-menu/",
@@ -979,70 +1173,70 @@
           "name": "Bin 700 – Smashville",
           "price": "$9",
           "category": "food",
-          "description": "Smashed Hour burger (3–5 PM only): smashed premium BC beef, orange cheddar, caramelized onions, pickles, shredded lettuce, Bin 4 burger sauce. Make it a double +$4"
+          "description": "Smashed premium BC beef, orange cheddar, caramelized onions, pickles, shredded lettuce, Bin 4 burger sauce. Make it a double: $4. Smashed Hour burgers available 3–5 PM only"
         },
         {
           "name": "Bin 701 – Smash That",
           "price": "$9",
           "category": "food",
-          "description": "Smashed Hour burger (3–5 PM only): smashed premium BC beef, white cheddar, crispy onions, pickles, whiskey BBQ sauce, shredded lettuce, Bin 4 burger sauce. Make it a double +$4"
+          "description": "Smashed premium BC beef, white cheddar, crispy onions, pickles, whiskey BBQ sauce, shredded lettuce, Bin 4 burger sauce. Make it a double: $4. Smashed Hour burgers available 3–5 PM only"
         },
         {
           "name": "Bin 38 – Bin 4 Spiced Aloo Tikki",
           "price": "$8",
           "category": "food",
-          "description": "Smashed Hour burger (3–5 PM only): Bin 4 spiced panko crusted Aloo Tikki patty, potato, peas, cilantro, ginger, chilis, tangy sauce, shredded lettuce, tomato, onion"
+          "description": "Bin 4 spiced panko crusted Aloo Tikki patty, potato, peas, cilantro, ginger, chilis, tangy sauce, shredded lettuce, tomato, onion. Smashed Hour burgers available 3–5 PM only"
         },
         {
           "name": "House Fries",
           "price": "$4 | $7",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily; small | large"
+          "description": "Appetizer pricing 3–6 PM; small | large"
         },
         {
           "name": "Yam Fries",
           "price": "$5 | $8",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily; small | large"
+          "description": "Appetizer pricing 3–6 PM; small | large"
         },
         {
           "name": "Garlic Truffle Fries",
           "price": "$5 | $8",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily; small | large"
+          "description": "Appetizer pricing 3–6 PM; small | large"
         },
         {
           "name": "Roasted Red Pepper Hummus & Chips",
           "price": "$6",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily"
+          "description": "House-made roasted red pepper hummus, fried tortilla chips, cilantro"
         },
         {
           "name": "Deep Fried Pickles",
           "price": "$8",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily"
+          "description": "Breaded dill pickle, Bin 4 blackening spice, chipotle aioli"
         },
         {
           "name": "Goat Cheese Bruschetta",
           "price": "$10",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily"
+          "description": "Panko-crusted goat cheese, tomato, onion, garlic, basil, balsamic reduction, crostini"
         },
         {
           "name": "Bin 4 Poutine",
           "price": "$13",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily (listed on the happy hour menu page but not on the homepage version)"
+          "description": "House fries, cheese curds, Bin 4 gravy, green onion"
         },
         {
           "name": "Vietnamese Beef Lettuce Wraps",
           "price": "$14",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily"
+          "description": "Vietnamese spiced beef, hoisin, cabbage slaw, jalapeno, crispy wontons, baby romaine cups"
         },
         {
-          "name": "Philip's Draft",
+          "name": "Phillips Draft",
           "price": "$6.50",
           "category": "drink",
           "description": "16 oz draft beer"
@@ -1051,19 +1245,19 @@
           "name": "Pineapple Strawberry Mojito",
           "price": "$8 | $11",
           "category": "drink",
-          "description": "$8 for 1 oz, $11 for 2 oz"
+          "description": "1 oz | 2 oz"
         },
         {
           "name": "Blackberry Vanilla Lemonade",
           "price": "$8 | $11",
           "category": "drink",
-          "description": "$8 for 1 oz, $11 for 2 oz"
+          "description": "1 oz | 2 oz"
         },
         {
           "name": "Raspberry Black Currant Smash",
           "price": "$8 | $11",
           "category": "drink",
-          "description": "$8 for 1 oz, $11 for 2 oz"
+          "description": "1 oz | 2 oz"
         },
         {
           "name": "Bin 4 Margaritas",
@@ -1075,57 +1269,63 @@
           "name": "All Wine and Bubbles",
           "price": "$3 off",
           "category": "drink",
-          "description": "All wine and sparkling wine $3 off"
+          "description": "All wine and sparkling by the glass"
         },
         {
           "name": "Cucumber Mint Vodka Soda",
           "price": "$6 | $9",
           "category": "drink",
-          "description": "Zero sugar; $6 for 1 oz, $9 for 2 oz"
+          "description": "Zero sugar; 1 oz | 2 oz"
         },
         {
           "name": "Lemon Basil Gin Soda",
           "price": "$6 | $9",
           "category": "drink",
-          "description": "Zero sugar; $6 for 1 oz, $9 for 2 oz"
+          "description": "Zero sugar; 1 oz | 2 oz"
         },
         {
           "name": "Green Tea Shot",
           "price": "$5",
           "category": "drink",
-          "description": "One Sippers, 1 oz"
+          "description": "1 oz shot"
         },
         {
           "name": "Burt Reynolds Shot",
           "price": "$5",
           "category": "drink",
-          "description": "One Sippers, 1 oz"
+          "description": "1 oz shot"
         },
         {
           "name": "Pink Whitney Shot",
           "price": "$5",
           "category": "drink",
-          "description": "One Sippers, 1 oz"
+          "description": "1 oz shot"
         },
         {
           "name": "Jägermeister Shot",
           "price": "$5",
           "category": "drink",
-          "description": "One Sippers, 1 oz"
+          "description": "1 oz shot"
         },
         {
           "name": "Raspberry Lavender Fizz",
           "price": "$6",
           "category": "drink",
-          "description": "Zero proof cocktail (homepage lists $5; happy hour menu page lists $6)"
+          "description": "Zero proof"
         },
         {
           "name": "Peach Basil Smash",
           "price": "$6",
           "category": "drink",
-          "description": "Zero proof cocktail (homepage lists $5; happy hour menu page lists $6)"
+          "description": "Zero proof"
         }
       ]
+    },
+    "cover_image": {
+      "url": "https://bin4burgerlounge.com/wp-content/uploads/2025/07/Hero-Video-Still.jpg",
+      "credit_name": "Bin 4 Burger Lounge",
+      "credit_url": "http://www.bin4burgerlounge.com/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -1179,6 +1379,7 @@
       ],
       "start": "16:00",
       "end": "18:00",
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.fishworks.ca/happy-hour",
@@ -1187,43 +1388,43 @@
           "name": "Fishworks Caesar",
           "price": "$7",
           "category": "drink",
-          "description": "1oz — rosemary infused Bombay gin, horseradish, oyster sauce, house pickled beans"
+          "description": "House mixed drink, 1oz — rosemary infused Bombay gin, horseradish, oyster sauce, house pickled beans"
         },
         {
           "name": "Jamaican Mule",
           "price": "$8",
           "category": "drink",
-          "description": "2oz — ginger beer, Sailor Jerry's rum, citrus"
+          "description": "House mixed drink, 2oz — ginger beer, Sailor Jerry's rum, citrus"
         },
         {
           "name": "Paloma",
           "price": "$8",
           "category": "drink",
-          "description": "2oz — tequila, grapefruit juice, soda water, lime juice, simple syrup"
+          "description": "House mixed drink, 2oz — tequila, grapefruit juice, soda water, lime juice, simple syrup"
         },
         {
-          "name": "Rosé, Lakeside Cellars",
+          "name": "Rosé",
           "price": "$10",
           "category": "drink",
-          "description": "Okanagan Valley (Osoyoos), BC — $10 per 6oz glass or $40 bottle"
+          "description": "Lakeside Cellars, Okanagan Valley (Osoyoos), BC — 6oz glass; $40 bottle"
         },
         {
           "name": "Sparkling Piano Brut",
           "price": "$10",
           "category": "drink",
-          "description": "Stoneboat Winery, Okanagan Valley (Oliver), BC — $10 per 6oz glass or $40 bottle"
+          "description": "Stoneboat Winery, Okanagan Valley (Oliver), BC — 6oz glass; $40 bottle"
         },
         {
           "name": "House White",
           "price": "$8.50",
           "category": "drink",
-          "description": "Pinot Gris — $8.50 per 6oz glass or $32 bottle"
+          "description": "Pinot Gris — 6oz glass; $32 bottle"
         },
         {
           "name": "House Red",
           "price": "$8.50",
           "category": "drink",
-          "description": "Red blend — $8.50 per 6oz glass or $32 bottle"
+          "description": "Red blend — 6oz glass; $32 bottle"
         },
         {
           "name": "Punchbowl IPA",
@@ -1241,13 +1442,13 @@
           "name": "Shucked Oysters",
           "price": "$1.75 each",
           "category": "food",
-          "description": "On the half-shell with classic mignonette, horseradish & lemon. Maximum six per person per order"
+          "description": "On the half-shell with classic mignonette, horseradish & lemon. Maximum six per person per order."
         },
         {
-          "name": "Manila Clams or Honey Mussels",
+          "name": "Manila Clams or Honey Mussels 1lb",
           "price": "$18",
           "category": "food",
-          "description": "1lb with garlic, lemon, fresh herbs"
+          "description": "Garlic, lemon, fresh herbs"
         },
         {
           "name": "Torched Wild Sockeye Salmon",
@@ -1286,6 +1487,12 @@
           "description": "Ponzu marinated eggplant, toasted cashews"
         }
       ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/69e71f4ee32fbd7a08902182/t/69fbdcf1849bf60ac3bad0c2/1778113777525/fishworks-logo.png?format=1500w",
+      "credit_name": "Fishworks",
+      "credit_url": "http://www.fishworks.ca/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -1334,11 +1541,28 @@
       ],
       "start": "14:00",
       "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:00",
+          "end": "22:30",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "http://www.alley16.com/",
       "deals": []
     },
+    "cover_image": null,
     "last_synced_at": "2026-08-30"
   },
   {
@@ -1391,6 +1615,7 @@
       ],
       "start": "16:00",
       "end": "17:30",
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.bravovancouver.com/happy-hour",
@@ -1405,43 +1630,43 @@
           "name": "Marinated Olives",
           "price": "$5",
           "category": "food",
-          "description": "tangerine & chili; $7 on the regular menu"
+          "description": "tangerine & chili"
         },
         {
           "name": "Livia Sourdough",
           "price": "$6",
           "category": "food",
-          "description": "whipped butter, vancouver island sea salt; $8 on the regular menu"
+          "description": "whipped butter, vancouver island sea salt"
         },
         {
           "name": "Tuna Toast",
           "price": "$6",
           "category": "food",
-          "description": "black garlic, gochujang, cherry tomatoes, basil; $17 on the regular menu"
+          "description": "black garlic, gochujang, cherry tomatoes, basil"
         },
         {
           "name": "Clams",
           "price": "$24",
           "category": "food",
-          "description": "kimchi broth, fried tofu, sesame, sourdough; $29 on the regular menu"
+          "description": "kimchi broth, fried tofu, sesame, sourdough"
         },
         {
           "name": "Burrata",
           "price": "$24",
           "category": "food",
-          "description": "porcini & pine mushroom chili xo, pine nuts, sourdough; $28 on the regular menu"
+          "description": "porcini & pine mushroom chili xo, pine nuts, sourdough"
         },
         {
           "name": "Canary Rockfish",
           "price": "$24",
           "category": "food",
-          "description": "salmorejo, whipped feta, compressed melon, serrano, mint; $28 on the regular menu"
+          "description": "salmorejo, whipped feta, compressed melon, serrano, mint"
         },
         {
           "name": "Tagliolini",
           "price": "$32",
           "category": "food",
-          "description": "humboldt squid bolognese, taggiasca olives, herb ricotta; $37 on the regular menu"
+          "description": "humboldt squid bolognese, taggiasca olives, herb ricotta"
         },
         {
           "name": "Negroni",
@@ -1468,30 +1693,36 @@
           "description": "campari, lambrusco, sparkling water"
         },
         {
-          "name": "Bravo Lager (draft)",
+          "name": "Bravo Lager",
           "price": "$6",
           "category": "drink",
-          "description": "5% - 16 oz; the regular menu lists Bravo Pilsner draft at $8"
+          "description": "draft beer, 5%, 16 oz"
         },
         {
           "name": "Vivezza Petite Milo",
           "price": "$12 | $55",
           "category": "drink",
-          "description": "salt spring island, british columbia; $12 per 5oz glass / $55 bottle (regular wine list $15 | $72)"
+          "description": "salt spring island, british columbia; glass | bottle"
         },
         {
           "name": "Averill Creek Joue Red",
           "price": "$12 | $55",
           "category": "drink",
-          "description": "duncan, british columbia; $12 per 5oz glass / $55 bottle"
+          "description": "duncan, british columbia; glass | bottle"
         },
         {
           "name": "Whispering Horse Traditional L'Acadie",
           "price": "$12 | $55",
           "category": "drink",
-          "description": "fraser valley, bc; $12 per 5oz glass / $55 bottle (regular wine list $15 | $71)"
+          "description": "fraser valley, bc; glass | bottle"
         }
       ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/67216fb414797f637d0085e6/t/6723c476b6329e78020e175d/1730397302096/Oyster+Bar.jpg?format=1500w",
+      "credit_name": "Bar Bravo",
+      "credit_url": "http://bravovancouver.com/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -1543,6 +1774,20 @@
       ],
       "start": "17:00",
       "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.collectivegoods.ca/happy-hour",
@@ -1551,61 +1796,61 @@
           "name": "Parm Fries",
           "price": "$12",
           "category": "food",
-          "description": "Happy hour snack"
+          "description": "Parmesan fries"
         },
         {
           "name": "Bread & Butter",
           "price": "$6",
           "category": "food",
-          "description": "Happy hour snack"
+          "description": "Bread and butter"
         },
         {
           "name": "Shrimp Cocktail",
           "price": "$14",
           "category": "food",
-          "description": "Happy hour snack; $18 on the regular small plates menu"
+          "description": "Shrimp cocktail (regular menu price $18)"
         },
         {
           "name": "Chicken Liver Mousse",
           "price": "$18",
           "category": "food",
-          "description": "Happy hour snack; $22 on the regular small plates menu"
+          "description": "Chicken liver mousse (regular menu price $22)"
         },
         {
           "name": "Clams",
           "price": "$19",
           "category": "food",
-          "description": "Happy hour snack; $28 on the regular small plates menu"
+          "description": "Clams (regular menu price $28)"
         },
         {
           "name": "Lillet Spritz",
           "price": "$13",
           "category": "drink",
-          "description": "Happy hour cocktail"
+          "description": "Cocktail"
         },
         {
           "name": "Boulevardier",
           "price": "$13",
           "category": "drink",
-          "description": "Happy hour cocktail"
+          "description": "Cocktail"
         },
         {
           "name": "El Presidente",
           "price": "$13",
           "category": "drink",
-          "description": "Happy hour cocktail"
+          "description": "Cocktail"
         },
         {
           "name": "Huftgold Pilsner",
           "price": "$7",
           "category": "drink",
-          "description": "Happy hour beer"
+          "description": "Draft/bottled pilsner"
         },
         {
           "name": "Slowhand IPA",
           "price": "$7",
           "category": "drink",
-          "description": "Happy hour beer"
+          "description": "IPA"
         },
         {
           "name": "Gls Vin Blanc",
@@ -1623,9 +1868,15 @@
           "name": "Bottles of Wine",
           "price": "20% off",
           "category": "drink",
-          "description": "20% off bottles of wine during happy hour"
+          "description": "20% off bottles of wine"
         }
       ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/609ac6162013d659830647a8/t/613524ea7a172e50d6c29956/1630872810232/CG-FinalLogo-HandDrawn-3k-TransparentBlue.png?format=1500w",
+      "credit_name": "Collective Goods",
+      "credit_url": "https://www.collectivegoods.ca/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -1683,7 +1934,8 @@
       "source_url": "http://dublincalling.com/vancouver/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -1740,7 +1992,13 @@
       "source_url": "https://westoakrestaurant.com/pages/menu",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://westoakrestaurant.com/cdn/shop/files/WO_desktopBanner_west0ak_600x600.jpg?v=1628837767",
+      "credit_name": "WestOak",
+      "credit_url": "https://westoakrestaurant.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -1934,7 +2192,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -2118,7 +2377,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/63dc3537de004d21c5b2d5be/t/6647ac8157454e6e1a12ea04/1715973261442/The-Cascade-Room-Logo-2023.png?format=1500w",
+      "credit_name": "The Cascade Room",
+      "credit_url": "http://www.thecascade.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -2170,7 +2435,13 @@
       "source_url": "http://www.tocador.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/59f4ebb3692ebe8ce16a79f6/t/5acfa2f1575d1f0b6eec9765/1523557110165/logo-fill-teal%402x.png?format=1500w",
+      "credit_name": "Tocador",
+      "credit_url": "http://www.tocador.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -2258,7 +2529,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://ignitepizzeria.com/wp-content/uploads/2024/03/catering-ignite-pizzas-1.jpg",
+      "credit_name": "Ignite Pizzeria Yaletown",
+      "credit_url": "https://ignitepizzeria.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -2436,7 +2713,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6596f072da1b421bb16aaafd/t/659822cce0e1cf7792626507/1704469196901/logo-s.jpg?format=1500w",
+      "credit_name": "Prophecy Cocktail Bar",
+      "credit_url": "https://www.prophecybar.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -2552,7 +2835,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg",
+      "credit_name": "Davie Social",
+      "credit_url": "https://www.daviesocial.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -2619,7 +2908,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://themac.ca/wp-content/uploads/2026/08/20260705_091423-2-1-scaled-1.jpg",
+      "credit_name": "The Mac Billiards",
+      "credit_url": "https://themac.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -2701,7 +2996,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
+      "credit_name": "Guu Original Thurlow",
+      "credit_url": "https://guu-izakaya.com/Original_QR",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -3017,7 +3318,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/61b235126b51dd0b923b9429/620d8b064047132eddf9e95e_open-graph-image%20(1).png",
+      "credit_name": "Water St. Café",
+      "credit_url": "http://www.waterstreetcafe.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -3091,7 +3398,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://kintonramen.com/wp-content/uploads/2024/09/kinton_robson-01228-1-1024x683.jpg",
+      "credit_name": "KINTON RAMEN ROBSON",
+      "credit_url": "https://www.kintonramen.com/location/kinton-ramen-robson/?utm_source=google&utm_medium=organic&utm_campaign=gbp-listing&utm_content=kinton+ramen+robson",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -3215,7 +3528,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -3272,7 +3586,8 @@
       "source_url": "https://www.maxinescafebar.com/menu",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -3354,7 +3669,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
+      "credit_name": "Guu with Otokomae",
+      "credit_url": "https://guu-izakaya.com/Otokomae_QR",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -3526,7 +3847,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cocoricocafe.ca/wp-content/uploads/2025/06/cocorico-logo.png",
+      "credit_name": "Coco Rico Cafe",
+      "credit_url": "https://www.cocoricocafe.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -3596,7 +3923,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5f2b04f5007a0c0b4126d0ab/t/6a3c6a3e4ac02a00dadaed21/1782344254780/food.jpg?format=1500w",
+      "credit_name": "Capo & The Spritz",
+      "credit_url": "https://www.capoandspritz.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -3804,7 +4137,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -3939,7 +4273,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://pizzacomingsoon.com/images/PepEyes.gif",
+      "credit_name": "Pizza Coming Soon",
+      "credit_url": "http://pizzacomingsoon.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4075,7 +4415,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -4192,7 +4533,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
+      "credit_name": "Guu Davie",
+      "credit_url": "https://guu-izakaya.com/Davie_QR",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4249,7 +4596,8 @@
       "source_url": "https://thekingsheadkits.com/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -4306,7 +4654,13 @@
       "source_url": "https://www.prestonsvancouver.ca/menus",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/619e9c5fc9b09079b878c60d/t/6a1f3c5e9d129d02efd2bcbf/1780431966963/Prestons_breakfast-setup2.jpg?format=1500w",
+      "credit_name": "Prestons Restaurant + Lounge Vancouver",
+      "credit_url": "https://www.prestonsvancouver.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4471,7 +4825,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/69177c7462644178b259bde8/t/691780701c60da79402e44f2/1763147888355/Amber+Logo+White.png?format=1500w",
+      "credit_name": "Amber Gastown",
+      "credit_url": "https://amber99.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4684,7 +5044,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/6925144e26dafdde14d3a2c2_6916abb8d2861347aa74ab12_691014e720de4e6f3fec889b_CambiePub%25281%2529.avif",
+      "credit_name": "The Cambie Bar & Grill",
+      "credit_url": "http://www.cambiepubs.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4741,7 +5107,13 @@
       "source_url": "https://www.cactusclubcafe.com/locations/bentall-5/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.cactusclubcafe.com/wp-content/uploads/2015/05/052915_LocationThumbnails_260px_180px_BENT.png",
+      "credit_name": "Cactus Club Cafe",
+      "credit_url": "https://www.cactusclubcafe.com/locations/bentall-5/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4865,7 +5237,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://marcellopizzeria.com/wp-content/uploads/2019/11/ORANGE_ILLUSTRATION_02.jpg",
+      "credit_name": "Marcello Ristorante & Pizzeria",
+      "credit_url": "http://marcellopizzeria.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5016,7 +5394,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/674a1c8cba87c699b9dc1531_5.jpg",
+      "credit_name": "Mangos Kitchen Bar",
+      "credit_url": "https://www.mangosvancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5073,7 +5457,13 @@
       "source_url": "http://staugustinesvancouver.com/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://staugustinesvancouver.com/assets/logo-50782319.png",
+      "credit_name": "St. Augustine's",
+      "credit_url": "http://staugustinesvancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5130,7 +5520,13 @@
       "source_url": "https://www.cactusclubcafe.com/locations/yaletown/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.cactusclubcafe.com/wp-content/uploads/2014/11/052915_LocationThumbnails_260px_180px_YALE.png",
+      "credit_name": "Cactus Club Cafe",
+      "credit_url": "https://www.cactusclubcafe.com/locations/yaletown/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5362,7 +5758,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/67d4940ac4774ab766493675/67ed7f002bd0240044bb4d1f_624df098ab4100db88769ee8_60963218ec20c227fd57bb28_malones-taphouse_friday-night.jpg",
+      "credit_name": "Malone's Taphouse",
+      "credit_url": "http://www.malones.bc.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5502,7 +5904,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5b294ea4c258b4a050850cbc/t/674e656d6d3dc06fbd267050/1733191027522/5H6A5734.jpg?format=1500w",
+      "credit_name": "La Mezcaleria",
+      "credit_url": "http://www.lamezcaleria.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5559,7 +5967,13 @@
       "source_url": "https://www.cactusclubcafe.com/locations/broadway-ash/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.cactusclubcafe.com/wp-content/uploads/2015/05/052915_LocationThumbnails_260px_180px_ASH.png",
+      "credit_name": "Cactus Club Cafe",
+      "credit_url": "https://www.cactusclubcafe.com/locations/broadway-ash/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5639,7 +6053,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.datocms-assets.com/75587/1663193492-restaurant-vancouver-singsing-patio-server.jpg?auto=format&fit=max&w=1200",
+      "credit_name": "Sing Sing Main St",
+      "credit_url": "https://www.freehouse.co/locations/sing-sing?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5775,7 +6195,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/598406a2b8a79b3541095ce2/t/64e66555c6598f65d4730d75/1692820821633/JamjarCanteen_icon_black+%282%29.png?format=1500w",
+      "credit_name": "Jamjar Canteen Commercial Dr.",
+      "credit_url": "http://www.jamjarcanteen.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5832,7 +6258,13 @@
       "source_url": "https://biminis1975.ca/happy-hours/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://biminis1975.ca/wp-content/uploads/2025/10/biminis-home-banner.jpg",
+      "credit_name": "Bimini's Since 1975",
+      "credit_url": "https://biminis1975.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5934,7 +6366,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -6020,7 +6453,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.datocms-assets.com/75587/1663200050-restaurant-vancouver-butcherbullock-neon-sign.jpg?auto=format&fit=max&w=1200",
+      "credit_name": "The Butcher & Bullock Public House",
+      "credit_url": "https://www.freehouse.co/locations/butcher-and-bullock?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6126,7 +6565,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -6214,7 +6654,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2019/07/logo.png",
+      "credit_name": "The Charlatan",
+      "credit_url": "http://thecharlatanrestaurant.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6271,7 +6717,13 @@
       "source_url": "https://opushotel.com/eat-drink/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://opushotel.com/media_files/images/Superior_King_2.max-1900x1900.jpg",
+      "credit_name": "OPUS Vancouver",
+      "credit_url": "https://www.opushotel.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6328,7 +6780,8 @@
       "source_url": "https://www.memphisbluesbbq.com/locations/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -6398,7 +6851,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/61a954_2be19d327c4e4f28a6faec69a4677659.jpg/v1/fit/w_2500,h_1330,al_c/61a954_2be19d327c4e4f28a6faec69a4677659.jpg",
+      "credit_name": "Caffè Cittadella",
+      "credit_url": "https://www.caffecittadella.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6468,7 +6927,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/610f368219465d00e82299a1/t/610f36e4b6c78c0c2e6aa81d/1628387047184/FIORINO_Logo_Orange_onYellow.jpg?format=1500w",
+      "credit_name": "Fiorino, Italian Street Food Chinatown Vancouver",
+      "credit_url": "http://fiorinovancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6525,7 +6990,13 @@
       "source_url": "https://bombaykitchenondenman.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://bombaykitchenondenman.ca/wp-content/uploads/2026/06/Untitled-design-2.png",
+      "credit_name": "Bombay Kitchen and Bar - Denman St",
+      "credit_url": "https://bombaykitchenondenman.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6581,7 +7052,13 @@
       "source_url": "http://www.liviasweets.com/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/568aa769841abad823732cca/t/5b7de76488251b2ccdaf4ae1/1534977895868/Livia-Sweets--logo-2.jpg?format=1500w",
+      "credit_name": "LIVIA Forno e Vino",
+      "credit_url": "http://www.liviasweets.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6638,7 +7115,13 @@
       "source_url": "http://forecastcoffee.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://forecastcoffee.ca/cdn/shop/files/Forecast_Coffee_Stack.png?v=1671059059",
+      "credit_name": "Forecast Coffee - Main Street",
+      "credit_url": "http://forecastcoffee.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6695,7 +7178,13 @@
       "source_url": "https://www.noahscafe604.com/happy-hour",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.noahscafe604.com/uploads/b/b3056d90-8287-11ea-8dcd-d76ba85a9317/A50A3746-E8C0-4D21-8013-4486FE25D16F.jpg",
+      "credit_name": "Noah's Cafe",
+      "credit_url": "https://www.noahscafe604.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6837,7 +7326,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5d62eac6567e6b00010d19dd/t/68e74597dba01c1c30bced3e/1759987095874/barts+text+logo.png?format=1500w",
+      "credit_name": "Bartholomew",
+      "credit_url": "https://www.bartholomewbar.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7019,7 +7514,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/914129_203b8bd912894101a87bf2eecc36324d~mv2.jpg/v1/fill/w_2500,h_2841,al_c/914129_203b8bd912894101a87bf2eecc36324d~mv2.jpg",
+      "credit_name": "Bayside Lounge — English Bay",
+      "credit_url": "https://www.baysidelounge.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7206,7 +7707,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://ciderhouserules.ca/wp-content/uploads/2024/01/ch-brunch-300x300.jpg",
+      "credit_name": "The Cider House",
+      "credit_url": "https://ciderhouserules.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7259,7 +7766,13 @@
       "source_url": "https://www.barcorso.ca/menus",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png/v1/fit/w_2500,h_1330,al_c/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png",
+      "credit_name": "Bar Corso",
+      "credit_url": "http://www.barcorso.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7430,7 +7943,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/637bd7471883712f534a69d5/t/63880bff5e0e99379d87d31c/1669860351856/kksong_logo_bluepatternSQ.jpg?format=1500w",
+      "credit_name": "Song (by Kin Kao)",
+      "credit_url": "http://www.songyvr.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7499,7 +8018,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5e39fb52039c6a4e75b14e99/t/665f5520dfa487303d924ded/1717523744702/Main+Street+Brewing+Wordmark.jpg?format=1500w",
+      "credit_name": "Main Street Brewing Co.",
+      "credit_url": "http://mainstreetbeer.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7629,7 +8154,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -7705,7 +8231,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -7839,7 +8366,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6482752355fc7c5b659d79ed/t/689580055c0e5008d5e18e8f/1754628101180/W+Colour+Logo.png?format=1500w",
+      "credit_name": "The Watson",
+      "credit_url": "https://www.thewatson.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7937,7 +8470,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -8059,7 +8593,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -8116,7 +8651,13 @@
       "source_url": "http://www.oldspaghettifactory.ca/locations/gastown",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://oldspaghettifactory.ca/wp-content/uploads/2020/11/OSF-Gastown.jpg",
+      "credit_name": "The Old Spaghetti Factory (Gastown)",
+      "credit_url": "http://www.oldspaghettifactory.ca/locations/gastown",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8171,7 +8712,8 @@
       "source_url": "http://www.daebakbonga.com/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -8323,7 +8865,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -8380,7 +8923,13 @@
       "source_url": "https://www.minamirestaurant.com/menu",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6645475dc7e9ad16be5320a4/t/6645477ec7e9ad16be532a6c/1611857405733/Screen+Shot+2021-01-28+at+1.09.17+PM.png?format=1500w",
+      "credit_name": "Minami",
+      "credit_url": "http://minamirestaurant.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8570,7 +9119,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://i0.wp.com/topofvancouver.com/wp-content/uploads/2024/07/tov-logo-square.png",
+      "credit_name": "Top Of Vancouver Revolving Restaurant",
+      "credit_url": "https://topofvancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8724,7 +9279,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -8830,7 +9386,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.gothamsteakhouse.com/wp-content/media/gotham-opengraph.jpg",
+      "credit_name": "Gotham Steakhouse & Cocktail Bar",
+      "credit_url": "http://www.gothamsteakhouse.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8885,7 +9447,13 @@
       "source_url": "https://sylviahotel.com/restaurant-lounge/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://sylviahotel.com/wp-content/uploads/slider_2-1.jpeg",
+      "credit_name": "Sylvia Hotel, Restaurant and Lounge",
+      "credit_url": "https://sylviahotel.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8985,7 +9553,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9079,7 +9648,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/61f8647601122d66e6755648/t/6202273588dc2b5b45a78cb9/1737657598840/Di+Beppe+Italian+Pasta+Restaurant+Gastown+Vancouver.jpeg?format=1500w",
+      "credit_name": "Di Beppe Restaurant",
+      "credit_url": "http://www.dibeppe.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -9215,7 +9790,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9272,7 +9848,8 @@
       "source_url": "https://skewersgastown.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9402,7 +9979,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/622915caa2ee207bfc89860c/t/62c71336a355646980d50d29/1657213750476/Sopra+Sotto+Logo_Dark+Green_Transparent+Background_2.png?format=1500w",
+      "credit_name": "Sopra Sotto Pizzeria",
+      "credit_url": "http://www.soprasotto.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -9459,7 +10042,13 @@
       "source_url": "https://www.tableaubarbistro.com/menu",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg",
+      "credit_name": "Tableau Bar Bistro",
+      "credit_url": "http://tableaubarbistro.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -9619,7 +10208,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9797,7 +10387,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/60e648fc0a65645b7cc2db16/t/60ee631b5f7927514e3fb935/1626235675857/logo+large+tp+bg-01.png?format=1500w",
+      "credit_name": "The Red Accordion",
+      "credit_url": "http://theredaccordion.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -9852,7 +10448,8 @@
       "source_url": "http://www.bigwayhotpot.com/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9909,7 +10506,13 @@
       "source_url": "https://haraheri.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/6f810c_2fee003f992a4c2bae4babd1dfe5790d~mv2.jpg/v1/fill/w_2500,h_1666,al_c/6f810c_2fee003f992a4c2bae4babd1dfe5790d~mv2.jpg",
+      "credit_name": "Eat Bar & Patio Haraheri",
+      "credit_url": "https://haraheri.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10015,7 +10618,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.shopify.com/s/files/1/0494/0723/0110/files/Como_Logo_Rotated2.png?height=628&pad_color=f7ecde&v=1614315207&width=1200",
+      "credit_name": "Como Taperia",
+      "credit_url": "https://www.comotaperia.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10145,7 +10754,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/65a72a0678f3ca4b97f809ce/t/6949f0039c3bac7cab8cda9f/1766453251463/Alouette+Bistro+logo+1+-+Red+version.png?format=1500w",
+      "credit_name": "Alouette Bistro",
+      "credit_url": "http://alouettevancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10200,7 +10815,13 @@
       "source_url": "https://tuttorestaurant.ca/menus",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5e696210b248185a7740eb9e/t/6908ed36e801ae5dae811354/1762192694463/TUTTO+LOGO_RedCircle-Sept+2025.png?format=1500w",
+      "credit_name": "Tutto Italian Restaurant & Bar",
+      "credit_url": "http://www.tuttorestaurant.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10426,7 +11047,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6197f60605fe1b16f9691fe5/t/61a0093bae588a3d464e910f/1637878075097/Carlino+Best+Italian+Restaurant+Downton+Vancouver+Coal+Harbour+Shangri-La+Pasta.jpg?format=1500w",
+      "credit_name": "Carlino Restaurant",
+      "credit_url": "http://www.carlinorestaurant.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10480,7 +11107,13 @@
       "source_url": "https://www.zoomakyvr.com/drinks",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/671af9d0bc57847c268ffd6c/t/672d9aaadb431b2e123f458d/1731041962507/Zoomak+Side+Sign+Logo_Logo+copy.png?format=1500w",
+      "credit_name": "Zoomak Korean Tavern",
+      "credit_url": "http://zoomakyvr.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10652,7 +11285,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5564c138e4b0b3813af4e855/t/5ecc00722dd571390c7ba0be/1590427774631/Novo_Italian_Social_01.jpg?format=1500w",
+      "credit_name": "Novo Italian",
+      "credit_url": "http://www.novoitalian.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10709,7 +11348,13 @@
       "source_url": "http://streethawker.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.streethawker.ca/uploads/b/47d14d50-dd7e-11ed-84ba-93a1c49a3583/streethawker-03029.jpeg",
+      "credit_name": "Street Hawker - Mount Pleasant",
+      "credit_url": "http://streethawker.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10868,7 +11513,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -11010,7 +11656,8 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -11067,7 +11714,13 @@
       "source_url": "https://bhouse.ca/menu",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://bhouse.ca/images/1200x630/17240969/editedIMG_70252-cHRNbxfHQNl31phM4aQi4Q.JPG",
+      "credit_name": "B House Restaurant",
+      "credit_url": "http://www.bhouse.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -11305,7 +11958,13 @@
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://thesequel.ca/wp-content/uploads/2025/05/61_IMAGE_THE-SEQUEL_SOCIAL-SHOOT_25-02-18_CHARLESRNASBY-scaled.jpg",
+      "credit_name": "The Sequel - Kitchen & Bar",
+      "credit_url": "https://thesequel.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -11489,7 +12148,8 @@
       "id": 4842937821,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -11558,7 +12218,13 @@
       "id": 6927768691,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/65676973c6846d7487e02256/t/656f95aa3358383ff0cbe919/1740440044434/Asset+1.png?format=1500w",
+      "credit_name": "Hydra Estiatorio Mediterranean",
+      "credit_url": "https://www.hydravancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -11694,7 +12360,13 @@
       "id": 4390232892,
       "amenity": "pub"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5db9f5cc0e8af224964d841a/t/5e45e75a78bd103b8b528dc8/1581639527237/Pourhouse-Restaurant-Cocktail-Bar-Gastown-Vancouver.jpg?format=1500w",
+      "credit_name": "Pourhouse",
+      "credit_url": "https://www.pourhousevancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -11846,7 +12518,13 @@
       "id": 6437608536,
       "amenity": "bar"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://gretabar.com/wp-content/uploads/2026/08/GRETA-X-LE-BURGER-WEEK-Socials2-1.png",
+      "credit_name": "Greta YVR",
+      "credit_url": "https://www.gretabar.com/locations/vancouver",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -12005,7 +12683,13 @@
       "id": 4859979322,
       "amenity": "pub"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/690fdab96331267ef7e86a2f/t/690fdac76331267ef7e86c07/1757000454899/6A-Kitchen-and-Bar.png?format=1500w",
+      "credit_name": "Six Acres",
+      "credit_url": "https://www.sixacres.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -12081,7 +12765,13 @@
       "id": 12164513044,
       "amenity": "bar"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg",
+      "credit_name": "The Boxcar",
+      "credit_url": "https://www.boxcarvancouver.com",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -12246,7 +12936,13 @@
       "id": 3932735573,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.brixandmortar.ca/wp-content/uploads/2021/03/logo1x_01.png",
+      "credit_name": "Brix & Mortar",
+      "credit_url": "https://www.brixandmortar.ca",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -12315,7 +13011,8 @@
       "id": 3690929433,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -12427,6 +13124,12 @@
       "id": 11079577905,
       "amenity": "bar"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a63d5f471c7d77bf326cb9d_622a3aa6bcd48977c810a6a4_Share%20BG.jpg",
+      "credit_name": "The 515 Bar",
+      "credit_url": "https://the515bar.ca/",
+      "source": "official_website"
+    }
   }
 ]

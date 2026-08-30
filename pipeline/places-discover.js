@@ -62,7 +62,7 @@ const INCLUDED_TYPES = ["bar", "pub", "wine_bar", "night_club", "restaurant"];
 const EXCLUDE_TYPES = new Set(["fast_food_restaurant", "cafe", "coffee_shop", "bakery", "meal_takeaway", "meal_delivery", "ice_cream_shop", "sandwich_shop"]);
 const BAR_TYPES = new Set(["bar", "pub", "wine_bar", "night_club"]);
 const PRICE_LEVELS = { PRICE_LEVEL_FREE: 0, PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 };
-const FIELDS = "places.id,places.displayName,places.location,places.formattedAddress,places.websiteUri,places.rating,places.userRatingCount,places.priceLevel,places.businessStatus,places.types,places.nationalPhoneNumber";
+const FIELDS = "places.id,places.displayName,places.location,places.formattedAddress,places.websiteUri,places.rating,places.userRatingCount,places.priceLevel,places.businessStatus,places.types,places.nationalPhoneNumber,places.outdoorSeating,places.servesCocktails,places.servesBeer,places.servesWine,places.liveMusic,places.goodForGroups";
 
 // Known venues: exact place_id dedupe plus name/website fallback.
 const seed = loadSeed();
@@ -123,6 +123,14 @@ for (const p of byId.values()) {
       user_ratings_total: p.userRatingCount ?? null,
       price_level: PRICE_LEVELS[p.priceLevel] ?? null,
       business_status: p.businessStatus ?? null,
+      amenities: {
+        outdoor_seating: p.outdoorSeating ?? null,
+        serves_cocktails: p.servesCocktails ?? null,
+        serves_beer: p.servesBeer ?? null,
+        serves_wine: p.servesWine ?? null,
+        live_music: p.liveMusic ?? null,
+        good_for_groups: p.goodForGroups ?? null,
+      },
       matched_name: name,
       synced_at: new Date().toISOString().slice(0, 10),
     },

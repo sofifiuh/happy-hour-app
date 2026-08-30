@@ -15,23 +15,25 @@ const PER_PAGE_CHARS = 12000;
 const TOTAL_CHARS = 45000;
 const OUT_FILE = path.join(RESULTS_DIR, args.out || "extracted.json");
 
-const only = args.only ? String(args.only).split(",") : null;
-// --venues <path.json>: run over candidate stubs (discovery) instead of the seed
-const allVenues = args.venues ? JSON.parse(fs.readFileSync(args.venues, "utf8")) : loadSeed();
-const venues = allVenues.filter((v) => !only || only.includes(v.id));
+const venues = selectVenues(args);
 fs.mkdirSync(RESULTS_DIR, { recursive: true });
 // previous is always the merge base; --force only bypasses the skip-if-done check.
-const previous = fs.existsSync(OUT_FILE) ? JSON.parse(fs.readFileSync(OUT_FILE, "utf8")) : {};
+const previous = readJson(OUT_FILE, {});
 
 const SCHEMA = `{
   "found": boolean,            // true only if this venue's happy hour was located
   "confidence": number,        // 0.0-1.0, how confident you are in the extraction
   "source_url": string|null,   // URL of the page the info came from
   "happy_hour": null | {
-    "days": number[],          // days of week it runs; 0=Sunday, 1=Monday ... 6=Saturday
+    "days": number[],          // days of week the PRIMARY window runs; 0=Sunday ... 6=Saturday
     "start": "HH:MM",          // 24-hour clock, e.g. "15:00"
     "end": "HH:MM",
-    "deals": [ { "name": string, "price": string, "category": "food"|"drink", "description": string } ]
+    "deals": [ { "name": string, "price": string, "category": "food"|"drink", "description": string } ],
+    "extra_windows": [         // additional recurring windows beyond the primary (late-night etc.); [] if none
+      { "days": number[], "start": "HH:MM", "end": "HH:MM"|null, "label": string }
+      // end null means "until close". label is short, e.g. "Late night". Only
+      // windows the venue itself advertises — never invent one.
+    ]
   },
   "notes": string              // ambiguities: second late-night window, seasonal, per-location caveats, etc.
 }`;
@@ -56,7 +58,7 @@ ${SCHEMA}
 Rules:
 1. Extract only a genuine HAPPY HOUR (may be called happy hour, social hour, aperitivo hour, etc.). Lunch specials, brunch menus, daily prix-fixe, or event nights do NOT count unless the venue itself labels them happy hour.
 2. Restaurant-group websites often list sister restaurants in shared navigation or footers. Ignore anything that belongs to a different restaurant or a different location of this chain — the extraction must match the venue name AND address above. If the site only shows another location's happy hour, set found=false and explain in notes.
-3. If there are multiple happy hour windows (e.g. afternoon + late night), put the PRIMARY afternoon/early-evening window in happy_hour and describe the others in notes.
+3. If there are multiple happy hour windows (e.g. afternoon + late night, or different weekend hours), put the PRIMARY afternoon/early-evening window in days/start/end and every other advertised window in extra_windows (end null when it runs "until close"). Do not repeat the primary window there.
 4. days uses 0=Sunday through 6=Saturday. "Daily"/"every day" = [0,1,2,3,4,5,6]. "Weekdays" = [1,2,3,4,5].
 5. Times are 24-hour "HH:MM". "5pm" = "17:00". If an end time is "close"/"late", use the venue's stated closing time if shown, otherwise omit the window entirely and set found=false with a note.
 6. Deal prices are short strings exactly as advertised: "$8", "$3 off", "50% off", "$11-19", "$3 ea". category is "food" or "drink". Keep deal names short (the item), details in description.

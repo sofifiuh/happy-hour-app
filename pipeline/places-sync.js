@@ -58,7 +58,7 @@ await mapConcurrent(venues, 5, async (v) => {
     data = await curlJson("https://places.googleapis.com/v1/places:searchText", {
       headers: [
         `X-Goog-Api-Key: ${KEY}`,
-        "X-Goog-FieldMask: places.id,places.displayName,places.location,places.rating,places.userRatingCount,places.priceLevel,places.businessStatus",
+        "X-Goog-FieldMask: places.id,places.displayName,places.location,places.rating,places.userRatingCount,places.priceLevel,places.businessStatus,places.outdoorSeating,places.servesCocktails,places.servesBeer,places.servesWine,places.liveMusic,places.goodForGroups",
       ],
       body,
     });
@@ -84,6 +84,14 @@ await mapConcurrent(venues, 5, async (v) => {
     user_ratings_total: r.userRatingCount ?? null,
     price_level: PRICE_LEVELS[r.priceLevel] ?? null,
     business_status: r.businessStatus ?? null,
+    amenities: {
+      outdoor_seating: r.outdoorSeating ?? null,
+      serves_cocktails: r.servesCocktails ?? null,
+      serves_beer: r.servesBeer ?? null,
+      serves_wine: r.servesWine ?? null,
+      live_music: r.liveMusic ?? null,
+      good_for_groups: r.goodForGroups ?? null,
+    },
     matched_name: rName,
     synced_at: TODAY,
   };
