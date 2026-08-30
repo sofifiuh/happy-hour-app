@@ -23,7 +23,7 @@ const args = parseArgs(process.argv.slice(2));
 const MIN_CONF = Number(args["min-confidence"]) || 0.8;
 const DISC_MIN_CONF = Number(args["discovery-min-confidence"]) || 0.7;
 const extracted = readJson(path.join(RESULTS_DIR, args.in || "extracted-opus.json"));
-const OUT = path.join(REPO_ROOT, "venues-extracted.js");
+
 const DISCOVERED_STORE = path.join(REPO_ROOT, "pipeline", "discovered.json");
 const PLACES_STORE = path.join(REPO_ROOT, "pipeline", "places.json");
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -171,30 +171,53 @@ if (coversAdded) fs.writeFileSync(DISCOVERED_STORE, JSON.stringify(discovered, n
 
 fs.writeFileSync(PLACES_STORE, JSON.stringify(places, null, 2));
 
-// --- Render the generated layer.
-const banner = `// GENERATED FILE — do not edit by hand. Regenerate with: node pipeline/writeback.js
-//
-// Machine-written data layer merged over the hand-verified seed at app seed
-// time (see sampleVenues() in app.js):
-// - VENUES_EXTRACTED: per-venue deal lists read from each venue's own
-//   official menu, applied ONLY where the automated read reproduced the
-//   hand-verified schedule exactly (corroboration). Source page credited
-//   per venue. The verified happy_hour schedule itself is never changed here.
-// - VENUES_DISCOVERED: venues from pipeline/discovered.json (the committed
-//   store maintained by pipeline/discover.js + writeback), verified: false
-//   until a human checks them.
-// - VENUES_PLACES: Google Places identity fields (place_id, rating, review
-//   count, price level) from pipeline/places-sync.js. Refreshed by the
-//   re-sync loop per Google's caching terms; place_id is the one field
-//   that may be stored indefinitely.
-`;
-// Content-derived stamp: any change to the generated data reseeds cached
-// clients, even a second regeneration on the same day.
-const payload = JSON.stringify([enrich, discovered, places]);
-const stamp = `${TODAY}-${crypto.createHash("sha1").update(payload).digest("hex").slice(0, 8)}`;
-fs.writeFileSync(OUT, banner + `const EXTRACTED_DATA_VERSION = ${JSON.stringify(stamp)};\n\nconst VENUES_EXTRACTED = ${JSON.stringify(enrich, null, 2)};\n\nconst VENUES_DISCOVERED = ${JSON.stringify(discovered, null, 2)};\n\nconst VENUES_PLACES = ${JSON.stringify(places, null, 2)};\n`);
+// --- Render the final merged dataset the app fetches: seed + deal/window
+// --- enrichment + discovered venues + Places identity overlay, all resolved
+// --- here so the client does zero merging.
+const merged = loadSeed().map((v) => {
+  const x = enrich[v.id];
+  if (!x?.deals?.length) return v;
+  return {
+    ...v,
+    happy_hour: {
+      ...v.happy_hour,
+      deals: x.deals,
+      ...(x.extra_windows?.length ? { extra_windows: x.extra_windows } : {}),
+      deals_source: { url: x.source_url, extracted_at: x.extracted_at },
+    },
+  };
+}).concat(discovered).map((v) => {
+  const g = places[v.id];
+  if (!g) return v;
+  const va = v.amenities || {};
+  const ga = g.amenities || {};
+  return {
+    ...v,
+    place_id: g.place_id ?? v.place_id,
+    rating: g.rating ?? v.rating,
+    user_ratings_total: g.user_ratings_total ?? v.user_ratings_total,
+    price_level: g.price_level ?? v.price_level,
+    business_status: g.business_status ?? v.business_status,
+    // Places amenity attributes fill gaps only — hand-verified values win.
+    amenities: {
+      ...va,
+      outdoor_seating: va.outdoor_seating ?? ga.outdoor_seating ?? null,
+      serves_cocktails: va.serves_cocktails ?? ga.serves_cocktails ?? null,
+      serves_beer: va.serves_beer ?? ga.serves_beer ?? null,
+      serves_wine: va.serves_wine ?? ga.serves_wine ?? null,
+      live_music: va.live_music ?? ga.live_music ?? null,
+      good_for_groups: va.good_for_groups ?? ga.good_for_groups ?? null,
+    },
+  };
+});
 
-console.log(`Enriched deals for ${Object.keys(enrich).length} venues, ${discovered.length} discovered venues (${coversAdded} cover images backfilled), Places identity for ${Object.keys(places).length} -> venues-extracted.js`);
+// Content-derived stamp: any change to the merged data reseeds cached
+// clients, even a second regeneration on the same day.
+const payload = JSON.stringify(merged);
+const stamp = `${TODAY}-${crypto.createHash("sha1").update(payload).digest("hex").slice(0, 8)}`;
+fs.writeFileSync(path.join(REPO_ROOT, "venues.json"), JSON.stringify({ data_version: stamp, venues: merged }, null, 1));
+
+console.log(`venues.json: ${merged.length} venues (${Object.keys(enrich).length} enriched, ${discovered.length} discovered, ${coversAdded} covers backfilled, Places identity for ${Object.keys(places).length}) — ${stamp}`);
 for (const d of discovered) console.log(`  + ${d.id.padEnd(30)} days[${d.happy_hour.days}] ${d.happy_hour.start}-${d.happy_hour.end}  ${d.happy_hour.deals.length} deals`);
 for (const [id, e] of Object.entries(enrich)) console.log(`  ${id.padEnd(30)} ${e.deals.length} deals  (${e.source_url})`);
 console.log(`\nReview queue (schedule disagreements — NOT applied):`);

@@ -83,7 +83,8 @@ node pipeline/score.js --write
 node pipeline/crawl.js --venues pipeline/discovered.json --render auto
 node pipeline/extract.js --venues pipeline/discovered.json --out extracted-discovered.json --force
 node pipeline/places-sync.js   # needs GOOGLE_PLACES_API_KEY (env or gitignored pipeline/secrets.json); skips itself if absent
-node pipeline/writeback.js
+node pipeline/writeback.js     # emits venues.json — the merged dataset the app fetches
+node pipeline/build-pages.js   # regenerates spots/*.html, sitemap.xml (crawlable per-venue pages)
 ```
 
 Then browser-validate index.html locally and commit. Every regeneration
