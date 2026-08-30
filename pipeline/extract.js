@@ -16,7 +16,9 @@ const TOTAL_CHARS = 45000;
 const OUT_FILE = path.join(RESULTS_DIR, args.out || "extracted.json");
 
 const only = args.only ? String(args.only).split(",") : null;
-const venues = loadSeed().filter((v) => !only || only.includes(v.id));
+// --venues <path.json>: run over candidate stubs (discovery) instead of the seed
+const allVenues = args.venues ? JSON.parse(fs.readFileSync(args.venues, "utf8")) : loadSeed();
+const venues = allVenues.filter((v) => !only || only.includes(v.id));
 fs.mkdirSync(RESULTS_DIR, { recursive: true });
 // previous is always the merge base; --force only bypasses the skip-if-done check.
 const previous = fs.existsSync(OUT_FILE) ? JSON.parse(fs.readFileSync(OUT_FILE, "utf8")) : {};

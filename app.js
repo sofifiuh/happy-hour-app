@@ -1,6 +1,6 @@
 const STORAGE_KEY = "happyHourVenues";
 const SEED_VERSION_KEY = "happyHourSeedVersion";
-const SEED_VERSION = "2026-vancouver-31-extracted-deals-v1";
+const SEED_VERSION = "2026-vancouver-40-discovery-v1";
 const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 // ---------- Venue accessors ----------

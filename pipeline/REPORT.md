@@ -92,3 +92,21 @@ next accuracy lever is **menu-content discovery** — click-through/iframe
 menu widgets and PDF links attached via JS — followed by re-verifying the
 seed rows both models contradict (Chambar weekend-only, D/6 closed
 Mon–Tue, both now with 80%+ deal recall backing the extractions).
+
+---
+
+# Discovery run — 2026-08-30
+
+Leads-only discovery (Overpass was unreachable through the egress; leads
+came from public web search, names only — no facts copied). Nominatim/OSM
+resolved identity (coords, address, website, phone); each venue's own site
+was then crawled and extracted like the seed harness.
+
+**24 leads → 11 candidates → 9 new venues live** (verified: false, pending
+human check): Fanny Bay Oyster Bar, Hydra Estiatorio, Pourhouse, Greta,
+Six Acres, The Boxcar, Brix & Mortar, Joe Fortes, The 515 Bar.
+Filtered out: closed/unfindable venues (Chill Winston et al.), venues
+without an OSM website tag, one suspected duplicate, The Keefer Bar (site
+shows no happy hour), The Portside Pub (extraction below threshold).
+
+App total: **31 hand-verified + 9 discovered = 40 venues**.
