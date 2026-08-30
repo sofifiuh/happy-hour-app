@@ -50,6 +50,12 @@ const CIRCLES = [
   [49.2845, -123.1290, 250], [49.2885, -123.1275, 280], [49.2815, -123.1370, 280],
   [49.2782, -123.1330, 280], [49.2650, -123.1060, 300], [49.2605, -123.1010, 300],
   [49.2660, -123.1500, 350], [49.2635, -123.1560, 350],
+  // Round 3: adjacent neighbourhoods beyond the core grid.
+  [49.3095, -123.0815, 400], [49.3230, -123.0720, 450], // Lower + Central Lonsdale (North Van)
+  [49.2810, -123.0440, 450], [49.2570, -123.0660, 450], // Hastings-Sunrise, Victoria Dr
+  [49.2490, -123.0905, 450], [49.2440, -123.1010, 450], // Fraser St, South Main
+  [49.2570, -123.1150, 400], [49.2580, -123.1390, 400], // Cambie Village, South Granville
+  [49.2640, -123.1860, 450], [49.2340, -123.1550, 450], // Point Grey W10th, Kerrisdale
 ];
 
 const INCLUDED_TYPES = ["bar", "pub", "wine_bar", "night_club", "restaurant"];
