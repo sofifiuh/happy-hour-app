@@ -26,6 +26,7 @@ const extracted = readJson(path.join(RESULTS_DIR, args.in || "extracted-opus.jso
 
 const DISCOVERED_STORE = path.join(REPO_ROOT, "pipeline", "discovered.json");
 const PLACES_STORE = path.join(REPO_ROOT, "pipeline", "places.json");
+const PHOTOS_STORE = path.join(REPO_ROOT, "pipeline", "photos.json");
 const TODAY = new Date().toISOString().slice(0, 10);
 
 const skipped = [];
@@ -103,6 +104,7 @@ const DISCOVERED_DEFAULTS = {
 // Google Places identity store — loaded early so discovery acceptance can
 // merge the identity captured by places-discover.js (no second API pass).
 const places = readJson(PLACES_STORE, {});
+const placePhotos = readJson(PHOTOS_STORE, {});
 
 let discovered = readJson(DISCOVERED_STORE, []);
 const cands = readJson(path.join(RESULTS_DIR, "discovered-candidates.json"), null);
@@ -208,6 +210,16 @@ const merged = loadSeed().map((v) => {
       live_music: va.live_music ?? ga.live_music ?? null,
       good_for_groups: va.good_for_groups ?? ga.good_for_groups ?? null,
     },
+  };
+}).map((v) => {
+  // Places photo backfill (pipeline/places-photos.js): only for venues whose
+  // own site never yielded a cover — an official image always wins.
+  if (v.cover_image?.url) return v;
+  const ph = placePhotos[v.id];
+  if (!ph) return v;
+  return {
+    ...v,
+    cover_image: { url: ph.url, credit_name: ph.credit_name, credit_url: ph.credit_url, source: "google_places" },
   };
 });
 
