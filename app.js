@@ -82,6 +82,11 @@ let carouselUserActive = false;
 let carouselSettleTimer = null;
 let carouselPendingId = null;
 let mapCardObserver = null;
+// "You are here" layers live outside mapMarkers so renderMap's venue-pin
+// teardown never removes them.
+let userLocDot = null;
+let userLocHalo = null;
+let mapToastTimer = null;
 
 const els = {
   venueList: document.getElementById("venueList"),
@@ -89,6 +94,8 @@ const els = {
   mapView: document.getElementById("mapView"),
   mapEmpty: document.getElementById("mapEmpty"),
   mapBackToListBtn: document.getElementById("mapBackToListBtn"),
+  mapLocateBtn: document.getElementById("mapLocateBtn"),
+  mapToast: document.getElementById("mapToast"),
   modal: document.getElementById("venueModal"),
   modalTitle: document.getElementById("modalTitle"),
   form: document.getElementById("venueForm"),
@@ -485,6 +492,57 @@ function ensureMap() {
   return map;
 }
 
+function showMapToast(msg) {
+  els.mapToast.textContent = msg;
+  els.mapToast.classList.remove("hidden");
+  clearTimeout(mapToastTimer);
+  mapToastTimer = setTimeout(() => els.mapToast.classList.add("hidden"), 2600);
+}
+
+function locateMe() {
+  if (!navigator.geolocation) {
+    showMapToast("Location isn't supported on this device");
+    return;
+  }
+  const btn = els.mapLocateBtn;
+  btn.classList.add("locating");
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      btn.classList.remove("locating");
+      btn.classList.add("located");
+      const m = ensureMap();
+      const ll = [pos.coords.latitude, pos.coords.longitude];
+      if (!userLocDot) {
+        userLocDot = L.marker(ll, {
+          icon: L.divIcon({ className: "user-loc-dot", html: "<span></span>", iconSize: [22, 22], iconAnchor: [11, 11] }),
+          zIndexOffset: 9500,
+          interactive: false,
+        }).addTo(m);
+        userLocHalo = L.circle(ll, {
+          radius: pos.coords.accuracy || 50,
+          color: "#2f7cf6",
+          weight: 1,
+          opacity: 0.35,
+          fillColor: "#2f7cf6",
+          fillOpacity: 0.12,
+          interactive: false,
+        }).addTo(m);
+      } else {
+        userLocDot.setLatLng(ll);
+        userLocHalo.setLatLng(ll).setRadius(pos.coords.accuracy || 50);
+      }
+      m.flyTo(ll, Math.max(m.getZoom(), 15), { duration: 0.6 });
+    },
+    () => {
+      btn.classList.remove("locating");
+      showMapToast("Couldn't get your location — check location permissions");
+    },
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 30000 }
+  );
+}
+
+els.mapLocateBtn.addEventListener("click", locateMe);
+
 function markerColor(status) {
   if (status === "live") return "#34d399";
   if (status === "upcoming") return "#ff9f43";
@@ -527,6 +585,11 @@ function renderMap(occurrences) {
 
   els.mapEmpty.classList.toggle("hidden", located.length > 0);
   els.mapCardCarousel.classList.toggle("hidden", located.length === 0);
+
+  // Keep the locate button just above the carousel, whose height depends on
+  // card content.
+  const carouselHeight = located.length === 0 ? 0 : els.mapCardCarousel.getBoundingClientRect().height;
+  els.mapLocateBtn.style.bottom = `${carouselHeight + 14}px`;
 
   // Swiping a card into view highlights its pin instantly (cheap), but the
   // map pans only once, ~160ms after the LAST card change — and only when

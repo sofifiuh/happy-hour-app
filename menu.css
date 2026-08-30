@@ -308,8 +308,9 @@ body {
      the pull-down gesture's transform can't turn fixed into absolute. */
   position: fixed;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 100%;
   max-width: 480px;
   z-index: 40;
