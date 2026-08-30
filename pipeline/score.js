@@ -119,6 +119,11 @@ if (failures.length) {
   for (const r of failures) lines.push(`- **${r.name}** (${r.verdict}): ${r.detail || "see extracted.json"}`);
 }
 
+if (args.json) {
+  console.log(JSON.stringify(rows, null, 1));
+  process.exit(0);
+}
+
 const report = lines.join("\n") + "\n";
 console.log(report);
 if (args.write) {
