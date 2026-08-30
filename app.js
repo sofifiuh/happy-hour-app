@@ -442,7 +442,9 @@ function formatShortTime(hhmm) {
 // MAPBOX_TOKEN comes from config.js, which is generated at deploy time
 // from a GitHub Actions secret and is NOT committed to the repo — see
 // config.example.js and .github/workflows/deploy.yml.
-const MAPBOX_STYLE = "dark-v11";
+// Light style: the dark tiles buried the pins and read poorly against the
+// app's white/amber design.
+const MAPBOX_STYLE = "light-v11";
 
 function ensureMap() {
   if (map) return map;
@@ -481,13 +483,19 @@ function renderMap(occurrences) {
 
   for (const { venue, occ } of located) {
     const color = markerColor(occ.status);
+    // Popularity (Google review volume) sets pin size and stacking, so the
+    // busiest spots read at a glance: big starred pins on top, quiet spots
+    // small and underneath. Status keeps the color channel.
+    const reviews = venue.user_ratings_total || 0;
+    const tier = reviews >= 2000 ? "hot" : reviews >= 500 ? "mid" : "base";
+    const px = tier === "hot" ? 26 : tier === "mid" ? 20 : 15;
     const icon = L.divIcon({
-      className: "map-pin",
-      html: `<span style="background:${color}"></span>`,
-      iconSize: [18, 18],
-      iconAnchor: [9, 9],
+      className: `map-pin map-pin-${tier}`,
+      html: `<span style="background:${color}">${tier === "hot" ? "★" : ""}</span>`,
+      iconSize: [px, px],
+      iconAnchor: [px / 2, px / 2],
     });
-    const marker = L.marker([getLat(venue), getLng(venue)], { icon }).addTo(m);
+    const marker = L.marker([getLat(venue), getLng(venue)], { icon, zIndexOffset: Math.min(reviews, 9000) }).addTo(m);
     marker.on("click", () => selectVenue(venue.id, { pan: true, scrollCarousel: true }));
     mapMarkers.set(venue.id, marker);
 
@@ -566,6 +574,12 @@ function buildMapCard(venue, occ) {
   time.textContent =
     occ.status === "none" ? "" : `${formatShortTime(getStart(venue))}–${formatShortTime(getEnd(venue))}`;
   meta.appendChild(time);
+  if (venue.rating) {
+    const rating = document.createElement("span");
+    rating.className = "map-detail-rating";
+    rating.textContent = `★ ${venue.rating}`;
+    meta.appendChild(rating);
+  }
   body.appendChild(meta);
 
   const address = getAddress(venue);
