@@ -349,5 +349,581 @@
     "business_status": "OPERATIONAL",
     "matched_name": "The 515 Bar",
     "synced_at": "2026-08-30"
+  },
+  "the-cambie-bar-grill": {
+    "place_id": "ChIJwdi9uXlxhlQRe6VP8Uv-PJc",
+    "rating": 4.1,
+    "user_ratings_total": 3901,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Cambie Bar & Grill",
+    "synced_at": "2026-08-30"
+  },
+  "cactus-club-cafe": {
+    "place_id": "ChIJLwP4IIJxhlQRN41rdASKST0",
+    "rating": 4.4,
+    "user_ratings_total": 3628,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Cactus Club Cafe",
+    "synced_at": "2026-08-30"
+  },
+  "marcello-ristorante-pizzeria": {
+    "place_id": "ChIJlTlzTz9xhlQRUBS5dn6ARoM",
+    "rating": 4.3,
+    "user_ratings_total": 3596,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Marcello Ristorante & Pizzeria",
+    "synced_at": "2026-08-30"
+  },
+  "mangos-kitchen-bar": {
+    "place_id": "ChIJZ3g3Z9RzhlQRAwBHOA1-EpU",
+    "rating": 4.3,
+    "user_ratings_total": 2971,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Mangos Kitchen Bar",
+    "synced_at": "2026-08-30"
+  },
+  "st-augustine-s": {
+    "place_id": "ChIJAasqz0hxhlQRU3dfsfnfkoU",
+    "rating": 4.1,
+    "user_ratings_total": 2867,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "St. Augustine's",
+    "synced_at": "2026-08-30"
+  },
+  "cactus-club-cafe-2": {
+    "place_id": "ChIJTazswtZzhlQRuZas9GX26-I",
+    "rating": 4.3,
+    "user_ratings_total": 2745,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Cactus Club Cafe",
+    "synced_at": "2026-08-30"
+  },
+  "malone-s-taphouse": {
+    "place_id": "ChIJ78Kt7HhxhlQRC9LwX4-Fw98",
+    "rating": 4.1,
+    "user_ratings_total": 2659,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Malone's Taphouse",
+    "synced_at": "2026-08-30"
+  },
+  "la-mezcaleria": {
+    "place_id": "ChIJEa-sXUdxhlQR8WFhlViz2Pk",
+    "rating": 4.4,
+    "user_ratings_total": 2632,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "La Mezcaleria",
+    "synced_at": "2026-08-30"
+  },
+  "cactus-club-cafe-3": {
+    "place_id": "ChIJhz9CFt1zhlQRpJSOgRKv9CA",
+    "rating": 4.3,
+    "user_ratings_total": 2455,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Cactus Club Cafe",
+    "synced_at": "2026-08-30"
+  },
+  "sing-sing-main-st": {
+    "place_id": "ChIJjdQkkShzhlQR5OKSMOYEgJI",
+    "rating": 4.3,
+    "user_ratings_total": 1925,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Sing Sing Main St",
+    "synced_at": "2026-08-30"
+  },
+  "jamjar-canteen-commercial-dr": {
+    "place_id": "ChIJUbWrKLFxhlQRPB1nQaTyZtA",
+    "rating": 4.3,
+    "user_ratings_total": 1793,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Jamjar Canteen Commercial Dr.",
+    "synced_at": "2026-08-30"
+  },
+  "bimini-s-since-1975": {
+    "place_id": "ChIJLbIl1LVzhlQRVgj6XXfyU8o",
+    "rating": 4.2,
+    "user_ratings_total": 1497,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Bimini's Since 1975",
+    "synced_at": "2026-08-30"
+  },
+  "between-2-buns-burgers": {
+    "place_id": "ChIJKRxR6UdxhlQR6jMMAACAi58",
+    "rating": 4.5,
+    "user_ratings_total": 1474,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Between 2 Buns Burgers",
+    "synced_at": "2026-08-30"
+  },
+  "the-butcher-bullock-public-house": {
+    "place_id": "ChIJc6oZR4JxhlQRRoI_dkj6Jko",
+    "rating": 4.1,
+    "user_ratings_total": 1459,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Butcher & Bullock Public House",
+    "synced_at": "2026-08-30"
+  },
+  "carlos-o-bryan-s-neighborhood-pub": {
+    "place_id": "ChIJ57qrv7dzhlQRRuI062Hll2o",
+    "rating": 4.2,
+    "user_ratings_total": 1350,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Carlos O'Bryan's Neighborhood Pub",
+    "synced_at": "2026-08-30"
+  },
+  "the-charlatan": {
+    "place_id": "ChIJ0z_tUz9xhlQRX7t01nVfqL4",
+    "rating": 4.1,
+    "user_ratings_total": 1299,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Charlatan",
+    "synced_at": "2026-08-30"
+  },
+  "opus-vancouver": {
+    "place_id": "ChIJkYNgwtZzhlQRDyKMepVlARQ",
+    "rating": 4.7,
+    "user_ratings_total": 1256,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "OPUS Vancouver",
+    "synced_at": "2026-08-30"
+  },
+  "memphis-blues-barbeque-house": {
+    "place_id": "ChIJ60gnQT9xhlQR4sDTSLpiHwM",
+    "rating": 4.2,
+    "user_ratings_total": 1214,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Memphis Blues Barbeque House",
+    "synced_at": "2026-08-30"
+  },
+  "caff-cittadella": {
+    "place_id": "ChIJ1dHk_txzhlQREPMrE5srBLM",
+    "rating": 4.1,
+    "user_ratings_total": 1068,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Caffè Cittadella",
+    "synced_at": "2026-08-30"
+  },
+  "fiorino-italian-street-food-chinatown-vancouver": {
+    "place_id": "ChIJ8SWsS3FxhlQRYMDiAo7i7vo",
+    "rating": 4.5,
+    "user_ratings_total": 995,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Fiorino, Italian Street Food Chinatown Vancouver",
+    "synced_at": "2026-08-30"
+  },
+  "bombay-kitchen-and-bar-denman-st": {
+    "place_id": "ChIJSbmhiuRzhlQR04kvchr9X_I",
+    "rating": 4.6,
+    "user_ratings_total": 978,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Bombay Kitchen and Bar - Denman St",
+    "synced_at": "2026-08-30"
+  },
+  "livia-forno-e-vino": {
+    "place_id": "ChIJD7OS67pxhlQR99jnRuImeFo",
+    "rating": 4.4,
+    "user_ratings_total": 956,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "LIVIA Forno e Vino",
+    "synced_at": "2026-08-30"
+  },
+  "forecast-coffee-main-street": {
+    "place_id": "ChIJsfgDqXtzhlQROoYf0PVhqPw",
+    "rating": 4.3,
+    "user_ratings_total": 954,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Forecast Coffee - Main Street",
+    "synced_at": "2026-08-30"
+  },
+  "noah-s-cafe": {
+    "place_id": "ChIJOU68-ztzhlQRg30p3Cl_XoI",
+    "rating": 4.7,
+    "user_ratings_total": 840,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Noah's Cafe",
+    "synced_at": "2026-08-30"
+  },
+  "bartholomew": {
+    "place_id": "ChIJNZfIdq9zhlQRyOD5DmncCX8",
+    "rating": 4.5,
+    "user_ratings_total": 813,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Bartholomew",
+    "synced_at": "2026-08-30"
+  },
+  "bayside-lounge-english-bay": {
+    "place_id": "ChIJj6ywSi9yhlQRes3cKZTYNRw",
+    "rating": 4.3,
+    "user_ratings_total": 797,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Bayside Lounge — English Bay",
+    "synced_at": "2026-08-30"
+  },
+  "the-cider-house": {
+    "place_id": "ChIJAYnd32tzhlQR2Vso_pfwYiQ",
+    "rating": 4.6,
+    "user_ratings_total": 735,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Cider House",
+    "synced_at": "2026-08-30"
+  },
+  "bar-corso": {
+    "place_id": "ChIJNWm91udxhlQRv_cFcXKSgDk",
+    "rating": 4.6,
+    "user_ratings_total": 708,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Bar Corso",
+    "synced_at": "2026-08-30"
+  },
+  "song-by-kin-kao": {
+    "place_id": "ChIJS4OuFN5xhlQRDjKjnzsRfaY",
+    "rating": 4.4,
+    "user_ratings_total": 664,
+    "price_level": 3,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Song (by Kin Kao)",
+    "synced_at": "2026-08-30"
+  },
+  "main-street-brewing-co": {
+    "place_id": "ChIJVRfsn19xhlQRz8RcxJPGDPU",
+    "rating": 4.4,
+    "user_ratings_total": 566,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Main Street Brewing Co.",
+    "synced_at": "2026-08-30"
+  },
+  "switch": {
+    "place_id": "ChIJy6iEKrFxhlQRxXmvPtidAdg",
+    "rating": 3.7,
+    "user_ratings_total": 520,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "SWITCH",
+    "synced_at": "2026-08-30"
+  },
+  "uncle-abe-s": {
+    "place_id": "ChIJs6ZIdONzhlQR2rsnThDtbAI",
+    "rating": 4.3,
+    "user_ratings_total": 448,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Uncle Abe's",
+    "synced_at": "2026-08-30"
+  },
+  "the-watson": {
+    "place_id": "ChIJr6-OKxtzhlQRpqNS4iSd4B0",
+    "rating": 4.6,
+    "user_ratings_total": 427,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Watson",
+    "synced_at": "2026-08-30"
+  },
+  "junction": {
+    "place_id": "ChIJnwAUXStyhlQRSqCQXVD1lZM",
+    "rating": 3.7,
+    "user_ratings_total": 411,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Junction",
+    "synced_at": "2026-08-30"
+  },
+  "mum-s-the-word": {
+    "place_id": "ChIJxe8B78BxhlQRI_z8-jTPG0M",
+    "rating": 4.5,
+    "user_ratings_total": 347,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Mum's The Word",
+    "synced_at": "2026-08-30"
+  },
+  "the-old-spaghetti-factory-gastown": {
+    "place_id": "ChIJEwXWQndxhlQRRKy4phazLq0",
+    "rating": 4.4,
+    "user_ratings_total": 9907,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Old Spaghetti Factory (Gastown)",
+    "synced_at": "2026-08-30"
+  },
+  "dae-bak-bon-ga": {
+    "place_id": "ChIJU5anOIdxhlQRzh_jCzdGJ_8",
+    "rating": 4.6,
+    "user_ratings_total": 5694,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Dae Bak Bon Ga",
+    "synced_at": "2026-08-30"
+  },
+  "the-sandbar-seafood-restaurant": {
+    "place_id": "ChIJj6Jmb85zhlQR8ho06uTUy6U",
+    "rating": 4.5,
+    "user_ratings_total": 5247,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Sandbar Seafood Restaurant",
+    "synced_at": "2026-08-30"
+  },
+  "minami": {
+    "place_id": "ChIJ9xLK-dZzhlQRIghtObN7n-A",
+    "rating": 4.5,
+    "user_ratings_total": 3931,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Minami",
+    "synced_at": "2026-08-30"
+  },
+  "top-of-vancouver-revolving-restaurant": {
+    "place_id": "ChIJfe2sYHhxhlQRYY79aUl69vw",
+    "rating": 4.1,
+    "user_ratings_total": 3511,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Top Of Vancouver Revolving Restaurant",
+    "synced_at": "2026-08-30"
+  },
+  "the-vancouver-fish-company": {
+    "place_id": "ChIJr34m8M5zhlQRn3iyiebMMtI",
+    "rating": 4.3,
+    "user_ratings_total": 3208,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Vancouver Fish Company",
+    "synced_at": "2026-08-30"
+  },
+  "gotham-steakhouse-cocktail-bar": {
+    "place_id": "ChIJVQQVMn9xhlQRfFSHaGDN_EY",
+    "rating": 4.6,
+    "user_ratings_total": 3180,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Gotham Steakhouse & Cocktail Bar",
+    "synced_at": "2026-08-30"
+  },
+  "sylvia-hotel-restaurant-and-lounge": {
+    "place_id": "ChIJTZVOoN1zhlQRSMNq0C_JoIo",
+    "rating": 4.3,
+    "user_ratings_total": 2350,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Sylvia Hotel, Restaurant and Lounge",
+    "synced_at": "2026-08-30"
+  },
+  "the-pawn-shop-yvr-taco-bar": {
+    "place_id": "ChIJM_-yTtRzhlQRwNVRKfJH3Gc",
+    "rating": 4.5,
+    "user_ratings_total": 2065,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Pawn Shop YVR Taco Bar",
+    "synced_at": "2026-08-30"
+  },
+  "di-beppe-restaurant": {
+    "place_id": "ChIJdUiOqXBxhlQR9xz4YULOF10",
+    "rating": 4.4,
+    "user_ratings_total": 1991,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Di Beppe Restaurant",
+    "synced_at": "2026-08-30"
+  },
+  "burgoo": {
+    "place_id": "ChIJPddQZeNzhlQRVbraHJJvZog",
+    "rating": 4.4,
+    "user_ratings_total": 1989,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Burgoo",
+    "synced_at": "2026-08-30"
+  },
+  "skewers-souvlaki-pita-bar": {
+    "place_id": "ChIJ9eGJ9fVxhlQRDbLkgdEI9Co",
+    "rating": 4.8,
+    "user_ratings_total": 1861,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Skewers Souvlaki Pita Bar",
+    "synced_at": "2026-08-30"
+  },
+  "sopra-sotto-pizzeria": {
+    "place_id": "ChIJqyN6rDhxhlQRqg9-Y5l1Zaw",
+    "rating": 4.3,
+    "user_ratings_total": 1825,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Sopra Sotto Pizzeria",
+    "synced_at": "2026-08-30"
+  },
+  "tableau-bar-bistro": {
+    "place_id": "ChIJ3XfeToFxhlQRDtyvLtryFyQ",
+    "rating": 4.5,
+    "user_ratings_total": 1808,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Tableau Bar Bistro",
+    "synced_at": "2026-08-30"
+  },
+  "nook-kitsilano": {
+    "place_id": "ChIJq9PfzEpyhlQRUqp026zudho",
+    "rating": 4.5,
+    "user_ratings_total": 1504,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Nook Kitsilano",
+    "synced_at": "2026-08-30"
+  },
+  "the-red-accordion": {
+    "place_id": "ChIJVSOOhhxxhlQRhMw5pYnZh_s",
+    "rating": 4.6,
+    "user_ratings_total": 1452,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Red Accordion",
+    "synced_at": "2026-08-30"
+  },
+  "big-way-hot-pot-robson": {
+    "place_id": "ChIJBbLiSzRxhlQRBrD-zZ0xUh4",
+    "rating": 4.3,
+    "user_ratings_total": 1424,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Big Way Hot Pot (Robson)",
+    "synced_at": "2026-08-30"
+  },
+  "eat-bar-patio-haraheri": {
+    "place_id": "ChIJda43-9FzhlQR8bDraTrZvXo",
+    "rating": 4.3,
+    "user_ratings_total": 1302,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Eat Bar & Patio Haraheri",
+    "synced_at": "2026-08-30"
+  },
+  "como-taperia": {
+    "place_id": "ChIJQ5f_MMBxhlQR9R17HcWGvUA",
+    "rating": 4.3,
+    "user_ratings_total": 1277,
+    "price_level": 3,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Como Taperia",
+    "synced_at": "2026-08-30"
+  },
+  "alouette-bistro": {
+    "place_id": "ChIJQ3EWTtpxhlQR8AOWxpM5tBY",
+    "rating": 4.4,
+    "user_ratings_total": 1150,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Alouette Bistro",
+    "synced_at": "2026-08-30"
+  },
+  "tutto-italian-restaurant-bar": {
+    "place_id": "ChIJk5D8YERxhlQRbJ_4S2KU7c0",
+    "rating": 4.4,
+    "user_ratings_total": 1068,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Tutto Italian Restaurant & Bar",
+    "synced_at": "2026-08-30"
+  },
+  "carlino-restaurant": {
+    "place_id": "ChIJw2Vqfk9xhlQRgGkg_E2xXmk",
+    "rating": 4.3,
+    "user_ratings_total": 1027,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Carlino Restaurant",
+    "synced_at": "2026-08-30"
+  },
+  "zoomak-korean-tavern": {
+    "place_id": "ChIJh04xmItxhlQRRdfJbkB4TR0",
+    "rating": 4.5,
+    "user_ratings_total": 868,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Zoomak Korean Tavern",
+    "synced_at": "2026-08-30"
+  },
+  "novo-italian": {
+    "place_id": "ChIJGUqN0rdzhlQRKgnl-CofZDk",
+    "rating": 4.3,
+    "user_ratings_total": 863,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Novo Italian",
+    "synced_at": "2026-08-30"
+  },
+  "street-hawker-mount-pleasant": {
+    "place_id": "ChIJPf80-rJzhlQRZrb4QC-ts9c",
+    "rating": 4.4,
+    "user_ratings_total": 818,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Street Hawker - Mount Pleasant",
+    "synced_at": "2026-08-30"
+  },
+  "lavantine-restaurant-skybar": {
+    "place_id": "ChIJM8nta4JxhlQRcvV0ea22GUk",
+    "rating": 4.5,
+    "user_ratings_total": 747,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Lavantine Restaurant & Skybar",
+    "synced_at": "2026-08-30"
+  },
+  "nook-coal-harbour": {
+    "place_id": "ChIJ79MWkpxxhlQRvkJLkRIt0yU",
+    "rating": 4.6,
+    "user_ratings_total": 745,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Nook Coal Harbour",
+    "synced_at": "2026-08-30"
+  },
+  "b-house-restaurant": {
+    "place_id": "ChIJzZFcYSdxhlQRBEix0Q2qvxg",
+    "rating": 4.7,
+    "user_ratings_total": 652,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "B House Restaurant",
+    "synced_at": "2026-08-30"
+  },
+  "the-sequel-kitchen-bar": {
+    "place_id": "ChIJnQawNoZxhlQRLqL59RyTo7U",
+    "rating": 4.7,
+    "user_ratings_total": 651,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Sequel - Kitchen & Bar",
+    "synced_at": "2026-08-30"
   }
 }
