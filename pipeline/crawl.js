@@ -11,7 +11,9 @@ import { extractLinks, pickCandidates, htmlToText } from "./lib/html.js";
 
 const args = parseArgs(process.argv.slice(2));
 const only = args.only ? String(args.only).split(",") : null;
-const venues = loadSeed().filter((v) => !only || only.includes(v.id));
+// --venues <path.json>: run over candidate stubs (discovery) instead of the seed
+const allVenues = args.venues ? JSON.parse(fs.readFileSync(args.venues, "utf8")) : loadSeed();
+const venues = allVenues.filter((v) => !only || only.includes(v.id));
 const RENDER_MODE = args.render || "auto"; // auto | always | off
 const RENDER_THRESHOLD = 500; // chars of visible text below which a page counts as a JS shell
 

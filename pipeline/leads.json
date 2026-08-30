@@ -1,0 +1,30 @@
+{
+  "comment": "Venue LEADS ONLY — names gathered from public web search results (leads-only doctrine: no facts are copied from aggregators; every stored fact comes from Nominatim/OSM identity data or the venue's own website via the extraction pipeline).",
+  "gathered_at": "2026-08-30",
+  "leads": [
+    "Reflections Hotel Georgia",
+    "Acquafarina",
+    "Fanny Bay Oyster Bar",
+    "Hydra Estiatorio",
+    "The Blackbird Public House",
+    "Pourhouse",
+    "The Charles Bar",
+    "Chill Winston",
+    "La Mezcaleria Gastown",
+    "The Portside Pub",
+    "Guilt & Company",
+    "Back and Forth Bar",
+    "The Keefer Bar",
+    "Greta Bar",
+    "Six Acres",
+    "The Boxcar",
+    "Arcana Spirit Lounge",
+    "Brix & Mortar",
+    "Social Corner Yaletown",
+    "Joe Fortes",
+    "Ebisu Robson",
+    "Call Me Back",
+    "The 515 Bar",
+    "Bayside Lounge"
+  ]
+}
