@@ -1601,4 +1601,1127 @@ const VENUES_EXTRACTED = {
   }
 };
 
-const VENUES_DISCOVERED = [];
+const VENUES_DISCOVERED = [
+  {
+    "id": "fanny-bay-oyster-bar",
+    "place_id": null,
+    "name": "Fanny Bay Oyster Bar",
+    "formatted_address": "762 Cambie Street, Vancouver, BC",
+    "address_components": {
+      "street_number": "762",
+      "route": "Cambie Street",
+      "locality": "Vancouver",
+      "administrative_area_level_1": "BC",
+      "postal_code": "V6B 2P2",
+      "country": "CA"
+    },
+    "geometry": {
+      "location": {
+        "lat": 49.278575,
+        "lng": -123.114112
+      }
+    },
+    "formatted_phone_number": "+1-778-379-9510",
+    "international_phone_number": null,
+    "website": "https://www.fannybayoysters.com/location/oyster-bar--shellfish-market",
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.fannybayoysters.com/uploads/pdf/2026summermenumaster.pdf",
+      "deals": [
+        {
+          "name": "Featured Oysters",
+          "price": "$2 ea",
+          "category": "food",
+          "description": "Served with lemon, horseradish, mignonette (GF)"
+        },
+        {
+          "name": "Premium Featured Oysters",
+          "price": "$2.75 ea",
+          "category": "food",
+          "description": "Served with lemon, horseradish, mignonette (GF)"
+        },
+        {
+          "name": "Truffle Fries",
+          "price": "$12",
+          "category": "food",
+          "description": "Kennebec fries, truffle oil, Parmesan, chives, aioli"
+        },
+        {
+          "name": "Fish Tacos",
+          "price": "$18",
+          "category": "food",
+          "description": "2pc marinated & grilled fish tacos, guacamole, taco sauce, pico de gallo (GF)"
+        },
+        {
+          "name": "Sablefish Collars",
+          "price": "$19",
+          "category": "food",
+          "description": "3pc soy marinated fried collars, Korean BBQ glaze, cilantro, sesame"
+        },
+        {
+          "name": "Snapper Ceviche",
+          "price": "$19",
+          "category": "food",
+          "description": "Avocado, sweet potato, leche de tigre, chilli, tortilla chips (GF)"
+        },
+        {
+          "name": "Tuna Tartare",
+          "price": "$21",
+          "category": "food",
+          "description": "BC Albacore, Asian pear, avocado mayo, ginger citrus vinaigrette, trout roe, wonton chips"
+        },
+        {
+          "name": "Smoked Oyster Dip",
+          "price": "$21",
+          "category": "food",
+          "description": "Ekone smoked oysters, crispy shallots, chives, Ritz crackers"
+        },
+        {
+          "name": "Mussels & Clams",
+          "price": "$25",
+          "category": "food",
+          "description": "Mixed or solo in your choice of white wine & herbs or miso cream broth (GF)"
+        },
+        {
+          "name": "Lobster Roll",
+          "price": "$30",
+          "category": "food",
+          "description": "Chilled Atlantic lobster, celery, Asian pear, scallion, wasabi aioli, milk bun"
+        },
+        {
+          "name": "Lobster Poutine",
+          "price": "$30",
+          "category": "food",
+          "description": "Atlantic lobster, lobster bisque gravy, fries, cheese curds, chives"
+        },
+        {
+          "name": "Fanny Bay Oyster Shooter",
+          "price": "$9",
+          "category": "drink",
+          "description": "1oz Forty Creek Rye, house made Clamato Caesar mix, fresh oyster"
+        },
+        {
+          "name": "Draft Beer",
+          "price": "$7/14oz",
+          "category": "drink",
+          "description": "Phillips Tilt Lager or Blue Buck Pale Ale"
+        },
+        {
+          "name": "House Wines",
+          "price": "$11/6oz",
+          "category": "drink",
+          "description": "Sauvignon Blanc / Rose / Merlot - Open Estate, Okanagan, BC; $40 per bottle"
+        },
+        {
+          "name": "Premium Wine",
+          "price": "$13/6oz",
+          "category": "drink",
+          "description": "Chardonnay - Kettle Valley, Okanagan, BC; $43 per bottle"
+        },
+        {
+          "name": "House Sparkling",
+          "price": "$12/6oz",
+          "category": "drink",
+          "description": "Rose Prosecco - Serena, Veneto, IT; $42 per bottle"
+        },
+        {
+          "name": "Champagne",
+          "price": "$25/6oz",
+          "category": "drink",
+          "description": "Duval-Leroy Brut NV - Cotes de Blanc, FR; $100 per bottle"
+        },
+        {
+          "name": "Sparkling Sake",
+          "price": "$35/300ml btl",
+          "category": "drink",
+          "description": "Rotating sparkling sake - Japan"
+        },
+        {
+          "name": "Non-Alc Beer Cans",
+          "price": "$7",
+          "category": "drink",
+          "description": "Zero proof - Phillips Brewing Iota Pilsner or Hazy IPA"
+        }
+      ]
+    },
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "osm": {
+      "type": "node",
+      "id": 4842937821,
+      "amenity": "restaurant"
+    },
+    "data_source": "discovery",
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "id": "hydra-estiatorio-mediterranean",
+    "place_id": null,
+    "name": "Hydra Estiatorio Mediterranean",
+    "formatted_address": "475 Howe Street, Vancouver, BC",
+    "address_components": {
+      "street_number": "475",
+      "route": "Howe Street",
+      "locality": "Vancouver",
+      "administrative_area_level_1": "BC",
+      "postal_code": "V6C 2B3",
+      "country": "CA"
+    },
+    "geometry": {
+      "location": {
+        "lat": 49.2857071,
+        "lng": -123.1161599
+      }
+    },
+    "formatted_phone_number": "+1-604-416-0880",
+    "international_phone_number": null,
+    "website": "https://www.hydravancouver.com/",
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.hydravancouver.com/menu",
+      "deals": []
+    },
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "osm": {
+      "type": "node",
+      "id": 6927768691,
+      "amenity": "restaurant"
+    },
+    "data_source": "discovery",
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "id": "pourhouse",
+    "place_id": null,
+    "name": "Pourhouse",
+    "formatted_address": "162 Water Street, Vancouver, BC",
+    "address_components": {
+      "street_number": "162",
+      "route": "Water Street",
+      "locality": "Vancouver",
+      "administrative_area_level_1": "BC",
+      "postal_code": "V6B 1B2",
+      "country": "CA"
+    },
+    "geometry": {
+      "location": {
+        "lat": 49.2841314,
+        "lng": -123.1083829
+      }
+    },
+    "formatted_phone_number": "+1-604-568-7022",
+    "international_phone_number": null,
+    "website": "https://www.pourhousevancouver.com/",
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.pourhousevancouver.com/menu/happy-hour",
+      "deals": [
+        {
+          "name": "Select Red",
+          "price": "$10",
+          "category": "drink",
+          "description": "Select red wine"
+        },
+        {
+          "name": "Select White",
+          "price": "$10",
+          "category": "drink",
+          "description": "Select white wine"
+        },
+        {
+          "name": "Select Rose",
+          "price": "$10",
+          "category": "drink",
+          "description": "Select rose wine"
+        },
+        {
+          "name": "Draught Beer",
+          "price": "$6/$9",
+          "category": "drink",
+          "description": "10oz / 16oz draught beer"
+        },
+        {
+          "name": "Classics Volume 1",
+          "price": "$2 off",
+          "category": "drink",
+          "description": "$2 off cocktails from the Classics Volume 1 list"
+        },
+        {
+          "name": "Smash Burger",
+          "price": "$10",
+          "category": "food",
+          "description": "brisket & chuck, american cheese, caramelized onion, pickle, shredduce, secret sauce"
+        },
+        {
+          "name": "Smashroom Burger",
+          "price": "$10",
+          "category": "food",
+          "description": "mushroom patty, american cheese, caramelized onion, pickle, shredduce, secret sauce (V)"
+        },
+        {
+          "name": "Chips & Dip",
+          "price": "$7",
+          "category": "food",
+          "description": "sour cream, caramelized onion, chive (GF/V)"
+        },
+        {
+          "name": "Truffle Tots",
+          "price": "$12",
+          "category": "food",
+          "description": "tater tots, truffle salsa, grana padano (V/GF)"
+        },
+        {
+          "name": "Scotch Egg",
+          "price": "$13",
+          "category": "food",
+          "description": "fennel sausage, soft boiled egg, panko, spicy mayo"
+        },
+        {
+          "name": "Meatballs",
+          "price": "$11",
+          "category": "food",
+          "description": "beef, pork & veal, marinara, chives"
+        }
+      ]
+    },
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "osm": {
+      "type": "node",
+      "id": 4390232892,
+      "amenity": "pub"
+    },
+    "data_source": "discovery",
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "id": "greta-yvr",
+    "place_id": null,
+    "name": "Greta YVR",
+    "formatted_address": "50 West Cordova Street, Vancouver, BC",
+    "address_components": {
+      "street_number": "50",
+      "route": "West Cordova Street",
+      "locality": "Vancouver",
+      "administrative_area_level_1": "BC",
+      "postal_code": "V6B 1C9",
+      "country": "CA"
+    },
+    "geometry": {
+      "location": {
+        "lat": 49.2826091,
+        "lng": -123.105799
+      }
+    },
+    "formatted_phone_number": "+1-604-423-3081",
+    "international_phone_number": null,
+    "website": "https://www.gretabar.com/locations/vancouver",
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://gretabar.com/vancouver/food-menu/",
+      "deals": [
+        {
+          "name": "Handcrafted cocktails",
+          "price": "$12.00",
+          "category": "drink",
+          "description": "Handcrafted cocktails from the Vancouver cocktail list"
+        },
+        {
+          "name": "Casamigos Blanco",
+          "price": "$10.00",
+          "category": "drink",
+          "description": "Casamigos Blanco tequila"
+        },
+        {
+          "name": "GRETA House Draft",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "16.5oz house draft"
+        },
+        {
+          "name": "Highballs & Shafts",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "1oz highballs and Shafts"
+        },
+        {
+          "name": "House Wine",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "6oz pour of house wine"
+        },
+        {
+          "name": "El Tequileño",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "1oz El Tequileño tequila"
+        },
+        {
+          "name": "Finnish Long Drink",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "Finnish Long Drink RTD"
+        },
+        {
+          "name": "Red Bull",
+          "price": "$5.00",
+          "category": "drink",
+          "description": "Red Bull energy drink"
+        },
+        {
+          "name": "Street Nuggets",
+          "price": "$12.00",
+          "category": "food",
+          "description": "Buttermilk chicken nuggets, pickles, choice of sauce"
+        },
+        {
+          "name": "GRETA Nachos",
+          "price": "$10.00",
+          "category": "food",
+          "description": "Corn chips, nacho beans, feta, chipotle sauce, guacamole, pico, lime crema, jalapeños"
+        },
+        {
+          "name": "Roasted Kale Caesar Salad",
+          "price": "$8.00",
+          "category": "food",
+          "description": "Caesar dressing, gremolata crumb, grana padano"
+        },
+        {
+          "name": "Big Mac Fries",
+          "price": "$7.50",
+          "category": "food",
+          "description": "Fresh-cut fries, Wagyu, cheddar, fancy sauce, onion, pickles"
+        },
+        {
+          "name": "GRETA Burger Sliders",
+          "price": "$6.00",
+          "category": "food",
+          "description": "Wagyu burger sliders"
+        },
+        {
+          "name": "Pork Belly Bao",
+          "price": "$5.00",
+          "category": "food",
+          "description": "Maple soy glaze, cabbage, soy pickles, green onion"
+        }
+      ]
+    },
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "osm": {
+      "type": "node",
+      "id": 6437608536,
+      "amenity": "bar"
+    },
+    "data_source": "discovery",
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "id": "six-acres",
+    "place_id": null,
+    "name": "Six Acres",
+    "formatted_address": "203 Carrall Street, Vancouver, BC",
+    "address_components": {
+      "street_number": "203",
+      "route": "Carrall Street",
+      "locality": "Vancouver",
+      "administrative_area_level_1": "BC",
+      "postal_code": "V6B 2J2",
+      "country": "CA"
+    },
+    "geometry": {
+      "location": {
+        "lat": 49.2833658,
+        "lng": -123.1044261
+      }
+    },
+    "formatted_phone_number": "+1-604-488-0110",
+    "international_phone_number": null,
+    "website": "https://www.sixacres.ca/",
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.sixacres.ca/happy-hour",
+      "deals": [
+        {
+          "name": "Crispy Chicken Burger",
+          "price": "$16",
+          "category": "food",
+          "description": "Buttermilk marinated fried chicken, crispy romaine, tomato and pickles, spicy mayo on brioche bun, served with house fries"
+        },
+        {
+          "name": "Parmesan Fries",
+          "price": "$8",
+          "category": "food",
+          "description": "Crispy chips tossed in Grana Padano and fresh parsley served with garlic aioli; add truffle oil +2 (GF/V)"
+        },
+        {
+          "name": "Chili Lime Prawns",
+          "price": "$12",
+          "category": "food",
+          "description": "Pan fried prawns in white wine, garlic, lime, chili butter and Grana Padano"
+        },
+        {
+          "name": "Beef Stew",
+          "price": "$12",
+          "category": "food",
+          "description": "AAA Alberta beef with russet potatoes, carrots and celery in a hunter sauce, served with baguette"
+        },
+        {
+          "name": "Yuzu Calamari",
+          "price": "$12",
+          "category": "food",
+          "description": "Crispy squid, jalapeno, cucumber and tzatziki"
+        },
+        {
+          "name": "Chicken Tenders",
+          "price": "$14",
+          "category": "food",
+          "description": "Served with fries and honey mustard dipping sauce"
+        },
+        {
+          "name": "The Peanut Butter Cup",
+          "price": "$12",
+          "category": "drink",
+          "description": "Screwball peanut butter whiskey, Kahlua, Baileys, espresso; 2oz cocktail (regularly $18)"
+        },
+        {
+          "name": "Margarita",
+          "price": "$12",
+          "category": "drink",
+          "description": "Choose your margarita: lime / guava / spicy mango; 2oz cocktail (regularly $17)"
+        },
+        {
+          "name": "Old Fashioned",
+          "price": "$12",
+          "category": "drink",
+          "description": "Whisky, sugar, Angostura; 2oz cocktail"
+        },
+        {
+          "name": "6A Sangria",
+          "price": "$13",
+          "category": "drink",
+          "description": "Red wine, brandy, orange, seasonal fruit; 2oz (regularly $18)"
+        },
+        {
+          "name": "Six Acres Lager",
+          "price": "$7",
+          "category": "drink",
+          "description": "16oz, BC (regularly $9)"
+        },
+        {
+          "name": "Six Acres Pale Ale",
+          "price": "$7",
+          "category": "drink",
+          "description": "16oz, BC (regularly $9)"
+        },
+        {
+          "name": "House Red Wine",
+          "price": "$7",
+          "category": "drink",
+          "description": "5oz, BC (regularly $10)"
+        },
+        {
+          "name": "House White Wine",
+          "price": "$7",
+          "category": "drink",
+          "description": "5oz, BC (regularly $10)"
+        },
+        {
+          "name": "House Highballs",
+          "price": "$7",
+          "category": "drink",
+          "description": "1oz"
+        }
+      ]
+    },
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "osm": {
+      "type": "node",
+      "id": 4859979322,
+      "amenity": "pub"
+    },
+    "data_source": "discovery",
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "id": "the-boxcar",
+    "place_id": null,
+    "name": "The Boxcar",
+    "formatted_address": "917 Main Street, Vancouver, BC",
+    "address_components": {
+      "street_number": "917",
+      "route": "Main Street",
+      "locality": "Vancouver",
+      "administrative_area_level_1": "BC",
+      "postal_code": "V6A 2V8",
+      "country": "CA"
+    },
+    "geometry": {
+      "location": {
+        "lat": 49.2765849,
+        "lng": -123.1001156
+      }
+    },
+    "formatted_phone_number": "+1-604-239-7109",
+    "international_phone_number": null,
+    "website": "https://www.boxcarvancouver.com",
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.boxcarvancouver.com/pizza-menu",
+      "deals": [
+        {
+          "name": "Slice & beer combo",
+          "price": "$10",
+          "category": "food",
+          "description": "Happy hour pizza party: one slice of Mortadella Pizzeria Roma-style pizza plus a beer"
+        }
+      ]
+    },
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "osm": {
+      "type": "node",
+      "id": 12164513044,
+      "amenity": "bar"
+    },
+    "data_source": "discovery",
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "id": "brix-mortar",
+    "place_id": null,
+    "name": "Brix & Mortar",
+    "formatted_address": "1138 Homer Street, Vancouver, BC",
+    "address_components": {
+      "street_number": "1138",
+      "route": "Homer Street",
+      "locality": "Vancouver",
+      "administrative_area_level_1": "BC",
+      "postal_code": "V6B 2X6",
+      "country": "CA"
+    },
+    "geometry": {
+      "location": {
+        "lat": 49.2756856,
+        "lng": -123.1220661
+      }
+    },
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": "https://www.brixandmortar.ca",
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "happy_hour": {
+      "days": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.brixandmortar.ca/happy-hour/",
+      "deals": [
+        {
+          "name": "Buttermilk Fried Heritage Chicken",
+          "price": "$15",
+          "category": "food",
+          "description": "Torn herbs, spiced honey butter, chili aioli, pickled chilies"
+        },
+        {
+          "name": "Grilled Sourdough Bread",
+          "price": "$9",
+          "category": "food",
+          "description": "Charred green onion butter"
+        },
+        {
+          "name": "Warmed Olives",
+          "price": "$10",
+          "category": "food",
+          "description": "Calabrian chili & lemon, whipped ricotta cheese"
+        },
+        {
+          "name": "Blackened Tiger Prawns",
+          "price": "$15",
+          "category": "food",
+          "description": "Remoulade, baby greens, curled onions"
+        },
+        {
+          "name": "Spiced French Fries",
+          "price": "$10",
+          "category": "food",
+          "description": "Lemon garlic aioli"
+        },
+        {
+          "name": "Fresh Mussels",
+          "price": "$19",
+          "category": "food",
+          "description": "Nduja butter sauce, cherry tomato, fresh herbs"
+        },
+        {
+          "name": "Fried Cauliflower Bites",
+          "price": "$11",
+          "category": "food",
+          "description": "Hannah Brook Farm cauliflower, house buffalo sauce"
+        },
+        {
+          "name": "Burger & a Bevvie",
+          "price": "$25",
+          "category": "food",
+          "description": "Hand ground 8oz Wagyu & Canada Prime beef patty, pickled beet BBQ mayo, tallow braised local onions & aged cheddar on a Martin's Famous potato roll, plus a pint of draught beer or 5oz happy hour wine"
+        },
+        {
+          "name": "2oz Cocktails",
+          "price": "$8",
+          "category": "drink",
+          "description": "Happy hour 2oz cocktails — Vodka Mule, double bar rail highballs. Page lists this as both $8 and $10"
+        },
+        {
+          "name": "'Canadian' Old Fashioned",
+          "price": "$12",
+          "category": "drink",
+          "description": "Bearface Triple Oak Rye Whiskey, signature turbinado syrup, orange twist, maraschino cherry, king cube"
+        },
+        {
+          "name": "Lazy Layover",
+          "price": "$11",
+          "category": "drink",
+          "description": "Coconut Cartel Rum, grapefruit, cinnamon, coconut water"
+        },
+        {
+          "name": "Spicy Margarita",
+          "price": "$11",
+          "category": "drink",
+          "description": "Jalapeño infused Nodo Tequila, Cointreau, fresh lime, agave, Tajin rim"
+        },
+        {
+          "name": "Rosé Sangria",
+          "price": "$11",
+          "category": "drink",
+          "description": "St Remy Brandy, raspberry rosé syrup, guava juice"
+        },
+        {
+          "name": "Craft Draught Beer 18oz",
+          "price": "$6",
+          "category": "drink",
+          "description": "OK 1516 Spring Lager, Superflux 'Happyness' IPA, Slow Hand Pale Ale, rotating tap"
+        },
+        {
+          "name": "Wine 5oz",
+          "price": "$7",
+          "category": "drink",
+          "description": "Sandhill Estate Pinot Gris 2022 (Okanagan, BC), Bodega Olivares Rosado 2021 (Jumilla, Spain), Pata Negra Toro 2020 (Spain)"
+        },
+        {
+          "name": "Bottles of wine $140 & under",
+          "price": "30% off",
+          "category": "drink",
+          "description": "All bottles of wine priced $140 and under are 30% off during happy hour"
+        }
+      ]
+    },
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "osm": {
+      "type": "node",
+      "id": 3932735573,
+      "amenity": "restaurant"
+    },
+    "data_source": "discovery",
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "id": "joe-fortes",
+    "place_id": null,
+    "name": "Joe Fortes",
+    "formatted_address": "777 Thurlow Street, Vancouver, BC",
+    "address_components": {
+      "street_number": "777",
+      "route": "Thurlow Street",
+      "locality": "Vancouver",
+      "administrative_area_level_1": "BC",
+      "postal_code": "V6E 1V8",
+      "country": "CA"
+    },
+    "geometry": {
+      "location": {
+        "lat": 49.2849273,
+        "lng": -123.124611
+      }
+    },
+    "formatted_phone_number": "+1-604-669-1940",
+    "international_phone_number": null,
+    "website": "https://www.joefortes.ca/",
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.joefortes.ca/menus/",
+      "deals": []
+    },
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "osm": {
+      "type": "node",
+      "id": 3690929433,
+      "amenity": "restaurant"
+    },
+    "data_source": "discovery",
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "id": "the-515-bar",
+    "place_id": null,
+    "name": "The 515 Bar",
+    "formatted_address": "521 Seymour Street, Vancouver, BC",
+    "address_components": {
+      "street_number": "521",
+      "route": "Seymour Street",
+      "locality": "Vancouver",
+      "administrative_area_level_1": "BC",
+      "postal_code": "V6B 1W7",
+      "country": "CA"
+    },
+    "geometry": {
+      "location": {
+        "lat": 49.283841,
+        "lng": -123.1143806
+      }
+    },
+    "formatted_phone_number": null,
+    "international_phone_number": null,
+    "website": "https://the515bar.ca/",
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://the515bar.ca/",
+      "deals": [
+        {
+          "name": "Jefferson County",
+          "price": "$10",
+          "category": "drink",
+          "description": "2oz — Tanqueray Gin, Lillet, St. Germain, lemon, sparkling wine, orange bitters"
+        },
+        {
+          "name": "Negroni",
+          "price": "$10",
+          "category": "drink",
+          "description": "3oz — Tanqueray Gin, Campari, Cinzano"
+        },
+        {
+          "name": "Martini",
+          "price": "$10",
+          "category": "drink",
+          "description": "2oz — Tanqueray Gin, Noilly Prat, orange bitters"
+        },
+        {
+          "name": "Daiquiri",
+          "price": "$10",
+          "category": "drink",
+          "description": "2oz — Havana Club 3 Year, Wray & Nephew, lime, turbinado"
+        },
+        {
+          "name": "Wine by the glass",
+          "price": "$10",
+          "category": "drink",
+          "description": "White, red or rosé by the glass"
+        },
+        {
+          "name": "Local draft beer",
+          "price": "$6",
+          "category": "drink",
+          "description": "All local draft"
+        },
+        {
+          "name": "Charred Edamame",
+          "price": "$6",
+          "category": "food",
+          "description": "Edamame, Tajin"
+        }
+      ]
+    },
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "osm": {
+      "type": "node",
+      "id": 11079577905,
+      "amenity": "bar"
+    },
+    "data_source": "discovery",
+    "last_synced_at": "2026-08-30"
+  }
+];
