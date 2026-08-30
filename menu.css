@@ -1,3 +1,25 @@
+@keyframes deals-slide-in-left {
+  from { transform: translateX(36px); opacity: 0.35; }
+  to { transform: none; opacity: 1; }
+}
+@keyframes deals-slide-in-right {
+  from { transform: translateX(-36px); opacity: 0.35; }
+  to { transform: none; opacity: 1; }
+}
+.slide-in-left { animation: deals-slide-in-left 0.22s ease; }
+.slide-in-right { animation: deals-slide-in-right 0.22s ease; }
+
+body {
+  overscroll-behavior-y: contain; /* keep native pull-to-refresh out of the pull-down gesture */
+}
+
+.menu-app {
+  transition: transform 0.25s ease;
+}
+.menu-app.pulling {
+  transition: none;
+}
+
 .menu-app {
   max-width: 480px;
   margin: 0 auto;
