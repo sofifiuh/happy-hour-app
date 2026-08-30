@@ -5,6 +5,14 @@
     "user_ratings_total": 2414,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Homer St. Cafe and Bar",
     "synced_at": "2026-08-30"
   },
@@ -14,6 +22,14 @@
     "user_ratings_total": 1402,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Ancora Waterfront Dining and Patio",
     "synced_at": "2026-08-30"
   },
@@ -23,6 +39,14 @@
     "user_ratings_total": 10435,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Earls Kitchen + Bar",
     "synced_at": "2026-08-30"
   },
@@ -32,6 +56,14 @@
     "user_ratings_total": 1133,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Hapa Izakaya Yaletown",
     "synced_at": "2026-08-30"
   },
@@ -39,17 +71,33 @@
     "place_id": "ChIJxwQPG4BxhlQRtCIXIfvmh9I",
     "rating": 4.5,
     "user_ratings_total": 1667,
-    "price_level": 4,
+    "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Boulevard Kitchen & Oyster Bar",
     "synced_at": "2026-08-30"
   },
   "glowbal": {
     "place_id": "ChIJ184e4X5xhlQREgkeHvFAYwE",
     "rating": 4.6,
-    "user_ratings_total": 10417,
+    "user_ratings_total": 10418,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Glowbal",
     "synced_at": "2026-08-30"
   },
@@ -59,6 +107,14 @@
     "user_ratings_total": 3611,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Havana Vancouver",
     "synced_at": "2026-08-30"
   },
@@ -68,15 +124,31 @@
     "user_ratings_total": 1446,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "BREWHALL",
     "synced_at": "2026-08-30"
   },
   "chambar": {
     "place_id": "ChIJq2tI6HtxhlQRBaKUv59cS9E",
     "rating": 4.5,
-    "user_ratings_total": 4439,
+    "user_ratings_total": 4438,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Chambar Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -86,6 +158,14 @@
     "user_ratings_total": 753,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "D/6 Bar & Lounge",
     "synced_at": "2026-08-30"
   },
@@ -95,6 +175,14 @@
     "user_ratings_total": 1050,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Central Restaurants - Vancouver Bentall",
     "synced_at": "2026-08-30"
   },
@@ -104,6 +192,14 @@
     "user_ratings_total": 3129,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Tap & Barrel • Convention Centre",
     "synced_at": "2026-08-30"
   },
@@ -113,6 +209,14 @@
     "user_ratings_total": 979,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "P2B Restaurant + Bar",
     "synced_at": "2026-08-30"
   },
@@ -122,6 +226,14 @@
     "user_ratings_total": 1227,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Relish The Pub",
     "synced_at": "2026-08-30"
   },
@@ -131,6 +243,14 @@
     "user_ratings_total": 15,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
     "matched_name": "French Creek Pub",
     "synced_at": "2026-08-30"
   },
@@ -140,6 +260,14 @@
     "user_ratings_total": 682,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "ZUBU Ramen - Downtown",
     "synced_at": "2026-08-30"
   },
@@ -149,6 +277,14 @@
     "user_ratings_total": 438,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "1931 Gallery Bistro",
     "synced_at": "2026-08-30"
   },
@@ -158,6 +294,14 @@
     "user_ratings_total": 1558,
     "price_level": 4,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Notch8 Restaurant & Bar",
     "synced_at": "2026-08-30"
   },
@@ -167,6 +311,14 @@
     "user_ratings_total": 642,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Parker Rooftop",
     "synced_at": "2026-08-30"
   },
@@ -176,6 +328,14 @@
     "user_ratings_total": 2074,
     "price_level": 4,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Hawksworth Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -185,6 +345,14 @@
     "user_ratings_total": 1360,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Banter Room",
     "synced_at": "2026-08-30"
   },
@@ -194,6 +362,14 @@
     "user_ratings_total": 773,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "El Guapo - Mexican Restaurant Vancouver",
     "synced_at": "2026-08-30"
   },
@@ -203,6 +379,14 @@
     "user_ratings_total": 1997,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Tacofino Yaletown",
     "synced_at": "2026-08-30"
   },
@@ -212,6 +396,14 @@
     "user_ratings_total": 2307,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Parlour",
     "synced_at": "2026-08-30"
   },
@@ -221,15 +413,31 @@
     "user_ratings_total": 2761,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Flying Pig Yaletown",
     "synced_at": "2026-08-30"
   },
   "the-keg-steakhouse-bar-yaletown": {
     "place_id": "ChIJq69lPtZzhlQROZR50xKXYQw",
     "rating": 4.4,
-    "user_ratings_total": 3177,
+    "user_ratings_total": 3178,
     "price_level": 3,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Keg Steakhouse + Bar - Yaletown",
     "synced_at": "2026-08-30"
   },
@@ -239,6 +447,14 @@
     "user_ratings_total": 8395,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Earls Kitchen + Bar",
     "synced_at": "2026-08-30"
   },
@@ -248,6 +464,14 @@
     "user_ratings_total": 2335,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Moltaqa Moroccan Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -257,6 +481,14 @@
     "user_ratings_total": 472,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Alchemy Bar and Kitchen",
     "synced_at": "2026-08-30"
   },
@@ -266,6 +498,14 @@
     "user_ratings_total": 1523,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "Yaletown Brewing Company",
     "synced_at": "2026-08-30"
   },
@@ -275,15 +515,31 @@
     "user_ratings_total": 3716,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Fanny Bay Oyster Bar & Shellfish Market",
     "synced_at": "2026-08-30"
   },
   "hydra-estiatorio-mediterranean": {
     "place_id": "ChIJP9IvbIJxhlQRMbVReWghV0E",
     "rating": 4.4,
-    "user_ratings_total": 1604,
+    "user_ratings_total": 1605,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Hydra Estiatorio",
     "synced_at": "2026-08-30"
   },
@@ -293,6 +549,14 @@
     "user_ratings_total": 1674,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Pourhouse Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -302,6 +566,14 @@
     "user_ratings_total": 1432,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "GRETA Bar YVR",
     "synced_at": "2026-08-30"
   },
@@ -311,6 +583,14 @@
     "user_ratings_total": 1498,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Six Acres",
     "synced_at": "2026-08-30"
   },
@@ -320,6 +600,14 @@
     "user_ratings_total": 561,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Boxcar",
     "synced_at": "2026-08-30"
   },
@@ -329,15 +617,31 @@
     "user_ratings_total": 1819,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Brix and Mortar",
     "synced_at": "2026-08-30"
   },
   "joe-fortes": {
     "place_id": "ChIJiUwIWIBxhlQRzKG3k_9C-T8",
     "rating": 4.5,
-    "user_ratings_total": 8801,
+    "user_ratings_total": 8802,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Joe Fortes Seafood & Chop House",
     "synced_at": "2026-08-30"
   },
@@ -347,6 +651,14 @@
     "user_ratings_total": 379,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The 515 Bar",
     "synced_at": "2026-08-30"
   },
@@ -356,6 +668,14 @@
     "user_ratings_total": 3901,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Cambie Bar & Grill",
     "synced_at": "2026-08-30"
   },
@@ -365,6 +685,14 @@
     "user_ratings_total": 3628,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Cactus Club Cafe",
     "synced_at": "2026-08-30"
   },
@@ -374,6 +702,14 @@
     "user_ratings_total": 3596,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Marcello Ristorante & Pizzeria",
     "synced_at": "2026-08-30"
   },
@@ -383,6 +719,14 @@
     "user_ratings_total": 2971,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Mangos Kitchen Bar",
     "synced_at": "2026-08-30"
   },
@@ -392,6 +736,14 @@
     "user_ratings_total": 2867,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "St. Augustine's",
     "synced_at": "2026-08-30"
   },
@@ -401,6 +753,14 @@
     "user_ratings_total": 2745,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Cactus Club Cafe",
     "synced_at": "2026-08-30"
   },
@@ -410,6 +770,14 @@
     "user_ratings_total": 2659,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Malone's Taphouse",
     "synced_at": "2026-08-30"
   },
@@ -419,6 +787,14 @@
     "user_ratings_total": 2632,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "La Mezcaleria",
     "synced_at": "2026-08-30"
   },
@@ -428,6 +804,14 @@
     "user_ratings_total": 2455,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Cactus Club Cafe",
     "synced_at": "2026-08-30"
   },
@@ -437,6 +821,14 @@
     "user_ratings_total": 1925,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Sing Sing Main St",
     "synced_at": "2026-08-30"
   },
@@ -446,6 +838,14 @@
     "user_ratings_total": 1793,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
     "matched_name": "Jamjar Canteen Commercial Dr.",
     "synced_at": "2026-08-30"
   },
@@ -455,6 +855,14 @@
     "user_ratings_total": 1497,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Bimini's Since 1975",
     "synced_at": "2026-08-30"
   },
@@ -464,6 +872,14 @@
     "user_ratings_total": 1474,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": false,
+      "serves_beer": true,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": null
+    },
     "matched_name": "Between 2 Buns Burgers",
     "synced_at": "2026-08-30"
   },
@@ -473,6 +889,14 @@
     "user_ratings_total": 1459,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Butcher & Bullock Public House",
     "synced_at": "2026-08-30"
   },
@@ -482,6 +906,14 @@
     "user_ratings_total": 1350,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Carlos O'Bryan's Neighborhood Pub",
     "synced_at": "2026-08-30"
   },
@@ -491,6 +923,14 @@
     "user_ratings_total": 1299,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Charlatan",
     "synced_at": "2026-08-30"
   },
@@ -500,6 +940,14 @@
     "user_ratings_total": 1256,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "OPUS Vancouver",
     "synced_at": "2026-08-30"
   },
@@ -509,15 +957,31 @@
     "user_ratings_total": 1214,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Memphis Blues Barbeque House",
     "synced_at": "2026-08-30"
   },
   "caff-cittadella": {
     "place_id": "ChIJ1dHk_txzhlQREPMrE5srBLM",
     "rating": 4.1,
-    "user_ratings_total": 1068,
+    "user_ratings_total": 1069,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
     "matched_name": "Caffè Cittadella",
     "synced_at": "2026-08-30"
   },
@@ -527,6 +991,14 @@
     "user_ratings_total": 995,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Fiorino, Italian Street Food Chinatown Vancouver",
     "synced_at": "2026-08-30"
   },
@@ -536,6 +1008,14 @@
     "user_ratings_total": 978,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Bombay Kitchen and Bar - Denman St",
     "synced_at": "2026-08-30"
   },
@@ -545,6 +1025,14 @@
     "user_ratings_total": 956,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "LIVIA Forno e Vino",
     "synced_at": "2026-08-30"
   },
@@ -554,6 +1042,14 @@
     "user_ratings_total": 954,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": null
+    },
     "matched_name": "Forecast Coffee - Main Street",
     "synced_at": "2026-08-30"
   },
@@ -563,6 +1059,14 @@
     "user_ratings_total": 840,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Noah's Cafe",
     "synced_at": "2026-08-30"
   },
@@ -572,6 +1076,14 @@
     "user_ratings_total": 813,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Bartholomew",
     "synced_at": "2026-08-30"
   },
@@ -581,6 +1093,14 @@
     "user_ratings_total": 797,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
     "matched_name": "Bayside Lounge — English Bay",
     "synced_at": "2026-08-30"
   },
@@ -590,6 +1110,14 @@
     "user_ratings_total": 735,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Cider House",
     "synced_at": "2026-08-30"
   },
@@ -599,6 +1127,14 @@
     "user_ratings_total": 708,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Bar Corso",
     "synced_at": "2026-08-30"
   },
@@ -608,6 +1144,14 @@
     "user_ratings_total": 664,
     "price_level": 3,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Song (by Kin Kao)",
     "synced_at": "2026-08-30"
   },
@@ -617,6 +1161,14 @@
     "user_ratings_total": 566,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "Main Street Brewing Co.",
     "synced_at": "2026-08-30"
   },
@@ -626,6 +1178,14 @@
     "user_ratings_total": 520,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "SWITCH",
     "synced_at": "2026-08-30"
   },
@@ -635,6 +1195,14 @@
     "user_ratings_total": 448,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Uncle Abe's",
     "synced_at": "2026-08-30"
   },
@@ -644,16 +1212,32 @@
     "user_ratings_total": 427,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Watson",
     "synced_at": "2026-08-30"
   },
   "junction": {
-    "place_id": "ChIJnwAUXStyhlQRSqCQXVD1lZM",
-    "rating": 3.7,
-    "user_ratings_total": 411,
-    "price_level": 1,
-    "business_status": "OPERATIONAL",
-    "matched_name": "Junction",
+    "place_id": "ChIJTbGaXityhlQRY0n79KKojDY",
+    "rating": null,
+    "user_ratings_total": null,
+    "price_level": null,
+    "business_status": null,
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "1138 Davie St",
     "synced_at": "2026-08-30"
   },
   "mum-s-the-word": {
@@ -662,6 +1246,14 @@
     "user_ratings_total": 347,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Mum's The Word",
     "synced_at": "2026-08-30"
   },
@@ -671,6 +1263,14 @@
     "user_ratings_total": 9907,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Old Spaghetti Factory (Gastown)",
     "synced_at": "2026-08-30"
   },
@@ -680,15 +1280,31 @@
     "user_ratings_total": 5694,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Dae Bak Bon Ga",
     "synced_at": "2026-08-30"
   },
   "the-sandbar-seafood-restaurant": {
     "place_id": "ChIJj6Jmb85zhlQR8ho06uTUy6U",
     "rating": 4.5,
-    "user_ratings_total": 5247,
+    "user_ratings_total": 5248,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Sandbar Seafood Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -698,15 +1314,31 @@
     "user_ratings_total": 3931,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Minami",
     "synced_at": "2026-08-30"
   },
   "top-of-vancouver-revolving-restaurant": {
     "place_id": "ChIJfe2sYHhxhlQRYY79aUl69vw",
     "rating": 4.1,
-    "user_ratings_total": 3511,
+    "user_ratings_total": 3512,
     "price_level": 4,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Top Of Vancouver Revolving Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -716,6 +1348,14 @@
     "user_ratings_total": 3208,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Vancouver Fish Company",
     "synced_at": "2026-08-30"
   },
@@ -725,6 +1365,14 @@
     "user_ratings_total": 3180,
     "price_level": 4,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Gotham Steakhouse & Cocktail Bar",
     "synced_at": "2026-08-30"
   },
@@ -734,6 +1382,14 @@
     "user_ratings_total": 2350,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": null
+    },
     "matched_name": "Sylvia Hotel, Restaurant and Lounge",
     "synced_at": "2026-08-30"
   },
@@ -743,6 +1399,14 @@
     "user_ratings_total": 2065,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Pawn Shop YVR Taco Bar",
     "synced_at": "2026-08-30"
   },
@@ -752,6 +1416,14 @@
     "user_ratings_total": 1991,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Di Beppe Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -761,6 +1433,14 @@
     "user_ratings_total": 1989,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Burgoo",
     "synced_at": "2026-08-30"
   },
@@ -770,6 +1450,14 @@
     "user_ratings_total": 1861,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Skewers Souvlaki Pita Bar",
     "synced_at": "2026-08-30"
   },
@@ -779,6 +1467,14 @@
     "user_ratings_total": 1825,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Sopra Sotto Pizzeria",
     "synced_at": "2026-08-30"
   },
@@ -788,15 +1484,31 @@
     "user_ratings_total": 1808,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Tableau Bar Bistro",
     "synced_at": "2026-08-30"
   },
   "nook-kitsilano": {
     "place_id": "ChIJq9PfzEpyhlQRUqp026zudho",
     "rating": 4.5,
-    "user_ratings_total": 1504,
+    "user_ratings_total": 1505,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Nook Kitsilano",
     "synced_at": "2026-08-30"
   },
@@ -806,6 +1518,14 @@
     "user_ratings_total": 1452,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Red Accordion",
     "synced_at": "2026-08-30"
   },
@@ -815,6 +1535,14 @@
     "user_ratings_total": 1424,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": false,
+      "serves_beer": false,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Big Way Hot Pot (Robson)",
     "synced_at": "2026-08-30"
   },
@@ -824,6 +1552,14 @@
     "user_ratings_total": 1302,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Eat Bar & Patio Haraheri",
     "synced_at": "2026-08-30"
   },
@@ -833,6 +1569,14 @@
     "user_ratings_total": 1277,
     "price_level": 3,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Como Taperia",
     "synced_at": "2026-08-30"
   },
@@ -842,6 +1586,14 @@
     "user_ratings_total": 1150,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Alouette Bistro",
     "synced_at": "2026-08-30"
   },
@@ -851,6 +1603,14 @@
     "user_ratings_total": 1068,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Tutto Italian Restaurant & Bar",
     "synced_at": "2026-08-30"
   },
@@ -860,15 +1620,31 @@
     "user_ratings_total": 1027,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Carlino Restaurant",
     "synced_at": "2026-08-30"
   },
   "zoomak-korean-tavern": {
     "place_id": "ChIJh04xmItxhlQRRdfJbkB4TR0",
     "rating": 4.5,
-    "user_ratings_total": 868,
+    "user_ratings_total": 869,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Zoomak Korean Tavern",
     "synced_at": "2026-08-30"
   },
@@ -878,6 +1654,14 @@
     "user_ratings_total": 863,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Novo Italian",
     "synced_at": "2026-08-30"
   },
@@ -887,6 +1671,14 @@
     "user_ratings_total": 818,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": false,
+      "serves_beer": false,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": null
+    },
     "matched_name": "Street Hawker - Mount Pleasant",
     "synced_at": "2026-08-30"
   },
@@ -896,15 +1688,31 @@
     "user_ratings_total": 747,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Lavantine Restaurant & Skybar",
     "synced_at": "2026-08-30"
   },
   "nook-coal-harbour": {
     "place_id": "ChIJ79MWkpxxhlQRvkJLkRIt0yU",
     "rating": 4.6,
-    "user_ratings_total": 745,
+    "user_ratings_total": 746,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Nook Coal Harbour",
     "synced_at": "2026-08-30"
   },
@@ -914,6 +1722,14 @@
     "user_ratings_total": 652,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "B House Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -923,6 +1739,14 @@
     "user_ratings_total": 651,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Sequel - Kitchen & Bar",
     "synced_at": "2026-08-30"
   },
@@ -932,6 +1756,14 @@
     "user_ratings_total": 1843,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Dublin Calling",
     "synced_at": "2026-08-30"
   },
@@ -941,6 +1773,14 @@
     "user_ratings_total": 1335,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "WestOak",
     "synced_at": "2026-08-30"
   },
@@ -950,6 +1790,14 @@
     "user_ratings_total": 1007,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
     "matched_name": "La Terrazza",
     "synced_at": "2026-08-30"
   },
@@ -959,6 +1807,14 @@
     "user_ratings_total": 921,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Cascade Room",
     "synced_at": "2026-08-30"
   },
@@ -968,6 +1824,14 @@
     "user_ratings_total": 779,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Tocador",
     "synced_at": "2026-08-30"
   },
@@ -977,6 +1841,14 @@
     "user_ratings_total": 738,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Ignite Pizzeria Yaletown",
     "synced_at": "2026-08-30"
   },
@@ -986,6 +1858,14 @@
     "user_ratings_total": 731,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Prophecy Cocktail Bar",
     "synced_at": "2026-08-30"
   },
@@ -995,6 +1875,14 @@
     "user_ratings_total": 176,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "Davie Social",
     "synced_at": "2026-08-30"
   },
@@ -1004,6 +1892,14 @@
     "user_ratings_total": 24,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "The Mac Billiards",
     "synced_at": "2026-08-30"
   },
@@ -1013,6 +1909,14 @@
     "user_ratings_total": 2293,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Guu Original Thurlow",
     "synced_at": "2026-08-30"
   },
@@ -1022,6 +1926,14 @@
     "user_ratings_total": 2024,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Water St. Café",
     "synced_at": "2026-08-30"
   },
@@ -1031,6 +1943,14 @@
     "user_ratings_total": 1989,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": false,
+      "serves_beer": true,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": null
+    },
     "matched_name": "KINTON RAMEN ROBSON",
     "synced_at": "2026-08-30"
   },
@@ -1040,6 +1960,14 @@
     "user_ratings_total": 1742,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Bellaggio Cafe",
     "synced_at": "2026-08-30"
   },
@@ -1049,6 +1977,14 @@
     "user_ratings_total": 1732,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Maxine's Cafe & Bar",
     "synced_at": "2026-08-30"
   },
@@ -1058,6 +1994,14 @@
     "user_ratings_total": 1105,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Guu with Otokomae",
     "synced_at": "2026-08-30"
   },
@@ -1067,6 +2011,14 @@
     "user_ratings_total": 685,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Coco Rico Cafe",
     "synced_at": "2026-08-30"
   },
@@ -1076,6 +2028,14 @@
     "user_ratings_total": 644,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Capo & The Spritz",
     "synced_at": "2026-08-30"
   },
@@ -1085,6 +2045,14 @@
     "user_ratings_total": 596,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Steamworks Mount Pleasant",
     "synced_at": "2026-08-30"
   },
@@ -1094,6 +2062,14 @@
     "user_ratings_total": 468,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Pizza Coming Soon",
     "synced_at": "2026-08-30"
   },
@@ -1103,6 +2079,14 @@
     "user_ratings_total": 458,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Desi Indian Lounge",
     "synced_at": "2026-08-30"
   },
@@ -1112,6 +2096,14 @@
     "user_ratings_total": 382,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Guu Davie",
     "synced_at": "2026-08-30"
   },
@@ -1121,6 +2113,14 @@
     "user_ratings_total": 372,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The King's Head Public House",
     "synced_at": "2026-08-30"
   },
@@ -1130,6 +2130,14 @@
     "user_ratings_total": 357,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Prestons Restaurant + Lounge Vancouver",
     "synced_at": "2026-08-30"
   },
@@ -1139,6 +2147,14 @@
     "user_ratings_total": 56,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": null
+    },
     "matched_name": "Amber Gastown",
     "synced_at": "2026-08-30"
   },

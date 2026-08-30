@@ -74,6 +74,12 @@ export function validateExtraction(x) {
     if (TIME_RE.test(hh.start ?? "") && TIME_RE.test(hh.end ?? "") && hh.end <= hh.start) {
       problems.push(`end ${hh.end} <= start ${hh.start} (overnight window?)`);
     }
+    if (hh.extra_windows !== undefined && !Array.isArray(hh.extra_windows)) problems.push("extra_windows must be an array");
+    for (const w of Array.isArray(hh.extra_windows) ? hh.extra_windows : []) {
+      if (!w || !Array.isArray(w.days) || !w.days.length || !w.days.every((d) => Number.isInteger(d) && d >= 0 && d <= 6)) { problems.push("extra window bad days"); break; }
+      if (!TIME_RE.test(w.start ?? "")) { problems.push(`extra window bad start "${w.start}"`); break; }
+      if (w.end !== null && w.end !== undefined && !TIME_RE.test(w.end)) { problems.push(`extra window bad end "${w.end}"`); break; }
+    }
     if (!Array.isArray(hh.deals)) problems.push("deals must be an array");
     else {
       for (const d of hh.deals) {

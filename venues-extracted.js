@@ -13,154 +13,28 @@
 //   count, price level) from pipeline/places-sync.js. Refreshed by the
 //   re-sync loop per Google's caching terms; place_id is the one field
 //   that may be stored indefinitely.
-const EXTRACTED_DATA_VERSION = "2026-08-30-5f7d58b1";
+const EXTRACTED_DATA_VERSION = "2026-08-30-1a3e25cd";
 
 const VENUES_EXTRACTED = {
-  "ancora": {
-    "deals": [
-      {
-        "name": "HH Highball",
-        "price": "$7",
-        "category": "drink",
-        "description": "1 oz vodka, tequila, gin or rum"
-      },
-      {
-        "name": "Draught beer",
-        "price": "$8",
-        "category": "drink",
-        "description": "16 oz Granville Island Lager, Pale Ale, or IPA"
-      },
-      {
-        "name": "Aperol Spritz",
-        "price": "$12",
-        "category": "drink",
-        "description": "3 oz — Aperol, Prosecco, soda, orange"
-      },
-      {
-        "name": "Caesar",
-        "price": "$12",
-        "category": "drink",
-        "description": "1 oz Smirnoff vodka, Clamato, Tabasco, Worcestershire"
-      },
-      {
-        "name": "Bottega Prosecco",
-        "price": "$10",
-        "category": "drink",
-        "description": "5 oz; 8 oz $16, bottle $50"
-      },
-      {
-        "name": "Franca Estate Riesling",
-        "price": "$10",
-        "category": "drink",
-        "description": "5 oz; 8 oz $16, bottle $50"
-      },
-      {
-        "name": "Phoenix Sauvignon Blanc",
-        "price": "$11",
-        "category": "drink",
-        "description": "5 oz; 8 oz $17, bottle $55"
-      },
-      {
-        "name": "Franca Estate Pinot Noir",
-        "price": "$14",
-        "category": "drink",
-        "description": "5 oz; 8 oz $20, bottle $70"
-      },
-      {
-        "name": "Phoenix Cabernet Merlot",
-        "price": "$11",
-        "category": "drink",
-        "description": "5 oz; 8 oz $17, bottle $55"
-      },
-      {
-        "name": "Franca Estate Rosé",
-        "price": "$10",
-        "category": "drink",
-        "description": "5 oz; 8 oz $16, bottle $50"
-      },
-      {
-        "name": "Spicy Tuna Cone",
-        "price": "$9",
-        "category": "food",
-        "description": "Happy hour seafood & sharing item"
-      },
-      {
-        "name": "Truffle Fries",
-        "price": "$10",
-        "category": "food",
-        "description": "Grana Padano, miso aioli"
-      },
-      {
-        "name": "Brussels Sprouts",
-        "price": "$10",
-        "category": "food",
-        "description": "Togarashi, lemon"
-      },
-      {
-        "name": "Prawn Tempura Cone",
-        "price": "$10",
-        "category": "food",
-        "description": "Happy hour seafood & sharing item"
-      },
-      {
-        "name": "Premium Oysters",
-        "price": "$3 ea",
-        "category": "food",
-        "description": "1 pc $3 / 6 pc $18"
-      },
-      {
-        "name": "Summer Salad",
-        "price": "$17",
-        "category": "food",
-        "description": "Tender greens, pea tendrils, market vegetables, grilled lemon vinaigrette, pangrattato"
-      },
-      {
-        "name": "Ancora Burger",
-        "price": "$22",
-        "category": "food",
-        "description": "AAA beef patty, house brioche, miso mayo, Riopelle cheese, crispy caramelized onions, romaine, heirloom tomato, fries"
-      },
-      {
-        "name": "Mussels",
-        "price": "$22",
-        "category": "food",
-        "description": "Japanese curry cream sauce, fresh coriander, toasted focaccia"
-      },
-      {
-        "name": "Sushi Pizza",
-        "price": "$24",
-        "category": "food",
-        "description": "Crispy rice, avocado, Dungeness crab, tuna, sockeye salmon, unagi sauce"
-      },
-      {
-        "name": "Ancora Glacier",
-        "price": "$93",
-        "category": "food",
-        "description": "For 2 — poached lobster tail, shucked oysters, scallop shooters, prawn cocktail, tuna tartare and tataki, assorted sashimi, seaweed salad"
-      }
-    ],
-    "source_url": "https://www.ancoradining.com/falsecreek",
-    "extracted_at": "2026-08-30"
-  },
   "hapa-izakaya-yaletown": {
     "deals": [
       {
         "name": "Draft beer",
         "price": "$5",
         "category": "drink",
-        "description": "14oz draft"
+        "description": "14oz draft beer"
       },
       {
         "name": "Wine",
         "price": "$6",
         "category": "drink",
-        "description": "6oz glass"
+        "description": "6oz glass of wine"
       },
       {
         "name": "Shochu sour highball",
-        "price": "$5",
+        "price": "$5 sgl / $8 dbl",
         "category": "drink",
-        "description": "Single; $8 double. Choice of lemon, lime or yuzu. Upgrade to house strawberry syrup for $1 extra"
+        "description": "Choice of lemon, lime or yuzu; upgrade to house strawberry syrup for $1 extra"
       },
       {
         "name": "House sake takezake",
@@ -172,7 +46,7 @@ const VENUES_EXTRACTED = {
         "name": "Select house cocktail",
         "price": "$3 off",
         "category": "drink",
-        "description": "Select house cocktails"
+        "description": "Selected house cocktails"
       },
       {
         "name": "Edamame",
@@ -196,7 +70,7 @@ const VENUES_EXTRACTED = {
         "name": "Negitoro",
         "price": "$10",
         "category": "food",
-        "description": "Chopped albacore tuna belly, green onions, toasted garlic bread"
+        "description": "Chopped Albacore tuna belly, green onions, toasted garlic bread"
       },
       {
         "name": "Takoyaki",
@@ -232,7 +106,7 @@ const VENUES_EXTRACTED = {
         "name": "Kinoko ishi-yaki",
         "price": "$13",
         "category": "food",
-        "description": "Rice, enoki, shiitake, oyster mushrooms, iwanori; served in a hot stone bowl"
+        "description": "Rice, enoki, shitake, oyster mushrooms, iwanori; served in a hot stone bowl"
       },
       {
         "name": "Chipotle beef curry ishi-yaki",
@@ -247,6 +121,20 @@ const VENUES_EXTRACTED = {
         "description": "Rice, teriyaki chicken, lettuce, tomato, mayo, crispy wonton chips; served in a hot stone bowl"
       }
     ],
+    "extra_windows": [
+      {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "start": "21:00",
+        "end": null,
+        "label": "Late night"
+      }
+    ],
     "source_url": "https://hapaizakaya.com/yaletown-menu/",
     "extracted_at": "2026-08-30"
   },
@@ -254,105 +142,105 @@ const VENUES_EXTRACTED = {
     "deals": [
       {
         "name": "Oysters",
-        "price": "$2 each",
+        "price": "$2 ea",
         "category": "food",
-        "description": "lemon, shallot mignonette; min 6, max 12 per person, per order"
+        "description": "Lemon, shallot mignonette; min 6, max 12 per person per order"
       },
       {
         "name": "Mixed olives",
         "price": "$10",
         "category": "food",
-        "description": "perello and castelvetrano olives"
+        "description": "Perello and Castelvetrano olives"
       },
       {
         "name": "Baby gem lettuce wedges",
         "price": "$15",
         "category": "food",
-        "description": "crispy shallot and garlic, parmesan; +$3 add guacamole"
+        "description": "Crispy shallot and garlic, parmesan; +$3 add guacamole"
       },
       {
         "name": "Marcona almonds",
         "price": "$8",
         "category": "food",
-        "description": "black truffle infused almonds, sea salt"
+        "description": "Black truffle infused almonds, sea salt"
       },
       {
         "name": "Local cod tacos",
         "price": "$18",
         "category": "food",
-        "description": "guacamole, corn tortilla, pickled red onion, coleslaw, chili crema, cilantro"
+        "description": "Guacamole, corn tortilla, pickled red onion, coleslaw, chili crema, cilantro"
       },
       {
         "name": "Prawn cocktail",
         "price": "$20",
         "category": "food",
-        "description": "black tiger prawn, louie dressing, lemon"
+        "description": "Black tiger prawn, louie dressing, lemon"
       },
       {
         "name": "Tuna tataki",
         "price": "$16",
         "category": "food",
-        "description": "albacore tuna, ponzu vinaigrette"
+        "description": "Albacore tuna, ponzu vinaigrette"
       },
       {
         "name": "Beef carpaccio",
         "price": "$19",
         "category": "food",
-        "description": "soy lime vinaigrette, herb emulsion, pickled shiitake, crispy shallot, rice paper"
+        "description": "Soy lime vinaigrette, herb emulsion, pickled shiitake, crispy shallot, rice paper"
       },
       {
         "name": "Lemongrass chicken wings",
         "price": "$16",
         "category": "food",
-        "description": "thai chili, caramel fish sauce"
+        "description": "Thai chili, caramel fish sauce"
       },
       {
         "name": "French fries",
         "price": "$10",
         "category": "food",
-        "description": "french fries"
+        "description": "House french fries"
       },
       {
         "name": "Truffle fries",
         "price": "$15",
         "category": "food",
-        "description": "truffle salsa, grana padano, chives"
+        "description": "Truffle salsa, grana padano, chives"
       },
       {
         "name": "Cornbread",
         "price": "$10",
         "category": "food",
-        "description": "cornbread"
+        "description": "House cornbread"
       },
       {
-        "name": "Vesper glace",
+        "name": "Vesper glacé",
         "price": "$15",
         "category": "drink",
-        "description": "2oz - the botanist islay gin, lillet blanc, grey goose la poire vodka, lemon"
+        "description": "2oz The Botanist Islay gin, Lillet Blanc, Grey Goose La Poire vodka, lemon"
       },
       {
         "name": "Espresso martini",
         "price": "$11",
         "category": "drink",
-        "description": "2oz - northern keep vodka, kahlua coffee liqueur, espresso"
+        "description": "2oz Northern Keep vodka, Kahlua coffee liqueur, espresso"
       },
       {
         "name": "Whisky lemonade",
         "price": "$13",
         "category": "drink",
-        "description": "1.5oz - suntory toki japanese whisky, sicilian lemonade"
+        "description": "1.5oz Suntory Toki Japanese whisky, Sicilian lemonade"
       },
       {
         "name": "Blood orange negroni",
         "price": "$11",
         "category": "drink",
-        "description": "3oz - malfy blood orange gin, campari, vermouth"
+        "description": "3oz Malfy blood orange gin, Campari, vermouth"
       },
       {
-        "name": "Daily special cocktail",
+        "name": "Daily special",
         "price": "$13",
         "category": "drink",
-        "description": "see what the bar is up to"
+        "description": "See what the bar is up to"
       },
       {
         "name": "Select white & red wine",
@@ -367,18 +255,13 @@ const VENUES_EXTRACTED = {
         "description": "20% off all bottles of wine"
       },
       {
-        "name": "BLVD lager",
+        "name": "Draught beer",
         "price": "$8",
         "category": "drink",
-        "description": "16oz draught lager"
-      },
-      {
-        "name": "Parkside pale ale",
-        "price": "$8",
-        "category": "drink",
-        "description": "16oz draught pale ale"
+        "description": "16oz BLVD lager or Parkside pale ale"
       }
     ],
+    "extra_windows": [],
     "source_url": "https://boulevardvancouver.ca/menus/",
     "extracted_at": "2026-08-30"
   },
@@ -388,7 +271,7 @@ const VENUES_EXTRACTED = {
         "name": "Tots or Fries",
         "price": "$5",
         "category": "food",
-        "description": "Happy hour snack"
+        "description": "Snacks & sweets happy hour item"
       },
       {
         "name": "Truffle Waffle Fries",
@@ -406,31 +289,31 @@ const VENUES_EXTRACTED = {
         "name": "Tap Snack Burger",
         "price": "$10",
         "category": "food",
-        "description": "Happy hour exclusive; 100% canadian beef, caramelized onions, aged white cheddar, pickles, house mayo, potato roll (snack-size, burger only)"
+        "description": "Happy hour exclusive: 100% canadian beef, caramelized onions, aged white cheddar, pickles, house mayo, potato roll (snack-size, burger only)"
       },
       {
         "name": "Fried Chicken Snack Burger",
         "price": "$10",
         "category": "food",
-        "description": "Happy hour exclusive; southern fried chicken, pickles, tangy mayo, potato roll (snack-size, burger only)"
+        "description": "Happy hour exclusive: southern fried chicken, pickles, tangy mayo, potato roll (snack-size, burger only)"
       },
       {
         "name": "Gyoza",
         "price": "$10",
         "category": "food",
-        "description": "Pan-fried chicken and veggie dumplings, korean sesame sauce, green onion, sriracha mustard"
+        "description": "Pan-fried chicken and veggie dumplings, korean sesame sauce, sriracha mustard"
       },
       {
         "name": "Fresh Guac & Chips",
         "price": "$11",
         "category": "food",
-        "description": "Guacamole, pico de gallo, feta, roasted pumpkin seeds, cilantro, cumin-dusted tortilla chips"
+        "description": "Guacamole, pico de gallo, feta, roasted pumpkin seeds, cumin-dusted tortilla chips"
       },
       {
         "name": "Hummus & Za'atar Flatbread",
         "price": "$13.50",
         "category": "food",
-        "description": "Hummus, chermoula, feta, harissa, crispy chickpeas, parsley, baked to order za'atar flatbread"
+        "description": "Hummus, chermoula, feta, harissa, crispy chickpeas, baked to order za'atar flatbread"
       },
       {
         "name": "Chicken Wings",
@@ -448,7 +331,7 @@ const VENUES_EXTRACTED = {
         "name": "Mac & Cheese",
         "price": "$15",
         "category": "food",
-        "description": "Happy hour exclusive; no protein"
+        "description": "Happy hour exclusive, no protein"
       },
       {
         "name": "Margherita Pizza",
@@ -472,7 +355,7 @@ const VENUES_EXTRACTED = {
         "name": "Hot Honey Calabrese Pizza",
         "price": "$18.50",
         "category": "food",
-        "description": "Calabrese salami, bacon, fresh mozzarella, spicy honey, pomodoro sauce, fresh basil"
+        "description": "Calabrese salami, bacon, fresh mozzarella, spicy honey, pomodoro sauce"
       },
       {
         "name": "Fennel Sausage & Stracciatella Pizza",
@@ -490,7 +373,7 @@ const VENUES_EXTRACTED = {
         "name": "Ahi Tuna Poke Bowl",
         "price": "$21",
         "category": "food",
-        "description": "Gochujang soy marinade, sushi rice, tobiko, miso mayo, avocado and more"
+        "description": "Gochujang soy marinade, sushi rice, tobiko, miso mayo, avocado, crispy onion furikake"
       },
       {
         "name": "Pesto Linguine",
@@ -512,7 +395,7 @@ const VENUES_EXTRACTED = {
       },
       {
         "name": "Well Highballs",
-        "price": "$5",
+        "price": "$5-8",
         "category": "drink",
         "description": "1oz $5 | 2oz $8"
       },
@@ -526,7 +409,7 @@ const VENUES_EXTRACTED = {
         "name": "Pink Lemonade Slush",
         "price": "$8",
         "category": "drink",
-        "description": "2oz; or add a side to any drink $2"
+        "description": "2oz; add a side to any drink $2"
       },
       {
         "name": "Cherry Blaster",
@@ -547,6 +430,30 @@ const VENUES_EXTRACTED = {
         "description": "2oz spirit + 3oz wine"
       },
       {
+        "name": "Phillips Tilt Lager",
+        "price": "$5-6.50",
+        "category": "drink",
+        "description": "16oz $5 | 20oz $6.50"
+      },
+      {
+        "name": "Red Truck La Strada Pilsner",
+        "price": "$5-6.50",
+        "category": "drink",
+        "description": "16oz $5 | 20oz $6.50"
+      },
+      {
+        "name": "Phillips Blue Buck Ale",
+        "price": "$5.50-7",
+        "category": "drink",
+        "description": "16oz $5.50 | 20oz $7"
+      },
+      {
+        "name": "BREWHALL Hall Pass IPA",
+        "price": "$6.25-7.75",
+        "category": "drink",
+        "description": "16oz $6.25 | 20oz $7.75"
+      },
+      {
         "name": "Red Sangria",
         "price": "$9",
         "category": "drink",
@@ -559,56 +466,32 @@ const VENUES_EXTRACTED = {
         "description": "1oz spirit + 4oz wine"
       },
       {
-        "name": "Phillips Tilt Lager",
-        "price": "$5",
-        "category": "drink",
-        "description": "16oz $5 | 20oz $6.50"
-      },
-      {
-        "name": "Red Truck La Strada Pilsner",
-        "price": "$5",
-        "category": "drink",
-        "description": "16oz $5 | 20oz $6.50"
-      },
-      {
-        "name": "Phillips Blue Buck Ale",
-        "price": "$5.50",
-        "category": "drink",
-        "description": "16oz $5.50 | 20oz $7"
-      },
-      {
-        "name": "BREWHALL Hall Pass IPA",
-        "price": "$6.25",
-        "category": "drink",
-        "description": "16oz $6.25 | 20oz $7.75"
-      },
-      {
         "name": "Stone Road White or Red",
-        "price": "$6",
+        "price": "$6-9",
         "category": "drink",
         "description": "6oz $6 | 9oz $9"
       },
       {
         "name": "Château Pesquié 1912 Blanc or Rouge",
-        "price": "$8.50",
+        "price": "$8.50-12.75",
         "category": "drink",
         "description": "6oz $8.50 | 9oz $12.75"
       },
       {
         "name": "JoieFarm A Noble Blend",
-        "price": "$11.50",
+        "price": "$11.50-17.25",
         "category": "drink",
         "description": "6oz $11.50 | 9oz $17.25"
       },
       {
         "name": "Modest Wines Rosé",
-        "price": "$10",
+        "price": "$10-15",
         "category": "drink",
         "description": "6oz $10 | 9oz $15"
       },
       {
         "name": "Poplar Grove Generation Merlot",
-        "price": "$13",
+        "price": "$13-19.25",
         "category": "drink",
         "description": "6oz $13 | 9oz $19.25"
       },
@@ -635,9 +518,40 @@ const VENUES_EXTRACTED = {
         "price": "50% off",
         "category": "drink",
         "description": "Happy hour 50% off bottles: Quinta da Lixa Vinho Verde $22, Stoneleigh Sauvignon Blanc $27, Claude Val Rosé $26, Campo Viejo Reserva Red $27, Take It To The Grave Shiraz $30 (prices reflect the discount)"
+      },
+      {
+        "name": "All brunch items",
+        "price": "$4 off",
+        "category": "food",
+        "description": "Brunch Happy Hour, weekends & holidays until 12pm"
       }
     ],
-    "source_url": "https://tapandbarrel.com/wp-content/uploads/2026/04/Convention-Centre-Food-Menu.pdf",
+    "extra_windows": [
+      {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "start": "21:00",
+        "end": "00:00",
+        "label": "Late night"
+      },
+      {
+        "days": [
+          0,
+          6
+        ],
+        "start": "10:00",
+        "end": "12:00",
+        "label": "Brunch happy hour"
+      }
+    ],
+    "source_url": "https://tapandbarrel.com/locations/tap-barrel-convention-centre/",
     "extracted_at": "2026-08-30"
   },
   "p2b-restaurant-bar": {
@@ -649,82 +563,98 @@ const VENUES_EXTRACTED = {
         "description": "1oz"
       },
       {
-        "name": "House Draft Beer",
+        "name": "House draft beer",
         "price": "$6",
         "category": "drink",
         "description": "14oz"
       },
       {
-        "name": "House Negroni",
+        "name": "House negroni",
         "price": "$9",
         "category": "drink",
         "description": "2.5oz"
       },
       {
-        "name": "House Red or White Wine",
+        "name": "House red or white wine",
         "price": "$7",
         "category": "drink",
         "description": "5oz"
       },
       {
-        "name": "Espresso Martini",
+        "name": "Espresso martini",
         "price": "$12",
         "category": "drink",
         "description": "2oz"
       },
       {
-        "name": "Sea Salt Fries & Dip",
+        "name": "Sea salt fries & dip",
         "price": "$6",
         "category": "food",
         "description": "crispy golden fries, chipotle aioli"
       },
       {
-        "name": "House-Made Chips & Dip",
+        "name": "House-made chips & dip",
         "price": "$6",
         "category": "food",
         "description": "crispy potato chips, chipotle aioli"
       },
       {
-        "name": "Hummus Dip + Flat Bread",
+        "name": "Hummus dip + flat bread",
         "price": "$9",
         "category": "food",
         "description": "creamy hummus, grilled flatbread, cherry tomatoes, olives, lemon yogurt"
       },
       {
-        "name": "Sourdough & Olive Oil",
+        "name": "Sourdough & olive oil",
         "price": "$9",
         "category": "food",
-        "description": "extra virgin olive oil, balsamic vinegar, olive tapenade, garlic butter; vegetarian"
+        "description": "extra virgin olive oil, balsamic vinegar, olive tapenade, garlic butter (vegetarian)"
       },
       {
-        "name": "Gyozas & Greens",
+        "name": "Gyozas & greens",
         "price": "$10",
         "category": "food",
         "description": "pan-seared pork dumplings, ponzu sauce"
       },
       {
-        "name": "Pulled Pork Sliders Duo",
+        "name": "Pulled pork sliders duo",
         "price": "$11",
         "category": "food",
         "description": "house smoked pulled pork, coleslaw, brioche buns"
       },
       {
-        "name": "Wings & Fried Pickle Chips",
+        "name": "Wings & fried pickle chips",
         "price": "$13",
         "category": "food",
         "description": "chicken wings, fried pickle chips, ranch dip, tzatziki"
       },
       {
-        "name": "Charcuterie Board",
+        "name": "Charcuterie board",
         "price": "$18",
         "category": "food",
         "description": "prosciutto, salami, brie, blue cheese, cheddar, pickles, olives, apricot jam, grilled sourdough"
       },
       {
-        "name": "Chips & Guacamole",
+        "name": "Chips & guacamole",
         "price": "$10",
         "category": "food",
-        "description": "corn tortilla chips, house-made guacamole; gluten smart, vegetarian"
+        "description": "corn tortilla chips, house-made guacamole (gluten smart, vegetarian)"
+      }
+    ],
+    "extra_windows": [
+      {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "start": "21:00",
+        "end": null,
+        "label": "Late night"
       }
     ],
     "source_url": "https://www.p2bbistro.com/happyhour",
@@ -835,58 +765,16 @@ const VENUES_EXTRACTED = {
         "description": "5oz pour; 8oz $20"
       },
       {
-        "name": "Carmen DO Semillón",
-        "price": "$18",
-        "category": "drink",
-        "description": "5oz pour; 8oz $28"
-      },
-      {
-        "name": "Brocard 'Sainte Claire' Chablis",
-        "price": "$19",
-        "category": "drink",
-        "description": "5oz pour; 8oz $30"
-      },
-      {
-        "name": "Checkmate 'Fool's Mate' Chardonnay",
-        "price": "$37",
-        "category": "drink",
-        "description": "5oz pour; 8oz $59"
-      },
-      {
         "name": "Bartier Bros. Pristine Rosé",
         "price": "$8",
         "category": "drink",
         "description": "5oz pour; 8oz $12"
       },
       {
-        "name": "Rust Co. Rosé",
-        "price": "$12",
-        "category": "drink",
-        "description": "5oz pour; 8oz $19"
-      },
-      {
-        "name": "1 Mill Road Rosé",
-        "price": "$15",
-        "category": "drink",
-        "description": "5oz pour; 8oz $24"
-      },
-      {
         "name": "CedarCreek Estate Pinot Noir",
         "price": "$13",
         "category": "drink",
         "description": "5oz pour; 8oz $19"
-      },
-      {
-        "name": "Borgogno 'No Name' Nebbiolo",
-        "price": "$22",
-        "category": "drink",
-        "description": "5oz pour; 8oz $35"
-      },
-      {
-        "name": "Altesino Brunello",
-        "price": "$25",
-        "category": "drink",
-        "description": "5oz pour; 8oz $39"
       },
       {
         "name": "Bottles of wine",
@@ -937,16 +825,16 @@ const VENUES_EXTRACTED = {
         "description": "foraged mushrooms, caramelized onions, bechamel sauce, ricotta, arugula, truffle oil"
       },
       {
-        "name": "Wagyu Beef Carpaccio",
-        "price": "$17",
-        "category": "food",
-        "description": "wagyu eye of round, horseradish aioli, arugula, crispy onions, parmesan, sourdough bread"
-      },
-      {
         "name": "Salmon Flatbread",
         "price": "$17",
         "category": "food",
         "description": "smoked salmon, dill cream cheese, arugula, capers, pickled shallots"
+      },
+      {
+        "name": "Wagyu Beef Carpaccio",
+        "price": "$17",
+        "category": "food",
+        "description": "wagyu eye of round, horseradish aioli, arugula, crispy onions, parmesan, sourdough bread"
       },
       {
         "name": "Octopus",
@@ -958,9 +846,10 @@ const VENUES_EXTRACTED = {
         "name": "Charcuterie Board",
         "price": "$27",
         "category": "food",
-        "description": "cured meats and cheeses, olives, house made jam & crackers; cheese only or meat only $15"
+        "description": "cured meats and cheeses, olives, house made jam & crackers; cheese only $15, meat only $15"
       }
     ],
+    "extra_windows": [],
     "source_url": "https://www.1931gallerybistro.com/s/Summer-Beverage-2026-2.pdf",
     "extracted_at": "2026-08-30"
   },
@@ -968,159 +857,175 @@ const VENUES_EXTRACTED = {
     "deals": [
       {
         "name": "Freshly shucked oysters",
-        "price": "$2 ea",
+        "price": "$2 each",
         "category": "food",
-        "description": "mignonette, cocktail sauce"
-      },
-      {
-        "name": "Housemade focaccia",
-        "price": "$7",
-        "category": "food",
-        "description": "sun-dried tomato, olive, parmesan"
-      },
-      {
-        "name": "Marinated frescatrano olives",
-        "price": "$7",
-        "category": "food",
-        "description": "crushed chili, garlic, shallot"
-      },
-      {
-        "name": "'KFC'",
-        "price": "$10",
-        "category": "food",
-        "description": "korean fried cauliflower, sesame"
-      },
-      {
-        "name": "Ceviche of the day",
-        "price": "$12",
-        "category": "food",
-        "description": "lime, ginger, chiles"
-      },
-      {
-        "name": "Truffle fries",
-        "price": "$12",
-        "category": "food",
-        "description": "parmesan, chives"
-      },
-      {
-        "name": "Three cheese platter",
-        "price": "$15",
-        "category": "food",
-        "description": "candied fig, pear compote, marcona almond"
+        "description": "Mignonette, cocktail sauce"
       },
       {
         "name": "Steak tartare",
         "price": "$16",
         "category": "food",
-        "description": "mustard, cornichon, cured yolk, potato chip"
+        "description": "Mustard, cornichon, cured yolk, potato chip"
       },
       {
-        "name": "Prawn cocktail",
-        "price": "$16",
+        "name": "'KFC'",
+        "price": "$10",
         "category": "food",
-        "description": "horseradish, cocktail sauce, avocado"
+        "description": "Korean fried cauliflower, sesame"
       },
       {
-        "name": "Shrimp & pork wontons",
-        "price": "$16",
+        "name": "Three cheese platter",
+        "price": "$15",
         "category": "food",
-        "description": "chili oil, peanut, cilantro"
+        "description": "Candied fig, pear compote, marcona almond"
       },
       {
-        "name": "BBQ pork ribs",
-        "price": "$18",
+        "name": "Ceviche of the day",
+        "price": "$12",
         "category": "food",
-        "description": "five spice bbq sauce, nuts, cilantro, chili"
+        "description": "Lime, ginger, chiles"
+      },
+      {
+        "name": "Housemade focaccia",
+        "price": "$7",
+        "category": "food",
+        "description": "Sun-dried tomato, olive, parmesan"
       },
       {
         "name": "Sasanian siberian caviar",
         "price": "$75",
         "category": "food",
-        "description": "potato chips, creme fraiche"
+        "description": "Potato chips, crème fraîche"
+      },
+      {
+        "name": "Marinated frescatrano olives",
+        "price": "$7",
+        "category": "food",
+        "description": "Crushed chili, garlic, shallot"
+      },
+      {
+        "name": "Prawn cocktail",
+        "price": "$16",
+        "category": "food",
+        "description": "Horseradish, cocktail sauce, avocado"
+      },
+      {
+        "name": "BBQ pork ribs",
+        "price": "$18",
+        "category": "food",
+        "description": "Five spice bbq sauce, nuts, cilantro, chili"
+      },
+      {
+        "name": "Truffle fries",
+        "price": "$12",
+        "category": "food",
+        "description": "Parmesan, chives"
+      },
+      {
+        "name": "Shrimp & pork wontons",
+        "price": "$16",
+        "category": "food",
+        "description": "Chili oil, peanut, cilantro"
       },
       {
         "name": "B&B",
         "price": "$31",
         "category": "food",
-        "description": "hawksworth classic burger, crispy bacon, onion ring, old cheddar, fries with a choice of hawksworth 'georgia' lager or 'hazy hawk' ipa"
-      },
-      {
-        "name": "Daiquiri",
-        "price": "$10",
-        "category": "drink",
-        "description": "havana club 3yr, lime juice, simple syrup, 2oz"
-      },
-      {
-        "name": "Martini",
-        "price": "$10",
-        "category": "drink",
-        "description": "absolut vodka or tanqueray gin, 2oz"
-      },
-      {
-        "name": "Hotel Georgia",
-        "price": "$10",
-        "category": "drink",
-        "description": "tanqueray gin, orgeat, lemon, orange blossom water, egg white, 2oz"
-      },
-      {
-        "name": "Moscow mule",
-        "price": "$10",
-        "category": "drink",
-        "description": "absolut vodka, ginger beer, fresh lime juice, 2oz"
+        "description": "Hawksworth classic burger, crispy bacon, onion ring, old cheddar, fries with a choice of Hawksworth 'Georgia' lager or 'Hazy Hawk' IPA"
       },
       {
         "name": "Negroni",
         "price": "$11",
         "category": "drink",
-        "description": "tanqueray, cinzano rosso, campari, 2.5oz"
+        "description": "Tanqueray, cinzano rosso, campari, 2.5oz"
+      },
+      {
+        "name": "Daiquiri",
+        "price": "$10",
+        "category": "drink",
+        "description": "Havana Club 3yr, lime juice, simple syrup, 2oz"
+      },
+      {
+        "name": "Martini",
+        "price": "$10",
+        "category": "drink",
+        "description": "Absolut vodka or Tanqueray gin, 2oz"
+      },
+      {
+        "name": "Hotel Georgia",
+        "price": "$10",
+        "category": "drink",
+        "description": "Tanqueray gin, orgeat, lemon, orange blossom water, egg white, 2oz"
+      },
+      {
+        "name": "Moscow mule",
+        "price": "$10",
+        "category": "drink",
+        "description": "Absolut vodka, ginger beer, fresh lime juice, 2oz"
       },
       {
         "name": "Paloma",
         "price": "$11",
         "category": "drink",
-        "description": "altos tequila plata, lime, grapefruit juice, club soda, 2oz"
+        "description": "Altos tequila plata, lime, grapefruit juice, club soda, 2oz"
       },
       {
         "name": "Hawksworth 'Georgia' lager",
         "price": "$7",
         "category": "drink",
-        "description": "north point brewing co., 355ml"
+        "description": "North Point Brewing Co., 355ml"
       },
       {
         "name": "Hawksworth 'Hazy Hawk' IPA",
         "price": "$7",
         "category": "drink",
-        "description": "north point brewing co., 355ml"
+        "description": "North Point Brewing Co., 355ml"
       },
       {
-        "name": "Wine by the glass",
+        "name": "Chenin blanc",
         "price": "$10",
         "category": "drink",
-        "description": "cape wine company chenin blanc or sandhill cabernet/merlot, 5oz (bottle $50)"
+        "description": "25 Cape Wine Company 'Frank', Western Cape, ZAF — 5oz glass (bottle $50)"
+      },
+      {
+        "name": "Cabernet/merlot blend",
+        "price": "$10",
+        "category": "drink",
+        "description": "24 Sandhill, Okanagan, BC — 5oz glass (bottle $50)"
       },
       {
         "name": "Thai lemonade",
         "price": "$7",
         "category": "drink",
-        "description": "zero proof: fresh lime, cilantro, orgeat, ginger beer"
+        "description": "Zero proof — fresh lime, cilantro, orgeat, ginger beer"
       },
       {
         "name": "Strawberry spritz",
         "price": "$7",
         "category": "drink",
-        "description": "zero proof: cardamom, lemon, soda water"
+        "description": "Zero proof — cardamom, lemon, soda water"
+      },
+      {
+        "name": "Nova zero proof sparkling rosé",
+        "price": "$10",
+        "category": "drink",
+        "description": "Zero proof sparkling rosé"
       },
       {
         "name": "Asahi 'Super Dry' 0.0%",
         "price": "$6",
         "category": "drink",
-        "description": "zero proof lager, 330ml"
-      },
+        "description": "Zero proof lager, 330ml"
+      }
+    ],
+    "extra_windows": [
       {
-        "name": "Nova zero proof sparkling rose",
-        "price": "$10",
-        "category": "drink",
-        "description": "zero proof sparkling rose"
+        "days": [
+          0
+        ],
+        "start": "15:00",
+        "end": null,
+        "label": "Sunday Funday"
       }
     ],
     "source_url": "https://hawksworthrestaurant.com/wp-content/uploads/2026/08/Features.Aug_.26.26.pdf",
@@ -1138,7 +1043,7 @@ const VENUES_EXTRACTED = {
         "name": "Russell Pale Ale",
         "price": "$6",
         "category": "drink",
-        "description": "Pale ale"
+        "description": "Draft pale ale"
       },
       {
         "name": "Muddlers Moscow Mule",
@@ -1156,19 +1061,19 @@ const VENUES_EXTRACTED = {
         "name": "White Claw Black Cherry",
         "price": "$8",
         "category": "drink",
-        "description": "Hard seltzer, black cherry"
+        "description": "Hard seltzer"
       },
       {
         "name": "House Red, White & Rosé",
         "price": "$9",
         "category": "drink",
-        "description": "6oz glass"
+        "description": "6oz pour"
       },
       {
         "name": "Tequila Soda & Slush",
         "price": "$11",
         "category": "drink",
-        "description": ""
+        "description": "Tequila soda and slush"
       },
       {
         "name": "Espresso Martini",
@@ -1198,7 +1103,7 @@ const VENUES_EXTRACTED = {
         "name": "Smash Buddy",
         "price": "$8",
         "category": "food",
-        "description": "Ground chuck patty slider"
+        "description": "Ground chuck slider with cheddar and smash sauce"
       },
       {
         "name": "Salmon Oshi",
@@ -1210,7 +1115,7 @@ const VENUES_EXTRACTED = {
         "name": "Roasted Beet Hummus",
         "price": "$14",
         "category": "food",
-        "description": "Tzatziki, tabouli, crispy chickpeas, grilled pita, feta cheese"
+        "description": "Tzatziki, tabouli, crispy chickpeas, grilled pita, feta"
       },
       {
         "name": "Avocado Bruschetta",
@@ -1228,9 +1133,10 @@ const VENUES_EXTRACTED = {
         "name": "Beef Carpaccio",
         "price": "$15",
         "category": "food",
-        "description": "Seared eye of round, truffle aioli, arugula, fried capers, pickled onions, parmesan, lemon, crostini"
+        "description": "Seared eye of round, truffle aioli, arugula, fried capers, pickled onions, parmesan, crostini"
       }
     ],
+    "extra_windows": [],
     "source_url": "https://www.banterroom.com/menu",
     "extracted_at": "2026-08-30"
   },
@@ -1288,7 +1194,7 @@ const VENUES_EXTRACTED = {
         "name": "Grilled Souvlaki",
         "price": "$15",
         "category": "food",
-        "description": "Your choice of chicken or prawn skewers, pita, tzatziki"
+        "description": "Choice of chicken or prawn skewers, pita, tzatziki"
       },
       {
         "name": "Garlic Prawns",
@@ -1312,7 +1218,7 @@ const VENUES_EXTRACTED = {
         "name": "Well Highballs",
         "price": "$5",
         "category": "drink",
-        "description": "1 oz; your choice of well spirit and soda"
+        "description": "1 oz, choice of well spirit and soda"
       },
       {
         "name": "Jameson Shot",
@@ -1342,51 +1248,52 @@ const VENUES_EXTRACTED = {
         "name": "Helen's Sangria",
         "price": "$8",
         "category": "drink",
-        "description": "5 oz; Makris family recipe"
+        "description": "5 oz, Makris family recipe"
       },
       {
         "name": "Aperol Spritz",
         "price": "$12",
         "category": "drink",
-        "description": "5 oz; Aperol, bubbles, soda, orange"
+        "description": "5 oz — Aperol, bubbles, soda, orange"
       },
       {
         "name": "Anatoli Caesar",
         "price": "$12",
         "category": "drink",
-        "description": "2 oz; Northern Keep vodka, clamato, Worcestershire, crispy fried prawn"
+        "description": "2 oz — Northern Keep vodka, clamato, Worcestershire, crispy fried prawn"
       },
       {
         "name": "Helios Daiquiri",
         "price": "$10",
         "category": "drink",
-        "description": "2 oz; Bacardi white rum, mango, ginger, lime"
+        "description": "2 oz — Bacardi white rum, mango, ginger, lime"
       },
       {
         "name": "Glass of House Wine",
         "price": "$9",
         "category": "drink",
-        "description": "5 oz; Anatoli Viognier, Stone Road Rosé, or Anatoli Meritage"
+        "description": "5 oz — Anatoli Viognier, Stone Road Rosé or Anatoli Meritage"
       },
       {
-        "name": "Bottles of Wine",
+        "name": "Bottles of wine",
         "price": "$10 off",
         "category": "drink",
-        "description": "All bottles of wine $10 off"
+        "description": "All bottles of wine $10 off during happy hour"
       },
       {
         "name": "Zero Spritz",
         "price": "$11",
         "category": "drink",
-        "description": "Non-alcoholic; Noa orange liqueur, Noa Italian aperitif, non-alc bubbles, soda"
+        "description": "Non-alcoholic — Noa orange liqueur, Noa Italian aperitif, non-alc bubbles, soda"
       },
       {
         "name": "Corona Cero",
         "price": "$6",
         "category": "drink",
-        "description": "0.0 non-alcoholic beer"
+        "description": "0.0% non-alcoholic beer"
       }
     ],
+    "extra_windows": [],
     "source_url": "https://www.thegreekbyanatoli.com/yaletown-menu",
     "extracted_at": "2026-08-30"
   },
@@ -1420,7 +1327,7 @@ const VENUES_EXTRACTED = {
         "name": "Tippy Canoe Lager",
         "price": "$6.75",
         "category": "drink",
-        "description": "By Granville Island, 16 oz"
+        "description": "16 oz, by Granville Island"
       },
       {
         "name": "Highballs",
@@ -1442,53 +1349,54 @@ const VENUES_EXTRACTED = {
       },
       {
         "name": "Premium Oysters",
-        "price": "$3 ea",
+        "price": "$3/each",
         "category": "food",
-        "description": "Monday - Thursday, all day"
+        "description": "Monday-Thursday, all day"
       },
       {
         "name": "Meatball Mini",
-        "price": "$6 ea",
+        "price": "$6/each",
         "category": "food",
-        "description": "Meatball mini"
+        "description": "Beef and pork blend, brioche bun, roasted garlic aioli, reggiano, caramelized onion, tomato sauce"
       },
       {
         "name": "Lobster Roll",
-        "price": "$7 ea",
+        "price": "$7/each",
         "category": "food",
-        "description": "Mini lobster roll"
+        "description": "Buttered brioche, prawn, lobster, Old Bay aioli, celery, onion, lemon"
       },
       {
         "name": "Boeuf Dip Slider",
-        "price": "$7 ea",
+        "price": "$7/each",
         "category": "food",
-        "description": "Braised beef short rib slider"
+        "description": "Braised beef short rib, gruyere, caramelized onions, French onion dip"
       },
       {
         "name": "Belly Bite",
         "price": "$6/bite",
         "category": "food",
-        "description": "Crispy pork belly bite, gluten free"
+        "description": "Crispy pork, cherry cola reduction (GF)"
       },
       {
         "name": "Roasted Veg",
         "price": "$12",
         "category": "food",
-        "description": "Gluten free"
+        "description": "Beets, asparagus, mushrooms, fingerling potatoes, avocado crema (GF)"
       },
       {
         "name": "Brocco",
         "price": "$12",
         "category": "food",
-        "description": "Broccoli dish, gluten free, can be made vegan"
+        "description": "Broccoli, garlic, shallots, jalapeno, roasted pepper, pine nuts, sweet soy sauce (V+, GF)"
       },
       {
         "name": "Caesar Salad",
         "price": "$12",
         "category": "food",
-        "description": "Caesar salad"
+        "description": "Maple bacon lardon, roasted garlic, butter croutons"
       }
     ],
+    "extra_windows": [],
     "source_url": "https://theparlourrestaurants.com/vancouver-menu/",
     "extracted_at": "2026-08-30"
   },
@@ -1510,7 +1418,7 @@ const VENUES_EXTRACTED = {
         "name": "Chicken Wings",
         "price": "$16.95",
         "category": "food",
-        "description": "House-made marinated wings: Hot, S&P, Lemon Pepper, Honey Garlic, or BBQ."
+        "description": "House-made marinated wings: Hot, S&P, Lemon Pepper, Honey Garlic, BBQ."
       },
       {
         "name": "Prawn & Parmesan Arancini",
@@ -1546,7 +1454,7 @@ const VENUES_EXTRACTED = {
         "name": "Margherita Pizza",
         "price": "$19.95",
         "category": "food",
-        "description": "Tomato sauce, mozzarella, cherry tomato, bocconcini, herbs, Grana Padano. Regular menu Margherita Classico is $23.95."
+        "description": "Tomato sauce, mozzarella, cherry tomato, bocconcini, herbs, Grana Padano. Regular menu price is $23.95."
       },
       {
         "name": "Crème Brûlée",
@@ -1558,31 +1466,31 @@ const VENUES_EXTRACTED = {
         "name": "Classic Margarita",
         "price": "$10",
         "category": "drink",
-        "description": "Happy hour cocktail price."
+        "description": "Happy hour cocktail."
       },
       {
         "name": "Espresso Martini",
         "price": "$13",
         "category": "drink",
-        "description": "Happy hour cocktail price."
+        "description": "Happy hour cocktail."
       },
       {
         "name": "Aperol Spritz",
         "price": "$11",
         "category": "drink",
-        "description": "Happy hour cocktail price."
+        "description": "Happy hour cocktail."
       },
       {
         "name": "Moscow Mule",
         "price": "$13",
         "category": "drink",
-        "description": "Happy hour cocktail price."
+        "description": "Happy hour cocktail."
       },
       {
         "name": "Old Fashioned",
         "price": "$14",
         "category": "drink",
-        "description": "Happy hour cocktail price."
+        "description": "Happy hour cocktail."
       },
       {
         "name": "Rotating Tap Beer",
@@ -1592,15 +1500,31 @@ const VENUES_EXTRACTED = {
       },
       {
         "name": "Pinot Grigio",
-        "price": "$8",
+        "price": "5oz $8 · 8oz $11 · btl $35",
         "category": "drink",
-        "description": "5oz $8, 8oz $11, bottle $35."
+        "description": "White wine, priced by 5oz pour, 8oz pour or bottle."
       },
       {
         "name": "Malbec",
-        "price": "$8",
+        "price": "5oz $8 · 8oz $11 · btl $35",
         "category": "drink",
-        "description": "5oz $8, 8oz $11, bottle $35."
+        "description": "Red wine, priced by 5oz pour, 8oz pour or bottle."
+      }
+    ],
+    "extra_windows": [
+      {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "start": "22:00",
+        "end": null,
+        "label": "Late night"
       }
     ],
     "source_url": "https://www.alchemybar-kitchen.ca/happyhour.html",
@@ -1657,6 +1581,17 @@ const VENUES_DISCOVERED = [
       ],
       "start": "14:30",
       "end": "17:30",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            6
+          ],
+          "start": "14:30",
+          "end": "17:00",
+          "label": "Weekend"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://sulaindianrestaurant.com/happy-hour-vancouver/",
@@ -1665,19 +1600,19 @@ const VENUES_DISCOVERED = [
           "name": "Spicy Laguna Lime",
           "price": "$8 / $10.50",
           "category": "drink",
-          "description": "California-style margarita with tequila, jalapeno, triple sec, agave. 1oz or 2oz pour."
+          "description": "California-style margarita with tequila, jalapeno, triple sec, agave. Poured 1oz or 2oz."
         },
         {
           "name": "Classic Giggle Juice",
           "price": "$9 / $11",
           "category": "drink",
-          "description": "Pink lemonade, Moscato, vodka, strawberry, and lime. 1oz or 2oz pour."
+          "description": "Pink lemonade, Moscato, vodka, strawberry, and lime. Poured 1oz or 2oz."
         },
         {
           "name": "Nimbu Garden",
           "price": "$7 / $10",
           "category": "drink",
-          "description": "Bombay Sapphire Mediterranean lemon gin, mint, and soda. 1oz or 2oz pour."
+          "description": "Bombay Sapphire Mediterranean lemon gin, mint, and soda. Poured 1oz or 2oz."
         },
         {
           "name": "Very Cherry Sangria",
@@ -1701,13 +1636,13 @@ const VENUES_DISCOVERED = [
           "name": "Monsoon Season",
           "price": "$6",
           "category": "drink",
-          "description": "Spirit-free: makrut lime, honey, acid mix, coconut soda."
+          "description": "Spirit free: makrut lime, honey, acid mix, coconut soda."
         },
         {
           "name": "Mango Passionfruit Bellini",
           "price": "$7",
           "category": "drink",
-          "description": "Spirit-free: Alfonso mango, passionfruit, and lemon."
+          "description": "Spirit free: Alfonso mango, passionfruit, and lemon."
         },
         {
           "name": "Sula Lager",
@@ -1773,27 +1708,33 @@ const VENUES_DISCOVERED = [
           "name": "Sev Puri",
           "price": "$11",
           "category": "food",
-          "description": "Street-food chaat topped with potatoes, chutneys, onions, and crunchy sev."
+          "description": "Street-food chaat with potatoes, chutneys, onions, and crunchy sev."
         },
         {
           "name": "Channa Saag Bowl",
           "price": "$19.50",
           "category": "food",
-          "description": "Slow-simmered chickpeas in spinach gravy, served with basmati rice, salad, onion bhajia, and raita."
+          "description": "Slow-simmered chickpeas in spinach gravy; served with basmati rice, salad, onion bhajia, and raita."
         },
         {
           "name": "Butter Chicken Bowl",
           "price": "$21",
           "category": "food",
-          "description": "Signature butter chicken curry with basmati rice, salad, onion bhajia, and raita."
+          "description": "Signature butter chicken curry; served with basmati rice, salad, onion bhajia, and raita."
         },
         {
           "name": "Chicken Tikka Bowl",
           "price": "$24",
           "category": "food",
-          "description": "Tandoor-cooked chicken tikka with basmati rice, salad, onion bhajia, and raita."
+          "description": "Tandoor-cooked chicken; served with basmati rice, salad, onion bhajia, and raita."
         }
       ]
+    },
+    "cover_image": {
+      "url": "https://sulaindianrestaurant.com/wp-content/uploads/2026/03/Best-Indian-Restaurant-Vancouver.jpg",
+      "credit_name": "Sula Indian Restaurant, Main Street",
+      "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -1843,6 +1784,7 @@ const VENUES_DISCOVERED = [
       ],
       "start": "15:00",
       "end": "17:00",
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.catch122.ca/home/happy-hour",
@@ -1875,7 +1817,7 @@ const VENUES_DISCOVERED = [
           "name": "Flat Bread Margherita",
           "price": "$15",
           "category": "food",
-          "description": "House-made thin crust pizza dough, pomodoro, basil, arugula, balsamic reduction, cheddar cheese (vegetarian; add prosciutto +8, add mushroom +6)"
+          "description": "House-made thin crust dough, pomodoro, basil, arugula, balsamic reduction, cheddar (vegetarian; add prosciutto +8, mushroom +6)"
         },
         {
           "name": "Catch Burger & Parm Fries",
@@ -1884,10 +1826,10 @@ const VENUES_DISCOVERED = [
           "description": "6 oz beef patty, pasilla miso aioli, grilled pineapple pico de gallo, white cheddar, arugula, house-made milk bun, parmesan fries (add house-smoked bacon +3)"
         },
         {
-          "name": "Taco",
-          "price": "$5 each",
+          "name": "Tacos",
+          "price": "$5 ea",
           "category": "food",
-          "description": "Pineapple pico de gallo, avocado aioli, pickled onion, corn tortillas; choice of pork belly, Baja fish (crispy cod), or beer battered cauliflower (vegetarian)"
+          "description": "Pork belly, baja fish (crispy cod), or cauliflower (vegetarian); pineapple pico de gallo, avocado aioli, pickled onion, corn tortillas"
         },
         {
           "name": "Truffle Fries",
@@ -1917,21 +1859,27 @@ const VENUES_DISCOVERED = [
           "name": "Wine by the glass",
           "price": "$8 / $11",
           "category": "drink",
-          "description": "6 oz / 9 oz; Lost Inhibitions White (Church and State Wines), Glow Rose (Bench 1775), Cabernet Sauvignon Merlot (Bench 1775)"
+          "description": "6 oz / 9 oz; Lost Inhibitions White (Church and State), Glow Rose (Bench 1775), Cabernet Sauvignon Merlot (Bench 1775)"
         },
         {
           "name": "Craft beer on tap",
           "price": "$5 / $7 / $9",
           "category": "drink",
-          "description": "12 oz / 16 oz / 22 oz; Wildeye Brewing Czech Pilsner 4.8%, North Point Brewing Strawberry Blonde Ale 5.5%"
+          "description": "12 oz / 16 oz / 22 oz; Wildeye Czech Pilsner 4.8%, North Point Strawberry Blonde Ale 5.5%"
         },
         {
           "name": "Spritz",
           "price": "$7 / $9",
           "category": "drink",
-          "description": "1 oz / 2 oz; Campari soda, sweet vermouth soda, or Aperol soda"
+          "description": "1 oz / 2 oz; Campari soda, sweet vermouth soda, Aperol soda"
         }
       ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6a4fc22b918b212e8c661cd2/t/6a4fc24b918b212e8c662b1b/1758668855137/Capa_2.png?format=1500w",
+      "credit_name": "Catch 122 Cafe Bistro",
+      "credit_url": "http://www.catch122.ca/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -1985,11 +1933,35 @@ const VENUES_DISCOVERED = [
       ],
       "start": "15:00",
       "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "start": "21:30",
+          "end": "23:00",
+          "label": "Late night"
+        },
+        {
+          "days": [
+            4,
+            5,
+            6
+          ],
+          "start": "21:30",
+          "end": "01:00",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://themainonmain.com/happy-hour.php",
       "deals": []
     },
+    "cover_image": null,
     "last_synced_at": "2026-08-30"
   },
   {
@@ -2042,10 +2014,32 @@ const VENUES_DISCOVERED = [
       ],
       "start": "14:00",
       "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://kingtaps.com/locations/lonsdale-quay/",
       "deals": []
+    },
+    "cover_image": {
+      "url": "https://kingtaps.com/wp-content/uploads/2025/05/KTLQ_LocationPage_860x410.jpg",
+      "credit_name": "King Taps",
+      "credit_url": "https://kingtaps.com/locations/lonsdale-quay/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -2090,15 +2084,31 @@ const VENUES_DISCOVERED = [
     "happy_hour": {
       "days": [
         0,
-        1,
-        2,
-        3,
-        4,
         5,
         6
       ],
       "start": "12:00",
       "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            2,
+            3,
+            4
+          ],
+          "start": "15:00",
+          "end": "17:00",
+          "label": "Open to 5pm"
+        },
+        {
+          "days": [
+            1
+          ],
+          "start": "12:00",
+          "end": "21:00",
+          "label": "All day Monday"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://pizzacarano.com/menu",
@@ -2107,7 +2117,7 @@ const VENUES_DISCOVERED = [
           "name": "Lager",
           "price": "$6",
           "category": "drink",
-          "description": "16 oz tap lager pour"
+          "description": "16 oz draught lager"
         },
         {
           "name": "Pineapple daiquiri",
@@ -2131,7 +2141,7 @@ const VENUES_DISCOVERED = [
           "name": "Negroni",
           "price": "$8",
           "category": "drink",
-          "description": "2oz classic or carano roasted"
+          "description": "2oz classic or Carano roasted"
         },
         {
           "name": "Olives",
@@ -2143,13 +2153,13 @@ const VENUES_DISCOVERED = [
           "name": "Meatball",
           "price": "$3",
           "category": "food",
-          "description": "Seasoned beef & pork meatball with marinara"
+          "description": "Seasoned beef & pork meatball"
         },
         {
           "name": "Garlic toast",
           "price": "$3",
           "category": "food",
-          "description": "House focaccia with garlic butter"
+          "description": "House focaccia, garlic butter"
         },
         {
           "name": "Anchovy toast",
@@ -2167,7 +2177,7 @@ const VENUES_DISCOVERED = [
           "name": "Caesar",
           "price": "$12",
           "category": "food",
-          "description": "Classic caesar salad (contains anchovies)"
+          "description": "Romaine, grana padano, mung beans, croutons, caesar dressing"
         },
         {
           "name": "Cacio e pepe",
@@ -2179,28 +2189,29 @@ const VENUES_DISCOVERED = [
           "name": "Alla vodka",
           "price": "$16",
           "category": "food",
-          "description": "Radiatori alla vodka"
+          "description": "Radiatori, vodka sauce, burrata, calabrian chili"
         },
         {
           "name": "Margherita",
           "price": "$16",
           "category": "food",
-          "description": "Red sauce, fior di latte, grana padano, fresh basil pizza"
+          "description": "Red sauce, fior di latte, grana padano, fresh basil"
         },
         {
           "name": "Funghi",
           "price": "$16",
           "category": "food",
-          "description": "White sauce, seasonal mushroom mix, fior di latte, chive, sherry/truffle oil pizza"
+          "description": "White sauce, seasonal mushroom mix, fior di latte, chive, sherry/truffle oil"
         },
         {
           "name": "Spicy pep",
           "price": "$16",
           "category": "food",
-          "description": "Red sauce, pepperoni, mozzarella, chili, basil, fermented honey pizza"
+          "description": "Red sauce, pepperoni, mozzarella, chili, basil, fermented honey"
         }
       ]
     },
+    "cover_image": null,
     "last_synced_at": "2026-08-30"
   },
   {
@@ -2253,10 +2264,39 @@ const VENUES_DISCOVERED = [
       ],
       "start": "14:00",
       "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Late night"
+        },
+        {
+          "days": [
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "00:00",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://brownssocialhouse.com/point-grey",
       "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/638a8838854a8c585e1b4594/t/63c85a2049d2b604cdc6d67b/1674074656466/STACKED+LOGO+2022+-+Black+Orange+-+Framed.png?format=1500w",
+      "credit_name": "Browns Socialhouse Point Grey",
+      "credit_url": "https://brownssocialhouse.com/point-grey",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -2308,10 +2348,30 @@ const VENUES_DISCOVERED = [
       ],
       "start": "15:00",
       "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.provisionsitaliana.com/menus",
       "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/66426f626fe3227dc6a2a5b6/t/698e292cec10d973a8f285d5/1770924332214/Provisions+Italiana+Logo.png?format=1500w",
+      "credit_name": "Provisions Italiana at Seaside Hotel",
+      "credit_url": "https://www.provisionsitaliana.com/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -2363,6 +2423,16 @@ const VENUES_DISCOVERED = [
       ],
       "start": "15:00",
       "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            4
+          ],
+          "start": "12:00",
+          "end": null,
+          "label": "Thursday all day"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "http://www.hynesirishpub.com/",
@@ -2371,10 +2441,11 @@ const VENUES_DISCOVERED = [
           "name": "Buckets",
           "price": "$32",
           "category": "drink",
-          "description": "Bucket of beers advertised at $32 during happy hour; contents and count not specified on the site."
+          "description": "Bucket of beers advertised alongside the happy hour listing"
         }
       ]
     },
+    "cover_image": null,
     "last_synced_at": "2026-08-30"
   },
   {
@@ -2427,6 +2498,22 @@ const VENUES_DISCOVERED = [
       ],
       "start": "15:00",
       "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://eatmeet.ca/happy-hour-menu/",
@@ -2441,25 +2528,25 @@ const VENUES_DISCOVERED = [
           "name": "Cheezy TeeM Poutine",
           "price": "$11.50",
           "category": "food",
-          "description": "Crispy fries with cashew miso gravy, whipped feta and mozza, finished with scallions (contains nuts). Add crispy onion rings $2.25"
+          "description": "Crispy fries with cashew miso gravy, whipped feta and mozza, finished with scallions (contains nuts); add crispy onion rings $2.25"
         },
         {
           "name": "The Happy Burger",
           "price": "$15.75",
           "category": "food",
-          "description": "Signature burger patty on a toasted bun with lettuce, tomato, mayo and pickles, served with crispy fries (contains gluten). Gluten-friendly bun & patty +$2.75; add cheez +$3"
+          "description": "Signature burger patty on a toasted bun with lettuce, tomato, mayo and pickles, served with crispy fries (contains gluten); gluten-friendly bun & patty +$2.75, add cheez +$3"
         },
         {
           "name": "Butter Chikkin Noodz",
           "price": "$15.75",
           "category": "food",
-          "description": "Rice noodles tossed in creamy tomato chikkin curry, topped with kachumber-spiced tomato, onion, cucumber and mint, finished with cilantro"
+          "description": "Rice noodles in creamy tomato chikkin curry, topped with kachumber-spiced tomato, onion, cucumber and mint, finished with cilantro"
         },
         {
           "name": "Mac N' Cheez Bowl",
           "price": "$13.50",
           "category": "food",
-          "description": "Macaroni in cashew cheez sauce with rawmesan, scallions and smoked salt (contains nuts). Hack your Mac +$5.75 with Italian sausage or butter chikkin"
+          "description": "Macaroni in cashew cheez sauce with rawmesan, scallions and smoked salt (contains nuts); Hack Your Mac add Italian sausage or butter chikkin $5.75"
         },
         {
           "name": "Lemon Tart",
@@ -2471,7 +2558,7 @@ const VENUES_DISCOVERED = [
           "name": "Chocolate Chip Cookie & Mousse",
           "price": "$7.75",
           "category": "food",
-          "description": "In-house baked GF chocolate chip cookie with light chocolate mousse for dipping"
+          "description": "In-house baked GF chocolate chip cookie with fluffy chocolate mousse for dipping"
         },
         {
           "name": "Cucumber Elderflower Spritz",
@@ -2483,7 +2570,7 @@ const VENUES_DISCOVERED = [
           "name": "Pineapple Basil Smash",
           "price": "$9.75",
           "category": "drink",
-          "description": "Beefeater gin, basil syrup and fresh pineapple juice (2oz)"
+          "description": "Signature cocktail: Beefeater gin, basil syrup and fresh pineapple juice (2oz)"
         },
         {
           "name": "Spicy Margarita",
@@ -2501,19 +2588,19 @@ const VENUES_DISCOVERED = [
           "name": "Vodka Seltzer",
           "price": "$5.25",
           "category": "drink",
-          "description": "Vodka with blackberry, elderflower or peach, topped with soda spritz (1oz)"
+          "description": "Vodka with blackberry, elderflower or peach, topped with soda (1oz)"
         },
         {
           "name": "Gin Seltzer",
           "price": "$5.25",
           "category": "drink",
-          "description": "Gin with blackberry, elderflower or peach, topped with soda spritz (1oz)"
+          "description": "Gin with blackberry, elderflower or peach, topped with soda (1oz)"
         },
         {
           "name": "Tequila Seltzer",
           "price": "$5.25",
           "category": "drink",
-          "description": "Tequila with blackberry, elderflower or peach, topped with soda spritz (1oz)"
+          "description": "Tequila with blackberry, elderflower or peach, topped with soda (1oz)"
         },
         {
           "name": "Phillips Tilt Lager",
@@ -2522,13 +2609,14 @@ const VENUES_DISCOVERED = [
           "description": "Draught beer, 8oz halfer $3 / 16oz sleeve $5.75"
         },
         {
-          "name": "Stone Road Red / White / Rose Blend",
+          "name": "Stone Road Red / White / Rose",
           "price": "$5 / $8.75 / $19.50",
           "category": "drink",
-          "description": "5oz glass $5 / 9oz glass $8.75 / bottle $19.50"
+          "description": "Blend by the 5oz glass $5, 9oz glass $8.75, bottle $19.50"
         }
       ]
     },
+    "cover_image": null,
     "last_synced_at": "2026-08-30"
   },
   {
@@ -2581,6 +2669,36 @@ const VENUES_DISCOVERED = [
       ],
       "start": "15:00",
       "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "15:00",
+          "end": "17:00",
+          "label": "Smashed Hour burgers"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://bin4burgerlounge.com/happy-hour-menu/",
@@ -2589,70 +2707,70 @@ const VENUES_DISCOVERED = [
           "name": "Bin 700 – Smashville",
           "price": "$9",
           "category": "food",
-          "description": "Smashed Hour burger (3–5 PM only): smashed premium BC beef, orange cheddar, caramelized onions, pickles, shredded lettuce, Bin 4 burger sauce. Make it a double +$4"
+          "description": "Smashed premium BC beef, orange cheddar, caramelized onions, pickles, shredded lettuce, Bin 4 burger sauce. Make it a double: $4. Smashed Hour burgers available 3–5 PM only"
         },
         {
           "name": "Bin 701 – Smash That",
           "price": "$9",
           "category": "food",
-          "description": "Smashed Hour burger (3–5 PM only): smashed premium BC beef, white cheddar, crispy onions, pickles, whiskey BBQ sauce, shredded lettuce, Bin 4 burger sauce. Make it a double +$4"
+          "description": "Smashed premium BC beef, white cheddar, crispy onions, pickles, whiskey BBQ sauce, shredded lettuce, Bin 4 burger sauce. Make it a double: $4. Smashed Hour burgers available 3–5 PM only"
         },
         {
           "name": "Bin 38 – Bin 4 Spiced Aloo Tikki",
           "price": "$8",
           "category": "food",
-          "description": "Smashed Hour burger (3–5 PM only): Bin 4 spiced panko crusted Aloo Tikki patty, potato, peas, cilantro, ginger, chilis, tangy sauce, shredded lettuce, tomato, onion"
+          "description": "Bin 4 spiced panko crusted Aloo Tikki patty, potato, peas, cilantro, ginger, chilis, tangy sauce, shredded lettuce, tomato, onion. Smashed Hour burgers available 3–5 PM only"
         },
         {
           "name": "House Fries",
           "price": "$4 | $7",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily; small | large"
+          "description": "Appetizer pricing 3–6 PM; small | large"
         },
         {
           "name": "Yam Fries",
           "price": "$5 | $8",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily; small | large"
+          "description": "Appetizer pricing 3–6 PM; small | large"
         },
         {
           "name": "Garlic Truffle Fries",
           "price": "$5 | $8",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily; small | large"
+          "description": "Appetizer pricing 3–6 PM; small | large"
         },
         {
           "name": "Roasted Red Pepper Hummus & Chips",
           "price": "$6",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily"
+          "description": "House-made roasted red pepper hummus, fried tortilla chips, cilantro"
         },
         {
           "name": "Deep Fried Pickles",
           "price": "$8",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily"
+          "description": "Breaded dill pickle, Bin 4 blackening spice, chipotle aioli"
         },
         {
           "name": "Goat Cheese Bruschetta",
           "price": "$10",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily"
+          "description": "Panko-crusted goat cheese, tomato, onion, garlic, basil, balsamic reduction, crostini"
         },
         {
           "name": "Bin 4 Poutine",
           "price": "$13",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily (listed on the happy hour menu page but not on the homepage version)"
+          "description": "House fries, cheese curds, Bin 4 gravy, green onion"
         },
         {
           "name": "Vietnamese Beef Lettuce Wraps",
           "price": "$14",
           "category": "food",
-          "description": "Happy hour appetizer, 3–6 PM daily"
+          "description": "Vietnamese spiced beef, hoisin, cabbage slaw, jalapeno, crispy wontons, baby romaine cups"
         },
         {
-          "name": "Philip's Draft",
+          "name": "Phillips Draft",
           "price": "$6.50",
           "category": "drink",
           "description": "16 oz draft beer"
@@ -2661,19 +2779,19 @@ const VENUES_DISCOVERED = [
           "name": "Pineapple Strawberry Mojito",
           "price": "$8 | $11",
           "category": "drink",
-          "description": "$8 for 1 oz, $11 for 2 oz"
+          "description": "1 oz | 2 oz"
         },
         {
           "name": "Blackberry Vanilla Lemonade",
           "price": "$8 | $11",
           "category": "drink",
-          "description": "$8 for 1 oz, $11 for 2 oz"
+          "description": "1 oz | 2 oz"
         },
         {
           "name": "Raspberry Black Currant Smash",
           "price": "$8 | $11",
           "category": "drink",
-          "description": "$8 for 1 oz, $11 for 2 oz"
+          "description": "1 oz | 2 oz"
         },
         {
           "name": "Bin 4 Margaritas",
@@ -2685,57 +2803,63 @@ const VENUES_DISCOVERED = [
           "name": "All Wine and Bubbles",
           "price": "$3 off",
           "category": "drink",
-          "description": "All wine and sparkling wine $3 off"
+          "description": "All wine and sparkling by the glass"
         },
         {
           "name": "Cucumber Mint Vodka Soda",
           "price": "$6 | $9",
           "category": "drink",
-          "description": "Zero sugar; $6 for 1 oz, $9 for 2 oz"
+          "description": "Zero sugar; 1 oz | 2 oz"
         },
         {
           "name": "Lemon Basil Gin Soda",
           "price": "$6 | $9",
           "category": "drink",
-          "description": "Zero sugar; $6 for 1 oz, $9 for 2 oz"
+          "description": "Zero sugar; 1 oz | 2 oz"
         },
         {
           "name": "Green Tea Shot",
           "price": "$5",
           "category": "drink",
-          "description": "One Sippers, 1 oz"
+          "description": "1 oz shot"
         },
         {
           "name": "Burt Reynolds Shot",
           "price": "$5",
           "category": "drink",
-          "description": "One Sippers, 1 oz"
+          "description": "1 oz shot"
         },
         {
           "name": "Pink Whitney Shot",
           "price": "$5",
           "category": "drink",
-          "description": "One Sippers, 1 oz"
+          "description": "1 oz shot"
         },
         {
           "name": "Jägermeister Shot",
           "price": "$5",
           "category": "drink",
-          "description": "One Sippers, 1 oz"
+          "description": "1 oz shot"
         },
         {
           "name": "Raspberry Lavender Fizz",
           "price": "$6",
           "category": "drink",
-          "description": "Zero proof cocktail (homepage lists $5; happy hour menu page lists $6)"
+          "description": "Zero proof"
         },
         {
           "name": "Peach Basil Smash",
           "price": "$6",
           "category": "drink",
-          "description": "Zero proof cocktail (homepage lists $5; happy hour menu page lists $6)"
+          "description": "Zero proof"
         }
       ]
+    },
+    "cover_image": {
+      "url": "https://bin4burgerlounge.com/wp-content/uploads/2025/07/Hero-Video-Still.jpg",
+      "credit_name": "Bin 4 Burger Lounge",
+      "credit_url": "http://www.bin4burgerlounge.com/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -2789,6 +2913,7 @@ const VENUES_DISCOVERED = [
       ],
       "start": "16:00",
       "end": "18:00",
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.fishworks.ca/happy-hour",
@@ -2797,43 +2922,43 @@ const VENUES_DISCOVERED = [
           "name": "Fishworks Caesar",
           "price": "$7",
           "category": "drink",
-          "description": "1oz — rosemary infused Bombay gin, horseradish, oyster sauce, house pickled beans"
+          "description": "House mixed drink, 1oz — rosemary infused Bombay gin, horseradish, oyster sauce, house pickled beans"
         },
         {
           "name": "Jamaican Mule",
           "price": "$8",
           "category": "drink",
-          "description": "2oz — ginger beer, Sailor Jerry's rum, citrus"
+          "description": "House mixed drink, 2oz — ginger beer, Sailor Jerry's rum, citrus"
         },
         {
           "name": "Paloma",
           "price": "$8",
           "category": "drink",
-          "description": "2oz — tequila, grapefruit juice, soda water, lime juice, simple syrup"
+          "description": "House mixed drink, 2oz — tequila, grapefruit juice, soda water, lime juice, simple syrup"
         },
         {
-          "name": "Rosé, Lakeside Cellars",
+          "name": "Rosé",
           "price": "$10",
           "category": "drink",
-          "description": "Okanagan Valley (Osoyoos), BC — $10 per 6oz glass or $40 bottle"
+          "description": "Lakeside Cellars, Okanagan Valley (Osoyoos), BC — 6oz glass; $40 bottle"
         },
         {
           "name": "Sparkling Piano Brut",
           "price": "$10",
           "category": "drink",
-          "description": "Stoneboat Winery, Okanagan Valley (Oliver), BC — $10 per 6oz glass or $40 bottle"
+          "description": "Stoneboat Winery, Okanagan Valley (Oliver), BC — 6oz glass; $40 bottle"
         },
         {
           "name": "House White",
           "price": "$8.50",
           "category": "drink",
-          "description": "Pinot Gris — $8.50 per 6oz glass or $32 bottle"
+          "description": "Pinot Gris — 6oz glass; $32 bottle"
         },
         {
           "name": "House Red",
           "price": "$8.50",
           "category": "drink",
-          "description": "Red blend — $8.50 per 6oz glass or $32 bottle"
+          "description": "Red blend — 6oz glass; $32 bottle"
         },
         {
           "name": "Punchbowl IPA",
@@ -2851,13 +2976,13 @@ const VENUES_DISCOVERED = [
           "name": "Shucked Oysters",
           "price": "$1.75 each",
           "category": "food",
-          "description": "On the half-shell with classic mignonette, horseradish & lemon. Maximum six per person per order"
+          "description": "On the half-shell with classic mignonette, horseradish & lemon. Maximum six per person per order."
         },
         {
-          "name": "Manila Clams or Honey Mussels",
+          "name": "Manila Clams or Honey Mussels 1lb",
           "price": "$18",
           "category": "food",
-          "description": "1lb with garlic, lemon, fresh herbs"
+          "description": "Garlic, lemon, fresh herbs"
         },
         {
           "name": "Torched Wild Sockeye Salmon",
@@ -2896,6 +3021,12 @@ const VENUES_DISCOVERED = [
           "description": "Ponzu marinated eggplant, toasted cashews"
         }
       ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/69e71f4ee32fbd7a08902182/t/69fbdcf1849bf60ac3bad0c2/1778113777525/fishworks-logo.png?format=1500w",
+      "credit_name": "Fishworks",
+      "credit_url": "http://www.fishworks.ca/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -2944,11 +3075,28 @@ const VENUES_DISCOVERED = [
       ],
       "start": "14:00",
       "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:00",
+          "end": "22:30",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "http://www.alley16.com/",
       "deals": []
     },
+    "cover_image": null,
     "last_synced_at": "2026-08-30"
   },
   {
@@ -3001,6 +3149,7 @@ const VENUES_DISCOVERED = [
       ],
       "start": "16:00",
       "end": "17:30",
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.bravovancouver.com/happy-hour",
@@ -3015,43 +3164,43 @@ const VENUES_DISCOVERED = [
           "name": "Marinated Olives",
           "price": "$5",
           "category": "food",
-          "description": "tangerine & chili; $7 on the regular menu"
+          "description": "tangerine & chili"
         },
         {
           "name": "Livia Sourdough",
           "price": "$6",
           "category": "food",
-          "description": "whipped butter, vancouver island sea salt; $8 on the regular menu"
+          "description": "whipped butter, vancouver island sea salt"
         },
         {
           "name": "Tuna Toast",
           "price": "$6",
           "category": "food",
-          "description": "black garlic, gochujang, cherry tomatoes, basil; $17 on the regular menu"
+          "description": "black garlic, gochujang, cherry tomatoes, basil"
         },
         {
           "name": "Clams",
           "price": "$24",
           "category": "food",
-          "description": "kimchi broth, fried tofu, sesame, sourdough; $29 on the regular menu"
+          "description": "kimchi broth, fried tofu, sesame, sourdough"
         },
         {
           "name": "Burrata",
           "price": "$24",
           "category": "food",
-          "description": "porcini & pine mushroom chili xo, pine nuts, sourdough; $28 on the regular menu"
+          "description": "porcini & pine mushroom chili xo, pine nuts, sourdough"
         },
         {
           "name": "Canary Rockfish",
           "price": "$24",
           "category": "food",
-          "description": "salmorejo, whipped feta, compressed melon, serrano, mint; $28 on the regular menu"
+          "description": "salmorejo, whipped feta, compressed melon, serrano, mint"
         },
         {
           "name": "Tagliolini",
           "price": "$32",
           "category": "food",
-          "description": "humboldt squid bolognese, taggiasca olives, herb ricotta; $37 on the regular menu"
+          "description": "humboldt squid bolognese, taggiasca olives, herb ricotta"
         },
         {
           "name": "Negroni",
@@ -3078,30 +3227,36 @@ const VENUES_DISCOVERED = [
           "description": "campari, lambrusco, sparkling water"
         },
         {
-          "name": "Bravo Lager (draft)",
+          "name": "Bravo Lager",
           "price": "$6",
           "category": "drink",
-          "description": "5% - 16 oz; the regular menu lists Bravo Pilsner draft at $8"
+          "description": "draft beer, 5%, 16 oz"
         },
         {
           "name": "Vivezza Petite Milo",
           "price": "$12 | $55",
           "category": "drink",
-          "description": "salt spring island, british columbia; $12 per 5oz glass / $55 bottle (regular wine list $15 | $72)"
+          "description": "salt spring island, british columbia; glass | bottle"
         },
         {
           "name": "Averill Creek Joue Red",
           "price": "$12 | $55",
           "category": "drink",
-          "description": "duncan, british columbia; $12 per 5oz glass / $55 bottle"
+          "description": "duncan, british columbia; glass | bottle"
         },
         {
           "name": "Whispering Horse Traditional L'Acadie",
           "price": "$12 | $55",
           "category": "drink",
-          "description": "fraser valley, bc; $12 per 5oz glass / $55 bottle (regular wine list $15 | $71)"
+          "description": "fraser valley, bc; glass | bottle"
         }
       ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/67216fb414797f637d0085e6/t/6723c476b6329e78020e175d/1730397302096/Oyster+Bar.jpg?format=1500w",
+      "credit_name": "Bar Bravo",
+      "credit_url": "http://bravovancouver.com/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -3153,6 +3308,20 @@ const VENUES_DISCOVERED = [
       ],
       "start": "17:00",
       "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.collectivegoods.ca/happy-hour",
@@ -3161,61 +3330,61 @@ const VENUES_DISCOVERED = [
           "name": "Parm Fries",
           "price": "$12",
           "category": "food",
-          "description": "Happy hour snack"
+          "description": "Parmesan fries"
         },
         {
           "name": "Bread & Butter",
           "price": "$6",
           "category": "food",
-          "description": "Happy hour snack"
+          "description": "Bread and butter"
         },
         {
           "name": "Shrimp Cocktail",
           "price": "$14",
           "category": "food",
-          "description": "Happy hour snack; $18 on the regular small plates menu"
+          "description": "Shrimp cocktail (regular menu price $18)"
         },
         {
           "name": "Chicken Liver Mousse",
           "price": "$18",
           "category": "food",
-          "description": "Happy hour snack; $22 on the regular small plates menu"
+          "description": "Chicken liver mousse (regular menu price $22)"
         },
         {
           "name": "Clams",
           "price": "$19",
           "category": "food",
-          "description": "Happy hour snack; $28 on the regular small plates menu"
+          "description": "Clams (regular menu price $28)"
         },
         {
           "name": "Lillet Spritz",
           "price": "$13",
           "category": "drink",
-          "description": "Happy hour cocktail"
+          "description": "Cocktail"
         },
         {
           "name": "Boulevardier",
           "price": "$13",
           "category": "drink",
-          "description": "Happy hour cocktail"
+          "description": "Cocktail"
         },
         {
           "name": "El Presidente",
           "price": "$13",
           "category": "drink",
-          "description": "Happy hour cocktail"
+          "description": "Cocktail"
         },
         {
           "name": "Huftgold Pilsner",
           "price": "$7",
           "category": "drink",
-          "description": "Happy hour beer"
+          "description": "Draft/bottled pilsner"
         },
         {
           "name": "Slowhand IPA",
           "price": "$7",
           "category": "drink",
-          "description": "Happy hour beer"
+          "description": "IPA"
         },
         {
           "name": "Gls Vin Blanc",
@@ -3233,9 +3402,15 @@ const VENUES_DISCOVERED = [
           "name": "Bottles of Wine",
           "price": "20% off",
           "category": "drink",
-          "description": "20% off bottles of wine during happy hour"
+          "description": "20% off bottles of wine"
         }
       ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/609ac6162013d659830647a8/t/613524ea7a172e50d6c29956/1630872810232/CG-FinalLogo-HandDrawn-3k-TransparentBlue.png?format=1500w",
+      "credit_name": "Collective Goods",
+      "credit_url": "https://www.collectivegoods.ca/",
+      "source": "official_website"
     },
     "last_synced_at": "2026-08-30"
   },
@@ -3293,7 +3468,8 @@ const VENUES_DISCOVERED = [
       "source_url": "http://dublincalling.com/vancouver/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -3350,7 +3526,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://westoakrestaurant.com/pages/menu",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://westoakrestaurant.com/cdn/shop/files/WO_desktopBanner_west0ak_600x600.jpg?v=1628837767",
+      "credit_name": "WestOak",
+      "credit_url": "https://westoakrestaurant.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -3544,7 +3726,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -3728,7 +3911,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/63dc3537de004d21c5b2d5be/t/6647ac8157454e6e1a12ea04/1715973261442/The-Cascade-Room-Logo-2023.png?format=1500w",
+      "credit_name": "The Cascade Room",
+      "credit_url": "http://www.thecascade.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -3780,7 +3969,13 @@ const VENUES_DISCOVERED = [
       "source_url": "http://www.tocador.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/59f4ebb3692ebe8ce16a79f6/t/5acfa2f1575d1f0b6eec9765/1523557110165/logo-fill-teal%402x.png?format=1500w",
+      "credit_name": "Tocador",
+      "credit_url": "http://www.tocador.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -3868,7 +4063,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://ignitepizzeria.com/wp-content/uploads/2024/03/catering-ignite-pizzas-1.jpg",
+      "credit_name": "Ignite Pizzeria Yaletown",
+      "credit_url": "https://ignitepizzeria.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4046,7 +4247,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6596f072da1b421bb16aaafd/t/659822cce0e1cf7792626507/1704469196901/logo-s.jpg?format=1500w",
+      "credit_name": "Prophecy Cocktail Bar",
+      "credit_url": "https://www.prophecybar.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4162,7 +4369,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg",
+      "credit_name": "Davie Social",
+      "credit_url": "https://www.daviesocial.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4229,7 +4442,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://themac.ca/wp-content/uploads/2026/08/20260705_091423-2-1-scaled-1.jpg",
+      "credit_name": "The Mac Billiards",
+      "credit_url": "https://themac.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4311,7 +4530,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
+      "credit_name": "Guu Original Thurlow",
+      "credit_url": "https://guu-izakaya.com/Original_QR",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4627,7 +4852,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/61b235126b51dd0b923b9429/620d8b064047132eddf9e95e_open-graph-image%20(1).png",
+      "credit_name": "Water St. Café",
+      "credit_url": "http://www.waterstreetcafe.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4701,7 +4932,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://kintonramen.com/wp-content/uploads/2024/09/kinton_robson-01228-1-1024x683.jpg",
+      "credit_name": "KINTON RAMEN ROBSON",
+      "credit_url": "https://www.kintonramen.com/location/kinton-ramen-robson/?utm_source=google&utm_medium=organic&utm_campaign=gbp-listing&utm_content=kinton+ramen+robson",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -4825,7 +5062,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -4882,7 +5120,8 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.maxinescafebar.com/menu",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -4964,7 +5203,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
+      "credit_name": "Guu with Otokomae",
+      "credit_url": "https://guu-izakaya.com/Otokomae_QR",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5136,7 +5381,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cocoricocafe.ca/wp-content/uploads/2025/06/cocorico-logo.png",
+      "credit_name": "Coco Rico Cafe",
+      "credit_url": "https://www.cocoricocafe.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5206,7 +5457,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5f2b04f5007a0c0b4126d0ab/t/6a3c6a3e4ac02a00dadaed21/1782344254780/food.jpg?format=1500w",
+      "credit_name": "Capo & The Spritz",
+      "credit_url": "https://www.capoandspritz.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5414,7 +5671,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -5549,7 +5807,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://pizzacomingsoon.com/images/PepEyes.gif",
+      "credit_name": "Pizza Coming Soon",
+      "credit_url": "http://pizzacomingsoon.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5685,7 +5949,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -5802,7 +6067,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
+      "credit_name": "Guu Davie",
+      "credit_url": "https://guu-izakaya.com/Davie_QR",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -5859,7 +6130,8 @@ const VENUES_DISCOVERED = [
       "source_url": "https://thekingsheadkits.com/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -5916,7 +6188,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.prestonsvancouver.ca/menus",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/619e9c5fc9b09079b878c60d/t/6a1f3c5e9d129d02efd2bcbf/1780431966963/Prestons_breakfast-setup2.jpg?format=1500w",
+      "credit_name": "Prestons Restaurant + Lounge Vancouver",
+      "credit_url": "https://www.prestonsvancouver.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6081,7 +6359,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/69177c7462644178b259bde8/t/691780701c60da79402e44f2/1763147888355/Amber+Logo+White.png?format=1500w",
+      "credit_name": "Amber Gastown",
+      "credit_url": "https://amber99.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6294,7 +6578,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/6925144e26dafdde14d3a2c2_6916abb8d2861347aa74ab12_691014e720de4e6f3fec889b_CambiePub%25281%2529.avif",
+      "credit_name": "The Cambie Bar & Grill",
+      "credit_url": "http://www.cambiepubs.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6351,7 +6641,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.cactusclubcafe.com/locations/bentall-5/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.cactusclubcafe.com/wp-content/uploads/2015/05/052915_LocationThumbnails_260px_180px_BENT.png",
+      "credit_name": "Cactus Club Cafe",
+      "credit_url": "https://www.cactusclubcafe.com/locations/bentall-5/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6475,7 +6771,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://marcellopizzeria.com/wp-content/uploads/2019/11/ORANGE_ILLUSTRATION_02.jpg",
+      "credit_name": "Marcello Ristorante & Pizzeria",
+      "credit_url": "http://marcellopizzeria.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6626,7 +6928,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/674a1c8cba87c699b9dc1531_5.jpg",
+      "credit_name": "Mangos Kitchen Bar",
+      "credit_url": "https://www.mangosvancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6683,7 +6991,13 @@ const VENUES_DISCOVERED = [
       "source_url": "http://staugustinesvancouver.com/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://staugustinesvancouver.com/assets/logo-50782319.png",
+      "credit_name": "St. Augustine's",
+      "credit_url": "http://staugustinesvancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6740,7 +7054,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.cactusclubcafe.com/locations/yaletown/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.cactusclubcafe.com/wp-content/uploads/2014/11/052915_LocationThumbnails_260px_180px_YALE.png",
+      "credit_name": "Cactus Club Cafe",
+      "credit_url": "https://www.cactusclubcafe.com/locations/yaletown/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -6972,7 +7292,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/67d4940ac4774ab766493675/67ed7f002bd0240044bb4d1f_624df098ab4100db88769ee8_60963218ec20c227fd57bb28_malones-taphouse_friday-night.jpg",
+      "credit_name": "Malone's Taphouse",
+      "credit_url": "http://www.malones.bc.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7112,7 +7438,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5b294ea4c258b4a050850cbc/t/674e656d6d3dc06fbd267050/1733191027522/5H6A5734.jpg?format=1500w",
+      "credit_name": "La Mezcaleria",
+      "credit_url": "http://www.lamezcaleria.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7169,7 +7501,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.cactusclubcafe.com/locations/broadway-ash/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.cactusclubcafe.com/wp-content/uploads/2015/05/052915_LocationThumbnails_260px_180px_ASH.png",
+      "credit_name": "Cactus Club Cafe",
+      "credit_url": "https://www.cactusclubcafe.com/locations/broadway-ash/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7249,7 +7587,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.datocms-assets.com/75587/1663193492-restaurant-vancouver-singsing-patio-server.jpg?auto=format&fit=max&w=1200",
+      "credit_name": "Sing Sing Main St",
+      "credit_url": "https://www.freehouse.co/locations/sing-sing?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7385,7 +7729,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/598406a2b8a79b3541095ce2/t/64e66555c6598f65d4730d75/1692820821633/JamjarCanteen_icon_black+%282%29.png?format=1500w",
+      "credit_name": "Jamjar Canteen Commercial Dr.",
+      "credit_url": "http://www.jamjarcanteen.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7442,7 +7792,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://biminis1975.ca/happy-hours/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://biminis1975.ca/wp-content/uploads/2025/10/biminis-home-banner.jpg",
+      "credit_name": "Bimini's Since 1975",
+      "credit_url": "https://biminis1975.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7544,7 +7900,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -7630,7 +7987,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.datocms-assets.com/75587/1663200050-restaurant-vancouver-butcherbullock-neon-sign.jpg?auto=format&fit=max&w=1200",
+      "credit_name": "The Butcher & Bullock Public House",
+      "credit_url": "https://www.freehouse.co/locations/butcher-and-bullock?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7736,7 +8099,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -7824,7 +8188,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2019/07/logo.png",
+      "credit_name": "The Charlatan",
+      "credit_url": "http://thecharlatanrestaurant.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7881,7 +8251,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://opushotel.com/eat-drink/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://opushotel.com/media_files/images/Superior_King_2.max-1900x1900.jpg",
+      "credit_name": "OPUS Vancouver",
+      "credit_url": "https://www.opushotel.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -7938,7 +8314,8 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.memphisbluesbbq.com/locations/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -8008,7 +8385,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/61a954_2be19d327c4e4f28a6faec69a4677659.jpg/v1/fit/w_2500,h_1330,al_c/61a954_2be19d327c4e4f28a6faec69a4677659.jpg",
+      "credit_name": "Caffè Cittadella",
+      "credit_url": "https://www.caffecittadella.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8078,7 +8461,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/610f368219465d00e82299a1/t/610f36e4b6c78c0c2e6aa81d/1628387047184/FIORINO_Logo_Orange_onYellow.jpg?format=1500w",
+      "credit_name": "Fiorino, Italian Street Food Chinatown Vancouver",
+      "credit_url": "http://fiorinovancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8135,7 +8524,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://bombaykitchenondenman.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://bombaykitchenondenman.ca/wp-content/uploads/2026/06/Untitled-design-2.png",
+      "credit_name": "Bombay Kitchen and Bar - Denman St",
+      "credit_url": "https://bombaykitchenondenman.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8191,7 +8586,13 @@ const VENUES_DISCOVERED = [
       "source_url": "http://www.liviasweets.com/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/568aa769841abad823732cca/t/5b7de76488251b2ccdaf4ae1/1534977895868/Livia-Sweets--logo-2.jpg?format=1500w",
+      "credit_name": "LIVIA Forno e Vino",
+      "credit_url": "http://www.liviasweets.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8248,7 +8649,13 @@ const VENUES_DISCOVERED = [
       "source_url": "http://forecastcoffee.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://forecastcoffee.ca/cdn/shop/files/Forecast_Coffee_Stack.png?v=1671059059",
+      "credit_name": "Forecast Coffee - Main Street",
+      "credit_url": "http://forecastcoffee.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8305,7 +8712,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.noahscafe604.com/happy-hour",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.noahscafe604.com/uploads/b/b3056d90-8287-11ea-8dcd-d76ba85a9317/A50A3746-E8C0-4D21-8013-4486FE25D16F.jpg",
+      "credit_name": "Noah's Cafe",
+      "credit_url": "https://www.noahscafe604.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8447,7 +8860,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5d62eac6567e6b00010d19dd/t/68e74597dba01c1c30bced3e/1759987095874/barts+text+logo.png?format=1500w",
+      "credit_name": "Bartholomew",
+      "credit_url": "https://www.bartholomewbar.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8629,7 +9048,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/914129_203b8bd912894101a87bf2eecc36324d~mv2.jpg/v1/fill/w_2500,h_2841,al_c/914129_203b8bd912894101a87bf2eecc36324d~mv2.jpg",
+      "credit_name": "Bayside Lounge — English Bay",
+      "credit_url": "https://www.baysidelounge.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8816,7 +9241,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://ciderhouserules.ca/wp-content/uploads/2024/01/ch-brunch-300x300.jpg",
+      "credit_name": "The Cider House",
+      "credit_url": "https://ciderhouserules.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -8869,7 +9300,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.barcorso.ca/menus",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png/v1/fit/w_2500,h_1330,al_c/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png",
+      "credit_name": "Bar Corso",
+      "credit_url": "http://www.barcorso.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -9040,7 +9477,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/637bd7471883712f534a69d5/t/63880bff5e0e99379d87d31c/1669860351856/kksong_logo_bluepatternSQ.jpg?format=1500w",
+      "credit_name": "Song (by Kin Kao)",
+      "credit_url": "http://www.songyvr.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -9109,7 +9552,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5e39fb52039c6a4e75b14e99/t/665f5520dfa487303d924ded/1717523744702/Main+Street+Brewing+Wordmark.jpg?format=1500w",
+      "credit_name": "Main Street Brewing Co.",
+      "credit_url": "http://mainstreetbeer.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -9239,7 +9688,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9315,7 +9765,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9449,7 +9900,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6482752355fc7c5b659d79ed/t/689580055c0e5008d5e18e8f/1754628101180/W+Colour+Logo.png?format=1500w",
+      "credit_name": "The Watson",
+      "credit_url": "https://www.thewatson.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -9547,7 +10004,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9669,7 +10127,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9726,7 +10185,13 @@ const VENUES_DISCOVERED = [
       "source_url": "http://www.oldspaghettifactory.ca/locations/gastown",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://oldspaghettifactory.ca/wp-content/uploads/2020/11/OSF-Gastown.jpg",
+      "credit_name": "The Old Spaghetti Factory (Gastown)",
+      "credit_url": "http://www.oldspaghettifactory.ca/locations/gastown",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -9781,7 +10246,8 @@ const VENUES_DISCOVERED = [
       "source_url": "http://www.daebakbonga.com/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9933,7 +10399,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -9990,7 +10457,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.minamirestaurant.com/menu",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6645475dc7e9ad16be5320a4/t/6645477ec7e9ad16be532a6c/1611857405733/Screen+Shot+2021-01-28+at+1.09.17+PM.png?format=1500w",
+      "credit_name": "Minami",
+      "credit_url": "http://minamirestaurant.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10180,7 +10653,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://i0.wp.com/topofvancouver.com/wp-content/uploads/2024/07/tov-logo-square.png",
+      "credit_name": "Top Of Vancouver Revolving Restaurant",
+      "credit_url": "https://topofvancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10334,7 +10813,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -10440,7 +10920,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.gothamsteakhouse.com/wp-content/media/gotham-opengraph.jpg",
+      "credit_name": "Gotham Steakhouse & Cocktail Bar",
+      "credit_url": "http://www.gothamsteakhouse.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10495,7 +10981,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://sylviahotel.com/restaurant-lounge/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://sylviahotel.com/wp-content/uploads/slider_2-1.jpeg",
+      "credit_name": "Sylvia Hotel, Restaurant and Lounge",
+      "credit_url": "https://sylviahotel.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10595,7 +11087,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -10689,7 +11182,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/61f8647601122d66e6755648/t/6202273588dc2b5b45a78cb9/1737657598840/Di+Beppe+Italian+Pasta+Restaurant+Gastown+Vancouver.jpeg?format=1500w",
+      "credit_name": "Di Beppe Restaurant",
+      "credit_url": "http://www.dibeppe.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -10825,7 +11324,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -10882,7 +11382,8 @@ const VENUES_DISCOVERED = [
       "source_url": "https://skewersgastown.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -11012,7 +11513,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/622915caa2ee207bfc89860c/t/62c71336a355646980d50d29/1657213750476/Sopra+Sotto+Logo_Dark+Green_Transparent+Background_2.png?format=1500w",
+      "credit_name": "Sopra Sotto Pizzeria",
+      "credit_url": "http://www.soprasotto.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -11069,7 +11576,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.tableaubarbistro.com/menu",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg",
+      "credit_name": "Tableau Bar Bistro",
+      "credit_url": "http://tableaubarbistro.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -11229,7 +11742,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -11407,7 +11921,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/60e648fc0a65645b7cc2db16/t/60ee631b5f7927514e3fb935/1626235675857/logo+large+tp+bg-01.png?format=1500w",
+      "credit_name": "The Red Accordion",
+      "credit_url": "http://theredaccordion.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -11462,7 +11982,8 @@ const VENUES_DISCOVERED = [
       "source_url": "http://www.bigwayhotpot.com/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -11519,7 +12040,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://haraheri.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/6f810c_2fee003f992a4c2bae4babd1dfe5790d~mv2.jpg/v1/fill/w_2500,h_1666,al_c/6f810c_2fee003f992a4c2bae4babd1dfe5790d~mv2.jpg",
+      "credit_name": "Eat Bar & Patio Haraheri",
+      "credit_url": "https://haraheri.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -11625,7 +12152,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.shopify.com/s/files/1/0494/0723/0110/files/Como_Logo_Rotated2.png?height=628&pad_color=f7ecde&v=1614315207&width=1200",
+      "credit_name": "Como Taperia",
+      "credit_url": "https://www.comotaperia.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -11755,7 +12288,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/65a72a0678f3ca4b97f809ce/t/6949f0039c3bac7cab8cda9f/1766453251463/Alouette+Bistro+logo+1+-+Red+version.png?format=1500w",
+      "credit_name": "Alouette Bistro",
+      "credit_url": "http://alouettevancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -11810,7 +12349,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://tuttorestaurant.ca/menus",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5e696210b248185a7740eb9e/t/6908ed36e801ae5dae811354/1762192694463/TUTTO+LOGO_RedCircle-Sept+2025.png?format=1500w",
+      "credit_name": "Tutto Italian Restaurant & Bar",
+      "credit_url": "http://www.tuttorestaurant.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -12036,7 +12581,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6197f60605fe1b16f9691fe5/t/61a0093bae588a3d464e910f/1637878075097/Carlino+Best+Italian+Restaurant+Downton+Vancouver+Coal+Harbour+Shangri-La+Pasta.jpg?format=1500w",
+      "credit_name": "Carlino Restaurant",
+      "credit_url": "http://www.carlinorestaurant.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -12090,7 +12641,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.zoomakyvr.com/drinks",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/671af9d0bc57847c268ffd6c/t/672d9aaadb431b2e123f458d/1731041962507/Zoomak+Side+Sign+Logo_Logo+copy.png?format=1500w",
+      "credit_name": "Zoomak Korean Tavern",
+      "credit_url": "http://zoomakyvr.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -12262,7 +12819,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5564c138e4b0b3813af4e855/t/5ecc00722dd571390c7ba0be/1590427774631/Novo_Italian_Social_01.jpg?format=1500w",
+      "credit_name": "Novo Italian",
+      "credit_url": "http://www.novoitalian.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -12319,7 +12882,13 @@ const VENUES_DISCOVERED = [
       "source_url": "http://streethawker.ca/",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.streethawker.ca/uploads/b/47d14d50-dd7e-11ed-84ba-93a1c49a3583/streethawker-03029.jpeg",
+      "credit_name": "Street Hawker - Mount Pleasant",
+      "credit_url": "http://streethawker.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -12478,7 +13047,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -12620,7 +13190,8 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -12677,7 +13248,13 @@ const VENUES_DISCOVERED = [
       "source_url": "https://bhouse.ca/menu",
       "deals": []
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://bhouse.ca/images/1200x630/17240969/editedIMG_70252-cHRNbxfHQNl31phM4aQi4Q.JPG",
+      "credit_name": "B House Restaurant",
+      "credit_url": "http://www.bhouse.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -12915,7 +13492,13 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://thesequel.ca/wp-content/uploads/2025/05/61_IMAGE_THE-SEQUEL_SOCIAL-SHOOT_25-02-18_CHARLESRNASBY-scaled.jpg",
+      "credit_name": "The Sequel - Kitchen & Bar",
+      "credit_url": "https://thesequel.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -13099,7 +13682,8 @@ const VENUES_DISCOVERED = [
       "id": 4842937821,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -13168,7 +13752,13 @@ const VENUES_DISCOVERED = [
       "id": 6927768691,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/65676973c6846d7487e02256/t/656f95aa3358383ff0cbe919/1740440044434/Asset+1.png?format=1500w",
+      "credit_name": "Hydra Estiatorio Mediterranean",
+      "credit_url": "https://www.hydravancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -13304,7 +13894,13 @@ const VENUES_DISCOVERED = [
       "id": 4390232892,
       "amenity": "pub"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5db9f5cc0e8af224964d841a/t/5e45e75a78bd103b8b528dc8/1581639527237/Pourhouse-Restaurant-Cocktail-Bar-Gastown-Vancouver.jpg?format=1500w",
+      "credit_name": "Pourhouse",
+      "credit_url": "https://www.pourhousevancouver.com/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -13456,7 +14052,13 @@ const VENUES_DISCOVERED = [
       "id": 6437608536,
       "amenity": "bar"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://gretabar.com/wp-content/uploads/2026/08/GRETA-X-LE-BURGER-WEEK-Socials2-1.png",
+      "credit_name": "Greta YVR",
+      "credit_url": "https://www.gretabar.com/locations/vancouver",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -13615,7 +14217,13 @@ const VENUES_DISCOVERED = [
       "id": 4859979322,
       "amenity": "pub"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/690fdab96331267ef7e86a2f/t/690fdac76331267ef7e86c07/1757000454899/6A-Kitchen-and-Bar.png?format=1500w",
+      "credit_name": "Six Acres",
+      "credit_url": "https://www.sixacres.ca/",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -13691,7 +14299,13 @@ const VENUES_DISCOVERED = [
       "id": 12164513044,
       "amenity": "bar"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg",
+      "credit_name": "The Boxcar",
+      "credit_url": "https://www.boxcarvancouver.com",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -13856,7 +14470,13 @@ const VENUES_DISCOVERED = [
       "id": 3932735573,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://www.brixandmortar.ca/wp-content/uploads/2021/03/logo1x_01.png",
+      "credit_name": "Brix & Mortar",
+      "credit_url": "https://www.brixandmortar.ca",
+      "source": "official_website"
+    }
   },
   {
     "place_id": null,
@@ -13925,7 +14545,8 @@ const VENUES_DISCOVERED = [
       "id": 3690929433,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": null
   },
   {
     "place_id": null,
@@ -14037,7 +14658,13 @@ const VENUES_DISCOVERED = [
       "id": 11079577905,
       "amenity": "bar"
     },
-    "last_synced_at": "2026-08-30"
+    "last_synced_at": "2026-08-30",
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a63d5f471c7d77bf326cb9d_622a3aa6bcd48977c810a6a4_Share%20BG.jpg",
+      "credit_name": "The 515 Bar",
+      "credit_url": "https://the515bar.ca/",
+      "source": "official_website"
+    }
   }
 ];
 
@@ -14048,6 +14675,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2414,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Homer St. Cafe and Bar",
     "synced_at": "2026-08-30"
   },
@@ -14057,6 +14692,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1402,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Ancora Waterfront Dining and Patio",
     "synced_at": "2026-08-30"
   },
@@ -14066,6 +14709,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 10435,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Earls Kitchen + Bar",
     "synced_at": "2026-08-30"
   },
@@ -14075,6 +14726,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1133,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Hapa Izakaya Yaletown",
     "synced_at": "2026-08-30"
   },
@@ -14082,17 +14741,33 @@ const VENUES_PLACES = {
     "place_id": "ChIJxwQPG4BxhlQRtCIXIfvmh9I",
     "rating": 4.5,
     "user_ratings_total": 1667,
-    "price_level": 4,
+    "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Boulevard Kitchen & Oyster Bar",
     "synced_at": "2026-08-30"
   },
   "glowbal": {
     "place_id": "ChIJ184e4X5xhlQREgkeHvFAYwE",
     "rating": 4.6,
-    "user_ratings_total": 10417,
+    "user_ratings_total": 10418,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Glowbal",
     "synced_at": "2026-08-30"
   },
@@ -14102,6 +14777,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 3611,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Havana Vancouver",
     "synced_at": "2026-08-30"
   },
@@ -14111,15 +14794,31 @@ const VENUES_PLACES = {
     "user_ratings_total": 1446,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "BREWHALL",
     "synced_at": "2026-08-30"
   },
   "chambar": {
     "place_id": "ChIJq2tI6HtxhlQRBaKUv59cS9E",
     "rating": 4.5,
-    "user_ratings_total": 4439,
+    "user_ratings_total": 4438,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Chambar Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -14129,6 +14828,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 753,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "D/6 Bar & Lounge",
     "synced_at": "2026-08-30"
   },
@@ -14138,6 +14845,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1050,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Central Restaurants - Vancouver Bentall",
     "synced_at": "2026-08-30"
   },
@@ -14147,6 +14862,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 3129,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Tap & Barrel • Convention Centre",
     "synced_at": "2026-08-30"
   },
@@ -14156,6 +14879,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 979,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "P2B Restaurant + Bar",
     "synced_at": "2026-08-30"
   },
@@ -14165,6 +14896,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1227,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Relish The Pub",
     "synced_at": "2026-08-30"
   },
@@ -14174,6 +14913,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 15,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
     "matched_name": "French Creek Pub",
     "synced_at": "2026-08-30"
   },
@@ -14183,6 +14930,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 682,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "ZUBU Ramen - Downtown",
     "synced_at": "2026-08-30"
   },
@@ -14192,6 +14947,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 438,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "1931 Gallery Bistro",
     "synced_at": "2026-08-30"
   },
@@ -14201,6 +14964,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1558,
     "price_level": 4,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Notch8 Restaurant & Bar",
     "synced_at": "2026-08-30"
   },
@@ -14210,6 +14981,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 642,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Parker Rooftop",
     "synced_at": "2026-08-30"
   },
@@ -14219,6 +14998,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2074,
     "price_level": 4,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Hawksworth Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -14228,6 +15015,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1360,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Banter Room",
     "synced_at": "2026-08-30"
   },
@@ -14237,6 +15032,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 773,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "El Guapo - Mexican Restaurant Vancouver",
     "synced_at": "2026-08-30"
   },
@@ -14246,6 +15049,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1997,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Tacofino Yaletown",
     "synced_at": "2026-08-30"
   },
@@ -14255,6 +15066,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2307,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Parlour",
     "synced_at": "2026-08-30"
   },
@@ -14264,15 +15083,31 @@ const VENUES_PLACES = {
     "user_ratings_total": 2761,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Flying Pig Yaletown",
     "synced_at": "2026-08-30"
   },
   "the-keg-steakhouse-bar-yaletown": {
     "place_id": "ChIJq69lPtZzhlQROZR50xKXYQw",
     "rating": 4.4,
-    "user_ratings_total": 3177,
+    "user_ratings_total": 3178,
     "price_level": 3,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Keg Steakhouse + Bar - Yaletown",
     "synced_at": "2026-08-30"
   },
@@ -14282,6 +15117,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 8395,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Earls Kitchen + Bar",
     "synced_at": "2026-08-30"
   },
@@ -14291,6 +15134,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2335,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Moltaqa Moroccan Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -14300,6 +15151,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 472,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Alchemy Bar and Kitchen",
     "synced_at": "2026-08-30"
   },
@@ -14309,6 +15168,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1523,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "Yaletown Brewing Company",
     "synced_at": "2026-08-30"
   },
@@ -14318,15 +15185,31 @@ const VENUES_PLACES = {
     "user_ratings_total": 3716,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Fanny Bay Oyster Bar & Shellfish Market",
     "synced_at": "2026-08-30"
   },
   "hydra-estiatorio-mediterranean": {
     "place_id": "ChIJP9IvbIJxhlQRMbVReWghV0E",
     "rating": 4.4,
-    "user_ratings_total": 1604,
+    "user_ratings_total": 1605,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Hydra Estiatorio",
     "synced_at": "2026-08-30"
   },
@@ -14336,6 +15219,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1674,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Pourhouse Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -14345,6 +15236,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1432,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "GRETA Bar YVR",
     "synced_at": "2026-08-30"
   },
@@ -14354,6 +15253,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1498,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Six Acres",
     "synced_at": "2026-08-30"
   },
@@ -14363,6 +15270,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 561,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Boxcar",
     "synced_at": "2026-08-30"
   },
@@ -14372,15 +15287,31 @@ const VENUES_PLACES = {
     "user_ratings_total": 1819,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Brix and Mortar",
     "synced_at": "2026-08-30"
   },
   "joe-fortes": {
     "place_id": "ChIJiUwIWIBxhlQRzKG3k_9C-T8",
     "rating": 4.5,
-    "user_ratings_total": 8801,
+    "user_ratings_total": 8802,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Joe Fortes Seafood & Chop House",
     "synced_at": "2026-08-30"
   },
@@ -14390,6 +15321,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 379,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The 515 Bar",
     "synced_at": "2026-08-30"
   },
@@ -14399,6 +15338,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 3901,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Cambie Bar & Grill",
     "synced_at": "2026-08-30"
   },
@@ -14408,6 +15355,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 3628,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Cactus Club Cafe",
     "synced_at": "2026-08-30"
   },
@@ -14417,6 +15372,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 3596,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Marcello Ristorante & Pizzeria",
     "synced_at": "2026-08-30"
   },
@@ -14426,6 +15389,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2971,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Mangos Kitchen Bar",
     "synced_at": "2026-08-30"
   },
@@ -14435,6 +15406,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2867,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "St. Augustine's",
     "synced_at": "2026-08-30"
   },
@@ -14444,6 +15423,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2745,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Cactus Club Cafe",
     "synced_at": "2026-08-30"
   },
@@ -14453,6 +15440,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2659,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Malone's Taphouse",
     "synced_at": "2026-08-30"
   },
@@ -14462,6 +15457,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2632,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "La Mezcaleria",
     "synced_at": "2026-08-30"
   },
@@ -14471,6 +15474,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2455,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Cactus Club Cafe",
     "synced_at": "2026-08-30"
   },
@@ -14480,6 +15491,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1925,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Sing Sing Main St",
     "synced_at": "2026-08-30"
   },
@@ -14489,6 +15508,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1793,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
     "matched_name": "Jamjar Canteen Commercial Dr.",
     "synced_at": "2026-08-30"
   },
@@ -14498,6 +15525,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1497,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Bimini's Since 1975",
     "synced_at": "2026-08-30"
   },
@@ -14507,6 +15542,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1474,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": false,
+      "serves_beer": true,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": null
+    },
     "matched_name": "Between 2 Buns Burgers",
     "synced_at": "2026-08-30"
   },
@@ -14516,6 +15559,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1459,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Butcher & Bullock Public House",
     "synced_at": "2026-08-30"
   },
@@ -14525,6 +15576,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1350,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Carlos O'Bryan's Neighborhood Pub",
     "synced_at": "2026-08-30"
   },
@@ -14534,6 +15593,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1299,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Charlatan",
     "synced_at": "2026-08-30"
   },
@@ -14543,6 +15610,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1256,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "OPUS Vancouver",
     "synced_at": "2026-08-30"
   },
@@ -14552,15 +15627,31 @@ const VENUES_PLACES = {
     "user_ratings_total": 1214,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Memphis Blues Barbeque House",
     "synced_at": "2026-08-30"
   },
   "caff-cittadella": {
     "place_id": "ChIJ1dHk_txzhlQREPMrE5srBLM",
     "rating": 4.1,
-    "user_ratings_total": 1068,
+    "user_ratings_total": 1069,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
     "matched_name": "Caffè Cittadella",
     "synced_at": "2026-08-30"
   },
@@ -14570,6 +15661,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 995,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Fiorino, Italian Street Food Chinatown Vancouver",
     "synced_at": "2026-08-30"
   },
@@ -14579,6 +15678,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 978,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Bombay Kitchen and Bar - Denman St",
     "synced_at": "2026-08-30"
   },
@@ -14588,6 +15695,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 956,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "LIVIA Forno e Vino",
     "synced_at": "2026-08-30"
   },
@@ -14597,6 +15712,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 954,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": null
+    },
     "matched_name": "Forecast Coffee - Main Street",
     "synced_at": "2026-08-30"
   },
@@ -14606,6 +15729,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 840,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Noah's Cafe",
     "synced_at": "2026-08-30"
   },
@@ -14615,6 +15746,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 813,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Bartholomew",
     "synced_at": "2026-08-30"
   },
@@ -14624,6 +15763,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 797,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
     "matched_name": "Bayside Lounge — English Bay",
     "synced_at": "2026-08-30"
   },
@@ -14633,6 +15780,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 735,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Cider House",
     "synced_at": "2026-08-30"
   },
@@ -14642,6 +15797,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 708,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Bar Corso",
     "synced_at": "2026-08-30"
   },
@@ -14651,6 +15814,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 664,
     "price_level": 3,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Song (by Kin Kao)",
     "synced_at": "2026-08-30"
   },
@@ -14660,6 +15831,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 566,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "Main Street Brewing Co.",
     "synced_at": "2026-08-30"
   },
@@ -14669,6 +15848,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 520,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "SWITCH",
     "synced_at": "2026-08-30"
   },
@@ -14678,6 +15865,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 448,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Uncle Abe's",
     "synced_at": "2026-08-30"
   },
@@ -14687,16 +15882,32 @@ const VENUES_PLACES = {
     "user_ratings_total": 427,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Watson",
     "synced_at": "2026-08-30"
   },
   "junction": {
-    "place_id": "ChIJnwAUXStyhlQRSqCQXVD1lZM",
-    "rating": 3.7,
-    "user_ratings_total": 411,
-    "price_level": 1,
-    "business_status": "OPERATIONAL",
-    "matched_name": "Junction",
+    "place_id": "ChIJTbGaXityhlQRY0n79KKojDY",
+    "rating": null,
+    "user_ratings_total": null,
+    "price_level": null,
+    "business_status": null,
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "1138 Davie St",
     "synced_at": "2026-08-30"
   },
   "mum-s-the-word": {
@@ -14705,6 +15916,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 347,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Mum's The Word",
     "synced_at": "2026-08-30"
   },
@@ -14714,6 +15933,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 9907,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Old Spaghetti Factory (Gastown)",
     "synced_at": "2026-08-30"
   },
@@ -14723,15 +15950,31 @@ const VENUES_PLACES = {
     "user_ratings_total": 5694,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Dae Bak Bon Ga",
     "synced_at": "2026-08-30"
   },
   "the-sandbar-seafood-restaurant": {
     "place_id": "ChIJj6Jmb85zhlQR8ho06uTUy6U",
     "rating": 4.5,
-    "user_ratings_total": 5247,
+    "user_ratings_total": 5248,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Sandbar Seafood Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -14741,15 +15984,31 @@ const VENUES_PLACES = {
     "user_ratings_total": 3931,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Minami",
     "synced_at": "2026-08-30"
   },
   "top-of-vancouver-revolving-restaurant": {
     "place_id": "ChIJfe2sYHhxhlQRYY79aUl69vw",
     "rating": 4.1,
-    "user_ratings_total": 3511,
+    "user_ratings_total": 3512,
     "price_level": 4,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Top Of Vancouver Revolving Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -14759,6 +16018,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 3208,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Vancouver Fish Company",
     "synced_at": "2026-08-30"
   },
@@ -14768,6 +16035,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 3180,
     "price_level": 4,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Gotham Steakhouse & Cocktail Bar",
     "synced_at": "2026-08-30"
   },
@@ -14777,6 +16052,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2350,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": null
+    },
     "matched_name": "Sylvia Hotel, Restaurant and Lounge",
     "synced_at": "2026-08-30"
   },
@@ -14786,6 +16069,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2065,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Pawn Shop YVR Taco Bar",
     "synced_at": "2026-08-30"
   },
@@ -14795,6 +16086,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1991,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Di Beppe Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -14804,6 +16103,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1989,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Burgoo",
     "synced_at": "2026-08-30"
   },
@@ -14813,6 +16120,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1861,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Skewers Souvlaki Pita Bar",
     "synced_at": "2026-08-30"
   },
@@ -14822,6 +16137,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1825,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Sopra Sotto Pizzeria",
     "synced_at": "2026-08-30"
   },
@@ -14831,15 +16154,31 @@ const VENUES_PLACES = {
     "user_ratings_total": 1808,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Tableau Bar Bistro",
     "synced_at": "2026-08-30"
   },
   "nook-kitsilano": {
     "place_id": "ChIJq9PfzEpyhlQRUqp026zudho",
     "rating": 4.5,
-    "user_ratings_total": 1504,
+    "user_ratings_total": 1505,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Nook Kitsilano",
     "synced_at": "2026-08-30"
   },
@@ -14849,6 +16188,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1452,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "The Red Accordion",
     "synced_at": "2026-08-30"
   },
@@ -14858,6 +16205,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1424,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": false,
+      "serves_beer": false,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Big Way Hot Pot (Robson)",
     "synced_at": "2026-08-30"
   },
@@ -14867,6 +16222,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1302,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Eat Bar & Patio Haraheri",
     "synced_at": "2026-08-30"
   },
@@ -14876,6 +16239,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1277,
     "price_level": 3,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Como Taperia",
     "synced_at": "2026-08-30"
   },
@@ -14885,6 +16256,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1150,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Alouette Bistro",
     "synced_at": "2026-08-30"
   },
@@ -14894,6 +16273,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1068,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Tutto Italian Restaurant & Bar",
     "synced_at": "2026-08-30"
   },
@@ -14903,15 +16290,31 @@ const VENUES_PLACES = {
     "user_ratings_total": 1027,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Carlino Restaurant",
     "synced_at": "2026-08-30"
   },
   "zoomak-korean-tavern": {
     "place_id": "ChIJh04xmItxhlQRRdfJbkB4TR0",
     "rating": 4.5,
-    "user_ratings_total": 868,
+    "user_ratings_total": 869,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Zoomak Korean Tavern",
     "synced_at": "2026-08-30"
   },
@@ -14921,6 +16324,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 863,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Novo Italian",
     "synced_at": "2026-08-30"
   },
@@ -14930,6 +16341,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 818,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": false,
+      "serves_beer": false,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": null
+    },
     "matched_name": "Street Hawker - Mount Pleasant",
     "synced_at": "2026-08-30"
   },
@@ -14939,15 +16358,31 @@ const VENUES_PLACES = {
     "user_ratings_total": 747,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Lavantine Restaurant & Skybar",
     "synced_at": "2026-08-30"
   },
   "nook-coal-harbour": {
     "place_id": "ChIJ79MWkpxxhlQRvkJLkRIt0yU",
     "rating": 4.6,
-    "user_ratings_total": 745,
+    "user_ratings_total": 746,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Nook Coal Harbour",
     "synced_at": "2026-08-30"
   },
@@ -14957,6 +16392,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 652,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "B House Restaurant",
     "synced_at": "2026-08-30"
   },
@@ -14966,6 +16409,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 651,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Sequel - Kitchen & Bar",
     "synced_at": "2026-08-30"
   },
@@ -14975,6 +16426,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1843,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Dublin Calling",
     "synced_at": "2026-08-30"
   },
@@ -14984,6 +16443,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1335,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "WestOak",
     "synced_at": "2026-08-30"
   },
@@ -14993,6 +16460,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1007,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
     "matched_name": "La Terrazza",
     "synced_at": "2026-08-30"
   },
@@ -15002,6 +16477,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 921,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The Cascade Room",
     "synced_at": "2026-08-30"
   },
@@ -15011,6 +16494,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 779,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Tocador",
     "synced_at": "2026-08-30"
   },
@@ -15020,6 +16511,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 738,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Ignite Pizzeria Yaletown",
     "synced_at": "2026-08-30"
   },
@@ -15029,6 +16528,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 731,
     "price_level": null,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Prophecy Cocktail Bar",
     "synced_at": "2026-08-30"
   },
@@ -15038,6 +16545,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 176,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "Davie Social",
     "synced_at": "2026-08-30"
   },
@@ -15047,6 +16562,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 24,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
     "matched_name": "The Mac Billiards",
     "synced_at": "2026-08-30"
   },
@@ -15056,6 +16579,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2293,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Guu Original Thurlow",
     "synced_at": "2026-08-30"
   },
@@ -15065,6 +16596,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 2024,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Water St. Café",
     "synced_at": "2026-08-30"
   },
@@ -15074,6 +16613,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1989,
     "price_level": 1,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": false,
+      "serves_beer": true,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": null
+    },
     "matched_name": "KINTON RAMEN ROBSON",
     "synced_at": "2026-08-30"
   },
@@ -15083,6 +16630,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1742,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Bellaggio Cafe",
     "synced_at": "2026-08-30"
   },
@@ -15092,6 +16647,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1732,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Maxine's Cafe & Bar",
     "synced_at": "2026-08-30"
   },
@@ -15101,6 +16664,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 1105,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Guu with Otokomae",
     "synced_at": "2026-08-30"
   },
@@ -15110,6 +16681,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 685,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Coco Rico Cafe",
     "synced_at": "2026-08-30"
   },
@@ -15119,6 +16698,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 644,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "Capo & The Spritz",
     "synced_at": "2026-08-30"
   },
@@ -15128,6 +16715,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 596,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Steamworks Mount Pleasant",
     "synced_at": "2026-08-30"
   },
@@ -15137,6 +16732,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 468,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Pizza Coming Soon",
     "synced_at": "2026-08-30"
   },
@@ -15146,6 +16749,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 458,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Desi Indian Lounge",
     "synced_at": "2026-08-30"
   },
@@ -15155,6 +16766,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 382,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Guu Davie",
     "synced_at": "2026-08-30"
   },
@@ -15164,6 +16783,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 372,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
     "matched_name": "The King's Head Public House",
     "synced_at": "2026-08-30"
   },
@@ -15173,6 +16800,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 357,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
     "matched_name": "Prestons Restaurant + Lounge Vancouver",
     "synced_at": "2026-08-30"
   },
@@ -15182,6 +16817,14 @@ const VENUES_PLACES = {
     "user_ratings_total": 56,
     "price_level": 2,
     "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": null
+    },
     "matched_name": "Amber Gastown",
     "synced_at": "2026-08-30"
   },

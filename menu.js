@@ -36,6 +36,7 @@ const AMENITY_BADGES = [
   { key: "wheelchair_accessible_entrance", icon: "♿", label: "Wheelchair accessible" },
   { key: "parking", icon: "🅿️", label: "Parking available" },
   { key: "transit", icon: "🚇", label: "Near transit" },
+  { key: "live_music", icon: "🎵", label: "Live music" },
 ];
 
 function getAmenityBadges(venue) {
@@ -63,9 +64,14 @@ function renderSchedule(venue) {
     dayEl.className = "menu-schedule-day";
     dayEl.innerHTML = escapeHtml(DAY_NAMES[d]) + (d === today ? ` <span class="menu-schedule-today-badge">Today</span>` : "");
 
+    const labels = [];
+    if (days.includes(d)) labels.push(hoursLabel(venue));
+    for (const w of venue.happy_hour?.extra_windows || []) {
+      if (w?.days?.includes(d) && w.start) labels.push(windowLabel(w.start, w.end));
+    }
     const hoursEl = document.createElement("span");
     hoursEl.className = "menu-schedule-hours";
-    hoursEl.textContent = days.includes(d) ? hoursLabel(venue) : "Closed";
+    hoursEl.textContent = labels.length ? labels.join(" & ") : "Closed";
 
     row.appendChild(dayEl);
     row.appendChild(hoursEl);
@@ -73,12 +79,16 @@ function renderSchedule(venue) {
   }
 }
 
-function hoursLabel(venue) {
-  const { start, end } = venue.happy_hour;
+function windowLabel(start, end) {
+  if (!end) return `${formatShortTime(start, true)}–close`;
   const startPeriod = start.split(":")[0] >= 12 ? "pm" : "am";
   const endPeriod = end.split(":")[0] >= 12 ? "pm" : "am";
   const samePeriod = startPeriod === endPeriod;
   return `${formatShortTime(start, !samePeriod)}–${formatShortTime(end, true)}`;
+}
+
+function hoursLabel(venue) {
+  return windowLabel(venue.happy_hour.start, venue.happy_hour.end);
 }
 
 function escapeHtml(str) {

@@ -16,7 +16,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
-import { loadSeed, parseArgs, readJson, setEq, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
+import { loadSeed, parseArgs, readJson, setEq, CACHE_DIR, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
+import { heroImage } from "./lib/html.js";
 
 const args = parseArgs(process.argv.slice(2));
 const MIN_CONF = Number(args["min-confidence"]) || 0.8;
@@ -45,6 +46,26 @@ function acceptExtraction(id, rec, minConf, label = "") {
 const normalizeDeals = (deals) =>
   deals.map((d) => ({ name: d.name, price: d.price, category: d.category, description: d.description || "" }));
 
+const TIME_RE = /^([01]\d|2[0-3]):[0-5]\d$/;
+/** Sanitize extractor-reported extra windows: valid days + HH:MM start; end
+ *  becomes null ("until close") unless a clean HH:MM. */
+const normalizeWindows = (wins) =>
+  (Array.isArray(wins) ? wins : [])
+    .filter((w) => w && Array.isArray(w.days) && w.days.length && w.days.every((d) => Number.isInteger(d) && d >= 0 && d <= 6) && TIME_RE.test(w.start ?? ""))
+    .map((w) => ({ days: w.days, start: w.start, end: TIME_RE.test(w.end ?? "") ? w.end : null, label: String(w.label || "").slice(0, 40) }));
+
+/** A venue's own representative image (og:image) from its cached homepage. */
+function coverFromCache(id, name, website) {
+  try {
+    const manifest = readJson(path.join(CACHE_DIR, id, "manifest.json"), null);
+    const home = manifest?.pages?.[0];
+    if (!home) return null;
+    const html = fs.readFileSync(path.join(CACHE_DIR, id, home.file), "utf8");
+    const url = heroImage(html, home.finalUrl || website);
+    return url ? { url, credit_name: name, credit_url: website, source: "official_website" } : null;
+  } catch { return null; }
+}
+
 // --- Seed enrichment: extracted deals for venues whose verified schedule
 // --- the extraction reproduced exactly.
 const enrich = {};
@@ -60,7 +81,7 @@ for (const v of loadSeed()) {
   if (!Array.isArray(h.deals) || h.deals.length === 0) { skipped.push([v.id, "no deals extracted"]); continue; }
   if (h.deals.length < g.deals.length) { skipped.push([v.id, `extracted fewer deals (${h.deals.length}) than seed (${g.deals.length})`]); continue; }
 
-  enrich[v.id] = { deals: normalizeDeals(h.deals), source_url: x.source_url, extracted_at: TODAY };
+  enrich[v.id] = { deals: normalizeDeals(h.deals), extra_windows: normalizeWindows(h.extra_windows), source_url: x.source_url, extracted_at: TODAY };
 }
 
 // --- Discovered venues: rebuild the committed store when a discovery run's
@@ -105,11 +126,13 @@ if (cands && discExt) {
         days: x.happy_hour.days,
         start: x.happy_hour.start,
         end: x.happy_hour.end,
+        extra_windows: normalizeWindows(x.happy_hour.extra_windows),
         verified: false, // automated extraction — a human has not checked this yet
         verified_source: null,
         source_url: x.source_url,
         deals: normalizeDeals(x.happy_hour.deals),
       },
+      cover_image: coverFromCache(c.id, c.name, c.website),
       // Identity (name/coords/address/phone/website) from OpenStreetMap via
       // Nominatim — © OpenStreetMap contributors, ODbL (osm.org/copyright).
       osm: c.osm,
@@ -129,11 +152,22 @@ if (cands && discExt) {
   for (const d of discovered) {
     const x = acceptExtraction(d.id, discExt[d.id], DISC_MIN_CONF, "discovery resync: ");
     if (!x) continue;
-    d.happy_hour = { ...d.happy_hour, days: x.happy_hour.days, start: x.happy_hour.start, end: x.happy_hour.end, source_url: x.source_url, deals: normalizeDeals(x.happy_hour.deals) };
+    d.happy_hour = { ...d.happy_hour, days: x.happy_hour.days, start: x.happy_hour.start, end: x.happy_hour.end, extra_windows: normalizeWindows(x.happy_hour.extra_windows), source_url: x.source_url, deals: normalizeDeals(x.happy_hour.deals) };
     d.last_synced_at = TODAY;
   }
   fs.writeFileSync(DISCOVERED_STORE, JSON.stringify(discovered, null, 2));
 }
+
+// Backfill hero images for discovered venues that lack one, from cached
+// homepages (their own sites' og:image; credited to the venue).
+let coversAdded = 0;
+for (const d of discovered) {
+  if (!d.cover_image) {
+    d.cover_image = coverFromCache(d.id, d.name, d.website);
+    if (d.cover_image) coversAdded++;
+  }
+}
+if (coversAdded) fs.writeFileSync(DISCOVERED_STORE, JSON.stringify(discovered, null, 2));
 
 fs.writeFileSync(PLACES_STORE, JSON.stringify(places, null, 2));
 
@@ -160,7 +194,7 @@ const payload = JSON.stringify([enrich, discovered, places]);
 const stamp = `${TODAY}-${crypto.createHash("sha1").update(payload).digest("hex").slice(0, 8)}`;
 fs.writeFileSync(OUT, banner + `const EXTRACTED_DATA_VERSION = ${JSON.stringify(stamp)};\n\nconst VENUES_EXTRACTED = ${JSON.stringify(enrich, null, 2)};\n\nconst VENUES_DISCOVERED = ${JSON.stringify(discovered, null, 2)};\n\nconst VENUES_PLACES = ${JSON.stringify(places, null, 2)};\n`);
 
-console.log(`Enriched deals for ${Object.keys(enrich).length} venues, ${discovered.length} discovered venues, Places identity for ${Object.keys(places).length} -> venues-extracted.js`);
+console.log(`Enriched deals for ${Object.keys(enrich).length} venues, ${discovered.length} discovered venues (${coversAdded} cover images backfilled), Places identity for ${Object.keys(places).length} -> venues-extracted.js`);
 for (const d of discovered) console.log(`  + ${d.id.padEnd(30)} days[${d.happy_hour.days}] ${d.happy_hour.start}-${d.happy_hour.end}  ${d.happy_hour.deals.length} deals`);
 for (const [id, e] of Object.entries(enrich)) console.log(`  ${id.padEnd(30)} ${e.deals.length} deals  (${e.source_url})`);
 console.log(`\nReview queue (schedule disagreements — NOT applied):`);

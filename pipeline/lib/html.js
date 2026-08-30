@@ -30,6 +30,24 @@ export function htmlToText(html) {
     .trim();
 }
 
+/** The site's own representative image (og:image / twitter:image), absolute
+ *  URL, or null. Skips SVGs and data: URIs. */
+export function heroImage(html, baseUrl) {
+  const patterns = [
+    /<meta[^>]+property=["']og:image(?::secure_url)?["'][^>]*content=["']([^"']+)["']/i,
+    /<meta[^>]+content=["']([^"']+)["'][^>]*property=["']og:image["']/i,
+    /<meta[^>]+name=["']twitter:image["'][^>]*content=["']([^"']+)["']/i,
+  ];
+  for (const re of patterns) {
+    const m = html.match(re);
+    if (!m) continue;
+    const raw = decodeEntities(m[1]).trim();
+    if (raw.startsWith("data:") || /\.svg(\?|#|$)/i.test(raw)) continue;
+    try { return new URL(raw, baseUrl).toString(); } catch { /* try next */ }
+  }
+  return null;
+}
+
 /** Extract [{href, text}] from raw HTML. */
 export function extractLinks(html) {
   const links = [];
