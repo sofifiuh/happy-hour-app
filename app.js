@@ -456,7 +456,14 @@ const MAPBOX_STYLE = "light-v11";
 
 function ensureMap() {
   if (map) return map;
-  map = L.map("map", { attributionControl: true }).setView([49.2698, -123.1207], 13);
+  // No +/- control on touch devices (pinch and double-tap cover it, and the
+  // default topleft placement hides under the List pill); desktop gets it
+  // top-right, clear of the pill.
+  map = L.map("map", { attributionControl: true, zoomControl: false }).setView([49.2698, -123.1207], 13);
+  map.attributionControl.setPrefix("");
+  if (!window.matchMedia("(pointer: coarse)").matches) {
+    L.control.zoom({ position: "topright" }).addTo(map);
+  }
   L.tileLayer(
     `https://api.mapbox.com/styles/v1/mapbox/${MAPBOX_STYLE}/tiles/{z}/{x}/{y}{r}?access_token=${MAPBOX_TOKEN}`,
     {
@@ -617,7 +624,16 @@ function renderMap(occurrences) {
     m.invalidateSize();
     if (located.length > 0) {
       const bounds = L.latLngBounds(located.map((o) => [getLat(o.venue), getLng(o.venue)]));
-      m.fitBounds(bounds, { padding: [30, 30], maxZoom: 15 });
+      // The map is full-viewport but the top filter chrome and the bottom
+      // card carousel float over it — pad the fit so no pin lands hidden
+      // underneath either.
+      const filters = document.querySelector(".map-filters");
+      const topPad = filters ? filters.getBoundingClientRect().bottom + 16 : 130;
+      m.fitBounds(bounds, {
+        paddingTopLeft: [30, topPad],
+        paddingBottomRight: [30, carouselHeight + 24],
+        maxZoom: 15,
+      });
     }
   }, 0);
 }
