@@ -73,11 +73,12 @@ let selectedDays = new Set();
 let editingId = null;
 let map = null;
 let mapMarkers = new Map(); // venue id -> Leaflet marker
-// Carousel<->map sync state: pans are debounced until a swipe settles, and
-// programmatic card scrolls (pin taps) suppress the observer so the two
-// sync directions can't fight each other.
-let carouselSuppressed = false;
-let carouselSuppressTimer = null;
+// Carousel<->map sync state. Only HUMAN input may pan the map: a real
+// touch/wheel on the carousel arms the observer's settle-pan, and any
+// programmatic scroll (pin taps) disarms it. Timer-based suppression broke
+// on iOS, where momentum and snap corrections deliver observer events well
+// after a programmatic scroll "finished".
+let carouselUserActive = false;
 let carouselSettleTimer = null;
 let carouselPendingId = null;
 let mapCardObserver = null;
@@ -459,6 +460,28 @@ function ensureMap() {
         '&copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }
   ).addTo(map);
+
+  // Double-tap to zoom. Leaflet 1.8+ relies on native dblclick, which mobile
+  // Safari withholds (it reserves double-tap for page smart-zoom) — so detect
+  // the double tap ourselves and zoom around the tapped point. Marker taps
+  // are excluded; preventDefault stops the browser's own smart-zoom.
+  const container = map.getContainer();
+  let lastTap = null;
+  container.addEventListener("touchend", (e) => {
+    if (e.touches.length || e.changedTouches.length !== 1) { lastTap = null; return; }
+    if (e.target.closest(".map-pin")) { lastTap = null; return; }
+    const t = e.changedTouches[0];
+    const now = Date.now();
+    if (lastTap && now - lastTap.time < 300 && Math.hypot(t.clientX - lastTap.x, t.clientY - lastTap.y) < 40) {
+      lastTap = null;
+      e.preventDefault();
+      const rect = container.getBoundingClientRect();
+      map.setZoomAround(L.point(t.clientX - rect.left, t.clientY - rect.top), map.getZoom() + 1);
+    } else {
+      lastTap = { time: now, x: t.clientX, y: t.clientY };
+    }
+  }, { passive: false });
+
   return map;
 }
 
@@ -506,18 +529,16 @@ function renderMap(occurrences) {
   els.mapCardCarousel.classList.toggle("hidden", located.length === 0);
 
   // Swiping a card into view highlights its pin instantly (cheap), but the
-  // map pans only once, ~160ms after the LAST card change — a fast flick
-  // past twenty cards no longer queues twenty interrupted pan animations.
-  // Programmatic scrolls (pin taps) suppress the observer entirely.
-  let firstFire = true;
+  // map pans only once, ~160ms after the LAST card change — and only when
+  // the swipe came from the user (carouselUserActive). Programmatic scrolls
+  // can highlight but never move the map.
   mapCardObserver = new IntersectionObserver(
     (entries) => {
       const visible = entries.find((e) => e.isIntersecting && e.intersectionRatio >= 0.6);
-      if (!visible || carouselSuppressed) return;
-      const id = visible.target.dataset.venueId;
-      highlightPin(id);
-      if (firstFire) { firstFire = false; return; }
-      carouselPendingId = id;
+      if (!visible) return;
+      highlightPin(visible.target.dataset.venueId);
+      if (!carouselUserActive) return;
+      carouselPendingId = visible.target.dataset.venueId;
       clearTimeout(carouselSettleTimer);
       carouselSettleTimer = setTimeout(() => panToVenue(carouselPendingId), 160);
     },
@@ -648,24 +669,19 @@ function selectVenue(venueId, { pan = false, scrollCarousel = false } = {}) {
   if (scrollCarousel) {
     const card = els.mapCardCarousel.querySelector(`[data-venue-id="${CSS.escape(venueId)}"]`);
     if (card) {
-      // Ignore the observer while our own smooth scroll passes other cards;
-      // the scroll listener below extends this until movement stops, and the
-      // fallback clears it even if no scroll was needed (already centered).
-      carouselSuppressed = true;
-      clearTimeout(carouselSuppressTimer);
-      carouselSuppressTimer = setTimeout(() => { carouselSuppressed = false; }, 800);
+      // Programmatic scroll: disarm the observer's pan. Late observer events
+      // (iOS momentum, snap corrections) can highlight but never move the map
+      // until the user touches the carousel again.
+      carouselUserActive = false;
       card.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
     }
   }
 }
 
-// While a programmatic scroll is in flight, keep suppression alive until the
-// carousel actually stops moving (150ms of quiet), then hand control back.
-els.mapCardCarousel.addEventListener("scroll", () => {
-  if (!carouselSuppressed) return;
-  clearTimeout(carouselSuppressTimer);
-  carouselSuppressTimer = setTimeout(() => { carouselSuppressed = false; }, 150);
-}, { passive: true });
+// Real user input on the carousel re-arms the observer's settle-pan.
+for (const evt of ["touchstart", "wheel", "pointerdown"]) {
+  els.mapCardCarousel.addEventListener(evt, () => { carouselUserActive = true; }, { passive: true });
+}
 
 // ---------- Modal handling ----------
 
