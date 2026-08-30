@@ -657,6 +657,21 @@ body.map-fullscreen .sheet {
   color: #1c1b1a;
   text-decoration: none;
 }
+
+.map-detail-deal-name {
+  /* long deal names give way to the price */
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+.map-detail-deal-price {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: #b4551e;
+}
 .map-detail-action-icon {
   width: 26px;
   height: 26px;

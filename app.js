@@ -638,6 +638,21 @@ function renderMap(occurrences) {
   }, 0);
 }
 
+// Leading dollar amount of a deal price ("$5–8" -> 5, "$3.50 ea" -> 3.5).
+// Discounts ("$3 off", "50% off") rank last: they aren't a price you pay,
+// so they only surface when a category has nothing absolute.
+function dealRank(price) {
+  if (/off/i.test(price || "")) return Infinity;
+  const m = /\$\s*(\d+(?:\.\d+)?)/.exec(price || "");
+  return m ? parseFloat(m[1]) : Infinity;
+}
+
+function bestDeal(deals, category) {
+  const pool = deals.filter((d) => d.category === category && d.name && d.price);
+  if (!pool.length) return null;
+  return pool.reduce((a, b) => (dealRank(b.price) < dealRank(a.price) ? b : a));
+}
+
 function buildMapCard(venue, occ) {
   const card = document.createElement("div");
   card.className = "map-detail-card";
@@ -694,7 +709,24 @@ function buildMapCard(venue, occ) {
   actions.className = "map-detail-actions";
   body.appendChild(actions);
 
-  if (address) {
+  // Showcase the menu instead of navigation links: the cheapest drink and
+  // food deal. Venues without extracted deals keep the directions row so the
+  // card isn't empty.
+  const deals = (venue.happy_hour && venue.happy_hour.deals) || [];
+  const highlights = [
+    ["🍸", bestDeal(deals, "drink")],
+    ["🍴", bestDeal(deals, "food")],
+  ].filter(([, d]) => d);
+  if (highlights.length) {
+    for (const [icon, deal] of highlights) {
+      const row = document.createElement("div");
+      row.className = "map-detail-action map-detail-deal";
+      row.innerHTML = `<span class="map-detail-action-icon">${icon}</span><span class="map-detail-deal-name"></span><span class="map-detail-deal-price"></span>`;
+      row.querySelector(".map-detail-deal-name").textContent = deal.name;
+      row.querySelector(".map-detail-deal-price").textContent = deal.price;
+      actions.appendChild(row);
+    }
+  } else if (address) {
     const directions = document.createElement("a");
     directions.className = "map-detail-action";
     directions.target = "_blank";
@@ -706,11 +738,6 @@ function buildMapCard(venue, occ) {
   }
 
   const menuUrl = `menu.html?id=${encodeURIComponent(venue.id)}`;
-  const viewMenu = document.createElement("a");
-  viewMenu.className = "map-detail-action";
-  viewMenu.href = menuUrl;
-  viewMenu.innerHTML = `<span class="map-detail-action-icon">📋</span><span>View menu</span>`;
-  actions.appendChild(viewMenu);
 
   const arrow = document.createElement("a");
   arrow.className = "map-detail-arrow-btn";
