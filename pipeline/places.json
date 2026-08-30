@@ -925,5 +925,221 @@
     "business_status": "OPERATIONAL",
     "matched_name": "The Sequel - Kitchen & Bar",
     "synced_at": "2026-08-30"
+  },
+  "dublin-calling": {
+    "place_id": "ChIJM8c6YBVxhlQRmbyHdCTA63w",
+    "rating": 3.9,
+    "user_ratings_total": 1843,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Dublin Calling",
+    "synced_at": "2026-08-30"
+  },
+  "westoak": {
+    "place_id": "ChIJD6OOP9ZzhlQRtZ51tB6locg",
+    "rating": 4.2,
+    "user_ratings_total": 1335,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "WestOak",
+    "synced_at": "2026-08-30"
+  },
+  "la-terrazza": {
+    "place_id": "ChIJv7MHrtdzhlQRz141l-V5w3k",
+    "rating": 4.4,
+    "user_ratings_total": 1007,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "La Terrazza",
+    "synced_at": "2026-08-30"
+  },
+  "the-cascade-room": {
+    "place_id": "ChIJSTSvjuFzhlQRXNTxktdwp9U",
+    "rating": 4.3,
+    "user_ratings_total": 921,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Cascade Room",
+    "synced_at": "2026-08-30"
+  },
+  "tocador": {
+    "place_id": "ChIJQyTlBnpxhlQRLMp85jVQHUQ",
+    "rating": 4.3,
+    "user_ratings_total": 779,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Tocador",
+    "synced_at": "2026-08-30"
+  },
+  "ignite-pizzeria-yaletown": {
+    "place_id": "ChIJBTNOts1zhlQRW8Rr2NGMk4o",
+    "rating": 4.6,
+    "user_ratings_total": 738,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Ignite Pizzeria Yaletown",
+    "synced_at": "2026-08-30"
+  },
+  "prophecy-cocktail-bar": {
+    "place_id": "ChIJFQ_bNvpxhlQRGTjg2X-ex78",
+    "rating": 4.6,
+    "user_ratings_total": 731,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Prophecy Cocktail Bar",
+    "synced_at": "2026-08-30"
+  },
+  "davie-social": {
+    "place_id": "ChIJK8m1YEBzhlQRV_YBw_hHwXk",
+    "rating": 4.6,
+    "user_ratings_total": 176,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Davie Social",
+    "synced_at": "2026-08-30"
+  },
+  "the-mac-billiards": {
+    "place_id": "ChIJ3-aFMy5zhlQREZqyXsNNoC4",
+    "rating": 4.8,
+    "user_ratings_total": 24,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Mac Billiards",
+    "synced_at": "2026-08-30"
+  },
+  "guu-original-thurlow": {
+    "place_id": "ChIJOeYve4BxhlQRfPFG8Wik9YI",
+    "rating": 4.5,
+    "user_ratings_total": 2293,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Guu Original Thurlow",
+    "synced_at": "2026-08-30"
+  },
+  "water-st-caf": {
+    "place_id": "ChIJ28IuM3hxhlQRJGgeE-4_z58",
+    "rating": 4.2,
+    "user_ratings_total": 2024,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Water St. Café",
+    "synced_at": "2026-08-30"
+  },
+  "kinton-ramen-robson": {
+    "place_id": "ChIJbVusaw5xhlQRaTWJIYOwgQc",
+    "rating": 4.6,
+    "user_ratings_total": 1989,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "matched_name": "KINTON RAMEN ROBSON",
+    "synced_at": "2026-08-30"
+  },
+  "bellaggio-cafe": {
+    "place_id": "ChIJk00Zh39xhlQRjRnoDJVznSQ",
+    "rating": 4.2,
+    "user_ratings_total": 1742,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Bellaggio Cafe",
+    "synced_at": "2026-08-30"
+  },
+  "maxine-s-cafe-bar": {
+    "place_id": "ChIJIZ-EdbpzhlQRqQRe82W0TKo",
+    "rating": 4.5,
+    "user_ratings_total": 1732,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Maxine's Cafe & Bar",
+    "synced_at": "2026-08-30"
+  },
+  "guu-with-otokomae": {
+    "place_id": "ChIJP0wBP3hxhlQR5bMiXWGm6Zs",
+    "rating": 4.2,
+    "user_ratings_total": 1105,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Guu with Otokomae",
+    "synced_at": "2026-08-30"
+  },
+  "coco-rico-cafe": {
+    "place_id": "ChIJzbQmNodxhlQRQFhglplDaYg",
+    "rating": 4,
+    "user_ratings_total": 685,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Coco Rico Cafe",
+    "synced_at": "2026-08-30"
+  },
+  "capo-the-spritz": {
+    "place_id": "ChIJf19vi-tzhlQRQ4fkeaIDiLc",
+    "rating": 4.3,
+    "user_ratings_total": 644,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Capo & The Spritz",
+    "synced_at": "2026-08-30"
+  },
+  "steamworks-mount-pleasant": {
+    "place_id": "ChIJT5JWkelxhlQRb9HCQ3v8_f8",
+    "rating": 4.3,
+    "user_ratings_total": 596,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Steamworks Mount Pleasant",
+    "synced_at": "2026-08-30"
+  },
+  "pizza-coming-soon": {
+    "place_id": "ChIJR3HVAnhxhlQRcMRDk1a_rIM",
+    "rating": 4.4,
+    "user_ratings_total": 468,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Pizza Coming Soon",
+    "synced_at": "2026-08-30"
+  },
+  "desi-indian-lounge": {
+    "place_id": "ChIJnZU2DQBzhlQRZpc5OOWGT2I",
+    "rating": 4.7,
+    "user_ratings_total": 458,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Desi Indian Lounge",
+    "synced_at": "2026-08-30"
+  },
+  "guu-davie": {
+    "place_id": "ChIJJ19lwkFzhlQRGXt2bHZcRpQ",
+    "rating": 4.2,
+    "user_ratings_total": 382,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Guu Davie",
+    "synced_at": "2026-08-30"
+  },
+  "the-king-s-head-public-house": {
+    "place_id": "ChIJdT_h59RzhlQRXn_9XUN9IRg",
+    "rating": 4,
+    "user_ratings_total": 372,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The King's Head Public House",
+    "synced_at": "2026-08-30"
+  },
+  "prestons-restaurant-lounge-vancouver": {
+    "place_id": "ChIJ1-V8VYFxhlQRrV7eXCmKzDg",
+    "rating": 3.9,
+    "user_ratings_total": 357,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Prestons Restaurant + Lounge Vancouver",
+    "synced_at": "2026-08-30"
+  },
+  "amber-gastown": {
+    "place_id": "ChIJ7Uk0HOBxhlQRKV7mfGhsubk",
+    "rating": 4.8,
+    "user_ratings_total": 56,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Amber Gastown",
+    "synced_at": "2026-08-30"
   }
 }

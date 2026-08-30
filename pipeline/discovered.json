@@ -25,6 +25,2850 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "dublin-calling",
+    "name": "Dublin Calling",
+    "formatted_address": "900 Granville St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2800873,
+        "lng": -123.12139810000001
+      }
+    },
+    "formatted_phone_number": "(604) 670-2980",
+    "website": "http://dublincalling.com/vancouver/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://dublincalling.com/vancouver/",
+      "deals": []
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "westoak",
+    "name": "WestOak",
+    "formatted_address": "1035 Mainland St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2764678,
+        "lng": -123.119667
+      }
+    },
+    "formatted_phone_number": "(604) 629-8808",
+    "website": "https://westoakrestaurant.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://westoakrestaurant.com/pages/menu",
+      "deals": []
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "la-terrazza",
+    "name": "La Terrazza",
+    "formatted_address": "1088 Cambie St., Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2749928,
+        "lng": -123.118637
+      }
+    },
+    "formatted_phone_number": "(604) 899-4449",
+    "website": "https://laterrazza.ca/",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "19:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://laterrazza.ca/happy-hour/",
+      "deals": [
+        {
+          "name": "Caesar Salad",
+          "price": "$15.88",
+          "category": "food",
+          "description": "Baby romaine hearts, crispy Italian prosciutto, butter croutons, roasted garlic classic Caesar dressing, Mediterranean olives, sweet mini peppers"
+        },
+        {
+          "name": "Insalata Caprese",
+          "price": "$15.88",
+          "category": "food",
+          "description": "Fior di latte mozzarella, avocado, heirloom tomato, extra virgin olive oil, 25-year-old balsamic"
+        },
+        {
+          "name": "Strozzapretti Bolognese",
+          "price": "$15.88",
+          "category": "food",
+          "description": "Strozzapreti noodle, Chef Gennaro's famous recipe"
+        },
+        {
+          "name": "Meatballs",
+          "price": "$15.88",
+          "category": "food",
+          "description": "Truffle cream, grilled garlic bread, Parmigiano Reggiano"
+        },
+        {
+          "name": "Crispy Duck Legs",
+          "price": "$15.88",
+          "category": "food",
+          "description": "Crispy confit duck legs with blood orange sauce"
+        },
+        {
+          "name": "Truffle Parmesan Fries",
+          "price": "$12.88",
+          "category": "food",
+          "description": "Fries served with Parmigiano Reggiano, fresh shaved truffle and aioli"
+        },
+        {
+          "name": "Gnocchi al Forno",
+          "price": "$15.88",
+          "category": "food",
+          "description": "House-made potato gnocchi, San Marzano tomato sauce, fresh Italian mozzarella, fresh basil"
+        },
+        {
+          "name": "Tomato Bruschetta",
+          "price": "$15.88",
+          "category": "food",
+          "description": "Garlic toasts, fresh tomato & basil, shaved aged Asiago cheese"
+        },
+        {
+          "name": "Beef Carpaccio",
+          "price": "$20.88",
+          "category": "food",
+          "description": "Thinly sliced raw Angus Reserve beef tenderloin, crispy capers, black truffle vinaigrette, shaved asiago, fontina flatbread"
+        },
+        {
+          "name": "Chilled Tiger Prawn Cocktail",
+          "price": "$15.88",
+          "category": "food",
+          "description": "Chilled jumbo black tiger prawns, horseradish rosé sauce, fresh lemon"
+        },
+        {
+          "name": "Half a Dozen Oysters",
+          "price": "$15.88",
+          "category": "food",
+          "description": "Yuzu pink peppercorn mignonette, fresh horseradish"
+        },
+        {
+          "name": "Bread Basket",
+          "price": "$4.88",
+          "category": "food",
+          "description": "Bread basket"
+        },
+        {
+          "name": "Side Parmigiano Cheese",
+          "price": "$3.88",
+          "category": "food",
+          "description": "Side of Parmigiano cheese"
+        },
+        {
+          "name": "Italian Donuts",
+          "price": "$10.88",
+          "category": "food",
+          "description": "Warm handmade vanilla cinnamon sugared donuts, toffee sauce"
+        },
+        {
+          "name": "Crème Brûlée Duo",
+          "price": "$10.88",
+          "category": "food",
+          "description": "Vanilla crème brûlée and lemon crème brûlée, rich custard with caramelized sugar"
+        },
+        {
+          "name": "Highballs",
+          "price": "$6.88",
+          "category": "drink",
+          "description": "1 oz highballs"
+        },
+        {
+          "name": "Draft Beer",
+          "price": "$6.88",
+          "category": "drink",
+          "description": "355 mL draft beer"
+        },
+        {
+          "name": "Sangria",
+          "price": "$12.88",
+          "category": "drink",
+          "description": "Sangria"
+        },
+        {
+          "name": "Classic Martini",
+          "price": "$10.88",
+          "category": "drink",
+          "description": "2 oz classic martini"
+        },
+        {
+          "name": "Glass of House Wine",
+          "price": "$9.88",
+          "category": "drink",
+          "description": "Red or white, 5 oz"
+        },
+        {
+          "name": "Glass of Premium Wine",
+          "price": "$12.00",
+          "category": "drink",
+          "description": "Red or white, 5 oz"
+        },
+        {
+          "name": "Bottle of Wine",
+          "price": "$55.00",
+          "category": "drink",
+          "description": "Red, white or rosé, 750 mL"
+        },
+        {
+          "name": "Premium Bottle of Wine",
+          "price": "$65.00",
+          "category": "drink",
+          "description": "Red or white, 750 mL"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-cascade-room",
+    "name": "The Cascade Room",
+    "formatted_address": "2616 Main St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2617134,
+        "lng": -123.1006458
+      }
+    },
+    "formatted_phone_number": "(604) 709-8650",
+    "website": "http://www.thecascade.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.thecascade.ca/happy-hour",
+      "deals": [
+        {
+          "name": "Main Street Premium Pilsner",
+          "price": "$6/16oz, $7/20oz",
+          "category": "drink",
+          "description": "Draft beer."
+        },
+        {
+          "name": "Krush Crisp Lager",
+          "price": "$6/16oz, $7/20oz",
+          "category": "drink",
+          "description": "Draft beer."
+        },
+        {
+          "name": "Kingpin Juicy Hazy Pale Ale",
+          "price": "$6/16oz, $7/20oz",
+          "category": "drink",
+          "description": "Draft beer."
+        },
+        {
+          "name": "Naked Fox West Coast IPA",
+          "price": "$6/16oz, $7/20oz",
+          "category": "drink",
+          "description": "Draft beer."
+        },
+        {
+          "name": "Main St. Rotating Taps",
+          "price": "$6/16oz, $7/20oz",
+          "category": "drink",
+          "description": "Rotating draft selection."
+        },
+        {
+          "name": "Rotating Cask Beer",
+          "price": "$6/16oz, $7/20oz",
+          "category": "drink",
+          "description": "Rotating cask."
+        },
+        {
+          "name": "Rotating Cocktails on Tap",
+          "price": "$10",
+          "category": "drink",
+          "description": "Ask your server; pitcher $25."
+        },
+        {
+          "name": "Pimm's & Lemonade",
+          "price": "$10",
+          "category": "drink",
+          "description": "Cocktail on tap; pitcher $25."
+        },
+        {
+          "name": "Gimme That Sweet Heat",
+          "price": "$10",
+          "category": "drink",
+          "description": "Pineapple habanero margarita, 2oz."
+        },
+        {
+          "name": "House White Wine",
+          "price": "$6.50/5oz, $10/8oz, $30 btl",
+          "category": "drink",
+          "description": "House white."
+        },
+        {
+          "name": "House Red Wine",
+          "price": "$6.50/5oz, $10/8oz, $30 btl",
+          "category": "drink",
+          "description": "House red."
+        },
+        {
+          "name": "House Rosé Wine",
+          "price": "$7.50/5oz, $12/8oz, $34 btl",
+          "category": "drink",
+          "description": "House rosé."
+        },
+        {
+          "name": "Campo Viejo Bubbles",
+          "price": "$7/5oz, $35 btl",
+          "category": "drink",
+          "description": "Sparkling wine from Spain."
+        },
+        {
+          "name": "Marinated Warm Mixed Olives",
+          "price": "$8",
+          "category": "food",
+          "description": "Warm marinated mixed olives (regularly $10)."
+        },
+        {
+          "name": "Moroccan Spiced Steak Flatbread",
+          "price": "$14",
+          "category": "food",
+          "description": "Harissa spiced tomato sauce, roasted red peppers, onion, olives, feta, honey yogurt, mint."
+        },
+        {
+          "name": "Crispy Cauliflower",
+          "price": "$12",
+          "category": "food",
+          "description": "Chipotle spiced crispy cauliflower, maple achiote sauce (GF, V); regularly $15."
+        },
+        {
+          "name": "Calamari",
+          "price": "$11",
+          "category": "food",
+          "description": "Buttermilk marinated, chili garlic aioli (GF)."
+        },
+        {
+          "name": "Smoked Trout & Potato Croquettes",
+          "price": "$12",
+          "category": "food",
+          "description": "Beet yogurt purée, micro beet greens, sunflower shoots; regularly $14."
+        },
+        {
+          "name": "Hand Cut Fries",
+          "price": "$7",
+          "category": "food",
+          "description": "Malt vinegar mayo; regularly $8."
+        },
+        {
+          "name": "Free-range Chicken Wings",
+          "price": "$17",
+          "category": "food",
+          "description": "Choice of salt & pepper, Buffalo or spiced soy glaze; add stilton dip or jalapeño ranch $1.50 ea. Regularly $19."
+        },
+        {
+          "name": "Poutine",
+          "price": "$13",
+          "category": "food",
+          "description": "Rich beef & onion gravy, fries, cheese curds, scallions; vegetarian option available. Add grilled chicken $7, bacon $4, crispy chicken $7. Regularly $15."
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "tocador",
+    "name": "Tocador",
+    "formatted_address": "2610 Main St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2618174,
+        "lng": -123.10079359999999
+      }
+    },
+    "formatted_phone_number": "(604) 620-2433",
+    "website": "http://www.tocador.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        6
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.tocador.ca/",
+      "deals": []
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "ignite-pizzeria-yaletown",
+    "name": "Ignite Pizzeria Yaletown",
+    "formatted_address": "987 Mainland St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.277248099999994,
+        "lng": -123.11873849999999
+      }
+    },
+    "formatted_phone_number": "(604) 566-0946",
+    "website": "https://ignitepizzeria.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://ignitepizzeria.com/yaletown-menu/",
+      "deals": [
+        {
+          "name": "Beer or house wine",
+          "price": "$6",
+          "category": "drink",
+          "description": "Any beer on tap or house wine"
+        },
+        {
+          "name": "Cocktails",
+          "price": "$9",
+          "category": "drink",
+          "description": "Espresso Martini, Ignite Negroni, Limoncello Spritz"
+        },
+        {
+          "name": "Wine bottles",
+          "price": "30% off",
+          "category": "drink",
+          "description": "30% off all wine bottles"
+        },
+        {
+          "name": "Any Small 10\" Pizza",
+          "price": "$15",
+          "category": "food",
+          "description": "Your choice of any pizza from the menu in a personal 10\" size"
+        },
+        {
+          "name": "Citrus Fennel Salad",
+          "price": "$11",
+          "category": "food",
+          "description": "Spring mix, beetroot, fennel, orange, Dijon mustard vinaigrette"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "prophecy-cocktail-bar",
+    "name": "Prophecy Cocktail Bar",
+    "formatted_address": "801 W Georgia St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.283436099999996,
+        "lng": -123.11920579999999
+      }
+    },
+    "formatted_phone_number": "(604) 336-3383",
+    "website": "https://www.prophecybar.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.prophecybar.com/happy-hour",
+      "deals": [
+        {
+          "name": "Martini",
+          "price": "$12",
+          "category": "drink",
+          "description": "Ketel One or Tanqueray"
+        },
+        {
+          "name": "Martini",
+          "price": "$16",
+          "category": "drink",
+          "description": "Belvedere or Tanqueray No.10"
+        },
+        {
+          "name": "Margarita",
+          "price": "$12",
+          "category": "drink",
+          "description": "Classic cocktail"
+        },
+        {
+          "name": "Negroni",
+          "price": "$12",
+          "category": "drink",
+          "description": "Classic cocktail"
+        },
+        {
+          "name": "Espresso Martini",
+          "price": "$12",
+          "category": "drink",
+          "description": "Classic cocktail"
+        },
+        {
+          "name": "First Light",
+          "price": "$15",
+          "category": "drink",
+          "description": "House cocktail: El Tequileno Blanco, Aperol, guava, hot honey, lime (regular menu price $21)"
+        },
+        {
+          "name": "Radio Saigon",
+          "price": "$12",
+          "category": "drink",
+          "description": "House cocktail: coconut oil washed Ketel One Vodka, pandan, makrut lime, cherry blossom, ginger, sencha tea, carbonation (regular menu price $21)"
+        },
+        {
+          "name": "Yum Cha",
+          "price": "$17",
+          "category": "drink",
+          "description": "House cocktail: Suntory Toki Japanese Whisky, wintermelon, pear, oolong tea, grappa (regular menu price $21)"
+        },
+        {
+          "name": "Microcosm",
+          "price": "$7",
+          "category": "drink",
+          "description": "Small serve: Belvedere Organic Vodka, strawberry, rhubarb, vanilla, lemon, yoghurt clarification"
+        },
+        {
+          "name": "Café de Olla",
+          "price": "$7",
+          "category": "drink",
+          "description": "Small serve: Los Siete Misterios Doba-yej Mezcal, Dry Curacao, fresh espresso, warm spices"
+        },
+        {
+          "name": "Pocket Knife",
+          "price": "$7",
+          "category": "drink",
+          "description": "Small serve: Nodo Tequiliana, Prophecy kola, lime, salt"
+        },
+        {
+          "name": "Prophecy Pilsner",
+          "price": "$6",
+          "category": "drink",
+          "description": "Draft beer"
+        },
+        {
+          "name": "Superflux Hazy IPA",
+          "price": "$8",
+          "category": "drink",
+          "description": "Draft beer"
+        },
+        {
+          "name": "Roche 'Vig' Pinot Gris",
+          "price": "$10",
+          "category": "drink",
+          "description": "White wine; 5oz $10, 8oz $16, bottle $50"
+        },
+        {
+          "name": "Lunessence Rosé",
+          "price": "$10",
+          "category": "drink",
+          "description": "Rosé wine; 5oz $10, 8oz $16, bottle $50"
+        },
+        {
+          "name": "Bleasdale 'Bremerview' Shiraz",
+          "price": "$10",
+          "category": "drink",
+          "description": "Red wine; 5oz $10, 8oz $16, bottle $50"
+        },
+        {
+          "name": "Pere Ventura Cava 'Reserva' Brut",
+          "price": "$10",
+          "category": "drink",
+          "description": "Sparkling; 5oz $10, bottle $50"
+        },
+        {
+          "name": "Moet & Chandon 'Imperial' Brut or Brut Rosé",
+          "price": "$25",
+          "category": "drink",
+          "description": "Champagne; 5oz $25, bottle $125"
+        },
+        {
+          "name": "Spanish Conservas",
+          "price": "$17",
+          "category": "food",
+          "description": "Choice of seafood served with chips, hot sauce and lemon: mussels in escabeche, sardines in olive oil, tuna belly, or squid in ink"
+        },
+        {
+          "name": "Osietra Caviar 10gr",
+          "price": "$50",
+          "category": "food",
+          "description": "Served with chips & crème fraîche"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "davie-social",
+    "name": "Davie Social",
+    "formatted_address": "1202 Davie St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.281788299999995,
+        "lng": -123.1335975
+      }
+    },
+    "formatted_phone_number": "(604) 563-0420",
+    "website": "https://www.daviesocial.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.daviesocial.ca/menu",
+      "deals": [
+        {
+          "name": "Carnitas or bean tacos & lager",
+          "price": "$13",
+          "category": "food",
+          "description": "2 carnitas or bean tacos served with a lager"
+        },
+        {
+          "name": "Carnitas tacos & lager",
+          "price": "$20",
+          "category": "food",
+          "description": "4 carnitas tacos served with a lager"
+        },
+        {
+          "name": "Smashed double cheeseburger",
+          "price": "$16.50",
+          "category": "food",
+          "description": "Smashed double cheeseburger"
+        },
+        {
+          "name": "Fully loaded nachos",
+          "price": "$12",
+          "category": "food",
+          "description": "Davie Social's fully loaded nachos"
+        },
+        {
+          "name": "Boneless chicken bites or wings",
+          "price": "$14",
+          "category": "food",
+          "description": "Boneless chicken bites or wings"
+        },
+        {
+          "name": "Acapulco ranch caesar salad",
+          "price": "$10",
+          "category": "food",
+          "description": "Acapulco ranch caesar salad"
+        },
+        {
+          "name": "Churro waffle",
+          "price": "$8",
+          "category": "food",
+          "description": "Churro waffle"
+        },
+        {
+          "name": "Classic margarita",
+          "price": "$8",
+          "category": "drink",
+          "description": "Classic margarita"
+        },
+        {
+          "name": "House wine or lager",
+          "price": "$5",
+          "category": "drink",
+          "description": "House wine or lager"
+        },
+        {
+          "name": "Highballs",
+          "price": "$6",
+          "category": "drink",
+          "description": "Highballs"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-mac-billiards",
+    "name": "The Mac Billiards",
+    "formatted_address": "2287 W Broadway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2641214,
+        "lng": -123.15697429999999
+      }
+    },
+    "formatted_phone_number": "(604) 606-7575",
+    "website": "https://themac.ca/",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://themac.ca/",
+      "deals": [
+        {
+          "name": "House Pilsner Cans",
+          "price": "$5",
+          "category": "drink",
+          "description": "The Mac Happy Hour Pilsner, 355 ml can"
+        },
+        {
+          "name": "Highballs",
+          "price": "$6",
+          "category": "drink",
+          "description": "Highball cocktails"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "guu-original-thurlow",
+    "name": "Guu Original Thurlow",
+    "formatted_address": "838 Thurlow St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.28400140000001,
+        "lng": -123.12544469999999
+      }
+    },
+    "formatted_phone_number": "(604) 685-8817",
+    "website": "https://guu-izakaya.com/Original_QR",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "11:30",
+      "end": "14:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://guu-izakaya.com/ThurlowDinnerMenu",
+      "deals": [
+        {
+          "name": "Sapporo Draft 16oz",
+          "price": "$6",
+          "category": "drink",
+          "description": "16oz draft beer (regularly $9 for a 16oz pint on the standard drink menu)"
+        },
+        {
+          "name": "Van Go Funk! Junmai Sake",
+          "price": "$23",
+          "category": "drink",
+          "description": "250ml Junmai sake"
+        },
+        {
+          "name": "Japanese Sake 720ml Bottles",
+          "price": "10% off",
+          "category": "drink",
+          "description": "10% off Japanese sake 720ml bottles"
+        },
+        {
+          "name": "3 Kinds of Sashimi",
+          "price": "$28",
+          "category": "food",
+          "description": "Chef's choice assortment of three kinds of sashimi"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "water-st-caf",
+    "name": "Water St. Café",
+    "formatted_address": "300 Water St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.284111100000004,
+        "lng": -123.10911390000001
+      }
+    },
+    "formatted_phone_number": "(604) 689-2832",
+    "website": "http://www.waterstreetcafe.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:30",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.waterstreetcafe.ca/menu/happy-hour",
+      "deals": [
+        {
+          "name": "Crispy Cauliflower",
+          "price": "$12.50",
+          "category": "food",
+          "description": "salsa rossa, smoked paprika aïoli"
+        },
+        {
+          "name": "Meatballs",
+          "price": "$15.50",
+          "category": "food",
+          "description": "beef, veal, pork, parmesan, fresh herbs, pomodoro sauce"
+        },
+        {
+          "name": "Hummus & Olives",
+          "price": "$15.50",
+          "category": "food",
+          "description": "mixed olives, cannellini beans, olive oil, tahini, garlic, lemon, buttermilk flatbread"
+        },
+        {
+          "name": "Italian Hummus",
+          "price": "$10.50",
+          "category": "food",
+          "description": "house-blended spices, cannellini beans, olive oil, tahini, garlic, lemon, buttermilk flatbread"
+        },
+        {
+          "name": "Burrata & Pesto",
+          "price": "$19.50",
+          "category": "food",
+          "description": "grana padano, broccoli-pistachio-basil pesto"
+        },
+        {
+          "name": "Whole Burrata",
+          "price": "$11.50",
+          "category": "food",
+          "description": "extra virgin olive oil, black pepper"
+        },
+        {
+          "name": "Burrata",
+          "price": "$9.50",
+          "category": "food",
+          "description": "extra virgin olive oil, black pepper"
+        },
+        {
+          "name": "Mixed Olives",
+          "price": "$8.50",
+          "category": "food",
+          "description": "house blend spices, aged balsamic marinade, fresh herbs"
+        },
+        {
+          "name": "Deep Fried Mushroom Ravioli",
+          "price": "$11.50",
+          "category": "food",
+          "description": "powdered parmesan, truffle aïoli"
+        },
+        {
+          "name": "Tempura Vegetables",
+          "price": "$11.50",
+          "category": "food",
+          "description": "mixed tempura vegetables, garlic aïoli"
+        },
+        {
+          "name": "Vegetable Spring Rolls",
+          "price": "$9.50",
+          "category": "food",
+          "description": "sweet chili sauce"
+        },
+        {
+          "name": "Mini Duck Spring Rolls",
+          "price": "$11.50",
+          "category": "food",
+          "description": "5 spice, hoisin duck meat, sweet chili sauce"
+        },
+        {
+          "name": "Fried Chicken",
+          "price": "$11.50",
+          "category": "food",
+          "description": "crispy chicken thigh, tossed in soy dressing, pickled chili"
+        },
+        {
+          "name": "Fall Vegetable Skillet",
+          "price": "$9.50",
+          "category": "food",
+          "description": "local bc squash, carrots, onions in a white wine & brown butter sauce"
+        },
+        {
+          "name": "Grilled Padron Peppers",
+          "price": "$11.50",
+          "category": "food",
+          "description": "charred on the fire grill, finished with aged sherry vinegar"
+        },
+        {
+          "name": "Italian Potato Salad",
+          "price": "$7.50",
+          "category": "food",
+          "description": "warm citrus dressing, corn sofrito, fennel & apple slaw, fresh herbs"
+        },
+        {
+          "name": "Italian Crispy Potatoes",
+          "price": "$6",
+          "category": "food",
+          "description": "house-blended Italian spice mix, corn sofrito, EVOO, fresh herbs"
+        },
+        {
+          "name": "Grilled Halloumi",
+          "price": "$14.50",
+          "category": "food",
+          "description": "balsamic glaze, gremolata (also listed at $13.50 with balsamic glaze)"
+        },
+        {
+          "name": "Butternut Squash Ravioli",
+          "price": "$19.50",
+          "category": "food",
+          "description": "asiago, ricotta, roasted winter squash, white wine sage butter, pistachio"
+        },
+        {
+          "name": "West Coast Crab Cake",
+          "price": "$13.50",
+          "category": "food",
+          "description": "blue crab, baby shrimp, corn sofrito, saffron aïoli - a Water St. Cafe tradition!"
+        },
+        {
+          "name": "Grilled Focaccia",
+          "price": "$11.50",
+          "category": "food",
+          "description": "olive oil & balsamic"
+        },
+        {
+          "name": "Grandma's Bannock",
+          "price": "$7.50",
+          "category": "food",
+          "description": "rotating house-made jam"
+        },
+        {
+          "name": "Crispy Wontons",
+          "price": "$11.50",
+          "category": "food",
+          "description": "pork, shrimp, sweet chili sauce"
+        },
+        {
+          "name": "Roasted Mushrooms",
+          "price": "$9.50",
+          "category": "food",
+          "description": "wild & cultivated mushrooms, garlic butter, fresh herbs"
+        },
+        {
+          "name": "Lemon Pepper Fries",
+          "price": "$11.50",
+          "category": "food",
+          "description": "dusted in our signature lemon pepper spice, garlic aioli"
+        },
+        {
+          "name": "Cajun Fries",
+          "price": "$9.75",
+          "category": "food",
+          "description": "dusted in our signature Cajun spice, garlic aïoli"
+        },
+        {
+          "name": "Steamed BC Clams",
+          "price": "$16.50",
+          "category": "food",
+          "description": "lime leaf miso broth, grilled focaccia, pickled chili, fresh herbs"
+        },
+        {
+          "name": "Salmon Gravlax & Beets",
+          "price": "$10",
+          "category": "food",
+          "description": "four tea leaf cured, dill creme fraiche, cucumber, caperberries, marinated beets"
+        },
+        {
+          "name": "Happy Hour Lager",
+          "price": "$6",
+          "category": "drink",
+          "description": "15 oz"
+        },
+        {
+          "name": "Happy Hour Pale Ale",
+          "price": "$6",
+          "category": "drink",
+          "description": "15 oz"
+        },
+        {
+          "name": "House Red Blend",
+          "price": "$7 / $11.50",
+          "category": "drink",
+          "description": "BC, 5oz / 8oz"
+        },
+        {
+          "name": "House White Blend",
+          "price": "$7 / $11.50",
+          "category": "drink",
+          "description": "BC, 5oz / 8oz"
+        },
+        {
+          "name": "House Rosé",
+          "price": "$7 / $11.50",
+          "category": "drink",
+          "description": "BC, 5oz / 8oz"
+        },
+        {
+          "name": "Blasted Church Viognier",
+          "price": "$11 / $18.50",
+          "category": "drink",
+          "description": "BC, 5oz / 8oz"
+        },
+        {
+          "name": "Hillside Syrah",
+          "price": "$13 / $23.50",
+          "category": "drink",
+          "description": "BC, 5oz / 8oz"
+        },
+        {
+          "name": "Highballs",
+          "price": "$6 / $11.50",
+          "category": "drink",
+          "description": "your choice of vodka, gin, white or dark rum with soda or juice, 1oz / 2oz"
+        },
+        {
+          "name": "WSC Caesar",
+          "price": "$8 / $14",
+          "category": "drink",
+          "description": "absolut vodka, spice, clamato, pickle, house garnish, 1oz / 2oz"
+        },
+        {
+          "name": "Spiked Raspberry Lemonade",
+          "price": "$8 / $14",
+          "category": "drink",
+          "description": "beefeater gin, raspberry, lemon, soda, 1oz / 2oz"
+        },
+        {
+          "name": "Sangria",
+          "price": "$10",
+          "category": "drink",
+          "description": "local BC red wine, triple sec, peach schnapps, fresh juices, fruit"
+        },
+        {
+          "name": "Moments Sangria - Summer Sippin'",
+          "price": "$10",
+          "category": "drink",
+          "description": "bc red wine, peach schnapps, soda, fresh juices, fruit"
+        },
+        {
+          "name": "Negroni",
+          "price": "$12",
+          "category": "drink",
+          "description": "Beefeater gin, Campari, sweet vermouth, orange twist"
+        },
+        {
+          "name": "Margarita",
+          "price": "$13",
+          "category": "drink",
+          "description": "Hornitos Plata tequila, Cointreau, fresh lime, salt"
+        },
+        {
+          "name": "Ginseng Rye Old Fashioned",
+          "price": "$12.50",
+          "category": "drink",
+          "description": "raincity distilleries rye, ginseng, orange"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "kinton-ramen-robson",
+    "name": "KINTON RAMEN ROBSON",
+    "formatted_address": "420 Robson St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2795383,
+        "lng": -123.1172879
+      }
+    },
+    "formatted_phone_number": "(604) 428-0999",
+    "website": "https://www.kintonramen.com/location/kinton-ramen-robson/?utm_source=google&utm_medium=organic&utm_campaign=gbp-listing&utm_content=kinton+ramen+robson",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://kintonramen.com/happy-hour/",
+      "deals": [
+        {
+          "name": "Pork Donburi Combo",
+          "price": "Free beverage",
+          "category": "food",
+          "description": "Order the signature Pork Donburi and receive a free Coca-Cola Family Beverage"
+        },
+        {
+          "name": "Select Sides",
+          "price": "20% off",
+          "category": "food",
+          "description": "20% off your choice of Tokyo Fries, Gyoza, Takoyaki, Edamame, or Karaage"
+        },
+        {
+          "name": "Sapporo Draft",
+          "price": "$5.99",
+          "category": "drink",
+          "description": "16oz Sapporo Draft"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "bellaggio-cafe",
+    "name": "Bellaggio Cafe",
+    "formatted_address": "773 Hornby St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.282985,
+        "lng": -123.1215366
+      }
+    },
+    "formatted_phone_number": "(604) 408-1281",
+    "website": "http://bellaggio.cafe/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://images.unoapp.com/boxdata/asset89882/images/50791__BELLAGGIOCAFE-HappyHours-MENU_2.pdf",
+      "deals": [
+        {
+          "name": "Truffle Fries",
+          "price": "$9",
+          "category": "food",
+          "description": "Parmiggiano Reggiano, truffle aioli (vegetarian)"
+        },
+        {
+          "name": "Polpette al Sugo",
+          "price": "$13",
+          "category": "food",
+          "description": "Meatballs, tomato sauce, Parmigiano Reggiano, focaccia"
+        },
+        {
+          "name": "Beef Carpaccio",
+          "price": "$16",
+          "category": "food",
+          "description": "Caper garlic aioli, arugula, fried capers, pickled onions, Parmiggiano Reggiano, focaccia"
+        },
+        {
+          "name": "Pasta of the Day",
+          "price": "$16",
+          "category": "food",
+          "description": "Please ask server"
+        },
+        {
+          "name": "Margherita Pizza",
+          "price": "$15",
+          "category": "food",
+          "description": "Mozzarella, tomato sauce, basil (vegetarian)"
+        },
+        {
+          "name": "Beetroot and Goat Cheese",
+          "price": "$14",
+          "category": "food",
+          "description": "Balsamic beetroot puree, crumbled goat cheese, candied walnuts, chilly oil, focaccia (vegetarian)"
+        },
+        {
+          "name": "House Red, White, or Rose",
+          "price": "$7",
+          "category": "drink",
+          "description": "House wine by the glass"
+        },
+        {
+          "name": "House Lager",
+          "price": "$7",
+          "category": "drink",
+          "description": "House lager"
+        },
+        {
+          "name": "Well Highballs",
+          "price": "$6",
+          "category": "drink",
+          "description": "1 oz well highballs"
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "$13",
+          "category": "drink",
+          "description": "Aperol spritz cocktail"
+        },
+        {
+          "name": "Negroni",
+          "price": "$13",
+          "category": "drink",
+          "description": "Negroni cocktail"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "maxine-s-cafe-bar",
+    "name": "Maxine's Cafe & Bar",
+    "formatted_address": "1325 Burrard St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2779418,
+        "lng": -123.13136429999999
+      }
+    },
+    "formatted_phone_number": "(604) 707-7224",
+    "website": "http://maxinescafebar.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:30",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.maxinescafebar.com/menu",
+      "deals": []
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "guu-with-otokomae",
+    "name": "Guu with Otokomae",
+    "formatted_address": "375 Water St #105, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.284719100000004,
+        "lng": -123.1103984
+      }
+    },
+    "formatted_phone_number": "(604) 685-8682",
+    "website": "https://guu-izakaya.com/Otokomae_QR",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:30",
+      "end": "17:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://guu-izakaya.com/OtokomaeMenu",
+      "deals": [
+        {
+          "name": "Sapporo Draft 16oz glass",
+          "price": "$6",
+          "category": "drink",
+          "description": "16oz glass of Sapporo draft (regular bar price $7)"
+        },
+        {
+          "name": "Sapporo Draft 60oz pitcher",
+          "price": "$18",
+          "category": "drink",
+          "description": "60oz pitcher of Sapporo draft (regular bar price $21)"
+        },
+        {
+          "name": "White Sangria",
+          "price": "$7",
+          "category": "drink",
+          "description": "3oz white wine, fresh fruits & ramune"
+        },
+        {
+          "name": "Chicken Karaage (5pc) + 16oz Sapporo Combo",
+          "price": "$12",
+          "category": "food",
+          "description": "Combo of 5pc chicken karaage with a 16oz Sapporo draft"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "coco-rico-cafe",
+    "name": "Coco Rico Cafe",
+    "formatted_address": "1290 Robson St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2867904,
+        "lng": -123.1285769
+      }
+    },
+    "formatted_phone_number": "(604) 687-0424",
+    "website": "https://www.cocoricocafe.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://cocoricocafe.ca/happy-hour/",
+      "deals": [
+        {
+          "name": "Red/White Wine 6oz",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "6oz glass of red or white wine"
+        },
+        {
+          "name": "Draft Beer (Coco Lager)",
+          "price": "$4.75",
+          "category": "drink",
+          "description": "Coco Lager on draft"
+        },
+        {
+          "name": "Domestic Bottle",
+          "price": "$5.50",
+          "category": "drink",
+          "description": "Molson Canadian / Kokanee / Budweiser / Miller"
+        },
+        {
+          "name": "Imported Beer",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "Heineken / Corona / Asahi / Stella"
+        },
+        {
+          "name": "Highball",
+          "price": "$5.50",
+          "category": "drink",
+          "description": "Single highball"
+        },
+        {
+          "name": "Double Highball",
+          "price": "$9.00",
+          "category": "drink",
+          "description": "Double highball"
+        },
+        {
+          "name": "Blue Ice",
+          "price": "$10",
+          "category": "drink",
+          "description": "Smirnoff Ice, Blue Curacao, lime with orange wedge"
+        },
+        {
+          "name": "Dr Dre",
+          "price": "$6.5",
+          "category": "drink",
+          "description": "1oz gin, pineapple juice, soda, lime"
+        },
+        {
+          "name": "Blue Pineapple Margarita",
+          "price": "$10",
+          "category": "drink",
+          "description": "Tequila, lime, blue curacao, pineapple juice"
+        },
+        {
+          "name": "Truffle Parmesan Pomme Frites",
+          "price": "$6",
+          "category": "food",
+          "description": "Crisp golden fries tossed in aged parmesan and cilantro, served with roasted garlic aioli"
+        },
+        {
+          "name": "Street Snack Sampler",
+          "price": "$8",
+          "category": "food",
+          "description": "Trio of 2 jalapeno poppers, 5 creamy mac & cheese nuggets and 6 sweet corn fritters"
+        },
+        {
+          "name": "Signature Three-Cheese Nachos",
+          "price": "$10",
+          "category": "food",
+          "description": "Tricolor tortillas with melted three-cheese blend, house salsa and sour cream (add chicken/beef/pulled pork $7)"
+        },
+        {
+          "name": "Pacific Crispy Shrimp Tacos (2pcs)",
+          "price": "$10",
+          "category": "food",
+          "description": "Seasoned shrimp, chickpea & corn crunch, pickled red onion (extra taco $5)"
+        },
+        {
+          "name": "Chef's Hand-Tossed Wings",
+          "price": "$15",
+          "category": "food",
+          "description": "Choice of signature hot honey glaze or fresh herb chimichurri"
+        },
+        {
+          "name": "Alpine Veggie Burger",
+          "price": "$14",
+          "category": "food",
+          "description": "Veggie patty, Swiss cheese, caramelized onions, house sauce, tomato, pickle, lettuce, served with fries"
+        },
+        {
+          "name": "Crispy Chicken Sliders (3pcs)",
+          "price": "$15",
+          "category": "food",
+          "description": "Hand-breaded chicken, base sauce, tomato, pickle, lettuce on toasted slider buns (extra slider $5)"
+        },
+        {
+          "name": "Pesto Margherita Pizza",
+          "price": "$14",
+          "category": "food",
+          "description": "San Marzano style marinara, basil pesto swirl, golden mozzarella crust"
+        },
+        {
+          "name": "Roasted Garlic Alfredo Fettuccine",
+          "price": "$15",
+          "category": "food",
+          "description": "Fettuccine in garlic cream reduction (add chicken/beef/prawns $7)"
+        },
+        {
+          "name": "Chimichurri Steak Frites",
+          "price": "$21",
+          "category": "food",
+          "description": "6oz sirloin with Argentinian chimichurri, served with fries"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "capo-the-spritz",
+    "name": "Capo & The Spritz",
+    "formatted_address": "350 Davie St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2747185,
+        "lng": -123.1227321
+      }
+    },
+    "formatted_phone_number": "(604) 642-0557",
+    "website": "https://www.capoandspritz.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:30",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.capoandspritz.com/daily-happy-hour-and-late-night",
+      "deals": [
+        {
+          "name": "Spritzes",
+          "price": "$10",
+          "category": "drink",
+          "description": "Aperitivo spritzes during daily happy hour"
+        },
+        {
+          "name": "House beer",
+          "price": "$9",
+          "category": "drink",
+          "description": "House beer during daily happy hour"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "steamworks-mount-pleasant",
+    "name": "Steamworks Mount Pleasant",
+    "formatted_address": "2275 Main St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2649991,
+        "lng": -123.10118709999999
+      }
+    },
+    "formatted_phone_number": "(604) 394-2275",
+    "website": "https://steamworks.com/mount-pleasant/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://steamworks.com/wp-content/uploads/2026/03/SWMP_Mar2026_print.pdf",
+      "deals": [
+        {
+          "name": "Lions Gate Lager",
+          "price": "$5.5",
+          "category": "drink",
+          "description": "Steamworks Lions Gate Lager draft"
+        },
+        {
+          "name": "Hazy Pale Ale",
+          "price": "$6",
+          "category": "drink",
+          "description": "Steamworks Hazy Pale Ale draft"
+        },
+        {
+          "name": "West Coast IPA",
+          "price": "$6",
+          "category": "drink",
+          "description": "Steamworks West Coast IPA draft"
+        },
+        {
+          "name": "All other Steamworks draft",
+          "price": "$7",
+          "category": "drink",
+          "description": "Any other Steamworks draft beer"
+        },
+        {
+          "name": "Highballs",
+          "price": "$5",
+          "category": "drink",
+          "description": "1oz highball; 2oz $8"
+        },
+        {
+          "name": "Red Bull",
+          "price": "$5",
+          "category": "drink",
+          "description": "Red Bull"
+        },
+        {
+          "name": "Classic Margarita",
+          "price": "$10.5",
+          "category": "drink",
+          "description": "Classic margarita"
+        },
+        {
+          "name": "Red Sangria",
+          "price": "$8",
+          "category": "drink",
+          "description": "Spanish-style red sangria"
+        },
+        {
+          "name": "Blackberry Bramble",
+          "price": "$9",
+          "category": "drink",
+          "description": "Gin, house-made blackberry syrup, lemon juice, splash of soda"
+        },
+        {
+          "name": "Mojito",
+          "price": "$9",
+          "category": "drink",
+          "description": "White rum, lime juice, mint, simple syrup"
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "$12",
+          "category": "drink",
+          "description": "Aperol, sparkling wine, soda"
+        },
+        {
+          "name": "Maple Fashioned",
+          "price": "$10",
+          "category": "drink",
+          "description": "Canadian whisky, maple syrup, bitters"
+        },
+        {
+          "name": "Piña Kölschlada",
+          "price": "$7",
+          "category": "drink",
+          "description": "Steamworks kölsch, coconut syrup, pineapple & lime juices; add 1oz white rum $3 or Flor de Cana 12yr $6"
+        },
+        {
+          "name": "Cocktail Pitchers",
+          "price": "$24",
+          "category": "drink",
+          "description": "Pitchers of featured cocktails"
+        },
+        {
+          "name": "House Shots",
+          "price": "$5",
+          "category": "drink",
+          "description": "House shots"
+        },
+        {
+          "name": "Steamworks non-alc beer",
+          "price": "$5",
+          "category": "drink",
+          "description": "Steamworks non-alcoholic beers"
+        },
+        {
+          "name": "6oz wines",
+          "price": "$2 off",
+          "category": "drink",
+          "description": "$2 off any 6oz glass of wine"
+        },
+        {
+          "name": "9oz wines",
+          "price": "$3 off",
+          "category": "drink",
+          "description": "$3 off any 9oz glass of wine"
+        },
+        {
+          "name": "Poke Nachos",
+          "price": "$15",
+          "category": "food",
+          "description": "Ahi tuna tossed in ginger mirin soy sauce, togarashi dusted wonton chips, pineapple salsa, cucumber, jalapeño, wakame, nori and truffle aioli"
+        },
+        {
+          "name": "Happy Hour Poutine",
+          "price": "$7",
+          "category": "food",
+          "description": "Gravy, white cheddar cheese curds; add bacon +$3 or slow roasted brisket +$4"
+        },
+        {
+          "name": "Crispy Dry Ribs",
+          "price": "$13",
+          "category": "food",
+          "description": "Tossed in salt & pepper; gluten sensitive"
+        },
+        {
+          "name": "Guacamole & Chips",
+          "price": "$12",
+          "category": "food",
+          "description": "House-made fresh daily, topped with pico de gallo & goat cheese, served with tortilla chips"
+        },
+        {
+          "name": "Buffalo Chicken Bites",
+          "price": "$14",
+          "category": "food",
+          "description": "Boneless chicken tossed in Franks hot sauce, served with cucumber slaw & jalapeño ranch"
+        },
+        {
+          "name": "Vegan Tofu Bites",
+          "price": "$13",
+          "category": "food",
+          "description": "Crispy tofu with broccolini tossed in garlic chili sauce, green onion, sesame & hemp seeds, vegan kimchi aioli"
+        },
+        {
+          "name": "Boom Boom Bread",
+          "price": "$14",
+          "category": "food",
+          "description": "Tear and share house-made loaf covered in garlic butter, stuffed with monterey jack & cheddar; add marinara +$1"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "pizza-coming-soon",
+    "name": "Pizza Coming Soon",
+    "formatted_address": "179 E Pender St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2805063,
+        "lng": -123.10015229999999
+      }
+    },
+    "formatted_phone_number": "(604) 558-4900",
+    "website": "http://pizzacomingsoon.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "18:30",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://pizzacomingsoon.com/",
+      "deals": [
+        {
+          "name": "Asahi",
+          "price": "$6",
+          "category": "drink",
+          "description": "Asahi Super Dry lager"
+        },
+        {
+          "name": "Asahi 0.0%",
+          "price": "$5",
+          "category": "drink",
+          "description": "Non-alcoholic Super Dry lager"
+        },
+        {
+          "name": "Piña Coming Soon",
+          "price": "$11",
+          "category": "drink",
+          "description": "2oz cocktail: Ketel One Vodka, sake, Calpico, pineapple, lime (contains dairy)"
+        },
+        {
+          "name": "Pizza Highball",
+          "price": "$6",
+          "category": "drink",
+          "description": "1oz: Dewars White Label Scotch whisky, club soda, lemon"
+        },
+        {
+          "name": "Melon Highball",
+          "price": "$6",
+          "category": "drink",
+          "description": "1oz: Tan Taka Tan shochu, melon liqueur, club soda, shiso"
+        },
+        {
+          "name": "Jasmine Highball",
+          "price": "$6",
+          "category": "drink",
+          "description": "1oz: Jasmine umeshu, Tanqueray gin, club soda, lemon"
+        },
+        {
+          "name": "Geso Karaage",
+          "price": "$6",
+          "category": "food",
+          "description": "Fried squid legs, togarashi mayo (GF)"
+        },
+        {
+          "name": "Snack Sized Chicken Karaage",
+          "price": "$6",
+          "category": "food",
+          "description": "Marinated chicken with dill mayo dip (GF)"
+        },
+        {
+          "name": "Hiyayakko",
+          "price": "$6",
+          "category": "food",
+          "description": "Cold tofu, crispy garlic, chili oil (V+, GF)"
+        },
+        {
+          "name": "Ramen Fries",
+          "price": "$5",
+          "category": "food",
+          "description": "Wasabi mayo or ponzu mayo dip (V, GF)"
+        },
+        {
+          "name": "Big Mac Bao (Single)",
+          "price": "$5",
+          "category": "food",
+          "description": "Beef, cheese, shredduce, mac sauce"
+        },
+        {
+          "name": "Chicken Wings",
+          "price": "$10",
+          "category": "food",
+          "description": "White pepper garlic soy"
+        },
+        {
+          "name": "Keith Burger",
+          "price": "$10",
+          "category": "food",
+          "description": "Pork burger, teriyaki, shredduce, honey lemon mayo, potato bun"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "desi-indian-lounge",
+    "name": "Desi Indian Lounge",
+    "formatted_address": "1355 Hornby St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2768683,
+        "lng": -123.1308565
+      }
+    },
+    "formatted_phone_number": "(604) 681-2131",
+    "website": "http://www.desilounge.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:30",
+      "end": "17:30",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://desilounge.ca/pages/happy-hour",
+      "deals": [
+        {
+          "name": "Craft Beer",
+          "price": "$5",
+          "category": "drink",
+          "description": "Craft beer"
+        },
+        {
+          "name": "Mojito",
+          "price": "$11",
+          "category": "drink",
+          "description": "Lime or mango, 1.5oz"
+        },
+        {
+          "name": "Margarita",
+          "price": "$11",
+          "category": "drink",
+          "description": "Tamarind or jalapeno, 2oz"
+        },
+        {
+          "name": "House Wine",
+          "price": "$7",
+          "category": "drink",
+          "description": "Red or white, 6oz"
+        },
+        {
+          "name": "High Balls",
+          "price": "$5 | $7",
+          "category": "drink",
+          "description": "Vodka, tequila, gin or rum; $5 for 1oz, $7 for 2oz"
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "$11",
+          "category": "drink",
+          "description": "Aperol spritz"
+        },
+        {
+          "name": "Mango Lassi",
+          "price": "$4",
+          "category": "drink",
+          "description": "Mango lassi"
+        },
+        {
+          "name": "Virgin Mojito",
+          "price": "$6.5",
+          "category": "drink",
+          "description": "Lime or mango, non-alcoholic"
+        },
+        {
+          "name": "Momos",
+          "price": "$9 | $10",
+          "category": "food",
+          "description": "Veg $9 / chicken $10"
+        },
+        {
+          "name": "Cochin Cauliflower Bites",
+          "price": "$9",
+          "category": "food",
+          "description": "Gluten-free, dairy-free"
+        },
+        {
+          "name": "Gunpowder Cassava Kebab",
+          "price": "$9",
+          "category": "food",
+          "description": "Gluten-free, dairy-free"
+        },
+        {
+          "name": "Onion Bhajiya",
+          "price": "$9",
+          "category": "food",
+          "description": "Gluten-free, dairy-free"
+        },
+        {
+          "name": "Kerala Pepper Chicken",
+          "price": "$10",
+          "category": "food",
+          "description": "Gluten-free, dairy-free"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "guu-davie",
+    "name": "Guu Davie",
+    "formatted_address": "1239 Davie St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.282239399999995,
+        "lng": -123.13377519999999
+      }
+    },
+    "formatted_phone_number": "(604) 687-8890",
+    "website": "https://guu-izakaya.com/Davie_QR",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://guu-izakaya.com/Davie_QR",
+      "deals": [
+        {
+          "name": "Sapporo",
+          "price": "$6",
+          "category": "drink",
+          "description": "16oz pint; $18 for 60oz pitcher"
+        },
+        {
+          "name": "Draft Seasonal Beer",
+          "price": "$7.5",
+          "category": "drink",
+          "description": "16oz pint; $21 for 60oz pitcher. Ask your server for the seasonal selection"
+        },
+        {
+          "name": "House White Wine",
+          "price": "$6",
+          "category": "drink",
+          "description": "5oz glass; $16.5 for 16oz"
+        },
+        {
+          "name": "House Red Wine",
+          "price": "$6",
+          "category": "drink",
+          "description": "5oz glass; $16.5 for 16oz"
+        },
+        {
+          "name": "Sparkling Red Sangria",
+          "price": "$8",
+          "category": "drink",
+          "description": "200ml glass; $30 for 800ml pitcher"
+        },
+        {
+          "name": "Sparkling White Sangria",
+          "price": "$8",
+          "category": "drink",
+          "description": "200ml glass; $30 for 800ml pitcher"
+        },
+        {
+          "name": "Van Go Funk sake (Fukushima)",
+          "price": "$22",
+          "category": "drink",
+          "description": "9oz; $39 for 16oz"
+        },
+        {
+          "name": "Happy Tequila Shot",
+          "price": "$5",
+          "category": "drink",
+          "description": "Tequila shot"
+        },
+        {
+          "name": "3 Kinds Assorted Sashimi",
+          "price": "$28",
+          "category": "food",
+          "description": "Chef's choice of three sashimi"
+        },
+        {
+          "name": "3 Kinds Assorted Oden",
+          "price": "$10",
+          "category": "food",
+          "description": "Your pick (no more than two of each item) or chef's pick"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-king-s-head-public-house",
+    "name": "The King's Head Public House",
+    "formatted_address": "1618 Yew St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.271314399999994,
+        "lng": -123.15484389999999
+      }
+    },
+    "formatted_phone_number": "(604) 738-6966",
+    "website": "https://thekingsheadkits.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://thekingsheadkits.com/",
+      "deals": []
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "prestons-restaurant-lounge-vancouver",
+    "name": "Prestons Restaurant + Lounge Vancouver",
+    "formatted_address": "1177 W Pender St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.288219,
+        "lng": -123.122225
+      }
+    },
+    "formatted_phone_number": "(604) 673-2173",
+    "website": "https://www.prestonsvancouver.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:30",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.prestonsvancouver.ca/menus",
+      "deals": []
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "amber-gastown",
+    "name": "Amber Gastown",
+    "formatted_address": "99 Powell St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.283394400000006,
+        "lng": -123.10249440000001
+      }
+    },
+    "formatted_phone_number": "(778) 819-8809",
+    "website": "https://amber99.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.amber99.com/menu",
+      "deals": [
+        {
+          "name": "Margarita",
+          "price": "$12",
+          "category": "drink",
+          "description": "Cazadores blanco, Cointreau and fresh lime juice – 2oz"
+        },
+        {
+          "name": "Negroni",
+          "price": "$12",
+          "category": "drink",
+          "description": "Bombay Sapphire, Campari & Cinzano – 2oz"
+        },
+        {
+          "name": "Old Fashioned",
+          "price": "$12",
+          "category": "drink",
+          "description": "Bearface triple oak whiskey, demerara syrup & Angostura bitters – 2oz"
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "$12",
+          "category": "drink",
+          "description": "Aperol, sparkling wine, & club soda – 3oz"
+        },
+        {
+          "name": "Mocha Martini",
+          "price": "$12",
+          "category": "drink",
+          "description": "Cocoa infused Ketel One vodka, Kahlua, espresso – 2oz"
+        },
+        {
+          "name": "Slowhand Wrong Lager",
+          "price": "$7",
+          "category": "drink",
+          "description": "Beer"
+        },
+        {
+          "name": "Driftwood Fat Tug IPA",
+          "price": "$7",
+          "category": "drink",
+          "description": "Beer"
+        },
+        {
+          "name": "Red Wine",
+          "price": "$10",
+          "category": "drink",
+          "description": "Happy hour red wine by the glass"
+        },
+        {
+          "name": "White Wine",
+          "price": "$10",
+          "category": "drink",
+          "description": "Happy hour white wine by the glass"
+        },
+        {
+          "name": "HH Oyster",
+          "price": "$1.75 /pc",
+          "category": "food",
+          "description": "Rotating, house mignonette, cucumber & thai basil granita"
+        },
+        {
+          "name": "House Salt & Vinegar Chips",
+          "price": "$4",
+          "category": "food",
+          "description": "House-made salt & vinegar chips"
+        },
+        {
+          "name": "Hand-cut Fries",
+          "price": "$7",
+          "category": "food",
+          "description": "Sub Old Bay Fries $1"
+        },
+        {
+          "name": "Endswell Salad",
+          "price": "$11",
+          "category": "food",
+          "description": "Bowen Island greens, farm vegetables, honey-lemon vinaigrette"
+        },
+        {
+          "name": "Snow Leopard Melon Ajo Blanco",
+          "price": "$14",
+          "category": "food",
+          "description": "Yuzu & shoyu compressed Cropthorne farm melon, shiso, egg yolk snow, scallion oil"
+        },
+        {
+          "name": "“Chicken Fried” Spot Prawns",
+          "price": "$22",
+          "category": "food",
+          "description": "Meyer lemon aioli"
+        },
+        {
+          "name": "Beef Tartare",
+          "price": "$21",
+          "category": "food",
+          "description": "Classic garnishes, yuzu compressed kohlrabi, pickled garlic scapes, Pecorino Romano, salt & vinegar chips"
+        },
+        {
+          "name": "Steamed Mussels",
+          "price": "$18",
+          "category": "food",
+          "description": "½ lb, spring garlic, crab brain & coconut broth, served with focaccia"
+        },
+        {
+          "name": "Amber Burger",
+          "price": "$23",
+          "category": "food",
+          "description": "Dry-aged house-ground beef, taleggio, huitlacoche aioli, sherry caramelized onions, bap, served with hand-cut fries"
+        }
+      ]
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "the-cambie-bar-grill",
     "name": "The Cambie Bar & Grill",
     "formatted_address": "300 Cambie St., Vancouver, BC",
