@@ -565,11 +565,18 @@ body.map-fullscreen .sheet {
 .map-card-carousel::-webkit-scrollbar {
   display: none;
 }
+.map-detail-card.lifting {
+  transition: none;
+}
 .map-card-carousel.hidden {
   display: none;
 }
 
 .map-detail-card {
+  /* vertical touches feed the swipe-up-to-open gesture; horizontal panning
+     stays the browser's native carousel scroll */
+  touch-action: pan-x;
+  transition: transform 0.22s ease, opacity 0.22s ease;
   flex: 0 0 auto;
   width: calc(100vw - 64px);
   max-width: 400px;

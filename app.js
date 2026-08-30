@@ -747,6 +747,49 @@ function buildMapCard(venue, occ) {
   arrow.addEventListener("click", (e) => e.stopPropagation());
   card.appendChild(arrow);
 
+  // Swipe up to open the venue. The card follows the finger and commits past
+  // 80px; anything more sideways than up stays native carousel scrolling
+  // (touch-action: pan-x hands only vertical movement to these handlers).
+  let lift = null;
+  card.addEventListener("touchstart", (e) => {
+    lift = e.touches.length === 1 ? { x: e.touches[0].clientX, y: e.touches[0].clientY, axis: null } : null;
+  }, { passive: true });
+  card.addEventListener("touchmove", (e) => {
+    if (!lift || e.touches.length !== 1) return;
+    const dx = e.touches[0].clientX - lift.x;
+    const dy = e.touches[0].clientY - lift.y;
+    if (!lift.axis) {
+      if (Math.max(Math.abs(dx), Math.abs(dy)) < 10) return;
+      lift.axis = -dy > Math.abs(dx) * 1.2 ? "v" : "h";
+      if (lift.axis === "v") card.classList.add("lifting");
+    }
+    if (lift.axis !== "v") return;
+    e.preventDefault();
+    card.style.transform = `translateY(${Math.min(0, dy)}px)`;
+  }, { passive: false });
+  card.addEventListener("touchend", (e) => {
+    if (!lift) return;
+    const wasVertical = lift.axis === "v";
+    const dy = wasVertical && e.changedTouches.length ? e.changedTouches[0].clientY - lift.y : 0;
+    lift = null;
+    if (!wasVertical) return;
+    card.classList.remove("lifting");
+    if (dy < -80) {
+      card.style.transform = "translateY(-130%)";
+      card.style.opacity = "0";
+      setTimeout(() => { window.location.href = menuUrl; }, 150);
+    } else {
+      card.style.transform = "";
+    }
+  });
+  card.addEventListener("touchcancel", () => {
+    if (lift?.axis === "v") {
+      card.classList.remove("lifting");
+      card.style.transform = "";
+    }
+    lift = null;
+  });
+
   return card;
 }
 
