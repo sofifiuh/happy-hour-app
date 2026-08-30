@@ -2,5 +2,8 @@
   "name": "happy-hour-pipeline",
   "private": true,
   "type": "module",
-  "description": "Build-time data pipeline: crawl venue websites, extract happy hour data with Claude, score against the hand-verified seed."
+  "description": "Build-time data pipeline: crawl venue websites, extract happy hour data with Claude, score against the hand-verified seed.",
+  "dependencies": {
+    "playwright-core": "^1.62.1"
+  }
 }

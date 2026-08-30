@@ -15,7 +15,8 @@ const PER_PAGE_CHARS = 12000;
 const TOTAL_CHARS = 45000;
 const OUT_FILE = path.join(RESULTS_DIR, args.out || "extracted.json");
 
-const venues = loadSeed().filter((v) => !args.only || v.id === args.only);
+const only = args.only ? String(args.only).split(",") : null;
+const venues = loadSeed().filter((v) => !only || only.includes(v.id));
 fs.mkdirSync(RESULTS_DIR, { recursive: true });
 const previous = !args.force && fs.existsSync(OUT_FILE) ? JSON.parse(fs.readFileSync(OUT_FILE, "utf8")) : {};
 
