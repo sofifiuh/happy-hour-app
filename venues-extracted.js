@@ -9,7 +9,11 @@
 // - VENUES_DISCOVERED: venues from pipeline/discovered.json (the committed
 //   store maintained by pipeline/discover.js + writeback), verified: false
 //   until a human checks them.
-const EXTRACTED_DATA_VERSION = "2026-08-30";
+// - VENUES_PLACES: Google Places identity fields (place_id, rating, review
+//   count, price level) from pipeline/places-sync.js. Refreshed by the
+//   re-sync loop per Google's caching terms; place_id is the one field
+//   that may be stored indefinitely.
+const EXTRACTED_DATA_VERSION = "2026-08-30-d3cad53d";
 
 const VENUES_EXTRACTED = {
   "ancora": {
@@ -2728,3 +2732,357 @@ const VENUES_DISCOVERED = [
     "last_synced_at": "2026-08-30"
   }
 ];
+
+const VENUES_PLACES = {
+  "homer-st-cafe-and-bar": {
+    "place_id": "ChIJG_9jCH5xhlQRtcDS3SP5k_U",
+    "rating": 4.4,
+    "user_ratings_total": 2414,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Homer St. Cafe and Bar",
+    "synced_at": "2026-08-30"
+  },
+  "ancora": {
+    "place_id": "ChIJrVQM-NFzhlQR5039qtBEmXE",
+    "rating": 4.3,
+    "user_ratings_total": 1402,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Ancora Waterfront Dining and Patio",
+    "synced_at": "2026-08-30"
+  },
+  "earls-test-kitchen": {
+    "place_id": "ChIJDe-U4n9xhlQRHe5feMqgXwM",
+    "rating": 4.7,
+    "user_ratings_total": 10435,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Earls Kitchen + Bar",
+    "synced_at": "2026-08-30"
+  },
+  "hapa-izakaya-yaletown": {
+    "place_id": "ChIJW8fi6NZzhlQRjKvR2NBsVkc",
+    "rating": 4.4,
+    "user_ratings_total": 1133,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Hapa Izakaya Yaletown",
+    "synced_at": "2026-08-30"
+  },
+  "boulevard-kitchen-oyster-bar": {
+    "place_id": "ChIJxwQPG4BxhlQRtCIXIfvmh9I",
+    "rating": 4.5,
+    "user_ratings_total": 1667,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Boulevard Kitchen & Oyster Bar",
+    "synced_at": "2026-08-30"
+  },
+  "glowbal": {
+    "place_id": "ChIJ184e4X5xhlQREgkeHvFAYwE",
+    "rating": 4.6,
+    "user_ratings_total": 10417,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Glowbal",
+    "synced_at": "2026-08-30"
+  },
+  "havana": {
+    "place_id": "ChIJz-KODz9xhlQRtVWCFPnJBpY",
+    "rating": 4.3,
+    "user_ratings_total": 3611,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Havana Vancouver",
+    "synced_at": "2026-08-30"
+  },
+  "brewhall": {
+    "place_id": "ChIJoSErr2FxhlQRM-J1vP3DBqM",
+    "rating": 4.3,
+    "user_ratings_total": 1446,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "BREWHALL",
+    "synced_at": "2026-08-30"
+  },
+  "chambar": {
+    "place_id": "ChIJq2tI6HtxhlQRBaKUv59cS9E",
+    "rating": 4.5,
+    "user_ratings_total": 4439,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Chambar Restaurant",
+    "synced_at": "2026-08-30"
+  },
+  "d6-bar-lounge": {
+    "place_id": "ChIJfU6-5ulzhlQRzXMfFayzzqU",
+    "rating": 4.2,
+    "user_ratings_total": 753,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "D/6 Bar & Lounge",
+    "synced_at": "2026-08-30"
+  },
+  "central-restaurants-vancouver-bentall": {
+    "place_id": "ChIJ72Q27rRxhlQRFYeILV_DARk",
+    "rating": 4.7,
+    "user_ratings_total": 1050,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Central Restaurants - Vancouver Bentall",
+    "synced_at": "2026-08-30"
+  },
+  "tap-barrel-convention-centre": {
+    "place_id": "ChIJ4WVPWYNxhlQRX1ZjV-bu69o",
+    "rating": 4.2,
+    "user_ratings_total": 3129,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Tap & Barrel • Convention Centre",
+    "synced_at": "2026-08-30"
+  },
+  "p2b-restaurant-bar": {
+    "place_id": "ChIJV5_58YNxhlQRAY6qECXa8vI",
+    "rating": 4.5,
+    "user_ratings_total": 979,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "P2B Restaurant + Bar",
+    "synced_at": "2026-08-30"
+  },
+  "relish-the-pub": {
+    "place_id": "ChIJvzgBQNVzhlQRFmLq5fcuTH4",
+    "rating": 4.2,
+    "user_ratings_total": 1227,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Relish The Pub",
+    "synced_at": "2026-08-30"
+  },
+  "french-creek-pub-vancouver": {
+    "place_id": "ChIJ8VZC-uhzhlQRBKQHQaxgyxg",
+    "rating": 4.7,
+    "user_ratings_total": 15,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "French Creek Pub",
+    "synced_at": "2026-08-30"
+  },
+  "zubu-ramen-downtown": {
+    "place_id": "ChIJu_L5cudxhlQRfMprQBqWBJU",
+    "rating": 4.3,
+    "user_ratings_total": 682,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "ZUBU Ramen - Downtown",
+    "synced_at": "2026-08-30"
+  },
+  "1931-gallery-bistro": {
+    "place_id": "ChIJH4ScrwVxhlQRk74FDsvybDE",
+    "rating": 4,
+    "user_ratings_total": 438,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "1931 Gallery Bistro",
+    "synced_at": "2026-08-30"
+  },
+  "notch8-restaurant-bar": {
+    "place_id": "ChIJg_-i0YFxhlQRIF9uO3r3DmM",
+    "rating": 4.1,
+    "user_ratings_total": 1558,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Notch8 Restaurant & Bar",
+    "synced_at": "2026-08-30"
+  },
+  "parker-rooftop": {
+    "place_id": "ChIJozcsADtzhlQRyZU-sYUvk6w",
+    "rating": 4.2,
+    "user_ratings_total": 642,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Parker Rooftop",
+    "synced_at": "2026-08-30"
+  },
+  "hawksworth-restaurant": {
+    "place_id": "ChIJSQDA8oZ0hlQR_IFn3VHeS4w",
+    "rating": 4.3,
+    "user_ratings_total": 2074,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Hawksworth Restaurant",
+    "synced_at": "2026-08-30"
+  },
+  "banter-room": {
+    "place_id": "ChIJy9N3R9ZzhlQRhcyU8dkLAmU",
+    "rating": 4,
+    "user_ratings_total": 1360,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Banter Room",
+    "synced_at": "2026-08-30"
+  },
+  "el-guapo-mexican-restaurant": {
+    "place_id": "ChIJH2bzVGtzhlQRs1Ok98zdwLQ",
+    "rating": 4.1,
+    "user_ratings_total": 773,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "El Guapo - Mexican Restaurant Vancouver",
+    "synced_at": "2026-08-30"
+  },
+  "tacofino-taco-bar-yaletown": {
+    "place_id": "ChIJAQDwP9ZzhlQRSFSw-o6-Wck",
+    "rating": 4.2,
+    "user_ratings_total": 1997,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Tacofino Yaletown",
+    "synced_at": "2026-08-30"
+  },
+  "the-parlour": {
+    "place_id": "ChIJgQVLE9ZzhlQR1RvvVMTM9HM",
+    "rating": 4.2,
+    "user_ratings_total": 2307,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Parlour",
+    "synced_at": "2026-08-30"
+  },
+  "the-flying-pig-yaletown": {
+    "place_id": "ChIJR-oj79ZzhlQRPxQ0DJ-fZRI",
+    "rating": 4.3,
+    "user_ratings_total": 2761,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Flying Pig Yaletown",
+    "synced_at": "2026-08-30"
+  },
+  "the-keg-steakhouse-bar-yaletown": {
+    "place_id": "ChIJq69lPtZzhlQROZR50xKXYQw",
+    "rating": 4.4,
+    "user_ratings_total": 3177,
+    "price_level": 3,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Keg Steakhouse + Bar - Yaletown",
+    "synced_at": "2026-08-30"
+  },
+  "earls-yaletown": {
+    "place_id": "ChIJ84uJWdZzhlQRW_JFwEYZIgY",
+    "rating": 4.6,
+    "user_ratings_total": 8395,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Earls Kitchen + Bar",
+    "synced_at": "2026-08-30"
+  },
+  "moltaqa-moroccan-restaurant": {
+    "place_id": "ChIJnbZ_HnpxhlQRYtAR6udPH4g",
+    "rating": 4.3,
+    "user_ratings_total": 2335,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Moltaqa Moroccan Restaurant",
+    "synced_at": "2026-08-30"
+  },
+  "alchemy-bar-kitchen": {
+    "place_id": "ChIJv-486r1zhlQRCUE79RGXqm8",
+    "rating": 4.6,
+    "user_ratings_total": 472,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Alchemy Bar and Kitchen",
+    "synced_at": "2026-08-30"
+  },
+  "yaletown-brewing-company": {
+    "place_id": "ChIJefmz9dZzhlQRCnVoCGiuGYs",
+    "rating": 4,
+    "user_ratings_total": 1523,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Yaletown Brewing Company",
+    "synced_at": "2026-08-30"
+  },
+  "fanny-bay-oyster-bar": {
+    "place_id": "ChIJW1pAMXxxhlQRNjNjIzra2fA",
+    "rating": 4.5,
+    "user_ratings_total": 3716,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Fanny Bay Oyster Bar & Shellfish Market",
+    "synced_at": "2026-08-30"
+  },
+  "hydra-estiatorio-mediterranean": {
+    "place_id": "ChIJP9IvbIJxhlQRMbVReWghV0E",
+    "rating": 4.4,
+    "user_ratings_total": 1604,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Hydra Estiatorio",
+    "synced_at": "2026-08-30"
+  },
+  "pourhouse": {
+    "place_id": "ChIJB3AAznlxhlQRnidXy4IF-TU",
+    "rating": 4.4,
+    "user_ratings_total": 1674,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Pourhouse Restaurant",
+    "synced_at": "2026-08-30"
+  },
+  "greta-yvr": {
+    "place_id": "ChIJzekgeeJxhlQR2X_6Wx4q8Io",
+    "rating": 4.3,
+    "user_ratings_total": 1432,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "GRETA Bar YVR",
+    "synced_at": "2026-08-30"
+  },
+  "six-acres": {
+    "place_id": "ChIJTRHlTndxhlQRNl_jlsUsokI",
+    "rating": 4.3,
+    "user_ratings_total": 1498,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Six Acres",
+    "synced_at": "2026-08-30"
+  },
+  "the-boxcar": {
+    "place_id": "ChIJyQtsDmVxhlQRELLh4j99wLA",
+    "rating": 4.7,
+    "user_ratings_total": 561,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The Boxcar",
+    "synced_at": "2026-08-30"
+  },
+  "brix-mortar": {
+    "place_id": "ChIJl9xLjNZzhlQR7-ndY8Asql8",
+    "rating": 4.4,
+    "user_ratings_total": 1819,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Brix and Mortar",
+    "synced_at": "2026-08-30"
+  },
+  "joe-fortes": {
+    "place_id": "ChIJiUwIWIBxhlQRzKG3k_9C-T8",
+    "rating": 4.5,
+    "user_ratings_total": 8801,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "matched_name": "Joe Fortes Seafood & Chop House",
+    "synced_at": "2026-08-30"
+  },
+  "the-515-bar": {
+    "place_id": "ChIJ7YoURvJxhlQRzNjtcdoRHcU",
+    "rating": 4.8,
+    "user_ratings_total": 379,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "matched_name": "The 515 Bar",
+    "synced_at": "2026-08-30"
+  }
+};

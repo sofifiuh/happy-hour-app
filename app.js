@@ -123,6 +123,7 @@ function sampleVenues() {
   // constants, then deep-cloned once on return.
   const extracted = typeof VENUES_EXTRACTED !== "undefined" && VENUES_EXTRACTED ? VENUES_EXTRACTED : {};
   const discovered = typeof VENUES_DISCOVERED !== "undefined" && Array.isArray(VENUES_DISCOVERED) ? VENUES_DISCOVERED : [];
+  const places = typeof VENUES_PLACES !== "undefined" && VENUES_PLACES ? VENUES_PLACES : {};
   const merged = VENUES_SEED.map((v) => {
     const x = extracted[v.id];
     if (!x?.deals?.length) return v;
@@ -130,8 +131,22 @@ function sampleVenues() {
       ...v,
       happy_hour: { ...v.happy_hour, deals: x.deals, deals_source: { url: x.source_url, extracted_at: x.extracted_at } },
     };
+  }).concat(discovered);
+  // Google Places identity overlay: fills the Places-shaped fields the seed
+  // carries as null (place_id, rating, review count, price level).
+  const withPlaces = merged.map((v) => {
+    const g = places[v.id];
+    if (!g) return v;
+    return {
+      ...v,
+      place_id: g.place_id ?? v.place_id,
+      rating: g.rating ?? v.rating,
+      user_ratings_total: g.user_ratings_total ?? v.user_ratings_total,
+      price_level: g.price_level ?? v.price_level,
+      business_status: g.business_status ?? v.business_status,
+    };
   });
-  return JSON.parse(JSON.stringify([...merged, ...discovered]));
+  return JSON.parse(JSON.stringify(withPlaces));
 }
 
 function newManualVenue() {

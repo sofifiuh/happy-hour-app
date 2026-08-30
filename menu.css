@@ -178,6 +178,13 @@
   padding: 20px;
 }
 
+.menu-rating {
+  margin: 2px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent, #b8860b);
+}
+
 .menu-name {
   font-size: 1.4rem;
   font-weight: 800;

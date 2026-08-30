@@ -45,9 +45,12 @@ export function curlGet(url, outFile, { timeout = 30 } = {}) {
 
 /** GET a URL and parse the response as JSON (for APIs like Nominatim).
  *  Async — never blocks the event loop — and shares the proxy/CA seam. */
-export function curlJson(url, { timeout = 25, userAgent = UA } = {}) {
+export function curlJson(url, { timeout = 25, userAgent = UA, headers = [], body = null } = {}) {
+  const args = ["-sS", "--max-time", String(timeout), "-H", `User-Agent: ${userAgent}`];
+  for (const h of headers) args.push("-H", h);
+  if (body !== null) args.push("-X", "POST", "-H", "Content-Type: application/json", "-d", JSON.stringify(body));
   return new Promise((resolve, reject) => {
-    execFile("curl", ["-sS", "--max-time", String(timeout), "-H", `User-Agent: ${userAgent}`, url],
+    execFile("curl", [...args, url],
       { encoding: "utf8", maxBuffer: 16 * 1024 * 1024 },
       (err, stdout, stderr) => {
         if (err) return reject(new Error((stderr || err.message).trim().slice(0, 200)));

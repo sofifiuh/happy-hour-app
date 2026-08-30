@@ -100,6 +100,7 @@ const els = {
   menuPhotoCredit: document.getElementById("menuPhotoCredit"),
   venueName: document.getElementById("venueName"),
   venueAddress: document.getElementById("venueAddress"),
+  venueRating: document.getElementById("venueRating"),
   venuePhone: document.getElementById("venuePhone"),
   verifiedBadge: document.getElementById("verifiedBadge"),
   verifiedLink: document.getElementById("verifiedLink"),
@@ -196,6 +197,12 @@ function init(venue) {
   }
 
   els.venueName.textContent = venue.name;
+  if (venue.rating) {
+    const count = venue.user_ratings_total ? ` (${Number(venue.user_ratings_total).toLocaleString()})` : "";
+    const price = venue.price_level ? ` · ${"$".repeat(venue.price_level)}` : "";
+    els.venueRating.textContent = `★ ${venue.rating}${count}${price}`;
+    els.venueRating.classList.remove("hidden");
+  }
 
   const address = getAddress(venue);
   if (address) {
