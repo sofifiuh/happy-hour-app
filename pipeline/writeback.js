@@ -79,6 +79,10 @@ const DISCOVERED_DEFAULTS = {
   data_source: "discovery",
 };
 
+// Google Places identity store — loaded early so discovery acceptance can
+// merge the identity captured by places-discover.js (no second API pass).
+const places = readJson(PLACES_STORE, {});
+
 let discovered = readJson(DISCOVERED_STORE, []);
 const cands = readJson(path.join(RESULTS_DIR, "discovered-candidates.json"), null);
 const discExt = readJson(path.join(RESULTS_DIR, "extracted-discovered.json"), null);
@@ -87,6 +91,7 @@ if (cands && discExt) {
   for (const c of cands) {
     const x = acceptExtraction(c.id, discExt[c.id], DISC_MIN_CONF, "discovery: ");
     if (!x) continue;
+    if (c.places?.place_id) places[c.id] = c.places;
     rebuilt.push({
       ...DISCOVERED_DEFAULTS,
       id: c.id,
@@ -130,8 +135,7 @@ if (cands && discExt) {
   fs.writeFileSync(DISCOVERED_STORE, JSON.stringify(discovered, null, 2));
 }
 
-// --- Google Places identity overlay (pipeline/places-sync.js).
-const places = readJson(PLACES_STORE, {});
+fs.writeFileSync(PLACES_STORE, JSON.stringify(places, null, 2));
 
 // --- Render the generated layer.
 const banner = `// GENERATED FILE — do not edit by hand. Regenerate with: node pipeline/writeback.js
