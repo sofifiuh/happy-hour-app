@@ -8,7 +8,7 @@
 <meta http-equiv="Expires" content="0" />
 <title>Happy Hour Menu</title>
 <link rel="stylesheet" href="styles.css?v=17" />
-<link rel="stylesheet" href="menu.css?v=13" />
+<link rel="stylesheet" href="menu.css?v=14" />
 </head>
 <body>
   <div class="menu-app">
@@ -21,9 +21,18 @@
 
     <div class="menu-info">
       <h1 class="menu-name" id="venueName">Venue name</h1>
-      <p class="menu-rating hidden" id="venueRating"></p>
-      <a class="menu-address" id="venueAddress" target="_blank" rel="noopener"></a>
-      <a class="menu-phone" id="venuePhone"></a>
+      <div class="menu-head-row">
+        <div class="menu-head-left">
+          <p class="menu-rating hidden" id="venueRating"></p>
+          <a class="menu-address" id="venueAddress" target="_blank" rel="noopener"></a>
+          <a class="menu-phone" id="venuePhone"></a>
+        </div>
+        <div class="travel-times hidden" id="travelTimes" aria-label="Estimated travel times from your location">
+          <div class="travel-time"><span class="travel-ico">🚶</span><span id="travelWalk">–</span></div>
+          <div class="travel-time"><span class="travel-ico">🚴</span><span id="travelCycle">–</span></div>
+          <div class="travel-time"><span class="travel-ico">🚗</span><span id="travelDrive">–</span></div>
+        </div>
+      </div>
       <p id="verifiedBadge" class="menu-verified hidden">
         <a id="verifiedLink" target="_blank" rel="noopener">✓ Verified against official menu</a>
       </p>
@@ -76,6 +85,6 @@
     <button class="menu-share-btn" id="shareBtn">Share</button>
   </div>
 
-  <script src="menu.js?v=12"></script>
+  <script src="menu.js?v=13"></script>
 </body>
 </html>

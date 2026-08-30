@@ -216,6 +216,45 @@ body {
   margin: 0 0 6px;
 }
 
+.menu-head-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.menu-head-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.travel-times {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  padding: 9px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+
+.travel-times.hidden {
+  display: none;
+}
+
+.travel-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  white-space: nowrap;
+}
+
 .menu-address,
 .menu-phone {
   display: block;
