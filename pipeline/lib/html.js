@@ -5,7 +5,7 @@ const ENTITIES = {
   amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " ",
   ndash: "–", mdash: "—", hellip: "…", rsquo: "’",
   lsquo: "‘", ldquo: "“", rdquo: "”", bull: "•",
-  eacute: "é", amp_: "&",
+  eacute: "é",
 };
 
 export function decodeEntities(s) {

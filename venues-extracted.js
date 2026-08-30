@@ -6,8 +6,11 @@
 //   official menu, applied ONLY where the automated read reproduced the
 //   hand-verified schedule exactly (corroboration). Source page credited
 //   per venue. The verified happy_hour schedule itself is never changed here.
-// - VENUES_DISCOVERED: venues found by pipeline/discover.js, verified: false
+// - VENUES_DISCOVERED: venues from pipeline/discovered.json (the committed
+//   store maintained by pipeline/discover.js + writeback), verified: false
 //   until a human checks them.
+const EXTRACTED_DATA_VERSION = "2026-08-30";
+
 const VENUES_EXTRACTED = {
   "ancora": {
     "deals": [
@@ -1603,8 +1606,32 @@ const VENUES_EXTRACTED = {
 
 const VENUES_DISCOVERED = [
   {
-    "id": "fanny-bay-oyster-bar",
     "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "fanny-bay-oyster-bar",
     "name": "Fanny Bay Oyster Bar",
     "formatted_address": "762 Cambie Street, Vancouver, BC",
     "address_components": {
@@ -1622,23 +1649,7 @@ const VENUES_DISCOVERED = [
       }
     },
     "formatted_phone_number": "+1-778-379-9510",
-    "international_phone_number": null,
     "website": "https://www.fannybayoysters.com/location/oyster-bar--shellfish-market",
-    "types": [
-      "restaurant",
-      "bar",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "business_status": "OPERATIONAL",
-    "price_level": null,
-    "rating": null,
-    "user_ratings_total": null,
-    "opening_hours": {
-      "weekday_text": []
-    },
-    "photos": [],
     "happy_hour": {
       "days": [
         0,
@@ -1771,6 +1782,31 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
+    "osm": {
+      "type": "node",
+      "id": 4842937821,
+      "amenity": "restaurant"
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
     "amenities": {
       "outdoor_seating": null,
       "gluten_free_options": null,
@@ -1778,17 +1814,8 @@ const VENUES_DISCOVERED = [
       "parking": null,
       "transit": null
     },
-    "osm": {
-      "type": "node",
-      "id": 4842937821,
-      "amenity": "restaurant"
-    },
     "data_source": "discovery",
-    "last_synced_at": "2026-08-30"
-  },
-  {
     "id": "hydra-estiatorio-mediterranean",
-    "place_id": null,
     "name": "Hydra Estiatorio Mediterranean",
     "formatted_address": "475 Howe Street, Vancouver, BC",
     "address_components": {
@@ -1806,23 +1833,7 @@ const VENUES_DISCOVERED = [
       }
     },
     "formatted_phone_number": "+1-604-416-0880",
-    "international_phone_number": null,
     "website": "https://www.hydravancouver.com/",
-    "types": [
-      "restaurant",
-      "bar",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "business_status": "OPERATIONAL",
-    "price_level": null,
-    "rating": null,
-    "user_ratings_total": null,
-    "opening_hours": {
-      "weekday_text": []
-    },
-    "photos": [],
     "happy_hour": {
       "days": [
         0,
@@ -1840,6 +1851,31 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.hydravancouver.com/menu",
       "deals": []
     },
+    "osm": {
+      "type": "node",
+      "id": 6927768691,
+      "amenity": "restaurant"
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
     "amenities": {
       "outdoor_seating": null,
       "gluten_free_options": null,
@@ -1847,17 +1883,8 @@ const VENUES_DISCOVERED = [
       "parking": null,
       "transit": null
     },
-    "osm": {
-      "type": "node",
-      "id": 6927768691,
-      "amenity": "restaurant"
-    },
     "data_source": "discovery",
-    "last_synced_at": "2026-08-30"
-  },
-  {
     "id": "pourhouse",
-    "place_id": null,
     "name": "Pourhouse",
     "formatted_address": "162 Water Street, Vancouver, BC",
     "address_components": {
@@ -1875,23 +1902,7 @@ const VENUES_DISCOVERED = [
       }
     },
     "formatted_phone_number": "+1-604-568-7022",
-    "international_phone_number": null,
     "website": "https://www.pourhousevancouver.com/",
-    "types": [
-      "restaurant",
-      "bar",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "business_status": "OPERATIONAL",
-    "price_level": null,
-    "rating": null,
-    "user_ratings_total": null,
-    "opening_hours": {
-      "weekday_text": []
-    },
-    "photos": [],
     "happy_hour": {
       "days": [
         0,
@@ -1976,6 +1987,31 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
+    "osm": {
+      "type": "node",
+      "id": 4390232892,
+      "amenity": "pub"
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
     "amenities": {
       "outdoor_seating": null,
       "gluten_free_options": null,
@@ -1983,17 +2019,8 @@ const VENUES_DISCOVERED = [
       "parking": null,
       "transit": null
     },
-    "osm": {
-      "type": "node",
-      "id": 4390232892,
-      "amenity": "pub"
-    },
     "data_source": "discovery",
-    "last_synced_at": "2026-08-30"
-  },
-  {
     "id": "greta-yvr",
-    "place_id": null,
     "name": "Greta YVR",
     "formatted_address": "50 West Cordova Street, Vancouver, BC",
     "address_components": {
@@ -2011,23 +2038,7 @@ const VENUES_DISCOVERED = [
       }
     },
     "formatted_phone_number": "+1-604-423-3081",
-    "international_phone_number": null,
     "website": "https://www.gretabar.com/locations/vancouver",
-    "types": [
-      "restaurant",
-      "bar",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "business_status": "OPERATIONAL",
-    "price_level": null,
-    "rating": null,
-    "user_ratings_total": null,
-    "opening_hours": {
-      "weekday_text": []
-    },
-    "photos": [],
     "happy_hour": {
       "days": [
         2,
@@ -2128,6 +2139,31 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
+    "osm": {
+      "type": "node",
+      "id": 6437608536,
+      "amenity": "bar"
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
     "amenities": {
       "outdoor_seating": null,
       "gluten_free_options": null,
@@ -2135,17 +2171,8 @@ const VENUES_DISCOVERED = [
       "parking": null,
       "transit": null
     },
-    "osm": {
-      "type": "node",
-      "id": 6437608536,
-      "amenity": "bar"
-    },
     "data_source": "discovery",
-    "last_synced_at": "2026-08-30"
-  },
-  {
     "id": "six-acres",
-    "place_id": null,
     "name": "Six Acres",
     "formatted_address": "203 Carrall Street, Vancouver, BC",
     "address_components": {
@@ -2163,23 +2190,7 @@ const VENUES_DISCOVERED = [
       }
     },
     "formatted_phone_number": "+1-604-488-0110",
-    "international_phone_number": null,
     "website": "https://www.sixacres.ca/",
-    "types": [
-      "restaurant",
-      "bar",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "business_status": "OPERATIONAL",
-    "price_level": null,
-    "rating": null,
-    "user_ratings_total": null,
-    "opening_hours": {
-      "weekday_text": []
-    },
-    "photos": [],
     "happy_hour": {
       "days": [
         1,
@@ -2287,6 +2298,31 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
+    "osm": {
+      "type": "node",
+      "id": 4859979322,
+      "amenity": "pub"
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
     "amenities": {
       "outdoor_seating": null,
       "gluten_free_options": null,
@@ -2294,17 +2330,8 @@ const VENUES_DISCOVERED = [
       "parking": null,
       "transit": null
     },
-    "osm": {
-      "type": "node",
-      "id": 4859979322,
-      "amenity": "pub"
-    },
     "data_source": "discovery",
-    "last_synced_at": "2026-08-30"
-  },
-  {
     "id": "the-boxcar",
-    "place_id": null,
     "name": "The Boxcar",
     "formatted_address": "917 Main Street, Vancouver, BC",
     "address_components": {
@@ -2322,23 +2349,7 @@ const VENUES_DISCOVERED = [
       }
     },
     "formatted_phone_number": "+1-604-239-7109",
-    "international_phone_number": null,
     "website": "https://www.boxcarvancouver.com",
-    "types": [
-      "restaurant",
-      "bar",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "business_status": "OPERATIONAL",
-    "price_level": null,
-    "rating": null,
-    "user_ratings_total": null,
-    "opening_hours": {
-      "weekday_text": []
-    },
-    "photos": [],
     "happy_hour": {
       "days": [
         0,
@@ -2363,6 +2374,31 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
+    "osm": {
+      "type": "node",
+      "id": 12164513044,
+      "amenity": "bar"
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
     "amenities": {
       "outdoor_seating": null,
       "gluten_free_options": null,
@@ -2370,17 +2406,8 @@ const VENUES_DISCOVERED = [
       "parking": null,
       "transit": null
     },
-    "osm": {
-      "type": "node",
-      "id": 12164513044,
-      "amenity": "bar"
-    },
     "data_source": "discovery",
-    "last_synced_at": "2026-08-30"
-  },
-  {
     "id": "brix-mortar",
-    "place_id": null,
     "name": "Brix & Mortar",
     "formatted_address": "1138 Homer Street, Vancouver, BC",
     "address_components": {
@@ -2398,23 +2425,7 @@ const VENUES_DISCOVERED = [
       }
     },
     "formatted_phone_number": null,
-    "international_phone_number": null,
     "website": "https://www.brixandmortar.ca",
-    "types": [
-      "restaurant",
-      "bar",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "business_status": "OPERATIONAL",
-    "price_level": null,
-    "rating": null,
-    "user_ratings_total": null,
-    "opening_hours": {
-      "weekday_text": []
-    },
-    "photos": [],
     "happy_hour": {
       "days": [
         0,
@@ -2528,6 +2539,31 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
+    "osm": {
+      "type": "node",
+      "id": 3932735573,
+      "amenity": "restaurant"
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
     "amenities": {
       "outdoor_seating": null,
       "gluten_free_options": null,
@@ -2535,17 +2571,8 @@ const VENUES_DISCOVERED = [
       "parking": null,
       "transit": null
     },
-    "osm": {
-      "type": "node",
-      "id": 3932735573,
-      "amenity": "restaurant"
-    },
     "data_source": "discovery",
-    "last_synced_at": "2026-08-30"
-  },
-  {
     "id": "joe-fortes",
-    "place_id": null,
     "name": "Joe Fortes",
     "formatted_address": "777 Thurlow Street, Vancouver, BC",
     "address_components": {
@@ -2563,23 +2590,7 @@ const VENUES_DISCOVERED = [
       }
     },
     "formatted_phone_number": "+1-604-669-1940",
-    "international_phone_number": null,
     "website": "https://www.joefortes.ca/",
-    "types": [
-      "restaurant",
-      "bar",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "business_status": "OPERATIONAL",
-    "price_level": null,
-    "rating": null,
-    "user_ratings_total": null,
-    "opening_hours": {
-      "weekday_text": []
-    },
-    "photos": [],
     "happy_hour": {
       "days": [
         0,
@@ -2597,6 +2608,31 @@ const VENUES_DISCOVERED = [
       "source_url": "https://www.joefortes.ca/menus/",
       "deals": []
     },
+    "osm": {
+      "type": "node",
+      "id": 3690929433,
+      "amenity": "restaurant"
+    },
+    "last_synced_at": "2026-08-30"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
     "amenities": {
       "outdoor_seating": null,
       "gluten_free_options": null,
@@ -2604,17 +2640,8 @@ const VENUES_DISCOVERED = [
       "parking": null,
       "transit": null
     },
-    "osm": {
-      "type": "node",
-      "id": 3690929433,
-      "amenity": "restaurant"
-    },
     "data_source": "discovery",
-    "last_synced_at": "2026-08-30"
-  },
-  {
     "id": "the-515-bar",
-    "place_id": null,
     "name": "The 515 Bar",
     "formatted_address": "521 Seymour Street, Vancouver, BC",
     "address_components": {
@@ -2632,23 +2659,7 @@ const VENUES_DISCOVERED = [
       }
     },
     "formatted_phone_number": null,
-    "international_phone_number": null,
     "website": "https://the515bar.ca/",
-    "types": [
-      "restaurant",
-      "bar",
-      "food",
-      "point_of_interest",
-      "establishment"
-    ],
-    "business_status": "OPERATIONAL",
-    "price_level": null,
-    "rating": null,
-    "user_ratings_total": null,
-    "opening_hours": {
-      "weekday_text": []
-    },
-    "photos": [],
     "happy_hour": {
       "days": [
         0,
@@ -2709,19 +2720,11 @@ const VENUES_DISCOVERED = [
         }
       ]
     },
-    "amenities": {
-      "outdoor_seating": null,
-      "gluten_free_options": null,
-      "wheelchair_accessible_entrance": null,
-      "parking": null,
-      "transit": null
-    },
     "osm": {
       "type": "node",
       "id": 11079577905,
       "amenity": "bar"
     },
-    "data_source": "discovery",
     "last_synced_at": "2026-08-30"
   }
 ];

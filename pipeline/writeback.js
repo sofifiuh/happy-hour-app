@@ -8,80 +8,92 @@
 //   same start/end) and validated cleanly — i.e. we read the same menu a
 //   human verified, just more completely.
 // - Schedule disagreements are printed as a review queue, not applied.
+// - Discovered venues live in pipeline/discovered.json (committed, the
+//   canonical store); venues-extracted.js is a pure render of the inputs.
 //
-// Usage: node pipeline/writeback.js [--in extracted-opus.json] [--min-confidence 0.8]
+// Usage: node pipeline/writeback.js [--in extracted-opus.json]
+//        [--min-confidence 0.8] [--discovery-min-confidence 0.7]
 import fs from "node:fs";
 import path from "node:path";
-import { loadSeed, parseArgs, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
+import { loadSeed, parseArgs, readJson, setEq, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
 
 const args = parseArgs(process.argv.slice(2));
 const MIN_CONF = Number(args["min-confidence"]) || 0.8;
-const extracted = JSON.parse(fs.readFileSync(path.join(RESULTS_DIR, args.in || "extracted-opus.json"), "utf8"));
+const DISC_MIN_CONF = Number(args["discovery-min-confidence"]) || 0.7;
+const extracted = readJson(path.join(RESULTS_DIR, args.in || "extracted-opus.json"));
 const OUT = path.join(REPO_ROOT, "venues-extracted.js");
+const DISCOVERED_STORE = path.join(REPO_ROOT, "pipeline", "discovered.json");
+const TODAY = new Date().toISOString().slice(0, 10);
 
-const setEq = (a, b) => a.length === b.length && [...a].sort().join() === [...b].sort().join();
-
-const enrich = {};
-const review = [];
 const skipped = [];
+const review = [];
 
-for (const v of loadSeed()) {
-  const rec = extracted[v.id];
-  if (!rec || rec.error) { skipped.push([v.id, rec?.error || "no extraction"]); continue; }
+/** The one trust gate for accepting an automated extraction. Pushes the
+ *  skip reason itself; returns the extraction or null. */
+function acceptExtraction(id, rec, minConf, label = "") {
+  const skip = (why) => { skipped.push([id, label + why]); return null; };
+  if (!rec || rec.error) return skip(rec?.error || "no extraction");
   const x = rec.extraction;
-  if (!x.found || !x.happy_hour) { skipped.push([v.id, "extraction found no happy hour"]); continue; }
-  if ((rec.validation_problems || []).length) { skipped.push([v.id, `invalid: ${rec.validation_problems.join("; ")}`]); continue; }
-  if ((x.confidence ?? 0) < MIN_CONF) { skipped.push([v.id, `low confidence ${x.confidence}`]); continue; }
+  if (!x.found || !x.happy_hour) return skip("extraction found no happy hour");
+  if ((rec.validation_problems || []).length) return skip(`invalid: ${rec.validation_problems.join("; ")}`);
+  if ((x.confidence ?? 0) < minConf) return skip(`low confidence ${x.confidence}`);
+  return x;
+}
+
+const normalizeDeals = (deals) =>
+  deals.map((d) => ({ name: d.name, price: d.price, category: d.category, description: d.description || "" }));
+
+// --- Seed enrichment: extracted deals for venues whose verified schedule
+// --- the extraction reproduced exactly.
+const enrich = {};
+for (const v of loadSeed()) {
+  const x = acceptExtraction(v.id, extracted[v.id], MIN_CONF);
+  if (!x) continue;
 
   const g = v.happy_hour, h = x.happy_hour;
-  const scheduleMatch = setEq(g.days, h.days) && g.start === h.start && g.end === h.end;
-  if (!scheduleMatch) {
+  if (!(setEq(g.days, h.days) && g.start === h.start && g.end === h.end)) {
     review.push({ id: v.id, name: v.name, seed: { days: g.days, start: g.start, end: g.end }, extracted: { days: h.days, start: h.start, end: h.end }, source: x.source_url, note: (x.notes || "").slice(0, 200) });
     continue;
   }
   if (!Array.isArray(h.deals) || h.deals.length === 0) { skipped.push([v.id, "no deals extracted"]); continue; }
   if (h.deals.length < g.deals.length) { skipped.push([v.id, `extracted fewer deals (${h.deals.length}) than seed (${g.deals.length})`]); continue; }
 
-  enrich[v.id] = {
-    deals: h.deals.map((d) => ({ name: d.name, price: d.price, category: d.category, description: d.description || "" })),
-    source_url: x.source_url,
-    extracted_at: new Date().toISOString().slice(0, 10),
-  };
+  enrich[v.id] = { deals: normalizeDeals(h.deals), source_url: x.source_url, extracted_at: TODAY };
 }
 
-// Discovered venues: rebuild from discovery results when present, else
-// preserve whatever the last generation produced.
-const DISC_MIN_CONF = 0.7;
-let discovered = [];
-const candFile = path.join(RESULTS_DIR, "discovered-candidates.json");
-const discExtFile = path.join(RESULTS_DIR, "extracted-discovered.json");
-if (fs.existsSync(candFile) && fs.existsSync(discExtFile)) {
-  const cands = JSON.parse(fs.readFileSync(candFile, "utf8"));
-  const discExt = JSON.parse(fs.readFileSync(discExtFile, "utf8"));
+// --- Discovered venues: rebuild the committed store when a discovery run's
+// --- results are present; otherwise render from the store as-is.
+const DISCOVERED_DEFAULTS = {
+  place_id: null,
+  international_phone_number: null,
+  types: ["restaurant", "bar", "food", "point_of_interest", "establishment"],
+  business_status: "OPERATIONAL",
+  price_level: null,
+  rating: null,
+  user_ratings_total: null,
+  opening_hours: { weekday_text: [] },
+  photos: [],
+  amenities: { outdoor_seating: null, gluten_free_options: null, wheelchair_accessible_entrance: null, parking: null, transit: null },
+  data_source: "discovery",
+};
+
+let discovered = readJson(DISCOVERED_STORE, []);
+const cands = readJson(path.join(RESULTS_DIR, "discovered-candidates.json"), null);
+const discExt = readJson(path.join(RESULTS_DIR, "extracted-discovered.json"), null);
+if (cands && discExt) {
+  const rebuilt = [];
   for (const c of cands) {
-    const rec = discExt[c.id];
-    if (!rec || rec.error) { skipped.push([c.id, `discovery: ${rec?.error || "no extraction"}`]); continue; }
-    const x = rec.extraction;
-    if (!x.found || !x.happy_hour) { skipped.push([c.id, "discovery: no happy hour found on official site"]); continue; }
-    if ((rec.validation_problems || []).length) { skipped.push([c.id, `discovery invalid: ${rec.validation_problems.join("; ")}`]); continue; }
-    if ((x.confidence ?? 0) < DISC_MIN_CONF) { skipped.push([c.id, `discovery low confidence ${x.confidence}`]); continue; }
-    discovered.push({
+    const x = acceptExtraction(c.id, discExt[c.id], DISC_MIN_CONF, "discovery: ");
+    if (!x) continue;
+    rebuilt.push({
+      ...DISCOVERED_DEFAULTS,
       id: c.id,
-      place_id: null,
       name: c.name,
       formatted_address: c.formatted_address,
       address_components: c.address_components,
       geometry: c.geometry,
       formatted_phone_number: c.formatted_phone_number,
-      international_phone_number: null,
       website: c.website,
-      types: ["restaurant", "bar", "food", "point_of_interest", "establishment"],
-      business_status: "OPERATIONAL",
-      price_level: null,
-      rating: null,
-      user_ratings_total: null,
-      opening_hours: { weekday_text: [] },
-      photos: [],
       happy_hour: {
         days: x.happy_hour.days,
         start: x.happy_hour.start,
@@ -89,24 +101,34 @@ if (fs.existsSync(candFile) && fs.existsSync(discExtFile)) {
         verified: false, // automated extraction — a human has not checked this yet
         verified_source: null,
         source_url: x.source_url,
-        deals: x.happy_hour.deals.map((d) => ({ name: d.name, price: d.price, category: d.category, description: d.description || "" })),
+        deals: normalizeDeals(x.happy_hour.deals),
       },
-      amenities: { outdoor_seating: null, gluten_free_options: null, wheelchair_accessible_entrance: null, parking: null, transit: null },
       // Identity (name/coords/address/phone/website) from OpenStreetMap via
       // Nominatim — © OpenStreetMap contributors, ODbL (osm.org/copyright).
       osm: c.osm,
-      data_source: "discovery",
-      last_synced_at: new Date().toISOString().slice(0, 10),
+      last_synced_at: TODAY,
     });
   }
-} else if (fs.existsSync(OUT)) {
-  try {
-    const vm = await import("node:vm");
-    const prev = vm.runInNewContext(fs.readFileSync(OUT, "utf8") + ";({e: VENUES_EXTRACTED, d: VENUES_DISCOVERED});", {});
-    discovered = prev.d || [];
-  } catch { /* regenerate from scratch */ }
+  // Keep previously stored venues that this discovery run didn't cover.
+  const rebuiltIds = new Set(rebuilt.map((d) => d.id));
+  const runIds = new Set(cands.map((c) => c.id));
+  discovered = [...rebuilt, ...discovered.filter((d) => !rebuiltIds.has(d.id) && !runIds.has(d.id))];
+  fs.writeFileSync(DISCOVERED_STORE, JSON.stringify(discovered, null, 2));
+} else if (discExt) {
+  // Re-sync of already-stored discovered venues (crawl/extract run with
+  // --venues pipeline/discovered.json). These records are unverified, so a
+  // clean re-extraction updates their whole happy_hour — venues change
+  // their offers and this is where we adapt.
+  for (const d of discovered) {
+    const x = acceptExtraction(d.id, discExt[d.id], DISC_MIN_CONF, "discovery resync: ");
+    if (!x) continue;
+    d.happy_hour = { ...d.happy_hour, days: x.happy_hour.days, start: x.happy_hour.start, end: x.happy_hour.end, source_url: x.source_url, deals: normalizeDeals(x.happy_hour.deals) };
+    d.last_synced_at = TODAY;
+  }
+  fs.writeFileSync(DISCOVERED_STORE, JSON.stringify(discovered, null, 2));
 }
 
+// --- Render the generated layer.
 const banner = `// GENERATED FILE — do not edit by hand. Regenerate with: node pipeline/writeback.js
 //
 // Machine-written data layer merged over the hand-verified seed at app seed
@@ -115,10 +137,11 @@ const banner = `// GENERATED FILE — do not edit by hand. Regenerate with: node
 //   official menu, applied ONLY where the automated read reproduced the
 //   hand-verified schedule exactly (corroboration). Source page credited
 //   per venue. The verified happy_hour schedule itself is never changed here.
-// - VENUES_DISCOVERED: venues found by pipeline/discover.js, verified: false
+// - VENUES_DISCOVERED: venues from pipeline/discovered.json (the committed
+//   store maintained by pipeline/discover.js + writeback), verified: false
 //   until a human checks them.
 `;
-fs.writeFileSync(OUT, banner + `const VENUES_EXTRACTED = ${JSON.stringify(enrich, null, 2)};\n\nconst VENUES_DISCOVERED = ${JSON.stringify(discovered, null, 2)};\n`);
+fs.writeFileSync(OUT, banner + `const EXTRACTED_DATA_VERSION = ${JSON.stringify(TODAY)};\n\nconst VENUES_EXTRACTED = ${JSON.stringify(enrich, null, 2)};\n\nconst VENUES_DISCOVERED = ${JSON.stringify(discovered, null, 2)};\n`);
 
 console.log(`Enriched deals for ${Object.keys(enrich).length} venues, ${discovered.length} discovered venues -> venues-extracted.js`);
 for (const d of discovered) console.log(`  + ${d.id.padEnd(30)} days[${d.happy_hour.days}] ${d.happy_hour.start}-${d.happy_hour.end}  ${d.happy_hour.deals.length} deals`);

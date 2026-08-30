@@ -4,7 +4,7 @@
 import { execFile } from "node:child_process";
 import fs from "node:fs";
 
-const UA =
+export const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36";
 
 /**
@@ -40,6 +40,19 @@ export function curlGet(url, outFile, { timeout = 30 } = {}) {
       }
       resolve(result);
     });
+  });
+}
+
+/** GET a URL and parse the response as JSON (for APIs like Nominatim).
+ *  Async — never blocks the event loop — and shares the proxy/CA seam. */
+export function curlJson(url, { timeout = 25, userAgent = UA } = {}) {
+  return new Promise((resolve, reject) => {
+    execFile("curl", ["-sS", "--max-time", String(timeout), "-H", `User-Agent: ${userAgent}`, url],
+      { encoding: "utf8", maxBuffer: 16 * 1024 * 1024 },
+      (err, stdout, stderr) => {
+        if (err) return reject(new Error((stderr || err.message).trim().slice(0, 200)));
+        try { resolve(JSON.parse(stdout)); } catch (e) { reject(new Error(`bad JSON from ${url.slice(0, 60)}: ${e.message}`)); }
+      });
   });
 }
 
