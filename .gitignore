@@ -1,1 +1,3 @@
 config.js
+pipeline/cache/
+pipeline/results/
