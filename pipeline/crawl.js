@@ -2,7 +2,9 @@
 // happy-hour/menu pages, and cache everything under pipeline/cache/<id>/.
 // JS-rendered pages fall back to headless Chromium (lib/render.js).
 // Usage: node pipeline/crawl.js [--only id1,id2] [--venues <stubs.json>]
-//        [--concurrency 6] [--render auto|always|off]
+//        [--concurrency 6] [--render auto|always|off] [--depth 1|2]
+//        (depth 2 follows happy-hour links found ON the candidate pages —
+//        many venues put the item list one click past a "Menus" page)
 //        (auto = render when static text is thin; always = used for
 //        targeted re-crawls of venues known to be JS-rendered)
 import fs from "node:fs";
@@ -14,6 +16,7 @@ import { extractLinks, pickCandidates, htmlToText } from "./lib/html.js";
 const args = parseArgs(process.argv.slice(2));
 const venues = selectVenues(args);
 const RENDER_MODE = args.render || "auto"; // auto | always | off
+const DEPTH = Number(args.depth) || 1;
 const RENDER_THRESHOLD = 500; // chars of visible text below which a page counts as a JS shell
 
 let renderPage = null, closeBrowser = null;
@@ -80,6 +83,26 @@ async function crawlVenue(venue) {
       const candidates = pickCandidates(extractLinks(home.html), home.entry.finalUrl || venue.website);
       const fetched = await mapConcurrent(candidates, 3, (cand, i) => fetchPage(cand.url, dir, `page${i + 1}`));
       fetched.forEach((f, i) => manifest.pages.push({ role: "candidate", linkText: candidates[i].text, score: candidates[i].score, ...f.entry }));
+
+      // Depth 2: venues often park the happy hour item list one click past a
+      // "Menus" page (or behind a PDF link there). Re-score links found on the
+      // pages we just fetched and pull the best few we haven't already got.
+      if (DEPTH >= 2) {
+        const have = new Set([home.entry.finalUrl || venue.website, ...fetched.map((f) => f.entry.finalUrl || f.entry.url)]);
+        const deeper = [];
+        for (const f of fetched) {
+          if (!f.html || !(f.entry.status >= 200 && f.entry.status < 400)) continue;
+          for (const cand of pickCandidates(extractLinks(f.html), f.entry.finalUrl || f.entry.url, { max: 4 })) {
+            if (have.has(cand.url) || deeper.some((d) => d.url === cand.url)) continue;
+            deeper.push(cand);
+          }
+        }
+        deeper.sort((a, b) => b.score - a.score);
+        const picks = deeper.slice(0, 4);
+        const n = manifest.pages.length;
+        const got = await mapConcurrent(picks, 3, (cand, i) => fetchPage(cand.url, dir, `page${n + i}`));
+        got.forEach((f, i) => manifest.pages.push({ role: "candidate-d2", linkText: picks[i].text, score: picks[i].score, ...f.entry }));
+      }
     }
   }
 

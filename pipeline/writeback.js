@@ -106,6 +106,25 @@ const DISCOVERED_DEFAULTS = {
 const places = readJson(PLACES_STORE, {});
 const placePhotos = readJson(PHOTOS_STORE, {});
 
+/** Apply a fresh extraction to an already-stored discovered venue. These
+ *  records are unverified, so a clean re-extraction updates their whole
+ *  happy_hour — venues change their offers and this is where we adapt. */
+function resyncDiscovered(d, discExt) {
+  const x = acceptExtraction(d.id, discExt[d.id], DISC_MIN_CONF, "discovery resync: ");
+  if (!x) return false;
+  // Never let a run that found no deal items erase deals we already have —
+  // an extraction whose crawl missed the menu page would silently delete
+  // good data. Schedule and deals travel together, so skip the whole update
+  // and keep the coherent stored record.
+  if (!(x.happy_hour.deals || []).length && (d.happy_hour?.deals || []).length) {
+    skipped.push([d.id, `discovery resync: extraction has no deals, kept stored ${d.happy_hour.deals.length}`]);
+    return false;
+  }
+  d.happy_hour = { ...d.happy_hour, days: x.happy_hour.days, start: x.happy_hour.start, end: x.happy_hour.end, extra_windows: normalizeWindows(x.happy_hour.extra_windows), source_url: x.source_url, deals: normalizeDeals(x.happy_hour.deals) };
+  d.last_synced_at = TODAY;
+  return true;
+}
+
 let discovered = readJson(DISCOVERED_STORE, []);
 const cands = readJson(path.join(RESULTS_DIR, "discovered-candidates.json"), null);
 const discExt = readJson(path.join(RESULTS_DIR, "extracted-discovered.json"), null);
@@ -141,22 +160,21 @@ if (cands && discExt) {
       last_synced_at: TODAY,
     });
   }
-  // Keep previously stored venues that this discovery run didn't cover.
+  // Keep previously stored venues that this discovery run didn't cover — but
+  // still resync any of them the extraction run DID cover, otherwise a
+  // targeted re-extract of older discovered venues is silently dropped.
   const rebuiltIds = new Set(rebuilt.map((d) => d.id));
   const runIds = new Set(cands.map((c) => c.id));
-  discovered = [...rebuilt, ...discovered.filter((d) => !rebuiltIds.has(d.id) && !runIds.has(d.id))];
+  const kept = discovered.filter((d) => !rebuiltIds.has(d.id) && !runIds.has(d.id));
+  for (const d of kept) resyncDiscovered(d, discExt);
+  discovered = [...rebuilt, ...kept];
   fs.writeFileSync(DISCOVERED_STORE, JSON.stringify(discovered, null, 2));
 } else if (discExt) {
   // Re-sync of already-stored discovered venues (crawl/extract run with
   // --venues pipeline/discovered.json). These records are unverified, so a
   // clean re-extraction updates their whole happy_hour — venues change
   // their offers and this is where we adapt.
-  for (const d of discovered) {
-    const x = acceptExtraction(d.id, discExt[d.id], DISC_MIN_CONF, "discovery resync: ");
-    if (!x) continue;
-    d.happy_hour = { ...d.happy_hour, days: x.happy_hour.days, start: x.happy_hour.start, end: x.happy_hour.end, extra_windows: normalizeWindows(x.happy_hour.extra_windows), source_url: x.source_url, deals: normalizeDeals(x.happy_hour.deals) };
-    d.last_synced_at = TODAY;
-  }
+  for (const d of discovered) resyncDiscovered(d, discExt);
   fs.writeFileSync(DISCOVERED_STORE, JSON.stringify(discovered, null, 2));
 }
 

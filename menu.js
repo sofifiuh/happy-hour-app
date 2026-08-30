@@ -369,7 +369,26 @@ function init(venue) {
   const hasDrink = deals.some((d) => (d.category || "food") === "drink");
 
   if (!hasFood && !hasDrink) {
+    // The venue advertises a happy hour but publishes no item list we could
+    // extract. Say so plainly and point at their own page, rather than
+    // leaving a blank panel that reads like the app is broken.
     els.menuTabs.classList.add("hidden");
+    els.dealsList.innerHTML = "";
+    const box = document.createElement("div");
+    box.className = "menu-no-deals";
+    const line = document.createElement("p");
+    line.textContent = "This spot runs a happy hour but doesn't publish its deal list online.";
+    box.appendChild(line);
+    const src = venue.happy_hour?.source_url || venue.website;
+    if (src) {
+      const a = document.createElement("a");
+      a.href = src;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = "Check their menu →";
+      box.appendChild(a);
+    }
+    els.dealsList.appendChild(box);
   } else if (!hasFood || !hasDrink) {
     els.menuTabs.querySelectorAll(".menu-tab").forEach((btn) => {
       if (btn.dataset.cat === "food" && !hasFood) btn.classList.add("hidden");
@@ -377,6 +396,7 @@ function init(venue) {
     });
   }
 
+  const hasAnyDeals = hasFood || hasDrink;
   let activeCat = hasFood ? "food" : "drink";
   function setCategory(cat, slideDir) {
     if (cat === activeCat) return;
@@ -390,7 +410,7 @@ function init(venue) {
       els.dealsList.classList.add(slideDir === "left" ? "slide-in-left" : "slide-in-right");
     }
   }
-  renderDeals(deals, activeCat, venue.happy_hour?.deals_source);
+  if (hasAnyDeals) renderDeals(deals, activeCat, venue.happy_hour?.deals_source);
 
   els.menuTabs.addEventListener("click", (e) => {
     const btn = e.target.closest(".menu-tab");

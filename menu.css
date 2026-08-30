@@ -497,3 +497,20 @@ body {
 .menu-toast.hidden {
   display: none;
 }
+
+/* Venue advertises a happy hour but publishes no item list — an honest
+   explanation beats a blank deals panel. */
+.menu-no-deals {
+  padding: 18px 0 4px;
+  color: var(--text-dim);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.menu-no-deals p {
+  margin: 0 0 10px;
+}
+.menu-no-deals a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}

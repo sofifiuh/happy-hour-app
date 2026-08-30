@@ -1,5 +1,5 @@
 {
- "data_version": "2026-08-30-43f47de2",
+ "data_version": "2026-08-30-88698ccd",
  "venues": [
   {
    "id": "ancora",
@@ -5227,20 +5227,13 @@
        0,
        1,
        2,
-       3
-      ],
-      "start": "21:30",
-      "end": "23:00",
-      "label": "Late night"
-     },
-     {
-      "days": [
+       3,
        4,
        5,
        6
       ],
       "start": "21:30",
-      "end": "01:00",
+      "end": null,
       "label": "Late night"
      }
     ],
@@ -5330,8 +5323,105 @@
     ],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://kingtaps.com/locations/lonsdale-quay/",
-    "deals": []
+    "source_url": "https://kingtaps.com/locations/lonsdale-quay/menu/happy-hour/",
+    "deals": [
+     {
+      "name": "Salty Dog",
+      "price": "$8",
+      "category": "drink",
+      "description": "Beefeater gin, grapefruit, lime, vanilla, rosemary"
+     },
+     {
+      "name": "Frozen Margarita",
+      "price": "$8",
+      "category": "drink",
+      "description": "Cuervo Tradicional Plata, triple sec, lime"
+     },
+     {
+      "name": "Lemon Watermelon Spritz",
+      "price": "$7",
+      "category": "drink",
+      "description": "Tequila, lemon, watermelon, soda, lime margarita slush"
+     },
+     {
+      "name": "Negroni",
+      "price": "$9",
+      "category": "drink",
+      "description": "Gordon's London Dry gin, Campari, sweet vermouth, orange zest"
+     },
+     {
+      "name": "Old Fashioned",
+      "price": "$10",
+      "category": "drink",
+      "description": "Whisky, Scrappy's orange bitters, Angostura, maple, amarena cherry"
+     },
+     {
+      "name": "Crown Lager",
+      "price": "$5",
+      "category": "drink",
+      "description": "Granville Island Brewing 0.5L"
+     },
+     {
+      "name": "Happy Hour Wine 6oz",
+      "price": "$6",
+      "category": "drink",
+      "description": "Red or white"
+     },
+     {
+      "name": "Happy Hour Wine 9oz",
+      "price": "$9",
+      "category": "drink",
+      "description": "Red or white"
+     },
+     {
+      "name": "Well Highballs",
+      "price": "$5",
+      "category": "drink",
+      "description": "1oz pour"
+     },
+     {
+      "name": "Ranch Water",
+      "price": "$5",
+      "category": "drink",
+      "description": "Cuervo Tradicional Plata, soda, lime margarita slush"
+     },
+     {
+      "name": "Dip Duo",
+      "price": "$8",
+      "category": "food",
+      "description": "Jalapeño queso and avocado verde with warm tortilla chips"
+     },
+     {
+      "name": "Truffle Fries",
+      "price": "$7",
+      "category": "food",
+      "description": "Truffle, herbs, Grana Padano, lemon & truffle aioli"
+     },
+     {
+      "name": "Korean Chicken",
+      "price": "$10",
+      "category": "food",
+      "description": "Sesame, green onion, cilantro"
+     },
+     {
+      "name": "Brussels Sprouts",
+      "price": "$10",
+      "category": "food",
+      "description": "Grana Padano, toasted bread crumbs, lemon & truffle aioli"
+     },
+     {
+      "name": "Gyoza",
+      "price": "$8",
+      "category": "food",
+      "description": "Pan-seared chicken dumplings, house-made chili crisp, green onion & cilantro"
+     },
+     {
+      "name": "Margherita Pizza",
+      "price": "$15",
+      "category": "food",
+      "description": "The Neapolitan OG, in a league of its own"
+     }
+    ]
    },
    "cover_image": {
     "url": "https://kingtaps.com/wp-content/uploads/2025/05/KTLQ_LocationPage_860x410.jpg",
@@ -5583,20 +5673,13 @@
        0,
        1,
        2,
-       3
-      ],
-      "start": "21:00",
-      "end": "23:00",
-      "label": "Late night"
-     },
-     {
-      "days": [
+       3,
        4,
        5,
        6
       ],
       "start": "21:00",
-      "end": "00:00",
+      "end": null,
       "label": "Late night"
      }
     ],
@@ -5676,14 +5759,117 @@
        6
       ],
       "start": "21:00",
-      "end": null,
+      "end": "22:00",
       "label": "Late night"
      }
     ],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.provisionsitaliana.com/menus",
-    "deals": []
+    "source_url": "https://www.provisionsitaliana.com/s/Provisions-HH-July-web.pdf",
+    "deals": [
+     {
+      "name": "House Limoncello",
+      "price": "$5",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Wine",
+      "price": "$7",
+      "category": "drink",
+      "description": "5oz white, red, rosé, or bubbles"
+     },
+     {
+      "name": "Beer",
+      "price": "$8",
+      "category": "drink",
+      "description": "16oz draught"
+     },
+     {
+      "name": "Feature Cocktail",
+      "price": "$9",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Spritz",
+      "price": "$10",
+      "category": "drink",
+      "description": "5oz Hugo or Aperol"
+     },
+     {
+      "name": "Martini",
+      "price": "$10",
+      "category": "drink",
+      "description": "2oz Botanist gin or Grey Goose vodka"
+     },
+     {
+      "name": "Premium Wine",
+      "price": "$13",
+      "category": "drink",
+      "description": "5oz white, red, rosé, or bubbles"
+     },
+     {
+      "name": "Wine Bottles",
+      "price": "25% off",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Fresh Oysters",
+      "price": "$2",
+      "category": "food",
+      "description": "on half shell, mignonette, horseradish, lemon"
+     },
+     {
+      "name": "Rigatoni alla Vodka",
+      "price": "$8",
+      "category": "food",
+      "description": "rose sauce, calabrian chili, parsley"
+     },
+     {
+      "name": "Antipasti of the Day",
+      "price": "$14",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Crispy Squid",
+      "price": "$14",
+      "category": "food",
+      "description": "zucchini, peppers, lemon, tartar sauce"
+     },
+     {
+      "name": "Brussels Sprouts",
+      "price": "$14",
+      "category": "food",
+      "description": "walnut, cilantro, chili lime vinaigrette"
+     },
+     {
+      "name": "Truffle Frites",
+      "price": "$14",
+      "category": "food",
+      "description": "black truffle, parmesan, rosemary, flaky sea salt"
+     },
+     {
+      "name": "Caesar Salad",
+      "price": "$14",
+      "category": "food",
+      "description": "romaine, radicchio, parmesan, garlic emulsion"
+     },
+     {
+      "name": "Marinated Olives",
+      "price": "$8",
+      "category": "food",
+      "description": "orange, chili, extra virgin olive oil"
+     },
+     {
+      "name": "Mussels",
+      "price": "$20",
+      "category": "food",
+      "description": "white wine, smoked pancetta, parsley, garlic, rustic bread"
+     }
+    ]
    },
    "cover_image": {
     "url": "http://static1.squarespace.com/static/66426f626fe3227dc6a2a5b6/t/698e292cec10d973a8f285d5/1770924332214/Provisions+Italiana+Logo.png?format=1500w",
@@ -6424,24 +6610,24 @@
    "happy_hour": {
     "days": [
      0,
+     1,
+     2,
+     3,
+     4,
+     5,
      6
     ],
-    "start": "14:00",
-    "end": "17:00",
+    "start": "20:00",
+    "end": "22:30",
     "extra_windows": [
      {
       "days": [
        0,
-       1,
-       2,
-       3,
-       4,
-       5,
        6
       ],
-      "start": "20:00",
-      "end": "22:30",
-      "label": "Late night"
+      "start": "14:00",
+      "end": "17:00",
+      "label": "Weekend afternoon"
      }
     ],
     "verified": false,
@@ -6839,7 +7025,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "http://dublincalling.com/vancouver/",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -6906,8 +7093,9 @@
     "end": "18:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://westoakrestaurant.com/pages/menu",
-    "deals": []
+    "source_url": "https://westoakrestaurant.com/",
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -6978,7 +7166,7 @@
       "name": "Caesar Salad",
       "price": "$15.88",
       "category": "food",
-      "description": "Baby romaine hearts, crispy Italian prosciutto, butter croutons, roasted garlic classic Caesar dressing, Mediterranean olives, sweet mini peppers"
+      "description": "Baby romaine hearts, crispy Italian prosciutto, butter croutons, roasted garlic classic Caesar dressing, Mediterranean olives, and sweet mini peppers"
      },
      {
       "name": "Insalata Caprese",
@@ -7032,7 +7220,7 @@
       "name": "Chilled Tiger Prawn Cocktail",
       "price": "$15.88",
       "category": "food",
-      "description": "Chilled jumbo black tiger prawns, horseradish rosé sauce, fresh lemon"
+      "description": "Chilled jumbo black tiger prawns, horseradish rose sauce, fresh lemon"
      },
      {
       "name": "Half a Dozen Oysters",
@@ -7044,49 +7232,49 @@
       "name": "Bread Basket",
       "price": "$4.88",
       "category": "food",
-      "description": "Bread basket"
+      "description": ""
      },
      {
       "name": "Side Parmigiano Cheese",
       "price": "$3.88",
       "category": "food",
-      "description": "Side of Parmigiano cheese"
+      "description": ""
      },
      {
       "name": "Italian Donuts",
       "price": "$10.88",
       "category": "food",
-      "description": "Warm handmade vanilla cinnamon sugared donuts, toffee sauce"
+      "description": "Dessert: warm handmade vanilla cinnamon sugared donuts, toffee sauce"
      },
      {
-      "name": "Crème Brûlée Duo",
+      "name": "Creme Brulee Duo",
       "price": "$10.88",
       "category": "food",
-      "description": "Vanilla crème brûlée and lemon crème brûlée, rich custard with caramelized sugar"
+      "description": "Dessert: vanilla creme brulee and lemon creme brulee, rich custard with caramelized sugar"
      },
      {
       "name": "Highballs",
       "price": "$6.88",
       "category": "drink",
-      "description": "1 oz highballs"
+      "description": "1 oz"
      },
      {
       "name": "Draft Beer",
       "price": "$6.88",
       "category": "drink",
-      "description": "355 mL draft beer"
+      "description": "355 mL"
      },
      {
       "name": "Sangria",
       "price": "$12.88",
       "category": "drink",
-      "description": "Sangria"
+      "description": ""
      },
      {
       "name": "Classic Martini",
       "price": "$10.88",
       "category": "drink",
-      "description": "2 oz classic martini"
+      "description": "2 oz"
      },
      {
       "name": "Glass of House Wine",
@@ -7104,7 +7292,7 @@
       "name": "Bottle of Wine",
       "price": "$55.00",
       "category": "drink",
-      "description": "Red, white or rosé, 750 mL"
+      "description": "Red, white or rose, 750 mL"
      },
      {
       "name": "Premium Bottle of Wine",
@@ -7112,7 +7300,8 @@
       "category": "drink",
       "description": "Red or white, 750 mL"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -7168,7 +7357,6 @@
    "happy_hour": {
     "days": [
      0,
-     1,
      2,
      3,
      4,
@@ -7183,129 +7371,147 @@
     "deals": [
      {
       "name": "Main Street Premium Pilsner",
-      "price": "$6/16oz, $7/20oz",
+      "price": "$6/$7",
       "category": "drink",
-      "description": "Draft beer."
+      "description": "16oz - 6 | 20oz - 7"
      },
      {
       "name": "Krush Crisp Lager",
-      "price": "$6/16oz, $7/20oz",
+      "price": "$6/$7",
       "category": "drink",
-      "description": "Draft beer."
+      "description": "16oz - 6 | 20oz - 7"
      },
      {
       "name": "Kingpin Juicy Hazy Pale Ale",
-      "price": "$6/16oz, $7/20oz",
+      "price": "$6/$7",
       "category": "drink",
-      "description": "Draft beer."
+      "description": "16oz - 6 | 20oz - 7"
      },
      {
       "name": "Naked Fox West Coast IPA",
-      "price": "$6/16oz, $7/20oz",
+      "price": "$6/$7",
       "category": "drink",
-      "description": "Draft beer."
+      "description": "16oz - 6 | 20oz - 7"
      },
      {
       "name": "Main St. Rotating Taps",
-      "price": "$6/16oz, $7/20oz",
+      "price": "$6/$7",
       "category": "drink",
-      "description": "Rotating draft selection."
+      "description": "16oz - 6 | 20oz - 7"
      },
      {
       "name": "Rotating Cask Beer",
-      "price": "$6/16oz, $7/20oz",
+      "price": "$6/$7",
       "category": "drink",
-      "description": "Rotating cask."
+      "description": "16oz - 6 | 20oz - 7"
      },
      {
       "name": "Rotating Cocktails on Tap",
       "price": "$10",
       "category": "drink",
-      "description": "Ask your server; pitcher $25."
+      "description": "Rotating cocktails on tap, ask your server. Pitcher - 25"
      },
      {
       "name": "Pimm's & Lemonade",
       "price": "$10",
       "category": "drink",
-      "description": "Cocktail on tap; pitcher $25."
+      "description": "Cocktail on tap. Pitcher - 25"
      },
      {
       "name": "Gimme That Sweet Heat",
       "price": "$10",
       "category": "drink",
-      "description": "Pineapple habanero margarita, 2oz."
+      "description": "Pineapple habanero margarita, 2oz"
      },
      {
       "name": "House White Wine",
-      "price": "$6.50/5oz, $10/8oz, $30 btl",
+      "price": "$6.50",
       "category": "drink",
-      "description": "House white."
+      "description": "5oz - 6.5 | 8oz - 10 | btl - 30"
      },
      {
       "name": "House Red Wine",
-      "price": "$6.50/5oz, $10/8oz, $30 btl",
+      "price": "$6.50",
       "category": "drink",
-      "description": "House red."
+      "description": "5oz - 6.5 | 8oz - 10 | btl - 30"
      },
      {
       "name": "House Rosé Wine",
-      "price": "$7.50/5oz, $12/8oz, $34 btl",
+      "price": "$7.50",
       "category": "drink",
-      "description": "House rosé."
+      "description": "5oz - 7.5 | 8oz - 12 | btl - 34"
      },
      {
       "name": "Campo Viejo Bubbles",
-      "price": "$7/5oz, $35 btl",
+      "price": "$7",
       "category": "drink",
-      "description": "Sparkling wine from Spain."
+      "description": "Sparkling (Spain), 5oz - 7 | btl - 35"
      },
      {
       "name": "Marinated Warm Mixed Olives",
       "price": "$8",
       "category": "food",
-      "description": "Warm marinated mixed olives (regularly $10)."
+      "description": "Marinated warm mixed olives"
      },
      {
       "name": "Moroccan Spiced Steak Flatbread",
       "price": "$14",
       "category": "food",
-      "description": "Harissa spiced tomato sauce, roasted red peppers, onion, olives, feta, honey yogurt, mint."
+      "description": "Harissa spiced tomato sauce, roasted red peppers, onion, olives, feta, honey yogurt, mint"
      },
      {
       "name": "Crispy Cauliflower",
       "price": "$12",
       "category": "food",
-      "description": "Chipotle spiced crispy cauliflower, maple achiote sauce (GF, V); regularly $15."
+      "description": "Chipotle spiced crispy cauliflower, maple achiote sauce (GF, V)"
      },
      {
       "name": "Calamari",
       "price": "$11",
       "category": "food",
-      "description": "Buttermilk marinated, chili garlic aioli (GF)."
+      "description": "Buttermilk marinated, chili garlic aioli (GF)"
      },
      {
       "name": "Smoked Trout & Potato Croquettes",
       "price": "$12",
       "category": "food",
-      "description": "Beet yogurt purée, micro beet greens, sunflower shoots; regularly $14."
+      "description": "Beet yogurt purée, micro beet greens, sunflower shoots"
      },
      {
       "name": "Hand Cut Fries",
       "price": "$7",
       "category": "food",
-      "description": "Malt vinegar mayo; regularly $8."
+      "description": "Malt vinegar mayo"
      },
      {
       "name": "Free-range Chicken Wings",
       "price": "$17",
       "category": "food",
-      "description": "Choice of salt & pepper, Buffalo or spiced soy glaze; add stilton dip or jalapeño ranch $1.50 ea. Regularly $19."
+      "description": "Choice of salt & pepper, Buffalo or spiced soy glaze; add stilton dip or jalapeño ranch - 1.50 ea"
      },
      {
       "name": "Poutine",
       "price": "$13",
       "category": "food",
-      "description": "Rich beef & onion gravy, fries, cheese curds, scallions; vegetarian option available. Add grilled chicken $7, bacon $4, crispy chicken $7. Regularly $15."
+      "description": "Rich beef & onion gravy, fries, cheese curds, scallions; vegetarian option available"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       1
+      ],
+      "start": "16:00",
+      "end": "23:00",
+      "label": "All day Monday"
+     },
+     {
+      "days": [
+       0
+      ],
+      "start": "18:00",
+      "end": "22:00",
+      "label": "Sunday drinks only"
      }
     ]
    },
@@ -7440,7 +7646,7 @@
     "source_url": "https://ignitepizzeria.com/yaletown-menu/",
     "deals": [
      {
-      "name": "Beer or house wine",
+      "name": "Beer + wine",
       "price": "$6",
       "category": "drink",
       "description": "Any beer on tap or house wine"
@@ -7468,6 +7674,29 @@
       "price": "$11",
       "category": "food",
       "description": "Spring mix, beetroot, fennel, orange, Dijon mustard vinaigrette"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "20:00",
+      "end": "22:00",
+      "label": "Late night (Sun-Thu)"
+     },
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "20:00",
+      "end": "23:00",
+      "label": "Late night (Fri-Sat)"
      }
     ]
    },
@@ -7545,7 +7774,7 @@
       "description": "Ketel One or Tanqueray"
      },
      {
-      "name": "Martini",
+      "name": "Martini (premium)",
       "price": "$16",
       "category": "drink",
       "description": "Belvedere or Tanqueray No.10"
@@ -7554,37 +7783,37 @@
       "name": "Margarita",
       "price": "$12",
       "category": "drink",
-      "description": "Classic cocktail"
+      "description": "Classic margarita"
      },
      {
       "name": "Negroni",
       "price": "$12",
       "category": "drink",
-      "description": "Classic cocktail"
+      "description": "Classic negroni"
      },
      {
       "name": "Espresso Martini",
       "price": "$12",
       "category": "drink",
-      "description": "Classic cocktail"
+      "description": "Classic espresso martini"
      },
      {
       "name": "First Light",
       "price": "$15",
       "category": "drink",
-      "description": "House cocktail: El Tequileno Blanco, Aperol, guava, hot honey, lime (regular menu price $21)"
+      "description": "House cocktail: El Tequileno Blanco, Aperol, guava, hot honey, lime (regularly $21)"
      },
      {
       "name": "Radio Saigon",
       "price": "$12",
       "category": "drink",
-      "description": "House cocktail: coconut oil washed Ketel One Vodka, pandan, makrut lime, cherry blossom, ginger, sencha tea, carbonation (regular menu price $21)"
+      "description": "House cocktail: coconut oil washed Ketel One Vodka, pandan, makrut lime, cherry blossom, ginger, sencha tea, carbonation (regularly $21)"
      },
      {
       "name": "Yum Cha",
       "price": "$17",
       "category": "drink",
-      "description": "House cocktail: Suntory Toki Japanese Whisky, wintermelon, pear, oolong tea, grappa (regular menu price $21)"
+      "description": "House cocktail: Suntory Toki Japanese Whisky, wintermelon, pear, oolong tea, grappa (regularly $21)"
      },
      {
       "name": "Microcosm",
@@ -7608,7 +7837,7 @@
       "name": "Prophecy Pilsner",
       "price": "$6",
       "category": "drink",
-      "description": "Draft beer"
+      "description": "House beer"
      },
      {
       "name": "Superflux Hazy IPA",
@@ -7617,46 +7846,44 @@
       "description": "Draft beer"
      },
      {
-      "name": "Roche 'Vig' Pinot Gris",
+      "name": "Wine by the glass",
       "price": "$10",
       "category": "drink",
-      "description": "White wine; 5oz $10, 8oz $16, bottle $50"
+      "description": "5oz pour of Roche 'Vig' Pinot Gris, Lunessence Rosé or Bleasdale 'Bremerview' Shiraz; 8oz $16, bottle $50"
      },
      {
-      "name": "Lunessence Rosé",
+      "name": "Cava 'Reserva' Brut",
       "price": "$10",
       "category": "drink",
-      "description": "Rosé wine; 5oz $10, 8oz $16, bottle $50"
+      "description": "Pere Ventura sparkling, 5oz; bottle $50"
      },
      {
-      "name": "Bleasdale 'Bremerview' Shiraz",
-      "price": "$10",
-      "category": "drink",
-      "description": "Red wine; 5oz $10, 8oz $16, bottle $50"
-     },
-     {
-      "name": "Pere Ventura Cava 'Reserva' Brut",
-      "price": "$10",
-      "category": "drink",
-      "description": "Sparkling; 5oz $10, bottle $50"
-     },
-     {
-      "name": "Moet & Chandon 'Imperial' Brut or Brut Rosé",
+      "name": "Moet & Chandon 'Imperial'",
       "price": "$25",
       "category": "drink",
-      "description": "Champagne; 5oz $25, bottle $125"
+      "description": "Brut or Brut Rosé, 5oz; bottle $125"
      },
      {
       "name": "Spanish Conservas",
       "price": "$17",
       "category": "food",
-      "description": "Choice of seafood served with chips, hot sauce and lemon: mussels in escabeche, sardines in olive oil, tuna belly, or squid in ink"
+      "description": "Choice of seafood served with chips, hot sauce and lemon — mussels in escabeche, sardines in olive oil, tuna belly, or squid in ink"
      },
      {
       "name": "Osietra Caviar 10gr",
       "price": "$50",
       "category": "food",
       "description": "Served with chips & crème fraîche"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       1
+      ],
+      "start": "16:00",
+      "end": "01:00",
+      "label": "All day Monday"
      }
     ]
    },
@@ -7726,55 +7953,55 @@
     "source_url": "https://www.daviesocial.ca/menu",
     "deals": [
      {
-      "name": "Carnitas or bean tacos & lager",
+      "name": "Carnitas or Bean Tacos & Lager",
       "price": "$13",
       "category": "food",
-      "description": "2 carnitas or bean tacos served with a lager"
+      "description": "Two carnitas or bean tacos served with a lager"
      },
      {
-      "name": "Carnitas tacos & lager",
+      "name": "Carnitas Tacos & Lager",
       "price": "$20",
       "category": "food",
-      "description": "4 carnitas tacos served with a lager"
+      "description": "Four carnitas tacos served with a lager"
      },
      {
-      "name": "Smashed double cheeseburger",
+      "name": "Smashed Double Cheeseburger",
       "price": "$16.50",
       "category": "food",
       "description": "Smashed double cheeseburger"
      },
      {
-      "name": "Fully loaded nachos",
+      "name": "Fully Loaded Nachos",
       "price": "$12",
       "category": "food",
       "description": "Davie Social's fully loaded nachos"
      },
      {
-      "name": "Boneless chicken bites or wings",
+      "name": "Boneless Chicken Bites or Wings",
       "price": "$14",
       "category": "food",
       "description": "Boneless chicken bites or wings"
      },
      {
-      "name": "Acapulco ranch caesar salad",
+      "name": "Acapulco Ranch Caesar Salad",
       "price": "$10",
       "category": "food",
-      "description": "Acapulco ranch caesar salad"
+      "description": "Caesar salad with Acapulco ranch"
      },
      {
-      "name": "Churro waffle",
+      "name": "Churro Waffle",
       "price": "$8",
       "category": "food",
       "description": "Churro waffle"
      },
      {
-      "name": "Classic margarita",
+      "name": "Classic Margarita",
       "price": "$8",
       "category": "drink",
       "description": "Classic margarita"
      },
      {
-      "name": "House wine or lager",
+      "name": "House Wine or Lager",
       "price": "$5",
       "category": "drink",
       "description": "House wine or lager"
@@ -7784,6 +8011,20 @@
       "price": "$6",
       "category": "drink",
       "description": "Highballs"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
      }
     ]
    },
@@ -7863,7 +8104,8 @@
       "category": "drink",
       "description": "Highball cocktails"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -7936,13 +8178,13 @@
       "name": "Sapporo Draft 16oz",
       "price": "$6",
       "category": "drink",
-      "description": "16oz draft beer (regularly $9 for a 16oz pint on the standard drink menu)"
+      "description": "16oz Sapporo draft beer"
      },
      {
       "name": "Van Go Funk! Junmai Sake",
       "price": "$23",
       "category": "drink",
-      "description": "250ml Junmai sake"
+      "description": "Junmai sake, 250ml"
      },
      {
       "name": "Japanese Sake 720ml Bottles",
@@ -7955,6 +8197,29 @@
       "price": "$28",
       "category": "food",
       "description": "Chef's choice assortment of three kinds of sashimi"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "21:00",
+      "end": "23:00",
+      "label": "Late night"
+     },
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": "23:30",
+      "label": "Late night"
      }
     ]
    },
@@ -8026,70 +8291,88 @@
     "source_url": "https://www.waterstreetcafe.ca/menu/happy-hour",
     "deals": [
      {
-      "name": "Crispy Cauliflower",
-      "price": "$12.50",
+      "name": "Happy Hour Italian Crispy Potatoes",
+      "price": "$6",
       "category": "food",
-      "description": "salsa rossa, smoked paprika aïoli"
+      "description": "House-blended Italian spice mix, corn sofrito, EVOO, fresh herbs"
      },
      {
-      "name": "Meatballs",
-      "price": "$15.50",
+      "name": "Italian Potato Salad",
+      "price": "$7.50",
       "category": "food",
-      "description": "beef, veal, pork, parmesan, fresh herbs, pomodoro sauce"
+      "description": "Warm citrus dressing, corn sofrito, fennel & apple slaw, fresh herbs"
      },
      {
-      "name": "Hummus & Olives",
-      "price": "$15.50",
+      "name": "Grandma's Bannock",
+      "price": "$7.50",
       "category": "food",
-      "description": "mixed olives, cannellini beans, olive oil, tahini, garlic, lemon, buttermilk flatbread"
-     },
-     {
-      "name": "Italian Hummus",
-      "price": "$10.50",
-      "category": "food",
-      "description": "house-blended spices, cannellini beans, olive oil, tahini, garlic, lemon, buttermilk flatbread"
-     },
-     {
-      "name": "Burrata & Pesto",
-      "price": "$19.50",
-      "category": "food",
-      "description": "grana padano, broccoli-pistachio-basil pesto"
-     },
-     {
-      "name": "Whole Burrata",
-      "price": "$11.50",
-      "category": "food",
-      "description": "extra virgin olive oil, black pepper"
-     },
-     {
-      "name": "Burrata",
-      "price": "$9.50",
-      "category": "food",
-      "description": "extra virgin olive oil, black pepper"
+      "description": "Rotating house-made jam"
      },
      {
       "name": "Mixed Olives",
       "price": "$8.50",
       "category": "food",
-      "description": "house blend spices, aged balsamic marinade, fresh herbs"
+      "description": "House blend spices, aged balsamic marinade, fresh herbs"
      },
      {
-      "name": "Deep Fried Mushroom Ravioli",
-      "price": "$11.50",
+      "name": "Burrata",
+      "price": "$9.50",
       "category": "food",
-      "description": "powdered parmesan, truffle aïoli"
+      "description": "Extra virgin olive oil, black pepper"
      },
      {
-      "name": "Tempura Vegetables",
-      "price": "$11.50",
+      "name": "Roasted Mushrooms",
+      "price": "$9.50",
       "category": "food",
-      "description": "mixed tempura vegetables, garlic aïoli"
+      "description": "Wild & cultivated mushrooms, garlic butter, fresh herbs"
+     },
+     {
+      "name": "Fall Vegetable Skillet",
+      "price": "$9.50",
+      "category": "food",
+      "description": "Local BC squash, carrots, onions in a white wine & brown butter sauce"
      },
      {
       "name": "Vegetable Spring Rolls",
       "price": "$9.50",
       "category": "food",
-      "description": "sweet chili sauce"
+      "description": "Sweet chili sauce"
+     },
+     {
+      "name": "Cajun Fries",
+      "price": "$9.75",
+      "category": "food",
+      "description": "Dusted in our signature Cajun spice, garlic aïoli"
+     },
+     {
+      "name": "Salmon Gravlax & Beets",
+      "price": "$10",
+      "category": "food",
+      "description": "Four tea leaf cured, dill creme fraiche, cucumber, caperberries, marinated beets"
+     },
+     {
+      "name": "Italian Hummus",
+      "price": "$10.50",
+      "category": "food",
+      "description": "House-blended spices, cannellini beans, olive oil, tahini, garlic, lemon, buttermilk flatbread"
+     },
+     {
+      "name": "Whole Burrata",
+      "price": "$11.50",
+      "category": "food",
+      "description": "Extra virgin olive oil, black pepper"
+     },
+     {
+      "name": "Deep Fried Mushroom Ravioli",
+      "price": "$11.50",
+      "category": "food",
+      "description": "Powdered parmesan, truffle aïoli"
+     },
+     {
+      "name": "Tempura Vegetables",
+      "price": "$11.50",
+      "category": "food",
+      "description": "Mixed tempura vegetables, garlic aïoli"
      },
      {
       "name": "Mini Duck Spring Rolls",
@@ -8101,97 +8384,79 @@
       "name": "Fried Chicken",
       "price": "$11.50",
       "category": "food",
-      "description": "crispy chicken thigh, tossed in soy dressing, pickled chili"
-     },
-     {
-      "name": "Fall Vegetable Skillet",
-      "price": "$9.50",
-      "category": "food",
-      "description": "local bc squash, carrots, onions in a white wine & brown butter sauce"
+      "description": "Crispy chicken thigh, tossed in soy dressing, pickled chili"
      },
      {
       "name": "Grilled Padron Peppers",
       "price": "$11.50",
       "category": "food",
-      "description": "charred on the fire grill, finished with aged sherry vinegar"
-     },
-     {
-      "name": "Italian Potato Salad",
-      "price": "$7.50",
-      "category": "food",
-      "description": "warm citrus dressing, corn sofrito, fennel & apple slaw, fresh herbs"
-     },
-     {
-      "name": "Italian Crispy Potatoes",
-      "price": "$6",
-      "category": "food",
-      "description": "house-blended Italian spice mix, corn sofrito, EVOO, fresh herbs"
-     },
-     {
-      "name": "Grilled Halloumi",
-      "price": "$14.50",
-      "category": "food",
-      "description": "balsamic glaze, gremolata (also listed at $13.50 with balsamic glaze)"
-     },
-     {
-      "name": "Butternut Squash Ravioli",
-      "price": "$19.50",
-      "category": "food",
-      "description": "asiago, ricotta, roasted winter squash, white wine sage butter, pistachio"
-     },
-     {
-      "name": "West Coast Crab Cake",
-      "price": "$13.50",
-      "category": "food",
-      "description": "blue crab, baby shrimp, corn sofrito, saffron aïoli - a Water St. Cafe tradition!"
-     },
-     {
-      "name": "Grilled Focaccia",
-      "price": "$11.50",
-      "category": "food",
-      "description": "olive oil & balsamic"
-     },
-     {
-      "name": "Grandma's Bannock",
-      "price": "$7.50",
-      "category": "food",
-      "description": "rotating house-made jam"
+      "description": "Charred on the fire grill, finished with aged sherry vinegar"
      },
      {
       "name": "Crispy Wontons",
       "price": "$11.50",
       "category": "food",
-      "description": "pork, shrimp, sweet chili sauce"
-     },
-     {
-      "name": "Roasted Mushrooms",
-      "price": "$9.50",
-      "category": "food",
-      "description": "wild & cultivated mushrooms, garlic butter, fresh herbs"
+      "description": "Pork, shrimp, sweet chili sauce"
      },
      {
       "name": "Lemon Pepper Fries",
       "price": "$11.50",
       "category": "food",
-      "description": "dusted in our signature lemon pepper spice, garlic aioli"
+      "description": "Dusted in our signature lemon pepper spice, garlic aioli"
      },
      {
-      "name": "Cajun Fries",
-      "price": "$9.75",
+      "name": "Grilled Focaccia",
+      "price": "$11.50",
       "category": "food",
-      "description": "dusted in our signature Cajun spice, garlic aïoli"
+      "description": "Olive oil & balsamic"
+     },
+     {
+      "name": "Crispy Cauliflower",
+      "price": "$12.50",
+      "category": "food",
+      "description": "Salsa rossa, smoked paprika aïoli"
+     },
+     {
+      "name": "West Coast Crab Cake",
+      "price": "$13.50",
+      "category": "food",
+      "description": "Blue crab, baby shrimp, corn sofrito, saffron aïoli - a Water St. Cafe tradition"
+     },
+     {
+      "name": "Grilled Halloumi",
+      "price": "$13.50",
+      "category": "food",
+      "description": "Balsamic glaze, gremolata (also listed at 14.50)"
+     },
+     {
+      "name": "Meatballs",
+      "price": "$15.50",
+      "category": "food",
+      "description": "Beef, veal, pork, parmesan, fresh herbs, pomodoro sauce"
+     },
+     {
+      "name": "Hummus & Olives",
+      "price": "$15.50",
+      "category": "food",
+      "description": "Mixed olives, cannellini beans, olive oil, tahini, garlic, lemon, buttermilk flatbread"
      },
      {
       "name": "Steamed BC Clams",
       "price": "$16.50",
       "category": "food",
-      "description": "lime leaf miso broth, grilled focaccia, pickled chili, fresh herbs"
+      "description": "Lime leaf miso broth, grilled focaccia, pickled chili, fresh herbs"
      },
      {
-      "name": "Salmon Gravlax & Beets",
-      "price": "$10",
+      "name": "Burrata & Pesto",
+      "price": "$19.50",
       "category": "food",
-      "description": "four tea leaf cured, dill creme fraiche, cucumber, caperberries, marinated beets"
+      "description": "Grana padano, broccoli-pistachio-basil pesto"
+     },
+     {
+      "name": "Butternut Squash Ravioli",
+      "price": "$19.50",
+      "category": "food",
+      "description": "Asiago, ricotta, roasted winter squash, white wine sage butter, pistachio"
      },
      {
       "name": "Happy Hour Lager",
@@ -8204,6 +8469,12 @@
       "price": "$6",
       "category": "drink",
       "description": "15 oz"
+     },
+     {
+      "name": "Highballs",
+      "price": "$6 / $11.50",
+      "category": "drink",
+      "description": "Your choice of vodka, gin, white or dark rum with soda or juice (1oz / 2oz)"
      },
      {
       "name": "House Red Blend",
@@ -8224,46 +8495,34 @@
       "description": "BC, 5oz / 8oz"
      },
      {
-      "name": "Blasted Church Viognier",
-      "price": "$11 / $18.50",
+      "name": "Spiked Raspberry Lemonade",
+      "price": "$8 / $14",
       "category": "drink",
-      "description": "BC, 5oz / 8oz"
-     },
-     {
-      "name": "Hillside Syrah",
-      "price": "$13 / $23.50",
-      "category": "drink",
-      "description": "BC, 5oz / 8oz"
-     },
-     {
-      "name": "Highballs",
-      "price": "$6 / $11.50",
-      "category": "drink",
-      "description": "your choice of vodka, gin, white or dark rum with soda or juice, 1oz / 2oz"
+      "description": "Beefeater gin, raspberry, lemon, soda (1oz / 2oz)"
      },
      {
       "name": "WSC Caesar",
       "price": "$8 / $14",
       "category": "drink",
-      "description": "absolut vodka, spice, clamato, pickle, house garnish, 1oz / 2oz"
-     },
-     {
-      "name": "Spiked Raspberry Lemonade",
-      "price": "$8 / $14",
-      "category": "drink",
-      "description": "beefeater gin, raspberry, lemon, soda, 1oz / 2oz"
+      "description": "Absolut vodka, spice, clamato, pickle, house garnish (1oz / 2oz)"
      },
      {
       "name": "Sangria",
       "price": "$10",
       "category": "drink",
-      "description": "local BC red wine, triple sec, peach schnapps, fresh juices, fruit"
+      "description": "Local BC red wine, triple sec, peach schnapps, fresh juices, fruit"
      },
      {
       "name": "Moments Sangria - Summer Sippin'",
       "price": "$10",
       "category": "drink",
-      "description": "bc red wine, peach schnapps, soda, fresh juices, fruit"
+      "description": "BC red wine, peach schnapps, soda, fresh juices, fruit"
+     },
+     {
+      "name": "Blasted Church Viognier",
+      "price": "$11 / $18.50",
+      "category": "drink",
+      "description": "BC, 5oz / 8oz"
      },
      {
       "name": "Negroni",
@@ -8272,18 +8531,25 @@
       "description": "Beefeater gin, Campari, sweet vermouth, orange twist"
      },
      {
+      "name": "Ginseng Rye Old Fashioned",
+      "price": "$12.50",
+      "category": "drink",
+      "description": "Raincity Distilleries rye, ginseng, orange"
+     },
+     {
+      "name": "Hillside Syrah",
+      "price": "$13 / $23.50",
+      "category": "drink",
+      "description": "BC, 5oz / 8oz"
+     },
+     {
       "name": "Margarita",
       "price": "$13",
       "category": "drink",
       "description": "Hornitos Plata tequila, Cointreau, fresh lime, salt"
-     },
-     {
-      "name": "Ginseng Rye Old Fashioned",
-      "price": "$12.50",
-      "category": "drink",
-      "description": "raincity distilleries rye, ginseng, orange"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -8351,24 +8617,25 @@
     "source_url": "https://kintonramen.com/happy-hour/",
     "deals": [
      {
-      "name": "Pork Donburi Combo",
-      "price": "Free beverage",
-      "category": "food",
-      "description": "Order the signature Pork Donburi and receive a free Coca-Cola Family Beverage"
-     },
-     {
-      "name": "Select Sides",
-      "price": "20% off",
-      "category": "food",
-      "description": "20% off your choice of Tokyo Fries, Gyoza, Takoyaki, Edamame, or Karaage"
-     },
-     {
       "name": "Sapporo Draft",
       "price": "$5.99",
       "category": "drink",
-      "description": "16oz Sapporo Draft"
+      "description": "16oz Sapporo Draft at the happy hour price."
+     },
+     {
+      "name": "Select sides",
+      "price": "20% off",
+      "category": "food",
+      "description": "20% off your choice of Tokyo Fries, Gyoza, Takoyaki, Edamame, or Karaage."
+     },
+     {
+      "name": "Pork Donburi Combo",
+      "price": "Free beverage",
+      "category": "food",
+      "description": "Order the signature Pork Donburi and get a free Coca-Cola Family Beverage."
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -8471,13 +8738,13 @@
       "name": "Beetroot and Goat Cheese",
       "price": "$14",
       "category": "food",
-      "description": "Balsamic beetroot puree, crumbled goat cheese, candied walnuts, chilly oil, focaccia (vegetarian)"
+      "description": "Balsamic beetroot purée, crumbled goat cheese, candied walnuts, chilly oil, focaccia (vegetarian)"
      },
      {
-      "name": "House Red, White, or Rose",
+      "name": "House Red, White, or Rosé",
       "price": "$7",
       "category": "drink",
-      "description": "House wine by the glass"
+      "description": "House wine"
      },
      {
       "name": "House Lager",
@@ -8489,7 +8756,7 @@
       "name": "Well Highballs",
       "price": "$6",
       "category": "drink",
-      "description": "1 oz well highballs"
+      "description": "1oz well highballs"
      },
      {
       "name": "Aperol Spritz",
@@ -8503,7 +8770,8 @@
       "category": "drink",
       "description": "Negroni cocktail"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -8571,7 +8839,81 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://www.maxinescafebar.com/menu",
-    "deals": []
+    "deals": [
+     {
+      "name": "Well Highballs",
+      "price": "$5",
+      "category": "drink",
+      "description": "All well spirits"
+     },
+     {
+      "name": "Maxine's Lager",
+      "price": "$6",
+      "category": "drink",
+      "description": "16 oz draught beer"
+     },
+     {
+      "name": "Powell Obscurum Hazy IPA",
+      "price": "$7",
+      "category": "drink",
+      "description": "16 oz draught beer"
+     },
+     {
+      "name": "Maxine's Shaft Slushee",
+      "price": "$11",
+      "category": "drink",
+      "description": "Frozen blend of coffee, coconut milk, Lot 40, maple cream, Kahlua, whipped cream"
+     },
+     {
+      "name": "Frites",
+      "price": "$8",
+      "category": "food",
+      "description": "Fried potatoes"
+     },
+     {
+      "name": "Pecorino Popover",
+      "price": "$8",
+      "category": "food",
+      "description": "Garlic butter, chive"
+     },
+     {
+      "name": "Maxine's Smash Burger",
+      "price": "$11",
+      "category": "food",
+      "description": "3oz patty, American cheddar, Martin's potato roll, burger sauce"
+     },
+     {
+      "name": "Beetroot",
+      "price": "$16",
+      "category": "food",
+      "description": "Slow cooked beets, Haskap berry, brioche, Boursin"
+     },
+     {
+      "name": "Wedge Salad",
+      "price": "$16",
+      "category": "food",
+      "description": "Green goddess dressing, chive, dill, feta, fried garlic"
+     },
+     {
+      "name": "Kale Caesar",
+      "price": "$16",
+      "category": "food",
+      "description": "Toasted seeds, roasted garlic vinaigrette, Grana Padano"
+     },
+     {
+      "name": "Steak Tartare",
+      "price": "$19",
+      "category": "food",
+      "description": "Cornichon, smoked egg yolk, Comté, beefy potato chip"
+     },
+     {
+      "name": "Garlic Squid",
+      "price": "$20",
+      "category": "food",
+      "description": "Humboldt squid alla plancha, garlic sauce, crispy garlic, scallion"
+     }
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -8641,16 +8983,16 @@
     "source_url": "https://guu-izakaya.com/OtokomaeMenu",
     "deals": [
      {
-      "name": "Sapporo Draft 16oz glass",
+      "name": "Sapporo Draft 16oz",
       "price": "$6",
       "category": "drink",
-      "description": "16oz glass of Sapporo draft (regular bar price $7)"
+      "description": "16oz glass of Sapporo draft (regularly $7)"
      },
      {
       "name": "Sapporo Draft 60oz pitcher",
       "price": "$18",
       "category": "drink",
-      "description": "60oz pitcher of Sapporo draft (regular bar price $21)"
+      "description": "60oz pitcher of Sapporo draft (regularly $21)"
      },
      {
       "name": "White Sangria",
@@ -8662,9 +9004,10 @@
       "name": "Chicken Karaage (5pc) + 16oz Sapporo Combo",
       "price": "$12",
       "category": "food",
-      "description": "Combo of 5pc chicken karaage with a 16oz Sapporo draft"
+      "description": "5-piece chicken karaage combo with a 16oz Sapporo draft"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -8737,13 +9080,13 @@
       "name": "Red/White Wine 6oz",
       "price": "$6.50",
       "category": "drink",
-      "description": "6oz glass of red or white wine"
+      "description": "6oz glass of house red or white wine"
      },
      {
-      "name": "Draft Beer (Coco Lager)",
+      "name": "Draft Beer",
       "price": "$4.75",
       "category": "drink",
-      "description": "Coco Lager on draft"
+      "description": "Coco Lager draft"
      },
      {
       "name": "Domestic Bottle",
@@ -8767,7 +9110,7 @@
       "name": "Double Highball",
       "price": "$9.00",
       "category": "drink",
-      "description": "Double highball"
+      "description": "DBL Highball"
      },
      {
       "name": "Blue Ice",
@@ -8794,22 +9137,22 @@
       "description": "Crisp golden fries tossed in aged parmesan and cilantro, served with roasted garlic aioli"
      },
      {
-      "name": "Street Snack Sampler",
+      "name": "The Street Snack Sampler",
       "price": "$8",
       "category": "food",
-      "description": "Trio of 2 jalapeno poppers, 5 creamy mac & cheese nuggets and 6 sweet corn fritters"
+      "description": "Curated trio - 2 jalapeno poppers, 5 creamy mac & cheese nuggets and 6 sweet corn fritters"
      },
      {
       "name": "Signature Three-Cheese Nachos",
       "price": "$10",
       "category": "food",
-      "description": "Tricolor tortillas with melted three-cheese blend, house salsa and sour cream (add chicken/beef/pulled pork $7)"
+      "description": "Tricolor tortillas layered with melted three-cheese blend, house salsa and zesty sour cream (add chicken/beef/pulled pork $7)"
      },
      {
       "name": "Pacific Crispy Shrimp Tacos (2pcs)",
       "price": "$10",
       "category": "food",
-      "description": "Seasoned shrimp, chickpea & corn crunch, pickled red onion (extra taco $5)"
+      "description": "Seasoned shrimp, chickpea & corn crunch and pickled red onion (extra taco $5)"
      },
      {
       "name": "Chef's Hand-Tossed Wings",
@@ -8818,34 +9161,50 @@
       "description": "Choice of signature hot honey glaze or fresh herb chimichurri"
      },
      {
-      "name": "Alpine Veggie Burger",
+      "name": "The Alpine Veggie Burger",
       "price": "$14",
       "category": "food",
-      "description": "Veggie patty, Swiss cheese, caramelized onions, house sauce, tomato, pickle, lettuce, served with fries"
+      "description": "Seasoned veggie patty, Swiss cheese, caramelized onions, house sauce, tomato, pickle and lettuce; served with fries"
      },
      {
-      "name": "Crispy Chicken Sliders (3pcs)",
+      "name": "Hand-Breaded Crispy Chicken Sliders (3pcs)",
       "price": "$15",
       "category": "food",
-      "description": "Hand-breaded chicken, base sauce, tomato, pickle, lettuce on toasted slider buns (extra slider $5)"
+      "description": "House-made chicken, signature base sauce, tomato, pickle and lettuce on toasted slider buns (extra slider $5)"
      },
      {
       "name": "Pesto Margherita Pizza",
       "price": "$14",
       "category": "food",
-      "description": "San Marzano style marinara, basil pesto swirl, golden mozzarella crust"
+      "description": "San Marzano style marinara, basil pesto swirl and golden mozzarella crust"
      },
      {
       "name": "Roasted Garlic Alfredo Fettuccine",
       "price": "$15",
       "category": "food",
-      "description": "Fettuccine in garlic cream reduction (add chicken/beef/prawns $7)"
+      "description": "Fettuccine in a garlic and cream reduction (add chicken/beef/prawns $7)"
      },
      {
       "name": "Chimichurri Steak Frites",
       "price": "$21",
       "category": "food",
-      "description": "6oz sirloin with Argentinian chimichurri, served with fries"
+      "description": "6oz sirloin topped with Argentinian chimichurri, served with crisp fries"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "22:00",
+      "end": "01:00",
+      "label": "Late night"
      }
     ]
    },
@@ -8920,13 +9279,27 @@
       "name": "Spritzes",
       "price": "$10",
       "category": "drink",
-      "description": "Aperitivo spritzes during daily happy hour"
+      "description": "Spritzes during daily aperitivo happy hour"
      },
      {
       "name": "House beer",
       "price": "$9",
       "category": "drink",
-      "description": "House beer during daily happy hour"
+      "description": "House beer during daily aperitivo happy hour"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "20:00",
+      "end": null,
+      "label": "Late night"
      }
     ]
    },
@@ -9025,7 +9398,7 @@
       "name": "Highballs",
       "price": "$5",
       "category": "drink",
-      "description": "1oz highball; 2oz $8"
+      "description": "1oz highball $5 | 2oz $8"
      },
      {
       "name": "Red Bull",
@@ -9067,25 +9440,25 @@
       "name": "Maple Fashioned",
       "price": "$10",
       "category": "drink",
-      "description": "Canadian whisky, maple syrup, bitters"
+      "description": "Copper bold Canadian whisky, maple syrup, bitters"
      },
      {
       "name": "Piña Kölschlada",
       "price": "$7",
       "category": "drink",
-      "description": "Steamworks kölsch, coconut syrup, pineapple & lime juices; add 1oz white rum $3 or Flor de Cana 12yr $6"
+      "description": "Steamworks kölsch, coconut syrup, pineapple & lime juice; add 1oz white rum $3 or Flor de Cana 12yr $6"
      },
      {
-      "name": "Cocktail Pitchers",
+      "name": "Cocktail pitchers",
       "price": "$24",
       "category": "drink",
       "description": "Pitchers of featured cocktails"
      },
      {
-      "name": "House Shots",
+      "name": "House shots",
       "price": "$5",
       "category": "drink",
-      "description": "House shots"
+      "description": "House shots, 1oz"
      },
      {
       "name": "Steamworks non-alc beer",
@@ -9097,25 +9470,19 @@
       "name": "6oz wines",
       "price": "$2 off",
       "category": "drink",
-      "description": "$2 off any 6oz glass of wine"
+      "description": "$2 off all 6oz glasses of wine"
      },
      {
       "name": "9oz wines",
       "price": "$3 off",
       "category": "drink",
-      "description": "$3 off any 9oz glass of wine"
+      "description": "$3 off all 9oz glasses of wine"
      },
      {
       "name": "Poke Nachos",
       "price": "$15",
       "category": "food",
-      "description": "Ahi tuna tossed in ginger mirin soy sauce, togarashi dusted wonton chips, pineapple salsa, cucumber, jalapeño, wakame, nori and truffle aioli"
-     },
-     {
-      "name": "Happy Hour Poutine",
-      "price": "$7",
-      "category": "food",
-      "description": "Gravy, white cheddar cheese curds; add bacon +$3 or slow roasted brisket +$4"
+      "description": "Ahi tuna in ginger mirin soy sauce, togarashi wonton chips, pineapple salsa, cucumber, jalapeño, wakame, nori, truffle aioli"
      },
      {
       "name": "Crispy Dry Ribs",
@@ -9124,28 +9491,48 @@
       "description": "Tossed in salt & pepper; gluten sensitive"
      },
      {
+      "name": "Happy Hour Poutine",
+      "price": "$7",
+      "category": "food",
+      "description": "Gravy and white cheddar cheese curds; add bacon $3 or slow roasted brisket $4"
+     },
+     {
       "name": "Guacamole & Chips",
       "price": "$12",
       "category": "food",
-      "description": "House-made fresh daily, topped with pico de gallo & goat cheese, served with tortilla chips"
+      "description": "House-made daily, topped with pico de gallo & goat cheese, served with tortilla chips"
      },
      {
       "name": "Buffalo Chicken Bites",
       "price": "$14",
       "category": "food",
-      "description": "Boneless chicken tossed in Franks hot sauce, served with cucumber slaw & jalapeño ranch"
+      "description": "Boneless chicken tossed in Frank's hot sauce, cucumber slaw, jalapeño ranch"
      },
      {
       "name": "Vegan Tofu Bites",
       "price": "$13",
       "category": "food",
-      "description": "Crispy tofu with broccolini tossed in garlic chili sauce, green onion, sesame & hemp seeds, vegan kimchi aioli"
+      "description": "Crispy tofu with broccolini in garlic chili sauce, green onion, sesame & hemp seeds, vegan kimchi aioli"
      },
      {
       "name": "Boom Boom Bread",
       "price": "$14",
       "category": "food",
-      "description": "Tear and share house-made loaf covered in garlic butter, stuffed with monterey jack & cheddar; add marinara +$1"
+      "description": "Tear and share house-made loaf with garlic butter, stuffed with monterey jack & cheddar; add marinara $1"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
      }
     ]
    },
@@ -9219,37 +9606,37 @@
       "name": "Asahi",
       "price": "$6",
       "category": "drink",
-      "description": "Asahi Super Dry lager"
+      "description": "Super Dry Lager draft"
      },
      {
       "name": "Asahi 0.0%",
       "price": "$5",
       "category": "drink",
-      "description": "Non-alcoholic Super Dry lager"
+      "description": "Non-alcoholic Super Dry Lager"
      },
      {
       "name": "Piña Coming Soon",
       "price": "$11",
       "category": "drink",
-      "description": "2oz cocktail: Ketel One Vodka, sake, Calpico, pineapple, lime (contains dairy)"
+      "description": "2oz cocktail: Ketel One Vodka, Sake, Calpico, Pineapple, Lime (contains dairy)"
      },
      {
       "name": "Pizza Highball",
       "price": "$6",
       "category": "drink",
-      "description": "1oz: Dewars White Label Scotch whisky, club soda, lemon"
+      "description": "1oz: Dewars White Label Scotch Whisky, Club Soda, Lemon"
      },
      {
       "name": "Melon Highball",
       "price": "$6",
       "category": "drink",
-      "description": "1oz: Tan Taka Tan shochu, melon liqueur, club soda, shiso"
+      "description": "1oz: Tan Taka Tan Shochu, Melon Liqueur, Club Soda, Shiso"
      },
      {
       "name": "Jasmine Highball",
       "price": "$6",
       "category": "drink",
-      "description": "1oz: Jasmine umeshu, Tanqueray gin, club soda, lemon"
+      "description": "1oz: Jasmine Umeshu, Tanqueray Gin, Club Soda, Lemon"
      },
      {
       "name": "Geso Karaage",
@@ -9261,7 +9648,7 @@
       "name": "Snack Sized Chicken Karaage",
       "price": "$6",
       "category": "food",
-      "description": "Marinated chicken with dill mayo dip (GF)"
+      "description": "Dill mayo dip (GF)"
      },
      {
       "name": "Hiyayakko",
@@ -9293,7 +9680,8 @@
       "category": "food",
       "description": "Pork burger, teriyaki, shredduce, honey lemon mayo, potato bun"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -9390,7 +9778,7 @@
       "name": "High Balls",
       "price": "$5 | $7",
       "category": "drink",
-      "description": "Vodka, tequila, gin or rum; $5 for 1oz, $7 for 2oz"
+      "description": "Vodka, tequila, gin, rum; 1oz $5 / 2oz $7"
      },
      {
       "name": "Aperol Spritz",
@@ -9440,7 +9828,8 @@
       "category": "food",
       "description": "Gluten-free, dairy-free"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -9636,7 +10025,144 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://thekingsheadkits.com/",
-    "deals": []
+    "deals": [
+     {
+      "name": "Shots/Highballs",
+      "price": "$6/$11",
+      "category": "drink",
+      "description": "1oz/2oz"
+     },
+     {
+      "name": "House Wine",
+      "price": "$6/$9",
+      "category": "drink",
+      "description": "6oz/9oz"
+     },
+     {
+      "name": "King's Head Lager",
+      "price": "$5",
+      "category": "drink",
+      "description": "16oz"
+     },
+     {
+      "name": "Somersby Cider",
+      "price": "$7",
+      "category": "drink",
+      "description": "16oz"
+     },
+     {
+      "name": "Jameson",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Jägermeister",
+      "price": "$6",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Jäger Bomb",
+      "price": "$9",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Samosas",
+      "price": "$8",
+      "category": "food",
+      "description": "2 pc"
+     },
+     {
+      "name": "Parmesan Truffle Fries",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Yam Fries",
+      "price": "$10",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Poutine",
+      "price": "$11",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "King's Wings",
+      "price": "$15",
+      "category": "food",
+      "description": "Choice of hot sauce, honey bourbon, BBQ, teriyaki, salt and pepper"
+     },
+     {
+      "name": "Chips and Salsa",
+      "price": "$10",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Chicken Fingers and Fries",
+      "price": "$15",
+      "category": "food",
+      "description": "3 pc"
+     },
+     {
+      "name": "Roasted Cauliflower",
+      "price": "$15",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Crispy Chicken Taco",
+      "price": "$11",
+      "category": "food",
+      "description": "2 pc"
+     },
+     {
+      "name": "Crispy Fish Taco",
+      "price": "$11",
+      "category": "food",
+      "description": "2 pc"
+     },
+     {
+      "name": "Popcorn",
+      "price": "$7",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "King's Nachos",
+      "price": "$18",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Ham & Cheese Toastie",
+      "price": "$11",
+      "category": "food",
+      "description": ""
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -9703,8 +10229,24 @@
     "end": "17:30",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.prestonsvancouver.ca/menus",
-    "deals": []
+    "source_url": "https://www.prestonsvancouver.ca/",
+    "deals": [],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -9806,29 +10348,29 @@
       "name": "Slowhand Wrong Lager",
       "price": "$7",
       "category": "drink",
-      "description": "Beer"
+      "description": "Draft beer"
      },
      {
       "name": "Driftwood Fat Tug IPA",
       "price": "$7",
       "category": "drink",
-      "description": "Beer"
+      "description": "Draft beer"
      },
      {
       "name": "Red Wine",
       "price": "$10",
       "category": "drink",
-      "description": "Happy hour red wine by the glass"
+      "description": "House red by the glass"
      },
      {
       "name": "White Wine",
       "price": "$10",
       "category": "drink",
-      "description": "Happy hour white wine by the glass"
+      "description": "House white by the glass"
      },
      {
-      "name": "HH Oyster",
-      "price": "$1.75 /pc",
+      "name": "Oyster",
+      "price": "$1.75/pc",
       "category": "food",
       "description": "Rotating, house mignonette, cucumber & thai basil granita"
      },
@@ -9842,7 +10384,7 @@
       "name": "Hand-cut Fries",
       "price": "$7",
       "category": "food",
-      "description": "Sub Old Bay Fries $1"
+      "description": "Sub Old Bay fries $1"
      },
      {
       "name": "Endswell Salad",
@@ -9857,7 +10399,7 @@
       "description": "Yuzu & shoyu compressed Cropthorne farm melon, shiso, egg yolk snow, scallion oil"
      },
      {
-      "name": "“Chicken Fried” Spot Prawns",
+      "name": "\"Chicken Fried\" Spot Prawns",
       "price": "$22",
       "category": "food",
       "description": "Meyer lemon aioli"
@@ -9880,7 +10422,8 @@
       "category": "food",
       "description": "Dry-aged house-ground beef, taleggio, huitlacoche aioli, sherry caramelized onions, bap, served with hand-cut fries"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -9964,79 +10507,79 @@
       "name": "12\" Cheese Pizza",
       "price": "$12",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour pizza"
      },
      {
       "name": "12\" Pepperoni Pizza",
       "price": "$14",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour pizza"
      },
      {
       "name": "Asian Noodle Salad",
       "price": "$16",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour portion"
      },
      {
       "name": "Cambie Fries",
       "price": "$5",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour price"
      },
      {
       "name": "Cambie Hot Dog",
       "price": "$6",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour price"
      },
      {
       "name": "Chicharrón",
       "price": "$8",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Crispy pork belly"
      },
      {
       "name": "Chicken Chow Mein",
       "price": "$13",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour price"
      },
      {
       "name": "Chicken Tenders & Fries",
       "price": "$13",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour price"
      },
      {
       "name": "Classic Poutine",
       "price": "$8",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour price"
      },
      {
       "name": "Dirty Fries",
       "price": "$9",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour price"
      },
      {
       "name": "Fish & Chips",
       "price": "$13",
       "category": "food",
-      "description": "1 piece; add a 2nd piece $4"
+      "description": "1 pc; add a 2nd piece $4"
      },
      {
       "name": "Pretzel Bites",
       "price": "$7",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour price"
      },
      {
       "name": "Yam Fries",
       "price": "$8",
       "category": "food",
-      "description": "Happy hour menu price"
+      "description": "Happy hour price"
      },
      {
       "name": "P49 Craft Lager",
@@ -10048,7 +10591,7 @@
       "name": "Draft",
       "price": "$4.75",
       "category": "drink",
-      "description": "16 oz $4.75 / 54 oz $17.00 — Driftwood Fat Tug IPA, Miller Lite, Parkside Motel Hazy Pale Ale, Phillips Pilsner, Granville Island English Bay Ale, Granville Island Hazy Guava Pale Ale, La Cerveceria Salted Lime Lager"
+      "description": "16 oz ($17.00 for 54 oz) - Driftwood Fat Tug IPA, Miller Lite, Parkside Motel Hazy Pale Ale, Phillips Pilsner, Granville Island English Bay Ale, Granville Island Hazy Guava Pale Ale, La Cerveceria Salted Lime Lager"
      },
      {
       "name": "Beer + Shot Combo",
@@ -10057,28 +10600,28 @@
       "description": "Molson Canadian, Pabst Blue Ribbon, Phillips Blue Buck or Granville Island Lager (Canucks Edition) + Jameson, Fireball, El Tequileño Tequila or Jägermeister"
      },
      {
+      "name": "Verve Dry Apple Cider",
+      "price": "$5",
+      "category": "drink",
+      "description": "16 oz"
+     },
+     {
       "name": "Wine",
       "price": "$5",
       "category": "drink",
-      "description": "6 oz $5 / 9 oz $7 — white, red or rosé"
+      "description": "6 oz ($7.00 for 9 oz) - white, red or rosé"
      },
      {
       "name": "Sangria",
       "price": "$7",
       "category": "drink",
-      "description": "6 oz glass $7 / 54 oz pitcher $21"
+      "description": "6 oz glass; 54 oz pitcher $21.00"
      },
      {
-      "name": "Margarita Slush",
-      "price": "$13",
+      "name": "Whiteclaw",
+      "price": "$6",
       "category": "drink",
-      "description": "2 oz; classic lime or strawberry"
-     },
-     {
-      "name": "Rum Punch",
-      "price": "$11",
-      "category": "drink",
-      "description": "2 oz"
+      "description": "Lime, Tangerine, Black Cherry, Lemon and Blackberry"
      },
      {
       "name": "Olé",
@@ -10087,22 +10630,32 @@
       "description": "Paloma or Margarita"
      },
      {
-      "name": "Whiteclaw",
-      "price": "$6",
+      "name": "Rum Punch",
+      "price": "$11",
       "category": "drink",
-      "description": "Lime, Tangerine, Black Cherry, Lemon or Blackberry"
+      "description": "2 oz"
      },
      {
-      "name": "Verve Dry Apple Cider",
-      "price": "$5",
+      "name": "Margarita Slush",
+      "price": "$13",
       "category": "drink",
-      "description": "16 oz"
+      "description": "2 oz, classic lime or strawberry"
      },
      {
       "name": "Sol Buckets",
       "price": "$25",
       "category": "drink",
       "description": "5 x 330 ml"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       1
+      ],
+      "start": "11:00",
+      "end": null,
+      "label": "All day Monday"
      }
     ]
    },
@@ -10172,7 +10725,23 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://www.cactusclubcafe.com/locations/bentall-5/",
-    "deals": []
+    "deals": [],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late Night"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -10245,13 +10814,13 @@
       "name": "Signature Cocktails",
       "price": "$11",
       "category": "drink",
-      "description": "1.0 oz. Choice of Trentino Spritz, Smokey Spicy Margarita, Coconut Berry Delight, Marcello's Paradise, Red Wine Sangria, or Negroni Rosa"
+      "description": "1.0 oz signature cocktails: Trentino Spritz, Smokey Spicy Margarita, Coconut Berry Delight, Marcello's Paradise, Red Wine Sangria, Negroni Rosa"
      },
      {
       "name": "House Wine",
       "price": "$5",
       "category": "drink",
-      "description": "Red or white"
+      "description": "Red or white house wine"
      },
      {
       "name": "Beer on Tap",
@@ -10263,7 +10832,7 @@
       "name": "0.0% Peroni and Margherita",
       "price": "$19",
       "category": "food",
-      "description": "Daily special: 0.0% Peroni non-alcoholic beer paired with a Margherita pizza, 11am to 5pm"
+      "description": "Daily special: 0.0% Peroni beer paired with a Margherita pizza"
      },
      {
       "name": "Lobster & Crab Ravioli",
@@ -10307,7 +10876,8 @@
       "category": "food",
       "description": "Italian gelato"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -10377,7 +10947,7 @@
       "name": "House Lager",
       "price": "$4.95",
       "category": "drink",
-      "description": "Old Fashion Pilsner on tap, 12 oz"
+      "description": "Old Fashion Pilsner tap, 12 oz"
      },
      {
       "name": "Beer bottle",
@@ -10393,9 +10963,9 @@
      },
      {
       "name": "Wine",
-      "price": "$5.95/$8.95",
+      "price": "$5.95-8.95",
       "category": "drink",
-      "description": "Red or white, 6 oz / 9 oz"
+      "description": "Red or white, 6 oz $5.95 / 9 oz $8.95"
      },
      {
       "name": "Margarita Clasica",
@@ -10431,19 +11001,19 @@
       "name": "3 Tacos",
       "price": "$12.95",
       "category": "food",
-      "description": "Chicken or carnitas; corn tortilla topped with onion, cilantro, with green salsa and limes. Extra taco $2.99"
+      "description": "Chicken or carnitas, corn tortilla topped with onion, cilantro, side of green salsa and limes; extra taco $2.99"
      },
      {
       "name": "El Argentino",
       "price": "$13.95",
       "category": "food",
-      "description": "Sandwich: pork sausage on a roll with chimichurri, mayo, tomato, lettuce and fries"
+      "description": "Sandwich: pork sausage on a roll with chimichurri, mayo, tomato, lettuce, with fries"
      },
      {
       "name": "El Chileno",
       "price": "$13.95",
       "category": "food",
-      "description": "Sandwich: grilled sliced steak on Chilean bread with mayo, avocado and fries"
+      "description": "Sandwich: grilled sliced steak on Chilean bread with mayo, avocado, with fries"
      },
      {
       "name": "El Peruano",
@@ -10455,7 +11025,7 @@
       "name": "El Mexicano",
       "price": "$13.95",
       "category": "food",
-      "description": "Bolillo with milanesa, avocado, mayo, tomato, sweet peppers, shredded lettuce and fries"
+      "description": "Bolillo with milanesa, avocado, mayo, tomato, sweet peppers, shredded lettuce, with fries"
      },
      {
       "name": "Chicken Quesadillas",
@@ -10468,6 +11038,32 @@
       "price": "$18.95",
       "category": "food",
       "description": "2 steak skewers with chimichurri and a side of fries with rocoto mayo"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       1
+      ],
+      "start": "15:00",
+      "end": "23:00",
+      "label": "Monday all day"
+     },
+     {
+      "days": [
+       6
+      ],
+      "start": "12:00",
+      "end": "18:00",
+      "label": "Saturday"
+     },
+     {
+      "days": [
+       0
+      ],
+      "start": "12:00",
+      "end": "23:00",
+      "label": "Sunday all day"
      }
     ]
    },
@@ -10537,7 +11133,30 @@
     "verified": false,
     "verified_source": null,
     "source_url": "http://staugustinesvancouver.com/",
-    "deals": []
+    "deals": [],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "21:00",
+      "end": "00:00",
+      "label": "Late Night"
+     },
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "22:00",
+      "end": "01:00",
+      "label": "Late Night"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -10605,7 +11224,30 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://www.cactusclubcafe.com/locations/yaletown/",
-    "deals": []
+    "deals": [],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     },
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "22:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -10682,7 +11324,7 @@
      },
      {
       "name": "King Salmon Chowder",
-      "price": "$9",
+      "price": "$9-15",
       "category": "food",
       "description": "New England cream style, king salmon, bacon, carrots, onion, potato, celery; small $9 / large $15"
      },
@@ -10732,7 +11374,7 @@
       "name": "Malone's Garden Salad",
       "price": "$16",
       "category": "food",
-      "description": "Tender greens, heirloom grape tomatoes, carrot, cucumber; choice of balsamic, ranch or blue cheese dressing"
+      "description": "Tender greens, heirloom grape tomatoes, carrot, cucumber; balsamic, ranch or blue cheese dressing"
      },
      {
       "name": "Malone's Burger & Fries",
@@ -10750,7 +11392,7 @@
       "name": "Birria Tacos",
       "price": "$19",
       "category": "food",
-      "description": "3pcs; braised short rib, mozzarella, onion, cilantro, pickled carrot, beef consomme, corn tortilla"
+      "description": "3pcs; braised short rib, mozzarella, onion, cilantro, pickled carrot, beef consumme, corn tortilla"
      },
      {
       "name": "Short Rib Sando & Fries",
@@ -10774,43 +11416,43 @@
       "name": "Craft Lager",
       "price": "$5",
       "category": "drink",
-      "description": "14oz draft; Parallel 49 Brewing, Vancouver, BC"
+      "description": "14oz draft, Parallel 49 Brewing, Vancouver BC"
      },
      {
       "name": "Implosion Pilsner",
       "price": "$5.50",
       "category": "drink",
-      "description": "14oz draft; Phillips Brewing, Victoria, BC"
+      "description": "14oz draft, Phillips Brewing, Victoria BC"
      },
      {
       "name": "Pale Ale",
       "price": "$5.50",
       "category": "drink",
-      "description": "14oz draft; Steamworks Brewing, Vancouver, BC"
+      "description": "14oz draft, Steamworks Brewing, Vancouver BC"
      },
      {
       "name": "Driftwood Fat Tug",
       "price": "$5.50",
       "category": "drink",
-      "description": "14oz draft; Driftwood Brewing"
+      "description": "14oz draft, Driftwood Brewing"
      },
      {
       "name": "Motel Hazy Pale Ale",
       "price": "$5.50",
       "category": "drink",
-      "description": "14oz draft; Parkside Brewing, Port Moody, BC"
+      "description": "14oz draft, Parkside Brewing, Port Moody BC"
      },
      {
       "name": "Spanish Banks Hazy Guava Pale Ale",
       "price": "$5.50",
       "category": "drink",
-      "description": "14oz draft; Granville Island Brewing, Vancouver, BC"
+      "description": "14oz draft, Granville Island Brewing, Vancouver BC"
      },
      {
-      "name": "Brewery Showdown Winner Amber Lager",
+      "name": "Brewery Showdown Winner - Amber Lager",
       "price": "$6",
       "category": "drink",
-      "description": "Patina Brewing Co, Port Coquitlam, BC"
+      "description": "Patina Brewing Co, Port Coquitlam BC"
      },
      {
       "name": "Brewery Showdown Flight",
@@ -10820,7 +11462,7 @@
      },
      {
       "name": "Happy Wine",
-      "price": "$6",
+      "price": "$6-9",
       "category": "drink",
       "description": "White, red or rosé; 6oz $6 / 9oz $9"
      },
@@ -10828,7 +11470,7 @@
       "name": "Sangria",
       "price": "$8",
       "category": "drink",
-      "description": "6oz $8 / pitcher $22; red wine mix topped with frozen bellini"
+      "description": "6oz; red wine mix topped with frozen bellini (pitcher $22)"
      },
      {
       "name": "Malone's Paloma",
@@ -10847,6 +11489,43 @@
       "price": "$5.50",
       "category": "drink",
       "description": "Non-alcoholic: Sangre de Toro Blanco 0.0%, peach juice, pineapple juice, lemon, simple syrup"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       2
+      ],
+      "start": "11:00",
+      "end": "00:00",
+      "label": "Tuesday all day"
+     },
+     {
+      "days": [
+       0
+      ],
+      "start": "21:00",
+      "end": "23:00",
+      "label": "Late night"
+     },
+     {
+      "days": [
+       1,
+       3,
+       4
+      ],
+      "start": "21:00",
+      "end": "00:00",
+      "label": "Late night"
+     },
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": "01:00",
+      "label": "Late night"
      }
     ]
    },
@@ -10919,22 +11598,22 @@
       "name": "Palomita",
       "price": "$11",
       "category": "drink",
-      "description": "Jose Cuervo Tradicional Reposado / grapefruit juice / lime juice / grapefruit soda (2 oz)"
+      "description": "Jose Cuervo Tradicional Reposado / Grapefruit Juice / Lime Juice / Grapefruit Soda (2 oz)"
      },
      {
       "name": "Tequila Margarita",
       "price": "$11",
       "category": "drink",
-      "description": "Jose Cuervo Tradicional Blanco / Cointreau / lime juice / agave syrup (2 oz)"
+      "description": "Jose Cuervo Tradicional Blanco / Cointreau / Lime Juice / Agave Syrup (2 oz)"
      },
      {
       "name": "Batanga",
       "price": "$11",
       "category": "drink",
-      "description": "Tequileno Blanco / lime juice / Coca Cola (2 oz)"
+      "description": "Tequileno Blanco / Lime Juice / Coca Cola (2 oz)"
      },
      {
-      "name": "Draft Lager",
+      "name": "Dft Lager",
       "price": "$8",
       "category": "drink",
       "description": "Steamworks Lager"
@@ -10943,37 +11622,37 @@
       "name": "House Shot",
       "price": "$8",
       "category": "drink",
-      "description": "Sunburn Tequila / spicy serrano / flavour infusion (1 oz)"
+      "description": "Sunburn Tequila / Spicy Serrano / Flavour Infusion (1 oz)"
      },
      {
-      "name": "Draft Michelada",
+      "name": "Dft Michelada",
       "price": "$8",
       "category": "drink",
-      "description": "Lime / spice mix / Clamato / Tajin rim / house cerveza"
+      "description": "Lime / Spice Mix / Clamato / Tajin Rim / House Cerveza"
      },
      {
-      "name": "Glass Red Narrative",
+      "name": "Gls Red Narrative",
       "price": "$7",
       "category": "drink",
-      "description": "Red Narrative by the glass (6 oz)"
+      "description": "Red wine, 6 oz glass"
      },
      {
-      "name": "Glass Pinot Gris Haywire",
+      "name": "Gls Pinot Gris Haywire",
       "price": "$7",
       "category": "drink",
-      "description": "Pinot Gris Haywire by the glass (6 oz)"
+      "description": "White wine, 6 oz glass"
      },
      {
       "name": "Cantarito Pitcher",
       "price": "$120",
       "category": "drink",
-      "description": "Grapefruit juice / orange juice / lime juice / grapefruit soda / Jose Cuervo Tradicional Reposado (12 oz)"
+      "description": "Grapefruit Juice / Orange Juice / Lime Juice / Grapefruit Soda / Jose Cuervo Tradicional Reposado (12 oz)"
      },
      {
       "name": "Amiguitos Flight",
       "price": "$21",
       "category": "food",
-      "description": "Guacamole / shrimp cocktail / rajas con suero / pico de gallo (GF, NF, VG)"
+      "description": "Guacamole / Shrimp Cocktail / Rajas con Suero / Pico de Gallo (GF, NF, VG)"
      },
      {
       "name": "Queso Fundido",
@@ -10985,7 +11664,7 @@
       "name": "Guacamolito",
       "price": "$12",
       "category": "food",
-      "description": "Avocado / pico de gallo / macha sauce / home-made corn chips (GF, NF, VG)"
+      "description": "Avocado / Pico de Gallo / Macha Sauce / home-made corn chips (GF, NF, VG)"
      },
      {
       "name": "Cocktelito Ixtapa",
@@ -10999,7 +11678,8 @@
       "category": "food",
       "description": "(2) home-made churros tossed in cinnamon-sugar / chocolate-strawberry vegan ganache (NF, V, VG, DF)"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -11067,7 +11747,23 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://www.cactusclubcafe.com/locations/broadway-ash/",
-    "deals": []
+    "deals": [],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late Night"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -11138,13 +11834,13 @@
       "name": "Lager cans",
       "price": "$5",
       "category": "drink",
-      "description": "Lager cans during weekday happy hour"
+      "description": "$5 lager cans"
      },
      {
       "name": "Wine",
       "price": "$6",
       "category": "drink",
-      "description": "Wine during weekday happy hour"
+      "description": "$6 wine"
      },
      {
       "name": "House cocktails",
@@ -11158,7 +11854,8 @@
       "category": "food",
       "description": "$3 off select food items"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -11228,22 +11925,22 @@
     "source_url": "http://www.jamjarcanteen.ca/",
     "deals": [
      {
-      "name": "Beer",
+      "name": "Happy Hour Beer",
       "price": "$6",
       "category": "drink",
       "description": "All beers on tap"
      },
      {
-      "name": "Red Wine",
+      "name": "Happy Hour Red Wine",
       "price": "$7",
       "category": "drink",
-      "description": "Happy hour red wine"
+      "description": "Red wine"
      },
      {
-      "name": "White Wine",
+      "name": "Happy Hour White Wine",
       "price": "$7",
       "category": "drink",
-      "description": "Happy hour white wine"
+      "description": "White wine"
      },
      {
       "name": "Feature Cocktail",
@@ -11305,7 +12002,8 @@
       "category": "food",
       "description": "Fries, mozzarella, whipped garlic sauce, cilantro & chilli sauce"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -11373,7 +12071,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://biminis1975.ca/happy-hours/",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -11428,9 +12127,9 @@
    "website": "http://between2bunsburgers.ca/",
    "happy_hour": {
     "days": [
+     0,
      5,
-     6,
-     0
+     6
     ],
     "start": "12:00",
     "end": "15:00",
@@ -11454,39 +12153,40 @@
       "name": "Single Cheeser",
       "price": "$11.50",
       "category": "food",
-      "description": "One patty, cheese, lettuce, pickles & B2B sauce (regular menu price $12.99)."
+      "description": "One patty, cheese, lettuce, pickles & B2B sauce."
      },
      {
       "name": "Dirty Fries",
       "price": "$8.50",
       "category": "food",
-      "description": "Fries loaded with B2B sauce, bacon and pickled jalapeños (regular menu price $11.00)."
+      "description": "Fries loaded with B2B sauce, bacon and pickled jalapeños."
      },
      {
       "name": "Dageraad Draft, 12 oz",
-      "price": "$6",
+      "price": "$6.00",
       "category": "drink",
       "description": "Rotating taps."
      },
      {
       "name": "Dageraad Draft, 16 oz",
-      "price": "$8",
+      "price": "$8.00",
       "category": "drink",
       "description": "Rotating taps."
      },
      {
-      "name": "Dageraad Draft pitcher",
-      "price": "$22",
+      "name": "Dageraad Draft, pitcher",
+      "price": "$22.00",
       "category": "drink",
       "description": "Rotating taps."
      },
      {
       "name": "Sunrise Hotel Cocktails",
-      "price": "$2 off",
+      "price": "$2.00 off",
       "category": "drink",
       "description": "Ask about available flavours."
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -11563,7 +12263,7 @@
       "name": "Wine",
       "price": "$6",
       "category": "drink",
-      "description": "$6 glasses of wine during happy hour"
+      "description": "$6 wine during happy hour"
      },
      {
       "name": "Margaritas",
@@ -11582,6 +12282,19 @@
       "price": "$5 off",
       "category": "food",
       "description": "$5 off burgers during happy hour"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "21:00",
+      "end": "00:00",
+      "label": "Late night"
      }
     ]
    },
@@ -11653,16 +12366,16 @@
     "source_url": "http://kitsilanopub.com/",
     "deals": [
      {
-      "name": "Single Highballs",
+      "name": "Single Highball",
       "price": "$6.25",
       "category": "drink",
-      "description": "1oz highball"
+      "description": "1oz single highball"
      },
      {
-      "name": "Double Highballs",
+      "name": "Double Highball",
       "price": "$9.25",
       "category": "drink",
-      "description": "2oz highball"
+      "description": "2oz double highball"
      },
      {
       "name": "Domestic Draft Beer",
@@ -11671,7 +12384,7 @@
       "description": "16oz domestic draft"
      },
      {
-      "name": "Premium Irish Pints",
+      "name": "Premium Irish Pint",
       "price": "$8.75",
       "category": "drink",
       "description": "20oz premium Irish pint"
@@ -11684,21 +12397,52 @@
      },
      {
       "name": "Pachos, Deep-Fried Pickles, Potato Skins",
-      "price": "$12",
+      "price": "$12.00",
       "category": "food",
       "description": "Happy hour food tier 1"
      },
      {
       "name": "Chicken Lips, Dry Ribs, Classic Poutine, Chicken Quesadillas",
-      "price": "$14",
+      "price": "$14.00",
       "category": "food",
       "description": "Happy hour food tier 2"
      },
      {
       "name": "Chicken Wings, McCracken Rolls, Irish Yorkies, Dunkin's Beef Dip",
-      "price": "$16",
+      "price": "$16.00",
       "category": "food",
       "description": "Happy hour food tier 3"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "21:00",
+      "end": "00:00",
+      "label": "Late night"
+     },
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": "01:00",
+      "label": "Late night"
+     },
+     {
+      "days": [
+       1
+      ],
+      "start": "11:00",
+      "end": "00:00",
+      "label": "Monday all day"
      }
     ]
    },
@@ -11770,13 +12514,13 @@
     "source_url": "https://thecharlatanrestaurant.com/specials/happy-hour/",
     "deals": [
      {
-      "name": "Snack size portions",
+      "name": "Snack Size Portions",
       "price": "$8",
       "category": "food",
-      "description": "Any snack-size happy hour food item: Crispy Tofu Bites (Vg|Gf), Edamame (Ve|Vg|Gf), Cauliflower Wings (Vg), Tuna Bites, Bacon Wrapped Stuffed Dates, Beef Wellingtons, Chili Crisp Green Beans (Gf|Vg), Arancini (Ve)"
+      "description": "Happy hour snack-size plates: Crispy Tofu Bites, Edamame, Cauliflower Wings, Tuna Bites, Bacon Wrapped Stuffed Dates, Beef Wellingtons, Chili Crisp Green Beans, Arancini"
      },
      {
-      "name": "Local craft beer",
+      "name": "Local Craft Beer",
       "price": "$6.5",
       "category": "drink",
       "description": "14oz pour, all local taps"
@@ -11785,21 +12529,22 @@
       "name": "Wine",
       "price": "$8.75",
       "category": "drink",
-      "description": "6oz glass: Cono Sur Cabernet Sauvignon or Cono Sur Chardonnay"
+      "description": "6oz Cono Sur Cabernet Sauvignon or Cono Sur Chardonnay"
      },
      {
       "name": "Botanicals",
       "price": "$7.5",
       "category": "drink",
-      "description": "1oz. Empress Gin Spritzes (Cucumber Lemon, Elderflower Rose, Indigo) with honey syrup, lemon juice and soda; 21 Seeds Tequila Spritz (Cucumber Jalapeno, Grapefruit Hibiscus, Valencia Orange) with honey syrup, lime juice and soda"
+      "description": "1oz spritzes: Empress Gin Spritzes (Cucumber Lemon, Elderflower Rose, Indigo) and 21 Seeds Tequila Spritz (Cucumber Jalapeno, Grapefruit Hibiscus, Valencia Orange)"
      },
      {
-      "name": "Party Fuel cocktails",
+      "name": "Party Fuel",
       "price": "$7.5",
       "category": "drink",
-      "description": "1oz. Pick Me Up (vanilla vodka, espresso), Snake Oil (tequila, triple sec, blueberry lemonade), Buffalo Run (Buffalo Trace bourbon, Fireball)"
+      "description": "1oz cocktails: Pick Me Up (vanilla vodka, espresso), Snake Oil (tequila, triple sec, blueberry lemonade), Buffalo Run (Buffalo Trace bourbon, fireball)"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -11867,7 +12612,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://opushotel.com/eat-drink/",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -11935,7 +12681,15 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://www.memphisbluesbbq.com/locations/",
-    "deals": []
+    "deals": [
+     {
+      "name": "Pints",
+      "price": "$6",
+      "category": "drink",
+      "description": "20oz pints"
+     }
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -12014,9 +12768,10 @@
       "name": "Chips and Salsa",
       "price": "$9.00",
       "category": "food",
-      "description": "Add chips and salsa to your happy hour drink"
+      "description": "Add chips and salsa to your happy hour order"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -12165,7 +12920,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://bombaykitchenondenman.ca/",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -12232,7 +12988,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "http://www.liviasweets.com/",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -12300,7 +13057,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "http://forecastcoffee.ca/",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -12368,7 +13126,84 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://www.noahscafe604.com/happy-hour",
-    "deals": []
+    "deals": [
+     {
+      "name": "Fresh Oyster",
+      "price": "$2.50-$3.90",
+      "category": "food",
+      "description": "Mint & kaffir chili vinaigrette, ikura, horse radish wasabi"
+     },
+     {
+      "name": "Charcoal Focaccia",
+      "price": "$8.00-$11.99",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Smoked Quail Egg",
+      "price": "$8.00",
+      "category": "food",
+      "description": "Smoke & dashi soy quail egg"
+     },
+     {
+      "name": "Smoked Olives",
+      "price": "$8.00",
+      "category": "food",
+      "description": "House smoked castelvitrano olives"
+     },
+     {
+      "name": "Aburi Zuké Tuna Tataki",
+      "price": "$10.00-$12.00",
+      "category": "food",
+      "description": "Marinated albacore tuna sashimi, blow torched, pickled shallots, onion ponzu, fried onion bits"
+     },
+     {
+      "name": "Uni Butter",
+      "price": "$15.00-$22.99",
+      "category": "food",
+      "description": "Butter with fresh uni sashimi, miso, truffle, tobiko, served with house jam and charcoal focaccia"
+     },
+     {
+      "name": "Wagyu Beef Tartare",
+      "price": "$25.00-$27.90",
+      "category": "food",
+      "description": "Diced Wagyu, shiso mustard vinaigrette, cured egg yolk, onion bits, truffle potato chips"
+     },
+     {
+      "name": "Negitoro & Focaccia",
+      "price": "$14.00-$16.00",
+      "category": "food",
+      "description": "Chopped albacore tuna sashimi with shiso, wasabi nori sauce, fried onion bits, oregano focaccia"
+     },
+     {
+      "name": "Cheese Tofu",
+      "price": "$10.00-$12.90",
+      "category": "food",
+      "description": "Dressed with maple honey, mixed nuts, served with oregano focaccia"
+     },
+     {
+      "name": "Eggplant Garden",
+      "price": "$20.00",
+      "category": "food",
+      "description": "Agedashi eggplant, ricotta, arugula pesto, pickled vegetable, strawberries, charcoal focaccia"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -12427,18 +13262,16 @@
      1,
      2,
      3,
-     4,
-     5,
-     6
+     4
     ],
     "start": "17:00",
-    "end": "18:00",
+    "end": "19:00",
     "verified": false,
     "verified_source": null,
     "source_url": "https://www.bartholomewbar.com/",
     "deals": [
      {
-      "name": "Bart's Board",
+      "name": "Barts Board",
       "price": "$19",
       "category": "food",
       "description": "3 meats & 3 cheeses, house accompaniments"
@@ -12520,6 +13353,17 @@
       "price": "$10",
       "category": "drink",
       "description": ""
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "label": "Fri & Sat"
      }
     ]
    },
@@ -12604,7 +13448,7 @@
       "name": "Tuna Kinilaw",
       "price": "$11",
       "category": "food",
-      "description": "Filipino style ceviche: coconut sap, thai chili, ginger, red onion, jalapeno, lime extract served with tortilla chips. Dairy free, gluten free."
+      "description": "Filipino style ceviche: coconut sap, thai chili, ginger, red onion, jalapeño, lime extract served with tortilla chips. Dairy free, gluten free."
      },
      {
       "name": "Chicken Karaage",
@@ -12640,25 +13484,25 @@
       "name": "Elote Corn Salad",
       "price": "$12",
       "category": "food",
-      "description": "Grilled corn, red peppers, jalapeno, cilantro + cotija cheese in a lime mayo + sour cream dressing. Add chicken $7 | Beyond meat $7 | Salmon $8 | Steak $11."
+      "description": "Grilled corn, red peppers, jalapeño, cilantro + cotija cheese in a lime mayo + sour cream dressing. Add chicken $7 | Beyond meat $7 | Salmon $8 | Steak $11."
      },
      {
       "name": "The Burger",
       "price": "$16",
       "category": "food",
-      "description": "House-made angus beef burger, bacon, cheddar, sauteed mushrooms, lettuce, tomato, red onion, pickle + chipotle aioli on a brioche bun. Served with fries, yam fries, caesar or house salad."
+      "description": "House-made angus beef burger, bacon, cheddar, sautéed mushrooms, lettuce, tomato, red onion, pickle + chipotle aioli on a brioche bun. Served with fries, yam fries, caesar or house salad."
      },
      {
       "name": "The Beyond Burger",
       "price": "$16",
       "category": "food",
-      "description": "Vegan beyond meat patty, vegan cheddar, caramelized onions, arugula + vegan sriracha aioli on a pretzel bun. Served with fries, yam fries, caesar or house salad."
+      "description": "Vegan beyond meat patty, vegan cheddar, caramelized onions, arugula + vegan sriracha aioli on a pretzel bun. Vegan, vegetarian, dairy free."
      },
      {
       "name": "Sous-Vide Steak Sandwich",
       "price": "$22",
       "category": "food",
-      "description": "5oz sous-vide sirloin, sauteed mushrooms, buttermilk fried onions + chimi aioli on ciabatta bread. Served with fries, yam fries, caesar or house salad."
+      "description": "5oz sous-vide sirloin, sautéed mushrooms, buttermilk fried onions + chimi aioli on ciabatta bread."
      },
      {
       "name": "Pistachio Crusted Roasted Mahi Mahi",
@@ -12670,7 +13514,7 @@
       "name": "Penne Alla Vodka",
       "price": "$20",
       "category": "food",
-      "description": "Penne tossed in tomato cream sauce with vodka, sauteed garlic, chili flakes, parmesan + fresh herb. Add chicken $7 | Beyond meat $7 | Salmon $8 | Steak $11."
+      "description": "Penne tossed in tomato cream sauce with vodka, sautéed garlic, chili flakes, parmesan + fresh herb. Add chicken $7 | Beyond meat $7 | Salmon $8 | Steak $11."
      },
      {
       "name": "Mini Donuts",
@@ -12713,6 +13557,17 @@
       "price": "$9.75",
       "category": "drink",
       "description": "Cosmo, Cucumber Collins or Bourbon Sour."
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "label": "Weekend"
      }
     ]
    },
@@ -12781,10 +13636,10 @@
     "source_url": "https://ciderhouserules.ca/happy-hour/",
     "deals": [
      {
-      "name": "Select cider",
+      "name": "Select cider 12oz",
       "price": "$2 off",
       "category": "drink",
-      "description": "12oz pours of Mango Mint, Strawberry Lychee, Pina Colada, or Blackberry Hibiscus (7% ABV)"
+      "description": "Mango Mint, Strawberry Lychee, Pina Colada, or Blackberry Hibiscus — all 7% ABV"
      },
      {
       "name": "Cider House Flight",
@@ -12796,25 +13651,25 @@
       "name": "Fizzy Crush",
       "price": "$6",
       "category": "drink",
-      "description": "1oz; soda water with choice of vodka, gin, or tequila, topped with passionfruit slush"
+      "description": "1oz — soda water with choice of vodka, gin or tequila, topped with passionfruit slush"
      },
      {
       "name": "Red Sangria",
       "price": "$10",
       "category": "drink",
-      "description": "Glass $10 / pitcher $35; red wine, blackberry hibiscus cider, passion fruit juice, orange juice and fresh lime"
+      "description": "$10 glass / $35 pitcher — red wine, blackberry hibiscus cider, passion fruit juice, orange juice, fresh lime"
      },
      {
       "name": "Passionfruit Slushy Marg",
       "price": "$11",
       "category": "drink",
-      "description": "1.5oz; tequila, lime & passionfruit slush"
+      "description": "1.5oz — tequila, lime and passionfruit slush"
      },
      {
       "name": "Cider House Spritz",
       "price": "$12",
       "category": "drink",
-      "description": "1.5oz; Aperol topped with dry cider, finished with a fresh orange wedge"
+      "description": "1.5oz — Aperol topped with dry cider, fresh orange wedge"
      },
      {
       "name": "Cerveza",
@@ -12824,21 +13679,21 @@
      },
      {
       "name": "House Wine",
-      "price": "$9-12",
+      "price": "$9",
       "category": "drink",
-      "description": "Cabernet Sauvignon or Pinot Gris; $9 for 6oz, $12 for 9oz"
+      "description": "$9 for 6oz / $12 for 9oz — Cabernet Sauvignon or Pinot Gris"
      },
      {
       "name": "Wine & bubbles bottles",
       "price": "15% off",
       "category": "drink",
-      "description": "15% off all wine bottles & sparkling wines"
+      "description": "15% off all wine bottles and sparkling wines"
      },
      {
       "name": "Phillips Non-Alc",
       "price": "$5",
       "category": "drink",
-      "description": "12oz Pale Ale or Pilsner, 0.05% ABV"
+      "description": "12oz, 0.05% ABV — Pale Ale or Pilsner"
      },
      {
       "name": "Brain Freeze",
@@ -12856,61 +13711,83 @@
       "name": "Maple Rosemary Peanuts",
       "price": "$5",
       "category": "food",
-      "description": "GF; sweet, savory, herb-roasted peanuts with a maple finish"
+      "description": "[GF] Sweet, savoury herb-roasted peanuts with a maple finish"
      },
      {
       "name": "Mini Nachos",
       "price": "$12",
       "category": "food",
-      "description": "GF; pico de gallo, black olives, pickled onion, jalapeño, queso, mozza style cheese, cashew sour cream. Add guac $4, salsa $3, vegan beef $5, jackfruit $5"
+      "description": "[GF] Pico de gallo, black olives, pickled onion, jalapeño, queso, mozza style cheese, cashew sour cream. Add guac $4, salsa $3, vegan beef $5, jackfruit $5"
      },
      {
       "name": "Single Taco",
       "price": "$5",
       "category": "food",
-      "description": "GF; al pastor-style pulled jackfruit with pineapple salsa, jalapeño aioli, and onion on a corn tortilla"
+      "description": "[GF] Al pastor-style pulled jackfruit, pineapple salsa, jalapeño aioli, onion on corn tortilla"
      },
      {
       "name": "Single Tostada",
       "price": "$7",
       "category": "food",
-      "description": "GF; watermelon crudo tostada with cucumber, salsa verde, and pickled onion"
+      "description": "[GF] Watermelon crudo tostada with cucumber, salsa verde and pickled onion"
      },
      {
       "name": "Deep-Fried Pickle Chips",
       "price": "$10",
       "category": "food",
-      "description": "GF; light rice flour batter, served with house burger sauce"
+      "description": "[GF] Light rice flour batter, served with house burger sauce"
      },
      {
       "name": "Corn Ribs",
       "price": "$10",
       "category": "food",
-      "description": "GF; crispy corn ribs with smoky Mexican spice mix, drizzled with lemon mayo"
+      "description": "[GF] Crispy corn ribs with smoky Mexican spice mix, drizzled with lemon mayo"
      },
      {
       "name": "Chips and Salsa",
       "price": "$10",
       "category": "food",
-      "description": "GF; house salsa with fresh corn chips"
+      "description": "[GF] House salsa with fresh corn chips"
      },
      {
       "name": "Tofu Bites",
       "price": "$13",
       "category": "food",
-      "description": "GF; maple and chili tofu bites with sesame and green onion"
+      "description": "[GF] Maple and chili tofu bites with sesame and green onion"
      },
      {
       "name": "Yam Fries",
       "price": "$11",
       "category": "food",
-      "description": "GF; crispy yam fries with tangy chipotle dip"
+      "description": "[GF] Crispy yam fries with tangy chipotle dip"
      },
      {
       "name": "Loaded Fries",
       "price": "$12",
       "category": "food",
-      "description": "GF; fries topped with crumbled Beyond Meat, pico de gallo, pickled onion, jalapeños, olives, lemon mayo, and salsa verde"
+      "description": "[GF] Fries topped with crumbled Beyond Meat, pico de gallo, pickled onion, jalapeños, olives, lemon mayo, salsa verde"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       5
+      ],
+      "start": "14:00",
+      "end": "17:30",
+      "label": "Friday extended"
+     },
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "20:30",
+      "end": "22:00",
+      "label": "Late night"
      }
     ]
    },
@@ -12967,16 +13844,104 @@
    "website": "http://www.barcorso.ca/",
    "happy_hour": {
     "days": [
-     2,
-     3,
-     4
+     5,
+     6,
+     0
     ],
-    "start": "17:00",
-    "end": "18:00",
+    "start": "16:00",
+    "end": "17:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.barcorso.ca/menus",
-    "deals": []
+    "source_url": "https://www.barcorso.ca/_files/ugd/ec361e_94d56fd70d6443fba7ec22209e6445de.pdf",
+    "deals": [
+     {
+      "name": "Negroni Classico",
+      "price": "$11",
+      "category": "drink",
+      "description": "Gin, Campari, Cinzano Rosso"
+     },
+     {
+      "name": "Aperol Spritz",
+      "price": "$11",
+      "category": "drink",
+      "description": "Aperol, Prosecco, Soda"
+     },
+     {
+      "name": "Single Highball",
+      "price": "$6",
+      "category": "drink",
+      "description": "Gin, Vodka, Rye, Rum, or Tequila"
+     },
+     {
+      "name": "Double Highball",
+      "price": "$11",
+      "category": "drink",
+      "description": "Gin, Vodka, Rye, Rum, or Tequila"
+     },
+     {
+      "name": "House Wine",
+      "price": "$10",
+      "category": "drink",
+      "description": "Red, white, or rosé (5oz)"
+     },
+     {
+      "name": "Euro Lager",
+      "price": "$6",
+      "category": "drink",
+      "description": "Draft beer (12oz)"
+     },
+     {
+      "name": "Crostini",
+      "price": "$3 ea",
+      "category": "food",
+      "description": "Wagyu, Tonnato, Ricotta, Tapenade, or Pomodoro Affumicato"
+     },
+     {
+      "name": "Black Truffle Chips",
+      "price": "$3",
+      "category": "food",
+      "description": "Patatine al Tartufo"
+     },
+     {
+      "name": "Olives alla Corso",
+      "price": "$9",
+      "category": "food",
+      "description": "Warm olives with citrus, calabrian chilli, garlic"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       2,
+       3,
+       4
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "label": "Aperitivo (Weekdays)"
+     },
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "22:00",
+      "end": "23:00",
+      "label": "Digestivo"
+     },
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "23:00",
+      "end": null,
+      "label": "Digestivo (Late)"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -13084,13 +14049,13 @@
       "name": "Averill Creek Charme De L'ile",
       "price": "$12",
       "category": "drink",
-      "description": "Sparkling wine, Duncan, BC (regular $15)"
+      "description": "Sparkling wine by the glass, Duncan, BC (regular $15)"
      },
      {
       "name": "Scout '25 Orange",
       "price": "$12",
       "category": "drink",
-      "description": "Epicure, La Crescent, Gewurztraminer, Pinot Gris and Riesling, Cawston (regular $15)"
+      "description": "Orange wine by the glass: Epicure, La Crescent, Gewurztraminer, Pinot Gris and Riesling, Cawston (regular $15)"
      },
      {
       "name": "Little Farm Chardonnay",
@@ -13102,7 +14067,7 @@
       "name": "Sage Hills Merlot",
       "price": "$12",
       "category": "drink",
-      "description": "100% organic Merlot, Okanagan Valley, on tap (regular $15)"
+      "description": "100% organic Merlot on tap, Okanagan Valley (regular $15)"
      },
      {
       "name": "Draft Beer",
@@ -13157,6 +14122,21 @@
       "price": "$10",
       "category": "food",
       "description": "Fresh grilled corn coated with salted egg yolk, butter and coriander (vegetarian)"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
      }
     ]
    },
@@ -13230,13 +14210,23 @@
       "name": "Draft (16oz)",
       "price": "$6",
       "category": "drink",
-      "description": "16oz draft: Main Street Premium Pilsner, Naked Fox West Coast IPA, Kingpin Juicy Hazy Pale Ale, or Krush Crisp Lager"
+      "description": "16oz draft: Main Street Premium Pilsner, Naked Fox West Coast IPA, Kingpin Juicy Hazy Pale Ale, Krush Crisp Lager"
      },
      {
       "name": "Cask (20oz)",
       "price": "$6.75",
       "category": "drink",
       "description": "20oz cask pour"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       1
+      ],
+      "start": "12:00",
+      "end": "22:00",
+      "label": "All day Monday"
      }
     ]
    },
@@ -13372,12 +14362,16 @@
       "price": "$8.50",
       "category": "drink",
       "description": "Brut sparkling wine, 150ml"
-     },
+     }
+    ],
+    "extra_windows": [
      {
-      "name": "Karaoke Room Rate",
-      "price": "$5.00",
-      "category": "drink",
-      "description": "Happy Hour Karaoke room rate per person; minimum charge of $5.00 applies. Runs 2pm-6pm daily and all day Wednesday"
+      "days": [
+       3
+      ],
+      "start": "14:00",
+      "end": null,
+      "label": "All-day Wed karaoke"
      }
     ]
    },
@@ -13452,21 +14446,22 @@
       "name": "Happy Hour Cocktails",
       "price": "$10 ea",
       "category": "drink",
-      "description": "2oz cocktails: Long Island Iced Tea, Shaft (Polar Ice vodka, Carolan's, Kahlua, cold brew), Moscow Mule (Polar Ice vodka, lime, ginger beer)"
+      "description": "2oz cocktails: Long Island Iced Tea, Shaft, Moscow Mule"
      },
      {
       "name": "Pickleback Shot",
       "price": "$5",
       "category": "drink",
-      "description": "1oz pickleback shot (regular price $7)"
+      "description": "1oz pickleback shot"
      },
      {
       "name": "Abe's Lager",
       "price": "$5",
       "category": "drink",
-      "description": "16oz Uncle Abe's Lager on draft"
+      "description": "16oz house lager on special during happy hour"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -13534,82 +14529,116 @@
     "source_url": "https://www.thewatson.ca/",
     "deals": [
      {
-      "name": "Happy Hour Cocktails",
-      "price": "$11-14",
+      "name": "Watson's Gimlet",
+      "price": "$11",
       "category": "drink",
-      "description": "Watson's Gimlet (gin, basil, lime leaf, fresh lime); Blue Pony Club (flor de cana 4yr, blue pineapple gomme, lime); Paloma (el jimador blanco, aperol, cacao, orange, acid); The Watson (tanqueray, blanco vermouth blend, averna, orange bitters, barrel aged); Sbagliato (house amer picon, campari, bubbles)"
+      "description": "gin, basil, lime leaf, fresh lime"
+     },
+     {
+      "name": "Blue Pony Club",
+      "price": "$11",
+      "category": "drink",
+      "description": "flor de cana 4yr, blue pineapple gomme, lime"
+     },
+     {
+      "name": "Paloma",
+      "price": "$14",
+      "category": "drink",
+      "description": "el jimador blanco, aperol, cacao, orange, acid"
+     },
+     {
+      "name": "The Watson",
+      "price": "$14",
+      "category": "drink",
+      "description": "tanqueray, blanco vermouth blend, averna, orange bitters, barrel aged"
+     },
+     {
+      "name": "Sbagliato",
+      "price": "$11",
+      "category": "drink",
+      "description": "house amer picon, campari, bubbles"
      },
      {
       "name": "Draught Beer",
       "price": "$6.75",
       "category": "drink",
-      "description": "Happy hour draught beer"
+      "description": "happy hour draught beer"
      },
      {
       "name": "House Wine",
       "price": "$10",
       "category": "drink",
-      "description": "Happy hour house wine"
+      "description": "happy hour house wine"
      },
      {
       "name": "Chorizo in Red Wine",
       "price": "$10",
       "category": "food",
-      "description": "Happy hour food menu item"
+      "description": "happy hour food menu item"
      },
      {
       "name": "Bread & Burrata",
       "price": "$12",
       "category": "food",
-      "description": "Happy hour food menu item"
+      "description": "happy hour food menu item"
      },
      {
       "name": "Wild Boar Carnitas",
       "price": "$12",
       "category": "food",
-      "description": "Happy hour food menu item"
+      "description": "happy hour food menu item"
      },
      {
       "name": "Sweet & Spicy Nuts",
       "price": "$7",
       "category": "food",
-      "description": "Happy hour food menu item"
+      "description": "happy hour food menu item"
      },
      {
       "name": "Grilled Prawns",
       "price": "$13",
       "category": "food",
-      "description": "Happy hour food menu item"
+      "description": "happy hour food menu item"
      },
      {
       "name": "Confit Tuna",
       "price": "$14",
       "category": "food",
-      "description": "Happy hour food menu item"
+      "description": "happy hour food menu item"
      },
      {
       "name": "Smoked Olives",
       "price": "$7",
       "category": "food",
-      "description": "Applewood smoked olives"
+      "description": "applewood smoked olives"
      },
      {
       "name": "Harissa Carrots",
       "price": "$11",
       "category": "food",
-      "description": "Happy hour food menu item"
+      "description": "happy hour food menu item"
      },
      {
       "name": "Patatas Bravas",
       "price": "$8",
       "category": "food",
-      "description": "Happy hour food menu item"
+      "description": "happy hour food menu item"
      },
      {
       "name": "Caramelized Onion Dip",
       "price": "$13",
       "category": "food",
-      "description": "Happy hour food menu item"
+      "description": "happy hour food menu item"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "label": "Saturday"
      }
     ]
    },
@@ -13666,7 +14695,6 @@
    "website": "http://www.junctionpub.com/",
    "happy_hour": {
     "days": [
-     1,
      2,
      3,
      4,
@@ -13679,10 +14707,10 @@
     "source_url": "https://www.junctionpub.com/happy-hour",
     "deals": [
      {
-      "name": "Draft beer",
+      "name": "Draft beers",
       "price": "$6.25",
       "category": "drink",
-      "description": "Draft beers"
+      "description": "Draught beer"
      },
      {
       "name": "House wine",
@@ -13691,10 +14719,10 @@
       "description": "6oz glass of house wine"
      },
      {
-      "name": "Growers cider",
+      "name": "Growers ciders",
       "price": "$6.50",
       "category": "drink",
-      "description": "Growers ciders"
+      "description": "Growers cider"
      },
      {
       "name": "Jameson shot",
@@ -13703,7 +14731,7 @@
       "description": "Shot of Jameson"
      },
      {
-      "name": "Well highball",
+      "name": "Well highballs",
       "price": "$6",
       "category": "drink",
       "description": "Single well highballs: Polar Ice Vodka, Lambs White or Dark Rum, Beefeater Gin, Wisers Rye, Ballantines Scotch"
@@ -13719,6 +14747,16 @@
       "price": "$9.50",
       "category": "food",
       "description": "Onion rings, yam fries or spring rolls"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       1
+      ],
+      "start": "13:30",
+      "end": null,
+      "label": "All day Monday"
      }
     ]
    },
@@ -13789,28 +14827,28 @@
       "description": "Provolone and onion jam served on Fife Bakery Sourdough (regular menu price $10)"
      },
      {
-      "name": "Laugh-a-Lot Lager (14oz)",
+      "name": "Laugh-a-Lot Lager",
       "price": "$5",
       "category": "drink",
-      "description": "Mum's house lager (Phillips Brewing, Victoria BC); regular menu price $7"
+      "description": "Mum's house lager, 14oz"
      },
      {
       "name": "Idleback Amber Ale",
       "price": "$6",
       "category": "drink",
-      "description": "Slackwater Brewing, Port Moody BC; regular menu price $8"
+      "description": "Amber ale, 14oz"
      },
      {
       "name": "Highballs",
-      "price": "$5 single / $9 double",
+      "price": "$5",
       "category": "drink",
-      "description": "Smirnoff Vodka, Gordon's Gin, Jose Cuervo Tequila, Wiser's Special Blend Whiskey, or Captain Morgan's White Rum"
+      "description": "Single $5 / Double $9 — Smirnoff Vodka, Gordon's Gin, Jose Cuervo Tequila, Wiser's Special Blend Whiskey, Captain Morgan's White Rum"
      },
      {
-      "name": "Wine (6oz)",
+      "name": "Wine",
       "price": "$11",
       "category": "drink",
-      "description": "White: The Hatch 'B Yanco'; Red: The Hatch 'Gobsmacked Flipping the Bird'; Rose: The Hatch Ross-O"
+      "description": "6oz pour — White: The Hatch 'B Yanco'; Red: The Hatch 'Gobsmacked Flipping the Bird'; Rose: The Hatch Ross-O"
      },
      {
       "name": "Fiesta",
@@ -13820,33 +14858,43 @@
      },
      {
       "name": "Shaft",
-      "price": "1oz $5 / 2oz $9",
+      "price": "$5",
       "category": "drink",
-      "description": "Smirnoff vodka, Kahlua, cold brew"
+      "description": "Smirnoff vodka, Kahlua, cold brew — 1oz $5 / 2oz $9"
      },
      {
-      "name": "Army Navy (2oz)",
+      "name": "Army Navy",
       "price": "$10",
       "category": "drink",
-      "description": "Gin, oat orgeat, lemon, angostura"
+      "description": "2oz — Gin, oat orgeat, lemon, angostura"
      },
      {
-      "name": "Hotel Saskatchewan (2oz)",
+      "name": "Hotel Saskatchewan",
       "price": "$10",
       "category": "drink",
-      "description": "Rye, lemon, honey"
+      "description": "2oz — Rye, lemon, honey"
      },
      {
-      "name": "Daiquiri (2oz)",
+      "name": "Daiquiri",
       "price": "$10",
       "category": "drink",
-      "description": "Rum, lime, cane sugar"
+      "description": "2oz — Rum, lime, cane sugar"
      },
      {
-      "name": "Tommy's Margarita (2oz)",
+      "name": "Tommy's Margarita",
       "price": "$10",
       "category": "drink",
-      "description": "Tequila, agave, lime"
+      "description": "2oz — Tequila, agave, lime"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0
+      ],
+      "start": "10:00",
+      "end": null,
+      "label": "Sunday all day"
      }
     ]
    },
@@ -13916,7 +14964,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "http://www.oldspaghettifactory.ca/locations/gastown",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -13982,7 +15031,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "http://www.daebakbonga.com/",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -14101,7 +15151,7 @@
       "name": "House Red or White Wine",
       "price": "$6 / $9",
       "category": "drink",
-      "description": "house red or white by the glass, two pour sizes"
+      "description": "house wine by the glass, two pour sizes"
      },
      {
       "name": "Sandbar Highballs",
@@ -14145,7 +15195,8 @@
       "category": "drink",
       "description": "signature cocktail"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -14204,16 +15255,106 @@
      1,
      2,
      3,
-     4,
-     5,
-     6
+     4
     ],
     "start": "15:00",
     "end": "17:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.minamirestaurant.com/menu",
-    "deals": []
+    "source_url": "https://www.minamirestaurant.com/s/MinamiVan-HH-Menu-MAY2026-V2.pdf",
+    "deals": [
+     {
+      "name": "Salmon Oshi",
+      "price": "$9",
+      "category": "food",
+      "description": "3pc pressed BC wild sockeye salmon, jalapeño, Miku sauce"
+     },
+     {
+      "name": "Ebi Oshi",
+      "price": "$9",
+      "category": "food",
+      "description": "3pc pressed prawn, lime zest, ume sauce"
+     },
+     {
+      "name": "Saba Bo Oshi",
+      "price": "$9",
+      "category": "food",
+      "description": "3pc soy glaze, shiso, sesame ginger scallion salsa"
+     },
+     {
+      "name": "Oshi Sampler",
+      "price": "$9",
+      "category": "food",
+      "description": "3pc salmon oshi, ebi oshi, and saba bo oshi"
+     },
+     {
+      "name": "Garden Roll",
+      "price": "$8",
+      "category": "food",
+      "description": "4pc shiso, nanohana, cucumber, pickled daikon carrot, avocado, seasoned cherry tomato"
+     },
+     {
+      "name": "Steamed Edamame",
+      "price": "$4",
+      "category": "food",
+      "description": "Kosher salt"
+     },
+     {
+      "name": "Brussels Sprouts",
+      "price": "$5",
+      "category": "food",
+      "description": "Togarashi-lemon pepper salt"
+     },
+     {
+      "name": "Gyoza",
+      "price": "$7",
+      "category": "food",
+      "description": "3pc pork or prawn"
+     },
+     {
+      "name": "Ebi Fritters",
+      "price": "$10",
+      "category": "food",
+      "description": "3pc tiger prawns, harissa aioli, soy balsamic reduction, Asian slaw, chili-lime vinaigrette"
+     },
+     {
+      "name": "Aburi Prawn Cocktail",
+      "price": "$12",
+      "category": "food",
+      "description": "Aburi-style cocktail sauce, greens, jumbo prawns"
+     },
+     {
+      "name": "Sapporo",
+      "price": "$5",
+      "category": "drink",
+      "description": "16oz beer"
+     },
+     {
+      "name": "Single Well Highball",
+      "price": "$7",
+      "category": "drink",
+      "description": "1oz highball"
+     },
+     {
+      "name": "Local Wine",
+      "price": "$7",
+      "category": "drink",
+      "description": "5oz red, rosé, or white"
+     },
+     {
+      "name": "Aburi Ginjo Sake",
+      "price": "$7",
+      "category": "drink",
+      "description": "4oz sake"
+     },
+     {
+      "name": "Kanpai Duo",
+      "price": "$15",
+      "category": "drink",
+      "description": "Aburi Prawn Cocktail + Winemakers Cut Rosé (5oz)"
+     }
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -14286,10 +15427,10 @@
       "name": "Soup of the Day",
       "price": "$14",
       "category": "food",
-      "description": "Ask your server for the daily selection"
+      "description": "Ask your server for the daily soup"
      },
      {
-      "name": "Top of Vancouver Fries",
+      "name": "Top Of Vancouver Fries",
       "price": "$14",
       "category": "food",
       "description": "House fries"
@@ -14304,7 +15445,7 @@
       "name": "Tomato Bocconcini Caprese",
       "price": "$16",
       "category": "food",
-      "description": "Gluten-free, vegetarian"
+      "description": "Gluten-free, vegetarian caprese salad"
      },
      {
       "name": "Wings and Drummettes (6)",
@@ -14316,13 +15457,13 @@
       "name": "Jumbo Prawn Cocktail (3)",
       "price": "$20",
       "category": "food",
-      "description": "Gluten-free"
+      "description": "Gluten-free poached jumbo prawns with cocktail sauce"
      },
      {
       "name": "Steamed Mussels",
       "price": "$20",
       "category": "food",
-      "description": "Gluten-free"
+      "description": "Gluten-free steamed mussels"
      },
      {
       "name": "Chicken Tenders and Fries",
@@ -14340,25 +15481,49 @@
       "name": "Salmon Tartare",
       "price": "$30",
       "category": "food",
-      "description": "From dinner menu at happy hour price; ponzu sesame dressing, avocado, red onion, sunflower seeds, olive oil"
+      "description": "From dinner menu; ponzu sesame dressing, avocado, red onion, sunflower seeds, olive oil"
      },
      {
       "name": "Wagyu Beef Carpaccio",
       "price": "$34",
       "category": "food",
-      "description": "From dinner menu at happy hour price; parmesan, arugula, olives, pickled onions, horseradish aioli, truffle oil"
+      "description": "From dinner menu; parmesan, arugula, olives, pickled onions, horseradish aioli, truffle oil"
      },
      {
-      "name": "House Red, White or Rose",
-      "price": "$12-16",
+      "name": "Mafalda Corta Bolognese",
+      "price": "$50",
+      "category": "food",
+      "description": "From dinner menu; miniature lasagna ribbons, Italian beef ragu, basil, bocconcini, olive oil"
+     },
+     {
+      "name": "Ahi Tuna Steak",
+      "price": "$60",
+      "category": "food",
+      "description": "From dinner menu; sesame crusted, seared rare, Japanese soy vinaigrette, green papaya salad"
+     },
+     {
+      "name": "10 oz New York Steak",
+      "price": "$77",
+      "category": "food",
+      "description": "From dinner menu; 28 day aged NY striploin, peppercorn demi glace"
+     },
+     {
+      "name": "House Red, White, Rose",
+      "price": "$12 - $16",
       "category": "drink",
-      "description": "6oz $12 / 9oz $16"
+      "description": "6oz $12, 9oz $16"
+     },
+     {
+      "name": "Villa Teresa Prosecco",
+      "price": "$20",
+      "category": "drink",
+      "description": "375ml bottle"
      },
      {
       "name": "Rotating Draft (20oz)",
       "price": "$11.5",
       "category": "drink",
-      "description": "Ask your server for the current tap"
+      "description": "Ask your server for the current rotating tap"
      },
      {
       "name": "Slackwater Brewery Amber Ale (20oz)",
@@ -14373,34 +15538,28 @@
       "description": "4.0% lager"
      },
      {
-      "name": "Villa Teresa Prosecco",
-      "price": "$20",
-      "category": "drink",
-      "description": "375ml bottle"
-     },
-     {
       "name": "Rail Highballs",
-      "price": "$11-15",
+      "price": "$11 - $15",
       "category": "drink",
-      "description": "1oz $11 / 2oz $15; Canadian Club, Beefeater, El Jimador, Skyy Vodka, Captain Morgan"
+      "description": "1oz $11, 2oz $15; Canadian Club, Beefeater, El Jimador, Skyy Vodka, Captain Morgan"
      },
      {
       "name": "Deluxe Highballs",
-      "price": "$14-19",
+      "price": "$14 - $19",
       "category": "drink",
-      "description": "1oz $14 / 2oz $19; Forty Creek, Lot 40, Grey Goose, Tanqueray 10, Casamigos, Bumbu XO"
+      "description": "1oz $14, 2oz $19; Forty Creek, Lot 40, Grey Goose, Tanqueray 10, Casamigos, Bumbu XO"
      },
      {
       "name": "TOV Caesar",
-      "price": "$15-18.5",
+      "price": "$15 / $18.5",
       "category": "drink",
-      "description": "1oz $15 / 2oz $18.50; 'Resurrection' garlic vodka, clamato, Tabasco & Worcestershire, steak spice rim"
+      "description": "1oz/2oz; garlic vodka, clamato, Tabasco & Worcestershire, steak spice rim"
      },
      {
       "name": "Pineapple Inferno",
-      "price": "$15-18",
+      "price": "$15 / $18",
       "category": "drink",
-      "description": "1oz $15 / 2oz $18; Dulce Vida pineapple & jalapeno tequila, fresh pineapple, lime, soda"
+      "description": "1oz/2oz; pineapple & jalapeno tequila, fresh pineapple, lime, soda"
      },
      {
       "name": "Hibiscus Margarita",
@@ -14412,9 +15571,10 @@
       "name": "Caramel Pick Me Up",
       "price": "$16",
       "category": "drink",
-      "description": "2oz; Van Gogh caramel vodka, Baileys, Kahlua, chilled espresso"
+      "description": "2oz; caramel vodka, Baileys, Kahlua, chilled espresso"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -14493,13 +15653,13 @@
       "name": "Single Highballs",
       "price": "$7",
       "category": "drink",
-      "description": "Single highballs"
+      "description": "single highballs"
      },
      {
       "name": "Wine by the glass",
       "price": "$8",
       "category": "drink",
-      "description": "House white & red"
+      "description": "house white & red"
      },
      {
       "name": "Kyoto Sour",
@@ -14511,7 +15671,7 @@
       "name": "Raincity Refresher",
       "price": "$12",
       "category": "drink",
-      "description": "Gin, cucumber, rosemary sage simple syrup, lemon juice, soda"
+      "description": "gin, cucumber, rosemary sage simple syrup, lemon juice, soda"
      },
      {
       "name": "Fresh Shucked West Coast Oysters",
@@ -14523,7 +15683,7 @@
       "name": "Maple Walnut Prawns",
       "price": "$9",
       "category": "food",
-      "description": "Lightly fried VFC tempura prawns, yuzu mayo, walnuts, toasted sesame, togarashi; +add maple walnut prawn $3.5"
+      "description": "lightly fried VFC tempura prawns, yuzu mayo, walnuts, toasted sesame, togarashi; +add maple walnut prawn $3.5"
      },
      {
       "name": "Mussels & Frites",
@@ -14535,31 +15695,31 @@
       "name": "Boneless Chicken Wings",
       "price": "$14",
       "category": "food",
-      "description": "Crispy fried chicken thighs, Frank's Red Hot & butter, chives"
+      "description": "crispy fried chicken thighs, Frank's Red Hot & butter, chives"
      },
      {
       "name": "Caesar Salad",
       "price": "$7",
       "category": "food",
-      "description": "Chilled romaine, white anchovy, croutons, parmesan"
+      "description": "chilled romaine, white anchovy, croutons, parmesan"
      },
      {
       "name": "Garlic Bread",
       "price": "$3",
       "category": "food",
-      "description": "Garlic herb butter, toasted baguette"
+      "description": "garlic herb butter, toasted baguette"
      },
      {
       "name": "Fries",
       "price": "$4",
       "category": "food",
-      "description": "Fries"
+      "description": "fries"
      },
      {
       "name": "Wild Salmon",
       "price": "$35",
       "category": "food",
-      "description": "Seared salmon, seasonal vegetables, garlic roasted potatoes, watercress & fennel salad, herb beurre blanc"
+      "description": "seared salmon, seasonal vegetables, garlic roasted potatoes, watercress & fennel salad, herb beurre blanc"
      },
      {
       "name": "1 pc Halibut & Fries",
@@ -14571,13 +15731,29 @@
       "name": "Seafood Linguini",
       "price": "$26",
       "category": "food",
-      "description": "Local sustainable seafood, prawns, sundried tomato cream sauce"
+      "description": "local sustainable seafood, prawns, sundried tomato cream sauce"
      },
      {
       "name": "Striploin",
       "price": "$45",
       "category": "food",
       "description": "Two Rivers AAA striploin, herb roasted potatoes, seasonal vegetables, red wine jus, garlic butter"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
      }
     ]
    },
@@ -14655,13 +15831,13 @@
       "description": "40% off all Champagne and sparkling wine"
      },
      {
-      "name": "Local beer",
+      "name": "Local beers",
       "price": "$7.50",
       "category": "drink",
       "description": "Local beers"
      },
      {
-      "name": "Feature wine",
+      "name": "Feature wines",
       "price": "$10.50",
       "category": "drink",
       "description": "Feature wines by the glass"
@@ -14673,7 +15849,7 @@
       "description": "Well highballs"
      },
      {
-      "name": "Oysters",
+      "name": "Fresh oysters",
       "price": "$22.75",
       "category": "food",
       "description": "Fresh oysters, per half dozen"
@@ -14682,21 +15858,22 @@
       "name": "Prime Beef Sliders",
       "price": "$19.50",
       "category": "food",
-      "description": "From the Social Hour menu"
+      "description": "Prime beef sliders from the Social Hour menu"
      },
      {
       "name": "Seymour Street Fried Chicken",
       "price": "$16.50",
       "category": "food",
-      "description": "From the Social Hour menu"
+      "description": "Fried chicken from the Social Hour menu"
      },
      {
       "name": "Steak & Prawn Skewers",
       "price": "$17.00",
       "category": "food",
-      "description": "From the Social Hour menu"
+      "description": "Steak and prawn skewers from the Social Hour menu"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -14762,7 +15939,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://sylviahotel.com/restaurant-lounge/",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -14817,9 +15995,7 @@
    "website": "https://thepawnshopyvr.com/",
    "happy_hour": {
     "days": [
-     0,
      1,
-     2,
      3,
      4,
      5,
@@ -14835,34 +16011,34 @@
       "name": "Pawn Shop Lager",
       "price": "$5.95",
       "category": "drink",
-      "description": "Pawn Shop Lager by Stanley Park, 14oz draught"
+      "description": "Pawn Shop Lager by Stanley Park, 14oz (house drink price)"
      },
      {
-      "name": "House Tequila Shot",
+      "name": "House tequila shot",
       "price": "$5.95",
       "category": "drink",
       "description": "1oz house tequila"
      },
      {
-      "name": "Spiked Slush",
+      "name": "Spiked slush",
       "price": "$5.95",
       "category": "drink",
-      "description": "1oz vodka, rum, gin, whiskey or tequila with choice of mix"
+      "description": "House drink price"
      },
      {
-      "name": "House Highball",
+      "name": "Pick your weapon highball",
       "price": "$5.95",
       "category": "drink",
-      "description": "Pick your weapon (1oz vodka, rum, gin, whiskey or tequila) plus a mix: soda, coke, diet coke, tonic, ginger ale, cranberry, orange juice, mango, guava, sprite or grapefruit"
+      "description": "1oz vodka, rum, gin, whiskey or tequila with choice of mix (soda, coke, diet coke, tonic, ginger ale, cranberry, orange juice, mango, guava, sprite, grapefruit)"
      },
      {
-      "name": "Premium Slush",
+      "name": "Premium slush",
       "price": "$8.95",
       "category": "drink",
       "description": "1oz Grey Goose or Patron Silver with choice of mix; add Red Bull +$2.50"
      },
      {
-      "name": "Feature Sangria",
+      "name": "Feature sangria",
       "price": "$9.95",
       "category": "drink",
       "description": "6oz feature sangria"
@@ -14872,6 +16048,17 @@
       "price": "$2.99",
       "category": "food",
       "description": "Artichoke, cauliflower, chicken tinga, carnitas, al pastor or beef"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       2
+      ],
+      "start": "12:00",
+      "end": "01:00",
+      "label": "All day"
      }
     ]
    },
@@ -14943,10 +16130,10 @@
     "source_url": "https://www.dibeppe.com/happy-hour-menu",
     "deals": [
      {
-      "name": "Any bottle of wine",
+      "name": "Bottles of wine",
       "price": "$15 off",
       "category": "drink",
-      "description": "$15 off any bottle of wine during Aperitivo Hour"
+      "description": "$15 off any bottle of wine"
      },
      {
       "name": "Cocktails",
@@ -14964,7 +16151,7 @@
       "name": "Vino della Casa",
       "price": "$8",
       "category": "drink",
-      "description": "House wine — Rosso, Bianco or Rosato"
+      "description": "House wine — rosso, bianco or rosato"
      },
      {
       "name": "Prosecco",
@@ -14978,7 +16165,8 @@
       "category": "drink",
       "description": "Draft beer"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -15057,25 +16245,25 @@
       "name": "Bistro Wine",
       "price": "$6",
       "category": "drink",
-      "description": "5oz glass of Bistro white or red"
+      "description": "5oz glass of Bistro White or Bistro Red"
      },
      {
-      "name": "Premium Highballs",
+      "name": "Happy Hour Premium Highballs",
       "price": "$6",
       "category": "drink",
-      "description": "1oz happy hour premium highball; double shot +$3"
+      "description": "1oz highball; double shot + $3"
      },
      {
       "name": "Shooters with Boo",
       "price": "$6",
       "category": "drink",
-      "description": "1oz shooter — Fireball, Limoncello or Sambuca"
+      "description": "1oz shooter - Fireball, Limoncello or Sambuca"
      },
      {
       "name": "Sorbet Soda",
       "price": "$6",
       "category": "drink",
-      "description": "1oz version of the vodka, soda, mint and mango sorbet cocktail"
+      "description": "1oz vodka, soda, mint, mango sorbet"
      },
      {
       "name": "Street Legal Dealcoholized Pilsner",
@@ -15084,48 +16272,49 @@
       "description": "473ml can of non-alcoholic pilsner"
      },
      {
-      "name": "Strawberry Lemonade",
+      "name": "Our Trademark Strawberry Lemonade",
       "price": "$6",
       "category": "drink",
-      "description": "Their trademark macerated strawberry lemonade"
+      "description": "Macerated strawberries, lemonade"
      },
      {
       "name": "Burgoo Burger + Brew",
       "price": "$25",
       "category": "food",
-      "description": "The Burgoo Burger paired with a brew"
+      "description": "The Burgoo Burger paired with a beer"
      },
      {
       "name": "Parmesan Fries",
-      "price": "$11",
+      "price": "Buy 1 get 1 free",
       "category": "food",
-      "description": "Featured starter — buy 1 get 1 free; parmesan, parsley, pesto mayo"
+      "description": "Featured happy hour starter, $11 - parmesan, parsley, pesto mayo"
      },
      {
       "name": "Hummus & Flatbread",
-      "price": "$11",
+      "price": "Buy 1 get 1 free",
       "category": "food",
-      "description": "Featured starter — buy 1 get 1 free; garlicky chickpea purée, paprika, parsley, warm flatbread"
+      "description": "Featured happy hour starter, $11 - garlicky chickpea puree, paprika, parsley, warm flatbread"
      },
      {
       "name": "Guacamole & Tortilla Chips",
-      "price": "$11",
+      "price": "Buy 1 get 1 free",
       "category": "food",
-      "description": "Featured starter — buy 1 get 1 free; fresh avocado, pickled jalapeno, cilantro"
+      "description": "Featured happy hour starter, $11 - fresh avocado, pickled jalapeno, cilantro"
      },
      {
       "name": "Mini Mac + Cheese",
-      "price": "$12",
+      "price": "Buy 1 get 1 free",
       "category": "food",
-      "description": "Featured starter — buy 1 get 1 free; first course version of the classic"
+      "description": "Featured happy hour starter, $12 - a first course version of the classic"
      },
      {
       "name": "Crispy Brussel Sprouts",
-      "price": "$13",
+      "price": "Buy 1 get 1 free",
       "category": "food",
-      "description": "Featured starter — buy 1 get 1 free; balsamic drizzle, bacon, chives"
+      "description": "Featured happy hour starter, $13 - balsamic drizzle, bacon, chives"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -15193,7 +16382,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://skewersgastown.ca/",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -15266,43 +16456,43 @@
       "name": "Sopra Sotto Lager",
       "price": "$6",
       "category": "drink",
-      "description": ""
+      "description": "House lager on draft"
      },
      {
       "name": "House Wine",
       "price": "$8",
       "category": "drink",
-      "description": ""
+      "description": "House red or white"
      },
      {
       "name": "Prosecco",
       "price": "$8",
       "category": "drink",
-      "description": ""
+      "description": "Glass of prosecco"
      },
      {
       "name": "Aperol Spritz",
       "price": "$10",
       "category": "drink",
-      "description": ""
+      "description": "Aperol, prosecco, soda, orange"
      },
      {
       "name": "Negroni",
       "price": "$10",
       "category": "drink",
-      "description": ""
+      "description": "Gin, campari, martini rosso vermouth"
      },
      {
       "name": "Mini Diavola Pizza Fritta",
       "price": "$10",
       "category": "food",
-      "description": ""
+      "description": "Fried mini pizza with spicy italian salami"
      },
      {
       "name": "Mini Capricciosa Pizza Fritta",
       "price": "$10",
       "category": "food",
-      "description": ""
+      "description": "Fried mini pizza, capricciosa style"
      },
      {
       "name": "Arancini",
@@ -15320,7 +16510,7 @@
       "name": "Pizza Margherita",
       "price": "$16",
       "category": "food",
-      "description": ""
+      "description": "San marzano tomato sauce, mozzarella, basil, grana padano"
      },
      {
       "name": "Spaghetti Cacio e Pepe",
@@ -15332,7 +16522,23 @@
       "name": "Calamari Fritti",
       "price": "$20",
       "category": "food",
-      "description": ""
+      "description": "Deep fried squid, roasted garlic aioli, agrodolce"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
      }
     ]
    },
@@ -15402,7 +16608,105 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://www.tableaubarbistro.com/menu",
-    "deals": []
+    "deals": [
+     {
+      "name": "Le Happy Meal",
+      "price": "$15",
+      "category": "food",
+      "description": "Tiny-Tini (2oz martini) & Frites combo"
+     },
+     {
+      "name": "Smoked Fish Dip",
+      "price": "$14",
+      "category": "food",
+      "description": "Lightly smoked white fish, capers, crème fraîche, saltines"
+     },
+     {
+      "name": "French Onion Soup",
+      "price": "$16",
+      "category": "food",
+      "description": "Rich onion broth, Gruyère cheese, croutons"
+     },
+     {
+      "name": "Caesar",
+      "price": "$18",
+      "category": "food",
+      "description": "Baby gem lettuce, roasted garlic dressing, anchovy, croutons"
+     },
+     {
+      "name": "Spot Prawn Cocktail",
+      "price": "$27",
+      "category": "food",
+      "description": "Zeke's BC spot prawns, brandy cocktail sauce"
+     },
+     {
+      "name": "Foie Gras Monte Cristo",
+      "price": "$26",
+      "category": "food",
+      "description": "Marzipan pain perdu, peach preserve, almond vinaigrette, brandy maple syrup"
+     },
+     {
+      "name": "Bleu Électrique Spritz",
+      "price": "$14",
+      "category": "drink",
+      "description": "Northern Keep Vodka, Blue Curaçao, Lavender Syrup, Lemon, Sparkling Wine"
+     },
+     {
+      "name": "Clarified Apricot Sour",
+      "price": "$15",
+      "category": "drink",
+      "description": "Alberta Premium Golden Rye 9yr, Bigallet Thym, Giffard Abricot du Roussillon, Acidified Apricot Nectar"
+     },
+     {
+      "name": "Pepper Passion Margarita",
+      "price": "$16",
+      "category": "drink",
+      "description": "Olmeca Altos Plata, 400 Conejos Mezcal, Giffard Piment d'Espellette, Red Pepper & Passion Fruit"
+     },
+     {
+      "name": "50/50 Martini",
+      "price": "$8",
+      "category": "drink",
+      "description": "Absolut or Beefeater & Noilly Prat Dry, choice of Olive or Citrus Twist"
+     },
+     {
+      "name": "Highballs",
+      "price": "$5",
+      "category": "drink",
+      "description": "Various spirits"
+     },
+     {
+      "name": "Draught Beer",
+      "price": "$7",
+      "category": "drink",
+      "description": "50cl"
+     },
+     {
+      "name": "Peroni Nastro Azzuro",
+      "price": "$8",
+      "category": "drink",
+      "description": "40cl lager"
+     },
+     {
+      "name": "Blonde Bombshell Lager",
+      "price": "$6",
+      "category": "drink",
+      "description": "50cl"
+     },
+     {
+      "name": "House Wine by the Glass",
+      "price": "$2 off",
+      "category": "drink",
+      "description": "Bubbles, White, Rosé & Red"
+     },
+     {
+      "name": "House Wine by the Bottle",
+      "price": "$10 off",
+      "category": "drink",
+      "description": "Bubbles, White, Rosé & Red"
+     }
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -15484,13 +16788,13 @@
       "description": "honey, toasted hazelnuts"
      },
      {
-      "name": "Greens",
+      "name": "Greens Salad",
       "price": "$14",
       "category": "food",
       "description": "escarole, chickpeas, walnuts, onion, pecorino"
      },
      {
-      "name": "Caesar",
+      "name": "Caesar Salad",
       "price": "$14",
       "category": "food",
       "description": "classic dressing, romaine hearts, house-made croutons, pecorino crisps, grana padano"
@@ -15535,45 +16839,46 @@
       "name": "Aperol Spritz",
       "price": "$12",
       "category": "drink",
-      "description": "Aperol, Prosecco (5oz)"
+      "description": "5oz; Aperol, Prosecco"
      },
      {
       "name": "Negroni",
       "price": "$11",
       "category": "drink",
-      "description": "Beefeater Gin, Campari, Cinzano (3oz)"
+      "description": "3oz; Beefeater Gin, Campari, Cinzano"
      },
      {
       "name": "Make Me Happy Prosecco",
       "price": "$8 / $39",
       "category": "drink",
-      "description": "Italian prosecco, 5oz / 25oz"
+      "description": "Italian house sparkling, 5oz / 25oz carafe"
      },
      {
       "name": "Make Me Happy White",
       "price": "$8 / $39",
       "category": "drink",
-      "description": "Italian white wine, 5oz / 25oz"
+      "description": "Italian house white, 5oz / 25oz carafe"
      },
      {
       "name": "Make Me Happy Rosé",
       "price": "$8 / $39",
       "category": "drink",
-      "description": "Italian rosé, 5oz / 25oz"
+      "description": "Italian house rosé, 5oz / 25oz carafe"
      },
      {
       "name": "Make Me Happy Red",
       "price": "$8 / $39",
       "category": "drink",
-      "description": "Italian red wine, 5oz / 25oz"
+      "description": "Italian house red, 5oz / 25oz carafe"
      },
      {
       "name": "Four Winds Huftgold Pilsner",
       "price": "$6",
       "category": "drink",
-      "description": "15oz draught"
+      "description": "15oz draft"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -15640,13 +16945,13 @@
     "end": "18:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "http://theredaccordion.com/",
+    "source_url": "https://www.theredaccordion.com/happy-hour-menu",
     "deals": [
      {
       "name": "Chili Lime Nuts & Wasabi Peas",
       "price": "$9",
       "category": "food",
-      "description": "Happy hour snack"
+      "description": "Chili lime nuts and wasabi peas"
      },
      {
       "name": "Pesto Chicken Skewers",
@@ -15673,7 +16978,7 @@
       "description": "House cut fries, secret jus, cheese curds, truffle pecorino, red wine braised beef, pickled shallots, chives, pickled mustard seed"
      },
      {
-      "name": "Ain't No Thang (chicken wings)",
+      "name": "Ain't No Thang",
       "price": "$22",
       "category": "food",
       "description": "Locally raised crispy chicken wings, birds eye chillies, fresh herbs, maple & tamari soy reduction"
@@ -15685,52 +16990,16 @@
       "description": "6 oz house ground AAA Alberta beef, house baked brioche, whisky onion jam, blue cheese or smoked cheddar, crispy shallots, arugula, garlic aioli, balsamic reduction, kennebec fries"
      },
      {
-      "name": "Main Street Krush Crisp Lager",
+      "name": "Draft Beer",
       "price": "$6.50",
       "category": "drink",
-      "description": "16 oz draft, 4.5% ABV | 16 IBU"
+      "description": "16 oz pours: Main Street Krush Crisp Lager, Main Street Hula Hula Tropical Sour, Parkside Motel Hazy Pale Ale, Vancouver Island West Coast Trail IPA, Vancouver Island Sea Dog Amber Ale"
      },
      {
-      "name": "Main Street Hula Hula Tropical Sour",
-      "price": "$6.50",
-      "category": "drink",
-      "description": "16 oz draft, 5.4% ABV"
-     },
-     {
-      "name": "Parkside Motel Hazy Pale Ale",
-      "price": "$6.50",
-      "category": "drink",
-      "description": "16 oz draft, 5.8% ABV | 40 IBU"
-     },
-     {
-      "name": "Vancouver Island West Coast Trail IPA",
-      "price": "$6.50",
-      "category": "drink",
-      "description": "16 oz draft, 7% ABV | 80 IBU"
-     },
-     {
-      "name": "Vancouver Island Sea Dog Amber Ale",
-      "price": "$6.50",
-      "category": "drink",
-      "description": "16 oz draft, 5.2% ABV | 20 IBU"
-     },
-     {
-      "name": "Garden of Granite Sauvignon Blanc",
+      "name": "Wine",
       "price": "$7.50",
       "category": "drink",
-      "description": "6 oz pour, North Vancouver, BC"
-     },
-     {
-      "name": "Garden of Granite Cabernet Sauvignon",
-      "price": "$7.50",
-      "category": "drink",
-      "description": "6 oz pour, North Vancouver, BC"
-     },
-     {
-      "name": "Monte Creek Living Land Sparkling",
-      "price": "$7.50",
-      "category": "drink",
-      "description": "6 oz pour, Kamloops, BC"
+      "description": "6 oz pours: Garden of Granite Sauvignon Blanc, Garden of Granite Cabernet Sauvignon, Monte Creek Living Land Sparkling"
      },
      {
       "name": "Wine of the Week",
@@ -15742,13 +17011,13 @@
       "name": "Negroni",
       "price": "$10",
       "category": "drink",
-      "description": "2 oz; gin, Campari, sweet vermouth"
+      "description": "Gin, Campari, sweet vermouth (2 oz)"
      },
      {
       "name": "Boulevardier",
       "price": "$10",
       "category": "drink",
-      "description": "2 oz; whiskey/bourbon, Campari, sweet vermouth"
+      "description": "Bourbon/whiskey, Campari, sweet vermouth (2 oz)"
      },
      {
       "name": "Spanish G&T Copa",
@@ -15760,7 +17029,23 @@
       "name": "Lisboa Porto & Tonica",
       "price": "$10",
       "category": "drink",
-      "description": "White port, tonic, fresh orange, mint"
+      "description": "White port, tonic water, fresh orange, mint"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "22:00",
+      "end": null,
+      "label": "Late night"
      }
     ]
    },
@@ -15828,7 +17113,8 @@
     "verified": false,
     "verified_source": null,
     "source_url": "http://www.bigwayhotpot.com/",
-    "deals": []
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -15895,8 +17181,204 @@
     "end": "18:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://haraheri.ca/",
-    "deals": []
+    "source_url": "https://www.haraheri.ca/menu?location=Downtown&menu=happy-hour-menu",
+    "deals": [
+     {
+      "name": "Sapporo Premium Lager",
+      "price": "$6",
+      "category": "drink",
+      "description": "Pint"
+     },
+     {
+      "name": "Sapporo Premium Lager",
+      "price": "$10",
+      "category": "drink",
+      "description": "Mega (24oz)"
+     },
+     {
+      "name": "Sapporo Premium Lager",
+      "price": "$22",
+      "category": "drink",
+      "description": "Pitcher (60oz)"
+     },
+     {
+      "name": "House Wine",
+      "price": "$7",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "House Sake",
+      "price": "$7",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Yuzu Collins",
+      "price": "$10",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Mojito",
+      "price": "$10",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Frozen Cocktails",
+      "price": "$10",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Sangria",
+      "price": "$22",
+      "category": "drink",
+      "description": "1L"
+     },
+     {
+      "name": "Edamame Peperoncino",
+      "price": "$5",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Salted Edamame",
+      "price": "$5",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Nasu",
+      "price": "$5",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Takowasabi",
+      "price": "$5",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Ingen Fries",
+      "price": "$7",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Mekyabetsu",
+      "price": "$7",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Cauliflower Karaage",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Calamari Noir",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Tori Karaage",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Ebi Mayo",
+      "price": "$10",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Tuna Tataki",
+      "price": "$10",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Tontoro",
+      "price": "$11",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Prawn & Avocado Tar Tar",
+      "price": "$12",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Bang Bang G Salad",
+      "price": "$12",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Gomaae Arugula Salad",
+      "price": "$12",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Saba Shima Sushi",
+      "price": "$13",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Cajun Salmon Oshi Sushi",
+      "price": "$13",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Mentaiko Aglio e Olio",
+      "price": "$15",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Harami",
+      "price": "$22",
+      "category": "food",
+      "description": ""
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "11:30",
+      "end": "14:30",
+      "label": "Lunch"
+     },
+     {
+      "days": [
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -15972,7 +17454,7 @@
       "description": "35% off all bottled wine and sherry"
      },
      {
-      "name": "Free Tapas",
+      "name": "Free tapas",
       "price": "Free",
       "category": "food",
       "description": "At the bar only, with drink purchase"
@@ -15984,10 +17466,10 @@
       "description": "25% off regular menu, except for the Raciones and Media sections"
      },
      {
-      "name": "Select Wine",
+      "name": "Select Wine - Red or White",
       "price": "$12",
       "category": "drink",
-      "description": "Select red or white wine"
+      "description": "Select red or white wine by the glass"
      },
      {
       "name": "Select Cava",
@@ -16011,9 +17493,10 @@
       "name": "Estrella",
       "price": "$7",
       "category": "drink",
-      "description": "Estrella beer, 16oz"
+      "description": "Estrella draught, 16oz"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -16125,36 +17608,37 @@
       "description": "triple blanched fries, truffle aioli"
      },
      {
-      "name": "Wine 5oz / Beer 16oz",
+      "name": "Wine or Beer",
       "price": "$6",
       "category": "drink",
-      "description": "red, white, rose, sparkling wine, or beer"
+      "description": "5oz red, white, rose or sparkling wine, or 16oz beer"
      },
      {
       "name": "Rotating Happy Hour Cocktail",
       "price": "$9",
       "category": "drink",
-      "description": "rotating featured cocktail, 2 oz"
+      "description": "rotating featured cocktail, 2oz"
      },
      {
-      "name": "Premium Wine 5oz",
+      "name": "Premium Wine",
       "price": "$12",
       "category": "drink",
-      "description": "red, white, rosé, or sparkling"
+      "description": "5oz red, white, rosé or sparkling"
      },
      {
-      "name": "Spritz It Up! 5oz",
+      "name": "Spritz It Up!",
       "price": "$12",
       "category": "drink",
-      "description": "aperol or hugo; zero proof available"
+      "description": "5oz aperol or hugo spritz; zero proof available"
      },
      {
-      "name": "Martini Your Way 2oz",
+      "name": "Martini Your Way",
       "price": "$12",
       "category": "drink",
-      "description": "grey goose vodka or the botanist gin"
+      "description": "2oz, grey goose vodka or the botanist gin"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -16219,8 +17703,70 @@
     "end": "17:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://tuttorestaurant.ca/menus",
-    "deals": []
+    "source_url": "https://tuttorestaurant.ca/happy-hour",
+    "deals": [
+     {
+      "name": "Grilled Calamari",
+      "price": "$15",
+      "category": "food",
+      "description": "puttanesca, olive tapenade"
+     },
+     {
+      "name": "Prosciutto & Cheese",
+      "price": "$15",
+      "category": "food",
+      "description": "prosciutto, cheese, olives, giardiniera"
+     },
+     {
+      "name": "Tutto Meatballs",
+      "price": "$15",
+      "category": "food",
+      "description": "beef meatballs, tomato sauce"
+     },
+     {
+      "name": "Garlic Prawns",
+      "price": "$15",
+      "category": "food",
+      "description": "chili garlic butter sauce"
+     },
+     {
+      "name": "Margherita",
+      "price": "$19",
+      "category": "food",
+      "description": "san marzano tomatoes, basil, fior di latte"
+     },
+     {
+      "name": "Firenze",
+      "price": "$19-$22",
+      "category": "food",
+      "description": "fennel salami, gorgonzola, honey"
+     },
+     {
+      "name": "Funghi",
+      "price": "$22",
+      "category": "food",
+      "description": "mushroom medley, taleggio, truffles"
+     },
+     {
+      "name": "Diavola",
+      "price": "$22",
+      "category": "food",
+      "description": "spicy soppressata, olives, fior di latte, pickled jalapeño"
+     },
+     {
+      "name": "House Wine",
+      "price": "$7",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Feature Cocktail",
+      "price": "$12",
+      "category": "drink",
+      "description": ""
+     }
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -16383,19 +17929,19 @@
       "name": "Gingerino",
       "price": "$9",
       "category": "drink",
-      "description": "Ginger-infused Aperol, Chardonnay, carbonated (regular menu $16)"
+      "description": "Ginger-infused Aperol, Chardonnay, carbonated"
      },
      {
       "name": "Amore Amaro",
       "price": "$9",
       "category": "drink",
-      "description": "Amaro del Capo, Nonino Amaro, cassis liqueur, carbonated white tea (regular menu $16)"
+      "description": "Amaro del Capo, Nonino Amaro, cassis liqueur, carbonated white tea"
      },
      {
       "name": "Nuovo Sbagliato",
       "price": "$9",
       "category": "drink",
-      "description": "Blend of vermouth, Campari, Lambrusco (regular menu $16)"
+      "description": "Blend of vermouth, Campari, Lambrusco"
      },
      {
       "name": "Floravera",
@@ -16419,34 +17965,34 @@
       "name": "Hoyne North Star Light Lager",
       "price": "$8",
       "category": "drink",
-      "description": "Draft/bottled beer"
+      "description": "Beer"
      },
      {
       "name": "Peroni",
       "price": "$9",
       "category": "drink",
-      "description": "Italian lager"
+      "description": "Beer"
      },
      {
       "name": "Monzo Italian Pilsner",
       "price": "$8",
       "category": "drink",
-      "description": "Italian pilsner"
+      "description": "Beer"
      },
      {
       "name": "Hoyne Dark Matter",
       "price": "$8",
       "category": "drink",
-      "description": "Dark ale"
+      "description": "Beer"
      },
      {
-      "name": "White Wine",
+      "name": "White wine",
       "price": "$9",
       "category": "drink",
       "description": "Calliope Pinot Gris, Okanagan Valley"
      },
      {
-      "name": "Red Wine",
+      "name": "Red wine",
       "price": "$9",
       "category": "drink",
       "description": "Umani Ronchi 'Medoro' Sangiovese, Italy"
@@ -16457,7 +18003,8 @@
       "category": "drink",
       "description": "Medici Ermete 'Bei Momenti' Reggiano Lambrusco, Italy"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -16521,8 +18068,52 @@
     "end": "17:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.zoomakyvr.com/drinks",
-    "deals": []
+    "source_url": "https://www.zoomakyvr.com/happy-hour",
+    "deals": [
+     {
+      "name": "Easy Cocktails",
+      "price": "$9",
+      "category": "drink",
+      "description": "Vodka, Whiskey, or Gin with choice of soda or cola"
+     },
+     {
+      "name": "Red Truck",
+      "price": "$6",
+      "category": "drink",
+      "description": "Classic Lager on Tap (455ml)"
+     },
+     {
+      "name": "33 Acres Sunshine",
+      "price": "$6",
+      "category": "drink",
+      "description": "French Blanche on Tap (455ml)"
+     },
+     {
+      "name": "Strange Fellows Talisman",
+      "price": "$6",
+      "category": "drink",
+      "description": "West Coast Pale Ale on Tap (455ml)"
+     },
+     {
+      "name": "Four Winds",
+      "price": "$6",
+      "category": "drink",
+      "description": "West Coast IPA on Tap (455ml)"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "21:00",
+      "end": "00:00",
+      "label": "Late night"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -16593,7 +18184,7 @@
     "deals": [
      {
       "name": "Mix Warm Olives",
-      "price": "$8",
+      "price": "$7",
       "category": "food",
       "description": "Warm mixed marinated olives"
      },
@@ -16604,7 +18195,7 @@
       "description": "Hand cut potatoes, truffle oil, parm and truffle aioli"
      },
      {
-      "name": "House Foccacia",
+      "name": "House Focaccia",
       "price": "$7",
       "category": "food",
       "description": "Balsamic, olive oil and parm"
@@ -16637,37 +18228,37 @@
       "name": "Margherita Pizza",
       "price": "$18",
       "category": "food",
-      "description": "Brick oven Neapolitan pizza"
+      "description": "Brick oven Margherita pizza (happy hour price)"
      },
      {
       "name": "Americano Pizza",
       "price": "$20",
       "category": "food",
-      "description": "Brick oven Neapolitan pizza"
+      "description": "Brick oven Americano pizza (happy hour price)"
      },
      {
       "name": "Prosciutto & Arugula Pizza",
       "price": "$24",
       "category": "food",
-      "description": "Brick oven Neapolitan pizza"
+      "description": "Brick oven prosciutto and arugula pizza (happy hour price)"
      },
      {
       "name": "Spaghetti Pomodoro",
       "price": "$18",
       "category": "food",
-      "description": "House made fresh pasta"
+      "description": "House-made spaghetti with tomato sauce (happy hour price)"
      },
      {
       "name": "Spaghetti Aglio e Olio",
       "price": "$16",
       "category": "food",
-      "description": "House made fresh pasta"
+      "description": "House-made spaghetti with garlic and oil"
      },
      {
       "name": "Meatballs",
       "price": "$5 each",
       "category": "food",
-      "description": "Beef and veal meatballs"
+      "description": "Beef and veal meatballs, priced per piece"
      },
      {
       "name": "Local Draft",
@@ -16679,13 +18270,13 @@
       "name": "Peroni Sleeve",
       "price": "$8",
       "category": "drink",
-      "description": "Peroni draft sleeve"
+      "description": "Peroni sleeve"
      },
      {
       "name": "House Wine",
       "price": "$8",
       "category": "drink",
-      "description": "Glass of house wine"
+      "description": "House red or white by the glass"
      },
      {
       "name": "Prosecco Mimosa",
@@ -16703,9 +18294,10 @@
       "name": "Negroni",
       "price": "$12",
       "category": "drink",
-      "description": "Classic (gin, Campari, sweet vermouth), Sbagliato (Campari, sweet vermouth, prosecco), or Boulevardier (bourbon, Campari, sweet vermouth)"
+      "description": "Classic (gin, Campari, sweet vermouth), Sbagliato (Campari, sweet vermouth, prosecco) or Boulevardier (bourbon, Campari, sweet vermouth)"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -16773,7 +18365,23 @@
     "verified": false,
     "verified_source": null,
     "source_url": "http://streethawker.ca/",
-    "deals": []
+    "deals": [],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late Night"
+     }
+    ]
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -16842,7 +18450,25 @@
     "source_url": "https://lavantine.ca/wp-content/uploads/2026/06/Happy-Hour_Lavantine_May-2026.pdf",
     "deals": [
      {
-      "name": "Draft Beer / House White or Red",
+      "name": "Veuve Clicquot Brut",
+      "price": "$18",
+      "category": "drink",
+      "description": "Glass of Veuve Clicquot Brut champagne"
+     },
+     {
+      "name": "Minuty M Rosé",
+      "price": "$14",
+      "category": "drink",
+      "description": "Glass of Minuty M Rosé"
+     },
+     {
+      "name": "Tantalus Pinot Gris or Burrowing Owl Merlot",
+      "price": "$14",
+      "category": "drink",
+      "description": "Glass of Tantalus Pinot Gris or Burrowing Owl Merlot"
+     },
+     {
+      "name": "Draft Beer | House White or Red",
       "price": "$9",
       "category": "drink",
       "description": "Draft beer or house white or red wine"
@@ -16863,25 +18489,13 @@
       "name": "Lavant White Negroni",
       "price": "$14",
       "category": "drink",
-      "description": "Cocktail: Roku gin infused with pineapple, Bitter Bianco, Esquimalt Sweet. Add King ice $2"
+      "description": "Cocktail: Roku Gin infused with pineapple, Bitter Bianco, Esquimalt Sweet. Add King ice $2"
      },
      {
-      "name": "Minuty M Rose",
-      "price": "$14",
-      "category": "drink",
-      "description": "Rose wine by the glass"
-     },
-     {
-      "name": "Tantalus Pinot Gris or Burrowing Owl Merlot",
-      "price": "$14",
-      "category": "drink",
-      "description": "Wine by the glass"
-     },
-     {
-      "name": "Veuve Clicquot Brut",
-      "price": "$18",
-      "category": "drink",
-      "description": "Champagne by the glass"
+      "name": "Tuna Tartar",
+      "price": "$21",
+      "category": "food",
+      "description": "Harissa aioli, togarashi, lemon labneh, pita"
      },
      {
       "name": "Hummus",
@@ -16890,16 +18504,10 @@
       "description": "Crispy chickpea, sumac, onion, olive oil, pita"
      },
      {
-      "name": "Green Falafel",
-      "price": "$12",
+      "name": "Mezze Selection",
+      "price": "$32",
       "category": "food",
-      "description": "Chickpea, parsley, cilantro, maple tahini"
-     },
-     {
-      "name": "Babaganoush",
-      "price": "$12",
-      "category": "food",
-      "description": "Smoked eggplant, pomegranate, walnut, pita"
+      "description": "Babaganoush, tzatziki, hummus, pita. Add Muhammara or Edamame Hummus $7"
      },
      {
       "name": "Chicken Wings",
@@ -16932,18 +18540,19 @@
       "description": "Dill, cucumber, red onion, baby gem, Kashkaval cheese, fries"
      },
      {
-      "name": "Tuna Tartar",
-      "price": "$21",
+      "name": "Green Falafel",
+      "price": "$12",
       "category": "food",
-      "description": "Harissa aioli, togarashi, lemon labneh, pita"
+      "description": "Chickpea, parsley, cilantro, maple tahini"
      },
      {
-      "name": "Mezze Selection",
-      "price": "$32",
+      "name": "Babaganoush",
+      "price": "$12",
       "category": "food",
-      "description": "Babaganoush, tzatziki, hummus, pita; add Muhammara or edamame hummus $7"
+      "description": "Smoked eggplant, pomegranate, walnut, pita"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -17067,7 +18676,7 @@
       "description": "ezzo pepperoni, pomodoro, parsley"
      },
      {
-      "name": "Pizza & Vino For Two",
+      "name": "Pizza & Vino for Two",
       "price": "$29",
       "category": "food",
       "description": "two 5oz glasses of Nook house White, Rosé or Red (IT) plus one Margherita or Pepperoni pizza"
@@ -17094,7 +18703,21 @@
       "name": "Four Winds Huftgold Pilsner",
       "price": "$6",
       "category": "drink",
-      "description": "15oz draft"
+      "description": "15oz"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
      }
     ]
    },
@@ -17163,8 +18786,9 @@
     "end": "18:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://bhouse.ca/menu",
-    "deals": []
+    "source_url": "http://www.bhouse.ca/",
+    "deals": [],
+    "extra_windows": []
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
@@ -17255,13 +18879,13 @@
       "name": "Steak Bites",
       "price": "$19",
       "category": "food",
-      "description": "Deep fried house-marinated AAA beef on mixed greens with honey mustard sauce."
+      "description": "Deep fried and house marinated AAA beef on a bed of mixed greens with honey mustard sauce."
      },
      {
       "name": "Outback Ribeye Flatbread",
       "price": "$18",
       "category": "food",
-      "description": "Marinated AAA beef, smoked tomato chutney, pickled red onion, mozzarella, horseradish aioli, naan bread."
+      "description": "Marinated AAA beef, smoked tomato chutney, pickled red onion, mozzarella, horseradish, aioli, naan bread."
      },
      {
       "name": "Spring Flatbread",
@@ -17279,13 +18903,13 @@
       "name": "Gone With The Wings",
       "price": "$16",
       "category": "food",
-      "description": "Choice of lemon pepper, hot, or mala seasoning."
+      "description": "Choice of lemon pepper, hot, mala seasoning (honey garlic also listed on the website)."
      },
      {
       "name": "Bacon Jam",
       "price": "$15",
       "category": "food",
-      "description": "Baked house made bacon jam topped with triple brie, crostini."
+      "description": "Baked housemade bacon jam topped with triple brie, crostini."
      },
      {
       "name": "Calamari Gaga",
@@ -17333,7 +18957,7 @@
       "name": "Signature Mushroom Burger",
       "price": "$22",
       "category": "food",
-      "description": "Hand-pressed 7oz Certified Angus beef patty, mushroom, caramelized onion, jalapeño aioli, mozzarella, served with fries."
+      "description": "Hand-pressed 7oz Certified Angus beef patty, mushroom, caramelized onion, jalapeño aioli, mozzarella, served with French fries."
      },
      {
       "name": "Signature Clam Chowder",
@@ -17345,19 +18969,19 @@
       "name": "Feature Rotating Beer",
       "price": "$6",
       "category": "drink",
-      "description": "Rotating tap feature (regularly $10)."
+      "description": "Rotating draught feature (regularly $10)."
      },
      {
       "name": "Superflux 'Easy Tiger' Pale Ale",
       "price": "$6",
       "category": "drink",
-      "description": "Draft pale ale, ABV 4.5%."
+      "description": "Draught pale ale, ABV 4.5%."
      },
      {
       "name": "Driftwood 'Fat Tug' IPA",
       "price": "$7",
       "category": "drink",
-      "description": "Draft IPA, ABV 7% (regularly $11)."
+      "description": "Draught IPA, ABV 7% (regularly $11)."
      },
      {
       "name": "Cabanagroni",
@@ -17387,31 +19011,47 @@
       "name": "Laddie's Ember Reverie",
       "price": "$18",
       "category": "drink",
-      "description": "Bruichladdich The Laddie Classic, Campari, Patrón Silver, orange bitters (regularly $22)."
+      "description": "Bruichladdich The Laddie Classic, Campari, Patrón Silver, orange bitters, choice of plank (regularly $22)."
      },
      {
       "name": "Freixenet Cordon Negro Cava",
       "price": "$12",
       "category": "drink",
-      "description": "5oz glass, Brut, Spain NV (regularly $15); bottle $53."
+      "description": "Brut, Spain, NV — 5oz glass (regularly $15)."
      },
      {
       "name": "Ogier Côtes du Ventoux Rosé",
       "price": "$13",
       "category": "drink",
-      "description": "5oz glass, Rhône, France 2023 (regularly $15); bottle $54."
+      "description": "Rhône, France, 2023 — 5oz glass (regularly $15)."
      },
      {
       "name": "Cantina Lavis Pinot Grigio",
       "price": "$13",
       "category": "drink",
-      "description": "5oz glass, Trentino, Italy 2023 (regularly $16); bottle $54."
+      "description": "Trentino, Italy, 2023 — 5oz glass (regularly $16)."
      },
      {
       "name": "Doña Paula Estate Malbec",
       "price": "$15",
       "category": "drink",
-      "description": "5oz glass, Mendoza, Argentina 2023 (regularly $16); bottle $54."
+      "description": "Mendoza, Argentina, 2023 — 5oz glass (regularly $16)."
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:30",
+      "end": null,
+      "label": "Late night"
      }
     ]
    },
@@ -17563,47 +19203,48 @@
      },
      {
       "name": "Draft Beer",
-      "price": "$7/14oz",
+      "price": "$7",
       "category": "drink",
-      "description": "Phillips Tilt Lager or Blue Buck Pale Ale"
+      "description": "14oz Phillips Tilt Lager or Blue Buck Pale Ale"
      },
      {
       "name": "House Wines",
-      "price": "$11/6oz",
+      "price": "$11",
       "category": "drink",
-      "description": "Sauvignon Blanc / Rose / Merlot - Open Estate, Okanagan, BC; $40 per bottle"
+      "description": "6oz; $40/bottle. Sauvignon Blanc / Rosé / Merlot - Open Estate, Okanagan, BC"
      },
      {
       "name": "Premium Wine",
-      "price": "$13/6oz",
+      "price": "$13",
       "category": "drink",
-      "description": "Chardonnay - Kettle Valley, Okanagan, BC; $43 per bottle"
+      "description": "6oz; $43/bottle. Chardonnay - Kettle Valley, Okanagan, BC"
      },
      {
       "name": "House Sparkling",
-      "price": "$12/6oz",
+      "price": "$12",
       "category": "drink",
-      "description": "Rose Prosecco - Serena, Veneto, IT; $42 per bottle"
+      "description": "6oz; $42/bottle. Rosé Prosecco - Serena, Veneto, IT"
      },
      {
       "name": "Champagne",
-      "price": "$25/6oz",
+      "price": "$25",
       "category": "drink",
-      "description": "Duval-Leroy Brut NV - Cotes de Blanc, FR; $100 per bottle"
+      "description": "6oz; $100/bottle. Duval-Leroy Brut NV - Cotes de Blanc, FR"
      },
      {
       "name": "Sparkling Sake",
-      "price": "$35/300ml btl",
+      "price": "$35",
       "category": "drink",
-      "description": "Rotating sparkling sake - Japan"
+      "description": "300ml bottle, rotating sparkling sake - Japan"
      },
      {
       "name": "Non-Alc Beer Cans",
       "price": "$7",
       "category": "drink",
-      "description": "Zero proof - Phillips Brewing Iota Pilsner or Hazy IPA"
+      "description": "Phillips Brewing Iota Pilsner or Hazy IPA"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "osm": {
     "type": "node",
@@ -17682,8 +19323,91 @@
     "end": "18:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.hydravancouver.com/menu",
-    "deals": []
+    "source_url": "https://www.hydravancouver.com/s/Happy-Hour-July-20-web.pdf",
+    "deals": [
+     {
+      "name": "5oz White, Red, Rosé, Bubbles",
+      "price": "$7",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "16oz Beer",
+      "price": "$8",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "1oz Feature Cocktail",
+      "price": "$9",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Spritz It Up",
+      "price": "$12",
+      "category": "drink",
+      "description": "Aperol, Hugo, or Zero Proof"
+     },
+     {
+      "name": "Martini",
+      "price": "$12",
+      "category": "drink",
+      "description": "Grey Goose or The Botanist Gin"
+     },
+     {
+      "name": "5oz Premium Red & White Selection",
+      "price": "$13",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Wine by the Bottle",
+      "price": "25% off",
+      "category": "drink",
+      "description": "Any bottle on list"
+     },
+     {
+      "name": "All Small Bites",
+      "price": "$14",
+      "category": "food",
+      "description": "Hydra Spreads, Lamb Keftedes, Spanakopita, Kalamari, Greek Fries, Lamb Sliders"
+     },
+     {
+      "name": "Daily Local Oysters",
+      "price": "$2.50",
+      "category": "food",
+      "description": "3-6pm only"
+     },
+     {
+      "name": "Whole Grilled Fish of the Day",
+      "price": "33% off",
+      "category": "food",
+      "description": "Market price discount, 3-6pm only"
+     },
+     {
+      "name": "Fresh Shucked Night Cap",
+      "price": "$55",
+      "category": "food",
+      "description": "Dozen oysters & any two happy hour beverages (9pm-close only)"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ]
    },
    "osm": {
     "type": "node",
@@ -17784,7 +19508,7 @@
      },
      {
       "name": "Draught Beer",
-      "price": "$6/$9",
+      "price": "$6 / $9",
       "category": "drink",
       "description": "10oz / 16oz draught beer"
      },
@@ -17829,6 +19553,29 @@
       "price": "$11",
       "category": "food",
       "description": "beef, pork & veal, marinara, chives"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "22:00",
+      "end": null,
+      "label": "Late night"
+     },
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "23:00",
+      "end": null,
+      "label": "Late night"
      }
     ]
    },
@@ -17913,7 +19660,7 @@
       "name": "Handcrafted cocktails",
       "price": "$12.00",
       "category": "drink",
-      "description": "Handcrafted cocktails from the Vancouver cocktail list"
+      "description": "House handcrafted cocktails, 2oz"
      },
      {
       "name": "Casamigos Blanco",
@@ -17937,7 +19684,7 @@
       "name": "House Wine",
       "price": "$7.00",
       "category": "drink",
-      "description": "6oz pour of house wine"
+      "description": "6oz house wine"
      },
      {
       "name": "El Tequileño",
@@ -17961,7 +19708,7 @@
       "name": "Street Nuggets",
       "price": "$12.00",
       "category": "food",
-      "description": "Buttermilk chicken nuggets, pickles, choice of sauce"
+      "description": "Buttermilk chicken, pickles, choice of sauce"
      },
      {
       "name": "GRETA Nachos",
@@ -17992,6 +19739,18 @@
       "price": "$5.00",
       "category": "food",
       "description": "Maple soy glaze, cabbage, soy pickles, green onion"
+     }
+    ],
+    "extra_windows": [
+     {
+      "days": [
+       2,
+       3,
+       4
+      ],
+      "start": "22:00",
+      "end": "02:00",
+      "label": "Late night"
      }
     ]
    },
@@ -18113,49 +19872,49 @@
       "name": "The Peanut Butter Cup",
       "price": "$12",
       "category": "drink",
-      "description": "Screwball peanut butter whiskey, Kahlua, Baileys, espresso; 2oz cocktail (regularly $18)"
+      "description": "Screwball peanut butter whiskey, Kahlua, Baileys, espresso; 2oz"
      },
      {
-      "name": "Margarita",
+      "name": "Choose Your Margarita",
       "price": "$12",
       "category": "drink",
-      "description": "Choose your margarita: lime / guava / spicy mango; 2oz cocktail (regularly $17)"
+      "description": "Lime / guava / spicy mango; 2oz"
      },
      {
       "name": "Old Fashioned",
       "price": "$12",
       "category": "drink",
-      "description": "Whisky, sugar, Angostura; 2oz cocktail"
+      "description": "Whisky, sugar, Angostura; 2oz"
      },
      {
       "name": "6A Sangria",
       "price": "$13",
       "category": "drink",
-      "description": "Red wine, brandy, orange, seasonal fruit; 2oz (regularly $18)"
+      "description": "Red wine, brandy, orange, seasonal fruit; 2oz"
      },
      {
       "name": "Six Acres Lager",
       "price": "$7",
       "category": "drink",
-      "description": "16oz, BC (regularly $9)"
+      "description": "16oz, BC"
      },
      {
       "name": "Six Acres Pale Ale",
       "price": "$7",
       "category": "drink",
-      "description": "16oz, BC (regularly $9)"
+      "description": "16oz, BC"
      },
      {
       "name": "House Red Wine",
       "price": "$7",
       "category": "drink",
-      "description": "5oz, BC (regularly $10)"
+      "description": "5oz, BC"
      },
      {
       "name": "House White Wine",
       "price": "$7",
       "category": "drink",
-      "description": "5oz, BC (regularly $10)"
+      "description": "5oz, BC"
      },
      {
       "name": "House Highballs",
@@ -18163,7 +19922,8 @@
       "category": "drink",
       "description": "1oz"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "osm": {
     "type": "node",
@@ -18248,9 +20008,10 @@
       "name": "Slice & beer combo",
       "price": "$10",
       "category": "food",
-      "description": "Happy hour pizza party: one slice of Mortadella Pizzeria Roma-style pizza plus a beer"
+      "description": "Happy hour combo of one Mortadella pizza slice plus a beer"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "osm": {
     "type": "node",
@@ -18362,9 +20123,9 @@
      },
      {
       "name": "Fresh Mussels",
-      "price": "$19",
+      "price": "19",
       "category": "food",
-      "description": "Nduja butter sauce, cherry tomato, fresh herbs"
+      "description": "Nduja butter sauce, cherry tomato, fresh herbs (listed without a dollar sign on the menu)"
      },
      {
       "name": "Fried Cauliflower Bites",
@@ -18376,19 +20137,19 @@
       "name": "Burger & a Bevvie",
       "price": "$25",
       "category": "food",
-      "description": "Hand ground 8oz Wagyu & Canada Prime beef patty, pickled beet BBQ mayo, tallow braised local onions & aged cheddar on a Martin's Famous potato roll, plus a pint of draught beer or 5oz happy hour wine"
+      "description": "Hand ground 8oz Wagyu & Canada Prime beef patty, pickled beet BBQ mayo, tallow braised local onions & aged cheddar on a Martin's potato roll, plus a pint of draught beer or 5oz happy hour wine"
      },
      {
-      "name": "2oz Cocktails",
+      "name": "Happy Hour 2oz Cocktails",
       "price": "$8",
       "category": "drink",
-      "description": "Happy hour 2oz cocktails — Vodka Mule, double bar rail highballs. Page lists this as both $8 and $10"
+      "description": "Vodka Mule, double bar rail highballs. Menu shows $8 in the heading and $10 in the line beneath it"
      },
      {
       "name": "'Canadian' Old Fashioned",
       "price": "$12",
       "category": "drink",
-      "description": "Bearface Triple Oak Rye Whiskey, signature turbinado syrup, orange twist, maraschino cherry, king cube"
+      "description": "Bearface Triple Oak Rye Whiskey, signature Turbinado syrup, orange twist, maraschino cherry, king cube"
      },
      {
       "name": "Lazy Layover",
@@ -18421,12 +20182,13 @@
       "description": "Sandhill Estate Pinot Gris 2022 (Okanagan, BC), Bodega Olivares Rosado 2021 (Jumilla, Spain), Pata Negra Toro 2020 (Spain)"
      },
      {
-      "name": "Bottles of wine $140 & under",
+      "name": "Bottles of Wine $140 & Under",
       "price": "30% off",
       "category": "drink",
       "description": "All bottles of wine priced $140 and under are 30% off during happy hour"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "osm": {
     "type": "node",
@@ -18505,8 +20267,136 @@
     "end": "17:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.joefortes.ca/menus/",
-    "deals": []
+    "source_url": "https://www.joefortes.ca/wp-content/uploads/2026/05/156939-CFWC-Joe-Fortes-Happy-Hour-May-2026-P3.pdf",
+    "deals": [
+     {
+      "name": "Truffle Parmesan Fries",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Cheeseburger Sliders",
+      "price": "$11",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Crispy Calamari",
+      "price": "$11",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Crab & Corn Fritters",
+      "price": "$12",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Coconut Prawns",
+      "price": "$13",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Mini Lobster & Shrimp Roll",
+      "price": "$13",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Steelhead Ceviche",
+      "price": "$14",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Miso Glazed Short Ribs",
+      "price": "$15",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Jumbo Tiger Prawn Cocktail",
+      "price": "$16",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Fresh Oysters",
+      "price": "$1.75",
+      "category": "food",
+      "description": "each, classic cocktail sauce, lemon, fresh horseradish"
+     },
+     {
+      "name": "Joe's Chilled Seafood Platter",
+      "price": "$46",
+      "category": "food",
+      "description": "local oysters, marinated mussels and clams, prawns, albacore tuna crudo, scallop ceviche, albacore tuna poke"
+     },
+     {
+      "name": "Sapporo Lager",
+      "price": "$5",
+      "category": "drink",
+      "description": "16oz"
+     },
+     {
+      "name": "Molson Canadian Lager",
+      "price": "$5",
+      "category": "drink",
+      "description": "16oz"
+     },
+     {
+      "name": "Red Truck Amber Ale",
+      "price": "$5",
+      "category": "drink",
+      "description": "16oz"
+     },
+     {
+      "name": "Joe's Highballs",
+      "price": "$6",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Bubbly",
+      "price": "$7",
+      "category": "drink",
+      "description": "6oz"
+     },
+     {
+      "name": "Greenhill Cider",
+      "price": "$7",
+      "category": "drink",
+      "description": "355ml"
+     },
+     {
+      "name": "Guinness Stout",
+      "price": "$8",
+      "category": "drink",
+      "description": "16oz"
+     },
+     {
+      "name": "Summer Sangria",
+      "price": "$9",
+      "category": "drink",
+      "description": "5oz"
+     },
+     {
+      "name": "Altos Margarita",
+      "price": "$9",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Happy Hour Wine",
+      "price": "$3-$9",
+      "category": "drink",
+      "description": "Red, White & Rosé: $3 (3oz), $6 (6oz), $9 (9oz). Ask server for selection."
+     }
+    ],
+    "extra_windows": []
    },
    "osm": {
     "type": "node",
@@ -18591,31 +20481,31 @@
       "name": "Jefferson County",
       "price": "$10",
       "category": "drink",
-      "description": "2oz — Tanqueray Gin, Lillet, St. Germain, lemon, sparkling wine, orange bitters"
+      "description": "Tanqueray Gin, Lillet, St. Germain, lemon, sparkling wine, orange bitters (2oz)"
      },
      {
       "name": "Negroni",
       "price": "$10",
       "category": "drink",
-      "description": "3oz — Tanqueray Gin, Campari, Cinzano"
+      "description": "Tanqueray Gin, Campari, Cinzano (3oz)"
      },
      {
       "name": "Martini",
       "price": "$10",
       "category": "drink",
-      "description": "2oz — Tanqueray Gin, Noilly Prat, orange bitters"
+      "description": "Tanqueray Gin, Noilly Prat, orange bitters (2oz)"
      },
      {
       "name": "Daiquiri",
       "price": "$10",
       "category": "drink",
-      "description": "2oz — Havana Club 3 Year, Wray & Nephew, lime, turbinado"
+      "description": "Havana Club 3 Year, Wray & Nephew, lime, turbinado (2oz)"
      },
      {
-      "name": "Wine by the glass",
+      "name": "White, Red, Rose by the glass",
       "price": "$10",
       "category": "drink",
-      "description": "White, red or rosé by the glass"
+      "description": "House white, red or rosé by the glass"
      },
      {
       "name": "Local draft beer",
@@ -18629,7 +20519,8 @@
       "category": "food",
       "description": "Edamame, Tajin"
      }
-    ]
+    ],
+    "extra_windows": []
    },
    "osm": {
     "type": "node",
