@@ -188,20 +188,76 @@ function initGallery(venue) {
   els.galleryNext.classList.toggle("hidden", photos.length < 2);
   update();
 
+  const show = (i) => { index = (i + photos.length) % photos.length; update(); };
+  const prev = () => show(index - 1);
+  const next = () => show(index + 1);
+  const isOpen = () => !els.galleryOverlay.classList.contains("hidden");
+  function closeGallery() {
+    els.galleryOverlay.classList.add("hidden");
+    els.galleryOverlay.style.opacity = "";
+    update(); // clear any in-progress drag transform
+  }
+
   els.menuPhoto.addEventListener("click", (e) => {
     if (e.target.closest(".menu-back")) return;
     els.galleryOverlay.classList.remove("hidden");
   });
-  els.galleryClose.addEventListener("click", () => els.galleryOverlay.classList.add("hidden"));
+  els.galleryClose.addEventListener("click", closeGallery);
   els.galleryOverlay.addEventListener("click", (e) => {
-    if (e.target === els.galleryOverlay) els.galleryOverlay.classList.add("hidden");
+    if (e.target === els.galleryOverlay) closeGallery();
   });
-  els.galleryPrev.addEventListener("click", () => {
-    index = (index - 1 + photos.length) % photos.length;
-    update();
+  els.galleryPrev.addEventListener("click", prev);
+  els.galleryNext.addEventListener("click", next);
+
+  // Desktop: arrow keys navigate, Escape closes.
+  document.addEventListener("keydown", (e) => {
+    if (!isOpen()) return;
+    if (e.key === "ArrowLeft") { e.preventDefault(); prev(); }
+    else if (e.key === "ArrowRight") { e.preventDefault(); next(); }
+    else if (e.key === "Escape") closeGallery();
   });
-  els.galleryNext.addEventListener("click", () => {
-    index = (index + 1) % photos.length;
+
+  // Mobile: horizontal swipe navigates (track follows the finger),
+  // swipe down closes (image follows, backdrop fades).
+  let touch = null; // { x, y, axis }
+  els.galleryOverlay.addEventListener("touchstart", (e) => {
+    if (!isOpen() || e.touches.length !== 1) { touch = null; return; }
+    touch = { x: e.touches[0].clientX, y: e.touches[0].clientY, axis: null };
+    els.galleryTrack.style.transition = "none";
+  }, { passive: true });
+
+  els.galleryOverlay.addEventListener("touchmove", (e) => {
+    if (!touch) return;
+    const dx = e.touches[0].clientX - touch.x;
+    const dy = e.touches[0].clientY - touch.y;
+    if (!touch.axis) {
+      if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return; // not yet a gesture
+      touch.axis = Math.abs(dx) > Math.abs(dy) ? "x" : "y";
+    }
+    if (touch.axis === "x" && photos.length > 1) {
+      els.galleryTrack.style.transform = `translateX(calc(-${index * 100}% + ${dx}px))`;
+    } else if (touch.axis === "y" && dy > 0) {
+      els.galleryTrack.style.transform = `translateX(-${index * 100}%) translateY(${dy}px)`;
+      els.galleryOverlay.style.opacity = String(Math.max(0.35, 1 - dy / 400));
+    }
+  }, { passive: true });
+
+  els.galleryOverlay.addEventListener("touchend", (e) => {
+    if (!touch) return;
+    const dx = e.changedTouches[0].clientX - touch.x;
+    const dy = e.changedTouches[0].clientY - touch.y;
+    const axis = touch.axis;
+    touch = null;
+    els.galleryTrack.style.transition = "";
+    els.galleryOverlay.style.opacity = "";
+    if (axis === "x" && Math.abs(dx) > 48 && photos.length > 1) (dx < 0 ? next : prev)();
+    else if (axis === "y" && dy > 90) closeGallery();
+    else update(); // below threshold — snap back
+  });
+  els.galleryOverlay.addEventListener("touchcancel", () => {
+    touch = null;
+    els.galleryTrack.style.transition = "";
+    els.galleryOverlay.style.opacity = "";
     update();
   });
 }
