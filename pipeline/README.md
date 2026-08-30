@@ -82,6 +82,7 @@ node pipeline/extract.js --model claude-opus-5 --out extracted-opus.json --force
 node pipeline/score.js --write
 node pipeline/crawl.js --venues pipeline/discovered.json --render auto
 node pipeline/extract.js --venues pipeline/discovered.json --out extracted-discovered.json --force
+node pipeline/places-sync.js   # needs GOOGLE_PLACES_API_KEY (env or gitignored pipeline/secrets.json); skips itself if absent
 node pipeline/writeback.js
 ```
 

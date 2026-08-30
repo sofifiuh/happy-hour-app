@@ -15,6 +15,7 @@
 //        [--min-confidence 0.8] [--discovery-min-confidence 0.7]
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import { loadSeed, parseArgs, readJson, setEq, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
 
 const args = parseArgs(process.argv.slice(2));
@@ -23,6 +24,7 @@ const DISC_MIN_CONF = Number(args["discovery-min-confidence"]) || 0.7;
 const extracted = readJson(path.join(RESULTS_DIR, args.in || "extracted-opus.json"));
 const OUT = path.join(REPO_ROOT, "venues-extracted.js");
 const DISCOVERED_STORE = path.join(REPO_ROOT, "pipeline", "discovered.json");
+const PLACES_STORE = path.join(REPO_ROOT, "pipeline", "places.json");
 const TODAY = new Date().toISOString().slice(0, 10);
 
 const skipped = [];
@@ -128,6 +130,9 @@ if (cands && discExt) {
   fs.writeFileSync(DISCOVERED_STORE, JSON.stringify(discovered, null, 2));
 }
 
+// --- Google Places identity overlay (pipeline/places-sync.js).
+const places = readJson(PLACES_STORE, {});
+
 // --- Render the generated layer.
 const banner = `// GENERATED FILE — do not edit by hand. Regenerate with: node pipeline/writeback.js
 //
@@ -140,10 +145,18 @@ const banner = `// GENERATED FILE — do not edit by hand. Regenerate with: node
 // - VENUES_DISCOVERED: venues from pipeline/discovered.json (the committed
 //   store maintained by pipeline/discover.js + writeback), verified: false
 //   until a human checks them.
+// - VENUES_PLACES: Google Places identity fields (place_id, rating, review
+//   count, price level) from pipeline/places-sync.js. Refreshed by the
+//   re-sync loop per Google's caching terms; place_id is the one field
+//   that may be stored indefinitely.
 `;
-fs.writeFileSync(OUT, banner + `const EXTRACTED_DATA_VERSION = ${JSON.stringify(TODAY)};\n\nconst VENUES_EXTRACTED = ${JSON.stringify(enrich, null, 2)};\n\nconst VENUES_DISCOVERED = ${JSON.stringify(discovered, null, 2)};\n`);
+// Content-derived stamp: any change to the generated data reseeds cached
+// clients, even a second regeneration on the same day.
+const payload = JSON.stringify([enrich, discovered, places]);
+const stamp = `${TODAY}-${crypto.createHash("sha1").update(payload).digest("hex").slice(0, 8)}`;
+fs.writeFileSync(OUT, banner + `const EXTRACTED_DATA_VERSION = ${JSON.stringify(stamp)};\n\nconst VENUES_EXTRACTED = ${JSON.stringify(enrich, null, 2)};\n\nconst VENUES_DISCOVERED = ${JSON.stringify(discovered, null, 2)};\n\nconst VENUES_PLACES = ${JSON.stringify(places, null, 2)};\n`);
 
-console.log(`Enriched deals for ${Object.keys(enrich).length} venues, ${discovered.length} discovered venues -> venues-extracted.js`);
+console.log(`Enriched deals for ${Object.keys(enrich).length} venues, ${discovered.length} discovered venues, Places identity for ${Object.keys(places).length} -> venues-extracted.js`);
 for (const d of discovered) console.log(`  + ${d.id.padEnd(30)} days[${d.happy_hour.days}] ${d.happy_hour.start}-${d.happy_hour.end}  ${d.happy_hour.deals.length} deals`);
 for (const [id, e] of Object.entries(enrich)) console.log(`  ${id.padEnd(30)} ${e.deals.length} deals  (${e.source_url})`);
 console.log(`\nReview queue (schedule disagreements — NOT applied):`);
