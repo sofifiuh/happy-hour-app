@@ -145,6 +145,37 @@ const els = {
   toast: document.getElementById("toast"),
 };
 
+// Straight-line distance scaled by a street-grid detour factor, turned into
+// rough door-to-door minutes. Estimates, not routing — hence the "~".
+function initTravelTimes(v) {
+  const lat = v.geometry?.location?.lat;
+  const lng = v.geometry?.location?.lng;
+  if (typeof lat !== "number" || typeof lng !== "number" || !navigator.geolocation) return;
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      const toRad = (d) => (d * Math.PI) / 180;
+      const dLat = toRad(lat - pos.coords.latitude);
+      const dLng = toRad(lng - pos.coords.longitude);
+      const a =
+        Math.sin(dLat / 2) ** 2 +
+        Math.cos(toRad(pos.coords.latitude)) * Math.cos(toRad(lat)) * Math.sin(dLng / 2) ** 2;
+      const km = 2 * 6371 * Math.asin(Math.sqrt(a)) * 1.3;
+      const fmt = (mins) => {
+        mins = Math.max(1, Math.round(mins));
+        if (mins < 60) return `~${mins} min`;
+        const rem = mins % 60;
+        return `~${Math.floor(mins / 60)}h${rem ? ` ${rem}m` : ""}`;
+      };
+      document.getElementById("travelWalk").textContent = fmt((km / 4.8) * 60);
+      document.getElementById("travelCycle").textContent = fmt((km / 14) * 60);
+      document.getElementById("travelDrive").textContent = fmt((km / 22) * 60 + 1);
+      document.getElementById("travelTimes").classList.remove("hidden");
+    },
+    () => {}, // denied or unavailable: the bar just stays hidden
+    { maximumAge: 120000, timeout: 8000 }
+  );
+}
+
 if (venue) {
   init(venue);
 } else {
@@ -264,6 +295,7 @@ function initGallery(venue) {
 
 function init(venue) {
   document.title = `${venue.name} – Happy Hour Menu`;
+  initTravelTimes(venue);
 
   if (venue.cover_image?.url) {
     els.menuPhoto.style.backgroundImage =
