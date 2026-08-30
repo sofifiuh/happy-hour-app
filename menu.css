@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   background: var(--sheet-bg);
-  padding-bottom: 40px;
+  padding-bottom: 110px; /* keep content clear of the fixed bottom bar */
 }
 
 /* ---------- Photo header ---------- */
@@ -303,15 +303,23 @@ body {
 /* ---------- Sticky hours/share bar ---------- */
 
 .menu-sticky-bar {
-  position: sticky;
+  /* Truly pinned: sticky only held until the page scrolled past the bar's
+     DOM position, then it docked mid-content. Lives outside .menu-app so
+     the pull-down gesture's transform can't turn fixed into absolute. */
+  position: fixed;
   bottom: 0;
-  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  z-index: 40;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 20px;
+  padding: 14px 20px calc(14px + env(safe-area-inset-bottom));
   background: var(--pill);
   color: #fff;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.12);
 }
 
 .menu-hours {
