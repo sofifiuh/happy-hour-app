@@ -17,7 +17,7 @@ async function getBrowser() {
       const opts = { headless: true, args: ["--no-sandbox", "--disable-features=PostQuantumKyber,UseMLKEM,EncryptedClientHello", "--ssl-version-max=tls1.2"] };
       if (fs.existsSync(EXEC)) opts.executablePath = EXEC;
       const proxy = process.env.HTTPS_PROXY || process.env.https_proxy;
-      if (proxy) opts.proxy = { server: proxy };
+      if (proxy) opts.proxy = { server: proxy, bypass: "localhost,127.0.0.1" };
       return chromium.launch(opts);
     })();
   }
