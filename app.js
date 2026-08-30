@@ -73,6 +73,13 @@ let selectedDays = new Set();
 let editingId = null;
 let map = null;
 let mapMarkers = new Map(); // venue id -> Leaflet marker
+// Carousel<->map sync state: pans are debounced until a swipe settles, and
+// programmatic card scrolls (pin taps) suppress the observer so the two
+// sync directions can't fight each other.
+let carouselSuppressed = false;
+let carouselSuppressTimer = null;
+let carouselSettleTimer = null;
+let carouselPendingId = null;
 let mapCardObserver = null;
 
 const els = {
@@ -490,16 +497,21 @@ function renderMap(occurrences) {
   els.mapEmpty.classList.toggle("hidden", located.length > 0);
   els.mapCardCarousel.classList.toggle("hidden", located.length === 0);
 
-  // Swiping a card into view pans the map + highlights its pin, without
-  // re-scrolling the carousel (that would fight the user's own swipe).
-  // threshold 0.6 means "mostly centered", which is what scroll-snap settles on.
+  // Swiping a card into view highlights its pin instantly (cheap), but the
+  // map pans only once, ~160ms after the LAST card change — a fast flick
+  // past twenty cards no longer queues twenty interrupted pan animations.
+  // Programmatic scrolls (pin taps) suppress the observer entirely.
   let firstFire = true;
   mapCardObserver = new IntersectionObserver(
     (entries) => {
       const visible = entries.find((e) => e.isIntersecting && e.intersectionRatio >= 0.6);
-      if (!visible) return;
-      selectVenue(visible.target.dataset.venueId, { pan: !firstFire, scrollCarousel: false });
-      firstFire = false;
+      if (!visible || carouselSuppressed) return;
+      const id = visible.target.dataset.venueId;
+      highlightPin(id);
+      if (firstFire) { firstFire = false; return; }
+      carouselPendingId = id;
+      clearTimeout(carouselSettleTimer);
+      carouselSettleTimer = setTimeout(() => panToVenue(carouselPendingId), 160);
     },
     { root: els.mapCardCarousel, threshold: 0.6 }
   );
@@ -597,21 +609,49 @@ function buildMapCard(venue, occ) {
   return card;
 }
 
-function selectVenue(venueId, { pan = false, scrollCarousel = false } = {}) {
-  const marker = mapMarkers.get(venueId);
-  if (!marker) return;
-
+function highlightPin(venueId) {
   mapMarkers.forEach((mk, id) => {
     mk.getElement()?.classList.toggle("map-pin-active", id === venueId);
   });
+}
 
-  if (pan) map.panTo(marker.getLatLng(), { animate: true });
+function panToVenue(venueId) {
+  const marker = mapMarkers.get(venueId);
+  if (!marker || !map) return;
+  // Already near center? Skip the pan — micro-adjustments read as jitter.
+  const point = map.latLngToContainerPoint(marker.getLatLng());
+  const size = map.getSize();
+  if (Math.abs(point.x - size.x / 2) < size.x / 5 && Math.abs(point.y - size.y / 2) < size.y / 5) return;
+  map.panTo(marker.getLatLng(), { animate: true, duration: 0.5, easeLinearity: 0.3 });
+}
+
+function selectVenue(venueId, { pan = false, scrollCarousel = false } = {}) {
+  if (!mapMarkers.has(venueId)) return;
+  highlightPin(venueId);
+  clearTimeout(carouselSettleTimer); // a direct selection outranks a settling swipe
+  if (pan) panToVenue(venueId);
 
   if (scrollCarousel) {
     const card = els.mapCardCarousel.querySelector(`[data-venue-id="${CSS.escape(venueId)}"]`);
-    card?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    if (card) {
+      // Ignore the observer while our own smooth scroll passes other cards;
+      // the scroll listener below extends this until movement stops, and the
+      // fallback clears it even if no scroll was needed (already centered).
+      carouselSuppressed = true;
+      clearTimeout(carouselSuppressTimer);
+      carouselSuppressTimer = setTimeout(() => { carouselSuppressed = false; }, 800);
+      card.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+    }
   }
 }
+
+// While a programmatic scroll is in flight, keep suppression alive until the
+// carousel actually stops moving (150ms of quiet), then hand control back.
+els.mapCardCarousel.addEventListener("scroll", () => {
+  if (!carouselSuppressed) return;
+  clearTimeout(carouselSuppressTimer);
+  carouselSuppressTimer = setTimeout(() => { carouselSuppressed = false; }, 150);
+}, { passive: true });
 
 // ---------- Modal handling ----------
 
