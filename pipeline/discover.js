@@ -10,8 +10,8 @@
 // Usage: node pipeline/discover.js   -> pipeline/results/discovered-candidates.json
 import fs from "node:fs";
 import path from "node:path";
-import { execFileSync } from "node:child_process";
-import { loadSeed, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
+import { loadSeed, normName, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
+import { curlJson } from "./lib/curl.js";
 
 const UA = "happy-hour-app-pipeline/0.1 (github.com/sofifiuh/happy-hour-app)";
 const BBOX = { south: 49.264, north: 49.3, west: -123.15, east: -123.09 }; // downtown core + Gastown/Chinatown/West End edge
@@ -21,10 +21,9 @@ const leads = JSON.parse(fs.readFileSync(path.join(REPO_ROOT, "pipeline", "leads
 const seed = loadSeed();
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const norm = (s) => s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
 const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return null; } };
 const seedHosts = new Set(seed.map((v) => host(v.website)).filter(Boolean));
-const seedNames = seed.map((v) => norm(v.name));
+const seedNames = new Set(seed.map((v) => normName(v.name)));
 const distM = (a, b) => {
   const R = 6371000, dLat = ((b.lat - a.lat) * Math.PI) / 180, dLon = ((b.lng - a.lng) * Math.PI) / 180;
   const x = Math.sin(dLat / 2) ** 2 + Math.cos((a.lat * Math.PI) / 180) * Math.cos((b.lat * Math.PI) / 180) * Math.sin(dLon / 2) ** 2;
@@ -33,8 +32,7 @@ const distM = (a, b) => {
 
 function nominatim(q) {
   const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q + ", Vancouver, BC")}&format=jsonv2&limit=3&extratags=1&addressdetails=1`;
-  const out = execFileSync("curl", ["-sS", "--max-time", "25", "-H", `User-Agent: ${UA}`, url], { encoding: "utf8" });
-  return JSON.parse(out);
+  return curlJson(url, { userAgent: UA });
 }
 
 const candidates = [];
@@ -51,14 +49,15 @@ for (const lead of leads) {
   if (!website) { misses.push([lead, "no website tag in OSM"]); continue; }
 
   const name = hit.name || lead;
-  if (seedHosts.has(host(website)) || seedNames.includes(norm(name)) ||
+  const nName = normName(name);
+  if (seedHosts.has(host(website)) || seedNames.has(nName) ||
       seed.some((v) => v.geometry?.location && distM(v.geometry.location, { lat, lng }) < 60)) {
     misses.push([lead, "duplicate of existing venue"]); continue;
   }
   const a = hit.address || {};
   const street = [a.house_number, a.road].filter(Boolean).join(" ");
   candidates.push({
-    id: norm(name).replace(/ /g, "-"),
+    id: nName.replace(/ /g, "-"),
     name,
     website,
     formatted_address: `${street ? street + ", " : ""}Vancouver, BC`,

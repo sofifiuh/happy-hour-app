@@ -260,20 +260,20 @@ function init(venue) {
   }
 
   let activeCat = hasFood ? "food" : "drink";
-  renderDeals(deals, activeCat);
+  renderDeals(deals, activeCat, venue.happy_hour?.deals_source);
 
   els.menuTabs.addEventListener("click", (e) => {
     const btn = e.target.closest(".menu-tab");
     if (!btn) return;
     activeCat = btn.dataset.cat;
     els.menuTabs.querySelectorAll(".menu-tab").forEach((b) => b.classList.toggle("active", b === btn));
-    renderDeals(deals, activeCat);
+    renderDeals(deals, activeCat, venue.happy_hour?.deals_source);
   });
 
   els.shareBtn.addEventListener("click", () => shareVenue(venue));
 }
 
-function renderDeals(deals, category) {
+function renderDeals(deals, category, dealsSource) {
   const filtered = deals.filter((d) => (d.category || "food") === category);
   els.dealsList.innerHTML = "";
 
@@ -313,6 +313,19 @@ function renderDeals(deals, category) {
     }
 
     els.dealsList.appendChild(row);
+  }
+
+  // Credit automatically-read deal lists to the venue's own menu page.
+  if (dealsSource?.url) {
+    const credit = document.createElement("p");
+    credit.className = "menu-deal-description";
+    const link = document.createElement("a");
+    link.href = dealsSource.url;
+    link.target = "_blank";
+    link.rel = "noopener";
+    link.textContent = "venue's menu";
+    credit.append("Deals read from the ", link, dealsSource.extracted_at ? ` (${dealsSource.extracted_at})` : "");
+    els.dealsList.appendChild(credit);
   }
 }
 

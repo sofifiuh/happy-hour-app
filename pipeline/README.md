@@ -68,4 +68,26 @@ cost and fits a nightly job); nothing else changes.
   windows are captured in `notes` only.
 
 `cache/` and `results/` are gitignored scratch; `REPORT.md` is committed as
-the record of each harness run.
+the record of each harness run. `discovered.json` is the committed canonical
+store of discovered venues — `venues-extracted.js` is a pure render of the
+inputs and can always be regenerated.
+
+## Weekly re-sync (venues change their offers)
+
+The full adaptation loop, runnable by hand or on a schedule:
+
+```
+node pipeline/crawl.js --render auto
+node pipeline/extract.js --model claude-opus-5 --out extracted-opus.json --force
+node pipeline/score.js --write
+node pipeline/crawl.js --venues pipeline/discovered.json --render auto
+node pipeline/extract.js --venues pipeline/discovered.json --out extracted-discovered.json --force
+node pipeline/writeback.js
+```
+
+Then browser-validate index.html locally and commit. Every regeneration
+stamps `EXTRACTED_DATA_VERSION` into venues-extracted.js, which app.js folds
+into `SEED_VERSION` — cached clients reseed automatically, no hand-bump.
+Hand-verified schedules still never auto-change (disagreements accumulate in
+`results/review-queue.json` for a human); unverified discovered venues update
+freely on each re-sync.

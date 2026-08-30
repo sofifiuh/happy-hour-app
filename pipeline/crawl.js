@@ -1,19 +1,18 @@
 // Phase 1: for each venue, fetch its homepage, discover candidate
 // happy-hour/menu pages, and cache everything under pipeline/cache/<id>/.
 // JS-rendered pages fall back to headless Chromium (lib/render.js).
-// Usage: node pipeline/crawl.js [--only id1,id2] [--concurrency 6]
-//        [--render auto|always|off]   (auto = render when static text is thin)
+// Usage: node pipeline/crawl.js [--only id1,id2] [--venues <stubs.json>]
+//        [--concurrency 6] [--render auto|always|off]
+//        (auto = render when static text is thin; always = used for
+//        targeted re-crawls of venues known to be JS-rendered)
 import fs from "node:fs";
 import path from "node:path";
-import { loadSeed, parseArgs, CACHE_DIR } from "./lib/venues.js";
+import { parseArgs, selectVenues, CACHE_DIR } from "./lib/venues.js";
 import { curlGet, mapConcurrent } from "./lib/curl.js";
 import { extractLinks, pickCandidates, htmlToText } from "./lib/html.js";
 
 const args = parseArgs(process.argv.slice(2));
-const only = args.only ? String(args.only).split(",") : null;
-// --venues <path.json>: run over candidate stubs (discovery) instead of the seed
-const allVenues = args.venues ? JSON.parse(fs.readFileSync(args.venues, "utf8")) : loadSeed();
-const venues = allVenues.filter((v) => !only || only.includes(v.id));
+const venues = selectVenues(args);
 const RENDER_MODE = args.render || "auto"; // auto | always | off
 const RENDER_THRESHOLD = 500; // chars of visible text below which a page counts as a JS shell
 
@@ -28,32 +27,42 @@ function extFor(contentType, url) {
 }
 
 /**
- * Fetch one HTML-or-PDF URL to `file`; when the static HTML looks like a JS
- * shell (or render mode is "always"), re-render it in Chromium and overwrite.
- * Returns the manifest entry fields.
+ * Fetch one URL into `dir` as `<base>.<ext>` — the extension is decided once,
+ * after the real content type is known. JS-shell HTML (or a failed static
+ * fetch) is re-rendered in Chromium when render mode allows.
+ * Returns the manifest entry, plus `html` (the usable page text source) so
+ * callers never re-read the file.
  */
-async function fetchPage(url, file) {
-  const res = await curlGet(url, file);
-  const entry = { ...res, rendered: false };
-  const isHtml = fs.existsSync(file) && extFor(res.contentType, res.finalUrl || url) === "html";
+async function fetchPage(url, dir, base) {
+  const tmp = path.join(dir, `${base}.tmp`);
+  const res = await curlGet(url, tmp);
   const fetchedOk = res.status >= 200 && res.status < 400;
+  let ext = extFor(res.contentType, res.finalUrl || url);
+  let html = null;
+  let rendered = false;
 
-  if (renderPage && (isHtml || !fetchedOk)) {
-    const textLen = isHtml && fetchedOk ? htmlToText(fs.readFileSync(file, "utf8")).length : 0;
-    const shouldRender = RENDER_MODE === "always" || !fetchedOk || textLen < RENDER_THRESHOLD;
-    if (shouldRender) {
-      const r = await renderPage(url);
-      if (r.html && htmlToText(r.html).length > textLen) {
-        fs.writeFileSync(file, r.html);
-        entry.rendered = true;
-        entry.finalUrl = r.finalUrl;
-        if (!fetchedOk) { entry.status = 200; entry.contentType = "text/html"; entry.error = null; }
-      } else if (r.error && !fetchedOk) {
-        entry.error = `${entry.error || `HTTP ${res.status}`}; render: ${r.error}`;
-      }
+  if (ext === "html" && fs.existsSync(tmp)) html = fs.readFileSync(tmp, "utf8");
+
+  const isThin = html !== null && htmlToText(html).length < RENDER_THRESHOLD;
+  const shouldRender = renderPage && ext !== "pdf" &&
+    (RENDER_MODE === "always" || !fetchedOk || isThin);
+  if (shouldRender) {
+    const r = await renderPage(url);
+    if (r.html && htmlToText(r.html).length > (html ? htmlToText(html).length : 0)) {
+      html = r.html;
+      ext = "html";
+      rendered = true;
+      fs.writeFileSync(tmp, html);
+      res.finalUrl = r.finalUrl;
+      if (!fetchedOk) { res.status = 200; res.contentType = "text/html"; res.error = null; }
+    } else if (r.error && !fetchedOk) {
+      res.error = `${res.error || `HTTP ${res.status}`}; render: ${r.error}`;
     }
   }
-  return entry;
+
+  const file = `${base}.${ext}`;
+  try { fs.renameSync(tmp, path.join(dir, file)); } catch {}
+  return { entry: { url, file, ...res, rendered }, html };
 }
 
 async function crawlVenue(venue) {
@@ -64,26 +73,13 @@ async function crawlVenue(venue) {
   if (!venue.website) {
     manifest.error = "no website in seed";
   } else {
-    const homeFile = path.join(dir, "page0.html");
-    const home = await fetchPage(venue.website, homeFile);
-    manifest.pages.push({ url: venue.website, role: "homepage", file: "page0.html", ...home });
+    const home = await fetchPage(venue.website, dir, "page0");
+    manifest.pages.push({ role: "homepage", ...home.entry });
 
-    if (home.status >= 200 && home.status < 400 && !home.contentType.includes("pdf")) {
-      const html = fs.readFileSync(homeFile, "utf8");
-      const candidates = pickCandidates(extractLinks(html), home.finalUrl || venue.website);
-      let i = 1;
-      for (const cand of candidates) {
-        const probeExt = /\.pdf(\?|#|$)/i.test(cand.url) ? "pdf" : "html";
-        let file = `page${i}.${probeExt}`;
-        const res = await fetchPage(cand.url, path.join(dir, file));
-        const realExt = extFor(res.contentType, res.finalUrl || cand.url);
-        if (realExt !== probeExt && !res.rendered) {
-          const renamed = `page${i}.${realExt}`;
-          try { fs.renameSync(path.join(dir, file), path.join(dir, renamed)); file = renamed; } catch {}
-        }
-        manifest.pages.push({ url: cand.url, role: "candidate", linkText: cand.text, score: cand.score, file, ...res });
-        i++;
-      }
+    if (home.entry.status >= 200 && home.entry.status < 400 && home.html) {
+      const candidates = pickCandidates(extractLinks(home.html), home.entry.finalUrl || venue.website);
+      const fetched = await mapConcurrent(candidates, 3, (cand, i) => fetchPage(cand.url, dir, `page${i + 1}`));
+      fetched.forEach((f, i) => manifest.pages.push({ role: "candidate", linkText: candidates[i].text, score: candidates[i].score, ...f.entry }));
     }
   }
 

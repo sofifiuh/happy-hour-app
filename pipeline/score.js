@@ -2,18 +2,14 @@
 // Usage: node pipeline/score.js [--write]   (--write saves pipeline/REPORT.md)
 import fs from "node:fs";
 import path from "node:path";
-import { loadSeed, parseArgs, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
+import { loadSeed, parseArgs, readJson, setEq, normName, modelOf, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
 
 const args = parseArgs(process.argv.slice(2));
-const extracted = JSON.parse(fs.readFileSync(path.join(RESULTS_DIR, args.in || "extracted.json"), "utf8"));
+const extracted = readJson(path.join(RESULTS_DIR, args.in || "extracted.json"));
 const venues = loadSeed();
 
 const toMin = (t) => Number(t.slice(0, 2)) * 60 + Number(t.slice(3, 5));
-const setEq = (a, b) => a.length === b.length && [...a].sort().join() === [...b].sort().join();
 
-function normName(s) {
-  return s.toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
-}
 function nameTokens(s) {
   return new Set(normName(s).split(" ").filter((w) => w.length > 2 && !["the", "and", "with", "select", "all", "our", "house"].includes(w)));
 }
@@ -32,7 +28,7 @@ function normPrice(s) {
 }
 
 function scoreVenue(gt, rec) {
-  const row = { id: gt.id, name: gt.name, verified: gt.happy_hour.verified === true };
+  const row = { id: gt.id, name: gt.name };
   if (!rec || rec.error) { row.verdict = "NO-DATA"; row.detail = rec?.error || "no extraction record"; return row; }
   const x = rec.extraction;
   row.confidence = x.confidence;
@@ -53,7 +49,8 @@ function scoreVenue(gt, rec) {
   const pool = [...(h.deals || [])];
   let matched = 0, priceOk = 0;
   for (const gd of g.deals) {
-    const i = pool.findIndex((xd) => namesMatch(gd.name, hay(xd)) || namesMatch(hay(gd), xd.name));
+    const gdHay = hay(gd);
+    const i = pool.findIndex((xd) => namesMatch(gd.name, hay(xd)) || namesMatch(gdHay, xd.name));
     if (i === -1) continue;
     matched++;
     if (normPrice(pool[i].price) === normPrice(gd.price)) priceOk++;
@@ -81,7 +78,7 @@ const avg = (xs) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0);
 const fmtPct = (x) => (x == null ? "—" : `${Math.round(x * 100)}%`);
 
 const totalCost = rows.reduce((s, r) => s + (r.costUsd || 0), 0);
-const model = Object.values(extracted).find((r) => r.model)?.model || "?";
+const model = modelOf(extracted) || "?";
 
 const lines = [];
 lines.push(`# Extraction harness report`);

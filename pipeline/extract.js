@@ -4,7 +4,7 @@
 //        [--concurrency 3] [--force]
 import fs from "node:fs";
 import path from "node:path";
-import { loadSeed, parseArgs, CACHE_DIR, RESULTS_DIR } from "./lib/venues.js";
+import { parseArgs, selectVenues, readJson, CACHE_DIR, RESULTS_DIR } from "./lib/venues.js";
 import { mapConcurrent } from "./lib/curl.js";
 import { htmlToText } from "./lib/html.js";
 import { callClaude, parseJsonReply, validateExtraction, DEFAULT_MODEL } from "./lib/claude.js";
@@ -67,6 +67,19 @@ ${pdfBlock}
 ${pageBlocks}`;
 }
 
+// HTML -> text conversion cached beside the page (invalidated when the
+// crawl rewrites the HTML), so per-model comparison re-runs skip ~76MB of
+// repeated regex work.
+function pageText(file) {
+  const sidecar = file + ".txt";
+  try {
+    if (fs.statSync(sidecar).mtimeMs >= fs.statSync(file).mtimeMs) return fs.readFileSync(sidecar, "utf8");
+  } catch {}
+  const text = htmlToText(fs.readFileSync(file, "utf8"));
+  fs.writeFileSync(sidecar, text);
+  return text;
+}
+
 async function extractVenue(venue) {
   if (!args.force && previous[venue.id] && !previous[venue.id].error) return previous[venue.id];
 
@@ -86,12 +99,12 @@ async function extractVenue(venue) {
   for (const p of ordered) {
     const file = path.join(dir, p.file);
     if (!fs.existsSync(file)) continue;
-    if (p.file.endsWith(".pdf")) {
+    if ((p.contentType || "").includes("pdf") || p.file.endsWith(".pdf")) {
       pdfPaths.push({ file, url: p.url });
       continue;
     }
     if (budget <= 0) continue;
-    const text = htmlToText(fs.readFileSync(file, "utf8")).slice(0, Math.min(PER_PAGE_CHARS, budget));
+    const text = pageText(file).slice(0, Math.min(PER_PAGE_CHARS, budget));
     if (text.length < 40) continue; // JS-rendered shell or empty page
     budget -= text.length;
     textPages.push({ url: p.url, role: p.role, text });
@@ -101,23 +114,20 @@ async function extractVenue(venue) {
   }
 
   const prompt = buildPrompt(venue, textPages, pdfPaths);
-  let reply = await callClaude(prompt, { model: MODEL, allowRead: pdfPaths.length > 0, cwd: dir });
-  let costUsd = reply.costUsd;
-  let extraction = null;
-  let parseError = null;
+  const callOpts = { model: MODEL, allowRead: pdfPaths.length > 0, cwd: dir };
+  const tryParse = (reply) => {
+    if (!reply.ok) return { error: reply.error };
+    try { return { extraction: parseJsonReply(reply.text) }; }
+    catch (e) { return { error: `${e.message}; raw: ${reply.text.slice(0, 200)}` }; }
+  };
 
-  for (let attempt = 0; attempt < 2 && !extraction; attempt++) {
-    if (attempt > 0) {
-      reply = await callClaude(prompt + "\n\nREMINDER: reply with ONLY the JSON object.", { model: MODEL, allowRead: pdfPaths.length > 0, cwd: dir });
-      costUsd += reply.costUsd;
-    }
-    if (!reply.ok) { parseError = reply.error; continue; }
-    try {
-      extraction = parseJsonReply(reply.text);
-      parseError = null;
-    } catch (e) {
-      parseError = `${e.message}; raw: ${reply.text.slice(0, 200)}`;
-    }
+  let reply = await callClaude(prompt, callOpts);
+  let costUsd = reply.costUsd;
+  let { extraction, error: parseError } = tryParse(reply);
+  if (!extraction) {
+    reply = await callClaude(prompt + "\n\nREMINDER: reply with ONLY the JSON object.", callOpts);
+    costUsd += reply.costUsd;
+    ({ extraction, error: parseError } = tryParse(reply));
   }
 
   if (!extraction) return { id: venue.id, error: `extraction failed: ${parseError}`, costUsd };
