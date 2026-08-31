@@ -444,16 +444,16 @@ body {
 
 .map-filters {
   position: fixed;
-  /* Inset by 14px and padded back out: .filters scrolls horizontally
-     (overflow-x: auto), which was clipping these pills' drop shadows flat
-     against the container edge. The padding gives the shadow room to render;
-     the offsets keep the pills where they were (16px in, 70px down). */
-  top: 56px;
-  left: 2px;
-  right: 2px;
-  padding: 14px;
+  top: 70px;
+  left: 16px;
+  right: 16px;
   z-index: 1100;
   margin-bottom: 0;
+  /* .filters scrolls horizontally, and an overflow container clips its
+     children's shadows. These three pills always fit, so drop the scroll
+     here rather than padding the box out — padding a transparent fixed
+     overlay just enlarges the region that swallows map drags. */
+  overflow: visible;
 }
 .map-filters .filter-btn {
   background: rgba(255, 255, 255, 0.9);

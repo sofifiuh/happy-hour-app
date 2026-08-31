@@ -29,7 +29,11 @@ function extFor(contentType, url) {
   // Plenty of small venues publish the happy hour menu as a photo. Saving it
   // as .html made it unreadable — extract.js hands images to Claude's Read
   // tool like it does PDFs.
-  const m = /image\/(jpeg|jpg|png|webp|gif)/.exec(contentType) || /\.(jpe?g|png|webp|gif)(\?|#|$)/i.exec(url);
+  // Trust a declared content type over the URL: a CMS answering /hh.jpg
+  // with an HTML soft-404 must not be cached as an image and then handed to
+  // the Read tool as one.
+  if (contentType.includes("html")) return "html";
+  const m = /image\/(jpeg|jpg|png|webp|gif)/.exec(contentType) || (!contentType && /\.(jpe?g|png|webp|gif)(\?|#|$)/i.exec(url));
   if (m) { const e = (m[1] || "").toLowerCase(); return e === "jpg" ? "jpeg" : e || "jpeg"; }
   return "html";
 }

@@ -346,14 +346,6 @@ function distanceKm(venue) {
   return 2 * 6371 * Math.asin(Math.sqrt(a));
 }
 
-const byDistance = (a, b) => {
-  const da = distanceKm(a.venue), db = distanceKm(b.venue);
-  if (da === null && db === null) return 0;
-  if (da === null) return 1;
-  if (db === null) return -1;
-  return da - db;
-};
-
 function formatDistance(km) {
   if (km === null) return "";
   return km < 1 ? `${Math.round(km * 1000)} m` : `${km < 10 ? km.toFixed(1) : Math.round(km)} km`;
@@ -414,7 +406,7 @@ function renderList(occurrences, now) {
   if (live.length) {
     groups.set(-1, {
       label: userPos ? "Happening now · closest first" : "Happening now",
-      items: userPos ? [...live].sort(byDistance) : live,
+      items: live,
     });
   }
   for (const item of rest) {
@@ -422,7 +414,15 @@ function renderList(occurrences, now) {
     if (!groups.has(bucket.key)) groups.set(bucket.key, { label: bucket.label, items: [] });
     groups.get(bucket.key).items.push(item);
   }
-  if (userPos) for (const g of groups.values()) g.items.sort(byDistance);
+  if (userPos) {
+    for (const g of groups.values()) {
+      // Decorate-sort-undecorate: distanceKm is constant per render, and the
+      // comparator would otherwise recompute it on every comparison.
+      const keyed = g.items.map((item) => ({ item, km: distanceKm(item.venue) }));
+      keyed.sort((a, b) => (a.km ?? Infinity) - (b.km ?? Infinity));
+      g.items = keyed.map((k) => k.item);
+    }
+  }
 
   for (const key of [...groups.keys()].sort((a, b) => a - b)) {
     const { label, items } = groups.get(key);
@@ -576,6 +576,9 @@ function locateMe() {
       btn.classList.add("located");
       const m = ensureMap();
       const ll = [pos.coords.latitude, pos.coords.longitude];
+      // Same fix drives the list's "closest first" ordering and distance
+      // labels — otherwise the map knows where you are and the list doesn't.
+      userPos = { lat: pos.coords.latitude, lng: pos.coords.longitude };
       if (!userLocDot) {
         userLocDot = L.marker(ll, {
           icon: L.divIcon({ className: "user-loc-dot", html: "<span></span>", iconSize: [22, 22], iconAnchor: [11, 11] }),
@@ -596,6 +599,7 @@ function locateMe() {
         userLocHalo.setLatLng(ll).setRadius(pos.coords.accuracy || 50);
       }
       m.flyTo(ll, Math.max(m.getZoom(), 15), { duration: 0.6 });
+      render();
     },
     () => {
       btn.classList.remove("locating");
@@ -705,7 +709,10 @@ function dealRank(price) {
 }
 
 function bestDeal(deals, category) {
-  const pool = deals.filter((d) => d.category === category && d.name && d.price);
+  // Category defaults to "food" like everywhere else, and a priceless deal
+  // still counts — some venues publish the items without the prices, and
+  // dropping them made the card claim nothing was published at all.
+  const pool = deals.filter((d) => (d.category || "food") === category && d.name);
   if (!pool.length) return null;
   return pool.reduce((a, b) => (dealRank(b.price) < dealRank(a.price) ? b : a));
 }
@@ -769,7 +776,7 @@ function buildMapCard(venue, occ) {
   // Showcase the menu instead of navigation links: the cheapest drink and
   // food deal. Venues without extracted deals keep the directions row so the
   // card isn't empty.
-  const deals = (venue.happy_hour && venue.happy_hour.deals) || [];
+  const deals = getDeals(venue);
   const highlights = [
     ["🍸", bestDeal(deals, "drink")],
     ["🍴", bestDeal(deals, "food")],
@@ -780,7 +787,7 @@ function buildMapCard(venue, occ) {
       row.className = "map-detail-action map-detail-deal";
       row.innerHTML = `<span class="map-detail-action-icon">${icon}</span><span class="map-detail-deal-name"></span><span class="map-detail-deal-price"></span>`;
       row.querySelector(".map-detail-deal-name").textContent = deal.name;
-      row.querySelector(".map-detail-deal-price").textContent = deal.price;
+      row.querySelector(".map-detail-deal-price").textContent = deal.price || "";
       actions.appendChild(row);
     }
   } else {

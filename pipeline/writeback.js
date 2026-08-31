@@ -112,12 +112,15 @@ const placePhotos = readJson(PHOTOS_STORE, {});
 function resyncDiscovered(d, discExt) {
   const x = acceptExtraction(d.id, discExt[d.id], DISC_MIN_CONF, "discovery resync: ");
   if (!x) return false;
-  // Never let a run that found no deal items erase deals we already have —
-  // an extraction whose crawl missed the menu page would silently delete
-  // good data. Schedule and deals travel together, so skip the whole update
-  // and keep the coherent stored record.
-  if (!(x.happy_hour.deals || []).length && (d.happy_hour?.deals || []).length) {
-    skipped.push([d.id, `discovery resync: extraction has no deals, kept stored ${d.happy_hour.deals.length}`]);
+  // Never let a thinner run erase data we already have. A crawl that missed
+  // the menu page comes back with fewer deals (often zero), and because
+  // schedule, windows and deals travel together as one record, a partial
+  // loss would also downgrade precise late-night end times to "until close".
+  // So compare counts like the seed path does and skip the whole update.
+  const fresh = (x.happy_hour.deals || []).length;
+  const stored = (d.happy_hour?.deals || []).length;
+  if (stored && fresh < stored) {
+    skipped.push([d.id, `discovery resync: extracted fewer deals (${fresh}) than stored (${stored}), kept stored record`]);
     return false;
   }
   d.happy_hour = { ...d.happy_hour, days: x.happy_hour.days, start: x.happy_hour.start, end: x.happy_hour.end, extra_windows: normalizeWindows(x.happy_hour.extra_windows), source_url: x.source_url, deals: normalizeDeals(x.happy_hour.deals) };
@@ -164,8 +167,10 @@ if (cands && discExt) {
   // still resync any of them the extraction run DID cover, otherwise a
   // targeted re-extract of older discovered venues is silently dropped.
   const rebuiltIds = new Set(rebuilt.map((d) => d.id));
-  const runIds = new Set(cands.map((c) => c.id));
-  const kept = discovered.filter((d) => !rebuiltIds.has(d.id) && !runIds.has(d.id));
+  // Keep anything not rebuilt — including venues this run covered but whose
+  // extraction was rejected (low confidence, transient crawl failure). They
+  // must fall back to their committed record, never be dropped from the store.
+  const kept = discovered.filter((d) => !rebuiltIds.has(d.id));
   for (const d of kept) resyncDiscovered(d, discExt);
   discovered = [...rebuilt, ...kept];
   fs.writeFileSync(DISCOVERED_STORE, JSON.stringify(discovered, null, 2));

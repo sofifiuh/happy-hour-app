@@ -484,7 +484,9 @@ body {
 .menu-toast {
   position: fixed;
   left: 50%;
-  bottom: 28px;
+  /* Clears the fixed hours/Share bar — at bottom: 28px the toast landed on
+     top of the very Share button that triggers it. */
+  bottom: calc(84px + env(safe-area-inset-bottom));
   transform: translateX(-50%);
   background: #1c1b1a;
   color: #fff;

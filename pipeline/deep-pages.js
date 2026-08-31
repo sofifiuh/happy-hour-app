@@ -55,6 +55,18 @@ async function sitemapUrls(origin, depth = 0) {
 }
 
 async function deepen(venue) {
+  try {
+    return await deepenOne(venue);
+  } catch (e) {
+    // A malformed website URL or a truncated manifest must not reject out of
+    // mapConcurrent — that would discard every other venue's fetched pages
+    // and leave the headless browser running.
+    console.log(`${venue.id.padEnd(36)} skipped: ${String(e.message || e).slice(0, 90)}`);
+    return { id: venue.id, added: 0 };
+  }
+}
+
+async function deepenOne(venue) {
   if (!venue.website) return { id: venue.id, added: 0 };
   const dir = path.join(CACHE_DIR, venue.id);
   const manifestPath = path.join(dir, "manifest.json");
@@ -68,9 +80,11 @@ async function deepen(venue) {
   // under /locations/<other> is a different restaurant with different prices.
   const locSlug = /\/locations?\/([^/]+)/i.exec(venue.website)?.[1] || null;
   const wanted = new Map();
-  const want = (u, why) => {
+  // `base` is the page the URL was found on — a relative src on
+  // /menus/ resolves against /menus/, not against the site root.
+  const want = (u, why, base = venue.website) => {
     try {
-      const url = new URL(u, venue.website);
+      const url = new URL(u, base);
       url.hash = "";
       if (url.origin !== origin) return;             // first-party only
       const s = url.toString();
@@ -103,8 +117,9 @@ async function deepen(venue) {
     if (!p.file || !/\.html?$/i.test(p.file)) continue;
     let html = "";
     try { html = fs.readFileSync(path.join(dir, p.file), "utf8"); } catch { continue; }
+    const pageBase = p.finalUrl || p.url || venue.website;
     for (const { href, text } of extractLinks(html)) {
-      if (WORTH.test(href) || WORTH.test(text || "")) want(href, "link");
+      if (WORTH.test(href) || WORTH.test(text || "")) want(href, "link", pageBase);
     }
     const onMenuPage = WORTH.test(p.url || "") || MENUISH.test(p.url || "");
     for (const m of html.matchAll(/<img\b[^>]*?\bsrc=["']([^"']+)["'][^>]*>/gi)) {
@@ -114,7 +129,7 @@ async function deepen(venue) {
       if (!/\.(jpe?g|png|webp)(\?|#|$)/i.test(src)) continue;
       // Only images that plausibly carry the menu: a menu-ish filename, or
       // any content image sitting on a happy-hour/menu page.
-      if (WORTH.test(src) || MENUISH.test(src) || onMenuPage) want(src, "image");
+      if (WORTH.test(src) || MENUISH.test(src) || onMenuPage) want(src, "image", pageBase);
     }
   }
 
@@ -135,7 +150,10 @@ async function deepen(venue) {
     const res = await curlGet(url, tmp, { timeout: 30 });
     const ok = res.status >= 200 && res.status < 400;
     const isPdf = (res.contentType || "").includes("pdf") || /\.pdf(\?|$)/i.test(res.finalUrl || url);
-    const imgM = /image\/(jpeg|jpg|png|webp|gif)/.exec(res.contentType || "") || /\.(jpe?g|png|webp|gif)(\?|$)/i.exec(res.finalUrl || url);
+    // Same rule as crawl.js: a declared text/html beats the URL's extension.
+    const ct = res.contentType || "";
+    const imgM = ct.includes("html") ? null
+      : (/image\/(jpeg|jpg|png|webp|gif)/.exec(ct) || (!ct && /\.(jpe?g|png|webp|gif)(\?|$)/i.exec(res.finalUrl || url)));
     if (!ok) { try { fs.rmSync(tmp, { force: true }); } catch {} return; }
     const ext = isPdf ? "pdf" : imgM ? ((imgM[1] || "jpeg").toLowerCase() === "jpg" ? "jpeg" : (imgM[1] || "jpeg").toLowerCase()) : "html";
     const file = `${base}.${ext}`;
@@ -145,7 +163,11 @@ async function deepen(venue) {
       const size = fs.statSync(path.join(dir, file)).size;
       if (size < 800) { fs.rmSync(path.join(dir, file), { force: true }); return; }
     }
-    const entry = { role: `deep-${why}`, score: WORTH.test(url) ? 200 : 60, url, file, ...res };
+    // extract.js spends its character budget highest-score-first, so a blind
+    // guess that merely looks happy-hour-ish must not outrank a page the site
+    // actually publishes or links.
+    const score = (WORTH.test(url) ? 200 : 60) - (why === "sitemap" ? 0 : why === "image" ? 5 : why === "link" ? 10 : 40);
+    const entry = { role: `deep-${why}`, score, url, file, ...res };
     added++;
     manifest.pages.push(entry);
 
@@ -173,6 +195,10 @@ async function deepen(venue) {
   return { id: venue.id, added };
 }
 
-const res = await mapConcurrent(venues, Number(args.concurrency) || 4, deepen);
-await closeBrowser();
+let res = [];
+try {
+  res = await mapConcurrent(venues, Number(args.concurrency) || 4, deepen);
+} finally {
+  await closeBrowser();
+}
 console.log(`\n${res.reduce((s, r) => s + r.added, 0)} pages added across ${res.filter((r) => r.added).length} venues.`);

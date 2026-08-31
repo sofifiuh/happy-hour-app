@@ -12,6 +12,7 @@ import { callClaude, parseJsonReply, validateExtraction, DEFAULT_MODEL } from ".
 const args = parseArgs(process.argv.slice(2));
 const MODEL = args.model || DEFAULT_MODEL;
 const PER_PAGE_CHARS = 12000;
+const MAX_IMAGES = 6;   // image menus read per venue
 const TOTAL_CHARS = 45000;
 const OUT_FILE = path.join(RESULTS_DIR, args.out || "extracted.json");
 
@@ -106,8 +107,10 @@ async function extractVenue(venue) {
       continue;
     }
     // Image menus: a photographed or exported menu is read, not parsed.
+    // Capped — images skip the character budget, and a menu page carrying a
+    // dozen dish photos would otherwise send every one to the model.
     if ((p.contentType || "").startsWith("image/") || /\.(jpe?g|png|webp|gif)$/i.test(p.file)) {
-      pdfPaths.push({ file, url: p.url, image: true });
+      if (pdfPaths.filter((x) => x.image).length < MAX_IMAGES) pdfPaths.push({ file, url: p.url, image: true });
       continue;
     }
     if (budget <= 0) continue;
