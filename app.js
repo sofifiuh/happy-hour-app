@@ -534,26 +534,73 @@ function ensureMap() {
     }
   ).addTo(map);
 
-  // Double-tap to zoom. Leaflet 1.8+ relies on native dblclick, which mobile
-  // Safari withholds (it reserves double-tap for page smart-zoom) — so detect
-  // the double tap ourselves and zoom around the tapped point. Marker taps
-  // are excluded; preventDefault stops the browser's own smart-zoom.
+  // Double-tap zoom, one finger. Leaflet 1.8+ relies on native dblclick, which
+  // mobile Safari withholds (it reserves double-tap for page smart-zoom), so
+  // the whole gesture is ours:
+  //   double tap, lift          -> step in one zoom level
+  //   double tap, hold and drag -> continuous zoom, up to zoom in, down out
+  // Both anchor on the tapped point, so the spot under the finger stays put.
+  // Marker taps are excluded; preventDefault stops the browser's smart-zoom.
   const container = map.getContainer();
-  let lastTap = null;
+  const DOUBLE_TAP_MS = 300;      // gap allowed between the two taps
+  const DOUBLE_TAP_SLOP = 40;     // px the second tap may land from the first
+  const DRAG_SLOP = 6;            // px before a hold counts as a drag
+  const PX_PER_ZOOM = 110;        // finger travel for one zoom level
+  let lastTap = null;             // previous touchend, for pairing
+  let tapZoom = null;             // live double-tap-drag state
+
+  const endTapZoom = () => {
+    if (!tapZoom) return;
+    map.dragging.enable();
+    tapZoom = null;
+  };
+
+  container.addEventListener("touchstart", (e) => {
+    if (e.touches.length !== 1 || e.target.closest(".map-pin")) { lastTap = null; endTapZoom(); return; }
+    const t = e.touches[0];
+    if (!lastTap || Date.now() - lastTap.time >= DOUBLE_TAP_MS ||
+        Math.hypot(t.clientX - lastTap.x, t.clientY - lastTap.y) >= DOUBLE_TAP_SLOP) return;
+    // Second tap of a pair: arm the drag-zoom and take panning out of
+    // Leaflet's hands until the finger lifts.
+    const rect = container.getBoundingClientRect();
+    tapZoom = {
+      startY: t.clientY,
+      startZoom: map.getZoom(),
+      anchor: L.point(t.clientX - rect.left, t.clientY - rect.top),
+      dragged: false,
+    };
+    map.dragging.disable();
+  }, { passive: false });
+
+  container.addEventListener("touchmove", (e) => {
+    if (!tapZoom || e.touches.length !== 1) return;
+    e.preventDefault();
+    const dy = tapZoom.startY - e.touches[0].clientY; // up positive
+    if (Math.abs(dy) > DRAG_SLOP) tapZoom.dragged = true;
+    if (!tapZoom.dragged) return;
+    const z = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), tapZoom.startZoom + dy / PX_PER_ZOOM));
+    map.setZoomAround(tapZoom.anchor, z, { animate: false });
+  }, { passive: false });
+
   container.addEventListener("touchend", (e) => {
+    if (tapZoom) {
+      const { anchor, dragged } = tapZoom;
+      endTapZoom();
+      lastTap = null;
+      // A tap-and-lift with no drag is the plain double tap: step in.
+      if (!dragged) {
+        e.preventDefault();
+        map.setZoomAround(anchor, map.getZoom() + 1);
+      }
+      return;
+    }
     if (e.touches.length || e.changedTouches.length !== 1) { lastTap = null; return; }
     if (e.target.closest(".map-pin")) { lastTap = null; return; }
     const t = e.changedTouches[0];
-    const now = Date.now();
-    if (lastTap && now - lastTap.time < 300 && Math.hypot(t.clientX - lastTap.x, t.clientY - lastTap.y) < 40) {
-      lastTap = null;
-      e.preventDefault();
-      const rect = container.getBoundingClientRect();
-      map.setZoomAround(L.point(t.clientX - rect.left, t.clientY - rect.top), map.getZoom() + 1);
-    } else {
-      lastTap = { time: now, x: t.clientX, y: t.clientY };
-    }
+    lastTap = { time: Date.now(), x: t.clientX, y: t.clientY };
   }, { passive: false });
+
+  container.addEventListener("touchcancel", () => { endTapZoom(); lastTap = null; });
 
   return map;
 }
