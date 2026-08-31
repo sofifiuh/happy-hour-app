@@ -65,6 +65,7 @@ function hasAmenity(venue, key) {
 
 let venues = loadCachedVenues();
 loadVenueData();
+initUserLocation();
 let currentFilter = "all";
 let currentView = "list";
 let searchQuery = "";
@@ -86,6 +87,9 @@ let mapCardObserver = null;
 // teardown never removes them.
 let userLocDot = null;
 let userLocHalo = null;
+// The visitor's position, once known — drives "closest to me" list ordering
+// and the distance shown on each card. Null until geolocation resolves.
+let userPos = null;
 let mapToastTimer = null;
 
 const els = {
@@ -330,6 +334,45 @@ function startHourBucket(venue) {
   return { key: h, label: `Starts at ${label.replace(" ", "").toLowerCase()}` };
 }
 
+// Straight-line km from the visitor to a venue. Null when either side's
+// coordinates are unknown; callers sort those last.
+function distanceKm(venue) {
+  if (!userPos) return null;
+  const lat = getLat(venue), lng = getLng(venue);
+  if (typeof lat !== "number" || typeof lng !== "number") return null;
+  const toRad = (d) => (d * Math.PI) / 180;
+  const dLat = toRad(lat - userPos.lat), dLng = toRad(lng - userPos.lng);
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(userPos.lat)) * Math.cos(toRad(lat)) * Math.sin(dLng / 2) ** 2;
+  return 2 * 6371 * Math.asin(Math.sqrt(a));
+}
+
+const byDistance = (a, b) => {
+  const da = distanceKm(a.venue), db = distanceKm(b.venue);
+  if (da === null && db === null) return 0;
+  if (da === null) return 1;
+  if (db === null) return -1;
+  return da - db;
+};
+
+function formatDistance(km) {
+  if (km === null) return "";
+  return km < 1 ? `${Math.round(km * 1000)} m` : `${km < 10 ? km.toFixed(1) : Math.round(km)} km`;
+}
+
+// Ask once on load. Already-granted visitors resolve silently; a denial just
+// leaves the list in its start-time order.
+function initUserLocation() {
+  if (!navigator.geolocation) return;
+  navigator.geolocation.getCurrentPosition(
+    (pos) => {
+      userPos = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+      render();
+    },
+    () => {},
+    { maximumAge: 300000, timeout: 10000 }
+  );
+}
+
 function shortAddress(venue) {
   const c = venue.address_components;
   if (c?.route) return c.street_number ? `${c.street_number} ${c.route}` : c.route;
@@ -361,12 +404,25 @@ function renderList(occurrences, now) {
     return;
   }
 
+  // What is on RIGHT NOW leads, nearest first; everything else keeps its
+  // start-time buckets (useful for planning) with the closest spot first
+  // inside each. Without a known position the order falls back to start time.
+  const live = filtered.filter((i) => i.occ.status === "live");
+  const rest = filtered.filter((i) => i.occ.status !== "live");
+
   const groups = new Map();
-  for (const item of filtered) {
+  if (live.length) {
+    groups.set(-1, {
+      label: userPos ? "Happening now · closest first" : "Happening now",
+      items: userPos ? [...live].sort(byDistance) : live,
+    });
+  }
+  for (const item of rest) {
     const bucket = startHourBucket(item.venue);
     if (!groups.has(bucket.key)) groups.set(bucket.key, { label: bucket.label, items: [] });
     groups.get(bucket.key).items.push(item);
   }
+  if (userPos) for (const g of groups.values()) g.items.sort(byDistance);
 
   for (const key of [...groups.keys()].sort((a, b) => a - b)) {
     const { label, items } = groups.get(key);
@@ -431,7 +487,8 @@ function renderWeeklyCard(venue, occ, now) {
 
   const meta = document.createElement("p");
   meta.className = "weekly-card-meta";
-  meta.textContent = shortAddress(venue);
+  const km = distanceKm(venue);
+  meta.textContent = km === null ? shortAddress(venue) : `${formatDistance(km)} · ${shortAddress(venue)}`;
   card.appendChild(meta);
 
   return card;
