@@ -45,9 +45,10 @@ const previous = readJson(OUT_FILE, {});
 const only = args.only ? new Set(String(args.only).split(",")) : null;
 // Default target: venues that advertise a happy hour but publish no items.
 const targets = venues.filter((v) => {
+  // A Places match is required either way — inspectVenue dereferences it.
+  if (!(v.place_id || places[v.id]?.place_id)) return false;
   if (only) return only.has(v.id);
-  if ((v.happy_hour?.deals || []).length) return false;
-  return !!(v.place_id || places[v.id]?.place_id);
+  return !((v.happy_hour?.deals || []).length);
 });
 console.log(`${targets.length} venues to inspect (up to ${MAX_PHOTOS} photos each), model ${MODEL}`);
 fs.mkdirSync(RESULTS_DIR, { recursive: true });
