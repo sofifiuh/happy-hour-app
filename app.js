@@ -518,7 +518,11 @@ function ensureMap() {
   // No +/- control on touch devices (pinch and double-tap cover it, and the
   // default topleft placement hides under the List pill); desktop gets it
   // top-right, clear of the pill.
-  map = L.map("map", { attributionControl: true, zoomControl: false }).setView([49.2698, -123.1207], 13);
+  // zoomSnap: 0 lets the map sit at fractional zoom levels. The default of 1
+  // rounds every setZoom to a whole level, which is what made the drag-zoom
+  // (and pinch) jump in steps instead of tracking the finger.
+  map = L.map("map", { attributionControl: true, zoomControl: false, zoomSnap: 0, zoomDelta: 1 })
+    .setView([49.2698, -123.1207], 13);
   map.attributionControl.setPrefix("");
   if (!window.matchMedia("(pointer: coarse)").matches) {
     L.control.zoom({ position: "topright" }).addTo(map);
@@ -538,7 +542,7 @@ function ensureMap() {
   // mobile Safari withholds (it reserves double-tap for page smart-zoom), so
   // the whole gesture is ours:
   //   double tap, lift          -> step in one zoom level
-  //   double tap, hold and drag -> continuous zoom, up to zoom in, down out
+  //   double tap, hold and drag -> smooth zoom, down to zoom in, up to out
   // Both anchor on the tapped point, so the spot under the finger stays put.
   // Marker taps are excluded; preventDefault stops the browser's smart-zoom.
   const container = map.getContainer();
@@ -575,7 +579,7 @@ function ensureMap() {
   container.addEventListener("touchmove", (e) => {
     if (!tapZoom || e.touches.length !== 1) return;
     e.preventDefault();
-    const dy = tapZoom.startY - e.touches[0].clientY; // up positive
+    const dy = e.touches[0].clientY - tapZoom.startY; // down positive -> zoom in
     if (Math.abs(dy) > DRAG_SLOP) tapZoom.dragged = true;
     if (!tapZoom.dragged) return;
     const z = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), tapZoom.startZoom + dy / PX_PER_ZOOM));
@@ -590,7 +594,7 @@ function ensureMap() {
       // A tap-and-lift with no drag is the plain double tap: step in.
       if (!dragged) {
         e.preventDefault();
-        map.setZoomAround(anchor, map.getZoom() + 1);
+        map.setZoomAround(anchor, Math.round(map.getZoom()) + 1);
       }
       return;
     }
