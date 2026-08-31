@@ -91,6 +91,8 @@ let userLocHalo = null;
 // and the distance shown on each card. Null until geolocation resolves.
 let userPos = null;
 let mapToastTimer = null;
+// Whether the map has had its one automatic fit-to-all-pins.
+let mapFitted = false;
 
 const els = {
   venueList: document.getElementById("venueList"),
@@ -683,7 +685,12 @@ function renderMap(occurrences) {
   // Fitting bounds first left it centered on stale, mostly-blank tiles.
   setTimeout(() => {
     m.invalidateSize();
-    if (located.length > 0) {
+    // Fit only the first time the map is opened. Every later render — a
+    // filter switch, a search, a data refresh — must leave the camera where
+    // the user put it; re-fitting was yanking them back out to the whole city
+    // when they only meant to change which pins show.
+    if (!mapFitted && located.length > 0) {
+      mapFitted = true;
       const bounds = L.latLngBounds(located.map((o) => [getLat(o.venue), getLng(o.venue)]));
       // The map is full-viewport but the top filter chrome and the bottom
       // card carousel float over it — pad the fit so no pin lands hidden
