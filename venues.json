@@ -1,5 +1,5 @@
 {
- "data_version": "2026-08-31-9a2e687d",
+ "data_version": "2026-08-31-f7a42696",
  "venues": [
   {
    "id": "ancora",
@@ -5240,7 +5240,176 @@
     "verified": false,
     "verified_source": null,
     "source_url": "http://themainonmain.com/happy-hour.php",
-    "deals": []
+    "deals": [
+     {
+      "name": "Veggie Gyozas (6)",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Crispy Perogies & Sour Cream (9)",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Calamari HH Size",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Dolmades (8)",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Tiganopsomo HH Size + Lager",
+      "price": "$12",
+      "category": "food",
+      "description": "Greek appetizer with beer"
+     },
+     {
+      "name": "Jalapeno Bombers (6)",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Fried Pickles (6)",
+      "price": "$6",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Potato Chippers",
+      "price": "$7",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Crispy Mozza Sticks (6)",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Onion Rings",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Pepperoni Pizza",
+      "price": "$19",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Spicy Garlic Fries",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Truffle Fries",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Wings (8)",
+      "price": "$10",
+      "category": "food",
+      "description": "Red Hot, Sweet Chilli, BBQ, Teriyaki, Honey Garlic, or Salt & Pepper"
+     },
+     {
+      "name": "House Lager",
+      "price": "$4.75",
+      "category": "drink",
+      "description": "16oz"
+     },
+     {
+      "name": "Landshark Lager",
+      "price": "$4.50",
+      "category": "drink",
+      "description": "16oz"
+     },
+     {
+      "name": "House White",
+      "price": "$6-$9",
+      "category": "drink",
+      "description": "6oz or 9oz"
+     },
+     {
+      "name": "House Red",
+      "price": "$6-$9",
+      "category": "drink",
+      "description": "6oz or 9oz"
+     },
+     {
+      "name": "Sangria Pitcher",
+      "price": "$23",
+      "category": "drink",
+      "description": "Red, White, Rosé, or Apple Cider; 18oz"
+     },
+     {
+      "name": "PBR",
+      "price": "$5",
+      "category": "drink",
+      "description": "355ml"
+     },
+     {
+      "name": "Well Highballs",
+      "price": "$6-$9",
+      "category": "drink",
+      "description": "1oz or 2oz (except Tequila)"
+     },
+     {
+      "name": "Jameson Irish",
+      "price": "$5",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Green Tea",
+      "price": "$6",
+      "category": "drink",
+      "description": "Shot"
+     },
+     {
+      "name": "Irish Frog",
+      "price": "$6",
+      "category": "drink",
+      "description": "Shot"
+     },
+     {
+      "name": "Bazooka Joe",
+      "price": "$6",
+      "category": "drink",
+      "description": "Shot"
+     },
+     {
+      "name": "Lemon Drop",
+      "price": "$6",
+      "category": "drink",
+      "description": "Shot"
+     },
+     {
+      "name": "Boiler Maker",
+      "price": "$9",
+      "category": "drink",
+      "description": "1oz + 16oz"
+     },
+     {
+      "name": "Jaeger Bomb",
+      "price": "$10",
+      "category": "drink",
+      "description": "1oz"
+     }
+    ]
    },
    "cover_image": {
     "url": "photos/the-main.jpg",
@@ -6610,29 +6779,29 @@
    "happy_hour": {
     "days": [
      0,
-     1,
-     2,
-     3,
-     4,
-     5,
      6
     ],
-    "start": "20:00",
-    "end": "22:30",
+    "start": "14:00",
+    "end": "17:00",
     "extra_windows": [
      {
       "days": [
        0,
+       1,
+       2,
+       3,
+       4,
+       5,
        6
       ],
-      "start": "14:00",
-      "end": "17:00",
-      "label": "Afternoon Happy Hour"
+      "start": "20:00",
+      "end": "22:30",
+      "label": "Evening happy hour"
      }
     ],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://alley16.com/drinks/",
+    "source_url": "http://www.alley16.com/drinks",
     "deals": []
    },
    "cover_image": {
@@ -10229,7 +10398,7 @@
     "end": "17:30",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.prestonsvancouver.ca/",
+    "source_url": "https://www.prestonsvancouver.ca/menus",
     "deals": [],
     "extra_windows": [
      {
@@ -12427,8 +12596,153 @@
     "end": "18:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://biminis1975.ca/happy-hour/",
-    "deals": [],
+    "source_url": "https://biminis1975.ca/happy-hour",
+    "deals": [
+     {
+      "name": "Fries",
+      "price": "$7",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Calamari",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Mozza Stix",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Onion Rings",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Fish Tacos",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Jalapeno Poppers",
+      "price": "$8",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Truffle Fries",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Chicken Skewer",
+      "price": "$9",
+      "category": "food",
+      "description": "With pita & tzatziki"
+     },
+     {
+      "name": "Caesar Salad",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Cauliflower Bites",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "1 LB Wings",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Snack Nachos",
+      "price": "$9",
+      "category": "food",
+      "description": "Add jalapenos +$2, guacamole +$3, ground beef +$3"
+     },
+     {
+      "name": "6 Wings + Lager",
+      "price": "$10",
+      "category": "food",
+      "description": "Wings with 16 oz lager"
+     },
+     {
+      "name": "Smash Burger + Lager",
+      "price": "$12",
+      "category": "food",
+      "description": "With 16 oz lager"
+     },
+     {
+      "name": "Fire Ball",
+      "price": "$4",
+      "category": "drink",
+      "description": "1 oz shot"
+     },
+     {
+      "name": "Landshark Lager",
+      "price": "$5",
+      "category": "drink",
+      "description": "16 oz"
+     },
+     {
+      "name": "House Lager",
+      "price": "$5",
+      "category": "drink",
+      "description": "16 oz"
+     },
+     {
+      "name": "Jameson",
+      "price": "$5",
+      "category": "drink",
+      "description": "1 oz shot"
+     },
+     {
+      "name": "Tequila",
+      "price": "$5.50",
+      "category": "drink",
+      "description": "1 oz shot"
+     },
+     {
+      "name": "House Wines",
+      "price": "$6/$8.50",
+      "category": "drink",
+      "description": "6 oz / 9 oz"
+     },
+     {
+      "name": "Highballs",
+      "price": "$6/$10",
+      "category": "drink",
+      "description": "1 oz / 2 oz"
+     },
+     {
+      "name": "Guinness",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "16 oz"
+     },
+     {
+      "name": "Margarita",
+      "price": "$8/$11",
+      "category": "drink",
+      "description": "1 oz / 2 oz"
+     },
+     {
+      "name": "Caesar",
+      "price": "$8/$11",
+      "category": "drink",
+      "description": "1 oz / 2 oz"
+     }
+    ],
     "extra_windows": [
      {
       "days": [
@@ -13428,7 +13742,7 @@
     "end": "18:00",
     "verified": false,
     "verified_source": null,
-    "source_url": "https://forecastcoffee.ca/",
+    "source_url": "http://forecastcoffee.ca/",
     "deals": [],
     "extra_windows": []
    },
@@ -16311,7 +16625,26 @@
     "verified": false,
     "verified_source": null,
     "source_url": "https://sylviahotel.com/restaurant-lounge/",
-    "deals": [],
+    "deals": [
+     {
+      "name": "Appetizers",
+      "price": "Specials",
+      "category": "food",
+      "description": "Specials on appetizers"
+     },
+     {
+      "name": "Beer",
+      "price": "Specials",
+      "category": "drink",
+      "description": "Specials on beer"
+     },
+     {
+      "name": "Wine",
+      "price": "Specials",
+      "category": "drink",
+      "description": "Specials on wine"
+     }
+    ],
     "extra_windows": []
    },
    "last_synced_at": "2026-08-31",

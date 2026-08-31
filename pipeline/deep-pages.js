@@ -94,7 +94,11 @@ async function deepen(venue) {
   if (locPath) bases.push(origin + locPath + "/");
   for (const b of bases) for (const g of GUESSES) want(b + g, "guess");
 
-  // 3) links on pages we already cached that we skipped the first time
+  // 3) links on pages we already cached that we skipped the first time, plus
+  //    any <img> that could BE the menu. Small venues routinely publish the
+  //    happy hour as a picture (The Main's whole menu is hr1.jpg + hr2.jpg),
+  //    and an <img src> is never an <a href>, so link-following alone can
+  //    never see it.
   for (const p of manifest.pages) {
     if (!p.file || !/\.html?$/i.test(p.file)) continue;
     let html = "";
@@ -102,13 +106,24 @@ async function deepen(venue) {
     for (const { href, text } of extractLinks(html)) {
       if (WORTH.test(href) || WORTH.test(text || "")) want(href, "link");
     }
+    const onMenuPage = WORTH.test(p.url || "") || MENUISH.test(p.url || "");
+    for (const m of html.matchAll(/<img\b[^>]*?\bsrc=["']([^"']+)["'][^>]*>/gi)) {
+      const tag = m[0], src = m[1];
+      if (/\b(width|height)\s*=\s*["']?1\b/i.test(tag)) continue;       // tracking pixel
+      if (/logo|favicon|icon|sprite|payment|badge|avatar|banner|header|footer|bg[-_]/i.test(src)) continue;
+      if (!/\.(jpe?g|png|webp)(\?|#|$)/i.test(src)) continue;
+      // Only images that plausibly carry the menu: a menu-ish filename, or
+      // any content image sitting on a happy-hour/menu page.
+      if (WORTH.test(src) || MENUISH.test(src) || onMenuPage) want(src, "image");
+    }
   }
 
   // Cap the work per venue, best first. A URL the site itself publishes in
   // its sitemap beats a blind guess: many sites answer 200 for any path, so
   // guesses produce soft-404s that would otherwise crowd out the real page.
-  const rank = ([url, why]) => (WORTH.test(url) ? 0 : 10) + (why === "sitemap" ? 0 : why === "link" ? 1 : 2);
-  const picks = [...wanted.entries()].sort((a, b) => rank(a) - rank(b)).slice(0, 14);
+  const rank = ([url, why]) =>
+    (WORTH.test(url) ? 0 : 10) + (why === "sitemap" ? 0 : why === "image" ? 1 : why === "link" ? 2 : 3);
+  const picks = [...wanted.entries()].sort((a, b) => rank(a) - rank(b)).slice(0, 18);
 
   const n = manifest.pages.length;
   let added = 0;
