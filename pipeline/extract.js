@@ -43,7 +43,7 @@ function buildPrompt(venue, pages, pdfPaths) {
     .map((p) => `--- PAGE (${p.role}) ${p.url} ---\n${p.text}`)
     .join("\n\n");
   const pdfBlock = pdfPaths.length
-    ? `\nSome menus are PDF files. Read each of these with your Read tool before answering:\n${pdfPaths.map((p) => `- ${p.file} (from ${p.url})`).join("\n")}\n`
+    ? `\nSome menus are PDF or image files. Read each of these with your Read tool before answering — an image may BE the happy hour menu:\n${pdfPaths.map((p) => `- ${p.file}${p.image ? " (image)" : ""} (from ${p.url})`).join("\n")}\n`
     : "";
   return `You are a strict data-extraction engine for a happy hour app. Output ONLY one JSON object matching the schema below — no markdown fences, no commentary before or after.
 
@@ -103,6 +103,11 @@ async function extractVenue(venue) {
     if (!fs.existsSync(file)) continue;
     if ((p.contentType || "").includes("pdf") || p.file.endsWith(".pdf")) {
       pdfPaths.push({ file, url: p.url });
+      continue;
+    }
+    // Image menus: a photographed or exported menu is read, not parsed.
+    if ((p.contentType || "").startsWith("image/") || /\.(jpe?g|png|webp|gif)$/i.test(p.file)) {
+      pdfPaths.push({ file, url: p.url, image: true });
       continue;
     }
     if (budget <= 0) continue;
