@@ -444,9 +444,14 @@ body {
 
 .map-filters {
   position: fixed;
-  top: 70px;
-  left: 16px;
-  right: 16px;
+  /* Inset by 14px and padded back out: .filters scrolls horizontally
+     (overflow-x: auto), which was clipping these pills' drop shadows flat
+     against the container edge. The padding gives the shadow room to render;
+     the offsets keep the pills where they were (16px in, 70px down). */
+  top: 56px;
+  left: 2px;
+  right: 2px;
+  padding: 14px;
   z-index: 1100;
   margin-bottom: 0;
 }
@@ -678,6 +683,12 @@ body.map-fullscreen .sheet {
   flex-shrink: 0;
   font-weight: 700;
   color: #b4551e;
+}
+
+.map-detail-nodeals {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-dim);
 }
 .map-detail-action-icon {
   width: 26px;
