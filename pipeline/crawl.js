@@ -26,6 +26,11 @@ if (RENDER_MODE !== "off") {
 
 function extFor(contentType, url) {
   if (contentType.includes("pdf") || /\.pdf(\?|#|$)/i.test(url)) return "pdf";
+  // Plenty of small venues publish the happy hour menu as a photo. Saving it
+  // as .html made it unreadable — extract.js hands images to Claude's Read
+  // tool like it does PDFs.
+  const m = /image\/(jpeg|jpg|png|webp|gif)/.exec(contentType) || /\.(jpe?g|png|webp|gif)(\?|#|$)/i.exec(url);
+  if (m) { const e = (m[1] || "").toLowerCase(); return e === "jpg" ? "jpeg" : e || "jpeg"; }
   return "html";
 }
 
