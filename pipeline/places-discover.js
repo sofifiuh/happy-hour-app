@@ -56,6 +56,32 @@ const CIRCLES = [
   [49.2490, -123.0905, 450], [49.2440, -123.1010, 450], // Fraser St, South Main
   [49.2570, -123.1150, 400], [49.2580, -123.1390, 400], // Cambie Village, South Granville
   [49.2640, -123.1860, 450], [49.2340, -123.1550, 450], // Point Grey W10th, Kerrisdale
+
+  // --- Metro Vancouver. Vancouver proper is close to swept, so daily
+  // discovery needs the rest of the metro to have anything new to find.
+  // Radii are wider here: suburban dining is sparser, so the 20-result cap
+  // bites less often.
+  // Burnaby
+  [49.2280, -122.9990, 700], [49.2490, -122.8960, 700], // Metrotown, Lougheed
+  [49.2660, -122.9720, 700], [49.2790, -122.9210, 700], // Brentwood, Burnaby Heights E
+  [49.2540, -122.9420, 700],                            // Highgate / Edmonds
+  // Richmond
+  [49.1670, -123.1370, 800], [49.1830, -123.1360, 700], // City centre, Bridgeport
+  [49.1440, -123.1300, 800], [49.1250, -123.1810, 700], // Steveston Hwy, Steveston village
+  // North & West Vancouver
+  [49.3160, -123.0690, 600], [49.3290, -123.1470, 700], // Lonsdale Quay N, Edgemont/Dundarave
+  [49.3370, -123.1660, 700], [49.3020, -123.1120, 600], // Ambleside, Park Royal side
+  // New Westminster
+  [49.2010, -122.9120, 700], [49.2260, -122.8880, 600], // Columbia St, Sapperton
+  // Coquitlam / Port Moody
+  [49.2790, -122.7930, 800], [49.2820, -122.8480, 700], // Coquitlam centre, Port Moody Brewers Row
+  [49.2620, -122.8760, 700],                            // Austin Heights
+  // Surrey / White Rock / Langley
+  [49.1890, -122.8480, 900], [49.1040, -122.8250, 900], // Surrey Central, Newton
+  [49.0250, -122.8030, 800], [49.1040, -122.6600, 900], // White Rock beach, Langley
+  [49.1740, -122.6900, 900],                            // Surrey Fleetwood/Cloverdale
+  // Delta / Tsawwassen
+  [49.0840, -123.0580, 900], [49.0110, -123.0810, 800],
 ];
 
 const INCLUDED_TYPES = ["bar", "pub", "wine_bar", "night_club", "restaurant"];
@@ -69,6 +95,19 @@ const seed = loadSeed();
 const discovered = readJson(path.join(REPO_ROOT, "pipeline", "discovered.json"), []);
 const placesStore = readJson(path.join(REPO_ROOT, "pipeline", "places.json"), {});
 const knownPlaceIds = new Set(Object.values(placesStore).map((p) => p.place_id));
+// Every place_id we have already crawled and judged, so a daily run spends
+// its budget on genuinely new places instead of re-confirming yesterday's
+// negatives. Entries carry a verdict + date; negatives are eligible again
+// after RECHECK_DAYS because a venue can start a happy hour later.
+const SCREENED_STORE = path.join(REPO_ROOT, "pipeline", "screened.json");
+const RECHECK_DAYS = Number(args["recheck-days"]) || 90;
+const screened = readJson(SCREENED_STORE, {});
+const staleBefore = new Date(Date.now() - RECHECK_DAYS * 86400000).toISOString().slice(0, 10);
+const screenedRecently = new Set(
+  Object.entries(screened)
+    .filter(([, r]) => (r.checked_at || "0000-00-00") > staleBefore)
+    .map(([placeId]) => placeId)
+);
 const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return null; } };
 const knownHosts = new Set([...seed, ...discovered].map((v) => host(v.website)).filter(Boolean));
 const knownNames = new Set([...seed, ...discovered].map((v) => normName(v.name)));
@@ -99,21 +138,26 @@ await mapConcurrent(CIRCLES, 4, async ([lat, lng, radius]) => {
 console.log(`${byId.size} unique places from ${CIRCLES.length} circles (${saturated} saturated at 20 — dense spots may hide a few).`);
 
 const candidates = [];
-const dropped = { known: 0, no_website: 0, closed: 0, wrong_type: 0 };
+const dropped = { known: 0, screened: 0, no_website: 0, closed: 0, wrong_type: 0 };
 for (const p of byId.values()) {
   const name = p.displayName?.text || "";
   const types = p.types || [];
   if (knownPlaceIds.has(p.id) || knownNames.has(normName(name)) || knownHosts.has(host(p.websiteUri))) { dropped.known++; continue; }
+  if (screenedRecently.has(p.id)) { dropped.screened++; continue; }
   if (p.businessStatus && p.businessStatus !== "OPERATIONAL") { dropped.closed++; continue; }
   if (!p.websiteUri) { dropped.no_website++; continue; }
   if (types.some((t) => EXCLUDE_TYPES.has(t)) && !types.some((t) => BAR_TYPES.has(t))) { dropped.wrong_type++; continue; }
 
-  const street = (p.formattedAddress || "").split(",")[0];
+  // Metro means the city varies — take it from the Places address instead of
+  // stamping every venue "Vancouver, BC".
+  const parts = (p.formattedAddress || "").split(",").map((x) => x.trim());
+  const street = parts[0] || "";
+  const city = parts[1] || "Vancouver";
   candidates.push({
     id: normName(name).replace(/ /g, "-"),
     name,
     website: p.websiteUri,
-    formatted_address: `${street ? street + ", " : ""}Vancouver, BC`,
+    formatted_address: `${street ? street + ", " : ""}${city}, BC`,
     address_components: null,
     geometry: { location: { lat: p.location.latitude, lng: p.location.longitude } },
     formatted_phone_number: p.nationalPhoneNumber || null,
@@ -134,6 +178,7 @@ for (const p of byId.values()) {
       matched_name: name,
       synced_at: new Date().toISOString().slice(0, 10),
     },
+    place_id: p.id,
     isBar: types.some((t) => BAR_TYPES.has(t)),
   });
 }

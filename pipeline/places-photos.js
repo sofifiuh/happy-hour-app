@@ -10,9 +10,10 @@
 //   Key from $GOOGLE_PLACES_API_KEY or pipeline/secrets.json (gitignored).
 import fs from "node:fs";
 import path from "node:path";
-import { readJson, REPO_ROOT } from "./lib/venues.js";
+import { parseArgs, readJson, REPO_ROOT } from "./lib/venues.js";
 import { curlJson, curlGet, mapConcurrent } from "./lib/curl.js";
 
+const args = parseArgs(process.argv.slice(2));
 const SECRETS = path.join(REPO_ROOT, "pipeline", "secrets.json");
 const KEY = process.env.GOOGLE_PLACES_API_KEY || readJson(SECRETS, {}).GOOGLE_PLACES_API_KEY;
 if (!KEY) {
@@ -23,13 +24,15 @@ if (!KEY) {
 const STORE = path.join(REPO_ROOT, "pipeline", "photos.json");
 const PHOTOS_DIR = path.join(REPO_ROOT, "photos");
 const TODAY = new Date().toISOString().slice(0, 10);
+const PHOTO_WIDTH = Number(args["photo-width"]) || 400;
 
 const { venues } = readJson(path.join(REPO_ROOT, "venues.json"), { venues: [] });
 const places = readJson(path.join(REPO_ROOT, "pipeline", "places.json"), {});
 const store = readJson(STORE, {});
 
 const targets = venues.filter((v) => {
-  if (v.cover_image?.url || store[v.id]) return false;
+  if (v.cover_image?.url && !String(v.cover_image.url).startsWith("photos/")) return false;
+  if (store[v.id] && !args.refetch) return false;
   return !!(v.place_id || places[v.id]?.place_id);
 });
 console.log(`${targets.length} venues without a cover image and with a Places match`);
@@ -48,7 +51,10 @@ await mapConcurrent(targets, 4, async (v) => {
     if (!photo?.name) { misses.push([v.id, "no photos on the place"]); return; }
 
     const file = path.join(PHOTOS_DIR, `${v.id}.jpg`);
-    const media = `https://places.googleapis.com/v1/${photo.name}/media?maxWidthPx=960&key=${KEY}`;
+    // 400px, not 960: these are committed to the repo and rendered at most
+    // 480 CSS px wide. At 960 they averaged 236 KB, which at 100 venues/day
+    // is 8 GB a year of repository growth. 400px lands near 40 KB.
+    const media = `https://places.googleapis.com/v1/${photo.name}/media?maxWidthPx=${PHOTO_WIDTH}&key=${KEY}`;
     const res = await curlGet(media, file, { timeout: 40 });
     if (res.status !== 200 || !res.contentType.startsWith("image/")) {
       misses.push([v.id, `media fetch ${res.status} ${res.contentType}`]);

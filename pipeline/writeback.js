@@ -22,6 +22,10 @@ import { heroImage } from "./lib/html.js";
 const args = parseArgs(process.argv.slice(2));
 const MIN_CONF = Number(args["min-confidence"]) || 0.8;
 const DISC_MIN_CONF = Number(args["discovery-min-confidence"]) || 0.7;
+// The daily growth run publishes only venues that arrive fully armed: a
+// confirmed schedule AND at least one priced deal. Without this a venue can
+// go live showing a window and "deal list not published online".
+const DISC_REQUIRE_DEALS = !!args["discovery-require-deals"];
 const extracted = readJson(path.join(RESULTS_DIR, args.in || "extracted-opus.json"));
 
 const DISCOVERED_STORE = path.join(REPO_ROOT, "pipeline", "discovered.json");
@@ -136,6 +140,10 @@ if (cands && discExt) {
   for (const c of cands) {
     const x = acceptExtraction(c.id, discExt[c.id], DISC_MIN_CONF, "discovery: ");
     if (!x) continue;
+    if (DISC_REQUIRE_DEALS && !(x.happy_hour.deals || []).length) {
+      skipped.push([c.id, "discovery: schedule found but no deals published — not publishing"]);
+      continue;
+    }
     if (c.places?.place_id) places[c.id] = c.places;
     rebuilt.push({
       ...DISCOVERED_DEFAULTS,
