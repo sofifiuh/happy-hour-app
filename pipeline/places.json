@@ -2538,5 +2538,243 @@
     },
     "matched_name": "The One Sixty Wine Bar & Cafe",
     "synced_at": "2026-09-01"
+  },
+  "red-robin-gourmet-burgers-and-brews": {
+    "place_id": "ChIJB2UpqUp_hlQRUisMYFFkgRU",
+    "rating": 4.2,
+    "user_ratings_total": 3124,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Red Robin Gourmet Burgers and Brews",
+    "synced_at": "2026-09-01"
+  },
+  "nightingale": {
+    "place_id": "ChIJD9jfUoJxhlQR2Z9sjekAEFg",
+    "rating": 4.5,
+    "user_ratings_total": 4078,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Nightingale",
+    "synced_at": "2026-09-01"
+  },
+  "hon-sushi": {
+    "place_id": "ChIJXb0QevZ2hlQRVzUZDnuznAA",
+    "rating": 4.5,
+    "user_ratings_total": 3401,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Hon Sushi",
+    "synced_at": "2026-09-01"
+  },
+  "the-boathouse-restaurant": {
+    "place_id": "ChIJS9tYo2_YhVQRKfxvkCovbBc",
+    "rating": 3.7,
+    "user_ratings_total": 2428,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "The Boathouse Restaurant",
+    "synced_at": "2026-09-01"
+  },
+  "uli-s-restaurant": {
+    "place_id": "ChIJE1nvYZ3DhVQRGZbomCktWz4",
+    "rating": 4.5,
+    "user_ratings_total": 2262,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Uli's Restaurant",
+    "synced_at": "2026-09-01"
+  },
+  "taps-and-tacos": {
+    "place_id": "ChIJFZkOR-J4hlQRbPCgtfX5djU",
+    "rating": 4.4,
+    "user_ratings_total": 1415,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Taps and Tacos",
+    "synced_at": "2026-09-01"
+  },
+  "the-hard-bean-brunch-co": {
+    "place_id": "ChIJaUM4SPR5hlQRviRyP6fCy0o",
+    "rating": 4.3,
+    "user_ratings_total": 1277,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "The Hard Bean Brunch Co.",
+    "synced_at": "2026-09-01"
+  },
+  "banana-leaf-in-kitsilano": {
+    "place_id": "ChIJwXdWeqtzhlQRvhCBn2ZX5kM",
+    "rating": 4.2,
+    "user_ratings_total": 1131,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Banana Leaf in Kitsilano",
+    "synced_at": "2026-09-01"
+  },
+  "dovetail": {
+    "place_id": "ChIJbdCxdKxzhlQRLyev2c0HL6A",
+    "rating": 4.5,
+    "user_ratings_total": 1126,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Dovetail",
+    "synced_at": "2026-09-01"
+  },
+  "lucky-taco": {
+    "place_id": "ChIJCw6G37RzhlQRPq7e6aPAAl4",
+    "rating": 4.3,
+    "user_ratings_total": 1041,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Lucky Taco",
+    "synced_at": "2026-09-01"
+  },
+  "skye-avenue-kitchen-lounge": {
+    "place_id": "ChIJ_clpm8LZhVQRBtRO0_4L8hw",
+    "rating": 4.3,
+    "user_ratings_total": 832,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Skye Avenue - Kitchen & Lounge",
+    "synced_at": "2026-09-01"
+  },
+  "loula-s": {
+    "place_id": "ChIJARfKW7txhlQRgm1BxguLamU",
+    "rating": 4,
+    "user_ratings_total": 800,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
+    "matched_name": "Loula's",
+    "synced_at": "2026-09-01"
+  },
+  "food-by-fanta": {
+    "place_id": "ChIJTSkyOk3PhVQR35wqc8gaxTQ",
+    "rating": 4.4,
+    "user_ratings_total": 751,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Food by Fanta",
+    "synced_at": "2026-09-01"
+  },
+  "lucia": {
+    "place_id": "ChIJOY00hhxzhlQRI8IfeD9Fu_c",
+    "rating": 4.2,
+    "user_ratings_total": 322,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Lucia",
+    "synced_at": "2026-09-01"
   }
 }

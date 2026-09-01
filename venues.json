@@ -1,5 +1,5 @@
 {
- "data_version": "2026-09-01-1df194cb",
+ "data_version": "2026-09-01-63de3adb",
  "venues": [
   {
    "id": "ancora",
@@ -4805,6 +4805,2129 @@
    },
    "data_source": "manual",
    "last_synced_at": null
+  },
+  {
+   "place_id": "ChIJB2UpqUp_hlQRUisMYFFkgRU",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.2,
+   "user_ratings_total": 3124,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "red-robin-gourmet-burgers-and-brews",
+   "name": "Red Robin Gourmet Burgers and Brews",
+   "formatted_address": "3000 Lougheed Hwy, Coquitlam, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2748296,
+     "lng": -122.79483549999999
+    }
+   },
+   "formatted_phone_number": "(604) 941-8650",
+   "website": "https://www.redrobin.com/locations/bc/coquitlam/coquitlam-279",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.redrobin.com/happy-hour-ca",
+    "deals": [
+     {
+      "name": "Spiked Freckled Lemonade",
+      "price": "$8",
+      "category": "drink",
+      "description": "Vodka, strawberries and lemonade with sugar rim and lemon wedge"
+     },
+     {
+      "name": "House Margarita",
+      "price": "$7",
+      "category": "drink",
+      "description": "Lime, Strawberry, Desert Pear, Passion Fruit, Mango, Jalapeño or Dragon Fruit"
+     },
+     {
+      "name": "Stanley Park Drafts",
+      "price": "$6.50/$8",
+      "category": "drink",
+      "description": "16 oz or 22 oz"
+     },
+     {
+      "name": "Corona Cero",
+      "price": "$5",
+      "category": "drink",
+      "description": "Zero proof"
+     },
+     {
+      "name": "Open Sauvignon Blanc",
+      "price": "$6.50/$9",
+      "category": "drink",
+      "description": "6 oz or larger"
+     },
+     {
+      "name": "Inniskillin Cabernet Sauvignon",
+      "price": "$8/$11",
+      "category": "drink",
+      "description": "6 oz or larger"
+     },
+     {
+      "name": "Grower's Ciders",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Caesar",
+      "price": "$7",
+      "category": "drink",
+      "description": "1 oz"
+     },
+     {
+      "name": "Bacon Cheeseburger",
+      "price": "$18",
+      "category": "food",
+      "description": "Applewood-smoked bacon, lettuce, tomato, mayo and cheese. Served with Bottomless side"
+     },
+     {
+      "name": "Whiskey River BBQ Chicken Sandwich",
+      "price": "$18",
+      "category": "food",
+      "description": "BBQ sauce, crispy onion straws, cheddar, lettuce, tomato and mayo. Served with Bottomless side"
+     },
+     {
+      "name": "Veggie Burger",
+      "price": "$17",
+      "category": "food",
+      "description": "Veggie patty, Swiss, fresh salsa, fresh avocado, roasted garlic aioli and lettuce. Served with Bottomless side"
+     },
+     {
+      "name": "Crispy Chicken Wrap",
+      "price": "$16",
+      "category": "food",
+      "description": "Crispy chicken, smoky bacon, cheddar, lettuce, tomato and ranch in tortilla. Served with Bottomless side"
+     },
+     {
+      "name": "Bar Wings",
+      "price": "$15",
+      "category": "food",
+      "description": "Buzz, Banzai, Whiskey River BBQ, Garlic Parmesan, Sea Salt & Pepper or Mike's Hot Honey"
+     },
+     {
+      "name": "Shrimp",
+      "price": "$13",
+      "category": "food",
+      "description": "Fried shrimp with sweet chili and tartar sauce"
+     },
+     {
+      "name": "Onion Ring Shorty",
+      "price": "$8",
+      "category": "food",
+      "description": "Thick battered onion rings with Campfire Mayo and Buttermilk Ranch"
+     },
+     {
+      "name": "Zucchini Fries",
+      "price": "$12",
+      "category": "food",
+      "description": "Herb-breaded zucchini sticks with Buttermilk Ranch"
+     },
+     {
+      "name": "Freckled Lemonade",
+      "price": "$5",
+      "category": "drink",
+      "description": "Minute Maid Lemonade and strawberries"
+     },
+     {
+      "name": "Milkshakes",
+      "price": "$7",
+      "category": "drink",
+      "description": "Vanilla, Chocolate, Strawberry, Raspberry or Oreo Magic"
+     },
+     {
+      "name": "Dirty Sodas",
+      "price": "$5",
+      "category": "drink",
+      "description": "Candied Orange, Wild Raspberry, Desert Pear or Dragon Fruit with Sprite and creamy cold foam"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/red-robin-gourmet-burgers-and-brews.jpg",
+    "credit_name": "Joanne Leung",
+    "credit_url": "https://maps.google.com/maps/contrib/105806095207009135977",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJD9jfUoJxhlQR2Z9sjekAEFg",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 4,
+   "rating": 4.5,
+   "user_ratings_total": 4078,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "nightingale",
+   "name": "Nightingale",
+   "formatted_address": "1017 W Hastings St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2873977,
+     "lng": -123.11747499999998
+    }
+   },
+   "formatted_phone_number": "(604) 695-9500",
+   "website": "http://hawknightingale.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://hawknightingale.com/wp-content/uploads/2026/03/Happy-Hour-Website-March-4-2025.pdf",
+    "deals": [
+     {
+      "name": "Bramble",
+      "price": "$10",
+      "category": "drink",
+      "description": "Tanqueray gin, blackberry, lemon"
+     },
+     {
+      "name": "Friendship Bracelets",
+      "price": "$10",
+      "category": "drink",
+      "description": "Absolut vodka, starlino rose, elderflower, grapefruit, lemon"
+     },
+     {
+      "name": "Kyoto sour",
+      "price": "$10",
+      "category": "drink",
+      "description": "El gobernador pisco, lemon, passionfruit, shiso"
+     },
+     {
+      "name": "Dark n stormy",
+      "price": "$10",
+      "category": "drink",
+      "description": "Goslings dark rum, ginger beer, lime"
+     },
+     {
+      "name": "Bee's knees",
+      "price": "$10",
+      "category": "drink",
+      "description": "Tanqueray gin, lemon, honey"
+     },
+     {
+      "name": "Red lotus",
+      "price": "$8",
+      "category": "drink",
+      "description": "Freixenet sparkling wine (alcohol free), pomegranate, cranberry, lime"
+     },
+     {
+      "name": "Blood orange mule",
+      "price": "$7",
+      "category": "drink",
+      "description": "Blood orange, ginger, lime"
+     },
+     {
+      "name": "Peroni alcohol free",
+      "price": "$6",
+      "category": "drink",
+      "description": "Alcohol free lager"
+     },
+     {
+      "name": "Peroni nastro azzurro lager",
+      "price": "$8",
+      "category": "drink",
+      "description": "Draught 13.5oz, 5%, Italy"
+     },
+     {
+      "name": "Main st pale ale",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "Draught 13.5oz, 5.5%, Vancouver"
+     },
+     {
+      "name": "Strange fellows white ipa",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "Draught 13.5oz, 6.5%, Vancouver"
+     },
+     {
+      "name": "Twin sails blue raspberry wheat ale",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "Draught 13.5oz, 5.1%, Port Moody"
+     },
+     {
+      "name": "Cantina trevigiana prosecco",
+      "price": "$10",
+      "category": "drink",
+      "description": "Glera/pinot noir blend, Italy, per glass"
+     },
+     {
+      "name": "Frank chenin blanc",
+      "price": "$10",
+      "category": "drink",
+      "description": "South Africa, per glass"
+     },
+     {
+      "name": "Blasted church merlot",
+      "price": "$10",
+      "category": "drink",
+      "description": "Merlot blend, Washington USA, per glass"
+     },
+     {
+      "name": "House marinated olives",
+      "price": "$6",
+      "category": "food",
+      "description": "Chili, oregano"
+     },
+     {
+      "name": "Beet salad",
+      "price": "$14",
+      "category": "food",
+      "description": "Orange, dill, whipped feta, everything crumble"
+     },
+     {
+      "name": "Cauliflower hummus",
+      "price": "$15",
+      "category": "food",
+      "description": "Chermoula, pickled celery, fife sourdough"
+     },
+     {
+      "name": "Kennebec fries",
+      "price": "$10",
+      "category": "food",
+      "description": "Ketchup powder, malt vinegar aioli"
+     },
+     {
+      "name": "Pepperoni pizza",
+      "price": "$19",
+      "category": "food",
+      "description": "Red onion, mozzarella, tomato"
+     },
+     {
+      "name": "Guanciale pizza",
+      "price": "$19",
+      "category": "food",
+      "description": "Pineapple, habanero, chives"
+     },
+     {
+      "name": "Margherita pizza",
+      "price": "$17",
+      "category": "food",
+      "description": "Mozzarella, basil, olive oil"
+     },
+     {
+      "name": "Rigatoni all'arrabbiata",
+      "price": "$21",
+      "category": "food",
+      "description": "Whipped ricotta, basil"
+     },
+     {
+      "name": "Buttermilk fried chicken",
+      "price": "$20",
+      "category": "food",
+      "description": "Spiced maple syrup, sumac, pickles"
+     },
+     {
+      "name": "Thumbelina carrots",
+      "price": "$13",
+      "category": "food",
+      "description": "Lime yogurt, pumpkin seeds, cilantro"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/nightingale.jpg",
+    "credit_name": "Nightingale",
+    "credit_url": "https://maps.google.com/maps/contrib/111258229305719246606",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJXb0QevZ2hlQRVzUZDnuznAA",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.5,
+   "user_ratings_total": 3401,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "hon-sushi",
+   "name": "Hon Sushi",
+   "formatted_address": "4361 Kingsway #201, Burnaby, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2312188,
+     "lng": -123.00675059999999
+    }
+   },
+   "formatted_phone_number": "(604) 800-9909",
+   "website": "https://www.honsushi.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "20:30",
+      "end": "23:30",
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.honsushi.ca/",
+    "deals": [
+     {
+      "name": "Take-Out Orders",
+      "price": "20% off",
+      "category": "food",
+      "description": "Excludes: Sashimi, Party Tray, Combos, Bento Boxes, Donburi"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://honsushi.ca/wp-content/uploads/2022/11/brushstroke02.png",
+    "credit_name": "Hon Sushi",
+    "credit_url": "https://www.honsushi.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJS9tYo2_YhVQRKfxvkCovbBc",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 3.7,
+   "user_ratings_total": 2428,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "the-boathouse-restaurant",
+   "name": "The Boathouse Restaurant",
+   "formatted_address": "900 Quayside Dr, New Westminster, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.199520299999996,
+     "lng": -122.9127987
+    }
+   },
+   "formatted_phone_number": "(604) 525-3474",
+   "website": "https://www.boathouserestaurants.ca/location/boathouse-restaurants-new-westminster/",
+   "happy_hour": {
+    "days": [
+     0,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.boathouserestaurants.ca/event/happy-hour/",
+    "deals": [
+     {
+      "name": "Oyster Shucks",
+      "price": "$4",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Spirits",
+      "price": "$6",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Cocktails",
+      "price": "$10",
+      "category": "drink",
+      "description": "Handcrafted cocktails"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://images.getbento.com/accounts/1c7466fe8f322173d80e3e8613a89c6f/media/images/350203phasefilms.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&h=600",
+    "credit_name": "The Boathouse Restaurant",
+    "credit_url": "https://www.boathouserestaurants.ca/location/boathouse-restaurants-new-westminster/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJE1nvYZ3DhVQRGZbomCktWz4",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.5,
+   "user_ratings_total": 2262,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "uli-s-restaurant",
+   "name": "Uli's Restaurant",
+   "formatted_address": "15023 Marine Dr, White Rock, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.021503,
+     "lng": -122.806018
+    }
+   },
+   "formatted_phone_number": "(604) 538-9373",
+   "website": "https://ulisrestaurant.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "15:00",
+    "end": "17:30",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://ulisrestaurant.com/menu/",
+    "deals": [
+     {
+      "name": "Calamari",
+      "price": "$15.00",
+      "category": "food",
+      "description": "Buttermilk marinade, spicy chipotle yoghurt, green onions"
+     },
+     {
+      "name": "Bruschetta",
+      "price": "$13.00",
+      "category": "food",
+      "description": "Heirloom tomatoes, sundried tomato vinaigrette, focaccia"
+     },
+     {
+      "name": "Chicken Bites",
+      "price": "$15.00",
+      "category": "food",
+      "description": "Deep fried with hot honey sauce, served with ranch dip"
+     },
+     {
+      "name": "BC wines by the glass",
+      "price": "20% off",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Hoyne Pilsner sleeves",
+      "price": "$5.00",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Charlie Runkle",
+      "price": "$12",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Bartender's Lemonade",
+      "price": "$12",
+      "category": "drink",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://ulisrestaurant.com/wp-content/uploads/2019/06/IMG_1836.jpg",
+    "credit_name": "Uli's Restaurant",
+    "credit_url": "https://ulisrestaurant.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJFZkOR-J4hlQRbPCgtfX5djU",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 1415,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "taps-and-tacos",
+   "name": "Taps and Tacos",
+   "formatted_address": "91 Moody St, Port Moody, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2771767,
+     "lng": -122.850446
+    }
+   },
+   "formatted_phone_number": "(604) 492-0759",
+   "website": "https://www.tapsandtacos.ca/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.tapsandtacos.ca/menus/happy-hour-margarita-monday?location=taps-and-tacos",
+    "deals": [
+     {
+      "name": "Lime Margarita",
+      "price": "$10",
+      "category": "drink",
+      "description": "Tequila Blanco, Lime Juice, simple syrup, salt rim, 2oz"
+     },
+     {
+      "name": "Jalapéño Margarita",
+      "price": "$11",
+      "category": "drink",
+      "description": "2oz Tequila Reposado, lime juice, house-made Jalapeño simple syrup, Jalapeño salt rim"
+     },
+     {
+      "name": "Spicy Mango Margarita",
+      "price": "$13",
+      "category": "drink",
+      "description": "2oz Tequila Blanco, Mango, lime juice, fire bitters, tajin rim"
+     },
+     {
+      "name": "Coconut Margarita",
+      "price": "$11",
+      "category": "drink",
+      "description": "2oz Tequila Blanco, lime juice, Coconut"
+     },
+     {
+      "name": "Guava Margarita",
+      "price": "$13",
+      "category": "drink",
+      "description": "2oz Tequila Blanco, guava, lime juice"
+     },
+     {
+      "name": "Passion Fruit Mezcal Margarita",
+      "price": "$14",
+      "category": "drink",
+      "description": "Mezcal, Cointreau, lime, passion fruit puree, salted rim, 2oz"
+     },
+     {
+      "name": "House Wine",
+      "price": "$6",
+      "category": "drink",
+      "description": "5 oz, red or white"
+     },
+     {
+      "name": "Tequila Shot",
+      "price": "$5",
+      "category": "drink",
+      "description": "Tequila Blanco"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://popmenucloud.com/cdn-cgi/image/width=1200,height=630,format=auto,fit=pad,background=transparent/lmbrhjnc/4158489c-19ae-4e92-9564-9315f62d0973.png",
+    "credit_name": "Taps and Tacos",
+    "credit_url": "https://www.tapsandtacos.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJaUM4SPR5hlQRviRyP6fCy0o",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.3,
+   "user_ratings_total": 1277,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "the-hard-bean-brunch-co",
+   "name": "The Hard Bean Brunch Co.",
+   "formatted_address": "2781 Clarke St, Port Moody, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.277519299999994,
+     "lng": -122.8505442
+    }
+   },
+   "formatted_phone_number": "(604) 227-1992",
+   "website": "http://thehardbeanbrunchco.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "20:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://thehardbeanbrunchco.com/happy-hour/",
+    "deals": [
+     {
+      "name": "Yam Fries",
+      "price": "$7",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Dips & Chips",
+      "price": "$10",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Truffle Fries",
+      "price": "$12",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Cauliflower Poppers",
+      "price": "$15",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Sweet Chili Chicken",
+      "price": "$16",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Nachos",
+      "price": "$10",
+      "category": "food",
+      "description": "1/2 order"
+     },
+     {
+      "name": "Waffle Wings",
+      "price": "$10",
+      "category": "food",
+      "description": "1/2 order"
+     },
+     {
+      "name": "Wings",
+      "price": "$10",
+      "category": "food",
+      "description": "1/2 order, salt and pepper or hot sauce"
+     },
+     {
+      "name": "Peach Fromo",
+      "price": "$6",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Rise & Shine",
+      "price": "$6",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Laser Lite Lager",
+      "price": "$6",
+      "category": "drink",
+      "description": "14oz"
+     },
+     {
+      "name": "Kokanee Bottles",
+      "price": "$6",
+      "category": "drink",
+      "description": "330ml"
+     },
+     {
+      "name": "Happy Hour Wine",
+      "price": "$6",
+      "category": "drink",
+      "description": "5oz, red/white/rosé"
+     },
+     {
+      "name": "Happy Hour Wine",
+      "price": "$9",
+      "category": "drink",
+      "description": "9oz, red/white/rosé"
+     },
+     {
+      "name": "Breakfast Martini",
+      "price": "$12",
+      "category": "drink",
+      "description": "2oz"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/the-hard-bean-brunch-co.jpg",
+    "credit_name": "Ivan Spirydonau",
+    "credit_url": "https://maps.google.com/maps/contrib/108841054001902755092",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJwXdWeqtzhlQRvhCBn2ZX5kM",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.2,
+   "user_ratings_total": 1131,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "banana-leaf-in-kitsilano",
+   "name": "Banana Leaf in Kitsilano",
+   "formatted_address": "3005 W Broadway, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2643597,
+     "lng": -123.17230169999999
+    }
+   },
+   "formatted_phone_number": "(604) 734-3005",
+   "website": "https://www.bananaleaf-vancouver.com/kitsilano",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.bananaleaf-vancouver.com/kits-happyhourlatenight",
+    "deals": [
+     {
+      "name": "Pineapple Cucumber Kerabu Salad",
+      "price": "$4",
+      "category": "food",
+      "description": "Asian salad"
+     },
+     {
+      "name": "Tofu Goreng",
+      "price": "$4",
+      "category": "food",
+      "description": "Deep fried tofu"
+     },
+     {
+      "name": "Sayur Lemak",
+      "price": "$6",
+      "category": "food",
+      "description": "Curry vegetables"
+     },
+     {
+      "name": "Grandma's Assam Curry Okra",
+      "price": "$8",
+      "category": "food",
+      "description": "Okra in curry"
+     },
+     {
+      "name": "Baba's Chicken Wings (6pcs)",
+      "price": "$9",
+      "category": "food",
+      "description": "Fried wings"
+     },
+     {
+      "name": "Caramelized Fish Fillet (2pcs)",
+      "price": "$10",
+      "category": "food",
+      "description": "Fish fillet"
+     },
+     {
+      "name": "Sambal Chili Wok-Fried Clams (½ lb)",
+      "price": "$13",
+      "category": "food",
+      "description": "Clams"
+     },
+     {
+      "name": "Deep Fried Oysters (3pcs)",
+      "price": "$15",
+      "category": "food",
+      "description": "Oysters"
+     },
+     {
+      "name": "Nasi Goreng",
+      "price": "$11.50",
+      "category": "food",
+      "description": "½ price with drink purchase (late night)"
+     },
+     {
+      "name": "Lemongrass Ginger Iced Tea",
+      "price": "$4",
+      "category": "drink",
+      "description": "Refreshment"
+     },
+     {
+      "name": "Rainforest Pilsner",
+      "price": "$4",
+      "category": "drink",
+      "description": "Beer (10oz)"
+     },
+     {
+      "name": "3 Layer Milk Tea",
+      "price": "$5",
+      "category": "drink",
+      "description": "Milk tea"
+     },
+     {
+      "name": "Wine by the Glass",
+      "price": "$5",
+      "category": "drink",
+      "description": "Sauvignon Blanc"
+     },
+     {
+      "name": "Red Wine Sangria",
+      "price": "$8",
+      "category": "drink",
+      "description": "Cocktail (5oz)"
+     },
+     {
+      "name": "The Modern Mai Tai",
+      "price": "$10",
+      "category": "drink",
+      "description": "Cocktail (2oz)"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/5f52e04a2e088c3ddebe1739/t/6a693faf0c01787d7cc3bb9e/1785282479706/BananaLeaf_Hero_2.jpg?format=1500w",
+    "credit_name": "Banana Leaf in Kitsilano",
+    "credit_url": "https://www.bananaleaf-vancouver.com/kitsilano",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJbdCxdKxzhlQRLyev2c0HL6A",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.5,
+   "user_ratings_total": 1126,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "dovetail",
+   "name": "Dovetail",
+   "formatted_address": "1079 Mainland St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2759801,
+     "lng": -123.120331
+    }
+   },
+   "formatted_phone_number": "(604) 336-1088",
+   "website": "http://dovetailrestaurant.ca/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "17:00",
+    "end": "18:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.dovetailrestaurant.ca/martini-hour",
+    "deals": [
+     {
+      "name": "Traditional Martini",
+      "price": "$13",
+      "category": "drink",
+      "description": "2 oz, ketel one or tanqueray"
+     },
+     {
+      "name": "Vesper",
+      "price": "$13",
+      "category": "drink",
+      "description": "2 oz"
+     },
+     {
+      "name": "Our Paper Plane",
+      "price": "$13",
+      "category": "drink",
+      "description": "2 oz"
+     },
+     {
+      "name": "Lychee",
+      "price": "$13",
+      "category": "drink",
+      "description": "2 oz"
+     },
+     {
+      "name": "Espresso",
+      "price": "$13",
+      "category": "drink",
+      "description": "2 oz"
+     },
+     {
+      "name": "Pornstar",
+      "price": "$15",
+      "category": "drink",
+      "description": "2 oz"
+     },
+     {
+      "name": "Cosmo",
+      "price": "$13",
+      "category": "drink",
+      "description": "2 oz"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/64ef945afb9da6016dfe45d5/t/6a078db90c21f6637a54045b/1778879929711/Dovetail-SocialSharing.jpg?format=1500w",
+    "credit_name": "Dovetail",
+    "credit_url": "http://dovetailrestaurant.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJCw6G37RzhlQRPq7e6aPAAl4",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.3,
+   "user_ratings_total": 1041,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "lucky-taco",
+   "name": "Lucky Taco",
+   "formatted_address": "1685 Yew St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.271042099999995,
+     "lng": -123.1552028
+    }
+   },
+   "formatted_phone_number": "(604) 739-4677",
+   "website": "http://www.luckytaco.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.luckytaco.ca/menu/happy-hour",
+    "deals": [
+     {
+      "name": "Tequila Shot",
+      "price": "$5",
+      "category": "drink",
+      "description": "blanco tequila with chaser"
+     },
+     {
+      "name": "Sleeve of Beer",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "Strathcona Lager"
+     },
+     {
+      "name": "Every Day is Lucky",
+      "price": "$10",
+      "category": "drink",
+      "description": "ice cold lager and a shot of tequila"
+     },
+     {
+      "name": "Sangria",
+      "price": "$7",
+      "category": "drink",
+      "description": "wine, fresh fruit & juice, booze"
+     },
+     {
+      "name": "Glass of Wine",
+      "price": "$8",
+      "category": "drink",
+      "description": "white, rosé, or red"
+     },
+     {
+      "name": "Sun-Kissed Peach Bellini",
+      "price": "$10",
+      "category": "drink",
+      "description": "vodka, peach schnapps, sparkling wine, hibiscus, lime, tajin"
+     },
+     {
+      "name": "Blue Pina Colada",
+      "price": "$10",
+      "category": "drink",
+      "description": "rum, blue curaçao, pineapple, coconut, lime"
+     },
+     {
+      "name": "Dirty Horchata",
+      "price": "$10",
+      "category": "drink",
+      "description": "dark rum, coconut, cinnamon, vanilla"
+     },
+     {
+      "name": "Chips & Salsa",
+      "price": "$5",
+      "category": "food",
+      "description": "fresh tortilla chips, salsa roja"
+     },
+     {
+      "name": "Corn Esquites",
+      "price": "$6",
+      "category": "food",
+      "description": "roasted corn, kewpie mayo, queso fresco, tajin, lime"
+     },
+     {
+      "name": "Carnitas Taco",
+      "price": "$6.50",
+      "category": "food",
+      "description": "confit natural BC pork, onion, cilantro, salsa taquera"
+     },
+     {
+      "name": "Chicken Al Pastor Taco",
+      "price": "$7.50",
+      "category": "food",
+      "description": "grilled free-range pastor chicken, grilled pineapple, onions, salsa morita, avocado salsa verde, radish, cilantro"
+     },
+     {
+      "name": "Spicy Fried Chicken Taco",
+      "price": "$7.50",
+      "category": "food",
+      "description": "spicy macha free-range chicken, coleslaw, tartar sauce, agave-dijon dressing, pickled onions, cilantro"
+     },
+     {
+      "name": "Crispy Fish Taco",
+      "price": "$7.50",
+      "category": "food",
+      "description": "tempura-battered wild caught pacific cod, coleslaw, pico de gallo, tartar sauce, salsa botanera, fries"
+     },
+     {
+      "name": "Barbacoa Taco",
+      "price": "$8",
+      "category": "food",
+      "description": "braised natural BC beef, salsa verde de san miguel, caramelized onion, consommé"
+     },
+     {
+      "name": "Mushroom Tinga Taco",
+      "price": "$6.50",
+      "category": "food",
+      "description": "local mushrooms, chipotle tomato sauce, friulano cheese"
+     },
+     {
+      "name": "Cauliflower Al Pastor Taco",
+      "price": "$7.50",
+      "category": "food",
+      "description": "pastor-marinated cauliflower, friulano cheese, avocado salsa verde, onion, grilled pineapple, salsa morita, radish, cilantro"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/577f41a346c3c459382029ac/t/5a9f2aa6f9619a03dd2c6535/1520380585785/LT+Logo+Web-01.png?format=1500w",
+    "credit_name": "Lucky Taco",
+    "credit_url": "http://www.luckytaco.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJ_clpm8LZhVQRBtRO0_4L8hw",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.3,
+   "user_ratings_total": 832,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": true,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "skye-avenue-kitchen-lounge",
+   "name": "Skye Avenue - Kitchen & Lounge",
+   "formatted_address": "13450 102 Ave #190, Surrey, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.187692899999995,
+     "lng": -122.84847879999998
+    }
+   },
+   "formatted_phone_number": "(604) 590-0900",
+   "website": "https://www.skyeavenue.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "16:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       3
+      ],
+      "start": "18:00",
+      "end": null,
+      "label": "Whisky Wednesdays"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://skyeavenue.com/wp-content/themes/SkyeAvenue/assets/img/features/Cocktail%20Menu%20NF%20v1.pdf",
+    "deals": [
+     {
+      "name": "Mushroom Arancini",
+      "price": "$5",
+      "category": "food",
+      "description": "Smoked eggplant puree (v)"
+     },
+     {
+      "name": "Tacos Trio",
+      "price": "$10",
+      "category": "food",
+      "description": "Choice of one protein, corn tacos, pickled vegetables, tomatillo, avocado, Valentina aioli"
+     },
+     {
+      "name": "Chicken Lettuce Bites",
+      "price": "$10",
+      "category": "food",
+      "description": "Fraser Valley Farm chicken, butter lettuce, togarashi aioli, peanut glaze, pickled vegetables"
+     },
+     {
+      "name": "Truffle Fries",
+      "price": "$9",
+      "category": "food",
+      "description": "Grana Padano, truffle oil (v)"
+     },
+     {
+      "name": "Meatball Duo",
+      "price": "$10",
+      "category": "food",
+      "description": "Organic grass-fed beef, caramelized onions"
+     },
+     {
+      "name": "Flat Bread Marinara",
+      "price": "$10",
+      "category": "food",
+      "description": "Baked pizza with tomato sauce, herbs, arugula, balsamic reduction (V)"
+     },
+     {
+      "name": "Old Fashioned",
+      "price": "$10",
+      "category": "drink",
+      "description": "Evan Williams bourbon, Angostura bitters"
+     },
+     {
+      "name": "Paper Plane",
+      "price": "$10",
+      "category": "drink",
+      "description": "Evan Williams bourbon, Aperol, Amaro Nonino, lemon juice"
+     },
+     {
+      "name": "Rob Roy",
+      "price": "$10",
+      "category": "drink",
+      "description": "Naked Malt whisky, Cinzano, Angostura bitters"
+     },
+     {
+      "name": "Penicillin",
+      "price": "$10",
+      "category": "drink",
+      "description": "Naked Malt whisky, Talisker Storm whisky, lemon juice, honey-ginger syrup"
+     },
+     {
+      "name": "Jewel of Denial",
+      "price": "$10",
+      "category": "drink",
+      "description": "Vodka, Chambord, cranberry juice, lime"
+     },
+     {
+      "name": "Manhattan",
+      "price": "$10",
+      "category": "drink",
+      "description": "Evan Williams bourbon, Cinzano, Angostura bitters"
+     },
+     {
+      "name": "House White Wine",
+      "price": "$6-$9",
+      "category": "drink",
+      "description": "6 oz for $6, 9 oz for $9"
+     },
+     {
+      "name": "House Red Wine",
+      "price": "$6-$9",
+      "category": "drink",
+      "description": "6 oz for $6, 9 oz for $9"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://skyeavenue.com/wp-content/uploads/2023/11/cropped-Skye-Avenue_Logo-with-BG-1.png",
+    "credit_name": "Skye Avenue - Kitchen & Lounge",
+    "credit_url": "https://www.skyeavenue.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJARfKW7txhlQRgm1BxguLamU",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4,
+   "user_ratings_total": 800,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": null,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "loula-s",
+   "name": "Loula's",
+   "formatted_address": "1608 Commercial Dr, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.270308299999996,
+     "lng": -123.06936479999999
+    }
+   },
+   "formatted_phone_number": "(604) 255-3787",
+   "website": "http://loulastaverna.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "17:00",
+    "end": "18:30",
+    "extra_windows": [
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "22:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://loulastaverna.com/menu/",
+    "deals": [
+     {
+      "name": "Ouzo",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Hiballs",
+      "price": "$5",
+      "category": "drink",
+      "description": "1 oz"
+     },
+     {
+      "name": "Loula's Lager",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Draught Beer",
+      "price": "$8",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "House Wine",
+      "price": "$8",
+      "category": "drink",
+      "description": "red, white, rosé, 6oz"
+     },
+     {
+      "name": "Suntail",
+      "price": "$8",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Luxardo Spritz",
+      "price": "$10",
+      "category": "drink",
+      "description": "limoncello or aperitivo"
+     },
+     {
+      "name": "Watermelon Marg",
+      "price": "$10",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Loula's Slushy",
+      "price": "$10",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Mediterranean Dips & Pita",
+      "price": "$9",
+      "category": "food",
+      "description": "tzatziki, smoked eggplant, spicy feta, hummus or tarama"
+     },
+     {
+      "name": "Olives and Feta",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Greek Salad",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Loula's Fries",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Kalamari",
+      "price": "$12",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Lamb Sliders",
+      "price": "$12",
+      "category": "food",
+      "description": "2 pcs"
+     },
+     {
+      "name": "Spanakopitas",
+      "price": "$12",
+      "category": "food",
+      "description": "2 pcs"
+     },
+     {
+      "name": "Souvlaki",
+      "price": "$12",
+      "category": "food",
+      "description": "chicken or veggie & halloumi"
+     },
+     {
+      "name": "Loula's Gyro",
+      "price": "$15",
+      "category": "food",
+      "description": "chicken or veggie"
+     },
+     {
+      "name": "Paidakia",
+      "price": "$15",
+      "category": "food",
+      "description": "2 pcs"
+     },
+     {
+      "name": "Souvlaki",
+      "price": "$15",
+      "category": "food",
+      "description": "beef or prawn"
+     },
+     {
+      "name": "Greek Nachos",
+      "price": "$15",
+      "category": "food",
+      "description": "add ground lamb +7"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/loula-s.jpg",
+    "credit_name": "Loula's",
+    "credit_url": "https://maps.google.com/maps/contrib/105933274086887903871",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJTSkyOk3PhVQR35wqc8gaxTQ",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 751,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "food-by-fanta",
+   "name": "Food by Fanta",
+   "formatted_address": "20542 Fraser Hwy #102, Langley, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.103694499999996,
+     "lng": -122.65324349999999
+    }
+   },
+   "formatted_phone_number": "(604) 530-6803",
+   "website": "https://foodbyfanta.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:30",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://foodbyfanta.com/wp-content/uploads/2026/06/260623-FANTA-Happy-Hour-Menu.pdf",
+    "deals": [
+     {
+      "name": "All Cocktails",
+      "price": "$2 off",
+      "category": "drink",
+      "description": "Discount applies to all cocktails"
+     },
+     {
+      "name": "Tom Yum Onion Rings",
+      "price": "$8",
+      "category": "food",
+      "description": "Thai Singha beer-battered onion rings with herbal paste, grated coconut, lime leaves, Tom Yum powder. Served with sriracha mayo"
+     },
+     {
+      "name": "Eggplant Fries",
+      "price": "$8",
+      "category": "food",
+      "description": "Thai Singha beer-battered eggplant with herbal paste, grated coconut, lime leaves, Tom Yum powder. Served with sriracha mayo"
+     },
+     {
+      "name": "Kratong Tuna Tartare",
+      "price": "$12",
+      "category": "food",
+      "description": "Delicate pastry cups filled with savoury tuna tartare with ginger, sesame seeds, sawtooth cilantro, shallots, and lime juice"
+     },
+     {
+      "name": "Nam Prik Noom",
+      "price": "$12",
+      "category": "food",
+      "description": "Crispy pork crackling, rice crackers, and vegetables. Served with grilled Northern Thai green chili dip with shallots and garlic"
+     },
+     {
+      "name": "Cauliflower Bites",
+      "price": "$13",
+      "category": "food",
+      "description": "Cauliflower florets breaded with Singha batter. Served with leek sauce with house-made chili garlic oil"
+     },
+     {
+      "name": "Som Tum",
+      "price": "$15",
+      "category": "food",
+      "description": "Green papaya salad with roasted peanuts, laksa mint, tamarind, lime, sun-dried tomatoes, and umami fish sauce"
+     },
+     {
+      "name": "Siam Sliders",
+      "price": "$17",
+      "category": "food",
+      "description": "3 distinct sliders with homemade buns: lemongrass chicken with mango & red curry in beetroot bun, grilled prawn with mango & yellow curry in pumpkin bun, grilled pork with mango & green curry in spinach bun"
+     },
+     {
+      "name": "Bechamel Taro Nachos",
+      "price": "$17",
+      "category": "food",
+      "description": "Marinated tamarind prawns with avocado bechamel sauce served over fresh taro chips, topped with swiss & mozzarella cheese"
+     },
+     {
+      "name": "Tom Kha Scallop Bites",
+      "price": "$17",
+      "category": "food",
+      "description": "Pan-seared scallops in herb butter and Tom Kha herbs. Tangy, citrus, and smooth coconut milk create a rich, refreshing flavor balance in one bite"
+     },
+     {
+      "name": "Seared Eggplant with Green Curry",
+      "price": "$17",
+      "category": "food",
+      "description": "Seared eggplant baked with herb butter, topped with poached carrot and a silky green curry sauce. Served with toasted, buttered ciabatta for dipping"
+     },
+     {
+      "name": "Seared Mango Tuna",
+      "price": "$18",
+      "category": "food",
+      "description": "Ginger marinated seared ahi tuna, served with green mango salsa & avocado"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://foodbyfanta.com/wp-content/uploads/2021/02/foodbyfanta-logo.png",
+    "credit_name": "Food by Fanta",
+    "credit_url": "https://foodbyfanta.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-01"
+  },
+  {
+   "place_id": "ChIJOY00hhxzhlQRI8IfeD9Fu_c",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.2,
+   "user_ratings_total": 322,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "lucia",
+   "name": "Lucia",
+   "formatted_address": "3124 Main St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2571085,
+     "lng": -123.10091229999999
+    }
+   },
+   "formatted_phone_number": "(604) 336-6046",
+   "website": "https://www.luciaonmain.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.luciaonmain.com/s/Lucia_Dinner-and-Cocktail-Menu_8x145_April_2026.pdf",
+    "deals": [
+     {
+      "name": "Smoked Olives",
+      "price": "$8",
+      "category": "food",
+      "description": "Chili, citrus, garlic"
+     },
+     {
+      "name": "Meatballs",
+      "price": "$12",
+      "category": "food",
+      "description": "Pomodoro, grana padano"
+     },
+     {
+      "name": "Arancini",
+      "price": "$10",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Salumi Plate",
+      "price": "$16",
+      "category": "food",
+      "description": "Caponata, grana padano, olive oil, grissini"
+     },
+     {
+      "name": "Italian Fries",
+      "price": "$8",
+      "category": "food",
+      "description": "Herbs, truffle aioli"
+     },
+     {
+      "name": "Bucatini",
+      "price": "$22",
+      "category": "food",
+      "description": "Cacio e pepe"
+     },
+     {
+      "name": "Radiatore",
+      "price": "$22",
+      "category": "food",
+      "description": "Leek, wild mushroom, cream, smoked scamorza"
+     },
+     {
+      "name": "All Pizza",
+      "price": "$5 off",
+      "category": "food",
+      "description": "Available until 5pm daily"
+     },
+     {
+      "name": "Sangria",
+      "price": "$12",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Aperol Spritz",
+      "price": "$12",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Hugo Spritz",
+      "price": "$12",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Lemon Lychee Spritz",
+      "price": "$12",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Negroni",
+      "price": "$12",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Lucia's Lager",
+      "price": "$6",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Lucia's Pale Ale",
+      "price": "$6",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Peroni",
+      "price": "$8",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Fantini Primitivo",
+      "price": "$8",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Fantini Trebbiano",
+      "price": "$8",
+      "category": "drink",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/683e7aa6fbc1a5266be61daa/t/68469c09cc6de75b44dc6e2f/1749457929370/moth1.png?format=1500w",
+    "credit_name": "Lucia",
+    "credit_url": "https://www.luciaonmain.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-01"
   },
   {
    "place_id": "ChIJCYeeZR9uhlQRKRWLSYnl-VQ",
