@@ -2283,5 +2283,90 @@
     "business_status": "OPERATIONAL",
     "matched_name": "Collective Goods",
     "synced_at": "2026-08-30"
+  },
+  "the-pint-public-house": {
+    "place_id": "ChIJkaA0L3pxhlQRS7br6sCwIm4",
+    "rating": 4,
+    "user_ratings_total": 3322,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "The Pint Public House",
+    "synced_at": "2026-09-01"
+  },
+  "gurkha-himalayan-kitchen": {
+    "place_id": "ChIJiSptaCtyhlQREIyTMg6n2XI",
+    "rating": 4.6,
+    "user_ratings_total": 2985,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Gurkha Himalayan Kitchen",
+    "synced_at": "2026-09-01"
+  },
+  "kelly-o-bryan-s-restaurant-carlos-o-bryan-s-pub": {
+    "place_id": "ChIJtZ4FT27YhVQR5ImAP5FVmrk",
+    "rating": 4.1,
+    "user_ratings_total": 2670,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Kelly O'Bryan's Restaurant & Carlos O'Bryan's Pub",
+    "synced_at": "2026-09-01"
+  },
+  "pier-7-restaurant-bar": {
+    "place_id": "ChIJA2jYL01whlQRRbgzs6V6Jh4",
+    "rating": 4,
+    "user_ratings_total": 2627,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "PIER 7 Restaurant + Bar",
+    "synced_at": "2026-09-01"
+  },
+  "zarak-by-afghan-kitchen": {
+    "place_id": "ChIJhbvdyX1xhlQRMIebjMPIEYI",
+    "rating": 4.6,
+    "user_ratings_total": 1768,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Zarak by Afghan Kitchen",
+    "synced_at": "2026-09-01"
   }
 }
