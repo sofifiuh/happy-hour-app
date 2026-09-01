@@ -103,9 +103,14 @@ const SCREENED_STORE = path.join(REPO_ROOT, "pipeline", "screened.json");
 const RECHECK_DAYS = Number(args["recheck-days"]) || 90;
 const screened = readJson(SCREENED_STORE, {});
 const staleBefore = new Date(Date.now() - RECHECK_DAYS * 86400000).toISOString().slice(0, 10);
+// Only NEGATIVE verdicts suppress a re-crawl. A venue we judged
+// "published" is deduped by knownPlaceIds once it is actually in the store —
+// and if a run was interrupted before writeback, it will not be, so it must
+// stay discoverable rather than be silently skipped forever.
+const NEGATIVE = new Set(["no_happy_hour", "hours_only", "error"]);
 const screenedRecently = new Set(
   Object.entries(screened)
-    .filter(([, r]) => (r.checked_at || "0000-00-00") > staleBefore)
+    .filter(([, r]) => NEGATIVE.has(r.verdict) && (r.checked_at || "0000-00-00") > staleBefore)
     .map(([placeId]) => placeId)
 );
 const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return null; } };
