@@ -6545,5 +6545,73 @@
     },
     "matched_name": "Eternal Abundance Organic Market & Eatery",
     "synced_at": "2026-09-02"
+  },
+  "bufala-edgemont": {
+    "place_id": "ChIJ9baEuYtvhlQRzXr6_Z-vYw0",
+    "rating": 4.2,
+    "user_ratings_total": 584,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Bufala Edgemont",
+    "synced_at": "2026-09-02"
+  },
+  "simply-delicious-restaurant-bar": {
+    "place_id": "ChIJG8-2pfdzhlQR3kuogd8C86g",
+    "rating": 4.2,
+    "user_ratings_total": 555,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Simply Delicious Restaurant & Bar",
+    "synced_at": "2026-09-02"
+  },
+  "bufala-river-district": {
+    "place_id": "ChIJzYTR0ZZ1hlQRtE7VAz5tc6M",
+    "rating": 4.4,
+    "user_ratings_total": 463,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Bufala River District",
+    "synced_at": "2026-09-02"
+  },
+  "hoshi-japanese-cuisine": {
+    "place_id": "ChIJc7ckzQdzhlQRlKBv_B1v4R8",
+    "rating": 4.4,
+    "user_ratings_total": 430,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Hoshi Japanese Cuisine",
+    "synced_at": "2026-09-02"
   }
 }

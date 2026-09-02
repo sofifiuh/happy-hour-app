@@ -1,5 +1,5 @@
 {
- "data_version": "2026-09-02-b2e9b559",
+ "data_version": "2026-09-02-c0f4d2df",
  "venues": [
   {
    "id": "ancora",
@@ -5270,6 +5270,442 @@
     ]
    },
    "cover_image": null,
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJ9baEuYtvhlQRzXr6_Z-vYw0",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.2,
+   "user_ratings_total": 584,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "bufala-edgemont",
+   "name": "Bufala Edgemont",
+   "formatted_address": "3280 Edgemont Blvd, North Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.3391382,
+     "lng": -123.1038338
+    }
+   },
+   "formatted_phone_number": "(604) 770-2822",
+   "website": "http://www.bufala.ca/edgemont",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:30",
+    "end": "17:30",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.bufala.ca/edgemont",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/5d924fed4b479f7b9acaf7c6/t/6014fc71ec0c2e6e6cf06f66/1611988086755/Bufala+over+pizza.jpg?format=1500w",
+    "credit_name": "Bufala Edgemont",
+    "credit_url": "http://www.bufala.ca/edgemont",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJG8-2pfdzhlQR3kuogd8C86g",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.2,
+   "user_ratings_total": 555,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": true,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "simply-delicious-restaurant-bar",
+   "name": "Simply Delicious Restaurant & Bar",
+   "formatted_address": "4316 Main St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2465064,
+     "lng": -123.10102520000001
+    }
+   },
+   "formatted_phone_number": "(604) 875-9866",
+   "website": "https://sdeatery.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "16:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "23:00",
+      "end": "00:00",
+      "label": "Late night"
+     },
+     {
+      "days": [
+       2
+      ],
+      "start": "16:00",
+      "end": "01:00",
+      "label": "All day"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://sdeatery.com/",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "https://img1.wsimg.com/isteam/ip/ba948d57-e5ce-49f4-a764-6c00b91a2f34/5B191F3A-B91B-4A54-88D7-62525E2ACFC7.jpeg",
+    "credit_name": "Simply Delicious Restaurant & Bar",
+    "credit_url": "https://sdeatery.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJzYTR0ZZ1hlQRtE7VAz5tc6M",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 463,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "bufala-river-district",
+   "name": "Bufala River District",
+   "formatted_address": "3489 E Sawmill Cres, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2060372,
+     "lng": -123.0313552
+    }
+   },
+   "formatted_phone_number": "(604) 423-9594",
+   "website": "https://www.bufala.ca/aboutbrd",
+   "happy_hour": {
+    "days": [
+     5,
+     6,
+     0
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       1,
+       2
+      ],
+      "start": "16:00",
+      "end": "22:00",
+      "label": "All Day"
+     },
+     {
+      "days": [
+       3,
+       4
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "label": "Afternoon"
+     },
+     {
+      "days": [
+       3,
+       4
+      ],
+      "start": "21:00",
+      "end": "22:00",
+      "label": "Late Night"
+     },
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": "23:00",
+      "label": "Late Night"
+     },
+     {
+      "days": [
+       0
+      ],
+      "start": "21:00",
+      "end": "22:00",
+      "label": "Late Night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.bufala.ca/happy-hourbrd",
+    "deals": [
+     {
+      "name": "Draught Beer",
+      "price": "$4",
+      "category": "drink",
+      "description": "Strathcona Lager or Pilsner"
+     },
+     {
+      "name": "Highballs",
+      "price": "$5",
+      "category": "drink",
+      "description": "Vodka, Gin, Rum, or Whiskey"
+     },
+     {
+      "name": "Glass of Wine",
+      "price": "$9",
+      "category": "drink",
+      "description": "Prosecco, Lambrusco, White, Rosé or Red"
+     },
+     {
+      "name": "Negroni",
+      "price": "$10",
+      "category": "drink",
+      "description": "Gin, Campari, Italian Vermouth"
+     },
+     {
+      "name": "Salted Cucumber Collins",
+      "price": "$6",
+      "category": "drink",
+      "description": "Salted Cucumber, Lime, Tonic"
+     },
+     {
+      "name": "Olives",
+      "price": "$6",
+      "category": "food",
+      "description": "Castelvetrano Olives, Single Origin Calabrian Chili"
+     },
+     {
+      "name": "Garlic Bread",
+      "price": "$12",
+      "category": "food",
+      "description": "Mozzarella, Herb butter, Parmigiano, Marinara"
+     },
+     {
+      "name": "Quattro Formaggi Arancini",
+      "price": "$13",
+      "category": "food",
+      "description": "Carnaroli Rice, Pecorino, Smoked Provolone, Parmigiano, Pecorino Romano, Basil & Dandelion Pesto"
+     },
+     {
+      "name": "Rigatoni Bolognese",
+      "price": "$19",
+      "category": "food",
+      "description": "Beef & Pork Bolognese, Parmigiano"
+     },
+     {
+      "name": "Margherita Pizza",
+      "price": "$17",
+      "category": "food",
+      "description": "Fior di Latte, Fresh Basil, Marinara"
+     },
+     {
+      "name": "Meatballs",
+      "price": "$5 ea",
+      "category": "food",
+      "description": "Freshly Ground Beef Brisket, Pork Shoulder & Bacon, Parmigiano, Basil, Marinara, Toasted Sourdough"
+     },
+     {
+      "name": "Honey & Pepperoni Pizza",
+      "price": "$20",
+      "category": "food",
+      "description": "Crispy Pepperoni, Mozzarella, Calabrian Chili Honey, Radicchio, Parmigiano, Bianco"
+     },
+     {
+      "name": "Kale Caesar",
+      "price": "$14.50",
+      "category": "food",
+      "description": "Hazelmere Farm Kale, Bacon Crumb, Toasted Panko, Anchovy, Parmigiano"
+     },
+     {
+      "name": "Tiramisu",
+      "price": "$9",
+      "category": "food",
+      "description": "Mascarpone, Espresso, Ladyfinger Cookies, Amaretto"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/5d924fed4b479f7b9acaf7c6/t/6014fc71ec0c2e6e6cf06f66/1611988086755/Bufala+over+pizza.jpg?format=1500w",
+    "credit_name": "Bufala River District",
+    "credit_url": "https://www.bufala.ca/aboutbrd",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJc7ckzQdzhlQRlKBv_B1v4R8",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 430,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "hoshi-japanese-cuisine",
+   "name": "Hoshi Japanese Cuisine",
+   "formatted_address": "1006 Beach Ave Unit 3, 1010, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2756397,
+     "lng": -123.1352936
+    }
+   },
+   "formatted_phone_number": "(604) 423-5950",
+   "website": "https://hoshijapanesecuisine.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.hoshijapanesecuisine.com/menu-1",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "https://static.wixstatic.com/media/698192_b256ced9c04242a8b7c5d5f6a83005bb~mv2.jpg/v1/fill/w_2500,h_1872,al_c/698192_b256ced9c04242a8b7c5d5f6a83005bb~mv2.jpg",
+    "credit_name": "Hoshi Japanese Cuisine",
+    "credit_url": "https://hoshijapanesecuisine.com/",
+    "source": "official_website"
+   },
    "last_synced_at": "2026-09-02"
   },
   {
