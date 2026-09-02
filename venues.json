@@ -1,5 +1,5 @@
 {
- "data_version": "2026-09-02-c0f4d2df",
+ "data_version": "2026-09-02-1549bfca",
  "venues": [
   {
    "id": "ancora",
@@ -5704,6 +5704,381 @@
     "url": "https://static.wixstatic.com/media/698192_b256ced9c04242a8b7c5d5f6a83005bb~mv2.jpg/v1/fill/w_2500,h_1872,al_c/698192_b256ced9c04242a8b7c5d5f6a83005bb~mv2.jpg",
     "credit_name": "Hoshi Japanese Cuisine",
     "credit_url": "https://hoshijapanesecuisine.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJW2WDLW1zhlQRdKYFDsj3fIo",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 4,
+   "rating": 4.5,
+   "user_ratings_total": 427,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "autostrada-osteria-vancouver-house",
+   "name": "Autostrada Osteria Vancouver House",
+   "formatted_address": "1481 Continental St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2744192,
+     "lng": -123.13114440000001
+    }
+   },
+   "formatted_phone_number": "(604) 258-9988",
+   "website": "http://www.autostradahospitality.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:30",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.autostradahospitality.ca/menus",
+    "deals": [
+     {
+      "name": "Negroni",
+      "price": "$11",
+      "category": "drink",
+      "description": "Classic, Bianco, Boulevardier or Sbagliato, 2.5oz"
+     },
+     {
+      "name": "Spritz",
+      "price": "$12",
+      "category": "drink",
+      "description": "Aperol, Campari, Limone, Cynar, St. Germain or Fre-Spritz (non-alc), 5oz"
+     },
+     {
+      "name": "Standards",
+      "price": "$12",
+      "category": "drink",
+      "description": "Amaro Manhattan, Malfy Limone G&T, Beefeater Gin or Absolut Vodka Martini, 2oz"
+     },
+     {
+      "name": "Wine",
+      "price": "$10",
+      "category": "drink",
+      "description": "Botter Pinot Grigio, A1 Tuscan red, Villa Sandi Prosecco, Pasquiers Rose, 5oz"
+     },
+     {
+      "name": "Beer",
+      "price": "$9",
+      "category": "drink",
+      "description": "Peroni or Parkside IPA, 15oz"
+     },
+     {
+      "name": "Wine Bottles",
+      "price": "30% off",
+      "category": "drink",
+      "description": "Any bottles under $150"
+     },
+     {
+      "name": "Cicchetti",
+      "price": "$6",
+      "category": "food",
+      "description": "Warm olives, focaccia, beef fat turnip & bottarga, cucumber & tonnato, asparagus & gribiche, radish mint & chickpea, anchovy toast, mortadella toast"
+     },
+     {
+      "name": "Small Plates",
+      "price": "$16",
+      "category": "food",
+      "description": "1/2 dozen oysters, shaved mortadella, Caesar salad, insalata di stagione, prosciutto di Parma, polpette al sugo"
+     },
+     {
+      "name": "Larger Plates",
+      "price": "$20",
+      "category": "food",
+      "description": "Burrata & rhubarb, bucatini cacio e pepe, rigatoni alla vodka"
+     },
+     {
+      "name": "Classics",
+      "price": "$25",
+      "category": "food",
+      "description": "Tagliatelle alla Bolognese, rigatoni alla Norma"
+     },
+     {
+      "name": "Sweets",
+      "price": "$11",
+      "category": "food",
+      "description": "Lemon curd, tiramisu"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/68522412a749ab6a13e42cc3/t/6854c025e65a40287994ca3f/1750384677102/Autostrada_Logo_Navy_Digital.png?format=1500w",
+    "credit_name": "Autostrada Osteria Vancouver House",
+    "credit_url": "http://www.autostradahospitality.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJ698G2el5hlQRmUSsyeiG70Q",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.5,
+   "user_ratings_total": 415,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "mama-said-pizza-co",
+   "name": "Mama Said Pizza Co.",
+   "formatted_address": "3135 Murray St, Port Moody, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2786245,
+     "lng": -122.8404056
+    }
+   },
+   "formatted_phone_number": "(604) 445-4590",
+   "website": "http://www.mamasaidpizza.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.mamasaidpizza.com/menu",
+    "deals": [
+     {
+      "name": "Mama Lagers & Pale Ales",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Glasses of wine",
+      "price": "$2 off",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Negroni",
+      "price": "$10",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Margarita",
+      "price": "$10",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Aperol Spritz",
+      "price": "$10",
+      "category": "drink",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://mamasaidpizza.com/images/og-hero.jpg",
+    "credit_name": "Mama Said Pizza Co.",
+    "credit_url": "http://www.mamasaidpizza.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJ3_vaZABxhlQR0HeLsN2Wmvk",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.6,
+   "user_ratings_total": 154,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "mercato-di-luigi-chinatown",
+   "name": "Mercato di Luigi Chinatown",
+   "formatted_address": "213 E Georgia St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2787121,
+     "lng": -123.0992481
+    }
+   },
+   "formatted_phone_number": "(604) 742-1965",
+   "website": "https://www.mercatodiluigi.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://mercatodiluigi.com/pages/chinatown",
+    "deals": [
+     {
+      "name": "Vina della Cantina",
+      "price": "$8|24",
+      "category": "drink",
+      "description": "montepulciano or pinot grigio (5 oz | ½ L)"
+     },
+     {
+      "name": "Negroni",
+      "price": "$10",
+      "category": "drink",
+      "description": "beefeater gin, cinzano sweet vermouth, campari, aperol, orange"
+     },
+     {
+      "name": "Aperol Spritz",
+      "price": "$10",
+      "category": "drink",
+      "description": "aperol, prosecco, soda, orange"
+     },
+     {
+      "name": "Peroni",
+      "price": "$9",
+      "category": "drink",
+      "description": "nastro azzuro (12oz)"
+     },
+     {
+      "name": "Olives",
+      "price": "$6",
+      "category": "food",
+      "description": "fennel seed, citrus, chili"
+     },
+     {
+      "name": "Focaccia",
+      "price": "$5",
+      "category": "food",
+      "description": "extra virgin olive oil, salt"
+     },
+     {
+      "name": "Half Burrata",
+      "price": "$12",
+      "category": "food",
+      "description": "pistachio pesto, focaccia"
+     },
+     {
+      "name": "Prosciutto & Melon",
+      "price": "$19",
+      "category": "food",
+      "description": "cantaloupe, prosciutto, lemon vinaigrette, grissini"
+     },
+     {
+      "name": "Bruschetta",
+      "price": "$16",
+      "category": "food",
+      "description": "cherry tomatoes, parmigiano, garlic, basil"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://mercatodiluigi.com/cdn/shop/files/327937603_151672304381132_1083130301921734912_n.jpg?v=1677001976",
+    "credit_name": "Mercato di Luigi Chinatown",
+    "credit_url": "https://www.mercatodiluigi.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-02"

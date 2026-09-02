@@ -6613,5 +6613,56 @@
     },
     "matched_name": "Hoshi Japanese Cuisine",
     "synced_at": "2026-09-02"
+  },
+  "autostrada-osteria-vancouver-house": {
+    "place_id": "ChIJW2WDLW1zhlQRdKYFDsj3fIo",
+    "rating": 4.5,
+    "user_ratings_total": 427,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Autostrada Osteria Vancouver House",
+    "synced_at": "2026-09-02"
+  },
+  "mama-said-pizza-co": {
+    "place_id": "ChIJ698G2el5hlQRmUSsyeiG70Q",
+    "rating": 4.5,
+    "user_ratings_total": 415,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Mama Said Pizza Co.",
+    "synced_at": "2026-09-02"
+  },
+  "mercato-di-luigi-chinatown": {
+    "place_id": "ChIJ3_vaZABxhlQR0HeLsN2Wmvk",
+    "rating": 4.6,
+    "user_ratings_total": 154,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Mercato di Luigi Chinatown",
+    "synced_at": "2026-09-02"
   }
 }
