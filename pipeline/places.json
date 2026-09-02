@@ -6664,5 +6664,39 @@
     },
     "matched_name": "Mercato di Luigi Chinatown",
     "synced_at": "2026-09-02"
+  },
+  "frank-s-pizza-bar-at-resurrection-spirits": {
+    "place_id": "ChIJQaVhH_1xhlQRIjWmB_4gu38",
+    "rating": 4.7,
+    "user_ratings_total": 106,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
+    "matched_name": "Frank's Pizza & Bar at Resurrection Spirits",
+    "synced_at": "2026-09-02"
+  },
+  "proud-up-restaurant": {
+    "place_id": "ChIJmZBXvkh5hlQRF8r-_QYW-24",
+    "rating": 4.8,
+    "user_ratings_total": 103,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Proud Up Restaurant",
+    "synced_at": "2026-09-02"
   }
 }

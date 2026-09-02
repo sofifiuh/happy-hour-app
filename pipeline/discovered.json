@@ -1242,6 +1242,223 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "frank-s-pizza-bar-at-resurrection-spirits",
+    "name": "Frank's Pizza & Bar at Resurrection Spirits",
+    "formatted_address": "1672 Franklin St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2819843,
+        "lng": -123.0709747
+      }
+    },
+    "formatted_phone_number": "(604) 253-0059",
+    "website": "https://www.whereisfranks.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            3
+          ],
+          "start": "16:00",
+          "end": "21:00",
+          "label": "All Day Happy Hour"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "16:00",
+          "end": "21:00",
+          "label": "All Day Happy Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.whereisfranks.com/hereatfranks",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "proud-up-restaurant",
+    "name": "Proud Up Restaurant",
+    "formatted_address": "418 E Columbia St, New Westminster, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.228842199999995,
+        "lng": -122.89259009999999
+      }
+    },
+    "formatted_phone_number": "(604) 544-0888",
+    "website": "http://www.proudup.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:45",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.proudup.ca/menu?location=Proud+up+restaurant&menu=happy-hour",
+      "deals": [
+        {
+          "name": "Steel & Oak",
+          "price": "$5",
+          "category": "drink",
+          "description": "on tap 16oz"
+        },
+        {
+          "name": "Classic caesar",
+          "price": "$7",
+          "category": "drink",
+          "description": "Vodka (1.5 oz), clamato juice, worcestershire, hot sauce, celery salt rim, beans pickle"
+        },
+        {
+          "name": "Mojito",
+          "price": "$7",
+          "category": "drink",
+          "description": "lime/Strawberry varieties; Rum (1.5 oz), mints, lime juice, syrup, soda"
+        },
+        {
+          "name": "Seabreeze",
+          "price": "$7",
+          "category": "drink",
+          "description": "Vodka (1.5 oz), lychee, cranberry, orange juice"
+        },
+        {
+          "name": "Peach tea",
+          "price": "$7",
+          "category": "drink",
+          "description": "Vodka (1 oz), Peach schnapps (0.5 oz), ice tea"
+        },
+        {
+          "name": "Sangria",
+          "price": "$7",
+          "category": "drink",
+          "description": "red/white varieties; House wine (3.5 oz), orange juice, pineapple juice, ginger ale, citrus"
+        },
+        {
+          "name": "Malibu Sunset",
+          "price": "$7",
+          "category": "drink",
+          "description": "Rum (1 oz), Malibu (0.5 oz), pineapple juice, grenadine"
+        },
+        {
+          "name": "Blue Whale",
+          "price": "$7",
+          "category": "drink",
+          "description": "Rum (1 oz), Blue bols (0.5 oz), pineapple juice"
+        },
+        {
+          "name": "Lychee Martini",
+          "price": "$7",
+          "category": "drink",
+          "description": "Vodka (1 oz), Soho (1 oz), lychee juice"
+        },
+        {
+          "name": "Classic Daiquiri",
+          "price": "$7",
+          "category": "drink",
+          "description": "Rum (2 oz), lime juice"
+        },
+        {
+          "name": "Chicken wings",
+          "price": "$11.99",
+          "category": "food",
+          "description": "1 lb; salt & pepper, buffalo, teriyaki & lime, smoky BBQ"
+        },
+        {
+          "name": "Burger",
+          "price": "$2.50 off",
+          "category": "food",
+          "description": "Bacon & Cheese, Pepperroom, Fried chicken, Grilled chicken, Grilled salmon, or Veggie burger"
+        },
+        {
+          "name": "Tacos",
+          "price": "$9.99",
+          "category": "food",
+          "description": "Pork belly or Shrimp tacos"
+        },
+        {
+          "name": "Chips and dip",
+          "price": "$6",
+          "category": "food",
+          "description": "spinach artichoke or Romesco dip (contains cashew nuts)"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "the-ocean-beach-crafts-drafts-eats",
     "name": "The Ocean Beach Crafts, Drafts & Eats",
     "formatted_address": "14995 Marine Dr, White Rock, BC",
