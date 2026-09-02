@@ -107,6 +107,100 @@ const CIRCLES = [
   [49.1040, -122.6600, 500], [49.0840, -123.0580, 600], [49.0110, -123.0810, 600],
 ];
 
+// Circles that fill holes in the grid above. Derived from the raw sweep:
+// 869 of 2,690 places found (32%) sat outside every circle — Text Search is
+// not circle-bound, so it had been quietly covering for the grid. These
+// cover the clusters of 3+ that it exposed.
+const GAP_CIRCLES = [
+  [49.0906, -123.0846, 350], // 12 places · Delta
+  [49.2813, -123.0567, 350], // 11 places · Vancouver
+  [49.1693, -122.5785, 350], // 11 places · Langley Twp
+  [49.2085, -123.1402, 350], // 10 places · Vancouver
+  [49.2117, -123.1405, 350], // 10 places · Vancouver
+  [49.2306, -123.0065, 350], // 10 places · Burnaby
+  [49.2628, -123.1387, 350], // 8 places · Vancouver
+  [49.3094, -123.0741, 350], // 8 places · North Vancouver
+  [49.2701, -123.147, 350], // 8 places · Vancouver
+  [49.2637, -123.2096, 350], // 8 places · Vancouver
+  [49.276, -123.0998, 350], // 7 places · Vancouver
+  [49.2098, -123.1165, 350], // 7 places · Vancouver
+  [49.2777, -122.8545, 350], // 7 places · Port Moody
+  [49.3276, -123.1541, 350], // 7 places · West Vancouver
+  [49.2775, -122.8492, 350], // 7 places · Port Moody
+  [49.0901, -123.0796, 350], // 7 places · Ladner
+  [49.2884, -123.1163, 350], // 6 places · Vancouver
+  [49.2739, -123.0694, 350], // 6 places · Vancouver
+  [49.2662, -123.0064, 350], // 6 places · Burnaby
+  [49.1338, -122.844, 350], // 6 places · Surrey
+  [49.0175, -122.7926, 350], // 6 places · White Rock
+  [49.2118, -122.9196, 350], // 6 places · New Westminster
+  [49.2696, -123.1068, 350], // 5 places · Vancouver
+  [49.28, -123.1071, 350], // 5 places · Vancouver
+  [49.2815, -123.0737, 350], // 5 places · Vancouver
+  [49.2771, -123.0728, 350], // 5 places · Vancouver
+  [49.2524, -122.7365, 350], // 5 places · Port Coquitlam
+  [49.2794, -123.1122, 350], // 4 places · Vancouver
+  [49.2869, -123.1418, 350], // 4 places · Vancouver
+  [49.292, -123.1285, 350], // 4 places · Vancouver
+  [49.2687, -123.1852, 350], // 4 places · Vancouver
+  [49.1788, -123.1335, 350], // 4 places · Richmond
+  [49.2318, -123.1187, 350], // 4 places · Vancouver
+  [49.281, -123.0247, 350], // 4 places · Vancouver
+  [49.2812, -123.0616, 350], // 4 places · Vancouver
+  [49.3221, -123.1063, 350], // 4 places · North Vancouver
+  [49.2566, -123.0067, 350], // 4 places · Burnaby
+  [49.2811, -122.9979, 350], // 4 places · Burnaby
+  [49.2296, -122.8928, 350], // 4 places · New Westminster
+  [49.2781, -122.9101, 350], // 4 places · 9055 University High S
+  [49.2717, -122.7559, 350], // 4 places · Port Coquitlam
+  [49.2829, -122.8262, 350], // 4 places · Port Moody
+  [49.1156, -122.6763, 350], // 4 places · Langley
+  [49.104, -122.7995, 350], // 4 places · Surrey
+  [49.1144, -122.6679, 350], // 4 places · Langley
+  [49.1552, -122.9131, 350], // 4 places · Delta
+  [49.2803, -123.1307, 350], // 3 places · Vancouver
+  [49.2662, -123.1394, 350], // 3 places · Vancouver
+  [49.2512, -123.1013, 350], // 3 places · Vancouver
+  [49.234, -123.1401, 350], // 3 places · Vancouver
+  [49.2041, -123.1349, 350], // 3 places · Vancouver
+  [49.3059, -123.035, 350], // 3 places · North Vancouver
+  [49.3129, -123.027, 350], // 3 places · North Vancouver
+  [49.278, -122.8097, 350], // 3 places · Coquitlam
+  [49.3338, -123.1818, 350], // 3 places · West Vancouver
+  [49.2668, -123.0115, 350], // 3 places · Burnaby
+  [49.2148, -122.9881, 350], // 3 places · Burnaby
+  [49.1781, -123.1288, 350], // 3 places · Richmond
+  [49.2527, -122.7672, 350], // 3 places · 1979 Brown St
+  [49.2662, -122.7771, 350], // 3 places · Port Coquitlam
+  [49.2739, -122.7966, 350], // 3 places · Coquitlam
+  [49.2813, -122.7999, 350], // 3 places · Coquitlam
+  [49.2766, -122.844, 350], // 3 places · Port Moody
+  [49.1372, -122.8442, 350], // 3 places · Surrey
+  [49.0604, -122.8028, 350], // 3 places · Surrey
+  [49.0463, -122.7776, 350], // 3 places · Surrey
+  [49.1046, -122.6515, 350], // 3 places · Langley
+  [49.0164, -122.7853, 350], // 3 places · White Rock
+  [49.0228, -122.8098, 350], // 3 places · White Rock
+  [49.2053, -122.9039, 350], // 3 places · New Westminster
+  [49.1863, -122.9562, 350], // 3 places · New Westminster
+  [49.1177, -122.6703, 350], // 3 places · Langley
+  [49.0789, -122.6517, 350], // 3 places · Langley
+  [49.0245, -123.0692, 350], // 3 places · BC V4L 1X2
+  // Dense pockets the clustering above cannot see: gap-filling only reveals
+  // holes where Text Search happened to find something, so an area the grid
+  // misses AND text ranks poorly stays invisible to both. Vancouver House /
+  // Beach District was exactly that — 421m outside the nearest circle, one
+  // place found within 250m, and Autostrada Osteria never discovered at all.
+  [49.2744, -123.1311, 350], // Beach District / Vancouver House
+  [49.2765, -123.1105, 350], // NE False Creek / Plaza of Nations
+  [49.2680, -123.0930, 350], // Great Northern Way / Emily Carr
+  [49.2330, -123.1180, 400], // Oakridge
+  [49.2065, -123.0355, 400], // River District
+  [49.2490, -123.1155, 350], // Cambie / King Edward
+  [49.2385, -123.1855, 400], // Dunbar
+  [49.2440, -123.1010, 350], // Main / 33rd
+];
+
 // Nearby Search caps at 20 results per CALL, not per circle — so asking for
 // bars and restaurants together means the two compete for the same 20 slots,
 // and "restaurant" is common enough that in 72 of 110 circles last run the
@@ -140,10 +234,19 @@ const TEXT_AREAS = [
 // its candidates published a happy hour, against 4.8% for the grid), so the
 // rest of these are the same idea aimed at the venue categories that most
 // often run one.
-const TEXT_QUERIES = [
+// The bar-shaped terms were blind to a whole category: Autostrada Osteria is
+// typed italian_restaurant, matched none of them, and never cracked the top
+// 20 for "happy hour <area>". Restaurants run happy hours too.
+const DEFAULT_TEXT_QUERIES = [
   "happy hour", "pub", "cocktail bar", "sports bar", "izakaya",
   "tapas bar", "brewery taproom", "gastropub", "wine bar", "drink specials",
+  "italian restaurant", "seafood restaurant", "steakhouse",
 ];
+// --text-queries "a,b" runs only those, so adding a term to the list above
+// does not mean re-billing every term already swept.
+const TEXT_QUERIES = args["text-queries"]
+  ? String(args["text-queries"]).split(",").map((q) => q.trim()).filter(Boolean)
+  : DEFAULT_TEXT_QUERIES;
 const TEXT_PAGES = Number(args["text-pages"]) || 2;
 // Text Search is not bounded by a circle the way Nearby Search is, and
 // "happy hour Delta BC" will happily return a bar in Delta, Ohio. Keep
@@ -186,6 +289,19 @@ const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ""); } 
 const knownHosts = new Set([...seed, ...discovered].map((v) => host(v.website)).filter(Boolean));
 const knownNames = new Set([...seed, ...discovered].map((v) => normName(v.name)));
 
+// Google's free allowance is per SKU per calendar month, and a sweep that
+// silently runs long is how that turns into a bill. Usage is tracked across
+// runs so any caller — including an unattended driver loop — stops at the
+// ceiling instead of trusting whoever wrote the command line.
+const USAGE = path.join(REPO_ROOT, "pipeline", "api-usage.json");
+const MONTH = new Date().toISOString().slice(0, 7);
+const MONTHLY_CAP = Number(args["monthly-cap"]) || 950; // free tier is 1000/SKU; leave headroom
+const usage = readJson(USAGE, {});
+usage[MONTH] = usage[MONTH] || { nearby: 0, text: 0 };
+const spentBefore = { ...usage[MONTH] };
+const overBudget = (sku) => usage[MONTH][sku] >= MONTHLY_CAP;
+let skipped = { nearby: 0, text: 0 };
+
 const byId = new Map();
 // The raw sweep is the expensive part: hundreds of billable Places calls.
 // Persisting it means a change to the filters below — which drop three
@@ -205,13 +321,18 @@ if (args["from-raw"]) {
   let saturated = 0;
 
   // ── Sweep 1: Nearby Search over the circle grid, one call per type family ──
-  const NEARBY_JOBS = CIRCLES.flatMap(([lat, lng, radius]) =>
+    // --only-gaps sweeps just the new circles. The originals were swept into
+  // places-raw.json already, and re-running them would spend the month's
+  // Nearby quota re-finding what the cache already holds.
+  const sweepCircles = args["only-gaps"] ? GAP_CIRCLES : [...CIRCLES, ...GAP_CIRCLES];
+  const NEARBY_JOBS = sweepCircles.flatMap(([lat, lng, radius]) =>
     TYPE_GROUPS.map((types) => ({ lat, lng, radius, types }))
   );
   await mapConcurrent(NEARBY_JOBS, 4, async ({ lat, lng, radius, types }) => {
     let data;
+    if (overBudget("nearby")) { skipped.nearby++; return; }
     try {
-      calls.nearby++;
+      calls.nearby++; usage[MONTH].nearby++;
       data = await curlJson("https://places.googleapis.com/v1/places:searchNearby", {
         headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS}`],
         body: {
@@ -230,7 +351,7 @@ if (args["from-raw"]) {
     for (const p of places) byId.set(p.id, p);
   });
   const afterNearby = byId.size;
-  console.log(`${afterNearby} places from ${NEARBY_JOBS.length} nearby calls over ${CIRCLES.length} circles (${saturated} still saturated at 20).`);
+  console.log(`${afterNearby} places from ${NEARBY_JOBS.length} nearby calls over ${sweepCircles.length} circles (${saturated} still saturated at 20).`);
 
   // ── Sweep 2: Text Search, ranked by happy-hour relevance ──────────────────
   const TEXT_JOBS = TEXT_AREAS.flatMap((area) => TEXT_QUERIES.map((q) => `${q} ${area}`));
@@ -239,7 +360,8 @@ if (args["from-raw"]) {
     for (let page = 0; page < TEXT_PAGES; page++) {
       let data;
       try {
-        calls.text++;
+        if (overBudget("text")) { skipped.text++; return; }
+      calls.text++; usage[MONTH].text++;
         data = await curlJson("https://places.googleapis.com/v1/places:searchText", {
           headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS},nextPageToken`],
           body: { textQuery, pageSize: 20, ...(pageToken ? { pageToken } : {}) },
@@ -256,6 +378,11 @@ if (args["from-raw"]) {
   });
   console.log(`+${byId.size - afterNearby} more from ${calls.text} text-search calls over ${TEXT_AREAS.length} areas.`);
   console.log(`${byId.size} unique places total (${calls.nearby} nearby + ${calls.text} text calls).`);
+  fs.writeFileSync(USAGE, JSON.stringify(usage, null, 2));
+  console.log(`${MONTH} Places usage: nearby ${spentBefore.nearby}->${usage[MONTH].nearby}, text ${spentBefore.text}->${usage[MONTH].text} (cap ${MONTHLY_CAP}/SKU).`);
+  if (skipped.nearby || skipped.text) {
+    console.log(`!! MONTHLY CAP HIT — skipped ${skipped.nearby} nearby and ${skipped.text} text calls. This sweep is incomplete.`);
+  }
   // Merge rather than replace: a later sweep may use a narrower query set
   // (to stay inside the month's quota) and must not shrink the cache that
   // --from-raw re-filters against.

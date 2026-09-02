@@ -1,0 +1,7 @@
+{
+  "_note": "Google Places calls per SKU per calendar month. The free allowance is 1000/SKU/month at the Enterprise+Atmosphere field mask this pipeline uses. September's opening figures are RECONSTRUCTED from run logs, not metered, so treat them as a floor: the real count may be slightly higher. Google Cloud console is the authority.",
+  "2026-09": {
+    "nearby": 628,
+    "text": 680
+  }
+}
