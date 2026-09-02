@@ -117,6 +117,17 @@ for (let i = 0; i < candidates.length; i += BATCH) {
   }
   fs.writeFileSync(SCREENED_STORE, JSON.stringify(screened, null, 2));
 
+  // Publish after every batch, not once at the end of the run. A batch costs
+  // minutes and a full pool costs hours; if the process dies in between, the
+  // extraction is done and paid for but venues.json never learns about it,
+  // and the ledger says "published" for venues that are nowhere. Writeback is
+  // cheap and idempotent, so run it now and keep each batch's work.
+  try {
+    run("writeback.js", ["--discovery-require-deals"]);
+  } catch (e) {
+    console.log(`  writeback failed: ${String(e.message).slice(0, 160)}`);
+  }
+
   if (withDeals >= TARGET) { stopReason = `target reached (${withDeals})`; break; }
   if (spent >= BUDGET) { stopReason = `budget reached ($${spent.toFixed(2)})`; break; }
 }

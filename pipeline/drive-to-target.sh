@@ -55,6 +55,23 @@ while :; do
   node pipeline/daily.js --target "$need" --budget "$BUDGET" --use-pool >>"$LOG" 2>&1
   after=$(count)
   echo "=== round $round done | $cur -> $after venues ==="
+
+  # Commit each round. This container is disposable and has already been
+  # restarted mid-round twice; work that exists only on its disk is work that
+  # can vanish. Push failures are non-fatal — the next round retries.
+  if [ -n "$(git status --porcelain)" ]; then
+    # Match the full key shape, not the prefix: a bare prefix appears in
+    # guards like this one and would block every commit on itself.
+    if git diff -- . ':!pipeline/secrets.json' | grep -qE "AIza[A-Za-z0-9_-]{30,}"; then
+      echo "!! refusing to commit: possible API key in the diff"; break
+    fi
+    git add -A
+    git commit -q -m "Discovery round: $cur -> $after venues
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_0161uVuVeKr1uRN4QqkzzbQt" || true
+    git push -q -u origin "$(git branch --show-current)" 2>/dev/null || echo "  (push failed, will retry next round)"
+  fi
   if [ "$after" -le "$cur" ]; then
     echo "NO PROGRESS this round — stopping rather than spinning"; break
   fi
