@@ -4966,5 +4966,1085 @@
     "name": "The Rolling Crepe",
     "verdict": "error",
     "checked_at": "2026-09-02"
+  },
+  "ChIJxfj2JgJ3hlQRLvD2VM1fDuM": {
+    "id": "living-room-hookah-lounge",
+    "name": "Living Room Hookah Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJGfIH_CcLhlQRXUIWNqgCxw8": {
+    "id": "flying-beaver-bar-grill",
+    "name": "Flying Beaver Bar & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJT0qWYnNuhlQR9Gph2yQpfHU": {
+    "id": "the-beach-house-restaurant",
+    "name": "The Beach House Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJk6nj4NlxhlQRz0kVe0cCy1I": {
+    "id": "riley-s-vancouver",
+    "name": "Riley's Vancouver",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJYReKm2DZhVQR3M8G_Qwyfz4": {
+    "id": "spice-72-indian-restaurant-lounge",
+    "name": "Spice 72 Indian Restaurant & Lounge",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJo-2GzkpyhlQRNf117XkTpGU": {
+    "id": "local-public-eatery-kitsilano",
+    "name": "LOCAL Public Eatery Kitsilano",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJNRSLgX91hlQRhhzVsJAyhGM": {
+    "id": "the-story-cafe-eatery-bar",
+    "name": "The Story Cafe - Eatery & Bar",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJO9_NhsF0hlQRM9o_-ipikuQ": {
+    "id": "milltown-bar-grill",
+    "name": "Milltown Bar & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJiVBfYAfWhVQRq4i8Yq6kR58": {
+    "id": "cat-fiddle-sports-bar-restaurant",
+    "name": "Cat & Fiddle Sports Bar & Restaurant",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ28t23QxzhlQRlPVAoZUunSU": {
+    "id": "stanley-park-brewing-restaurant-brewpub",
+    "name": "Stanley Park Brewing Restaurant & Brewpub",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJI0tSYJbYhVQR9Xy2YBUPqCA": {
+    "id": "starlight-casino",
+    "name": "Starlight Casino",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJSa1PpdVzhlQRmKSfG7q1eYQ": {
+    "id": "the-mexican-antojitos-y-cantina",
+    "name": "The Mexican Antojitos y Cantina",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJdbuwpEfQhVQRezSBa8aUCbI": {
+    "id": "dublin-crossing-irish-pub",
+    "name": "Dublin Crossing Irish Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJC8uiCg14hlQRoszyurhJau4": {
+    "id": "woody-s-pub-on-brunette",
+    "name": "Woody's Pub on Brunette",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJV_FU-Dp1hlQR4u8rdQKZlkw": {
+    "id": "the-canadian-brewhouse-grill-richmond",
+    "name": "The Canadian Brewhouse & Grill (Richmond)",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ2SGOIXrRhVQRngYB0o8Uqbg": {
+    "id": "moxies-langley-restaurant",
+    "name": "Moxies Langley Restaurant",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJIft1c3hxhlQR8Nk5KKui3cM": {
+    "id": "rogue-kitchen-wetbar",
+    "name": "Rogue Kitchen & Wetbar",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJU8stRuDZhVQRSP3ZoHsCX7A": {
+    "id": "chacha-s-tandoor-and-grill",
+    "name": "Chacha's Tandoor and Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJhWYhu2l4hlQRryvAibcH_uk": {
+    "id": "john-b-pub",
+    "name": "John B Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJUazK9l_bhVQR2_p8qlfVBq4": {
+    "id": "panorama-indian-lounge-dosa-lounge",
+    "name": "Panorama Indian Lounge (Dosa Lounge)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJc-rQW01xhlQRSTGakHFDvjY": {
+    "id": "shark-club-sports-bar-grill",
+    "name": "Shark Club Sports Bar & Grill",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJr2icA23WhVQRXb9Dj6oSDCQ": {
+    "id": "gillnetter-pub",
+    "name": "Gillnetter Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJWdxaBwvZhVQROum5xdY7IKA": {
+    "id": "momo-factory-restaurant-and-bar",
+    "name": "Momo Factory Restaurant and Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJy3jgdRTXhVQRx6JyVsTdv3g": {
+    "id": "guildford-station-pub",
+    "name": "Guildford Station Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ97OIsPfShVQRfNAe-iyE9Rg": {
+    "id": "fort-pub-grill",
+    "name": "Fort Pub & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJVWwDl03ZhVQR9jYfycj1qms": {
+    "id": "moj-masti-indian-restaurant",
+    "name": "Moj Masti Indian Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJKykD6HtxhlQRohz10KUI68M": {
+    "id": "devil-s-elbow-ale-and-smoke-house",
+    "name": "Devil's Elbow Ale and Smoke House",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJwzGZvXdxhlQRkfAVf4vvg7o": {
+    "id": "bombay-kitchen-bar-commercial-dr",
+    "name": "Bombay Kitchen + Bar - Commercial Dr",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJFxXSmH5xhlQRJJXBIttyKi0": {
+    "id": "library-square-pub",
+    "name": "Library Square Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJqUjxNINxhlQR4Lx01oYf6H8": {
+    "id": "mahony-s-tavern-convention-centre",
+    "name": "Mahony's Tavern Convention Centre",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJzQ4Li3hxhlQRmqBjZzEnjQI": {
+    "id": "chop-steakhouse-bar",
+    "name": "Chop Steakhouse & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJP2YOE9RzhlQRBF8z709z_UA": {
+    "id": "two-parrots-bar-grill",
+    "name": "Two Parrots Bar & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJYYDhE2DRhVQRdEp59KuCf2w": {
+    "id": "jimy-mac-s-pub",
+    "name": "Jimy Mac's Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJWx0eDi9zhlQRtAITySyE3oE": {
+    "id": "published-on-main",
+    "name": "Published on Main",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJlahJZYJxhlQRK8Iea94H9Yg": {
+    "id": "curry-hut-indian-bistro",
+    "name": "Curry Hut Indian Bistro",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJzUccx1dxhlQR9Ulx5uAnCN4": {
+    "id": "les-faux-bourgeois",
+    "name": "Les Faux Bourgeois",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJvUp9H-_LhVQRpMc-rWO9law": {
+    "id": "fox-hounds-pub-and-restaurant",
+    "name": "Fox & Hounds Pub and Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJyyNEXGrXhVQRIwMMNAphQiw": {
+    "id": "the-indian-club-kitchen-bar",
+    "name": "The Indian Club Kitchen + Bar",
+    "verdict": "error",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJIa_ZePZ0hlQR6Uj67grEe7o": {
+    "id": "dublin-crossing-vancouver",
+    "name": "Dublin Crossing - Vancouver",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJO0LPCH9xhlQRtHB0Sv8zzcI": {
+    "id": "o-sushi-downtown-vancouver",
+    "name": "O Sushi Downtown Vancouver",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJwasLJOfShVQRJ5CjzD54HNs": {
+    "id": "kingfishers-waterfront-bar-grill",
+    "name": "Kingfishers Waterfront Bar & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJIUScU1x_hlQR_uGF2ah59Qg": {
+    "id": "arms-pub",
+    "name": "Arms Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJX7fDuR7QhVQRNliE78hM9ww": {
+    "id": "the-clayton-public-house",
+    "name": "The Clayton Public House",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJP3A7gNVzhlQR1NLQDSt1s58": {
+    "id": "speakeasy-on-granville",
+    "name": "Speakeasy on Granville",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJt-b1wYJxhlQRHVfYyeEQUDo": {
+    "id": "arc-restaurant",
+    "name": "ARC RESTAURANT",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJeTeES3TYhVQRuJfJeiBEf3E": {
+    "id": "river-s-reach",
+    "name": "River's Reach",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJH0xQYIJxhlQR5CW_L2HrdLY": {
+    "id": "lions-pub",
+    "name": "Lions Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJUQ1yDGVxhlQRV5UFZa1zmqI": {
+    "id": "the-american",
+    "name": "The American",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ-79FVm3YhVQRmMMMQeSkXT4": {
+    "id": "taverna-greka",
+    "name": "Taverna Greka",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJTULLvybDhVQRdI4Wol25oZ4": {
+    "id": "ocean-park-pizza-village-pub",
+    "name": "Ocean Park Pizza Village Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJDxro-IzFhVQRIa3XrD6QyT0": {
+    "id": "artful-dodger-pub-and-liquor-store",
+    "name": "Artful Dodger Pub and Liquor Store",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJl53YENRzhlQRgKUXfBQ9VLE": {
+    "id": "basil-pasta-bar",
+    "name": "Basil Pasta Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ1eEvdZ3EhVQR0skCq4T9dog": {
+    "id": "sandcastle-bowl-bar-grill",
+    "name": "Sandcastle Bowl Bar & Grill",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJmV0yVU52hlQRVHpBtscDhhg": {
+    "id": "the-great-bear-pub",
+    "name": "The Great Bear Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJHa9CHPt1hlQRO06TfBHC1OM": {
+    "id": "spark-kitchen-and-bar",
+    "name": "Spark Kitchen and Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJUx3DKn5xhlQROUIwrwWqQGw": {
+    "id": "roxy-burger-kitchen-and-bar",
+    "name": "Roxy Burger Kitchen and Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJXyg3KFZxhlQRexn8iTUtom8": {
+    "id": "bells-whistles-fraser",
+    "name": "Bells & Whistles Fraser",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJH7IyoNVzhlQRzjiVf6z3I5g": {
+    "id": "lucha-libre-barra-mexican-restaurant",
+    "name": "Lucha Libre Barra & Mexican Restaurant",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJvw2bt8LbhVQRIphIBmG4rvw": {
+    "id": "par4-kitchen-bar-surrey-sports-bar-restaurant",
+    "name": "Par4 Kitchen & Bar | Surrey Sports Bar & Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJJT_MF1nahVQR9xh3_H1xFQY": {
+    "id": "new-york-new-york-greek-restaurant",
+    "name": "New York New York Greek Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJgeY5JNPPhVQRuQ3KGAdgGg8": {
+    "id": "match-eatery-public-house",
+    "name": "Match Eatery & Public House",
+    "verdict": "error",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJAa8oiynehVQRGPfCEreMVaw": {
+    "id": "riverhouse-restaurant-pub",
+    "name": "RiverHouse Restaurant & Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJExE2pohxhlQRlbojM3N1HeU": {
+    "id": "h-tasting-lounge",
+    "name": "H Tasting Lounge",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJpetWib7QhVQRVhM3yXIVF_4": {
+    "id": "baselines-pub",
+    "name": "Baselines Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJN2Noxf5xhlQR5S-J2gEGnrQ": {
+    "id": "reflections-the-garden-terrace",
+    "name": "Reflections The Garden Terrace",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJCRrXX5bYhVQRQuZQPAk4CZY": {
+    "id": "match-eatery-public-house-2",
+    "name": "Match Eatery & Public House",
+    "verdict": "error",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJZ-8esBl0hlQRFPLJisQ2ruc": {
+    "id": "east-side-craft-house",
+    "name": "East Side Craft House",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJkT_TovHVhVQRBrMgJYm-47I": {
+    "id": "orrange-kitchen-bar",
+    "name": "Orrange Kitchen + Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJV7bp-oxxhlQRmXCdb93TBgc": {
+    "id": "stanley-s-bar-grill",
+    "name": "Stanley's Bar & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJmZqwSi9yhlQRwouQZ3IxzFI": {
+    "id": "the-park-pub",
+    "name": "The Park Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ23ybND_UhVQRwlxn0pDsitA": {
+    "id": "jolly-coachman-pub-liquor-store",
+    "name": "Jolly Coachman Pub & Liquor Store",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJYZpqvNl4hlQR8KxPLGTVVp4": {
+    "id": "st-james-well-pub",
+    "name": "St James Well Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJu7H9VKfahVQRz4Q6ob47RG0": {
+    "id": "the-henry",
+    "name": "The Henry",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJfSHrxt95hlQRmzP5AH34v50": {
+    "id": "hop-vine-taphouse",
+    "name": "Hop & Vine Taphouse",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJk-l-TzhwhlQRg7MnkbXSNK0": {
+    "id": "andreas-restaurant",
+    "name": "Andreas Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJBcE2bnTYhVQRlFMMHsdCCCo": {
+    "id": "the-old-bavaria-haus-restaurant",
+    "name": "The Old Bavaria Haus Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJhTyGxNtzhlQRDGh9orLVDUA": {
+    "id": "the-wicklow-pub",
+    "name": "The Wicklow Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJWQQ_uVLYhVQR1V9Rppbbeks": {
+    "id": "donegal-s-irish-house-donegal-s-pub",
+    "name": "Donegal's Irish House / Donegal's Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJxxvSqxTRhVQRF3XiDuMewqw": {
+    "id": "sidebar-grill",
+    "name": "Sidebar Grill",
+    "verdict": "error",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJy0-P0olzhlQRxSLsSsM-jCY": {
+    "id": "union-latino-s-food",
+    "name": "Union Latino's food",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJNVqaO3FxhlQRFZhv3GFvcbc": {
+    "id": "the-narrow-lounge",
+    "name": "The Narrow Lounge",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJz8QHlvN5hlQRr9XFaUSwQoI": {
+    "id": "on-off-kitchen-bar",
+    "name": "On & Off Kitchen + Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJRToqFJTEhVQRpyRA0SJQMCE": {
+    "id": "sammy-j-s-grill-bar-south-surrey",
+    "name": "Sammy J's Grill & Bar South Surrey",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJZcMGh23ZhVQR4VWsffkrZf8": {
+    "id": "one20-public-house-and-liquor-store",
+    "name": "One20 Public House and Liquor Store",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJR3KYtBB1hlQRU7LObFFHTUc": {
+    "id": "fogg-n-suds-restaurant-beer-bar",
+    "name": "Fogg N' Suds Restaurant Beer Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJsdFklq0KhlQRH0cOr5xckvw": {
+    "id": "legends-pub-restaurant",
+    "name": "Legends Pub & Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJuVJSOgjQhVQR50AdORiLfL4": {
+    "id": "rusty-s-neighbourhood-pub",
+    "name": "Rusty's Neighbourhood Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJN_TLzCfQhVQRy-X2P2PJYRo": {
+    "id": "fox-fiddle",
+    "name": "Fox & Fiddle",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJCVNj-izQhVQRsVV7TzuOEKE": {
+    "id": "sammy-j-s-grill-bar-langley",
+    "name": "Sammy J's Grill & Bar Langley",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJcyLHm9VzhlQRfeete-hmYjk": {
+    "id": "rikoko-by-hungry-guys-kitchen",
+    "name": "Rikoko by Hungry Guys Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ_W3F5nrYhVQRR0k1fyHZcXA": {
+    "id": "the-terminal-pub",
+    "name": "The Terminal Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ8X7EbVBxhlQRIYzRrrHC8V4": {
+    "id": "taylight-local-craft-beer-kitchen",
+    "name": "Taylight Local Craft Beer & Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJmQhOx_ZrhlQRd0tolfCaYuQ": {
+    "id": "the-troller-ale-house",
+    "name": "The Troller Ale House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJd6gXiUdwhlQRy6uLWQ-B3s4": {
+    "id": "jack-lonsdale-s-public-house",
+    "name": "Jack Lonsdale's Public House",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJvVrzLyzahVQRdpmanzsV_58": {
+    "id": "brewster-s-sports-pub",
+    "name": "Brewster's Sports Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJYbC5G3pxhlQR42XljDVM8NY": {
+    "id": "funky-winker-beans",
+    "name": "Funky Winker Beans",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJM1MiQEtwhlQRwoB_rXwEQ0s": {
+    "id": "sailor-hagar-s-brew-pub",
+    "name": "Sailor Hagar's Brew Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJveyk1X8KhlQRolnOJqUw660": {
+    "id": "o-hare-s-gastropub",
+    "name": "O'Hare's GastroPub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ3YyRVn1whlQRNHXvqRMDsac": {
+    "id": "seymour-s-pub-grill",
+    "name": "Seymour's Pub & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJWYse-GPUhVQRMePC0JiChXs": {
+    "id": "the-reach-neighbourhood-pub-grill",
+    "name": "The Reach Neighbourhood Pub & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJezI1KjjfhVQRmxTWWaM6yJQ": {
+    "id": "tugboat-annie-s-pub-grille",
+    "name": "TugBoat Annie's Pub & Grille",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJcfQaoShyhlQRMi0PP9FMUsw": {
+    "id": "espa-a-restaurant",
+    "name": "España Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ-z8mBVrOhVQRtK-cYNsUi7Q": {
+    "id": "murrayville-town-pub",
+    "name": "Murrayville Town Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJl3jdI1FzhlQRaMgOocqNvBE": {
+    "id": "tequila-cocina-mexican-restaurant-cantina-brunch",
+    "name": "Tequila Cocina | Mexican Restaurant, Cantina & Brunch.",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJg0OeNE9zhlQRghLJ304DBdk": {
+    "id": "foy-s-irish-bar-grill",
+    "name": "Foy's Irish Bar & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJM_hP5dNzhlQReJN7YYnCxis": {
+    "id": "the-yale-saloon",
+    "name": "The Yale Saloon",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ0a9U8HlxhlQR-DXhvPSC25E": {
+    "id": "the-metropole-community-pub",
+    "name": "The Metropole Community Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJD-WYYijZhVQRJr4zTl52Qo8": {
+    "id": "tidewaters-pub",
+    "name": "Tidewaters Pub",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ04Z7_ljXhVQRIBLIYgA6lQg": {
+    "id": "green-timbers-pub",
+    "name": "Green Timbers Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJAYisz3BxhlQRUvK9uvUOUcw": {
+    "id": "good-co-northwoods",
+    "name": "Good Co. Northwoods",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJAQ4oXPdzhlQRQ8r6R7SkFpk": {
+    "id": "locus-restaurant-lounge",
+    "name": "Locus Restaurant & Lounge",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJBfm68QrXhVQR0pK-VS2GJmU": {
+    "id": "jolly-mac-s-pub-liquor-store",
+    "name": "Jolly Mac's Pub & Liquor Store",
+    "verdict": "error",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJR9oaP-5-hlQRFKtEkYSXVVg": {
+    "id": "greentee-country-club-westwood-plateau-sky",
+    "name": "GreenTee Country Club Westwood Plateau Sky",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJObmF2apzhlQRXFzy45lL4yQ": {
+    "id": "good-co-kits",
+    "name": "Good Co. Kits",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJcydum3hxhlQR26EOBC7xoRg": {
+    "id": "one-under",
+    "name": "One Under",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJsXZ9odVzhlQR0vLHvD753Tc": {
+    "id": "1017-on-granville",
+    "name": "1017 On Granville",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJARoGiPlzhlQRiWfyxGOBfGA": {
+    "id": "bombay-masala-restaurant",
+    "name": "Bombay Masala Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ6deHSndxhlQRk7Bte1FvrAs": {
+    "id": "milano-espresso-lounge",
+    "name": "Milano Espresso Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJmxtPMbB1hlQRyJRgC1Yros0": {
+    "id": "mr-bro-korean-bistro-izakaya",
+    "name": "Mr. Bro Korean bistro & Izakaya",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJWWYp5cRxhlQR6xMiqQMC-_Y": {
+    "id": "the-gull-bar-and-kitchen",
+    "name": "The Gull Bar and Kitchen",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJb0ZE3djhhVQRG16VimKAb1g": {
+    "id": "shady-island-seafood-bar-grill",
+    "name": "Shady Island Seafood Bar & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJkZoLsmVxhlQRId_eZ2y4oOg": {
+    "id": "ivanhoe-pub",
+    "name": "Ivanhoe Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJtZoH-Tx4hlQRyWcQIPcpp84": {
+    "id": "the-wild-fig-restaurant-bar",
+    "name": "The Wild Fig Restaurant + Bar",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJnbTaZhFxhlQRs86cqwLFX-Q": {
+    "id": "house-of-india",
+    "name": "House of India",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJqzJ81kZxhlQREc6ttSm_NoU": {
+    "id": "medley-s-italian-grill",
+    "name": "Medley's Italian & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJny8xrShyhlQRqFxysSLSceo": {
+    "id": "shamrock-storehouse-denman",
+    "name": "Shamrock Storehouse Denman",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJeSBR0Nd3hlQRMgvrmTur-vQ": {
+    "id": "the-thirsty-duck-pub",
+    "name": "The Thirsty Duck Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJYdlJ7odxhlQR0HOOECsemzg": {
+    "id": "book-kyung-ban-jeoun-bk-karaoke",
+    "name": "Book Kyung Ban Jeoun & BK Karaoke",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJX2i1X2DmhVQRF7mnz9MEjwI": {
+    "id": "rose-crown-pub",
+    "name": "Rose & Crown Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJZRCfNqzfhVQRnZQLx8RuhhU": {
+    "id": "four-winds-brewing-co-taproom-taco-shop",
+    "name": "Four Winds Brewing Co. Taproom & Taco Shop",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJIdyq8m3YhVQRPV40RnJWCEo": {
+    "id": "judge-begbie-s-tavern",
+    "name": "Judge Begbie's Tavern",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJOyOFfQjZhVQRt6hOOScD8_I": {
+    "id": "kennedy-s-pub",
+    "name": "Kennedy's Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJecbdLCRzhlQR5zNwpp7WPVs": {
+    "id": "papi-s-seafood-and-oyster-bar",
+    "name": "Papi's Seafood and Oyster Bar",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ1S8S8tdzhlQRrGQRKDN6P5E": {
+    "id": "chit-chat-burger-bar",
+    "name": "Chit Chat Burger Bar",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ_1G9nLfXhVQRBjscTqY4MEY": {
+    "id": "golden-parrots-pub-restaurant",
+    "name": "Golden Parrots Pub & Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJWbC2kk5zhlQRRUkMJsFC6_E": {
+    "id": "beach-ave-bar-and-grill",
+    "name": "Beach Ave Bar and Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJNeveR1ZxhlQRtxa0L7HxEaM": {
+    "id": "amrut-kitchen-and-bar-hyderabadi-indian-restaurant",
+    "name": "AMRUT KITCHEN AND BAR - HYDERABADI INDIAN RESTAURANT",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJE3w5OcZ3hlQRzb8N439SqTM": {
+    "id": "oliver-twist-pub-grill",
+    "name": "Oliver Twist Pub & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJIw2k0T5vhlQRlJ7Yywa2DRY": {
+    "id": "hatam-restaurant",
+    "name": "Hatam Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJDf-gJJ7XhVQR0tQJxvu-TuQ": {
+    "id": "bb-q-chicken-surrey",
+    "name": "bb.q Chicken Surrey",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJicLjmRvEhVQRTtBAGs8yASU": {
+    "id": "the-bennett-craft-kitchen",
+    "name": "The Bennett Craft Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJyfBkn4dxhlQRAxfzGwa0IBM": {
+    "id": "karma-lounge",
+    "name": "Karma Lounge",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJBU87DnNuhlQRPP_cLzqd7YE": {
+    "id": "the-red-lion-bar-grill",
+    "name": "The Red Lion Bar & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJJ2NhPRpxhlQRtUPHJjIX3JQ": {
+    "id": "the-princeton-pub-grill",
+    "name": "The Princeton Pub & Grill",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ8_6iRABzhlQRIyYEw6JqU6g": {
+    "id": "ray-s",
+    "name": "RAY'S",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ472Cni3ahVQRUzEaeWSz3dw": {
+    "id": "kelly-s-pub",
+    "name": "Kelly's Pub",
+    "verdict": "error",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJM8iNX7_ghVQRU8rSf84b55s": {
+    "id": "the-landing-pub-grill",
+    "name": "The Landing Pub & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJJ0ztKw9xhlQReQ4h1OFlg_A": {
+    "id": "comedy-after-dark-eats-drinks-laughs",
+    "name": "Comedy After Dark - Eats Drinks Laughs",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJWcjtDSJxhlQR0MrhNNMVfmI": {
+    "id": "the-brighton-pub",
+    "name": "The Brighton Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJWfPwF6tzhlQRS89LmwYvCQE": {
+    "id": "elwoods",
+    "name": "Elwoods",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJX9XuWBHYhVQRgoB1QC2gD_o": {
+    "id": "the-brownsville-pub",
+    "name": "The Brownsville Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJMd6eI4vZhVQR818oY2Y7R0w": {
+    "id": "georgie-s-local-kitchen-bar",
+    "name": "Georgie's Local Kitchen + Bar",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJU3s2Ym3YhVQRU15o4X-MvEU": {
+    "id": "howe-sound-taphouse-kitchen-new-west",
+    "name": "Howe Sound Taphouse & Kitchen - New West",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJy_Wa1S51hlQRM6IA92M92ek": {
+    "id": "millennium-karaoke",
+    "name": "Millennium Karaoke",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJkyUvUCt4hlQRrnIySefoEPo": {
+    "id": "dageraad-brewing",
+    "name": "Dageraad Brewing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJHd-veenghVQRhYfId8M-H-A": {
+    "id": "speed-s-neighborhood-pub",
+    "name": "Speed's Neighborhood Pub",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJG3E_JH5xhlQRyvB-91r98Ok": {
+    "id": "uva-wine-cocktail-bar",
+    "name": "Uva Wine & Cocktail Bar",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJlTiuEmpxhlQRHup7Ag0O7Cg": {
+    "id": "key-party",
+    "name": "Key Party",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJnzw5Uj9xhlQRC2KfRIdWiHY": {
+    "id": "vera-s-on-the-drive",
+    "name": "Vera's On The Drive",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ26YFv3BxhlQRw2nuTh_ZYSo": {
+    "id": "back-and-forth-bar",
+    "name": "Back and Forth Bar",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJEX6HuPtxhlQR0ApQVM_tI3k": {
+    "id": "wildeye-brewing",
+    "name": "Wildeye Brewing",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJabKMadPRhVQRHGpLEJRtf18": {
+    "id": "the-social-tavern",
+    "name": "The Social Tavern",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJW2Y4KwBxhlQRQ04BWqwQckc": {
+    "id": "el-comal-downtown",
+    "name": "El Comal Downtown",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJg4UbagBzhlQR1tHd7tI6fdk": {
+    "id": "ellipsis",
+    "name": "ELLIPSIS",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ2bdkkRJzhlQRBLbEbTfd4RE": {
+    "id": "hero-s-welcome",
+    "name": "Hero's Welcome",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJf80rBxRzhlQR05A8XdfTdww": {
+    "id": "bbq-chicken-pub-granville",
+    "name": "bbq Chicken & Pub Granville",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJExh0e8hzhlQRkaIGSBt6eQU": {
+    "id": "grapes-soda",
+    "name": "Grapes & Soda",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJYx8nly11hlQR6WniuiHhKhg": {
+    "id": "gallery-vancouver-a-premier-nightlife-entertainment-experience",
+    "name": "Gallery Vancouver | a Premier Nightlife Entertainment Experience",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJm_4yO27YhVQR6j8UAeQDkJw": {
+    "id": "hops-a-northwest-pub",
+    "name": "Hops, A Northwest Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJnXAbDwVxhlQRf21Mes_WxwE": {
+    "id": "dachi-restaurant-and-natural-wine",
+    "name": "Dachi Restaurant and Natural Wine",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ_Ue3lnLXhVQR5jMF5ZaTUyA": {
+    "id": "k-pop-karaoke-pub",
+    "name": "K POP Karaoke Pub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJq6quTYBxhlQReied3xGjDic": {
+    "id": "the-roof",
+    "name": "The Roof",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ2_iXCADRhVQRLhb1B0V4NlE": {
+    "id": "night-owl-kitchen-bar-langley",
+    "name": "Night Owl Kitchen + Bar Langley",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ_RfOprhzhlQRWgl0QMXqkKg": {
+    "id": "bar-asra",
+    "name": "Bar Asra",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ8wDqDXxxhlQRdKi7tCDwhAE": {
+    "id": "hail-mary-s",
+    "name": "Hail Mary's",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ5djFj854hlQRGCw6qPkUe3o": {
+    "id": "mariner-brewing",
+    "name": "Mariner Brewing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJExE2pohxhlQRqmZozTK2kDI": {
+    "id": "h2-kitchen-bar",
+    "name": "H2 Kitchen + Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJueER6spzhlQRnxkSUjwc_Sc": {
+    "id": "charqui",
+    "name": "Charqui",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJPV6Qs7lxhlQRZF3eHOogFUI": {
+    "id": "is-that-french",
+    "name": "Is That French",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJVyiQs31xhlQRvTelBNrAipY": {
+    "id": "district-bar-restaurant-vancouver",
+    "name": "District Bar Restaurant Vancouver",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
   }
 }
