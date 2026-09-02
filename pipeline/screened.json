@@ -7092,7 +7092,7 @@
     "checked_at": "2026-09-02"
   },
   "ChIJF9tqbxl1hlQRdCZjh8vITU8": {
-    "id": "chop-steakhouse-bar-2",
+    "id": "chop-steakhouse-bar",
     "name": "Chop Steakhouse & Bar",
     "verdict": "hours_only",
     "checked_at": "2026-09-02"
@@ -7634,7 +7634,7 @@
   "ChIJtcRu2SrQhVQRutROH9lNmd0": {
     "id": "milestones",
     "name": "Milestones",
-    "verdict": "hours_only",
+    "verdict": "no_happy_hour",
     "checked_at": "2026-09-02"
   },
   "ChIJN1nhPf3nhVQRT8osuPzoW5g": {
@@ -7650,9 +7650,9 @@
     "checked_at": "2026-09-02"
   },
   "ChIJS6R4bbrEhVQRFBPsAxC2RcU": {
-    "id": "milestones-2",
+    "id": "milestones",
     "name": "Milestones",
-    "verdict": "hours_only",
+    "verdict": "no_happy_hour",
     "checked_at": "2026-09-02"
   },
   "ChIJRyL1-wzfhVQRuB1tGOx-D74": {
@@ -7724,7 +7724,7 @@
   "ChIJh9iYHRh3hlQR8GaY_dj1RHM": {
     "id": "claudio-s-ristorante",
     "name": "Claudio's Ristorante",
-    "verdict": "hours_only",
+    "verdict": "published",
     "checked_at": "2026-09-02"
   },
   "ChIJn5Yk8Pp5hlQRjIBc1qzTmDs": {
@@ -12884,7 +12884,7 @@
   "ChIJV3wIQhdzhlQRdcH-pbJvclU": {
     "id": "bonta-italian-ristorante",
     "name": "Bonta Italian Ristorante",
-    "verdict": "hours_only",
+    "verdict": "no_happy_hour",
     "checked_at": "2026-09-02"
   },
   "ChIJj7pRp3BxhlQR8QU5qnkjG5U": {

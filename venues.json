@@ -1,5 +1,5 @@
 {
- "data_version": "2026-09-02-3fec61d1",
+ "data_version": "2026-09-02-e57c8e1f",
  "venues": [
   {
    "id": "ancora",
@@ -5298,7 +5298,12 @@
     "source_url": "https://admiralpub.ca/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/admiral-pub.jpg",
+    "credit_name": "Admiral Pub",
+    "credit_url": "https://maps.google.com/maps/contrib/115996144988892689057",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-02"
   },
   {
@@ -5375,7 +5380,12 @@
     "source_url": "http://www.queenscross.com/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/queens-cross-pub.jpg",
+    "credit_name": "Queens Cross Pub",
+    "credit_url": "https://maps.google.com/maps/contrib/101791856723296676797",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-02"
   },
   {
@@ -5437,7 +5447,12 @@
     "source_url": "https://thebeershackwr.com/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-beer-shack.jpg",
+    "credit_name": "Ritika Taneja",
+    "credit_url": "https://maps.google.com/maps/contrib/114131599212573326761",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-02"
   },
   {
@@ -6283,7 +6298,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/back-and-forth-bar.jpg",
+    "credit_name": "Back and Forth Bar",
+    "credit_url": "https://maps.google.com/maps/contrib/102262747681733495778",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-02"
   },
   {
@@ -6632,28 +6652,26 @@
        1,
        2,
        3,
-       4
-      ],
-      "start": "22:00",
-      "end": "00:00",
-      "label": "Late Night Deals"
-     },
-     {
-      "days": [
+       4,
        5,
        6
       ],
       "start": "22:00",
-      "end": "01:00",
+      "end": null,
       "label": "Late Night Deals"
      }
     ],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://thechickadeeroom.com/menu",
+    "source_url": "https://www.thechickadeeroom.com/menu",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-chickadee-room.jpg",
+    "credit_name": "A D",
+    "credit_url": "https://maps.google.com/maps/contrib/101240296302274590599",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-02"
   },
   {
@@ -6796,7 +6814,7 @@
     "extra_windows": [],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://misotaco.ca/menu",
+    "source_url": "https://www.misotaco.ca/menu",
     "deals": []
    },
    "cover_image": {
@@ -6880,13 +6898,97 @@
     ],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.craftbeermarket.ca/locations/vancouver-false-creek/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+    "source_url": "https://www.craftbeermarket.com/locations/vancouver-false-creek/",
     "deals": []
    },
    "cover_image": {
     "url": "https://www.craftbeermarket.com/wp-content/uploads/2025/10/craft-false-creek-vancouver-bar-scaled.jpeg",
     "credit_name": "CRAFT Beer Market False Creek",
     "credit_url": "https://www.craftbeermarket.ca/locations/vancouver-false-creek/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJF9tqbxl1hlQRdCZjh8vITU8",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.4,
+   "user_ratings_total": 3506,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "chop-steakhouse-bar",
+   "name": "Chop Steakhouse & Bar",
+   "formatted_address": "10251 St Edwards Dr, Richmond, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.1872927,
+     "lng": -123.11050170000001
+    }
+   },
+   "formatted_phone_number": "(604) 276-1180",
+   "website": "https://chop.ca/locations/richmond-airport?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://chop.ca/happy-hour",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "https://images.prismic.io/chop/0656112c-c4b0-4962-a07e-f9a188a8d304_MetaImage.jpg?auto=compress,format&rect=0,0,1200,627&w=1200&h=627",
+    "credit_name": "Chop Steakhouse & Bar",
+    "credit_url": "https://chop.ca/locations/richmond-airport?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-02"
@@ -6952,7 +7054,12 @@
     "source_url": "http://gringogastown.ca/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/gringo-gastown.jpg",
+    "credit_name": "Gringo Gastown",
+    "credit_url": "https://maps.google.com/maps/contrib/111981848013192835457",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-02"
   },
   {
@@ -7255,12 +7362,12 @@
     "extra_windows": [
      {
       "days": [
-       0,
-       6
+       6,
+       0
       ],
       "start": "15:00",
       "end": "17:30",
-      "label": "Weekend"
+      "label": "Weekend Happy Hour"
      },
      {
       "days": [
@@ -7272,7 +7379,7 @@
       ],
       "start": "21:00",
       "end": null,
-      "label": "Late night"
+      "label": "Late Night Happy Hour"
      },
      {
       "days": [
@@ -7281,7 +7388,7 @@
       ],
       "start": "22:00",
       "end": null,
-      "label": "Late night"
+      "label": "Late Night Happy Hour"
      }
     ],
     "verified": false,
@@ -7289,7 +7396,12 @@
     "source_url": "https://www.opheliakitchen.ca/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/ophelia.jpg",
+    "credit_name": "Ophelia",
+    "credit_url": "https://maps.google.com/maps/contrib/105033786199350492804",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-02"
   },
   {
@@ -7368,7 +7480,12 @@
     "source_url": "http://www.oddfishrestaurant.com/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/oddfish-restaurant.jpg",
+    "credit_name": "Stefan Nels",
+    "credit_url": "https://maps.google.com/maps/contrib/118172511083873764079",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-02"
   },
   {
@@ -7507,13 +7624,134 @@
       ],
       "start": "21:00",
       "end": null,
-      "label": "Late night"
+      "label": "Late Night"
      }
     ],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.claudiosristorante.ca/menu",
-    "deals": []
+    "source_url": "http://www.claudiosristorante.ca/menu",
+    "deals": [
+     {
+      "name": "Draft Beer",
+      "price": "$5",
+      "category": "drink",
+      "description": "12oz"
+     },
+     {
+      "name": "House Wine",
+      "price": "$5",
+      "category": "drink",
+      "description": "5oz (Red, White, or Rosé)"
+     },
+     {
+      "name": "Prosecco",
+      "price": "$5",
+      "category": "drink",
+      "description": "5oz"
+     },
+     {
+      "name": "Single Highballs",
+      "price": "$5",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Margarita",
+      "price": "$8",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Aperol Spritz",
+      "price": "$8",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Sangria",
+      "price": "$8",
+      "category": "drink",
+      "description": "5oz"
+     },
+     {
+      "name": "Double Highballs",
+      "price": "$10",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Negroni",
+      "price": "$10",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Old Fashioned",
+      "price": "$10",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Olive Calde",
+      "price": "$5",
+      "category": "food",
+      "description": "Marinated Sicilian olives, lemon, orange zest"
+     },
+     {
+      "name": "Cacio e Pepe Arancini",
+      "price": "$4",
+      "category": "food",
+      "description": "per piece"
+     },
+     {
+      "name": "Truffle Potato Chips",
+      "price": "$7",
+      "category": "food",
+      "description": "Made fresh daily, truffle oil, Grana Padano"
+     },
+     {
+      "name": "Garlic Parmesan Bites",
+      "price": "$8",
+      "category": "food",
+      "description": "Garlice, Grana Padano, pomodoro sauce"
+     },
+     {
+      "name": "Margherita Pizza",
+      "price": "$18",
+      "category": "food",
+      "description": "Tomato, fior di latte, basil"
+     },
+     {
+      "name": "Chitarra Pomodoro",
+      "price": "$19",
+      "category": "food",
+      "description": "EVOO, basil, tomato sauce, stracciatella"
+     },
+     {
+      "name": "Boscaiola Pizza",
+      "price": "$20",
+      "category": "food",
+      "description": "Tomato, fior di latte, Italian sausage, mushroom"
+     },
+     {
+      "name": "Chicken Parmigiana",
+      "price": "$21",
+      "category": "food",
+      "description": "Tomato sauce, fior di latte, Grana Padano"
+     },
+     {
+      "name": "Chitarra Carbonara",
+      "price": "$22",
+      "category": "food",
+      "description": "Guanciale, cream, pecorino, cured egg yolk, Grana Padano"
+     },
+     {
+      "name": "Cozze",
+      "price": "$22",
+      "category": "food",
+      "description": "Mussels, white wine, fennel, Calabrian chilies, parsley oil, focaccia"
+     }
+    ]
    },
    "cover_image": {
     "url": "http://static1.squarespace.com/static/60527193cf31d67dd74f3d56/t/64e29cceb6bf7d46d28332c1/1692572878368/Untitled-1-01.png?format=1500w",
@@ -7521,70 +7759,6 @@
     "credit_url": "http://www.claudiosristorante.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
-  },
-  {
-   "place_id": "ChIJoWPKIj5xhlQR2vCsGMqW3FM",
-   "international_phone_number": null,
-   "types": [
-    "restaurant",
-    "bar",
-    "food",
-    "point_of_interest",
-    "establishment"
-   ],
-   "business_status": "OPERATIONAL",
-   "price_level": null,
-   "rating": 4.1,
-   "user_ratings_total": 593,
-   "opening_hours": {
-    "weekday_text": []
-   },
-   "photos": [],
-   "amenities": {
-    "outdoor_seating": null,
-    "gluten_free_options": null,
-    "wheelchair_accessible_entrance": null,
-    "parking": null,
-    "transit": null,
-    "serves_cocktails": null,
-    "serves_beer": null,
-    "serves_wine": null,
-    "live_music": null,
-    "good_for_groups": null
-   },
-   "data_source": "discovery",
-   "id": "zawa-restaurant",
-   "name": "Zawa Restaurant",
-   "formatted_address": "920 Commercial Dr, Vancouver, BC",
-   "address_components": null,
-   "geometry": {
-    "location": {
-     "lat": 49.276367,
-     "lng": -123.0693362
-    }
-   },
-   "formatted_phone_number": "(604) 255-0470",
-   "website": "http://zawarestaurant.com/",
-   "happy_hour": {
-    "days": [
-     0,
-     1,
-     2,
-     3,
-     4,
-     5,
-     6
-    ],
-    "start": "17:00",
-    "end": "21:00",
-    "extra_windows": [],
-    "verified": false,
-    "verified_source": null,
-    "source_url": "http://zawarestaurant.com/",
-    "deals": []
-   },
-   "cover_image": null,
    "last_synced_at": "2026-09-02"
   },
   {
@@ -7644,10 +7818,15 @@
     "extra_windows": [],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.pkscafe.ca/copy-of-menu-2",
+    "source_url": "http://pkscafe.ca/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/pks-cafe.jpg",
+    "credit_name": "PKs cafe",
+    "credit_url": "https://maps.google.com/maps/contrib/103548509294961916478",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-02"
   },
   {
@@ -7711,19 +7890,18 @@
       ],
       "start": "13:00",
       "end": "17:00",
-      "label": "Afternoon"
+      "label": "Afternoon (weekend)"
      },
      {
       "days": [
        1,
        2,
        3,
-       4,
-       0
+       4
       ],
       "start": "20:00",
       "end": null,
-      "label": "Late night"
+      "label": "Evening"
      },
      {
       "days": [
@@ -7732,7 +7910,15 @@
       ],
       "start": "21:00",
       "end": null,
-      "label": "Late night"
+      "label": "Evening"
+     },
+     {
+      "days": [
+       0
+      ],
+      "start": "20:00",
+      "end": null,
+      "label": "Evening"
      }
     ],
     "verified": false,
@@ -7839,6 +8025,144 @@
    "last_synced_at": "2026-09-02"
   },
   {
+   "place_id": "ChIJjxrDYstxhlQRrkD3lLOhuzY",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.5,
+   "user_ratings_total": 934,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "two-rivers-meats",
+   "name": "Two Rivers Meats",
+   "formatted_address": "180 Donaghy Ave, North Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.3190199,
+     "lng": -123.0964586
+    }
+   },
+   "formatted_phone_number": "(604) 990-5288",
+   "website": "https://tworiversmeats.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://tworiversmeats.com/menu/",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "photos/two-rivers-meats.jpg",
+    "credit_name": "Donna Marion",
+    "credit_url": "https://maps.google.com/maps/contrib/106292743634914786148",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJoWPKIj5xhlQR2vCsGMqW3FM",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.1,
+   "user_ratings_total": 593,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "zawa-restaurant",
+   "name": "Zawa Restaurant",
+   "formatted_address": "920 Commercial Dr, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.276367,
+     "lng": -123.0693362
+    }
+   },
+   "formatted_phone_number": "(604) 255-0470",
+   "website": "http://zawarestaurant.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "17:00",
+    "end": "21:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://zawarestaurant.com/",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "photos/zawa-restaurant.jpg",
+    "credit_name": "Lister Chen",
+    "credit_url": "https://maps.google.com/maps/contrib/100967720070542755746",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
    "place_id": "ChIJKyWuLdVzhlQR42fs0OJefqA",
    "international_phone_number": null,
    "types": [
@@ -7905,70 +8229,6 @@
     "credit_url": "http://www.cprime.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
-  },
-  {
-   "place_id": "ChIJjxrDYstxhlQRrkD3lLOhuzY",
-   "international_phone_number": null,
-   "types": [
-    "restaurant",
-    "bar",
-    "food",
-    "point_of_interest",
-    "establishment"
-   ],
-   "business_status": "OPERATIONAL",
-   "price_level": null,
-   "rating": 4.5,
-   "user_ratings_total": 934,
-   "opening_hours": {
-    "weekday_text": []
-   },
-   "photos": [],
-   "amenities": {
-    "outdoor_seating": null,
-    "gluten_free_options": null,
-    "wheelchair_accessible_entrance": null,
-    "parking": null,
-    "transit": null,
-    "serves_cocktails": null,
-    "serves_beer": null,
-    "serves_wine": null,
-    "live_music": null,
-    "good_for_groups": null
-   },
-   "data_source": "discovery",
-   "id": "two-rivers-meats",
-   "name": "Two Rivers Meats",
-   "formatted_address": "180 Donaghy Ave, North Vancouver, BC",
-   "address_components": null,
-   "geometry": {
-    "location": {
-     "lat": 49.3190199,
-     "lng": -123.0964586
-    }
-   },
-   "formatted_phone_number": "(604) 990-5288",
-   "website": "https://tworiversmeats.com/",
-   "happy_hour": {
-    "days": [
-     0,
-     1,
-     2,
-     3,
-     4,
-     5,
-     6
-    ],
-    "start": "15:00",
-    "end": "17:00",
-    "extra_windows": [],
-    "verified": false,
-    "verified_source": null,
-    "source_url": "https://tworiversmeats.com/menu/",
-    "deals": []
-   },
-   "cover_image": null,
    "last_synced_at": "2026-09-02"
   },
   {

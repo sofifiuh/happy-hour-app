@@ -6453,5 +6453,12 @@
     "user_ratings_total": 934,
     "business_status": "OPERATIONAL",
     "amenities": {}
+  },
+  "chop-steakhouse-bar": {
+    "place_id": "ChIJF9tqbxl1hlQRdCZjh8vITU8",
+    "rating": 4.4,
+    "user_ratings_total": 3506,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
   }
 }
