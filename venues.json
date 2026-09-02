@@ -1,5 +1,5 @@
 {
- "data_version": "2026-09-01-63de3adb",
+ "data_version": "2026-09-02-f7e7e978",
  "venues": [
   {
    "id": "ancora",
@@ -547,7 +547,7 @@
     ],
     "deals_source": {
      "url": "https://hapaizakaya.com/yaletown-menu/",
-     "extracted_at": "2026-09-01"
+     "extracted_at": "2026-09-02"
     }
    },
    "amenities": {
@@ -750,7 +750,7 @@
     ],
     "deals_source": {
      "url": "https://boulevardvancouver.ca/menus/",
-     "extracted_at": "2026-09-01"
+     "extracted_at": "2026-09-02"
     }
    },
    "amenities": {
@@ -1861,7 +1861,7 @@
     ],
     "deals_source": {
      "url": "https://tapandbarrel.com/locations/tap-barrel-convention-centre/",
-     "extracted_at": "2026-09-01"
+     "extracted_at": "2026-09-02"
     }
    },
    "amenities": {
@@ -2044,7 +2044,7 @@
     ],
     "deals_source": {
      "url": "https://www.p2bbistro.com/happyhour",
-     "extracted_at": "2026-09-01"
+     "extracted_at": "2026-09-02"
     }
    },
    "amenities": {
@@ -2644,7 +2644,7 @@
     ],
     "deals_source": {
      "url": "https://www.1931gallerybistro.com/s/Summer-Beverage-2026-2.pdf",
-     "extracted_at": "2026-09-01"
+     "extracted_at": "2026-09-02"
     }
    },
    "amenities": {
@@ -3139,7 +3139,7 @@
     ],
     "deals_source": {
      "url": "https://hawksworthrestaurant.com/wp-content/uploads/2026/08/Features.Aug_.26.26.pdf",
-     "extracted_at": "2026-09-01"
+     "extracted_at": "2026-09-02"
     }
    },
    "amenities": {
@@ -3324,7 +3324,7 @@
     ],
     "deals_source": {
      "url": "https://www.banterroom.com/menu",
-     "extracted_at": "2026-09-01"
+     "extracted_at": "2026-09-02"
     }
    },
    "amenities": {
@@ -3770,7 +3770,7 @@
     ],
     "deals_source": {
      "url": "https://www.thegreekbyanatoli.com/yaletown-menu",
-     "extracted_at": "2026-09-01"
+     "extracted_at": "2026-09-02"
     }
    },
    "amenities": {
@@ -3944,7 +3944,7 @@
     ],
     "deals_source": {
      "url": "https://theparlourrestaurants.com/vancouver-menu/",
-     "extracted_at": "2026-09-01"
+     "extracted_at": "2026-09-02"
     }
    },
    "amenities": {
@@ -4657,7 +4657,7 @@
     ],
     "deals_source": {
      "url": "https://www.alchemybar-kitchen.ca/happyhour.html",
-     "extracted_at": "2026-09-01"
+     "extracted_at": "2026-09-02"
     }
    },
    "amenities": {
@@ -4805,6 +4805,3042 @@
    },
    "data_source": "manual",
    "last_synced_at": null
+  },
+  {
+   "place_id": "ChIJmXalLjV2hlQRw7uM8vTsZrM",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4,
+   "user_ratings_total": 1838,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "wings-restaurants-pubs-burnaby",
+   "name": "WINGS Restaurants & Pubs - Burnaby",
+   "formatted_address": "6879 Kingsway, Burnaby, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.218725299999996,
+     "lng": -122.9616876
+    }
+   },
+   "formatted_phone_number": "(604) 525-7414",
+   "website": "https://greatwings.ca/burnaby/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       4
+      ],
+      "start": "11:00",
+      "end": "23:00",
+      "label": "Happiest Hours ALL DAY (Thursday only)"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://greatwings.ca/menu/",
+    "deals": [
+     {
+      "name": "Fiji Blond Lager",
+      "price": "$4¾",
+      "category": "drink",
+      "description": "14oz"
+     },
+     {
+      "name": "House Wine",
+      "price": "$5½",
+      "category": "drink",
+      "description": "6oz, red or white"
+     },
+     {
+      "name": "House Wine",
+      "price": "$8½",
+      "category": "drink",
+      "description": "9oz, red or white"
+     },
+     {
+      "name": "Highballs",
+      "price": "$6",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Highballs",
+      "price": "$8",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "The Mule",
+      "price": "$7",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "The Mule",
+      "price": "$9",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Avo-Hummus Dip",
+      "price": "$11",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Country Style Perogies",
+      "price": "$7",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Garlic Parm & Herb Fries",
+      "price": "$9½",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Street Taco",
+      "price": "$5",
+      "category": "food",
+      "description": "spicy chicken, crispy cauli, or crispy fish"
+     },
+     {
+      "name": "Peri Peri Fries",
+      "price": "$8¾",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Hat Trick",
+      "price": "$22",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Fried Pickles",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Wings + Fries",
+      "price": "$12",
+      "category": "food",
+      "description": "sub Cauli' Wingerz"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://greatwings.ca/wp-content/uploads/elementor/thumbs/fund1-12-pck0f42xqq7v5090pj2yh08vpjpb01x35bl0yafx9e.png",
+    "credit_name": "WINGS Restaurants & Pubs - Burnaby",
+    "credit_url": "https://greatwings.ca/burnaby/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJg1Nt0qx4hlQRpkRIVE1B3Q0",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.2,
+   "user_ratings_total": 1212,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "samz-neighbourhood-pub-port-coquitlam",
+   "name": "Samz Neighbourhood Pub Port Coquitlam",
+   "formatted_address": "2342 Elgin Ave, Port Coquitlam, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2638853,
+     "lng": -122.78145830000001
+    }
+   },
+   "formatted_phone_number": "(604) 461-1174",
+   "website": "https://www.samz.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "00:00",
+    "end": "23:59",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.samz.ca/features/",
+    "deals": [
+     {
+      "name": "Kettle Chips",
+      "price": "$6",
+      "category": "food",
+      "description": "House made"
+     },
+     {
+      "name": "Onion Rings",
+      "price": "$6",
+      "category": "food",
+      "description": "Beer battered with siracha ketchup"
+     },
+     {
+      "name": "Pickle Bites",
+      "price": "$6",
+      "category": "food",
+      "description": "With dill ranch"
+     },
+     {
+      "name": "Pretzel Bites",
+      "price": "$11",
+      "category": "food",
+      "description": "With grainy honey mustard"
+     },
+     {
+      "name": "Caesar Salad",
+      "price": "$11",
+      "category": "food",
+      "description": "Add chicken or prawns +$7"
+     },
+     {
+      "name": "Cod & Chips",
+      "price": "$11",
+      "category": "food",
+      "description": "Add cod +$7"
+     },
+     {
+      "name": "Quesadilla",
+      "price": "$12",
+      "category": "food",
+      "description": "Cheese, beans, corn, cilantro, salsa, sour cream"
+     },
+     {
+      "name": "Personal Nachos",
+      "price": "$12",
+      "category": "food",
+      "description": "Cheese, beans, jalapeños, cilantro, salsa, sour cream"
+     },
+     {
+      "name": "Rib Bites",
+      "price": "$12",
+      "category": "food",
+      "description": "Pork ribs"
+     },
+     {
+      "name": "Chicken Wings",
+      "price": "$13",
+      "category": "food",
+      "description": "Multiple flavor options available"
+     },
+     {
+      "name": "Samz Burger",
+      "price": "$14",
+      "category": "food",
+      "description": "Beef patty, mustard, mayo, market fixings"
+     },
+     {
+      "name": "Personal Wonton Soup",
+      "price": "$14",
+      "category": "food",
+      "description": "Wontons, chicken, prawns, veggies, wor broth"
+     },
+     {
+      "name": "Red or White House Wine",
+      "price": "$5.25",
+      "category": "drink",
+      "description": "6oz glass"
+     },
+     {
+      "name": "Highballs",
+      "price": "$5.25",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Feature Shot",
+      "price": "$5.25",
+      "category": "drink",
+      "description": "1oz"
+     },
+     {
+      "name": "Canadian/Coors Light",
+      "price": "$7.05",
+      "category": "drink",
+      "description": "20oz"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/samz-neighbourhood-pub-port-coquitlam.jpg",
+    "credit_name": "Samz Neighbourhood Pub Port Coquitlam",
+    "credit_url": "https://maps.google.com/maps/contrib/111647881162761872369",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJhUFLqabahVQR6whhrC54Hms",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.1,
+   "user_ratings_total": 699,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "ricky-s-all-day-grill",
+   "name": "Ricky's All Day Grill",
+   "formatted_address": "17830 56 Ave, Cloverdale, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.103721199999995,
+     "lng": -122.72822649999999
+    }
+   },
+   "formatted_phone_number": "(604) 574-9912",
+   "website": "https://rickysrestaurants.ca/locations/cloverdale/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "20:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://rickysrestaurants.ca/wp-content/uploads/2026/07/DDCovers_HappyHour_3.875x7.375_0626_LR.pdf",
+    "deals": [
+     {
+      "name": "Beer",
+      "price": "$6",
+      "category": "drink",
+      "description": "12oz draft"
+     },
+     {
+      "name": "Wine",
+      "price": "$6",
+      "category": "drink",
+      "description": "6oz house red or white"
+     },
+     {
+      "name": "Highballs",
+      "price": "$6",
+      "category": "drink",
+      "description": "1oz house brand pour"
+     },
+     {
+      "name": "Crispy Skin-On Fries",
+      "price": "$4.00",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Curly Fries",
+      "price": "$5.00",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Traditional Poutine",
+      "price": "$7.00",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Southern-Style Chicken Tenders",
+      "price": "$9.99",
+      "category": "food",
+      "description": "4 pieces with your choice of dipping sauce"
+     },
+     {
+      "name": "Bruschetta",
+      "price": "$8.00",
+      "category": "food",
+      "description": "Tomatoes, garlic, peppers, Grand Padano, served with 3 slices of baguette"
+     },
+     {
+      "name": "2 Sweet Chili Shrimp Tacos",
+      "price": "$11.99",
+      "category": "food",
+      "description": "2 flour tortillas with battered sweet chili shrimp, coleslaw, shredded carrot, and lime crema drizzle. Served with a lime wedge"
+     },
+     {
+      "name": "Sweet Chili Shrimp Appy",
+      "price": "$10.99",
+      "category": "food",
+      "description": "Hand-battered shrimp, fried to golden perfection, tossed in a sweet chili glaze, finished with sesame seeds and green onion"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://rickysrestaurants.ca/wp-content/uploads/2022/06/Rickys-1807fill-Kbanner.png",
+    "credit_name": "Ricky's All Day Grill",
+    "credit_url": "https://rickysrestaurants.ca/locations/cloverdale/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJPY7zVAaFC0ERjrKr_nNF-ks",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 4,
+   "rating": 4.3,
+   "user_ratings_total": 698,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "onyx-steakhouse",
+   "name": "ONYX Steakhouse",
+   "formatted_address": "1225 Johnston Rd, White Rock, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.0243757,
+     "lng": -122.80146169999998
+    }
+   },
+   "formatted_phone_number": "(604) 542-0334",
+   "website": "http://www.onyxsteakhouse.ca/",
+   "happy_hour": {
+    "days": [
+     3,
+     4,
+     5,
+     6,
+     0
+    ],
+    "start": "16:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       3
+      ],
+      "start": "16:00",
+      "end": null,
+      "label": "All-Day (Wed)"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://onyxsteakhouse.ca/wp-content/uploads/2025/07/Copy-of-Happy-Hour-Card-6.75-x-5-1.png",
+    "deals": [
+     {
+      "name": "Arugula Salad",
+      "price": "$15",
+      "category": "food",
+      "description": "poached pear, julienne apple & bell pepper, goat cheese fritter, candied pecan, port wine dressing"
+     },
+     {
+      "name": "Arancini",
+      "price": "$9",
+      "category": "food",
+      "description": "smoked corn yuzu butter, mushroom duxelles, toasted almond, crispy enoki"
+     },
+     {
+      "name": "Stuffed Garlic Bombolini",
+      "price": "$9",
+      "category": "food",
+      "description": "molten garlic triple cheese, rosemary brown butter brushed, vancouver island sea salt, romesco"
+     },
+     {
+      "name": "Prawns",
+      "price": "$17",
+      "category": "food",
+      "description": "flamed tableside, sambal brown butter, charred red pepper, scallion ginger love, citrus fire"
+     },
+     {
+      "name": "Steak Fries",
+      "price": "$9",
+      "category": "food",
+      "description": "triple cooked, garlic, shaved parmesan, white truffle oil, house made aioli"
+     },
+     {
+      "name": "Brussel Sprouts",
+      "price": "$12",
+      "category": "food",
+      "description": "black garlic honey sherry glaze, bacon crumble, smoked maldon, marcona crunch, charred lemon yuzu cube"
+     },
+     {
+      "name": "Maple Bacon Cheesecake",
+      "price": "$10",
+      "category": "food",
+      "description": "pecans, whipped cream, candied bacon"
+     },
+     {
+      "name": "Freshly Baked Chocolate Chunk Cookie",
+      "price": "$10",
+      "category": "food",
+      "description": "french vanilla ice cream, balsamic caramel sauce"
+     },
+     {
+      "name": "Delmonico 8oz",
+      "price": "$49",
+      "category": "food",
+      "description": "northern gold AAA+, 100% premium canadian beef, brooks, alberta, grass fed & finished with highest quality of grain"
+     },
+     {
+      "name": "Short Rib",
+      "price": "$37",
+      "category": "food",
+      "description": "braised, potato purée, blue cheese crust, crispy onion, pickled radish, braised beef reduction"
+     },
+     {
+      "name": "Yellowfin Tuna 5oz",
+      "price": "$31",
+      "category": "food",
+      "description": "seared rare, togarashi crust, garlic parmesan steak fries, lemon aioli, black garlic cherry glaze"
+     },
+     {
+      "name": "Prawn Linguine",
+      "price": "$29",
+      "category": "food",
+      "description": "trap caught prawns, brandy flambée, arugula, tarragon, ancho chili, white wine garlic cream sauce"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/onyx-steakhouse.jpg",
+    "credit_name": "ONYX Steakhouse",
+    "credit_url": "https://maps.google.com/maps/contrib/112783137234540040154",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJLz0668wKhlQRBfuEmfBpw1E",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.1,
+   "user_ratings_total": 625,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "75-west-coast-grill",
+   "name": "75 West Coast Grill",
+   "formatted_address": "7571 Westminster Hwy, Richmond, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.170471199999994,
+     "lng": -123.14060440000002
+    }
+   },
+   "formatted_phone_number": "(604) 232-2804",
+   "website": "http://75west.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": "22:00",
+      "label": "Late Night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://75west.ca/menus",
+    "deals": [
+     {
+      "name": "Chips & Salsa",
+      "price": "$8",
+      "category": "food",
+      "description": "hand cut tri-colour tortillas, chunky salsa"
+     },
+     {
+      "name": "Truffle Fries",
+      "price": "$11",
+      "category": "food",
+      "description": "truffle aioli, parmesan cheese"
+     },
+     {
+      "name": "Crispy Brussels Sprouts",
+      "price": "$13",
+      "category": "food",
+      "description": "truffle oil, parmesan, lemon, balsamic glaze"
+     },
+     {
+      "name": "Spring Rolls",
+      "price": "$13",
+      "category": "food",
+      "description": "5 pieces, plum sauce"
+     },
+     {
+      "name": "Chicken Wings",
+      "price": "$18",
+      "category": "food",
+      "description": "choice of hot sauce, teriyaki, honey garlic, salt & pepper, truffle parmesan, sweet chili, bbq"
+     },
+     {
+      "name": "Nachos",
+      "price": "$20",
+      "category": "food",
+      "description": "tri-colour tortillas, nacho cheese, tomatoes, olives, jalapeños, scallions, salsa"
+     },
+     {
+      "name": "Britannia Brewing Co. Beer",
+      "price": "$6",
+      "category": "drink",
+      "description": "draught beers 16 oz"
+     },
+     {
+      "name": "Highballs",
+      "price": "$6",
+      "category": "drink",
+      "description": "1 oz"
+     },
+     {
+      "name": "White Wine",
+      "price": "$6 or $9",
+      "category": "drink",
+      "description": "Okanagan Vineyards Chardonnay, 6 oz or 9 oz"
+     },
+     {
+      "name": "Red Wine",
+      "price": "$6 or $9",
+      "category": "drink",
+      "description": "Okanagan Vineyards Red Blend, 6 oz or 9 oz"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/691a2c62b13113248eb0cd6d/t/691e20d3f9df927642b2689b/1763582163638/75-west-logo-blue.png?format=1500w",
+    "credit_name": "75 West Coast Grill",
+    "credit_url": "http://75west.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJ1zABBVJ6hlQR3_WV_TrkgxE",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 1,
+   "rating": 4.5,
+   "user_ratings_total": 608,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": true,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "cafe-orso",
+   "name": "Cafe Orso",
+   "formatted_address": "4316 Gallant Ave, North Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.3268992,
+     "lng": -122.95150339999999
+    }
+   },
+   "formatted_phone_number": "(778) 340-3222",
+   "website": "http://www.cafe-orso.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.cafe-orso.ca/menu",
+    "deals": [
+     {
+      "name": "Wine",
+      "price": "$6.00",
+      "category": "drink",
+      "description": "Glass add-on with Charcuterie board"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/59e1c0e3a803bb749fbc9b72/t/5a03b08bc83025336288b4db/1510191244377/7516835216_IMG_3850.jpg?format=1500w",
+    "credit_name": "Cafe Orso",
+    "credit_url": "http://www.cafe-orso.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJpZH_9MwKhlQRkxtACt736go",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.3,
+   "user_ratings_total": 592,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "harold-s-kitchen-bar",
+   "name": "Harold's Kitchen & Bar",
+   "formatted_address": "7551 Westminster Hwy, Richmond, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.1709667,
+     "lng": -123.14166669999999
+    }
+   },
+   "formatted_phone_number": "(604) 233-3968",
+   "website": "http://www.haroldskitchenbar.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.haroldskitchenbar.com/specials",
+    "deals": [
+     {
+      "name": "Tap Beer (14 oz)",
+      "price": "$5",
+      "category": "drink",
+      "description": "rotating selection"
+     },
+     {
+      "name": "Tap Beer (20 oz)",
+      "price": "$7",
+      "category": "drink",
+      "description": "rotating selection"
+     },
+     {
+      "name": "House Wine (6 oz)",
+      "price": "$6",
+      "category": "drink",
+      "description": "red or white"
+     },
+     {
+      "name": "House Wine (9 oz)",
+      "price": "$9",
+      "category": "drink",
+      "description": "red or white"
+     },
+     {
+      "name": "House Spirits (1 oz)",
+      "price": "$6",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "House Spirits (2 oz)",
+      "price": "$9",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Fries",
+      "price": "$5",
+      "category": "food",
+      "description": "basket"
+     },
+     {
+      "name": "Mixed Fries",
+      "price": "$10",
+      "category": "food",
+      "description": "basket of potato & sweet potato fries, shallot aioli"
+     },
+     {
+      "name": "Chicken Wings",
+      "price": "$15",
+      "category": "food",
+      "description": "12 wings, hot, honey garlic, BBQ, or salt & pepper, carrot, celery & ranch dip"
+     },
+     {
+      "name": "Loaded Hummus",
+      "price": "$15",
+      "category": "food",
+      "description": "hummus topped with bell peppers, cucumber, tomatoes, feta cheese, olive oil, pita bread & marinated olives"
+     },
+     {
+      "name": "Spring Rolls",
+      "price": "$15",
+      "category": "food",
+      "description": "carrots, shiitake mushrooms, onions, cabbage, bean sprouts, spicy plum sauce"
+     },
+     {
+      "name": "Shrimp Gyoza",
+      "price": "$15",
+      "category": "food",
+      "description": "shrimp dumplings, olive oil, cilantro, sweet soy glaze"
+     },
+     {
+      "name": "Spinach & Artichoke Dip",
+      "price": "$15",
+      "category": "food",
+      "description": "tortilla chips, warm spinach & artichoke dip, cream cheese, parmesan cheese, celery & carrots"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/harold-s-kitchen-bar.jpg",
+    "credit_name": "Harold's Kitchen & Bar",
+    "credit_url": "https://maps.google.com/maps/contrib/114044243437217625418",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJv7cdIARvhlQRtp7LlI9KKYg",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.6,
+   "user_ratings_total": 514,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "hello-nori-park-royal",
+   "name": "Hello Nori - Park Royal",
+   "formatted_address": "731 Main St #140, West Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.3265143,
+     "lng": -123.13732130000001
+    }
+   },
+   "formatted_phone_number": "(604) 375-6674",
+   "website": "https://www.hellonori.com/parkroyal",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "start": "14:30",
+    "end": "17:30",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:30",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.hellonori.com/s/2026-HN-Park-Royal-Happy-Hour-Menu-V4.pdf",
+    "deals": [
+     {
+      "name": "Konnichiwagarita",
+      "price": "$9",
+      "category": "drink",
+      "description": "Sake, midori, Japanese liqueur yuzukosho, yuzu juice"
+     },
+     {
+      "name": "Kaiju En Negrōni",
+      "price": "$10",
+      "category": "drink",
+      "description": "Gin, strawberry averna, plum umeshu, plum bitters, dehydrated dragon fruit"
+     },
+     {
+      "name": "Rokabiru Highball",
+      "price": "$9",
+      "category": "drink",
+      "description": "Suntory Toki whisky, galliano, cherry coke, vanilla foam"
+     },
+     {
+      "name": "Seasonal Feature",
+      "price": "$9",
+      "category": "drink",
+      "description": "A rotating cocktail celebrating the moment"
+     },
+     {
+      "name": "Peach Pafekuto",
+      "price": "$6",
+      "category": "drink",
+      "description": "White peach nectar, lavender syrup, lemon, egg white, peach bitters"
+     },
+     {
+      "name": "Lowtel",
+      "price": "$6",
+      "category": "drink",
+      "description": "Passionfruit juice, house vanilla syrup, aloe vera water"
+     },
+     {
+      "name": "Lychee Zen",
+      "price": "$6",
+      "category": "drink",
+      "description": "Lychee, lychee juice, nitro matcha"
+     },
+     {
+      "name": "Nitro Matcha Tea",
+      "price": "$5",
+      "category": "drink",
+      "description": "House-brewed, served sweetened or unsweetened"
+     },
+     {
+      "name": "Loose Leaf Teas",
+      "price": "$5",
+      "category": "drink",
+      "description": "Roasted Genmaicha or Sencha Green Tea"
+     },
+     {
+      "name": "Sparkling Water",
+      "price": "$4",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Coca-Cola",
+      "price": "$5",
+      "category": "drink",
+      "description": "Glass bottle"
+     },
+     {
+      "name": "White Peach",
+      "price": "$6",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Asahi 0.0% Beer",
+      "price": "$8",
+      "category": "drink",
+      "description": "500ml"
+     },
+     {
+      "name": "Hello Rice Lager",
+      "price": "$6",
+      "category": "drink",
+      "description": "Draft, brewed locally by Bomber Brewing"
+     },
+     {
+      "name": "Nakano Sake",
+      "price": "$7",
+      "category": "drink",
+      "description": "Kuni Zakari, 5 oz"
+     },
+     {
+      "name": "Miso Soup",
+      "price": "$3",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Edamame",
+      "price": "$4",
+      "category": "food",
+      "description": "Salted or spicy"
+     },
+     {
+      "name": "Kale Goma-ae",
+      "price": "$5.5",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Yellowtail Jalapeño Ponzu",
+      "price": "$16",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Ebi Fritters",
+      "price": "$9",
+      "category": "food",
+      "description": "3 pieces"
+     },
+     {
+      "name": "Brussels Sprouts",
+      "price": "$9",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Soft Shell Crab Karaage",
+      "price": "$16",
+      "category": "food",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/5fff39ba4da12a24f74e9aa1/t/6792f97227ca272ff682d230/1737685369506/parkroyal-socialimage.jpg?format=1500w",
+    "credit_name": "Hello Nori - Park Royal",
+    "credit_url": "https://www.hellonori.com/parkroyal",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJE-StFwB5hlQR2Lf2KjS43cQ",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4,
+   "user_ratings_total": 180,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": true,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "nova-kitchen-bar",
+   "name": "Nova Kitchen & Bar",
+   "formatted_address": "101 Morrissey Rd, Port Moody, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2795901,
+     "lng": -122.8292335
+    }
+   },
+   "formatted_phone_number": "(604) 492-0465",
+   "website": "https://www.novarestaurant.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.novarestaurant.ca/menu/port-moody-happy-hour",
+    "deals": [
+     {
+      "name": "House Fries",
+      "price": "$5",
+      "category": "food",
+      "description": "Rosemary salt, confit garlic aioli"
+     },
+     {
+      "name": "West Coast Oysters",
+      "price": "$1.75 ea",
+      "category": "food",
+      "description": "Mignonette, horseradish, lemon; min. 6"
+     },
+     {
+      "name": "Hummus",
+      "price": "$10",
+      "category": "food",
+      "description": "Roasted pepper, herbs, focaccia"
+     },
+     {
+      "name": "Shishito Peppers",
+      "price": "$13",
+      "category": "food",
+      "description": "Nova caesar, smoked salt, lemon"
+     },
+     {
+      "name": "Yellowfin Tuna Crudo",
+      "price": "$16",
+      "category": "food",
+      "description": "Mango aioli, citrus vinaigrette, chili"
+     },
+     {
+      "name": "PEI Mussels",
+      "price": "$16",
+      "category": "food",
+      "description": "White wine, garlic butter"
+     },
+     {
+      "name": "Fish Tacos",
+      "price": "$12",
+      "category": "food",
+      "description": "2 pcs; Mango lime aioli, cabbage"
+     },
+     {
+      "name": "The Super Nova Burger",
+      "price": "$17",
+      "category": "food",
+      "description": "7oz beef patty, cheddar, nova sauce"
+     },
+     {
+      "name": "Sticky Gochujang Maple Chicken",
+      "price": "$14",
+      "category": "food",
+      "description": "Gochujang, sesame"
+     },
+     {
+      "name": "Thai Green Curry",
+      "price": "$19",
+      "category": "food",
+      "description": "Chicken or Tofu; Coconut curry, peppers, bok choy, Thai basil, chili, cilantro, jasmine rice"
+     },
+     {
+      "name": "Charcuterie",
+      "price": "$22",
+      "category": "food",
+      "description": "Cured meats, cheeses, crackers, candied walnuts, olives, pickles"
+     },
+     {
+      "name": "Steak Frites",
+      "price": "$29",
+      "category": "food",
+      "description": "6oz beef sirloin, seasoned fries, jus"
+     },
+     {
+      "name": "Corona",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "330ml bottle"
+     },
+     {
+      "name": "Canadian",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "341ml bottle"
+     },
+     {
+      "name": "Michelob Ultra",
+      "price": "$6",
+      "category": "drink",
+      "description": "350ml bottle"
+     },
+     {
+      "name": "Four Winds",
+      "price": "$6",
+      "category": "drink",
+      "description": "Draft lager, 16oz"
+     },
+     {
+      "name": "Aperol Spritz",
+      "price": "$10",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Negroni",
+      "price": "$10",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Tanlines",
+      "price": "$12",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Vintage Playboy",
+      "price": "$12",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Church & State Red",
+      "price": "$6-$9",
+      "category": "drink",
+      "description": "BC wine; 5oz or 8oz"
+     },
+     {
+      "name": "Church & State White",
+      "price": "$6-$9",
+      "category": "drink",
+      "description": "BC wine; 5oz or 8oz"
+     },
+     {
+      "name": "Vodka",
+      "price": "$6",
+      "category": "drink",
+      "description": "Ketel one; 1oz"
+     },
+     {
+      "name": "Gin",
+      "price": "$6",
+      "category": "drink",
+      "description": "Tanqueray 10; 1oz"
+     },
+     {
+      "name": "Whiskey",
+      "price": "$6",
+      "category": "drink",
+      "description": "Jameson; 1oz"
+     },
+     {
+      "name": "Rye",
+      "price": "$6",
+      "category": "drink",
+      "description": "Crown royal; 1oz"
+     },
+     {
+      "name": "Scotch",
+      "price": "$6",
+      "category": "drink",
+      "description": "Dewars single malt; 1oz"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://cdn.prod.website-files.com/69cae6668fe820e7bc2e2f28/6a2080e825ac29d0435c4f4f_On%20Dark%20BG.png",
+    "credit_name": "Nova Kitchen & Bar",
+    "credit_url": "https://www.novarestaurant.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJJ-AIiU16hlQRBCpbWTNnbSc",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 1238,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "arms-reach-bistro",
+   "name": "Arms Reach Bistro",
+   "formatted_address": "4390 Gallant Ave #107c, North Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.3269722,
+     "lng": -122.9492889
+    }
+   },
+   "formatted_phone_number": "(604) 929-7442",
+   "website": "http://www.armsreachbistro.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:30",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.armsreachbistro.com/menu",
+    "deals": [
+     {
+      "name": "Garlic Baguette",
+      "price": "$4.50",
+      "category": "food",
+      "description": "Butter, EVOO, garlic"
+     },
+     {
+      "name": "Warm Marinated Olives",
+      "price": "$5.50",
+      "category": "food",
+      "description": "Orange zest, chilis, parsley"
+     },
+     {
+      "name": "Hand-cut Fries & Aioli",
+      "price": "$6.50",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Phillips Blue Buck Pale Ale",
+      "price": "$6",
+      "category": "drink",
+      "description": "16oz on tap"
+     },
+     {
+      "name": "White Wine",
+      "price": "$7",
+      "category": "drink",
+      "description": "6oz glass (Domaine Grachies 2025, Laurenz V 2023)"
+     },
+     {
+      "name": "Red Wine",
+      "price": "$7",
+      "category": "drink",
+      "description": "6oz glass (Laurent Miquel 2023, Moon Curser Border Vines 2022)"
+     },
+     {
+      "name": "Spiced Margarita",
+      "price": "$8",
+      "category": "drink",
+      "description": "2oz"
+     },
+     {
+      "name": "Aperol Spritz",
+      "price": "$8",
+      "category": "drink",
+      "description": "5oz"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/556e086be4b02ae09b8c9fca/t/5e8ddec84e89b8372f195490/1586355914859/ARB+Logo+StD.jpg?format=1500w",
+    "credit_name": "Arms Reach Bistro",
+    "credit_url": "http://www.armsreachbistro.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJHWUuGCvYhVQRqWtgrj187zo",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.3,
+   "user_ratings_total": 1056,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "dominion-bar-kitchen",
+   "name": "Dominion Bar + Kitchen",
+   "formatted_address": "13475 Central Ave Unit D1, Surrey, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.1902328,
+     "lng": -122.84822539999999
+    }
+   },
+   "formatted_phone_number": "(604) 330-0229",
+   "website": "https://dominionkitchen.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       2,
+       3,
+       4
+      ],
+      "start": "22:00",
+      "end": "00:00",
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://dominionkitchen.com/happy-hour-menu",
+    "deals": [
+     {
+      "name": "Dominion Red",
+      "price": "$8/$12",
+      "category": "drink",
+      "description": "Cabernet Franc, 6oz/9oz"
+     },
+     {
+      "name": "Dominion White",
+      "price": "$8/$12",
+      "category": "drink",
+      "description": "Pinot Gris, 6oz/9oz"
+     },
+     {
+      "name": "Dominion Rosé",
+      "price": "$8/$12",
+      "category": "drink",
+      "description": "Pinot Noir, 6oz/9oz"
+     },
+     {
+      "name": "Bordertown",
+      "price": "$8/$12",
+      "category": "drink",
+      "description": "Merlot, 6oz/9oz"
+     },
+     {
+      "name": "Dominion Lager",
+      "price": "$5.5/$20",
+      "category": "drink",
+      "description": "16oz/60oz pitcher"
+     },
+     {
+      "name": "Hoyne Down Easy",
+      "price": "$6/$21",
+      "category": "drink",
+      "description": "Pale Ale, 16oz/60oz pitcher"
+     },
+     {
+      "name": "Barnside Sunrise",
+      "price": "$6/$21",
+      "category": "drink",
+      "description": "CranRas Sour, 16oz/60oz pitcher"
+     },
+     {
+      "name": "Britannia Amber",
+      "price": "$6/$21",
+      "category": "drink",
+      "description": "Amber Ale, 16oz/60oz pitcher"
+     },
+     {
+      "name": "Driftwood Arcus",
+      "price": "$6/$21",
+      "category": "drink",
+      "description": "Pilsner, 16oz/60oz pitcher"
+     },
+     {
+      "name": "Hoyne Among Giants",
+      "price": "$6/$21",
+      "category": "drink",
+      "description": "West Coast IPA, 16oz/60oz pitcher"
+     },
+     {
+      "name": "Yellow Dog High 5",
+      "price": "$6/$21",
+      "category": "drink",
+      "description": "Hazy IPA, 16oz/60oz pitcher"
+     },
+     {
+      "name": "Orchard Hill Cider",
+      "price": "$9",
+      "category": "drink",
+      "description": "9oz pour"
+     },
+     {
+      "name": "Slushy Peach Bellini",
+      "price": "$11",
+      "category": "drink",
+      "description": "White rum, sparkling wine, Aperol, peach + mango juice"
+     },
+     {
+      "name": "Slushy Lime Margarita",
+      "price": "$11",
+      "category": "drink",
+      "description": "Tequila, triple sec, lime juice"
+     },
+     {
+      "name": "Red Sangria",
+      "price": "$12/$36",
+      "category": "drink",
+      "description": "Red wine, triple sec, pineapple, lime, ginger. Pitcher available"
+     },
+     {
+      "name": "Pink Sangria",
+      "price": "$12/$36",
+      "category": "drink",
+      "description": "Rosé, triple sec, grapefruit, rose + raspberry. Pitcher available"
+     },
+     {
+      "name": "Aperol Spritz",
+      "price": "$13",
+      "category": "drink",
+      "description": "Aperol, Prosecco, soda"
+     },
+     {
+      "name": "Long Island Iced Tea",
+      "price": "$13",
+      "category": "drink",
+      "description": "Vodka, gin, white rum, triple sec, lime + lemon, Coca-Cola"
+     },
+     {
+      "name": "Edamame",
+      "price": "$9",
+      "category": "food",
+      "description": "Steamed, truffle lemon, smoked salt, soybeans"
+     },
+     {
+      "name": "Chunky Fries",
+      "price": "$8",
+      "category": "food",
+      "description": "Hand cut, twice-fried Kennebec potatoes"
+     },
+     {
+      "name": "Cajun Chunky Fries",
+      "price": "$9",
+      "category": "food",
+      "description": "Hand cut, twice-fried, Cajun spices"
+     },
+     {
+      "name": "Classic Poutine",
+      "price": "$13",
+      "category": "food",
+      "description": "Chunky fries, cheese curds, gravy, green onion. Add chicken $8-9"
+     },
+     {
+      "name": "Korean Fried Cauliflower",
+      "price": "$14",
+      "category": "food",
+      "description": "Peppers, jalapeños, Thai basil, Grana Padano, gochujang + ranch"
+     },
+     {
+      "name": "Dumplings",
+      "price": "Price Varies",
+      "category": "food",
+      "description": "Steamed Tibetan dumplings, house black vinegar. Vegetarian $13, Chicken $15, Shrimp $16"
+     },
+     {
+      "name": "Crispy Calamari",
+      "price": "$17",
+      "category": "food",
+      "description": "Humboldt squid, Asian slaw, lime zest, sweet chilli sauce"
+     },
+     {
+      "name": "Cavatappi Mac & Cheese",
+      "price": "$19.5",
+      "category": "food",
+      "description": "Spiral macaroni, jalapeño Mornay, four-cheese blend. Add chicken $8-9"
+     },
+     {
+      "name": "Vegetarian Burger",
+      "price": "$18.5",
+      "category": "food",
+      "description": "Masala patty, chutney, raita, pickled onions, brioche"
+     },
+     {
+      "name": "Crispy Chicken Sandwich",
+      "price": "$21",
+      "category": "food",
+      "description": "Crispy chicken, smoked bacon, Swiss, mayo, tomato, lettuce, dill pickles, brioche"
+     },
+     {
+      "name": "Truffle Honey Hot Chicken",
+      "price": "$22",
+      "category": "food",
+      "description": "Crispy chicken in truffle honey hot sauce, bacon, Swiss, mayo, lettuce, tomato, dill pickles, brioche"
+     },
+     {
+      "name": "The Dominion Burger",
+      "price": "$22",
+      "category": "food",
+      "description": "Angus beef, smoked bacon, smoked cheddar, onion ring, mayo, tomato, dill pickles, brioche"
+     },
+     {
+      "name": "Fish-Oh! Fillet",
+      "price": "$23",
+      "category": "food",
+      "description": "Beer-battered cod, cheddar, tartar sauce, pickles, brioche, lemon pepper fries"
+     },
+     {
+      "name": "NY Cheesecake",
+      "price": "$11.5",
+      "category": "food",
+      "description": "Stewed berries, whipped cream"
+     },
+     {
+      "name": "Dark Chocolate Mousse",
+      "price": "$11.5",
+      "category": "food",
+      "description": "Whipped Chantilly cream, crispy Florentine cookie, flaky sea salt"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/5e5845c62aa1030a16f53952/t/5e5847666a8485210ba723fe/1582843755127/Dominion-Wordmark-Signature-White-01.png?format=1500w",
+    "credit_name": "Dominion Bar + Kitchen",
+    "credit_url": "https://dominionkitchen.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJK5yhI89whlQRVpPlaF-um80",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 1,
+   "rating": 4.3,
+   "user_ratings_total": 948,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": true,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "chao-mami",
+   "name": "Chao Mami",
+   "formatted_address": "4088 Hastings St, Burnaby, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.280845199999995,
+     "lng": -123.01473600000001
+    }
+   },
+   "formatted_phone_number": "(604) 558-3838",
+   "website": "http://chaomami.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "18:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://chaomami.com/",
+    "deals": [
+     {
+      "name": "Beef Pho",
+      "price": "$10",
+      "category": "food",
+      "description": "rare beef, brisket & beef balls, dine-in only"
+     },
+     {
+      "name": "Vegan Pho",
+      "price": "$10",
+      "category": "food",
+      "description": "dine-in only"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://www.chaomami.com/img/og-image.jpg",
+    "credit_name": "Chao Mami",
+    "credit_url": "http://chaomami.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJwcvcutPPhVQR1wqQWktoyuk",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 948,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "me-n-ed-s-pizza-parlors",
+   "name": "Me-n-Ed's Pizza Parlors",
+   "formatted_address": "20270 Fraser Hwy, Langley, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.105347099999996,
+     "lng": -122.6605232
+    }
+   },
+   "formatted_phone_number": "(604) 534-3400",
+   "website": "https://meneds.ca/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "15:00",
+    "end": "17:30",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://meneds.ca/happy-hour/",
+    "deals": [
+     {
+      "name": "Cheese Bread",
+      "price": "$5.95",
+      "category": "food",
+      "description": "Baked with garlic spread and four cheeses."
+     },
+     {
+      "name": "Mini Pepperoni Pizza",
+      "price": "$6.95",
+      "category": "food",
+      "description": "Classic pepperoni on an 8\" crust."
+     },
+     {
+      "name": "Mini Margherita Pizza",
+      "price": "$6.95",
+      "category": "food",
+      "description": "Classic Margherita on an 8\" crust."
+     },
+     {
+      "name": "Mini Ham & Pineapple Pizza",
+      "price": "$6.95",
+      "category": "food",
+      "description": "Classic Hawaiian on an 8\" crust."
+     },
+     {
+      "name": "Caesar Salad",
+      "price": "$7.95",
+      "category": "food",
+      "description": "Romaine lettuce, croutons, shredded Parmesan and Caesar dressing."
+     },
+     {
+      "name": "10 pc. Wings",
+      "price": "$9.95",
+      "category": "food",
+      "description": "Ten of our oven-baked wings. Add Ranch or Blue cheese for $1.50"
+     },
+     {
+      "name": "Mini Nachos",
+      "price": "$10.95",
+      "category": "food",
+      "description": "A smaller version of our nachos. Add chicken or beef for $3.50"
+     },
+     {
+      "name": "Sleeves of Draft Beer",
+      "price": "$5.50",
+      "category": "drink",
+      "description": "House White or Red 6oz"
+     },
+     {
+      "name": "Bottled Beer",
+      "price": "$5.50",
+      "category": "drink",
+      "description": "MGD, Coors Light or Budweiser"
+     },
+     {
+      "name": "Coolers & Ciders",
+      "price": "$5.50",
+      "category": "drink",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://meneds.ca/wp-content/uploads/2024/02/meneds-web-logo-header-retina-300x117-1.png",
+    "credit_name": "Me-n-Ed's Pizza Parlors",
+    "credit_url": "https://meneds.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJk1itV6t4hlQRX-UhDcVIMnI",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.3,
+   "user_ratings_total": 856,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "me-n-ed-s-pizza-parlors-2",
+   "name": "Me-n-Ed's Pizza Parlors",
+   "formatted_address": "2233 McAllister Ave, Port Coquitlam, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.262073,
+     "lng": -122.77889599999999
+    }
+   },
+   "formatted_phone_number": "(604) 942-1200",
+   "website": "https://www.meneds.ca/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "15:00",
+    "end": "17:30",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://meneds.ca/wp-content/uploads/2026/04/Happy-Hour.pdf",
+    "deals": [
+     {
+      "name": "Cheese Bread",
+      "price": "$5.95",
+      "category": "food",
+      "description": "Baked with garlic spread and four cheeses."
+     },
+     {
+      "name": "Mini Margherita Pizza",
+      "price": "$6.95",
+      "category": "food",
+      "description": "Classic Margherita on an 8\" crust."
+     },
+     {
+      "name": "Mini Pepperoni Pizza",
+      "price": "$6.95",
+      "category": "food",
+      "description": "Classic pepperoni on an 8\" crust."
+     },
+     {
+      "name": "Mini Ham & Pineapple Pizza",
+      "price": "$6.95",
+      "category": "food",
+      "description": "Classic Hawaiian on an 8\" crust."
+     },
+     {
+      "name": "10 pc. Wings",
+      "price": "$9.95",
+      "category": "food",
+      "description": "Oven-baked wings. Add Ranch or Blue cheese for $1.50"
+     },
+     {
+      "name": "Mini Nachos",
+      "price": "$10.95",
+      "category": "food",
+      "description": "A smaller version of nachos. Add chicken or beef for $3.50"
+     },
+     {
+      "name": "Caesar Salad",
+      "price": "$7.95",
+      "category": "food",
+      "description": "Romaine, croutons, shredded Parmesan and Caesar dressing."
+     },
+     {
+      "name": "Draft Beer",
+      "price": "$5.50",
+      "category": "drink",
+      "description": "Sleeves"
+     },
+     {
+      "name": "House Wine",
+      "price": "$5.50",
+      "category": "drink",
+      "description": "White or Red 6oz"
+     },
+     {
+      "name": "Bottled Beer",
+      "price": "$5.50",
+      "category": "drink",
+      "description": "MGD, Coors Light or Budweiser"
+     },
+     {
+      "name": "Coolers & Ciders",
+      "price": "$5.50",
+      "category": "drink",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://meneds.ca/wp-content/uploads/2024/02/meneds-web-logo-header-retina-300x117-1.png",
+    "credit_name": "Me-n-Ed's Pizza Parlors",
+    "credit_url": "https://www.meneds.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJO4TOPM9whlQRPaJPTs30UN4",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.3,
+   "user_ratings_total": 699,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "sfinaki-greek-taverna",
+   "name": "Sfinaki Greek Taverna",
+   "formatted_address": "4071 Hastings St, Burnaby, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2811984,
+     "lng": -123.0147068
+    }
+   },
+   "formatted_phone_number": "(604) 299-3400",
+   "website": "http://www.sfinaki.ca/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "11:30",
+    "end": "15:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://sfinaki.ca/pages/menu",
+    "deals": [
+     {
+      "name": "Local Beer (Canned)",
+      "price": "$7",
+      "category": "drink",
+      "description": "355ml"
+     },
+     {
+      "name": "Canned Cocktails",
+      "price": "$7",
+      "category": "drink",
+      "description": "Various varieties"
+     },
+     {
+      "name": "House Wine",
+      "price": "$7",
+      "category": "drink",
+      "description": "Per glass"
+     },
+     {
+      "name": "Sfinaki Fries",
+      "price": "$11",
+      "category": "food",
+      "description": "Feta, oregano, ladolemono"
+     },
+     {
+      "name": "Skewer Meze",
+      "price": "$11-12",
+      "category": "food",
+      "description": "Chicken $11, Lamb $12; with tzatziki and flat pita"
+     },
+     {
+      "name": "Keftedes Meze",
+      "price": "$13",
+      "category": "food",
+      "description": "Grilled ground sirloin patties with tzatziki"
+     },
+     {
+      "name": "Kalamari Meze",
+      "price": "$15",
+      "category": "food",
+      "description": "Fried with tzatziki"
+     },
+     {
+      "name": "Gyro Wrap",
+      "price": "$11-12",
+      "category": "food",
+      "description": "Original $11, Chicken $12; with optional fries"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://cdn.shopify.com/s/files/1/0578/3217/7832/files/headlogoeatdrinkenjoy.png?height=628&pad_color=ffffff&v=1635455064&width=1200",
+    "credit_name": "Sfinaki Greek Taverna",
+    "credit_url": "http://www.sfinaki.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJCR4U1swKhlQRuUS8KGDaJJo",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.1,
+   "user_ratings_total": 553,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": true,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "cavu-kitchen-bar",
+   "name": "CAVU Kitchen Bar",
+   "formatted_address": "5911 Minoru Blvd, Richmond, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.1717374,
+     "lng": -123.1406799
+    }
+   },
+   "formatted_phone_number": "(604) 232-5001",
+   "website": "http://cavukitchenbar.com/#menu?SEO_id=GMB--R-YVRAHHF",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": "23:00",
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://cavukitchenbar.com/menus",
+    "deals": [
+     {
+      "name": "Beer on Tap 16 oz",
+      "price": "$7",
+      "category": "drink",
+      "description": "rotating, local selections"
+     },
+     {
+      "name": "Sommelier's Selection 6 oz",
+      "price": "$7",
+      "category": "drink",
+      "description": "red or white or rosé"
+     },
+     {
+      "name": "Sommelier's Selection 9 oz",
+      "price": "$10",
+      "category": "drink",
+      "description": "red or white or rosé"
+     },
+     {
+      "name": "Highballs 1 oz",
+      "price": "$7",
+      "category": "drink",
+      "description": "vodka, whiskey, gin, rum, tequila"
+     },
+     {
+      "name": "Highballs 2 oz",
+      "price": "$11",
+      "category": "drink",
+      "description": "vodka, whiskey, gin, rum, tequila"
+     },
+     {
+      "name": "Paloma 2 oz",
+      "price": "$11",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Short Hauls",
+      "price": "$6",
+      "category": "drink",
+      "description": "Tequila, Irish Whiskey, Limoncello, Pilot's Pick"
+     },
+     {
+      "name": "The Flight Crew",
+      "price": "$15",
+      "category": "drink",
+      "description": "any 3 short hauls"
+     },
+     {
+      "name": "Mini Prosecco 200 ml",
+      "price": "$12",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Chips & Salsa",
+      "price": "$12",
+      "category": "food",
+      "description": "fresh cooked tortilla chips, salsa, lime"
+     },
+     {
+      "name": "Jumbo Prawn Cocktail",
+      "price": "$12",
+      "category": "food",
+      "description": "vodka cocktail sauce"
+     },
+     {
+      "name": "Vegetarian Spring Rolls",
+      "price": "$12",
+      "category": "food",
+      "description": "plum sauce, 3 pieces"
+     },
+     {
+      "name": "Fried Bread Stix",
+      "price": "$12",
+      "category": "food",
+      "description": "parmesan dip, garlic chili honey"
+     },
+     {
+      "name": "Taquitos",
+      "price": "$12",
+      "category": "food",
+      "description": "pulled pork, cheese & black bean, cilantro lime crema, frickin hot sauce"
+     },
+     {
+      "name": "Tempura Cauliflower Bites",
+      "price": "$12",
+      "category": "food",
+      "description": "gochujang dip, nori dust"
+     },
+     {
+      "name": "Crispy Chicken Wings",
+      "price": "$17",
+      "category": "food",
+      "description": "korean bbq, frank's hot, frickin hot, salt & pepper, nashville spice"
+     },
+     {
+      "name": "Shareable Spreads",
+      "price": "$18",
+      "category": "food",
+      "description": "roasted garlic hummus, moroccan pepper & feta dip, caramelized onion & goats cheese dip, naan chips"
+     },
+     {
+      "name": "Prawn Potstickers",
+      "price": "$12",
+      "category": "food",
+      "description": "ginger soy sauce, chili crisp"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/68f7b2607bd5a11d5e2ccb5c/t/68f7b2dedca3c8455304b0f7/1761063646624/6_transparent_background.png?format=1500w",
+    "credit_name": "CAVU Kitchen Bar",
+    "credit_url": "http://cavukitchenbar.com/#menu?SEO_id=GMB--R-YVRAHHF",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJnVCA1mpxhlQR5W2N6Tijc2g",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4,
+   "user_ratings_total": 524,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "romers-lynn-valley",
+   "name": "Romers Lynn Valley",
+   "formatted_address": "1199 Lynn Valley Rd #148, North Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.3349997,
+     "lng": -123.04027939999997
+    }
+   },
+   "formatted_phone_number": "(604) 990-8880",
+   "website": "https://romersburgerbar.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://romersurgerbar.com/wp-content/uploads/Romers_RD_April2026_final-web.pdf",
+    "deals": [
+     {
+      "name": "House Highballs",
+      "price": "$5.95-$8.95",
+      "category": "drink",
+      "description": "1oz or 2oz pour"
+     },
+     {
+      "name": "Romer's Lager",
+      "price": "$4.95-$8.50",
+      "category": "drink",
+      "description": "12oz, 14oz, or 18oz"
+     },
+     {
+      "name": "Romer's Pale Ale",
+      "price": "$4.95-$8.75",
+      "category": "drink",
+      "description": "12oz, 14oz, or 18oz"
+     },
+     {
+      "name": "Romer's Chardonnay",
+      "price": "$7.25-$9.50",
+      "category": "drink",
+      "description": "6oz or 9oz glass"
+     },
+     {
+      "name": "Romer's Cab-Merlot",
+      "price": "$7.25-$9.50",
+      "category": "drink",
+      "description": "6oz or 9oz glass"
+     },
+     {
+      "name": "Wine bottles",
+      "price": "$10 off",
+      "category": "drink",
+      "description": "Excludes Romer's sippin' wines"
+     },
+     {
+      "name": "8\" Margherita Pizza",
+      "price": "$12.95",
+      "category": "food",
+      "description": "Vegetarian"
+     },
+     {
+      "name": "8\" Pepperoni Pizza",
+      "price": "$14.95",
+      "category": "food",
+      "description": "Pepperoni"
+     },
+     {
+      "name": "Nachos Valentina",
+      "price": "$12.95-$18.95",
+      "category": "food",
+      "description": "For one or two, add guacamole for $4.95"
+     },
+     {
+      "name": "Kennebec Fries",
+      "price": "$7.95-$9.95",
+      "category": "food",
+      "description": "Small or large"
+     },
+     {
+      "name": "Crispy Fish Taco (2)",
+      "price": "$14.95",
+      "category": "food",
+      "description": "Add fries for $3.50"
+     },
+     {
+      "name": "Man's Man Slider (2)",
+      "price": "$12.95",
+      "category": "food",
+      "description": "Add fries for $3.50"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/romers-lynn-valley.jpg",
+    "credit_name": "Diego Arroyo (REALTOR)",
+    "credit_url": "https://maps.google.com/maps/contrib/115317891024473059646",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJW9K4IkVxhlQRyoxxRrJhY4I",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.6,
+   "user_ratings_total": 345,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "loam-bistro",
+   "name": "Loam Bistro",
+   "formatted_address": "230 Esplanade W, North Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.313116699999995,
+     "lng": -123.0837131
+    }
+   },
+   "formatted_phone_number": "(236) 481-0648",
+   "website": "https://loambistro.ca/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     4,
+     5
+    ],
+    "start": "09:00",
+    "end": "11:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://loambistro.ca/happy-hour",
+    "deals": [
+     {
+      "name": "Breakfast Sando",
+      "price": "$11",
+      "category": "food",
+      "description": "Brioche sandwich with bacon, ham and a sunny-side egg"
+     },
+     {
+      "name": "Creamy Mushroom Scramble",
+      "price": "$12",
+      "category": "food",
+      "description": "Creamy mushrooms and soft scrambled eggs on toasted sourdough (vegetarian)"
+     },
+     {
+      "name": "Ham Benny",
+      "price": "$14",
+      "category": "food",
+      "description": "Brioche with smoked ham, poached eggs and house hollandaise"
+     },
+     {
+      "name": "Smoked Salmon Croissant Benny",
+      "price": "$15",
+      "category": "food",
+      "description": "Butter croissant with smoked salmon, poached egg and house hollandaise"
+     },
+     {
+      "name": "Petite Lobster Benny",
+      "price": "$18",
+      "category": "food",
+      "description": "Butter-poached lobster on brioche with egg, house hollandaise and greens"
+     },
+     {
+      "name": "Signature Drinks",
+      "price": "$2 off",
+      "category": "drink",
+      "description": "All signature drinks"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/668344be74bf803cf31ee5c3/t/6699868d3c34aa04da5581f9/1721337485541/Loam.png?format=1500w",
+    "credit_name": "Loam Bistro",
+    "credit_url": "https://loambistro.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJi_-UK990hlQR34VR-RbEdw8",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4,
+   "user_ratings_total": 301,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "the-apron",
+   "name": "the apron",
+   "formatted_address": "3099 Corvette Way, Richmond, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.1907358,
+     "lng": -123.1333793
+    }
+   },
+   "formatted_phone_number": "(604) 238-2105",
+   "website": "https://www.theapronrichmond.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.theapronrichmond.com/our-menus",
+    "deals": [
+     {
+      "name": "Fresh local oysters",
+      "price": "$12–20",
+      "category": "food",
+      "description": "mignonette; half dozen $12, one dozen $20"
+     },
+     {
+      "name": "Korean fried chicken bites",
+      "price": "$14",
+      "category": "food",
+      "description": "hot + spicy crispy chicken"
+     },
+     {
+      "name": "Calamari",
+      "price": "$13",
+      "category": "food",
+      "description": "humboldt squid, aioli"
+     },
+     {
+      "name": "Garlic buttered clams",
+      "price": "$16",
+      "category": "food",
+      "description": "manila clams, sake crispy rice"
+     },
+     {
+      "name": "Enoki fries",
+      "price": "$12",
+      "category": "food",
+      "description": "tempura, sansho aioli"
+     },
+     {
+      "name": "Truffle fries",
+      "price": "$8",
+      "category": "food",
+      "description": "parmesan, aioli"
+     },
+     {
+      "name": "Duck arancini",
+      "price": "$12",
+      "category": "food",
+      "description": "shoyu braised duck legs, arborio, garlic aioli"
+     },
+     {
+      "name": "Cheeseburger",
+      "price": "$10",
+      "category": "food",
+      "description": "smash patty, cheddar, pickle, onion"
+     },
+     {
+      "name": "Chopped salad + chicken",
+      "price": "$14",
+      "category": "food",
+      "description": "iceberg lettuce, heritage tomatoes, crispy chickpeas, kale, parmigiano reggiano, avocado, buttermilk dressing"
+     },
+     {
+      "name": "Bolognese gratin",
+      "price": "$14",
+      "category": "food",
+      "description": "beef ragù, gochujang, rice cakes"
+     },
+     {
+      "name": "Prawn toast",
+      "price": "$13",
+      "category": "food",
+      "description": "brioche, prawn mousse, yuzu aioli"
+     },
+     {
+      "name": "Steak frites",
+      "price": "$19",
+      "category": "food",
+      "description": "grilled 6oz skirt steak, fries"
+     },
+     {
+      "name": "Red lantern",
+      "price": "$10",
+      "category": "drink",
+      "description": "baijiu, sparkling (2oz)"
+     },
+     {
+      "name": "Garden negroni",
+      "price": "$10",
+      "category": "drink",
+      "description": "herbaceous twist with cucumber (2oz)"
+     },
+     {
+      "name": "Aperol spritz",
+      "price": "$10",
+      "category": "drink",
+      "description": "sparkling citrus (2oz)"
+     },
+     {
+      "name": "Happy hour batch – margarita",
+      "price": "$28",
+      "category": "drink",
+      "description": "zingy citrus (6oz, serves 5-6)"
+     },
+     {
+      "name": "Sunset sunrise",
+      "price": "$10",
+      "category": "drink",
+      "description": "ombré escape (2oz)"
+     },
+     {
+      "name": "Cava",
+      "price": "$7",
+      "category": "drink",
+      "description": "glass"
+     },
+     {
+      "name": "Red + white wine",
+      "price": "$7",
+      "category": "drink",
+      "description": "glass"
+     },
+     {
+      "name": "Draught beer",
+      "price": "$5",
+      "category": "drink",
+      "description": "16oz glass"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yvrwc-the-apron/site-images/migrated-images/short-rib-at-the-apron.png?width=1200&height=630",
+    "credit_name": "the apron",
+    "credit_url": "https://www.theapronrichmond.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJka-bsF_ZhVQRrlK5NAX84dQ",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 1,
+   "rating": 4.9,
+   "user_ratings_total": 238,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "holy-taco-mexi-eats",
+   "name": "Holy Taco & Mexi Eats",
+   "formatted_address": "30 Capilano Way #6, New Westminster, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2255627,
+     "lng": -122.885311
+    }
+   },
+   "formatted_phone_number": "(604) 761-0783",
+   "website": "http://holytaco.ca/",
+   "happy_hour": {
+    "days": [
+     5,
+     6,
+     0
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.holytaco.ca/restaurant-menu",
+    "deals": [
+     {
+      "name": "Chips & Salsa",
+      "price": "$6.5",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Side dish",
+      "price": "$2.5",
+      "category": "food",
+      "description": "with 2 tacos"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/6977f17571277d0314f845c1/t/6998c5bccc268137590cbe02/1771619772450/Best+Birria+Tacos+in+Vancouver.png?format=1500w",
+    "credit_name": "Holy Taco & Mexi Eats",
+    "credit_url": "http://holytaco.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJB2UpqUp_hlQRUisMYFFkgRU",
@@ -4986,7 +8022,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105806095207009135977",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJD9jfUoJxhlQR2Z9sjekAEFg",
@@ -5206,7 +8242,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/111258229305719246606",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJXb0QevZ2hlQRVzUZDnuznAA",
@@ -5297,7 +8333,7 @@
     "credit_url": "https://www.honsushi.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJS9tYo2_YhVQRKfxvkCovbBc",
@@ -5383,7 +8419,7 @@
     "credit_url": "https://www.boathouserestaurants.ca/location/boathouse-restaurants-new-westminster/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJE1nvYZ3DhVQRGZbomCktWz4",
@@ -5493,7 +8529,7 @@
     "credit_url": "https://ulisrestaurant.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJFZkOR-J4hlQRbPCgtfX5djU",
@@ -5609,7 +8645,7 @@
     "credit_url": "https://www.tapsandtacos.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJaUM4SPR5hlQRviRyP6fCy0o",
@@ -5782,7 +8818,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/108841054001902755092",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJwXdWeqtzhlQRvhCBn2ZX5kM",
@@ -5957,7 +8993,7 @@
     "credit_url": "https://www.bananaleaf-vancouver.com/kitsilano",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJbdCxdKxzhlQRLyev2c0HL6A",
@@ -6067,7 +9103,7 @@
     "credit_url": "http://dovetailrestaurant.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJCw6G37RzhlQRPq7e6aPAAl4",
@@ -6239,7 +9275,7 @@
     "credit_url": "http://www.luckytaco.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ_clpm8LZhVQRBtRO0_4L8hw",
@@ -6402,7 +9438,7 @@
     "credit_url": "https://www.skyeavenue.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJARfKW7txhlQRgm1BxguLamU",
@@ -6607,7 +9643,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105933274086887903871",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJTSkyOk3PhVQR35wqc8gaxTQ",
@@ -6749,7 +9785,7 @@
     "credit_url": "https://foodbyfanta.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJOY00hhxzhlQRI8IfeD9Fu_c",
@@ -6927,7 +9963,7 @@
     "credit_url": "https://www.luciaonmain.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJCYeeZR9uhlQRKRWLSYnl-VQ",
@@ -7160,7 +10196,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/109440877254639846668",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJLZ0lbYJxhlQRWlw69YPLrT4",
@@ -7295,7 +10331,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/118385846017377236127",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ-e72QAB1hlQRAjrYjpDFMDo",
@@ -7440,7 +10476,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104578632817874456167",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJsyxtZ1JxhlQRVsbrWoEHkyE",
@@ -7642,7 +10678,7 @@
     "credit_url": "https://acquafarina.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ3eZJAHBxhlQRZXgY_xaAUrQ",
@@ -7754,7 +10790,7 @@
     "credit_url": "http://londonpubvan.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJC-yI8X9xhlQRW_dizpXab-A",
@@ -7924,7 +10960,7 @@
     "credit_url": "http://www.wedgewoodhotel.com/?utm_source=GoogleMapsWW&utm_medium=organic&utm_content=Businesslisting",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ3SA3jwJ4hlQRQJdhgFeqEhU",
@@ -8056,7 +11092,7 @@
     "credit_url": "http://www.sappertondistricttaphouse.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ19T8I79zhlQR2j1AVQWEYKs",
@@ -8255,7 +11291,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/100561299655424372052",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJERvrms5xhlQRI6O39ho5hPQ",
@@ -8354,7 +11390,7 @@
     "credit_url": "https://www.therecroom.com/calgary-deerfoot?utm_source=google-my-business_CalgaryDeerfoot&utm_medium=profile&utm_campaign=owned_media",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJT8Im_xp5hlQRPwCidr04bIU",
@@ -8555,7 +11591,7 @@
     "credit_url": "https://www.theonesixty.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJkaA0L3pxhlQRS7br6sCwIm4",
@@ -8672,7 +11708,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105780950383402882416",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJiSptaCtyhlQREIyTMg6n2XI",
@@ -8811,7 +11847,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104781689056344003396",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJtZ4FT27YhVQR5ImAP5FVmrk",
@@ -8992,7 +12028,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/117135331815732736900",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJA2jYL01whlQRRbgzs6V6Jh4",
@@ -9176,7 +12212,7 @@
     "credit_url": "http://www.pierseven.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJhbvdyX1xhlQRMIebjMPIEYI",
@@ -9303,7 +12339,7 @@
     "credit_url": "http://zarakvancouver.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJrQYJEzdzhlQRs1CzxiXdqLw",
@@ -9513,7 +12549,7 @@
     "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ3QdMiXlxhlQRp3roxm24JZ4",
@@ -9663,7 +12699,7 @@
     "credit_url": "http://www.catch122.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ0wcWcvdzhlQRL7d6DXBUfbg",
@@ -9916,7 +12952,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104347832924380010368",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJD6e1muRxhlQR7-6P33WeoEk",
@@ -10097,7 +13133,7 @@
     "credit_url": "https://kingtaps.com/locations/lonsdale-quay/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJf99CWQd0hlQRUHD6OgbXNjc",
@@ -10278,7 +13314,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/101499607235924301501",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ_dfEyv9yhlQRbkYUfVD_TRg",
@@ -10362,7 +13398,7 @@
     "credit_url": "https://brownssocialhouse.com/point-grey",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ5XadYLlxhlQRCJl1jr1K80Y",
@@ -10545,7 +13581,7 @@
     "credit_url": "https://www.provisionsitaliana.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ0SudFRJzhlQRoCX7ZS0Ymy4",
@@ -10628,7 +13664,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/106798217105155305723",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ_Wj-oPdzhlQRz30MQolrOa0",
@@ -10809,7 +13845,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115312865156626525354",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJA4KAIr9zhlQRiJTB-fSnrbg",
@@ -11058,7 +14094,7 @@
     "credit_url": "http://www.bin4burgerlounge.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJKUWr90xwhlQRrfrHgcmcXf0",
@@ -11230,7 +14266,7 @@
     "credit_url": "http://www.fishworks.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJs-YzRndzhlQRSib__WeEWDI",
@@ -11309,7 +14345,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104407920948102569111",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJByCNoBl1hlQRAHHkoEfWfxQ",
@@ -11475,7 +14511,7 @@
     "credit_url": "http://bravovancouver.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJqwhNSMF3hlQRiswagagGOIA",
@@ -11634,7 +14670,7 @@
     "credit_url": "https://www.collectivegoods.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-01"
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJM8c6YBVxhlQRmbyHdCTA63w",
@@ -11696,7 +14732,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/dublin-calling.jpg",
     "credit_name": "Dublin Calling",
@@ -11971,7 +15007,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/la-terrazza.jpg",
     "credit_name": "La Terrazza",
@@ -12183,7 +15219,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/63dc3537de004d21c5b2d5be/t/6647ac8157454e6e1a12ea04/1715973261442/The-Cascade-Room-Logo-2023.png?format=1500w",
     "credit_name": "The Cascade Room",
@@ -12368,7 +15404,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://ignitepizzeria.com/wp-content/uploads/2024/03/catering-ignite-pizzas-1.jpg",
     "credit_name": "Ignite Pizzeria Yaletown",
@@ -12698,7 +15734,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg",
     "credit_name": "Davie Social",
@@ -12777,7 +15813,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://themac.ca/wp-content/uploads/2026/08/20260705_091423-2-1-scaled-1.jpg",
     "credit_name": "The Mac Billiards",
@@ -12893,7 +15929,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
     "credit_name": "Guu Original Thurlow",
@@ -13221,7 +16257,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://cdn.prod.website-files.com/61b235126b51dd0b923b9429/620d8b064047132eddf9e95e_open-graph-image%20(1).png",
     "credit_name": "Water St. Café",
@@ -13307,7 +16343,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://kintonramen.com/wp-content/uploads/2024/09/kinton_robson-01228-1-1024x683.jpg",
     "credit_name": "KINTON RAMEN ROBSON",
@@ -13443,7 +16479,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/bellaggio-cafe.jpg",
     "credit_name": "Bellaggio Cafe",
@@ -13585,7 +16621,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/maxine-s-cafe-bar.jpg",
     "credit_name": "Maxine's Cafe & Bar",
@@ -13679,7 +16715,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
     "credit_name": "Guu with Otokomae",
@@ -13878,7 +16914,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://cocoricocafe.ca/wp-content/uploads/2025/06/cocorico-logo.png",
     "credit_name": "Coco Rico Cafe",
@@ -13973,7 +17009,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5f2b04f5007a0c0b4126d0ab/t/6a3c6a3e4ac02a00dadaed21/1782344254780/food.jpg?format=1500w",
     "credit_name": "Capo & The Spritz",
@@ -14206,7 +17242,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/steamworks-mount-pleasant.jpg",
     "credit_name": "Steamworks Mount Pleasant",
@@ -14353,7 +17389,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://pizzacomingsoon.com/images/PepEyes.gif",
     "credit_name": "Pizza Coming Soon",
@@ -14501,7 +17537,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/desi-indian-lounge.jpg",
     "credit_name": "Desi Indian Lounge",
@@ -14834,7 +17870,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/the-king-s-head-public-house.jpg",
     "credit_name": "Reza Omidi",
@@ -14918,7 +17954,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/619e9c5fc9b09079b878c60d/t/6a1f3c5e9d129d02efd2bcbf/1780431966963/Prestons_breakfast-setup2.jpg?format=1500w",
     "credit_name": "Prestons Restaurant + Lounge Vancouver",
@@ -15095,7 +18131,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/69177c7462644178b259bde8/t/691780701c60da79402e44f2/1763147888355/Amber+Logo+White.png?format=1500w",
     "credit_name": "Amber Gastown",
@@ -15329,7 +18365,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/6925144e26dafdde14d3a2c2_6916abb8d2861347aa74ab12_691014e720de4e6f3fec889b_CambiePub%25281%2529.avif",
     "credit_name": "The Cambie Bar & Grill",
@@ -15552,7 +18588,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://www.cactusclubcafe.com/wp-content/uploads/2015/05/052915_LocationThumbnails_260px_180px_BENT.png",
     "credit_name": "Cactus Club Cafe",
@@ -15688,7 +18724,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://marcellopizzeria.com/wp-content/uploads/2019/11/ORANGE_ILLUSTRATION_02.jpg",
     "credit_name": "Marcello Ristorante & Pizzeria",
@@ -15876,7 +18912,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/674a1c8cba87c699b9dc1531_5.jpg",
     "credit_name": "Mangos Kitchen Bar",
@@ -15967,7 +19003,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://staugustinesvancouver.com/assets/logo-50782319.png",
     "credit_name": "St. Augustine's",
@@ -16215,7 +19251,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://www.cactusclubcafe.com/wp-content/uploads/2014/11/052915_LocationThumbnails_260px_180px_YALE.png",
     "credit_name": "Cactus Club Cafe",
@@ -16495,7 +19531,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://cdn.prod.website-files.com/67d4940ac4774ab766493675/67ed7f002bd0240044bb4d1f_624df098ab4100db88769ee8_60963218ec20c227fd57bb28_malones-taphouse_friday-night.jpg",
     "credit_name": "Malone's Taphouse",
@@ -16647,7 +19683,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5b294ea4c258b4a050850cbc/t/674e656d6d3dc06fbd267050/1733191027522/5H6A5734.jpg?format=1500w",
     "credit_name": "La Mezcaleria",
@@ -16792,7 +19828,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://www.cactusclubcafe.com/wp-content/uploads/2015/05/052915_LocationThumbnails_260px_180px_ASH.png",
     "credit_name": "Cactus Club Cafe",
@@ -16884,7 +19920,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://www.datocms-assets.com/75587/1663193492-restaurant-vancouver-singsing-patio-server.jpg?auto=format&fit=max&w=1200",
     "credit_name": "Sing Sing Main St",
@@ -17032,7 +20068,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/598406a2b8a79b3541095ce2/t/64e66555c6598f65d4730d75/1692820821633/JamjarCanteen_icon_black+%282%29.png?format=1500w",
     "credit_name": "Jamjar Canteen Commercial Dr.",
@@ -17261,7 +20297,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://biminis1975.ca/wp-content/uploads/2025/10/biminis-home-banner.jpg",
     "credit_name": "Bimini's Since 1975",
@@ -17375,7 +20411,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/between-2-buns-burgers.jpg",
     "credit_name": "Between 2 Buns Burgers",
@@ -17485,7 +20521,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://www.datocms-assets.com/75587/1663200050-restaurant-vancouver-butcherbullock-neon-sign.jpg?auto=format&fit=max&w=1200",
     "credit_name": "The Butcher & Bullock Public House",
@@ -17633,7 +20669,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/carlos-o-bryan-s-neighborhood-pub.jpg",
     "credit_name": "Carlos O'Bryan's Neighborhood Pub",
@@ -17733,7 +20769,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2019/07/logo.png",
     "credit_name": "The Charlatan",
@@ -17802,7 +20838,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://opushotel.com/media_files/images/Superior_King_2.max-1900x1900.jpg",
     "credit_name": "OPUS Vancouver",
@@ -17878,7 +20914,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/memphis-blues-barbeque-house.jpg",
     "credit_name": "A Sabbagh",
@@ -17960,7 +20996,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/61a954_2be19d327c4e4f28a6faec69a4677659.jpg/v1/fit/w_2500,h_1330,al_c/61a954_2be19d327c4e4f28a6faec69a4677659.jpg",
     "credit_name": "Caffè Cittadella",
@@ -18110,7 +21146,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://bombaykitchenondenman.ca/wp-content/uploads/2026/06/Untitled-design-2.png",
     "credit_name": "Bombay Kitchen and Bar - Denman St",
@@ -18247,7 +21283,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://forecastcoffee.ca/cdn/shop/files/Forecast_Coffee_Stack.png?v=1671059059",
     "credit_name": "Forecast Coffee - Main Street",
@@ -18392,7 +21428,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://www.noahscafe604.com/uploads/b/b3056d90-8287-11ea-8dcd-d76ba85a9317/A50A3746-E8C0-4D21-8013-4486FE25D16F.jpg",
     "credit_name": "Noah's Cafe",
@@ -18554,7 +21590,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5d62eac6567e6b00010d19dd/t/68e74597dba01c1c30bced3e/1759987095874/barts+text+logo.png?format=1500w",
     "credit_name": "Bartholomew",
@@ -18758,7 +21794,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/914129_203b8bd912894101a87bf2eecc36324d~mv2.jpg/v1/fill/w_2500,h_2841,al_c/914129_203b8bd912894101a87bf2eecc36324d~mv2.jpg",
     "credit_name": "Bayside Lounge — English Bay",
@@ -18978,7 +22014,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://ciderhouserules.ca/wp-content/uploads/2024/01/ch-brunch-300x300.jpg",
     "credit_name": "The Cider House",
@@ -19130,7 +22166,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png/v1/fit/w_2500,h_1330,al_c/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png",
     "credit_name": "Bar Corso",
@@ -19327,7 +22363,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/637bd7471883712f534a69d5/t/63880bff5e0e99379d87d31c/1669860351856/kksong_logo_bluepatternSQ.jpg?format=1500w",
     "credit_name": "Song (by Kin Kao)",
@@ -19417,7 +22453,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5e39fb52039c6a4e75b14e99/t/665f5520dfa487303d924ded/1717523744702/Main+Street+Brewing+Wordmark.jpg?format=1500w",
     "credit_name": "Main Street Brewing Co.",
@@ -19646,7 +22682,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/uncle-abe-s.jpg",
     "credit_name": "Wheels",
@@ -19825,7 +22861,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/6482752355fc7c5b659d79ed/t/689580055c0e5008d5e18e8f/1754628101180/W+Colour+Logo.png?format=1500w",
     "credit_name": "The Watson",
@@ -19943,7 +22979,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": null
   },
   {
@@ -20081,7 +23117,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/mum-s-the-word.jpg",
     "credit_name": "Mum's The Word",
@@ -20150,7 +23186,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://oldspaghettifactory.ca/wp-content/uploads/2020/11/OSF-Gastown.jpg",
     "credit_name": "The Old Spaghetti Factory (Gastown)",
@@ -20217,7 +23253,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/dae-bak-bon-ga.jpg",
     "credit_name": "Aa Aa",
@@ -20381,7 +23417,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/the-sandbar-seafood-restaurant.jpg",
     "credit_name": "The Sandbar Seafood Restaurant",
@@ -20539,7 +23575,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/6645475dc7e9ad16be5320a4/t/6645477ec7e9ad16be532a6c/1611857405733/Screen+Shot+2021-01-28+at+1.09.17+PM.png?format=1500w",
     "credit_name": "Minami",
@@ -20759,7 +23795,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://i0.wp.com/topofvancouver.com/wp-content/uploads/2024/07/tov-logo-square.png",
     "credit_name": "Top Of Vancouver Revolving Restaurant",
@@ -20940,7 +23976,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/the-vancouver-fish-company.jpg",
     "credit_name": "The Vancouver Fish Company",
@@ -21058,7 +24094,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://www.gothamsteakhouse.com/wp-content/media/gotham-opengraph.jpg",
     "credit_name": "Gotham Steakhouse & Cocktail Bar",
@@ -21144,7 +24180,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://sylviahotel.com/wp-content/uploads/slider_2-1.jpeg",
     "credit_name": "Sylvia Hotel, Restaurant and Lounge",
@@ -21264,7 +24300,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/the-pawn-shop-yvr-taco-bar.jpg",
     "credit_name": "The Pawn Shop YVR Taco Bar",
@@ -21370,7 +24406,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/61f8647601122d66e6755648/t/6202273588dc2b5b45a78cb9/1737657598840/Di+Beppe+Italian+Pasta+Restaurant+Gastown+Vancouver.jpeg?format=1500w",
     "credit_name": "Di Beppe Restaurant",
@@ -21518,7 +24554,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/burgoo.jpg",
     "credit_name": "H S Madan",
@@ -21587,7 +24623,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/skewers-souvlaki-pita-bar.jpg",
     "credit_name": "Sid D",
@@ -21744,7 +24780,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/622915caa2ee207bfc89860c/t/62c71336a355646980d50d29/1657213750476/Sopra+Sotto+Logo_Dark+Green_Transparent+Background_2.png?format=1500w",
     "credit_name": "Sopra Sotto Pizzeria",
@@ -21910,7 +24946,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg",
     "credit_name": "Tableau Bar Bistro",
@@ -22082,7 +25118,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/nook-kitsilano.jpg",
     "credit_name": "Nook Kitsilano",
@@ -22338,7 +25374,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/big-way-hot-pot-robson.jpg",
     "credit_name": "Big Way Hot Pot (Robson)",
@@ -22602,7 +25638,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/6f810c_2fee003f992a4c2bae4babd1dfe5790d~mv2.jpg/v1/fill/w_2500,h_1666,al_c/6f810c_2fee003f992a4c2bae4babd1dfe5790d~mv2.jpg",
     "credit_name": "Eat Bar & Patio Haraheri",
@@ -22720,7 +25756,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://cdn.shopify.com/s/files/1/0494/0723/0110/files/Como_Logo_Rotated2.png?height=628&pad_color=f7ecde&v=1614315207&width=1200",
     "credit_name": "Como Taperia",
@@ -22862,7 +25898,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/65a72a0678f3ca4b97f809ce/t/6949f0039c3bac7cab8cda9f/1766453251463/Alouette+Bistro+logo+1+-+Red+version.png?format=1500w",
     "credit_name": "Alouette Bistro",
@@ -22990,7 +26026,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5e696210b248185a7740eb9e/t/6908ed36e801ae5dae811354/1762192694463/TUTTO+LOGO_RedCircle-Sept+2025.png?format=1500w",
     "credit_name": "Tutto Italian Restaurant & Bar",
@@ -23228,7 +26264,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/6197f60605fe1b16f9691fe5/t/61a0093bae588a3d464e910f/1637878075097/Carlino+Best+Italian+Restaurant+Downton+Vancouver+Coal+Harbour+Shangri-La+Pasta.jpg?format=1500w",
     "credit_name": "Carlino Restaurant",
@@ -23337,7 +26373,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/671af9d0bc57847c268ffd6c/t/672d9aaadb431b2e123f458d/1731041962507/Zoomak+Side+Sign+Logo_Logo+copy.png?format=1500w",
     "credit_name": "Zoomak Korean Tavern",
@@ -23521,7 +26557,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5564c138e4b0b3813af4e855/t/5ecc00722dd571390c7ba0be/1590427774631/Novo_Italian_Social_01.jpg?format=1500w",
     "credit_name": "Novo Italian",
@@ -23605,7 +26641,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://www.streethawker.ca/uploads/b/47d14d50-dd7e-11ed-84ba-93a1c49a3583/streethawker-03029.jpeg",
     "credit_name": "Street Hawker - Mount Pleasant",
@@ -23776,7 +26812,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/lavantine-restaurant-skybar.jpg",
     "credit_name": "Lavantine Restaurant & Skybar",
@@ -23943,7 +26979,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/nook-coal-harbour.jpg",
     "credit_name": "Nook Coal Harbour",
@@ -24012,7 +27048,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://bhouse.ca/images/1200x630/17240969/editedIMG_70252-cHRNbxfHQNl31phM4aQi4Q.JPG",
     "credit_name": "B House Restaurant",
@@ -24277,7 +27313,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://thesequel.ca/wp-content/uploads/2025/05/61_IMAGE_THE-SEQUEL_SOCIAL-SHOOT_25-02-18_CHARLESRNASBY-scaled.jpg",
     "credit_name": "The Sequel - Kitchen & Bar",
@@ -24473,7 +27509,7 @@
     "id": 4842937821,
     "amenity": "restaurant"
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/fanny-bay-oyster-bar.jpg",
     "credit_name": "Fanny Bay Oyster Bar & Shellfish Market",
@@ -24636,7 +27672,7 @@
     "id": 6927768691,
     "amenity": "restaurant"
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/65676973c6846d7487e02256/t/656f95aa3358383ff0cbe919/1740440044434/Asset+1.png?format=1500w",
     "credit_name": "Hydra Estiatorio Mediterranean",
@@ -24806,7 +27842,7 @@
     "id": 4390232892,
     "amenity": "pub"
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5db9f5cc0e8af224964d841a/t/5e45e75a78bd103b8b528dc8/1581639527237/Pourhouse-Restaurant-Cocktail-Bar-Gastown-Vancouver.jpg?format=1500w",
     "credit_name": "Pourhouse",
@@ -24981,7 +28017,7 @@
     "id": 6437608536,
     "amenity": "bar"
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://gretabar.com/wp-content/uploads/2026/08/GRETA-X-LE-BURGER-WEEK-Socials2-1.png",
     "credit_name": "Greta YVR",
@@ -25152,7 +28188,7 @@
     "id": 4859979322,
     "amenity": "pub"
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/690fdab96331267ef7e86a2f/t/690fdac76331267ef7e86c07/1757000454899/6A-Kitchen-and-Bar.png?format=1500w",
     "credit_name": "Six Acres",
@@ -25240,7 +28276,7 @@
     "id": 12164513044,
     "amenity": "bar"
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg",
     "credit_name": "The Boxcar",
@@ -25417,7 +28453,7 @@
     "id": 3932735573,
     "amenity": "restaurant"
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://www.brixandmortar.ca/wp-content/uploads/2021/03/logo1x_01.png",
     "credit_name": "Brix & Mortar",
@@ -25625,7 +28661,7 @@
     "id": 3690929433,
     "amenity": "restaurant"
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "photos/joe-fortes.jpg",
     "credit_name": "Joe Fortes Seafood & Chop House",
@@ -25749,7 +28785,7 @@
     "id": 11079577905,
     "amenity": "bar"
    },
-   "last_synced_at": "2026-09-01",
+   "last_synced_at": "2026-09-02",
    "cover_image": {
     "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a63d5f471c7d77bf326cb9d_622a3aa6bcd48977c810a6a4_Share%20BG.jpg",
     "credit_name": "The 515 Bar",

@@ -2776,5 +2776,345 @@
     },
     "matched_name": "Lucia",
     "synced_at": "2026-09-01"
+  },
+  "wings-restaurants-pubs-burnaby": {
+    "place_id": "ChIJmXalLjV2hlQRw7uM8vTsZrM",
+    "rating": 4,
+    "user_ratings_total": 1838,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "WINGS Restaurants & Pubs - Burnaby",
+    "synced_at": "2026-09-02"
+  },
+  "samz-neighbourhood-pub-port-coquitlam": {
+    "place_id": "ChIJg1Nt0qx4hlQRpkRIVE1B3Q0",
+    "rating": 4.2,
+    "user_ratings_total": 1212,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Samz Neighbourhood Pub Port Coquitlam",
+    "synced_at": "2026-09-02"
+  },
+  "ricky-s-all-day-grill": {
+    "place_id": "ChIJhUFLqabahVQR6whhrC54Hms",
+    "rating": 4.1,
+    "user_ratings_total": 699,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Ricky's All Day Grill",
+    "synced_at": "2026-09-02"
+  },
+  "onyx-steakhouse": {
+    "place_id": "ChIJPY7zVAaFC0ERjrKr_nNF-ks",
+    "rating": 4.3,
+    "user_ratings_total": 698,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "ONYX Steakhouse",
+    "synced_at": "2026-09-02"
+  },
+  "75-west-coast-grill": {
+    "place_id": "ChIJLz0668wKhlQRBfuEmfBpw1E",
+    "rating": 4.1,
+    "user_ratings_total": 625,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "75 West Coast Grill",
+    "synced_at": "2026-09-02"
+  },
+  "cafe-orso": {
+    "place_id": "ChIJ1zABBVJ6hlQR3_WV_TrkgxE",
+    "rating": 4.5,
+    "user_ratings_total": 608,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": null
+    },
+    "matched_name": "Cafe Orso",
+    "synced_at": "2026-09-02"
+  },
+  "harold-s-kitchen-bar": {
+    "place_id": "ChIJpZH_9MwKhlQRkxtACt736go",
+    "rating": 4.3,
+    "user_ratings_total": 592,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Harold's Kitchen & Bar",
+    "synced_at": "2026-09-02"
+  },
+  "hello-nori-park-royal": {
+    "place_id": "ChIJv7cdIARvhlQRtp7LlI9KKYg",
+    "rating": 4.6,
+    "user_ratings_total": 514,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Hello Nori - Park Royal",
+    "synced_at": "2026-09-02"
+  },
+  "nova-kitchen-bar": {
+    "place_id": "ChIJE-StFwB5hlQR2Lf2KjS43cQ",
+    "rating": 4,
+    "user_ratings_total": 180,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Nova Kitchen & Bar",
+    "synced_at": "2026-09-02"
+  },
+  "arms-reach-bistro": {
+    "place_id": "ChIJJ-AIiU16hlQRBCpbWTNnbSc",
+    "rating": 4.4,
+    "user_ratings_total": 1238,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Arms Reach Bistro",
+    "synced_at": "2026-09-02"
+  },
+  "dominion-bar-kitchen": {
+    "place_id": "ChIJHWUuGCvYhVQRqWtgrj187zo",
+    "rating": 4.3,
+    "user_ratings_total": 1056,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Dominion Bar + Kitchen",
+    "synced_at": "2026-09-02"
+  },
+  "chao-mami": {
+    "place_id": "ChIJK5yhI89whlQRVpPlaF-um80",
+    "rating": 4.3,
+    "user_ratings_total": 948,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Chao Mami",
+    "synced_at": "2026-09-02"
+  },
+  "me-n-ed-s-pizza-parlors": {
+    "place_id": "ChIJwcvcutPPhVQR1wqQWktoyuk",
+    "rating": 4.4,
+    "user_ratings_total": 948,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Me-n-Ed's Pizza Parlors",
+    "synced_at": "2026-09-02"
+  },
+  "me-n-ed-s-pizza-parlors-2": {
+    "place_id": "ChIJk1itV6t4hlQRX-UhDcVIMnI",
+    "rating": 4.3,
+    "user_ratings_total": 856,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Me-n-Ed's Pizza Parlors",
+    "synced_at": "2026-09-02"
+  },
+  "sfinaki-greek-taverna": {
+    "place_id": "ChIJO4TOPM9whlQRPaJPTs30UN4",
+    "rating": 4.3,
+    "user_ratings_total": 699,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Sfinaki Greek Taverna",
+    "synced_at": "2026-09-02"
+  },
+  "cavu-kitchen-bar": {
+    "place_id": "ChIJCR4U1swKhlQRuUS8KGDaJJo",
+    "rating": 4.1,
+    "user_ratings_total": 553,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "CAVU Kitchen Bar",
+    "synced_at": "2026-09-02"
+  },
+  "romers-lynn-valley": {
+    "place_id": "ChIJnVCA1mpxhlQR5W2N6Tijc2g",
+    "rating": 4,
+    "user_ratings_total": 524,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Romers Lynn Valley",
+    "synced_at": "2026-09-02"
+  },
+  "loam-bistro": {
+    "place_id": "ChIJW9K4IkVxhlQRyoxxRrJhY4I",
+    "rating": 4.6,
+    "user_ratings_total": 345,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Loam Bistro",
+    "synced_at": "2026-09-02"
+  },
+  "the-apron": {
+    "place_id": "ChIJi_-UK990hlQR34VR-RbEdw8",
+    "rating": 4,
+    "user_ratings_total": 301,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "the apron",
+    "synced_at": "2026-09-02"
+  },
+  "holy-taco-mexi-eats": {
+    "place_id": "ChIJka-bsF_ZhVQRrlK5NAX84dQ",
+    "rating": 4.9,
+    "user_ratings_total": 238,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Holy Taco & Mexi Eats",
+    "synced_at": "2026-09-02"
   }
 }
