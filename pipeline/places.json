@@ -5683,5 +5683,328 @@
     },
     "matched_name": "PoCo Brothers Brewing Co.",
     "synced_at": "2026-09-02"
+  },
+  "hook-restaurant": {
+    "place_id": "ChIJqYIGTy9yhlQRuS6kHx4pVKM",
+    "rating": 4.2,
+    "user_ratings_total": 1464,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Hook Restaurant",
+    "synced_at": "2026-09-02"
+  },
+  "red-card-sports-bar-eatery": {
+    "place_id": "ChIJzyPHI35xhlQRs3aRHuPMmGg",
+    "rating": 3.8,
+    "user_ratings_total": 665,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Red Card Sports Bar + Eatery",
+    "synced_at": "2026-09-02"
+  },
+  "brewing-august": {
+    "place_id": "ChIJD2LiYXFxhlQRfK9tJsUPZRk",
+    "rating": 4.6,
+    "user_ratings_total": 215,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Brewing August",
+    "synced_at": "2026-09-02"
+  },
+  "social-corner-yaletown": {
+    "place_id": "ChIJl97JCH5xhlQRCMTZHG7N-Sg",
+    "rating": 4.4,
+    "user_ratings_total": 4983,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "SOCIAL CORNER YALETOWN",
+    "synced_at": "2026-09-02"
+  },
+  "las-margaritas": {
+    "place_id": "ChIJp7R2erZzhlQRT9uOtRCRz6I",
+    "rating": 4.1,
+    "user_ratings_total": 3227,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Las Margaritas",
+    "synced_at": "2026-09-02"
+  },
+  "the-burrow": {
+    "place_id": "ChIJo1jMuUhxhlQRpNnramo6TqI",
+    "rating": 4.4,
+    "user_ratings_total": 3182,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "The Burrow",
+    "synced_at": "2026-09-02"
+  },
+  "virtuous-pie": {
+    "place_id": "ChIJfTY_EnBxhlQRTEuUOuEbJMI",
+    "rating": 4.5,
+    "user_ratings_total": 2316,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Virtuous Pie",
+    "synced_at": "2026-09-02"
+  },
+  "rocky-mountain-flatbread-vancouver": {
+    "place_id": "ChIJn2elb_dzhlQRDoa-HdO2awg",
+    "rating": 4.6,
+    "user_ratings_total": 2108,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Rocky Mountain Flatbread, Vancouver",
+    "synced_at": "2026-09-02"
+  },
+  "alimentaria-mexicana": {
+    "place_id": "ChIJ6YbxflxzhlQRFMibzsZ_vsI",
+    "rating": 4.2,
+    "user_ratings_total": 1393,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Alimentaria Mexicana",
+    "synced_at": "2026-09-02"
+  },
+  "vault-restaurant": {
+    "place_id": "ChIJE6ZxDwrQhVQR9ViC52Gpfu8",
+    "rating": 4.2,
+    "user_ratings_total": 1218,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Vault Restaurant",
+    "synced_at": "2026-09-02"
+  },
+  "little-donkey-food-drink-fort-langley": {
+    "place_id": "ChIJsc22MvbShVQR1iXxb-69EXk",
+    "rating": 4.5,
+    "user_ratings_total": 925,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Little Donkey Food & Drink Fort Langley",
+    "synced_at": "2026-09-02"
+  },
+  "osteria-povera": {
+    "place_id": "ChIJd4HuaYh5hlQRoViF3JZRGjg",
+    "rating": 4.4,
+    "user_ratings_total": 758,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Osteria Povera",
+    "synced_at": "2026-09-02"
+  },
+  "murasaki-japanese-restaurant": {
+    "place_id": "ChIJsXI-vNl4hlQRIOL6HjEuHeY",
+    "rating": 4.5,
+    "user_ratings_total": 699,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": false,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Murasaki Japanese Restaurant",
+    "synced_at": "2026-09-02"
+  },
+  "tobiko-1-sushi": {
+    "place_id": "ChIJETmMw7HQhVQRvyNXrc6m-Xc",
+    "rating": 4.4,
+    "user_ratings_total": 620,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": false,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Tobiko #1 Sushi",
+    "synced_at": "2026-09-02"
+  },
+  "luppolo-brewing-co": {
+    "place_id": "ChIJUXG8GWtxhlQRs4D_Vz6KVAk",
+    "rating": 4.5,
+    "user_ratings_total": 523,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Luppolo Brewing Co.",
+    "synced_at": "2026-09-02"
+  },
+  "noble-at-the-hills": {
+    "place_id": "ChIJs8baXqHFhVQRYnkfvTd5usc",
+    "rating": 4.4,
+    "user_ratings_total": 309,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "NOBLE at the Hills",
+    "synced_at": "2026-09-02"
+  },
+  "streetcar-brewing": {
+    "place_id": "ChIJN472AU1whlQRkVgniuv7m1c",
+    "rating": 4.5,
+    "user_ratings_total": 244,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Streetcar Brewing",
+    "synced_at": "2026-09-02"
+  },
+  "the-derby-bar-and-grill": {
+    "place_id": "ChIJbw8QGPmRC0ERWWZtpF-FEnw",
+    "rating": 4.3,
+    "user_ratings_total": 217,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "The Derby Bar and Grill",
+    "synced_at": "2026-09-02"
+  },
+  "il-cappello-enoteca": {
+    "place_id": "ChIJkyOEfwB3hlQRUii61X91hEs",
+    "rating": 4.4,
+    "user_ratings_total": 143,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Il Cappello Enoteca",
+    "synced_at": "2026-09-02"
   }
 }

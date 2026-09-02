@@ -11788,5 +11788,407 @@
     "name": "KAKAI SUSHI (White Rock Branch)",
     "verdict": "no_happy_hour",
     "checked_at": "2026-09-02"
+  },
+  "ChIJr_bsOgB3hlQRO8y-iKNw9MA": {
+    "id": "makan-time",
+    "name": "Makan Time",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ37QNNrZyhlQRv6C5C6bcFso": {
+    "id": "grand-noodle-emporium",
+    "name": "Grand Noodle Emporium",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJeTz5SLVxhlQRIaIFnSxCVTc": {
+    "id": "sushi-mahana",
+    "name": "Sushi MAHANA",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJjQ_inct3hlQRH75dDvbaxiw": {
+    "id": "panago-pizza",
+    "name": "Panago Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJX3mafC7ahVQRHkd-i0zrAb0": {
+    "id": "the-jin-sushi",
+    "name": "The Jin Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJE_Eq-wFxhlQRtgIijrHnZSk": {
+    "id": "zenya",
+    "name": "Zenya",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJe_ZM4_DVhVQR-kAXQTu5cOw": {
+    "id": "sushi-bar-shyun",
+    "name": "Sushi Bar Shyun",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJhw546rnThVQR16k-LoVb0_c": {
+    "id": "grounds-greens-cafe",
+    "name": "Grounds & Greens Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJt_5GpclzhlQRYcTRXI0X4LE": {
+    "id": "fresh-solo-pasta",
+    "name": "Fresh Solo Pasta",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJkffu4qPPhVQRiUFAo7O3AQk": {
+    "id": "nori-sushi-brookswood-langley",
+    "name": "NORI SUSHI - BROOKSWOOD LANGLEY",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJvwGs23vZhVQRTDSilwGHjsM": {
+    "id": "sushi-street",
+    "name": "Sushi Street",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJFeS0dejghVQRK5PV7FMrWtI": {
+    "id": "ladner-ming-court-restaurant",
+    "name": "Ladner Ming Court Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJK2rwNsxxhlQRUU0QfKm8P9M": {
+    "id": "pho-express-chill",
+    "name": "Pho Express & Chill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJGa3YCRpuhlQREZ8kUl_nJmU": {
+    "id": "the-anchor-eatery",
+    "name": "The Anchor Eatery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJR6QR5xfZhVQRGqFWdcomQ5U": {
+    "id": "hens-up-chicken-new-westminster",
+    "name": "Hens up chicken - New Westminster",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJmVerb85zhlQRZcCQy1Tij6o": {
+    "id": "gourmet-wok",
+    "name": "Gourmet Wok",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJDzQ5P3J1hlQRKSYEzXjMGlg": {
+    "id": "momo-factory-restaurant-and-bar",
+    "name": "Momo factory restaurant and Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJMW9P0Ut4hlQRi5d5eeuzI2U": {
+    "id": "panago-pizza-2",
+    "name": "Panago Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ84xpGu9vhlQRhHxln2jpeA0": {
+    "id": "tractor-everyday-healthy-foods-park-royal",
+    "name": "Tractor Everyday Healthy Foods - Park Royal",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJWQ-oX9B5hlQR1Jwji7T1H98": {
+    "id": "i-love-k-bbq-restaurant",
+    "name": "I Love K-BBQ Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJUXlLNwBzhlQRvbKyNiyBqsg": {
+    "id": "mr-shi-noodle-house",
+    "name": "Mr. Shi Noodle House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ-XziOOzZhVQR4-MAh4v-lcg": {
+    "id": "chopped-leaf",
+    "name": "Chopped Leaf",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJkyOEfwB3hlQRUii61X91hEs": {
+    "id": "il-cappello-enoteca",
+    "name": "Il Cappello Enoteca",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJj6gGFpjEhVQRIj6-BpCRi5U": {
+    "id": "booster-juice-3",
+    "name": "Booster Juice",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJHT2qdw9xhlQRgfZgfKBAeq0": {
+    "id": "sumibiyaki-arashi",
+    "name": "Sumibiyaki Arashi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJNSnwbELbhVQR5smoLDPub2E": {
+    "id": "olivo-cafe-surrey",
+    "name": "Olivo Cafe Surrey",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJw-R_69t4hlQRSHGQE8gw5rI": {
+    "id": "panago-pizza-3",
+    "name": "Panago Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJPwc3WwBzhlQRogFKtp-DBw8": {
+    "id": "murmur",
+    "name": "Murmur",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJQ1tDmeh5hlQRM3MTYsdG_Oc": {
+    "id": "togo-sushi-sfu",
+    "name": "Togo Sushi SFU",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJIacyqap-hlQRYOSR3qZGsKE": {
+    "id": "anmore-store-recreation-ltd",
+    "name": "Anmore Store & Recreation Ltd",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJk1OnoRVzhlQRmW5nm7GmXIM": {
+    "id": "plaza-toyokan",
+    "name": "PLAZA TOYOKAN",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJq-b2Dqt3hlQRM4Qk7vY1EOs": {
+    "id": "baohaus-dumplings-drinks",
+    "name": "BAOHAUS Dumplings & Drinks",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJc_drF1nXhVQRTABXshiPpsM": {
+    "id": "the-katsu-surrey",
+    "name": "The Katsu Surrey",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJdxyyQC1yhlQRf3RSf9ekTJo": {
+    "id": "sunset-beach-concession-stand",
+    "name": "Sunset Beach Concession Stand",
+    "verdict": "error",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJB9JiCozZhVQRyVE9WdiB6d4": {
+    "id": "sipz-n-bitez-refreshments",
+    "name": "Sipz 'N' Bitez Refreshments",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJQ8q4oHNzhlQRn3qPa1we3sg": {
+    "id": "sushi-master-japanese-broadway-vancouver",
+    "name": "Sushi master Japanese Broadway Vancouver",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJB2UpqUp_hlQRhH19Eb-FW1M": {
+    "id": "fuel-supplements-food-bar-coquitlam",
+    "name": "Fuel Supplements & Food Bar Coquitlam",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJh_zmh6t4hlQRCvLh9XihrKc": {
+    "id": "7-eleven",
+    "name": "7-Eleven",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJDazAq4ZxhlQRZczY-ppoEjo": {
+    "id": "7-eleven-2",
+    "name": "7-Eleven",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJQ1OhR8tyhlQR0UzgVuM9D-w": {
+    "id": "feast",
+    "name": "Feast",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ6b4qCv9yhlQRf6_GO-gUsWw": {
+    "id": "7-eleven-3",
+    "name": "7-Eleven",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJZ2lDZQBxhlQR3CNNfDdgh70": {
+    "id": "vanmak",
+    "name": "Vanmak",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJebxxeK7ZhVQRW2_IoKDYmgU": {
+    "id": "uncle-sushi",
+    "name": "Uncle Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJMRnRkoPRhVQRvX3JO5TgwoU": {
+    "id": "gamamaru-shokudo",
+    "name": "Gamamaru Shokudo",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJVZ0kS8J1hlQREgsd61wFr8w": {
+    "id": "rollzzy-2",
+    "name": "Rollzzy",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJwUq1MBdvhlQRYZLMZWbFC0c": {
+    "id": "new-ginger-soy-restaurant",
+    "name": "New Ginger & Soy Restaurant 西溫小廚",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJe8U3swJxhlQR-FvGsyrsso4": {
+    "id": "smoke-2-snack-robson",
+    "name": "Smoke 2 Snack Robson",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJi-Y-SQDdhVQRHaoOBj535gg": {
+    "id": "l-aromas-sky-cafe",
+    "name": "L'aromas Sky Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ6Ri1RwpwhlQRaFPrATa7UK4": {
+    "id": "booster-juice-4",
+    "name": "Booster Juice",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJM_Nv9CBuhlQRzbiJzBqJC_8": {
+    "id": "food-court-in-park-royal-south-mall",
+    "name": "Food Court in Park Royal South Mall",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJUZXS0_zhhVQRUVZWAb8uZGY": {
+    "id": "famoso-italian-pizzeria-ladner",
+    "name": "Famoso Italian Pizzeria - Ladner",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJM9xcBgDDhVQR6Bh5cKAs6Yg": {
+    "id": "fusion-cafe",
+    "name": "Fusion Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJBxTqTu9zhlQRpIwTJASFu-4": {
+    "id": "oakberry-a-a-bowls-smoothies",
+    "name": "OAKBERRY Açaí Bowls & Smoothies",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJpXSouwnQhVQR1FjHF_oo0qI": {
+    "id": "cloverdale-corner-mart",
+    "name": "Cloverdale Corner Mart",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJtT1wvVB3hlQRAPzy9WoAqcQ": {
+    "id": "ajidog",
+    "name": "AjiDog",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJo7diovvDhVQRoDebgJBFeE4": {
+    "id": "white-rock-burger-co",
+    "name": "White Rock Burger Co.",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJHZsp5XV5hlQRvwVyVz1A1u0": {
+    "id": "hens-up-chicken-gates-park-cafe",
+    "name": "Hens Up Chicken Gates Park Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ_9RsFQBzhlQR0b5O_X_OtGU": {
+    "id": "by-handson",
+    "name": "By Handson",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJY_YQjL1xhlQRJ1iF2EeKou8": {
+    "id": "white-rabbit-caf",
+    "name": "White Rabbit Café",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJjfRK1IhzhlQR2CBDdK3eoOg": {
+    "id": "pacific-poke-life-building-ubc",
+    "name": "Pacific Poke Life Building UBC",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJMfnsuSpxhlQREKOy9z3I3CU": {
+    "id": "barley-rye",
+    "name": "Barley & Rye",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJFbgjAMlzhlQRsGW0-MfefQk": {
+    "id": "7-eleven-4",
+    "name": "7-Eleven",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJozhfv1x5hlQR_DvcfjipAvI": {
+    "id": "crust-n-crunch",
+    "name": "CRUST N CRUNCH",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJs3hDnOd7hlQRW0g1XsawcBc": {
+    "id": "wild-wing",
+    "name": "Wild Wing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJq_B6AV5xhlQRV1M8i82J9LU": {
+    "id": "7-eleven-5",
+    "name": "7-Eleven",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ4cAJXMlvhlQRxri77XGAMwA": {
+    "id": "cattle-charcuterie-cheese",
+    "name": "Cattle Charcuterie + Cheese",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJUeAf_5DbhVQRHqyTJf0M90s": {
+    "id": "club-77-bar-grill",
+    "name": "Club 77 Bar & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
   }
 }

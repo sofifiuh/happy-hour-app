@@ -301,6 +301,13 @@ usage[MONTH] = usage[MONTH] || { nearby: 0, text: 0 };
 const spentBefore = { ...usage[MONTH] };
 const overBudget = (sku) => usage[MONTH][sku] >= MONTHLY_CAP;
 let skipped = { nearby: 0, text: 0 };
+// Persist as we go, not at the end. A sweep that is killed or crashes has
+// still SPENT its calls, and a ledger that only records on clean exit would
+// hand the next run a budget that has already been used.
+const saveUsage = () => { try { fs.writeFileSync(USAGE, JSON.stringify(usage, null, 2)); } catch {} };
+const spend = (sku) => { usage[MONTH][sku]++; if (usage[MONTH][sku] % 10 === 0) saveUsage(); };
+for (const sig of ["SIGINT", "SIGTERM"]) process.on(sig, () => { saveUsage(); process.exit(130); });
+process.on("exit", saveUsage);
 
 const byId = new Map();
 // The raw sweep is the expensive part: hundreds of billable Places calls.
@@ -332,7 +339,7 @@ if (args["from-raw"]) {
     let data;
     if (overBudget("nearby")) { skipped.nearby++; return; }
     try {
-      calls.nearby++; usage[MONTH].nearby++;
+      calls.nearby++; spend("nearby");
       data = await curlJson("https://places.googleapis.com/v1/places:searchNearby", {
         headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS}`],
         body: {
@@ -361,7 +368,7 @@ if (args["from-raw"]) {
       let data;
       try {
         if (overBudget("text")) { skipped.text++; return; }
-      calls.text++; usage[MONTH].text++;
+      calls.text++; spend("text");
         data = await curlJson("https://places.googleapis.com/v1/places:searchText", {
           headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS},nextPageToken`],
           body: { textQuery, pageSize: 20, ...(pageToken ? { pageToken } : {}) },
