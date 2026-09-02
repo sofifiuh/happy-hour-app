@@ -9274,5 +9274,359 @@
     "name": "Pro Care Mobile Auto Detailing Anmore",
     "verdict": "no_happy_hour",
     "checked_at": "2026-09-02"
+  },
+  "ChIJrU4Uszh3hlQRSFHzgm6q1QU": {
+    "id": "revs-bowling",
+    "name": "REVS Bowling",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ-fWFH-V1hlQRlgHvJiRw6ls": {
+    "id": "local-public-eatery-river-district",
+    "name": "LOCAL Public Eatery River District",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJqYIGTy9yhlQRuS6kHx4pVKM": {
+    "id": "hook-restaurant",
+    "name": "Hook Restaurant",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJV3NIjS7ahVQRo_Qlb943jXg": {
+    "id": "boston-pizza",
+    "name": "Boston Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ4S1x8xlxhlQRE8HG0PL5H8Y": {
+    "id": "parallel-49-brewing-company",
+    "name": "Parallel 49 Brewing Company",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ0wQb_bFxhlQR8_3KkEW69Ww": {
+    "id": "superflux-beer-company",
+    "name": "Superflux Beer Company",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJszUTpJ3EhVQR2CmD1ynAR7w": {
+    "id": "boston-pizza-2",
+    "name": "Boston Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJFRX2s8_ZhVQR4_qSJpL0voA": {
+    "id": "strikers-lounge",
+    "name": "Strikers Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJU_9tUyzQhVQRMm_gXxzoi4U": {
+    "id": "katana",
+    "name": "Katana",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJy959zY_MhVQRUVlvBhv2o3g": {
+    "id": "dead-frog-brewery",
+    "name": "Dead Frog Brewery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJzyPHI35xhlQRs3aRHuPMmGg": {
+    "id": "red-card-sports-bar-eatery",
+    "name": "Red Card Sports Bar + Eatery",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ9VmNW2LIhVQR7twLDK3Nf44": {
+    "id": "glass-house-estate-winery",
+    "name": "Glass House Estate Winery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJt1EDa3xxhlQRBJjbDcHFLvs": {
+    "id": "the-sportsbar-live-at-rogers-arena",
+    "name": "The Sportsbar LIVE! At Rogers Arena",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJFarY-glrhlQRnJBpcXfIlLI": {
+    "id": "barcelona-tapas-wine-bar",
+    "name": "Barcelona Tapas & Wine Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJLbqGBRVxhlQR0gqm395It_c": {
+    "id": "bomber-brewing",
+    "name": "Bomber Brewing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ06aJxzB7hlQRXplf7mRMY1Q": {
+    "id": "sapporo-kitchen-deep-cove",
+    "name": "Sapporo Kitchen Deep Cove",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJOSCcLtfOhVQRJv-_o37-fU0": {
+    "id": "backyard-vineyards",
+    "name": "Backyard Vineyards",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJG2Q_EmVxhlQRbdqda0s0_E4": {
+    "id": "the-cobalt-cabaret",
+    "name": "The Cobalt Cabaret",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJUyIon13hhVQRHLBXRap00Fk": {
+    "id": "jamoneria-by-arc",
+    "name": "Jamoneria by ARC",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJD2LiYXFxhlQRfK9tJsUPZRk": {
+    "id": "brewing-august",
+    "name": "Brewing August",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJI2v0odJxhlQRm-WHIdZGfV8": {
+    "id": "everything-wine",
+    "name": "Everything Wine",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJqypLDGFwhlQRJr--t4Btmlw": {
+    "id": "north-shore-winter-club",
+    "name": "North Shore Winter Club",
+    "verdict": "error",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJD7mQJJTEhVQRBw4YxZdp-C0": {
+    "id": "everything-wine-2",
+    "name": "Everything Wine",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJY5ZXTgDJhVQRfXN9VmrhSGM": {
+    "id": "chapter-estates-winery",
+    "name": "Chapter Estates Winery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJZY5rxj9xhlQR6XfiumuplI0": {
+    "id": "slow-hand-beer-company",
+    "name": "Slow Hand Beer Company",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJpTgVzOFxhlQR8430_q8yBSg": {
+    "id": "le-cafe-brocante-et-garage-a-vin-wine-bar",
+    "name": "Le Cafe Brocante et Garage a Vin - Wine Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJNbg-38RxhlQRe1NZYQVDajw": {
+    "id": "blue-grouse-wine-cellars",
+    "name": "Blue Grouse Wine Cellars",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJFafc2Q7FhVQR1O4Bpp_U1bc": {
+    "id": "the-wooden-tap",
+    "name": "The Wooden Tap",
+    "verdict": "error",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJzYo8LsJxhlQRQygzpljObgM": {
+    "id": "jollibee",
+    "name": "Jollibee",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJy6u3tL51hlQR5dbcrGDyQPc": {
+    "id": "haidilao-hot-pot-richmond",
+    "name": "Haidilao Hot Pot Richmond",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJtwgTP4dxhlQRo5wIHcln0es": {
+    "id": "ramen-danbo-robson",
+    "name": "Ramen Danbo Robson",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJq6r6bmbZhVQRWSDbpO7YZI0": {
+    "id": "sahota-s-live-grill-surrey",
+    "name": "Sahota’s Live Grill - Surrey",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJl97JCH5xhlQRCMTZHG7N-Sg": {
+    "id": "social-corner-yaletown",
+    "name": "SOCIAL CORNER YALETOWN",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJv9OoAYBxhlQRBV7HNkJ_R9c": {
+    "id": "japadog",
+    "name": "JAPADOG",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ6RSTlvzZhVQRFU5fg2865FQ": {
+    "id": "d-spot-dessert-cafe-delta",
+    "name": "D Spot Dessert Cafe Delta",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJbQJq9U16hlQRYv3tvXlFAoQ": {
+    "id": "honey-doughnuts-goodies",
+    "name": "Honey Doughnuts & Goodies",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJc2D45XlxhlQRu3b5UFCKc9Q": {
+    "id": "la-casita-gastown",
+    "name": "La Casita - Gastown",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ71LS51dxhlQRfq2bLYvY8gY": {
+    "id": "osteria-savio-volpe",
+    "name": "Osteria Savio Volpe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJt_Vwyc94hlQRQKpMVK3RHB0": {
+    "id": "the-coquitlam-grill",
+    "name": "The Coquitlam Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJkc_XAdB4hlQR5e-LCpvG7uU": {
+    "id": "sushi-mori",
+    "name": "Sushi Mori",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJxxtoaodxhlQRe3l7qsMsZJA": {
+    "id": "cora-breakfast-and-lunch",
+    "name": "Cora Breakfast and Lunch",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJmYf2lX9xhlQRrAQJnKcrQ_M": {
+    "id": "chipotle-mexican-grill",
+    "name": "Chipotle Mexican Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ9aoKpHlxhlQRAH-J_yYq6Oc": {
+    "id": "nuba-in-gastown",
+    "name": "Nuba in Gastown",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJp7R2erZzhlQRT9uOtRCRz6I": {
+    "id": "las-margaritas",
+    "name": "Las Margaritas",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJo1jMuUhxhlQRpNnramo6TqI": {
+    "id": "the-burrow",
+    "name": "The Burrow",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJO9ZG94TDhVQRs9Mk6XE4hbQ": {
+    "id": "moby-dick-restaurant",
+    "name": "Moby Dick Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJtwODcHBxhlQREpbs5MTETQg": {
+    "id": "new-town-bakery-restaurant",
+    "name": "New Town Bakery & Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJh68ct152hlQRadO0MCKU9FA": {
+    "id": "chipotle-mexican-grill-2",
+    "name": "Chipotle Mexican Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJwePgFwnbhVQRQVokYSpQ0Zg": {
+    "id": "ambar-surrey-restaurant",
+    "name": "Ambar Surrey Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJFx8XKbhzhlQRs4CTHYMO2mg": {
+    "id": "denny-s-restaurant-broadway",
+    "name": "Denny's Restaurant Broadway",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJq8Wb6blzhlQR-SGqeJHI4ks": {
+    "id": "tom-sushi",
+    "name": "Tom Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJbWJCzffShVQRkqIT0x0t9y4": {
+    "id": "wendel-s-bookstore-cafe",
+    "name": "Wendel's Bookstore & Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJpfr5YXDYhVQRyZUDAvcCATI": {
+    "id": "cockney-kings-fish-chips",
+    "name": "Cockney Kings Fish & Chips",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJZ_-rom_YhVQR5NgusyXcWMI": {
+    "id": "angelina-s-dutch-corner",
+    "name": "Angelina's Dutch Corner",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJKSKEqHlxhlQR9Qk6ghOR3a0": {
+    "id": "comedor-by-la-taqueria-pinche-taco-shop",
+    "name": "COMEDOR By La Taqueria Pinche Taco Shop",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJI725YIRzhlQRHenBTc7LcBs": {
+    "id": "jollibee-2",
+    "name": "Jollibee",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJnw2zZTx4hlQRWxI5b7W4Xao": {
+    "id": "white-spot-north-road",
+    "name": "White Spot North Road",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJh61PF3zDhVQR2YWrlXQ0-Es": {
+    "id": "wooden-spoon",
+    "name": "Wooden Spoon",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJhcTSzHtxhlQR0vXh32RpbvI": {
+    "id": "taishoken-ramen",
+    "name": "Taishoken Ramen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
   }
 }
