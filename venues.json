@@ -1,5 +1,5 @@
 {
- "data_version": "2026-09-02-e57c8e1f",
+ "data_version": "2026-09-02-b2e9b559",
  "venues": [
   {
    "id": "ancora",
@@ -4805,6 +4805,472 @@
    },
    "data_source": "manual",
    "last_synced_at": null
+  },
+  {
+   "place_id": "ChIJqUjxNINxhlQR4Lx01oYf6H8",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4,
+   "user_ratings_total": 2033,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": true,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "mahony-s-tavern-convention-centre",
+   "name": "Mahony's Tavern Convention Centre",
+   "formatted_address": "Burrard Landing, Vancouver Convention Centre West Building, 1055 Canada Pl #36, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.289178799999995,
+     "lng": -123.11469149999999
+    }
+   },
+   "formatted_phone_number": "(604) 647-7513",
+   "website": "https://www.mahonystavern.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": "23:00",
+      "label": "Late Night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.mahonystavern.com/",
+    "deals": [
+     {
+      "name": "Guinness",
+      "price": "$6",
+      "category": "drink",
+      "description": "Tuesdays & Wednesdays until 5pm"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/6092434005a96953762f56f2/t/60c28bfc73cac55ee790e767/1623362556525/Facebook+Share-01.png?format=1500w",
+    "credit_name": "Mahony's Tavern Convention Centre",
+    "credit_url": "https://www.mahonystavern.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJLc2CHABxhlQRrFHdrurOnZk",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.7,
+   "user_ratings_total": 743,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "onda-by-casereccio",
+   "name": "Onda by Casereccio",
+   "formatted_address": "1610 Salt St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2714241,
+     "lng": -123.10595629999999
+    }
+   },
+   "formatted_phone_number": "(604) 829-1610",
+   "website": "https://ondayvr.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": "22:00",
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://ondayvr.ca/",
+    "deals": [
+     {
+      "name": "Mix Olives",
+      "price": "$5.50",
+      "category": "food",
+      "description": "Olives seasoned with Italian herbs and extra virgin olive oil"
+     },
+     {
+      "name": "Grissini Crudo",
+      "price": "$8.50",
+      "category": "food",
+      "description": "Grissini breadsticks with prosciutto crudo"
+     },
+     {
+      "name": "1/2 Pizza Margherita",
+      "price": "$9",
+      "category": "food",
+      "description": "Tomato sauce, fior di latte, basil and extra virgin olive oil"
+     },
+     {
+      "name": "1/2 Pizza Diavola",
+      "price": "$11",
+      "category": "food",
+      "description": "Tomato sauce, fior di latte, spicy soppressata"
+     },
+     {
+      "name": "Maria's Meatballs (3)",
+      "price": "$14.95",
+      "category": "food",
+      "description": "Meatballs, tomato sauce, parmesan, bread"
+     },
+     {
+      "name": "Patate Vastase",
+      "price": "$8.95",
+      "category": "food",
+      "description": "Roasted potatoes, fior di latte, cherry tomato, tomato aioli"
+     },
+     {
+      "name": "Gnocchi Pesto Verde",
+      "price": "$19.95",
+      "category": "food",
+      "description": "Basil, pecorino cheese, nuts, EVO"
+     }
+    ]
+   },
+   "cover_image": null,
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJRRKQhWrnhVQRyKPUbR9HhBY",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 1,
+   "rating": 4.1,
+   "user_ratings_total": 722,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": false,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": false,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "harry-s-fish-chips",
+   "name": "Harry's Fish & Chips",
+   "formatted_address": "4949 Canoe Pass Wy #902, Tsawwassen, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.0418909,
+     "lng": -123.0852735
+    }
+   },
+   "formatted_phone_number": "(604) 382-4452",
+   "website": "https://harrysfishandchipsrestaurant.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.harrysfishandchipsrestaurant.com/happy-hour-menu",
+    "deals": [
+     {
+      "name": "Craft Beer 16oz",
+      "price": "$4",
+      "category": "drink",
+      "description": "Lager, Pale Ale, IPA"
+     },
+     {
+      "name": "Ciders 335ml",
+      "price": "$5",
+      "category": "drink",
+      "description": "Strongbow Apple Cider, Growers Peach Cider"
+     },
+     {
+      "name": "House White Wine",
+      "price": "$5-8",
+      "category": "drink",
+      "description": "6oz $5 or 9oz $8 - Naked Pinot Grigio or Sawmill Creek Sauvignon Blanc"
+     },
+     {
+      "name": "Onion Rings",
+      "price": "$6.00",
+      "category": "food",
+      "description": "Lightly battered and golden-fried"
+     },
+     {
+      "name": "Battered Mushrooms",
+      "price": "$6.00",
+      "category": "food",
+      "description": "Crispy, golden-fried with ranch dipping sauce"
+     },
+     {
+      "name": "Calamari",
+      "price": "$9.00",
+      "category": "food",
+      "description": "Tender calamari, lightly breaded and fried, served with garlic aioli"
+     },
+     {
+      "name": "Steak & Mushroom Pie",
+      "price": "$7.00",
+      "category": "food",
+      "description": "Baked 4-inch pie with beef and mushrooms in rich gravy"
+     },
+     {
+      "name": "Harry's Cod Burger Meal",
+      "price": "$13.00",
+      "category": "food",
+      "description": "Crispy cod fillet with coleslaw and tartar sauce on toasted brioche"
+     },
+     {
+      "name": "Coconut Butterfly Shrimp",
+      "price": "$15.00",
+      "category": "food",
+      "description": "10 piece shrimp in crispy coconut batter with cocktail sauce"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://assets.cdn.filesafe.space/84SNKDRFsTiSgVtuTft9/media/677c413a65cefa369eba4783.png",
+    "credit_name": "Harry's Fish & Chips",
+    "credit_url": "https://harrysfishandchipsrestaurant.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJU2rxVMVwhlQRUlFGdFu-ggg",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 679,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": true,
+    "serves_beer": true,
+    "serves_wine": true,
+    "live_music": true,
+    "good_for_groups": true
+   },
+   "data_source": "discovery",
+   "id": "baci-ristorante",
+   "name": "Baci Ristorante",
+   "formatted_address": "3728 E Hastings St, Burnaby, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2809719,
+     "lng": -123.0225186
+    }
+   },
+   "formatted_phone_number": "(604) 299-7047",
+   "website": "http://www.bacirestaurant.ca/",
+   "happy_hour": {
+    "days": [
+     2,
+     3,
+     4
+    ],
+    "start": "16:00",
+    "end": "18:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.bacirestaurant.ca/baci-menu",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "https://upload.wsecdn2.websitecdn.com/screenshot/site/site-zhxdaafd.websiteserver2.com?2026081822223220260901112125",
+    "credit_name": "Baci Ristorante",
+    "credit_url": "http://www.bacirestaurant.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-02"
+  },
+  {
+   "place_id": "ChIJGTUzSD5xhlQRr40HggcQgPs",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 600,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": true,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": false,
+    "serves_beer": false,
+    "serves_wine": false,
+    "live_music": false,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "eternal-abundance-organic-market-eatery",
+   "name": "Eternal Abundance Organic Market & Eatery",
+   "formatted_address": "1025 Commercial Dr, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2753793,
+     "lng": -123.06980519999999
+    }
+   },
+   "formatted_phone_number": "(604) 707-0088",
+   "website": "http://eternalabundance.ca/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "16:00",
+    "end": "18:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://eternalabundance.ca/happy-hour",
+    "deals": [
+     {
+      "name": "Dessert + hot drink pairing",
+      "price": "$1 off",
+      "category": "food",
+      "description": "Dessert and hot drink pairing of your choice"
+     }
+    ]
+   },
+   "cover_image": null,
+   "last_synced_at": "2026-09-02"
   },
   {
    "place_id": "ChIJ35CsmALDhVQRvFgPg_AOQC0",

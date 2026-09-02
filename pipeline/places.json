@@ -6460,5 +6460,90 @@
     "user_ratings_total": 3506,
     "business_status": "OPERATIONAL",
     "amenities": {}
+  },
+  "mahony-s-tavern-convention-centre": {
+    "place_id": "ChIJqUjxNINxhlQR4Lx01oYf6H8",
+    "rating": 4,
+    "user_ratings_total": 2033,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Mahony's Tavern Convention Centre",
+    "synced_at": "2026-09-02"
+  },
+  "onda-by-casereccio": {
+    "place_id": "ChIJLc2CHABxhlQRrFHdrurOnZk",
+    "rating": 4.7,
+    "user_ratings_total": 743,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Onda by Casereccio",
+    "synced_at": "2026-09-02"
+  },
+  "harry-s-fish-chips": {
+    "place_id": "ChIJRRKQhWrnhVQRyKPUbR9HhBY",
+    "rating": 4.1,
+    "user_ratings_total": 722,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Harry's Fish & Chips",
+    "synced_at": "2026-09-02"
+  },
+  "baci-ristorante": {
+    "place_id": "ChIJU2rxVMVwhlQRUlFGdFu-ggg",
+    "rating": 4.4,
+    "user_ratings_total": 679,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Baci Ristorante",
+    "synced_at": "2026-09-02"
+  },
+  "eternal-abundance-organic-market-eatery": {
+    "place_id": "ChIJGTUzSD5xhlQRr40HggcQgPs",
+    "rating": 4.4,
+    "user_ratings_total": 600,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": false,
+      "serves_beer": false,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Eternal Abundance Organic Market & Eatery",
+    "synced_at": "2026-09-02"
   }
 }
