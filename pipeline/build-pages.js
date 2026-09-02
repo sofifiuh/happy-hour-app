@@ -59,6 +59,7 @@ td{padding:5px 0}
 tr{border-bottom:1px solid #eee6d8}
 ul.deals{list-style:none;padding:0}
 ul.deals li{padding:7px 0;border-bottom:1px solid #eee6d8}
+.nodeals{color:#6b6b6b;background:#faf6ee;border:1px solid #eee6d8;border-radius:10px;padding:12px 14px;font-size:.92rem;line-height:1.5}
 .price{color:#b8860b;font-weight:700;margin-left:6px}
 .cta{display:inline-block;background:#1a1a1a;color:#fff;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:600;margin:10px 12px 10px 0}
 .note{font-size:.85rem;color:#777;margin-top:22px}
@@ -140,7 +141,8 @@ ${coverUrl(v) ? `<meta property="og:image" content="${esc(coverUrl(v))}">` : ""}
   ${hh.deals?.length ? `<h2>Deals</h2>
   <ul class="deals">
       ${dealRows(v)}
-  </ul>` : ""}
+  </ul>` : `<h2>Deals</h2>
+  <p class="nodeals">This spot runs a happy hour but doesn't publish its deal list online${v.website ? ` — <a href="${esc(v.website)}" rel="noopener">check their own menu</a>` : ""}. The times above are from their own site.</p>`}
 
   <a class="cta" href="../menu.html?id=${encodeURIComponent(v.id)}">Open in the app</a>
   ${v.website ? `<a class="cta" style="background:#b8860b" href="${esc(v.website)}" rel="noopener">Venue website</a>` : ""}
