@@ -91,15 +91,18 @@ let userLocHalo = null;
 // and the distance shown on each card. Null until geolocation resolves.
 let userPos = null;
 let mapToastTimer = null;
-// Whether the map has had its one automatic fit-to-all-pins.
+// Whether the map has had its one automatic initial framing.
 let mapFitted = false;
+// Whether that framing has already been anchored on the visitor's real
+// location — geolocation often resolves after the map's first paint, so this
+// lets renderMap recenter exactly once when userPos actually arrives.
+let mapCenteredOnUser = false;
 
 const els = {
   venueList: document.getElementById("venueList"),
   listView: document.getElementById("listView"),
   mapView: document.getElementById("mapView"),
   mapEmpty: document.getElementById("mapEmpty"),
-  mapBackToListBtn: document.getElementById("mapBackToListBtn"),
   mapLocateBtn: document.getElementById("mapLocateBtn"),
   mapToast: document.getElementById("mapToast"),
   modal: document.getElementById("venueModal"),
@@ -115,8 +118,11 @@ const els = {
   dealsList: document.getElementById("dealsList"),
   deleteBtn: document.getElementById("deleteVenueBtn"),
   searchInput: document.getElementById("searchInput"),
+  mapSearchInput: document.getElementById("mapSearchInput"),
   filterBtn: document.getElementById("filterBtn"),
   filterCount: document.getElementById("filterCount"),
+  mapFilterBtn: document.getElementById("mapFilterBtn"),
+  mapFilterCount: document.getElementById("mapFilterCount"),
   filterModal: document.getElementById("filterModal"),
   mapCardCarousel: document.getElementById("mapCardCarousel"),
 };
@@ -326,16 +332,6 @@ function applyFilters(occurrences) {
   return filtered;
 }
 
-// Groups cards by the hour their happy hour starts (per the "Weekly View"
-// reference: https://figma.com/design/.../?node-id=1708-35683) — e.g. a
-// 2:00pm and a 2:30pm start both land in the "Starts at 2pm" bucket, while
-// the exact range still shows on each card's own pill.
-function startHourBucket(venue) {
-  const [h] = getStart(venue).split(":").map(Number);
-  const label = new Date(`1970-01-01T${pad(h)}:00`).toLocaleTimeString([], { hour: "numeric" });
-  return { key: h, label: `Starts at ${label.replace(" ", "").toLowerCase()}` };
-}
-
 // Straight-line km from the visitor to a venue. Null when either side's
 // coordinates are unknown; callers sort those last.
 function distanceKm(venue) {
@@ -354,7 +350,7 @@ function formatDistance(km) {
 }
 
 // Ask once on load. Already-granted visitors resolve silently; a denial just
-// leaves the list in its start-time order.
+// leaves each group in its default order.
 function initUserLocation() {
   if (!navigator.geolocation) return;
   navigator.geolocation.getCurrentPosition(
@@ -398,80 +394,66 @@ function renderList(occurrences, now) {
     return;
   }
 
-  // What is on RIGHT NOW leads, nearest first; everything else keeps its
-  // start-time buckets (useful for planning) with the closest spot first
-  // inside each. Without a known position the order falls back to start time.
-  const live = filtered.filter((i) => i.occ.status === "live");
-  const rest = filtered.filter((i) => i.occ.status !== "live");
-
-  const groups = new Map();
-  if (live.length) {
-    groups.set(-1, {
-      label: userPos ? "Happening now · closest first" : "Happening now",
-      items: live,
-    });
-  }
-  for (const item of rest) {
-    const bucket = startHourBucket(item.venue);
-    if (!groups.has(bucket.key)) groups.set(bucket.key, { label: bucket.label, items: [] });
-    groups.get(bucket.key).items.push(item);
-  }
+  // What is on RIGHT NOW leads; within each group, closest first when we know
+  // where the visitor is, otherwise soonest first. Groups mirror the mockup's
+  // "Happening now" / "Upcoming" headings rather than start-hour buckets.
+  const statusGroups = [
+    { key: "live", label: userPos ? "Happening now · closest first" : "Happening now" },
+    { key: "upcoming", label: "Upcoming" },
+    { key: "none", label: "No upcoming date" },
+  ];
+  const buckets = { live: [], upcoming: [], none: [] };
+  for (const item of filtered) buckets[item.occ.status].push(item);
   if (userPos) {
-    for (const g of groups.values()) {
-      // Decorate-sort-undecorate: distanceKm is constant per render, and the
-      // comparator would otherwise recompute it on every comparison.
-      const keyed = g.items.map((item) => ({ item, km: distanceKm(item.venue) }));
+    // Decorate-sort-undecorate: distanceKm is constant per render, and the
+    // comparator would otherwise recompute it on every comparison.
+    for (const key of ["live", "upcoming"]) {
+      const keyed = buckets[key].map((item) => ({ item, km: distanceKm(item.venue) }));
       keyed.sort((a, b) => (a.km ?? Infinity) - (b.km ?? Infinity));
-      g.items = keyed.map((k) => k.item);
+      buckets[key] = keyed.map((k) => k.item);
     }
   }
 
-  for (const key of [...groups.keys()].sort((a, b) => a - b)) {
-    const { label, items } = groups.get(key);
+  for (const { key, label } of statusGroups) {
+    const items = buckets[key];
+    if (items.length === 0) continue;
 
     const group = document.createElement("div");
-    group.className = "time-group";
+    group.className = "status-group";
 
     const heading = document.createElement("p");
-    heading.className = "time-group-label";
+    heading.className = "status-group-label";
     heading.textContent = label;
     group.appendChild(heading);
 
-    const row = document.createElement("div");
-    row.className = "time-group-row";
+    const rows = document.createElement("div");
+    rows.className = "status-group-rows";
     for (const { venue, occ } of items) {
-      row.appendChild(renderWeeklyCard(venue, occ, now));
+      rows.appendChild(renderListRow(venue, occ, now));
     }
-    group.appendChild(row);
+    group.appendChild(rows);
 
     els.venueList.appendChild(group);
   }
 }
 
-function renderWeeklyCard(venue, occ, now) {
-  const card = document.createElement("div");
-  card.className = "weekly-card";
-  card.addEventListener("click", () => {
+function renderListRow(venue, occ, now) {
+  const row = document.createElement("div");
+  row.className = "list-row";
+  row.addEventListener("click", () => {
     window.location.href = `menu.html?id=${encodeURIComponent(venue.id)}`;
   });
 
   const photo = document.createElement("div");
-  photo.className = "weekly-card-photo";
+  photo.className = "list-row-photo";
   if (venue.cover_image?.url) {
     photo.style.backgroundImage = `url("${venue.cover_image.url}")`;
   } else {
-    photo.classList.add("placeholder");
     photo.textContent = "🍸";
   }
-
-  const pill = document.createElement("span");
-  pill.className = `weekly-card-pill ${occ.status === "live" ? "live" : ""}`;
-  pill.textContent = `${formatShortTime(getStart(venue))}–${formatShortTime(getEnd(venue))}`;
-  photo.appendChild(pill);
-
   const editBtn = document.createElement("button");
   editBtn.type = "button";
-  editBtn.className = "weekly-card-edit";
+  editBtn.className = "list-row-edit";
   editBtn.setAttribute("aria-label", "Edit spot");
   editBtn.textContent = "✎";
   editBtn.addEventListener("click", (e) => {
@@ -479,29 +461,51 @@ function renderWeeklyCard(venue, occ, now) {
     openModal(venue);
   });
   photo.appendChild(editBtn);
+  row.appendChild(photo);
 
-  card.appendChild(photo);
+  const main = document.createElement("div");
+  main.className = "list-row-main";
+  row.appendChild(main);
+
+  const top = document.createElement("div");
+  top.className = "list-row-top";
+  main.appendChild(top);
 
   const name = document.createElement("p");
-  name.className = "weekly-card-name";
+  name.className = "list-row-name";
   name.textContent = venue.name;
-  card.appendChild(name);
+  top.appendChild(name);
 
-  const meta = document.createElement("p");
-  meta.className = "weekly-card-meta";
+  const time = document.createElement("span");
+  time.className = "list-row-time";
+  const dot = document.createElement("span");
+  dot.className = `list-row-dot ${occ.status === "upcoming" ? "upcoming" : ""}`;
+  time.appendChild(dot);
+  time.appendChild(document.createTextNode(occurrenceTimeLabel(occ)));
+  top.appendChild(time);
+
+  const address = document.createElement("p");
+  address.className = "list-row-address";
   const km = distanceKm(venue);
-  meta.textContent = km === null ? shortAddress(venue) : `${formatDistance(km)} · ${shortAddress(venue)}`;
-  card.appendChild(meta);
+  address.textContent = km === null ? shortAddress(venue) : `${formatDistance(km)} · ${shortAddress(venue)}`;
+  main.appendChild(address);
 
-  return card;
+  return row;
 }
 
-function formatShortTime(hhmm) {
-  const [h, m] = hhmm.split(":").map(Number);
-  const period = h >= 12 ? "pm" : "am";
-  const hour12 = h % 12 === 0 ? 12 : h % 12;
-  const time = m === 0 ? `${hour12}` : `${hour12}:${pad(m)}`;
+function formatShortTimeDate(date) {
+  const period = date.getHours() >= 12 ? "pm" : "am";
+  const hour12 = date.getHours() % 12 === 0 ? 12 : date.getHours() % 12;
+  const time = date.getMinutes() === 0 ? `${hour12}` : `${hour12}:${pad(date.getMinutes())}`;
   return `${time}${period}`;
+}
+
+// A venue can advertise more than one window (e.g. a lunch special plus a
+// late-night one) — occ.start/occ.end already point at whichever window is
+// live or coming up next, so this shows that window, not always the first.
+function occurrenceTimeLabel(occ) {
+  if (occ.status === "none") return "";
+  return `${formatShortTimeDate(occ.start)}–${formatShortTimeDate(occ.end)}`;
 }
 
 // ---------- Map view ----------
@@ -512,6 +516,20 @@ function formatShortTime(hhmm) {
 // Light style: the dark tiles buried the pins and read poorly against the
 // app's white/amber design.
 const MAPBOX_STYLE = "light-v11";
+
+// ~20 minutes at an average walking pace (~4.8km/h) — the "20-minute
+// neighbourhood" radius used in walkability/urban-planning practice for
+// "what's reasonably reachable on foot".
+const WALK_RADIUS_KM = 1.6;
+
+// A square bounding box radiusKm around a point — good enough at this scale
+// (a rough spherical-Earth approximation), and simpler/cheaper than a real
+// geodesic buffer for framing a map view.
+function boundsAround(lat, lng, radiusKm) {
+  const dLat = radiusKm / 111;
+  const dLng = radiusKm / (111 * Math.cos((lat * Math.PI) / 180));
+  return L.latLngBounds([lat - dLat, lng - dLng], [lat + dLat, lng + dLng]);
+}
 
 function ensureMap() {
   if (map) return map;
@@ -679,9 +697,15 @@ function renderMap(occurrences) {
   mapMarkers = new Map();
   els.mapCardCarousel.innerHTML = "";
 
-  const located = applyFilters(occurrences).filter(
+  let located = applyFilters(occurrences).filter(
     (o) => typeof getLat(o.venue) === "number" && typeof getLng(o.venue) === "number"
   );
+
+  // Closest first, once we know where the visitor is — matches the list
+  // view's "closest first" ordering so pins/cards and rows agree.
+  if (userPos) {
+    located = [...located].sort((a, b) => distanceKm(a.venue) - distanceKm(b.venue));
+  }
 
   for (const { venue, occ } of located) {
     const color = markerColor(occ.status);
@@ -736,23 +760,32 @@ function renderMap(occurrences) {
   // Fitting bounds first left it centered on stale, mostly-blank tiles.
   setTimeout(() => {
     m.invalidateSize();
-    // Fit only the first time the map is opened. Every later render — a
-    // filter switch, a search, a data refresh — must leave the camera where
-    // the user put it; re-fitting was yanking them back out to the whole city
-    // when they only meant to change which pins show.
-    if (!mapFitted && located.length > 0) {
+    // The map is full-viewport but the top filter chrome and the bottom card
+    // carousel float over it — pad every fit so no pin lands hidden underneath
+    // either.
+    const filters = document.querySelector(".map-filters");
+    const topPad = filters ? filters.getBoundingClientRect().bottom + 16 : 130;
+    const fitOpts = {
+      paddingTopLeft: [30, topPad],
+      paddingBottomRight: [30, carouselHeight + 24],
+      maxZoom: 16,
+    };
+
+    // Land close, not on a whole-city view: frame a ~20-minute walk radius
+    // (the standard "20-minute neighbourhood" distance, ~1.6km at an average
+    // walking pace) around the visitor, not a fitBounds of every pin — with
+    // venues now spread across all of Metro Vancouver, fitting everything
+    // zoomed out past the point of being useful for "what's near me".
+    // Anchor on the real location once known; fall back to the map's default
+    // center until geolocation resolves, then recenter exactly once.
+    if (!mapFitted) {
       mapFitted = true;
-      const bounds = L.latLngBounds(located.map((o) => [getLat(o.venue), getLng(o.venue)]));
-      // The map is full-viewport but the top filter chrome and the bottom
-      // card carousel float over it — pad the fit so no pin lands hidden
-      // underneath either.
-      const filters = document.querySelector(".map-filters");
-      const topPad = filters ? filters.getBoundingClientRect().bottom + 16 : 130;
-      m.fitBounds(bounds, {
-        paddingTopLeft: [30, topPad],
-        paddingBottomRight: [30, carouselHeight + 24],
-        maxZoom: 15,
-      });
+      const anchor = userPos || { lat: 49.2698, lng: -123.1207 };
+      m.fitBounds(boundsAround(anchor.lat, anchor.lng, WALK_RADIUS_KM), fitOpts);
+      if (userPos) mapCenteredOnUser = true;
+    } else if (userPos && !mapCenteredOnUser) {
+      mapCenteredOnUser = true;
+      m.fitBounds(boundsAround(userPos.lat, userPos.lng, WALK_RADIUS_KM), fitOpts);
     }
   }, 0);
 }
@@ -808,8 +841,7 @@ function buildMapCard(venue, occ) {
   meta.appendChild(status);
   const time = document.createElement("span");
   time.className = "map-detail-time";
-  time.textContent =
-    occ.status === "none" ? "" : `${formatShortTime(getStart(venue))}–${formatShortTime(getEnd(venue))}`;
+  time.textContent = occurrenceTimeLabel(occ);
   meta.appendChild(time);
   if (venue.rating) {
     const rating = document.createElement("span");
@@ -1128,21 +1160,28 @@ document.querySelectorAll(".view-tab").forEach((btn) => {
   btn.addEventListener("click", () => setView(btn.dataset.view));
 });
 
-els.mapBackToListBtn.addEventListener("click", () => setView("list"));
-
 // ---------- Search + filters ----------
+// The map view has its own copy of the search field and filter button
+// (its header is separate DOM from the list's, hidden in the other view) —
+// both stay in sync since they share the same searchQuery/amenity state.
 
-els.searchInput.addEventListener("input", () => {
-  searchQuery = els.searchInput.value;
-  render();
-  renderMapView();
+[els.searchInput, els.mapSearchInput].forEach((input) => {
+  input.addEventListener("input", () => {
+    searchQuery = input.value;
+    const other = input === els.searchInput ? els.mapSearchInput : els.searchInput;
+    other.value = searchQuery;
+    render();
+    renderMapView();
+  });
 });
 
 function updateFilterButton() {
   const count = activeAmenityFilters.size;
-  els.filterBtn.classList.toggle("has-active", count > 0);
-  els.filterCount.classList.toggle("hidden", count === 0);
-  els.filterCount.textContent = String(count);
+  [els.filterBtn, els.mapFilterBtn].forEach((btn) => btn.classList.toggle("has-active", count > 0));
+  [els.filterCount, els.mapFilterCount].forEach((el) => {
+    el.classList.toggle("hidden", count === 0);
+    el.textContent = String(count);
+  });
 }
 
 function renderFilterToggles() {
@@ -1151,9 +1190,11 @@ function renderFilterToggles() {
   });
 }
 
-els.filterBtn.addEventListener("click", () => {
-  renderFilterToggles();
-  els.filterModal.classList.remove("hidden");
+[els.filterBtn, els.mapFilterBtn].forEach((btn) => {
+  btn.addEventListener("click", () => {
+    renderFilterToggles();
+    els.filterModal.classList.remove("hidden");
+  });
 });
 
 document.getElementById("closeFilterModalBtn").addEventListener("click", () => {

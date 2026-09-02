@@ -8,7 +8,10 @@
 <meta http-equiv="Expires" content="0" />
 <title>Happy Hour</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<link rel="stylesheet" href="styles.css?v=23" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=24" />
 </head>
 <body>
   <div class="app">
@@ -37,14 +40,9 @@
         </button>
       </div>
 
-      <div class="view-tabs">
-        <button class="view-tab active" data-view="list">☰ List</button>
-        <button class="view-tab" data-view="map">📍 Map</button>
-      </div>
-
       <div class="filters">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="active">Happening Now</button>
+        <button class="filter-btn" data-filter="active">Happening now</button>
         <button class="filter-btn" data-filter="upcoming">Upcoming</button>
       </div>
 
@@ -53,11 +51,22 @@
       </div>
 
       <div id="mapView" class="map-view hidden">
-        <button id="mapBackToListBtn" class="map-back-pill">☰ List</button>
-        <div class="filters map-filters">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="active">Happening Now</button>
-          <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+        <div class="map-header">
+          <div class="search-row">
+            <div class="search-field">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="mapSearchInput" placeholder="Search for restaurants…" autocomplete="off" />
+            </div>
+            <button id="mapFilterBtn" class="filter-toggle-btn" aria-label="Filters">
+              <span class="filter-toggle-icon">⚙</span>
+              <span id="mapFilterCount" class="filter-count hidden">0</span>
+            </button>
+          </div>
+          <div class="filters map-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Happening now</button>
+            <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+          </div>
         </div>
         <div class="map-frame">
           <div id="map"></div>
@@ -77,6 +86,11 @@
         <div id="mapCardCarousel" class="map-card-carousel"></div>
       </div>
     </section>
+  </div>
+
+  <div class="bottom-nav">
+    <button class="view-tab active" data-view="list">☰ List</button>
+    <button class="view-tab" data-view="map">📍 Map</button>
   </div>
 
   <div id="venueModal" class="modal hidden">
@@ -187,6 +201,6 @@
     <a href="spots/index.html">Browse all spots A–Z</a>
   </footer>
 
-  <script src="app.js?v=36"></script>
+  <script src="app.js?v=40"></script>
 </body>
 </html>
