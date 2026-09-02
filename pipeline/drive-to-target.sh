@@ -11,6 +11,7 @@ set -u
 cd "$(dirname "$0")/.."
 TARGET=${1:?target total required}
 BUDGET=${2:-35}
+CAP=${3:-950}   # per-SKU Places ceiling for the month; free tier is 1000
 LOG=/tmp/drive.log
 
 count() { node -e "console.log(require('./venues.json').venues.length)"; }
@@ -37,7 +38,12 @@ while :; do
   p=$(pool)
   if [ "$p" -lt 20 ]; then
     echo "round $((round+1)): cache down to $p candidates — paying for a fresh sweep"
-    node pipeline/places-discover.js --max 3000 --text-pages 1 >>"$LOG" 2>&1
+    # Targeted, not a full re-sweep. The original 110 circles and the ten
+    # original query terms are already in places-raw.json; re-running them
+    # spends the month's quota re-finding what --from-raw reads for free.
+    node pipeline/places-discover.js --max 3000 --text-pages 1 --only-gaps \
+      --text-queries "italian restaurant,seafood restaurant,steakhouse" \
+      --monthly-cap "$CAP" >>"$LOG" 2>&1
     p=$(pool)
     if [ "$p" -lt 20 ]; then
       echo "SUPPLY EXHAUSTED: $p candidates left, stopping at $cur venues"; break
