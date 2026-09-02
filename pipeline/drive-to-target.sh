@@ -52,7 +52,10 @@ while :; do
 
   round=$((round+1))
   echo "=== round $round | $cur venues, need $need more, pool $p ==="
-  node pipeline/daily.js --target "$need" --budget "$BUDGET" --use-pool >>"$LOG" 2>&1
+  # Small batches on purpose. Writeback runs per batch, so the batch size is
+  # how much work a container restart can cost — and this one has restarted
+  # three times mid-round. 25 keeps a batch under the observed uptime.
+  node pipeline/daily.js --target "$need" --budget "$BUDGET" --use-pool --batch 25 >>"$LOG" 2>&1
   after=$(count)
   echo "=== round $round done | $cur -> $after venues ==="
 
