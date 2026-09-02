@@ -1,5 +1,9 @@
 const STORAGE_KEY = "happyHourVenues";
 const SEED_VERSION_KEY = "happyHourSeedVersion";
+// One-shot snapshot of scroll/view/filter/map-camera state, written right
+// before a card navigates to menu.html and consumed by restoreNavState() on
+// the next load — so coming back lands where you left off, not at the top.
+const NAV_STATE_KEY = "happyHourNavState";
 // Hand-bumped base; venues.json carries a content-derived data_version that
 // is appended at load time, so every pipeline re-sync reseeds cached clients.
 const SEED_VERSION_BASE = "2026-vancouver-json-v1";
@@ -97,6 +101,9 @@ let mapFitted = false;
 // location — geolocation often resolves after the map's first paint, so this
 // lets renderMap recenter exactly once when userPos actually arrives.
 let mapCenteredOnUser = false;
+// Set by restoreNavState() when coming back from menu.html on the map view;
+// renderMap's setTimeout consumes it in place of the usual auto-framing.
+let pendingMapRestore = null;
 
 const els = {
   venueList: document.getElementById("venueList"),
@@ -441,6 +448,7 @@ function renderListRow(venue, occ, now) {
   const row = document.createElement("div");
   row.className = "list-row";
   row.addEventListener("click", () => {
+    saveNavState(venue.id);
     window.location.href = `menu.html?id=${encodeURIComponent(venue.id)}`;
   });
 
@@ -771,6 +779,18 @@ function renderMap(occurrences) {
       maxZoom: 16,
     };
 
+    // Coming back from a venue's menu page: restore the exact camera (and
+    // re-highlight/scroll to the card they came from) instead of re-framing.
+    if (pendingMapRestore) {
+      const { center, zoom, venueId } = pendingMapRestore;
+      pendingMapRestore = null;
+      mapFitted = true;
+      mapCenteredOnUser = true;
+      m.setView(center, zoom, { animate: false });
+      if (venueId) selectVenue(venueId, { scrollCarousel: true });
+      return;
+    }
+
     // Land close, not on a whole-city view: frame a ~20-minute walk radius
     // (the standard "20-minute neighbourhood" distance, ~1.6km at an average
     // walking pace) around the visitor, not a fitBounds of every pin — with
@@ -813,6 +833,7 @@ function buildMapCard(venue, occ) {
   card.className = "map-detail-card";
   card.dataset.venueId = venue.id;
   card.addEventListener("click", () => {
+    saveNavState(venue.id);
     window.location.href = `menu.html?id=${encodeURIComponent(venue.id)}`;
   });
 
@@ -906,7 +927,10 @@ function buildMapCard(venue, occ) {
   arrow.href = menuUrl;
   arrow.setAttribute("aria-label", "View menu");
   arrow.textContent = "→";
-  arrow.addEventListener("click", (e) => e.stopPropagation());
+  arrow.addEventListener("click", (e) => {
+    e.stopPropagation();
+    saveNavState(venue.id);
+  });
   card.appendChild(arrow);
 
   // Swipe up to open the venue. The card follows the finger and commits past
@@ -939,6 +963,7 @@ function buildMapCard(venue, occ) {
     if (dy < -80) {
       card.style.transform = "translateY(-130%)";
       card.style.opacity = "0";
+      saveNavState(venue.id);
       setTimeout(() => { window.location.href = menuUrl; }, 150);
     } else {
       card.style.transform = "";
@@ -1163,6 +1188,68 @@ function setView(view) {
   renderMapView();
 }
 
+// Snapshot enough state to return to the same spot after a card navigates to
+// menu.html: which view, how far scrolled (or the map's camera), which
+// filters/search were active, and which venue was open — so coming back
+// lands where you left off instead of resetting to the top of "All".
+function saveNavState(venueId) {
+  try {
+    sessionStorage.setItem(
+      NAV_STATE_KEY,
+      JSON.stringify({
+        view: currentView,
+        scrollY: window.scrollY,
+        filter: currentFilter,
+        search: searchQuery,
+        activeAmenityFilters: [...activeAmenityFilters],
+        mapCenter: map ? [map.getCenter().lat, map.getCenter().lng] : null,
+        mapZoom: map ? map.getZoom() : null,
+        activeVenueId: venueId,
+      })
+    );
+  } catch {
+    // sessionStorage unavailable/blocked — back navigation just lands at top
+  }
+}
+
+// One-shot: consumes and clears the snapshot on load, if one exists (i.e.
+// this load is a "back" from a venue's menu page, not a fresh visit).
+function restoreNavState() {
+  let saved = null;
+  try {
+    saved = JSON.parse(sessionStorage.getItem(NAV_STATE_KEY) || "null");
+    sessionStorage.removeItem(NAV_STATE_KEY);
+  } catch {
+    // ignore — just skip restoring
+  }
+  if (!saved) return;
+
+  if (saved.filter) {
+    currentFilter = saved.filter;
+    document.querySelectorAll(".filter-btn").forEach((b) => b.classList.toggle("active", b.dataset.filter === currentFilter));
+  }
+  if (typeof saved.search === "string") {
+    searchQuery = saved.search;
+    [els.searchInput, els.mapSearchInput].forEach((input) => { input.value = searchQuery; });
+  }
+  if (Array.isArray(saved.activeAmenityFilters) && saved.activeAmenityFilters.length) {
+    activeAmenityFilters = new Set(saved.activeAmenityFilters);
+    renderFilterToggles();
+    updateFilterButton();
+  }
+
+  if (saved.view === "map") {
+    if (saved.mapCenter) {
+      pendingMapRestore = { center: saved.mapCenter, zoom: saved.mapZoom, venueId: saved.activeVenueId };
+    }
+    setView("map");
+  } else {
+    render();
+    renderMapView();
+    requestAnimationFrame(() => window.scrollTo(0, saved.scrollY || 0));
+  }
+}
+
 document.querySelectorAll(".view-tab").forEach((btn) => {
   btn.addEventListener("click", () => setView(btn.dataset.view));
 });
@@ -1252,3 +1339,7 @@ function updateHeroHeight() {
 }
 updateHeroHeight();
 window.addEventListener("resize", updateHeroHeight);
+
+// After --hero-height (and thus real page layout) is settled, restore any
+// saved scroll/view/map-camera state from a "back" navigation.
+restoreNavState();
