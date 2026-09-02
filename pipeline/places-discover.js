@@ -58,30 +58,53 @@ const CIRCLES = [
   [49.2640, -123.1860, 450], [49.2340, -123.1550, 450], // Point Grey W10th, Kerrisdale
 
   // --- Metro Vancouver. Vancouver proper is close to swept, so daily
-  // discovery needs the rest of the metro to have anything new to find.
-  // Radii are wider here: suburban dining is sparser, so the 20-result cap
-  // bites less often.
+  // discovery needs the rest of the metro. Radii here match the DOWNTOWN
+  // density (300-500m), not the wide 700-900m circles used at first:
+  // Nearby Search caps at 20 results, so a wide circle over a busy suburban
+  // strip returns 20 places and hides everything else behind them.
+
+  // UBC / University Endowment Lands
+  [49.2680, -123.2550, 400], [49.2665, -123.2470, 400], // campus, University Village
+  [49.2495, -123.2340, 400],                            // Wesbrook Village
+  // SFU Burnaby Mountain
+  [49.2790, -122.9170, 400], [49.2805, -122.9200, 350], // UniverCity, campus core
   // Burnaby
-  [49.2280, -122.9990, 700], [49.2490, -122.8960, 700], // Metrotown, Lougheed
-  [49.2660, -122.9720, 700], [49.2790, -122.9210, 700], // Brentwood, Burnaby Heights E
-  [49.2540, -122.9420, 700],                            // Highgate / Edmonds
+  [49.2270, -122.9990, 400], [49.2280, -122.9950, 350], // Metrotown, Crystal Mall
+  [49.2665, -122.9990, 400], [49.2810, -123.0150, 400], // Brentwood, Burnaby Heights
+  [49.2490, -122.8960, 400], [49.2130, -122.9560, 400], // Lougheed, Edmonds
+  [49.2200, -122.9640, 350], [49.2320, -123.0170, 400], // Highgate, Kingsway/Boundary
+  [49.2450, -122.9970, 400], [49.2000, -122.9500, 450], // Willingdon, Big Bend
   // Richmond
-  [49.1670, -123.1370, 800], [49.1830, -123.1360, 700], // City centre, Bridgeport
-  [49.1440, -123.1300, 800], [49.1250, -123.1810, 700], // Steveston Hwy, Steveston village
+  [49.1670, -123.1370, 400], [49.1720, -123.1360, 350], // Richmond Centre, Lansdowne
+  [49.1840, -123.1360, 400], [49.1720, -123.1310, 350], // Aberdeen, Alexandra Rd
+  [49.1940, -123.1350, 400], [49.1690, -123.1400, 350], // Bridgeport, Ackroyd
+  [49.1250, -123.1810, 400], [49.1380, -123.1200, 450], // Steveston, Ironwood
   // North & West Vancouver
-  [49.3160, -123.0690, 600], [49.3290, -123.1470, 700], // Lonsdale Quay N, Edgemont/Dundarave
-  [49.3370, -123.1660, 700], [49.3020, -123.1120, 600], // Ambleside, Park Royal side
-  // New Westminster
-  [49.2010, -122.9120, 700], [49.2260, -122.8880, 600], // Columbia St, Sapperton
-  // Coquitlam / Port Moody
-  [49.2790, -122.7930, 800], [49.2820, -122.8480, 700], // Coquitlam centre, Port Moody Brewers Row
-  [49.2620, -122.8760, 700],                            // Austin Heights
-  // Surrey / White Rock / Langley
-  [49.1890, -122.8480, 900], [49.1040, -122.8250, 900], // Surrey Central, Newton
-  [49.0250, -122.8030, 800], [49.1040, -122.6600, 900], // White Rock beach, Langley
-  [49.1740, -122.6900, 900],                            // Surrey Fleetwood/Cloverdale
-  // Delta / Tsawwassen
-  [49.0840, -123.0580, 900], [49.0110, -123.0810, 800],
+  [49.3100, -123.0830, 400], [49.3230, -123.0720, 400], // Lonsdale Quay, Central Lonsdale
+  [49.3350, -123.0720, 400], [49.3390, -123.0630, 400], // Upper Lonsdale, Edgemont
+  [49.3290, -122.9490, 400], [49.3330, -123.0400, 400], // Deep Cove, Lynn Valley
+  [49.3260, -123.1400, 400], [49.3270, -123.1600, 400], // Park Royal, Ambleside
+  [49.3280, -123.1780, 350],                            // Dundarave
+  // Coquitlam / Port Coquitlam
+  [49.2790, -122.7930, 450], [49.2620, -122.8760, 400], // Coquitlam Centre, Austin Heights
+  [49.2600, -122.8900, 400], [49.2620, -122.7810, 400], // Burquitlam, PoCo downtown
+  [49.2450, -122.8600, 400],                            // Maillardville
+  // Port Moody
+  [49.2830, -122.8480, 400], [49.2790, -122.8330, 400], // Brewers Row, Newport Village
+  [49.2830, -122.8560, 350],                            // Moody Centre
+  // Anmore
+  [49.3160, -122.8560, 600],                            // village (small - wide radius)
+  // Surrey
+  [49.1890, -122.8480, 450], [49.1830, -122.8450, 400], // Surrey Central, Whalley
+  [49.1880, -122.8020, 450], [49.1040, -122.8250, 450], // Guildford, Newton
+  [49.1740, -122.7900, 450], [49.1060, -122.7250, 450], // Fleetwood, Cloverdale
+  [49.0450, -122.7950, 450], [49.0400, -122.7800, 450], // Morgan Crossing, Grandview
+  // White Rock
+  [49.0230, -122.8030, 400], [49.0230, -122.7860, 400], // West Beach, East Beach
+  [49.0290, -122.8020, 350],                            // Johnston Rd uptown
+  // New Westminster / Langley / Delta (kept from the first metro pass)
+  [49.2010, -122.9120, 450], [49.2260, -122.8880, 400],
+  [49.1040, -122.6600, 500], [49.0840, -123.0580, 600], [49.0110, -123.0810, 600],
 ];
 
 const INCLUDED_TYPES = ["bar", "pub", "wine_bar", "night_club", "restaurant"];
