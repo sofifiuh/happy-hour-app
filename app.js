@@ -1139,6 +1139,13 @@ els.form.addEventListener("submit", (e) => {
 // everywhere.
 document.querySelectorAll(".filter-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
+    // "Date & Time" isn't a status filter — it opens the same amenity/time
+    // filter modal as the gear icon rather than switching currentFilter.
+    if (btn.dataset.filter === "datetime") {
+      renderFilterToggles();
+      els.filterModal.classList.remove("hidden");
+      return;
+    }
     currentFilter = btn.dataset.filter;
     document.querySelectorAll(".filter-btn").forEach((b) => b.classList.toggle("active", b.dataset.filter === currentFilter));
     render();
