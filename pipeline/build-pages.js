@@ -64,17 +64,44 @@ ul.deals li{padding:7px 0;border-bottom:1px solid #eee6d8}
 .note{font-size:.85rem;color:#777;margin-top:22px}
 footer{font-size:.75rem;color:#999;margin-top:30px;border-top:1px solid #eee6d8;padding-top:12px}`;
 
+// The dataset spans Metro Vancouver, so a page's city has to come from the
+// venue's own record — not a hardcoded "Vancouver". Seed venues carry
+// address_components.locality; discovered ones end formatted_address with
+// "City, BC". Anchor on the province either way: unit numbers, floors and
+// building names are their own comma parts and would otherwise be read as
+// the city (or, for the street, silently truncate it).
+function addressParts(v) {
+  const parts = (v.formatted_address || "").split(",").map((x) => x.trim()).filter(Boolean);
+  if (parts.length && /^canada$/i.test(parts[parts.length - 1])) parts.pop();
+  const provIdx = parts.findIndex((x) => /^(BC|British Columbia)\b/i.test(x));
+  const cityIdx = provIdx > 0 ? provIdx - 1 : parts.length - 1;
+  return { parts, cityIdx };
+}
+
+function cityOf(v) {
+  if (v.address_components?.locality) return v.address_components.locality;
+  const { parts, cityIdx } = addressParts(v);
+  const picked = parts[cityIdx] || "";
+  return !picked || /^(BC|British Columbia)\b/i.test(picked) ? "Vancouver" : picked;
+}
+
+function streetOf(v) {
+  const { parts, cityIdx } = addressParts(v);
+  return parts.slice(0, Math.max(cityIdx, 1)).join(", ");
+}
+
 function venuePage(v) {
   const hh = v.happy_hour;
   const daysText = hh.days.length === 7 ? "daily" : hh.days.map((d) => DAY_NAMES[d]).join(", ");
-  const title = `${v.name} Happy Hour — Times & Deals | Vancouver`;
+  const city = cityOf(v);
+  const title = `${v.name} Happy Hour — Times & Deals | ${city}`;
   const desc = `${v.name} happy hour: ${fmtTime(hh.start)}–${fmtTime(hh.end)} ${daysText}${hh.deals?.length ? `, ${hh.deals.length} deals` : ""}. ${v.formatted_address}.`;
   const url = `${BASE}spots/${v.id}.html`;
   const jsonld = {
     "@context": "https://schema.org",
     "@type": "BarOrPub",
     name: v.name,
-    address: { "@type": "PostalAddress", streetAddress: (v.formatted_address || "").split(",")[0], addressLocality: "Vancouver", addressRegion: "BC", addressCountry: "CA" },
+    address: { "@type": "PostalAddress", streetAddress: streetOf(v), addressLocality: city, addressRegion: "BC", addressCountry: "CA" },
     ...(v.geometry?.location ? { geo: { "@type": "GeoCoordinates", latitude: v.geometry.location.lat, longitude: v.geometry.location.lng } } : {}),
     ...(v.website ? { url: v.website } : {}),
     ...(v.formatted_phone_number ? { telephone: v.formatted_phone_number } : {}),
@@ -98,7 +125,7 @@ ${coverUrl(v) ? `<meta property="og:image" content="${esc(coverUrl(v))}">` : ""}
 </head>
 <body>
 <main>
-  <p class="meta"><a href="index.html">← All Vancouver happy hour spots</a></p>
+  <p class="meta"><a href="index.html">← All Metro Vancouver happy hour spots</a></p>
   <h1>${esc(v.name)}</h1>
   ${v.rating ? `<p class="meta"><span class="rating">★ ${v.rating}</span>${v.user_ratings_total ? ` (${Number(v.user_ratings_total).toLocaleString()} Google reviews)` : ""}${v.price_level ? ` · ${"$".repeat(v.price_level)}` : ""}</p>` : ""}
   <p class="meta">${esc(v.formatted_address)}${v.formatted_phone_number ? ` · ${esc(v.formatted_phone_number)}` : ""}</p>
@@ -122,7 +149,7 @@ ${coverUrl(v) ? `<meta property="og:image" content="${esc(coverUrl(v))}">` : ""}
     ? `✓ Verified against the venue's official menu${hh.verified_source ? ` (<a href="${esc(hh.verified_source)}" rel="noopener">source</a>)` : ""}.`
     : `Times and deals read automatically from <a href="${esc(hh.source_url || v.website || "#")}" rel="noopener">the venue's own menu</a> — not yet human-verified. Confirm with the venue before making the trip.`}</p>
 
-  <footer>Part of <a href="../index.html">Vancouver Happy Hour</a> · venue identity data © Google / © OpenStreetMap contributors · happy-hour details from each venue's own website</footer>
+  <footer>Part of <a href="../index.html">Metro Vancouver Happy Hour</a> · venue identity data © Google / © OpenStreetMap contributors · happy-hour details from each venue's own website</footer>
 </main>
 </body>
 </html>`;
@@ -138,14 +165,14 @@ fs.writeFileSync(path.join(OUT, "index.html"), `<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>All Vancouver Happy Hour Spots — A–Z</title>
-<meta name="description" content="Every happy hour we track in Vancouver: ${venues.length} bars and restaurants with times and deals from their own menus.">
+<title>All Metro Vancouver Happy Hour Spots — A–Z</title>
+<meta name="description" content="Every happy hour we track across Metro Vancouver: ${venues.length} bars and restaurants with times and deals from their own menus.">
 <link rel="canonical" href="${BASE}spots/index.html">
 <style>${CSS}</style>
 </head>
 <body>
 <main>
-  <p class="meta"><a href="../index.html">← Vancouver Happy Hour app</a></p>
+  <p class="meta"><a href="../index.html">← Metro Vancouver Happy Hour app</a></p>
   <h1>All spots A–Z</h1>
   <p class="meta">${venues.length} venues, times and deals from each venue's own menu.</p>
   <ul class="deals">

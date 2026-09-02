@@ -177,10 +177,19 @@ for (const p of byId.values()) {
   if (types.some((t) => EXCLUDE_TYPES.has(t)) && !types.some((t) => BAR_TYPES.has(t))) { dropped.wrong_type++; continue; }
 
   // Metro means the city varies — take it from the Places address instead of
-  // stamping every venue "Vancouver, BC".
-  const parts = (p.formattedAddress || "").split(",").map((x) => x.trim());
-  const street = parts[0] || "";
-  const city = parts[1] || "Vancouver";
+  // stamping every venue "Vancouver, BC". Anchor on the province rather than
+  // a fixed slot: Google writes food courts, building names, floors and unit
+  // numbers as their own comma parts ("food court, 4567 Lougheed Hwy 2nd
+  // floor, Burnaby, BC V5C 3Z6, Canada"), so parts[1] is the city only for
+  // the simplest addresses and is the street for everything else.
+  const parts = (p.formattedAddress || "").split(",").map((x) => x.trim()).filter(Boolean);
+  if (parts.length && /^canada$/i.test(parts[parts.length - 1])) parts.pop();
+  const provIdx = parts.findIndex((x) => /^(BC|British Columbia)\b/i.test(x));
+  const cityIdx = provIdx > 0 ? provIdx - 1 : parts.length - 1;
+  const picked = parts[cityIdx] || "";
+  // A province-only address ("British Columbia, Canada") has no city slot.
+  const city = !picked || /^(BC|British Columbia)\b/i.test(picked) ? "Vancouver" : picked;
+  const street = parts.slice(0, cityIdx).join(", ");
   candidates.push({
     id: normName(name).replace(/ /g, "-"),
     name,
