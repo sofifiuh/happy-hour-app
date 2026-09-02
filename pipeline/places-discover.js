@@ -251,11 +251,16 @@ const TEXT_PAGES = Number(args["text-pages"]) || 2;
 // Text Search is not bounded by a circle the way Nearby Search is, and
 // "happy hour Delta BC" will happily return a bar in Delta, Ohio. Keep
 // results inside Metro Vancouver.
-const METRO = { minLat: 48.98, maxLat: 49.42, minLng: -123.35, maxLng: -122.35 };
+// The 49th parallel IS the border here, and a box that dipped below it let
+// a wine bar in Blaine, Washington into a Vancouver app. Latitude alone is
+// not enough either — Point Roberts is Canadian-adjacent but American — so
+// the address has to say Canada too.
+const METRO = { minLat: 49.0, maxLat: 49.42, minLng: -123.35, maxLng: -122.35 };
 const inMetro = (p) => {
   const l = p.location;
-  return !!l && l.latitude >= METRO.minLat && l.latitude <= METRO.maxLat
-    && l.longitude >= METRO.minLng && l.longitude <= METRO.maxLng;
+  if (!l || l.latitude < METRO.minLat || l.latitude > METRO.maxLat) return false;
+  if (l.longitude < METRO.minLng || l.longitude > METRO.maxLng) return false;
+  return !/\b(USA|United States|WA \d{5})\b/i.test(p.formattedAddress || "");
 };
 const EXCLUDE_TYPES = new Set(["fast_food_restaurant", "cafe", "coffee_shop", "bakery", "meal_takeaway", "meal_delivery", "ice_cream_shop", "sandwich_shop"]);
 const BAR_TYPES = new Set(["bar", "pub", "wine_bar", "night_club"]);

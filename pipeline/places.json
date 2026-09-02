@@ -4375,23 +4375,6 @@
     "matched_name": "Morgans Restaurant and Wine Bar",
     "synced_at": "2026-09-02"
   },
-  "the-vault-wine-bar-bistro-event-space": {
-    "place_id": "ChIJ3Q2I5v_DhVQRV7fabn2K5Zs",
-    "rating": 4.7,
-    "user_ratings_total": 234,
-    "price_level": 2,
-    "business_status": "OPERATIONAL",
-    "amenities": {
-      "outdoor_seating": true,
-      "serves_cocktails": true,
-      "serves_beer": true,
-      "serves_wine": true,
-      "live_music": true,
-      "good_for_groups": true
-    },
-    "matched_name": "The Vault Wine Bar - Bistro & Event Space",
-    "synced_at": "2026-09-02"
-  },
   "lakeside-grill": {
     "place_id": "ChIJu1Il5Yl1hlQRalOUYs7DvFM",
     "rating": 4.2,
