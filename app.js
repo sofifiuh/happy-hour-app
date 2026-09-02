@@ -697,9 +697,15 @@ function renderMap(occurrences) {
   mapMarkers = new Map();
   els.mapCardCarousel.innerHTML = "";
 
-  const located = applyFilters(occurrences).filter(
+  let located = applyFilters(occurrences).filter(
     (o) => typeof getLat(o.venue) === "number" && typeof getLng(o.venue) === "number"
   );
+
+  // Closest first, once we know where the visitor is — matches the list
+  // view's "closest first" ordering so pins/cards and rows agree.
+  if (userPos) {
+    located = [...located].sort((a, b) => distanceKm(a.venue) - distanceKm(b.venue));
+  }
 
   for (const { venue, occ } of located) {
     const color = markerColor(occ.status);
