@@ -71,7 +71,7 @@ function renderSchedule(venue) {
     }
     const hoursEl = document.createElement("span");
     hoursEl.className = "menu-schedule-hours";
-    hoursEl.textContent = labels.length ? labels.join(" & ") : "Closed";
+    hoursEl.textContent = labels.length ? labels.join(" & ") : "Unavailable";
 
     row.appendChild(dayEl);
     row.appendChild(hoursEl);
