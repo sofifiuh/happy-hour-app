@@ -477,7 +477,7 @@ function renderListRow(venue, occ, now) {
   const dot = document.createElement("span");
   dot.className = `list-row-dot ${occ.status === "upcoming" ? "upcoming" : ""}`;
   time.appendChild(dot);
-  time.appendChild(document.createTextNode(`${formatShortTime(getStart(venue))}–${formatShortTime(getEnd(venue))}`));
+  time.appendChild(document.createTextNode(occurrenceTimeLabel(occ)));
   top.appendChild(time);
 
   const address = document.createElement("p");
@@ -489,12 +489,19 @@ function renderListRow(venue, occ, now) {
   return row;
 }
 
-function formatShortTime(hhmm) {
-  const [h, m] = hhmm.split(":").map(Number);
-  const period = h >= 12 ? "pm" : "am";
-  const hour12 = h % 12 === 0 ? 12 : h % 12;
-  const time = m === 0 ? `${hour12}` : `${hour12}:${pad(m)}`;
+function formatShortTimeDate(date) {
+  const period = date.getHours() >= 12 ? "pm" : "am";
+  const hour12 = date.getHours() % 12 === 0 ? 12 : date.getHours() % 12;
+  const time = date.getMinutes() === 0 ? `${hour12}` : `${hour12}:${pad(date.getMinutes())}`;
   return `${time}${period}`;
+}
+
+// A venue can advertise more than one window (e.g. a lunch special plus a
+// late-night one) — occ.start/occ.end already point at whichever window is
+// live or coming up next, so this shows that window, not always the first.
+function occurrenceTimeLabel(occ) {
+  if (occ.status === "none") return "";
+  return `${formatShortTimeDate(occ.start)}–${formatShortTimeDate(occ.end)}`;
 }
 
 // ---------- Map view ----------
@@ -801,8 +808,7 @@ function buildMapCard(venue, occ) {
   meta.appendChild(status);
   const time = document.createElement("span");
   time.className = "map-detail-time";
-  time.textContent =
-    occ.status === "none" ? "" : `${formatShortTime(getStart(venue))}–${formatShortTime(getEnd(venue))}`;
+  time.textContent = occurrenceTimeLabel(occ);
   meta.appendChild(time);
   if (venue.rating) {
     const rating = document.createElement("span");
