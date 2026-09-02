@@ -256,8 +256,15 @@ if (args["from-raw"]) {
   });
   console.log(`+${byId.size - afterNearby} more from ${calls.text} text-search calls over ${TEXT_AREAS.length} areas.`);
   console.log(`${byId.size} unique places total (${calls.nearby} nearby + ${calls.text} text calls).`);
+  // Merge rather than replace: a later sweep may use a narrower query set
+  // (to stay inside the month's quota) and must not shrink the cache that
+  // --from-raw re-filters against.
   fs.mkdirSync(RESULTS_DIR, { recursive: true });
-  fs.writeFileSync(RAW, JSON.stringify([...byId.values()]));
+  const merged = new Map(readJson(RAW, []).map((x) => [x.id, x]));
+  for (const [id, place] of byId) merged.set(id, place);
+  fs.writeFileSync(RAW, JSON.stringify([...merged.values()]));
+  console.log(`raw sweep cache: ${merged.size} places (${merged.size - byId.size} carried over from earlier sweeps).`);
+  for (const [id, place] of merged) byId.set(id, place);
 }
 
 const candidates = [];
