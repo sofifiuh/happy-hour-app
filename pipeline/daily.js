@@ -22,6 +22,12 @@ const args = parseArgs(process.argv.slice(2));
 const TARGET = Number(args.target) || 100;
 const BUDGET = Number(args.budget) || 35;
 const BATCH = Number(args.batch) || 60;
+// --allow-hours-only publishes venues that confirm a happy hour SCHEDULE on
+// their own site but never list priced items. Facts still come only from the
+// venue itself — this loosens what counts as complete, not what counts as a
+// source. The app already says so on the card: "runs a happy hour but doesn't
+// publish its deal list online".
+const GATE = args["allow-hours-only"] ? [] : ["--discovery-require-deals"];
 const RECHECK_DAYS = Number(args["recheck-days"]) || 90;
 const DRY = !!args["dry-run"];
 
@@ -63,7 +69,12 @@ if (args["use-pool"]) {
 // "published" verdict whose writeback never landed must stay eligible, so
 // those are filtered against what is actually in venues.json instead.
 const screened = readJson(SCREENED_STORE, {});
-const NEGATIVE = new Set(["no_happy_hour", "hours_only", "error"]);
+// "hours_only" is only a negative while the gate rejects hours-only venues.
+// Once --allow-hours-only publishes them, a past hours_only verdict is a
+// reason to REVISIT a venue, not to keep skipping it forever.
+const NEGATIVE = new Set(
+  args["allow-hours-only"] ? ["no_happy_hour", "error"] : ["no_happy_hour", "hours_only", "error"]
+);
 const storedPlaceIds = new Set(
   readJson(path.join(REPO_ROOT, "venues.json"), { venues: [] })
     .venues.map((v) => v.place_id).filter(Boolean)
@@ -123,7 +134,7 @@ for (let i = 0; i < candidates.length; i += BATCH) {
   // and the ledger says "published" for venues that are nowhere. Writeback is
   // cheap and idempotent, so run it now and keep each batch's work.
   try {
-    run("writeback.js", ["--discovery-require-deals"]);
+    run("writeback.js", GATE);
   } catch (e) {
     console.log(`  writeback failed: ${String(e.message).slice(0, 160)}`);
   }
@@ -135,9 +146,9 @@ for (let i = 0; i < candidates.length; i += BATCH) {
 // --- 3. Publish. The gate lives in writeback: a discovered venue needs a
 // --- confirmed schedule AND at least one priced deal to go live.
 console.log(`\n[writeback] applying the publish gate`);
-console.log(run("writeback.js", ["--discovery-require-deals"]).split("\n").slice(0, 2).join("\n"));
+console.log(run("writeback.js", GATE).split("\n").slice(0, 2).join("\n"));
 console.log(run("places-photos.js").trim().split("\n").slice(-2).join("\n"));
-console.log(run("writeback.js", ["--discovery-require-deals"]).split("\n")[0]);
+console.log(run("writeback.js", GATE).split("\n")[0]);
 console.log(run("build-pages.js").trim());
 
 const endCount = published();

@@ -6159,5 +6159,299 @@
     },
     "matched_name": "TAKO - Taqueria Korean",
     "synced_at": "2026-09-02"
+  },
+  "the-ocean-beach-crafts-drafts-eats": {
+    "place_id": "ChIJ35CsmALDhVQRvFgPg_AOQC0",
+    "rating": 4.6,
+    "user_ratings_total": 1746,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "sprezzatura-restaurant": {
+    "place_id": "ChIJCU7GmHVzhlQRVCX3eeeGIqo",
+    "rating": 4.4,
+    "user_ratings_total": 1069,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "miso-taco-cambie": {
+    "place_id": "ChIJ39PXx8pxhlQR1--5MxJBR1c",
+    "rating": 4.4,
+    "user_ratings_total": 1001,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "arcana-food-and-spirits": {
+    "place_id": "ChIJM3CcBK9xhlQRc9lVZFzYcPs",
+    "rating": 4.6,
+    "user_ratings_total": 669,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "saba-foods-middle-eastern-yemeni-restaurant": {
+    "place_id": "ChIJ_4DyPpfbhVQRv2KFIlapZ5g",
+    "rating": 4.8,
+    "user_ratings_total": 4041,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "pizzeria-spacca-napoli": {
+    "place_id": "ChIJF16hTOJ4hlQR9GSGNpOuTZE",
+    "rating": 4.4,
+    "user_ratings_total": 2985,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "admiral-pub": {
+    "place_id": "ChIJ_3NDKc9whlQRbnBgBEsBKyQ",
+    "rating": 4.1,
+    "user_ratings_total": 1105,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "queens-cross-pub": {
+    "place_id": "ChIJL32kMGZxhlQRMrbSMUGBVDs",
+    "rating": 4.2,
+    "user_ratings_total": 852,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "the-beer-shack": {
+    "place_id": "ChIJARIITRDDhVQRjxmrBV_8-r8",
+    "rating": 4.3,
+    "user_ratings_total": 187,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "la-taqueria-brentwood-by-la-taqueria-pinche-taco-shop": {
+    "place_id": "ChIJF9hzTXh3hlQRGCP_95_ogeY",
+    "rating": 4.5,
+    "user_ratings_total": 1790,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "spice-72-indian-restaurant-lounge": {
+    "place_id": "ChIJYReKm2DZhVQR3M8G_Qwyfz4",
+    "rating": 4.1,
+    "user_ratings_total": 3981,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "stanley-park-brewing-restaurant-brewpub": {
+    "place_id": "ChIJ28t23QxzhlQRlPVAoZUunSU",
+    "rating": 4.3,
+    "user_ratings_total": 3392,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "sandcastle-bowl-bar-grill": {
+    "place_id": "ChIJ1eEvdZ3EhVQR0skCq4T9dog",
+    "rating": 4.4,
+    "user_ratings_total": 1479,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "reflections-the-garden-terrace": {
+    "place_id": "ChIJN2Noxf5xhlQR5S-J2gEGnrQ",
+    "rating": 4,
+    "user_ratings_total": 1342,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "union-latino-s-food": {
+    "place_id": "ChIJy0-P0olzhlQRxSLsSsM-jCY",
+    "rating": 4.5,
+    "user_ratings_total": 1130,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "tidewaters-pub": {
+    "place_id": "ChIJD-WYYijZhVQRJr4zTl52Qo8",
+    "rating": 4.1,
+    "user_ratings_total": 854,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "the-gull-bar-and-kitchen": {
+    "place_id": "ChIJWWYp5cRxhlQR6xMiqQMC-_Y",
+    "rating": 4.6,
+    "user_ratings_total": 772,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "karma-lounge": {
+    "place_id": "ChIJyfBkn4dxhlQRAxfzGwa0IBM",
+    "rating": 4.4,
+    "user_ratings_total": 662,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "georgie-s-local-kitchen-bar": {
+    "place_id": "ChIJMd6eI4vZhVQR818oY2Y7R0w",
+    "rating": 4.2,
+    "user_ratings_total": 579,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "back-and-forth-bar": {
+    "place_id": "ChIJ26YFv3BxhlQRw2nuTh_ZYSo",
+    "rating": 4.2,
+    "user_ratings_total": 540,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "grapes-soda": {
+    "place_id": "ChIJExh0e8hzhlQRkaIGSBt6eQU",
+    "rating": 4.6,
+    "user_ratings_total": 502,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "barra-41": {
+    "place_id": "ChIJrSK0t3pzhlQRJzlIwv4Rsc8",
+    "rating": 4.4,
+    "user_ratings_total": 246,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "crazy-raven-bar-and-grill": {
+    "place_id": "ChIJpalsgCtphlQRsHHq-Z3hL2s",
+    "rating": 3.3,
+    "user_ratings_total": 243,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "bar-gobo": {
+    "place_id": "ChIJJzYq3PBxhlQRxqryb0bOLmg",
+    "rating": 4.6,
+    "user_ratings_total": 192,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "the-chickadee-room": {
+    "place_id": "ChIJGVvOYpJxhlQRBLDN8_rljBQ",
+    "rating": 4.4,
+    "user_ratings_total": 178,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "rongsi-rong-see-thai-bar-bistro": {
+    "place_id": "ChIJ7WrLRy5zhlQRqIbWIHRIZjA",
+    "rating": 4.6,
+    "user_ratings_total": 174,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "miso-taco-west-pender": {
+    "place_id": "ChIJq5kRT9txhlQR_CTBLnpQ4Lg",
+    "rating": 4.4,
+    "user_ratings_total": 110,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "craft-beer-market-false-creek": {
+    "place_id": "ChIJD9X_gIB-C0ER-aY29gH18cM",
+    "rating": 4.3,
+    "user_ratings_total": 8366,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "gringo-gastown": {
+    "place_id": "ChIJFWhLV3dxhlQR-BCOL1u24FY",
+    "rating": 4.5,
+    "user_ratings_total": 2321,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "craft-beer-market-english-bay": {
+    "place_id": "ChIJW1G0JlpzhlQR0yi6twJ0CXA",
+    "rating": 4.4,
+    "user_ratings_total": 1752,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "smoke-and-bones-bbq": {
+    "place_id": "ChIJZ4bQMpFvhlQR-KfWP0Z8ib8",
+    "rating": 4.4,
+    "user_ratings_total": 1741,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "milestones-coquitlam-test-kitchen": {
+    "place_id": "ChIJcS3l1qh5hlQRVaxZKjav4zs",
+    "rating": 3.9,
+    "user_ratings_total": 1464,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "ophelia": {
+    "place_id": "ChIJfTQAlSlzhlQRglYOHc_MZpg",
+    "rating": 4.4,
+    "user_ratings_total": 1335,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "oddfish-restaurant": {
+    "place_id": "ChIJ9ZQCacpzhlQRLx_Hge2HPaU",
+    "rating": 4.6,
+    "user_ratings_total": 883,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "sab-bistro": {
+    "place_id": "ChIJD5jM8zjThVQRm2zxEyr3P0Y",
+    "rating": 4.4,
+    "user_ratings_total": 787,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "claudio-s-ristorante": {
+    "place_id": "ChIJh9iYHRh3hlQR8GaY_dj1RHM",
+    "rating": 4.2,
+    "user_ratings_total": 762,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "zawa-restaurant": {
+    "place_id": "ChIJoWPKIj5xhlQR2vCsGMqW3FM",
+    "rating": 4.1,
+    "user_ratings_total": 593,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "pks-cafe": {
+    "place_id": "ChIJE0TrMCx_hlQRa-c5m-wCXd4",
+    "rating": 4.7,
+    "user_ratings_total": 474,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "sobu-social": {
+    "place_id": "ChIJKyrMXgB3hlQRIfcfsIeSi_8",
+    "rating": 4.4,
+    "user_ratings_total": 55,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "local-public-eatery-river-district": {
+    "place_id": "ChIJ-fWFH-V1hlQRlgHvJiRw6ls",
+    "rating": 4.7,
+    "user_ratings_total": 2193,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "c-prime-modern-italian-steak-and-wine": {
+    "place_id": "ChIJKyWuLdVzhlQR42fs0OJefqA",
+    "rating": 4.5,
+    "user_ratings_total": 1089,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "two-rivers-meats": {
+    "place_id": "ChIJjxrDYstxhlQRrkD3lLOhuzY",
+    "rating": 4.5,
+    "user_ratings_total": 934,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
   }
 }

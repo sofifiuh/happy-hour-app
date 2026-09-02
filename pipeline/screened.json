@@ -243,7 +243,7 @@
     "id": "the-ocean-beach-crafts-drafts-eats",
     "name": "The Ocean Beach Crafts, Drafts & Eats",
     "verdict": "hours_only",
-    "checked_at": "2026-09-01"
+    "checked_at": "2026-09-02"
   },
   "ChIJCYeeZR9uhlQRKRWLSYnl-VQ": {
     "id": "the-village-taphouse",
@@ -440,8 +440,8 @@
   "ChIJCU7GmHVzhlQRVCX3eeeGIqo": {
     "id": "sprezzatura-restaurant",
     "name": "Sprezzatura Restaurant",
-    "verdict": "hours_only",
-    "checked_at": "2026-09-01"
+    "verdict": "published",
+    "checked_at": "2026-09-02"
   },
   "ChIJdd9ipdNzhlQRTeCkanpMc8s": {
     "id": "giardino-restaurant",
@@ -459,7 +459,7 @@
     "id": "miso-taco-cambie",
     "name": "Miso Taco - Cambie",
     "verdict": "hours_only",
-    "checked_at": "2026-09-01"
+    "checked_at": "2026-09-02"
   },
   "ChIJC-yI8X9xhlQRW_dizpXab-A": {
     "id": "wedgewood-hotel-spa",
@@ -500,8 +500,8 @@
   "ChIJq391Xy3OhVQRzDE4olWNse4": {
     "id": "rendezvous-pub",
     "name": "Rendezvous Pub",
-    "verdict": "hours_only",
-    "checked_at": "2026-09-01"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
   },
   "ChIJOxkSvmtxhlQR0FIj2qDTSjY": {
     "id": "king-pins-bowling",
@@ -555,7 +555,7 @@
     "id": "arcana-food-and-spirits",
     "name": "Arcana Food and Spirits",
     "verdict": "hours_only",
-    "checked_at": "2026-09-01"
+    "checked_at": "2026-09-02"
   },
   "ChIJe3tA8J9xhlQRrQIo4MPg__s": {
     "id": "the-magnet",
@@ -975,7 +975,7 @@
     "id": "saba-foods-middle-eastern-yemeni-restaurant",
     "name": "Saba Foods Middle Eastern Yemeni Restaurant",
     "verdict": "hours_only",
-    "checked_at": "2026-09-01"
+    "checked_at": "2026-09-02"
   },
   "ChIJDyP36tVzhlQR6LOFsxOQN5k": {
     "id": "nero-belgian-waffle-bar",
@@ -1083,7 +1083,7 @@
     "id": "pizzeria-spacca-napoli",
     "name": "Pizzeria Spacca Napoli",
     "verdict": "hours_only",
-    "checked_at": "2026-09-01"
+    "checked_at": "2026-09-02"
   },
   "ChIJ8w0ms9VzhlQRsjs1jGEh4is": {
     "id": "the-templeton",
@@ -2144,8 +2144,8 @@
   "ChIJsWgyTh9uhlQR-bZhNzrnmH8": {
     "id": "milestones",
     "name": "Milestones",
-    "verdict": "hours_only",
-    "checked_at": "2026-09-01"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
   },
   "ChIJy6gndbZzhlQRylsrWwq_y0c": {
     "id": "redbeef-noodle-kitchen-kitsilano",
@@ -3098,8 +3098,8 @@
   "ChIJf3S6OgB1hlQRXUpbHClUZKA": {
     "id": "chocho-hot-pot-richmond",
     "name": "ChoCho Hot Pot Richmond",
-    "verdict": "hours_only",
-    "checked_at": "2026-09-01"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
   },
   "ChIJO_jHxHtzhlQRtq2tHuukY5Y": {
     "id": "adonia-tea-house",
@@ -5144,7 +5144,7 @@
   "ChIJqUjxNINxhlQR4Lx01oYf6H8": {
     "id": "mahony-s-tavern-convention-centre",
     "name": "Mahony's Tavern Convention Centre",
-    "verdict": "hours_only",
+    "verdict": "published",
     "checked_at": "2026-09-02"
   },
   "ChIJzQ4Li3hxhlQRmqBjZzEnjQI": {
@@ -5924,7 +5924,7 @@
   "ChIJ26YFv3BxhlQRw2nuTh_ZYSo": {
     "id": "back-and-forth-bar",
     "name": "Back and Forth Bar",
-    "verdict": "hours_only",
+    "verdict": "published",
     "checked_at": "2026-09-02"
   },
   "ChIJEX6HuPtxhlQR0ApQVM_tI3k": {

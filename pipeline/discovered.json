@@ -25,6 +25,2961 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "the-ocean-beach-crafts-drafts-eats",
+    "name": "The Ocean Beach Crafts, Drafts & Eats",
+    "formatted_address": "14995 Marine Dr, White Rock, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0217709,
+        "lng": -122.80682979999999
+      }
+    },
+    "formatted_phone_number": "(604) 385-9977",
+    "website": "http://www.oceanbeachwr.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "19:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.oceanbeachwr.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5ee810382e448119b4ac9017/t/5f0ea9c5451a530cf1fd8aac/1594796489445/OB+BANNER-01.png?format=1500w",
+      "credit_name": "The Ocean Beach Crafts, Drafts & Eats",
+      "credit_url": "http://www.oceanbeachwr.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "sprezzatura-restaurant",
+    "name": "Sprezzatura Restaurant",
+    "formatted_address": "265 Kingsway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2613032,
+        "lng": -123.09756
+      }
+    },
+    "formatted_phone_number": "(604) 876-6333",
+    "website": "http://www.sprezzatura.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:30",
+      "end": "17:30",
+      "extra_windows": [
+        {
+          "days": [
+            0
+          ],
+          "start": "11:30",
+          "end": "21:00",
+          "label": "All Day"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://sprezzatura.ca/happy-hour",
+      "deals": [
+        {
+          "name": "House Wine",
+          "price": "50% off",
+          "category": "drink",
+          "description": "All bottles or carafes; Wednesdays all-day (dine-in only)"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://img1.wsimg.com/isteam/ip/8aec2d6b-86a4-401c-9005-19914e8300e8/_DSC2252.jpg",
+      "credit_name": "Sprezzatura Restaurant",
+      "credit_url": "http://www.sprezzatura.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "miso-taco-cambie",
+    "name": "Miso Taco - Cambie",
+    "formatted_address": "3456 Cambie St., Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.254365799999995,
+        "lng": -123.1149068
+      }
+    },
+    "formatted_phone_number": "(778) 654-8129",
+    "website": "https://www.misotaco.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.misotaco.ca/menu",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6958291df3f62c42463c37e7/t/69582967e49be87856b735f3/1767385447125/MisoTacoLogoNew.png?format=1500w",
+      "credit_name": "Miso Taco - Cambie",
+      "credit_url": "https://www.misotaco.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "arcana-food-and-spirits",
+    "name": "Arcana Food and Spirits",
+    "formatted_address": "238 Abbott St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.283079099999995,
+        "lng": -123.10655209999997
+      }
+    },
+    "formatted_phone_number": "(604) 336-4006",
+    "website": "https://www.arcanabar.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "start": "18:00",
+      "end": "19:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "start": "00:00",
+          "end": "01:00",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.arcanabar.com/hours/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://www.arcanabar.com/images/arcana-og-preview.jpg",
+      "credit_name": "Arcana Food and Spirits",
+      "credit_url": "https://www.arcanabar.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "saba-foods-middle-eastern-yemeni-restaurant",
+    "name": "Saba Foods Middle Eastern Yemeni Restaurant",
+    "formatted_address": "2881 Granville St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.260064299999996,
+        "lng": -123.13904160000001
+      }
+    },
+    "formatted_phone_number": "(604) 358-0566",
+    "website": "http://www.sabafoods.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.sabafoods.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://i0.wp.com/sabafoods.ca/wp-content/uploads/2024/07/Saba-Foods-Menu.jpg",
+      "credit_name": "Saba Foods Middle Eastern Yemeni Restaurant",
+      "credit_url": "http://www.sabafoods.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "pizzeria-spacca-napoli",
+    "name": "Pizzeria Spacca Napoli",
+    "formatted_address": "2801 St Johns St, Port Moody, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.276489,
+        "lng": -122.84987710000001
+      }
+    },
+    "formatted_phone_number": null,
+    "website": "http://www.pizzeriaspaccanapoli.com/",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.pizzeriaspaccanapoli.com/happy-hour",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/68436903cf4e665c69a9adef/t/68716f38c9acf8663a6e2963/1752264504348/SPACCA_NAPOLI_MB_Secondary_Stacked_Cream.png?format=1500w",
+      "credit_name": "Pizzeria Spacca Napoli",
+      "credit_url": "http://www.pizzeriaspaccanapoli.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "admiral-pub",
+    "name": "Admiral Pub",
+    "formatted_address": "4125 Hastings St, Burnaby, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.281169399999996,
+        "lng": -123.0135806
+      }
+    },
+    "formatted_phone_number": "(604) 298-7158",
+    "website": "https://admiralpub.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://admiralpub.ca/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "queens-cross-pub",
+    "name": "Queens Cross Pub",
+    "formatted_address": "unit A, 2989 Lonsdale Ave, North Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.336315299999995,
+        "lng": -123.07233659999999
+      }
+    },
+    "formatted_phone_number": "(604) 980-7715",
+    "website": "http://www.queenscross.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.queenscross.com/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-beer-shack",
+    "name": "The Beer Shack",
+    "formatted_address": "1515 Johnston Rd, White Rock, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0295637,
+        "lng": -122.8014341
+      }
+    },
+    "formatted_phone_number": "(604) 385-1364",
+    "website": "https://thebeershackwr.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://thebeershackwr.com/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "la-taqueria-brentwood-by-la-taqueria-pinche-taco-shop",
+    "name": "La Taqueria Brentwood By La Taqueria Pinche Taco Shop",
+    "formatted_address": "4580 Brentwood Blvd Unit 1210, Burnaby, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.267103999999996,
+        "lng": -123.0015121
+      }
+    },
+    "formatted_phone_number": "(236) 466-0977",
+    "website": "http://www.lataqueria.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        },
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "22:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.lataqueria.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://framerusercontent.com/images/HRfVHEQSZ3N95i6eLbaxYEw.png",
+      "credit_name": "La Taqueria Brentwood By La Taqueria Pinche Taco Shop",
+      "credit_url": "http://www.lataqueria.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "spice-72-indian-restaurant-lounge",
+    "name": "Spice 72 Indian Restaurant & Lounge",
+    "formatted_address": "12025 72 Ave, Surrey, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1343781,
+        "lng": -122.88956789999999
+      }
+    },
+    "formatted_phone_number": "(604) 503-1172",
+    "website": "http://www.spice72.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.spice72.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://spice72.com/og-image.png",
+      "credit_name": "Spice 72 Indian Restaurant & Lounge",
+      "credit_url": "http://www.spice72.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "stanley-park-brewing-restaurant-brewpub",
+    "name": "Stanley Park Brewing Restaurant & Brewpub",
+    "formatted_address": "8901 Stanley Park Dr, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2923231,
+        "lng": -123.1464802
+      }
+    },
+    "formatted_phone_number": "(604) 681-0460",
+    "website": "https://www.stanleyparkbrewing.com/brewpub/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.stanleyparkbrewing.com/brewpub/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://stanleyparkbrewing.com/cdn/shop/files/SPBShopify_fa33efa1-edbf-4c90-8085-0fc176a34f15.png?v=1606172271&width=2048",
+      "credit_name": "Stanley Park Brewing Restaurant & Brewpub",
+      "credit_url": "https://www.stanleyparkbrewing.com/brewpub/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "sandcastle-bowl-bar-grill",
+    "name": "Sandcastle Bowl Bar & Grill",
+    "formatted_address": "1938 152 St #100, Surrey, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.037133399999995,
+        "lng": -122.80048559999999
+      }
+    },
+    "formatted_phone_number": "(604) 535-2695",
+    "website": "http://www.sandcastlelanes.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.sandcastlelanes.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/641a48cd52797c3556d18b08/t/6427142c3e3883346d87a8c8/1680282668797/SandcastleLanes-White.png?format=1500w",
+      "credit_name": "Sandcastle Bowl Bar & Grill",
+      "credit_url": "http://www.sandcastlelanes.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "reflections-the-garden-terrace",
+    "name": "Reflections The Garden Terrace",
+    "formatted_address": "801 W Georgia St 4th Floor, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.283436099999996,
+        "lng": -123.11920579999999
+      }
+    },
+    "formatted_phone_number": "(604) 673-7043",
+    "website": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Golden Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://images.rosewoodhotels.com/is/image/rwhg/DAYREFLECTIONS-4",
+      "credit_name": "Reflections The Garden Terrace",
+      "credit_url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "union-latino-s-food",
+    "name": "Union Latino's food",
+    "formatted_address": "1149 Granville St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2777688,
+        "lng": -123.1255616
+      }
+    },
+    "formatted_phone_number": "(604) 269-9229",
+    "website": "https://www.unionlatinosrestaurant.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=8532792806179112619",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.unionlatinosrestaurant.com/event-details/happy-hour-2024-03-07-15-00",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/c56d11_f135b50fa9f44ae1b74ab8b0b57e04eb%7Emv2.png/v1/fit/w_2500,h_1330,al_c/c56d11_f135b50fa9f44ae1b74ab8b0b57e04eb%7Emv2.png",
+      "credit_name": "Union Latino's food",
+      "credit_url": "https://www.unionlatinosrestaurant.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=8532792806179112619",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "tidewaters-pub",
+    "name": "Tidewaters Pub",
+    "formatted_address": "10190 River Rd, Delta, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1563995,
+        "lng": -122.94068580000001
+      }
+    },
+    "formatted_phone_number": "(604) 589-2000",
+    "website": "http://www.tidewaterspub.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.tidewaterspub.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://img1.wsimg.com/isteam/stock/39157",
+      "credit_name": "Tidewaters Pub",
+      "credit_url": "http://www.tidewaterspub.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-gull-bar-and-kitchen",
+    "name": "The Gull Bar and Kitchen",
+    "formatted_address": "175 1st St E, North Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.3105912,
+        "lng": -123.0760173
+      }
+    },
+    "formatted_phone_number": "(604) 988-5585",
+    "website": "https://thegull.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            4
+          ],
+          "start": "15:00",
+          "end": "22:00",
+          "label": "All Day Happy Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.thegull.ca/menus",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5a1f73af8dd04196f96c1a4d/t/5e7bed686b8b1f1cdbcbf417/1585180010022/the+gull+facbeook+logo.jpg?format=1500w",
+      "credit_name": "The Gull Bar and Kitchen",
+      "credit_url": "https://thegull.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "karma-lounge",
+    "name": "Karma Lounge",
+    "formatted_address": "1161 W Georgia St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.286858099999996,
+        "lng": -123.1243106
+      }
+    },
+    "formatted_phone_number": "(778) 488-8616",
+    "website": "https://karmalounge.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://karmalounge.ca/products/karmas-happy-hour",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://karmalounge.ca/cdn/shop/files/Screen_Shot_2022-06-27_at_2.47.24_PM_600x600.png?v=1656366465",
+      "credit_name": "Karma Lounge",
+      "credit_url": "https://karmalounge.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "georgie-s-local-kitchen-bar",
+    "name": "Georgie's Local Kitchen + Bar",
+    "formatted_address": "250 Columbia St, New Westminster, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2053401,
+        "lng": -122.90352969999998
+      }
+    },
+    "formatted_phone_number": "(604) 517-2966",
+    "website": "http://www.georgieslocal.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.georgieslocal.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6106c9a8d3a7cd639b2ae095/t/614f8b7f6cd6667aca9cb3f3/1632603007982/Header+logo2.png?format=1500w",
+      "credit_name": "Georgie's Local Kitchen + Bar",
+      "credit_url": "http://www.georgieslocal.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "back-and-forth-bar",
+    "name": "Back and Forth Bar",
+    "formatted_address": "303 Columbia St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2822538,
+        "lng": -123.10242149999999
+      }
+    },
+    "formatted_phone_number": "(604) 564-7664",
+    "website": "http://www.backandforthbar.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.backandforthbar.com/menu-1",
+      "deals": [
+        {
+          "name": "Draught Beer",
+          "price": "$7.75",
+          "category": "drink",
+          "description": "Sleeves - local craft beers (Parallel 49, Phillips, Twin Sails, East Van, Four Winds, Parkside)"
+        },
+        {
+          "name": "Canned Beer",
+          "price": "$7.75",
+          "category": "drink",
+          "description": "PBR"
+        },
+        {
+          "name": "Guinness",
+          "price": "$10.50",
+          "category": "drink",
+          "description": "20oz pour, 4.2% ABV"
+        },
+        {
+          "name": "Cans & Seltzers",
+          "price": "$9",
+          "category": "drink",
+          "description": "Happy Dad Hard Seltzer, Hey Y'all Hard Iced Tea, Lonetree Cider"
+        },
+        {
+          "name": "Well Spirits",
+          "price": "$8.50",
+          "category": "drink",
+          "description": "Single shot - Vodka, Rum, Gin, Whiskey, Tequila, Scotch"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "grapes-soda",
+    "name": "Grapes & Soda",
+    "formatted_address": "1541 W 6th Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2663711,
+        "lng": -123.1396792
+      }
+    },
+    "formatted_phone_number": "(604) 336-2456",
+    "website": "http://www.grapesandsoda.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.grapesandsoda.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://grapesandsoda.ca/cdn/shop/files/Grapes_and_Soda_Logo_Clear.png?height=628&pad_color=ffffff&v=1759557453&width=1200",
+      "credit_name": "Grapes & Soda",
+      "credit_url": "http://www.grapesandsoda.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "barra-41",
+    "name": "Barra 41",
+    "formatted_address": "2407 W 41st Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2348412,
+        "lng": -123.1615593
+      }
+    },
+    "formatted_phone_number": "(604) 267-7475",
+    "website": "http://www.barra41.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.barra41.com/find-us",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5778360537c581dd7deeddfa/t/57a905f803596e915f8cfd01/1470694906992/barra-logo.png?format=1500w",
+      "credit_name": "Barra 41",
+      "credit_url": "http://www.barra41.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "crazy-raven-bar-and-grill",
+    "name": "Crazy Raven Bar and Grill",
+    "formatted_address": "6000 Cypress Bowl Rd, West Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.396,
+        "lng": -123.2046314
+      }
+    },
+    "formatted_phone_number": "(855) 363-2823",
+    "website": "https://www.cypressmountain.com/dining",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.cypressmountain.com/hours",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://cdn.sanity.io/images/8ts88bij/cypress/11aae68fd10e63257f1b66a47ed3f720e092292f-1440x960.jpg?w=1200&fm=png&fit=min",
+      "credit_name": "Crazy Raven Bar and Grill",
+      "credit_url": "https://www.cypressmountain.com/dining",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "bar-gobo",
+    "name": "Bar Gobo",
+    "formatted_address": "237 Union St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2777672,
+        "lng": -123.0984597
+      }
+    },
+    "formatted_phone_number": "(604) 423-5400",
+    "website": "http://www.bargobo.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "22:00",
+          "end": "23:00",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.bargobo.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/b509c9_398c833aa200450c9a4d0bd4cb7ae647%7Emv2.png/v1/fit/w_2500,h_1330,al_c/b509c9_398c833aa200450c9a4d0bd4cb7ae647%7Emv2.png",
+      "credit_name": "Bar Gobo",
+      "credit_url": "http://www.bargobo.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-chickadee-room",
+    "name": "The Chickadee Room",
+    "formatted_address": "182 Keefer St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2793291,
+        "lng": -123.10037020000001
+      }
+    },
+    "formatted_phone_number": "(604) 336-5853",
+    "website": "https://thechickadeeroom.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "22:00",
+          "end": "00:00",
+          "label": "Late Night Deals"
+        },
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "22:00",
+          "end": "01:00",
+          "label": "Late Night Deals"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://thechickadeeroom.com/menu",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "rongsi-rong-see-thai-bar-bistro",
+    "name": "RongSi (rong-see) Thai Bar & Bistro",
+    "formatted_address": "2650 Main St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2613202,
+        "lng": -123.1007896
+      }
+    },
+    "formatted_phone_number": "(236) 477-3796",
+    "website": "http://www.rongsithaimill.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.rongsithaimill.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/cba7a7_92fc76cdf61f4f9d956b01be16f41d35%7Emv2.png/v1/fit/w_2500,h_1330,al_c/cba7a7_92fc76cdf61f4f9d956b01be16f41d35%7Emv2.png",
+      "credit_name": "RongSi (rong-see) Thai Bar & Bistro",
+      "credit_url": "http://www.rongsithaimill.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "miso-taco-west-pender",
+    "name": "Miso Taco - West Pender",
+    "formatted_address": "1080 W Pender St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.287307,
+        "lng": -123.12031830000001
+      }
+    },
+    "formatted_phone_number": "(778) 200-6917",
+    "website": "https://misotaco.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://misotaco.ca/menu",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6958291df3f62c42463c37e7/t/69582967e49be87856b735f3/1767385447125/MisoTacoLogoNew.png?format=1500w",
+      "credit_name": "Miso Taco - West Pender",
+      "credit_url": "https://misotaco.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "craft-beer-market-false-creek",
+    "name": "CRAFT Beer Market False Creek",
+    "formatted_address": "85 W 1st Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.270766300000005,
+        "lng": -123.10638009999998
+      }
+    },
+    "formatted_phone_number": "(604) 709-2337",
+    "website": "https://www.craftbeermarket.ca/locations/vancouver-false-creek/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.craftbeermarket.ca/locations/vancouver-false-creek/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://www.craftbeermarket.com/wp-content/uploads/2025/10/craft-false-creek-vancouver-bar-scaled.jpeg",
+      "credit_name": "CRAFT Beer Market False Creek",
+      "credit_url": "https://www.craftbeermarket.ca/locations/vancouver-false-creek/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "gringo-gastown",
+    "name": "Gringo Gastown",
+    "formatted_address": "27 Blood Alley Square, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2832,
+        "lng": -123.1053611
+      }
+    },
+    "formatted_phone_number": "(604) 565-1278",
+    "website": "http://gringogastown.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://gringogastown.ca/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "craft-beer-market-english-bay",
+    "name": "CRAFT Beer Market English Bay",
+    "formatted_address": "1795 Beach Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2867494,
+        "lng": -123.1422399
+      }
+    },
+    "formatted_phone_number": "(604) 566-2739",
+    "website": "https://www.craftbeermarket.ca/locations/vancouver-english-bay/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.craftbeermarket.ca/locations/vancouver-english-bay/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://www.craftbeermarket.com/wp-content/uploads/2025/10/craft-beer-market-vancouver-english-bay-location-rooftop-patio-season-scaled.jpg",
+      "credit_name": "CRAFT Beer Market English Bay",
+      "credit_url": "https://www.craftbeermarket.ca/locations/vancouver-english-bay/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "smoke-and-bones-bbq",
+    "name": "Smoke and Bones BBQ",
+    "formatted_address": "999 Marine Dr, North Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.323575999999996,
+        "lng": -123.10194600000001
+      }
+    },
+    "formatted_phone_number": "(604) 770-1394",
+    "website": "http://www.smokeandbones.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.smokeandbones.ca/happy-hour",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://smokeandbones.ca/wp-content/uploads/2019/07/front-page-hero.webp",
+      "credit_name": "Smoke and Bones BBQ",
+      "credit_url": "http://www.smokeandbones.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "milestones-coquitlam-test-kitchen",
+    "name": "Milestones Coquitlam - Test Kitchen",
+    "formatted_address": "2745 Barnet Hwy, Coquitlam, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2783896,
+        "lng": -122.8096305
+      }
+    },
+    "formatted_phone_number": "(778) 653-7564",
+    "website": "https://milestonesrestaurants.com/locations/test-kitchen?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "21:00",
+          "end": "00:00",
+          "label": "Late night"
+        },
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "01:00",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://milestonesrestaurants.com/locations/test-kitchen?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://milestonesrestaurants.com/wp-content/uploads/2026/06/MILESTONES_GENERIC_WEBSITE_LOCATION_BANNER_4-4-1024x400.jpg",
+      "credit_name": "Milestones Coquitlam - Test Kitchen",
+      "credit_url": "https://milestonesrestaurants.com/locations/test-kitchen?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "ophelia",
+    "name": "Ophelia",
+    "formatted_address": "165 W 2nd Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2695934,
+        "lng": -123.10814210000001
+      }
+    },
+    "formatted_phone_number": "(604) 800-5253",
+    "website": "https://www.opheliakitchen.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "16:00",
+      "end": "17:30",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            6
+          ],
+          "start": "15:00",
+          "end": "17:30",
+          "label": "Weekend"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        },
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "22:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.opheliakitchen.ca/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "oddfish-restaurant",
+    "name": "Oddfish Restaurant",
+    "formatted_address": "1889 W 1st Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2708198,
+        "lng": -123.1477029
+      }
+    },
+    "formatted_phone_number": "(604) 564-6330",
+    "website": "http://www.oddfishrestaurant.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "21:45",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.oddfishrestaurant.com/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "sab-bistro",
+    "name": "Sabà Bistro",
+    "formatted_address": "9220 Glover Rd, Langley Twp, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.169740999999995,
+        "lng": -122.5782897
+      }
+    },
+    "formatted_phone_number": "(778) 545-0024",
+    "website": "https://saba.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://saba.ca/bistrohours",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5e7a43baa7c9d26de744fd63/t/61de124ba716683c2bbb7d1c/1592091706123/saba-social-img.jpg?format=1500w",
+      "credit_name": "Sabà Bistro",
+      "credit_url": "https://saba.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "claudio-s-ristorante",
+    "name": "Claudio's Ristorante",
+    "formatted_address": "4402 Skyline Dr #103, Burnaby, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2654942,
+        "lng": -123.0049082
+      }
+    },
+    "formatted_phone_number": "(604) 298-3135",
+    "website": "http://www.claudiosristorante.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.claudiosristorante.ca/menu",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/60527193cf31d67dd74f3d56/t/64e29cceb6bf7d46d28332c1/1692572878368/Untitled-1-01.png?format=1500w",
+      "credit_name": "Claudio's Ristorante",
+      "credit_url": "http://www.claudiosristorante.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "zawa-restaurant",
+    "name": "Zawa Restaurant",
+    "formatted_address": "920 Commercial Dr, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.276367,
+        "lng": -123.0693362
+      }
+    },
+    "formatted_phone_number": "(604) 255-0470",
+    "website": "http://zawarestaurant.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "21:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://zawarestaurant.com/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "pks-cafe",
+    "name": "PKs cafe",
+    "formatted_address": "1449 Prairie Ave #8, Port Coquitlam, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.271522499999996,
+        "lng": -122.7539768
+      }
+    },
+    "formatted_phone_number": "(604) 472-8979",
+    "website": "http://pkscafe.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.pkscafe.ca/copy-of-menu-2",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "sobu-social",
+    "name": "Sobu Social",
+    "formatted_address": "4490 Beresford St., Burnaby, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.224792199999996,
+        "lng": -123.0026188
+      }
+    },
+    "formatted_phone_number": "(604) 558-6722",
+    "website": "https://sobusocial.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            6,
+            0
+          ],
+          "start": "13:00",
+          "end": "17:00",
+          "label": "Afternoon"
+        },
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            0
+          ],
+          "start": "20:00",
+          "end": null,
+          "label": "Late night"
+        },
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://sobusocial.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/004dff29-e91d-469d-8c8a-8cc8b2444af7",
+      "credit_name": "Sobu Social",
+      "credit_url": "https://sobusocial.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "local-public-eatery-river-district",
+    "name": "LOCAL Public Eatery River District",
+    "formatted_address": "8558 River District Crossing, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.206077199999996,
+        "lng": -123.03051980000001
+      }
+    },
+    "formatted_phone_number": "(236) 317-6910",
+    "website": "https://localpubliceatery.com/lpe-river-district/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "21:00",
+          "end": "00:00",
+          "label": "Late night"
+        },
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "22:00",
+          "end": "00:00",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://localpubliceatery.com/lpe-river-district/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://localpubliceatery.com/app/uploads/2023/05/Wide_Web_06-1024x683.jpg",
+      "credit_name": "LOCAL Public Eatery River District",
+      "credit_url": "https://localpubliceatery.com/lpe-river-district/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "c-prime-modern-italian-steak-and-wine",
+    "name": "C|PRIME Modern Italian Steak and Wine",
+    "formatted_address": "1015 Burrard St Unit 501, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2808932,
+        "lng": -123.12722810000001
+      }
+    },
+    "formatted_phone_number": "(604) 684-3474",
+    "website": "http://www.cprime.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:30",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.cprime.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/645e5eba1d05c23a10bbef54/6483718a24cb241686c8eccf_cprime-opengraph.jpg",
+      "credit_name": "C|PRIME Modern Italian Steak and Wine",
+      "credit_url": "http://www.cprime.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "two-rivers-meats",
+    "name": "Two Rivers Meats",
+    "formatted_address": "180 Donaghy Ave, North Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.3190199,
+        "lng": -123.0964586
+      }
+    },
+    "formatted_phone_number": "(604) 990-5288",
+    "website": "https://tworiversmeats.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://tworiversmeats.com/menu/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-02"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "nicli-pizzeria-bar",
     "name": "NICLI Pizzeria + Bar",
     "formatted_address": "3142 Highland Blvd, North Vancouver, BC",
