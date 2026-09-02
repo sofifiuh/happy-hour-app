@@ -5989,5 +5989,175 @@
     },
     "matched_name": "Il Cappello Enoteca",
     "synced_at": "2026-09-02"
+  },
+  "nicli-pizzeria-bar": {
+    "place_id": "ChIJQyTlBnpxhlQRG_iQW8ItfrA",
+    "rating": 4.4,
+    "user_ratings_total": 1845,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "NICLI Pizzeria + Bar",
+    "synced_at": "2026-09-02"
+  },
+  "hideout-golf": {
+    "place_id": "ChIJv94nXI9zhlQRXuzMxCL70cM",
+    "rating": 4.7,
+    "user_ratings_total": 133,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
+    "matched_name": "Hideout Golf",
+    "synced_at": "2026-09-02"
+  },
+  "an-indian-affair-restaurant": {
+    "place_id": "ChIJJ6MS5y7QhVQR8iYy7PsCOH4",
+    "rating": 4.4,
+    "user_ratings_total": 5829,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "An Indian Affair restaurant",
+    "synced_at": "2026-09-02"
+  },
+  "afghan-kitchen-south-surrey": {
+    "place_id": "ChIJse82JpPEhVQRzhz30hab1Mo",
+    "rating": 4.7,
+    "user_ratings_total": 2578,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Afghan Kitchen South Surrey",
+    "synced_at": "2026-09-02"
+  },
+  "boteco-brasil-restaurant": {
+    "place_id": "ChIJj4y4hjVxhlQRYpgCUuJSLp4",
+    "rating": 4.3,
+    "user_ratings_total": 1675,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Boteco Brasil Restaurant",
+    "synced_at": "2026-09-02"
+  },
+  "chef-ron-restaurant-bar": {
+    "place_id": "ChIJufCsY7hzhlQRJ5pRvUZ6tMQ",
+    "rating": 4.5,
+    "user_ratings_total": 1436,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Chef Ron Restaurant & Bar",
+    "synced_at": "2026-09-02"
+  },
+  "pidgin-restaurant": {
+    "place_id": "ChIJj7pRp3BxhlQR8QU5qnkjG5U",
+    "rating": 4.4,
+    "user_ratings_total": 1254,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "PiDGiN Restaurant",
+    "synced_at": "2026-09-02"
+  },
+  "torafuku": {
+    "place_id": "ChIJDXs3CGVxhlQRQT7WyInozkA",
+    "rating": 4.3,
+    "user_ratings_total": 1059,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Torafuku",
+    "synced_at": "2026-09-02"
+  },
+  "tavola": {
+    "place_id": "ChIJfZnyOohxhlQRAX10LargB0E",
+    "rating": 4.5,
+    "user_ratings_total": 993,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Tavola",
+    "synced_at": "2026-09-02"
+  },
+  "tako-taqueria-korean": {
+    "place_id": "ChIJIwA4nntxhlQRBmzcXjGwJRQ",
+    "rating": 4.3,
+    "user_ratings_total": 981,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": false,
+      "serves_beer": true,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "TAKO - Taqueria Korean",
+    "synced_at": "2026-09-02"
   }
 }

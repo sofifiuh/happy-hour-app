@@ -407,11 +407,16 @@ if (args["from-raw"]) {
 }
 
 const candidates = [];
-const dropped = { known: 0, screened: 0, no_website: 0, closed: 0, wrong_type: 0 };
+const dropped = { known: 0, screened: 0, no_website: 0, closed: 0, wrong_type: 0, outside_metro: 0 };
 for (const p of byId.values()) {
   const name = p.displayName?.text || "";
   const types = p.types || [];
   if (knownPlaceIds.has(p.id) || knownNames.has(normName(name)) || knownHosts.has(host(p.websiteUri))) { dropped.known++; continue; }
+  // Applied here as well as at text-search ingest: the raw cache carries
+  // places found before this test existed, and --from-raw re-filters that
+  // cache, so a filter that only ran at ingest let a Blaine, Washington wine
+  // bar back into a Vancouver app after it had already been deleted once.
+  if (!inMetro(p)) { dropped.outside_metro++; continue; }
   if (screenedRecently.has(p.id)) { dropped.screened++; continue; }
   if (p.businessStatus && p.businessStatus !== "OPERATIONAL") { dropped.closed++; continue; }
   if (!p.websiteUri) { dropped.no_website++; continue; }

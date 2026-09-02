@@ -1,5 +1,5 @@
 {
-  "data_version": "2026-09-02-93b75cd9",
+  "data_version": "2026-09-02-f8ac6e1c",
   "venues": [
     {
       "id": "ancora",
@@ -4805,6 +4805,1628 @@
       },
       "data_source": "manual",
       "last_synced_at": null
+    },
+    {
+      "place_id": "ChIJQyTlBnpxhlQRG_iQW8ItfrA",
+      "international_phone_number": null,
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "business_status": "OPERATIONAL",
+      "price_level": 2,
+      "rating": 4.4,
+      "user_ratings_total": 1845,
+      "opening_hours": {
+        "weekday_text": []
+      },
+      "photos": [],
+      "amenities": {
+        "outdoor_seating": null,
+        "gluten_free_options": null,
+        "wheelchair_accessible_entrance": null,
+        "parking": null,
+        "transit": null,
+        "serves_cocktails": true,
+        "serves_beer": true,
+        "serves_wine": true,
+        "live_music": false,
+        "good_for_groups": true
+      },
+      "data_source": "discovery",
+      "id": "nicli-pizzeria-bar",
+      "name": "NICLI Pizzeria + Bar",
+      "formatted_address": "3142 Highland Blvd, North Vancouver, BC",
+      "address_components": null,
+      "geometry": {
+        "location": {
+          "lat": 49.3377264,
+          "lng": -123.1011861
+        }
+      },
+      "formatted_phone_number": "(604) 770-1240",
+      "website": "https://www.niclipizzeria.com/?utm_source=google&utm_medium=local",
+      "happy_hour": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "start": "15:00",
+        "end": "17:00",
+        "extra_windows": [],
+        "verified": false,
+        "verified_source": null,
+        "source_url": "https://www.niclipizzeria.com/happy-hour-menu-main",
+        "deals": [
+          {
+            "name": "Rucola e Finocchio",
+            "price": "$16",
+            "category": "food",
+            "description": "arugula, fennel, oranges, pine nuts, grana padano, orange vinaigrette"
+          },
+          {
+            "name": "Misto di Olive",
+            "price": "$10",
+            "category": "food",
+            "description": "warm mixed olives, marinated in citrus and herbs"
+          },
+          {
+            "name": "Margherita",
+            "price": "$22",
+            "category": "food",
+            "description": "pomodoro, grana padano, fior di latte, basil"
+          },
+          {
+            "name": "Diavola",
+            "price": "$24",
+            "category": "food",
+            "description": "pomodoro, grana padano, fior di latte, calabrese, chili oil, basil"
+          },
+          {
+            "name": "Pesto",
+            "price": "$25",
+            "category": "food",
+            "description": "crema, grana padano, fior di latte, bacon, grape tomato, nut-free pesto"
+          },
+          {
+            "name": "Negroni",
+            "price": "$14",
+            "category": "drink",
+            "description": "gin, campari, cinzano rosso, orange peel"
+          },
+          {
+            "name": "Negroni Sbagliato",
+            "price": "$14",
+            "category": "drink",
+            "description": "campari, cinzano rosso, prosecco, lemon peel"
+          },
+          {
+            "name": "Aperol Spritz",
+            "price": "$15",
+            "category": "drink",
+            "description": "aperol, prosecco, soda, orange"
+          },
+          {
+            "name": "Nicli Lager",
+            "price": "$8",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Strange Fellows Talisman Pale Ale",
+            "price": "$10",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Casa Rosso",
+            "price": "$10",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Casa Bianco",
+            "price": "$10",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Casa Rosato",
+            "price": "$11",
+            "category": "drink",
+            "description": ""
+          }
+        ]
+      },
+      "cover_image": {
+        "url": "https://www.niclipizzeria.com/nicli-og-image.jpg",
+        "credit_name": "NICLI Pizzeria + Bar",
+        "credit_url": "https://www.niclipizzeria.com/?utm_source=google&utm_medium=local",
+        "source": "official_website"
+      },
+      "last_synced_at": "2026-09-02"
+    },
+    {
+      "place_id": "ChIJv94nXI9zhlQRXuzMxCL70cM",
+      "international_phone_number": null,
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "business_status": "OPERATIONAL",
+      "price_level": 2,
+      "rating": 4.7,
+      "user_ratings_total": 133,
+      "opening_hours": {
+        "weekday_text": []
+      },
+      "photos": [],
+      "amenities": {
+        "outdoor_seating": null,
+        "gluten_free_options": null,
+        "wheelchair_accessible_entrance": null,
+        "parking": null,
+        "transit": null,
+        "serves_cocktails": true,
+        "serves_beer": true,
+        "serves_wine": true,
+        "live_music": null,
+        "good_for_groups": true
+      },
+      "data_source": "discovery",
+      "id": "hideout-golf",
+      "name": "Hideout Golf",
+      "formatted_address": "1755 Davie St, Vancouver, BC",
+      "address_components": null,
+      "geometry": {
+        "location": {
+          "lat": 49.286943799999996,
+          "lng": -123.14073719999999
+        }
+      },
+      "formatted_phone_number": "(604) 682-1833",
+      "website": "https://www.hideoutgolf.ca/",
+      "happy_hour": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "start": "15:00",
+        "end": "18:00",
+        "extra_windows": [],
+        "verified": false,
+        "verified_source": null,
+        "source_url": "https://www.hideoutgolf.ca/menu?menu=happy-hour",
+        "deals": [
+          {
+            "name": "Hideout Lager",
+            "price": "$6.00",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Craft Pints",
+            "price": "$7.00",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "House Wine",
+            "price": "$6.00",
+            "category": "drink",
+            "description": "5 oz"
+          },
+          {
+            "name": "House Wine",
+            "price": "$9.00",
+            "category": "drink",
+            "description": "8 oz"
+          },
+          {
+            "name": "Premium Wine - Red Rooster",
+            "price": "$7.75",
+            "category": "drink",
+            "description": "5 oz"
+          },
+          {
+            "name": "Premium Wine - Pinot Noir",
+            "price": "$12.25",
+            "category": "drink",
+            "description": "8 oz"
+          },
+          {
+            "name": "Premium Wine - Pinot Gris",
+            "price": "$12.25",
+            "category": "drink",
+            "description": "8 oz"
+          },
+          {
+            "name": "Highball",
+            "price": "$6.00",
+            "category": "drink",
+            "description": "1 oz"
+          },
+          {
+            "name": "Highball",
+            "price": "$9.00",
+            "category": "drink",
+            "description": "2 oz"
+          },
+          {
+            "name": "Double Vodka Red Bull",
+            "price": "$11.50",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Bottle + Shot",
+            "price": "$11.50",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Transfusion",
+            "price": "$12.00",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Blueberry Smash",
+            "price": "$12.00",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Watermelon Refresher",
+            "price": "$12.00",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Passion Fruit Punch",
+            "price": "$12.00",
+            "category": "drink",
+            "description": ""
+          }
+        ]
+      },
+      "cover_image": {
+        "url": "https://static.wixstatic.com/media/914129_058cb1a88ab44eee84ecaaf13c1c332d~mv2.jpg/v1/fill/w_2500,h_1666,al_c/914129_058cb1a88ab44eee84ecaaf13c1c332d~mv2.jpg",
+        "credit_name": "Hideout Golf",
+        "credit_url": "https://www.hideoutgolf.ca/",
+        "source": "official_website"
+      },
+      "last_synced_at": "2026-09-02"
+    },
+    {
+      "place_id": "ChIJJ6MS5y7QhVQR8iYy7PsCOH4",
+      "international_phone_number": null,
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "business_status": "OPERATIONAL",
+      "price_level": 2,
+      "rating": 4.4,
+      "user_ratings_total": 5829,
+      "opening_hours": {
+        "weekday_text": []
+      },
+      "photos": [],
+      "amenities": {
+        "outdoor_seating": false,
+        "gluten_free_options": null,
+        "wheelchair_accessible_entrance": null,
+        "parking": null,
+        "transit": null,
+        "serves_cocktails": true,
+        "serves_beer": true,
+        "serves_wine": true,
+        "live_music": true,
+        "good_for_groups": true
+      },
+      "data_source": "discovery",
+      "id": "an-indian-affair-restaurant",
+      "name": "An Indian Affair restaurant",
+      "formatted_address": "19653 Willowbrook Dr #146, Langley, BC",
+      "address_components": null,
+      "geometry": {
+        "location": {
+          "lat": 49.115670599999994,
+          "lng": -122.6795137
+        }
+      },
+      "formatted_phone_number": "(604) 539-8114",
+      "website": "https://anindianaffair.com/willowbrook/home",
+      "happy_hour": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "start": "15:00",
+        "end": "17:00",
+        "extra_windows": [
+          {
+            "days": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "start": "20:00",
+            "end": null,
+            "label": "Late night"
+          }
+        ],
+        "verified": false,
+        "verified_source": null,
+        "source_url": "https://anindianaffair.com/willowbrook/happy-hour.html",
+        "deals": [
+          {
+            "name": "Vegetable Samosa",
+            "price": "$4",
+            "category": "food",
+            "description": "Pastries filled with fresh potatoes & green peas"
+          },
+          {
+            "name": "Masala Papad",
+            "price": "$5",
+            "category": "food",
+            "description": "Papad topped with diced kachumber salad"
+          },
+          {
+            "name": "Chicken Samosa",
+            "price": "$6",
+            "category": "food",
+            "description": "Crispy pastry filled with chicken mix"
+          },
+          {
+            "name": "Curly Fries",
+            "price": "$6",
+            "category": "food",
+            "description": "Fresh French fries seasoned with Indian spices (Salted/Peri-Peri)"
+          },
+          {
+            "name": "Mozzarella Sticks",
+            "price": "$8",
+            "category": "food",
+            "description": "Crispy deep-fried mozzarella sticks"
+          },
+          {
+            "name": "Vegetable Pakora",
+            "price": "$7",
+            "category": "food",
+            "description": "Vegetable fritters coated in crispy batter fried"
+          },
+          {
+            "name": "Paneer Pakora",
+            "price": "$9",
+            "category": "food",
+            "description": "Indian stuffed cheese coated in crispy batter fried"
+          },
+          {
+            "name": "Chicken Pakora",
+            "price": "$9",
+            "category": "food",
+            "description": "Crispy marinated chicken tenders in chickpea batter"
+          },
+          {
+            "name": "Chilli Chicken",
+            "price": "$9",
+            "category": "food",
+            "description": "Crispy boneless chicken in spicy garlic soy sauce"
+          },
+          {
+            "name": "Tacos",
+            "price": "$8",
+            "category": "food",
+            "description": "Choice of Paneer, Chicken, or Fish (2 pcs)"
+          },
+          {
+            "name": "Chilli Mushrooms",
+            "price": "$10",
+            "category": "food",
+            "description": "Farm fresh mushrooms tossed with onions & peppers in chilli garlic sauce"
+          },
+          {
+            "name": "Dahi Kebab",
+            "price": "$9",
+            "category": "food",
+            "description": "Hung yogurt patties seasoned with Indian spices and golden fried"
+          },
+          {
+            "name": "Delhi Style Momos",
+            "price": "$10",
+            "category": "food",
+            "description": "Fried dumplings with savoury filling (Vegetable/Paneer/Chicken)"
+          },
+          {
+            "name": "Coconut Prawns",
+            "price": "$11",
+            "category": "food",
+            "description": "Coconut-crusted prawns served with baby greens"
+          },
+          {
+            "name": "Chicken Wings",
+            "price": "$12",
+            "category": "food",
+            "description": "Choice of Salt & Pepper, Honey Garlic, or Buffalo"
+          },
+          {
+            "name": "Chaat Papri",
+            "price": "$8",
+            "category": "food",
+            "description": "Crispy flakes topped with chickpeas, potatoes, yogurt & chutney"
+          },
+          {
+            "name": "Gol Gappe Shots",
+            "price": "$8",
+            "category": "food",
+            "description": "Gol Gappa with tamarind & mint water (Add tequila/vodka +$2)"
+          },
+          {
+            "name": "Classic Mimosa",
+            "price": "$5",
+            "category": "drink",
+            "description": "Prosecco, orange juice"
+          },
+          {
+            "name": "Lemon Bliss",
+            "price": "$8",
+            "category": "drink",
+            "description": "Limoncello, lime, lavender, lager"
+          },
+          {
+            "name": "Indian Sunrise",
+            "price": "$8",
+            "category": "drink",
+            "description": "Tequila, orange juice, pineapple juice, grenadine"
+          },
+          {
+            "name": "Violet Lychee",
+            "price": "$8",
+            "category": "drink",
+            "description": "Gin, Lychee, Sweet n' Sour"
+          },
+          {
+            "name": "Mango Sensation",
+            "price": "$8",
+            "category": "drink",
+            "description": "Vodka, Mango Nectar, Lemonade"
+          },
+          {
+            "name": "Mojito",
+            "price": "$8",
+            "category": "drink",
+            "description": "White Rum, mint, lime, sugar, soda (multiple fruit flavors)"
+          },
+          {
+            "name": "Moscow Mule",
+            "price": "$8",
+            "category": "drink",
+            "description": "Vodka, ginger beer, lime juice"
+          },
+          {
+            "name": "Caesar",
+            "price": "$8",
+            "category": "drink",
+            "description": "Vodka, Clamato juice, hot sauce, Worcestershire sauce, celery, salt rim"
+          },
+          {
+            "name": "Beer on Tap",
+            "price": "$5",
+            "category": "drink",
+            "description": "Rotating selection"
+          },
+          {
+            "name": "Cobra",
+            "price": "$7",
+            "category": "drink",
+            "description": "Indian beer"
+          },
+          {
+            "name": "House Red/White",
+            "price": "$6",
+            "category": "drink",
+            "description": "Wine"
+          },
+          {
+            "name": "Kiss My Lips",
+            "price": "$6",
+            "category": "drink",
+            "description": "Watermelon, pineapple, lime (non-alcoholic)"
+          },
+          {
+            "name": "Mango Lassi",
+            "price": "$6",
+            "category": "drink",
+            "description": "Mango flavoured yogurt drink (non-alcoholic)"
+          },
+          {
+            "name": "Virgin Mojito",
+            "price": "$6",
+            "category": "drink",
+            "description": "Mint, lime, soda water, simple syrup, fruit variations (non-alcoholic)"
+          },
+          {
+            "name": "Piña Colada",
+            "price": "$6",
+            "category": "drink",
+            "description": "Pineapple juice, coconut cream (non-alcoholic)"
+          }
+        ]
+      },
+      "cover_image": null,
+      "last_synced_at": "2026-09-02"
+    },
+    {
+      "place_id": "ChIJse82JpPEhVQRzhz30hab1Mo",
+      "international_phone_number": null,
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "business_status": "OPERATIONAL",
+      "price_level": 2,
+      "rating": 4.7,
+      "user_ratings_total": 2578,
+      "opening_hours": {
+        "weekday_text": []
+      },
+      "photos": [],
+      "amenities": {
+        "outdoor_seating": false,
+        "gluten_free_options": null,
+        "wheelchair_accessible_entrance": null,
+        "parking": null,
+        "transit": null,
+        "serves_cocktails": true,
+        "serves_beer": true,
+        "serves_wine": true,
+        "live_music": true,
+        "good_for_groups": true
+      },
+      "data_source": "discovery",
+      "id": "afghan-kitchen-south-surrey",
+      "name": "Afghan Kitchen South Surrey",
+      "formatted_address": "16120 24 Ave #115, Surrey, BC",
+      "address_components": null,
+      "geometry": {
+        "location": {
+          "lat": 49.0445839,
+          "lng": -122.77665119999998
+        }
+      },
+      "formatted_phone_number": "(604) 727-0070",
+      "website": "https://aksurrey.com/",
+      "happy_hour": {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "start": "15:00",
+        "end": "18:00",
+        "extra_windows": [
+          {
+            "days": [
+              0,
+              6
+            ],
+            "start": "15:00",
+            "end": "17:00",
+            "label": "Weekend"
+          },
+          {
+            "days": [
+              5,
+              6
+            ],
+            "start": "21:00",
+            "end": "22:30",
+            "label": "Late night"
+          }
+        ],
+        "verified": false,
+        "verified_source": null,
+        "source_url": "https://aksurrey.com/s/Afghan-Kitchen-7.pdf",
+        "deals": [
+          {
+            "name": "Hummus",
+            "price": "$9",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Afghan Nuggets",
+            "price": "$14",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "4-Piece Veggie Dumplings",
+            "price": "$15",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Naan + Chicken Kebab",
+            "price": "$20",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Afghan Chicken",
+            "price": "$20",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Brussels Sprouts",
+            "price": "$14",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "All Beers on Tap",
+            "price": "$6",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "House Wine",
+            "price": "$7",
+            "category": "drink",
+            "description": "Red or white, 5oz"
+          },
+          {
+            "name": "All Cocktails",
+            "price": "$15",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Zero Proof Mocktails",
+            "price": "$8",
+            "category": "drink",
+            "description": ""
+          }
+        ]
+      },
+      "cover_image": null,
+      "last_synced_at": "2026-09-02"
+    },
+    {
+      "place_id": "ChIJj4y4hjVxhlQRYpgCUuJSLp4",
+      "international_phone_number": null,
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "business_status": "OPERATIONAL",
+      "price_level": 2,
+      "rating": 4.3,
+      "user_ratings_total": 1675,
+      "opening_hours": {
+        "weekday_text": []
+      },
+      "photos": [],
+      "amenities": {
+        "outdoor_seating": true,
+        "gluten_free_options": null,
+        "wheelchair_accessible_entrance": null,
+        "parking": null,
+        "transit": null,
+        "serves_cocktails": true,
+        "serves_beer": true,
+        "serves_wine": true,
+        "live_music": true,
+        "good_for_groups": true
+      },
+      "data_source": "discovery",
+      "id": "boteco-brasil-restaurant",
+      "name": "Boteco Brasil Restaurant",
+      "formatted_address": "2545 Nanaimo St, Vancouver, BC",
+      "address_components": null,
+      "geometry": {
+        "location": {
+          "lat": 49.2615926,
+          "lng": -123.05698979999998
+        }
+      },
+      "formatted_phone_number": "(778) 379-7995",
+      "website": "http://boteco.ca/",
+      "happy_hour": {
+        "days": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "start": "15:00",
+        "end": "18:00",
+        "extra_windows": [],
+        "verified": false,
+        "verified_source": null,
+        "source_url": "https://www.boteco.ca/menus-1",
+        "deals": [
+          {
+            "name": "Drinks",
+            "price": "50% off second",
+            "category": "drink",
+            "description": "Buy one drink, get the second for 50% off"
+          },
+          {
+            "name": "Batata Frita",
+            "price": "$8",
+            "category": "food",
+            "description": "Crispy seasoned french fries with aioli dip"
+          },
+          {
+            "name": "Polenta",
+            "price": "$10",
+            "category": "food",
+            "description": "Ground cornmeal fries with garlic aioli dip"
+          },
+          {
+            "name": "Mandioca",
+            "price": "$10",
+            "category": "food",
+            "description": "Cassava root fries with parmesan cheese"
+          },
+          {
+            "name": "Tapioca Dices",
+            "price": "$10",
+            "category": "food",
+            "description": "Cheesy tapioca with queijo coalho and pepper jelly"
+          },
+          {
+            "name": "Calabresa Aperitivo",
+            "price": "$15",
+            "category": "food",
+            "description": "Cured sausage with caramelized onion, kale, and fries"
+          },
+          {
+            "name": "Picanha Aperitivo",
+            "price": "$18",
+            "category": "food",
+            "description": "Sliced top sirloin with onions, farofa, vinaigrette, and fries"
+          },
+          {
+            "name": "Chapa Mista",
+            "price": "$34",
+            "category": "food",
+            "description": "Steak, grilled chicken, and sausage on hot skillet with polenta and farofa; serves two"
+          }
+        ]
+      },
+      "cover_image": {
+        "url": "https://static.wixstatic.com/media/535337_adeb1e4fae1e4820a49a81ca879b0f0f~mv2.jpg/v1/fill/w_2500,h_1666,al_c/535337_adeb1e4fae1e4820a49a81ca879b0f0f~mv2.jpg",
+        "credit_name": "Boteco Brasil Restaurant",
+        "credit_url": "http://boteco.ca/",
+        "source": "official_website"
+      },
+      "last_synced_at": "2026-09-02"
+    },
+    {
+      "place_id": "ChIJufCsY7hzhlQRJ5pRvUZ6tMQ",
+      "international_phone_number": null,
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "business_status": "OPERATIONAL",
+      "price_level": 2,
+      "rating": 4.5,
+      "user_ratings_total": 1436,
+      "opening_hours": {
+        "weekday_text": []
+      },
+      "photos": [],
+      "amenities": {
+        "outdoor_seating": true,
+        "gluten_free_options": null,
+        "wheelchair_accessible_entrance": null,
+        "parking": null,
+        "transit": null,
+        "serves_cocktails": true,
+        "serves_beer": true,
+        "serves_wine": true,
+        "live_music": true,
+        "good_for_groups": true
+      },
+      "data_source": "discovery",
+      "id": "chef-ron-restaurant-bar",
+      "name": "Chef Ron Restaurant & Bar",
+      "formatted_address": "1037 Denman St, Vancouver, BC",
+      "address_components": null,
+      "geometry": {
+        "location": {
+          "lat": 49.289074899999996,
+          "lng": -123.1394991
+        }
+      },
+      "formatted_phone_number": "(604) 336-9994",
+      "website": "https://chefron.ca/",
+      "happy_hour": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "start": "15:00",
+        "end": "18:00",
+        "extra_windows": [],
+        "verified": false,
+        "verified_source": null,
+        "source_url": "https://chefron.ca/happy-hour-menu/",
+        "deals": [
+          {
+            "name": "Draught Beers",
+            "price": "$2.00 OFF",
+            "category": "drink",
+            "description": "Parallel 49 Lager, Space Kitty, Pale Ale; Blood Orange Wheat; Fat Tug IPA; Off the Rail Pilsner; 33 Acres of Darkness (Sleeve $4.50–$5.00, Pint $6.50–$7.00)"
+          },
+          {
+            "name": "Beer Pitcher",
+            "price": "$20.00",
+            "category": "drink",
+            "description": "Draught beer pitcher"
+          },
+          {
+            "name": "6 oz Wine",
+            "price": "$5.50",
+            "category": "drink",
+            "description": "Pellier Pinot Grigio (white) or Jackson Triggs Cabernet Sauvignon (red)"
+          },
+          {
+            "name": "Chef Ron Cooler",
+            "price": "$12.00",
+            "category": "drink",
+            "description": "House cocktail"
+          },
+          {
+            "name": "Aperol Spritz",
+            "price": "$10.00",
+            "category": "drink",
+            "description": "Aperol cocktail"
+          },
+          {
+            "name": "Mojito",
+            "price": "$9.00",
+            "category": "drink",
+            "description": "Rum cocktail"
+          },
+          {
+            "name": "Wings",
+            "price": "$14.00",
+            "category": "food",
+            "description": "1 pound, Hot/Salt & Pepper/BBQ"
+          },
+          {
+            "name": "Street Taco",
+            "price": "$13.00",
+            "category": "food",
+            "description": "Chicken"
+          },
+          {
+            "name": "Falafel Taco",
+            "price": "$12.00",
+            "category": "food",
+            "description": "Falafel taco"
+          },
+          {
+            "name": "Dolma",
+            "price": "$10.00",
+            "category": "food",
+            "description": "Stuffed grape leaves"
+          },
+          {
+            "name": "Samosa Dish",
+            "price": "$10.00",
+            "category": "food",
+            "description": "4 samosas"
+          },
+          {
+            "name": "Poutine",
+            "price": "$9.50",
+            "category": "food",
+            "description": "Poutine"
+          },
+          {
+            "name": "Yam Fries",
+            "price": "$8.00",
+            "category": "food",
+            "description": "Yam fries"
+          },
+          {
+            "name": "Fries",
+            "price": "$6.00",
+            "category": "food",
+            "description": "Regular fries"
+          },
+          {
+            "name": "Mushroom Cap",
+            "price": "$13.00",
+            "category": "food",
+            "description": "Mushroom appetizer"
+          },
+          {
+            "name": "Falafel Sandwich",
+            "price": "$13.00",
+            "category": "food",
+            "description": "Falafel sandwich"
+          },
+          {
+            "name": "Hot Dog",
+            "price": "$13.00",
+            "category": "food",
+            "description": "Hot dog sandwich"
+          },
+          {
+            "name": "Bandari Sandwich",
+            "price": "$15.00",
+            "category": "food",
+            "description": "Special sandwich"
+          },
+          {
+            "name": "Fish Burger",
+            "price": "$16.00",
+            "category": "food",
+            "description": "Fish burger"
+          },
+          {
+            "name": "Chicken Burger",
+            "price": "$18.00",
+            "category": "food",
+            "description": "Cajun chicken burger"
+          },
+          {
+            "name": "Serious Burger Lover",
+            "price": "$18.00",
+            "category": "food",
+            "description": "Signature burger"
+          },
+          {
+            "name": "Chicken Strips & Fries",
+            "price": "$15.00",
+            "category": "food",
+            "description": "Chicken strips with fries"
+          },
+          {
+            "name": "Margarita Pizza",
+            "price": "$17.00",
+            "category": "food",
+            "description": "Margarita pizza"
+          },
+          {
+            "name": "Mama's Style Spaghettini",
+            "price": "$14.00",
+            "category": "food",
+            "description": "Pasta with meat sauce"
+          },
+          {
+            "name": "Fettuccini Alfredo",
+            "price": "$22.00",
+            "category": "food",
+            "description": "Served with grilled garlic chicken or Cajun chicken"
+          }
+        ]
+      },
+      "cover_image": null,
+      "last_synced_at": "2026-09-02"
+    },
+    {
+      "place_id": "ChIJj7pRp3BxhlQR8QU5qnkjG5U",
+      "international_phone_number": null,
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "business_status": "OPERATIONAL",
+      "price_level": 4,
+      "rating": 4.4,
+      "user_ratings_total": 1254,
+      "opening_hours": {
+        "weekday_text": []
+      },
+      "photos": [],
+      "amenities": {
+        "outdoor_seating": false,
+        "gluten_free_options": null,
+        "wheelchair_accessible_entrance": null,
+        "parking": null,
+        "transit": null,
+        "serves_cocktails": true,
+        "serves_beer": true,
+        "serves_wine": true,
+        "live_music": false,
+        "good_for_groups": true
+      },
+      "data_source": "discovery",
+      "id": "pidgin-restaurant",
+      "name": "PiDGiN Restaurant",
+      "formatted_address": "350 Carrall St, Vancouver, BC",
+      "address_components": null,
+      "geometry": {
+        "location": {
+          "lat": 49.281881000000006,
+          "lng": -123.10414499999997
+        }
+      },
+      "formatted_phone_number": "(604) 620-9400",
+      "website": "https://www.pidginvancouver.com/",
+      "happy_hour": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "start": "17:00",
+        "end": "18:00",
+        "extra_windows": [],
+        "verified": false,
+        "verified_source": null,
+        "source_url": "https://www.pidginvancouver.com/menu/happy-hour",
+        "deals": [
+          {
+            "name": "Beef Tendon Chicharron",
+            "price": "$5",
+            "category": "food",
+            "description": "gochugaru citrus spice"
+          },
+          {
+            "name": "Eggplant Skewers (2)",
+            "price": "$7",
+            "category": "food",
+            "description": "tamarind glaze, typhoon shelter crumb"
+          },
+          {
+            "name": "Kimchi Croquettes (2)",
+            "price": "$8",
+            "category": "food",
+            "description": "manchego, bechamel, gochujang aioli"
+          },
+          {
+            "name": "Snow Fungus (2)",
+            "price": "$8",
+            "category": "food",
+            "description": "ponzu, cucumber, radish"
+          },
+          {
+            "name": "Clam Panisse (2)",
+            "price": "$10",
+            "category": "food",
+            "description": "chickpea, clams, edamame, preserved lemon"
+          },
+          {
+            "name": "Veal Sweetbreads",
+            "price": "$13",
+            "category": "food",
+            "description": "gochujang, buckwheat, taleggio sauce"
+          },
+          {
+            "name": "Ox Tongue Skewers (2)",
+            "price": "$10",
+            "category": "food",
+            "description": "sweet chili sambal"
+          },
+          {
+            "name": "Roti Canai",
+            "price": "$13",
+            "category": "food",
+            "description": "rendang sauce"
+          },
+          {
+            "name": "Sake",
+            "price": "$7",
+            "category": "drink",
+            "description": "Yoshi no Gawa, Brewmaster, Honjozo, Niigata"
+          },
+          {
+            "name": "White Wine",
+            "price": "$12",
+            "category": "drink",
+            "description": "Sage Hills, Pinot Gris, Summerland, BC '23"
+          },
+          {
+            "name": "Red Wine",
+            "price": "$12",
+            "category": "drink",
+            "description": "Kutatas, Whole Cluster Pinot Noir, Saanich, BC '23"
+          },
+          {
+            "name": "Bubbles",
+            "price": "$13",
+            "category": "drink",
+            "description": "Averill Creek, Charme de l'Ile, Cowichan, BC NV"
+          },
+          {
+            "name": "Rotating Local Beer",
+            "price": "$7",
+            "category": "drink",
+            "description": "473ml, BC"
+          },
+          {
+            "name": "Cucumber Gimlet",
+            "price": "$12",
+            "category": "drink",
+            "description": "gin, lime, cucumber cordial, wasabi bitters"
+          },
+          {
+            "name": "Negroni",
+            "price": "$12",
+            "category": "drink",
+            "description": "gin, campari, sweet vermouth"
+          },
+          {
+            "name": "Old Fashioned",
+            "price": "$12",
+            "category": "drink",
+            "description": "rye, demerara, angostura"
+          },
+          {
+            "name": "Vieux Carré",
+            "price": "$12",
+            "category": "drink",
+            "description": "cognac, rye, sweet vermouth, bénédictine, bitters"
+          },
+          {
+            "name": "The Classics Flight",
+            "price": "$12",
+            "category": "drink",
+            "description": "negroni, old fashioned, vieux carré"
+          },
+          {
+            "name": "NA Strathcona Sunset",
+            "price": "$8",
+            "category": "drink",
+            "description": "orange 'aperitif', simple syrup, lemon, soda"
+          },
+          {
+            "name": "NA Super Lime",
+            "price": "$6",
+            "category": "drink",
+            "description": "fermented lime cordial, ginger, celery bitters, soda"
+          }
+        ]
+      },
+      "cover_image": {
+        "url": "https://www.pidginvancouver.com/images/og-image.jpg",
+        "credit_name": "PiDGiN Restaurant",
+        "credit_url": "https://www.pidginvancouver.com/",
+        "source": "official_website"
+      },
+      "last_synced_at": "2026-09-02"
+    },
+    {
+      "place_id": "ChIJDXs3CGVxhlQRQT7WyInozkA",
+      "international_phone_number": null,
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "business_status": "OPERATIONAL",
+      "price_level": null,
+      "rating": 4.3,
+      "user_ratings_total": 1059,
+      "opening_hours": {
+        "weekday_text": []
+      },
+      "photos": [],
+      "amenities": {
+        "outdoor_seating": false,
+        "gluten_free_options": null,
+        "wheelchair_accessible_entrance": null,
+        "parking": null,
+        "transit": null,
+        "serves_cocktails": true,
+        "serves_beer": true,
+        "serves_wine": true,
+        "live_music": false,
+        "good_for_groups": true
+      },
+      "data_source": "discovery",
+      "id": "torafuku",
+      "name": "Torafuku",
+      "formatted_address": "958 Main St, Vancouver, BC",
+      "address_components": null,
+      "geometry": {
+        "location": {
+          "lat": 49.2758915,
+          "lng": -123.09960849999999
+        }
+      },
+      "formatted_phone_number": "(778) 903-2006",
+      "website": "http://www.torafuku.ca/",
+      "happy_hour": {
+        "days": [
+          0,
+          3,
+          4,
+          5,
+          6
+        ],
+        "start": "15:00",
+        "end": "17:30",
+        "extra_windows": [],
+        "verified": false,
+        "verified_source": null,
+        "source_url": "https://www.torafuku.ca/happy-hour-menu-vancouver",
+        "deals": [
+          {
+            "name": "Daily Feature Wine",
+            "price": "$10",
+            "category": "drink",
+            "description": "rotating selection on wine"
+          },
+          {
+            "name": "Daily Feature Sake",
+            "price": "$10",
+            "category": "drink",
+            "description": "rotating selection on sake"
+          },
+          {
+            "name": "All Cocktails",
+            "price": "$3 OFF",
+            "category": "drink",
+            "description": "your choice on our specialized cocktails"
+          },
+          {
+            "name": "Wines or Sparkling by Bottle",
+            "price": "20% OFF",
+            "category": "drink",
+            "description": "your choice on wines or sparkling by bottle"
+          },
+          {
+            "name": "Sake by Bottle",
+            "price": "10% OFF",
+            "category": "drink",
+            "description": "your choice on sake by bottle"
+          },
+          {
+            "name": "All Beers",
+            "price": "$2 OFF",
+            "category": "drink",
+            "description": "your choice on beer"
+          },
+          {
+            "name": "Lotus Chips",
+            "price": "$6",
+            "category": "food",
+            "description": "crispy taro & lotus chips with spicy honey [GF]"
+          },
+          {
+            "name": "Maitake Tempura",
+            "price": "$12",
+            "category": "food",
+            "description": "Maitake mushroom tempura, togarashi 7 spice, ponzu"
+          },
+          {
+            "name": "Duck Spring Rolls",
+            "price": "$12",
+            "category": "food",
+            "description": "confit duck leg, seasonal vegetables, plum dust, aioli"
+          },
+          {
+            "name": "Chicken Wings",
+            "price": "$12",
+            "category": "food",
+            "description": "General Tao's Sauce, fried chicken wings, grilled broccolini"
+          },
+          {
+            "name": "Brussel Sprouts",
+            "price": "$12",
+            "category": "food",
+            "description": "cauliflower, broccoli, brussels sprouts, balsamic black bean vinaigrette, chickpea [V] [DF]"
+          },
+          {
+            "name": "Hiramasa Fish Collar",
+            "price": "$16",
+            "category": "food",
+            "description": "New Zealand yellowtail kingfish collar, Taiwanese salt pepper, lime [GF][DF]"
+          },
+          {
+            "name": "Dandan Dumpling",
+            "price": "$10",
+            "category": "food",
+            "description": "pork & chives dumpling, chili oil, sesame sauce, black vinegar, herbs, candied hazelnuts"
+          },
+          {
+            "name": "Pain au lait",
+            "price": "$11",
+            "category": "food",
+            "description": "House made Hokkaido Tang Zhong buns, honey glazed, whipped butter"
+          }
+        ]
+      },
+      "cover_image": {
+        "url": "http://static1.squarespace.com/static/5e8421e3572f04793d6e75cf/t/6862e6ce3f6e603eb2e3b3b1/1751312079031/TF_star_blk_horizontal.png?format=1500w",
+        "credit_name": "Torafuku",
+        "credit_url": "http://www.torafuku.ca/",
+        "source": "official_website"
+      },
+      "last_synced_at": "2026-09-02"
+    },
+    {
+      "place_id": "ChIJfZnyOohxhlQRAX10LargB0E",
+      "international_phone_number": null,
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "business_status": "OPERATIONAL",
+      "price_level": 2,
+      "rating": 4.5,
+      "user_ratings_total": 993,
+      "opening_hours": {
+        "weekday_text": []
+      },
+      "photos": [],
+      "amenities": {
+        "outdoor_seating": true,
+        "gluten_free_options": null,
+        "wheelchair_accessible_entrance": null,
+        "parking": null,
+        "transit": null,
+        "serves_cocktails": true,
+        "serves_beer": true,
+        "serves_wine": true,
+        "live_music": false,
+        "good_for_groups": true
+      },
+      "data_source": "discovery",
+      "id": "tavola",
+      "name": "Tavola",
+      "formatted_address": "1829 Robson St, Vancouver, BC",
+      "address_components": null,
+      "geometry": {
+        "location": {
+          "lat": 49.2918801,
+          "lng": -123.13579599999998
+        }
+      },
+      "formatted_phone_number": "(604) 606-4680",
+      "website": "https://tavolavancouver.com/",
+      "happy_hour": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "start": "17:00",
+        "end": "18:00",
+        "extra_windows": [],
+        "verified": false,
+        "verified_source": null,
+        "source_url": "https://tavolavancouver.com/daily-specials/",
+        "deals": [
+          {
+            "name": "Prosecco",
+            "price": "$8",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "House Red or White",
+            "price": "$9",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Main St Secret Krush Lager",
+            "price": "$6",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Aperol Spritz",
+            "price": "$12",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Negroni",
+            "price": "$12",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Paper Plane",
+            "price": "$12",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Olives",
+            "price": "$7",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Burrata and Prosciutto",
+            "price": "$28",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Crostini",
+            "price": "$10",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Arugula Salad",
+            "price": "$14",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Spaghetti Cacio e Pepe",
+            "price": "$22",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Bigoli Meatballs",
+            "price": "$22",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Ricotta Gnocchi",
+            "price": "$24",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Grilled Broccolini",
+            "price": "$15",
+            "category": "food",
+            "description": ""
+          }
+        ]
+      },
+      "cover_image": null,
+      "last_synced_at": "2026-09-02"
+    },
+    {
+      "place_id": "ChIJIwA4nntxhlQRBmzcXjGwJRQ",
+      "international_phone_number": null,
+      "types": [
+        "restaurant",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "business_status": "OPERATIONAL",
+      "price_level": 1,
+      "rating": 4.3,
+      "user_ratings_total": 981,
+      "opening_hours": {
+        "weekday_text": []
+      },
+      "photos": [],
+      "amenities": {
+        "outdoor_seating": true,
+        "gluten_free_options": null,
+        "wheelchair_accessible_entrance": null,
+        "parking": null,
+        "transit": null,
+        "serves_cocktails": false,
+        "serves_beer": true,
+        "serves_wine": false,
+        "live_music": false,
+        "good_for_groups": null
+      },
+      "data_source": "discovery",
+      "id": "tako-taqueria-korean",
+      "name": "TAKO - Taqueria Korean",
+      "formatted_address": "601 Expo Blvd, Vancouver, BC",
+      "address_components": null,
+      "geometry": {
+        "location": {
+          "lat": 49.278889899999996,
+          "lng": -123.10823420000001
+        }
+      },
+      "formatted_phone_number": "(778) 379-7010",
+      "website": "http://www.takovancouver.com/",
+      "happy_hour": {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "start": "14:00",
+        "end": "17:00",
+        "extra_windows": [],
+        "verified": false,
+        "verified_source": null,
+        "source_url": "http://www.takovancouver.com/",
+        "deals": [
+          {
+            "name": "All Beers",
+            "price": "$6.50",
+            "category": "drink",
+            "description": ""
+          },
+          {
+            "name": "Any 2 Tacos",
+            "price": "$13",
+            "category": "food",
+            "description": ""
+          },
+          {
+            "name": "Bowls, Burritos, Quesadillas, Poutine",
+            "price": "$15",
+            "category": "food",
+            "description": "Rice Bowls, Burrito Bowls, Quesadillas, Poutine"
+          }
+        ]
+      },
+      "cover_image": null,
+      "last_synced_at": "2026-09-02"
     },
     {
       "place_id": "ChIJqYIGTy9yhlQRuS6kHx4pVKM",
