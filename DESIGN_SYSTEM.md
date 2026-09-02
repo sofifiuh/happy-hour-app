@@ -34,9 +34,14 @@ third black surface; if something needs emphasis, reach for amber first.
 
 ## Type
 
-System font stack (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-Helvetica, Arial, sans-serif`) — no webfont, keeps pages fast and works
-offline.
+**Fustat** (Google Fonts, weights 400/500/600/700/800), falling back to the
+system font stack (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+Helvetica, Arial, sans-serif`) if the webfont hasn't loaded yet or is
+unreachable (e.g. offline).
+
+The map view's carousel/detail card venue name is the one exception: it uses
+`"Space Mono"` (weight 700, uppercase, letter-spaced) to read as a distinct
+label rather than body text.
 
 - **Display headline** (`.hero-title`): `font-weight: 800`, tight
   `letter-spacing: -0.02em`, `line-height: 0.92`, uppercase, sized with
