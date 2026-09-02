@@ -91,8 +91,12 @@ let userLocHalo = null;
 // and the distance shown on each card. Null until geolocation resolves.
 let userPos = null;
 let mapToastTimer = null;
-// Whether the map has had its one automatic fit-to-all-pins.
+// Whether the map has had its one automatic initial framing.
 let mapFitted = false;
+// Whether that framing has already been anchored on the visitor's real
+// location — geolocation often resolves after the map's first paint, so this
+// lets renderMap recenter exactly once when userPos actually arrives.
+let mapCenteredOnUser = false;
 
 const els = {
   venueList: document.getElementById("venueList"),
@@ -513,6 +517,20 @@ function occurrenceTimeLabel(occ) {
 // app's white/amber design.
 const MAPBOX_STYLE = "light-v11";
 
+// ~20 minutes at an average walking pace (~4.8km/h) — the "20-minute
+// neighbourhood" radius used in walkability/urban-planning practice for
+// "what's reasonably reachable on foot".
+const WALK_RADIUS_KM = 1.6;
+
+// A square bounding box radiusKm around a point — good enough at this scale
+// (a rough spherical-Earth approximation), and simpler/cheaper than a real
+// geodesic buffer for framing a map view.
+function boundsAround(lat, lng, radiusKm) {
+  const dLat = radiusKm / 111;
+  const dLng = radiusKm / (111 * Math.cos((lat * Math.PI) / 180));
+  return L.latLngBounds([lat - dLat, lng - dLng], [lat + dLat, lng + dLng]);
+}
+
 function ensureMap() {
   if (map) return map;
   // No +/- control on touch devices (pinch and double-tap cover it, and the
@@ -736,23 +754,32 @@ function renderMap(occurrences) {
   // Fitting bounds first left it centered on stale, mostly-blank tiles.
   setTimeout(() => {
     m.invalidateSize();
-    // Fit only the first time the map is opened. Every later render — a
-    // filter switch, a search, a data refresh — must leave the camera where
-    // the user put it; re-fitting was yanking them back out to the whole city
-    // when they only meant to change which pins show.
-    if (!mapFitted && located.length > 0) {
+    // The map is full-viewport but the top filter chrome and the bottom card
+    // carousel float over it — pad every fit so no pin lands hidden underneath
+    // either.
+    const filters = document.querySelector(".map-filters");
+    const topPad = filters ? filters.getBoundingClientRect().bottom + 16 : 130;
+    const fitOpts = {
+      paddingTopLeft: [30, topPad],
+      paddingBottomRight: [30, carouselHeight + 24],
+      maxZoom: 16,
+    };
+
+    // Land close, not on a whole-city view: frame a ~20-minute walk radius
+    // (the standard "20-minute neighbourhood" distance, ~1.6km at an average
+    // walking pace) around the visitor, not a fitBounds of every pin — with
+    // venues now spread across all of Metro Vancouver, fitting everything
+    // zoomed out past the point of being useful for "what's near me".
+    // Anchor on the real location once known; fall back to the map's default
+    // center until geolocation resolves, then recenter exactly once.
+    if (!mapFitted) {
       mapFitted = true;
-      const bounds = L.latLngBounds(located.map((o) => [getLat(o.venue), getLng(o.venue)]));
-      // The map is full-viewport but the top filter chrome and the bottom
-      // card carousel float over it — pad the fit so no pin lands hidden
-      // underneath either.
-      const filters = document.querySelector(".map-filters");
-      const topPad = filters ? filters.getBoundingClientRect().bottom + 16 : 130;
-      m.fitBounds(bounds, {
-        paddingTopLeft: [30, topPad],
-        paddingBottomRight: [30, carouselHeight + 24],
-        maxZoom: 15,
-      });
+      const anchor = userPos || { lat: 49.2698, lng: -123.1207 };
+      m.fitBounds(boundsAround(anchor.lat, anchor.lng, WALK_RADIUS_KM), fitOpts);
+      if (userPos) mapCenteredOnUser = true;
+    } else if (userPos && !mapCenteredOnUser) {
+      mapCenteredOnUser = true;
+      m.fitBounds(boundsAround(userPos.lat, userPos.lng, WALK_RADIUS_KM), fitOpts);
     }
   }, 0);
 }
