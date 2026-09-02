@@ -45,11 +45,38 @@ console.log(`Daily run ${TODAY} — target ${TARGET} new venues, budget $${BUDGE
 
 // --- 1. Discover. Ask for more candidates than the target needs: only a
 // --- fraction of places turn out to run a happy hour they publish.
-const poolWanted = Math.min(900, Math.ceil((TARGET / 0.13) * 1.2));
-console.log(`\n[discover] asking for up to ${poolWanted} candidates`);
-console.log(run("places-discover.js", ["--max", String(poolWanted), "--recheck-days", String(RECHECK_DAYS)]).trim());
+// --use-pool reuses the candidate file already on disk. A discovery sweep is
+// hundreds of billable Places calls; re-running the day's extraction after an
+// interruption, or after a sweep run by hand, should not pay for them twice.
+if (args["use-pool"]) {
+  console.log(`\n[discover] reusing ${CANDIDATES.replace(REPO_ROOT + "/", "")} — no Places calls`);
+} else {
+  const poolWanted = Math.min(900, Math.ceil((TARGET / 0.13) * 1.2));
+  console.log(`\n[discover] asking for up to ${poolWanted} candidates`);
+  console.log(run("places-discover.js", ["--max", String(poolWanted), "--recheck-days", String(RECHECK_DAYS)]).trim());
+}
 
-let candidates = readJson(CANDIDATES, []);
+// The candidate file is a snapshot, and a previous round may already have
+// judged most of it. Extraction is by far the expensive step, so drop
+// anything the ledger has already answered rather than paying twice.
+// Mirrors places-discover.js: only NEGATIVE verdicts suppress a retry — a
+// "published" verdict whose writeback never landed must stay eligible, so
+// those are filtered against what is actually in venues.json instead.
+const screened = readJson(SCREENED_STORE, {});
+const NEGATIVE = new Set(["no_happy_hour", "hours_only", "error"]);
+const storedPlaceIds = new Set(
+  readJson(path.join(REPO_ROOT, "venues.json"), { venues: [] })
+    .venues.map((v) => v.place_id).filter(Boolean)
+);
+const rawCandidates = readJson(CANDIDATES, []);
+let candidates = rawCandidates.filter((c) => {
+  const r = screened[c.place_id];
+  if (r && NEGATIVE.has(r.verdict)) return false;
+  return !storedPlaceIds.has(c.place_id);
+});
+if (rawCandidates.length !== candidates.length) {
+  console.log(`[pool] ${rawCandidates.length} in file, ${rawCandidates.length - candidates.length} already judged -> ${candidates.length} left to process`);
+}
 if (!candidates.length) {
   console.log("\nNo new candidates — Metro Vancouver is swept for now. Nothing to do.");
   process.exit(0);
@@ -57,7 +84,6 @@ if (!candidates.length) {
 if (DRY) { console.log(`\n[dry-run] would process ${candidates.length} candidates. Stopping.`); process.exit(0); }
 
 // --- 2. Crawl + extract in batches, watching the two guards.
-const screened = readJson(SCREENED_STORE, {});
 let spent = 0, judged = 0, withDeals = 0, hoursOnly = 0, stopReason = "pool exhausted";
 
 for (let i = 0; i < candidates.length; i += BATCH) {
