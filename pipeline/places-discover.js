@@ -136,7 +136,14 @@ const TEXT_AREAS = [
   "Guildford Surrey", "Newton Surrey", "South Surrey BC", "White Rock BC",
   "New Westminster BC", "Langley BC", "Fort Langley BC", "Delta BC", "Ladner Delta BC",
 ];
-const TEXT_QUERIES = ["happy hour", "pub", "cocktail bar"];
+// "happy hour <area>" massively outperformed the proximity grid (19.6% of
+// its candidates published a happy hour, against 4.8% for the grid), so the
+// rest of these are the same idea aimed at the venue categories that most
+// often run one.
+const TEXT_QUERIES = [
+  "happy hour", "pub", "cocktail bar", "sports bar", "izakaya",
+  "tapas bar", "brewery taproom", "gastropub", "wine bar", "drink specials",
+];
 const TEXT_PAGES = Number(args["text-pages"]) || 2;
 // Text Search is not bounded by a circle the way Nearby Search is, and
 // "happy hour Delta BC" will happily return a bar in Delta, Ohio. Keep
@@ -150,7 +157,7 @@ const inMetro = (p) => {
 const EXCLUDE_TYPES = new Set(["fast_food_restaurant", "cafe", "coffee_shop", "bakery", "meal_takeaway", "meal_delivery", "ice_cream_shop", "sandwich_shop"]);
 const BAR_TYPES = new Set(["bar", "pub", "wine_bar", "night_club"]);
 const PRICE_LEVELS = { PRICE_LEVEL_FREE: 0, PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 };
-const FIELDS = "places.id,places.displayName,places.location,places.formattedAddress,places.websiteUri,places.rating,places.userRatingCount,places.priceLevel,places.businessStatus,places.types,places.nationalPhoneNumber,places.outdoorSeating,places.servesCocktails,places.servesBeer,places.servesWine,places.liveMusic,places.goodForGroups";
+const FIELDS = "places.id,places.displayName,places.location,places.formattedAddress,places.websiteUri,places.rating,places.userRatingCount,places.priceLevel,places.businessStatus,places.types,places.primaryType,places.nationalPhoneNumber,places.outdoorSeating,places.servesCocktails,places.servesBeer,places.servesWine,places.liveMusic,places.goodForGroups";
 
 // Known venues: exact place_id dedupe plus name/website fallback.
 const seed = loadSeed();
@@ -180,64 +187,78 @@ const knownHosts = new Set([...seed, ...discovered].map((v) => host(v.website)).
 const knownNames = new Set([...seed, ...discovered].map((v) => normName(v.name)));
 
 const byId = new Map();
-// Google's free monthly allowance is per SKU, so the two sweeps draw on
-// separate quotas — but both are worth counting out loud, because a run that
-// silently doubled its call count is how a free tier turns into a bill.
-const calls = { nearby: 0, text: 0 };
-let saturated = 0;
+// The raw sweep is the expensive part: hundreds of billable Places calls.
+// Persisting it means a change to the filters below — which drop three
+// quarters of what the sweep returns — can be re-applied for free instead
+// of re-billing the whole metro. --from-raw reuses the last sweep.
+const RAW = path.join(RESULTS_DIR, "places-raw.json");
+if (args["from-raw"]) {
+  const raw = readJson(RAW, []);
+  if (!raw.length) { console.error(`No cached sweep at ${RAW} — run without --from-raw first.`); process.exit(1); }
+  for (const p of raw) byId.set(p.id, p);
+  console.log(`${byId.size} places from the cached sweep (no API calls).`);
+} else {
+  // Google's free monthly allowance is per SKU, so the two sweeps draw on
+  // separate quotas — but both are worth counting out loud, because a run that
+  // silently doubled its call count is how a free tier turns into a bill.
+  const calls = { nearby: 0, text: 0 };
+  let saturated = 0;
 
-// ── Sweep 1: Nearby Search over the circle grid, one call per type family ──
-const NEARBY_JOBS = CIRCLES.flatMap(([lat, lng, radius]) =>
-  TYPE_GROUPS.map((types) => ({ lat, lng, radius, types }))
-);
-await mapConcurrent(NEARBY_JOBS, 4, async ({ lat, lng, radius, types }) => {
-  let data;
-  try {
-    calls.nearby++;
-    data = await curlJson("https://places.googleapis.com/v1/places:searchNearby", {
-      headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS}`],
-      body: {
-        includedTypes: types,
-        maxResultCount: 20,
-        locationRestriction: { circle: { center: { latitude: lat, longitude: lng }, radius } },
-      },
-    });
-  } catch (e) {
-    console.error(`circle ${lat},${lng} [${types[0]}]: ${e.message.slice(0, 80)}`);
-    return;
-  }
-  if (data.error) { console.error(`circle ${lat},${lng} [${types[0]}]: ${data.error.status}`); return; }
-  const places = data.places || [];
-  if (places.length === 20) saturated++;
-  for (const p of places) byId.set(p.id, p);
-});
-const afterNearby = byId.size;
-console.log(`${afterNearby} places from ${NEARBY_JOBS.length} nearby calls over ${CIRCLES.length} circles (${saturated} still saturated at 20).`);
-
-// ── Sweep 2: Text Search, ranked by happy-hour relevance ──────────────────
-const TEXT_JOBS = TEXT_AREAS.flatMap((area) => TEXT_QUERIES.map((q) => `${q} ${area}`));
-await mapConcurrent(TEXT_JOBS, 4, async (textQuery) => {
-  let pageToken = null;
-  for (let page = 0; page < TEXT_PAGES; page++) {
+  // ── Sweep 1: Nearby Search over the circle grid, one call per type family ──
+  const NEARBY_JOBS = CIRCLES.flatMap(([lat, lng, radius]) =>
+    TYPE_GROUPS.map((types) => ({ lat, lng, radius, types }))
+  );
+  await mapConcurrent(NEARBY_JOBS, 4, async ({ lat, lng, radius, types }) => {
     let data;
     try {
-      calls.text++;
-      data = await curlJson("https://places.googleapis.com/v1/places:searchText", {
-        headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS},nextPageToken`],
-        body: { textQuery, pageSize: 20, ...(pageToken ? { pageToken } : {}) },
+      calls.nearby++;
+      data = await curlJson("https://places.googleapis.com/v1/places:searchNearby", {
+        headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS}`],
+        body: {
+          includedTypes: types,
+          maxResultCount: 20,
+          locationRestriction: { circle: { center: { latitude: lat, longitude: lng }, radius } },
+        },
       });
     } catch (e) {
-      console.error(`text "${textQuery}": ${e.message.slice(0, 80)}`);
+      console.error(`circle ${lat},${lng} [${types[0]}]: ${e.message.slice(0, 80)}`);
       return;
     }
-    if (data.error) { console.error(`text "${textQuery}": ${data.error.status}`); return; }
-    for (const p of data.places || []) if (inMetro(p)) byId.set(p.id, p);
-    pageToken = data.nextPageToken;
-    if (!pageToken) return;
-  }
-});
-console.log(`+${byId.size - afterNearby} more from ${calls.text} text-search calls over ${TEXT_AREAS.length} areas.`);
-console.log(`${byId.size} unique places total (${calls.nearby} nearby + ${calls.text} text calls).`);
+    if (data.error) { console.error(`circle ${lat},${lng} [${types[0]}]: ${data.error.status}`); return; }
+    const places = data.places || [];
+    if (places.length === 20) saturated++;
+    for (const p of places) byId.set(p.id, p);
+  });
+  const afterNearby = byId.size;
+  console.log(`${afterNearby} places from ${NEARBY_JOBS.length} nearby calls over ${CIRCLES.length} circles (${saturated} still saturated at 20).`);
+
+  // ── Sweep 2: Text Search, ranked by happy-hour relevance ──────────────────
+  const TEXT_JOBS = TEXT_AREAS.flatMap((area) => TEXT_QUERIES.map((q) => `${q} ${area}`));
+  await mapConcurrent(TEXT_JOBS, 4, async (textQuery) => {
+    let pageToken = null;
+    for (let page = 0; page < TEXT_PAGES; page++) {
+      let data;
+      try {
+        calls.text++;
+        data = await curlJson("https://places.googleapis.com/v1/places:searchText", {
+          headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS},nextPageToken`],
+          body: { textQuery, pageSize: 20, ...(pageToken ? { pageToken } : {}) },
+        });
+      } catch (e) {
+        console.error(`text "${textQuery}": ${e.message.slice(0, 80)}`);
+        return;
+      }
+      if (data.error) { console.error(`text "${textQuery}": ${data.error.status}`); return; }
+      for (const p of data.places || []) if (inMetro(p)) byId.set(p.id, p);
+      pageToken = data.nextPageToken;
+      if (!pageToken) return;
+    }
+  });
+  console.log(`+${byId.size - afterNearby} more from ${calls.text} text-search calls over ${TEXT_AREAS.length} areas.`);
+  console.log(`${byId.size} unique places total (${calls.nearby} nearby + ${calls.text} text calls).`);
+  fs.mkdirSync(RESULTS_DIR, { recursive: true });
+  fs.writeFileSync(RAW, JSON.stringify([...byId.values()]));
+}
 
 const candidates = [];
 const dropped = { known: 0, screened: 0, no_website: 0, closed: 0, wrong_type: 0 };
@@ -248,7 +269,12 @@ for (const p of byId.values()) {
   if (screenedRecently.has(p.id)) { dropped.screened++; continue; }
   if (p.businessStatus && p.businessStatus !== "OPERATIONAL") { dropped.closed++; continue; }
   if (!p.websiteUri) { dropped.no_website++; continue; }
-  if (types.some((t) => EXCLUDE_TYPES.has(t)) && !types.some((t) => BAR_TYPES.has(t))) { dropped.wrong_type++; continue; }
+  // Google attaches every loosely-applicable type, so a full-service
+  // restaurant that also sells coffee carries "cafe" and was being dropped
+  // outright — 505 places in the last sweep. Judge non-bars on primaryType,
+  // which is what Google considers the place actually is.
+  const isBar = types.some((t) => BAR_TYPES.has(t));
+  if (!isBar && (EXCLUDE_TYPES.has(p.primaryType || "") || !types.includes("restaurant"))) { dropped.wrong_type++; continue; }
 
   // Metro means the city varies — take it from the Places address instead of
   // stamping every venue "Vancouver, BC". Anchor on the province rather than
