@@ -710,14 +710,14 @@ function renderMap(occurrences) {
   for (const { venue, occ } of located) {
     const color = markerColor(occ.status);
     // Popularity (Google review volume) sets pin size and stacking, so the
-    // busiest spots read at a glance: big starred pins on top, quiet spots
-    // small and underneath. Status keeps the color channel.
+    // busiest spots read at a glance: big pins on top, quiet spots small and
+    // underneath. Status keeps the color channel.
     const reviews = venue.user_ratings_total || 0;
     const tier = reviews >= 2000 ? "hot" : reviews >= 500 ? "mid" : "base";
     const px = tier === "hot" ? 26 : tier === "mid" ? 20 : 15;
     const icon = L.divIcon({
       className: `map-pin map-pin-${tier}`,
-      html: `<span style="background:${color}">${tier === "hot" ? "★" : ""}</span>`,
+      html: `<span style="background:${color}"></span>`,
       iconSize: [px, px],
       iconAnchor: [px / 2, px / 2],
     });
