@@ -14,7 +14,17 @@ BUDGET=${2:-35}
 LOG=/tmp/drive.log
 
 count() { node -e "console.log(require('./venues.json').venues.length)"; }
-pool()  { node -e "try{console.log(require('./pipeline/results/discovered-candidates.json').length)}catch(e){console.log(0)}"; }
+# Count candidates the ledger has NOT already answered — the file itself
+# stays at its original length after a round, so counting it would hide an
+# exhausted pool and skip the sweep that should refill it.
+pool()  { node -e "
+try {
+  const c = require('./pipeline/results/discovered-candidates.json');
+  const s = require('./pipeline/screened.json');
+  const stored = new Set(require('./venues.json').venues.map(v => v.place_id).filter(Boolean));
+  const NEG = new Set(['no_happy_hour', 'hours_only', 'error']);
+  console.log(c.filter(x => !(s[x.place_id] && NEG.has(s[x.place_id].verdict)) && !stored.has(x.place_id)).length);
+} catch (e) { console.log(0); }"; }
 
 round=0
 while :; do
