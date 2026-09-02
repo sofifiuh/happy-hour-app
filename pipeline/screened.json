@@ -12190,5 +12190,353 @@
     "name": "Club 77 Bar & Grill",
     "verdict": "no_happy_hour",
     "checked_at": "2026-09-02"
+  },
+  "ChIJ6Q7TwirQhVQROp6as0Fp1gA": {
+    "id": "olive-garden-italian-restaurant",
+    "name": "Olive Garden Italian Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ01zR_vlzhlQRtjgBanRnmNg": {
+    "id": "the-acorn-restaurant",
+    "name": "The Acorn Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ4fexD7vEhVQRZyyTz3CVePs": {
+    "id": "curry-lounge-indian-restaurant",
+    "name": "Curry Lounge Indian Restaurant.",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJQyTlBnpxhlQRG_iQW8ItfrA": {
+    "id": "nicli-pizzeria-bar",
+    "name": "NICLI Pizzeria + Bar",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJBWcLJsx4hlQRhFT7B_UrOcs": {
+    "id": "pasta-polo-coquitlam",
+    "name": "Pasta Polo Coquitlam",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJMynigS53hlQR6A4nVHmYIsE": {
+    "id": "executive-suites-hotel-and-conference-centre-metro-vancouver",
+    "name": "Executive Suites Hotel and Conference Centre Metro Vancouver",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJewa9uHtxhlQRnYSaSWWfdKM": {
+    "id": "pizzeria-ludica-vancouver",
+    "name": "Pizzeria Ludica (Vancouver)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJg-a3ds7RhVQRGC8hATXfB0Q": {
+    "id": "royal-chaska-indian-restro-bar",
+    "name": "Royal Chaska Indian Restro & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJpxrTXvdzhlQR4YTSrrtIMCM": {
+    "id": "helen-s-grill",
+    "name": "Helen's Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJb3sy97_LhVQRTTYhV61OkAE": {
+    "id": "bob-s-kitchen-bar",
+    "name": "Bob's Kitchen & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJSZi5euNzhlQRDKv0oXuLPDU": {
+    "id": "the-london-fish-windjammer-restaurant",
+    "name": "The London Fish (Windjammer Restaurant)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJW2wi48ZzhlQRMrotX09z9xw": {
+    "id": "boston-pizza",
+    "name": "Boston Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJX8KXIj5xhlQR5BwjsZtGOgU": {
+    "id": "kin-kao-commercial-dr",
+    "name": "Kin Kao - Commercial Dr",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJuTCFCyJxhlQRkhUxtqDeWhA": {
+    "id": "roundel-restaurant-bar",
+    "name": "Roundel Restaurant & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJk8yXcvvahVQRKgigAXP-A4I": {
+    "id": "west-village-caf",
+    "name": "West Village Café",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ04NYT3xxhlQR1lurrwVKJfw": {
+    "id": "frankie-s-jazz-club",
+    "name": "Frankie's Jazz Club",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJzWAkJWHmhVQRCBbQfhr66l4": {
+    "id": "alfa-greco-roman-cuisine",
+    "name": "Alfa Greco Roman Cuisine",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJgWML5spzhlQR_6bsqskueRc": {
+    "id": "vera-s-burger-shack-kitsilano",
+    "name": "Vera's Burger Shack Kitsilano",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJlwH93soKhlQRSivT32a6pBg": {
+    "id": "lu-charcoal-grill",
+    "name": "Lu Charcoal Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJRTs2__rahVQRufC4ocsHkgk": {
+    "id": "spice-kings-bistro",
+    "name": "Spice Kings Bistro",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ7U6EmP9xhlQRen8sgePfBUg": {
+    "id": "lucifer-s-house-of-heat",
+    "name": "Lucifer's House of Heat",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ3Raewy91hlQR6z7gUedsJEE": {
+    "id": "kanpeki-teppanyaki-seafood-bar",
+    "name": "松板 Kanpeki Teppanyaki & Seafood Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJNV4KIHd1hlQRxcvZVUoVfJw": {
+    "id": "bb-q-chicken-richmond",
+    "name": "bb.q Chicken Richmond",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJpbLh1BdxhlQReNud_dadwOg": {
+    "id": "thank-you-pizza",
+    "name": "Thank You Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJv94nXI9zhlQRXuzMxCL70cM": {
+    "id": "hideout-golf",
+    "name": "Hideout Golf",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJZe_U9xtxhlQRxkjKpoDvUiA": {
+    "id": "citizen-hurricane",
+    "name": "Citizen Hurricane!",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJsTK2YXtxhlQR6mpedoHPANQ": {
+    "id": "the-500-club",
+    "name": "The 500 Club",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJZSEaU2dxhlQRyXoyhf0XB20": {
+    "id": "truck-stop-diner",
+    "name": "Truck Stop Diner",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJp6SOq99xhlQRYTSz8IjrPQs": {
+    "id": "centre-bar",
+    "name": "Centre Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJJ6MS5y7QhVQR8iYy7PsCOH4": {
+    "id": "an-indian-affair-restaurant",
+    "name": "An Indian Affair restaurant",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJgzLyCINxhlQRkHq8urzYQ2Y": {
+    "id": "fairmont-pacific-rim",
+    "name": "Fairmont Pacific Rim",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJZUNPS3TYhVQRp7L3ffdNc1k": {
+    "id": "taquer-a-playa-tropical",
+    "name": "Taquería Playa Tropical",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJw-s4pFdxhlQRh2jK22eXlnU": {
+    "id": "downlow-chicken-shack",
+    "name": "Downlow Chicken Shack",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJwTtWOKd2hlQRxxBK7OhOA-E": {
+    "id": "western-lake-chinese-seafood-restaurant",
+    "name": "Western Lake Chinese Seafood Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJQ3nj4clzhlQR9RUvmNL8Gk8": {
+    "id": "ramen-danbo-kitsilano",
+    "name": "Ramen Danbo Kitsilano",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJBadtcEcNj1QRIfvyBKR34dw": {
+    "id": "a-w-canada",
+    "name": "A&W Canada",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ0-AYqqDahVQRZKtRN_5SzrY": {
+    "id": "spice-of-nepal-restaurant",
+    "name": "Spice of Nepal Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJKSm_WEt1hlQR0K2E28ZeBVw": {
+    "id": "liuyishou-hotpot-richmond",
+    "name": "Liuyishou Hotpot Richmond",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJRWLl1gvbhVQRwTsTrn5pkEQ": {
+    "id": "haveli-indian-bistro",
+    "name": "Haveli Indian Bistro",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJHyCFc9zVhVQRQdvnwFQ2pDA": {
+    "id": "popeyes-louisiana-kitchen",
+    "name": "Popeyes Louisiana Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJMZpqcC51hlQR_fFyw7kTx4k": {
+    "id": "sun-sui-wah-seafood-restaurant",
+    "name": "Sun Sui Wah Seafood Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJrS9gRStyhlQRH906N6at-tE": {
+    "id": "cazba-restaurant",
+    "name": "Cazba Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJTQrs1Q11hlQRFQUa0zv472g": {
+    "id": "continental-seafood-restaurant",
+    "name": "Continental Seafood Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJnSAa5Tx4hlQRS3uHoBD1R_0": {
+    "id": "yan-s-garden",
+    "name": "Yan's Garden",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJkYhNAMxzhlQR3FNxyaa4ETg": {
+    "id": "go-fish",
+    "name": "Go Fish",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJVVWBvj5xhlQR8xRxObDCGEw": {
+    "id": "via-tevere-pizzeria-victoria-drive",
+    "name": "Via Tevere Pizzeria Victoria Drive",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJse82JpPEhVQRzhz30hab1Mo": {
+    "id": "afghan-kitchen-south-surrey",
+    "name": "Afghan Kitchen South Surrey",
+    "verdict": "published",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ9zDUhshzhlQRGD9NiyaTL5U": {
+    "id": "cheesecake-etc",
+    "name": "Cheesecake Etc",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ7TPet1JyhlQRLKXAXsM11CU": {
+    "id": "linh-caf",
+    "name": "Linh Café",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJgbZJV_JxhlQRSUB6z8tu8xw": {
+    "id": "chelo-kitchen-eatery",
+    "name": "Chelo Kitchen + Eatery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ56iiDnvZhVQRc33gWtTASIY": {
+    "id": "4-seasons-indian-chaat-curry-house",
+    "name": "4 Seasons (Indian Chaat & Curry House)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJs2-548pzhlQR2hMPwVBpCtI": {
+    "id": "siegel-s-bagels",
+    "name": "Siegel's Bagels",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJ25UYF_pzhlQRQB7i8ROEdRc": {
+    "id": "the-fish-counter-main-street",
+    "name": "The Fish Counter Main Street",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJF0qWk8t2hlQR0vo3wsk6Ilg": {
+    "id": "prince-seafood-restaurant",
+    "name": "Prince Seafood Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJD_fVtS3QhVQR_oY59ka3IUQ": {
+    "id": "denny-s-restaurant-willowbrook",
+    "name": "Denny's Restaurant Willowbrook",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJUxfUJcNzhlQR6ohfXAT0j7o": {
+    "id": "dynasty-seafood-restaurant",
+    "name": "Dynasty Seafood Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJzWQYFRNxhlQRo1Mdt1UaFW4": {
+    "id": "pink-pearl",
+    "name": "Pink Pearl",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
+  },
+  "ChIJyaXVQ854hlQRvNVDn-giLD8": {
+    "id": "rio-brazilian-steakhouse-coquitlam-ayce",
+    "name": "Rio Brazilian Steakhouse Coquitlam-AYCE",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-02"
   }
 }
