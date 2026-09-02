@@ -107,7 +107,46 @@ const CIRCLES = [
   [49.1040, -122.6600, 500], [49.0840, -123.0580, 600], [49.0110, -123.0810, 600],
 ];
 
-const INCLUDED_TYPES = ["bar", "pub", "wine_bar", "night_club", "restaurant"];
+// Nearby Search caps at 20 results per CALL, not per circle — so asking for
+// bars and restaurants together means the two compete for the same 20 slots,
+// and "restaurant" is common enough that in 72 of 110 circles last run the
+// bars never made the cut. Querying each family separately gives each its
+// own 20 over the same ground, for one extra call per circle.
+const TYPE_GROUPS = [
+  ["bar", "pub", "wine_bar", "night_club"],
+  ["restaurant"],
+];
+
+// Text Search ranks by relevance to the query rather than by proximity, so
+// "happy hour <area>" surfaces places the type grid buries — and it bills to
+// a different SKU than Nearby Search, so it draws on a quota the grid sweep
+// never touches. Each area is a named place Google resolves itself.
+const TEXT_AREAS = [
+  "Downtown Vancouver", "Gastown Vancouver", "Yaletown Vancouver", "West End Vancouver",
+  "Kitsilano Vancouver", "Mount Pleasant Vancouver", "Main Street Vancouver",
+  "Commercial Drive Vancouver", "Olympic Village Vancouver", "Cambie Village Vancouver",
+  "South Granville Vancouver", "Kerrisdale Vancouver", "Point Grey Vancouver",
+  "Chinatown Vancouver", "Coal Harbour Vancouver", "Granville Island Vancouver",
+  "Hastings-Sunrise Vancouver", "Marpole Vancouver", "UBC Vancouver",
+  "North Vancouver BC", "Lynn Valley North Vancouver", "Deep Cove North Vancouver",
+  "West Vancouver BC", "Ambleside West Vancouver",
+  "Burnaby BC", "Metrotown Burnaby", "Brentwood Burnaby", "Burnaby Heights",
+  "SFU Burnaby", "Richmond BC", "Steveston Richmond", "Coquitlam BC",
+  "Port Coquitlam BC", "Port Moody BC", "Anmore BC", "Surrey BC",
+  "Guildford Surrey", "Newton Surrey", "South Surrey BC", "White Rock BC",
+  "New Westminster BC", "Langley BC", "Fort Langley BC", "Delta BC", "Ladner Delta BC",
+];
+const TEXT_QUERIES = ["happy hour", "pub", "cocktail bar"];
+const TEXT_PAGES = Number(args["text-pages"]) || 2;
+// Text Search is not bounded by a circle the way Nearby Search is, and
+// "happy hour Delta BC" will happily return a bar in Delta, Ohio. Keep
+// results inside Metro Vancouver.
+const METRO = { minLat: 48.98, maxLat: 49.42, minLng: -123.35, maxLng: -122.35 };
+const inMetro = (p) => {
+  const l = p.location;
+  return !!l && l.latitude >= METRO.minLat && l.latitude <= METRO.maxLat
+    && l.longitude >= METRO.minLng && l.longitude <= METRO.maxLng;
+};
 const EXCLUDE_TYPES = new Set(["fast_food_restaurant", "cafe", "coffee_shop", "bakery", "meal_takeaway", "meal_delivery", "ice_cream_shop", "sandwich_shop"]);
 const BAR_TYPES = new Set(["bar", "pub", "wine_bar", "night_club"]);
 const PRICE_LEVELS = { PRICE_LEVEL_FREE: 0, PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 };
@@ -141,29 +180,64 @@ const knownHosts = new Set([...seed, ...discovered].map((v) => host(v.website)).
 const knownNames = new Set([...seed, ...discovered].map((v) => normName(v.name)));
 
 const byId = new Map();
+// Google's free monthly allowance is per SKU, so the two sweeps draw on
+// separate quotas — but both are worth counting out loud, because a run that
+// silently doubled its call count is how a free tier turns into a bill.
+const calls = { nearby: 0, text: 0 };
 let saturated = 0;
-await mapConcurrent(CIRCLES, 4, async ([lat, lng, radius]) => {
+
+// ── Sweep 1: Nearby Search over the circle grid, one call per type family ──
+const NEARBY_JOBS = CIRCLES.flatMap(([lat, lng, radius]) =>
+  TYPE_GROUPS.map((types) => ({ lat, lng, radius, types }))
+);
+await mapConcurrent(NEARBY_JOBS, 4, async ({ lat, lng, radius, types }) => {
   let data;
   try {
+    calls.nearby++;
     data = await curlJson("https://places.googleapis.com/v1/places:searchNearby", {
       headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS}`],
       body: {
-        includedTypes: INCLUDED_TYPES,
+        includedTypes: types,
         maxResultCount: 20,
         locationRestriction: { circle: { center: { latitude: lat, longitude: lng }, radius } },
       },
     });
   } catch (e) {
-    console.error(`circle ${lat},${lng}: ${e.message.slice(0, 80)}`);
+    console.error(`circle ${lat},${lng} [${types[0]}]: ${e.message.slice(0, 80)}`);
     return;
   }
-  if (data.error) { console.error(`circle ${lat},${lng}: ${data.error.status}`); return; }
+  if (data.error) { console.error(`circle ${lat},${lng} [${types[0]}]: ${data.error.status}`); return; }
   const places = data.places || [];
   if (places.length === 20) saturated++;
   for (const p of places) byId.set(p.id, p);
 });
+const afterNearby = byId.size;
+console.log(`${afterNearby} places from ${NEARBY_JOBS.length} nearby calls over ${CIRCLES.length} circles (${saturated} still saturated at 20).`);
 
-console.log(`${byId.size} unique places from ${CIRCLES.length} circles (${saturated} saturated at 20 — dense spots may hide a few).`);
+// ── Sweep 2: Text Search, ranked by happy-hour relevance ──────────────────
+const TEXT_JOBS = TEXT_AREAS.flatMap((area) => TEXT_QUERIES.map((q) => `${q} ${area}`));
+await mapConcurrent(TEXT_JOBS, 4, async (textQuery) => {
+  let pageToken = null;
+  for (let page = 0; page < TEXT_PAGES; page++) {
+    let data;
+    try {
+      calls.text++;
+      data = await curlJson("https://places.googleapis.com/v1/places:searchText", {
+        headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS},nextPageToken`],
+        body: { textQuery, pageSize: 20, ...(pageToken ? { pageToken } : {}) },
+      });
+    } catch (e) {
+      console.error(`text "${textQuery}": ${e.message.slice(0, 80)}`);
+      return;
+    }
+    if (data.error) { console.error(`text "${textQuery}": ${data.error.status}`); return; }
+    for (const p of data.places || []) if (inMetro(p)) byId.set(p.id, p);
+    pageToken = data.nextPageToken;
+    if (!pageToken) return;
+  }
+});
+console.log(`+${byId.size - afterNearby} more from ${calls.text} text-search calls over ${TEXT_AREAS.length} areas.`);
+console.log(`${byId.size} unique places total (${calls.nearby} nearby + ${calls.text} text calls).`);
 
 const candidates = [];
 const dropped = { known: 0, screened: 0, no_website: 0, closed: 0, wrong_type: 0 };

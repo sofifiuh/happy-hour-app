@@ -45,9 +45,16 @@ console.log(`Daily run ${TODAY} — target ${TARGET} new venues, budget $${BUDGE
 
 // --- 1. Discover. Ask for more candidates than the target needs: only a
 // --- fraction of places turn out to run a happy hour they publish.
-const poolWanted = Math.min(900, Math.ceil((TARGET / 0.13) * 1.2));
-console.log(`\n[discover] asking for up to ${poolWanted} candidates`);
-console.log(run("places-discover.js", ["--max", String(poolWanted), "--recheck-days", String(RECHECK_DAYS)]).trim());
+// --use-pool reuses the candidate file already on disk. A discovery sweep is
+// hundreds of billable Places calls; re-running the day's extraction after an
+// interruption, or after a sweep run by hand, should not pay for them twice.
+if (args["use-pool"]) {
+  console.log(`\n[discover] reusing ${CANDIDATES.replace(REPO_ROOT + "/", "")} — no Places calls`);
+} else {
+  const poolWanted = Math.min(900, Math.ceil((TARGET / 0.13) * 1.2));
+  console.log(`\n[discover] asking for up to ${poolWanted} candidates`);
+  console.log(run("places-discover.js", ["--max", String(poolWanted), "--recheck-days", String(RECHECK_DAYS)]).trim());
+}
 
 let candidates = readJson(CANDIDATES, []);
 if (!candidates.length) {
