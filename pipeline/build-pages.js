@@ -6,7 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { readJson, REPO_ROOT } from "./lib/venues.js";
 
-const BASE = "https://sofifiuh.github.io/happy-hour-app/";
+const BASE = "https://alittlehang.com/";
 
 // Covers are either absolute (venue's own og:image) or repo-relative
 // ("photos/x.jpg" from the Places backfill); spot pages live in spots/, so
