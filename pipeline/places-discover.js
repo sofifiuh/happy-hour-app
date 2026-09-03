@@ -272,7 +272,25 @@ const BAR_TYPES = new Set([
   "bar", "pub", "wine_bar", "night_club", "brewery", "winery", "bar_and_grill",
 ]);
 const PRICE_LEVELS = { PRICE_LEVEL_FREE: 0, PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 };
-const FIELDS = "places.id,places.displayName,places.location,places.formattedAddress,places.websiteUri,places.rating,places.userRatingCount,places.priceLevel,places.businessStatus,places.types,places.primaryType,places.nationalPhoneNumber,places.outdoorSeating,places.servesCocktails,places.servesBeer,places.servesWine,places.liveMusic,places.goodForGroups";
+// Field masks decide the SKU, and the SKU decides both the price and the free
+// allowance — Pro is 5,000 calls/month free, Enterprise and
+// Enterprise+Atmosphere are 1,000 each. Asking for one atmosphere field
+// (outdoorSeating, servesCocktails…) prices the WHOLE call at
+// Enterprise+Atmosphere: $40/1000 with the smallest allowance. The sweep was
+// buying patio flags for thousands of places to serve the few hundred that
+// ever publish.
+//
+// So the sweep asks only for Pro-tier fields, and the expensive fields are
+// bought per place, later, for the far smaller set that survives filtering.
+const SWEEP_FIELDS = [
+  "places.id", "places.displayName", "places.location", "places.formattedAddress",
+  "places.types", "places.primaryType", "places.businessStatus",
+].join(",");
+// Enterprise: needed to decide whether a place is even crawlable, and to
+// carry identity into the app. Bought per surviving candidate.
+const DETAIL_FIELDS = [
+  "id", "websiteUri", "rating", "userRatingCount", "priceLevel", "nationalPhoneNumber",
+].join(",");
 
 // Known venues: exact place_id dedupe plus name/website fallback.
 const seed = loadSeed();
@@ -307,11 +325,15 @@ const knownNames = new Set([...seed, ...discovered].map((v) => normName(v.name))
 // ceiling instead of trusting whoever wrote the command line.
 const USAGE = path.join(REPO_ROOT, "pipeline", "api-usage.json");
 const MONTH = new Date().toISOString().slice(0, 7);
-const MONTHLY_CAP = Number(args["monthly-cap"]) || 950; // free tier is 1000/SKU; leave headroom
+// Per-SKU ceilings, matching Google's free allowances with headroom left.
+const CAPS = {
+  sweep_pro: Number(args["cap-sweep"]) || 4800,          // Pro free tier: 5,000
+  details_enterprise: Number(args["cap-details"]) || 950, // Enterprise free tier: 1,000
+};
 const usage = readJson(USAGE, {});
-usage[MONTH] = usage[MONTH] || { nearby: 0, text: 0 };
+usage[MONTH] = { sweep_pro: 0, details_enterprise: 0, ...usage[MONTH] };
 const spentBefore = { ...usage[MONTH] };
-const overBudget = (sku) => usage[MONTH][sku] >= MONTHLY_CAP;
+const overBudget = (sku) => usage[MONTH][sku] >= CAPS[sku];
 let skipped = { nearby: 0, text: 0 };
 // Persist as we go, not at the end. A sweep that is killed or crashes has
 // still SPENT its calls, and a ledger that only records on clean exit would
@@ -322,6 +344,9 @@ for (const sig of ["SIGINT", "SIGTERM"]) process.on(sig, () => { saveUsage(); pr
 process.on("exit", saveUsage);
 
 const byId = new Map();
+// Declared out here, not inside the sweep block: the details phase below runs
+// even on --from-raw, where the sweep block never executes.
+const calls = { nearby: 0, text: 0, details: 0 };
 // The raw sweep is the expensive part: hundreds of billable Places calls.
 // Persisting it means a change to the filters below — which drop three
 // quarters of what the sweep returns — can be re-applied for free instead
@@ -336,7 +361,7 @@ if (args["from-raw"]) {
   // Google's free monthly allowance is per SKU, so the two sweeps draw on
   // separate quotas — but both are worth counting out loud, because a run that
   // silently doubled its call count is how a free tier turns into a bill.
-  const calls = { nearby: 0, text: 0 };
+
   let saturated = 0;
 
   // ── Sweep 1: Nearby Search over the circle grid, one call per type family ──
@@ -349,11 +374,11 @@ if (args["from-raw"]) {
   );
   await mapConcurrent(NEARBY_JOBS, 4, async ({ lat, lng, radius, types }) => {
     let data;
-    if (overBudget("nearby")) { skipped.nearby++; return; }
+    if (overBudget("sweep_pro")) { skipped.nearby++; return; }
     try {
-      calls.nearby++; spend("nearby");
+      calls.nearby++; spend("sweep_pro");
       data = await curlJson("https://places.googleapis.com/v1/places:searchNearby", {
-        headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS}`],
+        headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${SWEEP_FIELDS}`],
         body: {
           includedTypes: types,
           maxResultCount: 20,
@@ -379,10 +404,10 @@ if (args["from-raw"]) {
     for (let page = 0; page < TEXT_PAGES; page++) {
       let data;
       try {
-        if (overBudget("text")) { skipped.text++; return; }
-      calls.text++; spend("text");
+        if (overBudget("sweep_pro")) { skipped.text++; return; }
+      calls.text++; spend("sweep_pro");
         data = await curlJson("https://places.googleapis.com/v1/places:searchText", {
-          headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${FIELDS},nextPageToken`],
+          headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${SWEEP_FIELDS},nextPageToken`],
           body: { textQuery, pageSize: 20, ...(pageToken ? { pageToken } : {}) },
         });
       } catch (e) {
@@ -411,6 +436,48 @@ if (args["from-raw"]) {
   fs.writeFileSync(RAW, JSON.stringify([...merged.values()]));
   console.log(`raw sweep cache: ${merged.size} places (${merged.size - byId.size} carried over from earlier sweeps).`);
   for (const [id, place] of merged) byId.set(id, place);
+}
+
+// ── Buy the Enterprise fields, for survivors only ─────────────────────────
+// Everything above this point is free-tier Pro data. Filter on it first, then
+// pay per place for websiteUri and friends — for the few hundred that survive
+// rather than the thousands the sweep returned. Cached places keep whatever
+// they already have, so this only ever pays for genuinely new places.
+const needDetails = [...byId.values()].filter((p) => {
+  // An absent websiteUri means two different things: never fetched, or
+  // fetched and the place has no site. Google omits null fields, so they look
+  // identical — and treating them the same re-bought details for 224 places
+  // already known to have no website. The marker records that we asked.
+  if (p._detailed) return false;
+  if (knownPlaceIds.has(p.id) || knownNames.has(normName(p.displayName?.text || ""))) return false;
+  if (!inMetro(p) || screenedRecently.has(p.id)) return false;
+  if (p.businessStatus && p.businessStatus !== "OPERATIONAL") return false;
+  const t = p.types || [];
+  const isBar = t.some((x) => BAR_TYPES.has(x));
+  return !(!isBar && (EXCLUDE_TYPES.has(p.primaryType || "") || !t.includes("restaurant")));
+});
+if (needDetails.length) {
+  console.log(`\n${needDetails.length} new places need Enterprise fields (website etc.)`);
+  await mapConcurrent(needDetails, 4, async (p) => {
+    if (overBudget("details_enterprise")) { skipped.details = (skipped.details || 0) + 1; return; }
+    try {
+      calls.details++; spend("details_enterprise");
+      const d = await curlJson(`https://places.googleapis.com/v1/places/${p.id}`, {
+        headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${DETAIL_FIELDS}`],
+      });
+      p._detailed = true;
+      if (d && !d.error) Object.assign(p, {
+        websiteUri: d.websiteUri ?? null, rating: d.rating ?? null,
+        userRatingCount: d.userRatingCount ?? null, priceLevel: d.priceLevel ?? null,
+        nationalPhoneNumber: d.nationalPhoneNumber ?? null,
+      });
+    } catch { p._detailed = true; }
+  });
+  console.log(`  ${calls.details} detail calls${skipped.details ? `, ${skipped.details} skipped at the cap` : ""}`);
+  // Fold the newly-bought fields back into the cache so they are never rebought.
+  const merged = new Map(readJson(RAW, []).map((x) => [x.id, x]));
+  for (const [id, place] of byId) merged.set(id, place);
+  fs.writeFileSync(RAW, JSON.stringify([...merged.values()]));
 }
 
 const candidates = [];
