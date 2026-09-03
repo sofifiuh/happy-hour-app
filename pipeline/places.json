@@ -7106,5 +7106,22 @@
     },
     "matched_name": "Pardhan Dhaba and Sweets",
     "synced_at": "2026-09-03"
+  },
+  "mixt-lobby-lounge-sheraton-vancouver-guildford-hotel": {
+    "place_id": "ChIJVVUVFRLXhVQRsX_tOEB7fcU",
+    "rating": 3.7,
+    "user_ratings_total": 43,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "MIXT Lobby Lounge @ Sheraton Vancouver Guildford Hotel",
+    "synced_at": "2026-09-03"
   }
 }

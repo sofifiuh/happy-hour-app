@@ -185,6 +185,120 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "mixt-lobby-lounge-sheraton-vancouver-guildford-hotel",
+    "name": "MIXT Lobby Lounge @ Sheraton Vancouver Guildford Hotel",
+    "formatted_address": "15269 104 Ave, Surrey, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.192143699999995,
+        "lng": -122.79891620000001
+      }
+    },
+    "formatted_phone_number": "(604) 587-6127",
+    "website": "https://mixtlounge.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://mixtlounge.ca/menus/cocktail-list/",
+      "deals": [
+        {
+          "name": "Blue Margarita",
+          "price": "$13",
+          "category": "drink",
+          "description": "Silver Tequila, Blue Curacao and lime juice"
+        },
+        {
+          "name": "West Coast Shaft",
+          "price": "$12",
+          "category": "drink",
+          "description": "Vodka, coffee liquor, baileys and espresso"
+        },
+        {
+          "name": "Planters Punch",
+          "price": "$13",
+          "category": "drink",
+          "description": "Dark rum, lime juice, orange juice and grenadine"
+        },
+        {
+          "name": "Citrus Melon Ball",
+          "price": "$13",
+          "category": "drink",
+          "description": "Melon liqueur, Vodka, orange juice"
+        },
+        {
+          "name": "Lemon Spritz",
+          "price": "$12",
+          "category": "drink",
+          "description": "Sparkling wine, limoncello, soda water"
+        },
+        {
+          "name": "Negroni Rosa",
+          "price": "$15",
+          "category": "drink",
+          "description": "Empress elderflower gin, dry vermouth, bitter bianca"
+        },
+        {
+          "name": "Classic Appletini",
+          "price": "$13",
+          "category": "drink",
+          "description": "Apple vodka, apple cider, lemon juice"
+        },
+        {
+          "name": "Coconut Sea Breeze",
+          "price": "$13",
+          "category": "drink",
+          "description": "Coconut vodka, cranberry juice, grapefruit juice"
+        },
+        {
+          "name": "Mexican El Diablo",
+          "price": "$15",
+          "category": "drink",
+          "description": "Mezcal, creme de casis, ginger beer"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "neverland-tea-salon-vancouver",
     "name": "Neverland Tea Salon Vancouver",
     "formatted_address": "3066 W Broadway, Vancouver, BC",
