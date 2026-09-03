@@ -296,6 +296,21 @@ const SWEEP_FIELDS = [
 ].join(",");
 // Enterprise: needed to decide whether a place is even crawlable, and to
 // carry identity into the app. Bought per surviving candidate.
+// A sweep at the Enterprise tier returns websiteUri for up to 20 places per
+// CALL, where Place Details buys it one place at a time. Nearby/Text Search
+// Enterprise is a different SKU from Enterprise+Atmosphere and from Place
+// Details, so it carries its own untouched 1,000/month — the cheap way to
+// fill in websiteUri for places the sweep already found.
+const ENTERPRISE_SWEEP_FIELDS = [
+  "places.id", "places.displayName", "places.location", "places.formattedAddress",
+  "places.types", "places.primaryType", "places.businessStatus",
+  "places.websiteUri", "places.rating", "places.userRatingCount",
+  "places.priceLevel", "places.nationalPhoneNumber",
+].join(",");
+const SWEEP_TIER = args["sweep-tier"] === "enterprise" ? "enterprise" : "pro";
+const ACTIVE_SWEEP_FIELDS = SWEEP_TIER === "enterprise" ? ENTERPRISE_SWEEP_FIELDS : SWEEP_FIELDS;
+const SWEEP_SKU = SWEEP_TIER === "enterprise" ? "sweep_enterprise" : "sweep_pro";
+
 const DETAIL_FIELDS = [
   "id", "websiteUri", "rating", "userRatingCount", "priceLevel", "nationalPhoneNumber",
 ].join(",");
@@ -336,10 +351,11 @@ const MONTH = new Date().toISOString().slice(0, 7);
 // Per-SKU ceilings, matching Google's free allowances with headroom left.
 const CAPS = {
   sweep_pro: Number(args["cap-sweep"]) || 4800,          // Pro free tier: 5,000
+  sweep_enterprise: Number(args["cap-sweep-ent"]) || 950, // Enterprise free tier: 1,000
   details_enterprise: Number(args["cap-details"]) || 950, // Enterprise free tier: 1,000
 };
 const usage = readJson(USAGE, {});
-usage[MONTH] = { sweep_pro: 0, details_enterprise: 0, ...usage[MONTH] };
+usage[MONTH] = { sweep_pro: 0, sweep_enterprise: 0, details_enterprise: 0, ...usage[MONTH] };
 const spentBefore = { ...usage[MONTH] };
 const overBudget = (sku) => usage[MONTH][sku] >= CAPS[sku];
 let skipped = { nearby: 0, text: 0 };
@@ -382,11 +398,11 @@ if (args["from-raw"]) {
   );
   await mapConcurrent(NEARBY_JOBS, 4, async ({ lat, lng, radius, types }) => {
     let data;
-    if (overBudget("sweep_pro")) { skipped.nearby++; return; }
+    if (overBudget(SWEEP_SKU)) { skipped.nearby++; return; }
     try {
-      calls.nearby++; spend("sweep_pro");
+      calls.nearby++; spend(SWEEP_SKU);
       data = await curlJson("https://places.googleapis.com/v1/places:searchNearby", {
-        headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${SWEEP_FIELDS}`],
+        headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${ACTIVE_SWEEP_FIELDS}`],
         body: {
           includedTypes: types,
           maxResultCount: 20,
@@ -400,7 +416,7 @@ if (args["from-raw"]) {
     if (data.error) { console.error(`circle ${lat},${lng} [${types[0]}]: ${data.error.status}`); return; }
     const places = data.places || [];
     if (places.length === 20) saturated++;
-    for (const p of places) byId.set(p.id, p);
+    for (const p of places) { if (SWEEP_TIER === "enterprise") p._detailed = true; byId.set(p.id, p); }
   });
   const afterNearby = byId.size;
   console.log(`${afterNearby} places from ${NEARBY_JOBS.length} nearby calls over ${sweepCircles.length} circles (${saturated} still saturated at 20).`);
@@ -412,10 +428,10 @@ if (args["from-raw"]) {
     for (let page = 0; page < TEXT_PAGES; page++) {
       let data;
       try {
-        if (overBudget("sweep_pro")) { skipped.text++; return; }
-      calls.text++; spend("sweep_pro");
+        if (overBudget(SWEEP_SKU)) { skipped.text++; return; }
+      calls.text++; spend(SWEEP_SKU);
         data = await curlJson("https://places.googleapis.com/v1/places:searchText", {
-          headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${SWEEP_FIELDS},nextPageToken`],
+          headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${ACTIVE_SWEEP_FIELDS},nextPageToken`],
           body: { textQuery, pageSize: 20, ...(pageToken ? { pageToken } : {}) },
         });
       } catch (e) {
@@ -423,7 +439,7 @@ if (args["from-raw"]) {
         return;
       }
       if (data.error) { console.error(`text "${textQuery}": ${data.error.status}`); return; }
-      for (const p of data.places || []) if (inMetro(p)) byId.set(p.id, p);
+      for (const p of data.places || []) if (inMetro(p)) { if (SWEEP_TIER === "enterprise") p._detailed = true; byId.set(p.id, p); }
       pageToken = data.nextPageToken;
       if (!pageToken) return;
     }
@@ -442,7 +458,7 @@ if (args["from-raw"]) {
   console.log(`raw sweep cache: ${merged.size} places (${merged.size - byId.size} carried over from earlier sweeps).`);
   console.log(`${byId.size} unique places total (${calls.nearby} nearby + ${calls.text} text calls).`);
   fs.writeFileSync(USAGE, JSON.stringify(usage, null, 2));
-  console.log(`${MONTH} Places usage: sweep_pro ${spentBefore.sweep_pro}->${usage[MONTH].sweep_pro}/${CAPS.sweep_pro}, details_enterprise ${spentBefore.details_enterprise}->${usage[MONTH].details_enterprise}/${CAPS.details_enterprise}.`);
+  console.log(`${MONTH} Places usage: ${SWEEP_SKU} ${spentBefore[SWEEP_SKU]}->${usage[MONTH][SWEEP_SKU]}/${CAPS[SWEEP_SKU]}, details_enterprise ${spentBefore.details_enterprise}->${usage[MONTH].details_enterprise}/${CAPS.details_enterprise}.`);
   if (skipped.nearby || skipped.text) {
     console.log(`!! SWEEP CAP HIT — skipped ${skipped.nearby} nearby and ${skipped.text} text calls. This sweep is incomplete.`);
   }
