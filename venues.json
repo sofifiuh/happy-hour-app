@@ -1,5 +1,5 @@
 {
- "data_version": "2026-09-03-f6d2bfb3",
+ "data_version": "2026-09-03-aaf1519c",
  "venues": [
   {
    "id": "ancora",
@@ -5082,7 +5082,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/johnny-s-on-oak.jpg",
+    "credit_name": "Johnny’s on Oak",
+    "credit_url": "https://maps.google.com/maps/contrib/113491503684599165001",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03"
   },
   {
@@ -5282,7 +5287,12 @@
     "source_url": "http://www.chefsflavour.ca/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/chef-s-flavour-indian-cuisine.jpg",
+    "credit_name": "Chef’s flavour Indian cuisine",
+    "credit_url": "https://maps.google.com/maps/contrib/100748518350424136227",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03"
   },
   {
@@ -5412,7 +5422,652 @@
     "source_url": "http://www.apolloniagreekrestaurant.com/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/apollonia-greek-restaurant.jpg",
+    "credit_name": "Apollonia Greek Restaurant",
+    "credit_url": "https://maps.google.com/maps/contrib/103911782657673539798",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJi6s62qpzhlQRvICqE4kUZs4",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 1,
+   "rating": 4,
+   "user_ratings_total": 389,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "pure-delight-caf",
+   "name": "Pure Delight Café",
+   "formatted_address": "3236 W Broadway, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2640679,
+     "lng": -123.17669099999999
+    }
+   },
+   "formatted_phone_number": "(604) 568-8812",
+   "website": "https://www.puredelightcafe.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.puredelightcafe.com/_files/ugd/5c106d_d08883fe082f434fb718379bff8cd4af.pdf",
+    "deals": [
+     {
+      "name": "Banh Mi & Chill",
+      "price": "$13.00",
+      "category": "food",
+      "description": "Vietnamese sub of choice + spring roll or salad roll + pop"
+     },
+     {
+      "name": "Pho-Nominal Lunch",
+      "price": "$18.00",
+      "category": "food",
+      "description": "Medium pho (any options #7-#14) + salad roll"
+     },
+     {
+      "name": "Saigon Sizzle",
+      "price": "$17.00",
+      "category": "food",
+      "description": "Any 2 toppings grilled meat with rice or vermicelli dish"
+     },
+     {
+      "name": "Beer & Pho",
+      "price": "$20.00",
+      "category": "drink",
+      "description": "Any size pho + draught beer"
+     },
+     {
+      "name": "Beer & Grill",
+      "price": "$22.00",
+      "category": "drink",
+      "description": "Any toppings rice or vermicelli dish + draught beer"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://static.wixstatic.com/media/39bff0_a0ecbd99747042249e9be63aace661ae~mv2.jpg/v1/fill/w_1512,h_1008,al_c/39bff0_a0ecbd99747042249e9be63aace661ae~mv2.jpg",
+    "credit_name": "Pure Delight Café",
+    "credit_url": "https://www.puredelightcafe.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJxSrpNdZzhlQRKSdMEPuAhxY",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.7,
+   "user_ratings_total": 373,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "amogha-indian-kitchen-bar",
+   "name": "Amogha Indian Kitchen & Bar",
+   "formatted_address": "4265 Main St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2475409,
+     "lng": -123.10136370000001
+    }
+   },
+   "formatted_phone_number": "(236) 471-8600",
+   "website": "https://amoghakitchens.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "17:30",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:30",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://amoghakitchens.com/vera-level-happy-hour.html",
+    "deals": [
+     {
+      "name": "Tap Beer",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "House Wine",
+      "price": "$6",
+      "category": "drink",
+      "description": "5 oz"
+     },
+     {
+      "name": "Gunpowder Fries",
+      "price": "$8",
+      "category": "food",
+      "description": "Gluten-free, dairy-free, vegan"
+     },
+     {
+      "name": "Corn Fritters",
+      "price": "$9",
+      "category": "food",
+      "description": "Dairy-free, vegan"
+     },
+     {
+      "name": "Vera Level Nachos",
+      "price": "$10",
+      "category": "food",
+      "description": "Paneer; with butter sauce"
+     },
+     {
+      "name": "Chef's Gunpowder Wings",
+      "price": "$13",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Mango Mule",
+      "price": "$10",
+      "category": "drink",
+      "description": "Monday special"
+     },
+     {
+      "name": "Wine Bottle",
+      "price": "50% off",
+      "category": "drink",
+      "description": "Wednesday special"
+     },
+     {
+      "name": "Watermelon Margarita",
+      "price": "$10",
+      "category": "drink",
+      "description": "Thursday special"
+     },
+     {
+      "name": "Salted Caramel Espresso Martini",
+      "price": "$12",
+      "category": "drink",
+      "description": "Saturday special"
+     },
+     {
+      "name": "Bramble",
+      "price": "$11",
+      "category": "drink",
+      "description": "Sunday special"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/amogha-indian-kitchen-bar.jpg",
+    "credit_name": "Amogha Indian Kitchen & Bar",
+    "credit_url": "https://maps.google.com/maps/contrib/115198328678234046465",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJx73jY35xhlQRCYiUE8BP_Sg",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.1,
+   "user_ratings_total": 221,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "hendricks-resto-lounge",
+   "name": "Hendricks Resto-Lounge",
+   "formatted_address": "433 Robson St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2798145,
+     "lng": -123.11698149999998
+    }
+   },
+   "formatted_phone_number": "(604) 647-2521",
+   "website": "http://www.hendricksrestaurant.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "18:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.hendricksrestaurant.com/menu/happy-hour",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "https://hendricksrestaurant.com/wp-content/uploads/2023/05/diners-choice.jpg",
+    "credit_name": "Hendricks Resto-Lounge",
+    "credit_url": "http://www.hendricksrestaurant.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJUwm5htZzhlQRdaN797kQ3sQ",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.2,
+   "user_ratings_total": 175,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "tacoloco",
+   "name": "TacoLoco",
+   "formatted_address": "1965 Cornwall Ave, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2726172,
+     "lng": -123.14929389999999
+    }
+   },
+   "formatted_phone_number": "(778) 990-9207",
+   "website": "https://www.tacolocokits.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "18:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.tacolocokits.com/menu",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/664ea0ba3054de67a5e2d38d/t/69d6dc5ce87ead2ceaed6da4/1775688796664/taco-loco9.png?format=1500w",
+    "credit_name": "TacoLoco",
+    "credit_url": "https://www.tacolocokits.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJUQLJEY9xhlQRDZKmbMuUpe0",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 1,
+   "rating": 4.3,
+   "user_ratings_total": 126,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "take-out-shack",
+   "name": "Take Out Shack",
+   "formatted_address": "318 Cambie St., Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2830401,
+     "lng": -123.10912950000001
+    }
+   },
+   "formatted_phone_number": "(604) 678-8589",
+   "website": "http://www.takeoutshack.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "16:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "20:00",
+      "end": "21:00",
+      "label": "Burger Hour Evening"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.takeoutshack.ca/",
+    "deals": [
+     {
+      "name": "All Shack Burgers",
+      "price": "$2 off",
+      "category": "food",
+      "description": "All burgers discounted"
+     },
+     {
+      "name": "Combo",
+      "price": "$3",
+      "category": "food",
+      "description": "Fountain soda & fries"
+     },
+     {
+      "name": "Shake add-on",
+      "price": "$4",
+      "category": "drink",
+      "description": "Add to any burger"
+     },
+     {
+      "name": "Milkshakes",
+      "price": "$6",
+      "category": "drink",
+      "description": "Any flavor"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://cdn.prod.website-files.com/64fa5bbb321bc75b84724308/6584892982c8a85704b3364b_Take%20Out%20Shack.jpg",
+    "credit_name": "Take Out Shack",
+    "credit_url": "http://www.takeoutshack.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJqeNHTo9zhlQR46889waoTI0",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 5,
+   "user_ratings_total": 36,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "g3-kitchen-and-bar",
+   "name": "G3 Kitchen and Bar",
+   "formatted_address": "496 Drake St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.274492099999996,
+     "lng": -123.1257423
+    }
+   },
+   "formatted_phone_number": "(604) 377-4233",
+   "website": "https://www.g3kitchen.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.g3kitchen.com/",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "photos/g3-kitchen-and-bar.jpg",
+    "credit_name": "G3 Kitchen and Bar",
+    "credit_url": "https://maps.google.com/maps/contrib/109848657415309571091",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJAeuY1CRxhlQRcg3m6iYke5I",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 1,
+   "rating": 5,
+   "user_ratings_total": 7,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "the-hestia-hearth-cafe",
+   "name": "The Hestia Hearth Cafe",
+   "formatted_address": "628 Abbott St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2793436,
+     "lng": -123.107433
+    }
+   },
+   "formatted_phone_number": "(778) 802-3456",
+   "website": "https://thehestiahearth.ca/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "13:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://thehestiahearth.ca/happy-hour",
+    "deals": [
+     {
+      "name": "Happy Hour",
+      "price": "10% off",
+      "category": "food",
+      "description": "10% discount on all items"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/the-hestia-hearth-cafe.jpg",
+    "credit_name": "The Hestia Hearth Cafe",
+    "credit_url": "https://maps.google.com/maps/contrib/107662107611765525277",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03"
   },
   {
@@ -5805,7 +6460,12 @@
     "source_url": "http://hungryzus.com/menus/happy-hour",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/hungry-zus-mediterranean-grill-downtown.jpg",
+    "credit_name": "Hungry Zus",
+    "credit_url": "https://maps.google.com/maps/contrib/104812124685779067732",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03"
   },
   {

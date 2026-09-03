@@ -6953,5 +6953,124 @@
     },
     "matched_name": "Apollonia Greek Restaurant",
     "synced_at": "2026-09-03"
+  },
+  "pure-delight-caf": {
+    "place_id": "ChIJi6s62qpzhlQRvICqE4kUZs4",
+    "rating": 4,
+    "user_ratings_total": 389,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Pure Delight Café",
+    "synced_at": "2026-09-03"
+  },
+  "amogha-indian-kitchen-bar": {
+    "place_id": "ChIJxSrpNdZzhlQRKSdMEPuAhxY",
+    "rating": 4.7,
+    "user_ratings_total": 373,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Amogha Indian Kitchen & Bar",
+    "synced_at": "2026-09-03"
+  },
+  "hendricks-resto-lounge": {
+    "place_id": "ChIJx73jY35xhlQRCYiUE8BP_Sg",
+    "rating": 4.1,
+    "user_ratings_total": 221,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Hendricks Resto-Lounge",
+    "synced_at": "2026-09-03"
+  },
+  "tacoloco": {
+    "place_id": "ChIJUwm5htZzhlQRdaN797kQ3sQ",
+    "rating": 4.2,
+    "user_ratings_total": 175,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "TacoLoco",
+    "synced_at": "2026-09-03"
+  },
+  "take-out-shack": {
+    "place_id": "ChIJUQLJEY9xhlQRDZKmbMuUpe0",
+    "rating": 4.3,
+    "user_ratings_total": 126,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Take Out Shack",
+    "synced_at": "2026-09-03"
+  },
+  "g3-kitchen-and-bar": {
+    "place_id": "ChIJqeNHTo9zhlQR46889waoTI0",
+    "rating": 5,
+    "user_ratings_total": 36,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "G3 Kitchen and Bar",
+    "synced_at": "2026-09-03"
+  },
+  "the-hestia-hearth-cafe": {
+    "place_id": "ChIJAeuY1CRxhlQRcg3m6iYke5I",
+    "rating": 5,
+    "user_ratings_total": 7,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Hestia Hearth Cafe",
+    "synced_at": "2026-09-03"
   }
 }

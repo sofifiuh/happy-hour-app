@@ -17428,5 +17428,1103 @@
     "name": "Minemura Sushi",
     "verdict": "no_happy_hour",
     "checked_at": "2026-09-03"
+  },
+  "ChIJDSDXWdBzhlQRpxc6LmuYLo8": {
+    "id": "puerto-mexico-tacos-and-mexican-products",
+    "name": "Puerto Mexico, Tacos and Mexican Products",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJY99nfcBvhlQRvyT4erp8KLA": {
+    "id": "sushi-mori",
+    "name": "Sushi Mori",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJU8DtYepzhlQR9IUz37U4e5w": {
+    "id": "rayhan",
+    "name": "Rayhan",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJBXUkdeJxhlQR6KBGQYyEilE": {
+    "id": "las-shilas-mexican-street-food-new-westminster",
+    "name": "Las Shilas Mexican Street Food | New Westminster",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJF7i7f9FxhlQRyDo3nIbB9z4": {
+    "id": "one-more-szechuan-chinese-cuisine",
+    "name": "One More Szechuan Chinese Cuisine一聚小館",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJi6s62qpzhlQRvICqE4kUZs4": {
+    "id": "pure-delight-caf",
+    "name": "Pure Delight Café",
+    "verdict": "published",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJr8N_h0dwhlQRp0VkmkGZRuU": {
+    "id": "tamarind-hill",
+    "name": "Tamarind Hill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJGbDEHPZ2hlQRU_e5rw16Y6c": {
+    "id": "han-ju-tofu-hot-pot",
+    "name": "Han Ju Tofu Hot Pot",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJd5d6Go52hlQRIn_BGVkdf2g": {
+    "id": "yo-bones-bbq-catering",
+    "name": "Yo-Bones BBQ Catering",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJUUNlQdVzhlQRehIWk6iytc0": {
+    "id": "one-saigon",
+    "name": "One Saigon",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJPV46Zf5zhlQRGP6NHGESiCE": {
+    "id": "caveman-caf-bakery",
+    "name": "Caveman Café & Bakery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJveULP7RzhlQRoSHGVHtFpfs": {
+    "id": "connie-s-cook-house",
+    "name": "Connie's Cook House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ3Tl35ip3hlQRWzFtlzrlz-E": {
+    "id": "gujarati-jalso",
+    "name": "Gujarati Jalso",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJxSrpNdZzhlQRKSdMEPuAhxY": {
+    "id": "amogha-indian-kitchen-bar",
+    "name": "Amogha Indian Kitchen & Bar",
+    "verdict": "published",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJDaAzgiVzhlQRIea8BnxxKXk": {
+    "id": "homura-yakiniku-japanese-bbq",
+    "name": "Homura Yakiniku 炎 Japanese BBQ",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJyd0dWNtzhlQRA8dYED0eZy8": {
+    "id": "yanaki-sushi",
+    "name": "Yanaki Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ58RsUSVzhlQRzMqDbN75Uy0": {
+    "id": "indi-co-club-kitchen",
+    "name": "Indi Co.@ Club Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJp0IPuyp3hlQRF5VFtd3dvnc": {
+    "id": "gaon-korean-cuisine",
+    "name": "GAON Korean Cuisine",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ__ONPVl2hlQRWh79j6fLkGY": {
+    "id": "thai-express-restaurant-burnaby",
+    "name": "Thai Express Restaurant Burnaby",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJhVvqkdRzhlQRJG5LM8r9zLc": {
+    "id": "twins-chinese-kitchen",
+    "name": "Twins Chinese Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJY8q2LuJzhlQRoADKGGvapQY": {
+    "id": "mali-thai-restaurant",
+    "name": "Mali Thai Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJA067nKJ3hlQRs-ui84XMhpU": {
+    "id": "agra-tandoori-house",
+    "name": "Agra Tandoori House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJvbLgFAB1hlQRGcsOGUZcLLM": {
+    "id": "pho-68-richmond",
+    "name": "Pho 68 Richmond",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJF-4u1c5whlQR4Nubtku4h9A": {
+    "id": "osaka-sushi",
+    "name": "Osaka Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJRZlc3FJyhlQReYHPjm2To9A": {
+    "id": "jolly-s-indian-bistro",
+    "name": "Jolly's Indian Bistro",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJiQwIStNxhlQR_yVv_iWnAKo": {
+    "id": "mr-sushi-main-st",
+    "name": "Mr. Sushi Main St.",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJnyTyrnF3hlQRVSiR_lC8gUo": {
+    "id": "silom-thai-cuisine",
+    "name": "Silom Thai Cuisine",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJNWr4UJN3hlQRnQPd-8vPYb4": {
+    "id": "noodlebox",
+    "name": "Noodlebox",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJXSRAavVwhlQRmMqCtjYIw50": {
+    "id": "golden-pearl-restaurant-best-price-order-on-website-https-goldenpearlrestaurant-onlineordering-io",
+    "name": "Golden Pearl Restaurant (BEST PRICE ORDER on website: https://goldenpearlrestaurant.onlineordering.io/)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ4x1W7aZ1hlQRuGlYa21KHRo": {
+    "id": "wasawa-s-indian-restaurant",
+    "name": "Wasawa’s Indian Restaurant",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJyYISPdJ3hlQR9IaH5qblxhY": {
+    "id": "pho-super-bowl-burnaby",
+    "name": "Pho Super Bowl (Burnaby)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJR-wsMfh0hlQRvBDJu-XTzHw": {
+    "id": "ming-s-garden",
+    "name": "Ming's Garden",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJF_rwdwBzhlQRThlE8o12MhQ": {
+    "id": "moc-vietnamese-kitchen-bar",
+    "name": "Moc Vietnamese Kitchen & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJQ56quS1zhlQRD0hapwfuhd4": {
+    "id": "sesame",
+    "name": "Sesame",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJv9GZFStwhlQRqA0wqZP6Lew": {
+    "id": "the-corner-stone-bistro-by-monika-s",
+    "name": "The Corner Stone Bistro by Monika's",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJqXO6kVxxhlQRqEGMO-Df8kw": {
+    "id": "carnitas-don-jose",
+    "name": "Carnitas Don Jose",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJmXWK2CVwhlQR2KxqlsPb10Q": {
+    "id": "mr-pan-pizza",
+    "name": "Mr. Pan Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJdWFNX5JzhlQR3IVLUjxVfOo": {
+    "id": "kim-express",
+    "name": "Kim Express",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJvZUxkOZ3hlQRIAKINP4yMd4": {
+    "id": "quesada-burritos-tacos-3",
+    "name": "Quesada Burritos & Tacos",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJObGeeDhwhlQRfrZojUsVjyA": {
+    "id": "pho-spot",
+    "name": "Pho Spot",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJx2RvgpRzhlQRYri_rNt7-Io": {
+    "id": "pho-quynh-express-yaletown",
+    "name": "Pho Quynh Express (Yaletown)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ9Vwt10xwhlQRx2Xygm7nozs": {
+    "id": "cilantro-and-jalapeno",
+    "name": "Cilantro and Jalapeno",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJiY787npzhlQRBF38KCx3UwQ": {
+    "id": "41-noodle-rice-pot-house",
+    "name": "41 Noodle & Rice Pot House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJi_JIVa1zhlQRFgoJXrdOoKg": {
+    "id": "healthy-noodle-house",
+    "name": "Healthy Noodle House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJx6Ve1n5xhlQRkyRz2DiCfwc": {
+    "id": "dragon-bowl-downtown",
+    "name": "Dragon Bowl Downtown",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJaXzZ96Z3hlQRcJ7pptA72s8": {
+    "id": "deer-lake-wonton-restaurant",
+    "name": "Deer Lake Wonton Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ-U1r_VhzhlQRA9bC5IwFTkY": {
+    "id": "thailicious",
+    "name": "ThaiLicious",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJj15cRV5xhlQR_a9ANlAyCD0": {
+    "id": "red-chilli",
+    "name": "Red Chilli",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJq3EK5kRzhlQRUniY7mh-3DE": {
+    "id": "old-durbar-nepalese-indian-restaurant",
+    "name": "Old Durbar Nepalese & Indian Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJVQHei9ZzhlQR7LUiZK3ewuw": {
+    "id": "yopo-sweet-mandarin",
+    "name": "Yopo Sweet Mandarin",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJM0nzK8FxhlQR5RVrE41II0o": {
+    "id": "quesada-burritos-tacos-4",
+    "name": "Quesada Burritos & Tacos",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJsc0iEHlxhlQRNaXy8TDmIJ4": {
+    "id": "little-bangkok-thai-kitchen-2",
+    "name": "Little Bangkok Thai Kitchen 2",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJZ-QCtWFxhlQR3JF-Rw5aHH4": {
+    "id": "bori-korean-restaurant",
+    "name": "Bori Korean Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ6YB_RfpzhlQRWykhASCA1BI": {
+    "id": "sushi-on-main",
+    "name": "Sushi on Main",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJxXffvMxxhlQRPPycZkAO0Vk": {
+    "id": "the-hanoi-corner",
+    "name": "The Hanoi Corner",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJKexPZ55xhlQRE_zjdgcwPHc": {
+    "id": "mexican-stop",
+    "name": "Mexican Stop",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJj-dTkN9zhlQR6lMZdho3HAE": {
+    "id": "el-compadre-carnitas-more",
+    "name": "El Compadre - Carnitas & More",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJV7KrTDBxhlQRlrvaTT8w-xw": {
+    "id": "indian-burger-joint-science-world",
+    "name": "Indian Burger Joint- Science World",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJlbNs3tp3hlQR-LEEphtgIi4": {
+    "id": "green-bamboo-viet-noodle",
+    "name": "Green Bamboo Viet Noodle",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJTx-C_CBuhlQROamerhrpdMY": {
+    "id": "opa-of-greece-park-royal",
+    "name": "OPA! of Greece Park Royal",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJa5oFTT7hhVQRdMkWWMlEBFI": {
+    "id": "raanthal-taste-of-kerala",
+    "name": "Raanthal | Taste of Kerala",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJda4vET9shlQRDhkuKzybX34": {
+    "id": "sushi-mega-west-vancouver",
+    "name": "Sushi Mega West Vancouver",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJEWTRCMdzhlQRFMr-oBhK68U": {
+    "id": "broadway-chinese",
+    "name": "Broadway Chinese",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ3bd_-tdxhlQR3Ph5UwxaWms": {
+    "id": "quesada-burritos-tacos-5",
+    "name": "Quesada Burritos & Tacos",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJR6eJEQBxhlQRJSLXWncNm64": {
+    "id": "tahini-s-shawarma-2",
+    "name": "Tahini’s Shawarma",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ3RdrAMfRhVQRq4kee3wC8M8": {
+    "id": "oh-joy-kimbap",
+    "name": "Oh! Joy Kimbap",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ233-9AhxhlQRd82EcIfZqQo": {
+    "id": "pho-georgia-express",
+    "name": "Pho Georgia Express",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJx73jY35xhlQRCYiUE8BP_Sg": {
+    "id": "hendricks-resto-lounge",
+    "name": "Hendricks Resto-Lounge",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJKx-pRPFxhlQRu6oX7Po58pM": {
+    "id": "behind-you",
+    "name": "Behind You",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJSbUN_TB3hlQRSgGCavIHm50": {
+    "id": "sushi-moon",
+    "name": "Sushi Moon",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJP9483953hlQR2yqVF75uoQk": {
+    "id": "watashi-sushi-kitchen",
+    "name": "Watashi Sushi & Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ_dc2-DhzhlQRkiHuHvi-P1s": {
+    "id": "chiuchow-seafood-restaurant",
+    "name": "ChiuChow Seafood Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJkeR0y8Z3hlQRKNOnQ4qj2Tc": {
+    "id": "sabor-mexicano-restaurant",
+    "name": "Sabor Mexicano Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJk5hZE9FxhlQR9_RoiLRznyc": {
+    "id": "lion-hot-pot-ltd",
+    "name": "Lion Hot Pot Ltd",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJGbDEHPZ2hlQRauzZcWJuiBg": {
+    "id": "chao-shou-wang",
+    "name": "Chao Shou Wang",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJu2wkMYFzhlQRit3Y9wo0BDI": {
+    "id": "oishinoya-broadway",
+    "name": "Oishinoya Broadway",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJBQ6rdxVzhlQRnj8LJPPX-6Q": {
+    "id": "desi-dosa-madras-granville",
+    "name": "Desi Dosa Madras Granville",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJBWHAcOhxhlQR3_Jqa7X-xKM": {
+    "id": "sud-soi",
+    "name": "SUD SOI",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJr1ATvyFzhlQR8jI2KQZsk_8": {
+    "id": "tarim-kitchen",
+    "name": "Tarim Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJnbQ3xyPhhVQR7fkPG2msXXY": {
+    "id": "biryani-bhai",
+    "name": "Biryani Bhai",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJkZpsUuh3hlQRnBI0BFl8nNQ": {
+    "id": "khan-sahab-kitchen",
+    "name": "Khan Sahab Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJSaKq7ClzhlQRhAAD_HKUuiM": {
+    "id": "song-cafe-heather-st-vancouver-bc-please-call-us-for-free-parking",
+    "name": "Song Cafe - Heather St, Vancouver, BC (please call us for free parking!)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ890OjPZrhlQRzfuYU7m7Z0g": {
+    "id": "bay-sushi",
+    "name": "Bay Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJhzuAa5NzhlQRIG-P1XOisAo": {
+    "id": "sun-garden-chinese-restaurant",
+    "name": "Sun Garden Chinese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ9ylOXZd3hlQRUwGGOl9wjxw": {
+    "id": "sakura-sushi-arisu-bbq",
+    "name": "Sakura Sushi & Arisu BBQ",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJxbpfDMJxhlQR0vyzfFXjZtU": {
+    "id": "twisted-indian-kingsway",
+    "name": "Twisted Indian Kingsway",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJbSbJ949xhlQRZrEGqFDXlXc": {
+    "id": "mamalee-chinatown",
+    "name": "Mamalee - Chinatown",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJw-tV2VZxhlQRrfSECpvt0Ks": {
+    "id": "goyo-korean-food-and-dessert",
+    "name": "GOYO (Korean food and dessert)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJHVuOOAB5hlQRSrqRpYGs3pU": {
+    "id": "sizzle-ayce-korean-bbq-restaurant",
+    "name": "Sizzle AYCE Korean BBQ Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ6SYELN5vhlQRbdSMHeJC_r4": {
+    "id": "new-woon-lee-inn-restaurant",
+    "name": "New Woon Lee Inn Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJUwm5htZzhlQRdaN797kQ3sQ": {
+    "id": "tacoloco",
+    "name": "TacoLoco",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJG3q8d85zhlQR-ah4P6bbH-c": {
+    "id": "la-tortiller-a",
+    "name": "La Tortillería",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJyy2qkfZrhlQRcdmPbB628YM": {
+    "id": "horseshoe-bay-chinese-restaurant",
+    "name": "Horseshoe Bay Chinese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJATkvHcVxhlQR6CN-ctllKo4": {
+    "id": "sabina-mexican-food",
+    "name": "Sabina Mexican Food",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJhwEiAl13hlQRtBk9crxwj5M": {
+    "id": "xiangyu-hunan-cuisine",
+    "name": "Xiangyu Hunan Cuisine 湘遇 湖南菜",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJHeumX0V1hlQR9lWAJnXCZCA": {
+    "id": "h-ti-u-h-ng-ph-t-h-ng-ph-t-richmond",
+    "name": "Hủ Tiếu Hồng Phát (Hồng Phát Richmond)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJS_ZOkJdzhlQRb8OTauU8wO0": {
+    "id": "smashed-granville",
+    "name": "SMASHED - Granville",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJUQfTAfhyhlQRFdRTr6WkR5Y": {
+    "id": "jericho-beach-concession",
+    "name": "Jericho Beach Concession",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJRf4BtpBzhlQRb4OEHDTfBgQ": {
+    "id": "the-bliss-banh-mi",
+    "name": "The Bliss Banh Mi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ_09lVQBzhlQRRgbucO-ncy8": {
+    "id": "vadapav-mirchi-by-geeta",
+    "name": "Vadapav Mirchi by Geeta",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJGREqVod3hlQRtryfGmDoFP4": {
+    "id": "the-hungry-tiger-grill-kitchen",
+    "name": "The Hungry Tiger Grill Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJSwzZS9RzhlQRPCpy4GqPpPQ": {
+    "id": "the-edge-social-grille-lounge",
+    "name": "The Edge Social Grille & Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ8RIZaABxhlQRi7YUwlfMAS0": {
+    "id": "loreto-brunch-and-dinner",
+    "name": "Loreto Brunch and Dinner",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJJ_BeA0lzhlQR-qgqRESBMN0": {
+    "id": "cachito-mio",
+    "name": "Cachito Mio",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJBZioOQxxhlQRtwINmJUu4mw": {
+    "id": "kin-s-food-bistro",
+    "name": "KIN'S FOOD & BISTRO",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJd7xx7MlzhlQRNeNvwqujKTQ": {
+    "id": "crab-hot-lau-ubc",
+    "name": "Crab Hot Lau (UBC)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJXdnd7qpxhlQRmmD3wt7tF_c": {
+    "id": "andrea-gail",
+    "name": "Andrea Gail",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJucGQIwB1hlQR-3M_5OsargE": {
+    "id": "dao-field-noodle-shop",
+    "name": "Dao Field Noodle Shop",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJNT1fZwB3hlQREmUofjoxu2M": {
+    "id": "captain-thai-noodle-house",
+    "name": "Captain Thai Noodle House 船長泰國船麵工房",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJXb3aHa1xhlQRal7TECw7QS0": {
+    "id": "hui-lau-shan",
+    "name": "Hui Lau Shan",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJrZTLWgp3hlQRmIApS9gWe_A": {
+    "id": "aangan-indian-cuisine",
+    "name": "Aangan Indian Cuisine",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJIwgGyWZzhlQRLMiKJtvwcQs": {
+    "id": "monarch-burger",
+    "name": "Monarch Burger",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJK4_fbgBxhlQRRWR9kkPj7lo": {
+    "id": "do-a-vicky",
+    "name": "Doña Vicky",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJLQReXwB3hlQRFugadeWYgQM": {
+    "id": "sen-pho-cafe-champlain-heights",
+    "name": "Sen Pho & Cafe (Champlain Heights)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ18II-wx3hlQR396fn4AOrAI": {
+    "id": "sizzle-pan-korean-bbq-with-chicken",
+    "name": "Sizzle Pan Korean BBQ (with Chicken)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJUQLJEY9xhlQRDZKmbMuUpe0": {
+    "id": "take-out-shack",
+    "name": "Take Out Shack",
+    "verdict": "published",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJLej9uTNzhlQRuLrJhWIUac4": {
+    "id": "namiya-sushi-house",
+    "name": "Namiya Sushi House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJk-hx-rd3hlQRVZiqEHPrFwc": {
+    "id": "diva-s-latinmex-restaurant-ltd",
+    "name": "Diva's LatinMex Restaurant Ltd",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJd74TDktxhlQRUMab2ghvolw": {
+    "id": "pho-37",
+    "name": "Pho 37",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJxaDHMAB3hlQRMjUQhpCJzxo": {
+    "id": "sezchuan-spicy-restaurant",
+    "name": "Sezchuan Spicy Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJO-JN23tzhlQRMFDujy_MORg": {
+    "id": "kerrisdale-nakamura-japanese-cuisine",
+    "name": "Kerrisdale Nakamura Japanese Cuisine",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJLcSPoP4wrGsRfsnqkK8jgTM": {
+    "id": "bamon-s-kitchen",
+    "name": "Bamon's Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJT2MmohdxhlQRCT5IaRtrM1c": {
+    "id": "nabi-house-korean-foods",
+    "name": "Nabi House Korean Foods",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJAckY5IJxhlQRl1RUwHtjSAw": {
+    "id": "plus-84-vietnamese-bistro",
+    "name": "Plus 84 Vietnamese Bistro",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJM02kzvhzhlQRIkJplFATK88": {
+    "id": "foodiepower-ubc-chinese-cuisine",
+    "name": "Foodiepower UBC - Chinese cuisine",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJNZUqKg13hlQRG-RIiV7M39M": {
+    "id": "viet-street-food-cafe",
+    "name": "Viet Street Food Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJrU6fCYJxhlQRu5XVukBdgiI": {
+    "id": "vina-vietnamese",
+    "name": "Vina Vietnamese",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJZ-4TFgBzhlQRixeRnQhc7cQ": {
+    "id": "emerald-dragon-irish-style-chinese-food",
+    "name": "Emerald Dragon - Irish Style Chinese Food",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJJ6GtMDp4hlQRZPOnEkf3bLs": {
+    "id": "thai-express-lougheed",
+    "name": "Thai Express Lougheed",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ9Tf6qOBxhlQRii-3eZqMZlI": {
+    "id": "fun-cart-noodle-house",
+    "name": "Fun cart noodle house",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJIejScbVzhlQRriQHAu1WxtQ": {
+    "id": "rice-and-noodle-granville-st",
+    "name": "Rice and Noodle (Granville St)",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJX2NVfABzhlQRT8afKF1kuCo": {
+    "id": "empanada-republic-restaurant",
+    "name": "Empanada Republic Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ-V3McHBxhlQRRB-y1OdsX5w": {
+    "id": "golden-smell-mee",
+    "name": "Golden Smell Mee",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJXTqyvz16hlQRBs1N7CZBnaU": {
+    "id": "nektar-s-pizza-greek-food",
+    "name": "Nektar's Pizza & Greek Food",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJIzoLJSZyhlQRp4KQcKfBDnU": {
+    "id": "joe-s-bbq-boat",
+    "name": "Joe's BBQ boat",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ8zp1Ws13hlQRVJWMhwAYrlk": {
+    "id": "rgk-bbq-burnaby",
+    "name": "RGK BBQ 烧鹅大王(Burnaby )",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJWdFQQGJxhlQRFxewkkFT95k": {
+    "id": "mui-garden-restaurant-north-vancouver",
+    "name": "Mui Garden Restaurant (North Vancouver)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ_8YuKwBzhlQRgVdmf4CSdL4": {
+    "id": "aura-vietnamese-cuisine-and-bar",
+    "name": "AURA Vietnamese Cuisine and Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJmXnWhuhzhlQRF9dpd6S1dT4": {
+    "id": "new-sun-restaurant",
+    "name": "New Sun Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ2_NqpAh3hlQR03TTrrgktUM": {
+    "id": "quesada-burritos-tacos-6",
+    "name": "Quesada Burritos & Tacos",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJVVpLmPlzhlQRI46Dx4kIfJc": {
+    "id": "lotus-indian-bistro",
+    "name": "Lotus Indian Bistro",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJEVfgNHZzhlQRIPiQwd24umw": {
+    "id": "homi-sushi",
+    "name": "HOMI SUSHI",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJxWSd3BZxhlQRplf9Fq5kqQk": {
+    "id": "olivo-cafe-lonsdale",
+    "name": "Olivo Cafe Lonsdale",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJgyGVyjZzhlQRbjo3OY_as6c": {
+    "id": "junzushi",
+    "name": "Junzushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ6SNusXtxhlQRbbgjk3xtQPI": {
+    "id": "tina-vietnamese-vancouver",
+    "name": "TINA Vietnamese (Vancouver)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ62b55VpzhlQRnj6rms8kClE": {
+    "id": "bbq-co",
+    "name": "BBQ & Co",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJRVFjdZBthlQR-vOo7ZMa5dw": {
+    "id": "mucho-burrito-fresh-mexican-grill",
+    "name": "Mucho Burrito Fresh Mexican Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJA6Be2KpzhlQRY-MxCdfNIIE": {
+    "id": "silk-n-spice",
+    "name": "Silk N Spice",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJsX0QBDBxhlQRiAP9i2t_vv8": {
+    "id": "sushi-masuda",
+    "name": "Sushi Masuda",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJzeJ6depxhlQRt87Gqm9SPj8": {
+    "id": "dip-n-drool-indian-restaurant",
+    "name": "Dip N Drool Indian Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJY9NS2QlzhlQRxIWzEVflYK4": {
+    "id": "ramen-danbo-main-st",
+    "name": "Ramen DANBO Main St",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJsV8VMM1xhlQRZzQJffupYLE": {
+    "id": "manchu-wok",
+    "name": "Manchu Wok",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJNRmcctZzhlQRUqf3-jNAsJw": {
+    "id": "antojitos-el-rincon-del-mexicano",
+    "name": "Antojitos El Rincon del Mexicano",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJfX3_cQBxhlQRuaZWsLv4gjU": {
+    "id": "di-chai",
+    "name": "Di Chai",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ2TeJKthxhlQR8KneP6znfCE": {
+    "id": "heritage-asian-eatery-lonsdale-quay",
+    "name": "Heritage Asian Eatery (Lonsdale Quay)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ_XR0ZgBzhlQRIN-M7jRBIPo": {
+    "id": "thai-away-home-club-kitchen",
+    "name": "Thai Away Home @ Club Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJS8zDVABzhlQRZJRuxlrzAoc": {
+    "id": "veda-kitsilano",
+    "name": "Veda Kitsilano",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJuWU7oh1zhlQR0xevnG3qBjI": {
+    "id": "pho-goodness-kitchen-main-26th",
+    "name": "Pho Goodness Kitchen (Main & 26th)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJOXnANQdxhlQRlhOJ5q9npcA": {
+    "id": "simya-korea-chicken-east-van",
+    "name": "Simya Korea Chicken East Van",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJVV51pYFxhlQRRG8wJ_e2ItE": {
+    "id": "tacotime",
+    "name": "TacoTime",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJfU4RW8NxhlQRTMLPlGbxuWU": {
+    "id": "taco-kat",
+    "name": "Taco Kat",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJk7sgjNxxhlQRh3rcstC0Te0": {
+    "id": "solo-pocha",
+    "name": "SOLO POCHA",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJO5j9utt3hlQRanFYI0UR5lg": {
+    "id": "wingz",
+    "name": "Wingz",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ57TyilhxhlQRpXpb9Mypa_o": {
+    "id": "la-valentina-mexican-cuisine",
+    "name": "La Valentina Mexican Cuisine",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJRZsRXNVxhlQRamWCThp0pLY": {
+    "id": "tsukiji-kitchen",
+    "name": "Tsukiji Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJhUKEZ8tzhlQRRWt3chPAY1Q": {
+    "id": "sushi-nami",
+    "name": "SUSHI NAMI",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ74PFxpx1hlQRobGbSDTqkTg": {
+    "id": "maple-cafe",
+    "name": "Maple Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJqeNHTo9zhlQR46889waoTI0": {
+    "id": "g3-kitchen-and-bar",
+    "name": "G3 Kitchen and Bar",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ1-1znopxhlQRKx7OFFTQPPw": {
+    "id": "seoul-bowl",
+    "name": "Seoul Bowl",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ5aplJel3hlQRt2Ds12czMNs": {
+    "id": "kuun-thai-cuisine",
+    "name": "KUUN Thai Cuisine",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJSz0eDgB3hlQRj9k_kl9HOio": {
+    "id": "melt-dish",
+    "name": "Melt Dish",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJhZfrd9FxhlQRdCArFwL7f5E": {
+    "id": "chefhyve",
+    "name": "chefhyve",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJKSvpQABxhlQRgSAWqvklHHo": {
+    "id": "tori",
+    "name": "Tori",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJg05vxqR_hlQREC-C-Wox_Gk": {
+    "id": "chef-s-corner",
+    "name": "Chef's Corner",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJofpmEydxhlQRyBNZPosVJrU": {
+    "id": "little-seoul",
+    "name": "Little seoul",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ6YSiqGx3hlQRLV1BVgTZQ3g": {
+    "id": "brooklyn-dumpling-shop-mckay",
+    "name": "Brooklyn Dumpling Shop McKay",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJAeuY1CRxhlQRcg3m6iYke5I": {
+    "id": "the-hestia-hearth-cafe",
+    "name": "The Hestia Hearth Cafe",
+    "verdict": "published",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJoW_BAgB3hlQRvq3aRmcfJ5Q": {
+    "id": "sabor-a-m-xico",
+    "name": "Sabor A México",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJYY5Qk4xxhlQRw7dKkjarQdc": {
+    "id": "katting-modern-indian-eatery",
+    "name": "Katting :- Modern Indian Eatery",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJWYAheHVzhlQR90bvGlsTGIU": {
+    "id": "la-quebec-poutine-point-gray",
+    "name": "La Quebec Poutine - Point Gray",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJI3pol9pxhlQRQp7DG9crSkM": {
+    "id": "maizhouse-mexican-kitchen",
+    "name": "Maizhouse mexican kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJW-a_JQB3hlQR_oVsF8l_iOE": {
+    "id": "mango-charming",
+    "name": "Mango Charming",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJX-zyvsZzhlQR-g4lRpyj-6Q": {
+    "id": "top-wok-dim-sum-express-club-kitchen-yaletown",
+    "name": "Top Wok Dim Sum Express (Club Kitchen Yaletown)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
   }
 }
