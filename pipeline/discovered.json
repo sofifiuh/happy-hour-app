@@ -25,6 +25,2310 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "sun-star-restaurant",
+    "name": "Sun Star Restaurant",
+    "formatted_address": "631 BC-7, Coquitlam, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.241908599999995,
+        "lng": -122.8844833
+      }
+    },
+    "formatted_phone_number": "(604) 937-5944",
+    "website": "https://www.sunstarrestaurant.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.sunstarrestaurant.ca/specials-and-promotions",
+      "deals": [
+        {
+          "name": "Bites",
+          "price": "$5",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Drinks",
+          "price": "$5",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Pitcher",
+          "price": "$14",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/383fc8_856cd614678b4065996583be47e5dbf5%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/383fc8_856cd614678b4065996583be47e5dbf5%7Emv2.jpg",
+      "credit_name": "Sun Star Restaurant",
+      "credit_url": "https://www.sunstarrestaurant.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "pardhan-dhaba-and-sweets",
+    "name": "Pardhan Dhaba and Sweets",
+    "formatted_address": "12499 88 Ave #107, Surrey, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1641833,
+        "lng": -122.8767
+      }
+    },
+    "formatted_phone_number": "(604) 593-4000",
+    "website": "http://www.pardhandhaba.ca/",
+    "happy_hour": {
+      "days": [
+        5
+      ],
+      "start": "19:00",
+      "end": "21:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.pardhandhaba.ca/menu",
+      "deals": [
+        {
+          "name": "Cuba Libre",
+          "price": "$5.00",
+          "category": "drink",
+          "description": "Bacardi, Coke & lime"
+        },
+        {
+          "name": "Mojito",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "Bacardi, lime, sugar syrup, mint leaves & soda"
+        },
+        {
+          "name": "Sangria",
+          "price": "$8.00",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://pardhandhaba.ca/wp-content/uploads/2024/10/caverta-bar.png",
+      "credit_name": "Pardhan Dhaba and Sweets",
+      "credit_url": "http://www.pardhandhaba.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "mixt-lobby-lounge-sheraton-vancouver-guildford-hotel",
+    "name": "MIXT Lobby Lounge @ Sheraton Vancouver Guildford Hotel",
+    "formatted_address": "15269 104 Ave, Surrey, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.192143699999995,
+        "lng": -122.79891620000001
+      }
+    },
+    "formatted_phone_number": "(604) 587-6127",
+    "website": "https://mixtlounge.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://mixtlounge.ca/menus/cocktail-list/",
+      "deals": [
+        {
+          "name": "Blue Margarita",
+          "price": "$13",
+          "category": "drink",
+          "description": "Silver Tequila, Blue Curacao and lime juice"
+        },
+        {
+          "name": "West Coast Shaft",
+          "price": "$12",
+          "category": "drink",
+          "description": "Vodka, coffee liquor, baileys and espresso"
+        },
+        {
+          "name": "Planters Punch",
+          "price": "$13",
+          "category": "drink",
+          "description": "Dark rum, lime juice, orange juice and grenadine"
+        },
+        {
+          "name": "Citrus Melon Ball",
+          "price": "$13",
+          "category": "drink",
+          "description": "Melon liqueur, Vodka, orange juice"
+        },
+        {
+          "name": "Lemon Spritz",
+          "price": "$12",
+          "category": "drink",
+          "description": "Sparkling wine, limoncello, soda water"
+        },
+        {
+          "name": "Negroni Rosa",
+          "price": "$15",
+          "category": "drink",
+          "description": "Empress elderflower gin, dry vermouth, bitter bianca"
+        },
+        {
+          "name": "Classic Appletini",
+          "price": "$13",
+          "category": "drink",
+          "description": "Apple vodka, apple cider, lemon juice"
+        },
+        {
+          "name": "Coconut Sea Breeze",
+          "price": "$13",
+          "category": "drink",
+          "description": "Coconut vodka, cranberry juice, grapefruit juice"
+        },
+        {
+          "name": "Mexican El Diablo",
+          "price": "$15",
+          "category": "drink",
+          "description": "Mezcal, creme de casis, ginger beer"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "neverland-tea-salon-vancouver",
+    "name": "Neverland Tea Salon Vancouver",
+    "formatted_address": "3066 W Broadway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2640232,
+        "lng": -123.1733683
+      }
+    },
+    "formatted_phone_number": "(604) 428-3066",
+    "website": "http://neverlandtea.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:30",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://neverlandtea.com/menus",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://neverlandtea.com/wp-content/uploads/2019/05/neverland-logo.png",
+      "credit_name": "Neverland Tea Salon Vancouver",
+      "credit_url": "http://neverlandtea.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "johnny-s-on-oak",
+    "name": "Johnny’s on Oak",
+    "formatted_address": "3838 Oak St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.25141,
+        "lng": -123.12728899999999
+      }
+    },
+    "formatted_phone_number": "(604) 732-3777",
+    "website": "https://johnnysonoak.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://johnnysonoak.ca/menu/",
+      "deals": [
+        {
+          "name": "Pepperoni Pita Pizza",
+          "price": "$6.25",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Fried Chicken",
+          "price": "$6.25",
+          "category": "food",
+          "description": "1 piece"
+        },
+        {
+          "name": "Triple Cooked Fries",
+          "price": "$5.50",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Tzatziki & Pita",
+          "price": "$11",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Hummus & Pita",
+          "price": "$11",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Tacos",
+          "price": "$11-15",
+          "category": "food",
+          "description": "Beef or Shrimp, 2 for $11 or 3 for $15"
+        },
+        {
+          "name": "Nachos",
+          "price": "$19",
+          "category": "food",
+          "description": "Wagyu beef or vegetarian, loaded with cheese sauce and vegetables"
+        },
+        {
+          "name": "Steak & Fries",
+          "price": "$21.25",
+          "category": "food",
+          "description": "5oz with triple cooked fries"
+        },
+        {
+          "name": "Baked Lasagna",
+          "price": "$21",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Fried Chicken Burger",
+          "price": "$22",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Spanakopita Dinner",
+          "price": "$25",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Souvlaki",
+          "price": "$25",
+          "category": "food",
+          "description": "Chicken or beef"
+        },
+        {
+          "name": "House Wine",
+          "price": "$6-9",
+          "category": "drink",
+          "description": "6oz or 9oz"
+        },
+        {
+          "name": "Corona",
+          "price": "$5.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Okanagan Spring",
+          "price": "$5.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Phillips Glitter Bomb",
+          "price": "$5.50",
+          "category": "drink",
+          "description": "Hazy pale ale"
+        },
+        {
+          "name": "Birra Moretti",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Granville Island Rotating Tap",
+          "price": "$6.75",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Highballs",
+          "price": "$5.50-9.50",
+          "category": "drink",
+          "description": "1oz or 2oz"
+        },
+        {
+          "name": "Moscow Mule",
+          "price": "$11",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Negroni",
+          "price": "$11",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Vizzy Hard Seltzer",
+          "price": "$5.25",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "kypriaki-mediterranean-grill",
+    "name": "Kypriaki | Mediterranean Grill",
+    "formatted_address": "1346 Marine Dr #106, North Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.324137,
+        "lng": -123.1119572
+      }
+    },
+    "formatted_phone_number": "(604) 985-7955",
+    "website": "http://www.kypriaki.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.kypriaki.ca/wine--drinks.html",
+      "deals": [
+        {
+          "name": "House Wine",
+          "price": "$5.75",
+          "category": "drink",
+          "description": "Red or White, 6 oz"
+        },
+        {
+          "name": "House Wine",
+          "price": "$8",
+          "category": "drink",
+          "description": "Red or White, 9 oz"
+        },
+        {
+          "name": "Deep Cove Pale Ale",
+          "price": "$5",
+          "category": "drink",
+          "description": "16 oz"
+        },
+        {
+          "name": "Driftwood Fat Tug",
+          "price": "$5",
+          "category": "drink",
+          "description": "16 oz"
+        },
+        {
+          "name": "Somersby Apple Cider",
+          "price": "$6",
+          "category": "drink",
+          "description": "18 oz"
+        },
+        {
+          "name": "Sangria",
+          "price": "$7.75",
+          "category": "drink",
+          "description": "Glass"
+        },
+        {
+          "name": "Highballs",
+          "price": "$5",
+          "category": "drink",
+          "description": "Standard"
+        },
+        {
+          "name": "Highballs",
+          "price": "$7",
+          "category": "drink",
+          "description": "Kypriaki Size"
+        },
+        {
+          "name": "Garlic Prawns",
+          "price": "$12",
+          "category": "food",
+          "description": "Appetizer"
+        },
+        {
+          "name": "Calamari",
+          "price": "$12",
+          "category": "food",
+          "description": "Appetizer"
+        },
+        {
+          "name": "Wings",
+          "price": "$12",
+          "category": "food",
+          "description": "1 lb"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://www.kypriaki.ca/uploads/5/7/9/5/5795742/editor/2021memberbadge.png?1637823395",
+      "credit_name": "Kypriaki | Mediterranean Grill",
+      "credit_url": "http://www.kypriaki.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "chef-s-flavour-indian-cuisine",
+    "name": "Chef’s flavour Indian cuisine",
+    "formatted_address": "2872 W Broadway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2639419,
+        "lng": -123.16952909999999
+      }
+    },
+    "formatted_phone_number": "(604) 738-2824",
+    "website": "http://www.chefsflavour.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "18:00",
+      "end": "22:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.chefsflavour.ca/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "karma-indian-bistro",
+    "name": "Karma Indian Bistro",
+    "formatted_address": "2741 W 4th Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.268478599999995,
+        "lng": -123.16711699999999
+      }
+    },
+    "formatted_phone_number": "(604) 559-1666",
+    "website": "https://karmaindianbistro.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://karmaindianbistro.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://karmaindianbistro.ca/wp-content/uploads/2026/08/EmmaK.Young_0423_114319_2470.jpg",
+      "credit_name": "Karma Indian Bistro",
+      "credit_url": "https://karmaindianbistro.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "apollonia-greek-restaurant",
+    "name": "Apollonia Greek Restaurant",
+    "formatted_address": "1830 Fir St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2694391,
+        "lng": -123.14064459999999
+      }
+    },
+    "formatted_phone_number": "(604) 736-9559",
+    "website": "http://www.apolloniagreekrestaurant.com/",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "16:30",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.apolloniagreekrestaurant.com/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "pure-delight-caf",
+    "name": "Pure Delight Café",
+    "formatted_address": "3236 W Broadway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2640679,
+        "lng": -123.17669099999999
+      }
+    },
+    "formatted_phone_number": "(604) 568-8812",
+    "website": "https://www.puredelightcafe.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.puredelightcafe.com/_files/ugd/5c106d_d08883fe082f434fb718379bff8cd4af.pdf",
+      "deals": [
+        {
+          "name": "Banh Mi & Chill",
+          "price": "$13.00",
+          "category": "food",
+          "description": "Vietnamese sub of choice + spring roll or salad roll + pop"
+        },
+        {
+          "name": "Pho-Nominal Lunch",
+          "price": "$18.00",
+          "category": "food",
+          "description": "Medium pho (any options #7-#14) + salad roll"
+        },
+        {
+          "name": "Saigon Sizzle",
+          "price": "$17.00",
+          "category": "food",
+          "description": "Any 2 toppings grilled meat with rice or vermicelli dish"
+        },
+        {
+          "name": "Beer & Pho",
+          "price": "$20.00",
+          "category": "drink",
+          "description": "Any size pho + draught beer"
+        },
+        {
+          "name": "Beer & Grill",
+          "price": "$22.00",
+          "category": "drink",
+          "description": "Any toppings rice or vermicelli dish + draught beer"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/39bff0_a0ecbd99747042249e9be63aace661ae~mv2.jpg/v1/fill/w_1512,h_1008,al_c/39bff0_a0ecbd99747042249e9be63aace661ae~mv2.jpg",
+      "credit_name": "Pure Delight Café",
+      "credit_url": "https://www.puredelightcafe.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "amogha-indian-kitchen-bar",
+    "name": "Amogha Indian Kitchen & Bar",
+    "formatted_address": "4265 Main St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2475409,
+        "lng": -123.10136370000001
+      }
+    },
+    "formatted_phone_number": "(236) 471-8600",
+    "website": "https://amoghakitchens.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:30",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:30",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://amoghakitchens.com/vera-level-happy-hour.html",
+      "deals": [
+        {
+          "name": "Tap Beer",
+          "price": "$5",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "House Wine",
+          "price": "$6",
+          "category": "drink",
+          "description": "5 oz"
+        },
+        {
+          "name": "Gunpowder Fries",
+          "price": "$8",
+          "category": "food",
+          "description": "Gluten-free, dairy-free, vegan"
+        },
+        {
+          "name": "Corn Fritters",
+          "price": "$9",
+          "category": "food",
+          "description": "Dairy-free, vegan"
+        },
+        {
+          "name": "Vera Level Nachos",
+          "price": "$10",
+          "category": "food",
+          "description": "Paneer; with butter sauce"
+        },
+        {
+          "name": "Chef's Gunpowder Wings",
+          "price": "$13",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Mango Mule",
+          "price": "$10",
+          "category": "drink",
+          "description": "Monday special"
+        },
+        {
+          "name": "Wine Bottle",
+          "price": "50% off",
+          "category": "drink",
+          "description": "Wednesday special"
+        },
+        {
+          "name": "Watermelon Margarita",
+          "price": "$10",
+          "category": "drink",
+          "description": "Thursday special"
+        },
+        {
+          "name": "Salted Caramel Espresso Martini",
+          "price": "$12",
+          "category": "drink",
+          "description": "Saturday special"
+        },
+        {
+          "name": "Bramble",
+          "price": "$11",
+          "category": "drink",
+          "description": "Sunday special"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "hendricks-resto-lounge",
+    "name": "Hendricks Resto-Lounge",
+    "formatted_address": "433 Robson St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2798145,
+        "lng": -123.11698149999998
+      }
+    },
+    "formatted_phone_number": "(604) 647-2521",
+    "website": "http://www.hendricksrestaurant.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.hendricksrestaurant.com/menu/happy-hour",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://hendricksrestaurant.com/wp-content/uploads/2023/05/diners-choice.jpg",
+      "credit_name": "Hendricks Resto-Lounge",
+      "credit_url": "http://www.hendricksrestaurant.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "tacoloco",
+    "name": "TacoLoco",
+    "formatted_address": "1965 Cornwall Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2726172,
+        "lng": -123.14929389999999
+      }
+    },
+    "formatted_phone_number": "(778) 990-9207",
+    "website": "https://www.tacolocokits.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.tacolocokits.com/menu",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/664ea0ba3054de67a5e2d38d/t/69d6dc5ce87ead2ceaed6da4/1775688796664/taco-loco9.png?format=1500w",
+      "credit_name": "TacoLoco",
+      "credit_url": "https://www.tacolocokits.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "take-out-shack",
+    "name": "Take Out Shack",
+    "formatted_address": "318 Cambie St., Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2830401,
+        "lng": -123.10912950000001
+      }
+    },
+    "formatted_phone_number": "(604) 678-8589",
+    "website": "http://www.takeoutshack.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "16:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:00",
+          "end": "21:00",
+          "label": "Burger Hour Evening"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.takeoutshack.ca/",
+      "deals": [
+        {
+          "name": "All Shack Burgers",
+          "price": "$2 off",
+          "category": "food",
+          "description": "All burgers discounted"
+        },
+        {
+          "name": "Combo",
+          "price": "$3",
+          "category": "food",
+          "description": "Fountain soda & fries"
+        },
+        {
+          "name": "Shake add-on",
+          "price": "$4",
+          "category": "drink",
+          "description": "Add to any burger"
+        },
+        {
+          "name": "Milkshakes",
+          "price": "$6",
+          "category": "drink",
+          "description": "Any flavor"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/64fa5bbb321bc75b84724308/6584892982c8a85704b3364b_Take%20Out%20Shack.jpg",
+      "credit_name": "Take Out Shack",
+      "credit_url": "http://www.takeoutshack.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "g3-kitchen-and-bar",
+    "name": "G3 Kitchen and Bar",
+    "formatted_address": "496 Drake St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.274492099999996,
+        "lng": -123.1257423
+      }
+    },
+    "formatted_phone_number": "(604) 377-4233",
+    "website": "https://www.g3kitchen.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.g3kitchen.com/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-hestia-hearth-cafe",
+    "name": "The Hestia Hearth Cafe",
+    "formatted_address": "628 Abbott St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2793436,
+        "lng": -123.107433
+      }
+    },
+    "formatted_phone_number": "(778) 802-3456",
+    "website": "https://thehestiahearth.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "13:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://thehestiahearth.ca/happy-hour",
+      "deals": [
+        {
+          "name": "Happy Hour",
+          "price": "10% off",
+          "category": "food",
+          "description": "10% discount on all items"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "river-rock-casino-resort",
+    "name": "River Rock Casino Resort",
+    "formatted_address": "8811 River Rd, Richmond, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1961935,
+        "lng": -123.12754949999999
+      }
+    },
+    "formatted_phone_number": "(604) 273-1895",
+    "website": "http://www.riverrock.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "20:00",
+          "end": null,
+          "label": "Late night (Mon-Fri)"
+        },
+        {
+          "days": [
+            6,
+            0
+          ],
+          "start": "07:00",
+          "end": null,
+          "label": "All day (weekends)"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://riverrock.com/the-chairmans-room-lounge/",
+      "deals": [
+        {
+          "name": "Gyoza",
+          "price": "$8",
+          "category": "food",
+          "description": "Chicken and Kimchi with sweet spicy soy sauce"
+        },
+        {
+          "name": "Vegetable Dumplings",
+          "price": "$8",
+          "category": "food",
+          "description": "4 pieces with sweet spicy soy sauce"
+        },
+        {
+          "name": "Wings",
+          "price": "$9",
+          "category": "food",
+          "description": "1/2 pound; salt & pepper, spiced, honey garlic, or Frank's Hot"
+        },
+        {
+          "name": "Popcorn Shrimp",
+          "price": "$12",
+          "category": "food",
+          "description": "6oz with sweet Thai chili sauce"
+        },
+        {
+          "name": "Nachos",
+          "price": "$12",
+          "category": "food",
+          "description": "Plain"
+        },
+        {
+          "name": "House Wine",
+          "price": "$5",
+          "category": "drink",
+          "description": "White or Red, 5oz"
+        },
+        {
+          "name": "Highballs",
+          "price": "$5",
+          "category": "drink",
+          "description": "1oz"
+        },
+        {
+          "name": "Rotating Tap",
+          "price": "$5",
+          "category": "drink",
+          "description": "16oz draft beer"
+        },
+        {
+          "name": "Beer Bucket",
+          "price": "$42",
+          "category": "drink",
+          "description": "Six bottles of Molson Canadian or Coors Light; parties of 3+ only"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://riverrock.com/wp-content/uploads/2026/05/river-contact-e1780352401351.jpg",
+      "credit_name": "River Rock Casino Resort",
+      "credit_url": "http://www.riverrock.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-naam",
+    "name": "The Naam",
+    "formatted_address": "2724 W 4th Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.26818840000001,
+        "lng": -123.1670365
+      }
+    },
+    "formatted_phone_number": "(604) 738-7151",
+    "website": "http://www.thenaam.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.thenaam.com/menu",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://img1.wsimg.com/isteam/ip/5e236959-9cd0-494c-a234-1a99eb928d06/IMG_4935-7f420de.jpg",
+      "credit_name": "The Naam",
+      "credit_url": "http://www.thenaam.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "do-chay",
+    "name": "Do Chay",
+    "formatted_address": "1392 Kingsway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2500602,
+        "lng": -123.0764991
+      }
+    },
+    "formatted_phone_number": "(604) 225-8349",
+    "website": "http://dochay.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:30",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://dochay.ca/kingsway",
+      "deals": [
+        {
+          "name": "Cocktails, Draught & Wines by the Glass",
+          "price": "$1 off",
+          "category": "drink",
+          "description": "All cocktails, draught beers, and wines by the glass"
+        },
+        {
+          "name": "Wine Bottles",
+          "price": "$35",
+          "category": "drink",
+          "description": "Select wine bottles"
+        },
+        {
+          "name": "Do Chay Tea Cocktail",
+          "price": "$10",
+          "category": "drink",
+          "description": "Vodka, St. Germain, pandan tea, citrus, soda"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/613d54912517cb35a6cbdef9/t/613d717e2e6f8b39bc3bc025/1631416702989/Do+Chay+Logo.png?format=1500w",
+      "credit_name": "Do Chay",
+      "credit_url": "http://dochay.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "hungry-zus-mediterranean-grill-downtown",
+    "name": "Hungry Zus Mediterranean Grill- Downtown",
+    "formatted_address": "433 Granville St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.285162299999996,
+        "lng": -123.11449630000001
+      }
+    },
+    "formatted_phone_number": "(604) 620-6333",
+    "website": "http://hungryzus.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:30",
+      "end": "17:30",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://hungryzus.com/menus/happy-hour",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "los-cuervos-taqueria-cantina",
+    "name": "Los Cuervos Taqueria & Cantina",
+    "formatted_address": "LOS CUERVOS, 603 Kingsway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.257433,
+        "lng": -123.091111
+      }
+    },
+    "formatted_phone_number": "(604) 558-1518",
+    "website": "https://www.loscuervostaqueria.net/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            5,
+            6,
+            0
+          ],
+          "start": "16:00",
+          "end": "18:00",
+          "label": "Weekend Happy Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.loscuervostaqueria.net/hhmenu",
+      "deals": [
+        {
+          "name": "Chips Salsa and Guacamole",
+          "price": "$9",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Churros",
+          "price": "$9",
+          "category": "food",
+          "description": "add vanilla ice cream +5"
+        },
+        {
+          "name": "Tacos",
+          "price": "2 for $12",
+          "category": "food",
+          "description": "choice of birria, al pastor, pollo, chorizo, aguacate, coliflor, hongos, calabacitas, rajas con crema, pescado"
+        },
+        {
+          "name": "All Taps (Sleeve)",
+          "price": "$6.5",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "House Wine",
+          "price": "$7",
+          "category": "drink",
+          "description": "6oz glass"
+        },
+        {
+          "name": "Tequila Shot",
+          "price": "$6",
+          "category": "drink",
+          "description": "1oz; choice of varieties"
+        },
+        {
+          "name": "Margaritas",
+          "price": "$12",
+          "category": "drink",
+          "description": "tequila reposado and agave, 8 flavors available; upgrade to mezcal +2"
+        },
+        {
+          "name": "La Paloma",
+          "price": "$12",
+          "category": "drink",
+          "description": "tequila reposado, grapefruit juice, agave, soda; upgrade to mezcal +2"
+        },
+        {
+          "name": "El Diablo",
+          "price": "$12",
+          "category": "drink",
+          "description": "tequila reposado, creme de cassis, lime juice, ginger beer; upgrade to mezcal +2"
+        },
+        {
+          "name": "Mojito",
+          "price": "$12",
+          "category": "drink",
+          "description": "white rum, fresh mint leaves, lime juice, agave, soda; multiple flavors"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5e48d105df6d9d5ec76b34c5/t/67a15867e4f13562bc1f5d4a/1738627175446/loscuervoslogo.png?format=1500w",
+      "credit_name": "Los Cuervos Taqueria & Cantina",
+      "credit_url": "https://www.loscuervostaqueria.net/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "lulu-island-winery",
+    "name": "LuLu Island Winery",
+    "formatted_address": "16880 Westminster Hwy, Richmond, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1692385,
+        "lng": -123.03650309999999
+      }
+    },
+    "formatted_phone_number": "(604) 232-9839",
+    "website": "https://www.luluislandwinery.com/",
+    "happy_hour": {
+      "days": [
+        5
+      ],
+      "start": "15:00",
+      "end": "19:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.luluislandwinery.com/event-details-registration/vibes-vino-happy-hour-featuring-daniel-reece/form",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/4c1bb3_6bf865d8bc7446ec9e2bfe5ec435c6dd%7Emv2.png/v1/fit/w_2500,h_1330,al_c/4c1bb3_6bf865d8bc7446ec9e2bfe5ec435c6dd%7Emv2.png",
+      "credit_name": "LuLu Island Winery",
+      "credit_url": "https://www.luluislandwinery.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "east-van-brewing-company",
+    "name": "East Van Brewing Company",
+    "formatted_address": "1675 Venables St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2767882,
+        "lng": -123.0711192
+      }
+    },
+    "formatted_phone_number": "(604) 558-3822",
+    "website": "http://www.eastvanbrewing.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.eastvanbrewing.com/happy-hour-menu",
+      "deals": [
+        {
+          "name": "Blue Rasp Beer Fizz",
+          "price": "$6.95",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Lager 16oz",
+          "price": "$5.95",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Pale Ale 16oz",
+          "price": "$5.95",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Cider 16oz",
+          "price": "$7.95",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Wine 7oz",
+          "price": "$7.95",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Margarita",
+          "price": "$9.95",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "$9.95",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "All Food Menu",
+          "price": "10% Off",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "otter-trail-winery",
+    "name": "Otter Trail Winery",
+    "formatted_address": "5974 248 St, Langley Twp, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.110839899999995,
+        "lng": -122.53688950000002
+      }
+    },
+    "formatted_phone_number": "(778) 619-6618",
+    "website": "https://www.ottertrailwinery.com/",
+    "happy_hour": {
+      "days": [
+        3,
+        4,
+        5,
+        6,
+        0
+      ],
+      "start": "14:30",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://ottertrailwinery.com/wp-content/uploads/2026/08/Otter-Trail-Winery-Happy-Hour.png",
+      "deals": [
+        {
+          "name": "Fries",
+          "price": "$12",
+          "category": "food",
+          "description": "Add truffle $4"
+        },
+        {
+          "name": "Hummus & Pita",
+          "price": "$12",
+          "category": "food",
+          "description": "Kalamata olives, fried capers, szechuan oil, sumac powder. GF, VG"
+        },
+        {
+          "name": "Garlic Prawns",
+          "price": "$14",
+          "category": "food",
+          "description": "6 prawns, garlic butter. GF"
+        },
+        {
+          "name": "Smashed Beef Sliders",
+          "price": "$14",
+          "category": "food",
+          "description": "3 sliders with old fort cheddar, pickles, tomato jam, caramelized onion, fried shallots. +1 slider $5"
+        },
+        {
+          "name": "Vancouver Island Oysters",
+          "price": "$14/$24",
+          "category": "food",
+          "description": "Half dozen or dozen. Watermelon mignonette with compressed cucumber. GF, DF"
+        },
+        {
+          "name": "Tempura Oyster Mushroom with Herb Aioli",
+          "price": "$16",
+          "category": "food",
+          "description": "Locally sourced from Myca farms. VG, DF, GF"
+        },
+        {
+          "name": "Ham & Cheese Croquette",
+          "price": "$17",
+          "category": "food",
+          "description": "Prosciutto dust, 6-month aged Manchego cheese, white truffle aioli, chive. Extra croquette $5"
+        },
+        {
+          "name": "Chicken Wings",
+          "price": "$18",
+          "category": "food",
+          "description": "Blue cheese dip, crudités. Choice of sauce: barbecue, lemon pepper, salt & pepper. GF"
+        },
+        {
+          "name": "Rockefeller Scallops on the Shell",
+          "price": "$18/$36",
+          "category": "food",
+          "description": "Béchamel, old fort cheddar mix, spinach. 3pc or 6pc"
+        },
+        {
+          "name": "Moules Marinières & Frites",
+          "price": "$19",
+          "category": "food",
+          "description": "Steamed mussels in white wine cream herb sauce. Truffle Parm $2. GF, VG, DF"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://ottertrailwinery.com/wp-content/uploads/2024/10/Otter_Trail_Winery_Logo_262x60.png",
+      "credit_name": "Otter Trail Winery",
+      "credit_url": "https://www.ottertrailwinery.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "way-back-brew-co",
+    "name": "Way Back Brew Co.",
+    "formatted_address": "15063 54a Ave #116, Surrey, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1021322,
+        "lng": -122.80498239999999
+      }
+    },
+    "formatted_phone_number": "(604) 757-0118",
+    "website": "https://www.waybackbrewco.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.waybackbrewco.com/",
+      "deals": [
+        {
+          "name": "Draft beer",
+          "price": "$6",
+          "category": "drink",
+          "description": "Happy hour draft beer"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6483777b13d0023e9093594c/t/6696fa754b776b2c7ed87b65/1768940232881/Way+Back+Brewing+Logo.jpg?format=1500w",
+      "credit_name": "Way Back Brew Co.",
+      "credit_url": "https://www.waybackbrewco.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "mahony-s-tavern-convention-centre",
     "name": "Mahony's Tavern Convention Centre",
     "formatted_address": "Burrard Landing, Vancouver Convention Centre West Building, 1055 Canada Pl #36, Vancouver, BC",
@@ -78,7 +2382,7 @@
       "credit_url": "https://www.mahonystavern.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -195,7 +2499,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -314,7 +2618,7 @@
       "credit_url": "https://harrysfishandchipsrestaurant.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -374,7 +2678,7 @@
       "credit_url": "http://www.bacirestaurant.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -438,7 +2742,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -517,7 +2821,7 @@
       "credit_url": "http://www.bufala.ca/edgemont",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -602,7 +2906,7 @@
       "credit_url": "https://sdeatery.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -792,7 +3096,7 @@
       "credit_url": "https://www.bufala.ca/aboutbrd",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -854,7 +3158,7 @@
       "credit_url": "https://hoshijapanesecuisine.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -985,7 +3289,7 @@
       "credit_url": "http://www.autostradahospitality.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1095,7 +3399,7 @@
       "credit_url": "http://www.mamasaidpizza.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1214,7 +3518,7 @@
       "credit_url": "https://www.mercatodiluigi.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1288,7 +3592,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1431,7 +3735,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1494,7 +3798,7 @@
       "credit_url": "http://www.oceanbeachwr.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1573,7 +3877,7 @@
       "credit_url": "http://www.sprezzatura.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1637,7 +3941,7 @@
       "credit_url": "https://www.misotaco.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1710,7 +4014,7 @@
       "credit_url": "https://www.arcanabar.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1772,7 +4076,7 @@
       "credit_url": "http://www.sabafoods.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1832,7 +4136,7 @@
       "credit_url": "http://www.pizzeriaspaccanapoli.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1891,7 +4195,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -1963,7 +4267,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2020,7 +4324,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2106,7 +4410,7 @@
       "credit_url": "http://www.lataqueria.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2170,7 +4474,7 @@
       "credit_url": "http://www.spice72.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2232,7 +4536,7 @@
       "credit_url": "https://www.stanleyparkbrewing.com/brewpub/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2294,7 +4598,7 @@
       "credit_url": "http://www.sandcastlelanes.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2371,7 +4675,7 @@
       "credit_url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2432,7 +4736,7 @@
       "credit_url": "https://www.unionlatinosrestaurant.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=8532792806179112619",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2511,7 +4815,7 @@
       "credit_url": "http://www.tidewaterspub.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2584,7 +4888,7 @@
       "credit_url": "https://thegull.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2646,7 +4950,7 @@
       "credit_url": "https://karmalounge.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2722,7 +5026,7 @@
       "credit_url": "http://www.georgieslocal.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2811,7 +5115,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2874,7 +5178,7 @@
       "credit_url": "http://www.grapesandsoda.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -2937,7 +5241,7 @@
       "credit_url": "http://www.barra41.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3000,7 +5304,7 @@
       "credit_url": "https://www.cypressmountain.com/dining",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3075,7 +5379,7 @@
       "credit_url": "http://www.bargobo.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3149,7 +5453,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3226,7 +5530,7 @@
       "credit_url": "http://www.rongsithaimill.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3290,7 +5594,7 @@
       "credit_url": "https://misotaco.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3369,7 +5673,7 @@
       "credit_url": "https://www.craftbeermarket.ca/locations/vancouver-false-creek/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3448,7 +5752,7 @@
       "credit_url": "https://chop.ca/locations/richmond-airport?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3507,7 +5811,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3586,7 +5890,7 @@
       "credit_url": "https://www.craftbeermarket.ca/locations/vancouver-english-bay/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3650,7 +5954,7 @@
       "credit_url": "http://www.smokeandbones.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3736,7 +6040,7 @@
       "credit_url": "https://milestonesrestaurants.com/locations/test-kitchen?utm_source=google&utm_medium=organic&utm_campaign=gbp",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3824,7 +6128,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3898,7 +6202,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -3961,7 +6265,7 @@
       "credit_url": "https://saba.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -4161,7 +6465,7 @@
       "credit_url": "http://www.claudiosristorante.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -4219,7 +6523,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -4319,7 +6623,7 @@
       "credit_url": "https://sobusocial.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -4404,7 +6708,7 @@
       "credit_url": "https://localpubliceatery.com/lpe-river-district/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -4463,7 +6767,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -4729,7 +7033,7 @@
       "credit_url": "https://www.niclipizzeria.com/?utm_source=google&utm_medium=local",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -4884,7 +7188,7 @@
       "credit_url": "https://www.hideoutgolf.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -5149,7 +7453,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -5286,7 +7590,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -5396,7 +7700,7 @@
       "credit_url": "http://boteco.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -5606,7 +7910,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -5791,7 +8095,7 @@
       "credit_url": "https://www.pidginvancouver.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -5938,7 +8242,7 @@
       "credit_url": "http://www.torafuku.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -6082,7 +8386,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -6158,7 +8462,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -6361,7 +8665,7 @@
       "credit_url": "http://www.hookrestaurant.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -6479,7 +8783,7 @@
       "credit_url": "http://www.redcardsportsbar.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -6571,7 +8875,7 @@
       "credit_url": "http://brewingaugust.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -6718,7 +9022,7 @@
       "credit_url": "http://www.persesocialcorner.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -6841,7 +9145,7 @@
       "credit_url": "http://www.lasmargaritas.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -6951,7 +9255,7 @@
       "credit_url": "http://www.theburrowrestaurant.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -7055,7 +9359,7 @@
       "credit_url": "http://virtuouspie.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -7202,7 +9506,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -7297,7 +9601,7 @@
       "credit_url": "https://www.alimentariamexicana.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -7497,7 +9801,7 @@
       "credit_url": "http://vaultrestaurant.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -7585,7 +9889,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -7690,7 +9994,7 @@
       "credit_url": "https://www.povera.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -7758,7 +10062,7 @@
       "credit_url": "http://murasaki.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -7824,7 +10128,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -8012,7 +10316,7 @@
       "credit_url": "https://luppolobrewing.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -8181,7 +10485,7 @@
       "credit_url": "https://www.nobleath.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -8272,7 +10576,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -8439,7 +10743,7 @@
       "credit_url": "https://www.derbybarandgrill.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -8545,7 +10849,7 @@
       "credit_url": "http://ilcappello.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -8613,7 +10917,7 @@
       "credit_url": "https://theflyingbeaver.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -8694,7 +10998,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -8805,7 +11109,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -8966,7 +11270,7 @@
       "credit_url": "http://catandfiddlepub.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -9056,7 +11360,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -9223,7 +11527,7 @@
       "credit_url": "http://www.dublincrossing.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -9431,7 +11735,7 @@
       "credit_url": "https://thecanadianbrewhouse.com/locations/richmond/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -9590,7 +11894,7 @@
       "credit_url": "https://moxies.ca/restaurants/langley/?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -9814,7 +12118,7 @@
       "credit_url": "http://www.roguewetbar.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -9998,7 +12302,7 @@
       "credit_url": "https://www.fortpub.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -10169,7 +12473,7 @@
       "credit_url": "http://www.devilselbowalehouse.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -10418,7 +12722,7 @@
       "credit_url": "https://www.librarysquarepub.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -10651,7 +12955,7 @@
       "credit_url": "http://www.twoparrotsvancouver.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -10830,7 +13134,7 @@
       "credit_url": "http://jimymacspub.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -10975,7 +13279,7 @@
       "credit_url": "http://www.kingfisherspub.com/?utm_campaign=gmb",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -11088,7 +13392,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -11159,7 +13463,7 @@
       "credit_url": "https://www.arcdining.com/?utm_source=google+Maps&utm_medium=seo+maps&utm_campaign=seo+maps",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -11243,7 +13547,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -11342,7 +13646,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -11470,7 +13774,7 @@
       "credit_url": "http://bellsandwhistlesyvr.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -11616,7 +13920,7 @@
       "credit_url": "https://luchalibretacos.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -11772,7 +14076,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -11915,7 +14219,7 @@
       "credit_url": "https://www.htastinglounge.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -11998,7 +14302,7 @@
       "credit_url": "https://eastsidecrafthouse.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -12225,7 +14529,7 @@
       "credit_url": "https://www.parkpub.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -12393,7 +14697,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -12561,7 +14865,7 @@
       "credit_url": "http://stjameswell.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -12675,7 +14979,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -12852,7 +15156,7 @@
       "credit_url": "https://donegals.pub/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -12960,7 +15264,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -13223,7 +15527,7 @@
       "credit_url": "http://rustyspub.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -13331,7 +15635,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -13510,7 +15814,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -13674,7 +15978,7 @@
       "credit_url": "https://www.brewsterspub.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -13869,7 +16173,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -13994,7 +16298,7 @@
       "credit_url": "http://thereachpub.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -14149,7 +16453,7 @@
       "credit_url": "http://www.tugboatannies.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -14304,7 +16608,7 @@
       "credit_url": "http://www.murrayvilletownpub.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -14429,7 +16733,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -14573,7 +16877,7 @@
       "credit_url": "https://foysirishbar.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -14819,7 +17123,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -14970,7 +17274,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -15129,7 +17433,7 @@
       "credit_url": "https://www.wildfig.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -15333,7 +17637,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -15486,7 +17790,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -15564,7 +17868,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -15743,7 +18047,7 @@
       "credit_url": "http://www.papisoysterbar.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -15865,7 +18169,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -15994,7 +18298,7 @@
       "credit_url": "http://www.beachavebarandgrill.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -16123,7 +18427,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -16213,7 +18517,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -16390,7 +18694,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -16473,7 +18777,7 @@
       "credit_url": "http://www.elwoods.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -16652,7 +18956,7 @@
       "credit_url": "https://brownsville.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -16783,7 +19087,7 @@
       "credit_url": "https://www.howesound.com/taphouse-newwest",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -16979,7 +19283,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -17157,7 +19461,7 @@
       "credit_url": "http://www.uvavancouver.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -17226,7 +19530,7 @@
       "credit_url": "https://www.wildeyebrewing.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -17426,7 +19730,7 @@
       "credit_url": "http://www.thesocialtavern.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -17546,7 +19850,7 @@
       "credit_url": "https://www.bar-asra.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -17693,7 +19997,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -17789,7 +20093,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -17918,7 +20222,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -18039,7 +20343,7 @@
       "credit_url": "https://www.parkdrive.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -18201,7 +20505,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -18306,7 +20610,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -18454,7 +20758,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -18617,7 +20921,7 @@
       "credit_url": "https://www.courtsideonmain.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -18774,7 +21078,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -19011,7 +21315,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -19149,7 +21453,7 @@
       "credit_url": "http://venturaroom.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -19315,7 +21619,7 @@
       "credit_url": "http://www.jacksonsrestobutcher.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -19549,7 +21853,7 @@
       "credit_url": "https://divavancouver.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -19620,7 +21924,7 @@
       "credit_url": "https://morgancreekgolf.com/restaurant/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -19734,7 +22038,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -19889,7 +22193,7 @@
       "credit_url": "https://www.flamingoroomvan.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -20020,7 +22324,7 @@
       "credit_url": "https://www.howesound.com/taphouse-eastvan",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -20204,7 +22508,7 @@
       "credit_url": "https://strathconabeer.com/pages/strathcona-north",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -20299,7 +22603,7 @@
       "credit_url": "https://thesquareriggerpub.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -20402,7 +22706,7 @@
       "credit_url": "http://www.thecozywok.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -20506,7 +22810,7 @@
       "credit_url": "http://www.flapperlounge.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -20621,7 +22925,7 @@
       "credit_url": "http://www.legion119.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -20716,7 +23020,7 @@
       "credit_url": "https://www.thehorseandryder.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -20853,7 +23157,7 @@
       "credit_url": "http://www.stagesbistroandlounge.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -21029,7 +23333,7 @@
       "credit_url": "https://fraserbar.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -21194,7 +23498,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -21281,7 +23585,7 @@
       "credit_url": "http://www.themainstay.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -21427,7 +23731,7 @@
       "credit_url": "https://ilovegigis.com/bar-lucia/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -21684,7 +23988,7 @@
       "credit_url": "https://www.oceanbeachwr.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -21894,7 +24198,7 @@
       "credit_url": "https://moxies.ca/restaurants/vancouver-richmond-airport/?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -21977,7 +24281,7 @@
       "credit_url": "https://cascadescasino.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -22134,7 +24438,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -22332,7 +24636,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -22488,7 +24792,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -22570,7 +24874,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -22753,7 +25057,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -22877,7 +25181,7 @@
       "credit_url": "https://www.labattoir.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -23017,7 +25321,7 @@
       "credit_url": "https://www.jrg.ca/the-italian-osteria-cheesebar/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -23219,7 +25523,7 @@
       "credit_url": "http://www.harthouserestaurant.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -23416,7 +25720,7 @@
       "credit_url": "http://www.marioskitchen.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -23592,7 +25896,7 @@
       "credit_url": "http://www.glasshouserestaurant.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -23781,7 +26085,7 @@
       "credit_url": "http://socialcorner.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -23931,7 +26235,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -24011,7 +26315,7 @@
       "credit_url": "http://www.randbbrewing.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -24195,7 +26499,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -24273,7 +26577,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -24343,7 +26647,7 @@
       "credit_url": "http://www.okiniyvr.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -24537,7 +26841,7 @@
       "credit_url": "https://www.littlemexicocantina.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -24681,7 +26985,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -24830,7 +27134,7 @@
       "credit_url": "https://www.gtccwestwoodplateau.com/restaurants/jess-fine/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -25010,7 +27314,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -25149,7 +27453,7 @@
       "credit_url": "https://www.farinaalegna.com/dinner",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -25262,7 +27566,7 @@
       "credit_url": "http://thefreebird.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -25542,7 +27846,7 @@
       "credit_url": "https://www.sector7kb.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -25697,7 +28001,7 @@
       "credit_url": "http://lobbyrestaurant.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -25846,7 +28150,7 @@
       "credit_url": "https://www.lavashseasidegrill.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -25984,7 +28288,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -26120,7 +28424,7 @@
       "credit_url": "https://www.folietta.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -26263,7 +28567,7 @@
       "credit_url": "https://www.gtccwestwoodplateau.com/restaurants/jess-sky/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -26369,7 +28673,7 @@
       "credit_url": "http://www.fuggles.beer/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -26518,7 +28822,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -26710,7 +29014,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -26817,7 +29121,7 @@
       "credit_url": "https://www.barneysonmain.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -26921,7 +29225,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -27020,7 +29324,7 @@
       "credit_url": "https://cerveceria-astilleros.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -27198,7 +29502,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -27335,7 +29639,7 @@
       "credit_url": "http://www.palmsbeachhouse.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -27434,7 +29738,7 @@
       "credit_url": "http://www.railandriverbistro.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -27569,7 +29873,7 @@
       "credit_url": "http://www.eatscratchkitchen.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -27632,7 +29936,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -27900,7 +30204,7 @@
       "credit_url": "http://graciesnextdoor.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -28007,7 +30311,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -28170,7 +30474,7 @@
       "credit_url": "https://www.lilarestaurant.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -28265,7 +30569,7 @@
       "credit_url": "http://soiram.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -28367,7 +30671,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -28552,7 +30856,7 @@
       "credit_url": "https://www.ilcorvo.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -28676,7 +30980,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -28837,7 +31141,7 @@
       "credit_url": "https://www.fredsrestaurant.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -28992,7 +31296,7 @@
       "credit_url": "https://www.northviewgolf.com/restaurants/duffeys-sports-grill/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -29196,7 +31500,7 @@
       "credit_url": "https://jeonvancouver.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -29339,7 +31643,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -29508,7 +31812,7 @@
       "credit_url": "http://www.timeandplaceburnaby.com/?SEO_id=GMB--R-YVRVMHF-1",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -29625,7 +31929,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -29702,7 +32006,7 @@
       "credit_url": "https://www.grizzlyflatbread.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -29804,7 +32108,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -29869,7 +32173,7 @@
       "credit_url": "http://sonsofvancouver.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -30011,7 +32315,7 @@
       "credit_url": "https://paulsburger.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -30146,7 +32450,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -30209,7 +32513,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -30286,7 +32590,7 @@
       "credit_url": "https://www.pocobrothersbrewing.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -30449,7 +32753,7 @@
       "credit_url": "https://greatwings.ca/burnaby/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -30605,7 +32909,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -30745,7 +33049,7 @@
       "credit_url": "https://rickysrestaurants.ca/locations/cloverdale/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -30884,7 +33188,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -31024,7 +33328,7 @@
       "credit_url": "http://75west.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -31095,7 +33399,7 @@
       "credit_url": "http://www.cafe-orso.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -31233,7 +33537,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -31442,7 +33746,7 @@
       "credit_url": "https://www.hellonori.com/parkroyal",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -31684,7 +33988,7 @@
       "credit_url": "https://www.novarestaurant.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -31797,7 +34101,7 @@
       "credit_url": "http://www.armsreachbistro.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -32071,7 +34375,7 @@
       "credit_url": "https://dominionkitchen.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -32148,7 +34452,7 @@
       "credit_url": "http://chaomami.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -32271,7 +34575,7 @@
       "credit_url": "https://meneds.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -32400,7 +34704,7 @@
       "credit_url": "https://www.meneds.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -32511,7 +34815,7 @@
       "credit_url": "http://www.sfinaki.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -32699,7 +35003,7 @@
       "credit_url": "http://cavukitchenbar.com/#menu?SEO_id=GMB--R-YVRAHHF",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -32846,7 +35150,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -32944,7 +35248,7 @@
       "credit_url": "https://loambistro.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -33129,7 +35433,7 @@
       "credit_url": "https://www.theapronrichmond.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -33202,7 +35506,7 @@
       "credit_url": "http://holytaco.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -33374,7 +35678,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -33584,7 +35888,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -33670,7 +35974,7 @@
       "credit_url": "https://www.honsushi.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -33751,7 +36055,7 @@
       "credit_url": "https://www.boathouserestaurants.ca/location/boathouse-restaurants-new-westminster/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -33856,7 +36160,7 @@
       "credit_url": "https://ulisrestaurant.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -33967,7 +36271,7 @@
       "credit_url": "https://www.tapsandtacos.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -34130,7 +36434,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -34300,7 +36604,7 @@
       "credit_url": "https://www.bananaleaf-vancouver.com/kitsilano",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -34405,7 +36709,7 @@
       "credit_url": "http://dovetailrestaurant.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -34572,7 +36876,7 @@
       "credit_url": "http://www.luckytaco.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -34730,7 +37034,7 @@
       "credit_url": "https://www.skyeavenue.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -34925,7 +37229,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -35062,7 +37366,7 @@
       "credit_url": "https://foodbyfanta.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -35235,7 +37539,7 @@
       "credit_url": "https://www.luciaonmain.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -35458,7 +37762,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -35583,7 +37887,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -35718,7 +38022,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -35915,7 +38219,7 @@
       "credit_url": "https://acquafarina.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -36022,7 +38326,7 @@
       "credit_url": "http://londonpubvan.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -36187,7 +38491,7 @@
       "credit_url": "http://www.wedgewoodhotel.com/?utm_source=GoogleMapsWW&utm_medium=organic&utm_content=Businesslisting",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -36314,7 +38618,7 @@
       "credit_url": "http://www.sappertondistricttaphouse.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -36503,7 +38807,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -36597,7 +38901,7 @@
       "credit_url": "https://www.therecroom.com/calgary-deerfoot?utm_source=google-my-business_CalgaryDeerfoot&utm_medium=profile&utm_campaign=owned_media",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -36793,7 +39097,7 @@
       "credit_url": "https://www.theonesixty.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -36900,7 +39204,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -37029,7 +39333,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -37200,7 +39504,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -37379,7 +39683,7 @@
       "credit_url": "http://www.pierseven.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -37501,7 +39805,7 @@
       "credit_url": "http://zarakvancouver.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -37706,7 +40010,7 @@
       "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -37851,7 +40155,7 @@
       "credit_url": "http://www.catch122.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -38094,7 +40398,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -38270,7 +40574,7 @@
       "credit_url": "https://kingtaps.com/locations/lonsdale-quay/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -38441,7 +40745,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -38520,7 +40824,7 @@
       "credit_url": "https://brownssocialhouse.com/point-grey",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -38698,7 +41002,7 @@
       "credit_url": "https://www.provisionsitaliana.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -38771,7 +41075,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -38942,7 +41246,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -39186,7 +41490,7 @@
       "credit_url": "http://www.bin4burgerlounge.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -39353,7 +41657,7 @@
       "credit_url": "http://www.fishworks.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -39422,7 +41726,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -39583,7 +41887,7 @@
       "credit_url": "http://bravovancouver.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -39737,7 +42041,7 @@
       "credit_url": "https://www.collectivegoods.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-02"
+    "last_synced_at": "2026-09-03"
   },
   {
     "place_id": null,
@@ -39794,7 +42098,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -40054,7 +42358,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -40256,7 +42560,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/63dc3537de004d21c5b2d5be/t/6647ac8157454e6e1a12ea04/1715973261442/The-Cascade-Room-Logo-2023.png?format=1500w",
       "credit_name": "The Cascade Room",
@@ -40431,7 +42735,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://ignitepizzeria.com/wp-content/uploads/2024/03/catering-ignite-pizzas-1.jpg",
       "credit_name": "Ignite Pizzeria Yaletown",
@@ -40751,7 +43055,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://static.wixstatic.com/media/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg",
       "credit_name": "Davie Social",
@@ -40825,7 +43129,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://themac.ca/wp-content/uploads/2026/08/20260705_091423-2-1-scaled-1.jpg",
       "credit_name": "The Mac Billiards",
@@ -40936,7 +43240,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
       "credit_name": "Guu Original Thurlow",
@@ -41259,7 +43563,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://cdn.prod.website-files.com/61b235126b51dd0b923b9429/620d8b064047132eddf9e95e_open-graph-image%20(1).png",
       "credit_name": "Water St. Café",
@@ -41340,7 +43644,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://kintonramen.com/wp-content/uploads/2024/09/kinton_robson-01228-1-1024x683.jpg",
       "credit_name": "KINTON RAMEN ROBSON",
@@ -41471,7 +43775,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -41603,7 +43907,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -41687,7 +43991,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
       "credit_name": "Guu with Otokomae",
@@ -41881,7 +44185,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://cocoricocafe.ca/wp-content/uploads/2025/06/cocorico-logo.png",
       "credit_name": "Coco Rico Cafe",
@@ -41971,7 +44275,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/5f2b04f5007a0c0b4126d0ab/t/6a3c6a3e4ac02a00dadaed21/1782344254780/food.jpg?format=1500w",
       "credit_name": "Capo & The Spritz",
@@ -42199,7 +44503,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -42336,7 +44640,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://pizzacomingsoon.com/images/PepEyes.gif",
       "credit_name": "Pizza Coming Soon",
@@ -42479,7 +44783,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -42797,7 +45101,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -42871,7 +45175,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/619e9c5fc9b09079b878c60d/t/6a1f3c5e9d129d02efd2bcbf/1780431966963/Prestons_breakfast-setup2.jpg?format=1500w",
       "credit_name": "Prestons Restaurant + Lounge Vancouver",
@@ -43043,7 +45347,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/69177c7462644178b259bde8/t/691780701c60da79402e44f2/1763147888355/Amber+Logo+White.png?format=1500w",
       "credit_name": "Amber Gastown",
@@ -43272,7 +45576,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/6925144e26dafdde14d3a2c2_6916abb8d2861347aa74ab12_691014e720de4e6f3fec889b_CambiePub%25281%2529.avif",
       "credit_name": "The Cambie Bar & Grill",
@@ -43490,7 +45794,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://www.cactusclubcafe.com/wp-content/uploads/2015/05/052915_LocationThumbnails_260px_180px_BENT.png",
       "credit_name": "Cactus Club Cafe",
@@ -43621,7 +45925,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://marcellopizzeria.com/wp-content/uploads/2019/11/ORANGE_ILLUSTRATION_02.jpg",
       "credit_name": "Marcello Ristorante & Pizzeria",
@@ -43804,7 +46108,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/674a1c8cba87c699b9dc1531_5.jpg",
       "credit_name": "Mangos Kitchen Bar",
@@ -43890,7 +46194,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://staugustinesvancouver.com/assets/logo-50782319.png",
       "credit_name": "St. Augustine's",
@@ -44133,7 +46437,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://www.cactusclubcafe.com/wp-content/uploads/2014/11/052915_LocationThumbnails_260px_180px_YALE.png",
       "credit_name": "Cactus Club Cafe",
@@ -44408,7 +46712,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://cdn.prod.website-files.com/67d4940ac4774ab766493675/67ed7f002bd0240044bb4d1f_624df098ab4100db88769ee8_60963218ec20c227fd57bb28_malones-taphouse_friday-night.jpg",
       "credit_name": "Malone's Taphouse",
@@ -44555,7 +46859,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/5b294ea4c258b4a050850cbc/t/674e656d6d3dc06fbd267050/1733191027522/5H6A5734.jpg?format=1500w",
       "credit_name": "La Mezcaleria",
@@ -44695,7 +46999,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://www.cactusclubcafe.com/wp-content/uploads/2015/05/052915_LocationThumbnails_260px_180px_ASH.png",
       "credit_name": "Cactus Club Cafe",
@@ -44782,7 +47086,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://www.datocms-assets.com/75587/1663193492-restaurant-vancouver-singsing-patio-server.jpg?auto=format&fit=max&w=1200",
       "credit_name": "Sing Sing Main St",
@@ -44925,7 +47229,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/598406a2b8a79b3541095ce2/t/64e66555c6598f65d4730d75/1692820821633/JamjarCanteen_icon_black+%282%29.png?format=1500w",
       "credit_name": "Jamjar Canteen Commercial Dr.",
@@ -45149,7 +47453,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://biminis1975.ca/wp-content/uploads/2025/10/biminis-home-banner.jpg",
       "credit_name": "Bimini's Since 1975",
@@ -45258,7 +47562,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -45358,7 +47662,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://www.datocms-assets.com/75587/1663200050-restaurant-vancouver-butcherbullock-neon-sign.jpg?auto=format&fit=max&w=1200",
       "credit_name": "The Butcher & Bullock Public House",
@@ -45501,7 +47805,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -45591,7 +47895,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2019/07/logo.png",
       "credit_name": "The Charlatan",
@@ -45655,7 +47959,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://opushotel.com/media_files/images/Superior_King_2.max-1900x1900.jpg",
       "credit_name": "OPUS Vancouver",
@@ -45726,7 +48030,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -45798,7 +48102,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://static.wixstatic.com/media/61a954_2be19d327c4e4f28a6faec69a4677659.jpg/v1/fit/w_2500,h_1330,al_c/61a954_2be19d327c4e4f28a6faec69a4677659.jpg",
       "credit_name": "Caffè Cittadella",
@@ -45938,7 +48242,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://bombaykitchenondenman.ca/wp-content/uploads/2026/06/Untitled-design-2.png",
       "credit_name": "Bombay Kitchen and Bar - Denman St",
@@ -46065,7 +48369,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://forecastcoffee.ca/cdn/shop/files/Forecast_Coffee_Stack.png?v=1671059059",
       "credit_name": "Forecast Coffee - Main Street",
@@ -46205,7 +48509,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://www.noahscafe604.com/uploads/b/b3056d90-8287-11ea-8dcd-d76ba85a9317/A50A3746-E8C0-4D21-8013-4486FE25D16F.jpg",
       "credit_name": "Noah's Cafe",
@@ -46362,7 +48666,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/5d62eac6567e6b00010d19dd/t/68e74597dba01c1c30bced3e/1759987095874/barts+text+logo.png?format=1500w",
       "credit_name": "Bartholomew",
@@ -46561,7 +48865,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://static.wixstatic.com/media/914129_203b8bd912894101a87bf2eecc36324d~mv2.jpg/v1/fill/w_2500,h_2841,al_c/914129_203b8bd912894101a87bf2eecc36324d~mv2.jpg",
       "credit_name": "Bayside Lounge — English Bay",
@@ -46776,7 +49080,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://ciderhouserules.ca/wp-content/uploads/2024/01/ch-brunch-300x300.jpg",
       "credit_name": "The Cider House",
@@ -46923,7 +49227,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://static.wixstatic.com/media/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png/v1/fit/w_2500,h_1330,al_c/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png",
       "credit_name": "Bar Corso",
@@ -47115,7 +49419,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/637bd7471883712f534a69d5/t/63880bff5e0e99379d87d31c/1669860351856/kksong_logo_bluepatternSQ.jpg?format=1500w",
       "credit_name": "Song (by Kin Kao)",
@@ -47200,7 +49504,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/5e39fb52039c6a4e75b14e99/t/665f5520dfa487303d924ded/1717523744702/Main+Street+Brewing+Wordmark.jpg?format=1500w",
       "credit_name": "Main Street Brewing Co.",
@@ -47414,7 +49718,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -47583,7 +49887,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/6482752355fc7c5b659d79ed/t/689580055c0e5008d5e18e8f/1754628101180/W+Colour+Logo.png?format=1500w",
       "credit_name": "The Watson",
@@ -47696,7 +50000,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -47829,7 +50133,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -47888,7 +50192,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://oldspaghettifactory.ca/wp-content/uploads/2020/11/OSF-Gastown.jpg",
       "credit_name": "The Old Spaghetti Factory (Gastown)",
@@ -47950,7 +50254,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -48104,7 +50408,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -48252,7 +50556,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/6645475dc7e9ad16be5320a4/t/6645477ec7e9ad16be532a6c/1611857405733/Screen+Shot+2021-01-28+at+1.09.17+PM.png?format=1500w",
       "credit_name": "Minami",
@@ -48467,7 +50771,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://i0.wp.com/topofvancouver.com/wp-content/uploads/2024/07/tov-logo-square.png",
       "credit_name": "Top Of Vancouver Revolving Restaurant",
@@ -48643,7 +50947,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -48751,7 +51055,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://www.gothamsteakhouse.com/wp-content/media/gotham-opengraph.jpg",
       "credit_name": "Gotham Steakhouse & Cocktail Bar",
@@ -48832,7 +51136,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://sylviahotel.com/wp-content/uploads/slider_2-1.jpeg",
       "credit_name": "Sylvia Hotel, Restaurant and Lounge",
@@ -48947,7 +51251,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -49043,7 +51347,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/61f8647601122d66e6755648/t/6202273588dc2b5b45a78cb9/1737657598840/Di+Beppe+Italian+Pasta+Restaurant+Gastown+Vancouver.jpeg?format=1500w",
       "credit_name": "Di Beppe Restaurant",
@@ -49186,7 +51490,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -49245,7 +51549,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -49392,7 +51696,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/622915caa2ee207bfc89860c/t/62c71336a355646980d50d29/1657213750476/Sopra+Sotto+Logo_Dark+Green_Transparent+Background_2.png?format=1500w",
       "credit_name": "Sopra Sotto Pizzeria",
@@ -49553,7 +51857,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://static.wixstatic.com/media/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg",
       "credit_name": "Tableau Bar Bistro",
@@ -49720,7 +52024,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -49961,7 +52265,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -50215,7 +52519,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://static.wixstatic.com/media/6f810c_2fee003f992a4c2bae4babd1dfe5790d~mv2.jpg/v1/fill/w_2500,h_1666,al_c/6f810c_2fee003f992a4c2bae4babd1dfe5790d~mv2.jpg",
       "credit_name": "Eat Bar & Patio Haraheri",
@@ -50328,7 +52632,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://cdn.shopify.com/s/files/1/0494/0723/0110/files/Como_Logo_Rotated2.png?height=628&pad_color=f7ecde&v=1614315207&width=1200",
       "credit_name": "Como Taperia",
@@ -50465,7 +52769,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/65a72a0678f3ca4b97f809ce/t/6949f0039c3bac7cab8cda9f/1766453251463/Alouette+Bistro+logo+1+-+Red+version.png?format=1500w",
       "credit_name": "Alouette Bistro",
@@ -50588,7 +52892,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/5e696210b248185a7740eb9e/t/6908ed36e801ae5dae811354/1762192694463/TUTTO+LOGO_RedCircle-Sept+2025.png?format=1500w",
       "credit_name": "Tutto Italian Restaurant & Bar",
@@ -50821,7 +53125,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/6197f60605fe1b16f9691fe5/t/61a0093bae588a3d464e910f/1637878075097/Carlino+Best+Italian+Restaurant+Downton+Vancouver+Coal+Harbour+Shangri-La+Pasta.jpg?format=1500w",
       "credit_name": "Carlino Restaurant",
@@ -50925,7 +53229,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/671af9d0bc57847c268ffd6c/t/672d9aaadb431b2e123f458d/1731041962507/Zoomak+Side+Sign+Logo_Logo+copy.png?format=1500w",
       "credit_name": "Zoomak Korean Tavern",
@@ -51104,7 +53408,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/5564c138e4b0b3813af4e855/t/5ecc00722dd571390c7ba0be/1590427774631/Novo_Italian_Social_01.jpg?format=1500w",
       "credit_name": "Novo Italian",
@@ -51183,7 +53487,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://www.streethawker.ca/uploads/b/47d14d50-dd7e-11ed-84ba-93a1c49a3583/streethawker-03029.jpeg",
       "credit_name": "Street Hawker - Mount Pleasant",
@@ -51349,7 +53653,7 @@
       ],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -51506,7 +53810,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -51565,7 +53869,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://bhouse.ca/images/1200x630/17240969/editedIMG_70252-cHRNbxfHQNl31phM4aQi4Q.JPG",
       "credit_name": "B House Restaurant",
@@ -51825,7 +54129,7 @@
         }
       ]
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://thesequel.ca/wp-content/uploads/2025/05/61_IMAGE_THE-SEQUEL_SOCIAL-SHOOT_25-02-18_CHARLESRNASBY-scaled.jpg",
       "credit_name": "The Sequel - Kitchen & Bar",
@@ -52016,7 +54320,7 @@
       "id": 4842937821,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -52169,7 +54473,7 @@
       "id": 6927768691,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/65676973c6846d7487e02256/t/656f95aa3358383ff0cbe919/1740440044434/Asset+1.png?format=1500w",
       "credit_name": "Hydra Estiatorio Mediterranean",
@@ -52334,7 +54638,7 @@
       "id": 4390232892,
       "amenity": "pub"
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/5db9f5cc0e8af224964d841a/t/5e45e75a78bd103b8b528dc8/1581639527237/Pourhouse-Restaurant-Cocktail-Bar-Gastown-Vancouver.jpg?format=1500w",
       "credit_name": "Pourhouse",
@@ -52504,7 +54808,7 @@
       "id": 6437608536,
       "amenity": "bar"
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://gretabar.com/wp-content/uploads/2026/08/GRETA-X-LE-BURGER-WEEK-Socials2-1.png",
       "credit_name": "Greta YVR",
@@ -52670,7 +54974,7 @@
       "id": 4859979322,
       "amenity": "pub"
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/690fdab96331267ef7e86a2f/t/690fdac76331267ef7e86c07/1757000454899/6A-Kitchen-and-Bar.png?format=1500w",
       "credit_name": "Six Acres",
@@ -52753,7 +55057,7 @@
       "id": 12164513044,
       "amenity": "bar"
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://static.wixstatic.com/media/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg",
       "credit_name": "The Boxcar",
@@ -52925,7 +55229,7 @@
       "id": 3932735573,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://www.brixandmortar.ca/wp-content/uploads/2021/03/logo1x_01.png",
       "credit_name": "Brix & Mortar",
@@ -53128,7 +55432,7 @@
       "id": 3690929433,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": null
   },
   {
@@ -53242,7 +55546,7 @@
       "id": 11079577905,
       "amenity": "bar"
     },
-    "last_synced_at": "2026-09-02",
+    "last_synced_at": "2026-09-03",
     "cover_image": {
       "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a63d5f471c7d77bf326cb9d_622a3aa6bcd48977c810a6a4_Share%20BG.jpg",
       "credit_name": "The 515 Bar",

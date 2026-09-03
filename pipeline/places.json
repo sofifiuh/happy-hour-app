@@ -6698,5 +6698,430 @@
     },
     "matched_name": "Proud Up Restaurant",
     "synced_at": "2026-09-02"
+  },
+  "lulu-island-winery": {
+    "place_id": "ChIJmUJSSmPfhVQR1i-o8sXxaMw",
+    "rating": 4.7,
+    "user_ratings_total": 1373,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "LuLu Island Winery",
+    "synced_at": "2026-09-03"
+  },
+  "east-van-brewing-company": {
+    "place_id": "ChIJRSiiiBVxhlQRzQymByrAcbQ",
+    "rating": 4.4,
+    "user_ratings_total": 506,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "East Van Brewing Company",
+    "synced_at": "2026-09-03"
+  },
+  "otter-trail-winery": {
+    "place_id": "ChIJkTgKO8nNhVQRi3pu7mO-pI8",
+    "rating": 4.3,
+    "user_ratings_total": 226,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Otter Trail Winery",
+    "synced_at": "2026-09-03"
+  },
+  "way-back-brew-co": {
+    "place_id": "ChIJ0TEDmePbhVQRcKjHgevNf2I",
+    "rating": 4.6,
+    "user_ratings_total": 153,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Way Back Brew Co.",
+    "synced_at": "2026-09-03"
+  },
+  "river-rock-casino-resort": {
+    "place_id": "ChIJud95Kud0hlQRIdd23A7LyZQ",
+    "rating": 3.9,
+    "user_ratings_total": 9489,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "River Rock Casino Resort",
+    "synced_at": "2026-09-03"
+  },
+  "the-naam": {
+    "place_id": "ChIJ6QuEWZFzhlQRU6ynlJ2i81c",
+    "rating": 4.3,
+    "user_ratings_total": 3011,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Naam",
+    "synced_at": "2026-09-03"
+  },
+  "do-chay": {
+    "place_id": "ChIJR5ki7Lp3hlQRMfOpOm5Jorw",
+    "rating": 4.6,
+    "user_ratings_total": 1383,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Do Chay",
+    "synced_at": "2026-09-03"
+  },
+  "hungry-zus-mediterranean-grill-downtown": {
+    "place_id": "ChIJyYygwSZxhlQRpRPu3BOglQM",
+    "rating": 4.8,
+    "user_ratings_total": 1258,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Hungry Zus Mediterranean Grill- Downtown",
+    "synced_at": "2026-09-03"
+  },
+  "los-cuervos-taqueria-cantina": {
+    "place_id": "ChIJ_3aq51dxhlQR6ka05SmFxSA",
+    "rating": 4.5,
+    "user_ratings_total": 1107,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Los Cuervos Taqueria & Cantina",
+    "synced_at": "2026-09-03"
+  },
+  "neverland-tea-salon-vancouver": {
+    "place_id": "ChIJVbqQbatzhlQRxkq-DCjDKNo",
+    "rating": 4.2,
+    "user_ratings_total": 982,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Neverland Tea Salon Vancouver",
+    "synced_at": "2026-09-03"
+  },
+  "johnny-s-on-oak": {
+    "place_id": "ChIJY29n8q13hlQR_AuS1MP2CyI",
+    "rating": 4.5,
+    "user_ratings_total": 786,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Johnny’s on Oak",
+    "synced_at": "2026-09-03"
+  },
+  "kypriaki-mediterranean-grill": {
+    "place_id": "ChIJXcL0bNFxhlQRwval1UMi4Wc",
+    "rating": 4.3,
+    "user_ratings_total": 704,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Kypriaki | Mediterranean Grill",
+    "synced_at": "2026-09-03"
+  },
+  "chef-s-flavour-indian-cuisine": {
+    "place_id": "ChIJJ6JdZaxzhlQRvV0VXg6k_8g",
+    "rating": 4.5,
+    "user_ratings_total": 628,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Chef’s flavour Indian cuisine",
+    "synced_at": "2026-09-03"
+  },
+  "karma-indian-bistro": {
+    "place_id": "ChIJjbBpcZNzhlQRqdzv02sur1w",
+    "rating": 4.4,
+    "user_ratings_total": 619,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Karma Indian Bistro",
+    "synced_at": "2026-09-03"
+  },
+  "apollonia-greek-restaurant": {
+    "place_id": "ChIJh4OQFclzhlQRv31FeuNELts",
+    "rating": 4.5,
+    "user_ratings_total": 578,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Apollonia Greek Restaurant",
+    "synced_at": "2026-09-03"
+  },
+  "pure-delight-caf": {
+    "place_id": "ChIJi6s62qpzhlQRvICqE4kUZs4",
+    "rating": 4,
+    "user_ratings_total": 389,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Pure Delight Café",
+    "synced_at": "2026-09-03"
+  },
+  "amogha-indian-kitchen-bar": {
+    "place_id": "ChIJxSrpNdZzhlQRKSdMEPuAhxY",
+    "rating": 4.7,
+    "user_ratings_total": 373,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Amogha Indian Kitchen & Bar",
+    "synced_at": "2026-09-03"
+  },
+  "hendricks-resto-lounge": {
+    "place_id": "ChIJx73jY35xhlQRCYiUE8BP_Sg",
+    "rating": 4.1,
+    "user_ratings_total": 221,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Hendricks Resto-Lounge",
+    "synced_at": "2026-09-03"
+  },
+  "tacoloco": {
+    "place_id": "ChIJUwm5htZzhlQRdaN797kQ3sQ",
+    "rating": 4.2,
+    "user_ratings_total": 175,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "TacoLoco",
+    "synced_at": "2026-09-03"
+  },
+  "take-out-shack": {
+    "place_id": "ChIJUQLJEY9xhlQRDZKmbMuUpe0",
+    "rating": 4.3,
+    "user_ratings_total": 126,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Take Out Shack",
+    "synced_at": "2026-09-03"
+  },
+  "g3-kitchen-and-bar": {
+    "place_id": "ChIJqeNHTo9zhlQR46889waoTI0",
+    "rating": 5,
+    "user_ratings_total": 36,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "G3 Kitchen and Bar",
+    "synced_at": "2026-09-03"
+  },
+  "the-hestia-hearth-cafe": {
+    "place_id": "ChIJAeuY1CRxhlQRcg3m6iYke5I",
+    "rating": 5,
+    "user_ratings_total": 7,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Hestia Hearth Cafe",
+    "synced_at": "2026-09-03"
+  },
+  "sun-star-restaurant": {
+    "place_id": "ChIJ9ypqMoZ4hlQRdKi0FvI9izE",
+    "rating": 4,
+    "user_ratings_total": 707,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Sun Star Restaurant",
+    "synced_at": "2026-09-03"
+  },
+  "pardhan-dhaba-and-sweets": {
+    "place_id": "ChIJ26pyGJTZhVQRXRm6c12qako",
+    "rating": 4.7,
+    "user_ratings_total": 391,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Pardhan Dhaba and Sweets",
+    "synced_at": "2026-09-03"
+  },
+  "mixt-lobby-lounge-sheraton-vancouver-guildford-hotel": {
+    "place_id": "ChIJVVUVFRLXhVQRsX_tOEB7fcU",
+    "rating": 3.7,
+    "user_ratings_total": 43,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "MIXT Lobby Lounge @ Sheraton Vancouver Guildford Hotel",
+    "synced_at": "2026-09-03"
   }
 }

@@ -1,7 +1,10 @@
 {
-  "_note": "Google Places calls per SKU per calendar month. The free allowance is 1000/SKU/month at the Enterprise+Atmosphere field mask this pipeline uses.",
-  "_accuracy": "September's figures are NOT metered. The opening balance was reconstructed from run logs, and a sweep killed mid-flight on 2026-09-02 spent an unknown number of calls without recording them (usage was only persisted on clean exit, since fixed). The in-memory guard capped that sweep at 950/SKU, so these are recorded at that worst case. Real usage is likely lower. Google Cloud console is the authority.",
+  "_note": "Google Places calls per SKU per calendar month. Free allowances: Pro 5,000; Enterprise 1,000; Enterprise+Atmosphere 1,000. Verified against Google's pricing page 2026-09-03.",
+  "_accuracy": "The 'nearby'/'text' figures are legacy Enterprise+Atmosphere counts from before the sweep was moved to Pro fields. They are reconstructed, not metered, and recorded at the worst case the in-memory cap allowed; real usage is likely lower. Google Cloud console is the authority. 224 of details_enterprise were spent on a bug that re-fetched places already known to have no website.",
   "2026-09": {
+    "sweep_pro": 2366,
+    "sweep_enterprise": 884,
+    "details_enterprise": 950,
     "nearby": 1150,
     "text": 1150
   }
