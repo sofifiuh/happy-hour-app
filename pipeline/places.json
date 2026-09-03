@@ -5989,5 +5989,714 @@
     },
     "matched_name": "Il Cappello Enoteca",
     "synced_at": "2026-09-02"
+  },
+  "nicli-pizzeria-bar": {
+    "place_id": "ChIJQyTlBnpxhlQRG_iQW8ItfrA",
+    "rating": 4.4,
+    "user_ratings_total": 1845,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "NICLI Pizzeria + Bar",
+    "synced_at": "2026-09-02"
+  },
+  "hideout-golf": {
+    "place_id": "ChIJv94nXI9zhlQRXuzMxCL70cM",
+    "rating": 4.7,
+    "user_ratings_total": 133,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
+    "matched_name": "Hideout Golf",
+    "synced_at": "2026-09-02"
+  },
+  "an-indian-affair-restaurant": {
+    "place_id": "ChIJJ6MS5y7QhVQR8iYy7PsCOH4",
+    "rating": 4.4,
+    "user_ratings_total": 5829,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "An Indian Affair restaurant",
+    "synced_at": "2026-09-02"
+  },
+  "afghan-kitchen-south-surrey": {
+    "place_id": "ChIJse82JpPEhVQRzhz30hab1Mo",
+    "rating": 4.7,
+    "user_ratings_total": 2578,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Afghan Kitchen South Surrey",
+    "synced_at": "2026-09-02"
+  },
+  "boteco-brasil-restaurant": {
+    "place_id": "ChIJj4y4hjVxhlQRYpgCUuJSLp4",
+    "rating": 4.3,
+    "user_ratings_total": 1675,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Boteco Brasil Restaurant",
+    "synced_at": "2026-09-02"
+  },
+  "chef-ron-restaurant-bar": {
+    "place_id": "ChIJufCsY7hzhlQRJ5pRvUZ6tMQ",
+    "rating": 4.5,
+    "user_ratings_total": 1436,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Chef Ron Restaurant & Bar",
+    "synced_at": "2026-09-02"
+  },
+  "pidgin-restaurant": {
+    "place_id": "ChIJj7pRp3BxhlQR8QU5qnkjG5U",
+    "rating": 4.4,
+    "user_ratings_total": 1254,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "PiDGiN Restaurant",
+    "synced_at": "2026-09-02"
+  },
+  "torafuku": {
+    "place_id": "ChIJDXs3CGVxhlQRQT7WyInozkA",
+    "rating": 4.3,
+    "user_ratings_total": 1059,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Torafuku",
+    "synced_at": "2026-09-02"
+  },
+  "tavola": {
+    "place_id": "ChIJfZnyOohxhlQRAX10LargB0E",
+    "rating": 4.5,
+    "user_ratings_total": 993,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Tavola",
+    "synced_at": "2026-09-02"
+  },
+  "tako-taqueria-korean": {
+    "place_id": "ChIJIwA4nntxhlQRBmzcXjGwJRQ",
+    "rating": 4.3,
+    "user_ratings_total": 981,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": false,
+      "serves_beer": true,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "TAKO - Taqueria Korean",
+    "synced_at": "2026-09-02"
+  },
+  "the-ocean-beach-crafts-drafts-eats": {
+    "place_id": "ChIJ35CsmALDhVQRvFgPg_AOQC0",
+    "rating": 4.6,
+    "user_ratings_total": 1746,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "sprezzatura-restaurant": {
+    "place_id": "ChIJCU7GmHVzhlQRVCX3eeeGIqo",
+    "rating": 4.4,
+    "user_ratings_total": 1069,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "miso-taco-cambie": {
+    "place_id": "ChIJ39PXx8pxhlQR1--5MxJBR1c",
+    "rating": 4.4,
+    "user_ratings_total": 1001,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "arcana-food-and-spirits": {
+    "place_id": "ChIJM3CcBK9xhlQRc9lVZFzYcPs",
+    "rating": 4.6,
+    "user_ratings_total": 669,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "saba-foods-middle-eastern-yemeni-restaurant": {
+    "place_id": "ChIJ_4DyPpfbhVQRv2KFIlapZ5g",
+    "rating": 4.8,
+    "user_ratings_total": 4041,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "pizzeria-spacca-napoli": {
+    "place_id": "ChIJF16hTOJ4hlQR9GSGNpOuTZE",
+    "rating": 4.4,
+    "user_ratings_total": 2985,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "admiral-pub": {
+    "place_id": "ChIJ_3NDKc9whlQRbnBgBEsBKyQ",
+    "rating": 4.1,
+    "user_ratings_total": 1105,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "queens-cross-pub": {
+    "place_id": "ChIJL32kMGZxhlQRMrbSMUGBVDs",
+    "rating": 4.2,
+    "user_ratings_total": 852,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "the-beer-shack": {
+    "place_id": "ChIJARIITRDDhVQRjxmrBV_8-r8",
+    "rating": 4.3,
+    "user_ratings_total": 187,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "la-taqueria-brentwood-by-la-taqueria-pinche-taco-shop": {
+    "place_id": "ChIJF9hzTXh3hlQRGCP_95_ogeY",
+    "rating": 4.5,
+    "user_ratings_total": 1790,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "spice-72-indian-restaurant-lounge": {
+    "place_id": "ChIJYReKm2DZhVQR3M8G_Qwyfz4",
+    "rating": 4.1,
+    "user_ratings_total": 3981,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "stanley-park-brewing-restaurant-brewpub": {
+    "place_id": "ChIJ28t23QxzhlQRlPVAoZUunSU",
+    "rating": 4.3,
+    "user_ratings_total": 3392,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "sandcastle-bowl-bar-grill": {
+    "place_id": "ChIJ1eEvdZ3EhVQR0skCq4T9dog",
+    "rating": 4.4,
+    "user_ratings_total": 1479,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "reflections-the-garden-terrace": {
+    "place_id": "ChIJN2Noxf5xhlQR5S-J2gEGnrQ",
+    "rating": 4,
+    "user_ratings_total": 1342,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "union-latino-s-food": {
+    "place_id": "ChIJy0-P0olzhlQRxSLsSsM-jCY",
+    "rating": 4.5,
+    "user_ratings_total": 1130,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "tidewaters-pub": {
+    "place_id": "ChIJD-WYYijZhVQRJr4zTl52Qo8",
+    "rating": 4.1,
+    "user_ratings_total": 854,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "the-gull-bar-and-kitchen": {
+    "place_id": "ChIJWWYp5cRxhlQR6xMiqQMC-_Y",
+    "rating": 4.6,
+    "user_ratings_total": 772,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "karma-lounge": {
+    "place_id": "ChIJyfBkn4dxhlQRAxfzGwa0IBM",
+    "rating": 4.4,
+    "user_ratings_total": 662,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "georgie-s-local-kitchen-bar": {
+    "place_id": "ChIJMd6eI4vZhVQR818oY2Y7R0w",
+    "rating": 4.2,
+    "user_ratings_total": 579,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "back-and-forth-bar": {
+    "place_id": "ChIJ26YFv3BxhlQRw2nuTh_ZYSo",
+    "rating": 4.2,
+    "user_ratings_total": 540,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "grapes-soda": {
+    "place_id": "ChIJExh0e8hzhlQRkaIGSBt6eQU",
+    "rating": 4.6,
+    "user_ratings_total": 502,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "barra-41": {
+    "place_id": "ChIJrSK0t3pzhlQRJzlIwv4Rsc8",
+    "rating": 4.4,
+    "user_ratings_total": 246,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "crazy-raven-bar-and-grill": {
+    "place_id": "ChIJpalsgCtphlQRsHHq-Z3hL2s",
+    "rating": 3.3,
+    "user_ratings_total": 243,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "bar-gobo": {
+    "place_id": "ChIJJzYq3PBxhlQRxqryb0bOLmg",
+    "rating": 4.6,
+    "user_ratings_total": 192,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "the-chickadee-room": {
+    "place_id": "ChIJGVvOYpJxhlQRBLDN8_rljBQ",
+    "rating": 4.4,
+    "user_ratings_total": 178,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "rongsi-rong-see-thai-bar-bistro": {
+    "place_id": "ChIJ7WrLRy5zhlQRqIbWIHRIZjA",
+    "rating": 4.6,
+    "user_ratings_total": 174,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "miso-taco-west-pender": {
+    "place_id": "ChIJq5kRT9txhlQR_CTBLnpQ4Lg",
+    "rating": 4.4,
+    "user_ratings_total": 110,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "craft-beer-market-false-creek": {
+    "place_id": "ChIJD9X_gIB-C0ER-aY29gH18cM",
+    "rating": 4.3,
+    "user_ratings_total": 8366,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "gringo-gastown": {
+    "place_id": "ChIJFWhLV3dxhlQR-BCOL1u24FY",
+    "rating": 4.5,
+    "user_ratings_total": 2321,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "craft-beer-market-english-bay": {
+    "place_id": "ChIJW1G0JlpzhlQR0yi6twJ0CXA",
+    "rating": 4.4,
+    "user_ratings_total": 1752,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "smoke-and-bones-bbq": {
+    "place_id": "ChIJZ4bQMpFvhlQR-KfWP0Z8ib8",
+    "rating": 4.4,
+    "user_ratings_total": 1741,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "milestones-coquitlam-test-kitchen": {
+    "place_id": "ChIJcS3l1qh5hlQRVaxZKjav4zs",
+    "rating": 3.9,
+    "user_ratings_total": 1464,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "ophelia": {
+    "place_id": "ChIJfTQAlSlzhlQRglYOHc_MZpg",
+    "rating": 4.4,
+    "user_ratings_total": 1335,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "oddfish-restaurant": {
+    "place_id": "ChIJ9ZQCacpzhlQRLx_Hge2HPaU",
+    "rating": 4.6,
+    "user_ratings_total": 883,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "sab-bistro": {
+    "place_id": "ChIJD5jM8zjThVQRm2zxEyr3P0Y",
+    "rating": 4.4,
+    "user_ratings_total": 787,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "claudio-s-ristorante": {
+    "place_id": "ChIJh9iYHRh3hlQR8GaY_dj1RHM",
+    "rating": 4.2,
+    "user_ratings_total": 762,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "zawa-restaurant": {
+    "place_id": "ChIJoWPKIj5xhlQR2vCsGMqW3FM",
+    "rating": 4.1,
+    "user_ratings_total": 593,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "pks-cafe": {
+    "place_id": "ChIJE0TrMCx_hlQRa-c5m-wCXd4",
+    "rating": 4.7,
+    "user_ratings_total": 474,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "sobu-social": {
+    "place_id": "ChIJKyrMXgB3hlQRIfcfsIeSi_8",
+    "rating": 4.4,
+    "user_ratings_total": 55,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "local-public-eatery-river-district": {
+    "place_id": "ChIJ-fWFH-V1hlQRlgHvJiRw6ls",
+    "rating": 4.7,
+    "user_ratings_total": 2193,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "c-prime-modern-italian-steak-and-wine": {
+    "place_id": "ChIJKyWuLdVzhlQR42fs0OJefqA",
+    "rating": 4.5,
+    "user_ratings_total": 1089,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "two-rivers-meats": {
+    "place_id": "ChIJjxrDYstxhlQRrkD3lLOhuzY",
+    "rating": 4.5,
+    "user_ratings_total": 934,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "chop-steakhouse-bar": {
+    "place_id": "ChIJF9tqbxl1hlQRdCZjh8vITU8",
+    "rating": 4.4,
+    "user_ratings_total": 3506,
+    "business_status": "OPERATIONAL",
+    "amenities": {}
+  },
+  "mahony-s-tavern-convention-centre": {
+    "place_id": "ChIJqUjxNINxhlQR4Lx01oYf6H8",
+    "rating": 4,
+    "user_ratings_total": 2033,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Mahony's Tavern Convention Centre",
+    "synced_at": "2026-09-02"
+  },
+  "onda-by-casereccio": {
+    "place_id": "ChIJLc2CHABxhlQRrFHdrurOnZk",
+    "rating": 4.7,
+    "user_ratings_total": 743,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Onda by Casereccio",
+    "synced_at": "2026-09-02"
+  },
+  "harry-s-fish-chips": {
+    "place_id": "ChIJRRKQhWrnhVQRyKPUbR9HhBY",
+    "rating": 4.1,
+    "user_ratings_total": 722,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Harry's Fish & Chips",
+    "synced_at": "2026-09-02"
+  },
+  "baci-ristorante": {
+    "place_id": "ChIJU2rxVMVwhlQRUlFGdFu-ggg",
+    "rating": 4.4,
+    "user_ratings_total": 679,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Baci Ristorante",
+    "synced_at": "2026-09-02"
+  },
+  "eternal-abundance-organic-market-eatery": {
+    "place_id": "ChIJGTUzSD5xhlQRr40HggcQgPs",
+    "rating": 4.4,
+    "user_ratings_total": 600,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": false,
+      "serves_beer": false,
+      "serves_wine": false,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Eternal Abundance Organic Market & Eatery",
+    "synced_at": "2026-09-02"
+  },
+  "bufala-edgemont": {
+    "place_id": "ChIJ9baEuYtvhlQRzXr6_Z-vYw0",
+    "rating": 4.2,
+    "user_ratings_total": 584,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Bufala Edgemont",
+    "synced_at": "2026-09-02"
+  },
+  "simply-delicious-restaurant-bar": {
+    "place_id": "ChIJG8-2pfdzhlQR3kuogd8C86g",
+    "rating": 4.2,
+    "user_ratings_total": 555,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": true,
+      "good_for_groups": true
+    },
+    "matched_name": "Simply Delicious Restaurant & Bar",
+    "synced_at": "2026-09-02"
+  },
+  "bufala-river-district": {
+    "place_id": "ChIJzYTR0ZZ1hlQRtE7VAz5tc6M",
+    "rating": 4.4,
+    "user_ratings_total": 463,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Bufala River District",
+    "synced_at": "2026-09-02"
+  },
+  "hoshi-japanese-cuisine": {
+    "place_id": "ChIJc7ckzQdzhlQRlKBv_B1v4R8",
+    "rating": 4.4,
+    "user_ratings_total": 430,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Hoshi Japanese Cuisine",
+    "synced_at": "2026-09-02"
+  },
+  "autostrada-osteria-vancouver-house": {
+    "place_id": "ChIJW2WDLW1zhlQRdKYFDsj3fIo",
+    "rating": 4.5,
+    "user_ratings_total": 427,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Autostrada Osteria Vancouver House",
+    "synced_at": "2026-09-02"
+  },
+  "mama-said-pizza-co": {
+    "place_id": "ChIJ698G2el5hlQRmUSsyeiG70Q",
+    "rating": 4.5,
+    "user_ratings_total": 415,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": false,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": true
+    },
+    "matched_name": "Mama Said Pizza Co.",
+    "synced_at": "2026-09-02"
+  },
+  "mercato-di-luigi-chinatown": {
+    "place_id": "ChIJ3_vaZABxhlQR0HeLsN2Wmvk",
+    "rating": 4.6,
+    "user_ratings_total": 154,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Mercato di Luigi Chinatown",
+    "synced_at": "2026-09-02"
+  },
+  "frank-s-pizza-bar-at-resurrection-spirits": {
+    "place_id": "ChIJQaVhH_1xhlQRIjWmB_4gu38",
+    "rating": 4.7,
+    "user_ratings_total": 106,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": true,
+      "serves_cocktails": true,
+      "serves_beer": true,
+      "serves_wine": true,
+      "live_music": null,
+      "good_for_groups": true
+    },
+    "matched_name": "Frank's Pizza & Bar at Resurrection Spirits",
+    "synced_at": "2026-09-02"
+  },
+  "proud-up-restaurant": {
+    "place_id": "ChIJmZBXvkh5hlQRF8r-_QYW-24",
+    "rating": 4.8,
+    "user_ratings_total": 103,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": false,
+      "good_for_groups": null
+    },
+    "matched_name": "Proud Up Restaurant",
+    "synced_at": "2026-09-02"
   }
 }
