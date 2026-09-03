@@ -83,10 +83,8 @@ let mapMarkers = new Map(); // venue id -> Leaflet marker
 // programmatic scroll (pin taps) disarms it. Timer-based suppression broke
 // on iOS, where momentum and snap corrections deliver observer events well
 // after a programmatic scroll "finished".
-let carouselUserActive = false;
-let carouselSettleTimer = null;
-let carouselPendingId = null;
-let mapCardObserver = null;
+let selectedVenueId = null;
+let locatedByVenueId = new Map();
 // "You are here" layers live outside mapMarkers so renderMap's venue-pin
 // teardown never removes them.
 let userLocDot = null;
@@ -316,13 +314,18 @@ function renderMapView() {
 function applyFilters(occurrences) {
   let filtered = occurrences;
 
-  if (currentFilter === "active") {
-    filtered = filtered.filter((o) => o.occ.status === "live");
-  } else if (currentFilter === "upcoming") {
-    filtered = filtered.filter((o) => o.occ.status === "upcoming");
+  const query = searchQuery.trim().toLowerCase();
+  // A search is a request to FIND a specific place, so it outranks the
+  // status filter: searching for a spot that is not open right now should
+  // still show it, rather than hiding it behind "Happening now".
+  if (!query) {
+    if (currentFilter === "active") {
+      filtered = filtered.filter((o) => o.occ.status === "live");
+    } else if (currentFilter === "upcoming") {
+      filtered = filtered.filter((o) => o.occ.status === "upcoming");
+    }
   }
 
-  const query = searchQuery.trim().toLowerCase();
   if (query) {
     filtered = filtered.filter(
       (o) =>
@@ -550,6 +553,30 @@ function ensureMap() {
   map = L.map("map", { attributionControl: true, zoomControl: false, zoomSnap: 0, zoomDelta: 1 })
     .setView([49.2698, -123.1207], 13);
   map.attributionControl.setPrefix("");
+
+  // Leaflet's own wheel zoom debounces (wheelDebounceTime 40ms) and quantises
+  // by wheelPxPerZoomLevel, which on a Mac trackpad reads as laggy and steppy:
+  // the gesture is continuous but the map answers in delayed chunks. Handle
+  // the wheel directly instead — every event maps straight to a fractional
+  // zoom with no debounce and no animation, so the map tracks the fingers.
+  // Tapping the map itself (not a pin) puts the card away again.
+  map.on("click", () => showMapCard(null));
+
+  map.scrollWheelZoom.disable();
+  map.getContainer().addEventListener("wheel", (e) => {
+    e.preventDefault();
+    // deltaMode: 0 = pixels, 1 = lines, 2 = pages.
+    let dy = e.deltaY;
+    if (e.deltaMode === 1) dy *= 16;
+    else if (e.deltaMode === 2) dy *= map.getSize().y;
+    // A trackpad pinch arrives as ctrl+wheel with much finer deltas than a
+    // two-finger scroll, so the two need different sensitivities to feel alike.
+    const pxPerZoom = e.ctrlKey ? 70 : 260;
+    const next = map.getZoom() - dy / pxPerZoom;
+    const clamped = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), next));
+    if (clamped === map.getZoom()) return;
+    map.setZoomAround(map.mouseEventToContainerPoint(e), clamped, { animate: false });
+  }, { passive: false });
   if (!window.matchMedia("(pointer: coarse)").matches) {
     L.control.zoom({ position: "topright" }).addTo(map);
   }
@@ -700,7 +727,6 @@ function renderMap(occurrences) {
   if (currentView !== "map") return;
   const m = ensureMap();
 
-  if (mapCardObserver) mapCardObserver.disconnect();
   mapMarkers.forEach((marker) => marker.remove());
   mapMarkers = new Map();
   els.mapCardCarousel.innerHTML = "";
@@ -730,37 +756,21 @@ function renderMap(occurrences) {
       iconAnchor: [px / 2, px / 2],
     });
     const marker = L.marker([getLat(venue), getLng(venue)], { icon, zIndexOffset: Math.min(reviews, 9000) }).addTo(m);
-    marker.on("click", () => selectVenue(venue.id, { pan: true, scrollCarousel: true }));
+    marker.on("click", () => selectVenue(venue.id, { pan: true }));
     mapMarkers.set(venue.id, marker);
 
-    els.mapCardCarousel.appendChild(buildMapCard(venue, occ));
   }
 
+  // One card, on demand. The carousel used to hold a card per pin — hundreds
+  // of them — so the map opened under a wall of cards nobody asked for and
+  // the visible one depended on scroll position rather than on what the
+  // visitor had actually pointed at. Now nothing shows until a pin is picked.
+  locatedByVenueId = new Map(located.map((o) => [o.venue.id, o]));
+  showMapCard(selectedVenueId && locatedByVenueId.has(selectedVenueId) ? selectedVenueId : null);
+
   els.mapEmpty.classList.toggle("hidden", located.length > 0);
-  els.mapCardCarousel.classList.toggle("hidden", located.length === 0);
 
-  // Keep the locate button just above the carousel, whose height depends on
-  // card content.
-  const carouselHeight = located.length === 0 ? 0 : els.mapCardCarousel.getBoundingClientRect().height;
-  els.mapLocateBtn.style.bottom = `${carouselHeight + 14}px`;
 
-  // Swiping a card into view highlights its pin instantly (cheap), but the
-  // map pans only once, ~160ms after the LAST card change — and only when
-  // the swipe came from the user (carouselUserActive). Programmatic scrolls
-  // can highlight but never move the map.
-  mapCardObserver = new IntersectionObserver(
-    (entries) => {
-      const visible = entries.find((e) => e.isIntersecting && e.intersectionRatio >= 0.6);
-      if (!visible) return;
-      highlightPin(visible.target.dataset.venueId);
-      if (!carouselUserActive) return;
-      carouselPendingId = visible.target.dataset.venueId;
-      clearTimeout(carouselSettleTimer);
-      carouselSettleTimer = setTimeout(() => panToVenue(carouselPendingId), 160);
-    },
-    { root: els.mapCardCarousel, threshold: 0.6 }
-  );
-  els.mapCardCarousel.querySelectorAll(".map-detail-card").forEach((card) => mapCardObserver.observe(card));
 
   // invalidateSize() must run before fitBounds() — the map view is now
   // position:fixed/full-viewport, so the container's true size (and thus
@@ -775,7 +785,7 @@ function renderMap(occurrences) {
     const topPad = filters ? filters.getBoundingClientRect().bottom + 16 : 130;
     const fitOpts = {
       paddingTopLeft: [30, topPad],
-      paddingBottomRight: [30, carouselHeight + 24],
+      paddingBottomRight: [30, 110], // room for the view toggle + a card, if one opens
       maxZoom: 16,
     };
 
@@ -787,7 +797,7 @@ function renderMap(occurrences) {
       mapFitted = true;
       mapCenteredOnUser = true;
       m.setView(center, zoom, { animate: false });
-      if (venueId) selectVenue(venueId, { scrollCarousel: true });
+      if (venueId) selectVenue(venueId);
       return;
     }
 
@@ -996,27 +1006,23 @@ function panToVenue(venueId) {
   map.panTo(marker.getLatLng(), { animate: true, duration: 0.5, easeLinearity: 0.3 });
 }
 
-function selectVenue(venueId, { pan = false, scrollCarousel = false } = {}) {
-  if (!mapMarkers.has(venueId)) return;
-  highlightPin(venueId);
-  clearTimeout(carouselSettleTimer); // a direct selection outranks a settling swipe
-  if (pan) panToVenue(venueId);
-
-  if (scrollCarousel) {
-    const card = els.mapCardCarousel.querySelector(`[data-venue-id="${CSS.escape(venueId)}"]`);
-    if (card) {
-      // Programmatic scroll: disarm the observer's pan. Late observer events
-      // (iOS momentum, snap corrections) can highlight but never move the map
-      // until the user touches the carousel again.
-      carouselUserActive = false;
-      card.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-    }
-  }
+// Render the one card, or clear it when nothing is selected.
+function showMapCard(venueId) {
+  selectedVenueId = venueId;
+  els.mapCardCarousel.innerHTML = "";
+  const entry = venueId ? locatedByVenueId.get(venueId) : null;
+  els.mapCardCarousel.classList.toggle("hidden", !entry);
+  if (entry) els.mapCardCarousel.appendChild(buildMapCard(entry.venue, entry.occ));
+  // The locate button sits just above the card, so it moves with it.
+  const h = entry ? els.mapCardCarousel.getBoundingClientRect().height : 0;
+  els.mapLocateBtn.style.bottom = `${h + 14}px`;
 }
 
-// Real user input on the carousel re-arms the observer's settle-pan.
-for (const evt of ["touchstart", "wheel", "pointerdown"]) {
-  els.mapCardCarousel.addEventListener(evt, () => { carouselUserActive = true; }, { passive: true });
+function selectVenue(venueId, { pan = false } = {}) {
+  if (!mapMarkers.has(venueId)) return;
+  highlightPin(venueId);
+  if (pan) panToVenue(venueId);
+  showMapCard(venueId);
 }
 
 // ---------- Modal handling ----------

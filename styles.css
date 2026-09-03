@@ -555,20 +555,25 @@ body.map-fullscreen .sheet {
   right: 0;
   bottom: 0;
   z-index: 1200;
+  /* One card, centred. This was a horizontal scroller back when it held a
+     card per pin; with a single card on demand there is nothing to scroll. */
   display: flex;
-  gap: 12px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-x: contain;
+  justify-content: center;
   padding: 16px 16px 82px; /* bottom clears the fixed bottom-nav pill */
-  scrollbar-width: none;
+  pointer-events: none;    /* the gap either side stays map, not dead space */
+}
+.map-card-carousel > * {
+  pointer-events: auto;
 }
 .map-card-carousel::-webkit-scrollbar {
   display: none;
 }
 .map-detail-card.lifting {
   transition: none;
+}
+@keyframes map-card-in {
+  from { transform: translateY(12px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
 }
 .map-card-carousel.hidden {
   display: none;
@@ -577,12 +582,13 @@ body.map-fullscreen .sheet {
 .map-detail-card {
   /* vertical touches feed the swipe-up-to-open gesture; horizontal panning
      stays the browser's native carousel scroll */
-  touch-action: pan-x;
+  /* vertical touches feed the swipe-up-to-open gesture */
+  touch-action: pan-y;
   transition: transform 0.22s ease, opacity 0.22s ease;
   flex: 0 0 auto;
   width: calc(100vw - 64px);
   max-width: 400px;
-  scroll-snap-align: center;
+  animation: map-card-in 0.18s ease-out;
   background: #fff;
   border-radius: 16px;
   padding: 16px;
