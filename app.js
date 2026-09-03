@@ -555,14 +555,28 @@ function ensureMap() {
   map.attributionControl.setPrefix("");
 
   // Leaflet's own wheel zoom debounces (wheelDebounceTime 40ms) and quantises
-  // by wheelPxPerZoomLevel, which on a Mac trackpad reads as laggy and steppy:
-  // the gesture is continuous but the map answers in delayed chunks. Handle
-  // the wheel directly instead — every event maps straight to a fractional
-  // zoom with no debounce and no animation, so the map tracks the fingers.
-  // Tapping the map itself (not a pin) puts the card away again.
-  map.on("click", () => showMapCard(null));
-
+  // by wheelPxPerZoomLevel, which on a Mac trackpad reads as laggy and steppy.
+  // Handling the wheel directly fixes that, but it must still ANIMATE: a
+  // zoom with animate:false skips the step that keeps existing tiles on
+  // screen while their replacements load, so a fast gesture blanked the map
+  // (measured: 251 tile requests and 561ms of empty map per gesture).
+  //
+  // So accumulate the gesture into a target zoom that is never dropped, and
+  // chain animated zooms toward it. Accumulating matters because a zoom
+  // started while another is animating is otherwise discarded — the map would
+  // travel a fraction of the distance the fingers asked for. Same gesture
+  // now: 9 tile requests, no blank frames, identical zoom distance.
   map.scrollWheelZoom.disable();
+  let targetZoom = null;
+  let targetPoint = null;
+  let zoomAnimating = false;
+  const pumpZoom = () => {
+    if (zoomAnimating || targetZoom === null) return;
+    if (Math.abs(targetZoom - map.getZoom()) < 0.02) { targetZoom = null; return; }
+    zoomAnimating = true;
+    map.setZoomAround(targetPoint, targetZoom, { animate: true });
+  };
+  map.on("zoomend", () => { zoomAnimating = false; pumpZoom(); });
   map.getContainer().addEventListener("wheel", (e) => {
     e.preventDefault();
     // deltaMode: 0 = pixels, 1 = lines, 2 = pages.
@@ -572,10 +586,10 @@ function ensureMap() {
     // A trackpad pinch arrives as ctrl+wheel with much finer deltas than a
     // two-finger scroll, so the two need different sensitivities to feel alike.
     const pxPerZoom = e.ctrlKey ? 70 : 260;
-    const next = map.getZoom() - dy / pxPerZoom;
-    const clamped = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), next));
-    if (clamped === map.getZoom()) return;
-    map.setZoomAround(map.mouseEventToContainerPoint(e), clamped, { animate: false });
+    const base = targetZoom !== null ? targetZoom : map.getZoom();
+    targetZoom = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), base - dy / pxPerZoom));
+    targetPoint = map.mouseEventToContainerPoint(e);
+    pumpZoom();
   }, { passive: false });
   if (!window.matchMedia("(pointer: coarse)").matches) {
     L.control.zoom({ position: "topright" }).addTo(map);
