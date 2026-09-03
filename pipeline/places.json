@@ -6851,5 +6851,107 @@
     },
     "matched_name": "Los Cuervos Taqueria & Cantina",
     "synced_at": "2026-09-03"
+  },
+  "neverland-tea-salon-vancouver": {
+    "place_id": "ChIJVbqQbatzhlQRxkq-DCjDKNo",
+    "rating": 4.2,
+    "user_ratings_total": 982,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Neverland Tea Salon Vancouver",
+    "synced_at": "2026-09-03"
+  },
+  "johnny-s-on-oak": {
+    "place_id": "ChIJY29n8q13hlQR_AuS1MP2CyI",
+    "rating": 4.5,
+    "user_ratings_total": 786,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Johnny’s on Oak",
+    "synced_at": "2026-09-03"
+  },
+  "kypriaki-mediterranean-grill": {
+    "place_id": "ChIJXcL0bNFxhlQRwval1UMi4Wc",
+    "rating": 4.3,
+    "user_ratings_total": 704,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Kypriaki | Mediterranean Grill",
+    "synced_at": "2026-09-03"
+  },
+  "chef-s-flavour-indian-cuisine": {
+    "place_id": "ChIJJ6JdZaxzhlQRvV0VXg6k_8g",
+    "rating": 4.5,
+    "user_ratings_total": 628,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Chef’s flavour Indian cuisine",
+    "synced_at": "2026-09-03"
+  },
+  "karma-indian-bistro": {
+    "place_id": "ChIJjbBpcZNzhlQRqdzv02sur1w",
+    "rating": 4.4,
+    "user_ratings_total": 619,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Karma Indian Bistro",
+    "synced_at": "2026-09-03"
+  },
+  "apollonia-greek-restaurant": {
+    "place_id": "ChIJh4OQFclzhlQRv31FeuNELts",
+    "rating": 4.5,
+    "user_ratings_total": 578,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Apollonia Greek Restaurant",
+    "synced_at": "2026-09-03"
   }
 }

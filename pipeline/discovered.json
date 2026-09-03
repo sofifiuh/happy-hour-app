@@ -25,6 +25,585 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "neverland-tea-salon-vancouver",
+    "name": "Neverland Tea Salon Vancouver",
+    "formatted_address": "3066 W Broadway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2640232,
+        "lng": -123.1733683
+      }
+    },
+    "formatted_phone_number": "(604) 428-3066",
+    "website": "http://neverlandtea.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:30",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://neverlandtea.com/menus",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://neverlandtea.com/wp-content/uploads/2019/05/neverland-logo.png",
+      "credit_name": "Neverland Tea Salon Vancouver",
+      "credit_url": "http://neverlandtea.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "johnny-s-on-oak",
+    "name": "Johnny’s on Oak",
+    "formatted_address": "3838 Oak St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.25141,
+        "lng": -123.12728899999999
+      }
+    },
+    "formatted_phone_number": "(604) 732-3777",
+    "website": "https://johnnysonoak.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://johnnysonoak.ca/menu/",
+      "deals": [
+        {
+          "name": "Pepperoni Pita Pizza",
+          "price": "$6.25",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Fried Chicken",
+          "price": "$6.25",
+          "category": "food",
+          "description": "1 piece"
+        },
+        {
+          "name": "Triple Cooked Fries",
+          "price": "$5.50",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Tzatziki & Pita",
+          "price": "$11",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Hummus & Pita",
+          "price": "$11",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Tacos",
+          "price": "$11-15",
+          "category": "food",
+          "description": "Beef or Shrimp, 2 for $11 or 3 for $15"
+        },
+        {
+          "name": "Nachos",
+          "price": "$19",
+          "category": "food",
+          "description": "Wagyu beef or vegetarian, loaded with cheese sauce and vegetables"
+        },
+        {
+          "name": "Steak & Fries",
+          "price": "$21.25",
+          "category": "food",
+          "description": "5oz with triple cooked fries"
+        },
+        {
+          "name": "Baked Lasagna",
+          "price": "$21",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Fried Chicken Burger",
+          "price": "$22",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Spanakopita Dinner",
+          "price": "$25",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Souvlaki",
+          "price": "$25",
+          "category": "food",
+          "description": "Chicken or beef"
+        },
+        {
+          "name": "House Wine",
+          "price": "$6-9",
+          "category": "drink",
+          "description": "6oz or 9oz"
+        },
+        {
+          "name": "Corona",
+          "price": "$5.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Okanagan Spring",
+          "price": "$5.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Phillips Glitter Bomb",
+          "price": "$5.50",
+          "category": "drink",
+          "description": "Hazy pale ale"
+        },
+        {
+          "name": "Birra Moretti",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Granville Island Rotating Tap",
+          "price": "$6.75",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Highballs",
+          "price": "$5.50-9.50",
+          "category": "drink",
+          "description": "1oz or 2oz"
+        },
+        {
+          "name": "Moscow Mule",
+          "price": "$11",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Negroni",
+          "price": "$11",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Vizzy Hard Seltzer",
+          "price": "$5.25",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "kypriaki-mediterranean-grill",
+    "name": "Kypriaki | Mediterranean Grill",
+    "formatted_address": "1346 Marine Dr #106, North Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.324137,
+        "lng": -123.1119572
+      }
+    },
+    "formatted_phone_number": "(604) 985-7955",
+    "website": "http://www.kypriaki.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.kypriaki.ca/wine--drinks.html",
+      "deals": [
+        {
+          "name": "House Wine",
+          "price": "$5.75",
+          "category": "drink",
+          "description": "Red or White, 6 oz"
+        },
+        {
+          "name": "House Wine",
+          "price": "$8",
+          "category": "drink",
+          "description": "Red or White, 9 oz"
+        },
+        {
+          "name": "Deep Cove Pale Ale",
+          "price": "$5",
+          "category": "drink",
+          "description": "16 oz"
+        },
+        {
+          "name": "Driftwood Fat Tug",
+          "price": "$5",
+          "category": "drink",
+          "description": "16 oz"
+        },
+        {
+          "name": "Somersby Apple Cider",
+          "price": "$6",
+          "category": "drink",
+          "description": "18 oz"
+        },
+        {
+          "name": "Sangria",
+          "price": "$7.75",
+          "category": "drink",
+          "description": "Glass"
+        },
+        {
+          "name": "Highballs",
+          "price": "$5",
+          "category": "drink",
+          "description": "Standard"
+        },
+        {
+          "name": "Highballs",
+          "price": "$7",
+          "category": "drink",
+          "description": "Kypriaki Size"
+        },
+        {
+          "name": "Garlic Prawns",
+          "price": "$12",
+          "category": "food",
+          "description": "Appetizer"
+        },
+        {
+          "name": "Calamari",
+          "price": "$12",
+          "category": "food",
+          "description": "Appetizer"
+        },
+        {
+          "name": "Wings",
+          "price": "$12",
+          "category": "food",
+          "description": "1 lb"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://www.kypriaki.ca/uploads/5/7/9/5/5795742/editor/2021memberbadge.png?1637823395",
+      "credit_name": "Kypriaki | Mediterranean Grill",
+      "credit_url": "http://www.kypriaki.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "chef-s-flavour-indian-cuisine",
+    "name": "Chef’s flavour Indian cuisine",
+    "formatted_address": "2872 W Broadway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2639419,
+        "lng": -123.16952909999999
+      }
+    },
+    "formatted_phone_number": "(604) 738-2824",
+    "website": "http://www.chefsflavour.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "18:00",
+      "end": "22:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.chefsflavour.ca/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "karma-indian-bistro",
+    "name": "Karma Indian Bistro",
+    "formatted_address": "2741 W 4th Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.268478599999995,
+        "lng": -123.16711699999999
+      }
+    },
+    "formatted_phone_number": "(604) 559-1666",
+    "website": "https://karmaindianbistro.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://karmaindianbistro.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://karmaindianbistro.ca/wp-content/uploads/2026/08/EmmaK.Young_0423_114319_2470.jpg",
+      "credit_name": "Karma Indian Bistro",
+      "credit_url": "https://karmaindianbistro.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "apollonia-greek-restaurant",
+    "name": "Apollonia Greek Restaurant",
+    "formatted_address": "1830 Fir St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2694391,
+        "lng": -123.14064459999999
+      }
+    },
+    "formatted_phone_number": "(604) 736-9559",
+    "website": "http://www.apolloniagreekrestaurant.com/",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "16:30",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.apolloniagreekrestaurant.com/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "river-rock-casino-resort",
     "name": "River Rock Casino Resort",
     "formatted_address": "8811 River Rd, Richmond, BC",
