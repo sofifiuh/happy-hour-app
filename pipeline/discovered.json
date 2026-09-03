@@ -25,6 +25,512 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "river-rock-casino-resort",
+    "name": "River Rock Casino Resort",
+    "formatted_address": "8811 River Rd, Richmond, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1961935,
+        "lng": -123.12754949999999
+      }
+    },
+    "formatted_phone_number": "(604) 273-1895",
+    "website": "http://www.riverrock.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "20:00",
+          "end": null,
+          "label": "Late night (Mon-Fri)"
+        },
+        {
+          "days": [
+            6,
+            0
+          ],
+          "start": "07:00",
+          "end": null,
+          "label": "All day (weekends)"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://riverrock.com/the-chairmans-room-lounge/",
+      "deals": [
+        {
+          "name": "Gyoza",
+          "price": "$8",
+          "category": "food",
+          "description": "Chicken and Kimchi with sweet spicy soy sauce"
+        },
+        {
+          "name": "Vegetable Dumplings",
+          "price": "$8",
+          "category": "food",
+          "description": "4 pieces with sweet spicy soy sauce"
+        },
+        {
+          "name": "Wings",
+          "price": "$9",
+          "category": "food",
+          "description": "1/2 pound; salt & pepper, spiced, honey garlic, or Frank's Hot"
+        },
+        {
+          "name": "Popcorn Shrimp",
+          "price": "$12",
+          "category": "food",
+          "description": "6oz with sweet Thai chili sauce"
+        },
+        {
+          "name": "Nachos",
+          "price": "$12",
+          "category": "food",
+          "description": "Plain"
+        },
+        {
+          "name": "House Wine",
+          "price": "$5",
+          "category": "drink",
+          "description": "White or Red, 5oz"
+        },
+        {
+          "name": "Highballs",
+          "price": "$5",
+          "category": "drink",
+          "description": "1oz"
+        },
+        {
+          "name": "Rotating Tap",
+          "price": "$5",
+          "category": "drink",
+          "description": "16oz draft beer"
+        },
+        {
+          "name": "Beer Bucket",
+          "price": "$42",
+          "category": "drink",
+          "description": "Six bottles of Molson Canadian or Coors Light; parties of 3+ only"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://riverrock.com/wp-content/uploads/2026/05/river-contact-e1780352401351.jpg",
+      "credit_name": "River Rock Casino Resort",
+      "credit_url": "http://www.riverrock.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-naam",
+    "name": "The Naam",
+    "formatted_address": "2724 W 4th Ave, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.26818840000001,
+        "lng": -123.1670365
+      }
+    },
+    "formatted_phone_number": "(604) 738-7151",
+    "website": "http://www.thenaam.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.thenaam.com/menu",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://img1.wsimg.com/isteam/ip/5e236959-9cd0-494c-a234-1a99eb928d06/IMG_4935-7f420de.jpg",
+      "credit_name": "The Naam",
+      "credit_url": "http://www.thenaam.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "do-chay",
+    "name": "Do Chay",
+    "formatted_address": "1392 Kingsway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2500602,
+        "lng": -123.0764991
+      }
+    },
+    "formatted_phone_number": "(604) 225-8349",
+    "website": "http://dochay.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:30",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://dochay.ca/kingsway",
+      "deals": [
+        {
+          "name": "Cocktails, Draught & Wines by the Glass",
+          "price": "$1 off",
+          "category": "drink",
+          "description": "All cocktails, draught beers, and wines by the glass"
+        },
+        {
+          "name": "Wine Bottles",
+          "price": "$35",
+          "category": "drink",
+          "description": "Select wine bottles"
+        },
+        {
+          "name": "Do Chay Tea Cocktail",
+          "price": "$10",
+          "category": "drink",
+          "description": "Vodka, St. Germain, pandan tea, citrus, soda"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/613d54912517cb35a6cbdef9/t/613d717e2e6f8b39bc3bc025/1631416702989/Do+Chay+Logo.png?format=1500w",
+      "credit_name": "Do Chay",
+      "credit_url": "http://dochay.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "hungry-zus-mediterranean-grill-downtown",
+    "name": "Hungry Zus Mediterranean Grill- Downtown",
+    "formatted_address": "433 Granville St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.285162299999996,
+        "lng": -123.11449630000001
+      }
+    },
+    "formatted_phone_number": "(604) 620-6333",
+    "website": "http://hungryzus.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:30",
+      "end": "17:30",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://hungryzus.com/menus/happy-hour",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "los-cuervos-taqueria-cantina",
+    "name": "Los Cuervos Taqueria & Cantina",
+    "formatted_address": "LOS CUERVOS, 603 Kingsway, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.257433,
+        "lng": -123.091111
+      }
+    },
+    "formatted_phone_number": "(604) 558-1518",
+    "website": "https://www.loscuervostaqueria.net/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            5,
+            6,
+            0
+          ],
+          "start": "16:00",
+          "end": "18:00",
+          "label": "Weekend Happy Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.loscuervostaqueria.net/hhmenu",
+      "deals": [
+        {
+          "name": "Chips Salsa and Guacamole",
+          "price": "$9",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Churros",
+          "price": "$9",
+          "category": "food",
+          "description": "add vanilla ice cream +5"
+        },
+        {
+          "name": "Tacos",
+          "price": "2 for $12",
+          "category": "food",
+          "description": "choice of birria, al pastor, pollo, chorizo, aguacate, coliflor, hongos, calabacitas, rajas con crema, pescado"
+        },
+        {
+          "name": "All Taps (Sleeve)",
+          "price": "$6.5",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "House Wine",
+          "price": "$7",
+          "category": "drink",
+          "description": "6oz glass"
+        },
+        {
+          "name": "Tequila Shot",
+          "price": "$6",
+          "category": "drink",
+          "description": "1oz; choice of varieties"
+        },
+        {
+          "name": "Margaritas",
+          "price": "$12",
+          "category": "drink",
+          "description": "tequila reposado and agave, 8 flavors available; upgrade to mezcal +2"
+        },
+        {
+          "name": "La Paloma",
+          "price": "$12",
+          "category": "drink",
+          "description": "tequila reposado, grapefruit juice, agave, soda; upgrade to mezcal +2"
+        },
+        {
+          "name": "El Diablo",
+          "price": "$12",
+          "category": "drink",
+          "description": "tequila reposado, creme de cassis, lime juice, ginger beer; upgrade to mezcal +2"
+        },
+        {
+          "name": "Mojito",
+          "price": "$12",
+          "category": "drink",
+          "description": "white rum, fresh mint leaves, lime juice, agave, soda; multiple flavors"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5e48d105df6d9d5ec76b34c5/t/67a15867e4f13562bc1f5d4a/1738627175446/loscuervoslogo.png?format=1500w",
+      "credit_name": "Los Cuervos Taqueria & Cantina",
+      "credit_url": "https://www.loscuervostaqueria.net/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-09-03"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "lulu-island-winery",
     "name": "LuLu Island Winery",
     "formatted_address": "16880 Westminster Hwy, Richmond, BC",

@@ -6766,5 +6766,90 @@
     },
     "matched_name": "Way Back Brew Co.",
     "synced_at": "2026-09-03"
+  },
+  "river-rock-casino-resort": {
+    "place_id": "ChIJud95Kud0hlQRIdd23A7LyZQ",
+    "rating": 3.9,
+    "user_ratings_total": 9489,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "River Rock Casino Resort",
+    "synced_at": "2026-09-03"
+  },
+  "the-naam": {
+    "place_id": "ChIJ6QuEWZFzhlQRU6ynlJ2i81c",
+    "rating": 4.3,
+    "user_ratings_total": 3011,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Naam",
+    "synced_at": "2026-09-03"
+  },
+  "do-chay": {
+    "place_id": "ChIJR5ki7Lp3hlQRMfOpOm5Jorw",
+    "rating": 4.6,
+    "user_ratings_total": 1383,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Do Chay",
+    "synced_at": "2026-09-03"
+  },
+  "hungry-zus-mediterranean-grill-downtown": {
+    "place_id": "ChIJyYygwSZxhlQRpRPu3BOglQM",
+    "rating": 4.8,
+    "user_ratings_total": 1258,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Hungry Zus Mediterranean Grill- Downtown",
+    "synced_at": "2026-09-03"
+  },
+  "los-cuervos-taqueria-cantina": {
+    "place_id": "ChIJ_3aq51dxhlQR6ka05SmFxSA",
+    "rating": 4.5,
+    "user_ratings_total": 1107,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Los Cuervos Taqueria & Cantina",
+    "synced_at": "2026-09-03"
   }
 }
