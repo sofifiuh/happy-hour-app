@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sofifiuh.github.io/happy-hour-app/sitemap.xml
+Sitemap: https://alittlehang.com/sitemap.xml
