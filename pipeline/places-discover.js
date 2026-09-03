@@ -263,7 +263,14 @@ const inMetro = (p) => {
   return !/\b(USA|United States|WA \d{5})\b/i.test(p.formattedAddress || "");
 };
 const EXCLUDE_TYPES = new Set(["fast_food_restaurant", "cafe", "coffee_shop", "bakery", "meal_takeaway", "meal_delivery", "ice_cream_shop", "sandwich_shop"]);
-const BAR_TYPES = new Set(["bar", "pub", "wine_bar", "night_club"]);
+// Breweries and wineries belong here. "brewery taproom" is one of the text
+// queries, so the sweep was finding them and then the type filter was
+// throwing them away — Brewhall and Yaletown Brewing only got in because
+// Google happened to also tag them "bar", while Strathcona Beer Company and
+// Steamworks Taproom did not and were dropped.
+const BAR_TYPES = new Set([
+  "bar", "pub", "wine_bar", "night_club", "brewery", "winery", "bar_and_grill",
+]);
 const PRICE_LEVELS = { PRICE_LEVEL_FREE: 0, PRICE_LEVEL_INEXPENSIVE: 1, PRICE_LEVEL_MODERATE: 2, PRICE_LEVEL_EXPENSIVE: 3, PRICE_LEVEL_VERY_EXPENSIVE: 4 };
 const FIELDS = "places.id,places.displayName,places.location,places.formattedAddress,places.websiteUri,places.rating,places.userRatingCount,places.priceLevel,places.businessStatus,places.types,places.primaryType,places.nationalPhoneNumber,places.outdoorSeating,places.servesCocktails,places.servesBeer,places.servesWine,places.liveMusic,places.goodForGroups";
 

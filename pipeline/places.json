@@ -6698,5 +6698,73 @@
     },
     "matched_name": "Proud Up Restaurant",
     "synced_at": "2026-09-02"
+  },
+  "lulu-island-winery": {
+    "place_id": "ChIJmUJSSmPfhVQR1i-o8sXxaMw",
+    "rating": 4.7,
+    "user_ratings_total": 1373,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "LuLu Island Winery",
+    "synced_at": "2026-09-03"
+  },
+  "east-van-brewing-company": {
+    "place_id": "ChIJRSiiiBVxhlQRzQymByrAcbQ",
+    "rating": 4.4,
+    "user_ratings_total": 506,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "East Van Brewing Company",
+    "synced_at": "2026-09-03"
+  },
+  "otter-trail-winery": {
+    "place_id": "ChIJkTgKO8nNhVQRi3pu7mO-pI8",
+    "rating": 4.3,
+    "user_ratings_total": 226,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Otter Trail Winery",
+    "synced_at": "2026-09-03"
+  },
+  "way-back-brew-co": {
+    "place_id": "ChIJ0TEDmePbhVQRcKjHgevNf2I",
+    "rating": 4.6,
+    "user_ratings_total": 153,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": true,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Way Back Brew Co.",
+    "synced_at": "2026-09-03"
   }
 }

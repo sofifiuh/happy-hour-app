@@ -5889,7 +5889,7 @@
     "id": "millennium-karaoke",
     "name": "Millennium Karaoke",
     "verdict": "published",
-    "checked_at": "2026-09-02"
+    "checked_at": "2026-09-03"
   },
   "ChIJkyUvUCt4hlQRrnIySefoEPo": {
     "id": "dageraad-brewing",
@@ -15934,5 +15934,173 @@
     "name": "Rosalia Osteria",
     "verdict": "error",
     "checked_at": "2026-09-02"
+  },
+  "ChIJmUJSSmPfhVQR1i-o8sXxaMw": {
+    "id": "lulu-island-winery",
+    "name": "LuLu Island Winery",
+    "verdict": "hours_only",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJbdOmv0bRhVQRGSFHIn2KbUM": {
+    "id": "camp-beer-co",
+    "name": "Camp Beer Co",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJow5AEGtxhlQRkHg2-erMH-s": {
+    "id": "container-brewing-ltd",
+    "name": "Container Brewing Ltd.",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJoWDqymFxhlQRnZeT-3SwVdI": {
+    "id": "faculty-brewing-co",
+    "name": "Faculty Brewing Co.",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJRSiiiBVxhlQRzQymByrAcbQ": {
+    "id": "east-van-brewing-company",
+    "name": "East Van Brewing Company",
+    "verdict": "published",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ73lUQ1JwhlQRklBeXyfwvv4": {
+    "id": "beere-brewing-company",
+    "name": "Beere Brewing Company",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJbyOmGGBxhlQRTcdQyvFbYMY": {
+    "id": "electric-bicycle-brewing",
+    "name": "Electric Bicycle Brewing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJr5_4FLbNhVQRm5DMnm7goRQ": {
+    "id": "locality-brewing",
+    "name": "Locality Brewing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ_0Bj3xRxhlQR92iSWFFLwmk": {
+    "id": "off-the-rail-brewing",
+    "name": "Off The Rail Brewing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJnTr-rolxhlQRiw9cIoI-Luc": {
+    "id": "funk-coffee-bar",
+    "name": "FUNK. Coffee Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ8d6cpxBxhlQRfK0TULeZq2g": {
+    "id": "powell-brewery",
+    "name": "Powell Brewery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJkTgKO8nNhVQRi3pu7mO-pI8": {
+    "id": "otter-trail-winery",
+    "name": "Otter Trail Winery",
+    "verdict": "published",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ0zwHGKh5hlQRvOYrSD3uXnc": {
+    "id": "outpost",
+    "name": "Outpost",
+    "verdict": "error",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ-bbbv97fhVQRL6n0HZrU5tA": {
+    "id": "country-vines-winery",
+    "name": "Country Vines Winery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJZVTJmVFxhlQRXen3iMjGHt4": {
+    "id": "beva-brewing-blending",
+    "name": "Beva Brewing & Blending",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ0TEDmePbhVQRcKjHgevNf2I": {
+    "id": "way-back-brew-co",
+    "name": "Way Back Brew Co.",
+    "verdict": "published",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJfzc2WkFxhlQR-XnvwHFIvuY": {
+    "id": "terminal-city-brewing",
+    "name": "Terminal City Brewing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJIXG3tclzhlQRq8Gz2FyVoEU": {
+    "id": "vancouver-brewery-tours-inc",
+    "name": "Vancouver Brewery Tours Inc.",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJlbYo9epxhlQRMU5C6D7MTV4": {
+    "id": "humblebee",
+    "name": "Humblebee",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJq0UFMiJxhlQRLTtN0CDi0rc": {
+    "id": "bridge-brewing-counterflow-pizza-pemberton-ave",
+    "name": "Bridge Brewing & Counterflow Pizza- Pemberton Ave",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJaZnWUoDRhVQR90DgbDir7Ww": {
+    "id": "estate-1909",
+    "name": "Estate 1909",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJf8q2M1V_hlQR1Unh0RCcaXY": {
+    "id": "just-fine-wine-on-premise-winemaking",
+    "name": "Just Fine Wine On-Premise Winemaking",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJve54SjnbhVQRXG1H1UIWt3E": {
+    "id": "99-south-vineyards",
+    "name": "99 South Vineyards",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJv6IrAaZ1hlQRU1xt1m-NC0s": {
+    "id": "wine-cellar-depot",
+    "name": "Wine Cellar Depot",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJO99vJ47VhVQRGOVICFxjs3s": {
+    "id": "side-quest-brewing-co",
+    "name": "Side Quest Brewing Co",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJu14q7c1xhlQRiTFvEi9ll3o": {
+    "id": "california-cult-classics",
+    "name": "California Cult Classics",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJp2_yvlRxhlQRNDkBK-kn5SI": {
+    "id": "temporal-artisan-ales",
+    "name": "Temporal Artisan Ales",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
+  },
+  "ChIJ21ot3clxhlQRsaHMkwraAss": {
+    "id": "boombox-brewing",
+    "name": "Boombox Brewing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-09-03"
   }
 }

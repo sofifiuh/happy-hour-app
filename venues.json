@@ -1,5 +1,5 @@
 {
- "data_version": "2026-09-02-ad378a35",
+ "data_version": "2026-09-03-dfe3805d",
  "venues": [
   {
    "id": "ancora",
@@ -547,7 +547,7 @@
     ],
     "deals_source": {
      "url": "https://hapaizakaya.com/yaletown-menu/",
-     "extracted_at": "2026-09-02"
+     "extracted_at": "2026-09-03"
     }
    },
    "amenities": {
@@ -750,7 +750,7 @@
     ],
     "deals_source": {
      "url": "https://boulevardvancouver.ca/menus/",
-     "extracted_at": "2026-09-02"
+     "extracted_at": "2026-09-03"
     }
    },
    "amenities": {
@@ -1861,7 +1861,7 @@
     ],
     "deals_source": {
      "url": "https://tapandbarrel.com/locations/tap-barrel-convention-centre/",
-     "extracted_at": "2026-09-02"
+     "extracted_at": "2026-09-03"
     }
    },
    "amenities": {
@@ -2044,7 +2044,7 @@
     ],
     "deals_source": {
      "url": "https://www.p2bbistro.com/happyhour",
-     "extracted_at": "2026-09-02"
+     "extracted_at": "2026-09-03"
     }
    },
    "amenities": {
@@ -2644,7 +2644,7 @@
     ],
     "deals_source": {
      "url": "https://www.1931gallerybistro.com/s/Summer-Beverage-2026-2.pdf",
-     "extracted_at": "2026-09-02"
+     "extracted_at": "2026-09-03"
     }
    },
    "amenities": {
@@ -3139,7 +3139,7 @@
     ],
     "deals_source": {
      "url": "https://hawksworthrestaurant.com/wp-content/uploads/2026/08/Features.Aug_.26.26.pdf",
-     "extracted_at": "2026-09-02"
+     "extracted_at": "2026-09-03"
     }
    },
    "amenities": {
@@ -3324,7 +3324,7 @@
     ],
     "deals_source": {
      "url": "https://www.banterroom.com/menu",
-     "extracted_at": "2026-09-02"
+     "extracted_at": "2026-09-03"
     }
    },
    "amenities": {
@@ -3770,7 +3770,7 @@
     ],
     "deals_source": {
      "url": "https://www.thegreekbyanatoli.com/yaletown-menu",
-     "extracted_at": "2026-09-02"
+     "extracted_at": "2026-09-03"
     }
    },
    "amenities": {
@@ -3944,7 +3944,7 @@
     ],
     "deals_source": {
      "url": "https://theparlourrestaurants.com/vancouver-menu/",
-     "extracted_at": "2026-09-02"
+     "extracted_at": "2026-09-03"
     }
    },
    "amenities": {
@@ -4657,7 +4657,7 @@
     ],
     "deals_source": {
      "url": "https://www.alchemybar-kitchen.ca/happyhour.html",
-     "extracted_at": "2026-09-02"
+     "extracted_at": "2026-09-03"
     }
    },
    "amenities": {
@@ -4807,6 +4807,386 @@
    "last_synced_at": null
   },
   {
+   "place_id": "ChIJmUJSSmPfhVQR1i-o8sXxaMw",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.7,
+   "user_ratings_total": 1373,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "lulu-island-winery",
+   "name": "LuLu Island Winery",
+   "formatted_address": "16880 Westminster Hwy, Richmond, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.1692385,
+     "lng": -123.03650309999999
+    }
+   },
+   "formatted_phone_number": "(604) 232-9839",
+   "website": "https://www.luluislandwinery.com/",
+   "happy_hour": {
+    "days": [
+     5
+    ],
+    "start": "15:00",
+    "end": "19:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.luluislandwinery.com/event-details-registration/vibes-vino-happy-hour-featuring-daniel-reece/form",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "https://static.wixstatic.com/media/4c1bb3_6bf865d8bc7446ec9e2bfe5ec435c6dd%7Emv2.png/v1/fit/w_2500,h_1330,al_c/4c1bb3_6bf865d8bc7446ec9e2bfe5ec435c6dd%7Emv2.png",
+    "credit_name": "LuLu Island Winery",
+    "credit_url": "https://www.luluislandwinery.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJRSiiiBVxhlQRzQymByrAcbQ",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.4,
+   "user_ratings_total": 506,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": true,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "east-van-brewing-company",
+   "name": "East Van Brewing Company",
+   "formatted_address": "1675 Venables St, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2767882,
+     "lng": -123.0711192
+    }
+   },
+   "formatted_phone_number": "(604) 558-3822",
+   "website": "http://www.eastvanbrewing.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "15:00",
+    "end": "18:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.eastvanbrewing.com/happy-hour-menu",
+    "deals": [
+     {
+      "name": "Blue Rasp Beer Fizz",
+      "price": "$6.95",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Lager 16oz",
+      "price": "$5.95",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Pale Ale 16oz",
+      "price": "$5.95",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Cider 16oz",
+      "price": "$7.95",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Wine 7oz",
+      "price": "$7.95",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Margarita",
+      "price": "$9.95",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Aperol Spritz",
+      "price": "$9.95",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "All Food Menu",
+      "price": "10% Off",
+      "category": "food",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "photos/east-van-brewing-company.jpg",
+    "credit_name": "Rob Siiberg",
+    "credit_url": "https://maps.google.com/maps/contrib/116708327269458990786",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJkTgKO8nNhVQRi3pu7mO-pI8",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.3,
+   "user_ratings_total": 226,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "otter-trail-winery",
+   "name": "Otter Trail Winery",
+   "formatted_address": "5974 248 St, Langley Twp, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.110839899999995,
+     "lng": -122.53688950000002
+    }
+   },
+   "formatted_phone_number": "(778) 619-6618",
+   "website": "https://www.ottertrailwinery.com/",
+   "happy_hour": {
+    "days": [
+     3,
+     4,
+     5,
+     6,
+     0
+    ],
+    "start": "14:30",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://ottertrailwinery.com/wp-content/uploads/2026/08/Otter-Trail-Winery-Happy-Hour.png",
+    "deals": [
+     {
+      "name": "Fries",
+      "price": "$12",
+      "category": "food",
+      "description": "Add truffle $4"
+     },
+     {
+      "name": "Hummus & Pita",
+      "price": "$12",
+      "category": "food",
+      "description": "Kalamata olives, fried capers, szechuan oil, sumac powder. GF, VG"
+     },
+     {
+      "name": "Garlic Prawns",
+      "price": "$14",
+      "category": "food",
+      "description": "6 prawns, garlic butter. GF"
+     },
+     {
+      "name": "Smashed Beef Sliders",
+      "price": "$14",
+      "category": "food",
+      "description": "3 sliders with old fort cheddar, pickles, tomato jam, caramelized onion, fried shallots. +1 slider $5"
+     },
+     {
+      "name": "Vancouver Island Oysters",
+      "price": "$14/$24",
+      "category": "food",
+      "description": "Half dozen or dozen. Watermelon mignonette with compressed cucumber. GF, DF"
+     },
+     {
+      "name": "Tempura Oyster Mushroom with Herb Aioli",
+      "price": "$16",
+      "category": "food",
+      "description": "Locally sourced from Myca farms. VG, DF, GF"
+     },
+     {
+      "name": "Ham & Cheese Croquette",
+      "price": "$17",
+      "category": "food",
+      "description": "Prosciutto dust, 6-month aged Manchego cheese, white truffle aioli, chive. Extra croquette $5"
+     },
+     {
+      "name": "Chicken Wings",
+      "price": "$18",
+      "category": "food",
+      "description": "Blue cheese dip, crudités. Choice of sauce: barbecue, lemon pepper, salt & pepper. GF"
+     },
+     {
+      "name": "Rockefeller Scallops on the Shell",
+      "price": "$18/$36",
+      "category": "food",
+      "description": "Béchamel, old fort cheddar mix, spinach. 3pc or 6pc"
+     },
+     {
+      "name": "Moules Marinières & Frites",
+      "price": "$19",
+      "category": "food",
+      "description": "Steamed mussels in white wine cream herb sauce. Truffle Parm $2. GF, VG, DF"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://ottertrailwinery.com/wp-content/uploads/2024/10/Otter_Trail_Winery_Logo_262x60.png",
+    "credit_name": "Otter Trail Winery",
+    "credit_url": "https://www.ottertrailwinery.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJ0TEDmePbhVQRcKjHgevNf2I",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.6,
+   "user_ratings_total": 153,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": true,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "way-back-brew-co",
+   "name": "Way Back Brew Co.",
+   "formatted_address": "15063 54a Ave #116, Surrey, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.1021322,
+     "lng": -122.80498239999999
+    }
+   },
+   "formatted_phone_number": "(604) 757-0118",
+   "website": "https://www.waybackbrewco.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.waybackbrewco.com/",
+    "deals": [
+     {
+      "name": "Draft beer",
+      "price": "$6",
+      "category": "drink",
+      "description": "Happy hour draft beer"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/6483777b13d0023e9093594c/t/6696fa754b776b2c7ed87b65/1768940232881/Way+Back+Brewing+Logo.jpg?format=1500w",
+    "credit_name": "Way Back Brew Co.",
+    "credit_url": "https://www.waybackbrewco.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
    "place_id": "ChIJqUjxNINxhlQR4Lx01oYf6H8",
    "international_phone_number": null,
    "types": [
@@ -4890,7 +5270,7 @@
     "credit_url": "https://www.mahonystavern.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJLc2CHABxhlQRrFHdrurOnZk",
@@ -5017,7 +5397,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/103553012454816267530",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJRRKQhWrnhVQRyKPUbR9HhBY",
@@ -5141,7 +5521,7 @@
     "credit_url": "https://harrysfishandchipsrestaurant.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJU2rxVMVwhlQRUlFGdFu-ggg",
@@ -5206,7 +5586,7 @@
     "credit_url": "http://www.bacirestaurant.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJGTUzSD5xhlQRr40HggcQgPs",
@@ -5280,7 +5660,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/109018251593373436940",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ9baEuYtvhlQRzXr6_Z-vYw0",
@@ -5364,7 +5744,7 @@
     "credit_url": "http://www.bufala.ca/edgemont",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJG8-2pfdzhlQR3kuogd8C86g",
@@ -5454,7 +5834,7 @@
     "credit_url": "https://sdeatery.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJzYTR0ZZ1hlQRtE7VAz5tc6M",
@@ -5649,7 +6029,7 @@
     "credit_url": "https://www.bufala.ca/aboutbrd",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJc7ckzQdzhlQRlKBv_B1v4R8",
@@ -5716,7 +6096,7 @@
     "credit_url": "https://hoshijapanesecuisine.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJW2WDLW1zhlQRdKYFDsj3fIo",
@@ -5852,7 +6232,7 @@
     "credit_url": "http://www.autostradahospitality.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ698G2el5hlQRmUSsyeiG70Q",
@@ -5967,7 +6347,7 @@
     "credit_url": "http://www.mamasaidpizza.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ3_vaZABxhlQR0HeLsN2Wmvk",
@@ -6091,7 +6471,7 @@
     "credit_url": "https://www.mercatodiluigi.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJQaVhH_1xhlQRIjWmB_4gu38",
@@ -6175,7 +6555,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/102061618619434946711",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJmZBXvkh5hlQRF8r-_QYW-24",
@@ -6328,7 +6708,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/108895644437297127423",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ35CsmALDhVQRvFgPg_AOQC0",
@@ -6396,7 +6776,7 @@
     "credit_url": "http://www.oceanbeachwr.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJCU7GmHVzhlQRVCX3eeeGIqo",
@@ -6480,7 +6860,7 @@
     "credit_url": "http://www.sprezzatura.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ39PXx8pxhlQR1--5MxJBR1c",
@@ -6549,7 +6929,7 @@
     "credit_url": "https://www.misotaco.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJM3CcBK9xhlQRc9lVZFzYcPs",
@@ -6627,7 +7007,7 @@
     "credit_url": "https://www.arcanabar.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_4DyPpfbhVQRv2KFIlapZ5g",
@@ -6694,7 +7074,7 @@
     "credit_url": "http://www.sabafoods.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJF16hTOJ4hlQR9GSGNpOuTZE",
@@ -6759,7 +7139,7 @@
     "credit_url": "http://www.pizzeriaspaccanapoli.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_3NDKc9whlQRbnBgBEsBKyQ",
@@ -6828,7 +7208,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115996144988892689057",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJL32kMGZxhlQRMrbSMUGBVDs",
@@ -6910,7 +7290,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/101791856723296676797",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJARIITRDDhVQRjxmrBV_8-r8",
@@ -6977,7 +7357,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/114131599212573326761",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJF9hzTXh3hlQRGCP_95_ogeY",
@@ -7068,7 +7448,7 @@
     "credit_url": "http://www.lataqueria.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJYReKm2DZhVQR3M8G_Qwyfz4",
@@ -7137,7 +7517,7 @@
     "credit_url": "http://www.spice72.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ28t23QxzhlQRlPVAoZUunSU",
@@ -7204,7 +7584,7 @@
     "credit_url": "https://www.stanleyparkbrewing.com/brewpub/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ1eEvdZ3EhVQR0skCq4T9dog",
@@ -7271,7 +7651,7 @@
     "credit_url": "http://www.sandcastlelanes.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJN2Noxf5xhlQR5S-J2gEGnrQ",
@@ -7353,7 +7733,7 @@
     "credit_url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJy0-P0olzhlQRxSLsSsM-jCY",
@@ -7419,7 +7799,7 @@
     "credit_url": "https://www.unionlatinosrestaurant.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=8532792806179112619",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJD-WYYijZhVQRJr4zTl52Qo8",
@@ -7503,7 +7883,7 @@
     "credit_url": "http://www.tidewaterspub.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJWWYp5cRxhlQR6xMiqQMC-_Y",
@@ -7581,7 +7961,7 @@
     "credit_url": "https://thegull.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJyfBkn4dxhlQRAxfzGwa0IBM",
@@ -7648,7 +8028,7 @@
     "credit_url": "https://karmalounge.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJMd6eI4vZhVQR818oY2Y7R0w",
@@ -7729,7 +8109,7 @@
     "credit_url": "http://www.georgieslocal.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ26YFv3BxhlQRw2nuTh_ZYSo",
@@ -7828,7 +8208,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/102262747681733495778",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJExh0e8hzhlQRkaIGSBt6eQU",
@@ -7896,7 +8276,7 @@
     "credit_url": "http://www.grapesandsoda.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJrSK0t3pzhlQRJzlIwv4Rsc8",
@@ -7964,7 +8344,7 @@
     "credit_url": "http://www.barra41.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJpalsgCtphlQRsHHq-Z3hL2s",
@@ -8032,7 +8412,7 @@
     "credit_url": "https://www.cypressmountain.com/dining",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJJzYq3PBxhlQRxqryb0bOLmg",
@@ -8112,7 +8492,7 @@
     "credit_url": "http://www.bargobo.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJGVvOYpJxhlQRBLDN8_rljBQ",
@@ -8196,7 +8576,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/101240296302274590599",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ7WrLRy5zhlQRqIbWIHRIZjA",
@@ -8278,7 +8658,7 @@
     "credit_url": "http://www.rongsithaimill.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJq5kRT9txhlQR_CTBLnpQ4Lg",
@@ -8347,7 +8727,7 @@
     "credit_url": "https://misotaco.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJD9X_gIB-C0ER-aY29gH18cM",
@@ -8431,7 +8811,7 @@
     "credit_url": "https://www.craftbeermarket.ca/locations/vancouver-false-creek/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJF9tqbxl1hlQRdCZjh8vITU8",
@@ -8515,7 +8895,7 @@
     "credit_url": "https://chop.ca/locations/richmond-airport?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJFWhLV3dxhlQR-BCOL1u24FY",
@@ -8584,7 +8964,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/111981848013192835457",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJW1G0JlpzhlQR0yi6twJ0CXA",
@@ -8668,7 +9048,7 @@
     "credit_url": "https://www.craftbeermarket.ca/locations/vancouver-english-bay/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJZ4bQMpFvhlQR-KfWP0Z8ib8",
@@ -8737,7 +9117,7 @@
     "credit_url": "http://www.smokeandbones.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJcS3l1qh5hlQRVaxZKjav4zs",
@@ -8828,7 +9208,7 @@
     "credit_url": "https://milestonesrestaurants.com/locations/test-kitchen?utm_source=google&utm_medium=organic&utm_campaign=gbp",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJfTQAlSlzhlQRglYOHc_MZpg",
@@ -8926,7 +9306,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105033786199350492804",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ9ZQCacpzhlQRLx_Hge2HPaU",
@@ -9010,7 +9390,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/118172511083873764079",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJD5jM8zjThVQRm2zxEyr3P0Y",
@@ -9078,7 +9458,7 @@
     "credit_url": "https://saba.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJh9iYHRh3hlQR8GaY_dj1RHM",
@@ -9283,7 +9663,7 @@
     "credit_url": "http://www.claudiosristorante.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJE0TrMCx_hlQRa-c5m-wCXd4",
@@ -9351,7 +9731,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/103548509294961916478",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJKyrMXgB3hlQRIfcfsIeSi_8",
@@ -9456,7 +9836,7 @@
     "credit_url": "https://sobusocial.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ-fWFH-V1hlQRlgHvJiRw6ls",
@@ -9546,7 +9926,7 @@
     "credit_url": "https://localpubliceatery.com/lpe-river-district/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJjxrDYstxhlQRrkD3lLOhuzY",
@@ -9615,7 +9995,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/106292743634914786148",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJoWPKIj5xhlQR2vCsGMqW3FM",
@@ -9901,7 +10281,7 @@
     "credit_url": "https://www.niclipizzeria.com/?utm_source=google&utm_medium=local",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJv94nXI9zhlQRXuzMxCL70cM",
@@ -10061,7 +10441,7 @@
     "credit_url": "https://www.hideoutgolf.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJJ6MS5y7QhVQR8iYy7PsCOH4",
@@ -10336,7 +10716,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/106368464094699081844",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJse82JpPEhVQRzhz30hab1Mo",
@@ -10483,7 +10863,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/110098510208875928498",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJj4y4hjVxhlQRYpgCUuJSLp4",
@@ -10598,7 +10978,7 @@
     "credit_url": "http://boteco.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJufCsY7hzhlQRJ5pRvUZ6tMQ",
@@ -10818,7 +11198,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/111221789117421464056",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJj7pRp3BxhlQR8QU5qnkjG5U",
@@ -11008,7 +11388,7 @@
     "credit_url": "https://www.pidginvancouver.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJDXs3CGVxhlQRQT7WyInozkA",
@@ -11160,7 +11540,7 @@
     "credit_url": "http://www.torafuku.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJfZnyOohxhlQRAX10LargB0E",
@@ -11314,7 +11694,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/110124807891733067920",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJIwA4nntxhlQRBmzcXjGwJRQ",
@@ -11400,7 +11780,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/103632532762914279527",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJqYIGTy9yhlQRuS6kHx4pVKM",
@@ -11608,7 +11988,7 @@
     "credit_url": "http://www.hookrestaurant.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJzyPHI35xhlQRs3aRHuPMmGg",
@@ -11731,7 +12111,7 @@
     "credit_url": "http://www.redcardsportsbar.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJD2LiYXFxhlQRfK9tJsUPZRk",
@@ -11828,7 +12208,7 @@
     "credit_url": "http://brewingaugust.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJl97JCH5xhlQRCMTZHG7N-Sg",
@@ -11980,7 +12360,7 @@
     "credit_url": "http://www.persesocialcorner.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJp7R2erZzhlQRT9uOtRCRz6I",
@@ -12108,7 +12488,7 @@
     "credit_url": "http://www.lasmargaritas.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJo1jMuUhxhlQRpNnramo6TqI",
@@ -12223,7 +12603,7 @@
     "credit_url": "http://www.theburrowrestaurant.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJfTY_EnBxhlQRTEuUOuEbJMI",
@@ -12332,7 +12712,7 @@
     "credit_url": "http://virtuouspie.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJn2elb_dzhlQRDoa-HdO2awg",
@@ -12489,7 +12869,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/107051616782945414095",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ6YbxflxzhlQRFMibzsZ_vsI",
@@ -12589,7 +12969,7 @@
     "credit_url": "https://www.alimentariamexicana.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJE6ZxDwrQhVQR9ViC52Gpfu8",
@@ -12794,7 +13174,7 @@
     "credit_url": "http://vaultrestaurant.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJsc22MvbShVQR1iXxb-69EXk",
@@ -12892,7 +13272,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104631942032029939841",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJd4HuaYh5hlQRoViF3JZRGjg",
@@ -13002,7 +13382,7 @@
     "credit_url": "https://www.povera.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJsXI-vNl4hlQRIOL6HjEuHeY",
@@ -13075,7 +13455,7 @@
     "credit_url": "http://murasaki.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJETmMw7HQhVQRvyNXrc6m-Xc",
@@ -13151,7 +13531,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/106479567908537381201",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJUXG8GWtxhlQRs4D_Vz6KVAk",
@@ -13344,7 +13724,7 @@
     "credit_url": "https://luppolobrewing.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJs8baXqHFhVQRYnkfvTd5usc",
@@ -13518,7 +13898,7 @@
     "credit_url": "https://www.nobleath.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJN472AU1whlQRkVgniuv7m1c",
@@ -13619,7 +13999,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/113665960011627627800",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJbw8QGPmRC0ERWWZtpF-FEnw",
@@ -13791,7 +14171,7 @@
     "credit_url": "https://www.derbybarandgrill.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJkyOEfwB3hlQRUii61X91hEs",
@@ -13902,7 +14282,7 @@
     "credit_url": "http://ilcappello.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJGfIH_CcLhlQRXUIWNqgCxw8",
@@ -13975,7 +14355,7 @@
     "credit_url": "https://theflyingbeaver.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJNRSLgX91hlQRhhzVsJAyhGM",
@@ -14066,7 +14446,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/118098033833748024885",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJO9_NhsF0hlQRM9o_-ipikuQ",
@@ -14187,7 +14567,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/108013979330694579179",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJiVBfYAfWhVQRq4i8Yq6kR58",
@@ -14353,7 +14733,7 @@
     "credit_url": "http://catandfiddlepub.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJI0tSYJbYhVQR9Xy2YBUPqCA",
@@ -14453,7 +14833,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115231590337747797388",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJdbuwpEfQhVQRezSBa8aUCbI",
@@ -14625,7 +15005,7 @@
     "credit_url": "http://www.dublincrossing.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJV_FU-Dp1hlQR4u8rdQKZlkw",
@@ -14838,7 +15218,7 @@
     "credit_url": "https://thecanadianbrewhouse.com/locations/richmond/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ2SGOIXrRhVQRngYB0o8Uqbg",
@@ -15002,7 +15382,7 @@
     "credit_url": "https://moxies.ca/restaurants/langley/?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJIft1c3hxhlQR8Nk5KKui3cM",
@@ -15231,7 +15611,7 @@
     "credit_url": "http://www.roguewetbar.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ97OIsPfShVQRfNAe-iyE9Rg",
@@ -15420,7 +15800,7 @@
     "credit_url": "https://www.fortpub.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJKykD6HtxhlQRohz10KUI68M",
@@ -15596,7 +15976,7 @@
     "credit_url": "http://www.devilselbowalehouse.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJFxXSmH5xhlQRJJXBIttyKi0",
@@ -15850,7 +16230,7 @@
     "credit_url": "https://www.librarysquarepub.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJP2YOE9RzhlQRBF8z709z_UA",
@@ -16088,7 +16468,7 @@
     "credit_url": "http://www.twoparrotsvancouver.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJYYDhE2DRhVQRdEp59KuCf2w",
@@ -16272,7 +16652,7 @@
     "credit_url": "http://jimymacspub.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJwasLJOfShVQRJ5CjzD54HNs",
@@ -16422,7 +16802,7 @@
     "credit_url": "http://www.kingfisherspub.com/?utm_campaign=gmb",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJX7fDuR7QhVQRNliE78hM9ww",
@@ -16545,7 +16925,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/118154887454289682970",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJt-b1wYJxhlQRHVfYyeEQUDo",
@@ -16621,7 +17001,7 @@
     "credit_url": "https://www.arcdining.com/?utm_source=google+Maps&utm_medium=seo+maps&utm_campaign=seo+maps",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJH0xQYIJxhlQR5CW_L2HrdLY",
@@ -16715,7 +17095,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/110568063293045605583",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJmV0yVU52hlQRVHpBtscDhhg",
@@ -16824,7 +17204,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/108320250379522576538",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJXyg3KFZxhlQRexn8iTUtom8",
@@ -16957,7 +17337,7 @@
     "credit_url": "http://bellsandwhistlesyvr.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJH7IyoNVzhlQRzjiVf6z3I5g",
@@ -17108,7 +17488,7 @@
     "credit_url": "https://luchalibretacos.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJAa8oiynehVQRGPfCEreMVaw",
@@ -17274,7 +17654,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/100217271621050985893",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJExE2pohxhlQRlbojM3N1HeU",
@@ -17422,7 +17802,7 @@
     "credit_url": "https://www.htastinglounge.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJZ-8esBl0hlQRFPLJisQ2ruc",
@@ -17510,7 +17890,7 @@
     "credit_url": "https://eastsidecrafthouse.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJmZqwSi9yhlQRwouQZ3IxzFI",
@@ -17742,7 +18122,7 @@
     "credit_url": "https://www.parkpub.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ23ybND_UhVQRwlxn0pDsitA",
@@ -17920,7 +18300,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/111027858815555140562",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJYZpqvNl4hlQR8KxPLGTVVp4",
@@ -18093,7 +18473,7 @@
     "credit_url": "http://stjameswell.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJhTyGxNtzhlQRDGh9orLVDUA",
@@ -18217,7 +18597,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/117586063050201963229",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJWQQ_uVLYhVQR1V9Rppbbeks",
@@ -18399,7 +18779,7 @@
     "credit_url": "https://donegals.pub/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJNVqaO3FxhlQRFZhv3GFvcbc",
@@ -18517,7 +18897,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/102168049695149635607",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJuVJSOgjQhVQR50AdORiLfL4",
@@ -18785,7 +19165,7 @@
     "credit_url": "http://rustyspub.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_W3F5nrYhVQRR0k1fyHZcXA",
@@ -18903,7 +19283,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104519241889406250845",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJd6gXiUdwhlQRy6uLWQ-B3s4",
@@ -19092,7 +19472,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/116466861258697056451",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJvVrzLyzahVQRdpmanzsV_58",
@@ -19261,7 +19641,7 @@
     "credit_url": "https://www.brewsterspub.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ3YyRVn1whlQRNHXvqRMDsac",
@@ -19466,7 +19846,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/111211921357627097981",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJWYse-GPUhVQRMePC0JiChXs",
@@ -19596,7 +19976,7 @@
     "credit_url": "http://thereachpub.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJezI1KjjfhVQRmxTWWaM6yJQ",
@@ -19756,7 +20136,7 @@
     "credit_url": "http://www.tugboatannies.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ-z8mBVrOhVQRtK-cYNsUi7Q",
@@ -19916,7 +20296,7 @@
     "credit_url": "http://www.murrayvilletownpub.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJl3jdI1FzhlQRaMgOocqNvBE",
@@ -20051,7 +20431,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/117936499983579651369",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJg0OeNE9zhlQRghLJ304DBdk",
@@ -20200,7 +20580,7 @@
     "credit_url": "https://foysirishbar.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ04Z7_ljXhVQRIBLIYgA6lQg",
@@ -20456,7 +20836,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104303940509535442003",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJAQ4oXPdzhlQRQ8r6R7SkFpk",
@@ -20617,7 +20997,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/112724056294813722825",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJtZoH-Tx4hlQRyWcQIPcpp84",
@@ -20781,7 +21161,7 @@
     "credit_url": "https://www.wildfig.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJqzJ81kZxhlQREc6ttSm_NoU",
@@ -20995,7 +21375,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105271650405229576463",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJeSBR0Nd3hlQRMgvrmTur-vQ",
@@ -21158,7 +21538,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/110598474367490412964",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJOyOFfQjZhVQRt6hOOScD8_I",
@@ -21246,7 +21626,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/117640597030624849922",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJecbdLCRzhlQR5zNwpp7WPVs",
@@ -21430,7 +21810,7 @@
     "credit_url": "http://www.papisoysterbar.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ1S8S8tdzhlQRrGQRKDN6P5E",
@@ -21562,7 +21942,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104773498406289282178",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJWbC2kk5zhlQRRUkMJsFC6_E",
@@ -21696,7 +22076,7 @@
     "credit_url": "http://www.beachavebarandgrill.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJBU87DnNuhlQRPP_cLzqd7YE",
@@ -21835,7 +22215,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/113988131373983217430",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJJ2NhPRpxhlQRtUPHJjIX3JQ",
@@ -21935,7 +22315,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/108612403267355780261",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ8_6iRABzhlQRIyYEw6JqU6g",
@@ -22122,7 +22502,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104983038951670112424",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJWfPwF6tzhlQRS89LmwYvCQE",
@@ -22210,7 +22590,7 @@
     "credit_url": "http://www.elwoods.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJX9XuWBHYhVQRgoB1QC2gD_o",
@@ -22394,7 +22774,7 @@
     "credit_url": "https://brownsville.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJU3s2Ym3YhVQRU15o4X-MvEU",
@@ -22530,7 +22910,7 @@
     "credit_url": "https://www.howesound.com/taphouse-newwest",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJHd-veenghVQRhYfId8M-H-A",
@@ -22736,7 +23116,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/116991351326895787994",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJG3E_JH5xhlQRyvB-91r98Ok",
@@ -22919,7 +23299,7 @@
     "credit_url": "http://www.uvavancouver.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJEX6HuPtxhlQR0ApQVM_tI3k",
@@ -22993,7 +23373,7 @@
     "credit_url": "https://www.wildeyebrewing.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJabKMadPRhVQRHGpLEJRtf18",
@@ -23198,7 +23578,7 @@
     "credit_url": "http://www.thesocialtavern.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_RfOprhzhlQRWgl0QMXqkKg",
@@ -23323,7 +23703,7 @@
     "credit_url": "https://www.bar-asra.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJfRrPeA1zhlQRw6yhiWKYNy0",
@@ -23480,7 +23860,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/110153927798198916146",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJi0qiutRzhlQRsVj-YG4yG_g",
@@ -23586,7 +23966,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104421240828005300194",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJwzK8e_FzhlQRuQYxv1ebnqc",
@@ -23725,7 +24105,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/103436076683356676909",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJFbW--r9xhlQRVXgyrUftT20",
@@ -23851,7 +24231,7 @@
     "credit_url": "https://www.parkdrive.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_Qknwv5xhlQRxsdSw91dTd0",
@@ -24023,7 +24403,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/109778802745758910985",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJQ4SE6_dxhlQRqZ332oYOf4A",
@@ -24138,7 +24518,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/100593505679975992343",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJe5ey5-NxhlQRMHbwpYs-31E",
@@ -24296,7 +24676,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105628478353947946335",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJVeRx0txzhlQRBsysz_9ZUGM",
@@ -24464,7 +24844,7 @@
     "credit_url": "https://www.courtsideonmain.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJAQBAKix3hlQRfXsIP8G_tJ0",
@@ -24631,7 +25011,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115959251576810473702",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJt5PRHrLZhVQRZImK_aCvvNQ",
@@ -24878,7 +25258,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/116743760404127620146",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ9dUZYA1xhlQRtpNF-NmlBLI",
@@ -25021,7 +25401,7 @@
     "credit_url": "http://venturaroom.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ61qQVvVzhlQRY8NxyREvdmE",
@@ -25192,7 +25572,7 @@
     "credit_url": "http://www.jacksonsrestobutcher.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJVTmSWX9xhlQRj3wKEpEEbOU",
@@ -25431,7 +25811,7 @@
     "credit_url": "https://divavancouver.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJrfiZ6s_EhVQRnprZZTRY5cE",
@@ -25507,7 +25887,7 @@
     "credit_url": "https://morgancreekgolf.com/restaurant/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJu1Il5Yl1hlQRalOUYs7DvFM",
@@ -25631,7 +26011,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/102946948821268261269",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJM8_O3JBxhlQRxzzY0cGTm4c",
@@ -25791,7 +26171,7 @@
     "credit_url": "https://www.flamingoroomvan.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ95DN-xNxhlQRznwZNWmppAs",
@@ -25927,7 +26307,7 @@
     "credit_url": "https://www.howesound.com/taphouse-eastvan",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_Tr1jwJxhlQRGATBGtYhTks",
@@ -26116,7 +26496,7 @@
     "credit_url": "https://strathconabeer.com/pages/strathcona-north",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJX9sI9hluhlQRKiRS3UqoXdU",
@@ -26216,7 +26596,7 @@
     "credit_url": "https://thesquareriggerpub.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJQxUHg5NxhlQRUzVvJM_z5fI",
@@ -26324,7 +26704,7 @@
     "credit_url": "http://www.thecozywok.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJV_9-fljZhVQRMJ5KE1UUHmQ",
@@ -26433,7 +26813,7 @@
     "credit_url": "http://www.flapperlounge.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJJ9jjKOB5hlQRL0z-HZFx8Hc",
@@ -26553,7 +26933,7 @@
     "credit_url": "http://www.legion119.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJLzSR4GLPhVQRRTo2iLm_RbI",
@@ -26653,7 +27033,7 @@
     "credit_url": "https://www.thehorseandryder.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJofO0Kt1zhlQRYgwY1e0JeJk",
@@ -26795,7 +27175,7 @@
     "credit_url": "http://www.stagesbistroandlounge.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJb0rqn5N5hlQR6ewqJ9mQAi0",
@@ -26976,7 +27356,7 @@
     "credit_url": "https://fraserbar.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJSQjs9tHXhVQRnJR4v7g2EZ8",
@@ -27151,7 +27531,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/110582570140683022218",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJu55WDABxhlQRUOzOWGuC71I",
@@ -27243,7 +27623,7 @@
     "credit_url": "http://www.themainstay.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJswNhdQB5hlQRVGP_FlqutAw",
@@ -27394,7 +27774,7 @@
     "credit_url": "https://ilovegigis.com/bar-lucia/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJF3Jc2nfDhVQR9Izow4l4ri4",
@@ -27656,7 +28036,7 @@
     "credit_url": "https://www.oceanbeachwr.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJyZQfERx1hlQROBB8iaU9MPQ",
@@ -27871,7 +28251,7 @@
     "credit_url": "https://moxies.ca/restaurants/vancouver-richmond-airport/?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJgeY5JNPPhVQRPDlP4CwujEU",
@@ -27959,7 +28339,7 @@
     "credit_url": "https://cascadescasino.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJT_bIqGVxhlQRlgkDlyIY9gg",
@@ -28126,7 +28506,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115673815074563962496",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJdVf3y4hxhlQR55KiHpZHEDE",
@@ -28334,7 +28714,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104354093574188566459",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJm1-G_S91hlQRJlDTXpCghc4",
@@ -28500,7 +28880,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115880274524026846114",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJSyj4rojDhVQRmL1e08dTK74",
@@ -28592,7 +28972,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/101274831725659802616",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJkVkvBfLRhVQRDEyx3JINcHY",
@@ -28785,7 +29165,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/113245018975124425856",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJJy1TTHdxhlQRgQQZgi9ga9o",
@@ -28914,7 +29294,7 @@
     "credit_url": "https://www.labattoir.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJGz0GLnnRhVQRcUANVx4tp6g",
@@ -29059,7 +29439,7 @@
     "credit_url": "https://www.jrg.ca/the-italian-osteria-cheesebar/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJl0RSgqh3hlQRXzBHCOpOPDc",
@@ -29266,7 +29646,7 @@
     "credit_url": "http://www.harthouserestaurant.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ7TWYJmHmhVQR8_oYkWnsJUo",
@@ -29468,7 +29848,7 @@
     "credit_url": "http://www.marioskitchen.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJBwE9C7ZzhlQR4gjQ64BrNQE",
@@ -29649,7 +30029,7 @@
     "credit_url": "http://www.glasshouserestaurant.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJWbVuptBxhlQRGULmJSp-kX0",
@@ -29843,7 +30223,7 @@
     "credit_url": "http://socialcorner.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJWSFJtnpzhlQRfhTTUMJTgPU",
@@ -30003,7 +30383,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/112532594106160300141",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJFw7ZEGBxhlQRbkip7_rmQxo",
@@ -30088,7 +30468,7 @@
     "credit_url": "http://www.randbbrewing.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJE6esuY3mhVQRplje_AKKF-M",
@@ -30282,7 +30662,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115648501149729980261",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_8nzhil0hlQRFWy7qUssNxQ",
@@ -30370,7 +30750,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/107654902939576857260",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJp2Gg2tx1hlQRk0V3_4afIiI",
@@ -30445,7 +30825,7 @@
     "credit_url": "http://www.okiniyvr.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJVxyU2XUKhlQRAotNKiWIO_I",
@@ -30644,7 +31024,7 @@
     "credit_url": "https://www.littlemexicocantina.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJU2TMMYZzhlQR4Fl7xNjFAiE",
@@ -30798,7 +31178,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/110051805727273652952",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJddT_psR-hlQRqQKsGUTYrbs",
@@ -30952,7 +31332,7 @@
     "credit_url": "https://www.gtccwestwoodplateau.com/restaurants/jess-fine/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJASZOc4VzhlQRCJbMmNGda_k",
@@ -31142,7 +31522,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115346610539563038514",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJEaBsE9pxhlQRFJ6t5iY3GHw",
@@ -31286,7 +31666,7 @@
     "credit_url": "https://www.farinaalegna.com/dinner",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJxcI3qf8LhlQRPGKUpisUAJ4",
@@ -31404,7 +31784,7 @@
     "credit_url": "http://thefreebird.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJIWZrcz_fhVQRO-si3m7wPRQ",
@@ -31689,7 +32069,7 @@
     "credit_url": "https://www.sector7kb.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJl_-z4UxwhlQRq_d9ZPEhm5A",
@@ -31849,7 +32229,7 @@
     "credit_url": "http://lobbyrestaurant.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJzcluPeThhVQRw8E7ZKf9WAk",
@@ -32003,7 +32383,7 @@
     "credit_url": "https://www.lavashseasidegrill.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJxYWGBBVxhlQRfbSOm1jCGpg",
@@ -32151,7 +32531,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/103986975618533442468",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ1_gb-vVxhlQRe3g15Biv4Dc",
@@ -32292,7 +32672,7 @@
     "credit_url": "https://www.folietta.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJJw7H0-9-hlQRqI9aFfImmCQ",
@@ -32440,7 +32820,7 @@
     "credit_url": "https://www.gtccwestwoodplateau.com/restaurants/jess-sky/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJc5_ynXPghVQRAEBvAv7p3BI",
@@ -32551,7 +32931,7 @@
     "credit_url": "http://www.fuggles.beer/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJEbbbrp5zhlQRxMeAZ1KOzpg",
@@ -32710,7 +33090,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/101817213644451414138",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJwdQdFgBxhlQRSdNAsu9zVFE",
@@ -32912,7 +33292,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/118253641702820081471",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJs2TNw-FzhlQR3qzNYvCwR3w",
@@ -33024,7 +33404,7 @@
     "credit_url": "https://www.barneysonmain.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ42eOUwDRhVQRudikCyz_Qbc",
@@ -33138,7 +33518,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/113990048747772870185",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJC5o8RMFxhlQRmOiXliayrvM",
@@ -33242,7 +33622,7 @@
     "credit_url": "https://cerveceria-astilleros.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJVfbyw5ZzhlQRbuc6Wmq6VB0",
@@ -33430,7 +33810,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/117170305616046348753",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJVzlXegDdhVQRQHtIrCSbt0E",
@@ -33572,7 +33952,7 @@
     "credit_url": "http://www.palmsbeachhouse.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJE0OvuvfShVQRlieqTxLH0E0",
@@ -33676,7 +34056,7 @@
     "credit_url": "http://www.railandriverbistro.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ99xf4eJ7hlQRMA8rwsMxCFs",
@@ -33816,7 +34196,7 @@
     "credit_url": "http://www.eatscratchkitchen.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJjV0RvwlxhlQRbj9m4rm6EII",
@@ -33889,7 +34269,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/117056384074773402068",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJZyqKIWHmhVQR9kpyS5zIsnA",
@@ -34162,7 +34542,7 @@
     "credit_url": "http://graciesnextdoor.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJmfUeUL5xhlQRxuVYchbmwbI",
@@ -34279,7 +34659,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/116552042194834501513",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ-07AIgFzhlQRiP1RnN_eWf8",
@@ -34447,7 +34827,7 @@
     "credit_url": "https://www.lilarestaurant.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJg9SFUwDhhVQRtD4yBwb3zKE",
@@ -34547,7 +34927,7 @@
     "credit_url": "http://soiram.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ9SpSd3RthlQRlflJWCwh4k4",
@@ -34659,7 +35039,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105372825550795209738",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJH5qsYn57hlQRoh4YpbOF5WI",
@@ -34849,7 +35229,7 @@
     "credit_url": "https://www.ilcorvo.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJBYdHMfJzhlQR95BCI7YwfkI",
@@ -34983,7 +35363,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115741596910363425352",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJHbtfCQBzhlQRc0AWxbnvpB0",
@@ -35149,7 +35529,7 @@
     "credit_url": "https://www.fredsrestaurant.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJJY6Yt3_QhVQR8FmNb80CABA",
@@ -35309,7 +35689,7 @@
     "credit_url": "https://www.northviewgolf.com/restaurants/duffeys-sports-grill/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJoWPJDgBzhlQREBB88IPg9bc",
@@ -35518,7 +35898,7 @@
     "credit_url": "https://jeonvancouver.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJM__BRwBxhlQREqgwdumuweM",
@@ -35671,7 +36051,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105728851332061821307",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJpeM1TIJ3hlQRALeXmpKjmC4",
@@ -35845,7 +36225,7 @@
     "credit_url": "http://www.timeandplaceburnaby.com/?SEO_id=GMB--R-YVRVMHF-1",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJYao2NLt5hlQRu70RPwdrDLc",
@@ -35972,7 +36352,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/100918159533530842339",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJYVRgISThhVQR6r66Un1rPQE",
@@ -36054,7 +36434,7 @@
     "credit_url": "https://www.grizzlyflatbread.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJQZRYwpjhhVQRPBOg9YZ3nzw",
@@ -36166,7 +36546,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104809233949381626210",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJafnMU4pwhlQRh0cY-mdJdrE",
@@ -36236,7 +36616,7 @@
     "credit_url": "http://sonsofvancouver.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJLRvmfx1zhlQRXPWQUO7d224",
@@ -36383,7 +36763,7 @@
     "credit_url": "https://paulsburger.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJc2qm40fZhVQR5kkWgL0j9gA",
@@ -36528,7 +36908,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/107461898769055297397",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_-nqhX15hlQRW_P8Pq7N7QM",
@@ -36601,7 +36981,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/112454270315009966715",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJh6CLUpbXhVQR7e1wOGfsv40",
@@ -36683,7 +37063,7 @@
     "credit_url": "https://www.pocobrothersbrewing.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJmXalLjV2hlQRw7uM8vTsZrM",
@@ -36851,7 +37231,7 @@
     "credit_url": "https://greatwings.ca/burnaby/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJg1Nt0qx4hlQRpkRIVE1B3Q0",
@@ -37017,7 +37397,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/111647881162761872369",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJhUFLqabahVQR6whhrC54Hms",
@@ -37162,7 +37542,7 @@
     "credit_url": "https://rickysrestaurants.ca/locations/cloverdale/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJPY7zVAaFC0ERjrKr_nNF-ks",
@@ -37311,7 +37691,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/112783137234540040154",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJLz0668wKhlQRBfuEmfBpw1E",
@@ -37456,7 +37836,7 @@
     "credit_url": "http://75west.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ1zABBVJ6hlQR3_WV_TrkgxE",
@@ -37532,7 +37912,7 @@
     "credit_url": "http://www.cafe-orso.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJpZH_9MwKhlQRkxtACt736go",
@@ -37680,7 +38060,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/114044243437217625418",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJv7cdIARvhlQRtp7LlI9KKYg",
@@ -37894,7 +38274,7 @@
     "credit_url": "https://www.hellonori.com/parkroyal",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJE-StFwB5hlQR2Lf2KjS43cQ",
@@ -38141,7 +38521,7 @@
     "credit_url": "https://www.novarestaurant.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJJ-AIiU16hlQRBCpbWTNnbSc",
@@ -38259,7 +38639,7 @@
     "credit_url": "http://www.armsreachbistro.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJHWUuGCvYhVQRqWtgrj187zo",
@@ -38538,7 +38918,7 @@
     "credit_url": "https://dominionkitchen.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJK5yhI89whlQRVpPlaF-um80",
@@ -38620,7 +39000,7 @@
     "credit_url": "http://chaomami.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJwcvcutPPhVQR1wqQWktoyuk",
@@ -38748,7 +39128,7 @@
     "credit_url": "https://meneds.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJk1itV6t4hlQRX-UhDcVIMnI",
@@ -38882,7 +39262,7 @@
     "credit_url": "https://www.meneds.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJO4TOPM9whlQRPaJPTs30UN4",
@@ -38998,7 +39378,7 @@
     "credit_url": "http://www.sfinaki.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJCR4U1swKhlQRuUS8KGDaJJo",
@@ -39191,7 +39571,7 @@
     "credit_url": "http://cavukitchenbar.com/#menu?SEO_id=GMB--R-YVRAHHF",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJnVCA1mpxhlQR5W2N6Tijc2g",
@@ -39348,7 +39728,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115317891024473059646",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJW9K4IkVxhlQRyoxxRrJhY4I",
@@ -39451,7 +39831,7 @@
     "credit_url": "https://loambistro.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJi_-UK990hlQR34VR-RbEdw8",
@@ -39641,7 +40021,7 @@
     "credit_url": "https://www.theapronrichmond.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJka-bsF_ZhVQRrlK5NAX84dQ",
@@ -39719,7 +40099,7 @@
     "credit_url": "http://holytaco.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJB2UpqUp_hlQRUisMYFFkgRU",
@@ -39901,7 +40281,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105806095207009135977",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJD9jfUoJxhlQR2Z9sjekAEFg",
@@ -40121,7 +40501,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/111258229305719246606",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJXb0QevZ2hlQRVzUZDnuznAA",
@@ -40212,7 +40592,7 @@
     "credit_url": "https://www.honsushi.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJS9tYo2_YhVQRKfxvkCovbBc",
@@ -40298,7 +40678,7 @@
     "credit_url": "https://www.boathouserestaurants.ca/location/boathouse-restaurants-new-westminster/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJE1nvYZ3DhVQRGZbomCktWz4",
@@ -40408,7 +40788,7 @@
     "credit_url": "https://ulisrestaurant.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJFZkOR-J4hlQRbPCgtfX5djU",
@@ -40524,7 +40904,7 @@
     "credit_url": "https://www.tapsandtacos.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJaUM4SPR5hlQRviRyP6fCy0o",
@@ -40697,7 +41077,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/108841054001902755092",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJwXdWeqtzhlQRvhCBn2ZX5kM",
@@ -40872,7 +41252,7 @@
     "credit_url": "https://www.bananaleaf-vancouver.com/kitsilano",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJbdCxdKxzhlQRLyev2c0HL6A",
@@ -40982,7 +41362,7 @@
     "credit_url": "http://dovetailrestaurant.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJCw6G37RzhlQRPq7e6aPAAl4",
@@ -41154,7 +41534,7 @@
     "credit_url": "http://www.luckytaco.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_clpm8LZhVQRBtRO0_4L8hw",
@@ -41317,7 +41697,7 @@
     "credit_url": "https://www.skyeavenue.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJARfKW7txhlQRgm1BxguLamU",
@@ -41522,7 +41902,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105933274086887903871",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJTSkyOk3PhVQR35wqc8gaxTQ",
@@ -41664,7 +42044,7 @@
     "credit_url": "https://foodbyfanta.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJOY00hhxzhlQRI8IfeD9Fu_c",
@@ -41842,7 +42222,7 @@
     "credit_url": "https://www.luciaonmain.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJCYeeZR9uhlQRKRWLSYnl-VQ",
@@ -42075,7 +42455,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/109440877254639846668",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJLZ0lbYJxhlQRWlw69YPLrT4",
@@ -42210,7 +42590,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/118385846017377236127",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ-e72QAB1hlQRAjrYjpDFMDo",
@@ -42355,7 +42735,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104578632817874456167",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJsyxtZ1JxhlQRVsbrWoEHkyE",
@@ -42557,7 +42937,7 @@
     "credit_url": "https://acquafarina.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ3eZJAHBxhlQRZXgY_xaAUrQ",
@@ -42669,7 +43049,7 @@
     "credit_url": "http://londonpubvan.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJC-yI8X9xhlQRW_dizpXab-A",
@@ -42839,7 +43219,7 @@
     "credit_url": "http://www.wedgewoodhotel.com/?utm_source=GoogleMapsWW&utm_medium=organic&utm_content=Businesslisting",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ3SA3jwJ4hlQRQJdhgFeqEhU",
@@ -42971,7 +43351,7 @@
     "credit_url": "http://www.sappertondistricttaphouse.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ19T8I79zhlQR2j1AVQWEYKs",
@@ -43170,7 +43550,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/100561299655424372052",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJERvrms5xhlQRI6O39ho5hPQ",
@@ -43269,7 +43649,7 @@
     "credit_url": "https://www.therecroom.com/calgary-deerfoot?utm_source=google-my-business_CalgaryDeerfoot&utm_medium=profile&utm_campaign=owned_media",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJT8Im_xp5hlQRPwCidr04bIU",
@@ -43470,7 +43850,7 @@
     "credit_url": "https://www.theonesixty.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJkaA0L3pxhlQRS7br6sCwIm4",
@@ -43587,7 +43967,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/105780950383402882416",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJiSptaCtyhlQREIyTMg6n2XI",
@@ -43726,7 +44106,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104781689056344003396",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJtZ4FT27YhVQR5ImAP5FVmrk",
@@ -43907,7 +44287,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/117135331815732736900",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJA2jYL01whlQRRbgzs6V6Jh4",
@@ -44091,7 +44471,7 @@
     "credit_url": "http://www.pierseven.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJhbvdyX1xhlQRMIebjMPIEYI",
@@ -44218,7 +44598,7 @@
     "credit_url": "http://zarakvancouver.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJrQYJEzdzhlQRs1CzxiXdqLw",
@@ -44428,7 +44808,7 @@
     "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ3QdMiXlxhlQRp3roxm24JZ4",
@@ -44578,7 +44958,7 @@
     "credit_url": "http://www.catch122.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ0wcWcvdzhlQRL7d6DXBUfbg",
@@ -44831,7 +45211,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104347832924380010368",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJD6e1muRxhlQR7-6P33WeoEk",
@@ -45012,7 +45392,7 @@
     "credit_url": "https://kingtaps.com/locations/lonsdale-quay/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJf99CWQd0hlQRUHD6OgbXNjc",
@@ -45193,7 +45573,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/101499607235924301501",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_dfEyv9yhlQRbkYUfVD_TRg",
@@ -45277,7 +45657,7 @@
     "credit_url": "https://brownssocialhouse.com/point-grey",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ5XadYLlxhlQRCJl1jr1K80Y",
@@ -45460,7 +45840,7 @@
     "credit_url": "https://www.provisionsitaliana.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ0SudFRJzhlQRoCX7ZS0Ymy4",
@@ -45543,7 +45923,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/106798217105155305723",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJ_Wj-oPdzhlQRz30MQolrOa0",
@@ -45724,7 +46104,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/115312865156626525354",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJA4KAIr9zhlQRiJTB-fSnrbg",
@@ -45973,7 +46353,7 @@
     "credit_url": "http://www.bin4burgerlounge.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJKUWr90xwhlQRrfrHgcmcXf0",
@@ -46145,7 +46525,7 @@
     "credit_url": "http://www.fishworks.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJs-YzRndzhlQRSib__WeEWDI",
@@ -46224,7 +46604,7 @@
     "credit_url": "https://maps.google.com/maps/contrib/104407920948102569111",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJByCNoBl1hlQRAHHkoEfWfxQ",
@@ -46390,7 +46770,7 @@
     "credit_url": "http://bravovancouver.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJqwhNSMF3hlQRiswagagGOIA",
@@ -46549,7 +46929,7 @@
     "credit_url": "https://www.collectivegoods.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-02"
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJM8c6YBVxhlQRmbyHdCTA63w",
@@ -46611,7 +46991,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/dublin-calling.jpg",
     "credit_name": "Dublin Calling",
@@ -46886,7 +47266,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/la-terrazza.jpg",
     "credit_name": "La Terrazza",
@@ -47098,7 +47478,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/63dc3537de004d21c5b2d5be/t/6647ac8157454e6e1a12ea04/1715973261442/The-Cascade-Room-Logo-2023.png?format=1500w",
     "credit_name": "The Cascade Room",
@@ -47283,7 +47663,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://ignitepizzeria.com/wp-content/uploads/2024/03/catering-ignite-pizzas-1.jpg",
     "credit_name": "Ignite Pizzeria Yaletown",
@@ -47613,7 +47993,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg",
     "credit_name": "Davie Social",
@@ -47692,7 +48072,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://themac.ca/wp-content/uploads/2026/08/20260705_091423-2-1-scaled-1.jpg",
     "credit_name": "The Mac Billiards",
@@ -47808,7 +48188,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
     "credit_name": "Guu Original Thurlow",
@@ -48136,7 +48516,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://cdn.prod.website-files.com/61b235126b51dd0b923b9429/620d8b064047132eddf9e95e_open-graph-image%20(1).png",
     "credit_name": "Water St. Café",
@@ -48222,7 +48602,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://kintonramen.com/wp-content/uploads/2024/09/kinton_robson-01228-1-1024x683.jpg",
     "credit_name": "KINTON RAMEN ROBSON",
@@ -48358,7 +48738,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/bellaggio-cafe.jpg",
     "credit_name": "Bellaggio Cafe",
@@ -48500,7 +48880,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/maxine-s-cafe-bar.jpg",
     "credit_name": "Maxine's Cafe & Bar",
@@ -48594,7 +48974,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
     "credit_name": "Guu with Otokomae",
@@ -48793,7 +49173,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://cocoricocafe.ca/wp-content/uploads/2025/06/cocorico-logo.png",
     "credit_name": "Coco Rico Cafe",
@@ -48888,7 +49268,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5f2b04f5007a0c0b4126d0ab/t/6a3c6a3e4ac02a00dadaed21/1782344254780/food.jpg?format=1500w",
     "credit_name": "Capo & The Spritz",
@@ -49121,7 +49501,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/steamworks-mount-pleasant.jpg",
     "credit_name": "Steamworks Mount Pleasant",
@@ -49268,7 +49648,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://pizzacomingsoon.com/images/PepEyes.gif",
     "credit_name": "Pizza Coming Soon",
@@ -49416,7 +49796,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/desi-indian-lounge.jpg",
     "credit_name": "Desi Indian Lounge",
@@ -49749,7 +50129,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/the-king-s-head-public-house.jpg",
     "credit_name": "Reza Omidi",
@@ -49833,7 +50213,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/619e9c5fc9b09079b878c60d/t/6a1f3c5e9d129d02efd2bcbf/1780431966963/Prestons_breakfast-setup2.jpg?format=1500w",
     "credit_name": "Prestons Restaurant + Lounge Vancouver",
@@ -50010,7 +50390,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/69177c7462644178b259bde8/t/691780701c60da79402e44f2/1763147888355/Amber+Logo+White.png?format=1500w",
     "credit_name": "Amber Gastown",
@@ -50244,7 +50624,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/6925144e26dafdde14d3a2c2_6916abb8d2861347aa74ab12_691014e720de4e6f3fec889b_CambiePub%25281%2529.avif",
     "credit_name": "The Cambie Bar & Grill",
@@ -50467,7 +50847,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://www.cactusclubcafe.com/wp-content/uploads/2015/05/052915_LocationThumbnails_260px_180px_BENT.png",
     "credit_name": "Cactus Club Cafe",
@@ -50603,7 +50983,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://marcellopizzeria.com/wp-content/uploads/2019/11/ORANGE_ILLUSTRATION_02.jpg",
     "credit_name": "Marcello Ristorante & Pizzeria",
@@ -50791,7 +51171,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/674a1c8cba87c699b9dc1531_5.jpg",
     "credit_name": "Mangos Kitchen Bar",
@@ -50882,7 +51262,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://staugustinesvancouver.com/assets/logo-50782319.png",
     "credit_name": "St. Augustine's",
@@ -51130,7 +51510,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://www.cactusclubcafe.com/wp-content/uploads/2014/11/052915_LocationThumbnails_260px_180px_YALE.png",
     "credit_name": "Cactus Club Cafe",
@@ -51410,7 +51790,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://cdn.prod.website-files.com/67d4940ac4774ab766493675/67ed7f002bd0240044bb4d1f_624df098ab4100db88769ee8_60963218ec20c227fd57bb28_malones-taphouse_friday-night.jpg",
     "credit_name": "Malone's Taphouse",
@@ -51562,7 +51942,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5b294ea4c258b4a050850cbc/t/674e656d6d3dc06fbd267050/1733191027522/5H6A5734.jpg?format=1500w",
     "credit_name": "La Mezcaleria",
@@ -51707,7 +52087,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://www.cactusclubcafe.com/wp-content/uploads/2015/05/052915_LocationThumbnails_260px_180px_ASH.png",
     "credit_name": "Cactus Club Cafe",
@@ -51799,7 +52179,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://www.datocms-assets.com/75587/1663193492-restaurant-vancouver-singsing-patio-server.jpg?auto=format&fit=max&w=1200",
     "credit_name": "Sing Sing Main St",
@@ -51947,7 +52327,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/598406a2b8a79b3541095ce2/t/64e66555c6598f65d4730d75/1692820821633/JamjarCanteen_icon_black+%282%29.png?format=1500w",
     "credit_name": "Jamjar Canteen Commercial Dr.",
@@ -52176,7 +52556,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://biminis1975.ca/wp-content/uploads/2025/10/biminis-home-banner.jpg",
     "credit_name": "Bimini's Since 1975",
@@ -52290,7 +52670,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/between-2-buns-burgers.jpg",
     "credit_name": "Between 2 Buns Burgers",
@@ -52400,7 +52780,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://www.datocms-assets.com/75587/1663200050-restaurant-vancouver-butcherbullock-neon-sign.jpg?auto=format&fit=max&w=1200",
     "credit_name": "The Butcher & Bullock Public House",
@@ -52548,7 +52928,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/carlos-o-bryan-s-neighborhood-pub.jpg",
     "credit_name": "Carlos O'Bryan's Neighborhood Pub",
@@ -52648,7 +53028,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2019/07/logo.png",
     "credit_name": "The Charlatan",
@@ -52717,7 +53097,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://opushotel.com/media_files/images/Superior_King_2.max-1900x1900.jpg",
     "credit_name": "OPUS Vancouver",
@@ -52793,7 +53173,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/memphis-blues-barbeque-house.jpg",
     "credit_name": "A Sabbagh",
@@ -52875,7 +53255,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/61a954_2be19d327c4e4f28a6faec69a4677659.jpg/v1/fit/w_2500,h_1330,al_c/61a954_2be19d327c4e4f28a6faec69a4677659.jpg",
     "credit_name": "Caffè Cittadella",
@@ -53025,7 +53405,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://bombaykitchenondenman.ca/wp-content/uploads/2026/06/Untitled-design-2.png",
     "credit_name": "Bombay Kitchen and Bar - Denman St",
@@ -53162,7 +53542,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://forecastcoffee.ca/cdn/shop/files/Forecast_Coffee_Stack.png?v=1671059059",
     "credit_name": "Forecast Coffee - Main Street",
@@ -53307,7 +53687,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://www.noahscafe604.com/uploads/b/b3056d90-8287-11ea-8dcd-d76ba85a9317/A50A3746-E8C0-4D21-8013-4486FE25D16F.jpg",
     "credit_name": "Noah's Cafe",
@@ -53469,7 +53849,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5d62eac6567e6b00010d19dd/t/68e74597dba01c1c30bced3e/1759987095874/barts+text+logo.png?format=1500w",
     "credit_name": "Bartholomew",
@@ -53673,7 +54053,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/914129_203b8bd912894101a87bf2eecc36324d~mv2.jpg/v1/fill/w_2500,h_2841,al_c/914129_203b8bd912894101a87bf2eecc36324d~mv2.jpg",
     "credit_name": "Bayside Lounge — English Bay",
@@ -53893,7 +54273,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://ciderhouserules.ca/wp-content/uploads/2024/01/ch-brunch-300x300.jpg",
     "credit_name": "The Cider House",
@@ -54045,7 +54425,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png/v1/fit/w_2500,h_1330,al_c/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png",
     "credit_name": "Bar Corso",
@@ -54242,7 +54622,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/637bd7471883712f534a69d5/t/63880bff5e0e99379d87d31c/1669860351856/kksong_logo_bluepatternSQ.jpg?format=1500w",
     "credit_name": "Song (by Kin Kao)",
@@ -54332,7 +54712,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5e39fb52039c6a4e75b14e99/t/665f5520dfa487303d924ded/1717523744702/Main+Street+Brewing+Wordmark.jpg?format=1500w",
     "credit_name": "Main Street Brewing Co.",
@@ -54561,7 +54941,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/uncle-abe-s.jpg",
     "credit_name": "Wheels",
@@ -54740,7 +55120,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/6482752355fc7c5b659d79ed/t/689580055c0e5008d5e18e8f/1754628101180/W+Colour+Logo.png?format=1500w",
     "credit_name": "The Watson",
@@ -54858,7 +55238,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": null
   },
   {
@@ -54996,7 +55376,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/mum-s-the-word.jpg",
     "credit_name": "Mum's The Word",
@@ -55065,7 +55445,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://oldspaghettifactory.ca/wp-content/uploads/2020/11/OSF-Gastown.jpg",
     "credit_name": "The Old Spaghetti Factory (Gastown)",
@@ -55132,7 +55512,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/dae-bak-bon-ga.jpg",
     "credit_name": "Aa Aa",
@@ -55296,7 +55676,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/the-sandbar-seafood-restaurant.jpg",
     "credit_name": "The Sandbar Seafood Restaurant",
@@ -55454,7 +55834,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/6645475dc7e9ad16be5320a4/t/6645477ec7e9ad16be532a6c/1611857405733/Screen+Shot+2021-01-28+at+1.09.17+PM.png?format=1500w",
     "credit_name": "Minami",
@@ -55674,7 +56054,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://i0.wp.com/topofvancouver.com/wp-content/uploads/2024/07/tov-logo-square.png",
     "credit_name": "Top Of Vancouver Revolving Restaurant",
@@ -55855,7 +56235,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/the-vancouver-fish-company.jpg",
     "credit_name": "The Vancouver Fish Company",
@@ -55973,7 +56353,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://www.gothamsteakhouse.com/wp-content/media/gotham-opengraph.jpg",
     "credit_name": "Gotham Steakhouse & Cocktail Bar",
@@ -56059,7 +56439,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://sylviahotel.com/wp-content/uploads/slider_2-1.jpeg",
     "credit_name": "Sylvia Hotel, Restaurant and Lounge",
@@ -56179,7 +56559,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/the-pawn-shop-yvr-taco-bar.jpg",
     "credit_name": "The Pawn Shop YVR Taco Bar",
@@ -56285,7 +56665,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/61f8647601122d66e6755648/t/6202273588dc2b5b45a78cb9/1737657598840/Di+Beppe+Italian+Pasta+Restaurant+Gastown+Vancouver.jpeg?format=1500w",
     "credit_name": "Di Beppe Restaurant",
@@ -56433,7 +56813,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/burgoo.jpg",
     "credit_name": "H S Madan",
@@ -56502,7 +56882,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/skewers-souvlaki-pita-bar.jpg",
     "credit_name": "Sid D",
@@ -56659,7 +57039,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/622915caa2ee207bfc89860c/t/62c71336a355646980d50d29/1657213750476/Sopra+Sotto+Logo_Dark+Green_Transparent+Background_2.png?format=1500w",
     "credit_name": "Sopra Sotto Pizzeria",
@@ -56825,7 +57205,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg",
     "credit_name": "Tableau Bar Bistro",
@@ -56997,7 +57377,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/nook-kitsilano.jpg",
     "credit_name": "Nook Kitsilano",
@@ -57253,7 +57633,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/big-way-hot-pot-robson.jpg",
     "credit_name": "Big Way Hot Pot (Robson)",
@@ -57517,7 +57897,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/6f810c_2fee003f992a4c2bae4babd1dfe5790d~mv2.jpg/v1/fill/w_2500,h_1666,al_c/6f810c_2fee003f992a4c2bae4babd1dfe5790d~mv2.jpg",
     "credit_name": "Eat Bar & Patio Haraheri",
@@ -57635,7 +58015,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://cdn.shopify.com/s/files/1/0494/0723/0110/files/Como_Logo_Rotated2.png?height=628&pad_color=f7ecde&v=1614315207&width=1200",
     "credit_name": "Como Taperia",
@@ -57777,7 +58157,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/65a72a0678f3ca4b97f809ce/t/6949f0039c3bac7cab8cda9f/1766453251463/Alouette+Bistro+logo+1+-+Red+version.png?format=1500w",
     "credit_name": "Alouette Bistro",
@@ -57905,7 +58285,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5e696210b248185a7740eb9e/t/6908ed36e801ae5dae811354/1762192694463/TUTTO+LOGO_RedCircle-Sept+2025.png?format=1500w",
     "credit_name": "Tutto Italian Restaurant & Bar",
@@ -58143,7 +58523,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/6197f60605fe1b16f9691fe5/t/61a0093bae588a3d464e910f/1637878075097/Carlino+Best+Italian+Restaurant+Downton+Vancouver+Coal+Harbour+Shangri-La+Pasta.jpg?format=1500w",
     "credit_name": "Carlino Restaurant",
@@ -58252,7 +58632,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/671af9d0bc57847c268ffd6c/t/672d9aaadb431b2e123f458d/1731041962507/Zoomak+Side+Sign+Logo_Logo+copy.png?format=1500w",
     "credit_name": "Zoomak Korean Tavern",
@@ -58436,7 +58816,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5564c138e4b0b3813af4e855/t/5ecc00722dd571390c7ba0be/1590427774631/Novo_Italian_Social_01.jpg?format=1500w",
     "credit_name": "Novo Italian",
@@ -58520,7 +58900,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://www.streethawker.ca/uploads/b/47d14d50-dd7e-11ed-84ba-93a1c49a3583/streethawker-03029.jpeg",
     "credit_name": "Street Hawker - Mount Pleasant",
@@ -58691,7 +59071,7 @@
     ],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/lavantine-restaurant-skybar.jpg",
     "credit_name": "Lavantine Restaurant & Skybar",
@@ -58858,7 +59238,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/nook-coal-harbour.jpg",
     "credit_name": "Nook Coal Harbour",
@@ -58927,7 +59307,7 @@
     "deals": [],
     "extra_windows": []
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://bhouse.ca/images/1200x630/17240969/editedIMG_70252-cHRNbxfHQNl31phM4aQi4Q.JPG",
     "credit_name": "B House Restaurant",
@@ -59192,7 +59572,7 @@
      }
     ]
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://thesequel.ca/wp-content/uploads/2025/05/61_IMAGE_THE-SEQUEL_SOCIAL-SHOOT_25-02-18_CHARLESRNASBY-scaled.jpg",
     "credit_name": "The Sequel - Kitchen & Bar",
@@ -59388,7 +59768,7 @@
     "id": 4842937821,
     "amenity": "restaurant"
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/fanny-bay-oyster-bar.jpg",
     "credit_name": "Fanny Bay Oyster Bar & Shellfish Market",
@@ -59551,7 +59931,7 @@
     "id": 6927768691,
     "amenity": "restaurant"
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/65676973c6846d7487e02256/t/656f95aa3358383ff0cbe919/1740440044434/Asset+1.png?format=1500w",
     "credit_name": "Hydra Estiatorio Mediterranean",
@@ -59721,7 +60101,7 @@
     "id": 4390232892,
     "amenity": "pub"
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/5db9f5cc0e8af224964d841a/t/5e45e75a78bd103b8b528dc8/1581639527237/Pourhouse-Restaurant-Cocktail-Bar-Gastown-Vancouver.jpg?format=1500w",
     "credit_name": "Pourhouse",
@@ -59896,7 +60276,7 @@
     "id": 6437608536,
     "amenity": "bar"
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://gretabar.com/wp-content/uploads/2026/08/GRETA-X-LE-BURGER-WEEK-Socials2-1.png",
     "credit_name": "Greta YVR",
@@ -60067,7 +60447,7 @@
     "id": 4859979322,
     "amenity": "pub"
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "http://static1.squarespace.com/static/690fdab96331267ef7e86a2f/t/690fdac76331267ef7e86c07/1757000454899/6A-Kitchen-and-Bar.png?format=1500w",
     "credit_name": "Six Acres",
@@ -60155,7 +60535,7 @@
     "id": 12164513044,
     "amenity": "bar"
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://static.wixstatic.com/media/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg",
     "credit_name": "The Boxcar",
@@ -60332,7 +60712,7 @@
     "id": 3932735573,
     "amenity": "restaurant"
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://www.brixandmortar.ca/wp-content/uploads/2021/03/logo1x_01.png",
     "credit_name": "Brix & Mortar",
@@ -60540,7 +60920,7 @@
     "id": 3690929433,
     "amenity": "restaurant"
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "photos/joe-fortes.jpg",
     "credit_name": "Joe Fortes Seafood & Chop House",
@@ -60664,7 +61044,7 @@
     "id": 11079577905,
     "amenity": "bar"
    },
-   "last_synced_at": "2026-09-02",
+   "last_synced_at": "2026-09-03",
    "cover_image": {
     "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a63d5f471c7d77bf326cb9d_622a3aa6bcd48977c810a6a4_Share%20BG.jpg",
     "credit_name": "The 515 Bar",
