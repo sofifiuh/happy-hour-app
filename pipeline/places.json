@@ -7089,5 +7089,22 @@
     },
     "matched_name": "Sun Star Restaurant",
     "synced_at": "2026-09-03"
+  },
+  "pardhan-dhaba-and-sweets": {
+    "place_id": "ChIJ26pyGJTZhVQRXRm6c12qako",
+    "rating": 4.7,
+    "user_ratings_total": 391,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Pardhan Dhaba and Sweets",
+    "synced_at": "2026-09-03"
   }
 }

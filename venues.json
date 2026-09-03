@@ -1,5 +1,5 @@
 {
- "data_version": "2026-09-03-1ea6b66d",
+ "data_version": "2026-09-03-0d9e1eb8",
  "venues": [
   {
    "id": "ancora",
@@ -4890,6 +4890,88 @@
     "url": "https://static.wixstatic.com/media/383fc8_856cd614678b4065996583be47e5dbf5%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/383fc8_856cd614678b4065996583be47e5dbf5%7Emv2.jpg",
     "credit_name": "Sun Star Restaurant",
     "credit_url": "https://www.sunstarrestaurant.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-03"
+  },
+  {
+   "place_id": "ChIJ26pyGJTZhVQRXRm6c12qako",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.7,
+   "user_ratings_total": 391,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "pardhan-dhaba-and-sweets",
+   "name": "Pardhan Dhaba and Sweets",
+   "formatted_address": "12499 88 Ave #107, Surrey, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.1641833,
+     "lng": -122.8767
+    }
+   },
+   "formatted_phone_number": "(604) 593-4000",
+   "website": "http://www.pardhandhaba.ca/",
+   "happy_hour": {
+    "days": [
+     5
+    ],
+    "start": "19:00",
+    "end": "21:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.pardhandhaba.ca/menu",
+    "deals": [
+     {
+      "name": "Cuba Libre",
+      "price": "$5.00",
+      "category": "drink",
+      "description": "Bacardi, Coke & lime"
+     },
+     {
+      "name": "Mojito",
+      "price": "$7.00",
+      "category": "drink",
+      "description": "Bacardi, lime, sugar syrup, mint leaves & soda"
+     },
+     {
+      "name": "Sangria",
+      "price": "$8.00",
+      "category": "drink",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://pardhandhaba.ca/wp-content/uploads/2024/10/caverta-bar.png",
+    "credit_name": "Pardhan Dhaba and Sweets",
+    "credit_url": "http://www.pardhandhaba.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03"
