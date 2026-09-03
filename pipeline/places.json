@@ -7072,5 +7072,22 @@
     },
     "matched_name": "The Hestia Hearth Cafe",
     "synced_at": "2026-09-03"
+  },
+  "sun-star-restaurant": {
+    "place_id": "ChIJ9ypqMoZ4hlQRdKi0FvI9izE",
+    "rating": 4,
+    "user_ratings_total": 707,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Sun Star Restaurant",
+    "synced_at": "2026-09-03"
   }
 }

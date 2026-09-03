@@ -1,5 +1,5 @@
 {
- "data_version": "2026-09-03-aaf1519c",
+ "data_version": "2026-09-03-1ea6b66d",
  "venues": [
   {
    "id": "ancora",
@@ -4805,6 +4805,94 @@
    },
    "data_source": "manual",
    "last_synced_at": null
+  },
+  {
+   "place_id": "ChIJ9ypqMoZ4hlQRdKi0FvI9izE",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 1,
+   "rating": 4,
+   "user_ratings_total": 707,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "sun-star-restaurant",
+   "name": "Sun Star Restaurant",
+   "formatted_address": "631 BC-7, Coquitlam, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.241908599999995,
+     "lng": -122.8844833
+    }
+   },
+   "formatted_phone_number": "(604) 937-5944",
+   "website": "https://www.sunstarrestaurant.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "18:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.sunstarrestaurant.ca/specials-and-promotions",
+    "deals": [
+     {
+      "name": "Bites",
+      "price": "$5",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Drinks",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Pitcher",
+      "price": "$14",
+      "category": "drink",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://static.wixstatic.com/media/383fc8_856cd614678b4065996583be47e5dbf5%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/383fc8_856cd614678b4065996583be47e5dbf5%7Emv2.jpg",
+    "credit_name": "Sun Star Restaurant",
+    "credit_url": "https://www.sunstarrestaurant.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-09-03"
   },
   {
    "place_id": "ChIJVbqQbatzhlQRxkq-DCjDKNo",
