@@ -2,8 +2,8 @@
   "_note": "Google Places calls per SKU per calendar month. Free allowances: Pro 5,000; Enterprise 1,000; Enterprise+Atmosphere 1,000. Verified against Google's pricing page 2026-09-03.",
   "_accuracy": "The 'nearby'/'text' figures are legacy Enterprise+Atmosphere counts from before the sweep was moved to Pro fields. They are reconstructed, not metered, and recorded at the worst case the in-memory cap allowed; real usage is likely lower. Google Cloud console is the authority. 224 of details_enterprise were spent on a bug that re-fetched places already known to have no website.",
   "2026-09": {
-    "sweep_pro": 0,
-    "details_enterprise": 224,
+    "sweep_pro": 1768,
+    "details_enterprise": 950,
     "nearby": 1150,
     "text": 1150
   }

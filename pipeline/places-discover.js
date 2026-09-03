@@ -241,6 +241,14 @@ const DEFAULT_TEXT_QUERIES = [
   "happy hour", "pub", "cocktail bar", "sports bar", "izakaya",
   "tapas bar", "brewery taproom", "gastropub", "wine bar", "drink specials",
   "italian restaurant", "seafood restaurant", "steakhouse",
+  // Text Search is the strongest channel (1,084 places against the grid's
+  // 215) and, now that the sweep bills at Pro with a 5,000/month allowance
+  // instead of Enterprise+Atmosphere's 1,000, more terms are close to free.
+  // Cuisine words reach venues that "happy hour" alone ranks past.
+  "sushi restaurant", "ramen", "korean restaurant", "thai restaurant",
+  "indian restaurant", "mexican restaurant", "greek restaurant",
+  "chinese restaurant", "vietnamese restaurant", "burger bar", "barbecue",
+  "lounge", "rooftop patio", "sports pub", "hotel bar", "taco bar",
 ];
 // --text-queries "a,b" runs only those, so adding a term to the list above
 // does not mean re-billing every term already swept.
@@ -421,12 +429,9 @@ if (args["from-raw"]) {
     }
   });
   console.log(`+${byId.size - afterNearby} more from ${calls.text} text-search calls over ${TEXT_AREAS.length} areas.`);
-  console.log(`${byId.size} unique places total (${calls.nearby} nearby + ${calls.text} text calls).`);
-  fs.writeFileSync(USAGE, JSON.stringify(usage, null, 2));
-  console.log(`${MONTH} Places usage: nearby ${spentBefore.nearby}->${usage[MONTH].nearby}, text ${spentBefore.text}->${usage[MONTH].text} (cap ${MONTHLY_CAP}/SKU).`);
-  if (skipped.nearby || skipped.text) {
-    console.log(`!! MONTHLY CAP HIT — skipped ${skipped.nearby} nearby and ${skipped.text} text calls. This sweep is incomplete.`);
-  }
+  // Persist the sweep BEFORE reporting on it. A reporting bug once threw
+  // here and discarded 884 calls' worth of results that were already paid
+  // for — the same failure the usage ledger had, in the other direction.
   // Merge rather than replace: a later sweep may use a narrower query set
   // (to stay inside the month's quota) and must not shrink the cache that
   // --from-raw re-filters against.
@@ -435,6 +440,12 @@ if (args["from-raw"]) {
   for (const [id, place] of byId) merged.set(id, place);
   fs.writeFileSync(RAW, JSON.stringify([...merged.values()]));
   console.log(`raw sweep cache: ${merged.size} places (${merged.size - byId.size} carried over from earlier sweeps).`);
+  console.log(`${byId.size} unique places total (${calls.nearby} nearby + ${calls.text} text calls).`);
+  fs.writeFileSync(USAGE, JSON.stringify(usage, null, 2));
+  console.log(`${MONTH} Places usage: sweep_pro ${spentBefore.sweep_pro}->${usage[MONTH].sweep_pro}/${CAPS.sweep_pro}, details_enterprise ${spentBefore.details_enterprise}->${usage[MONTH].details_enterprise}/${CAPS.details_enterprise}.`);
+  if (skipped.nearby || skipped.text) {
+    console.log(`!! SWEEP CAP HIT — skipped ${skipped.nearby} nearby and ${skipped.text} text calls. This sweep is incomplete.`);
+  }
   for (const [id, place] of merged) byId.set(id, place);
 }
 
