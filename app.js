@@ -554,6 +554,11 @@ function ensureMap() {
     .setView([49.2698, -123.1207], 13);
   map.attributionControl.setPrefix("");
 
+  // Tapping the open map (not a pin) dismisses whatever card is showing.
+  // Marker clicks stop their own propagation below so this doesn't also
+  // fire — and instantly re-clear — when a pin is what got tapped.
+  map.on("click", () => showMapCard(null));
+
   // Leaflet's own wheel zoom debounces (wheelDebounceTime 40ms) and quantises
   // by wheelPxPerZoomLevel, which on a Mac trackpad reads as laggy and steppy.
   // Handling the wheel directly fixes that, but it must still ANIMATE: a
@@ -765,7 +770,10 @@ function renderMap(occurrences) {
       iconAnchor: [PIN_PX / 2, PIN_PX / 2],
     });
     const marker = L.marker([getLat(venue), getLng(venue)], { icon }).addTo(m);
-    marker.on("click", () => selectVenue(venue.id, { pan: true }));
+    marker.on("click", (e) => {
+      L.DomEvent.stopPropagation(e);
+      selectVenue(venue.id, { pan: true });
+    });
     mapMarkers.set(venue.id, marker);
 
   }
