@@ -755,21 +755,16 @@ function renderMap(occurrences) {
     located = [...located].sort((a, b) => distanceKm(a.venue) - distanceKm(b.venue));
   }
 
+  const PIN_PX = 18;
   for (const { venue, occ } of located) {
     const color = markerColor(occ.status);
-    // Popularity (Google review volume) sets pin size and stacking, so the
-    // busiest spots read at a glance: big pins on top, quiet spots small and
-    // underneath. Status keeps the color channel.
-    const reviews = venue.user_ratings_total || 0;
-    const tier = reviews >= 2000 ? "hot" : reviews >= 500 ? "mid" : "base";
-    const px = tier === "hot" ? 26 : tier === "mid" ? 20 : 15;
     const icon = L.divIcon({
-      className: `map-pin map-pin-${tier}`,
+      className: "map-pin",
       html: `<span style="background:${color}"></span>`,
-      iconSize: [px, px],
-      iconAnchor: [px / 2, px / 2],
+      iconSize: [PIN_PX, PIN_PX],
+      iconAnchor: [PIN_PX / 2, PIN_PX / 2],
     });
-    const marker = L.marker([getLat(venue), getLng(venue)], { icon, zIndexOffset: Math.min(reviews, 9000) }).addTo(m);
+    const marker = L.marker([getLat(venue), getLng(venue)], { icon }).addTo(m);
     marker.on("click", () => selectVenue(venue.id, { pan: true }));
     mapMarkers.set(venue.id, marker);
 
