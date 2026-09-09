@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css?v=26" />
-<link rel="stylesheet" href="menu.css?v=16" />
+<link rel="stylesheet" href="menu.css?v=17" />
 </head>
 <body>
   <div class="menu-app">
@@ -43,11 +43,13 @@
       <div id="amenitiesList" class="menu-amenities hidden"></div>
 
       <div class="menu-tabs" id="menuTabs">
-        <button class="menu-tab active" data-cat="food">Food</button>
-        <button class="menu-tab" data-cat="drink">Drinks</button>
+        <button class="menu-tab active" data-cat="food"><span>Food</span><span class="menu-tab-underline"></span></button>
+        <button class="menu-tab" data-cat="drink"><span>Drinks</span><span class="menu-tab-underline"></span></button>
       </div>
 
-      <div id="dealsList" class="menu-deals-list"></div>
+      <div class="menu-deals-card">
+        <div id="dealsList" class="menu-deals-list"></div>
+      </div>
     </div>
 
     <div id="galleryOverlay" class="gallery-overlay hidden">
@@ -84,10 +86,13 @@
   <div id="toast" class="menu-toast hidden">Link copied</div>
 
   <div class="menu-sticky-bar" id="stickyBar">
-    <span class="menu-hours" id="hoursLabel">Hours</span>
+    <span class="menu-hours-wrap">
+      <span class="menu-hours" id="hoursLabel">Hours</span>
+      <span class="menu-ending-soon hidden" id="endingSoon">ending soon</span>
+    </span>
     <button class="menu-share-btn" id="shareBtn">Share</button>
   </div>
 
-  <script src="menu.js?v=15"></script>
+  <script src="menu.js?v=16"></script>
 </body>
 </html>

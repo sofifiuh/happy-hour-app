@@ -24,7 +24,7 @@ body {
   max-width: 480px;
   margin: 0 auto;
   min-height: 100vh;
-  background: var(--sheet-bg);
+  background: var(--content-bg);
   padding-bottom: 110px; /* keep content clear of the fixed bottom bar */
 }
 
@@ -113,12 +113,16 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  background: var(--card);
-  border: 1px solid var(--card-border);
+  background: #efefef;
   border-radius: 999px;
   padding: 6px 12px;
-  font-size: 0.82rem;
+  font-size: 12.5px;
   font-weight: 600;
+  color: #4b4b4b;
+}
+.menu-amenity-pill span:first-child {
+  font-size: 12px;
+  font-weight: 400;
   color: var(--text);
 }
 
@@ -210,9 +214,10 @@ body {
 }
 
 .menu-name {
-  font-size: 1.4rem;
+  font-size: 21px;
   font-weight: 800;
   letter-spacing: -0.01em;
+  color: #363636;
   margin: 0 0 6px;
 }
 
@@ -258,8 +263,8 @@ body {
 .menu-address,
 .menu-phone {
   display: block;
-  color: var(--text-dim);
-  font-size: 0.9rem;
+  color: #706c66;
+  font-size: 13.5px;
   text-decoration: none;
   margin-bottom: 2px;
 }
@@ -287,36 +292,53 @@ body {
   display: flex;
   gap: 20px;
   margin: 22px 0 4px;
-  border-bottom: 1px solid var(--card-border);
 }
 
 .menu-tab {
   font-family: inherit;
   background: transparent;
   border: none;
-  color: var(--text-dim);
-  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #706c66;
+  font-size: 16px;
   font-weight: 600;
-  padding: 8px 2px;
+  padding: 4px 2px;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
 }
 
 .menu-tab.active {
   color: var(--text);
-  border-bottom-color: var(--accent);
+  font-weight: 800;
+}
+
+.menu-tab-underline {
+  width: 20px;
+  height: 2px;
+  border-radius: 1px;
+  background: transparent;
+}
+.menu-tab.active .menu-tab-underline {
+  background: var(--accent);
 }
 
 /* ---------- Deals list ---------- */
 
-.menu-deals-list {
-  padding-top: 6px;
+.menu-deals-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 0 16px;
+  margin-top: 6px;
 }
 
 .menu-deal-row {
   padding: 16px 0;
   border-bottom: 1px solid var(--card-border);
+}
+.menu-deal-row:last-of-type {
+  border-bottom: none;
 }
 
 .menu-deal-top {
@@ -324,11 +346,12 @@ body {
   justify-content: space-between;
   gap: 12px;
   font-weight: 700;
-  font-size: 0.98rem;
+  font-size: 13px;
 }
 
 .menu-deal-price {
   flex-shrink: 0;
+  font-weight: 400;
   color: var(--text);
 }
 
@@ -357,14 +380,26 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 14px 20px calc(14px + env(safe-area-inset-bottom));
-  background: var(--pill);
+  background: #252525;
   color: #fff;
   box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.12);
 }
 
+.menu-hours-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .menu-hours {
-  font-weight: 800;
-  font-size: 1.1rem;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.menu-ending-soon {
+  font-weight: 500;
+  font-size: 17px;
+  color: #ffb742;
 }
 
 .menu-share-btn {
@@ -374,8 +409,8 @@ body {
   border: none;
   border-radius: 999px;
   padding: 8px 18px;
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: 400;
+  font-size: 15px;
   cursor: pointer;
 }
 .menu-share-btn:active {
@@ -403,35 +438,42 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px solid var(--card-border);
-  font-size: 0.88rem;
+  padding: 2px 12px;
+  font-size: 13px;
 }
 .menu-schedule-row.today {
-  border-color: var(--green);
-  background: rgba(15, 157, 104, 0.08);
+  background: #ececec;
+  border-radius: 5px;
+  padding: 4px 12px 2px;
 }
 .menu-schedule-day {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 13.5px;
   font-weight: 600;
 }
-.menu-schedule-today-badge {
-  font-size: 0.68rem;
-  font-weight: 700;
-  color: #fff;
-  background: var(--green);
-  padding: 2px 8px;
-  border-radius: 999px;
+.menu-schedule-row.unavailable {
+  color: #706c66;
 }
 .menu-schedule-hours {
-  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #706c66;
 }
-.menu-schedule-row.today .menu-schedule-hours {
-  color: var(--text);
-  font-weight: 600;
+.menu-schedule-hours .menu-schedule-current {
+  font-weight: 700;
+}
+.menu-schedule-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+}
+.menu-schedule-dot.upcoming {
+  background: var(--accent);
 }
 
 .menu-suggest-link {
@@ -458,8 +500,8 @@ body {
 .menu-map-frame {
   border-radius: 14px;
   overflow: hidden;
-  border: 1px solid var(--card-border);
-  height: 200px;
+  background: #252524;
+  height: 160px;
 }
 .menu-map-frame iframe {
   width: 100%;
@@ -471,8 +513,8 @@ body {
   display: inline-block;
   margin-top: 12px;
   color: var(--accent);
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 400;
+  font-size: 13px;
   text-decoration: none;
 }
 .menu-map-link:hover {

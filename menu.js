@@ -50,30 +50,81 @@ function getAmenityBadges(venue) {
 
 const DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
+// All of a day's windows (primary + any extra_windows advertised for it).
+function windowsForDay(venue, d) {
+  const windows = [];
+  if (venue.happy_hour?.days?.includes(d)) windows.push({ start: venue.happy_hour.start, end: venue.happy_hour.end });
+  for (const w of venue.happy_hour?.extra_windows || []) {
+    if (w?.days?.includes(d) && w.start) windows.push({ start: w.start, end: w.end || "23:59" });
+  }
+  return windows;
+}
+
+function nowHHMM() {
+  const now = new Date();
+  return `${String(now.getHours()).padStart(2, "0")}:${String(now.getMinutes()).padStart(2, "0")}`;
+}
+
+// Which of a set of same-day windows is relevant right now: the live one,
+// else the next upcoming one, else none. String time comparisons are fine
+// here — same-day only, no midnight-crossing lookahead needed.
+function relevantWindow(windows) {
+  const hhmm = nowHHMM();
+  let active = -1, upcoming = -1;
+  windows.forEach((w, i) => {
+    const end = w.end || "23:59";
+    if (hhmm >= w.start && hhmm < end) {
+      if (active === -1) active = i;
+    } else if (w.start > hhmm && (upcoming === -1 || w.start < windows[upcoming].start)) {
+      upcoming = i;
+    }
+  });
+  if (active !== -1) return { index: active, status: "live" };
+  if (upcoming !== -1) return { index: upcoming, status: "upcoming" };
+  return { index: -1, status: "none" };
+}
+
 function renderSchedule(venue) {
-  const days = venue.happy_hour?.days || [];
   const today = new Date().getDay();
 
   els.scheduleList.innerHTML = "";
   for (let d = 0; d < 7; d++) {
+    const isToday = d === today;
+    const windows = windowsForDay(venue, d);
+
     const row = document.createElement("div");
     row.className = "menu-schedule-row";
-    if (d === today) row.classList.add("today");
+    if (isToday) row.classList.add("today");
+    if (!windows.length) row.classList.add("unavailable");
 
     const dayEl = document.createElement("span");
     dayEl.className = "menu-schedule-day";
-    dayEl.innerHTML = escapeHtml(DAY_NAMES[d]) + (d === today ? ` <span class="menu-schedule-today-badge">Today</span>` : "");
+    dayEl.textContent = DAY_NAMES[d];
+    row.appendChild(dayEl);
 
-    const labels = [];
-    if (days.includes(d)) labels.push(hoursLabel(venue));
-    for (const w of venue.happy_hour?.extra_windows || []) {
-      if (w?.days?.includes(d) && w.start) labels.push(windowLabel(w.start, w.end));
-    }
     const hoursEl = document.createElement("span");
     hoursEl.className = "menu-schedule-hours";
-    hoursEl.textContent = labels.length ? labels.join(" & ") : "Unavailable";
 
-    row.appendChild(dayEl);
+    if (!windows.length) {
+      hoursEl.textContent = "Unavailable";
+    } else if (isToday) {
+      const rel = relevantWindow(windows);
+      if (rel.status !== "none") {
+        const dot = document.createElement("span");
+        dot.className = `menu-schedule-dot ${rel.status === "upcoming" ? "upcoming" : ""}`;
+        hoursEl.appendChild(dot);
+      }
+      windows.forEach((w, i) => {
+        if (i > 0) hoursEl.appendChild(document.createTextNode(" • "));
+        const span = document.createElement("span");
+        if (i === rel.index) span.className = "menu-schedule-current";
+        span.textContent = windowLabel(w.start, w.end);
+        hoursEl.appendChild(span);
+      });
+    } else {
+      hoursEl.textContent = windows.map((w) => windowLabel(w.start, w.end)).join(" • ");
+    }
+
     row.appendChild(hoursEl);
     els.scheduleList.appendChild(row);
   }
@@ -138,6 +189,7 @@ const els = {
   menuTabs: document.getElementById("menuTabs"),
   dealsList: document.getElementById("dealsList"),
   hoursLabel: document.getElementById("hoursLabel"),
+  endingSoon: document.getElementById("endingSoon"),
   stickyBar: document.getElementById("stickyBar"),
   shareBtn: document.getElementById("shareBtn"),
   mapFrame: document.getElementById("mapFrame"),
@@ -355,11 +407,30 @@ function init(venue) {
     `mailto:sofiaalvarenga.m@gmail.com?subject=${encodeURIComponent(`Happy hour update: ${venue.name}`)}` +
     `&body=${encodeURIComponent(`Hi! I'd like to suggest an update for ${venue.name}'s happy hour info:\n\n`)}`;
 
-  els.hoursLabel.textContent = hoursLabel(venue);
+  // The sticky bar reflects whichever of today's windows is actually live
+  // or next up (a venue can run two), falling back to the base hours when
+  // there's no window today at all. "ending soon" only applies to a window
+  // that's live right now, within its last half hour.
+  const todaysWindows = windowsForDay(venue, new Date().getDay());
+  const rel = relevantWindow(todaysWindows);
+  if (rel.index !== -1) {
+    const w = todaysWindows[rel.index];
+    els.hoursLabel.textContent = windowLabel(w.start, w.end);
+    let minsLeft = null;
+    if (rel.status === "live") {
+      const [eh, em] = (w.end || "23:59").split(":").map(Number);
+      const now = new Date();
+      minsLeft = eh * 60 + em - (now.getHours() * 60 + now.getMinutes());
+    }
+    els.endingSoon.classList.toggle("hidden", !(minsLeft !== null && minsLeft > 0 && minsLeft <= 30));
+  } else {
+    els.hoursLabel.textContent = hoursLabel(venue);
+  }
 
   if (address) {
     els.mapFrame.src = `https://maps.google.com/maps?q=${encodeURIComponent(address)}&output=embed`;
     els.mapLink.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    els.mapLink.textContent = address;
   } else {
     document.querySelector(".menu-map-section")?.classList.add("hidden");
   }
