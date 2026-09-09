@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=28" />
+<link rel="stylesheet" href="styles.css?v=29" />
 </head>
 <body>
   <div class="app">
@@ -35,7 +35,16 @@
           <input type="text" id="searchInput" placeholder="Search for restaurants…" autocomplete="off" />
         </div>
         <button id="filterBtn" class="filter-toggle-btn" aria-label="Filters">
-          <span class="filter-toggle-icon">⚙</span>
+          <span class="filter-toggle-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <circle cx="9" cy="6" r="2" fill="currentColor" stroke="none"></circle>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <circle cx="15" cy="12" r="2" fill="currentColor" stroke="none"></circle>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+              <circle cx="11" cy="18" r="2" fill="currentColor" stroke="none"></circle>
+            </svg>
+          </span>
           <span id="filterCount" class="filter-count hidden">0</span>
         </button>
       </div>
@@ -59,7 +68,16 @@
               <input type="text" id="mapSearchInput" placeholder="Search for restaurants…" autocomplete="off" />
             </div>
             <button id="mapFilterBtn" class="filter-toggle-btn" aria-label="Filters">
-              <span class="filter-toggle-icon">⚙</span>
+              <span class="filter-toggle-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <circle cx="9" cy="6" r="2" fill="currentColor" stroke="none"></circle>
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <circle cx="15" cy="12" r="2" fill="currentColor" stroke="none"></circle>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+              <circle cx="11" cy="18" r="2" fill="currentColor" stroke="none"></circle>
+            </svg>
+          </span>
               <span id="mapFilterCount" class="filter-count hidden">0</span>
             </button>
           </div>

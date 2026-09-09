@@ -157,6 +157,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--text);
+}
+.filter-toggle-icon {
+  display: flex;
 }
 .filter-toggle-btn.has-active {
   background: var(--accent);
