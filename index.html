@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=29" />
+<link rel="stylesheet" href="styles.css?v=30" />
 </head>
 <body>
   <div class="app">
@@ -113,60 +113,6 @@
     <button class="view-tab" data-view="map">📍 Map</button>
   </div>
 
-  <div id="venueModal" class="modal hidden">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 id="modalTitle">Add a Spot</h2>
-        <button id="closeModalBtn" class="btn-icon">&times;</button>
-      </div>
-      <form id="venueForm">
-        <input type="hidden" id="venueId" />
-
-        <label>Name</label>
-        <input type="text" id="venueName" placeholder="e.g. The Tipsy Fox" required />
-
-        <label>Address (optional)</label>
-        <input type="text" id="venueAddress" placeholder="e.g. 123 Main St" />
-
-        <label>Phone (optional)</label>
-        <input type="text" id="venuePhone" placeholder="e.g. 604 239 9304" />
-
-        <label>Days</label>
-        <div class="day-picker" id="dayPicker">
-          <button type="button" class="day-btn" data-day="0">Sun</button>
-          <button type="button" class="day-btn" data-day="1">Mon</button>
-          <button type="button" class="day-btn" data-day="2">Tue</button>
-          <button type="button" class="day-btn" data-day="3">Wed</button>
-          <button type="button" class="day-btn" data-day="4">Thu</button>
-          <button type="button" class="day-btn" data-day="5">Fri</button>
-          <button type="button" class="day-btn" data-day="6">Sat</button>
-        </div>
-
-        <div class="time-row">
-          <div>
-            <label>Start Time</label>
-            <input type="time" id="startTime" required />
-          </div>
-          <div>
-            <label>End Time</label>
-            <input type="time" id="endTime" required />
-          </div>
-        </div>
-
-        <label>Deals</label>
-        <div id="dealsList" class="deals-edit-list"></div>
-        <button type="button" id="addDealBtn" class="btn-secondary">+ Add Deal</button>
-
-        <div class="modal-actions">
-          <button type="button" id="deleteVenueBtn" class="btn-danger hidden">Delete</button>
-          <div class="modal-actions-right">
-            <button type="button" id="cancelBtn" class="btn-secondary">Cancel</button>
-            <button type="submit" class="btn-primary">Save Spot</button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
 
   <div id="filterModal" class="modal hidden">
     <div class="modal-content">
@@ -221,6 +167,6 @@
     <a href="spots/index.html">Browse all spots A–Z</a>
   </footer>
 
-  <script src="app.js?v=47"></script>
+  <script src="app.js?v=48"></script>
 </body>
 </html>

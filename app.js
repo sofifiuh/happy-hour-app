@@ -18,9 +18,6 @@ const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 function getAddress(venue) {
   return venue.formatted_address || "";
 }
-function getPhone(venue) {
-  return venue.formatted_phone_number || "";
-}
 function getLat(venue) {
   return venue.geometry?.location?.lat;
 }
@@ -74,8 +71,6 @@ let currentFilter = "all";
 let currentView = "list";
 let searchQuery = "";
 let activeAmenityFilters = new Set();
-let selectedDays = new Set();
-let editingId = null;
 let map = null;
 let mapMarkers = new Map(); // venue id -> Leaflet marker
 // Carousel<->map sync state. Only HUMAN input may pan the map: a real
@@ -110,18 +105,6 @@ const els = {
   mapEmpty: document.getElementById("mapEmpty"),
   mapLocateBtn: document.getElementById("mapLocateBtn"),
   mapToast: document.getElementById("mapToast"),
-  modal: document.getElementById("venueModal"),
-  modalTitle: document.getElementById("modalTitle"),
-  form: document.getElementById("venueForm"),
-  venueId: document.getElementById("venueId"),
-  venueName: document.getElementById("venueName"),
-  venueAddress: document.getElementById("venueAddress"),
-  venuePhone: document.getElementById("venuePhone"),
-  dayPicker: document.getElementById("dayPicker"),
-  startTime: document.getElementById("startTime"),
-  endTime: document.getElementById("endTime"),
-  dealsList: document.getElementById("dealsList"),
-  deleteBtn: document.getElementById("deleteVenueBtn"),
   searchInput: document.getElementById("searchInput"),
   mapSearchInput: document.getElementById("mapSearchInput"),
   filterBtn: document.getElementById("filterBtn"),
@@ -166,34 +149,6 @@ async function loadVenueData() {
   } catch {
     // offline or fetch failed — keep whatever the cache gave us
   }
-}
-
-function newManualVenue() {
-  return {
-    id: crypto.randomUUID(),
-    place_id: null,
-    name: "",
-    formatted_address: "",
-    address_components: null,
-    geometry: null,
-    formatted_phone_number: "",
-    international_phone_number: null,
-    website: null,
-    types: [],
-    business_status: "OPERATIONAL",
-    price_level: null,
-    rating: null,
-    user_ratings_total: null,
-    opening_hours: { weekday_text: [] },
-    photos: [],
-    happy_hour: { days: [1, 2, 3, 4, 5], start: "16:00", end: "18:00", deals: [] },
-    data_source: "manual",
-    last_synced_at: null,
-  };
-}
-
-function saveVenues() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(venues));
 }
 
 function pad(n) {
@@ -398,7 +353,7 @@ function renderList(occurrences, now) {
     empty.className = "empty-state";
     empty.textContent =
       venues.length === 0
-        ? "No spots yet. Tap “+ Add Spot” to add your first happy hour."
+        ? "No spots yet — check back soon."
         : "Nothing matches this filter.";
     els.venueList.appendChild(empty);
     return;
@@ -462,16 +417,6 @@ function renderListRow(venue, occ, now) {
   } else {
     photo.textContent = "🍸";
   }
-  const editBtn = document.createElement("button");
-  editBtn.type = "button";
-  editBtn.className = "list-row-edit";
-  editBtn.setAttribute("aria-label", "Edit spot");
-  editBtn.textContent = "✎";
-  editBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    openModal(venue);
-  });
-  photo.appendChild(editBtn);
   row.appendChild(photo);
 
   const main = document.createElement("div");
@@ -1041,145 +986,6 @@ function selectVenue(venueId, { pan = false } = {}) {
   if (pan) panToVenue(venueId);
   showMapCard(venueId);
 }
-
-// ---------- Modal handling ----------
-
-function openModal(venue) {
-  editingId = venue ? venue.id : null;
-  els.modalTitle.textContent = venue ? "Edit Spot" : "Add a Spot";
-  els.deleteBtn.classList.toggle("hidden", !venue);
-
-  els.venueId.value = venue ? venue.id : "";
-  els.venueName.value = venue ? venue.name : "";
-  els.venueAddress.value = venue ? getAddress(venue) : "";
-  els.venuePhone.value = venue ? getPhone(venue) : "";
-  els.startTime.value = venue ? getStart(venue) : "16:00";
-  els.endTime.value = venue ? getEnd(venue) : "18:00";
-
-  selectedDays = new Set(venue ? getDays(venue) : [1, 2, 3, 4, 5]);
-  renderDayPicker();
-
-  els.dealsList.innerHTML = "";
-  const deals = venue && getDeals(venue).length ? getDeals(venue) : [{ name: "", price: "", category: "food", description: "" }];
-  for (const d of deals) addDealRow(d.name, d.price, d.category, d.description);
-
-  els.modal.classList.remove("hidden");
-}
-
-function closeModal() {
-  els.modal.classList.add("hidden");
-  editingId = null;
-}
-
-function renderDayPicker() {
-  els.dayPicker.querySelectorAll(".day-btn").forEach((btn) => {
-    const day = Number(btn.dataset.day);
-    btn.classList.toggle("selected", selectedDays.has(day));
-  });
-}
-
-els.dayPicker.addEventListener("click", (e) => {
-  const btn = e.target.closest(".day-btn");
-  if (!btn) return;
-  const day = Number(btn.dataset.day);
-  if (selectedDays.has(day)) selectedDays.delete(day);
-  else selectedDays.add(day);
-  renderDayPicker();
-});
-
-function addDealRow(name = "", price = "", category = "food", description = "") {
-  const row = document.createElement("div");
-  row.className = "deal-edit-row";
-  row.innerHTML = `
-    <div class="deal-edit-row-main">
-      <input type="text" class="deal-name" placeholder="Deal (e.g. Draft beers)" value="${escapeHtml(name)}" />
-      <input type="text" class="deal-price" placeholder="Price" value="${escapeHtml(price)}" />
-      <button type="button" title="Remove">&times;</button>
-    </div>
-    <div class="deal-edit-row-extra">
-      <select class="deal-category">
-        <option value="food"${category === "food" ? " selected" : ""}>Food</option>
-        <option value="drink"${category === "drink" ? " selected" : ""}>Drink</option>
-      </select>
-      <input type="text" class="deal-description" placeholder="Description (optional)" value="${escapeHtml(description || "")}" />
-    </div>
-  `;
-  row.querySelector("button").addEventListener("click", () => row.remove());
-  els.dealsList.appendChild(row);
-}
-
-function escapeHtml(str) {
-  const div = document.createElement("div");
-  div.textContent = str;
-  return div.innerHTML;
-}
-
-document.getElementById("closeModalBtn").addEventListener("click", closeModal);
-document.getElementById("cancelBtn").addEventListener("click", closeModal);
-document.getElementById("addDealBtn").addEventListener("click", () => addDealRow());
-
-els.modal.addEventListener("click", (e) => {
-  if (e.target === els.modal) closeModal();
-});
-
-els.deleteBtn.addEventListener("click", () => {
-  if (!editingId) return;
-  venues = venues.filter((v) => v.id !== editingId);
-  saveVenues();
-  closeModal();
-  render();
-  renderMapView();
-});
-
-els.form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const name = els.venueName.value.trim();
-  if (!name) return;
-  if (selectedDays.size === 0) {
-    alert("Pick at least one day.");
-    return;
-  }
-
-  const deals = [...els.dealsList.querySelectorAll(".deal-edit-row")]
-    .map((row) => ({
-      name: row.querySelector(".deal-name").value.trim(),
-      price: row.querySelector(".deal-price").value.trim(),
-      category: row.querySelector(".deal-category").value,
-      description: row.querySelector(".deal-description").value.trim(),
-    }))
-    .filter((d) => d.name);
-
-  // Start from the existing Places-schema record (preserving place_id,
-  // geometry, rating, photos, etc. — none of which this simple form edits)
-  // and only overlay the fields the form actually owns. Editing the
-  // address here does NOT re-geocode it; that would need a real Places
-  // API/geocoder call, which isn't wired up yet.
-  const existing = editingId ? venues.find((v) => v.id === editingId) : null;
-  const venueData = existing ? JSON.parse(JSON.stringify(existing)) : newManualVenue();
-
-  venueData.id = editingId || venueData.id;
-  venueData.name = name;
-  venueData.formatted_address = els.venueAddress.value.trim();
-  venueData.formatted_phone_number = els.venuePhone.value.trim();
-  venueData.happy_hour = {
-    days: [...selectedDays].sort(),
-    start: els.startTime.value,
-    end: els.endTime.value,
-    deals,
-  };
-
-  if (editingId) {
-    venues = venues.map((v) => (v.id === editingId ? venueData : v));
-  } else {
-    venues.push(venueData);
-  }
-
-  saveVenues();
-  closeModal();
-  render();
-  renderMapView();
-});
 
 // Two filter-chip bars exist in the DOM (list view + the floating one over
 // the map) and must stay in sync — toggle by matching data-filter rather

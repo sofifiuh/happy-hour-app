@@ -329,7 +329,6 @@ body {
 }
 
 .list-row-photo {
-  position: relative;
   flex-shrink: 0;
   width: 74px;
   height: 74px;
@@ -340,22 +339,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
-}
-
-.list-row-edit {
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(6px);
-  color: #1c1b1a;
-  font-size: 0.7rem;
-  line-height: 1;
-  cursor: pointer;
 }
 
 .list-row-main {
@@ -755,7 +738,7 @@ body.map-fullscreen .sheet {
 
 /* ---------- Generic buttons (modal) ---------- */
 
-.btn-primary, .btn-secondary, .btn-danger, .btn-icon {
+.btn-primary, .btn-secondary, .btn-icon {
   font-family: inherit;
   font-size: 0.95rem;
   border: none;
@@ -764,7 +747,7 @@ body.map-fullscreen .sheet {
   cursor: pointer;
   transition: transform 0.08s ease, opacity 0.15s ease;
 }
-.btn-primary:active, .btn-secondary:active, .btn-danger:active { transform: scale(0.97); }
+.btn-primary:active, .btn-secondary:active { transform: scale(0.97); }
 
 .btn-primary {
   background: var(--accent);
@@ -776,11 +759,6 @@ body.map-fullscreen .sheet {
   background: transparent;
   color: var(--text);
   border: 1px solid var(--card-border);
-}
-.btn-danger {
-  background: transparent;
-  color: var(--red);
-  border: 1px solid var(--red);
 }
 .btn-icon {
   background: transparent;
@@ -830,96 +808,6 @@ body.map-fullscreen .sheet {
   font-size: 1.4rem;
   font-weight: 800;
   letter-spacing: -0.01em;
-}
-
-#venueForm label {
-  display: block;
-  font-size: 0.85rem;
-  color: var(--text-dim);
-  margin: 14px 0 6px;
-}
-
-#venueForm input[type="text"],
-#venueForm input[type="time"] {
-  width: 100%;
-  font-family: inherit;
-  font-size: 1rem;
-  background: var(--card);
-  color: var(--text);
-  border: 1px solid var(--card-border);
-  border-radius: 10px;
-  padding: 10px 12px;
-}
-
-.day-picker {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-.day-btn {
-  font-family: inherit;
-  background: var(--card);
-  color: var(--text-dim);
-  border: 1px solid var(--card-border);
-  border-radius: 8px;
-  padding: 8px 10px;
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-.day-btn.selected {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #1a1200;
-  font-weight: 700;
-}
-
-.time-row {
-  display: flex;
-  gap: 12px;
-}
-.time-row > div { flex: 1; }
-
-.deals-edit-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.deal-edit-row {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--card-border);
-}
-.deal-edit-row-main {
-  display: flex;
-  gap: 8px;
-}
-.deal-edit-row-extra {
-  display: flex;
-  gap: 8px;
-}
-.deal-edit-row input,
-.deal-edit-row select {
-  font-family: inherit;
-  background: var(--card);
-  color: var(--text);
-  border: 1px solid var(--card-border);
-  border-radius: 8px;
-  padding: 8px 10px;
-  font-size: 0.9rem;
-}
-.deal-edit-row .deal-name { flex: 2; }
-.deal-edit-row .deal-price { flex: 1; }
-.deal-edit-row .deal-category { flex: 0 0 auto; }
-.deal-edit-row .deal-description { flex: 1; }
-.deal-edit-row-main button {
-  background: transparent;
-  border: none;
-  color: var(--red);
-  font-size: 1.2rem;
-  cursor: pointer;
-  padding: 0 6px;
 }
 
 .modal-actions {
