@@ -8,6 +8,16 @@ const NAV_STATE_KEY = "happyHourNavState";
 // is appended at load time, so every pipeline re-sync reseeds cached clients.
 const SEED_VERSION_BASE = "2026-vancouver-json-v1";
 const DAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const FULL_DAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+function formatHHMM(hhmm) {
+  const [h, m] = hhmm.split(":").map(Number);
+  return formatShortTimeDate(new Date(1970, 0, 1, h, m));
+}
+
+function dateTimeLabel({ day, time }) {
+  return `${FULL_DAY_NAMES[day]} at ${formatHHMM(time)}`;
+}
 
 // ---------- Venue accessors ----------
 // Venue records mirror the Google Places API response shape (see
@@ -68,6 +78,9 @@ let venues = loadCachedVenues();
 loadVenueData();
 initUserLocation();
 let currentFilter = "all";
+// A chosen day-of-week + time-of-day ("Wed, 3pm") for planning ahead — never
+// a calendar date. Null until the Date & Time picker is applied.
+let dateTimeFilter = null;
 let currentView = "list";
 let searchQuery = "";
 let activeAmenityFilters = new Set();
@@ -112,6 +125,9 @@ const els = {
   mapFilterBtn: document.getElementById("mapFilterBtn"),
   mapFilterCount: document.getElementById("mapFilterCount"),
   filterModal: document.getElementById("filterModal"),
+  dateTimeModal: document.getElementById("dateTimeModal"),
+  dateTimeDayPicker: document.getElementById("dateTimeDayPicker"),
+  dateTimeTimeInput: document.getElementById("dateTimeTimeInput"),
   mapCardCarousel: document.getElementById("mapCardCarousel"),
 };
 
@@ -211,6 +227,25 @@ function getVenueOccurrence(venue, now) {
   return { status: "none" };
 }
 
+// Like getVenueOccurrence, but against a chosen day-of-week + time-of-day
+// ("planning ahead" — Wed, 3pm) instead of the actual current moment. Status
+// is "scheduled" rather than live/upcoming, since neither describes a
+// hypothetical day. start/end carry only hour:minute — the date portion is
+// arbitrary and never shown.
+function getVenueOccurrenceAt(venue, day, hhmm) {
+  const windows = venueWindows(venue).filter((w) => w.days.includes(day));
+  for (const win of windows) {
+    const end = win.end || "23:59";
+    const overnight = end <= win.start;
+    const inWindow = overnight ? hhmm >= win.start || hhmm < end : hhmm >= win.start && hhmm < end;
+    if (!inWindow) continue;
+    const [sh, sm] = win.start.split(":").map(Number);
+    const [eh, em] = overnight ? [23, 59] : end.split(":").map(Number);
+    return { status: "scheduled", start: new Date(1970, 0, 1, sh, sm), end: new Date(1970, 0, 1, eh, em) };
+  }
+  return { status: "none" };
+}
+
 function compressDays(days) {
   if (days.length === 7) return "Daily";
   const sorted = [...days].sort((a, b) => a - b);
@@ -247,6 +282,10 @@ function scheduleText(venue) {
 }
 
 function getOccurrences() {
+  if (currentFilter === "datetime" && dateTimeFilter) {
+    const { day, time } = dateTimeFilter;
+    return venues.map((v) => ({ venue: v, occ: getVenueOccurrenceAt(v, day, time) }));
+  }
   const now = new Date();
   return venues.map((v) => ({ venue: v, occ: getVenueOccurrence(v, now) }));
 }
@@ -278,6 +317,8 @@ function applyFilters(occurrences) {
       filtered = filtered.filter((o) => o.occ.status === "live");
     } else if (currentFilter === "upcoming") {
       filtered = filtered.filter((o) => o.occ.status === "upcoming");
+    } else if (currentFilter === "datetime" && dateTimeFilter) {
+      filtered = filtered.filter((o) => o.occ.status === "scheduled");
     }
   }
 
@@ -338,7 +379,7 @@ function renderList(occurrences, now) {
   let filtered = applyFilters(occurrences);
 
   filtered = [...filtered].sort((a, b) => {
-    const rank = { live: 0, upcoming: 1, none: 2 };
+    const rank = { live: 0, upcoming: 1, scheduled: 0, none: 2 };
     const r = rank[a.occ.status] - rank[b.occ.status];
     if (r !== 0) return r;
     const at = a.occ.start ? a.occ.start.getTime() : Infinity;
@@ -365,14 +406,15 @@ function renderList(occurrences, now) {
   const statusGroups = [
     { key: "live", label: userPos ? "Happening now · closest first" : "Happening now" },
     { key: "upcoming", label: "Upcoming" },
+    { key: "scheduled", label: dateTimeFilter ? `Open ${dateTimeLabel(dateTimeFilter)}` : "" },
     { key: "none", label: "No upcoming date" },
   ];
-  const buckets = { live: [], upcoming: [], none: [] };
+  const buckets = { live: [], upcoming: [], scheduled: [], none: [] };
   for (const item of filtered) buckets[item.occ.status].push(item);
   if (userPos) {
     // Decorate-sort-undecorate: distanceKm is constant per render, and the
     // comparator would otherwise recompute it on every comparison.
-    for (const key of ["live", "upcoming"]) {
+    for (const key of ["live", "upcoming", "scheduled"]) {
       const keyed = buckets[key].map((item) => ({ item, km: distanceKm(item.venue) }));
       keyed.sort((a, b) => (a.km ?? Infinity) - (b.km ?? Infinity));
       buckets[key] = keyed.map((k) => k.item);
@@ -435,7 +477,7 @@ function renderListRow(venue, occ, now) {
   const time = document.createElement("span");
   time.className = "list-row-time";
   const dot = document.createElement("span");
-  dot.className = `list-row-dot ${occ.status === "upcoming" ? "upcoming" : ""}`;
+  dot.className = `list-row-dot ${occ.status === "upcoming" || occ.status === "scheduled" ? "upcoming" : ""}`;
   time.appendChild(dot);
   time.appendChild(document.createTextNode(occurrenceTimeLabel(occ)));
   top.appendChild(time);
@@ -683,7 +725,7 @@ els.mapLocateBtn.addEventListener("click", locateMe);
 
 function markerColor(status) {
   if (status === "live") return "#34d399";
-  if (status === "upcoming") return "#ff9f43";
+  if (status === "upcoming" || status === "scheduled") return "#ff9f43";
   return "#9a9aa5";
 }
 
@@ -828,6 +870,9 @@ function buildMapCard(venue, occ) {
   } else if (occ.status === "upcoming") {
     status.classList.add("upcoming");
     status.textContent = "Upcoming";
+  } else if (occ.status === "scheduled") {
+    status.classList.add("upcoming");
+    status.textContent = "Available";
   } else {
     status.textContent = "No date";
   }
@@ -993,11 +1038,10 @@ function selectVenue(venueId, { pan = false } = {}) {
 // everywhere.
 document.querySelectorAll(".filter-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
-    // "Date & Time" isn't a status filter — it opens the same amenity/time
-    // filter modal as the gear icon rather than switching currentFilter.
+    // "Date & Time" isn't a plain status filter — it opens a day/time picker
+    // rather than switching currentFilter immediately (Apply does that).
     if (btn.dataset.filter === "datetime") {
-      renderFilterToggles();
-      els.filterModal.classList.remove("hidden");
+      openDateTimeModal();
       return;
     }
     currentFilter = btn.dataset.filter;
@@ -1005,6 +1049,66 @@ document.querySelectorAll(".filter-btn").forEach((btn) => {
     render();
     renderMapView();
   });
+});
+
+// ---------- Date & Time filter ----------
+// Lets someone plan ahead ("Wed, 3pm") instead of only seeing what's live or
+// upcoming from right now — a day-of-week + time-of-day, never a calendar
+// date (see dateTimeFilter/getVenueOccurrenceAt above).
+
+function openDateTimeModal() {
+  const now = new Date();
+  const initial = dateTimeFilter || { day: now.getDay(), time: `${pad(now.getHours())}:${pad(now.getMinutes())}` };
+  els.dateTimeDayPicker.querySelectorAll(".daytime-day-btn").forEach((b) => {
+    b.classList.toggle("selected", Number(b.dataset.day) === initial.day);
+  });
+  els.dateTimeTimeInput.value = initial.time;
+  els.dateTimeModal.classList.remove("hidden");
+}
+
+els.dateTimeDayPicker.addEventListener("click", (e) => {
+  const btn = e.target.closest(".daytime-day-btn");
+  if (!btn) return;
+  els.dateTimeDayPicker.querySelectorAll(".daytime-day-btn").forEach((b) => b.classList.toggle("selected", b === btn));
+});
+
+// The tab itself doubles as the display for the current pick ("Date & Time"
+// -> "Wed 3pm") so the choice stays visible without opening the picker back up.
+function updateDateTimeTabLabels() {
+  const label = dateTimeFilter ? `${DAY_NAMES[dateTimeFilter.day]} ${formatHHMM(dateTimeFilter.time)}` : "Date & Time";
+  document.querySelectorAll('[data-filter="datetime"]').forEach((b) => { b.textContent = label; });
+}
+
+document.getElementById("closeDateTimeModalBtn").addEventListener("click", () => {
+  els.dateTimeModal.classList.add("hidden");
+});
+els.dateTimeModal.addEventListener("click", (e) => {
+  if (e.target === els.dateTimeModal) els.dateTimeModal.classList.add("hidden");
+});
+
+document.getElementById("dateTimeClearBtn").addEventListener("click", () => {
+  dateTimeFilter = null;
+  if (currentFilter === "datetime") {
+    currentFilter = "all";
+    document.querySelectorAll(".filter-btn").forEach((b) => b.classList.toggle("active", b.dataset.filter === currentFilter));
+  }
+  updateDateTimeTabLabels();
+  els.dateTimeModal.classList.add("hidden");
+  render();
+  renderMapView();
+});
+
+document.getElementById("dateTimeApplyBtn").addEventListener("click", () => {
+  const selectedBtn = els.dateTimeDayPicker.querySelector(".daytime-day-btn.selected");
+  const day = selectedBtn ? Number(selectedBtn.dataset.day) : new Date().getDay();
+  const time = els.dateTimeTimeInput.value || "17:00";
+  dateTimeFilter = { day, time };
+  currentFilter = "datetime";
+  document.querySelectorAll(".filter-btn").forEach((b) => b.classList.toggle("active", b.dataset.filter === currentFilter));
+  updateDateTimeTabLabels();
+  els.dateTimeModal.classList.add("hidden");
+  render();
+  renderMapView();
 });
 
 function setView(view) {
@@ -1029,6 +1133,7 @@ function saveNavState(venueId) {
         view: currentView,
         scrollY: window.scrollY,
         filter: currentFilter,
+        dateTimeFilter,
         search: searchQuery,
         activeAmenityFilters: [...activeAmenityFilters],
         mapCenter: map ? [map.getCenter().lat, map.getCenter().lng] : null,
@@ -1056,6 +1161,10 @@ function restoreNavState() {
   if (saved.filter) {
     currentFilter = saved.filter;
     document.querySelectorAll(".filter-btn").forEach((b) => b.classList.toggle("active", b.dataset.filter === currentFilter));
+  }
+  if (saved.dateTimeFilter) {
+    dateTimeFilter = saved.dateTimeFilter;
+    updateDateTimeTabLabels();
   }
   if (typeof saved.search === "string") {
     searchQuery = saved.search;

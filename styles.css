@@ -823,6 +823,55 @@ body.map-fullscreen .sheet {
   gap: 10px;
 }
 
+/* ---------- Date & Time filter modal ---------- */
+
+.daytime-hint {
+  margin: 0 0 4px;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
+
+.daytime-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin: 18px 0 8px;
+}
+
+.daytime-day-picker {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.daytime-day-btn {
+  font-family: inherit;
+  background: var(--card);
+  color: var(--text-dim);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.daytime-day-btn.selected {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1a1200;
+  font-weight: 700;
+}
+
+.daytime-time-input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
 .site-footer {
   text-align: center;
   padding: 18px 0 28px;
