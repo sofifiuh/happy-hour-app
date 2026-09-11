@@ -1058,7 +1058,7 @@ document.querySelectorAll(".filter-btn").forEach((btn) => {
 
 function openDateTimeModal() {
   const now = new Date();
-  const initial = dateTimeFilter || { day: now.getDay(), time: `${pad(now.getHours())}:${pad(now.getMinutes())}` };
+  const initial = dateTimeFilter || { day: now.getDay(), time: `${pad(now.getHours())}:00` };
   els.dateTimeDayPicker.querySelectorAll(".daytime-day-btn").forEach((b) => {
     b.classList.toggle("selected", Number(b.dataset.day) === initial.day);
   });
@@ -1075,7 +1075,12 @@ els.dateTimeDayPicker.addEventListener("click", (e) => {
 // The tab itself doubles as the display for the current pick ("Date & Time"
 // -> "Wed 3pm") so the choice stays visible without opening the picker back up.
 function updateDateTimeTabLabels() {
-  const label = dateTimeFilter ? `${DAY_NAMES[dateTimeFilter.day]} ${formatHHMM(dateTimeFilter.time)}` : "Date & Time";
+  // Always keep "Date & Time" itself visible — the pick shows alongside it,
+  // never in place of it, so it's always clear this tab can be reopened or
+  // cleared, not just relabeled to its current value.
+  const label = dateTimeFilter
+    ? `Date & Time: ${DAY_NAMES[dateTimeFilter.day]} ${formatHHMM(dateTimeFilter.time)}`
+    : "Date & Time";
   document.querySelectorAll('[data-filter="datetime"]').forEach((b) => { b.textContent = label; });
 }
 
@@ -1101,7 +1106,7 @@ document.getElementById("dateTimeClearBtn").addEventListener("click", () => {
 document.getElementById("dateTimeApplyBtn").addEventListener("click", () => {
   const selectedBtn = els.dateTimeDayPicker.querySelector(".daytime-day-btn.selected");
   const day = selectedBtn ? Number(selectedBtn.dataset.day) : new Date().getDay();
-  const time = els.dateTimeTimeInput.value || "17:00";
+  const time = els.dateTimeTimeInput.value;
   dateTimeFilter = { day, time };
   currentFilter = "datetime";
   document.querySelectorAll(".filter-btn").forEach((b) => b.classList.toggle("active", b.dataset.filter === currentFilter));
