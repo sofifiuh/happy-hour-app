@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=31" />
+<link rel="stylesheet" href="styles.css?v=34" />
 </head>
 <body>
   <div class="app">
@@ -181,33 +181,44 @@
         <button type="button" class="daytime-day-btn" data-day="6">Sat</button>
       </div>
 
-      <label class="daytime-label" for="dateTimeTimeInput">Time</label>
-      <select id="dateTimeTimeInput" class="daytime-time-input">
-        <option value="00:00">12am</option>
-        <option value="01:00">1am</option>
-        <option value="02:00">2am</option>
-        <option value="03:00">3am</option>
-        <option value="04:00">4am</option>
-        <option value="05:00">5am</option>
-        <option value="06:00">6am</option>
-        <option value="07:00">7am</option>
-        <option value="08:00">8am</option>
-        <option value="09:00">9am</option>
-        <option value="10:00">10am</option>
-        <option value="11:00">11am</option>
-        <option value="12:00">12pm</option>
-        <option value="13:00">1pm</option>
-        <option value="14:00">2pm</option>
-        <option value="15:00">3pm</option>
-        <option value="16:00">4pm</option>
-        <option value="17:00">5pm</option>
-        <option value="18:00">6pm</option>
-        <option value="19:00">7pm</option>
-        <option value="20:00">8pm</option>
-        <option value="21:00">9pm</option>
-        <option value="22:00">10pm</option>
-        <option value="23:00">11pm</option>
-      </select>
+      <label class="daytime-label">Time</label>
+      <div class="daytime-time-picker" id="dateTimeTimePicker">
+        <button type="button" class="daytime-time-btn daytime-time-slot" data-time="16:00">
+          <span class="daytime-time-slot-name">Afternoon</span>
+          <span class="daytime-time-slot-range">2–6pm</span>
+        </button>
+        <button type="button" class="daytime-time-btn daytime-time-slot" data-time="21:00">
+          <span class="daytime-time-slot-name">Late Night</span>
+          <span class="daytime-time-slot-range">9pm+</span>
+        </button>
+        <select id="dateTimeCustomTime" class="daytime-time-btn daytime-time-custom" aria-label="Custom time">
+          <option value="" disabled selected>Custom</option>
+          <option value="00:00">12am</option>
+          <option value="01:00">1am</option>
+          <option value="02:00">2am</option>
+          <option value="03:00">3am</option>
+          <option value="04:00">4am</option>
+          <option value="05:00">5am</option>
+          <option value="06:00">6am</option>
+          <option value="07:00">7am</option>
+          <option value="08:00">8am</option>
+          <option value="09:00">9am</option>
+          <option value="10:00">10am</option>
+          <option value="11:00">11am</option>
+          <option value="12:00">12pm</option>
+          <option value="13:00">1pm</option>
+          <option value="14:00">2pm</option>
+          <option value="15:00">3pm</option>
+          <option value="16:00">4pm</option>
+          <option value="17:00">5pm</option>
+          <option value="18:00">6pm</option>
+          <option value="19:00">7pm</option>
+          <option value="20:00">8pm</option>
+          <option value="21:00">9pm</option>
+          <option value="22:00">10pm</option>
+          <option value="23:00">11pm</option>
+        </select>
+      </div>
 
       <div class="modal-actions">
         <button type="button" id="dateTimeClearBtn" class="btn-secondary">Clear</button>
@@ -224,6 +235,6 @@
     <a href="spots/index.html">Browse all spots A–Z</a>
   </footer>
 
-  <script src="app.js?v=50"></script>
+  <script src="app.js?v=52"></script>
 </body>
 </html>

@@ -861,15 +861,59 @@ body.map-fullscreen .sheet {
   font-weight: 700;
 }
 
-.daytime-time-input {
-  width: 100%;
+.daytime-time-picker {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.daytime-time-btn {
   font-family: inherit;
-  font-size: 1rem;
   background: var(--card);
-  color: var(--text);
+  color: var(--text-dim);
   border: 1px solid var(--card-border);
-  border-radius: 10px;
-  padding: 10px 12px;
+  border-radius: 14px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.daytime-time-btn.selected {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #1a1200;
+  font-weight: 700;
+}
+
+/* Slot chips ("Afternoon" / "Late Night") are named periods with their real
+   time range shown underneath — never a bare number that could read as an
+   arbitrary pick. */
+.daytime-time-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 92px;
+}
+.daytime-time-slot-name {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.daytime-time-slot.selected .daytime-time-slot-name {
+  color: #1a1200;
+}
+.daytime-time-slot-range {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+.daytime-time-slot.selected .daytime-time-slot-range {
+  color: rgba(26, 18, 0, 0.7);
+}
+
+.daytime-time-custom {
+  align-self: center;
+  /* Native select arrow — simpler and more reliable across browsers than a
+     hand-drawn chevron background, and still reads clearly as a dropdown. */
 }
 
 .site-footer {

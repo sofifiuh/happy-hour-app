@@ -127,7 +127,8 @@ const els = {
   filterModal: document.getElementById("filterModal"),
   dateTimeModal: document.getElementById("dateTimeModal"),
   dateTimeDayPicker: document.getElementById("dateTimeDayPicker"),
-  dateTimeTimeInput: document.getElementById("dateTimeTimeInput"),
+  dateTimeTimePicker: document.getElementById("dateTimeTimePicker"),
+  dateTimeCustomTime: document.getElementById("dateTimeCustomTime"),
   mapCardCarousel: document.getElementById("mapCardCarousel"),
 };
 
@@ -1056,13 +1057,38 @@ document.querySelectorAll(".filter-btn").forEach((btn) => {
 // upcoming from right now — a day-of-week + time-of-day, never a calendar
 // date (see dateTimeFilter/getVenueOccurrenceAt above).
 
+// Two named slots for the app's real busy periods, not arbitrary clock
+// times: 4pm sits at the actual peak overlap of the afternoon happy-hour
+// rush (409 of 452 venues open then — more than at any single exact start
+// time), and 9pm anchors the late-night window (161 open, and the single
+// most common late start by a wide margin). See venues.json.
+const QUICK_TIME_PRESETS = ["16:00", "21:00"];
+
+// Single source of truth for "which time is picked": one of the preset
+// slot buttons, or the custom dropdown for anything else. Selecting a
+// preset resets the dropdown to its placeholder so only one control ever
+// reads as active.
+function selectDateTimeValue(hhmm) {
+  els.dateTimeTimePicker.querySelectorAll(".daytime-time-btn[data-time]").forEach((b) => {
+    b.classList.toggle("selected", b.dataset.time === hhmm);
+  });
+  const isPreset = QUICK_TIME_PRESETS.includes(hhmm);
+  els.dateTimeCustomTime.classList.toggle("selected", !isPreset);
+  els.dateTimeCustomTime.value = isPreset ? "" : hhmm;
+}
+
+function getDateTimeValue() {
+  const presetBtn = els.dateTimeTimePicker.querySelector(".daytime-time-btn.selected[data-time]");
+  return presetBtn ? presetBtn.dataset.time : els.dateTimeCustomTime.value || null;
+}
+
 function openDateTimeModal() {
   const now = new Date();
   const initial = dateTimeFilter || { day: now.getDay(), time: `${pad(now.getHours())}:00` };
   els.dateTimeDayPicker.querySelectorAll(".daytime-day-btn").forEach((b) => {
     b.classList.toggle("selected", Number(b.dataset.day) === initial.day);
   });
-  els.dateTimeTimeInput.value = initial.time;
+  selectDateTimeValue(initial.time);
   els.dateTimeModal.classList.remove("hidden");
 }
 
@@ -1070,6 +1096,13 @@ els.dateTimeDayPicker.addEventListener("click", (e) => {
   const btn = e.target.closest(".daytime-day-btn");
   if (!btn) return;
   els.dateTimeDayPicker.querySelectorAll(".daytime-day-btn").forEach((b) => b.classList.toggle("selected", b === btn));
+});
+
+els.dateTimeTimePicker.querySelectorAll(".daytime-time-btn[data-time]").forEach((btn) => {
+  btn.addEventListener("click", () => selectDateTimeValue(btn.dataset.time));
+});
+els.dateTimeCustomTime.addEventListener("change", () => {
+  if (els.dateTimeCustomTime.value) selectDateTimeValue(els.dateTimeCustomTime.value);
 });
 
 // The tab itself doubles as the display for the current pick ("Date & Time"
@@ -1106,7 +1139,7 @@ document.getElementById("dateTimeClearBtn").addEventListener("click", () => {
 document.getElementById("dateTimeApplyBtn").addEventListener("click", () => {
   const selectedBtn = els.dateTimeDayPicker.querySelector(".daytime-day-btn.selected");
   const day = selectedBtn ? Number(selectedBtn.dataset.day) : new Date().getDay();
-  const time = els.dateTimeTimeInput.value;
+  const time = getDateTimeValue() || "15:00";
   dateTimeFilter = { day, time };
   currentFilter = "datetime";
   document.querySelectorAll(".filter-btn").forEach((b) => b.classList.toggle("active", b.dataset.filter === currentFilter));
