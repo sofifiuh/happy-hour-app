@@ -921,21 +921,13 @@ function buildMapCard(venue, occ) {
     }
   } else {
     // This venue advertises a happy hour but publishes no item list. Say that
-    // rather than leaving the card looking like the data failed to load.
+    // rather than leaving the card looking like the data failed to load —
+    // no "Get directions" link here since the card (and its arrow) already
+    // lead to the detail page, which has the real map and its own directions.
     const note = document.createElement("div");
     note.className = "map-detail-nodeals";
     note.textContent = "Deal list not published online";
     actions.appendChild(note);
-    if (address) {
-      const directions = document.createElement("a");
-      directions.className = "map-detail-action";
-      directions.target = "_blank";
-      directions.rel = "noopener";
-      directions.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
-      directions.addEventListener("click", (e) => e.stopPropagation());
-      directions.innerHTML = `<span class="map-detail-action-icon">🧭</span><span>Get directions</span>`;
-      actions.appendChild(directions);
-    }
   }
 
   const menuUrl = `menu.html?id=${encodeURIComponent(venue.id)}`;
