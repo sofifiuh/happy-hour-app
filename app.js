@@ -856,46 +856,57 @@ function buildMapCard(venue, occ) {
   body.className = "map-detail-body";
   card.appendChild(body);
 
+  // Top row: title and status/time are the two things worth a glance from
+  // across the map, so they share the top row and get the biggest type —
+  // everything else (rating, address, deals) is secondary.
+  const top = document.createElement("div");
+  top.className = "map-detail-top";
+  body.appendChild(top);
+
   const name = document.createElement("h3");
   name.className = "map-detail-name";
   name.textContent = venue.name;
-  body.appendChild(name);
+  top.appendChild(name);
 
-  const meta = document.createElement("div");
-  meta.className = "map-detail-meta";
+  const statusTime = document.createElement("span");
+  statusTime.className = "map-detail-status-time";
   const status = document.createElement("span");
   status.className = "map-detail-status";
   if (occ.status === "live") {
     status.classList.add("live");
-    status.textContent = "Live now";
+    status.textContent = "Now";
   } else if (occ.status === "upcoming") {
     status.classList.add("upcoming");
-    status.textContent = "Upcoming";
+    status.textContent = "Soon";
   } else if (occ.status === "scheduled") {
     status.classList.add("upcoming");
     status.textContent = "Available";
   } else {
     status.textContent = "No date";
   }
-  meta.appendChild(status);
+  statusTime.appendChild(status);
   const time = document.createElement("span");
   time.className = "map-detail-time";
   time.textContent = occurrenceTimeLabel(occ);
-  meta.appendChild(time);
+  statusTime.appendChild(time);
+  top.appendChild(statusTime);
+
+  const sub = document.createElement("div");
+  sub.className = "map-detail-sub";
+  body.appendChild(sub);
+
   if (venue.rating) {
     const rating = document.createElement("span");
     rating.className = "map-detail-rating";
     rating.textContent = `★ ${venue.rating}`;
-    meta.appendChild(rating);
+    sub.appendChild(rating);
   }
-  body.appendChild(meta);
-
   const address = getAddress(venue);
   if (address) {
-    const addressEl = document.createElement("div");
+    const addressEl = document.createElement("span");
     addressEl.className = "map-detail-address";
     addressEl.textContent = address;
-    body.appendChild(addressEl);
+    sub.appendChild(addressEl);
   }
 
   const actions = document.createElement("div");
@@ -903,8 +914,7 @@ function buildMapCard(venue, occ) {
   body.appendChild(actions);
 
   // Showcase the menu instead of navigation links: the cheapest drink and
-  // food deal. Venues without extracted deals keep the directions row so the
-  // card isn't empty.
+  // food deal.
   const deals = getDeals(venue);
   const highlights = [
     ["🍸", bestDeal(deals, "drink")],
