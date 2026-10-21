@@ -1,0 +1,139 @@
+@import "tailwindcss";
+@import "@fontsource/funnel-sans/400.css";
+@import "@fontsource/funnel-sans/500.css";
+@import "@fontsource/funnel-sans/600.css";
+@import "@fontsource/funnel-display/500.css";
+@import "@fontsource/funnel-display/700.css";
+@import "@fontsource/funnel-display/800.css";
+@import "maplibre-gl/dist/maplibre-gl.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * A Little Hang brand tokens, from Sophie's Branding page in Figma
+ * ("dark mode, pops of colour"; shortlisted swatches on #1b1b1b).
+ * Dark is the brand, not a theme toggle. shadcn components read the
+ * semantic names below, so a future rebrand is an edit to this block.
+ */
+:root {
+  /* raw palette */
+  --ink: #1b1b1b; /* canvas */
+  --ink-2: #242322; /* raised surfaces: rows, cards */
+  --ink-3: #2f2d2b; /* inputs, chips at rest */
+  --line: #3a3835; /* hairlines */
+  --cream: #f3efe4; /* primary text */
+  --cream-dim: #a7a196; /* secondary text */
+  --orange: #ff4900; /* brand pop: primary actions, active state */
+  --amber: #ffb530; /* upcoming */
+  --lime: #ecfe54; /* happening now */
+  --pink: #f7b2b7; /* tags, highlights */
+  --sky: #bfdbe6; /* info: walk time, verified */
+
+  /* shadcn semantic tokens */
+  --background: var(--ink);
+  --foreground: var(--cream);
+  --card: var(--ink-2);
+  --card-foreground: var(--cream);
+  --popover: var(--ink-2);
+  --popover-foreground: var(--cream);
+  --primary: var(--orange);
+  --primary-foreground: #fff8f2;
+  --secondary: var(--ink-3);
+  --secondary-foreground: var(--cream);
+  --muted: var(--ink-3);
+  --muted-foreground: var(--cream-dim);
+  --accent: var(--ink-3);
+  --accent-foreground: var(--cream);
+  --destructive: #ff5a4d;
+  --border: var(--line);
+  --input: var(--ink-3);
+  --ring: var(--orange);
+  --radius: 1rem;
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: "Funnel Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Funnel Display", "Funnel Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-cream: var(--cream);
+  --color-orange: var(--orange);
+  --color-amber: var(--amber);
+  --color-lime: var(--lime);
+  --color-pink: var(--pink);
+  --color-sky: var(--sky);
+
+  --radius-sm: calc(var(--radius) - 8px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html,
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+  #root {
+    min-height: 100dvh;
+  }
+  button {
+    cursor: pointer;
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom), 0px);
+}
+
+@utility pt-safe {
+  padding-top: max(env(safe-area-inset-top), 0px);
+}
+
+.maplibregl-ctrl-attrib {
+  background: rgb(27 27 27 / 0.6) !important;
+  color: var(--cream-dim) !important;
+  font-size: 10px;
+}
+.maplibregl-ctrl-attrib a {
+  color: var(--cream-dim) !important;
+}
