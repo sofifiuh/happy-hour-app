@@ -101,16 +101,24 @@ export function minutesUntil(date: Date, now: Date) {
 }
 
 // Human status line: "Ends in 25 min", "Starts at 3pm", "Tomorrow, 2:30pm"
+// 45 -> "45 min", 80 -> "1h 20m", 120 -> "2h"
+function fmtDuration(mins: number) {
+  if (mins < 60) return `${mins} min`;
+  const h = Math.floor(mins / 60);
+  const m = mins % 60;
+  return m ? `${h}h ${m}m` : `${h}h`;
+}
+
 export function statusLabel(occ: Occurrence, now: Date) {
   if (occ.status === "none" || !occ.start || !occ.end) return "No happy hour listed";
   if (occ.status === "scheduled") return fmtRange(occ.start, occ.end);
   if (occ.status === "live") {
     const left = minutesUntil(occ.end, now);
-    if (left <= 60) return `Ends in ${left} min`;
+    if (left <= 180) return `Ends in ${fmtDuration(left)}`;
     return `Until ${fmtTime(occ.end)}`;
   }
   const until = minutesUntil(occ.start, now);
-  if (until <= 60) return `Starts in ${until} min`;
+  if (until <= 180) return `Starts in ${fmtDuration(until)}`;
   const sameDay = occ.start.toDateString() === now.toDateString();
   if (sameDay) return `Starts at ${fmtTime(occ.start)}`;
   const tomorrow = new Date(now);

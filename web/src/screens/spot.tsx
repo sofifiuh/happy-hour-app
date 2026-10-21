@@ -1,7 +1,8 @@
-import { ArrowLeft, BadgeCheck, ExternalLink, Globe, Navigation, Phone, Share, Star } from "lucide-react";
+import { ArrowLeft, BadgeCheck, ExternalLink, Flag, Globe, Heart, Navigation, Phone, Share, Star } from "lucide-react";
 import { lazy, Suspense, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
+import { NotifyDrawer, remindersAsked } from "@/components/notify-drawer";
 import { StatusDot } from "@/components/status";
 import { useToast } from "@/components/toast";
 import { Badge } from "@/components/ui/badge";
@@ -11,6 +12,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { VenuePhoto } from "@/components/venue-photo";
 import { walkLabel, distanceKm } from "@/lib/geo";
 import { DAY_FULL, endingSoon, fmtRange, nowHHMM, occurrence, statusLabel, windowsForDay } from "@/lib/hours";
+import { fmtChecked, reportLink } from "@/lib/links";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
 import type { Category, Venue } from "@/lib/types";
@@ -22,8 +24,6 @@ function amenityPills(v: Venue) {
   const a = v.amenities;
   return [
     a.patio && { emoji: "🌳", label: "Patio" },
-    a.glutenFree && { emoji: "🌾", label: "Gluten-free" },
-    a.parking && { emoji: "🅿️", label: "Parking" },
     a.transit && { emoji: "🚇", label: a.transitStation ? `Near ${a.transitStation}` : "Near transit" },
     a.accessible && { emoji: "♿", label: "Accessible" },
     a.liveMusic && { emoji: "🎵", label: "Live music" },
@@ -33,12 +33,13 @@ function amenityPills(v: Venue) {
 
 export function Spot() {
   const { id = "" } = useParams();
-  const { byId, now, loading, location } = useStore();
+  const { byId, now, loading, location, saved, toggleSaved } = useStore();
   const navigate = useNavigate();
   const toast = useToast();
   const venue = byId(id);
   const [cat, setCat] = useState<Category>("drink");
   const [directionsOpen, setDirectionsOpen] = useState(false);
+  const [notifyOpen, setNotifyOpen] = useState(() => new URLSearchParams(window.location.hash.split("?")[1]).get("sheet") === "notify");
 
   const deals = useMemo(() => {
     if (!venue) return { food: [], drink: [] };
@@ -76,6 +77,14 @@ export function Spot() {
   const pills = amenityPills(venue);
   const q = encodeURIComponent(`${venue.name}, ${venue.address}`);
 
+  const isSaved = saved.includes(venue.id);
+  const onSave = () => {
+    const nowSaved = toggleSaved(venue.id);
+    toast(nowSaved ? "Saved to your spots" : "Removed from your spots");
+    if (nowSaved && !remindersAsked()) setTimeout(() => setNotifyOpen(true), 600);
+  };
+  const checked = venue.checked ? fmtChecked(venue.checked, now) : null;
+
   const onShare = async () => {
     const res = await shareLink(`${venue.name} on A Little Hang`, `Happy hour at ${venue.name}: ${fmtRange(venue.hh.start, venue.hh.end)}`);
     if (res === "copied") toast("Link copied");
@@ -95,9 +104,19 @@ export function Spot() {
           >
             <ArrowLeft className="size-5" />
           </button>
-          <button onClick={onShare} aria-label="Share" className="grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur">
-            <Share className="size-[18px]" />
-          </button>
+          <div className="flex gap-2">
+            <button
+              onClick={onSave}
+              aria-label={isSaved ? "Remove from saved" : "Save"}
+              aria-pressed={isSaved}
+              className="grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur"
+            >
+              <Heart className={cn("size-[18px]", isSaved && "fill-primary text-primary")} />
+            </button>
+            <button onClick={onShare} aria-label="Share" className="grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur">
+              <Share className="size-[18px]" />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -123,10 +142,11 @@ export function Spot() {
             </span>
           )}
           {venue.hh.verified && (
-            <span className="inline-flex items-center gap-1 text-sky">
-              <BadgeCheck className="size-4" /> Checked against their menu
-            </span>
+            <Badge variant="sky" size="sm">
+              <BadgeCheck className="size-3.5" /> Verified
+            </Badge>
           )}
+          {checked && <span className="text-muted-foreground">Times checked {checked}</span>}
         </div>
         {pills.length > 0 && (
           <div className="no-scrollbar -mx-5 mt-4 flex gap-2 overflow-x-auto px-5">
@@ -224,11 +244,22 @@ export function Spot() {
             );
           })}
         </ul>
-        {venue.hh.source && (
-          <a href={venue.hh.source} target="_blank" rel="noopener" className="mt-3 inline-block px-3 text-[13px] text-muted-foreground underline underline-offset-4">
-            Source: their website · Suggest an update
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-3 text-[13px] text-muted-foreground">
+          <span>
+            {venue.hh.verified ? "Verified against their menu" : "From their website"}
+            {venue.hh.source && (
+              <>
+                {" · "}
+                <a href={venue.hh.source} target="_blank" rel="noopener" className="underline underline-offset-4">
+                  source
+                </a>
+              </>
+            )}
+          </span>
+          <a href={reportLink(venue)} className="inline-flex items-center gap-1.5 font-medium text-cream">
+            <Flag className="size-3.5" /> Report a wrong time
           </a>
-        )}
+        </div>
       </section>
 
       {/* Location */}
@@ -299,6 +330,8 @@ export function Spot() {
           </div>
         </DrawerContent>
       </Drawer>
+
+      <NotifyDrawer open={notifyOpen} onOpenChange={setNotifyOpen} />
 
       <Link to="/" className="sr-only">
         Back to list

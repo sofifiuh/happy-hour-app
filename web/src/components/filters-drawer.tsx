@@ -5,13 +5,11 @@ import { Switch } from "@/components/ui/switch";
 import { matchesAmenity, useStore, type AmenityKey } from "@/lib/store";
 
 export const AMENITIES: { key: AmenityKey; emoji: string; label: string }[] = [
-  { key: "drink", emoji: "🍸", label: "Drink deals" },
-  { key: "food", emoji: "🍟", label: "Food deals" },
   { key: "patio", emoji: "🌳", label: "Patio" },
-  { key: "lateNight", emoji: "🌙", label: "Late-night happy hour" },
-  { key: "glutenFree", emoji: "🌾", label: "Gluten-free options" },
+  { key: "lateNight", emoji: "🌙", label: "Late night (on till 9pm or later)" },
+  { key: "food", emoji: "🍟", label: "Food deals" },
+  { key: "drink", emoji: "🍸", label: "Drink deals" },
   { key: "transit", emoji: "🚇", label: "Near transit" },
-  { key: "parking", emoji: "🅿️", label: "Parking" },
 ];
 
 export function FiltersDrawer({ open, onOpenChange }: { open: boolean; onOpenChange: (o: boolean) => void }) {

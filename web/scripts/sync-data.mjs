@@ -18,6 +18,8 @@ const slim = venues
     id: v.id,
     name: v.name,
     address: v.formatted_address || "",
+    city: v.address_components?.locality || null,
+    checked: v.last_synced_at ? String(v.last_synced_at).slice(0, 10) : null,
     lat: v.geometry?.location?.lat ?? null,
     lng: v.geometry?.location?.lng ?? null,
     phone: v.formatted_phone_number || null,
@@ -44,9 +46,7 @@ const slim = venues
     },
     amenities: {
       patio: v.amenities?.outdoor_seating === true,
-      glutenFree: v.amenities?.gluten_free_options === true,
       accessible: v.amenities?.wheelchair_accessible_entrance === true,
-      parking: !!v.amenities?.parking && Object.values(v.amenities.parking).some(Boolean),
       transit: v.amenities?.transit?.walkable === true,
       transitStation: v.amenities?.transit?.nearest_station || null,
       liveMusic: v.amenities?.live_music === true,

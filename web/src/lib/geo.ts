@@ -21,3 +21,36 @@ export function walkLabel(km: number) {
   if (km < 100) return `${km < 10 ? km.toFixed(1) : Math.round(km)} km away`;
   return "";
 }
+
+export interface Area extends LatLng {
+  name: string;
+}
+
+// Neighbourhood picker for people who skip location, and a rough
+// "which neighbourhood" label for search. Centres are approximate.
+export const AREAS: Area[] = [
+  { name: "Downtown", lat: 49.2827, lng: -123.1207 },
+  { name: "Gastown", lat: 49.2839, lng: -123.1066 },
+  { name: "Yaletown", lat: 49.2757, lng: -123.1219 },
+  { name: "West End", lat: 49.286, lng: -123.134 },
+  { name: "Kitsilano", lat: 49.2684, lng: -123.1683 },
+  { name: "Mount Pleasant", lat: 49.2635, lng: -123.1004 },
+  { name: "Main Street", lat: 49.247, lng: -123.101 },
+  { name: "Commercial Drive", lat: 49.273, lng: -123.0695 },
+  { name: "North Vancouver", lat: 49.32, lng: -123.0724 },
+  { name: "Burnaby", lat: 49.2276, lng: -123.0076 },
+  { name: "New Westminster", lat: 49.2057, lng: -122.911 },
+  { name: "Richmond", lat: 49.1666, lng: -123.1336 },
+  { name: "Port Moody", lat: 49.2838, lng: -122.8317 },
+  { name: "Surrey", lat: 49.1913, lng: -122.849 },
+];
+
+export function nearestArea(p: LatLng): Area {
+  let best = AREAS[0];
+  let bestKm = Infinity;
+  for (const a of AREAS) {
+    const km = distanceKm(p, a);
+    if (km < bestKm) [best, bestKm] = [a, km];
+  }
+  return best;
+}

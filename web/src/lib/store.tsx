@@ -1,14 +1,19 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
-import { distanceKm, type LatLng } from "./geo";
+import { distanceKm, nearestArea, type Area, type LatLng } from "./geo";
 import { occurrence, occurrenceAt } from "./hours";
 import type { Occurrence, Venue } from "./types";
 
 const CACHE_KEY = "alh:venues";
 const VERSION_KEY = "alh:venues-version";
+// Bump when sync-data.mjs changes the venue shape, so old caches refresh.
+const SCHEMA = "2";
 const FILTERS_KEY = "alh:filters";
+const SAVED_KEY = "alh:saved";
+const AREA_KEY = "alh:area";
 
 export type TimeTab = "all" | "live" | "upcoming" | "plan";
-export type AmenityKey = "patio" | "glutenFree" | "food" | "drink" | "transit" | "parking" | "lateNight";
+export type AmenityKey = "patio" | "food" | "drink" | "transit" | "lateNight";
+const AMENITY_KEYS: AmenityKey[] = ["patio", "food", "drink", "transit", "lateNight"];
 
 export interface Plan {
   day: number;
@@ -34,9 +39,15 @@ interface Store {
   venues: Venue[];
   loading: boolean;
   now: Date;
-  location: LatLng | null;
+  location: LatLng | null; // device location, else the picked neighbourhood
   locationState: "idle" | "asking" | "granted" | "denied";
   requestLocation: () => void;
+  area: Area | null; // neighbourhood picked instead of sharing location
+  setArea: (a: Area | null) => void;
+  saved: string[];
+  toggleSaved: (id: string) => boolean; // returns the new saved state
+  online: boolean;
+  loadFailed: boolean; // no network copy and nothing cached
   filters: Filters;
   setFilters: (f: Partial<Filters>) => void;
   resetFilters: () => void;
@@ -45,6 +56,36 @@ interface Store {
 }
 
 const Ctx = createContext<Store | null>(null);
+
+function readJSON<T>(key: string, fallback: T): T {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw ? (JSON.parse(raw) as T) : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function writeJSON(key: string, value: unknown) {
+  try {
+    if (value == null) localStorage.removeItem(key);
+    else localStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    // storage blocked: the in-memory value still works this session
+  }
+}
+
+// Name, address, city and nearest neighbourhood, so "kits" or "gastown" works.
+const searchCache = new WeakMap<Venue, string>();
+function searchText(v: Venue) {
+  let t = searchCache.get(v);
+  if (!t) {
+    const hood = v.lat != null && v.lng != null ? nearestArea({ lat: v.lat, lng: v.lng }).name : "";
+    t = [v.name, v.address, v.city, hood].join(" ").toLowerCase();
+    searchCache.set(v, t);
+  }
+  return t;
+}
 
 function readCache(): Venue[] {
   try {
@@ -76,7 +117,8 @@ function readFilters(): Filters {
     };
   }
   try {
-    return { ...DEFAULT_FILTERS, ...JSON.parse(sessionStorage.getItem(FILTERS_KEY) || "{}") };
+    const f: Filters = { ...DEFAULT_FILTERS, ...JSON.parse(sessionStorage.getItem(FILTERS_KEY) || "{}") };
+    return { ...f, amenities: f.amenities.filter((a) => AMENITY_KEYS.includes(a)) };
   } catch {
     return DEFAULT_FILTERS;
   }
@@ -89,7 +131,11 @@ export function matchesAmenity(v: Venue, key: AmenityKey) {
     case "drink":
       return v.hh.deals.some((d) => d.category === "drink");
     case "lateNight":
-      return v.hh.start >= "20:00" || v.hh.extra.some((w) => w.start >= "20:00");
+      // An evening window still running at 9pm: ends 21:00+, runs past
+      // midnight, or "until close" from 6pm on (all-day specials don't count).
+      return [v.hh, ...v.hh.extra].some((w) =>
+        !w.end ? w.start >= "18:00" : w.end >= "21:00" || (w.end < w.start && w.start >= "12:00"),
+      );
     default:
       return v.amenities[key] === true;
   }
@@ -99,7 +145,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [venues, setVenues] = useState<Venue[]>(readCache);
   const [loading, setLoading] = useState(venues.length === 0);
   const [now, setNow] = useState(() => new Date());
-  const [location, setLocation] = useState<LatLng | null>(null);
+  const [deviceLocation, setLocation] = useState<LatLng | null>(null);
+  const [area, setAreaState] = useState<Area | null>(() => (IS_FRAME ? null : readJSON<Area | null>(AREA_KEY, null)));
+  const fp = frameParams();
+  const [saved, setSaved] = useState<string[]>(() => fp?.get("saved")?.split(",").filter(Boolean) ?? readJSON<string[]>(SAVED_KEY, []));
+  const [online, setOnline] = useState(() => (fp?.get("offline") === "1" ? false : navigator.onLine));
+  const [loadFailed, setLoadFailed] = useState(fp?.get("error") === "1");
+  const location = deviceLocation ?? area;
   const [locationState, setLocationState] = useState<Store["locationState"]>("idle");
   const [filters, setFiltersState] = useState<Filters>(readFilters);
 
@@ -115,20 +167,47 @@ export function StoreProvider({ children }: { children: ReactNode }) {
         } catch {
           // storage blocked: always take the network copy
         }
-        if (cached !== data_version || venues.length === 0) {
+        const version = `${data_version}/${SCHEMA}`;
+        if (cached !== version || venues.length === 0) {
           setVenues(fresh);
           try {
             localStorage.setItem(CACHE_KEY, JSON.stringify(fresh));
-            localStorage.setItem(VERSION_KEY, data_version);
+            localStorage.setItem(VERSION_KEY, version);
           } catch {
             // storage full or blocked: the in-memory copy still works
           }
         }
       })
-      .catch(() => {})
+      .catch(() => setLoadFailed(readCache().length === 0))
       .finally(() => setLoading(false));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    const on = () => setOnline(true);
+    const off = () => setOnline(false);
+    window.addEventListener("online", on);
+    window.addEventListener("offline", off);
+    return () => {
+      window.removeEventListener("online", on);
+      window.removeEventListener("offline", off);
+    };
+  }, []);
+
+  const setArea = useCallback((a: Area | null) => {
+    setAreaState(a);
+    writeJSON(AREA_KEY, a);
+  }, []);
+
+  const toggleSaved = useCallback(
+    (id: string) => {
+      const next = saved.includes(id) ? saved.filter((s) => s !== id) : [id, ...saved];
+      setSaved(next);
+      if (!IS_FRAME) writeJSON(SAVED_KEY, next);
+      return next.includes(id);
+    },
+    [saved],
+  );
 
   // Statuses flip on the minute ("ends in 4 min"), not every second.
   useEffect(() => {
@@ -181,7 +260,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     const plan = filters.tab === "plan" ? filters.plan : null;
     const out: Row[] = [];
     for (const venue of venues) {
-      if (q && !venue.name.toLowerCase().includes(q) && !venue.address.toLowerCase().includes(q)) continue;
+      if (q && !searchText(venue).includes(q)) continue;
       if (!filters.amenities.every((a) => matchesAmenity(venue, a))) continue;
       const occ = plan ? occurrenceAt(venue, plan.day, plan.time) : occurrence(venue, now);
       if (filters.tab === "live" && occ.status !== "live") continue;
@@ -193,9 +272,12 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     const rank = { live: 0, scheduled: 0, upcoming: 1, none: 2 } as const;
     out.sort((a, b) => {
       if (rank[a.occ.status] !== rank[b.occ.status]) return rank[a.occ.status] - rank[b.occ.status];
+      // Happening now: least time left first. Upcoming: soonest first. Then nearest.
+      if (a.occ.status === "live" && a.occ.end && b.occ.end && a.occ.end.getTime() !== b.occ.end.getTime())
+        return a.occ.end.getTime() - b.occ.end.getTime();
+      if (a.occ.status === "upcoming" && a.occ.start && b.occ.start && a.occ.start.getTime() !== b.occ.start.getTime())
+        return a.occ.start.getTime() - b.occ.start.getTime();
       if (a.km != null && b.km != null && Math.abs(a.km - b.km) > 0.05) return a.km - b.km;
-      if (a.occ.status === "live") return a.occ.end!.getTime() - b.occ.end!.getTime();
-      if (a.occ.status === "upcoming") return a.occ.start!.getTime() - b.occ.start!.getTime();
       return a.venue.name.localeCompare(b.venue.name);
     });
     return out;
@@ -211,6 +293,12 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     location,
     locationState,
     requestLocation,
+    area,
+    setArea,
+    saved,
+    toggleSaved,
+    online,
+    loadFailed,
     filters,
     setFilters,
     resetFilters,

@@ -18,6 +18,8 @@ export interface Venue {
   id: string;
   name: string;
   address: string;
+  city: string | null;
+  checked: string | null; // "YYYY-MM-DD" the pipeline last re-checked this venue
   lat: number | null;
   lng: number | null;
   phone: string | null;
@@ -37,9 +39,7 @@ export interface Venue {
   };
   amenities: {
     patio: boolean;
-    glutenFree: boolean;
     accessible: boolean;
-    parking: boolean;
     transit: boolean;
     transitStation: string | null;
     liveMusic: boolean;

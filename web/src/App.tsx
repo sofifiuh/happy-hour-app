@@ -3,7 +3,10 @@ import { createHashRouter, Navigate, Outlet, RouterProvider, ScrollRestoration }
 import { ToastProvider } from "@/components/toast";
 import { IS_FRAME, StoreProvider } from "@/lib/store";
 import { Home } from "@/screens/home";
+import { Info } from "@/screens/info";
 import { Landing, SEEN_KEY } from "@/screens/landing";
+import { NotFound } from "@/screens/not-found";
+import { Saved } from "@/screens/saved";
 import { ScreensBoard } from "@/screens/screens";
 import { Spot } from "@/screens/spot";
 
@@ -43,8 +46,12 @@ const router = createHashRouter([
       { path: "/welcome", element: <Landing /> },
       { path: "/map", element: <MapScreen /> },
       { path: "/spot/:id", element: <Spot /> },
+      { path: "/saved", element: <Saved /> },
+      { path: "/about", element: <Info page="about" /> },
+      { path: "/privacy", element: <Info page="privacy" /> },
+      { path: "/terms", element: <Info page="terms" /> },
       { path: "/screens", element: <ScreensBoard /> },
-      { path: "*", element: <Navigate to="/" replace /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);
