@@ -74,7 +74,7 @@ export function windowsForDay(v: Venue, day: number) {
     .sort((a, b) => a.start.localeCompare(b.start));
 }
 
-// "2pm", "2:30pm" — the compact style used across Sophie's screens.
+// "2pm", "2:30pm" — the compact style used across Sofia's screens.
 export function fmtTime(input: string | Date, withPeriod = true) {
   let h: number, m: number;
   if (typeof input === "string") [h, m] = input.split(":").map(Number);

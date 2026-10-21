@@ -10,6 +10,12 @@ import { Spot } from "@/screens/spot";
 // MapLibre is most of the bundle; keep it off the list view's critical path.
 const MapScreen = lazy(() => import("@/screens/map").then((m) => ({ default: m.MapScreen })));
 
+// Checked on every visit to "/", not once when the router is built, so the
+// welcome screen's buttons land on the list straight away.
+function Root() {
+  return seenWelcome() ? <Home /> : <Navigate to="/welcome" replace />;
+}
+
 function seenWelcome() {
   try {
     return IS_FRAME || localStorage.getItem(SEEN_KEY) === "1";
@@ -33,7 +39,7 @@ const router = createHashRouter([
   {
     element: <Shell />,
     children: [
-      { path: "/", element: seenWelcome() ? <Home /> : <Navigate to="/welcome" replace /> },
+      { path: "/", element: <Root /> },
       { path: "/welcome", element: <Landing /> },
       { path: "/map", element: <MapScreen /> },
       { path: "/spot/:id", element: <Spot /> },

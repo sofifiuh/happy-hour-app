@@ -10,7 +10,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * A Little Hang brand tokens, from Sophie's Branding page in Figma
+ * A Little Hang brand tokens, from Sofia's Branding page in Figma
  * ("dark mode, pops of colour"; shortlisted swatches on #1b1b1b).
  * Dark is the brand, not a theme toggle. shadcn components read the
  * semantic names below, so a future rebrand is an edit to this block.

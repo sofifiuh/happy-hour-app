@@ -31,7 +31,7 @@ export function Landing() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-ink" />
 
       <div className="relative flex flex-1 flex-col items-center justify-center px-6 pt-safe text-cream">
-        <Wordmark className="text-[92px] text-white drop-shadow-[0_4px_30px_rgb(0_0_0/0.35)]" />
+        <Wordmark className="h-[168px] text-white drop-shadow-[0_4px_30px_rgb(0_0_0/0.35)]" />
       </div>
 
       <div className="relative px-6 pb-[max(env(safe-area-inset-bottom),28px)]">

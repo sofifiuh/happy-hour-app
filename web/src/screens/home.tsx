@@ -50,7 +50,7 @@ export function Home() {
       <header className="sticky top-0 z-20 bg-ink/90 pt-safe backdrop-blur-xl">
         <div className="flex items-center justify-between px-4 pt-3 pb-2">
           <Link to="/welcome" aria-label="A Little Hang">
-            <Wordmark inline className="text-[26px]" />
+            <Wordmark className="h-10 text-cream" />
           </Link>
           {locationState !== "granted" && (
             <button onClick={requestLocation} className="text-[13px] font-medium text-sky">

@@ -2,7 +2,7 @@
 
 The rebuilt front end: React + TypeScript + Vite, Tailwind v4 and
 shadcn/ui (Base UI primitives), themed with the A Little Hang brand from
-Sophie's Figma Branding page. Tokens live in `src/index.css`.
+Sofia's Figma Branding page. Tokens live in `src/index.css`.
 
 The existing site at the repo root stays live until this replaces it.
 

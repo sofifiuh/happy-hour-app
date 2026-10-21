@@ -7,7 +7,7 @@ import { StatusDot } from "./status";
 import { VenuePhoto } from "./venue-photo";
 
 // Photo, then name and time on one line as the two loudest things (as in
-// Sophie's list rows), address and status underneath.
+// Sofia's list rows), address and status underneath.
 export function VenueRow({ row, now }: { row: Row; now: Date }) {
   const { venue, occ, km } = row;
   const street = venue.address.split(",")[0];

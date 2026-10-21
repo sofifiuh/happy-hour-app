@@ -14,7 +14,7 @@ export function StatusDot({ occ, className }: { occ: Occurrence; className?: str
 }
 
 // Big time ("2–5pm") + small status line ("Ends in 25 min"), the pair
-// Sophie's list rows and map cards lead with.
+// Sofia's list rows and map cards lead with.
 export function StatusTime({ occ, now, className }: { occ: Occurrence; now: Date; className?: string }) {
   const soon = endingSoon(occ, now);
   return (

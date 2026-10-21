@@ -3,7 +3,7 @@ import { Wordmark } from "@/components/wordmark";
 import { useStore } from "@/lib/store";
 
 // Every v1 screen side by side at phone size: the review board for
-// comparing against Sophie's Figma frames.
+// comparing against Sofia's Figma frames.
 export function ScreensBoard() {
   const { venues, rows } = useStore();
   const withDeals = rows.find((r) => r.occ.status === "live" && r.venue.hh.deals.length >= 4)?.venue ?? venues.find((v) => v.hh.deals.length >= 4);
@@ -31,7 +31,7 @@ export function ScreensBoard() {
     <div className="min-h-dvh bg-[#121212] px-6 py-10">
       <header className="mx-auto mb-10 flex max-w-[1800px] flex-wrap items-end justify-between gap-4">
         <div>
-          <Wordmark inline className="text-[40px]" />
+          <Wordmark className="h-16 text-cream" />
           <p className="mt-2 text-muted-foreground">All v1 screens, live with real data. Tap any screen to use it.</p>
         </div>
         <Link to="/" className="text-sm font-semibold text-primary">

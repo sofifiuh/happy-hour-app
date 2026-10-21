@@ -109,7 +109,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     fetch("venues.json", { cache: "no-cache" })
       .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
       .then(({ data_version, venues: fresh }: { data_version: string; venues: Venue[] }) => {
-        if (localStorage.getItem(VERSION_KEY) !== data_version || venues.length === 0) {
+        let cached: string | null = null;
+        try {
+          cached = localStorage.getItem(VERSION_KEY);
+        } catch {
+          // storage blocked: always take the network copy
+        }
+        if (cached !== data_version || venues.length === 0) {
           setVenues(fresh);
           try {
             localStorage.setItem(CACHE_KEY, JSON.stringify(fresh));

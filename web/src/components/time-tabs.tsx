@@ -9,7 +9,7 @@ const TABS: { key: Exclude<TimeTab, "plan">; label: string }[] = [
   { key: "upcoming", label: "Upcoming" },
 ];
 
-// All / Happening now / Upcoming / Date & Time, as in Sophie's list header.
+// All / Happening now / Upcoming / Date & Time, as in Sofia's list header.
 export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; className?: string }) {
   const { filters, setFilters } = useStore();
   const planLabel = filters.tab === "plan" && filters.plan ? `${DAY_SHORT[filters.plan.day]}, ${fmtTime(filters.plan.time)}` : "Date & Time";

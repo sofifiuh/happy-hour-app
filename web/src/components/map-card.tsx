@@ -8,7 +8,7 @@ import { StatusDot } from "./status";
 import { VenuePhoto } from "./venue-photo";
 
 // Swipeable card under the map: photo, then name and time as the two
-// loudest things (per Sophie's Sep 10 card iterations), then one action.
+// loudest things (per Sofia's Sep 10 card iterations), then one action.
 export function MapCard({ row, now, active }: { row: Row; now: Date; active: boolean }) {
   const { venue, occ, km } = row;
   const soon = endingSoon(occ, now);
