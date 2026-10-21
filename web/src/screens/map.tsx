@@ -1,5 +1,5 @@
 import * as maplibregl from "maplibre-gl";
-import type { GeoJSONSource, Map as MLMap, MapLayerMouseEvent, MapMouseEvent } from "maplibre-gl";
+import type { GeoJSONSource, Map as MLMap, MapLayerMouseEvent, MapMouseEvent, StyleSpecification } from "maplibre-gl";
 import { LocateFixed } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { EmptyState } from "@/components/empty-state";
@@ -10,7 +10,7 @@ import { SearchBar } from "@/components/search-bar";
 import { TimeTabs } from "@/components/time-tabs";
 import { ViewToggle } from "@/components/view-toggle";
 import { DEFAULT_CENTER } from "@/lib/geo";
-import { MAP_STYLE, PIN_COLORS } from "@/lib/map-style";
+import { loadMapStyle, PIN_COLORS } from "@/lib/map-style";
 import { useStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -40,50 +40,65 @@ export function MapScreen() {
 
   // Map setup, once.
   useEffect(() => {
-    if (!container.current) return;
-    const m = new maplibregl.Map({
-      container: container.current,
-      style: MAP_STYLE,
-      center: [DEFAULT_CENTER.lng, DEFAULT_CENTER.lat],
-      zoom: 13.2,
-      attributionControl: { compact: true },
-      pitchWithRotate: false,
-      dragRotate: false,
+    let created: maplibregl.Map | undefined;
+    let cancelled = false;
+    loadMapStyle().then((style) => {
+      if (cancelled || !container.current) return;
+      init(container.current, style);
     });
-    m.touchZoomRotate.disableRotation();
-    m.on("load", () => {
-      m.addSource("venues", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
-      m.addLayer({
-        id: "venue-halo",
-        type: "circle",
-        source: "venues",
-        filter: ["==", ["get", "selected"], true],
-        paint: { "circle-radius": 16, "circle-color": "#ff4900", "circle-opacity": 0.35 },
+    return () => {
+      cancelled = true;
+      created?.remove();
+    };
+
+    function init(el: HTMLDivElement, style: StyleSpecification) {
+      const m = new maplibregl.Map({
+        container: el,
+        style,
+        center: [DEFAULT_CENTER.lng, DEFAULT_CENTER.lat],
+        zoom: 13.2,
+        attributionControl: { compact: true },
+        pitchWithRotate: false,
+        dragRotate: false,
       });
-      m.addLayer({
-        id: "venue-pins",
-        type: "circle",
-        source: "venues",
-        paint: {
-          "circle-radius": ["case", ["==", ["get", "selected"], true], 9, ["interpolate", ["linear"], ["zoom"], 10, 3.5, 14, 6.5]],
-          "circle-color": ["case", ["==", ["get", "selected"], true], "#ff4900", ["get", "color"]],
-          "circle-stroke-color": "#1b1b1b",
-          "circle-stroke-width": 1.5,
-        },
+      m.touchZoomRotate.disableRotation();
+      m.on("load", () => {
+        m.addSource("venues", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+        m.addLayer({
+          id: "venue-halo",
+          type: "circle",
+          source: "venues",
+          filter: ["==", ["get", "selected"], true],
+          paint: { "circle-radius": 16, "circle-color": "#ff4900", "circle-opacity": 0.35 },
+        });
+        m.addLayer({
+          id: "venue-pins",
+          type: "circle",
+          source: "venues",
+          paint: {
+            "circle-radius": [
+              "interpolate", ["linear"], ["zoom"],
+              10, ["case", ["==", ["get", "selected"], true], 8, 3.5],
+              14, ["case", ["==", ["get", "selected"], true], 9, 6.5],
+            ],
+            "circle-color": ["case", ["==", ["get", "selected"], true], "#ff4900", ["get", "color"]],
+            "circle-stroke-color": "#1b1b1b",
+            "circle-stroke-width": 1.5,
+          },
+        });
+        m.on("click", "venue-pins", (e: MapLayerMouseEvent) => {
+          const id = e.features?.[0]?.properties?.id as string | undefined;
+          if (id) setSelected(id);
+        });
+        m.on("click", (e: MapMouseEvent) => {
+          if (!m.queryRenderedFeatures(e.point, { layers: ["venue-pins"] }).length) setSelected(null);
+        });
+        m.on("mouseenter", "venue-pins", () => (m.getCanvas().style.cursor = "pointer"));
+        m.on("mouseleave", "venue-pins", () => (m.getCanvas().style.cursor = ""));
+        setReady(true);
       });
-      m.on("click", "venue-pins", (e: MapLayerMouseEvent) => {
-        const id = e.features?.[0]?.properties?.id as string | undefined;
-        if (id) setSelected(id);
-      });
-      m.on("click", (e: MapMouseEvent) => {
-        if (!m.queryRenderedFeatures(e.point, { layers: ["venue-pins"] }).length) setSelected(null);
-      });
-      m.on("mouseenter", "venue-pins", () => (m.getCanvas().style.cursor = "pointer"));
-      m.on("mouseleave", "venue-pins", () => (m.getCanvas().style.cursor = ""));
-      setReady(true);
-    });
-    map.current = m;
-    return () => m.remove();
+      map.current = created = m;
+    }
   }, []);
 
   // Pins follow the filtered rows and the selection.
@@ -146,7 +161,7 @@ export function MapScreen() {
 
   return (
     <div className="relative h-dvh overflow-hidden bg-ink">
-      <div ref={container} className="absolute inset-0" />
+      <div ref={container} className="absolute inset-0 size-full" />
 
       <header className="absolute inset-x-0 top-0 z-10 bg-gradient-to-b from-ink via-ink/80 to-transparent pt-safe pb-6">
         <SearchBar className="px-4 pt-3" onOpenFilters={() => setFiltersOpen(true)} />

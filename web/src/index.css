@@ -14,8 +14,11 @@
  * ("dark mode, pops of colour"; shortlisted swatches on #1b1b1b).
  * Dark is the brand, not a theme toggle. shadcn components read the
  * semantic names below, so a future rebrand is an edit to this block.
+ * Repeated on body so a host page that sets shadcn-style variables on
+ * :root (the preview host does) can't repaint the app.
  */
-:root {
+:root,
+body {
   /* raw palette */
   --ink: #1b1b1b; /* canvas */
   --ink-2: #242322; /* raised surfaces: rows, cards */
@@ -108,6 +111,13 @@
   button {
     cursor: pointer;
   }
+}
+
+/* Unlayered so a host page's own body styles can't win. */
+html,
+body {
+  background-color: var(--ink) !important;
+  color: var(--cream);
 }
 
 @utility tabular {
