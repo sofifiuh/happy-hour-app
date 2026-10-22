@@ -67,7 +67,7 @@ export function MapScreen() {
 
   return (
     <main className="relative h-dvh overflow-hidden bg-ink">
-      <VenueMap rows={mappable} selected={selected} onSelect={setSelected} focusOffset={110} locateClassName={cards.length ? "bottom-[302px]" : "bottom-28"} />
+      <VenueMap rows={mappable} selected={selected} onSelect={setSelected} focusOffset={70} locateClassName={cards.length ? "bottom-[176px]" : "bottom-24"} />
 
       <h1 className="sr-only">Map of happy hours</h1>
       <header className="absolute inset-x-0 top-0 z-10 bg-gradient-to-b from-ink via-ink/80 to-transparent pt-safe pb-6">
@@ -75,12 +75,12 @@ export function MapScreen() {
         <TimeTabs className="pt-3" onOpenPlan={() => setPlanOpen(true)} />
       </header>
 
-      <div className="absolute inset-x-0 bottom-0 z-10 pb-[max(env(safe-area-inset-bottom),20px)]">
+      <div className="absolute inset-x-0 bottom-0 z-10 pb-[max(env(safe-area-inset-bottom),12px)]">
         {cards.length > 0 ? (
           <div
             ref={strip}
             onScroll={onStripScroll}
-            className="no-scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-4"
+            className="no-scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-2.5"
           >
             {cards.map((r, i) => (
               <div
@@ -94,7 +94,7 @@ export function MapScreen() {
             ))}
           </div>
         ) : (
-          <div className="animate-rise mx-4 mb-4 rounded-[24px] bg-ink-2">
+          <div className="animate-rise mx-4 mb-2.5 rounded-[24px] bg-ink-2">
             <EmptyState emoji="🗺️" title="No spots on the map" body="Nothing matches here. Try another time or fewer filters." />
           </div>
         )}

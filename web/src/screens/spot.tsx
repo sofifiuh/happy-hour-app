@@ -1,5 +1,5 @@
 import { ArrowLeft, BadgeCheck, ExternalLink, Flag, Globe, Heart, Navigation, Phone, Share, Star } from "lucide-react";
-import { type CSSProperties, useMemo, useState } from "react";
+import { type CSSProperties, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { MiniMap } from "@/components/mini-map";
@@ -15,6 +15,7 @@ import { walkLabel, distanceKm } from "@/lib/geo";
 import { DAY_FULL, DAY_SHORT, endingSoon, fmtRange, nowHHMM, occurrence, statusLabel, windowsForDay } from "@/lib/hours";
 import { fmtChecked, reportLink } from "@/lib/links";
 import { goBack } from "@/lib/motion";
+import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, queryParams, spotPath } from "@/lib/routes";
 import { shareLink } from "@/lib/share";
@@ -63,6 +64,9 @@ export function Spot() {
   const navigate = useNavigate();
   const toast = useToast();
   const venue = byId(id);
+  const page = useRef<HTMLElement>(null);
+  const bar = useRef<HTMLElement>(null);
+  useSwipeBack([page, bar], () => goBack(navigate, true), !!venue);
   useTitle(venue ? `${venue.name} · happy hour ${fmtRange(venue.hh.start, venue.hh.end)}` : loading ? null : "Spot not found");
   const [cat, setCat] = useState<Category>("drink");
   const [directionsOpen, setDirectionsOpen] = useState(false);
@@ -120,7 +124,8 @@ export function Spot() {
   };
 
   return (
-    <main className="mx-auto min-h-dvh max-w-2xl pb-28">
+    <>
+    <main ref={page} className="mx-auto min-h-dvh max-w-2xl pb-28">
       {/* Photo header */}
       <div className="relative">
         <VenuePhoto venue={venue} eager hero="hero" className="h-[min(42vh,340px)] w-full lg:rounded-b-[28px]" />
@@ -246,30 +251,31 @@ export function Spot() {
               <li
                 key={run.days.join()}
                 className={cn(
-                  "flex items-center justify-between rounded-xl px-3 py-2.5 text-[15px]",
-                  isToday && "bg-ink-2",
+                  "flex items-start justify-between gap-4 rounded-2xl px-4 py-3 text-[15px]",
+                  isToday && "bg-ink-2 ring-1 ring-white/5",
                   !wins.length && "text-muted-foreground",
                 )}
               >
-                <span className={cn("flex items-center gap-2", isToday && "font-semibold")}>
-                  {runLabel(run.days)}
-                  {isToday && <Badge size="sm" variant="pink">Today</Badge>}
+                <span className="flex flex-col">
+                  <span className={cn(isToday && "font-semibold")}>{runLabel(run.days)}</span>
+                  {isToday && <span className="mt-0.5 text-[11px] font-bold tracking-[0.08em] text-pink uppercase">Today</span>}
                 </span>
-                <span className="flex items-center gap-1.5 tabular">
-                  {wins.length
-                    ? wins.map((w, i) => {
-                        const live = isToday && occ.status === "live" && nowT >= w.start && (w.end <= w.start || nowT < w.end);
-                        return (
-                          <span key={i} className="flex items-center gap-1.5">
-                            {i > 0 && <span className="text-muted-foreground">·</span>}
-                            {live && <StatusDot occ={occ} />}
-                            <span className={cn(live && "font-bold text-lime")}>{fmtRange(w.start, w.end)}</span>
-                            {w.label && <span className="text-[13px] text-muted-foreground">{w.label}</span>}
-                          </span>
-                        );
-                      })
-                    : "None"}
-                </span>
+                {wins.length ? (
+                  <ul className="flex flex-col items-end gap-1.5 tabular">
+                    {wins.map((w, i) => {
+                      const live = isToday && occ.status === "live" && nowT >= w.start && (w.end <= w.start || nowT < w.end);
+                      return (
+                        <li key={i} className="flex items-center gap-2 whitespace-nowrap">
+                          {w.label && <span className="text-[13px] text-muted-foreground">{w.label}</span>}
+                          {live && <StatusDot occ={occ} />}
+                          <span className={cn(live && "font-bold text-lime")}>{fmtRange(w.start, w.end)}</span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                ) : (
+                  <span>No happy hour</span>
+                )}
               </li>
             );
           })}
@@ -320,34 +326,40 @@ export function Spot() {
         </section>
       )}
 
-      {/* Sticky bar */}
-      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-ink/95 backdrop-blur-xl">
+      <Link to="/" className="sr-only">
+        Back to list
+      </Link>
+    </main>
+
+      {/* Sticky bar (outside main so the swipe-back transform doesn't pin it to the page) */}
+      <aside ref={bar} aria-label="Happy hour and directions" className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-ink/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-md items-center justify-between gap-3 px-5 lg:max-w-2xl pt-3 pb-[max(env(safe-area-inset-bottom),14px)]">
           <div className="min-w-0">
             {occ.start && occ.end ? (
               <>
-                <p className="flex items-center gap-2 font-display text-[20px] font-extrabold tabular">
+                <p className="flex items-center gap-2 font-display text-[20px] leading-tight font-extrabold whitespace-nowrap tabular">
                   <StatusDot occ={occ} />
                   {fmtRange(occ.start, occ.end)}
-                  {soon && <span className="text-[15px] font-bold text-orange">ending soon</span>}
                 </p>
-                <p className="text-xs text-muted-foreground">{occ.status === "live" ? "Happy hour on now" : statusLabel(occ, now)}</p>
+                <p className={cn("mt-0.5 truncate text-xs", soon ? "font-semibold text-orange" : "text-muted-foreground")}>
+                  {occ.status === "live" ? `On now · ${statusLabel(occ, now).toLowerCase()}` : statusLabel(occ, now)}
+                </p>
               </>
             ) : (
               <p className="text-sm text-muted-foreground">No happy hour times listed</p>
             )}
           </div>
           {venue.lat != null && venue.lng != null ? (
-            <Button onClick={() => setDirectionsOpen(true)}>
+            <Button onClick={() => setDirectionsOpen(true)} className="shrink-0">
               <Navigation /> Directions
             </Button>
           ) : (
-            <Button variant="cream" onClick={onShare}>
+            <Button variant="cream" onClick={onShare} className="shrink-0">
               <Share /> Share
             </Button>
           )}
         </div>
-      </div>
+      </aside>
 
       <Drawer open={directionsOpen} onOpenChange={setDirectionsOpen}>
         <DrawerContent>
@@ -366,10 +378,6 @@ export function Spot() {
       </Drawer>
 
       <NotifyDrawer open={notifyOpen} onOpenChange={setNotifyOpen} />
-
-      <Link to="/" className="sr-only">
-        Back to list
-      </Link>
-    </main>
+    </>
   );
 }
