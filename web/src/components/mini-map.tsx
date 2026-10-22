@@ -51,7 +51,7 @@ export function MiniMap({ lat, lng, className }: { lat: number; lng: number; cla
     <div className={cn("relative overflow-hidden bg-[#262626]", className)} aria-hidden>
       <div ref={box} className={cn("absolute inset-0 transition-opacity duration-500", ready ? "opacity-100" : "opacity-0")} />
       <span className="pointer-events-none absolute top-1/2 left-1/2 size-5 -translate-1/2 rounded-full border-2 border-[#1b1b1b] bg-[#ff4900] ring-4 ring-[#ff4900]/30" />
-      <span className="pointer-events-none absolute right-1.5 bottom-1 text-[10px] text-cream/50">© OpenStreetMap © CARTO</span>
+      <span className="pointer-events-none absolute right-1.5 bottom-1 text-[10px] text-cream/80">© OpenStreetMap © CARTO</span>
     </div>
   );
 }
