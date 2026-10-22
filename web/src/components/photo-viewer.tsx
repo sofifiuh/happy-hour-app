@@ -111,7 +111,7 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: string[];
   };
 
   return createPortal(
-    <div role="dialog" aria-modal="true" aria-label={`Photos of ${name}`} className="fixed inset-0 z-50">
+    <div role="dialog" aria-modal="true" aria-label={`Photos of ${name}`} className="theme-dark fixed inset-0 z-50">
       <div ref={sheet} data-no-swipe className="animate-fade absolute inset-0 bg-black/[0.96]">
         <div
           ref={strip}
