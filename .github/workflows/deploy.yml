@@ -1,8 +1,23 @@
 name: Deploy to GitHub Pages
 
+# Builds alittlehang.com and publishes it to GitHub Pages.
+#
+# When web/ exists (the React app), it builds web/dist-site: the app plus
+# pre-rendered venue pages at the old /spots/<id>.html URLs, sitemap,
+# robots.txt and CNAME. Without web/ it publishes the legacy site from the
+# repo root, exactly as before. Rolling back is a revert on main (or a
+# deploy of the legacy-site-2026-10 branch); see the launch runbook.
+#
+# Pull requests build the site without deploying, so a broken build is
+# caught before it reaches main. The daily run refreshes venue photos.
+
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "17 11 * * *"
   workflow_dispatch:
 
 permissions:
@@ -11,19 +26,74 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.event_name == 'pull_request' && github.ref || 'deploy' }}
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate config.js from secrets
+      - name: Detect site
+        id: site
+        run: |
+          if [ -f web/package.json ]; then
+            echo "kind=app" >> "$GITHUB_OUTPUT"
+            echo "path=web/dist-site" >> "$GITHUB_OUTPUT"
+          else
+            echo "kind=legacy" >> "$GITHUB_OUTPUT"
+            echo "path=." >> "$GITHUB_OUTPUT"
+          fi
+
+      # ---------- React app ----------
+      - if: steps.site.outputs.kind == 'app'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - if: steps.site.outputs.kind == 'app'
+        uses: actions/cache@v4
+        with:
+          path: |
+            photos
+            web/public/photos
+            web/node_modules/.cache/og
+          key: site-media-${{ hashFiles('venues.json') }}
+          restore-keys: site-media-
+
+      - if: steps.site.outputs.kind == 'app'
+        working-directory: web
+        run: npm ci
+
+      - if: steps.site.outputs.kind == 'app'
+        name: Download missing venue covers
+        working-directory: web
+        run: npm run photos
+
+      - if: steps.site.outputs.kind == 'app'
+        working-directory: web
+        run: npm run build:site
+
+      - if: steps.site.outputs.kind == 'app'
+        name: Check the build kept the domain and old URLs
+        working-directory: web/dist-site
+        run: |
+          test "$(cat CNAME)" = "alittlehang.com"
+          test -f index.html -a -f 404.html -a -f menu.html -a -f robots.txt -a -f sitemap.xml
+          test -f spots/index.html
+          missing=0
+          for f in ../../spots/*.html; do
+            [ -f "spots/$(basename "$f")" ] || { echo "missing: spots/$(basename "$f")"; missing=$((missing+1)); }
+          done
+          echo "old venue URLs missing from the new build: $missing"
+          echo "pages: $(find . -name '*.html' | wc -l), size: $(du -sh . | cut -f1)"
+
+      # ---------- legacy site ----------
+      - if: steps.site.outputs.kind == 'legacy'
+        name: Generate config.js from secrets
         run: |
           cat <<EOF > config.js
           const MAPBOX_TOKEN = "${MAPBOX_TOKEN}";
@@ -32,10 +102,19 @@ jobs:
           MAPBOX_TOKEN: ${{ secrets.MAPBOX_TOKEN }}
 
       - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: ${{ steps.site.outputs.path }}
 
+  deploy:
+    needs: build
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v4
