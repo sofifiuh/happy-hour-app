@@ -29,7 +29,7 @@ export default function DesktopMap({
           <button
             onClick={() => onSelect(null)}
             aria-label="Close"
-            className="absolute top-1 right-1 z-10 grid size-9 place-items-center rounded-full bg-ink-2 text-cream shadow-lg ring-1 ring-white/10 transition-transform active:scale-90"
+            className="absolute top-1 right-1 z-10 grid size-11 place-items-center rounded-full bg-ink-2 text-cream shadow-lg ring-1 ring-white/10 transition-transform active:scale-90"
           >
             <X className="size-4" />
           </button>

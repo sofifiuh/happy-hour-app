@@ -59,7 +59,7 @@ function runLabel(days: number[]) {
 export function Spot() {
   const params = useParams();
   const id = (params.id ?? params.file ?? "").replace(/\.html$/, "");
-  const { byId, now, loading, location, saved, toggleSaved } = useStore();
+  const { byId, now, loading, deviceLocation, area, saved, toggleSaved } = useStore();
   const navigate = useNavigate();
   const toast = useToast();
   const venue = byId(id);
@@ -100,6 +100,8 @@ export function Spot() {
   const today = now.getDay();
   const nowT = nowHHMM(now);
   const tab = deals[cat].length || !deals[cat === "food" ? "drink" : "food"].length ? cat : cat === "food" ? "drink" : "food";
+  // Walking time only from a real starting point, not the Downtown default.
+  const location = deviceLocation ?? area;
   const km = location && venue.lat != null && venue.lng != null ? distanceKm(location, { lat: venue.lat, lng: venue.lng }) : null;
   const pills = amenityPills(venue);
   const q = encodeURIComponent(`${venue.name}, ${venue.address}`);
@@ -127,7 +129,7 @@ export function Spot() {
           <button
             onClick={() => goBack(navigate)}
             aria-label="Back"
-            className="hit grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90"
+            className="grid size-11 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90"
           >
             <ArrowLeft className="size-5" />
           </button>
@@ -136,11 +138,11 @@ export function Spot() {
               onClick={onSave}
               aria-label={isSaved ? "Remove from saved" : "Save"}
               aria-pressed={isSaved}
-              className="hit grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90"
+              className="grid size-11 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90"
             >
               <Heart className={cn("size-[18px]", isSaved && "fill-primary text-primary")} />
             </button>
-            <button onClick={onShare} aria-label="Share" className="hit grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90">
+            <button onClick={onShare} aria-label="Share" className="grid size-11 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90">
               <Share className="size-[18px]" />
             </button>
           </div>
@@ -224,7 +226,7 @@ export function Spot() {
               <p className="text-[15px] font-semibold">Deals not listed yet</p>
               <p className="mt-1 text-[13px] text-muted-foreground">We know the times, but haven't confirmed the menu.</p>
               {venue.hh.source && (
-                <a href={venue.hh.source} target="_blank" rel="noopener" className="mt-3 inline-flex items-center gap-1 text-[14px] font-semibold text-primary">
+                <a href={venue.hh.source} target="_blank" rel="noopener" className="mt-1 inline-flex min-h-11 items-center gap-1 px-2 text-[14px] font-semibold text-primary">
                   See their menu <ExternalLink className="size-3.5" />
                 </a>
               )}
@@ -262,6 +264,7 @@ export function Spot() {
                             {i > 0 && <span className="text-muted-foreground">·</span>}
                             {live && <StatusDot occ={occ} />}
                             <span className={cn(live && "font-bold text-lime")}>{fmtRange(w.start, w.end)}</span>
+                            {w.label && <span className="text-[13px] text-muted-foreground">{w.label}</span>}
                           </span>
                         );
                       })
@@ -271,19 +274,19 @@ export function Spot() {
             );
           })}
         </ul>
-        <div className="mt-3 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-3 text-[13px] text-muted-foreground">
+        <div className="mt-1 flex flex-wrap items-center justify-between gap-x-4 px-3 text-[13px] text-muted-foreground">
           <span>
             {venue.hh.verified ? "Verified against their menu" : "From their website"}
             {venue.hh.source && (
               <>
                 {" · "}
-                <a href={venue.hh.source} target="_blank" rel="noopener" className="underline underline-offset-4">
+                <a href={venue.hh.source} target="_blank" rel="noopener" className="inline-flex min-h-11 items-center underline underline-offset-4">
                   source
                 </a>
               </>
             )}
           </span>
-          <a href={reportLink(venue)} className="hit inline-flex items-center gap-1.5 font-medium text-cream">
+          <a href={reportLink(venue)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
             <Flag className="size-3.5" /> Report a wrong time
           </a>
         </div>

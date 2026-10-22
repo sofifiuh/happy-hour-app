@@ -26,7 +26,7 @@ const DesktopMap = lazy(() => import("@/components/desktop-map"));
 const PAGE = 40;
 
 export function Home() {
-  const { rows, now, loading, loadFailed, filters, resetFilters, setFilters, locationState, area, saved } = useStore();
+  const { rows, now, loading, loadFailed, filters, resetFilters, setFilters, locationState, origin, saved } = useStore();
   const [params] = useSearchParams();
   const [filtersOpen, setFiltersOpen] = useState(params.get("sheet") === "filters");
   const [planOpen, setPlanOpen] = useState(params.get("sheet") === "plan");
@@ -83,29 +83,31 @@ export function Home() {
       <h1 className="sr-only">Happy hours in Vancouver</h1>
       <header className="sticky top-0 z-20 bg-ink/90 pt-safe backdrop-blur-xl">
         <div className="flex items-center justify-between px-4 pt-3 pb-2">
-          <Link to="/welcome" aria-label="A Little Hang">
+          <Link to="/welcome" aria-label="A Little Hang" className="grid min-h-11 min-w-11 place-items-center">
             <Wordmark className="h-10 text-cream" />
           </Link>
           <div className="flex items-center gap-2">
             <button
               onClick={() => setLocationOpen(true)}
-              className="hit inline-flex h-9 items-center gap-1.5 rounded-full bg-ink-2 px-3 text-[13px] font-medium text-sky transition-transform active:scale-95"
+              className="inline-flex h-11 items-center gap-1.5 rounded-full bg-ink-2 px-3.5 text-[13px] font-medium text-sky transition-transform active:scale-95"
             >
               {locationState === "granted" ? (
                 <>
                   <LocateFixed className="size-4" /> Near me
                 </>
-              ) : area ? (
+              ) : locationState === "asking" ? (
                 <>
-                  <MapPin className="size-4" /> {area.name}
+                  <LocateFixed className="size-4" /> Finding you…
                 </>
               ) : (
                 <>
-                  <LocateFixed className="size-4" /> {locationState === "asking" ? "Finding you…" : "Set location"}
+                  <MapPin className="size-4 shrink-0" />
+                  <span className="max-w-[9.5rem] truncate">Near {origin.name}</span>
+                  <span className="text-cream/60">· Change</span>
                 </>
               )}
             </button>
-            <Link to="/saved" aria-label="Saved spots" className="hit grid size-9 place-items-center rounded-full bg-ink-2 text-cream transition-transform active:scale-90">
+            <Link to="/saved" aria-label="Saved spots" className="relative grid size-11 place-items-center rounded-full bg-ink-2 text-cream transition-transform active:scale-90">
               <Heart className="size-[18px]" />
               {saved.length > 0 && (
                 <span className="absolute -top-1 -right-1 grid h-4 min-w-4 place-items-center rounded-full bg-primary px-1 text-[10px] font-bold text-primary-foreground tabular">

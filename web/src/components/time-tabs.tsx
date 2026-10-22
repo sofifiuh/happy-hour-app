@@ -15,7 +15,7 @@ export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; cl
   const planLabel = filters.tab === "plan" && filters.plan ? `${DAY_SHORT[filters.plan.day]}, ${fmtTime(filters.plan.time)}` : "Date & Time";
   const chip = (active: boolean) =>
     cn(
-      "hit inline-flex h-9 shrink-0 items-center gap-1.5 rounded-full px-4 text-[14px] font-medium transition-[color,background-color,transform] duration-200 active:scale-95",
+      "inline-flex h-11 shrink-0 items-center gap-1.5 rounded-full px-4 text-[14px] font-medium transition-[color,background-color,transform] duration-200 active:scale-95",
       active ? "bg-cream text-ink" : "bg-ink-3 text-cream/80 hover:text-cream",
     );
   return (

@@ -27,7 +27,7 @@ export function VenueMap({
   focusOffset?: number;
   locateClassName?: string;
 }) {
-  const { location, requestLocation, locationState } = useStore();
+  const { deviceLocation: location, requestLocation, locationState } = useStore();
   const [ready, setReady] = useState(false);
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MLMap | null>(null);

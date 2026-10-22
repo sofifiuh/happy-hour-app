@@ -1,6 +1,6 @@
 import { asset, queryParams } from "@/lib/routes";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
-import { distanceKm, nearestArea, type Area, type LatLng } from "./geo";
+import { AREAS, distanceKm, nearestArea, type Area, type LatLng } from "./geo";
 import { occurrence, occurrenceAt } from "./hours";
 import type { Occurrence, Venue } from "./types";
 
@@ -40,7 +40,9 @@ interface Store {
   venues: Venue[];
   loading: boolean;
   now: Date;
-  location: LatLng | null; // device location, else the picked neighbourhood
+  location: LatLng; // device location, else the neighbourhood (Downtown by default)
+  deviceLocation: LatLng | null;
+  origin: Area; // the picked neighbourhood, or Downtown
   locationState: "idle" | "asking" | "granted" | "denied";
   requestLocation: () => void;
   area: Area | null; // neighbourhood picked instead of sharing location
@@ -151,7 +153,10 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [saved, setSaved] = useState<string[]>(() => fp?.get("saved")?.split(",").filter(Boolean) ?? readJSON<string[]>(SAVED_KEY, []));
   const [online, setOnline] = useState(() => (fp?.get("offline") === "1" ? false : navigator.onLine));
   const [loadFailed, setLoadFailed] = useState(fp?.get("error") === "1");
-  const location = deviceLocation ?? area;
+  // Without a device location or a picked neighbourhood, sort from
+  // Downtown so the top of the list is central, not alphabetical.
+  const origin = area ?? AREAS[0];
+  const location = deviceLocation ?? origin;
   const [locationState, setLocationState] = useState<Store["locationState"]>("idle");
   const [filters, setFiltersState] = useState<Filters>(readFilters);
 
@@ -270,13 +275,17 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       out.push({ venue, occ, km });
     }
     const rank = { live: 0, scheduled: 0, upcoming: 1, none: 2 } as const;
+    // Times compare in 30-minute buckets so a spot nearby beats one across
+    // town that starts or ends a few minutes sooner.
+    const bucket = (d: Date | null | undefined) => (d ? Math.floor(d.getTime() / 1_800_000) : 0);
     out.sort((a, b) => {
       if (rank[a.occ.status] !== rank[b.occ.status]) return rank[a.occ.status] - rank[b.occ.status];
+      // Further than 10 km sinks below everything closer in the same group.
+      const far = Number((a.km ?? 0) > 10) - Number((b.km ?? 0) > 10);
+      if (far) return far;
       // Happening now: least time left first. Upcoming: soonest first. Then nearest.
-      if (a.occ.status === "live" && a.occ.end && b.occ.end && a.occ.end.getTime() !== b.occ.end.getTime())
-        return a.occ.end.getTime() - b.occ.end.getTime();
-      if (a.occ.status === "upcoming" && a.occ.start && b.occ.start && a.occ.start.getTime() !== b.occ.start.getTime())
-        return a.occ.start.getTime() - b.occ.start.getTime();
+      if (a.occ.status === "live" && bucket(a.occ.end) !== bucket(b.occ.end)) return bucket(a.occ.end) - bucket(b.occ.end);
+      if (a.occ.status === "upcoming" && bucket(a.occ.start) !== bucket(b.occ.start)) return bucket(a.occ.start) - bucket(b.occ.start);
       if (a.km != null && b.km != null && Math.abs(a.km - b.km) > 0.05) return a.km - b.km;
       return a.venue.name.localeCompare(b.venue.name);
     });
@@ -291,6 +300,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     loading,
     now,
     location,
+    deviceLocation,
+    origin,
     locationState,
     requestLocation,
     area,
