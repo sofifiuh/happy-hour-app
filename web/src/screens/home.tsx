@@ -89,7 +89,7 @@ export function Home() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setLocationOpen(true)}
-              className="inline-flex h-11 items-center gap-1.5 rounded-full bg-ink-2 px-3.5 text-[13px] font-medium text-sky transition-transform active:scale-95"
+              className="inline-flex h-11 items-center gap-1.5 rounded-full bg-ink-2 px-3.5 text-[13px] font-medium text-sky-fg transition-transform active:scale-95"
             >
               {locationState === "granted" ? (
                 <>
@@ -204,7 +204,7 @@ export function Home() {
     </div>
     {desktop && (
       <aside aria-label="Map" className="sticky top-0 h-dvh p-3 pl-1">
-        <div className="relative h-full overflow-hidden rounded-[28px] bg-ink-2 ring-1 ring-white/5">
+        <div className="relative h-full overflow-hidden rounded-[28px] bg-ink-2 ring-1 ring-edge/5">
           <Suspense fallback={null}>
             <DesktopMap rows={rows} now={now} selected={selected} hovered={hovered} onSelect={setSelected} />
           </Suspense>

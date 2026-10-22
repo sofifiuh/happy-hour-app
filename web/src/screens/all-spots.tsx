@@ -32,7 +32,7 @@ export function AllSpots() {
             <ul className="divide-y divide-border rounded-2xl bg-ink-2 px-4">
               {list.map((v) => (
                 <li key={v.id}>
-                  <Link to={spotPath(v.id)} viewTransition className="block py-3 transition-colors hover:text-orange">
+                  <Link to={spotPath(v.id)} viewTransition className="block py-3 transition-colors hover:text-orange-fg">
                     <span className="block text-[15px] font-semibold">{v.name}</span>
                     <span className="block truncate text-[13px] text-muted-foreground">{v.address}</span>
                   </Link>

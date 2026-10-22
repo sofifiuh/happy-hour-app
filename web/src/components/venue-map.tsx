@@ -4,9 +4,10 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { LocateFixed } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { DEFAULT_CENTER } from "@/lib/geo";
-import { loadMapStyle, PIN_COLORS } from "@/lib/map-style";
+import { loadMapStyle, PIN_COLORS, PIN_PAINT } from "@/lib/map-style";
 import { reducedMotion } from "@/lib/motion";
 import { useStore, type Row } from "@/lib/store";
+import { colorScheme, useColorScheme, type Scheme } from "@/lib/use-media";
 import { cn } from "@/lib/utils";
 
 // The pin map shared by the phone Map view and the desktop list-beside-map
@@ -28,7 +29,12 @@ export function VenueMap({
   locateClassName?: string;
 }) {
   const { deviceLocation: location, requestLocation, locationState } = useStore();
-  const [ready, setReady] = useState(false);
+  const scheme = useColorScheme();
+  // Bumped each time the venue layers are (re)added, i.e. on first load
+  // and after a light/dark basemap swap, so the pins get their data back.
+  const [styleGen, setStyleGen] = useState(0);
+  const ready = styleGen > 0;
+  const shownScheme = useRef<Scheme>(colorScheme());
   const container = useRef<HTMLDivElement>(null);
   const map = useRef<MLMap | null>(null);
   const userMarker = useRef<maplibregl.Marker | null>(null);
@@ -39,7 +45,7 @@ export function VenueMap({
   useEffect(() => {
     let created: maplibregl.Map | undefined;
     let cancelled = false;
-    loadMapStyle().then((style) => {
+    loadMapStyle(shownScheme.current).then((style) => {
       if (cancelled || !container.current) return;
       init(container.current, style);
     });
@@ -60,43 +66,7 @@ export function VenueMap({
       });
       m.touchZoomRotate.disableRotation();
       m.on("load", () => {
-        m.addSource("venues", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
-        m.addLayer({
-          id: "venue-halo",
-          type: "circle",
-          source: "venues",
-          filter: ["any", ["==", ["get", "selected"], true], ["==", ["get", "hovered"], true]],
-          paint: {
-            "circle-radius": ["case", ["==", ["get", "selected"], true], 16, 13],
-            "circle-color": ["case", ["==", ["get", "selected"], true], "#ff4900", "#f3efe4"],
-            "circle-opacity": 0.3,
-            "circle-radius-transition": { duration: 250 },
-          },
-        });
-        m.addLayer({
-          id: "venue-pins",
-          type: "circle",
-          source: "venues",
-          paint: {
-            "circle-radius": [
-              "interpolate", ["linear"], ["zoom"],
-              10, ["case", ["==", ["get", "selected"], true], 8, 4.5],
-              14, ["case", ["==", ["get", "selected"], true], 10, 7.5],
-              17, ["case", ["==", ["get", "selected"], true], 11, 9],
-            ],
-            "circle-color": ["case", ["==", ["get", "selected"], true], "#ff4900", ["get", "color"]],
-            "circle-stroke-color": ["case", ["==", ["get", "hovered"], true], "#f3efe4", "#1b1b1b"],
-            "circle-stroke-width": ["case", ["==", ["get", "hovered"], true], 2.5, 1.5],
-          },
-        });
-        // Invisible 44px finger target around each pin; a tap between
-        // close pins goes to the nearest one.
-        m.addLayer({
-          id: "venue-hit",
-          type: "circle",
-          source: "venues",
-          paint: { "circle-radius": 22, "circle-color": "#000", "circle-opacity": 0 },
-        });
+        addVenueLayers(m, shownScheme.current);
         const nearest = (e: MapMouseEvent) => {
           let best: string | undefined;
           let bestD = Infinity;
@@ -114,11 +84,30 @@ export function VenueMap({
         m.on("click", (e: MapMouseEvent) => select.current(nearest(e) ?? null));
         m.on("mouseenter", "venue-hit", () => (m.getCanvas().style.cursor = "pointer"));
         m.on("mouseleave", "venue-hit", () => (m.getCanvas().style.cursor = ""));
-        setReady(true);
+        setStyleGen(1);
       });
       map.current = created = m;
     }
   }, []);
+
+  // Follow the system theme: swap the basemap, then put the pins back.
+  useEffect(() => {
+    const m = map.current;
+    if (!ready || !m || shownScheme.current === scheme) return;
+    let cancelled = false;
+    loadMapStyle(scheme).then((style) => {
+      if (cancelled) return;
+      shownScheme.current = scheme;
+      m.once("style.load", () => {
+        addVenueLayers(m, scheme);
+        setStyleGen((g) => g + 1);
+      });
+      m.setStyle(style, { diff: false });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [ready, scheme]);
 
   // Pins follow the filtered rows, the selection and the hovered row.
   useEffect(() => {
@@ -132,7 +121,7 @@ export function VenueMap({
         properties: { id: r.venue.id, color: PIN_COLORS[r.occ.status], selected: r.venue.id === selected, hovered: r.venue.id === hovered },
       })),
     });
-  }, [ready, rows, selected, hovered]);
+  }, [styleGen, rows, selected, hovered]);
 
   // Selecting pans the selected pin into view.
   useEffect(() => {
@@ -148,7 +137,7 @@ export function VenueMap({
     if (!ready || !map.current || !location) return;
     if (!userMarker.current) {
       const el = document.createElement("div");
-      el.className = "size-4 rounded-full bg-sky ring-4 ring-sky/30 shadow-[0_0_0_10px_rgb(191_219_230/0.12)]";
+      el.className = "size-4 rounded-full border-2 border-ink-2 bg-sky-fg ring-4 ring-sky-fg/25";
       userMarker.current = new maplibregl.Marker({ element: el }).setLngLat([location.lng, location.lat]).addTo(map.current);
       map.current.easeTo({ center: [location.lng, location.lat], zoom: 14.5, duration: reducedMotion() ? 0 : 600 });
     } else {
@@ -166,7 +155,7 @@ export function VenueMap({
         }}
         aria-label="Center on my location"
         className={cn(
-          "absolute right-4 z-10 grid size-11 place-items-center rounded-full bg-ink-2 text-cream shadow-lg ring-1 ring-white/10 transition-[bottom,transform] duration-300 active:scale-90",
+          "absolute right-4 z-10 grid size-11 place-items-center rounded-full bg-ink-2 text-cream shadow-lg ring-1 ring-edge/10 transition-[bottom,transform] duration-300 active:scale-90",
           locationState === "asking" && "animate-pulse",
           locateClassName,
         )}
@@ -175,4 +164,47 @@ export function VenueMap({
       </button>
     </>
   );
+}
+
+// Pins live in their own source and layers on top of the basemap; they
+// are added again after a basemap swap, which clears them.
+function addVenueLayers(m: MLMap, scheme: Scheme) {
+  const pin = PIN_PAINT[scheme];
+  m.addSource("venues", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+  m.addLayer({
+    id: "venue-halo",
+    type: "circle",
+    source: "venues",
+    filter: ["any", ["==", ["get", "selected"], true], ["==", ["get", "hovered"], true]],
+    paint: {
+      "circle-radius": ["case", ["==", ["get", "selected"], true], 16, 13],
+      "circle-color": ["case", ["==", ["get", "selected"], true], "#ff4900", pin.hover],
+      "circle-opacity": scheme === "light" ? 0.22 : 0.3,
+      "circle-radius-transition": { duration: 250 },
+    },
+  });
+  m.addLayer({
+    id: "venue-pins",
+    type: "circle",
+    source: "venues",
+    paint: {
+      "circle-radius": [
+        "interpolate", ["linear"], ["zoom"],
+        10, ["case", ["==", ["get", "selected"], true], 8, 4.5],
+        14, ["case", ["==", ["get", "selected"], true], 10, 7.5],
+        17, ["case", ["==", ["get", "selected"], true], 11, 9],
+      ],
+      "circle-color": ["case", ["==", ["get", "selected"], true], "#ff4900", ["get", "color"]],
+      "circle-stroke-color": ["case", ["==", ["get", "hovered"], true], pin.hover, pin.stroke],
+      "circle-stroke-width": ["case", ["==", ["get", "hovered"], true], 2.5, pin.strokeWidth],
+    },
+  });
+  // Invisible 44px finger target around each pin; a tap between
+  // close pins goes to the nearest one.
+  m.addLayer({
+    id: "venue-hit",
+    type: "circle",
+    source: "venues",
+    paint: { "circle-radius": 22, "circle-color": "#000", "circle-opacity": 0 },
+  });
 }

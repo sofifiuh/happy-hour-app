@@ -13,7 +13,7 @@ export function ViewToggle({ view }: { view: "list" | "map" }) {
   return (
     <nav
       aria-label="View"
-      className="pointer-events-auto flex w-[184px] gap-1 rounded-full bg-ink-2/95 p-1 shadow-[0_8px_30px_rgb(0_0_0/0.45)] ring-1 ring-white/5 backdrop-blur"
+      className="pointer-events-auto flex w-[184px] gap-1 rounded-full bg-ink-2/95 p-1 shadow-(--shadow-float) ring-1 ring-edge/5 backdrop-blur"
     >
       <Link to="/" replace viewTransition onClick={() => setNav("swap")} aria-current={view === "list" ? "page" : undefined} className={item(view === "list")}>
         <List className="size-4" /> List
