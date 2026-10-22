@@ -2,6 +2,7 @@ import { ArrowLeft, BadgeCheck, ExternalLink, Flag, Globe, Heart, Navigation, Ph
 import { type CSSProperties, lazy, Suspense, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
+import { WhenVisible } from "@/components/when-visible";
 import { NotifyDrawer, remindersAsked } from "@/components/notify-drawer";
 import { StatusDot } from "@/components/status";
 import { useToast } from "@/components/toast";
@@ -294,9 +295,11 @@ export function Spot() {
         <section style={{ "--i": 4 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Find us here</h2>
           <button onClick={() => setDirectionsOpen(true)} className="block w-full overflow-hidden rounded-[22px] bg-ink-2 text-left">
-            <Suspense fallback={<div className="h-[170px] w-full bg-ink-3" />}>
-              <MiniMap lat={venue.lat} lng={venue.lng} className="h-[170px] w-full" />
-            </Suspense>
+            <WhenVisible className="h-[170px] w-full bg-ink-3">
+              <Suspense fallback={null}>
+                <MiniMap lat={venue.lat} lng={venue.lng} className="h-[170px] w-full" />
+              </Suspense>
+            </WhenVisible>
             <div className="flex items-center justify-between gap-3 p-4">
               <span className="text-[15px]">{venue.address}</span>
               <span className="inline-flex shrink-0 items-center gap-1.5 text-[14px] font-semibold text-primary">

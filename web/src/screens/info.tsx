@@ -9,8 +9,7 @@ export type InfoPage = "about" | "privacy" | "terms";
 
 const TITLES: Record<InfoPage, string> = { about: "About", privacy: "Privacy", terms: "Terms" };
 
-// Draft copy for review before launch; the stores need privacy and terms
-// pages reachable from inside the app.
+// Plain-language about, privacy and terms pages, linked from the list.
 export function Info({ page }: { page: InfoPage }) {
   useTitle(TITLES[page]);
   return (
@@ -21,7 +20,7 @@ export function Info({ page }: { page: InfoPage }) {
         {page === "privacy" && <Privacy />}
         {page === "terms" && <Terms />}
         <p className="mt-10 rounded-2xl bg-ink-2 px-4 py-3 text-[13px] text-muted-foreground">
-          Draft for review. Questions or corrections:{" "}
+          Questions or corrections:{" "}
           <a href={`mailto:${SUPPORT_EMAIL}`} className="text-cream underline underline-offset-4">
             {SUPPORT_EMAIL}
           </a>
@@ -86,8 +85,8 @@ function Privacy() {
       </p>
       <H>Usage data</H>
       <p>
-        We may collect anonymous usage counts (for example, which screens are opened) to improve the app. These don't identify you.
-        This section will list the exact tool before launch.
+        We don't use analytics, advertising or tracking tools. If we ever add anonymous usage counts to improve the app, this page
+        will say which tool and what it collects before it's switched on.
       </p>
       <H>Links to other sites</H>
       <p>Venue websites, maps and phone links open other services, which have their own privacy policies.</p>

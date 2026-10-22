@@ -63,7 +63,7 @@ export function PlanDrawer({ open, onOpenChange }: { open: boolean; onOpenChange
                 </button>
               ))}
             </div>
-            <div className="no-scrollbar -mx-5 mt-3 flex gap-2 overflow-x-auto px-5">
+            <div className="no-scrollbar fade-x -mx-5 mt-3 flex gap-2 overflow-x-auto px-5">
               {HOURS.map((h) => (
                 <button key={h} className={cn(pill(time === h), "tabular")} onClick={() => setTime(h)}>
                   {fmtTime(h)}

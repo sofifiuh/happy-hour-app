@@ -168,13 +168,13 @@ body {
     opacity: 0;
   }
 }
+/* No opacity in pop or settle: they run on first paint (welcome logo and
+   photo), and Chrome doesn't count fading-in content as painted. */
 @keyframes pop {
   0% {
-    opacity: 0;
     transform: scale(0.9);
   }
   60% {
-    opacity: 1;
     transform: scale(1.03);
   }
 }
@@ -195,20 +195,20 @@ body {
 }
 
 @utility animate-rise {
-  animation: rise 420ms var(--ease-out) both;
-  animation-delay: calc(min(var(--i, 0), 12) * 32ms);
+  animation: rise 300ms var(--ease-out) both;
+  animation-delay: calc(min(var(--i, 0), 10) * 24ms);
 }
 @utility animate-fade {
-  animation: fade 300ms var(--ease-out) both;
+  animation: fade 240ms var(--ease-out) both;
 }
 @utility animate-pop {
-  animation: pop 520ms var(--ease-out) both;
+  animation: pop 300ms var(--ease-out) both;
 }
 @utility animate-live {
   animation: live-ring 2s var(--ease-out) infinite;
 }
 @utility animate-toast {
-  animation: toast-in 320ms var(--ease-out) both;
+  animation: toast-in 240ms var(--ease-out) both;
 }
 
 /* Route changes: a short push / pop, plus the venue photo flying between
@@ -241,7 +241,7 @@ body {
   animation: 160ms var(--ease-in) both vt-push-out;
 }
 ::view-transition-new(root) {
-  animation: 300ms var(--ease-out) both vt-push-in;
+  animation: 280ms var(--ease-out) both vt-push-in;
 }
 html[data-nav="back"]::view-transition-old(root) {
   animation-name: vt-pop-out;
@@ -257,7 +257,7 @@ html[data-nav="swap"]::view-transition-old(root) {
   animation-direction: reverse;
 }
 ::view-transition-group(hero) {
-  animation-duration: 380ms;
+  animation-duration: 300ms;
   animation-timing-function: var(--ease-out);
 }
 /* Only the destination photo flies; the source is hidden so the two
@@ -290,7 +290,6 @@ html[data-nav="swap"]::view-transition-old(root) {
 }
 @keyframes settle {
   from {
-    opacity: 0;
     transform: scale(1.12);
   }
   to {
@@ -315,4 +314,15 @@ html[data-nav="swap"]::view-transition-old(root) {
 /* Horizontal chip rows fade at the right edge so it's clear they scroll. */
 @utility fade-x {
   mask-image: linear-gradient(to right, black calc(100% - 40px), transparent);
+}
+
+/* Transform-only rise for first-paint content (see the note on pop). */
+@keyframes lift {
+  from {
+    transform: translateY(14px);
+  }
+}
+@utility animate-lift {
+  animation: lift 300ms var(--ease-out) both;
+  animation-delay: calc(min(var(--i, 0), 10) * 24ms);
 }

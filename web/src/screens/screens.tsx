@@ -31,8 +31,8 @@ export function ScreensBoard() {
     { title: "Couldn't load", note: "First visit with no connection", path: "/?error=1&q=zzzz-no-data" },
     { title: "Not found", note: "Old or broken links", path: "/this-page-does-not-exist" },
     { title: "About", note: "What the app is and where times come from", path: "/about" },
-    { title: "Privacy", note: "Draft: no accounts, location stays on device", path: "/privacy" },
-    { title: "Terms", note: "Draft: times are a guide, 19+", path: "/terms" },
+    { title: "Privacy", note: "No accounts, location stays on device", path: "/privacy" },
+    { title: "Terms", note: "Times are a guide, 19+", path: "/terms" },
   ];
 
   const frameUrl = (path: string) => {

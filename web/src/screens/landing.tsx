@@ -31,7 +31,7 @@ export function Landing() {
 
   return (
     <main className="relative flex min-h-dvh flex-col overflow-hidden bg-ink">
-      <img src={asset("photos/east-van-brewing-company.webp")} alt="" fetchPriority="high" className="absolute inset-0 size-full scale-105 animate-[settle_1600ms_var(--ease-out)_both] object-cover" />
+      <img src={asset("photos/east-van-brewing-company.webp")} alt="" fetchPriority="high" className="absolute inset-0 size-full scale-105 animate-[settle_900ms_var(--ease-out)_both] object-cover" />
       {/* warm duotone wash, echoing the silhouette shots on the brand board */}
       <div className="absolute inset-0 bg-[#ff4900] mix-blend-multiply opacity-70" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-ink" />
@@ -41,15 +41,15 @@ export function Landing() {
       </div>
 
       <div className="relative px-6 pb-[max(env(safe-area-inset-bottom),28px)]">
-        <h1 style={{ "--i": 4 } as CSSProperties} className="animate-rise font-display text-[32px] leading-[1.02] font-extrabold tracking-[-0.02em]">
+        <h1 style={{ "--i": 4 } as CSSProperties} className="animate-lift font-display text-[32px] leading-[1.02] font-extrabold tracking-[-0.02em]">
           Happy hours
           <br />
           near you, <span className="text-lime">right now.</span>
         </h1>
-        <p style={{ "--i": 6 } as CSSProperties} className="animate-rise mt-3 max-w-[32ch] text-[16px] text-cream/80">
+        <p style={{ "--i": 6 } as CSSProperties} className="animate-lift mt-3 max-w-[32ch] text-[16px] text-cream/80">
           {live > 0 ? `${live} spots in Vancouver are pouring deals right now.` : "Real deals from 450+ Vancouver bars and restaurants, checked against their own menus."}
         </p>
-        <div style={{ "--i": 8 } as CSSProperties} className="animate-rise mt-7 flex flex-col gap-3">
+        <div style={{ "--i": 8 } as CSSProperties} className="animate-lift mt-7 flex flex-col gap-3">
           <Button size="lg" onClick={() => go(true)} className="w-full justify-between pr-2 pl-6">
             <span className="flex items-center gap-2">
               <LocateFixed className="size-5" /> Find a hang near me

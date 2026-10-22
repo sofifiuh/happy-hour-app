@@ -8,7 +8,7 @@
 //   sitemap.xml, robots.txt, CNAME
 // The app boots on every page and takes over from the static markup.
 import { createHash } from "node:crypto";
-import { copyFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
@@ -20,7 +20,17 @@ const dist = resolve(web, "dist-site");
 const cache = resolve(web, "node_modules/.cache/og");
 mkdirSync(cache, { recursive: true });
 
-const template = readFileSync(resolve(dist, "index.html"), "utf8");
+// Preload the two font files the first screen paints with.
+const fonts = readdirSync(resolve(dist, "assets")).filter((f) => /^funnel-(display-latin-800|sans-latin-400)-normal-.*\.woff2$/.test(f));
+const template = readFileSync(resolve(dist, "index.html"), "utf8")
+  // public/ files are linked relatively in index.html; pages live in
+  // subfolders (spots/, about/), so make them root-relative.
+  .replace(/(href|src)="(icon\.svg|icon-\d+\.png|manifest\.webmanifest|venues\.json|og\.png)"/g, '$1="/$2"')
+  .replace(
+  "</head>",
+  `${fonts.map((f) => `    <link rel="preload" href="/assets/${f}" as="font" type="font/woff2" crossorigin />`).join("\n")}\n  </head>`,
+);
+writeFileSync(resolve(dist, "index.html"), template);
 const { venues } = JSON.parse(readFileSync(resolve(web, "public/venues.json"), "utf8"));
 const logo = readFileSync(resolve(web, "src/components/logo-path.ts"), "utf8").match(/LOGO_PATH =\s*"([^"]+)"/)[1];
 
@@ -65,7 +75,7 @@ const summary = (v) =>
     .join(", ");
 
 // ---------- page assembly ----------
-function page({ path, title, description, image = `${BASE}/og.png`, type = "website", jsonld, body = "" }) {
+function page({ path, title, description, image = `${BASE}/og.png`, type = "website", jsonld, body = "", preload }) {
   const url = BASE + path;
   let html = template
     .replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`)
@@ -77,6 +87,7 @@ function page({ path, title, description, image = `${BASE}/og.png`, type = "webs
   const head = [
     `<link rel="canonical" href="${url}" />`,
     `<meta property="og:url" content="${url}" />`,
+    preload && `<link rel="preload" href="${preload}" as="image" fetchpriority="high" />`,
     jsonld && `<script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>`,
   ].filter(Boolean);
   html = html.replace("</head>", `    ${head.join("\n    ")}\n  </head>`);
@@ -97,15 +108,18 @@ const S = {
   h2: "font-family:'Funnel Display',system-ui,sans-serif;font-weight:700;font-size:20px;margin:28px 0 10px",
   muted: "color:#a7a196;font-size:15px;margin:0",
   row: "display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #3a3835;font-size:15px",
-  img: "width:100%;height:280px;object-fit:cover;border-radius:22px;background:#2f2d2b",
   link: "color:#ff4900;font-weight:600",
 };
 
 function venueBody(v) {
   const deals = v.hh.deals;
-  return `<main style="${S.wrap}">
+  // The photo matches the app's venue header (full width, same height) so
+  // the page doesn't jump when the app takes over.
+  return `<main style="max-width:42rem;margin:0 auto">
+${v.photo ? `<img src="${esc(/^https?:/.test(v.photo) ? v.photo : `/${v.photo}`)}" alt="${esc(v.name)}" fetchpriority="high" style="display:block;width:100%;height:min(42vh,340px);object-fit:cover;background:#2f2d2b" />` : ""}
+</main>
+<main style="${S.wrap}">
 <p style="${S.muted}"><a href="/" style="${S.link}">A Little Hang</a> · <a href="/spots/" style="color:#a7a196">All spots</a></p>
-${v.photo ? `<img src="${esc(/^https?:/.test(v.photo) ? v.photo : `/${v.photo}`)}" alt="${esc(v.name)}" style="${S.img};margin-top:16px" />` : ""}
 <h1 style="${S.h1}">${esc(v.name)}</h1>
 <p style="${S.muted}">${esc(v.address)}</p>
 <h2 style="${S.h2}">Happy hour times</h2>
@@ -192,6 +206,7 @@ for (const v of venues) {
       image,
       type: "place",
       jsonld: venueJsonLd(v, image),
+      preload: v.photo && !/^https?:/.test(v.photo) ? `/${v.photo}` : undefined,
       body: venueBody(v),
     }),
   );

@@ -141,7 +141,7 @@ export function VenueMap({
 
   return (
     <>
-      <div ref={container} className={cn("absolute inset-0 size-full transition-opacity duration-500", ready ? "opacity-100" : "opacity-0")} />
+      <div ref={container} className={cn("absolute inset-0 size-full transition-opacity duration-300", ready ? "opacity-100" : "opacity-0")} />
       <button
         onClick={() => {
           if (location && map.current) map.current.easeTo({ center: [location.lng, location.lat], zoom: 15, duration: reducedMotion() ? 0 : 500 });
