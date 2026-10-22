@@ -16,5 +16,7 @@ Routes (hash-based so it works on any static host and inside Capacitor):
 `#/welcome`, `#/` list, `#/map`, `#/spot/:id`, and `#/screens`, a board
 showing every screen side by side for design review.
 
-Map tiles default to CARTO Dark Matter (no key). Set `VITE_MAP_STYLE` to a
-Mapbox or MapTiler style URL for production.
+The app follows the system light/dark setting. Map tiles default to CARTO
+Dark Matter and, in light mode, CARTO Positron tinted to the app's warm
+paper (no key for either). Set `VITE_MAP_STYLE` / `VITE_MAP_STYLE_LIGHT` to
+Mapbox or MapTiler style URLs for production.
