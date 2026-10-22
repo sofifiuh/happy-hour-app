@@ -12,7 +12,23 @@ mkdirSync(out, { recursive: true });
 
 // Prefer the local WebP from scripts/photos.mjs; otherwise the remote cover
 // over https until the next photo refresh downloads it.
+// Covers scripts/photos.mjs judged a bad hero (logo, near-black graphic)
+// fall back to the branded placeholder.
+let quality = {};
+try {
+  quality = JSON.parse(readFileSync(resolve(out, "photos", "quality.json"), "utf8"));
+} catch {
+  // no scores yet
+}
+
+// File names that give away a logo or share card rather than a photo, for
+// covers the photo job hasn't downloaded and scored yet.
+const LOGO_URL = /logo|lockup|wordmark|favicon|badge|site-identity|transparent|og-image|social[+_ -]?share|facebook[+_ -]?share|[-_+](black|white|blk|wht)\.(png|svg)|\.svg(\?|$)/i;
+const looksLikeLogo = (url) => LOGO_URL.test(decodeURIComponent(url));
+
 function photoFor(v) {
+  if (quality[v.id]?.problem) return null;
+  if (v.cover_image?.url && looksLikeLogo(v.cover_image.url)) return null;
   if (existsSync(resolve(out, "photos", `${v.id}.webp`))) return `photos/${v.id}.webp`;
   const url = v.cover_image?.url;
   return url && /^https?:/.test(url) ? url.replace(/^http:/, "https:") : null;
@@ -28,6 +44,17 @@ function cleanAddress(a) {
     else if (parts[i].toLowerCase().endsWith(` ${next.toLowerCase()}`)) parts[i] = parts[i].slice(0, -next.length - 1).trim();
   }
   return parts.join(", ");
+}
+
+// Every photo after the cover, for the venue page's gallery (https only,
+// cover removed, at most 8).
+function galleryFor(v) {
+  const cover = v.cover_image?.url;
+  const urls = (v.photos || [])
+    .map((p) => p?.url)
+    .filter((u) => u && /^https?:/.test(u) && u !== cover && !looksLikeLogo(u))
+    .map((u) => u.replace(/^http:/, "https:"));
+  return [...new Set(urls)].slice(0, 8);
 }
 
 const { data_version, venues } = JSON.parse(readFileSync(resolve(root, "venues.json"), "utf8"));
@@ -51,6 +78,7 @@ const slim = venues
     ratings: v.user_ratings_total ?? null,
     photo: photoFor(v),
     photoCredit: v.cover_image?.credit_name || null,
+    gallery: galleryFor(v),
     hh: {
       days: v.happy_hour.days,
       start: v.happy_hour.start,

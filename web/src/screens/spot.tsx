@@ -1,9 +1,10 @@
-import { ArrowLeft, BadgeCheck, ExternalLink, Flag, Globe, Heart, Navigation, Phone, Share, Star } from "lucide-react";
-import { type CSSProperties, useMemo, useRef, useState } from "react";
+import { ArrowLeft, BadgeCheck, ExternalLink, Flag, Globe, Heart, Images, Navigation, Phone, Share, Star } from "lucide-react";
+import { type CSSProperties, useCallback, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { MiniMap } from "@/components/mini-map";
 import { NotifyDrawer, remindersAsked } from "@/components/notify-drawer";
+import { PhotoViewer } from "@/components/photo-viewer";
 import { StatusDot } from "@/components/status";
 import { useToast } from "@/components/toast";
 import { Badge } from "@/components/ui/badge";
@@ -70,6 +71,8 @@ export function Spot() {
   useTitle(venue ? `${venue.name} · happy hour ${fmtRange(venue.hh.start, venue.hh.end)}` : loading ? null : "Spot not found");
   const [cat, setCat] = useState<Category>("drink");
   const [directionsOpen, setDirectionsOpen] = useState(false);
+  const [photosOpen, setPhotosOpen] = useState(false);
+  const closePhotos = useCallback(() => setPhotosOpen(false), []);
   const [notifyOpen, setNotifyOpen] = useState(() => queryParams().get("sheet") === "notify");
 
   const deals = useMemo(() => {
@@ -108,6 +111,7 @@ export function Spot() {
   const location = deviceLocation ?? area;
   const km = location && venue.lat != null && venue.lng != null ? distanceKm(location, { lat: venue.lat, lng: venue.lng }) : null;
   const pills = amenityPills(venue);
+  const photos = venue.photo ? [venue.photo, ...(venue.gallery ?? [])] : [];
   const q = encodeURIComponent(`${venue.name}, ${venue.address}`);
 
   const isSaved = saved.includes(venue.id);
@@ -128,9 +132,18 @@ export function Spot() {
     <main ref={page} className="mx-auto min-h-dvh max-w-2xl pb-28">
       {/* Photo header */}
       <div className="relative">
-        <VenuePhoto venue={venue} eager hero="hero" className="h-[min(42vh,340px)] w-full lg:rounded-b-[28px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-transparent to-ink" />
-        <div className="absolute inset-x-0 top-0 flex justify-between px-4 pt-[max(env(safe-area-inset-top),14px)]">
+        <VenuePhoto venue={venue} eager hero="hero" large className={cn("w-full lg:rounded-b-[28px]", venue.photo ? "h-[min(42vh,340px)]" : "h-[240px]")} />
+        <div className={cn("pointer-events-none absolute inset-0 bg-gradient-to-b via-transparent to-ink", venue.photo ? "from-black/45" : "from-black/15")} />
+        {photos.length > 0 && (
+          <button onClick={() => setPhotosOpen(true)} aria-label={photos.length > 1 ? `View ${photos.length} photos` : "View photo"} className="absolute inset-0 cursor-zoom-in">
+            {photos.length > 1 && (
+              <span className="absolute right-4 bottom-[72px] inline-flex items-center gap-1.5 rounded-full bg-ink/75 px-2.5 py-1 text-xs font-semibold text-cream backdrop-blur">
+                <Images className="size-3.5" /> {photos.length}
+              </span>
+            )}
+          </button>
+        )}
+        <div className="pointer-events-none absolute inset-x-0 top-0 flex justify-between px-4 pt-[max(env(safe-area-inset-top),14px)] [&_button]:pointer-events-auto">
           <button
             onClick={() => goBack(navigate)}
             aria-label="Back"
@@ -378,6 +391,7 @@ export function Spot() {
       </Drawer>
 
       <NotifyDrawer open={notifyOpen} onOpenChange={setNotifyOpen} />
+      {photosOpen && <PhotoViewer photos={photos} name={venue.name} open onClose={closePhotos} />}
     </>
   );
 }
