@@ -16,6 +16,7 @@ export function MapCard({ row, now, active }: { row: Row; now: Date; active: boo
   const { venue, occ, km } = row;
   const soon = endingSoon(occ, now);
   const walk = km != null ? walkLabel(km) : null;
+  const countdown = occ.start && occ.end && occ.status !== "scheduled" && occ.status !== "none" ? statusLabel(occ, now) : null;
   return (
     <Link
       to={spotPath(venue.id)}
@@ -35,19 +36,27 @@ export function MapCard({ row, now, active }: { row: Row; now: Date; active: boo
         <p className="mt-1 flex items-center gap-1.5 text-[13px] whitespace-nowrap">
           <StatusDot occ={occ} />
           {occ.start && occ.end ? (
-            <>
-              <span className="font-display font-bold tabular">{fmtRange(occ.start, occ.end)}</span>
-              {occ.status !== "scheduled" && (
-                <Countdown label={statusLabel(occ, now)} className={cn("truncate", soon ? "font-semibold text-orange" : "text-muted-foreground")} />
-              )}
-            </>
+            <span className="font-display font-bold tabular">{fmtRange(occ.start, occ.end)}</span>
           ) : (
             <span className="text-muted-foreground">No times listed</span>
           )}
         </p>
-        {walk && (
-          <p className="mt-1 flex items-center gap-1 text-[12px] text-sky">
-            <Footprints className="size-3.5" /> {walk}
+        {/* Countdown gets its own line so it never truncates; walk time
+            gives way first. */}
+        {(countdown || walk) && (
+          <p className="mt-1 flex items-center gap-1.5 text-[12px] whitespace-nowrap">
+            {countdown && <Countdown label={countdown} className={cn("shrink-0", soon ? "font-semibold text-orange" : "text-muted-foreground")} />}
+            {countdown && walk && <span className="text-muted-foreground">·</span>}
+            {walk && (
+              <span className="flex min-w-0 items-center gap-1 text-sky">
+                <Footprints className="size-3.5 shrink-0" />
+                {/* The footprints say "walk"; keep the visible label short. */}
+                <span className="truncate">
+                  {walk.replace(/ walk$/, "")}
+                  {walk.endsWith(" walk") && <span className="sr-only"> walk</span>}
+                </span>
+              </span>
+            )}
           </p>
         )}
       </div>

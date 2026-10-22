@@ -3,7 +3,8 @@ import { cn } from "@/lib/utils";
 
 // Non-interactive locator map for the venue page, drawn with the same
 // vector Dark Matter style as the full map. MapLibre is loaded only when
-// the box scrolls near the viewport, so the venue page itself stays light.
+// the box scrolls into view and the main thread is idle, so it never
+// competes with the venue page's first paint.
 export function MiniMap({ lat, lng, className }: { lat: number; lng: number; className?: string }) {
   const box = useRef<HTMLDivElement>(null);
   const [ready, setReady] = useState(false);
@@ -17,6 +18,9 @@ export function MiniMap({ lat, lng, className }: { lat: number; lng: number; cla
       (entries) => {
         if (!entries.some((e) => e.isIntersecting)) return;
         io.disconnect();
+        const idle = window.requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 200));
+        idle(() => {
+        if (cancelled) return;
         Promise.all([import("maplibre-gl"), import("@/lib/map-style"), import("maplibre-gl/dist/maplibre-gl.css")]).then(async ([ml, { loadMapStyle }]) => {
           const style = await loadMapStyle();
           if (cancelled) return;
@@ -31,8 +35,9 @@ export function MiniMap({ lat, lng, className }: { lat: number; lng: number; cla
           m.once("idle", () => !cancelled && setReady(true));
           remove = () => m.remove();
         });
+        });
       },
-      { rootMargin: "300px" },
+      { rootMargin: "0px" },
     );
     io.observe(el);
     return () => {

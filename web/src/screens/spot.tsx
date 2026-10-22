@@ -65,7 +65,7 @@ export function Spot() {
   const toast = useToast();
   const venue = byId(id);
   const page = useRef<HTMLElement>(null);
-  const bar = useRef<HTMLDivElement>(null);
+  const bar = useRef<HTMLElement>(null);
   useSwipeBack([page, bar], () => goBack(navigate, true), !!venue);
   useTitle(venue ? `${venue.name} · happy hour ${fmtRange(venue.hh.start, venue.hh.end)}` : loading ? null : "Spot not found");
   const [cat, setCat] = useState<Category>("drink");
@@ -326,10 +326,13 @@ export function Spot() {
         </section>
       )}
 
+      <Link to="/" className="sr-only">
+        Back to list
+      </Link>
     </main>
 
-      {/* Sticky bar */}
-      <div ref={bar} className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-ink/95 backdrop-blur-xl">
+      {/* Sticky bar (outside main so the swipe-back transform doesn't pin it to the page) */}
+      <aside ref={bar} aria-label="Happy hour and directions" className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-ink/95 backdrop-blur-xl">
         <div className="mx-auto flex max-w-md items-center justify-between gap-3 px-5 lg:max-w-2xl pt-3 pb-[max(env(safe-area-inset-bottom),14px)]">
           <div className="min-w-0">
             {occ.start && occ.end ? (
@@ -356,7 +359,7 @@ export function Spot() {
             </Button>
           )}
         </div>
-      </div>
+      </aside>
 
       <Drawer open={directionsOpen} onOpenChange={setDirectionsOpen}>
         <DrawerContent>
@@ -375,10 +378,6 @@ export function Spot() {
       </Drawer>
 
       <NotifyDrawer open={notifyOpen} onOpenChange={setNotifyOpen} />
-
-      <Link to="/" className="sr-only">
-        Back to list
-      </Link>
     </>
   );
 }
