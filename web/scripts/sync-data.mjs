@@ -26,8 +26,12 @@ try {
 const LOGO_URL = /logo|lockup|wordmark|favicon|badge|site-identity|transparent|og-image|social[+_ -]?share|facebook[+_ -]?share|[-_+](black|white|blk|wht)\.(png|svg)|\.svg(\?|$)/i;
 const looksLikeLogo = (url) => LOGO_URL.test(decodeURIComponent(url));
 
+// Real photos the scoring misreads as graphics (black-and-white or dark,
+// low-colour shots); checked by eye on the live site, 2026-10-22.
+const PHOTO_ALLOW = new Set(["diva-at-the-met", "tableau-bar-bistro", "elwoods", "water-st-caf"]);
+
 function photoFor(v) {
-  if (quality[v.id]?.problem) return null;
+  if (quality[v.id]?.problem && !PHOTO_ALLOW.has(v.id)) return null;
   if (v.cover_image?.url && looksLikeLogo(v.cover_image.url)) return null;
   if (existsSync(resolve(out, "photos", `${v.id}.webp`))) return `photos/${v.id}.webp`;
   const url = v.cover_image?.url;
