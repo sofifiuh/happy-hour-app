@@ -15,9 +15,9 @@
 //        [--min-confidence 0.8] [--discovery-min-confidence 0.7]
 import fs from "node:fs";
 import path from "node:path";
-import crypto from "node:crypto";
 import { loadSeed, parseArgs, readJson, setEq, CACHE_DIR, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
 import { heroImage } from "./lib/html.js";
+import { FRESHNESS_STORE, VENUES_FILE, applyTrust, writeVenuesJson } from "./lib/trust.js";
 
 const args = parseArgs(process.argv.slice(2));
 const MIN_CONF = Number(args["min-confidence"]) || 0.8;
@@ -26,7 +26,10 @@ const DISC_MIN_CONF = Number(args["discovery-min-confidence"]) || 0.7;
 // confirmed schedule AND at least one priced deal. Without this a venue can
 // go live showing a window and "deal list not published online".
 const DISC_REQUIRE_DEALS = !!args["discovery-require-deals"];
-const extracted = readJson(path.join(RESULTS_DIR, args.in || "extracted-opus.json"));
+// Missing results file = nothing re-extracted for the seed this run; prior
+// enrichment is carried over from venues.json below, never dropped.
+const extracted = readJson(path.join(RESULTS_DIR, args.in || "extracted-opus.json"), {});
+const previousById = new Map(readJson(VENUES_FILE, { venues: [] }).venues.map((v) => [v.id, v]));
 
 const DISCOVERED_STORE = path.join(REPO_ROOT, "pipeline", "discovered.json");
 const PLACES_STORE = path.join(REPO_ROOT, "pipeline", "places.json");
@@ -208,7 +211,10 @@ fs.writeFileSync(PLACES_STORE, JSON.stringify(places, null, 2));
 // --- enrichment + discovered venues + Places identity overlay, all resolved
 // --- here so the client does zero merging.
 const merged = loadSeed().map((v) => {
-  const x = enrich[v.id];
+  // A run that did not (or could not) re-extract a seed venue keeps the deals
+  // a previous run corroborated — a partial run must never thin the data.
+  const prevHH = previousById.get(v.id)?.happy_hour;
+  const x = enrich[v.id] || (prevHH?.deals_source ? { deals: prevHH.deals, extra_windows: prevHH.extra_windows, source_url: prevHH.deals_source.url, extracted_at: prevHH.deals_source.extracted_at } : null);
   if (!x?.deals?.length) return v;
   return {
     ...v,
@@ -254,11 +260,9 @@ const merged = loadSeed().map((v) => {
   };
 });
 
-// Content-derived stamp: any change to the merged data reseeds cached
-// clients, even a second regeneration on the same day.
-const payload = JSON.stringify(merged);
-const stamp = `${TODAY}-${crypto.createHash("sha1").update(payload).digest("hex").slice(0, 8)}`;
-fs.writeFileSync(path.join(REPO_ROOT, "venues.json"), JSON.stringify({ data_version: stamp, venues: merged }, null, 1));
+// Trust badges (lib/trust.js) are derived from the latest freshness check,
+// so every regeneration re-stamps them; writeVenuesJson owns the version stamp.
+const stamp = writeVenuesJson(applyTrust(merged, readJson(FRESHNESS_STORE, {})), TODAY);
 
 console.log(`venues.json: ${merged.length} venues (${Object.keys(enrich).length} enriched, ${discovered.length} discovered, ${coversAdded} covers backfilled, Places identity for ${Object.keys(places).length}) — ${stamp}`);
 for (const d of discovered) console.log(`  + ${d.id.padEnd(30)} days[${d.happy_hour.days}] ${d.happy_hour.start}-${d.happy_hour.end}  ${d.happy_hour.deals.length} deals`);
@@ -267,4 +271,5 @@ console.log(`\nReview queue (schedule disagreements — NOT applied):`);
 for (const r of review) console.log(`  ${r.id.padEnd(30)} seed days[${r.seed.days}] ${r.seed.start}-${r.seed.end}  vs extracted days[${r.extracted.days}] ${r.extracted.start}-${r.extracted.end}\n    ${r.source || ""} ${r.note ? "— " + r.note : ""}`);
 console.log(`\nSkipped:`);
 for (const [id, why] of skipped) console.log(`  ${id.padEnd(30)} ${why}`);
+fs.mkdirSync(RESULTS_DIR, { recursive: true });
 fs.writeFileSync(path.join(RESULTS_DIR, "review-queue.json"), JSON.stringify(review, null, 2));

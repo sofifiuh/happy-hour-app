@@ -93,3 +93,43 @@ into `SEED_VERSION` — cached clients reseed automatically, no hand-bump.
 Hand-verified schedules still never auto-change (disagreements accumulate in
 `results/review-queue.json` for a human); unverified discovered venues update
 freely on each re-sync.
+
+## Freshness & trust (daily, automated)
+
+`.github/workflows/refresh-data.yml` runs `node pipeline/refresh.js` every
+day at 03:23 Vancouver time, commits the data to `main` and redeploys:
+
+1. `check-sources.js` re-reads every venue's cited source page (curl, with a
+   Chromium fallback for JS sites, `pdftotext` for PDF menus) and records in
+   `pipeline/freshness.json` whether it loaded, whether it still states our
+   primary window, and a hash of its happy hour text (so a changed offer is
+   noticed even when we can't parse it). No model calls.
+2. Venues whose page **changed**, then those whose page no longer shows our
+   times (oldest data first), are re-crawled and re-extracted, at most
+   `--max-extract` (40) a day. This step needs the `ANTHROPIC_API_KEY` repo
+   secret; without it the run is check-only and the queue is written to
+   `results/refresh-queue.json`. Model: `EXTRACT_MODEL` repo variable, default
+   `claude-sonnet-5-5`.
+3. `writeback.js` / `stamp-trust.js` stamp each venue's `trust` object:
+
+```json
+"trust": {
+  "level": "verified | venue_site | unconfirmed",
+  "status": "confirmed | unconfirmed | changed | unreachable | unchecked",
+  "confidence": "high | medium | low",
+  "source_url": "https://…",
+  "data_as_of": "2026-09-03",
+  "last_checked_at": "2026-10-22",
+  "last_confirmed_at": "2026-10-22"
+}
+```
+
+`level` is who the fact came from (a human, or the venue's own site);
+`status` is what the latest check saw (`confirmed` = the page still states
+our times, within the last 14 days; `unreachable` = 2+ failed fetches in a
+row); `confidence` is the one field a badge needs. Rules live in
+`lib/trust.js`.
+
+4. A sanity gate fails the run, and nothing is committed, if any venue would
+   be lost or left without a schedule. Pull requests that touch the pipeline
+   get a check-only dry run that commits nothing.
