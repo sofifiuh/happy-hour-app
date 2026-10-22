@@ -18,6 +18,18 @@ function photoFor(v) {
   return url && /^https?:/.test(url) ? url.replace(/^http:/, "https:") : null;
 }
 
+// Google sometimes repeats the city inside the street part
+// ("1323 Robson St #201 Vancouver, Vancouver, BC"); drop the echo.
+function cleanAddress(a) {
+  const parts = a.split(",").map((s) => s.trim()).filter(Boolean);
+  for (let i = 0; i < parts.length - 1; i++) {
+    const next = parts[i + 1];
+    if (parts[i].toLowerCase() === next.toLowerCase()) parts.splice(i--, 1);
+    else if (parts[i].toLowerCase().endsWith(` ${next.toLowerCase()}`)) parts[i] = parts[i].slice(0, -next.length - 1).trim();
+  }
+  return parts.join(", ");
+}
+
 const { data_version, venues } = JSON.parse(readFileSync(resolve(root, "venues.json"), "utf8"));
 
 const slim = venues
@@ -25,7 +37,7 @@ const slim = venues
   .map((v) => ({
     id: v.id,
     name: v.name,
-    address: v.formatted_address || "",
+    address: cleanAddress(v.formatted_address || ""),
     city: v.address_components?.locality || null,
     // trust.last_confirmed_at is the last day our times matched the venue's
     // own page (pipeline freshness check); fall back to the last sync.

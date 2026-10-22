@@ -30,9 +30,10 @@ export function setNav(kind: "forward" | "back" | "swap") {
   document.documentElement.dataset.nav = kind;
 }
 
-export function goBack(navigate: NavigateFunction) {
+// `instant` skips the transition, for a swipe that already slid the page out.
+export function goBack(navigate: NavigateFunction, instant = false) {
   const go = () => (window.history.length > 1 ? navigate(-1) : navigate("/", { replace: true }));
-  if (!canTransition()) return void go();
+  if (instant || !canTransition()) return void go();
   setNav("back");
   const t = document.startViewTransition(
     () =>

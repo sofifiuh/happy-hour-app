@@ -1,5 +1,5 @@
 import * as maplibregl from "maplibre-gl";
-import type { GeoJSONSource, Map as MLMap, MapLayerMouseEvent, MapMouseEvent, StyleSpecification } from "maplibre-gl";
+import type { GeoJSONSource, Map as MLMap, MapMouseEvent, StyleSpecification } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { LocateFixed } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -80,23 +80,40 @@ export function VenueMap({
           paint: {
             "circle-radius": [
               "interpolate", ["linear"], ["zoom"],
-              10, ["case", ["==", ["get", "selected"], true], 8, 3.5],
-              14, ["case", ["==", ["get", "selected"], true], 9, 6.5],
+              10, ["case", ["==", ["get", "selected"], true], 8, 4.5],
+              14, ["case", ["==", ["get", "selected"], true], 10, 7.5],
+              17, ["case", ["==", ["get", "selected"], true], 11, 9],
             ],
             "circle-color": ["case", ["==", ["get", "selected"], true], "#ff4900", ["get", "color"]],
             "circle-stroke-color": ["case", ["==", ["get", "hovered"], true], "#f3efe4", "#1b1b1b"],
             "circle-stroke-width": ["case", ["==", ["get", "hovered"], true], 2.5, 1.5],
           },
         });
-        m.on("click", "venue-pins", (e: MapLayerMouseEvent) => {
-          const id = e.features?.[0]?.properties?.id as string | undefined;
-          if (id) select.current(id);
+        // Invisible 44px finger target around each pin; a tap between
+        // close pins goes to the nearest one.
+        m.addLayer({
+          id: "venue-hit",
+          type: "circle",
+          source: "venues",
+          paint: { "circle-radius": 22, "circle-color": "#000", "circle-opacity": 0 },
         });
-        m.on("click", (e: MapMouseEvent) => {
-          if (!m.queryRenderedFeatures(e.point, { layers: ["venue-pins"] }).length) select.current(null);
-        });
-        m.on("mouseenter", "venue-pins", () => (m.getCanvas().style.cursor = "pointer"));
-        m.on("mouseleave", "venue-pins", () => (m.getCanvas().style.cursor = ""));
+        const nearest = (e: MapMouseEvent) => {
+          let best: string | undefined;
+          let bestD = Infinity;
+          for (const f of m.queryRenderedFeatures(e.point, { layers: ["venue-hit"] })) {
+            const [lng, lat] = (f.geometry as { coordinates: [number, number] }).coordinates;
+            const p = m.project([lng, lat]);
+            const d = (p.x - e.point.x) ** 2 + (p.y - e.point.y) ** 2;
+            if (d < bestD) {
+              bestD = d;
+              best = f.properties?.id as string | undefined;
+            }
+          }
+          return best;
+        };
+        m.on("click", (e: MapMouseEvent) => select.current(nearest(e) ?? null));
+        m.on("mouseenter", "venue-hit", () => (m.getCanvas().style.cursor = "pointer"));
+        m.on("mouseleave", "venue-hit", () => (m.getCanvas().style.cursor = ""));
         setReady(true);
       });
       map.current = created = m;
