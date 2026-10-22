@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-22-ecc96622",
+ "data_version": "2026-10-22-18d88a08",
  "venues": [
   {
    "id": "ancora",
@@ -18244,8 +18244,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "https://starlightcasino.ca/casino-happy-hour/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-22",
@@ -20741,8 +20741,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "unreachable",
-    "confidence": "low",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "http://greatbearpub.com/files/2019/01/Great-BearEatin-2019.pdf",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-22",

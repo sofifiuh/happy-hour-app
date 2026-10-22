@@ -517,7 +517,8 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "last_ok_at": "2026-10-22"
+  "last_ok_at": "2026-10-22",
+  "rendered": true
  },
  "bellaggio-cafe": {
   "url": "https://images.unoapp.com/boxdata/asset89882/images/50791__BELLAGGIOCAFE-HappyHours-MENU_2.pdf",
@@ -973,7 +974,7 @@
  "cascades-casino": {
   "url": "https://cascadescasino.ca/",
   "checked_at": "2026-10-22",
-  "http_status": 200,
+  "http_status": 202,
   "kind": "html",
   "hh_mentioned": false,
   "times_seen": false,
@@ -981,7 +982,8 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "last_ok_at": "2026-10-22"
+  "last_ok_at": "2026-10-22",
+  "rendered": true
  },
  "cat-fiddle-sports-bar-restaurant": {
   "url": "https://i0.wp.com/catandfiddlepub.ca/wp-content/uploads/2025/12/Happy-hour-WINTER-2025-PRINT.jpg?ssl=1",
@@ -1127,7 +1129,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "453a81a93631001b",
+  "hh_hash": "12ccb976c299ff0c",
   "last_ok_at": "2026-10-22",
   "last_confirmed_at": "2026-10-22",
   "changed_at": "2026-10-22"
@@ -1217,7 +1219,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "311dc20e37a66c49",
+  "hh_hash": "d0a1085c91d5e547",
   "last_ok_at": "2026-10-22",
   "last_confirmed_at": "2026-10-22",
   "changed_at": "2026-10-22"
@@ -1233,7 +1235,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "79b425988b60ed2f",
+  "hh_hash": "16ba86be679616a0",
   "last_ok_at": "2026-10-22",
   "last_confirmed_at": "2026-10-22",
   "changed_at": "2026-10-22"
@@ -2054,7 +2056,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "c205bde4144ec109",
+  "hh_hash": "33e5d6f170e19182",
   "last_ok_at": "2026-10-22",
   "last_confirmed_at": "2026-10-22",
   "changed_at": "2026-10-22"
@@ -2460,7 +2462,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 2,
+  "fail_count": 3,
   "error": "curl: (6) Could not resolve host: www.jacksonsrestobutcher.com"
  },
  "jamjar-canteen-commercial-dr": {
@@ -4424,7 +4426,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 2,
+  "fail_count": 3,
   "error": "curl: (6) Could not resolve host: romersurgerbar.com"
  },
  "rongsi-rong-see-thai-bar-bistro": {
@@ -4947,17 +4949,18 @@
  "starlight-casino": {
   "url": "https://starlightcasino.ca/casino-happy-hour/",
   "checked_at": "2026-10-22",
-  "http_status": 200,
+  "http_status": 202,
   "kind": "html",
-  "hh_mentioned": true,
-  "times_seen": true,
+  "hh_mentioned": false,
+  "times_seen": false,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "37ffff41811e7b1a",
   "last_ok_at": "2026-10-22",
-  "last_confirmed_at": "2026-10-22"
+  "last_confirmed_at": "2026-10-22",
+  "rendered": true
  },
  "steamworks-mount-pleasant": {
   "url": "https://steamworks.com/wp-content/uploads/2026/03/SWMP_Mar2026_print.pdf",
@@ -5105,9 +5108,10 @@
   "ok": true,
   "fail_count": 0,
   "rendered": true,
-  "hh_hash": "a2bfa20dc5b8bdfe",
+  "hh_hash": "1a98a4cd6b081a8b",
   "last_ok_at": "2026-10-22",
-  "last_confirmed_at": "2026-10-22"
+  "last_confirmed_at": "2026-10-22",
+  "changed_at": "2026-10-22"
  },
  "tacoloco": {
   "url": "https://www.tacolocokits.com/menu",
@@ -5562,11 +5566,15 @@
  "the-great-bear-pub": {
   "url": "http://greatbearpub.com/files/2019/01/Great-BearEatin-2019.pdf",
   "checked_at": "2026-10-22",
-  "http_status": 0,
-  "kind": "html",
-  "ok": false,
-  "fail_count": 2,
-  "error": "curl: (28) Connection timed out after 25001 milliseconds"
+  "http_status": 200,
+  "kind": "pdf",
+  "ok": true,
+  "fail_count": 0,
+  "hh_mentioned": false,
+  "times_seen": false,
+  "extra_windows_seen": 0,
+  "extra_windows_total": 1,
+  "last_ok_at": "2026-10-22"
  },
  "the-greek-by-anatoli-yaletown": {
   "url": "https://www.thegreekbyanatoli.com/yaletown-menu",
