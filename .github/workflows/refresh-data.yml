@@ -29,10 +29,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:
-      HAS_CLAUDE_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+      # Accept the common names for each key, so a differently named secret
+      # still works.
+      HAS_CLAUDE_KEY: ${{ (secrets.ANTHROPIC_API_KEY || secrets.CLAUDE_API_KEY || secrets.ANTHROPIC_KEY) != '' }}
+      HAS_PLACES_KEY: ${{ (secrets.GOOGLE_PLACES_API_KEY || secrets.GOOGLE_MAPS_API_KEY || secrets.PLACES_API_KEY || secrets.GOOGLE_API_KEY) != '' }}
       DRY_RUN: ${{ github.event_name == 'pull_request' }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: Keys available
+        run: echo "Claude key set=$HAS_CLAUDE_KEY, Google Places key set=$HAS_PLACES_KEY"
 
       - uses: actions/setup-node@v4
         with:
@@ -51,8 +57,8 @@ jobs:
 
       - name: Refresh
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || secrets.CLAUDE_API_KEY || secrets.ANTHROPIC_KEY }}
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY || secrets.GOOGLE_MAPS_API_KEY || secrets.PLACES_API_KEY || secrets.GOOGLE_API_KEY }}
           EXTRACT_MODEL: ${{ vars.EXTRACT_MODEL }}
         run: >-
           node pipeline/refresh.js --max-extract "${{ inputs.max_extract || '40' }}"
