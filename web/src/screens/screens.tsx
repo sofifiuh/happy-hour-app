@@ -1,3 +1,4 @@
+import { asset, BROWSER_ROUTER } from "@/lib/routes";
 import { Link } from "react-router";
 import { Wordmark } from "@/components/wordmark";
 import { useStore } from "@/lib/store";
@@ -36,7 +37,7 @@ export function ScreensBoard() {
 
   const frameUrl = (path: string) => {
     const [p, q] = path.split("?");
-    return `#${p}?frame=1${q ? `&${q}` : ""}`;
+    return `${BROWSER_ROUTER ? "" : "#"}${p}?frame=1${q ? `&${q}` : ""}`;
   };
 
   return (
@@ -65,7 +66,7 @@ export function ScreensBoard() {
         <figure className="w-[390px]">
           <div className="flex h-[864px] flex-col justify-center rounded-[44px] bg-[#f2f2f7] px-5 ring-[10px] ring-[#2a2a2a]">
             <div className="ml-auto w-[280px] overflow-hidden rounded-[22px] bg-[#e5e5ea]">
-              <img src="og.png" alt="" className="block w-full" />
+              <img src={asset("og.png")} alt="" className="block w-full" />
               <div className="px-3.5 py-2.5 text-[#1c1c1e]">
                 <p className="text-[14px] font-semibold leading-tight">A Little Hang: happy hours near you, right now</p>
                 <p className="mt-0.5 text-[12px] text-[#6c6c70]">alittlehang.com</p>

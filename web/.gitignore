@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 public/venues.json
 public/photos/
+dist-site

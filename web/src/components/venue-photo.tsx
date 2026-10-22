@@ -1,3 +1,4 @@
+import { asset } from "@/lib/routes";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import type { Venue } from "@/lib/types";
@@ -16,7 +17,7 @@ const FALLBACKS = [
 export function VenuePhoto({ venue, className, eager = false, hero }: { venue: Venue; className?: string; eager?: boolean; hero?: string }) {
   const [failed, setFailed] = useState(false);
   const hash = [...venue.id].reduce((a, c) => a + c.charCodeAt(0), 0);
-  const src = venue.photo && !failed ? venue.photo : null;
+  const src = venue.photo && !failed ? asset(venue.photo) : null;
   return (
     <div data-hero style={{ viewTransitionName: hero }} className={cn("relative overflow-hidden bg-ink-3", className)}>
       {src ? (

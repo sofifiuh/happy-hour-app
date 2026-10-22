@@ -1,7 +1,9 @@
 import { lazy, Suspense } from "react";
-import { createHashRouter, Navigate, Outlet, RouterProvider, ScrollRestoration } from "react-router";
+import { createBrowserRouter, createHashRouter, Navigate, Outlet, RouterProvider, ScrollRestoration, useParams } from "react-router";
 import { ToastProvider } from "@/components/toast";
+import { BROWSER_ROUTER, spotPath } from "@/lib/routes";
 import { IS_FRAME, StoreProvider } from "@/lib/store";
+import { AllSpots } from "@/screens/all-spots";
 import { Home } from "@/screens/home";
 import { Info } from "@/screens/info";
 import { Landing, SEEN_KEY } from "@/screens/landing";
@@ -38,14 +40,32 @@ function Shell() {
   );
 }
 
-const router = createHashRouter([
+// /spots/<id>.html is a venue; /spots/index.html is the A–Z list.
+function SpotsFile() {
+  const { file = "" } = useParams();
+  return file === "index.html" || file === "" ? <AllSpots /> : <Spot />;
+}
+
+// The old site's venue links were menu.html?id=<id>.
+function OldMenuLink() {
+  const id = new URLSearchParams(window.location.search).get("id");
+  return <Navigate to={id ? spotPath(id) : "/"} replace />;
+}
+
+const createRouter = BROWSER_ROUTER ? createBrowserRouter : createHashRouter;
+
+const router = createRouter([
   {
     element: <Shell />,
     children: [
       { path: "/", element: <Root /> },
+      { path: "/index.html", element: <Root /> },
+      { path: "/menu.html", element: <OldMenuLink /> },
       { path: "/welcome", element: <Landing /> },
       { path: "/map", element: <MapScreen /> },
       { path: "/spot/:id", element: <Spot /> },
+      { path: "/spots", element: <AllSpots /> },
+      { path: "/spots/:file", element: <SpotsFile /> },
       { path: "/saved", element: <Saved /> },
       { path: "/about", element: <Info page="about" /> },
       { path: "/privacy", element: <Info page="privacy" /> },

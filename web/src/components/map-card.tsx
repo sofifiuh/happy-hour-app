@@ -1,3 +1,4 @@
+import { spotPath } from "@/lib/routes";
 import { ArrowRight, BadgeCheck, Footprints } from "lucide-react";
 import { Link } from "react-router";
 import { walkLabel } from "@/lib/geo";
@@ -15,7 +16,7 @@ export function MapCard({ row, now, active }: { row: Row; now: Date; active: boo
   const soon = endingSoon(occ, now);
   return (
     <Link
-      to={`/spot/${venue.id}`}
+      to={spotPath(venue.id)}
       viewTransition
       onClick={(e) => markHero(e.currentTarget, venue.id)}
       className={cn(

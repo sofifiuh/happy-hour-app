@@ -15,6 +15,7 @@ import { DAY_FULL, DAY_SHORT, endingSoon, fmtRange, nowHHMM, occurrence, statusL
 import { fmtChecked, reportLink } from "@/lib/links";
 import { goBack } from "@/lib/motion";
 import { useTitle } from "@/lib/use-title";
+import { absoluteUrl, queryParams, spotPath } from "@/lib/routes";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
 import type { Category, Venue } from "@/lib/types";
@@ -56,7 +57,8 @@ function runLabel(days: number[]) {
 }
 
 export function Spot() {
-  const { id = "" } = useParams();
+  const params = useParams();
+  const id = (params.id ?? params.file ?? "").replace(/\.html$/, "");
   const { byId, now, loading, location, saved, toggleSaved } = useStore();
   const navigate = useNavigate();
   const toast = useToast();
@@ -64,7 +66,7 @@ export function Spot() {
   useTitle(venue ? `${venue.name} · happy hour ${fmtRange(venue.hh.start, venue.hh.end)}` : loading ? null : "Spot not found");
   const [cat, setCat] = useState<Category>("drink");
   const [directionsOpen, setDirectionsOpen] = useState(false);
-  const [notifyOpen, setNotifyOpen] = useState(() => new URLSearchParams(window.location.hash.split("?")[1]).get("sheet") === "notify");
+  const [notifyOpen, setNotifyOpen] = useState(() => queryParams().get("sheet") === "notify");
 
   const deals = useMemo(() => {
     if (!venue) return { food: [], drink: [] };
@@ -111,7 +113,7 @@ export function Spot() {
   const checked = venue.checked ? fmtChecked(venue.checked, now) : null;
 
   const onShare = async () => {
-    const res = await shareLink(`${venue.name} on A Little Hang`, `Happy hour at ${venue.name}: ${fmtRange(venue.hh.start, venue.hh.end)}`);
+    const res = await shareLink(`${venue.name} on A Little Hang`, `Happy hour at ${venue.name}: ${fmtRange(venue.hh.start, venue.hh.end)}`, absoluteUrl(spotPath(venue.id)));
     if (res === "copied") toast("Link copied");
   };
 
@@ -195,7 +197,7 @@ export function Spot() {
               aria-selected={tab === c}
               onClick={() => setCat(c)}
               className={cn(
-                "hit relative pb-2 font-display text-[19px] font-bold transition-colors",
+                "relative pt-2 pb-2.5 font-display text-[19px] font-bold transition-colors",
                 tab === c ? "text-cream after:absolute after:inset-x-0 after:bottom-0 after:h-[3px] after:rounded-full after:bg-primary" : "text-muted-foreground",
               )}
             >

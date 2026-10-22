@@ -1,3 +1,4 @@
+import { asset, queryParams } from "@/lib/routes";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { distanceKm, nearestArea, type Area, type LatLng } from "./geo";
 import { occurrence, occurrenceAt } from "./hours";
@@ -98,8 +99,7 @@ function readCache(): Venue[] {
 // Screens overview embeds each screen in an iframe with "?frame=1&tab=…";
 // those frames take their filters from the URL and never persist them.
 function frameParams() {
-  const q = window.location.hash.split("?")[1];
-  const p = new URLSearchParams(q || "");
+  const p = queryParams();
   return p.get("frame") === "1" ? p : null;
 }
 
@@ -158,7 +158,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   // Cached copy renders instantly; the network copy replaces it only when
   // the pipeline's data_version changed.
   useEffect(() => {
-    fetch("venues.json", { cache: "no-cache" })
+    fetch(asset("venues.json"), { cache: "no-cache" })
       .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
       .then(({ data_version, venues: fresh }: { data_version: string; venues: Venue[] }) => {
         let cached: string | null = null;

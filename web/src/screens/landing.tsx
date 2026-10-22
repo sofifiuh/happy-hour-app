@@ -1,3 +1,4 @@
+import { asset } from "@/lib/routes";
 import { useTitle } from "@/lib/use-title";
 import { ArrowRight, LocateFixed } from "lucide-react";
 import type { CSSProperties } from "react";
@@ -30,7 +31,7 @@ export function Landing() {
 
   return (
     <main className="relative flex min-h-dvh flex-col overflow-hidden bg-ink">
-      <img src="photos/east-van-brewing-company.webp" alt="" fetchPriority="high" className="absolute inset-0 size-full scale-105 animate-[settle_1600ms_var(--ease-out)_both] object-cover" />
+      <img src={asset("photos/east-van-brewing-company.webp")} alt="" fetchPriority="high" className="absolute inset-0 size-full scale-105 animate-[settle_1600ms_var(--ease-out)_both] object-cover" />
       {/* warm duotone wash, echoing the silhouette shots on the brand board */}
       <div className="absolute inset-0 bg-[#ff4900] mix-blend-multiply opacity-70" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-ink" />

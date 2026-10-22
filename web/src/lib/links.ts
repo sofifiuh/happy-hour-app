@@ -1,3 +1,4 @@
+import { absoluteUrl, spotPath } from "@/lib/routes";
 import type { Venue } from "./types";
 
 // Where "Report a wrong time" goes. Placeholder until the support address
@@ -6,7 +7,7 @@ export const SUPPORT_EMAIL = "hello@alittlehang.com";
 
 export function reportLink(v: Venue) {
   const subject = `Wrong happy hour info: ${v.name}`;
-  const body = `Venue: ${v.name}\nAddress: ${v.address}\nLink: ${location.origin}${location.pathname}#/spot/${v.id}\n\nWhat's wrong (times, deals, closed?):\n`;
+  const body = `Venue: ${v.name}\nAddress: ${v.address}\nLink: ${absoluteUrl(spotPath(v.id))}\n\nWhat's wrong (times, deals, closed?):\n`;
   return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 

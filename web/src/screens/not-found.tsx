@@ -9,6 +9,7 @@ export function NotFound() {
   const navigate = useNavigate();
   return (
     <main className="flex min-h-dvh flex-col items-center justify-center pb-16">
+      <h1 className="sr-only">Page not found</h1>
       <Wordmark className="mb-6 h-16 text-cream" />
       <EmptyState
         emoji="🍂"

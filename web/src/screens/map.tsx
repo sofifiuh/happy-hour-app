@@ -11,11 +11,13 @@ import { ViewToggle } from "@/components/view-toggle";
 import { reducedMotion } from "@/lib/motion";
 import { useStore } from "@/lib/store";
 import { useIsDesktop } from "@/lib/use-media";
+import { useTitle } from "@/lib/use-title";
 
 const CAROUSEL_MAX = 40;
 
 export function MapScreen() {
   const desktop = useIsDesktop();
+  useTitle("Map of happy hours near you");
   const { rows, now } = useStore();
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [planOpen, setPlanOpen] = useState(false);
@@ -67,6 +69,7 @@ export function MapScreen() {
     <div className="relative h-dvh overflow-hidden bg-ink">
       <VenueMap rows={mappable} selected={selected} onSelect={setSelected} focusOffset={110} locateClassName={cards.length ? "bottom-[302px]" : "bottom-28"} />
 
+      <h1 className="sr-only">Map of happy hours</h1>
       <header className="absolute inset-x-0 top-0 z-10 bg-gradient-to-b from-ink via-ink/80 to-transparent pt-safe pb-6">
         <SearchBar className="px-4 pt-3" onOpenFilters={() => setFiltersOpen(true)} />
         <TimeTabs className="pt-3" onOpenPlan={() => setPlanOpen(true)} />

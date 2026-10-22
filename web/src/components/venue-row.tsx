@@ -1,3 +1,4 @@
+import { spotPath } from "@/lib/routes";
 import { Link } from "react-router";
 import { walkLabel } from "@/lib/geo";
 import { endingSoon, fmtRange, statusLabel } from "@/lib/hours";
@@ -16,7 +17,7 @@ export function VenueRow({ row, now, onHover }: { row: Row; now: Date; onHover?:
   const walk = km != null ? walkLabel(km) : "";
   return (
     <Link
-      to={`/spot/${venue.id}`}
+      to={spotPath(venue.id)}
       viewTransition
       onClick={(e) => markHero(e.currentTarget, venue.id)}
       onMouseEnter={onHover && (() => onHover(venue.id))}
