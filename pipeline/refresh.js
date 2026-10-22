@@ -9,8 +9,15 @@
 // trust badge, and the venues it would have re-extracted are listed in
 // pipeline/results/refresh-queue.json.
 //
+// With --discover it also grows the map: once a month it re-syncs Google
+// Places identity for every venue (business status, rating; Google's caching
+// terms want ~30-day refreshes, and this is how closures are noticed), and
+// every day it runs the discovery pass (daily.js) for new venues. Both need
+// GOOGLE_PLACES_API_KEY; discovery also needs the Claude engine.
+//
 // Usage: node pipeline/refresh.js [--max-extract 40] [--model <id>]
 //        [--no-extract] [--render auto|off]
+//        [--discover] [--discover-target 10] [--discover-budget 5]
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -70,17 +77,43 @@ if (extract) {
   run("check-sources.js", ["--only", queue.map((q) => q.id).join(","), "--render", RENDER]);
   run("build-pages.js");
 }
+// --- 3. Grow and prune the map.
+if (args.discover) {
+  if (!process.env.GOOGLE_PLACES_API_KEY) {
+    console.log("\n[discover] no GOOGLE_PLACES_API_KEY — skipping new-venue discovery and closure sync");
+  } else {
+    if (args["places-sync"] || new Date().getUTCDate() === 1) {
+      console.log("\n[places] monthly identity + business-status sync");
+      run("places-sync.js");
+      run("writeback.js");
+    }
+    if (!hasClaude) {
+      console.log("\n[discover] no Claude engine (ANTHROPIC_API_KEY) — skipping new-venue discovery");
+    } else {
+      // A failed discovery must not cost the day's checks: log it and go on
+      // to the sanity gate with whatever writeback last published.
+      try {
+        run("daily.js", ["--target", String(Number(args["discover-target"]) || 10), "--budget", String(Number(args["discover-budget"]) || 5)]);
+      } catch (e) {
+        console.log(`[discover] failed: ${String(e.message).slice(0, 200)}`);
+      }
+    }
+  }
+}
 run("stamp-trust.js");
 
-// --- 3. Sanity gate: a refresh may update venues, never lose them. A
+// --- 4. Sanity gate: a refresh may update venues, never lose them, except
+// --- venues Google reports as permanently closed (dropped in writeback). A
 // --- non-zero exit stops the workflow before anything is committed.
 const after = readJson(VENUES_FILE).venues;
 const afterIds = new Set(after.map((v) => v.id));
-const lost = before.filter((v) => !afterIds.has(v.id)).map((v) => v.id);
+const places = readJson(path.join(REPO_ROOT, "pipeline", "places.json"), {});
+const lost = before.filter((v) => !afterIds.has(v.id) && places[v.id]?.business_status !== "CLOSED_PERMANENTLY").map((v) => v.id);
+const added = after.length - before.length;
 const badSchedule = after.filter((v) => !(v.happy_hour?.days?.length && v.happy_hour.start && v.happy_hour.end)).map((v) => v.id);
 if (lost.length || badSchedule.length) {
   console.error(`[refresh] SANITY GATE FAILED — lost ${lost.length} venue(s) [${lost.slice(0, 10)}], ${badSchedule.length} without a schedule [${badSchedule.slice(0, 10)}]`);
   process.exit(1);
 }
 const tally = (k) => after.reduce((m, v) => ((m[v.trust[k]] = (m[v.trust[k]] || 0) + 1), m), {});
-console.log(`[refresh] OK — ${after.length} venues. confidence ${JSON.stringify(tally("confidence"))}, status ${JSON.stringify(tally("status"))}`);
+console.log(`[refresh] OK — ${after.length} venues (${added >= 0 ? "+" : ""}${added}). confidence ${JSON.stringify(tally("confidence"))}, status ${JSON.stringify(tally("status"))}`);

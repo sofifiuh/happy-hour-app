@@ -130,6 +130,15 @@ our times, within the last 14 days; `unreachable` = 2+ failed fetches in a
 row); `confidence` is the one field a badge needs. Rules live in
 `lib/trust.js`.
 
-4. A sanity gate fails the run, and nothing is committed, if any venue would
+4. **New and closed venues** (`--discover`, on in the scheduled job). Every
+   day `daily.js` sweeps Google Places for venues we don't have yet and
+   publishes the ones whose own site lists a happy hour with priced deals
+   (default 10 new venues or $5 of extraction a day, via the `DISCOVER_TARGET` /
+   `DISCOVER_BUDGET` repo variables). On the 1st of each month
+   `places-sync.js` refreshes every venue's Places identity, and writeback
+   drops venues Google reports `CLOSED_PERMANENTLY`. Needs the
+   `GOOGLE_PLACES_API_KEY` secret (Places API (New) enabled) and
+   `ANTHROPIC_API_KEY`; each step skips itself, logged, when its key is missing.
+5. A sanity gate fails the run, and nothing is committed, if any venue would
    be lost or left without a schedule. Pull requests that touch the pipeline
    get a check-only dry run that commits nothing.
