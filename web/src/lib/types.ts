@@ -29,6 +29,8 @@ export interface Venue {
   ratings: number | null;
   photo: string | null;
   photoCredit: string | null;
+  // Extra photos after the cover, shown in the venue page gallery.
+  gallery?: string[];
   hh: {
     days: number[];
     start: string;

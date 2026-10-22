@@ -9,6 +9,7 @@ import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "no
 import { dirname, extname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { photoProblem } from "./photo-quality.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "../..");
@@ -89,3 +90,24 @@ for (const v of live) {
   }
 }
 console.log(`photos: ${made} converted, ${failed} failed, ${live.length} venues with a cover`);
+
+// Score every original so sync-data can drop covers that would make a bad
+// hero (logos, near-black graphics). Cached by file mtime next to the WebPs.
+const qualityFile = resolve(out, "quality.json");
+let quality = {};
+try {
+  quality = JSON.parse(readFileSync(qualityFile, "utf8"));
+} catch {
+  // first run
+}
+const scored = {};
+for (const v of live) {
+  const src = originalFor(v);
+  if (!src || !existsSync(src)) continue;
+  const mtime = Math.round(statSync(src).mtimeMs);
+  const prev = quality[v.id];
+  scored[v.id] = prev && prev.mtime === mtime ? prev : { mtime, problem: await photoProblem(src).catch(() => "unreadable") };
+}
+writeFileSync(qualityFile, JSON.stringify(scored));
+const rejected = Object.entries(scored).filter(([, q]) => q.problem);
+console.log(`photos: ${rejected.length} covers rejected${rejected.length ? ` (${rejected.map(([id, q]) => `${id}: ${q.problem}`).join(", ")})` : ""}`);

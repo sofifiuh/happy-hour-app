@@ -14,7 +14,9 @@ const FALLBACKS = [
 
 // `hero` names the photo for the shared-element route transition (see
 // lib/motion.ts); data-hero marks every photo that can take the name.
-export function VenuePhoto({ venue, className, eager = false, hero }: { venue: Venue; className?: string; eager?: boolean; hero?: string }) {
+// `large` is the venue page header: with no usable photo it shows an
+// oversized initial as a quiet brand mark instead of a centred letter.
+export function VenuePhoto({ venue, className, eager = false, hero, large = false }: { venue: Venue; className?: string; eager?: boolean; hero?: string; large?: boolean }) {
   const [failed, setFailed] = useState(false);
   const hash = [...venue.id].reduce((a, c) => a + c.charCodeAt(0), 0);
   const src = venue.photo && !failed ? asset(venue.photo) : null;
@@ -32,7 +34,16 @@ export function VenuePhoto({ venue, className, eager = false, hero }: { venue: V
         />
       ) : (
         <div className={cn("absolute inset-0 flex items-center justify-center bg-gradient-to-br", FALLBACKS[hash % FALLBACKS.length])}>
-          <span className="font-display text-3xl font-extrabold text-white/90">{venue.name.charAt(0)}</span>
+          {large ? (
+            <>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgb(255_255_255/0.22),transparent_55%)]" />
+              <span aria-hidden className="absolute -right-4 -bottom-16 font-display text-[300px] leading-none font-extrabold tracking-tighter text-white/15 select-none">
+                {venue.name.charAt(0)}
+              </span>
+            </>
+          ) : (
+            <span className="font-display text-3xl font-extrabold text-white/90">{venue.name.charAt(0)}</span>
+          )}
         </div>
       )}
     </div>
