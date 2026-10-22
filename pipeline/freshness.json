@@ -517,7 +517,6 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "rendered": true,
   "last_ok_at": "2026-10-22"
  },
  "bellaggio-cafe": {
@@ -1105,16 +1104,17 @@
  "chit-chat-burger-bar": {
   "url": "https://chitchatburgerbar.com/drinks-menu/",
   "checked_at": "2026-10-22",
-  "http_status": 200,
+  "http_status": 202,
   "kind": "html",
-  "hh_mentioned": true,
+  "hh_mentioned": false,
   "times_seen": false,
-  "extra_windows_seen": 1,
+  "extra_windows_seen": 0,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "75c767a11422ec9d",
-  "last_ok_at": "2026-10-22"
+  "last_ok_at": "2026-10-22",
+  "rendered": true
  },
  "chop-steakhouse-bar": {
   "url": "https://chop.ca/happy-hour",
@@ -1127,9 +1127,10 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "e5e32b6cabb5576e",
+  "hh_hash": "453a81a93631001b",
   "last_ok_at": "2026-10-22",
-  "last_confirmed_at": "2026-10-22"
+  "last_confirmed_at": "2026-10-22",
+  "changed_at": "2026-10-22"
  },
  "claudio-s-ristorante": {
   "url": "http://www.claudiosristorante.ca/menu",
@@ -1216,9 +1217,10 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "df63cb0e1bae41b1",
+  "hh_hash": "311dc20e37a66c49",
   "last_ok_at": "2026-10-22",
-  "last_confirmed_at": "2026-10-22"
+  "last_confirmed_at": "2026-10-22",
+  "changed_at": "2026-10-22"
  },
  "craft-beer-market-false-creek": {
   "url": "https://www.craftbeermarket.com/locations/vancouver-false-creek/",
@@ -1231,9 +1233,10 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "349669a1002fa960",
+  "hh_hash": "79b425988b60ed2f",
   "last_ok_at": "2026-10-22",
-  "last_confirmed_at": "2026-10-22"
+  "last_confirmed_at": "2026-10-22",
+  "changed_at": "2026-10-22"
  },
  "crave-bistro-bar": {
   "url": "https://www.cravebistro.ca/happy-hour",
@@ -1481,9 +1484,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "4eb553554b6065e5",
+  "hh_hash": "ef478fe19596d22b",
   "last_ok_at": "2026-10-22",
-  "last_confirmed_at": "2026-10-22"
+  "last_confirmed_at": "2026-10-22",
+  "changed_at": "2026-10-22"
  },
  "dublin-crossing-irish-pub": {
   "url": "http://www.dublincrossing.com/happy-hour",
@@ -1511,9 +1515,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "0e3f7266d2d988f9",
+  "hh_hash": "b500b73823d68339",
   "last_ok_at": "2026-10-22",
-  "last_confirmed_at": "2026-10-22"
+  "last_confirmed_at": "2026-10-22",
+  "changed_at": "2026-10-22"
  },
  "earls-test-kitchen": {
   "url": "https://earls.ca/locations/test-kitchen/menu/happy-hour/",
@@ -2049,9 +2054,10 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "d3e991fc7c40f334",
+  "hh_hash": "c205bde4144ec109",
   "last_ok_at": "2026-10-22",
-  "last_confirmed_at": "2026-10-22"
+  "last_confirmed_at": "2026-10-22",
+  "changed_at": "2026-10-22"
  },
  "guu-davie": {
   "url": "https://guu-izakaya.com/Davie_QR",
@@ -2454,7 +2460,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 1,
+  "fail_count": 2,
   "error": "curl: (6) Could not resolve host: www.jacksonsrestobutcher.com"
  },
  "jamjar-canteen-commercial-dr": {
@@ -4418,7 +4424,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 1,
+  "fail_count": 2,
   "error": "curl: (6) Could not resolve host: romersurgerbar.com"
  },
  "rongsi-rong-see-thai-bar-bistro": {
@@ -5559,8 +5565,8 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 1,
-  "error": "curl: (28) Connection timed out after 25002 milliseconds"
+  "fail_count": 2,
+  "error": "curl: (28) Connection timed out after 25001 milliseconds"
  },
  "the-greek-by-anatoli-yaletown": {
   "url": "https://www.thegreekbyanatoli.com/yaletown-menu",
@@ -6194,8 +6200,9 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "e58a0cf1cd80efc6",
-  "last_ok_at": "2026-10-22"
+  "hh_hash": "09b3bdff701407ea",
+  "last_ok_at": "2026-10-22",
+  "changed_at": "2026-10-22"
  },
  "tocador": {
   "url": "http://www.tocador.ca/",

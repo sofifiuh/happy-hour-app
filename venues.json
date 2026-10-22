@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-22-2382a4e9",
+ "data_version": "2026-10-22-ecc96622",
  "venues": [
   {
    "id": "ancora",
@@ -16852,8 +16852,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "changed",
+    "confidence": "low",
     "source_url": "http://tobikosushi.com/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-22",
@@ -20741,8 +20741,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "unreachable",
+    "confidence": "low",
     "source_url": "http://greatbearpub.com/files/2019/01/Great-BearEatin-2019.pdf",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-22",
@@ -29586,8 +29586,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "unreachable",
+    "confidence": "low",
     "source_url": "http://www.jacksonsrestobutcher.com/happy-hour",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-22",
@@ -44597,8 +44597,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "unreachable",
+    "confidence": "low",
     "source_url": "https://romersurgerbar.com/wp-content/uploads/Romers_RD_April2026_final-web.pdf",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-22",
