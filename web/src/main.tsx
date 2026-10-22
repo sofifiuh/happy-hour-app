@@ -8,3 +8,11 @@ createRoot(document.getElementById("root")!).render(
     <App />
   </StrictMode>,
 );
+
+// Offline shell and cached venues (public/sw.js). Production builds only;
+// hosts that don't allow service workers just skip it.
+if (import.meta.env.PROD && "serviceWorker" in navigator && window.isSecureContext) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  });
+}

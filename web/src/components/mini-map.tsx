@@ -1,3 +1,4 @@
+import "maplibre-gl/dist/maplibre-gl.css";
 import * as maplibregl from "maplibre-gl";
 import { useEffect, useRef } from "react";
 import { loadMapStyle } from "@/lib/map-style";

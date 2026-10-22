@@ -1,7 +1,7 @@
 // Copies the pipeline's venue dataset into the web app, trimmed to the
 // fields the UI reads, so the first load ships ~1/4 of the bytes.
 // Source of truth stays ../venues.json (written by pipeline/writeback.js).
-import { cpSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -9,6 +9,14 @@ const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "../..");
 const out = resolve(here, "../public");
 mkdirSync(out, { recursive: true });
+
+// Prefer the local WebP from scripts/photos.mjs; otherwise the remote cover
+// over https until the next photo refresh downloads it.
+function photoFor(v) {
+  if (existsSync(resolve(out, "photos", `${v.id}.webp`))) return `photos/${v.id}.webp`;
+  const url = v.cover_image?.url;
+  return url && /^https?:/.test(url) ? url.replace(/^http:/, "https:") : null;
+}
 
 const { data_version, venues } = JSON.parse(readFileSync(resolve(root, "venues.json"), "utf8"));
 
@@ -26,7 +34,7 @@ const slim = venues
     website: v.website || null,
     rating: v.rating ?? null,
     ratings: v.user_ratings_total ?? null,
-    photo: v.cover_image?.url || null,
+    photo: photoFor(v),
     photoCredit: v.cover_image?.credit_name || null,
     hh: {
       days: v.happy_hour.days,
@@ -55,5 +63,4 @@ const slim = venues
   }));
 
 writeFileSync(resolve(out, "venues.json"), JSON.stringify({ data_version, venues: slim }));
-if (existsSync(resolve(root, "photos"))) cpSync(resolve(root, "photos"), resolve(out, "photos"), { recursive: true });
 console.log(`sync-data: ${slim.length} venues (${data_version})`);

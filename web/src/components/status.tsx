@@ -3,7 +3,7 @@ import type { Occurrence } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const DOT = {
-  live: "bg-lime shadow-[0_0_0_3px_rgb(236_254_84/0.18)]",
+  live: "bg-lime animate-live",
   scheduled: "bg-lime",
   upcoming: "bg-amber",
   none: "bg-line",
@@ -28,8 +28,18 @@ export function StatusTime({ occ, now, className }: { occ: Occurrence; now: Date
         <span className="text-sm text-muted-foreground">No times listed</span>
       )}
       {occ.status !== "none" && occ.status !== "scheduled" && (
-        <span className={cn("text-xs", soon ? "font-semibold text-orange" : "text-muted-foreground")}>{statusLabel(occ, now)}</span>
+        <Countdown label={statusLabel(occ, now)} className={cn("text-xs", soon ? "font-semibold text-orange" : "text-muted-foreground")} />
       )}
     </div>
+  );
+}
+
+// Status line that re-enters with a short fade each time its text changes,
+// so "Ends in 24 min" visibly ticks down.
+export function Countdown({ label, className }: { label: string; className?: string }) {
+  return (
+    <span key={label} className={cn("animate-fade", className)}>
+      {label}
+    </span>
   );
 }

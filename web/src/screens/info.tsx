@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import { PageHeader } from "@/components/page-header";
 import { Wordmark } from "@/components/wordmark";
 import { SUPPORT_EMAIL } from "@/lib/links";
+import { useTitle } from "@/lib/use-title";
 
 export type InfoPage = "about" | "privacy" | "terms";
 
@@ -11,8 +12,9 @@ const TITLES: Record<InfoPage, string> = { about: "About", privacy: "Privacy", t
 // Draft copy for review before launch; the stores need privacy and terms
 // pages reachable from inside the app.
 export function Info({ page }: { page: InfoPage }) {
+  useTitle(TITLES[page]);
   return (
-    <div className="min-h-dvh pb-16">
+    <main className="mx-auto min-h-dvh max-w-2xl pb-16">
       <PageHeader title={TITLES[page]} />
       <article className="px-5 text-[15px] leading-relaxed text-cream/90">
         {page === "about" && <About />}
@@ -26,7 +28,7 @@ export function Info({ page }: { page: InfoPage }) {
         </p>
         <InfoNav current={page} />
       </article>
-    </div>
+    </main>
   );
 }
 

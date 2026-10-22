@@ -15,11 +15,11 @@ export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; cl
   const planLabel = filters.tab === "plan" && filters.plan ? `${DAY_SHORT[filters.plan.day]}, ${fmtTime(filters.plan.time)}` : "Date & Time";
   const chip = (active: boolean) =>
     cn(
-      "inline-flex h-9 shrink-0 items-center gap-1.5 rounded-full px-4 text-[14px] font-medium transition-colors",
+      "hit inline-flex h-9 shrink-0 items-center gap-1.5 rounded-full px-4 text-[14px] font-medium transition-[color,background-color,transform] duration-200 active:scale-95",
       active ? "bg-cream text-ink" : "bg-ink-3 text-cream/80 hover:text-cream",
     );
   return (
-    <div role="tablist" className={cn("no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4", className)}>
+    <div role="tablist" className={cn("no-scrollbar fade-x flex gap-2 overflow-x-auto px-4 py-1", className)}>
       {TABS.map((t) => (
         <button
           key={t.key}

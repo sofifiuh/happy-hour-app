@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useTitle } from "@/lib/use-title";
+import { type CSSProperties, useMemo, useState } from "react";
 import { useNavigate } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { remindersOn, setReminders } from "@/components/notify-drawer";
@@ -12,6 +13,7 @@ import { useStore, type Row } from "@/lib/store";
 
 // Saved spots live on the device; no account. Happening-now first.
 export function Saved() {
+  useTitle("Saved spots");
   const { saved, byId, now, location } = useStore();
   const navigate = useNavigate();
   const [remind, setRemind] = useState(remindersOn);
@@ -30,7 +32,7 @@ export function Saved() {
   }, [saved, byId, now, location]);
 
   return (
-    <div className="min-h-dvh pb-16">
+    <div className="mx-auto min-h-dvh max-w-2xl pb-16">
       <PageHeader title="Saved spots" />
       <main className="px-4">
         <label className="mb-4 flex items-center gap-3 rounded-2xl bg-ink-2 px-4 py-3.5">
@@ -55,8 +57,8 @@ export function Saved() {
           />
         ) : (
           <ul className="space-y-2.5">
-            {rows.map((r) => (
-              <li key={r.venue.id}>
+            {rows.map((r, i) => (
+              <li key={r.venue.id} className="animate-rise" style={{ "--i": i } as CSSProperties}>
                 <VenueRow row={r} now={now} />
               </li>
             ))}

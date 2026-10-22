@@ -23,7 +23,7 @@ export function SearchBar({ onOpenFilters, className }: { onOpenFilters: () => v
             type="button"
             aria-label="Clear search"
             onClick={() => setFilters({ query: "" })}
-            className="absolute top-1/2 right-3 grid size-6 -translate-y-1/2 place-items-center rounded-full bg-line text-cream"
+            className="hit absolute! top-1/2 right-3 grid size-6 -translate-y-1/2 place-items-center rounded-full bg-line text-cream"
           >
             <X className="size-3.5" />
           </button>
@@ -34,7 +34,7 @@ export function SearchBar({ onOpenFilters, className }: { onOpenFilters: () => v
         onClick={onOpenFilters}
         aria-label={count ? `Filters, ${count} on` : "Filters"}
         className={cn(
-          "relative grid size-11 shrink-0 place-items-center rounded-full transition-colors",
+          "relative grid size-11 shrink-0 place-items-center rounded-full transition-[color,background-color,transform] active:scale-90",
           count ? "bg-primary text-primary-foreground" : "bg-input text-cream",
         )}
       >

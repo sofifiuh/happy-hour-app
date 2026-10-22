@@ -12,7 +12,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
     <Ctx.Provider value={show}>
       {children}
       <div aria-live="polite" className="pointer-events-none fixed inset-x-0 top-[max(env(safe-area-inset-top),16px)] z-[60] flex justify-center">
-        {msg && <div className="rounded-full bg-cream px-4 py-2 text-sm font-semibold text-ink shadow-lg">{msg}</div>}
+        {msg && <div key={msg} className="animate-toast rounded-full bg-cream px-4 py-2 text-sm font-semibold text-ink shadow-lg">{msg}</div>}
       </div>
     </Ctx.Provider>
   );

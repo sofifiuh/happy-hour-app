@@ -1,5 +1,5 @@
 import { Heart, LocateFixed, MapPin } from "lucide-react";
-import { useMemo, useState } from "react";
+import { type CSSProperties, lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { Link, useSearchParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { FiltersDrawer } from "@/components/filters-drawer";
@@ -15,7 +15,13 @@ import { ViewToggle } from "@/components/view-toggle";
 import { Wordmark } from "@/components/wordmark";
 import { DAY_FULL, fmtTime } from "@/lib/hours";
 import { InfoNav } from "@/screens/info";
+import { reducedMotion } from "@/lib/motion";
 import { useStore, type Row } from "@/lib/store";
+import { useIsDesktop } from "@/lib/use-media";
+import { useTitle } from "@/lib/use-title";
+import { cn } from "@/lib/utils";
+
+const DesktopMap = lazy(() => import("@/components/desktop-map"));
 
 const PAGE = 40;
 
@@ -26,6 +32,16 @@ export function Home() {
   const [planOpen, setPlanOpen] = useState(params.get("sheet") === "plan");
   const [locationOpen, setLocationOpen] = useState(params.get("sheet") === "location");
   const [limit, setLimit] = useState(PAGE);
+  const desktop = useIsDesktop();
+  useTitle(null);
+  const [selected, setSelected] = useState<string | null>(null);
+  const [hovered, setHovered] = useState<string | null>(null);
+
+  // Desktop: a pin click brings its row into view in the list.
+  useEffect(() => {
+    if (!selected) return;
+    document.getElementById(`row-${selected}`)?.scrollIntoView({ block: "center", behavior: reducedMotion() ? "auto" : "smooth" });
+  }, [selected]);
 
   const sections = useMemo(() => {
     if (filters.tab === "plan" && filters.plan) {
@@ -50,8 +66,21 @@ export function Home() {
   }, [rows, filters.tab, filters.plan, now]);
 
   let budget = limit;
+  let n = 0;
   return (
-    <div className="relative min-h-dvh pb-28">
+    <div className="lg:grid lg:grid-cols-[minmax(400px,460px)_1fr]">
+    <div className="relative min-h-dvh pb-28 lg:pb-10">
+      <a
+        href="#results"
+        onClick={(e) => {
+          e.preventDefault();
+          document.getElementById("results")?.focus();
+        }}
+        className="sr-only z-50 rounded-full bg-cream px-4 py-2 font-semibold text-ink focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+      >
+        Skip to spots
+      </a>
+      <h1 className="sr-only">Happy hours in Vancouver</h1>
       <header className="sticky top-0 z-20 bg-ink/90 pt-safe backdrop-blur-xl">
         <div className="flex items-center justify-between px-4 pt-3 pb-2">
           <Link to="/welcome" aria-label="A Little Hang">
@@ -60,7 +89,7 @@ export function Home() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setLocationOpen(true)}
-              className="inline-flex h-9 items-center gap-1.5 rounded-full bg-ink-2 px-3 text-[13px] font-medium text-sky"
+              className="hit inline-flex h-9 items-center gap-1.5 rounded-full bg-ink-2 px-3 text-[13px] font-medium text-sky transition-transform active:scale-95"
             >
               {locationState === "granted" ? (
                 <>
@@ -76,7 +105,7 @@ export function Home() {
                 </>
               )}
             </button>
-            <Link to="/saved" aria-label="Saved spots" className="relative grid size-9 place-items-center rounded-full bg-ink-2 text-cream">
+            <Link to="/saved" aria-label="Saved spots" className="hit grid size-9 place-items-center rounded-full bg-ink-2 text-cream transition-transform active:scale-90">
               <Heart className="size-[18px]" />
               {saved.length > 0 && (
                 <span className="absolute -top-1 -right-1 grid h-4 min-w-4 place-items-center rounded-full bg-primary px-1 text-[10px] font-bold text-primary-foreground tabular">
@@ -91,7 +120,7 @@ export function Home() {
       </header>
 
       <OfflineBanner />
-      <main className="px-4">
+      <main id="results" tabIndex={-1} className="px-4 outline-none">
         {loadFailed && rows.length === 0 ? (
           <EmptyState
             emoji="📡"
@@ -135,10 +164,15 @@ export function Home() {
                   <span className="font-display text-[20px] font-bold tracking-tight">{s.title}</span>
                   <span className="text-[13px] text-muted-foreground tabular">{s.rows.length}</span>
                 </h2>
-                <ul className="space-y-2.5">
+                <ul key={filters.tab} className="space-y-2.5">
                   {shown.map((r) => (
-                    <li key={r.venue.id}>
-                      <VenueRow row={r} now={now} />
+                    <li
+                      key={r.venue.id}
+                      id={`row-${r.venue.id}`}
+                      style={{ "--i": n++ } as CSSProperties}
+                      className={cn("animate-rise scroll-mt-48 rounded-2xl transition-shadow", selected === r.venue.id && "ring-2 ring-primary")}
+                    >
+                      <VenueRow row={r} now={now} onHover={desktop ? setHovered : undefined} />
                     </li>
                   ))}
                 </ul>
@@ -156,13 +190,25 @@ export function Home() {
         {rows.length > 0 && rows.length <= limit && <InfoNav />}
       </main>
 
-      <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 flex justify-center pb-[max(env(safe-area-inset-bottom),20px)]">
-        <ViewToggle view="list" />
-      </div>
+      {!desktop && (
+        <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 flex justify-center pb-[max(env(safe-area-inset-bottom),20px)]">
+          <ViewToggle view="list" />
+        </div>
+      )}
 
       <FiltersDrawer open={filtersOpen} onOpenChange={setFiltersOpen} />
       <PlanDrawer open={planOpen} onOpenChange={setPlanOpen} />
       <LocationDrawer open={locationOpen} onOpenChange={setLocationOpen} />
+    </div>
+    {desktop && (
+      <aside aria-label="Map" className="sticky top-0 h-dvh p-3 pl-1">
+        <div className="relative h-full overflow-hidden rounded-[28px] bg-ink-2 ring-1 ring-white/5">
+          <Suspense fallback={null}>
+            <DesktopMap rows={rows} now={now} selected={selected} hovered={hovered} onSelect={setSelected} />
+          </Suspense>
+        </div>
+      </aside>
+    )}
     </div>
   );
 }

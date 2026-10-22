@@ -4,9 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "sync": "node scripts/sync-data.mjs",
-    "dev": "node scripts/sync-data.mjs && vite",
-    "build": "node scripts/sync-data.mjs && tsc -b && vite build",
+    "sync": "node scripts/photos.mjs && node scripts/sync-data.mjs",
+    "photos": "node scripts/photos.mjs --remote",
+    "dev": "npm run sync && vite",
+    "build": "npm run sync && tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
@@ -32,6 +33,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "oxlint": "^1.88.0",
+    "sharp": "^0.35.5",
     "typescript": "~6.0.3",
     "vite": "^8.3.4"
   }

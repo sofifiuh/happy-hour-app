@@ -1,5 +1,5 @@
 import { ArrowLeft, BadgeCheck, ExternalLink, Flag, Globe, Heart, Navigation, Phone, Share, Star } from "lucide-react";
-import { lazy, Suspense, useMemo, useState } from "react";
+import { type CSSProperties, lazy, Suspense, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { NotifyDrawer, remindersAsked } from "@/components/notify-drawer";
@@ -11,8 +11,10 @@ import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from "@/components/u
 import { Skeleton } from "@/components/ui/skeleton";
 import { VenuePhoto } from "@/components/venue-photo";
 import { walkLabel, distanceKm } from "@/lib/geo";
-import { DAY_FULL, endingSoon, fmtRange, nowHHMM, occurrence, statusLabel, windowsForDay } from "@/lib/hours";
+import { DAY_FULL, DAY_SHORT, endingSoon, fmtRange, nowHHMM, occurrence, statusLabel, windowsForDay } from "@/lib/hours";
 import { fmtChecked, reportLink } from "@/lib/links";
+import { goBack } from "@/lib/motion";
+import { useTitle } from "@/lib/use-title";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
 import type { Category, Venue } from "@/lib/types";
@@ -31,12 +33,35 @@ function amenityPills(v: Venue) {
   ].filter(Boolean) as { emoji: string; label: string }[];
 }
 
+// Consecutive days (Mon-first) with the same windows collapse into one
+// row: "Every day", "Mon–Fri", "Sat & Sun".
+const WEEK = [1, 2, 3, 4, 5, 6, 0];
+function dayRuns(v: Venue) {
+  const runs: { days: number[]; key: string; wins: ReturnType<typeof windowsForDay> }[] = [];
+  for (const d of WEEK) {
+    const wins = windowsForDay(v, d);
+    const key = wins.map((w) => `${w.start}-${w.end}`).join();
+    const last = runs[runs.length - 1];
+    if (last && last.key === key) last.days.push(d);
+    else runs.push({ days: [d], key, wins });
+  }
+  return runs;
+}
+
+function runLabel(days: number[]) {
+  if (days.length === 7) return "Every day";
+  if (days.length === 1) return DAY_FULL[days[0]];
+  if (days.length === 2) return `${DAY_SHORT[days[0]]} & ${DAY_SHORT[days[1]]}`;
+  return `${DAY_SHORT[days[0]]}–${DAY_SHORT[days[days.length - 1]]}`;
+}
+
 export function Spot() {
   const { id = "" } = useParams();
   const { byId, now, loading, location, saved, toggleSaved } = useStore();
   const navigate = useNavigate();
   const toast = useToast();
   const venue = byId(id);
+  useTitle(venue ? `${venue.name} · happy hour ${fmtRange(venue.hh.start, venue.hh.end)}` : loading ? null : "Spot not found");
   const [cat, setCat] = useState<Category>("drink");
   const [directionsOpen, setDirectionsOpen] = useState(false);
   const [notifyOpen, setNotifyOpen] = useState(() => new URLSearchParams(window.location.hash.split("?")[1]).get("sheet") === "notify");
@@ -91,16 +116,16 @@ export function Spot() {
   };
 
   return (
-    <div className="min-h-dvh pb-28">
+    <main className="mx-auto min-h-dvh max-w-2xl pb-28">
       {/* Photo header */}
       <div className="relative">
-        <VenuePhoto venue={venue} eager className="h-[min(42vh,340px)] w-full" />
+        <VenuePhoto venue={venue} eager hero="hero" className="h-[min(42vh,340px)] w-full lg:rounded-b-[28px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-transparent to-ink" />
         <div className="absolute inset-x-0 top-0 flex justify-between px-4 pt-[max(env(safe-area-inset-top),14px)]">
           <button
-            onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))}
+            onClick={() => goBack(navigate)}
             aria-label="Back"
-            className="grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur"
+            className="hit grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90"
           >
             <ArrowLeft className="size-5" />
           </button>
@@ -109,11 +134,11 @@ export function Spot() {
               onClick={onSave}
               aria-label={isSaved ? "Remove from saved" : "Save"}
               aria-pressed={isSaved}
-              className="grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur"
+              className="hit grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90"
             >
               <Heart className={cn("size-[18px]", isSaved && "fill-primary text-primary")} />
             </button>
-            <button onClick={onShare} aria-label="Share" className="grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur">
+            <button onClick={onShare} aria-label="Share" className="hit grid size-10 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90">
               <Share className="size-[18px]" />
             </button>
           </div>
@@ -121,7 +146,7 @@ export function Spot() {
       </div>
 
       {/* Identity */}
-      <section className="relative -mt-14 px-5">
+      <section style={{ "--i": 1 } as CSSProperties} className="animate-rise relative -mt-14 px-5">
         {occ.status === "live" ? (
           <Badge variant="live" className="mb-3">
             <span className="size-1.5 rounded-full bg-ink" /> Happening now · {statusLabel(occ, now).toLowerCase()}
@@ -160,7 +185,7 @@ export function Spot() {
       </section>
 
       {/* Deals */}
-      <section className="mt-7 px-5">
+      <section style={{ "--i": 2 } as CSSProperties} className="animate-rise mt-7 px-5">
         {venue.hh.deals.length === 0 && <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Deals</h2>}
         <div role="tablist" className={cn("mb-3 flex gap-6", venue.hh.deals.length === 0 && "hidden")}>
           {(["drink", "food"] as const).map((c) => (
@@ -170,7 +195,7 @@ export function Spot() {
               aria-selected={tab === c}
               onClick={() => setCat(c)}
               className={cn(
-                "relative pb-2 font-display text-[19px] font-bold transition-colors",
+                "hit relative pb-2 font-display text-[19px] font-bold transition-colors",
                 tab === c ? "text-cream after:absolute after:inset-x-0 after:bottom-0 after:h-[3px] after:rounded-full after:bg-primary" : "text-muted-foreground",
               )}
             >
@@ -207,15 +232,15 @@ export function Spot() {
       </section>
 
       {/* Schedule */}
-      <section className="mt-8 px-5">
+      <section style={{ "--i": 3 } as CSSProperties} className="animate-rise mt-8 px-5">
         <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Happy hour times</h2>
         <ul className="space-y-1">
-          {[0, 1, 2, 3, 4, 5, 6].map((d) => {
-            const wins = windowsForDay(venue, d);
-            const isToday = d === today;
+          {dayRuns(venue).map((run) => {
+            const wins = run.wins;
+            const isToday = run.days.includes(today);
             return (
               <li
-                key={d}
+                key={run.days.join()}
                 className={cn(
                   "flex items-center justify-between rounded-xl px-3 py-2.5 text-[15px]",
                   isToday && "bg-ink-2",
@@ -223,7 +248,7 @@ export function Spot() {
                 )}
               >
                 <span className={cn("flex items-center gap-2", isToday && "font-semibold")}>
-                  {DAY_FULL[d]}
+                  {runLabel(run.days)}
                   {isToday && <Badge size="sm" variant="pink">Today</Badge>}
                 </span>
                 <span className="flex items-center gap-1.5 tabular">
@@ -256,7 +281,7 @@ export function Spot() {
               </>
             )}
           </span>
-          <a href={reportLink(venue)} className="inline-flex items-center gap-1.5 font-medium text-cream">
+          <a href={reportLink(venue)} className="hit inline-flex items-center gap-1.5 font-medium text-cream">
             <Flag className="size-3.5" /> Report a wrong time
           </a>
         </div>
@@ -264,7 +289,7 @@ export function Spot() {
 
       {/* Location */}
       {venue.lat != null && venue.lng != null && (
-        <section className="mt-8 px-5">
+        <section style={{ "--i": 4 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Find us here</h2>
           <button onClick={() => setDirectionsOpen(true)} className="block w-full overflow-hidden rounded-[22px] bg-ink-2 text-left">
             <Suspense fallback={<div className="h-[170px] w-full bg-ink-3" />}>
@@ -294,7 +319,7 @@ export function Spot() {
 
       {/* Sticky bar */}
       <div className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-ink/95 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-md items-center justify-between gap-3 px-5 pt-3 pb-[max(env(safe-area-inset-bottom),14px)]">
+        <div className="mx-auto flex max-w-md items-center justify-between gap-3 px-5 lg:max-w-2xl pt-3 pb-[max(env(safe-area-inset-bottom),14px)]">
           <div className="min-w-0">
             {occ.start && occ.end ? (
               <>
@@ -309,9 +334,15 @@ export function Spot() {
               <p className="text-sm text-muted-foreground">No happy hour times listed</p>
             )}
           </div>
-          <Button variant="cream" onClick={onShare}>
-            <Share /> Share
-          </Button>
+          {venue.lat != null && venue.lng != null ? (
+            <Button onClick={() => setDirectionsOpen(true)}>
+              <Navigation /> Directions
+            </Button>
+          ) : (
+            <Button variant="cream" onClick={onShare}>
+              <Share /> Share
+            </Button>
+          )}
         </div>
       </div>
 
@@ -336,6 +367,6 @@ export function Spot() {
       <Link to="/" className="sr-only">
         Back to list
       </Link>
-    </div>
+    </main>
   );
 }

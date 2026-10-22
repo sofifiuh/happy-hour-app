@@ -11,12 +11,14 @@ const FALLBACKS = [
   "from-[#ff6237] to-[#2f2d2b]",
 ];
 
-export function VenuePhoto({ venue, className, eager = false }: { venue: Venue; className?: string; eager?: boolean }) {
+// `hero` names the photo for the shared-element route transition (see
+// lib/motion.ts); data-hero marks every photo that can take the name.
+export function VenuePhoto({ venue, className, eager = false, hero }: { venue: Venue; className?: string; eager?: boolean; hero?: string }) {
   const [failed, setFailed] = useState(false);
   const hash = [...venue.id].reduce((a, c) => a + c.charCodeAt(0), 0);
   const src = venue.photo && !failed ? venue.photo : null;
   return (
-    <div className={cn("relative overflow-hidden bg-ink-3", className)}>
+    <div data-hero style={{ viewTransitionName: hero }} className={cn("relative overflow-hidden bg-ink-3", className)}>
       {src ? (
         <img
           src={src}
