@@ -37,10 +37,10 @@ export function MapCard({ row, now, active }: { row: Row; now: Date; active: boo
       </div>
       <div className="flex items-center gap-3 p-4">
         <div className="min-w-0 flex-1">
-          <h3 className="flex items-center gap-1.5 font-display text-[20px] leading-tight font-extrabold tracking-tight">
+          <h2 className="flex items-center gap-1.5 font-display text-[20px] leading-tight font-extrabold tracking-tight">
             <span className="truncate">{venue.name}</span>
             {venue.hh.verified && <BadgeCheck aria-label="Verified" className="size-[18px] shrink-0 text-sky" />}
-          </h3>
+          </h2>
           <p className="mt-1 flex items-center gap-2 text-[14px]">
             <StatusDot occ={occ} />
             {occ.start && occ.end ? (
