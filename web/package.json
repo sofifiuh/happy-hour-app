@@ -1,0 +1,41 @@
+{
+  "name": "a-little-hang",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/photos.mjs && node scripts/sync-data.mjs",
+    "photos": "node scripts/photos.mjs --remote",
+    "dev": "npm run sync && vite",
+    "build": "npm run sync && tsc -b && vite build",
+    "build:site": "npm run sync && tsc -b && VITE_ROUTER=browser vite build && node scripts/prerender.mjs",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.9.0",
+    "@fontsource/funnel-display": "^5.3.0",
+    "@fontsource/funnel-sans": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.61.0",
+    "maplibre-gl": "^6.15.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router": "^8.5.0",
+    "tailwind-merge": "^3.7.0",
+    "tailwindcss": "^4.3.3",
+    "vaul": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.88.0",
+    "sharp": "^0.35.5",
+    "typescript": "~6.0.3",
+    "vite": "^8.3.4"
+  }
+}

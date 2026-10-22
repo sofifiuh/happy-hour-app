@@ -1,0 +1,328 @@
+@import "tailwindcss";
+@import "@fontsource/funnel-sans/400.css";
+@import "@fontsource/funnel-sans/500.css";
+@import "@fontsource/funnel-sans/600.css";
+@import "@fontsource/funnel-display/500.css";
+@import "@fontsource/funnel-display/700.css";
+@import "@fontsource/funnel-display/800.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * A Little Hang brand tokens, from Sofia's Branding page in Figma
+ * ("dark mode, pops of colour"; shortlisted swatches on #1b1b1b).
+ * Dark is the brand, not a theme toggle. shadcn components read the
+ * semantic names below, so a future rebrand is an edit to this block.
+ * Repeated on body so a host page that sets shadcn-style variables on
+ * :root (the preview host does) can't repaint the app.
+ */
+:root,
+body {
+  /* raw palette */
+  --ink: #1b1b1b; /* canvas */
+  --ink-2: #242322; /* raised surfaces: rows, cards */
+  --ink-3: #2f2d2b; /* inputs, chips at rest */
+  --line: #3a3835; /* hairlines */
+  --cream: #f3efe4; /* primary text */
+  --cream-dim: #a7a196; /* secondary text */
+  --orange: #ff4900; /* brand pop: primary actions, active state */
+  --amber: #ffb530; /* upcoming */
+  --lime: #ecfe54; /* happening now */
+  --pink: #f7b2b7; /* tags, highlights */
+  --sky: #bfdbe6; /* info: walk time, verified */
+
+  /* shadcn semantic tokens */
+  --background: var(--ink);
+  --foreground: var(--cream);
+  --card: var(--ink-2);
+  --card-foreground: var(--cream);
+  --popover: var(--ink-2);
+  --popover-foreground: var(--cream);
+  --primary: var(--orange);
+  --primary-foreground: var(--ink); /* ink on orange is 5.6:1; cream was 3.2:1 */
+  --secondary: var(--ink-3);
+  --secondary-foreground: var(--cream);
+  --muted: var(--ink-3);
+  --muted-foreground: var(--cream-dim);
+  --accent: var(--ink-3);
+  --accent-foreground: var(--cream);
+  --destructive: #ff5a4d;
+  --border: var(--line);
+  --input: var(--ink-3);
+  --ring: var(--orange);
+  --radius: 1rem;
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: "Funnel Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Funnel Display", "Funnel Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-cream: var(--cream);
+  --color-orange: var(--orange);
+  --color-amber: var(--amber);
+  --color-lime: var(--lime);
+  --color-pink: var(--pink);
+  --color-sky: var(--sky);
+
+  --radius-sm: calc(var(--radius) - 8px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html,
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior-y: none;
+  }
+  #root {
+    min-height: 100dvh;
+  }
+  button {
+    cursor: pointer;
+  }
+}
+
+/* Unlayered so a host page's own body styles can't win. */
+html,
+body {
+  background-color: var(--ink) !important;
+  color: var(--cream);
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom), 0px);
+}
+
+@utility pt-safe {
+  padding-top: max(env(safe-area-inset-top), 0px);
+}
+
+.maplibregl-ctrl-attrib {
+  background: rgb(27 27 27 / 0.6) !important;
+  color: var(--cream-dim) !important;
+  font-size: 10px;
+}
+.maplibregl-ctrl-attrib a {
+  color: var(--cream-dim) !important;
+}
+
+/*
+ * Motion. One easing family: things arrive on --ease-out (fast start, soft
+ * landing) and leave quicker than they came. Everything below is switched
+ * off under prefers-reduced-motion at the end of this file.
+ */
+:root {
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+/* No opacity in pop or settle: they run on first paint (welcome logo and
+   photo), and Chrome doesn't count fading-in content as painted. */
+@keyframes pop {
+  0% {
+    transform: scale(0.9);
+  }
+  60% {
+    transform: scale(1.03);
+  }
+}
+@keyframes live-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgb(236 254 84 / 0.55);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 6px rgb(236 254 84 / 0);
+  }
+}
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.96);
+  }
+}
+
+@utility animate-rise {
+  animation: rise 300ms var(--ease-out) both;
+  animation-delay: calc(min(var(--i, 0), 10) * 24ms);
+}
+@utility animate-fade {
+  animation: fade 240ms var(--ease-out) both;
+}
+@utility animate-pop {
+  animation: pop 300ms var(--ease-out) both;
+}
+@utility animate-live {
+  animation: live-ring 2s var(--ease-out) infinite;
+}
+@utility animate-toast {
+  animation: toast-in 240ms var(--ease-out) both;
+}
+
+/* Route changes: a short push / pop, plus the venue photo flying between
+   the list (or map card) and the venue page via view-transition-name. */
+@keyframes vt-push-in {
+  from {
+    opacity: 0;
+    transform: translateX(28px);
+  }
+}
+@keyframes vt-push-out {
+  to {
+    opacity: 0;
+    transform: translateX(-14px);
+  }
+}
+@keyframes vt-pop-in {
+  from {
+    opacity: 0;
+    transform: translateX(-14px);
+  }
+}
+@keyframes vt-pop-out {
+  to {
+    opacity: 0;
+    transform: translateX(28px);
+  }
+}
+::view-transition-old(root) {
+  animation: 160ms var(--ease-in) both vt-push-out;
+}
+::view-transition-new(root) {
+  animation: 280ms var(--ease-out) both vt-push-in;
+}
+html[data-nav="back"]::view-transition-old(root) {
+  animation-name: vt-pop-out;
+}
+html[data-nav="back"]::view-transition-new(root) {
+  animation-name: vt-pop-in;
+}
+html[data-nav="swap"]::view-transition-old(root),
+html[data-nav="swap"]::view-transition-new(root) {
+  animation: 200ms var(--ease-out) both fade;
+}
+html[data-nav="swap"]::view-transition-old(root) {
+  animation-direction: reverse;
+}
+::view-transition-group(hero) {
+  animation-duration: 300ms;
+  animation-timing-function: var(--ease-out);
+}
+/* Only the destination photo flies; the source is hidden so the two
+   don't show as a stretched double image mid-flight. */
+::view-transition-old(hero) {
+  display: none;
+}
+::view-transition-new(hero) {
+  animation: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+@keyframes settle {
+  from {
+    transform: scale(1.12);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* At least a 44px touch target without changing how the control looks. */
+@utility hit {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: max(100%, 44px);
+    height: max(100%, 44px);
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Horizontal chip rows fade at the right edge so it's clear they scroll. */
+@utility fade-x {
+  mask-image: linear-gradient(to right, black calc(100% - 40px), transparent);
+}
+
+/* Transform-only rise for first-paint content (see the note on pop). */
+@keyframes lift {
+  from {
+    transform: translateY(14px);
+  }
+}
+@utility animate-lift {
+  animation: lift 300ms var(--ease-out) both;
+  animation-delay: calc(min(var(--i, 0), 10) * 24ms);
+}
