@@ -8,6 +8,7 @@ import { reducedMotion } from "@/lib/motion";
 // photos, swipe down (or tap ×, or Esc) to close.
 export function PhotoViewer({ photos, name, open, onClose }: { photos: string[]; name: string; open: boolean; onClose: () => void }) {
   const [index, setIndex] = useState(0);
+  const [broken, setBroken] = useState<Set<number>>(() => new Set());
   const strip = useRef<HTMLDivElement>(null);
   const sheet = useRef<HTMLDivElement>(null);
   const closeBtn = useRef<HTMLButtonElement>(null);
@@ -17,15 +18,28 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: string[];
     const prev = document.activeElement as HTMLElement | null;
     const overflow = document.documentElement.style.overflow;
     document.documentElement.style.overflow = "hidden";
+    // The page behind can't be reached while the gallery is open.
+    const app = document.getElementById("root");
+    app?.setAttribute("inert", "");
     closeBtn.current?.focus();
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
+      if (e.key === "Tab") {
+        // Two stops: the close button and the photo track.
+        e.preventDefault();
+        (document.activeElement === closeBtn.current ? strip.current : closeBtn.current)?.focus();
+      }
       const s = strip.current;
-      if (s && (e.key === "ArrowRight" || e.key === "ArrowLeft")) s.scrollBy({ left: (e.key === "ArrowRight" ? 1 : -1) * s.clientWidth, behavior: "smooth" });
+      if (s && (e.key === "ArrowRight" || e.key === "ArrowLeft"))
+        s.scrollBy({
+          left: (e.key === "ArrowRight" ? 1 : -1) * s.clientWidth,
+          behavior: "smooth",
+        });
     };
     window.addEventListener("keydown", onKey);
     return () => {
       document.documentElement.style.overflow = overflow;
+      app?.removeAttribute("inert");
       window.removeEventListener("keydown", onKey);
       prev?.focus();
     };
@@ -98,18 +112,36 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: string[];
 
   return createPortal(
     <div role="dialog" aria-modal="true" aria-label={`Photos of ${name}`} className="fixed inset-0 z-50">
-      <div ref={sheet} data-no-swipe className="animate-fade absolute inset-0 bg-black/95">
-        <div ref={strip} onScroll={onScroll} className="no-scrollbar flex size-full snap-x snap-mandatory overflow-x-auto">
+      <div ref={sheet} data-no-swipe className="animate-fade absolute inset-0 bg-black/[0.96]">
+        <div
+          ref={strip}
+          onScroll={onScroll}
+          tabIndex={0}
+          role="group"
+          aria-roledescription="carousel"
+          aria-label={photos.length > 1 ? "Photos, use the arrow keys to move between them" : "Photo"}
+          className="no-scrollbar flex size-full snap-x snap-mandatory overflow-x-auto outline-none focus-visible:ring-2 focus-visible:ring-cream/60 focus-visible:ring-inset"
+        >
           {photos.map((src, i) => (
             <div key={src} className="grid size-full shrink-0 snap-center place-items-center">
-              <img
-                src={asset(src)}
-                alt={`${name}, photo ${i + 1} of ${photos.length}`}
-                loading={i === 0 ? "eager" : "lazy"}
-                decoding="async"
-                referrerPolicy="no-referrer"
-                className="max-h-full max-w-full object-contain"
-              />
+              {broken.has(i) ? (
+                <div className="grid aspect-[4/3] w-[min(90vw,520px)] place-items-center rounded-[24px] bg-gradient-to-br from-[#ff4900] to-[#751927]">
+                  <span className="text-center">
+                    <span className="block font-display text-[64px] leading-none font-extrabold text-white/30">{name.charAt(0)}</span>
+                    <span className="mt-3 block text-[14px] font-semibold text-white/90">Photo unavailable</span>
+                  </span>
+                </div>
+              ) : (
+                <img
+                  onError={() => setBroken((b) => new Set(b).add(i))}
+                  src={asset(src)}
+                  alt={`${name}, photo ${i + 1} of ${photos.length}`}
+                  loading={i === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                  referrerPolicy="no-referrer"
+                  className="max-h-full max-w-full object-contain"
+                />
+              )}
             </div>
           ))}
         </div>
