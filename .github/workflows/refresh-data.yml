@@ -6,6 +6,9 @@ name: Refresh venue data
 on:
   schedule:
     - cron: "23 10 * * *" # 03:23 Vancouver (PDT), before the site's daily build
+  # PRs touching the pipeline get a check-only dry run (nothing is committed).
+  pull_request:
+    paths: ["pipeline/**", ".github/workflows/refresh-data.yml"]
   workflow_dispatch:
     inputs:
       max_extract:
@@ -24,6 +27,9 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    env:
+      HAS_CLAUDE_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+      DRY_RUN: ${{ github.event_name == 'pull_request' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -39,19 +45,18 @@ jobs:
           sudo apt-get install -y poppler-utils >/dev/null
 
       - name: Install Claude Code (extraction engine)
-        if: env.ANTHROPIC_API_KEY != ''
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        if: env.HAS_CLAUDE_KEY == 'true' && env.DRY_RUN != 'true'
         run: npm install -g @anthropic-ai/claude-code
 
       - name: Refresh
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           EXTRACT_MODEL: ${{ vars.EXTRACT_MODEL }}
-        run: node pipeline/refresh.js --max-extract "${{ inputs.max_extract || '40' }}"
+        run: node pipeline/refresh.js --max-extract "${{ inputs.max_extract || '40' }}" ${{ env.DRY_RUN == 'true' && '--no-extract' || '' }}
 
       - name: Commit data
         id: commit
+        if: env.DRY_RUN != 'true'
         run: |
           git config user.name "a-little-hang-data"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -76,5 +81,8 @@ jobs:
         if: always()
         with:
           name: refresh-logs
-          path: pipeline/results/*.json
+          path: |
+            pipeline/results/*.json
+            pipeline/freshness.json
+            venues.json
           if-no-files-found: ignore
