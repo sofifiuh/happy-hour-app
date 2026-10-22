@@ -1106,17 +1106,16 @@
  "chit-chat-burger-bar": {
   "url": "https://chitchatburgerbar.com/drinks-menu/",
   "checked_at": "2026-10-22",
-  "http_status": 202,
+  "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
+  "hh_mentioned": true,
   "times_seen": false,
-  "extra_windows_seen": 0,
+  "extra_windows_seen": 1,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "75c767a11422ec9d",
-  "last_ok_at": "2026-10-22",
-  "rendered": true
+  "last_ok_at": "2026-10-22"
  },
  "chop-steakhouse-bar": {
   "url": "https://chop.ca/happy-hour",
@@ -1129,7 +1128,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "12ccb976c299ff0c",
+  "hh_hash": "453a81a93631001b",
   "last_ok_at": "2026-10-22",
   "last_confirmed_at": "2026-10-22",
   "changed_at": "2026-10-22"
@@ -1219,7 +1218,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "d0a1085c91d5e547",
+  "hh_hash": "5661736eb256307c",
   "last_ok_at": "2026-10-22",
   "last_confirmed_at": "2026-10-22",
   "changed_at": "2026-10-22"
@@ -1235,7 +1234,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "16ba86be679616a0",
+  "hh_hash": "79b425988b60ed2f",
   "last_ok_at": "2026-10-22",
   "last_confirmed_at": "2026-10-22",
   "changed_at": "2026-10-22"
@@ -1888,7 +1887,8 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "5930ddb9bf2657d5",
-  "last_ok_at": "2026-10-22"
+  "last_ok_at": "2026-10-22",
+  "rendered": true
  },
  "g3-kitchen-and-bar": {
   "url": "https://www.g3kitchen.com/",
@@ -2056,7 +2056,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "33e5d6f170e19182",
+  "hh_hash": "1eae5698da5401fd",
   "last_ok_at": "2026-10-22",
   "last_confirmed_at": "2026-10-22",
   "changed_at": "2026-10-22"
@@ -2462,7 +2462,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 3,
+  "fail_count": 4,
   "error": "curl: (6) Could not resolve host: www.jacksonsrestobutcher.com"
  },
  "jamjar-canteen-commercial-dr": {
@@ -4426,7 +4426,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 3,
+  "fail_count": 4,
   "error": "curl: (6) Could not resolve host: romersurgerbar.com"
  },
  "rongsi-rong-see-thai-bar-bistro": {
@@ -5108,7 +5108,7 @@
   "ok": true,
   "fail_count": 0,
   "rendered": true,
-  "hh_hash": "1a98a4cd6b081a8b",
+  "hh_hash": "7c41aa18685e8584",
   "last_ok_at": "2026-10-22",
   "last_confirmed_at": "2026-10-22",
   "changed_at": "2026-10-22"
@@ -5380,9 +5380,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "9db65b87b1509b90",
+  "hh_hash": "fbf8759d98f441fb",
   "last_ok_at": "2026-10-22",
-  "last_confirmed_at": "2026-10-22"
+  "last_confirmed_at": "2026-10-22",
+  "changed_at": "2026-10-22"
  },
  "the-cascade-room": {
   "url": "https://www.thecascade.ca/happy-hour",
@@ -6355,9 +6356,11 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "822221b689c67deb",
+  "hh_hash": "fd54baaf65c2b681",
   "last_ok_at": "2026-10-22",
-  "last_confirmed_at": "2026-10-22"
+  "last_confirmed_at": "2026-10-22",
+  "rendered": true,
+  "changed_at": "2026-10-22"
  },
  "union-latino-s-food": {
   "url": "https://www.unionlatinosrestaurant.com/event-details/happy-hour-2024-03-07-15-00",
