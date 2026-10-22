@@ -47,7 +47,7 @@ export function Landing() {
           near you, <span className="text-lime">right now.</span>
         </h1>
         <p style={{ "--i": 6 } as CSSProperties} className="animate-lift mt-3 max-w-[32ch] text-[16px] text-cream/80">
-          {live > 0 ? `${live} spots in Vancouver are pouring deals right now.` : "Real deals from 450+ Vancouver bars and restaurants, checked against their own menus."}
+          {live > 0 ? `${live} ${live === 1 ? "spot in Vancouver is" : "spots in Vancouver are"} pouring deals right now.` : "Real deals from 450+ Vancouver bars and restaurants, checked against their own menus."}
         </p>
         <div style={{ "--i": 8 } as CSSProperties} className="animate-lift mt-7 flex flex-col gap-3">
           <Button size="lg" onClick={() => go(true)} className="w-full justify-between pr-2 pl-6">
