@@ -1,8 +1,9 @@
 name: Refresh venue data
 
 # Daily: re-check every venue's own happy hour page, re-extract the ones
-# that changed (when ANTHROPIC_API_KEY is set), re-stamp trust badges, commit
-# the data to main and redeploy. See pipeline/README.md ("Freshness & trust").
+# that changed (needs ANTHROPIC_API_KEY), discover new venues and drop
+# permanently closed ones (needs GOOGLE_PLACES_API_KEY too), re-stamp trust
+# badges, commit the data to main and redeploy. See pipeline/README.md ("Freshness & trust").
 on:
   schedule:
     - cron: "23 10 * * *" # 03:23 Vancouver (PDT), before the site's daily build
@@ -28,10 +29,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:
-      HAS_CLAUDE_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+      # Accept the common names for each key, so a differently named secret
+      # still works.
+      HAS_CLAUDE_KEY: ${{ (secrets.ANTHROPIC_API_KEY || secrets.CLAUDE_API_KEY || secrets.ANTHROPIC_KEY || secrets.CLAUDE_KEY || secrets.CLAUDE_CODE_OAUTH_TOKEN) != '' }}
+      HAS_PLACES_KEY: ${{ (secrets.GOOGLE_PLACES_API_KEY || secrets.GOOGLE_MAPS_API_KEY || secrets.PLACES_API_KEY || secrets.GOOGLE_API_KEY || secrets.GOOGLE_PLACES_KEY || secrets.GOOGLE_KEY || secrets.MAPS_API_KEY || secrets.GMAPS_API_KEY || secrets.GOOGLE_CLOUD_API_KEY) != '' }}
       DRY_RUN: ${{ github.event_name == 'pull_request' }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: Keys available
+        run: echo "Claude key set=$HAS_CLAUDE_KEY, Google Places key set=$HAS_PLACES_KEY"
 
       - uses: actions/setup-node@v4
         with:
@@ -50,9 +57,16 @@ jobs:
 
       - name: Refresh
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || secrets.CLAUDE_API_KEY || secrets.ANTHROPIC_KEY || secrets.CLAUDE_KEY }}
+          # The Claude GitHub app's token works too; the CLI reads it directly.
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY || secrets.GOOGLE_MAPS_API_KEY || secrets.PLACES_API_KEY || secrets.GOOGLE_API_KEY || secrets.GOOGLE_PLACES_KEY || secrets.GOOGLE_KEY || secrets.MAPS_API_KEY || secrets.GMAPS_API_KEY || secrets.GOOGLE_CLOUD_API_KEY }}
           EXTRACT_MODEL: ${{ vars.EXTRACT_MODEL }}
-        run: node pipeline/refresh.js --max-extract "${{ inputs.max_extract || '40' }}" ${{ env.DRY_RUN == 'true' && '--no-extract' || '' }}
+        run: >-
+          node pipeline/refresh.js --max-extract "${{ inputs.max_extract || '40' }}"
+          ${{ env.DRY_RUN == 'true' && '--no-extract' || '--discover' }}
+          --discover-target "${{ vars.DISCOVER_TARGET || '10' }}"
+          --discover-budget "${{ vars.DISCOVER_BUDGET || '5' }}"
 
       - name: Commit data
         id: commit
@@ -60,7 +74,7 @@ jobs:
         run: |
           git config user.name "a-little-hang-data"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json spots sitemap.xml
+          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json pipeline/screened.json pipeline/photos.json pipeline/GROWTH.md spots sitemap.xml
           if git diff --cached --quiet; then
             echo "No data changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi

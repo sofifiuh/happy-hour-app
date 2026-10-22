@@ -210,7 +210,7 @@ fs.writeFileSync(PLACES_STORE, JSON.stringify(places, null, 2));
 // --- Render the final merged dataset the app fetches: seed + deal/window
 // --- enrichment + discovered venues + Places identity overlay, all resolved
 // --- here so the client does zero merging.
-const merged = loadSeed().map((v) => {
+let merged = loadSeed().map((v) => {
   // A run that did not (or could not) re-extract a seed venue keeps the deals
   // a previous run corroborated — a partial run must never thin the data.
   const prevHH = previousById.get(v.id)?.happy_hour;
@@ -259,6 +259,14 @@ const merged = loadSeed().map((v) => {
     cover_image: { url: ph.url, credit_name: ph.credit_name, credit_url: ph.credit_url, source: "google_places" },
   };
 });
+
+// A venue Google reports as permanently closed comes off the map. Its record
+// stays in the stores, so a reopening (or a bad match) is one sync away.
+const closed = merged.filter((v) => places[v.id]?.business_status === "CLOSED_PERMANENTLY").map((v) => v.id);
+if (closed.length) {
+  console.log(`Dropping ${closed.length} permanently closed venue(s): ${closed.join(", ")}`);
+  merged = merged.filter((v) => !closed.includes(v.id));
+}
 
 // Trust badges (lib/trust.js) are derived from the latest freshness check,
 // so every regeneration re-stamps them; writeVenuesJson owns the version stamp.
