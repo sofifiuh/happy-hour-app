@@ -139,6 +139,7 @@ row); `confidence` is the one field a badge needs. Rules live in
    drops venues Google reports `CLOSED_PERMANENTLY`. Needs the
    `GOOGLE_PLACES_API_KEY` secret (Places API (New) enabled) and
    `ANTHROPIC_API_KEY`; each step skips itself, logged, when its key is missing.
+Every run appends a row to `pipeline/GROWTH.md` (venue count, added, removed, names).
 5. A sanity gate fails the run, and nothing is committed, if any venue would
    be lost or left without a schedule. Pull requests that touch the pipeline
    get a check-only dry run that commits nothing.

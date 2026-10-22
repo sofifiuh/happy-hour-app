@@ -115,5 +115,18 @@ if (lost.length || badSchedule.length) {
   console.error(`[refresh] SANITY GATE FAILED — lost ${lost.length} venue(s) [${lost.slice(0, 10)}], ${badSchedule.length} without a schedule [${badSchedule.slice(0, 10)}]`);
   process.exit(1);
 }
+// --- 5. Growth log: one line per night in pipeline/GROWTH.md, so whether
+// --- the map is actually growing is visible without reading Actions logs.
+const beforeIds = new Set(before.map((v) => v.id));
+const newVenues = after.filter((v) => !beforeIds.has(v.id));
+const dropped = before.filter((v) => !afterIds.has(v.id));
+const GROWTH = path.join(REPO_ROOT, "pipeline", "GROWTH.md");
+if (!fs.existsSync(GROWTH)) {
+  fs.writeFileSync(GROWTH, "# Venue growth log\n\nOne row per refresh run (written by `pipeline/refresh.js`).\n\n| Date | Venues | Added | Removed (closed) | New venues |\n|---|---|---|---|---|\n");
+}
+const names = newVenues.map((v) => v.name).join(", ") || "—";
+fs.appendFileSync(GROWTH, `| ${TODAY} | ${before.length} → ${after.length} | ${newVenues.length} | ${dropped.length} | ${names.replace(/\|/g, "/")} |\n`);
+console.log(`[growth] ${before.length} -> ${after.length}: +${newVenues.length} new, -${dropped.length} closed`);
+
 const tally = (k) => after.reduce((m, v) => ((m[v.trust[k]] = (m[v.trust[k]] || 0) + 1), m), {});
 console.log(`[refresh] OK — ${after.length} venues (${added >= 0 ? "+" : ""}${added}). confidence ${JSON.stringify(tally("confidence"))}, status ${JSON.stringify(tally("status"))}`);
