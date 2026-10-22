@@ -66,7 +66,7 @@ export function MapScreen() {
   };
 
   return (
-    <div className="relative h-dvh overflow-hidden bg-ink">
+    <main className="relative h-dvh overflow-hidden bg-ink">
       <VenueMap rows={mappable} selected={selected} onSelect={setSelected} focusOffset={110} locateClassName={cards.length ? "bottom-[302px]" : "bottom-28"} />
 
       <h1 className="sr-only">Map of happy hours</h1>
@@ -105,6 +105,6 @@ export function MapScreen() {
 
       <FiltersDrawer open={filtersOpen} onOpenChange={setFiltersOpen} />
       <PlanDrawer open={planOpen} onOpenChange={setPlanOpen} />
-    </div>
+    </main>
   );
 }
