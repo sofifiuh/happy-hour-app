@@ -17,6 +17,11 @@ const out = resolve(here, "../public/photos");
 mkdirSync(out, { recursive: true });
 
 const remote = process.argv.includes("--remote");
+// Downloads run 12 at a time and stop starting new ones after the deadline,
+// so a few slow venue sites can't stall a deploy. Covers that miss this run
+// keep their remote URL in the app and are retried on the next one.
+const CONCURRENCY = 12;
+const deadline = Date.now() + Number(process.env.PHOTOS_DEADLINE_MS || 180_000);
 const { venues } = JSON.parse(readFileSync(resolve(root, "venues.json"), "utf8"));
 
 // The original for a venue: its committed local file, or a previously
@@ -36,7 +41,7 @@ async function download(v) {
   const url = v.cover_image.url.replace(/^http:/, "https:");
   for (const u of [url, v.cover_image.url]) {
     try {
-      const res = await fetch(u, { signal: AbortSignal.timeout(15000), headers: { "user-agent": "alittlehang-photos/1.0" } });
+      const res = await fetch(u, { signal: AbortSignal.timeout(Math.max(1000, Math.min(10_000, deadline - Date.now()))), headers: { "user-agent": "alittlehang-photos/1.0" } });
       if (!res.ok || !/^image\//.test(res.headers.get("content-type") || "")) continue;
       const buf = Buffer.from(await res.arrayBuffer());
       const ext = extname(new URL(u).pathname).toLowerCase();
@@ -52,10 +57,27 @@ async function download(v) {
 
 let made = 0;
 let failed = 0;
+let fetched = 0;
+let skipped = 0;
 const live = venues.filter((v) => v.business_status !== "CLOSED_PERMANENTLY" && v.cover_image?.url);
+
+if (remote) {
+  const queue = live.filter((v) => !originalFor(v));
+  const worker = async () => {
+    for (let v = queue.shift(); v; v = queue.shift()) {
+      if (Date.now() > deadline) {
+        skipped++;
+        continue;
+      }
+      if (await download(v)) fetched++;
+    }
+  };
+  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
+  console.log(`photos: ${fetched} downloaded${skipped ? `, ${skipped} left for the next run (deadline)` : ""}`);
+}
+
 for (const v of live) {
-  let src = originalFor(v);
-  if (!src && remote) src = await download(v);
+  const src = originalFor(v);
   if (!src || !existsSync(src)) continue;
   const dest = resolve(out, `${v.id}.webp`);
   if (existsSync(dest) && statSync(dest).mtimeMs >= statSync(src).mtimeMs) continue;

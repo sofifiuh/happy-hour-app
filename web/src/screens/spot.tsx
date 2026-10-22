@@ -1,8 +1,8 @@
 import { ArrowLeft, BadgeCheck, ExternalLink, Flag, Globe, Heart, Navigation, Phone, Share, Star } from "lucide-react";
-import { type CSSProperties, lazy, Suspense, useMemo, useState } from "react";
+import { type CSSProperties, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
-import { WhenVisible } from "@/components/when-visible";
+import { MiniMap } from "@/components/mini-map";
 import { NotifyDrawer, remindersAsked } from "@/components/notify-drawer";
 import { StatusDot } from "@/components/status";
 import { useToast } from "@/components/toast";
@@ -22,7 +22,6 @@ import { useStore } from "@/lib/store";
 import type { Category, Venue } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
-const MiniMap = lazy(() => import("@/components/mini-map").then((m) => ({ default: m.MiniMap })));
 
 function amenityPills(v: Venue) {
   const a = v.amenities;
@@ -247,7 +246,7 @@ export function Spot() {
                 className={cn(
                   "flex items-center justify-between rounded-xl px-3 py-2.5 text-[15px]",
                   isToday && "bg-ink-2",
-                  !wins.length && "text-muted-foreground/70",
+                  !wins.length && "text-muted-foreground",
                 )}
               >
                 <span className={cn("flex items-center gap-2", isToday && "font-semibold")}>
@@ -295,11 +294,7 @@ export function Spot() {
         <section style={{ "--i": 4 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Find us here</h2>
           <button onClick={() => setDirectionsOpen(true)} className="block w-full overflow-hidden rounded-[22px] bg-ink-2 text-left">
-            <WhenVisible className="h-[170px] w-full bg-ink-3">
-              <Suspense fallback={null}>
-                <MiniMap lat={venue.lat} lng={venue.lng} className="h-[170px] w-full" />
-              </Suspense>
-            </WhenVisible>
+            <MiniMap lat={venue.lat} lng={venue.lng} className="h-[170px] w-full" />
             <div className="flex items-center justify-between gap-3 p-4">
               <span className="text-[15px]">{venue.address}</span>
               <span className="inline-flex shrink-0 items-center gap-1.5 text-[14px] font-semibold text-primary">
