@@ -27,7 +27,10 @@ const slim = venues
     name: v.name,
     address: v.formatted_address || "",
     city: v.address_components?.locality || null,
-    checked: v.last_synced_at ? String(v.last_synced_at).slice(0, 10) : null,
+    // trust.last_confirmed_at is the last day our times matched the venue's
+    // own page (pipeline freshness check); fall back to the last sync.
+    checked: v.trust?.last_confirmed_at || (v.last_synced_at ? String(v.last_synced_at).slice(0, 10) : null),
+    confidence: v.trust?.confidence || null,
     lat: v.geometry?.location?.lat ?? null,
     lng: v.geometry?.location?.lng ?? null,
     phone: v.formatted_phone_number || null,

@@ -19,7 +19,8 @@ export interface Venue {
   name: string;
   address: string;
   city: string | null;
-  checked: string | null; // "YYYY-MM-DD" the pipeline last re-checked this venue
+  checked: string | null; // "YYYY-MM-DD" the times last matched the venue's own page
+  confidence: "high" | "medium" | "low" | null;
   lat: number | null;
   lng: number | null;
   phone: string | null;
