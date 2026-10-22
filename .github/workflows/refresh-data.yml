@@ -1,0 +1,80 @@
+name: Refresh venue data
+
+# Daily: re-check every venue's own happy hour page, re-extract the ones
+# that changed (when ANTHROPIC_API_KEY is set), re-stamp trust badges, commit
+# the data to main and redeploy. See pipeline/README.md ("Freshness & trust").
+on:
+  schedule:
+    - cron: "23 10 * * *" # 03:23 Vancouver (PDT), before the site's daily build
+  workflow_dispatch:
+    inputs:
+      max_extract:
+        description: "Max venues to re-extract this run"
+        default: "40"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install pipeline deps + Chromium
+        working-directory: pipeline
+        run: |
+          npm ci
+          npx playwright-core install --with-deps chromium
+          sudo apt-get install -y poppler-utils >/dev/null
+
+      - name: Install Claude Code (extraction engine)
+        if: env.ANTHROPIC_API_KEY != ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Refresh
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EXTRACT_MODEL: ${{ vars.EXTRACT_MODEL }}
+        run: node pipeline/refresh.js --max-extract "${{ inputs.max_extract || '40' }}"
+
+      - name: Commit data
+        id: commit
+        run: |
+          git config user.name "a-little-hang-data"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json spots sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No data changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git commit -m "data: daily refresh $(date -u +%F)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN don't trigger other workflows, so
+      # redeploy explicitly.
+      - name: Redeploy site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: refresh-logs
+          path: pipeline/results/*.json
+          if-no-files-found: ignore
