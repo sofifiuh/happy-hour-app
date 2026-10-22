@@ -23,15 +23,15 @@ export function MapCard({ row, now, active }: { row: Row; now: Date; active: boo
       viewTransition
       onClick={(e) => markHero(e.currentTarget, venue.id)}
       className={cn(
-        "flex w-full items-center gap-3 rounded-[22px] bg-ink-2 p-2.5 pr-3 shadow-[0_12px_40px_rgb(0_0_0/0.5)] ring-1 transition-[transform,opacity,box-shadow] duration-300 ease-out active:scale-[0.98]",
-        active ? "ring-white/15" : "scale-[0.95] opacity-75 ring-white/5",
+        "flex w-full items-center gap-3 rounded-[22px] bg-ink-2 p-2.5 pr-3 shadow-(--shadow-float) ring-1 transition-[transform,opacity,box-shadow] duration-300 ease-out active:scale-[0.98]",
+        active ? "ring-edge/15" : "scale-[0.95] opacity-75 ring-edge/5",
       )}
     >
       <VenuePhoto venue={venue} className="size-[72px] shrink-0 rounded-[16px]" />
       <div className="min-w-0 flex-1">
         <h2 className="flex items-center gap-1.5 font-display text-[17px] leading-tight font-extrabold tracking-tight">
           <span className="truncate">{venue.name}</span>
-          {venue.hh.verified && <BadgeCheck aria-label="Verified" className="size-4 shrink-0 text-sky" />}
+          {venue.hh.verified && <BadgeCheck aria-label="Verified" className="size-4 shrink-0 text-sky-fg" />}
         </h2>
         <p className="mt-1 flex items-center gap-1.5 text-[13px] whitespace-nowrap">
           <StatusDot occ={occ} />
@@ -45,10 +45,10 @@ export function MapCard({ row, now, active }: { row: Row; now: Date; active: boo
             gives way first. */}
         {(countdown || walk) && (
           <p className="mt-1 flex items-center gap-1.5 text-[12px] whitespace-nowrap">
-            {countdown && <Countdown label={countdown} className={cn("shrink-0", soon ? "font-semibold text-orange" : "text-muted-foreground")} />}
+            {countdown && <Countdown label={countdown} className={cn("shrink-0", soon ? "font-semibold text-orange-fg" : "text-muted-foreground")} />}
             {countdown && walk && <span className="text-muted-foreground">·</span>}
             {walk && (
-              <span className="flex min-w-0 items-center gap-1 text-sky">
+              <span className="flex min-w-0 items-center gap-1 text-sky-fg">
                 <Footprints className="size-3.5 shrink-0" />
                 {/* The footprints say "walk"; keep the visible label short. */}
                 <span className="truncate">

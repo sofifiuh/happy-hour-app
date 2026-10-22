@@ -171,7 +171,7 @@ export function Spot() {
       <section style={{ "--i": 1 } as CSSProperties} className="animate-rise relative -mt-14 px-5">
         {occ.status === "live" ? (
           <Badge variant="live" className="mb-3">
-            <span className="size-1.5 rounded-full bg-ink" /> Happening now · {statusLabel(occ, now).toLowerCase()}
+            <span className="size-1.5 rounded-full bg-on-pop" /> Happening now · {statusLabel(occ, now).toLowerCase()}
           </Badge>
         ) : occ.status === "upcoming" ? (
           <Badge variant="upcoming" className="mb-3">{statusLabel(occ, now)}</Badge>
@@ -179,12 +179,12 @@ export function Spot() {
         <h1 className="font-display text-[34px] leading-[1.02] font-extrabold tracking-[-0.025em]">{venue.name}</h1>
         <p className="mt-2 text-[15px] text-muted-foreground">
           {venue.address}
-          {km != null && walkLabel(km) && <span className="text-sky"> · {walkLabel(km)}</span>}
+          {km != null && walkLabel(km) && <span className="text-sky-fg"> · {walkLabel(km)}</span>}
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-[13px]">
           {venue.rating != null && (
             <span className="inline-flex items-center gap-1">
-              <Star className="size-3.5 fill-amber text-amber" /> {venue.rating.toFixed(1)}
+              <Star className="size-3.5 fill-amber text-amber-fg" /> {venue.rating.toFixed(1)}
               {venue.ratings ? <span className="text-muted-foreground">({venue.ratings.toLocaleString()})</span> : null}
             </span>
           )}
@@ -233,7 +233,7 @@ export function Spot() {
                 <li key={`${d.name}-${i}`} className="border-b border-border py-3.5 last:border-0">
                   <div className="flex items-baseline justify-between gap-3">
                     <span className="text-[15px] font-semibold">{d.name}</span>
-                    <span className="shrink-0 font-display text-[16px] font-bold text-pink tabular">{d.price}</span>
+                    <span className="shrink-0 font-display text-[16px] font-bold text-pink-fg tabular">{d.price}</span>
                   </div>
                   {d.description && <p className="mt-1 text-[13px] leading-snug text-muted-foreground">{d.description}</p>}
                 </li>
@@ -244,7 +244,7 @@ export function Spot() {
               <p className="text-[15px] font-semibold">Deals not listed yet</p>
               <p className="mt-1 text-[13px] text-muted-foreground">We know the times, but haven't confirmed the menu.</p>
               {venue.hh.source && (
-                <a href={venue.hh.source} target="_blank" rel="noopener" className="mt-1 inline-flex min-h-11 items-center gap-1 px-2 text-[14px] font-semibold text-primary">
+                <a href={venue.hh.source} target="_blank" rel="noopener" className="mt-1 inline-flex min-h-11 items-center gap-1 px-2 text-[14px] font-semibold text-orange-fg">
                   See their menu <ExternalLink className="size-3.5" />
                 </a>
               )}
@@ -265,13 +265,13 @@ export function Spot() {
                 key={run.days.join()}
                 className={cn(
                   "flex items-start justify-between gap-4 rounded-2xl px-4 py-3 text-[15px]",
-                  isToday && "bg-ink-2 ring-1 ring-white/5",
+                  isToday && "bg-ink-2 ring-1 ring-edge/5",
                   !wins.length && "text-muted-foreground",
                 )}
               >
                 <span className="flex flex-col">
                   <span className={cn(isToday && "font-semibold")}>{runLabel(run.days)}</span>
-                  {isToday && <span className="mt-0.5 text-[11px] font-bold tracking-[0.08em] text-pink uppercase">Today</span>}
+                  {isToday && <span className="mt-0.5 text-[11px] font-bold tracking-[0.08em] text-pink-fg uppercase">Today</span>}
                 </span>
                 {wins.length ? (
                   <ul className="flex flex-col items-end gap-1.5 tabular">
@@ -281,7 +281,7 @@ export function Spot() {
                         <li key={i} className="flex items-center gap-2 whitespace-nowrap">
                           {w.label && <span className="text-[13px] text-muted-foreground">{w.label}</span>}
                           {live && <StatusDot occ={occ} />}
-                          <span className={cn(live && "font-bold text-lime")}>{fmtRange(w.start, w.end)}</span>
+                          <span className={cn(live && "font-bold text-lime-fg")}>{fmtRange(w.start, w.end)}</span>
                         </li>
                       );
                     })}
@@ -319,7 +319,7 @@ export function Spot() {
             <MiniMap lat={venue.lat} lng={venue.lng} className="h-[170px] w-full" />
             <div className="flex items-center justify-between gap-3 p-4">
               <span className="text-[15px]">{venue.address}</span>
-              <span className="inline-flex shrink-0 items-center gap-1.5 text-[14px] font-semibold text-primary">
+              <span className="inline-flex shrink-0 items-center gap-1.5 text-[14px] font-semibold text-orange-fg">
                 <Navigation className="size-4" /> Directions
               </span>
             </div>
@@ -354,7 +354,7 @@ export function Spot() {
                   <StatusDot occ={occ} />
                   {fmtRange(occ.start, occ.end)}
                 </p>
-                <p className={cn("mt-0.5 truncate text-xs", soon ? "font-semibold text-orange" : "text-muted-foreground")}>
+                <p className={cn("mt-0.5 truncate text-xs", soon ? "font-semibold text-orange-fg" : "text-muted-foreground")}>
                   {occ.status === "live" ? `On now · ${statusLabel(occ, now).toLowerCase()}` : statusLabel(occ, now)}
                 </p>
               </>

@@ -30,7 +30,7 @@ export function Landing() {
   };
 
   return (
-    <main className="relative flex min-h-dvh flex-col overflow-hidden bg-ink">
+    <main className="theme-dark relative flex min-h-dvh flex-col overflow-hidden bg-ink text-cream">
       <img src={asset("photos/east-van-brewing-company.webp")} alt="" fetchPriority="high" className="absolute inset-0 size-full scale-105 animate-[settle_900ms_var(--ease-out)_both] object-cover" />
       {/* warm duotone wash, echoing the silhouette shots on the brand board */}
       <div className="absolute inset-0 bg-[#ff4900] mix-blend-multiply opacity-70" />

@@ -12,7 +12,7 @@ const DrawerClose = DrawerPrimitive.Close;
 function DrawerContent({ className, children, ...props }: ComponentProps<typeof DrawerPrimitive.Content>) {
   return (
     <DrawerPrimitive.Portal>
-      <DrawerPrimitive.Overlay className="fixed inset-0 z-50 bg-black/60" />
+      <DrawerPrimitive.Overlay className="fixed inset-0 z-50 bg-(--scrim)" />
       <DrawerPrimitive.Content
         data-slot="drawer-content"
         className={cn(

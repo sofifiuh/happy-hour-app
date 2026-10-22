@@ -28,7 +28,7 @@ export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; cl
           className={chip(filters.tab === t.key)}
           onClick={() => setFilters({ tab: t.key })}
         >
-          {t.key === "live" && <span className={cn("size-2 rounded-full bg-lime", filters.tab === "live" && "bg-[#7a8a00]")} />}
+          {t.key === "live" && <span className={cn("size-2 rounded-full bg-lime dot-ring", filters.tab === "live" && "bg-lime-inv outline-transparent")} />}
           {t.label}
         </button>
       ))}

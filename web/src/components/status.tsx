@@ -3,9 +3,9 @@ import type { Occurrence } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const DOT = {
-  live: "bg-lime animate-live",
-  scheduled: "bg-lime",
-  upcoming: "bg-amber",
+  live: "bg-lime dot-ring animate-live",
+  scheduled: "bg-lime dot-ring",
+  upcoming: "bg-amber dot-ring",
   none: "bg-line",
 } as const;
 
@@ -28,7 +28,7 @@ export function StatusTime({ occ, now, className }: { occ: Occurrence; now: Date
         <span className="text-sm text-muted-foreground">No times listed</span>
       )}
       {occ.status !== "none" && occ.status !== "scheduled" && (
-        <Countdown label={statusLabel(occ, now)} className={cn("text-xs", soon ? "font-semibold text-orange" : "text-muted-foreground")} />
+        <Countdown label={statusLabel(occ, now)} className={cn("text-xs", soon ? "font-semibold text-orange-fg" : "text-muted-foreground")} />
       )}
     </div>
   );

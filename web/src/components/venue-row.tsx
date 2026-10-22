@@ -37,10 +37,10 @@ export function VenueRow({ row, now, onHover }: { row: Row; now: Date; onHover?:
         </div>
         <span className="truncate text-[13px] text-muted-foreground">
           {street}
-          {walk && <span className="text-sky"> · {walk}</span>}
+          {walk && <span className="text-sky-fg"> · {walk}</span>}
         </span>
         {occ.status !== "scheduled" && (
-          <Countdown label={statusLabel(occ, now)} className={cn("text-[12px] font-medium", soon ? "text-orange" : occ.status === "live" ? "text-lime/80" : "text-muted-foreground")} />
+          <Countdown label={statusLabel(occ, now)} className={cn("text-[12px] font-medium", soon ? "text-orange-fg" : occ.status === "live" ? "text-lime-fg/80" : "text-muted-foreground")} />
         )}
       </div>
     </Link>

@@ -11,13 +11,20 @@
 /*
  * A Little Hang brand tokens, from Sofia's Branding page in Figma
  * ("dark mode, pops of colour"; shortlisted swatches on #1b1b1b).
- * Dark is the brand, not a theme toggle. shadcn components read the
- * semantic names below, so a future rebrand is an edit to this block.
- * Repeated on body so a host page that sets shadcn-style variables on
- * :root (the preview host does) can't repaint the app.
+ * Dark is the brand; light follows the system setting and keeps the same
+ * pops on warm paper (the board's cream and white logo lockups).
+ * shadcn components read the semantic names below, so a rebrand is an
+ * edit to these blocks. Repeated on body so a host page that sets
+ * shadcn-style variables on :root (the preview host does) can't repaint
+ * the app. `.theme-dark` pins a subtree to dark (photo-led brand moments).
+ *
+ * Naming: ink-* are surfaces, cream-* is text, whatever the theme. The
+ * pops (lime, sky...) are fills; their *-fg twins are the same hue made
+ * readable as text on the canvas. on-pop is the text colour on a pop fill.
  */
 :root,
-body {
+body,
+.theme-dark {
   /* raw palette */
   --ink: #1b1b1b; /* canvas */
   --ink-2: #242322; /* raised surfaces: rows, cards */
@@ -30,6 +37,22 @@ body {
   --lime: #ecfe54; /* happening now */
   --pink: #f7b2b7; /* tags, highlights */
   --sky: #bfdbe6; /* info: walk time, verified */
+  --on-pop: #1b1b1b; /* text on any pop fill, both themes */
+
+  /* pops as text */
+  --orange-fg: var(--orange);
+  --amber-fg: var(--amber);
+  --lime-fg: var(--lime);
+  --pink-fg: var(--pink);
+  --sky-fg: var(--sky);
+  --lime-inv: #7a8a00; /* lime dot on an inverted (cream) chip */
+
+  /* edges and depth */
+  --edge: #ffffff; /* hairline rings, used at low alpha */
+  --dot-ring: transparent; /* outlines pop dots where the canvas is light */
+  --live-glow: rgb(236 254 84 / 0.55);
+  --shadow-float: 0 12px 40px rgb(0 0 0 / 0.5);
+  --scrim: rgb(0 0 0 / 0.6);
 
   /* shadcn semantic tokens */
   --background: var(--ink);
@@ -39,7 +62,7 @@ body {
   --popover: var(--ink-2);
   --popover-foreground: var(--cream);
   --primary: var(--orange);
-  --primary-foreground: var(--ink); /* ink on orange is 5.6:1; cream was 3.2:1 */
+  --primary-foreground: var(--on-pop); /* ink on orange is 5.1:1; cream was 3.2:1 */
   --secondary: var(--ink-3);
   --secondary-foreground: var(--cream);
   --muted: var(--ink-3);
@@ -53,6 +76,42 @@ body {
   --radius: 1rem;
 
   color-scheme: dark;
+}
+
+/*
+ * Light: warm paper rather than white, so it still feels like the brand.
+ * Only the raw palette changes; the semantic tokens above re-resolve.
+ * Text contrast (WCAG AA, 4.5:1) checked on all three surfaces:
+ * cream 13.7+, cream-dim 5.3+, orange-fg 4.5+, lime/sky/amber/pink-fg
+ * 4.6+ (lime-fg still 4.5+ at the 80% the list rows use).
+ */
+@media (prefers-color-scheme: light) {
+  :root,
+  body {
+    --ink: #f5f1e7;
+    --ink-2: #fffdf8;
+    --ink-3: #ebe5d8;
+    --line: #d8d0c0;
+    --cream: #1b1b1b;
+    --cream-dim: #625c53;
+
+    --orange-fg: #bd3600;
+    --amber-fg: #94560a;
+    --lime-fg: #465200;
+    --pink-fg: #b03a55;
+    --sky-fg: #2b6478;
+    --lime-inv: #ecfe54;
+
+    --edge: #000000;
+    --dot-ring: rgb(27 27 27 / 0.55);
+    --live-glow: rgb(122 138 0 / 0.45);
+    --shadow-float: 0 10px 30px rgb(60 40 10 / 0.16);
+    --scrim: rgb(27 20 10 / 0.35);
+
+    --destructive: #d12c1f;
+
+    color-scheme: light;
+  }
 }
 
 @theme inline {
@@ -87,6 +146,15 @@ body {
   --color-lime: var(--lime);
   --color-pink: var(--pink);
   --color-sky: var(--sky);
+  --color-line: var(--line);
+  --color-on-pop: var(--on-pop);
+  --color-orange-fg: var(--orange-fg);
+  --color-amber-fg: var(--amber-fg);
+  --color-lime-fg: var(--lime-fg);
+  --color-pink-fg: var(--pink-fg);
+  --color-sky-fg: var(--sky-fg);
+  --color-lime-inv: var(--lime-inv);
+  --color-edge: var(--edge);
 
   --radius-sm: calc(var(--radius) - 8px);
   --radius-md: calc(var(--radius) - 4px);
@@ -119,6 +187,13 @@ body {
   color: var(--cream);
 }
 
+/* Pop-coloured dots get a thin ink outline on light surfaces, like the
+   map pins, so a lime dot on paper still reads. */
+@utility dot-ring {
+  outline: 1px solid var(--dot-ring);
+  outline-offset: -1px;
+}
+
 @utility tabular {
   font-variant-numeric: tabular-nums;
 }
@@ -139,7 +214,7 @@ body {
 }
 
 .maplibregl-ctrl-attrib {
-  background: rgb(27 27 27 / 0.6) !important;
+  background: color-mix(in srgb, var(--ink) 60%, transparent) !important;
   color: var(--cream-dim) !important;
   font-size: 10px;
 }
@@ -180,7 +255,7 @@ body {
 }
 @keyframes live-ring {
   0% {
-    box-shadow: 0 0 0 0 rgb(236 254 84 / 0.55);
+    box-shadow: 0 0 0 0 var(--live-glow);
   }
   70%,
   100% {
