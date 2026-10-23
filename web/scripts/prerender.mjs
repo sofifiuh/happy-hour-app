@@ -114,6 +114,16 @@ function breadcrumb(id, items) {
   };
 }
 
+// The page's visible Q&As, word for word (Google requires the match).
+function faqPage(id, qs) {
+  return {
+    "@type": "FAQPage",
+    "@id": `${id}#faq`,
+    isPartOf: { "@id": id },
+    mainEntity: qs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+  };
+}
+
 // Home › City › Neighbourhood, for a venue or a hub page.
 function trail(city, area) {
   return [{ name: "Happy hours", path: "/" }, city && { name: city.name, path: hubPath(city.slug) }, area && { name: area.name, path: hubPath(area.slug) }].filter(Boolean);
@@ -249,6 +259,8 @@ function venueJsonLd(v, image) {
           : {}),
       },
       breadcrumb(url, [...trail(city, area), { name: v.name }]),
+      faqPage(url, venueFaq(v)),
+      ...SITE_GRAPH,
     ],
   };
 }
@@ -644,6 +656,7 @@ async function hubPage({ slug, h1, listTitle, where, title, description, list, t
         itemListElement: sorted.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}.html`, name: v.name })),
       },
       breadcrumb(url, crumbs),
+      faqPage(url, faq),
     ],
   };
   const body = `<nav class="crumbs" aria-label="Breadcrumb">${crumbs
