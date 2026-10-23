@@ -40,7 +40,7 @@ export const isNonAlc = (d) => {
   // "Aperol, Campari … or Fre-Spritz (non-alc)": an alcohol-free option on an alcoholic drink.
   const text = `${d.name} ${(d.description || "").replace(/\bor\b[^,;]*non[- ]?alc[^,;]*/gi, "")}`;
   if (NO_ALCOHOL.test(text)) return true;
-  return SOFT.test(text) && !BOOZE.test(text.replace(/root beer|ginger beer|ginger ale/gi, ""));
+  return SOFT.test(text) && !BOOZE.test(text.replace(/root beer|ginger beer|ginger ale|sparkling (lemonade|water|soda|juice)/gi, ""));
 };
 const skip = (d) => BULK.test(d) || isCombo(d) || isNonAlc(d);
 
