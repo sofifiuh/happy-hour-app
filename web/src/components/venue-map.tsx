@@ -18,7 +18,9 @@ const GAP = 18;
 // layout. `popover` is the selected spot's card, drawn next to its pin and
 // kept there as the map moves. `insetTop` / `insetBottom` are the strips
 // covered by floating UI, which the card stays clear of. `follow` eases the
-// map to a spot without selecting it (the phone card strip).
+// map to a spot without selecting it (the phone card strip). `ranked`
+// (the Best of lists) numbers the pins in row order and fits the map to
+// them instead of opening on you.
 export function VenueMap({
   rows,
   selected,
@@ -29,6 +31,7 @@ export function VenueMap({
   insetTop = EDGE,
   insetBottom = EDGE,
   locateClassName,
+  ranked = false,
 }: {
   rows: Row[];
   selected: string | null;
@@ -39,6 +42,7 @@ export function VenueMap({
   insetTop?: number;
   insetBottom?: number;
   locateClassName?: string;
+  ranked?: boolean;
 }) {
   const { deviceLocation: location, location: start, area, requestLocation, locationState } = useStore();
   const scheme = useColorScheme();
@@ -156,13 +160,55 @@ export function VenueMap({
     const src = map.current.getSource("venues") as GeoJSONSource | undefined;
     src?.setData({
       type: "FeatureCollection",
-      features: rows.map((r) => ({
+      // Ranked pins are HTML markers (below) so they can carry a number.
+      features: (ranked ? [] : rows).map((r) => ({
         type: "Feature",
         geometry: { type: "Point", coordinates: [r.venue.lng!, r.venue.lat!] },
         properties: { id: r.venue.id, color: PIN_COLORS[r.occ.status], selected: r.venue.id === selected, hovered: r.venue.id === hovered },
       })),
     });
-  }, [styleGen, rows, selected, hovered]);
+  }, [styleGen, rows, selected, hovered, ranked]);
+
+  // Ranked lists: a numbered marker per spot, and the map fitted around
+  // them whenever the list changes (not on every clock tick).
+  const markers = useRef(new Map<string, maplibregl.Marker>());
+  const idsKey = rows.map((r) => r.venue.id).join();
+  useEffect(() => {
+    const m = map.current;
+    if (!ready || !ranked || !m) return;
+    for (const mk of markers.current.values()) mk.remove();
+    markers.current.clear();
+    const bounds = new maplibregl.LngLatBounds();
+    rows.forEach((r, i) => {
+      const el = document.createElement("button");
+      el.type = "button";
+      el.textContent = String(i + 1);
+      el.setAttribute("aria-label", `${i + 1}. ${r.venue.name}`);
+      el.className = cn(
+        "grid size-8 place-items-center rounded-full font-display text-[14px] font-extrabold tabular shadow-lg ring-2 ring-ink transition-transform duration-200 data-[on=true]:scale-125 data-[on=true]:bg-primary data-[on=true]:text-primary-foreground",
+        i < 3 ? "bg-lime text-on-pop" : "bg-cream text-ink",
+      );
+      el.addEventListener("click", (e) => {
+        e.stopPropagation();
+        select.current(r.venue.id);
+      });
+      el.dataset.z = String(100 - i); // higher ranks on top where pins overlap
+      el.style.zIndex = el.dataset.z;
+      markers.current.set(r.venue.id, new maplibregl.Marker({ element: el }).setLngLat([r.venue.lng!, r.venue.lat!]).addTo(m));
+      bounds.extend([r.venue.lng!, r.venue.lat!]);
+    });
+    if (!bounds.isEmpty())
+      m.fitBounds(bounds, { padding: { top: insets.current.top + 48, bottom: insets.current.bottom + 48, left: 48, right: 48 }, maxZoom: 15.5, duration: reducedMotion() ? 0 : 700 });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ready, ranked, idsKey]);
+  useEffect(() => {
+    for (const [id, mk] of markers.current) {
+      const el = mk.getElement();
+      el.dataset.on = String(id === selected || id === hovered);
+      el.style.zIndex = id === selected ? "200" : (el.dataset.z ?? "");
+    }
+  }, [selected, hovered, idsKey]);
+  useEffect(() => () => markers.current.forEach((mk) => mk.remove()), []);
 
   // A new selection: place its card, then pan only as far as it takes to
   // fit the pin and the card on screen.
@@ -212,17 +258,17 @@ export function VenueMap({
   // Picking a neighbourhood flies the map there.
   const shownArea = useRef(area?.name);
   useEffect(() => {
-    if (!ready || !map.current || !area || shownArea.current === area.name) return;
+    if (ranked || !ready || !map.current || !area || shownArea.current === area.name) return;
     shownArea.current = area.name;
     select.current(null);
     map.current.flyTo({ center: [area.lng, area.lat], zoom: 14, duration: reducedMotion() ? 0 : 1400, essential: true });
-  }, [ready, area]);
+  }, [ready, area, ranked]);
 
   // The map opens on you: ask once if the browser hasn't been told yet
   // (an earlier yes is picked up by the store). A no, or a picked
   // neighbourhood, keeps the neighbourhood / Downtown view.
   useEffect(() => {
-    if (area || locationState !== "idle") return;
+    if (ranked || area || locationState !== "idle") return;
     const ask = () => requestLocation();
     if (!navigator.permissions) return ask();
     navigator.permissions
@@ -242,12 +288,12 @@ export function VenueMap({
       userMarker.current = new maplibregl.Marker({ element: el }).setLngLat([location.lng, location.lat]).addTo(map.current);
       const c = map.current.getCenter();
       // Already opened on you: no need to move.
-      if (Math.abs(c.lat - location.lat) > 1e-4 || Math.abs(c.lng - location.lng) > 1e-4)
+      if (!ranked && (Math.abs(c.lat - location.lat) > 1e-4 || Math.abs(c.lng - location.lng) > 1e-4))
         map.current.flyTo({ center: [location.lng, location.lat], zoom: 14.5, duration: reducedMotion() ? 0 : 1200, essential: true });
     } else {
       userMarker.current.setLngLat([location.lng, location.lat]);
     }
-  }, [ready, location]);
+  }, [ready, location, ranked]);
 
   return (
     <>

@@ -5,6 +5,8 @@
 //                            details pre-rendered inside #root
 //   happy-hour/<slug>/       hub pages (city, neighbourhood, day, deal, and
 //                            place + topic), static HTML without the app
+//   happy-hour/<place>/best/ best-of lists ranked by Hangout Score, and
+//   happy-hour/best/         Metro Vancouver's (static, like the hubs)
 //   spots/index.html         A–Z of every venue
 //   og/<id>.jpg              1200×630 share card per venue
 //   map/, saved/, about/, privacy/, terms/, welcome/, menu.html, 404.html
@@ -20,7 +22,8 @@ import opentype from "opentype.js";
 import sharp from "sharp";
 import { fmtRange } from "../src/lib/hours.ts";
 import { dayRuns, dealPhrase, fmtDate, money, nearby, parsePrice, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
-import { AREAS, buildHubs, hubPath } from "./seo-data.mjs";
+import { AREAS, BEST_FLOOR, bestPath, buildHubs, hubPath } from "./seo-data.mjs";
+import { WEIGHTS } from "./hang-score.mjs";
 
 const BASE = "https://alittlehang.com";
 const SITE = "A Little Hang";
@@ -43,7 +46,7 @@ const template = readFileSync(resolve(dist, "index.html"), "utf8")
     `${fonts.map((f) => `    <link rel="preload" href="/assets/${f}" as="font" type="font/woff2" crossorigin />`).join("\n")}\n  </head>`,
   );
 writeFileSync(resolve(dist, "index.html"), template);
-const { venues } = JSON.parse(readFileSync(resolve(web, "public/venues.json"), "utf8"));
+const { venues, best: bestIndex = [] } = JSON.parse(readFileSync(resolve(web, "public/venues.json"), "utf8"));
 // Fields the app doesn't ship (Google place id, price level) from the source.
 const source = new Map(JSON.parse(readFileSync(resolve(web, "../venues.json"), "utf8")).venues.map((v) => [v.id, v]));
 const logo = readFileSync(resolve(web, "src/components/logo-path.ts"), "utf8").match(/LOGO_PATH =\s*"([^"]+)"/)[1];
@@ -61,6 +64,23 @@ for (const v of venues) v.area = v.area ? { slug: v.area, name: AREAS[v.area] } 
 const placeBySlug = new Map(places.map((p) => [p.slug, p]));
 const cityHub = (v) => places.find((p) => p.kind === "city" && p.name === v.city) ?? null;
 const areaHub = (v) => (v.area ? (placeBySlug.get(v.area.slug) ?? null) : null);
+
+// Best-of lists, ranked in sync-data.mjs (scripts/seo-data.mjs buildBest).
+const venueById = new Map(venues.map((v) => [v.id, v]));
+const bestLists = bestIndex.map((b) => ({ ...b, venues: b.ids.map((id) => venueById.get(id)).filter(Boolean) }));
+const bestBySlug = new Map(bestLists.map((b) => [b.slug, b]));
+// Where a venue places on its own neighbourhood's or city's list (not Metro's).
+const rankOf = (v) => {
+  for (const slug of [v.area?.slug, cityHub(v)?.slug]) {
+    const b = slug && bestBySlug.get(slug);
+    const i = b ? b.venues.indexOf(v) : -1;
+    if (i >= 0) return { list: b, rank: i + 1 };
+  }
+  return null;
+};
+// The year in "Best happy hours in Gastown (2026)": the data's, not the build machine's.
+const YEAR = (newest(venues) ?? new Date().toISOString()).slice(0, 4);
+const bestH1 = (b) => `Best happy hours in ${b.name} (${YEAR})`;
 
 // ---------- page assembly ----------
 // Share titles drop the "| A Little Hang" suffix (og:site_name carries it),
@@ -311,6 +331,7 @@ function venueBody(v) {
   const area = areaHub(v);
   const near = nearby(v, venues);
   const hubs = v.hubs ?? [];
+  const ranked = rankOf(v);
   // The photo matches the app's venue header (full width, same height) so
   // the page doesn't jump when the app takes over.
   return `<main style="max-width:42rem;margin:0 auto">
@@ -331,7 +352,7 @@ ${
   // it's a computed score rather than reviews from people.
   v.score
     ? `<h2 style="${S.h2}">How this happy hour scores</h2>
-<p><b>Hangout Score ${v.score.total.toFixed(1)} out of 10.</b> <span style="color:#a7a196">From the deals and times on this page; <a href="/about" style="${S.link}">how we score</a>.</span></p>
+<p><b>Hangout Score ${v.score.total.toFixed(1)} out of 10.</b> <span style="color:#a7a196">From the deals and times on this page; <a href="/about" style="${S.link}">how we score</a>.</span>${ranked ? ` Ranked #${ranked.rank} in <a href="${bestPath(ranked.list.slug)}" style="${S.link}">the best happy hours in ${esc(ranked.list.name)}</a>.` : ""}</p>
 ${[["Value", "value"], ["Selection", "selection"], ["Hours", "hours"], ["Vibe", "vibe"]]
   .map(([label, k]) => `<div style="${S.row}"><span>${label}<br><small style="color:#a7a196">${esc(v.score.notes[k])}</small></span><span>${v.score[k].toFixed(1)}</span></div>`)
   .join("\n")}`
@@ -351,7 +372,7 @@ ${
     ? `<h2 style="${S.h2}">Happy hours nearby</h2>\n${near.map((o) => `<div style="${S.row}"><a href="/spots/${o.id}.html" style="${S.plain}">${esc(o.name)}</a><span style="color:#a7a196">${fmtRange(o.hh.start, o.hh.end || "23:59")}</span></div>`).join("\n")}`
     : ""
 }
-${hubs.length ? `<nav aria-label="More happy hours" style="margin-top:24px">${hubs.map((p) => `<a href="${p}" style="${S.chip}">${esc(hubLabel(p.split("/").filter(Boolean).pop()))}</a>`).join("")}</nav>` : ""}
+${hubs.length || ranked ? `<nav aria-label="More happy hours" style="margin-top:24px">${ranked ? `<a href="${bestPath(ranked.list.slug)}" style="${S.chip}">#${ranked.rank} of the best in ${esc(ranked.list.name)}</a>` : ""}${hubs.map((p) => `<a href="${p}" style="${S.chip}">${esc(hubLabel(p.split("/").filter(Boolean).pop()))}</a>`).join("")}</nav>` : ""}
 <h2 style="${S.h2}">${esc(v.name)} happy hour questions</h2>
 ${venueFaq(v)
   .map((f) => `<h3 style="${S.h3}">${esc(f.q)}</h3>\n<p style="${S.p}">${esc(f.a)}</p>`)
@@ -466,13 +487,57 @@ h3{font-size:16px;font-weight:600;margin:0}
 footer{border-top:1px solid var(--line);margin-top:56px;padding-top:24px;font-size:14px;color:var(--dim)}
 footer .chips a{background:transparent;border:1px solid var(--line);min-height:36px}
 a:focus-visible{outline:2px solid var(--orange)}
+.bestlink{display:flex;align-items:center;gap:12px;margin:18px 0 0;padding:14px 16px;border-radius:20px;background:var(--ink-2);text-decoration:none;font-weight:600}
+.bestlink:hover{background:var(--ink-3)}
+.bestlink .tag{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--lime);color:var(--ink);font:800 15px "Funnel Display",sans-serif}
+.bestlink small{display:block;font-weight:400;color:var(--dim);font-size:13px}
+.lede+.lede{margin-top:12px}
+.byline{margin:0 0 14px;font-size:14px;color:var(--dim)}
+.glance{margin:24px 0 0;padding:16px 18px;border-radius:20px;background:var(--ink-2)}
+.glance h2{margin:0 0 8px;font-size:17px}
+.glance ol{margin:0;padding-left:22px;columns:2 14rem;column-gap:24px}
+.glance li{margin:3px 0;break-inside:avoid;font-size:15px}
+.glance li b{color:var(--dim);font-weight:600;font-variant-numeric:tabular-nums;margin-left:4px}
+.bestmap{position:relative;height:min(62vh,420px);margin:16px 0 0;border-radius:24px;overflow:hidden;background:var(--ink-2);display:grid;place-items:center;color:var(--dim);font-size:14px}
+.bestmap.ready{display:block}
+.bestmap.ready>p{display:none}
+.pin{display:flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;border:2px solid var(--ink);border-radius:999px;background:var(--cream);color:var(--ink);font:800 14px/1 "Funnel Display",sans-serif;cursor:pointer;box-shadow:0 4px 14px rgb(0 0 0/.35);transition:scale .2s}
+.pin.top{background:var(--lime)}
+.pin.on,.pin:hover{scale:1.2;background:var(--orange);color:#1b1b1b}
+.bestmap .maplibregl-popup{z-index:200}
+.bestmap .maplibregl-popup-content{background:var(--ink-2);color:var(--cream);border-radius:16px;padding:12px 14px;box-shadow:0 10px 30px rgb(0 0 0/.35);font:14px/1.4 "Funnel Sans",system-ui,sans-serif}
+.bestmap .maplibregl-popup-tip{display:none}
+.bestmap .maplibregl-popup-close-button{color:var(--dim);font-size:18px;width:28px;height:28px}
+.bestmap .maplibregl-popup-content h3{margin:2px 0;font:700 16px/1.2 "Funnel Display",sans-serif;padding-right:16px}
+.pop-n{margin:0;font-size:12px;font-weight:600;color:var(--lime)}
+.pop-when{margin:0;color:var(--dim);font-size:13px}
+.pop-links{display:flex;gap:14px;margin:6px 0 0}
+.pop-links a{color:var(--orange);font-weight:600}
+.entry{margin:44px 0 0;scroll-margin-top:80px}
+.entry header{display:flex;align-items:center;gap:12px}
+.entry h2{margin:0;flex:1;min-width:0}
+.entry h2 a{text-decoration:none}
+.entry h2 a:hover{text-decoration:underline}
+.entry .num{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:999px;background:var(--ink-3);font:800 18px/1 "Funnel Display",sans-serif}
+.entry .num.top{background:var(--orange);color:#1b1b1b}
+.entry .sc{flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;width:56px;height:56px;border-radius:16px;background:var(--ink-3);font:800 21px/1 "Funnel Display",sans-serif;font-variant-numeric:tabular-nums;text-align:center}
+.entry .sc.top{background:var(--lime);color:var(--ink)}
+.entry .sc small{display:block;font:600 10px/1 "Funnel Sans",sans-serif;opacity:.7;margin-top:2px}
+.entry .where{margin:6px 0 0 50px}
+.entry img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;border-radius:20px;margin:14px 0 0;background:var(--ink-3)}
+.entry>p:not(.where):not(.parts){font-size:17px;max-width:62ch;margin:14px 0 0}
+.parts{margin:8px 0 0;font-size:13px;color:var(--dim);font-variant-numeric:tabular-nums}
+.more{display:inline-flex;align-items:center;min-height:44px;color:var(--orange);font-weight:600;font-size:15px}
+.method{margin:0;padding-left:20px;max-width:62ch}
+.method li{margin:4px 0}
+.open{display:inline-flex;align-items:center;min-height:44px;margin-top:16px;padding:0 18px;border-radius:999px;background:var(--ink-2);text-decoration:none;font-weight:600;font-size:14px}
 `;
 write("hub.css", HUB_CSS);
 const cssHash = createHash("sha1").update(HUB_CSS).digest("hex").slice(0, 8);
 
 const logoSvg = `<svg viewBox="0 0 130 124" aria-hidden="true"><path d="${logo}"/></svg>`;
 
-function hubDoc({ path, title, description, jsonld, body, robots, image }) {
+function hubDoc({ path, title, description, jsonld, body, robots, image, script }) {
   const url = BASE + path;
   return `<!doctype html>
 <html lang="en-CA">
@@ -512,7 +577,7 @@ function hubDoc({ path, title, description, jsonld, body, robots, image }) {
 ${body}
 ${footerHtml()}
     </main>
-  </body>
+${script ? `    <script type="module" src="${script}"></script>\n` : ""}  </body>
 </html>
 `;
 }
@@ -520,7 +585,7 @@ ${footerHtml()}
 function footerHtml() {
   const cities = places.filter((p) => p.kind === "city");
   return `<footer>
-<ul class="chips">${cities.map((c) => `<li><a href="${hubPath(c.slug)}">${esc(c.name)}</a></li>`).join("")}<li><a href="/spots/">All spots A–Z</a></li><li><a href="/about/">About</a></li></ul>
+<ul class="chips">${cities.map((c) => `<li><a href="${hubPath(c.slug)}">${esc(c.name)}</a></li>`).join("")}${bestBySlug.has("metro") ? `<li><a href="${bestPath("metro")}">Best happy hours, ranked</a></li>` : ""}<li><a href="/spots/">All spots A–Z</a></li><li><a href="/about/">About</a></li></ul>
 <p>Times and deals come from each venue's own menu and are re-checked every night. Something wrong? Tell us from the venue's page.</p>
 </footer>`;
 }
@@ -617,7 +682,7 @@ function hubFaq(list, where) {
 const centre = (list) => ({ lat: list.reduce((s, v) => s + v.lat, 0) / list.length, lng: list.reduce((s, v) => s + v.lng, 0) / list.length });
 const dist2 = (a, b) => (a.lat - b.lat) ** 2 + ((a.lng - b.lng) * 0.65) ** 2;
 
-async function hubPage({ slug, h1, listTitle, where, title, description, list, topic, crumbs, intro, related }) {
+async function hubPage({ slug, h1, listTitle, where, title, description, list, topic, crumbs, intro, related, best: bestList }) {
   const path = hubPath(slug);
   const url = BASE + path;
   const sorted = sortFor(list, topic);
@@ -665,6 +730,7 @@ async function hubPage({ slug, h1, listTitle, where, title, description, list, t
 <h1>${esc(h1)}</h1>
 <p class="lede">${esc(intro)}</p>
 <p class="meta">${sorted.length} spots${updated ? ` · updated ${esc(fmtDate(updated))}` : ""}</p>
+${bestList ? `<a class="bestlink" href="${bestPath(bestList.slug)}"><span class="tag">#1</span><span>The ${bestList.venues.length} best happy hours in ${esc(bestList.name)}<small>Ranked by Hangout Score · #1 is ${esc(bestList.venues[0].name)}</small></span></a>` : ""}
 <h2>${esc(listTitle)}</h2>
 <ul class="cards">
 ${sorted.map((v) => card(v, topic)).join("\n")}
@@ -748,6 +814,7 @@ for (const p of places) {
     list: p.venues,
     crumbs,
     intro: placeIntro(p, p.venues),
+    best: bestBySlug.get(p.slug),
     related: [
       { title: "Vancouver neighbourhoods", links: areasHere.map((a) => ({ path: hubPath(a.slug), label: a.name, count: a.venues.length })) },
       { title: `More ways to browse ${p.name}`, links: combosFor((c) => c.place.slug === p.slug) },
@@ -803,6 +870,224 @@ for (const c of combos) {
       { title: `${t.short} elsewhere`, links: [{ path: hubPath(t.slug), label: `All of Metro Vancouver`, count: t.venues.length }, ...combos.filter((o) => o.topic.slug === t.slug && o.slug !== c.slug).map((o) => ({ path: hubPath(o.slug), label: o.place.name, count: o.venues.length }))] },
     ],
   });
+  hubCount++;
+}
+
+// ---------- best-of pages ----------
+// The map script (src/best-map.ts, a fixed-name Vite entry), versioned by content.
+const bestMapFile = resolve(dist, "assets/best-map.js");
+const BEST_MAP_JS = existsSync(bestMapFile) ? `/assets/best-map.js?v=${createHash("sha1").update(readFileSync(bestMapFile)).digest("hex").slice(0, 8)}` : null;
+// When the best-of lists first went up, for the article's datePublished.
+const BEST_PUBLISHED = "2026-10-23";
+// "Best happy hours in Gastown (2026)": the place's top Hangout Scores, with
+// the method on the page. The score stays plain text and a ranked ItemList:
+// no Review or AggregateRating markup, since it's our computed score and
+// not reviews from people (see scripts/hang-score.mjs).
+const PART_LABELS = [["Value", "value"], ["Selection", "selection"], ["Hours", "hours"], ["Vibe", "vibe"]];
+const pct = (k) => `${Math.round(WEIGHTS[k] * 100)}%`;
+const lowerFirst = (s) => s[0].toLowerCase() + s.slice(1);
+
+// One short write-up per ranked spot, built only from what we publish
+// about it: its score and the part it's strongest on, its cheapest deals,
+// its times, and patio / transit / music facts. Nothing is made up.
+const PART_LEADS = {
+  value: (n, s) => `Value is its strongest part (${s.value.toFixed(1)}): ${lowerFirst(n.value)}.`,
+  selection: (n) => `Its strength is choice, with ${n.selection}.`,
+  hours: (n) => `It earns its place on time: ${n.hours}.`,
+  vibe: (n) => `The setting lifts it: ${n.vibe.split(" · ").join(", ").toLowerCase()}.`,
+};
+const partWord = { value: "value", selection: "selection", hours: "hours", vibe: "vibe" };
+// Two cheapest drinks and the cheapest food, skipping add-ons and extras.
+const ADD_ON = /add[- ]?on|\bextra\b|\bupgrade\b|side of|\bcombo\b|red bull|\bshots?\b/i;
+function standouts(v) {
+  const ok = topDeals({ ...v, hh: { ...v.hh, deals: v.hh.deals.filter((d) => !ADD_ON.test(`${d.name} ${d.description}`)) } }, 12);
+  return [...ok.filter((d) => d.category === "drink").slice(0, 2), ...ok.filter((d) => d.category === "food").slice(0, 1)];
+}
+
+function writeup(v, rank, b) {
+  const s = v.score;
+  const parts = PART_LABELS.map(([, k]) => k).sort((x, y) => s[y] - s[x]);
+  const [first, second] = parts;
+  const score = s.total.toFixed(1);
+  const lead =
+    rank === 1
+      ? `${v.name} takes the top spot in ${b.name} with a Hangout Score of ${score}.`
+      : rank <= 3
+        ? `At number ${rank}, ${v.name} scores ${score}.`
+        : `${v.name} comes in at number ${rank} with ${score}.`;
+  const out = [lead, PART_LEADS[first](s.notes, s)];
+  if (s[second] >= 7) out.push(`It's strong on ${partWord[second]} too (${s[second].toFixed(1)}).`);
+  const deals = standouts(v).map(dealPhrase);
+  if (deals.length) out.push(`On the menu: ${deals.length < 3 ? deals.join(" and ") : `${deals.slice(0, -1).join(", ")} and ${deals.at(-1)}`}.`);
+  out.push(`Happy hour runs ${summary(v).replace(/^Every/, "every")}.`);
+  const a = v.amenities;
+  const extras = [a.patio && "there's a patio", a.liveMusic && "there's live music on some nights", a.groups && "it's good for groups"].filter(Boolean);
+  if (extras.length) out.push(`${cap(extras.length < 3 ? extras.join(" and ") : `${extras.slice(0, -1).join(", ")} and ${extras.at(-1)}`)}.`);
+  if (a.transitStation) out.push(`The nearest SkyTrain is ${a.transitStation}.`);
+  return out.join(" ");
+}
+
+function bestEntry(v, i, b) {
+  const s = v.score;
+  const n = i + 1;
+  const photo = v.photo ? `<img src="${esc(/^https?:/.test(v.photo) ? v.photo : `/${v.photo}`)}" alt="${esc(`${v.name}, ${whereLabel(v)}`)}" loading="${i < 2 ? "eager" : "lazy"}" width="720" height="360" />` : "";
+  return `<article class="entry" id="rank-${n}">
+<header><span class="num${n <= 3 ? " top" : ""}" aria-hidden="true">${n}</span><h2><a href="/spots/${v.id}.html">${esc(v.name)}</a></h2><span class="sc${s.total >= 7.5 ? " top" : ""}" aria-label="Hangout Score ${s.total.toFixed(1)} out of 10">${s.total.toFixed(1)}<small>/10</small></span></header>
+<p class="where">${esc(whereLabel(v))} · ${esc(v.address.split(",")[0])}</p>
+${photo}
+<p>${esc(writeup(v, n, b))}</p>
+<p class="parts">${PART_LABELS.map(([l, k]) => `${l} ${s[k].toFixed(1)}`).join(" · ")}${v.checked ? ` · menu checked ${esc(fmtDate(v.checked))}` : ""}</p>
+<a class="more" href="/spots/${v.id}.html">All ${v.hh.deals.length} deals and times at ${esc(v.name)}</a>
+</article>`;
+}
+
+// The second intro paragraph: what the list has in common, from its data.
+function bestIntro2(b) {
+  const list = b.venues;
+  const every = list.filter((v) => v.hh.days.length === 7).length;
+  const patio = list.filter((v) => v.amenities.patio).length;
+  const weekend = list.filter((v) => [v.hh, ...v.hh.extra].some((w) => w.days?.includes(0) || w.days?.includes(6))).length;
+  const drink = bestDeals(list).find((x) => ["Pint or beer", "Glass of wine", "Cocktail"].includes(x.label));
+  const bits = [
+    every ? `${every} of the ${list.length} run every day` : weekend ? `${weekend} of the ${list.length} run on weekends` : `all ${list.length} are weekday happy hours`,
+    patio ? `${patio} ${patio === 1 ? "has" : "have"} a patio` : null,
+    drink ? `the cheapest drink on the list is ${dealPhrase(drink.d)} at ${drink.v.name}` : null,
+  ].filter(Boolean);
+  const hi = list[0].score.total.toFixed(1);
+  const lo = list.at(-1).score.total.toFixed(1);
+  return `${cap(bits.length < 3 ? bits.join(" and ") : `${bits.slice(0, -1).join(", ")}, and ${bits.at(-1)}`)}. Scores on this list run from ${hi} down to ${lo}. Below: the map, then why each spot made it.`;
+}
+
+function bestFaq(b) {
+  const [a, c, d] = b.venues;
+  const f = (v) => `${v.name} (${v.score.total.toFixed(1)})`;
+  return [
+    {
+      q: `What's the best happy hour in ${b.name}?`,
+      a: `${a.name}, with a Hangout Score of ${a.score.total.toFixed(1)} out of 10: ${lowerFirst(a.score.notes.value)}.${c ? ` ${f(c)}${d ? ` and ${f(d)}` : ""} round out the top ${d ? "three" : "two"}.` : ""}`,
+    },
+    {
+      q: `How are these happy hours ranked?`,
+      a: `By the Hangout Score, worked out the same way for every spot from the deals and times we publish: value against typical Vancouver prices (${pct("value")}), selection (${pct("selection")}), hours (${pct("hours")}) and vibe (${pct("vibe")}).`,
+    },
+    { q: `Can a bar pay to rank higher?`, a: "No. Nothing a venue pays for changes its score or its place on a list, and we don't use Google star ratings. Scores change only when a venue's own menu does." },
+  ];
+}
+
+async function bestPage(b) {
+  const path = bestPath(b.slug);
+  const url = BASE + path;
+  const list = b.venues;
+  const h1 = bestH1(b);
+  const place = b.kind === "metro" ? null : placeBySlug.get(b.slug);
+  const pool = place ? place.venues : venues;
+  const updated = newest(pool);
+  const top = list[0];
+  const faq = bestFaq(b);
+  const crumbs =
+    b.kind === "area"
+      ? [...trail(vancouver, null), { name: b.name, path: hubPath(b.slug) }, { name: "Best" }]
+      : b.kind === "city"
+        ? [{ name: "Happy hours", path: "/" }, { name: b.name, path: hubPath(b.slug) }, { name: "Best" }]
+        : [{ name: "Happy hours", path: "/" }, { name: "Best happy hours" }];
+  const title = fitTitle(
+    `Best Happy Hours in ${b.name} (${YEAR}): Top ${list.length} Ranked | ${SITE}`,
+    `Best Happy Hours in ${b.name} (${YEAR}): Top ${list.length} | ${SITE}`,
+    `Best Happy Hours in ${b.name} (${YEAR}) | ${SITE}`,
+    `Best Happy Hours in ${b.name} (${YEAR})`,
+  );
+  let description = `The ${list.length} best happy hours in ${b.name}, ranked by our Hangout Score from real menu prices, deals and hours. #1: ${top.name}.${updated ? ` Updated ${fmtDate(updated)}.` : ""}`;
+  if (description.length > 160) description = description.replace(/ Updated .*$/, "");
+  const intro = `We scored ${b.scored} ${b.kind === "metro" ? "Metro Vancouver" : b.name} happy hours on the deals and times we publish, the same way for every spot, and these ${list.length} came out on top. ${top.name} leads at ${top.score.total.toFixed(1)} out of 10: ${lowerFirst(top.score.notes.value)}.`;
+
+  const cardFile = `best-${b.slug}`;
+  const cover = list.map(localPhoto).find(Boolean) ?? null;
+  copyFileSync(await renderCard({ id: cardFile, title: h1, line: `#1 ${top.name} · ${top.score.total.toFixed(1)}/10`, photo: cover }), resolve(dist, "og", `${cardFile}.jpg`));
+  const image = { url: `${BASE}/og/${cardFile}.jpg`, alt: `${h1}: number one is ${top.name}, Hangout Score ${top.score.total.toFixed(1)} out of 10` };
+
+  const jsonld = {
+    "@context": "https://schema.org",
+    "@graph": [
+      ...SITE_GRAPH,
+      {
+        "@type": "CollectionPage",
+        "@id": url,
+        url,
+        name: h1,
+        description,
+        isPartOf: { "@id": WEBSITE_ID },
+        mainEntity: { "@id": `${url}#list` },
+        breadcrumb: { "@id": `${url}#breadcrumb` },
+        ...(updated ? { dateModified: updated } : {}),
+        inLanguage: "en-CA",
+        primaryImageOfPage: { "@type": "ImageObject", url: image.url, width: 1200, height: 630 },
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${url}#list`,
+        name: h1,
+        itemListOrder: "https://schema.org/ItemListOrderDescending",
+        numberOfItems: list.length,
+        itemListElement: list.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}.html`, name: v.name })),
+      },
+      {
+        "@type": "Article",
+        "@id": `${url}#article`,
+        headline: h1,
+        description,
+        mainEntityOfPage: { "@id": url },
+        author: { "@id": ORG_ID },
+        publisher: { "@id": ORG_ID },
+        datePublished: BEST_PUBLISHED,
+        ...(updated ? { dateModified: updated } : {}),
+        image: image.url,
+        inLanguage: "en-CA",
+        about: { "@id": `${url}#list` },
+      },
+      breadcrumb(url, crumbs),
+      faqPage(url, faq),
+    ],
+  };
+
+  // Other lists: nearest first for a place; every list for Metro.
+  const others = bestLists.filter((o) => o.slug !== b.slug && o.kind !== "metro");
+  const here = centre(list);
+  const nearbyLists = place ? others.filter((o) => o.kind === b.kind).sort((x, y) => dist2(centre(x.venues), here) - dist2(centre(y.venues), here)).slice(0, 6) : [];
+  const chipsFor = (ls) => `<ul class="chips">${ls.map((o) => `<li><a href="${bestPath(o.slug)}">${esc(o.name)}</a></li>`).join("")}</ul>`;
+  const unscored = pool.length - b.scored;
+
+  const body = `<nav class="crumbs" aria-label="Breadcrumb">${crumbs
+    .map((c, i) => (i < crumbs.length - 1 ? `<a href="${c.path}">${esc(i === 0 ? SITE : c.name)}</a>` : `<span>${esc(c.name)}</span>`))
+    .join(" › ")}</nav>
+<h1>${esc(h1)}</h1>
+<p class="byline">By the ${SITE} team${updated ? ` · Updated <time datetime="${updated}">${esc(fmtDate(updated))}</time>` : ""} · Ranked from ${b.scored} scored spots</p>
+<p class="lede">${esc(intro)}</p>
+<p class="lede">${esc(bestIntro2(b))}</p>
+<nav class="glance" aria-label="The list at a glance"><h2>At a glance</h2><ol>${list.map((v, i) => `<li><a href="#rank-${i + 1}">${esc(v.name)}</a> <b>${v.score.total.toFixed(1)}</b></li>`).join("")}</ol></nav>
+<div id="best-map" class="bestmap" role="region" aria-label="Map of the ${list.length} best happy hours in ${esc(b.name)}"><p>Loading the map…</p></div>
+<script type="application/json" id="best-map-data">${JSON.stringify(list.filter((v) => v.lat != null).map((v) => ({ n: list.indexOf(v) + 1, id: v.id, name: v.name, lat: v.lat, lng: v.lng, score: v.score.total.toFixed(1), when: summary(v) }))).replace(/</g, "\\u003c")}</script>
+<a class="open" href="/best/?in=${b.slug}">Open this list in the app</a>
+${list.map((v, i) => bestEntry(v, i, b)).join("\n")}
+<h2>How we rank</h2>
+<p class="lede">Every spot gets a Hangout Score out of 10 from what's on its page, worked out the same way for every venue:</p>
+<ul class="method">
+<li><b>Value (${pct("value")})</b>: each deal's price against what Vancouver spots typically charge for the same thing, plus the cheapest drink.</li>
+<li><b>Selection (${pct("selection")})</b>: how many deals, how many kinds of drink, and whether there's food.</li>
+<li><b>Hours (${pct("hours")})</b>: hours of happy hour a week, weekends and late night.</li>
+<li><b>Vibe (${pct("vibe")})</b>: patio, live music, good for groups and near transit.</li>
+</ul>
+<p class="meta">Spots need at least 3 deals, 2 with prices, and confirmed times to be scored${unscored > 0 ? `, so ${unscored} of the ${pool.length} spots ${b.kind === "metro" ? "we track" : `in ${esc(b.name)}`} aren't ranked yet` : ""}. A spot needs ${BEST_FLOOR} or more to make a best-of list. No venue pays to be listed or ranked, and we don't use Google star ratings. Menus are re-checked every night and the list updates with them. <a href="/about/#hang-score">Full method</a>.</p>
+${place ? `<h2>All happy hours in ${esc(b.name)}</h2>\n<ul class="chips"><li><a href="${hubPath(b.slug)}">Every ${esc(b.name)} happy hour <small>${place.venues.length}</small></a></li></ul>` : ""}
+${nearbyLists.length ? `<h2>Best happy hours nearby</h2>\n${chipsFor(nearbyLists)}` : ""}
+${!place ? `<h2>Best happy hours by neighbourhood</h2>\n${chipsFor(others.filter((o) => o.kind === "area"))}\n<h2>Best happy hours by city</h2>\n${chipsFor(others.filter((o) => o.kind === "city"))}` : `<h2>More best-of lists</h2>\n<ul class="chips"><li><a href="${bestPath("metro")}">All of Metro Vancouver</a></li></ul>`}
+<h2>Questions about the best happy hours in ${esc(b.name)}</h2>
+<div class="faq">${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("")}</div>`;
+  write(`${path.slice(1)}index.html`, hubDoc({ path, title, description, jsonld, body, image, script: BEST_MAP_JS }));
+  sitemapDates.set(path, updated);
+}
+
+for (const b of bestLists) {
+  await bestPage(b);
   hubCount++;
 }
 
@@ -873,6 +1158,7 @@ const exploreHtml = `<h2 style="${S.h2}">Vancouver neighbourhoods</h2><nav>${pla
   .filter((p) => p.kind === "city")
   .map((p) => `<a href="${hubPath(p.slug)}" style="${S.chip}">${esc(p.name)}</a>`)
   .join("")}</nav>
+<h2 style="${S.h2}">Best happy hours, ranked</h2><nav>${bestLists.map((b) => `<a href="${bestPath(b.slug)}" style="${S.chip}">${esc(b.kind === "metro" ? "All of Metro Vancouver" : b.name)}</a>`).join("")}</nav>
 <h2 style="${S.h2}">By day and deal</h2><nav>${topics.map((t) => `<a href="${hubPath(t.slug)}" style="${S.chip}">${esc(t.label)}</a>`).join("")}</nav>`;
 
 const HOME_DESC = `Live happy hour times and deals from ${venues.length} Vancouver bars and restaurants, checked against their own menus every night.`;
@@ -890,6 +1176,8 @@ sitemapDates.set("/", newest(venues));
 
 const PAGES = [
   ["map/index.html", "/map/", "Map of Vancouver Happy Hours", "Map of happy hours", true],
+  // The app's Best of screen; the static /happy-hour/<place>/best/ pages are the indexed copies.
+  ["best/index.html", "/best/", "Best Happy Hours, Ranked", "Best happy hours", false],
   ["saved/index.html", "/saved/", "Saved spots", "Saved spots", false],
   ["about/index.html", "/about/", "About", "About A Little Hang", true],
   ["privacy/index.html", "/privacy/", "Privacy", "Privacy", true],
@@ -959,6 +1247,9 @@ ${places.filter((p) => p.kind === "city").map((p) => linkLine(p, `Happy hours in
 
 ## Vancouver neighbourhoods
 ${places.filter((p) => p.kind === "area").map((p) => linkLine(p, `Happy hours in ${p.name}`)).join("\n")}
+
+## Best happy hours, ranked by Hangout Score
+${bestLists.map((b) => `- [${bestH1(b)}](${BASE}${bestPath(b.slug)}): #1 ${b.venues[0].name} (${b.venues[0].score.total.toFixed(1)}/10)`).join("\n")}
 
 ## By day and deal (Metro Vancouver)
 ${topics.map((t) => linkLine(t, t.label)).join("\n")}

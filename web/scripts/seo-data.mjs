@@ -164,3 +164,32 @@ export function buildHubs(venues) {
 }
 
 export const hubPath = (slug) => `/happy-hour/${slug}/`;
+
+// ---------- best-of lists ----------
+// "Best happy hours in <place>": the place's Hangout Scores, highest first
+// (scripts/hang-score.mjs). A list ships only when the place has enough
+// scored spots for a ranking to mean something.
+export const MIN_BEST = 8; // scored venues a place needs for a best-of list
+export const BEST_SIZE = 10; // spots ranked on each list
+// A "best" list only names spots rated Decent or better (4.5+, scoreWord in
+// components/hang-score.tsx), and ships only with at least BEST_MIN_LISTED.
+export const BEST_FLOOR = 4.5;
+export const BEST_MIN_LISTED = 6;
+
+export const byScore = (a, b) => b.score.total - a.score.total || b.score.value - a.score.value || b.score.selection - a.score.selection || a.name.localeCompare(b.name);
+
+// Metro Vancouver first, then each city and neighbourhood hub that clears
+// MIN_BEST, by size. `slug` is the place's hub slug ("metro" for all).
+export function buildBest(venues, places) {
+  const lists = [];
+  const add = (slug, name, kind, pool) => {
+    const scored = pool.filter((v) => v.score);
+    const top = scored.filter((v) => v.score.total >= BEST_FLOOR).sort(byScore).slice(0, BEST_SIZE);
+    if (scored.length >= MIN_BEST && top.length >= BEST_MIN_LISTED) lists.push({ slug, name, kind, scored: scored.length, venues: top });
+  };
+  add("metro", "Metro Vancouver", "metro", venues);
+  for (const p of places) add(p.slug, p.name, p.kind, p.venues);
+  return lists;
+}
+
+export const bestPath = (slug) => (slug === "metro" ? "/happy-hour/best/" : `/happy-hour/${slug}/best/`);
