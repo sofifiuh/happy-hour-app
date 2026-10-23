@@ -62,13 +62,19 @@ const cityHub = (v) => places.find((p) => p.kind === "city" && p.name === v.city
 const areaHub = (v) => (v.area ? (placeBySlug.get(v.area.slug) ?? null) : null);
 
 // ---------- page assembly ----------
-function page({ path, title, description, image = `${BASE}/og.png`, imageAlt, type = "website", jsonld, body = "", preload, robots, extraHead = [] }) {
+// Share titles drop the "| A Little Hang" suffix (og:site_name carries it),
+// except where the rest would be a bare word like "About".
+const ogTitle = (title) => {
+  const bare = title.replace(` | ${SITE}`, "");
+  return bare.length < 20 ? `${bare} · ${SITE}` : bare;
+};
+function page({ path, title, description, image = `${BASE}/og.png`, imageAlt = `${SITE}: Vancouver happy hours right now`, type = "website", jsonld, body = "", preload, robots, extraHead = [] }) {
   const url = BASE + path;
   let html = template
     .replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`)
     .replace(/<meta name="description" content="[^"]*"\s*\/?>/, `<meta name="description" content="${esc(description)}" />`)
     .replace(/<meta property="og:type" content="[^"]*"\s*\/?>/, `<meta property="og:type" content="${type}" />`)
-    .replace(/<meta property="og:title" content="[^"]*"\s*\/?>/, `<meta property="og:title" content="${esc(title.replace(` | ${SITE}`, ""))}" />`)
+    .replace(/<meta property="og:title" content="[^"]*"\s*\/?>/, `<meta property="og:title" content="${esc(ogTitle(title))}" />`)
     .replace(/<meta property="og:description" content="[^"]*"\s*\/?>/, `<meta property="og:description" content="${esc(description)}" />`)
     .replace(/<meta property="og:image" content="[^"]*"\s*\/?>/, `<meta property="og:image" content="${esc(image)}" />`);
   const head = [
@@ -76,7 +82,9 @@ function page({ path, title, description, image = `${BASE}/og.png`, imageAlt, ty
     `<meta name="robots" content="${robots ?? "index,follow,max-image-preview:large"}" />`,
     `<meta property="og:url" content="${url}" />`,
     `<meta property="og:locale" content="en_CA" />`,
-    imageAlt && `<meta property="og:image:alt" content="${esc(imageAlt)}" />`,
+    `<meta property="og:image:type" content="${image.endsWith(".png") ? "image/png" : "image/jpeg"}" />`,
+    `<meta property="og:image:alt" content="${esc(imageAlt)}" />`,
+    `<meta name="twitter:image:alt" content="${esc(imageAlt)}" />`,
     ...extraHead,
     preload && `<link rel="preload" href="${preload}" as="image" fetchpriority="high" />`,
     jsonld && ldScript(jsonld),
@@ -345,22 +353,28 @@ async function text(markup, fontfile, font, width) {
   return sharp({ text: { text: markup, font, fontfile, width, dpi: 72, rgba: true, wrap: "word" } }).png().toBuffer();
 }
 
-async function shareCard(v) {
-  const photo = v.photo && !/^https?:/.test(v.photo) ? resolve(web, "public", v.photo) : null;
-  const when = summary(v) || "Happy hour times on the page";
-  const key = createHash("sha1").update(JSON.stringify([v.name, when, photo && existsSync(photo) ? readFileSync(photo).length : 0, 2])).digest("hex").slice(0, 10);
-  const cached = resolve(cache, `${v.id}-${key}.jpg`);
+const localPhoto = (v) => (v.photo && !/^https?:/.test(v.photo) && existsSync(resolve(web, "public", v.photo)) ? resolve(web, "public", v.photo) : null);
+
+function shareCard(v) {
+  return renderCard({ id: v.id, title: v.name, line: `Happy hour · ${summary(v) || "Happy hour times on the page"}`, photo: localPhoto(v) });
+}
+
+// 1200×630 card: photo (or brand gradient), logo top right, title and one
+// lime line at the bottom. Cached by content in node_modules/.cache/og.
+async function renderCard({ id, title, line, photo }) {
+  const key = createHash("sha1").update(JSON.stringify([title, line, photo ? readFileSync(photo).length : 0, 3])).digest("hex").slice(0, 10);
+  const cached = resolve(cache, `${id}-${key}.jpg`);
   if (existsSync(cached)) return cached;
 
   const W = 1200, H = 630;
-  const bg = photo && existsSync(photo)
+  const bg = photo
     ? await sharp(photo).resize(W, H, { fit: "cover" }).modulate({ brightness: 0.9 }).toBuffer()
     : await sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff4900"/><stop offset="1" stop-color="#751927"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#g)"/></svg>`)).png().toBuffer();
   const shade = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}"><defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b1b1b" stop-opacity=".15"/><stop offset=".45" stop-color="#1b1b1b" stop-opacity=".55"/><stop offset="1" stop-color="#1b1b1b" stop-opacity=".97"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#s)"/></svg>`);
   const mark = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 124" width="150" height="143"><path d="${logo}" fill="#f3efe4"/></svg>`);
-  const nameSize = v.name.length > 34 ? 60 : v.name.length > 22 ? 72 : 84;
-  const name = await text(`<span foreground="#f3efe4" font_weight="800" size="${nameSize * 1024}">${pango(v.name)}</span>`, FONT_DISPLAY, "Funnel Display Light", 900);
-  const times = await text(`<span foreground="#ecfe54" size="${34 * 1024}">Happy hour · ${pango(when)}</span>`, FONT_SANS, "Funnel Sans Light", 900);
+  const nameSize = title.length > 34 ? 60 : title.length > 22 ? 72 : 84;
+  const name = await text(`<span foreground="#f3efe4" font_weight="800" size="${nameSize * 1024}">${pango(title)}</span>`, FONT_DISPLAY, "Funnel Display Light", 900);
+  const times = await text(`<span foreground="#ecfe54" size="${34 * 1024}">${pango(line)}</span>`, FONT_SANS, "Funnel Sans Light", 900);
   const nameH = (await sharp(name).metadata()).height;
   const timesH = (await sharp(times).metadata()).height;
   await sharp(bg)
@@ -429,7 +443,7 @@ const cssHash = createHash("sha1").update(HUB_CSS).digest("hex").slice(0, 8);
 
 const logoSvg = `<svg viewBox="0 0 130 124" aria-hidden="true"><path d="${logo}"/></svg>`;
 
-function hubDoc({ path, title, description, jsonld, body, robots }) {
+function hubDoc({ path, title, description, jsonld, body, robots, image }) {
   const url = BASE + path;
   return `<!doctype html>
 <html lang="en-CA">
@@ -453,11 +467,14 @@ function hubDoc({ path, title, description, jsonld, body, robots }) {
     <meta property="og:title" content="${esc(title.replace(` | ${SITE}`, ""))}" />
     <meta property="og:description" content="${esc(description)}" />
     <meta property="og:url" content="${url}" />
-    <meta property="og:image" content="${BASE}/og.png" />
+    <meta property="og:image" content="${esc(image.url)}" />
+    <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="${esc(image.alt)}" />
     <meta property="og:locale" content="en_CA" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:alt" content="${esc(image.alt)}" />
     ${ldScript(jsonld)}
   </head>
   <body>
@@ -571,13 +588,20 @@ function hubFaq(list, where) {
 const centre = (list) => ({ lat: list.reduce((s, v) => s + v.lat, 0) / list.length, lng: list.reduce((s, v) => s + v.lng, 0) / list.length });
 const dist2 = (a, b) => (a.lat - b.lat) ** 2 + ((a.lng - b.lng) * 0.65) ** 2;
 
-function hubPage({ slug, h1, listTitle, where, title, description, list, topic, crumbs, intro, related }) {
+async function hubPage({ slug, h1, listTitle, where, title, description, list, topic, crumbs, intro, related }) {
   const path = hubPath(slug);
   const url = BASE + path;
   const sorted = sortFor(list, topic);
   const updated = newest(list);
   const best = bestDeals(list);
   const faq = hubFaq(list, where);
+  // Share card: the hub's first venue with a photo, its count and two cheapest deals.
+  const cardFile = `hub-${slug.replace(/\//g, "--")}`;
+  const own = (x) => topic && x.label.toLowerCase() === topic.short.toLowerCase();
+  const top = [...best].sort((x, y) => own(y) - own(x)).slice(0, 2).map((b) => `${SHORT_LABEL[b.label] ?? b.label.toLowerCase()} from ${money(b.p.low)}`);
+  const cover = sorted.map(localPhoto).find(Boolean) ?? null;
+  copyFileSync(await renderCard({ id: cardFile, title: h1, line: [`${sorted.length} spots`, ...top].join(" · "), photo: cover }), resolve(dist, "og", `${cardFile}.jpg`));
+  const image = { url: `${BASE}/og/${cardFile}.jpg`, alt: `${h1}: ${sorted.length} spots${top.length ? `, ${top.join(", ")}` : ""}` };
   const jsonld = {
     "@context": "https://schema.org",
     "@graph": [
@@ -593,6 +617,7 @@ function hubPage({ slug, h1, listTitle, where, title, description, list, topic, 
         breadcrumb: { "@id": `${url}#breadcrumb` },
         ...(updated ? { dateModified: updated } : {}),
         inLanguage: "en-CA",
+        primaryImageOfPage: { "@type": "ImageObject", url: image.url, width: 1200, height: 630 },
       },
       {
         "@type": "ItemList",
@@ -626,7 +651,7 @@ ${related
   .join("\n")}
 <h2>Questions about happy hours ${esc(where.in)}</h2>
 <div class="faq">${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("")}</div>`;
-  write(`happy-hour/${slug}/index.html`, hubDoc({ path, title, description, jsonld, body }));
+  write(`happy-hour/${slug}/index.html`, hubDoc({ path, title, description, jsonld, body, image }));
   sitemapDates.set(path, updated);
   return path;
 }
@@ -672,6 +697,7 @@ function topicIntro(t, list, placeLabel) {
 const combosFor = (pred) => combos.filter(pred).map((c) => ({ path: hubPath(c.slug), label: c.topic.label.replace(/ happy hours$/, "").replace(/^Happy hours with /, ""), count: c.venues.length }));
 const topicLinks = (except) => topics.filter((t) => t.slug !== except).map((t) => ({ path: hubPath(t.slug), label: t.short, count: t.venues.length }));
 
+mkdirSync(resolve(dist, "og"), { recursive: true });
 let hubCount = 0;
 const vancouver = places.find((p) => p.slug === "vancouver");
 for (const p of places) {
@@ -682,7 +708,7 @@ for (const p of places) {
   const here = centre(p.venues);
   const nearbyPlaces = others.sort((a, b) => dist2(centre(a.venues), here) - dist2(centre(b.venues), here)).slice(0, isArea ? 5 : 6);
   const areasHere = p.slug === "vancouver" ? places.filter((o) => o.kind === "area") : [];
-  hubPage({
+  await hubPage({
     slug: p.slug,
     h1: `Happy hours in ${p.name}`,
     listTitle: `All ${p.venues.length} ${p.name} happy hours`,
@@ -706,7 +732,7 @@ for (const t of topics) {
   const where = { in: t.kind === "deal" ? `for ${t.short.toLowerCase()} in Metro Vancouver` : t.kind === "day" ? `on ${t.slug === "weekend" ? "weekends" : SCHEMA_DAYS[dayIndex(t)] + "s"} in Metro Vancouver` : `in Metro Vancouver (${t.short.toLowerCase()})` };
   // Topic hubs cover every city; "Vancouver" is the city hub's combos.
   const label = `${t.label} in Metro Vancouver`;
-  hubPage({
+  await hubPage({
     slug: t.slug,
     h1: label,
     listTitle: `All ${t.venues.length} ${t.label.toLowerCase().replace(/^happy hours with/, "spots with")}`,
@@ -730,7 +756,7 @@ for (const c of combos) {
   const where = { in: `in ${p.name}` };
   const h1 = `${t.label} in ${p.name}`;
   const crumbs = [...(p.kind === "area" ? trail(vancouver, null) : [{ name: "Happy hours", path: "/" }]), { name: p.name, path: hubPath(p.slug) }, { name: cap(t.label.replace(/ happy hours$/, "").replace(/^Happy hours with /, "")) }];
-  hubPage({
+  await hubPage({
     slug: c.slug,
     h1,
     listTitle: `All ${c.venues.length} ${t.label.toLowerCase().replace(/^happy hours with/, "spots with")} in ${p.name}`,
@@ -766,7 +792,7 @@ for (const v of venues) {
       title: venueTitle(v),
       description: venueDescription(v),
       image,
-      imageAlt: `${v.name}${when ? `, happy hour ${when}` : ""}`,
+      imageAlt: `${v.name}${when ? `, happy hour ${when.replace(/^Every day/, "every day")}` : ""}`,
       type: "place",
       jsonld: venueJsonLd(v, image),
       preload: v.photo && !/^https?:/.test(v.photo) ? `/${v.photo}` : undefined,
