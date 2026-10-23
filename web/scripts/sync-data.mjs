@@ -134,7 +134,7 @@ for (const v of slim) {
 const PREFER = { deal: 0, vibe: 1, day: 2 };
 const hubs = {};
 for (const h of places) hubs[h.slug] = { label: h.kind === "area" ? `${h.name}` : h.name, kind: h.kind, count: h.venues.length };
-for (const t of topics) hubs[t.slug] = { label: t.label, kind: t.kind, count: t.venues.length };
+for (const t of topics) hubs[t.slug] = { label: t.label, short: t.short, kind: t.kind, count: t.venues.length };
 for (const v of slim) {
   const areaSlug = v.area;
   const citySlug = Object.keys(hubs).find((k) => hubs[k].kind === "city" && hubs[k].label === v.city);

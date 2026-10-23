@@ -66,6 +66,7 @@ export interface Occurrence {
 export type HubKind = "city" | "area" | "day" | "vibe" | "deal";
 export interface Hub {
   label: string;
+  short?: string; // link text for day/deal/vibe topics: "Oysters", "Live music"
   kind: HubKind;
   count: number;
 }
