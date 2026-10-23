@@ -12,13 +12,15 @@
 // The app boots on every page except the hubs and takes over from the
 // static markup. Venue copy (titles, about, questions) comes from
 // src/lib/seo.ts, which the app uses too, so both say the same thing.
+import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { dirname, resolve } from "node:path";
+import { basename, dirname, resolve } from "node:path";
+import { homedir } from "node:os";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import { fmtRange } from "../src/lib/hours.ts";
-import { dayRuns, dealPhrase, fmtDate, money, nearby, parsePrice, runLabel, scheduleSummary, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
+import { dayRuns, dealPhrase, fmtDate, money, nearby, parsePrice, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
 import { AREAS, buildHubs, hubPath } from "./seo-data.mjs";
 
 const BASE = "https://alittlehang.com";
@@ -210,6 +212,7 @@ function venueJsonLd(v, image) {
         about: { "@id": `${url}#venue` },
         breadcrumb: { "@id": `${url}#breadcrumb` },
         primaryImageOfPage: image,
+        ...(v.source ? { isBasedOn: v.source.url } : {}),
         ...(v.checked ? { dateModified: v.checked } : {}),
         inLanguage: "en-CA",
       },
@@ -327,7 +330,7 @@ ${[["Value", "value"], ["Selection", "selection"], ["Hours", "hours"], ["Vibe", 
 ${dayRuns(v)
   .map((r) => `<div style="${S.row}"><span>${runLabel(r.days)}</span><span>${r.wins.length ? r.wins.map((w) => `${w.label ? `${esc(w.label)} ` : ""}${fmtRange(w.start, w.end)}`).join(" · ") : "None"}</span></div>`)
   .join("\n")}
-<p style="${S.muted};margin-top:12px">${v.hh.verified ? "Verified against their menu" : "From their website"}${v.checked ? `, times checked ${esc(fmtDate(v.checked))}` : ""}.</p>
+<p style="${S.muted};margin-top:12px">${v.hh.verified ? "Verified against their menu" : "From their website"}${v.checked ? `, times checked ${esc(fmtDate(v.checked))}` : ""}.${v.source ? ` Source: <a href="${esc(v.source.url)}" rel="nofollow noopener" style="${S.plain}">${esc(sourceLabel(v))}</a>.` : ""}</p>
 <h2 style="${S.h2}">About ${esc(v.name)}</h2>
 <p style="${S.p}">${esc(venueAbout(v))}</p>
 <h2 style="${S.h2}">Find us here</h2>
@@ -347,6 +350,16 @@ ${venueFaq(v)
 // ---------- share cards ----------
 const FONT_DISPLAY = resolve(here, "fonts/FunnelDisplay-ExtraBold.ttf");
 const FONT_SANS = resolve(here, "fonts/FunnelSans-Medium.ttf");
+// libvips on the CI runner ignores `fontfile` and draws DejaVu instead.
+// Registering the fonts with fontconfig lets `font` find them by name.
+try {
+  const dir = resolve(homedir(), ".local/share/fonts");
+  mkdirSync(dir, { recursive: true });
+  for (const f of [FONT_DISPLAY, FONT_SANS]) copyFileSync(f, resolve(dir, basename(f)));
+  execFileSync("fc-cache", ["-f", dir], { stdio: "ignore" });
+} catch {
+  // No fontconfig tools: fontfile alone still works on most machines.
+}
 const pango = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 async function text(markup, fontfile, font, width) {
@@ -362,7 +375,7 @@ function shareCard(v) {
 // 1200×630 card: photo (or brand gradient), logo top right, title and one
 // lime line at the bottom. Cached by content in node_modules/.cache/og.
 async function renderCard({ id, title, line, photo }) {
-  const key = createHash("sha1").update(JSON.stringify([title, line, photo ? readFileSync(photo).length : 0, 3])).digest("hex").slice(0, 10);
+  const key = createHash("sha1").update(JSON.stringify([title, line, photo ? readFileSync(photo).length : 0, 4])).digest("hex").slice(0, 10);
   const cached = resolve(cache, `${id}-${key}.jpg`);
   if (existsSync(cached)) return cached;
 
