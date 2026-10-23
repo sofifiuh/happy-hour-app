@@ -3,6 +3,7 @@ import { createBrowserRouter, createHashRouter, Navigate, Outlet, RouterProvider
 import { ToastProvider } from "@/components/toast";
 import { BROWSER_ROUTER, spotPath } from "@/lib/routes";
 import { IS_FRAME, StoreProvider } from "@/lib/store";
+import { useStaticHead } from "@/lib/use-static-head";
 import { AllSpots } from "@/screens/all-spots";
 import { Home } from "@/screens/home";
 import { Info } from "@/screens/info";
@@ -30,6 +31,7 @@ function seenWelcome() {
 }
 
 function Shell() {
+  useStaticHead();
   return (
     <>
       <ScrollRestoration />
