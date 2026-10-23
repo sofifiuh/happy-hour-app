@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-23-cae805e1",
+ "data_version": "2026-10-23-f9715e38",
  "venues": [
   {
    "id": "ancora",
@@ -4941,7 +4941,7 @@
    "last_synced_at": null,
    "trust": {
     "level": "verified",
-    "status": "confirmed",
+    "status": "unconfirmed",
     "confidence": "high",
     "source_url": "https://www.alchemybar-kitchen.ca/happyhour.html",
     "data_as_of": "2026-09-03",
@@ -5265,8 +5265,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "http://www.pardhandhaba.ca/menu",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-23",
@@ -18244,8 +18244,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "https://starlightcasino.ca/casino-happy-hour/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-23",
@@ -26031,8 +26031,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "https://redlionbarandgrill.net/drinks",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-23",
@@ -27775,8 +27775,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "https://curryngrill.ca/happy.html",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-23",
@@ -28038,8 +28038,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "https://zapoteca.com/kitsilano/menu-kitsilano/menu-happy-hour-kitsilano/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-23",
@@ -36461,8 +36461,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "https://sector7kb.com/new-menu/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-23",
@@ -60021,8 +60021,8 @@
    },
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "https://ciderhouserules.ca/happy-hour/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-23",
