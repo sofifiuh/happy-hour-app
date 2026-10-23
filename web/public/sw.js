@@ -63,10 +63,13 @@ async function cacheFirst(req) {
 
 async function staleWhileRevalidate(req, event) {
   const cache = await caches.open(CACHE);
-  const hit = await cache.match(req, { ignoreSearch: true });
+  // One entry per path: a query string must not leave a copy that never refreshes.
+  const key = new URL(req.url);
+  key.search = "";
+  const hit = await cache.match(key.href);
   const fresh = fetch(req)
     .then((res) => {
-      if (res.ok) cache.put(req, res.clone());
+      if (res.ok) cache.put(key.href, res.clone());
       return res;
     })
     .catch(() => hit);

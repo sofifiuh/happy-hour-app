@@ -29,7 +29,7 @@ export function ExploreLinks() {
               {list.map(([slug, h]) => (
                 <li key={slug}>
                   <a href={`/happy-hour/${slug}/`} className="inline-flex min-h-10 items-center gap-1.5 rounded-full bg-ink-2 px-3.5 text-[14px] font-medium ring-1 ring-edge/5">
-                    {h.kind === "day" || h.kind === "deal" || h.kind === "vibe" ? h.label.replace(/ happy hours$/, "").replace(/^Happy hours with /, "") : h.label}
+                    {h.short ?? h.label}
                     <span className="text-[12px] text-muted-foreground tabular">{h.count}</span>
                   </a>
                 </li>
