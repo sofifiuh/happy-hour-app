@@ -3,7 +3,7 @@ import type { GeoJSONSource, Map as MLMap, MapMouseEvent, StyleSpecification } f
 import "maplibre-gl/dist/maplibre-gl.css";
 import { LocateFixed } from "lucide-react";
 import { type ReactNode, useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
-import { loadMapStyle, PIN_COLORS, PIN_PAINT } from "@/lib/map-style";
+import { loadMapStyle, PIN_COLORS, PIN_PAINT, spreadMarkers } from "@/lib/map-style";
 import { reducedMotion } from "@/lib/motion";
 import { useStore, type Row } from "@/lib/store";
 import { colorScheme, useColorScheme, type Scheme } from "@/lib/use-media";
@@ -199,6 +199,12 @@ export function VenueMap({
     });
     if (!bounds.isEmpty())
       m.fitBounds(bounds, { padding: { top: insets.current.top + 48, bottom: insets.current.bottom + 48, left: 48, right: 48 }, maxZoom: 15.5, duration: reducedMotion() ? 0 : 700 });
+    const spread = () => spreadMarkers(m, [...markers.current.values()]);
+    spread();
+    m.on("zoomend", spread);
+    return () => {
+      m.off("zoomend", spread);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready, ranked, idsKey]);
   useEffect(() => {

@@ -1,6 +1,6 @@
 import * as maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { loadMapStyle } from "@/lib/map-style";
+import { loadMapStyle, spreadMarkers } from "@/lib/map-style";
 
 interface Pin {
   n: number;
@@ -39,6 +39,7 @@ export async function mount(el: HTMLElement) {
 
   const popup = new maplibregl.Popup({ closeButton: true, offset: 20, maxWidth: "260px", focusAfterOpen: false });
   let on: HTMLElement | null = null;
+  const markers: maplibregl.Marker[] = [];
   for (const p of pins) {
     const pin = document.createElement("button");
     pin.type = "button";
@@ -59,8 +60,11 @@ export async function mount(el: HTMLElement) {
     });
     // Higher ranks sit on top where pins overlap.
     pin.style.zIndex = String(100 - p.n);
-    new maplibregl.Marker({ element: pin }).setLngLat([p.lng, p.lat]).addTo(map);
+    markers.push(new maplibregl.Marker({ element: pin }).setLngLat([p.lng, p.lat]).addTo(map));
   }
+  const spread = () => spreadMarkers(map, markers);
+  map.once("idle", spread);
+  map.on("zoomend", spread);
   popup.on("close", () => {
     on?.classList.remove("on");
     on = null;

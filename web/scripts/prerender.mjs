@@ -23,7 +23,7 @@ import sharp from "sharp";
 import { fmtRange } from "../src/lib/hours.ts";
 import { dayRuns, dealPhrase, fmtDate, money, nearby, parsePrice, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
 import { AREAS, BEST_FLOOR, bestPath, buildHubs, hubPath } from "./seo-data.mjs";
-import { WEIGHTS } from "./hang-score.mjs";
+import { cheapestDrink, isNonAlc, WEIGHTS } from "./hang-score.mjs";
 
 const BASE = "https://alittlehang.com";
 const SITE = "A Little Hang";
@@ -522,7 +522,7 @@ a:focus-visible{outline:2px solid var(--orange)}
 .entry .num.top{background:var(--orange);color:#1b1b1b}
 .entry .sc{flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;width:56px;height:56px;border-radius:16px;background:var(--ink-3);font:800 21px/1 "Funnel Display",sans-serif;font-variant-numeric:tabular-nums;text-align:center}
 .entry .sc.top{background:var(--lime);color:var(--ink)}
-.entry .sc small{display:block;font:600 10px/1 "Funnel Sans",sans-serif;opacity:.7;margin-top:2px}
+.entry .sc small{display:block;font:600 10px/1 "Funnel Sans",sans-serif;margin-top:2px}
 .entry .where{margin:6px 0 0 50px}
 .entry img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;border-radius:20px;margin:14px 0 0;background:var(--ink-3)}
 .entry>p:not(.where):not(.parts){font-size:17px;max-width:62ch;margin:14px 0 0}
@@ -597,7 +597,7 @@ const cap = (s) => s[0].toUpperCase() + s.slice(1);
 // The deal that earns a venue its place on a deal hub ("$3 oysters").
 function matchingDeal(v, topic) {
   if (!topic || topic.kind !== "deal") return null;
-  const hits = v.hh.deals.filter((d) => topic.test({ ...v, hh: { ...v.hh, deals: [d] } }));
+  const hits = v.hh.deals.filter((d) => !isNonAlc(d) && topic.test({ ...v, hh: { ...v.hh, deals: [d] } }));
   return hits.map((d) => ({ d, p: parsePrice(d.price) })).sort((a, b) => (a.p?.low ?? 1e9) - (b.p?.low ?? 1e9))[0]?.d ?? null;
 }
 
@@ -886,21 +886,25 @@ const BEST_PUBLISHED = "2026-10-23";
 const PART_LABELS = [["Value", "value"], ["Selection", "selection"], ["Hours", "hours"], ["Vibe", "vibe"]];
 const pct = (k) => `${Math.round(WEIGHTS[k] * 100)}%`;
 const lowerFirst = (s) => s[0].toLowerCase() + s.slice(1);
+// A score note's value line, minus "priced around or above the Vancouver
+// norm" where the sentence is praising the spot.
+const valueLine = (n) => lowerFirst(/around or above/.test(n.value) ? n.value.split(", ")[0] : n.value);
 
 // One short write-up per ranked spot, built only from what we publish
 // about it: its score and the part it's strongest on, its cheapest deals,
 // its times, and patio / transit / music facts. Nothing is made up.
 const PART_LEADS = {
-  value: (n, s) => `Value is its strongest part (${s.value.toFixed(1)}): ${lowerFirst(n.value)}.`,
+  // The note's "priced around or above the norm" would contradict "strongest", so keep its first half then.
+  value: (n, s) => `Value is its strongest part (${s.value.toFixed(1)}): ${valueLine(n)}.`,
   selection: (n) => `Its strength is choice, with ${n.selection}.`,
   hours: (n) => `It earns its place on time: ${n.hours}.`,
   vibe: (n) => `The setting lifts it: ${n.vibe.split(" · ").join(", ").toLowerCase()}.`,
 };
 const partWord = { value: "value", selection: "selection", hours: "hours", vibe: "vibe" };
 // Two cheapest drinks and the cheapest food, skipping add-ons and extras.
-const ADD_ON = /add[- ]?on|\bextra\b|\bupgrade\b|side of|\bcombo\b|red bull|\bshots?\b/i;
+const ADD_ON = /add[- ]?on|\bextra\b|\bupgrade\b|side of|\bcombo\b|\bshots?\b/i;
 function standouts(v) {
-  const ok = topDeals({ ...v, hh: { ...v.hh, deals: v.hh.deals.filter((d) => !ADD_ON.test(`${d.name} ${d.description}`)) } }, 12);
+  const ok = topDeals({ ...v, hh: { ...v.hh, deals: v.hh.deals.filter((d) => !isNonAlc(d) && !ADD_ON.test(`${d.name} ${d.description}`)) } }, 12);
   return [...ok.filter((d) => d.category === "drink").slice(0, 2), ...ok.filter((d) => d.category === "food").slice(0, 1)];
 }
 
@@ -947,11 +951,11 @@ function bestIntro2(b) {
   const every = list.filter((v) => v.hh.days.length === 7).length;
   const patio = list.filter((v) => v.amenities.patio).length;
   const weekend = list.filter((v) => [v.hh, ...v.hh.extra].some((w) => w.days?.includes(0) || w.days?.includes(6))).length;
-  const drink = bestDeals(list).find((x) => ["Pint or beer", "Glass of wine", "Cocktail"].includes(x.label));
+  const drink = list.map((v) => ({ v, c: cheapestDrink(v) })).filter((x) => x.c).sort((a, b) => a.c.p - b.c.p)[0];
   const bits = [
     every ? `${every} of the ${list.length} run every day` : weekend ? `${weekend} of the ${list.length} run on weekends` : `all ${list.length} are weekday happy hours`,
     patio ? `${patio} ${patio === 1 ? "has" : "have"} a patio` : null,
-    drink ? `the cheapest drink on the list is ${dealPhrase(drink.d)} at ${drink.v.name}` : null,
+    drink ? `the cheapest drink on the list is ${dealPhrase(drink.c.d)} at ${drink.v.name}` : null,
   ].filter(Boolean);
   const hi = list[0].score.total.toFixed(1);
   const lo = list.at(-1).score.total.toFixed(1);
@@ -964,7 +968,7 @@ function bestFaq(b) {
   return [
     {
       q: `What's the best happy hour in ${b.name}?`,
-      a: `${a.name}, with a Hangout Score of ${a.score.total.toFixed(1)} out of 10: ${lowerFirst(a.score.notes.value)}.${c ? ` ${f(c)}${d ? ` and ${f(d)}` : ""} round out the top ${d ? "three" : "two"}.` : ""}`,
+      a: `${a.name}, with a Hangout Score of ${a.score.total.toFixed(1)} out of 10: ${valueLine(a.score.notes)}.${c ? ` ${f(c)}${d ? ` and ${f(d)}` : ""} round out the top ${d ? "three" : "two"}.` : ""}`,
     },
     {
       q: `How are these happy hours ranked?`,
@@ -998,7 +1002,7 @@ async function bestPage(b) {
   );
   let description = `The ${list.length} best happy hours in ${b.name}, ranked by our Hangout Score from real menu prices, deals and hours. #1: ${top.name}.${updated ? ` Updated ${fmtDate(updated)}.` : ""}`;
   if (description.length > 160) description = description.replace(/ Updated .*$/, "");
-  const intro = `We scored ${b.scored} ${b.kind === "metro" ? "Metro Vancouver" : b.name} happy hours on the deals and times we publish, the same way for every spot, and these ${list.length} came out on top. ${top.name} leads at ${top.score.total.toFixed(1)} out of 10: ${lowerFirst(top.score.notes.value)}.`;
+  const intro = `We scored ${b.scored} ${b.kind === "metro" ? "Metro Vancouver" : b.name} happy hours on the deals and times we publish, the same way for every spot, and these ${list.length} came out on top. ${top.name} leads at ${top.score.total.toFixed(1)} out of 10: ${valueLine(top.score.notes)}.`;
 
   const cardFile = `best-${b.slug}`;
   const cover = list.map(localPhoto).find(Boolean) ?? null;

@@ -6,6 +6,8 @@
 // City of Vancouver boundary files: the districts people search for
 // (Gastown, Yaletown, Coal Harbour) aren't official local areas anyway.
 
+import { hasAlcohol } from "./hang-score.mjs";
+
 const slugify = (s) =>
   s
     .toLowerCase()
@@ -184,7 +186,8 @@ export function buildBest(venues, places) {
   const lists = [];
   const add = (slug, name, kind, pool) => {
     const scored = pool.filter((v) => v.score);
-    const top = scored.filter((v) => v.score.total >= BEST_FLOOR).sort(byScore).slice(0, BEST_SIZE);
+    // A best happy hour has at least one alcoholic drink deal.
+    const top = scored.filter((v) => v.score.total >= BEST_FLOOR && hasAlcohol(v)).sort(byScore).slice(0, BEST_SIZE);
     if (scored.length >= MIN_BEST && top.length >= BEST_MIN_LISTED) lists.push({ slug, name, kind, scored: scored.length, venues: top });
   };
   add("metro", "Metro Vancouver", "metro", venues);
