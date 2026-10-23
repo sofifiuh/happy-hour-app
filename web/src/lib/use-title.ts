@@ -7,6 +7,6 @@ const SITE = "A Little Hang";
 // site name only when it fits; see lib/seo.ts).
 export function useTitle(title?: string | null, exact = false) {
   useEffect(() => {
-    document.title = title ? (exact ? title : `${title} | ${SITE}`) : `${SITE}: Vancouver happy hours right now`;
+    document.title = title ? (exact ? title : `${title} | ${SITE}`) : `Vancouver Happy Hours Right Now | ${SITE}`;
   }, [title, exact]);
 }

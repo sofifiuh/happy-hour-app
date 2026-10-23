@@ -244,8 +244,8 @@ function venueJsonLd(v, image) {
 }
 
 const SITE_GRAPH = [
-  { "@type": "WebSite", "@id": WEBSITE_ID, url: `${BASE}/`, name: SITE, alternateName: "alittlehang.com", inLanguage: "en-CA", publisher: { "@id": ORG_ID } },
-  { "@type": "Organization", "@id": ORG_ID, name: SITE, url: `${BASE}/`, logo: `${BASE}/icon-512.png` },
+  { "@type": "WebSite", "@id": WEBSITE_ID, url: `${BASE}/`, name: SITE, alternateName: ["alittlehang.com", "A Little Hang Vancouver Happy Hours"], description: `Directory of happy hour times and deals at ${venues.length} bars and restaurants in Vancouver and Metro Vancouver, BC.`, inLanguage: "en-CA", publisher: { "@id": ORG_ID } },
+  { "@type": "Organization", "@id": ORG_ID, name: SITE, url: `${BASE}/`, logo: `${BASE}/icon-512.png`, description: "A Little Hang lists Vancouver happy hours: times, prices and deals taken from each venue's own menu and rechecked nightly.", areaServed: { "@type": "City", name: "Vancouver", containedInPlace: { "@type": "AdministrativeArea", name: "British Columbia" } } },
 ];
 
 // ---------- static markup shared by venue pages ----------
@@ -824,7 +824,7 @@ write(
   "index.html",
   page({
     path: "/",
-    title: "A Little Hang: Vancouver happy hours right now",
+    title: `Vancouver Happy Hours Right Now | ${SITE}`,
     description: HOME_DESC,
     jsonld: { "@context": "https://schema.org", "@graph": SITE_GRAPH },
     body: `<main style="${S.wrap}"><h1 style="${S.h1}">Happy hours in Vancouver</h1><p style="${S.p}">${esc(HOME_DESC)} See what's on right now, what starts next, and where the cheapest pint is tonight.</p>${exploreHtml}<p style="${S.muted};margin-top:24px"><a href="/spots/" style="${S.link}">All ${venues.length} spots A–Z</a></p></main>`,
@@ -845,7 +845,7 @@ for (const [file, path, title, h1, index] of PAGES) {
     file,
     page({
       path,
-      title: title ? `${title} | ${SITE}` : `${SITE}: Vancouver happy hours right now`,
+      title: title ? `${title} | ${SITE}` : `Vancouver Happy Hours Right Now | ${SITE}`,
       description: HOME_DESC,
       robots: index ? undefined : "noindex,follow",
       body: h1 ? `<main style="${S.wrap}">${crumbHtml([{ name: "Happy hours", path: "/" }, { name: h1 }])}<h1 style="${S.h1}">${esc(h1)}</h1></main>` : "",
@@ -881,6 +881,38 @@ write(
   `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${["pages", "venues", "hubs"]
     .map((k) => `  <sitemap><loc>${BASE}/sitemap-${k}.xml</loc>${today ? `<lastmod>${today}</lastmod>` : ""}</sitemap>`)
     .join("\n")}\n</sitemapindex>\n`,
+);
+// llms.txt: a plain-text map of the site for AI search and assistants.
+const cheapest = (re) =>
+  venues
+    .flatMap((v) => v.hh.deals.filter((d) => d.category === "drink" && re.test(d.name)).map((d) => ({ v, p: parsePrice(d.price) })))
+    .filter((x) => x.p && x.p.low > 0)
+    .sort((a, b) => a.p.low - b.p.low)[0];
+const beer = cheapest(/beer|lager|pint|ipa|draught|pilsner|ale\b/i);
+const linkLine = (h, label) => `- [${label}](${BASE}${hubPath(h.slug)}): ${h.venues.length} spots`;
+write(
+  "llms.txt",
+  `# ${SITE}
+
+> ${SITE} (alittlehang.com) is a directory of happy hours in Vancouver and Metro Vancouver, BC: ${venues.length} bars and restaurants with their happy hour days, times and deal prices. Times and prices come from each venue's own menu and are rechecked every night${today ? `; last updated ${today}` : ""}.
+
+Every venue page (${BASE}/spots/<id>.html) lists the happy hour schedule by day, every food and drink deal with its price in CAD, the address, the nearest SkyTrain station and the date the menu was last checked. Hub pages group venues by city, neighbourhood, day and deal.${beer ? ` The cheapest happy hour beer right now is ${money(beer.p.low)} at ${beer.v.name}.` : ""}
+
+## Cities
+${places.filter((p) => p.kind === "city").map((p) => linkLine(p, `Happy hours in ${p.name}`)).join("\n")}
+
+## Vancouver neighbourhoods
+${places.filter((p) => p.kind === "area").map((p) => linkLine(p, `Happy hours in ${p.name}`)).join("\n")}
+
+## By day and deal (Metro Vancouver)
+${topics.map((t) => linkLine(t, t.label)).join("\n")}
+
+## Optional
+- [All ${venues.length} spots A–Z](${BASE}/spots/)
+- [Map](${BASE}/map/)
+- [About](${BASE}/about/)
+- [Sitemap](${BASE}/sitemap.xml)
+`,
 );
 write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /screens\n\nSitemap: ${BASE}/sitemap.xml\n`);
 const cname = resolve(web, "../CNAME");
