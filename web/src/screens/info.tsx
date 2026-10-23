@@ -86,7 +86,7 @@ function About() {
         </li>
       </ul>
       <p className="mt-3">
-        Value, Selection and Hours compare each spot with every other one, so a 9 there means top tenth of the city. Scores update when
+        Value, Selection and Hours compare each spot with every other one, so 8 or more on one of those means roughly the top quarter of the city. Scores update when
         deals or times change. No venue can pay for a score or a higher one, and Google ratings aren't part of it. Spots with too few
         listed deals show no score until we have their menu.
       </p>

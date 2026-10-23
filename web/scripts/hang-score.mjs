@@ -18,7 +18,17 @@ export const WEIGHTS = { value: 0.4, selection: 0.25, hours: 0.2, vibe: 0.15 };
 
 // Things bought by the bottle, jug or platter aren't comparable to a glass or a plate.
 const BULK_RE = /\bbottles?\b|\bjugs?\b|\bpitchers?\b|\bcarafes?\b|\bbuckets?\b|\bdozen\b|\bplatters?\b|\btowers?\b|\bflights?\b|\bfor two\b|\bto share\b|\bbtl\b|\b(500|750|1000) ?ml\b/i;
-const BULK = { test: (d) => BULK_RE.test(`${d.name} ${d.description || ""}`) };
+// Name and price only: "5oz glass (bottle $50)" in a description is still a glass.
+// A description that's only a size ("750 ml bottle") with no glass or pour counts.
+const POUR = /\bglass\b|\boz\b|\d\s*oz|\bpint|\bsleeve|\bschooner|\bsingle\b|\bdouble\b/i;
+const BULK = {
+  test: (d) =>
+    BULK_RE.test(`${d.name} ${d.price || ""}`) || (BULK_RE.test(d.description || "") && !POUR.test(d.description || "")),
+};
+// Drink-plus-food combos ("Beer & Pho $20") aren't a drink price.
+const COMBO = /\bcombo\b|\bmeal\b|\+|\b(pho|burgers?|wings?|pizzas?|tacos?|fries|nachos|sliders?|ramen|noodles?|sandwich(es)?|vermicelli|rice|grill|hot ?dogs?)\b/i;
+const isCombo = (d) => d.category === "drink" && COMBO.test(`${d.name} ${d.description || ""}`);
+const skip = (d) => BULK.test(d) || isCombo(d);
 
 const DRINK_TYPES = [
   ["highball", /highball|\bwell\b|\brail\b|\bshots?\b|\bhi-?ball|spirits?\b|\bbar ?pour/i],
@@ -86,7 +96,7 @@ function hoursFacts(v) {
 }
 
 function scoreable(v) {
-  const priced = v.hh.deals.filter((d) => dealPrice(d) != null && !BULK.test(d));
+  const priced = v.hh.deals.filter((d) => dealPrice(d) != null && !skip(d));
   return v.confidence !== "low" && v.hh.deals.length >= 3 && priced.length >= 2;
 }
 
@@ -103,7 +113,7 @@ export function addHangScores(venues) {
   for (const v of pool)
     for (const d of v.hh.deals) {
       const p = dealPrice(d);
-      if (p == null || BULK.test(d)) continue;
+      if (p == null || skip(d)) continue;
       (byType[dealType(d)] ??= []).push(p);
     }
   const typical = Object.fromEntries(Object.entries(byType).map(([t, ps]) => [t, median(ps)]));
@@ -115,7 +125,7 @@ export function addHangScores(venues) {
     let sum = 0, weight = 0, cheapest = Infinity, under = 0, priced = 0;
     for (const d of v.hh.deals) {
       const p = dealPrice(d);
-      if (p == null || BULK.test(d)) continue;
+      if (p == null || skip(d)) continue;
       const t = dealType(d);
       const r = Math.min(2, Math.max(0.5, typical[t] / p));
       const w = d.category === "drink" ? 1.5 : 1;
@@ -131,7 +141,7 @@ export function addHangScores(venues) {
     // Selection: deal count (to 14), kinds of drink (of 4), and food alongside drinks.
     const drinks = v.hh.deals.filter((d) => d.category === "drink");
     const food = v.hh.deals.filter((d) => d.category === "food");
-    const kinds = new Set(drinks.map(dealType));
+    const kinds = new Set(drinks.filter((d) => !isCombo(d)).map(dealType));
     const selection = 0.5 * Math.min(v.hh.deals.length, 14) / 14 + 0.25 * kinds.size / 4 + 0.25 * (drinks.length && food.length ? 1 : drinks.length ? 0.5 : 0.3);
 
     // Hours: weekly minutes on a log scale, plus weekends and a late-night window.
@@ -173,7 +183,7 @@ const money = (n) => `$${Number.isInteger(n) ? n : n.toFixed(2)}`;
 function notes(v, r) {
   const share = r.under / r.priced;
   const value = [
-    r.cheapest < Infinity ? `Drinks from ${money(r.cheapest)}` : "Food deals only",
+    r.cheapest < Infinity ? `Drinks from ${money(r.cheapest)}` : r.drinks ? "No priced drink deals" : "Food deals only",
     share >= 0.6 ? "most deals under the Vancouver norm" : share >= 0.35 ? "about half under the Vancouver norm" : "priced around or above the Vancouver norm",
   ].join(", ");
   const kinds = ["beer", "wine", "cocktail", "highball"].filter((k) => r.kinds.has(k)).map((k) => KIND_WORDS[k]);
