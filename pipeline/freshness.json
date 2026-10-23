@@ -517,8 +517,7 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "last_ok_at": "2026-10-23",
-  "rendered": true
+  "last_ok_at": "2026-10-23"
  },
  "bellaggio-cafe": {
   "url": "https://images.unoapp.com/boxdata/asset89882/images/50791__BELLAGGIOCAFE-HappyHours-MENU_2.pdf",
@@ -1127,7 +1126,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "9e27831b03c8c28d",
+  "hh_hash": "e5e32b6cabb5576e",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -1217,7 +1216,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "df63cb0e1bae41b1",
+  "hh_hash": "75e92b815997eaca",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -1233,7 +1232,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "349669a1002fa960",
+  "hh_hash": "2543d158a1d3da89",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -1889,8 +1888,7 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "5930ddb9bf2657d5",
-  "last_ok_at": "2026-10-23",
-  "rendered": true
+  "last_ok_at": "2026-10-23"
  },
  "g3-kitchen-and-bar": {
   "url": "https://www.g3kitchen.com/",
@@ -2060,7 +2058,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "fb4a8db6241fff44",
+  "hh_hash": "6ac1af3d52f5fc1c",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -2466,7 +2464,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 5,
+  "fail_count": 6,
   "error": "curl: (6) Could not resolve host: www.jacksonsrestobutcher.com"
  },
  "jamjar-canteen-commercial-dr": {
@@ -4089,7 +4087,7 @@
  "poco-brothers-brewing-co": {
   "url": "https://www.pocobrothersbrewing.com/",
   "checked_at": "2026-10-23",
-  "http_status": 301,
+  "http_status": 200,
   "kind": "html",
   "hh_mentioned": false,
   "times_seen": true,
@@ -4098,8 +4096,7 @@
   "ok": true,
   "fail_count": 0,
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23",
-  "rendered": true
+  "last_confirmed_at": "2026-10-23"
  },
  "port-moody-legion-club-119": {
   "url": "https://www.legion119.ca/food-drinks/",
@@ -4435,7 +4432,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 5,
+  "fail_count": 6,
   "error": "curl: (6) Could not resolve host: romersurgerbar.com"
  },
  "rongsi-rong-see-thai-bar-bistro": {
@@ -4961,18 +4958,17 @@
  "starlight-casino": {
   "url": "https://starlightcasino.ca/casino-happy-hour/",
   "checked_at": "2026-10-23",
-  "http_status": 202,
+  "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "37ffff41811e7b1a",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-22",
-  "rendered": true
+  "last_confirmed_at": "2026-10-23"
  },
  "steamworks-mount-pleasant": {
   "url": "https://steamworks.com/wp-content/uploads/2026/03/SWMP_Mar2026_print.pdf",
@@ -5775,7 +5771,7 @@
  "the-naam": {
   "url": "http://www.thenaam.com/menu",
   "checked_at": "2026-10-23",
-  "http_status": 200,
+  "http_status": 301,
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": true,
@@ -5783,9 +5779,11 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "13b3a3a0bf94dd10",
+  "hh_hash": "5c6d18dae49443bc",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23"
+  "last_confirmed_at": "2026-10-23",
+  "rendered": true,
+  "changed_at": "2026-10-23"
  },
  "the-narrow-lounge": {
   "url": "https://narrowgroup.ca/project/the-narrow/",
@@ -6373,11 +6371,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "fd54baaf65c2b681",
+  "hh_hash": "822221b689c67deb",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
-  "rendered": true,
-  "changed_at": "2026-10-22"
+  "changed_at": "2026-10-23"
  },
  "union-latino-s-food": {
   "url": "https://www.unionlatinosrestaurant.com/event-details/happy-hour-2024-03-07-15-00",

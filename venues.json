@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-23-f59e6696",
+ "data_version": "2026-10-23-54a7884b",
  "venues": [
   {
    "id": "ancora",
@@ -18244,12 +18244,12 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://starlightcasino.ca/casino-happy-hour/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-23",
-    "last_confirmed_at": "2026-10-22"
+    "last_confirmed_at": "2026-10-23"
    }
   },
   {
