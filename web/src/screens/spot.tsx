@@ -23,7 +23,7 @@ import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes
 import { dayRuns, nearby, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
-import type { Category, Venue } from "@/lib/types";
+import type { Category, Photo, Venue } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 
@@ -92,7 +92,7 @@ export function Spot() {
   const location = deviceLocation ?? area;
   const km = location && venue.lat != null && venue.lng != null ? distanceKm(location, { lat: venue.lat, lng: venue.lng }) : null;
   const pills = amenityPills(venue);
-  const photos = venue.photo ? [venue.photo, ...(venue.gallery ?? [])] : [];
+  const photos: Photo[] = venue.photo ? [{ src: venue.photo, credit: venue.photoCredit, link: venue.photoCreditUrl ?? null }, ...(venue.gallery ?? [])] : [];
   const q = encodeURIComponent(`${venue.name}, ${venue.address}`);
 
   const isSaved = saved.includes(venue.id);

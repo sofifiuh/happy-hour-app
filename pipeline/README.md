@@ -39,6 +39,20 @@ venues that already have results), `--model <id>` (extract, default
    (PERFECT/GOOD/PARTIAL/WRONG/NOT-FOUND/NO-DATA). `--write` saves
    `pipeline/REPORT.md`.
 
+## Venue photos (daily, automated)
+
+`site-photos.js` (`.github/workflows/refresh-photos.yml`, daily) renders a
+venue's homepage plus up to three about / gallery / "our space" pages in
+Chromium, collects every large image, and keeps the ones that pass the site
+build's own check (`web/scripts/photo-quality.mjs`: no logos, graphics,
+near-black or tiny images), one copy of each. It stores URLs only, each with
+the page it came from, in `site-photos.json`. `writeback.js` then swaps a
+cover that is missing, a logo, too dark or a Places stand-in for the
+brightest site photo, and puts the rest in `photos` for the venue page
+gallery. Every one credits the venue and links back to its page; the site
+build (`web/scripts/photos.mjs`) downloads and resizes them, so the app
+never hotlinks. Venues are re-checked every 30 days, worst covers first.
+
 ## Engine & auth
 
 `lib/claude.js` calls headless `claude -p` — it reuses the machine's

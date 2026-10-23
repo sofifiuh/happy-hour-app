@@ -1,0 +1,90 @@
+name: Refresh venue photos
+
+# Looks for real photos deeper in each venue's own website (about, gallery,
+# our space pages) for venues whose cover is missing, a logo, too dark or a
+# Google Places stand-in, and fills venue page galleries. See
+# pipeline/site-photos.js. Commits pipeline/site-photos.json and venues.json
+# to main and redeploys; the site build downloads and resizes the photos.
+on:
+  schedule:
+    - cron: "41 12 * * *" # after the daily data refresh and site build
+  # PRs touching the photo finder try it on a few venues (nothing is committed).
+  pull_request:
+    paths: ["pipeline/site-photos.js", "web/scripts/photo-quality.mjs", ".github/workflows/refresh-photos.yml"]
+  workflow_dispatch:
+    inputs:
+      max:
+        description: "Max venues to check this run"
+        default: "150"
+      only:
+        description: "Only these venue ids (comma separated)"
+        default: ""
+
+permissions:
+  contents: write
+  actions: write
+
+# Shares the data refresh's group so the two never push venues.json at once.
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    env:
+      DRY_RUN: ${{ github.event_name == 'pull_request' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install pipeline deps, Chromium and sharp
+        run: |
+          (cd pipeline && npm ci && npx playwright-core install --with-deps chromium)
+          (cd web && npm ci)
+
+      - name: Find photos
+        run: >-
+          node pipeline/site-photos.js
+          --max "${{ inputs.max || '150' }}"
+          ${{ env.DRY_RUN == 'true' && '--only nova-kitchen-bar,sobu-social,the-keg-steakhouse-bar-yaletown,carano,homer-st-cafe-and-bar' || '' }}
+          ${{ inputs.only && format('--only {0}', inputs.only) || '' }}
+
+      - name: Apply to venues.json
+        run: |
+          node pipeline/writeback.js > writeback.log && grep -m1 "^venues.json" writeback.log
+          node pipeline/build-pages.js > build-pages.log && tail -1 build-pages.log
+
+      - name: Commit data
+        id: commit
+        if: env.DRY_RUN != 'true'
+        run: |
+          git config user.name "a-little-hang-data"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pipeline/site-photos.json venues.json spots sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No photo changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git commit -m "data: venue photos $(date -u +%F)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN don't trigger other workflows, so
+      # redeploy explicitly.
+      - name: Redeploy site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: site-photos
+          path: pipeline/site-photos.json
+          if-no-files-found: ignore

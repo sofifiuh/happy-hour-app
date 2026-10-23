@@ -34,6 +34,7 @@ const previousById = new Map(readJson(VENUES_FILE, { venues: [] }).venues.map((v
 const DISCOVERED_STORE = path.join(REPO_ROOT, "pipeline", "discovered.json");
 const PLACES_STORE = path.join(REPO_ROOT, "pipeline", "places.json");
 const PHOTOS_STORE = path.join(REPO_ROOT, "pipeline", "photos.json");
+const SITE_PHOTOS_STORE = path.join(REPO_ROOT, "pipeline", "site-photos.json");
 const TODAY = new Date().toISOString().slice(0, 10);
 
 const skipped = [];
@@ -112,6 +113,7 @@ const DISCOVERED_DEFAULTS = {
 // merge the identity captured by places-discover.js (no second API pass).
 const places = readJson(PLACES_STORE, {});
 const placePhotos = readJson(PHOTOS_STORE, {});
+const sitePhotos = readJson(SITE_PHOTOS_STORE, {});
 
 /** Apply a fresh extraction to an already-stored discovered venue. These
  *  records are unverified, so a clean re-extraction updates their whole
@@ -253,6 +255,19 @@ let merged = loadSeed().map((v) => {
       good_for_groups: va.good_for_groups ?? ga.good_for_groups ?? null,
     },
   };
+}).map((v) => {
+  // Photos from deeper in the venue's own site (pipeline/site-photos.js):
+  // a real photo replaces a cover that is missing, a logo, too dark, or a
+  // Places stand-in, and the rest fill the venue page's gallery. Each one
+  // credits the venue and links back to the page it came from.
+  const sp = sitePhotos[v.id];
+  if (!sp) return v;
+  const official = (p) => ({ url: p.url, credit_name: v.name, credit_url: p.page, source: "official_website" });
+  const swap = sp.cover && (sp.cover_problem || !v.cover_image?.url || v.cover_image.source === "google_places");
+  const cover = swap ? official(sp.cover) : v.cover_image;
+  const seen = new Set([cover?.url]);
+  const photos = [...(v.photos || []), ...(swap ? [] : sp.cover ? [official(sp.cover)] : []), ...sp.gallery.map(official)].filter((p) => p?.url && !seen.has(p.url) && seen.add(p.url));
+  return { ...v, cover_image: cover, photos };
 }).map((v) => {
   // Places photo backfill (pipeline/places-photos.js): only for venues whose
   // own site never yielded a cover — an official image always wins.

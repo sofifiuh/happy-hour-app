@@ -6,6 +6,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { AREAS, buildHubs, hubPath } from "./seo-data.mjs";
 import { addHangScores } from "./hang-score.mjs";
+import { galleryStem } from "./photo-quality.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "../..");
@@ -52,15 +53,25 @@ function cleanAddress(a) {
   return parts.join(", ");
 }
 
-// Every photo after the cover, for the venue page's gallery (https only,
-// cover removed, at most 8).
+// Every photo after the cover, for the venue page's gallery (at most 8):
+// the local WebP from scripts/photos.mjs when it has one, else the https
+// original until the next photo refresh. Each carries its credit and the
+// page it came from, which the photo viewer links to.
 function galleryFor(v) {
   const cover = v.cover_image?.url;
-  const urls = (v.photos || [])
-    .map((p) => p?.url)
-    .filter((u) => u && /^https?:/.test(u) && u !== cover && !looksLikeLogo(u))
-    .map((u) => u.replace(/^http:/, "https:"));
-  return [...new Set(urls)].slice(0, 8);
+  const seen = new Set();
+  const list = [];
+  for (const p of v.photos || []) {
+    const url = p?.url;
+    if (!url || !/^https?:/.test(url) || url === cover || looksLikeLogo(url) || seen.has(url)) continue;
+    seen.add(url);
+    const stem = galleryStem(v.id, url);
+    if (quality[`g/${stem}`]?.problem) continue;
+    const local = existsSync(resolve(out, "photos", "g", `${stem}.webp`));
+    list.push({ src: local ? `photos/g/${stem}.webp` : url.replace(/^http:/, "https:"), credit: p.credit_name || null, link: p.credit_url || null });
+    if (list.length === 8) break;
+  }
+  return list;
 }
 
 // Some names arrive in all caps ("ARC RESTAURANT"); show them in title case.
@@ -94,6 +105,16 @@ function sourceOf(v) {
   return { url, kind, host: ELSEWHERE.test(host(url)) ? host(url) : null };
 }
 
+// When the cover didn't pass but the gallery has photos, the first one
+// becomes the cover rather than leaving the placeholder.
+function photosOf(v) {
+  const gallery = galleryFor(v);
+  const photo = photoFor(v);
+  if (photo) return { photo, photoCredit: v.cover_image?.credit_name || null, photoCreditUrl: v.cover_image?.credit_url || null, gallery };
+  const [first, ...rest] = gallery;
+  return { photo: first?.src ?? null, photoCredit: first?.credit ?? null, photoCreditUrl: first?.link ?? null, gallery: rest };
+}
+
 const slim = venues
   .filter((v) => v.business_status !== "CLOSED_PERMANENTLY")
   .map((v) => ({
@@ -112,9 +133,7 @@ const slim = venues
     website: v.website || null,
     rating: v.rating ?? null,
     ratings: v.user_ratings_total ?? null,
-    photo: photoFor(v),
-    photoCredit: v.cover_image?.credit_name || null,
-    gallery: galleryFor(v),
+    ...photosOf(v),
     hh: {
       days: v.happy_hour.days,
       start: v.happy_hour.start,
