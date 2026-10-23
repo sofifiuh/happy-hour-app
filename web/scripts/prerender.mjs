@@ -304,6 +304,17 @@ ${
     ? [drinks.length && `<h3 style="${S.h3}">Drinks</h3>\n${dealRows(drinks)}`, food.length && `<h3 style="${S.h3}">Food</h3>\n${dealRows(food)}`].filter(Boolean).join("\n")
     : `<p style="${S.muted}">This spot runs a happy hour but doesn't publish its deals online.${v.website ? ` <a href="${esc(v.website)}" rel="noopener" style="${S.link}">Check their menu</a>.` : ""}</p>`
 }
+${
+  // Our own Hang Score as plain text only: no Review/Rating markup, since
+  // it's a computed score rather than reviews from people.
+  v.score
+    ? `<h2 style="${S.h2}">How this happy hour scores</h2>
+<p><b>Hang Score ${v.score.total.toFixed(1)} out of 10.</b> <span style="color:#a7a196">From the deals and times on this page; <a href="/about" style="${S.link}">how we score</a>.</span></p>
+${[["Value", "value"], ["Selection", "selection"], ["Hours", "hours"], ["Vibe", "vibe"]]
+  .map(([label, k]) => `<div style="${S.row}"><span>${label}<br><small style="color:#a7a196">${esc(v.score.notes[k])}</small></span><span>${v.score[k].toFixed(1)}</span></div>`)
+  .join("\n")}`
+    : ""
+}
 <h2 style="${S.h2}">Happy hour times</h2>
 ${dayRuns(v)
   .map((r) => `<div style="${S.row}"><span>${runLabel(r.days)}</span><span>${r.wins.length ? r.wins.map((w) => `${w.label ? `${esc(w.label)} ` : ""}${fmtRange(w.start, w.end)}`).join(" · ") : "None"}</span></div>`)

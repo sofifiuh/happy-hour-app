@@ -63,6 +63,33 @@ function About() {
         Verified have been checked against their current menu by a person. Times change, so if something looks off, tap "Report a wrong
         time" on the spot's page and we'll fix it.
       </p>
+      <H>
+        <span id="hang-score">How the Hang Score works</span>
+      </H>
+      <p>
+        Every happy hour with enough deal info gets a Hang Score out of 10. It's worked out from what's on the spot's page, the same way
+        for every venue:
+      </p>
+      <ul className="mt-2 list-disc space-y-1 pl-5">
+        <li>
+          <b className="text-cream">Value (40%)</b>: each deal's price against what Vancouver spots typically charge for the same kind of
+          thing (a pint, a glass of wine, a cocktail, oysters), plus how cheap the cheapest drink is.
+        </li>
+        <li>
+          <b className="text-cream">Selection (25%)</b>: how many deals, how many kinds of drink, and whether there's food too.
+        </li>
+        <li>
+          <b className="text-cream">Hours (20%)</b>: hours of happy hour a week, weekends, and a late-night window.
+        </li>
+        <li>
+          <b className="text-cream">Vibe (15%)</b>: patio, live music, good for groups, and near transit.
+        </li>
+      </ul>
+      <p className="mt-3">
+        Value, Selection and Hours compare each spot with every other one, so 8 or more on one of those means roughly the top quarter of the city. Scores update when
+        deals or times change. No venue can pay for a score or a higher one, and Google ratings aren't part of it. Spots with too few
+        listed deals show no score until we have their menu.
+      </p>
       <H>Made in Vancouver</H>
       <p>Designed by Sofia. Built for people who like a deal and a good patio.</p>
     </>

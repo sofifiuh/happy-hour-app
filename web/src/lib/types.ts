@@ -44,6 +44,9 @@ export interface Venue {
     verified: boolean;
     source: string | null;
   };
+  // Our own 0-10 rating of the happy hour (scripts/hang-score.mjs);
+  // null when there isn't enough deal info to score it fairly.
+  score?: HangScore | null;
   amenities: {
     patio: boolean;
     accessible: boolean;
@@ -53,6 +56,9 @@ export interface Venue {
     groups: boolean;
   };
 }
+
+export type ScorePart = "value" | "selection" | "hours" | "vibe";
+export type HangScore = Record<ScorePart | "total", number> & { notes: Record<ScorePart, string> };
 
 export type Status = "live" | "upcoming" | "scheduled" | "none";
 

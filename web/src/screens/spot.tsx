@@ -2,6 +2,7 @@ import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Globe, Heart, I
 import { type CSSProperties, useCallback, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
+import { ScoreCard, ScoreChip } from "@/components/hang-score";
 import { MiniMap } from "@/components/mini-map";
 import { NotifyDrawer, remindersAsked } from "@/components/notify-drawer";
 import { PhotoViewer } from "@/components/photo-viewer";
@@ -167,6 +168,15 @@ export function Spot() {
           {km != null && walkLabel(km) && <span className="text-sky-fg"> · {walkLabel(km)}</span>}
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-[13px]">
+          {venue.score && (
+            <button
+              onClick={() => document.getElementById("hang-score")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+              aria-label={`${venue.score.total.toFixed(1)} Hang Score out of 10, see how it scores`}
+              className="-my-3 inline-flex min-h-11 items-center gap-1.5 font-semibold"
+            >
+              <ScoreChip score={venue.score} /> Hang Score
+            </button>
+          )}
           {venue.rating != null && (
             <span className="inline-flex items-center gap-1">
               <Star className="size-3.5 fill-amber text-amber-fg" /> {venue.rating.toFixed(1)}
@@ -247,6 +257,13 @@ export function Spot() {
           )}
         </div>
       </section>
+
+      {venue.score && (
+        <section id="hang-score" style={{ "--i": 3 } as CSSProperties} className="animate-rise mt-8 scroll-mt-6 px-5">
+          <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">How this happy hour scores</h2>
+          <ScoreCard score={venue.score} />
+        </section>
+      )}
 
       {/* Schedule */}
       <section style={{ "--i": 3 } as CSSProperties} className="animate-rise mt-8 px-5">
