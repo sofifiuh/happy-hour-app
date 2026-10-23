@@ -1,5 +1,6 @@
 import { CalendarClock } from "lucide-react";
 import { DAY_SHORT, fmtTime } from "@/lib/hours";
+import { track } from "@/lib/analytics";
 import { useStore, type TimeTab } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
@@ -26,7 +27,10 @@ export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; cl
           role="tab"
           aria-selected={filters.tab === t.key}
           className={chip(filters.tab === t.key)}
-          onClick={() => setFilters({ tab: t.key })}
+          onClick={() => {
+            setFilters({ tab: t.key });
+            if (t.key !== "all") track({ name: "filter_applied", filter: t.key });
+          }}
         >
           {t.key === "live" && <span className={cn("size-2 rounded-full bg-lime dot-ring", filters.tab === "live" && "bg-lime-inv outline-transparent")} />}
           {t.label}

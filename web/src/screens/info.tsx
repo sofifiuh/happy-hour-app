@@ -100,7 +100,7 @@ function About() {
 function Privacy() {
   return (
     <>
-      <p className="mt-2">The short version: we don't have accounts, and what you do in the app stays on your device.</p>
+      <p className="mt-2">The short version: we don't have accounts, your location and saved spots stay on your device, and our analytics is cookieless and anonymous.</p>
       <H>Location</H>
       <p>
         If you allow it, your location is used on your device to sort spots by walking distance. It isn't sent to us or stored. You can
@@ -113,9 +113,15 @@ function Privacy() {
       </p>
       <H>Usage data</H>
       <p>
-        We don't use analytics, advertising or tracking tools. If we ever add anonymous usage counts to improve the app, this page
-        will say which tool and what it collects before it's switched on.
+        We use PostHog for cookieless, privacy-friendly analytics, so we can see which features help and fix what doesn't. It sets no
+        cookies, stores no identifier on your device, records no sessions or screens, and we don't use it for advertising.
       </p>
+      <p className="mt-3">What we count: pages viewed, and a few actions such as searching (not what you typed), turning on a filter,
+        opening a venue, saving, sharing, asking for directions and installing the app. Like any web request, these reach PostHog's
+        servers in the US with your browser type and IP address, which PostHog uses for a rough location. We don't collect your name,
+        email, precise location or anything you type.</p>
+      <p className="mt-3">If your browser sends Do Not Track, analytics stays off. We don't use any other analytics, advertising or
+        tracking tools.</p>
       <H>Links to other sites</H>
       <p>Venue websites, maps and phone links open other services, which have their own privacy policies.</p>
     </>
