@@ -382,6 +382,7 @@ a{color:inherit}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 18px/1 "Funnel Display",system-ui,sans-serif;letter-spacing:-.02em}
 .brand svg{width:46px;height:44px;fill:var(--orange)}
 .cta{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:999px;background:var(--orange);color:#1b1b1b;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap}
+@media (prefers-color-scheme:light){.cta{color:#fff}}
 main{max-width:46rem;margin:0 auto;padding:20px max(20px,env(safe-area-inset-right)) 72px max(20px,env(safe-area-inset-left))}
 .crumbs{font-size:14px;color:var(--dim);margin:4px 0 0}
 .crumbs a{color:var(--dim)}
