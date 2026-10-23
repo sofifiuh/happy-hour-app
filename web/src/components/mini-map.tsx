@@ -44,14 +44,14 @@ export function MiniMap({ lat, lng, others = [], className }: { lat: number; lng
             style,
             center: [lng, lat],
             zoom: 15.5,
-            ...(dLat || dLng
-              ? { bounds: [[lng - dLng, lat - dLat], [lng + dLng, lat + dLat]] as [[number, number], [number, number]], fitBoundsOptions: { padding: { top: 22, left: 22, right: 22, bottom: 34 }, maxZoom: 15.5 } }
-              : {}),
             interactive: false,
             attributionControl: false,
           });
+          // Fit once the style has loaded and the map has its real size.
           if (pts.length)
             m.once("load", () => {
+              if (dLat || dLng)
+                m.fitBounds([[lng - dLng, lat - dLat], [lng + dLng, lat + dLat]], { padding: { top: 22, left: 22, right: 22, bottom: 34 }, maxZoom: 15.5, duration: 0 });
               m.addSource("nearby", {
                 type: "geojson",
                 data: { type: "FeatureCollection", features: pts.map((c) => ({ type: "Feature", properties: {}, geometry: { type: "Point", coordinates: c } })) },
@@ -81,7 +81,9 @@ export function MiniMap({ lat, lng, others = [], className }: { lat: number; lng
 
   return (
     <div className={cn("relative overflow-hidden bg-ink-3", className)} aria-hidden>
-      <div ref={box} className={cn("absolute inset-0 transition-opacity duration-500", ready ? "opacity-100" : "opacity-0")} />
+      {/* size-full: MapLibre's own CSS makes the box position: relative,
+          which would leave it 0px tall without an explicit height. */}
+      <div ref={box} className={cn("absolute inset-0 size-full transition-opacity duration-500", ready ? "opacity-100" : "opacity-0")} />
       <span className="pointer-events-none absolute top-1/2 left-1/2 size-5 -translate-1/2 rounded-full border-2 border-on-pop bg-orange ring-4 ring-orange/30" />
       <span className="pointer-events-none absolute right-1.5 bottom-1 text-[10px] text-cream/80">© OpenStreetMap © CARTO</span>
     </div>
