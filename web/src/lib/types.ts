@@ -25,6 +25,9 @@ export interface Venue {
   hubs?: string[];
   checked: string | null; // "YYYY-MM-DD" the times last matched the venue's own page
   confidence: "high" | "medium" | "low" | null;
+  // The page, menu PDF or menu photo the times were read from. host is set
+  // only when it isn't the venue's own site (a listing elsewhere).
+  source?: { url: string; kind: "page" | "pdf" | "image"; host: string | null } | null;
   lat: number | null;
   lng: number | null;
   phone: string | null;

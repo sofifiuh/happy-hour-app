@@ -20,7 +20,7 @@ import { goBack } from "@/lib/motion";
 import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
-import { dayRuns, nearby, runLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
+import { dayRuns, nearby, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
 import type { Category, Venue } from "@/lib/types";
@@ -189,6 +189,14 @@ export function Spot() {
             </Badge>
           )}
           {checked && <span className="text-muted-foreground">Times checked {checked}</span>}
+          {venue.source && (
+            <span className="text-muted-foreground">
+              Source:{" "}
+              <a href={venue.source.url} target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2 hover:text-cream">
+                {sourceLabel(venue)}
+              </a>
+            </span>
+          )}
         </div>
         {pills.length > 0 && (
           <div className="no-scrollbar -mx-5 mt-4 flex gap-2 overflow-x-auto px-5">

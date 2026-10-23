@@ -176,6 +176,17 @@ export function venueFaq(v: Venue) {
   ];
 }
 
+// ---------- source ----------
+// "their menu (PDF)", "a page on facebook.com". Menu files often sit on a
+// site builder's file host, so only pages count as somewhere else.
+export function sourceLabel(v: Venue) {
+  const s = v.source;
+  if (!s) return null;
+  if (s.kind === "pdf") return "their menu (PDF)";
+  if (s.kind === "image") return "a photo of their menu";
+  return s.host ? `a page on ${s.host}` : "their website";
+}
+
 // ---------- nearby ----------
 export function nearby(v: Venue, venues: Venue[], n = 6) {
   if (v.lat == null || v.lng == null) return [];

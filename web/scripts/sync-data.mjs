@@ -73,6 +73,22 @@ function displayName(name) {
 
 const { data_version, venues } = JSON.parse(readFileSync(resolve(root, "venues.json"), "utf8"));
 
+// Where the times were read from, for the "Source" line on venue pages.
+const host = (u) => {
+  try {
+    return new URL(u).hostname.replace(/^www\./, "");
+  } catch {
+    return null;
+  }
+};
+function sourceOf(v) {
+  const url = v.trust?.source_url;
+  if (!url || !host(url)) return null;
+  const kind = /\.pdf(\?|$)/i.test(url) ? "pdf" : /\.(jpe?g|png|webp)(\?|$)/i.test(url) ? "image" : "page";
+  const own = !v.website || host(v.website) === host(url);
+  return { url, kind, host: own ? null : host(url) };
+}
+
 const slim = venues
   .filter((v) => v.business_status !== "CLOSED_PERMANENTLY")
   .map((v) => ({
@@ -84,6 +100,7 @@ const slim = venues
     // own page (pipeline freshness check); fall back to the last sync.
     checked: v.trust?.last_confirmed_at || (v.last_synced_at ? String(v.last_synced_at).slice(0, 10) : null),
     confidence: v.trust?.confidence || null,
+    source: sourceOf(v),
     lat: v.geometry?.location?.lat ?? null,
     lng: v.geometry?.location?.lng ?? null,
     phone: v.formatted_phone_number || null,

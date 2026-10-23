@@ -59,9 +59,10 @@ function About() {
       </p>
       <H>Where the times come from</H>
       <p>
-        We gather happy hour times and menus from each venue's own website and listings, and re-check them regularly. Spots marked
-        Verified have been checked against their current menu by a person. Times change, so if something looks off, tap "Report a wrong
-        time" on the spot's page and we'll fix it.
+        We read happy hour times and deals from each venue's own website: their happy hour page, a menu PDF, or a photo of the menu. A
+        few come from a listing elsewhere when the venue doesn't publish one. Every night we re-check each source, and each spot's page
+        links to the exact page we read and the date it last matched. Spots marked Verified have also been checked against their current
+        menu by a person. Times change, so if something looks off, tap "Report a wrong time" on the spot's page and we'll fix it.
       </p>
       <H>
         <span id="hang-score">How the Hang Score works</span>
