@@ -171,7 +171,7 @@ export function Spot() {
           {venue.score && (
             <button
               onClick={() => document.getElementById("hang-score")?.scrollIntoView({ behavior: "smooth", block: "start" })}
-              aria-label={`Hang Score ${venue.score.total.toFixed(1)} out of 10, see how it scores`}
+              aria-label={`${venue.score.total.toFixed(1)} Hang Score out of 10, see how it scores`}
               className="-my-3 inline-flex min-h-11 items-center gap-1.5 font-semibold"
             >
               <ScoreChip score={venue.score} /> Hang Score
