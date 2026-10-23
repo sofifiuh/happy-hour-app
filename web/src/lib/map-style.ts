@@ -69,3 +69,22 @@ export const PIN_PAINT = {
   dark: { stroke: "#1b1b1b", strokeWidth: 1.5, hover: "#f3efe4" },
   light: { stroke: "#1b1b1b", strokeWidth: 2, hover: "#1b1b1b" },
 } as const;
+
+// Numbered pins that would overlap at the current zoom step aside: each one
+// tries its spot, then 34px out at eight angles, until it clears the pins
+// already placed (higher ranks first, so #1 stays on its address).
+export function spreadMarkers(m: maplibregl.Map, markers: maplibregl.Marker[], gap = 32) {
+  const placed: { x: number; y: number }[] = [];
+  for (const mk of markers) {
+    const p = m.project(mk.getLngLat());
+    let off: [number, number] = [0, 0];
+    for (let k = 0; k <= 16; k++) {
+      const r = k === 0 ? 0 : 34 * Math.ceil(k / 8);
+      const a = (k * Math.PI) / 4;
+      off = [Math.round(r * Math.cos(a)), Math.round(r * Math.sin(a))];
+      if (!placed.some((q) => Math.hypot(q.x - p.x - off[0], q.y - p.y - off[1]) < gap)) break;
+    }
+    mk.setOffset(off);
+    placed.push({ x: p.x + off[0], y: p.y + off[1] });
+  }
+}

@@ -4,7 +4,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { AREAS, buildHubs, hubPath } from "./seo-data.mjs";
+import { AREAS, buildBest, buildHubs, hubPath } from "./seo-data.mjs";
 import { addHangScores } from "./hang-score.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
@@ -174,6 +174,11 @@ for (const v of slim) {
   v.hubs = [...own, ...mine].map((slug) => hubPath(slug));
 }
 
-writeFileSync(resolve(out, "venues.json"), JSON.stringify({ data_version, hubs, venues: slim }));
+// Best-of lists (ranked by Hangout Score) for the app's "Best of" screen and
+// the prerendered /happy-hour/<place>/best/ pages, which both read this copy.
+const best = buildBest(slim, places).map((b) => ({ slug: b.slug, name: b.name, kind: b.kind, scored: b.scored, ids: b.venues.map((v) => v.id) }));
+
+writeFileSync(resolve(out, "venues.json"), JSON.stringify({ data_version, hubs, best, venues: slim }));
 console.log(`sync-data: ${places.length} place hubs, ${topics.length} topic hubs, ${combos.length} combinations`);
+console.log(`sync-data: ${best.length} best-of lists`);
 console.log(`sync-data: ${slim.length} venues (${data_version}), ${scored} with a Hangout Score`);

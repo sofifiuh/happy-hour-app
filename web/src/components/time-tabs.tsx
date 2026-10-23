@@ -1,4 +1,6 @@
-import { CalendarClock } from "lucide-react";
+import { CalendarClock, Trophy } from "lucide-react";
+import { Link } from "react-router";
+import { setNav } from "@/lib/motion";
 import { DAY_SHORT, fmtTime } from "@/lib/hours";
 import { track } from "@/lib/analytics";
 import { useStore, type TimeTab } from "@/lib/store";
@@ -10,7 +12,8 @@ const TABS: { key: Exclude<TimeTab, "plan">; label: string }[] = [
   { key: "upcoming", label: "Upcoming" },
 ];
 
-// All / Happening now / Upcoming / Date & Time, as in Sofia's list header.
+// All / Happening now / Upcoming / Date & Time, as in Sofia's list header,
+// led by a "Best of" link to the ranked lists (screens/best.tsx).
 export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; className?: string }) {
   const { filters, setFilters } = useStore();
   const planLabel = filters.tab === "plan" && filters.plan ? `${DAY_SHORT[filters.plan.day]}, ${fmtTime(filters.plan.time)}` : "Date & Time";
@@ -20,7 +23,17 @@ export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; cl
       active ? "bg-cream text-ink" : "bg-ink-3 text-cream/80 hover:text-cream",
     );
   return (
-    <div role="tablist" className={cn("no-scrollbar fade-x flex gap-2 overflow-x-auto px-4 py-1", className)}>
+    <div className={cn("no-scrollbar fade-x flex gap-2 overflow-x-auto px-4 py-1", className)}>
+      <Link
+        to="/best"
+        viewTransition
+        onClick={() => setNav("forward")}
+        className="inline-flex h-11 shrink-0 items-center gap-1.5 rounded-full bg-lime/15 px-4 text-[14px] font-semibold text-lime-fg ring-1 ring-lime/30 transition-[background-color,transform] duration-200 hover:bg-lime/25 active:scale-95"
+      >
+        <Trophy className="size-4" />
+        Best of
+      </Link>
+      <div role="tablist" className="contents">
       {TABS.map((t) => (
         <button
           key={t.key}
@@ -40,6 +53,7 @@ export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; cl
         <CalendarClock className="size-4" />
         {planLabel}
       </button>
+      </div>
     </div>
   );
 }

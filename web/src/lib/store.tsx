@@ -2,7 +2,7 @@ import { asset, queryParams } from "@/lib/routes";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { AREAS, distanceKm, nearestArea, type Area, type LatLng } from "./geo";
 import { occurrence, occurrenceAt } from "./hours";
-import type { Hub, Occurrence, Venue } from "./types";
+import type { BestList, Hub, Occurrence, Venue } from "./types";
 
 const CACHE_KEY = "alh:venues";
 const VERSION_KEY = "alh:venues-version";
@@ -39,6 +39,7 @@ export interface Row {
 interface Store {
   venues: Venue[];
   hubs: Record<string, Hub>; // hub pages by slug, once the network copy arrives
+  best: BestList[]; // best-of lists, once the network copy arrives
   loading: boolean;
   now: Date;
   location: LatLng; // device location, else the neighbourhood (Downtown by default)
@@ -150,6 +151,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [venues, setVenues] = useState<Venue[]>(readCache);
   const [loading, setLoading] = useState(venues.length === 0);
   const [hubs, setHubs] = useState<Record<string, Hub>>({});
+  const [best, setBest] = useState<BestList[]>([]);
   const [now, setNow] = useState(() => new Date());
   const [deviceLocation, setLocation] = useState<LatLng | null>(null);
   const [area, setAreaState] = useState<Area | null>(() => (IS_FRAME ? null : readJSON<Area | null>(AREA_KEY, null)));
@@ -169,8 +171,9 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     fetch(asset("venues.json"), { cache: "no-cache" })
       .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
-      .then(({ data_version, hubs: index, venues: fresh }: { data_version: string; hubs?: Record<string, Hub>; venues: Venue[] }) => {
+      .then(({ data_version, hubs: index, best: lists, venues: fresh }: { data_version: string; hubs?: Record<string, Hub>; best?: BestList[]; venues: Venue[] }) => {
         setHubs(index ?? {});
+        setBest(lists ?? []);
         let cached: string | null = null;
         try {
           cached = localStorage.getItem(VERSION_KEY);
@@ -303,6 +306,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const value: Store = {
     venues,
     hubs,
+    best,
     loading,
     now,
     location,
