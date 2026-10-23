@@ -901,7 +901,9 @@ function aboutHtml() {
 <p style="${S.p}">A product designer for many years. She designed how A Little Hang looks and works, from the first screen to the last tap.</p>
 <p style="${S.p};margin-top:12px">Jason and Sofia are married, and built A Little Hang together.</p>
 <h2 style="${S.h2}">Where the times come from</h2>
-<p style="${S.p}">We read happy hour times and deals from each venue's own website, menu PDF or menu photo, re-check every source each night, and link each spot to the exact page we read. No venue can pay for its <a href="/about/#hang-score" style="${S.link}">Hangout Score</a>.</p>
+<p style="${S.p}">We read happy hour times and deals from each venue's own website, menu PDF or menu photo, re-check every source each night, and link each spot to the exact page we read.</p>
+<h2 id="hang-score" style="${S.h2}">How the Hangout Score works</h2>
+<p style="${S.p}">Every happy hour with enough deal info gets a Hangout Score out of 10, worked out the same way for every venue: value (40%), selection (25%), hours (20%) and vibe (15%). No venue can pay for a score or a higher one, and Google ratings aren't part of it.</p>
 <p style="${S.muted};margin-top:24px">Questions or corrections: <a href="mailto:jason@setsail.ca" style="${S.link}">jason@setsail.ca</a></p>`;
 }
 

@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
-import { Link } from "react-router";
+import { useEffect, type ReactNode } from "react";
+import { Link, useLocation } from "react-router";
 import { PageHeader } from "@/components/page-header";
 import { Wordmark } from "@/components/wordmark";
 import { SUPPORT_EMAIL } from "@/lib/links";
@@ -12,6 +12,11 @@ const TITLES: Record<InfoPage, string> = { about: "About", privacy: "Privacy", t
 // Plain-language about, privacy and terms pages, linked from the list.
 export function Info({ page }: { page: InfoPage }) {
   useTitle(TITLES[page]);
+  // In-app links like /about#hang-score don't scroll on their own.
+  const { hash } = useLocation();
+  useEffect(() => {
+    if (hash) document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView({ block: "start" });
+  }, [hash]);
   return (
     <main className="mx-auto min-h-dvh max-w-2xl pb-16">
       <PageHeader title={TITLES[page]} />
@@ -110,7 +115,7 @@ function About() {
         menu by a person. Times change, so if something looks off, tap "Report a wrong time" on the spot's page and we'll fix it.
       </p>
       <H>
-        <span id="hang-score">How the Hangout Score works</span>
+        <span id="hang-score" className="block scroll-mt-20">How the Hangout Score works</span>
       </H>
       <p>
         Every happy hour with enough deal info gets a Hangout Score out of 10. It's worked out from what's on the spot's page, the same way
