@@ -237,6 +237,11 @@ let merged = loadSeed().map((v) => {
     user_ratings_total: g.user_ratings_total ?? v.user_ratings_total,
     price_level: g.price_level ?? v.price_level,
     business_status: g.business_status ?? v.business_status,
+    primary_type: g.primary_type ?? v.primary_type ?? null,
+    opening_hours: g.opening_hours?.periods?.length ? g.opening_hours : v.opening_hours,
+    address_components: g.postal_code ? { ...(v.address_components || {}), postal_code: g.postal_code } : v.address_components,
+    reservable: g.reservable ?? v.reservable ?? null,
+    maps_url: g.maps_url ?? v.maps_url ?? null,
     // Places amenity attributes fill gaps only — hand-verified values win.
     amenities: {
       ...va,

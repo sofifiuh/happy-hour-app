@@ -15,6 +15,7 @@ import { ViewToggle } from "@/components/view-toggle";
 import { Wordmark } from "@/components/wordmark";
 import { DAY_FULL, fmtTime } from "@/lib/hours";
 import { InfoNav } from "@/screens/info";
+import { ExploreLinks } from "@/components/explore-links";
 import { reducedMotion } from "@/lib/motion";
 import { useStore, type Row } from "@/lib/store";
 import { useIsDesktop } from "@/lib/use-media";
@@ -189,6 +190,7 @@ export function Home() {
             </Button>
           </div>
         )}
+        <ExploreLinks />
         {rows.length > 0 && rows.length <= limit && <InfoNav />}
       </main>
 

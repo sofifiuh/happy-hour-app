@@ -58,7 +58,7 @@ await mapConcurrent(venues, 5, async (v) => {
     data = await curlJson("https://places.googleapis.com/v1/places:searchText", {
       headers: [
         `X-Goog-Api-Key: ${KEY}`,
-        "X-Goog-FieldMask: places.id,places.displayName,places.location,places.rating,places.userRatingCount,places.priceLevel,places.businessStatus,places.outdoorSeating,places.servesCocktails,places.servesBeer,places.servesWine,places.liveMusic,places.goodForGroups",
+        "X-Goog-FieldMask: places.id,places.displayName,places.location,places.rating,places.userRatingCount,places.priceLevel,places.businessStatus,places.outdoorSeating,places.servesCocktails,places.servesBeer,places.servesWine,places.liveMusic,places.goodForGroups,places.primaryType,places.regularOpeningHours,places.postalAddress,places.reservable,places.googleMapsUri",
       ],
       body,
     });
@@ -92,6 +92,14 @@ await mapConcurrent(venues, 5, async (v) => {
       live_music: r.liveMusic ?? null,
       good_for_groups: r.goodForGroups ?? null,
     },
+    // For the venue page's structured data (web/scripts/prerender.mjs).
+    primary_type: r.primaryType ?? null,
+    opening_hours: r.regularOpeningHours
+      ? { weekday_text: r.regularOpeningHours.weekdayDescriptions ?? [], periods: r.regularOpeningHours.periods ?? [] }
+      : null,
+    postal_code: r.postalAddress?.postalCode ?? null,
+    reservable: r.reservable ?? null,
+    maps_url: r.googleMapsUri ?? null,
     matched_name: rName,
     synced_at: TODAY,
   };

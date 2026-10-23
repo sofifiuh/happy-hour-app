@@ -4,6 +4,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { AREAS, buildHubs, hubPath } from "./seo-data.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "../..");
@@ -61,13 +62,21 @@ function galleryFor(v) {
   return [...new Set(urls)].slice(0, 8);
 }
 
+// Some names arrive in all caps ("ARC RESTAURANT"); show them in title case.
+// Very short all-caps names stay (acronyms).
+function displayName(name) {
+  const letters = name.replace(/[^A-Za-z]/g, "");
+  if (letters.length < 4 || letters !== letters.toUpperCase()) return name;
+  return name.toLowerCase().replace(/(^|[\s\-/(&])([a-z])/g, (m, p, c) => p + c.toUpperCase());
+}
+
 const { data_version, venues } = JSON.parse(readFileSync(resolve(root, "venues.json"), "utf8"));
 
 const slim = venues
   .filter((v) => v.business_status !== "CLOSED_PERMANENTLY")
   .map((v) => ({
     id: v.id,
-    name: v.name,
+    name: displayName(v.name),
     address: cleanAddress(v.formatted_address || ""),
     city: v.address_components?.locality || null,
     // trust.last_confirmed_at is the last day our times matched the venue's
@@ -109,5 +118,36 @@ const slim = venues
     },
   }));
 
-writeFileSync(resolve(out, "venues.json"), JSON.stringify({ data_version, venues: slim }));
+// City, neighbourhood and hub pages (scripts/seo-data.mjs). Each venue keeps
+// links to its area and city hubs and up to three topic hubs; the index
+// lists every hub for the home page's "Explore" links.
+const { places, topics, combos } = buildHubs(slim);
+const placeSet = new Set(places.map((h) => h.slug));
+// Chains listed more than once ("Cactus Club Cafe" x2) get their area or
+// city in the name, so each has its own page title.
+const nameCount = {};
+for (const v of slim) nameCount[v.name] = (nameCount[v.name] ?? 0) + 1;
+for (const v of slim) {
+  const where = v.area ? AREAS[v.area] : v.city;
+  if (nameCount[v.name] > 1 && where) v.name = `${v.name} (${where})`;
+}
+const PREFER = { deal: 0, vibe: 1, day: 2 };
+const hubs = {};
+for (const h of places) hubs[h.slug] = { label: h.kind === "area" ? `${h.name}` : h.name, kind: h.kind, count: h.venues.length };
+for (const t of topics) hubs[t.slug] = { label: t.label, kind: t.kind, count: t.venues.length };
+for (const v of slim) {
+  const areaSlug = v.area;
+  const citySlug = Object.keys(hubs).find((k) => hubs[k].kind === "city" && hubs[k].label === v.city);
+  v.area = areaSlug ? { slug: areaSlug, name: AREAS[areaSlug] } : null;
+  const own = [areaSlug, citySlug].filter((s) => s && placeSet.has(s));
+  const mine = topics
+    .filter((t) => t.slug !== "weekend" && t.test(v))
+    .sort((a, b) => PREFER[a.kind] - PREFER[b.kind] || a.venues.length - b.venues.length)
+    .slice(0, 3)
+    .map((t) => t.slug);
+  v.hubs = [...own, ...mine].map((slug) => hubPath(slug));
+}
+
+writeFileSync(resolve(out, "venues.json"), JSON.stringify({ data_version, hubs, venues: slim }));
+console.log(`sync-data: ${places.length} place hubs, ${topics.length} topic hubs, ${combos.length} combinations`);
 console.log(`sync-data: ${slim.length} venues (${data_version})`);
