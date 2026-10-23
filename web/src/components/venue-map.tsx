@@ -191,7 +191,11 @@ export function VenueMap({
   // Escape closes the card.
   useEffect(() => {
     if (!selected) return;
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && select.current(null);
+    // Not when Escape is closing a drawer or dialog on top of the map.
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "Escape" || e.defaultPrevented || (e.target as Element | null)?.closest?.("[role=dialog]")) return;
+      select.current(null);
+    };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [selected]);

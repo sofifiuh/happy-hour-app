@@ -45,7 +45,7 @@ export function MiniMap({ lat, lng, others = [], className }: { lat: number; lng
             center: [lng, lat],
             zoom: 15.5,
             ...(dLat || dLng
-              ? { bounds: [[lng - dLng, lat - dLat], [lng + dLng, lat + dLat]] as [[number, number], [number, number]], fitBoundsOptions: { padding: 22, maxZoom: 15.5 } }
+              ? { bounds: [[lng - dLng, lat - dLat], [lng + dLng, lat + dLat]] as [[number, number], [number, number]], fitBoundsOptions: { padding: { top: 22, left: 22, right: 22, bottom: 34 }, maxZoom: 15.5 } }
               : {}),
             interactive: false,
             attributionControl: false,
