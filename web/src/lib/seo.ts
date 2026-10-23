@@ -112,9 +112,16 @@ export function venueDescription(v: Venue) {
   const head = `${v.name}'s happy hour runs ${when}${where ? ` in ${where}` : ""}`;
   for (let n = deals.length; n >= 0; n--) {
     const text = `${head}${n ? `: ${list(deals.slice(0, n))}` : ""}.${checked}`;
-    if (text.length <= 160 || n === 0) return text.length <= 160 ? text : `${head}.`;
+    if (text.length <= 160) return text;
   }
-  return `${head}.`;
+  // The per-day schedule alone overruns a meta description (venues with many
+  // windows). Lead with the place and deals instead of spelling out the hours.
+  const lead = `Happy hour at ${v.name}${where ? ` in ${where}` : ""}`;
+  for (let n = deals.length; n >= 0; n--) {
+    const text = `${lead}${n ? `: ${list(deals.slice(0, n))}` : ""}. See the full schedule and prices.`;
+    if (text.length <= 160) return text;
+  }
+  return `${lead}.`;
 }
 
 // "2026-10-23" -> "Oct 23, 2026"
