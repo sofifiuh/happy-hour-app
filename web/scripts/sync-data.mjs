@@ -4,6 +4,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { AREAS, buildHubs, hubPath } from "./seo-data.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "../..");
@@ -109,5 +110,28 @@ const slim = venues
     },
   }));
 
-writeFileSync(resolve(out, "venues.json"), JSON.stringify({ data_version, venues: slim }));
+// City, neighbourhood and hub pages (scripts/seo-data.mjs). Each venue keeps
+// links to its area and city hubs and up to three topic hubs; the index
+// lists every hub for the home page's "Explore" links.
+const { places, topics, combos } = buildHubs(slim);
+const placeSet = new Set(places.map((h) => h.slug));
+const PREFER = { deal: 0, vibe: 1, day: 2 };
+const hubs = {};
+for (const h of places) hubs[h.slug] = { label: h.kind === "area" ? `${h.name}` : h.name, kind: h.kind, count: h.venues.length };
+for (const t of topics) hubs[t.slug] = { label: t.label, kind: t.kind, count: t.venues.length };
+for (const v of slim) {
+  const areaSlug = v.area;
+  const citySlug = Object.keys(hubs).find((k) => hubs[k].kind === "city" && hubs[k].label === v.city);
+  v.area = areaSlug ? { slug: areaSlug, name: AREAS[areaSlug] } : null;
+  const own = [areaSlug, citySlug].filter((s) => s && placeSet.has(s));
+  const mine = topics
+    .filter((t) => t.slug !== "weekend" && t.test(v))
+    .sort((a, b) => PREFER[a.kind] - PREFER[b.kind] || a.venues.length - b.venues.length)
+    .slice(0, 3)
+    .map((t) => t.slug);
+  v.hubs = [...own, ...mine].map((slug) => hubPath(slug));
+}
+
+writeFileSync(resolve(out, "venues.json"), JSON.stringify({ data_version, hubs, venues: slim }));
+console.log(`sync-data: ${places.length} place hubs, ${topics.length} topic hubs, ${combos.length} combinations`);
 console.log(`sync-data: ${slim.length} venues (${data_version})`);

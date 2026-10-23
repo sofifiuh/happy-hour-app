@@ -19,6 +19,10 @@ export interface Venue {
   name: string;
   address: string;
   city: string | null;
+  // Neighbourhood (City of Vancouver only), from scripts/seo-data.mjs.
+  area?: { slug: string; name: string } | null;
+  // Hub pages this venue links to: its area, its city, up to three topics.
+  hubs?: string[];
   checked: string | null; // "YYYY-MM-DD" the times last matched the venue's own page
   confidence: "high" | "medium" | "low" | null;
   lat: number | null;
@@ -56,4 +60,12 @@ export interface Occurrence {
   status: Status;
   start?: Date;
   end?: Date;
+}
+
+// Hub pages listed in venues.json, by slug ("gastown", "oysters").
+export type HubKind = "city" | "area" | "day" | "vibe" | "deal";
+export interface Hub {
+  label: string;
+  kind: HubKind;
+  count: number;
 }

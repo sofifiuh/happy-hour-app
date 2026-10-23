@@ -1,4 +1,4 @@
-import { ArrowLeft, BadgeCheck, ExternalLink, Flag, Globe, Heart, Images, Navigation, Phone, Share, Star } from "lucide-react";
+import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Globe, Heart, Images, Navigation, Phone, Share, Star } from "lucide-react";
 import { type CSSProperties, useCallback, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
@@ -13,12 +13,13 @@ import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from "@/components/u
 import { Skeleton } from "@/components/ui/skeleton";
 import { VenuePhoto } from "@/components/venue-photo";
 import { walkLabel, distanceKm } from "@/lib/geo";
-import { DAY_FULL, DAY_SHORT, endingSoon, fmtRange, nowHHMM, occurrence, statusLabel, windowsForDay } from "@/lib/hours";
+import { endingSoon, fmtRange, nowHHMM, occurrence, statusLabel } from "@/lib/hours";
 import { fmtChecked, reportLink } from "@/lib/links";
 import { goBack } from "@/lib/motion";
 import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
-import { absoluteUrl, queryParams, spotPath } from "@/lib/routes";
+import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
+import { dayRuns, nearby, runLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
 import type { Category, Venue } from "@/lib/types";
@@ -36,39 +37,17 @@ function amenityPills(v: Venue) {
   ].filter(Boolean) as { emoji: string; label: string }[];
 }
 
-// Consecutive days (Mon-first) with the same windows collapse into one
-// row: "Every day", "Mon–Fri", "Sat & Sun".
-const WEEK = [1, 2, 3, 4, 5, 6, 0];
-function dayRuns(v: Venue) {
-  const runs: { days: number[]; key: string; wins: ReturnType<typeof windowsForDay> }[] = [];
-  for (const d of WEEK) {
-    const wins = windowsForDay(v, d);
-    const key = wins.map((w) => `${w.start}-${w.end}`).join();
-    const last = runs[runs.length - 1];
-    if (last && last.key === key) last.days.push(d);
-    else runs.push({ days: [d], key, wins });
-  }
-  return runs;
-}
-
-function runLabel(days: number[]) {
-  if (days.length === 7) return "Every day";
-  if (days.length === 1) return DAY_FULL[days[0]];
-  if (days.length === 2) return `${DAY_SHORT[days[0]]} & ${DAY_SHORT[days[1]]}`;
-  return `${DAY_SHORT[days[0]]}–${DAY_SHORT[days[days.length - 1]]}`;
-}
-
 export function Spot() {
   const params = useParams();
   const id = (params.id ?? params.file ?? "").replace(/\.html$/, "");
-  const { byId, now, loading, deviceLocation, area, saved, toggleSaved } = useStore();
+  const { byId, venues, hubs, now, loading, deviceLocation, area, saved, toggleSaved } = useStore();
   const navigate = useNavigate();
   const toast = useToast();
   const venue = byId(id);
   const page = useRef<HTMLElement>(null);
   const bar = useRef<HTMLElement>(null);
   useSwipeBack([page, bar], () => goBack(navigate, true), !!venue);
-  useTitle(venue ? `${venue.name} · happy hour ${fmtRange(venue.hh.start, venue.hh.end)}` : loading ? null : "Spot not found");
+  useTitle(venue ? venueTitle(venue) : loading ? null : "Spot not found", !!venue);
   const [cat, setCat] = useState<Category>("drink");
   const [directionsOpen, setDirectionsOpen] = useState(false);
   const [photosOpen, setPhotosOpen] = useState(false);
@@ -102,6 +81,7 @@ export function Spot() {
     );
   }
 
+  const near = nearby(venue, venues);
   const occ = occurrence(venue, now);
   const soon = endingSoon(occ, now);
   const today = now.getDay();
@@ -176,7 +156,12 @@ export function Spot() {
         ) : occ.status === "upcoming" ? (
           <Badge variant="upcoming" className="mb-3">{statusLabel(occ, now)}</Badge>
         ) : null}
-        <h1 className="font-display text-[34px] leading-[1.02] font-extrabold tracking-[-0.025em]">{venue.name}</h1>
+        <h1 className="font-display text-[34px] leading-[1.02] font-extrabold tracking-[-0.025em]">
+          <span className="mb-1.5 block font-sans text-[12px] leading-none font-semibold tracking-[0.12em] text-pink-fg uppercase">
+            Happy hour{venue.area ? ` · ${venue.area.name}` : venue.city ? ` · ${venue.city}` : ""}
+          </span>{" "}
+          {venue.name}
+        </h1>
         <p className="mt-2 text-[15px] text-muted-foreground">
           {venue.address}
           {km != null && walkLabel(km) && <span className="text-sky-fg"> · {walkLabel(km)}</span>}
@@ -208,7 +193,7 @@ export function Spot() {
 
       {/* Deals */}
       <section style={{ "--i": 2 } as CSSProperties} className="animate-rise mt-7 px-5">
-        {venue.hh.deals.length === 0 && <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Deals</h2>}
+        <h2 className={cn("mb-3 font-display text-[20px] font-bold tracking-tight", venue.hh.deals.length > 0 && "sr-only")}>Happy hour deals</h2>
         <div role="tablist" className={cn("mb-3 flex gap-6", venue.hh.deals.length === 0 && "hidden")}>
           {(["drink", "food"] as const).map((c) => (
             <button
@@ -228,17 +213,27 @@ export function Spot() {
         </div>
         <div className="rounded-[22px] bg-ink-2 px-4">
           {deals[tab].length ? (
-            <ul>
-              {deals[tab].map((d, i) => (
-                <li key={`${d.name}-${i}`} className="border-b border-border py-3.5 last:border-0">
-                  <div className="flex items-baseline justify-between gap-3">
-                    <span className="text-[15px] font-semibold">{d.name}</span>
-                    <span className="shrink-0 font-display text-[16px] font-bold text-pink-fg tabular">{d.price}</span>
+            // Both lists stay in the page (the other one hidden) so the whole
+            // menu is there for search engines, not just the open tab.
+            (["drink", "food"] as const).map(
+              (c) =>
+                deals[c].length > 0 && (
+                  <div key={c} role="tabpanel" hidden={tab !== c}>
+                    <h3 className="sr-only">{c === "drink" ? "Drinks" : "Food"}</h3>
+                    <ul>
+                      {deals[c].map((d, i) => (
+                        <li key={`${d.name}-${i}`} className="border-b border-border py-3.5 last:border-0">
+                          <div className="flex items-baseline justify-between gap-3">
+                            <span className="text-[15px] font-semibold">{d.name}</span>
+                            <span className="shrink-0 font-display text-[16px] font-bold text-pink-fg tabular">{d.price}</span>
+                          </div>
+                          {d.description && <p className="mt-1 text-[13px] leading-snug text-muted-foreground">{d.description}</p>}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  {d.description && <p className="mt-1 text-[13px] leading-snug text-muted-foreground">{d.description}</p>}
-                </li>
-              ))}
-            </ul>
+                ),
+            )
           ) : (
             <div className="py-6 text-center">
               <p className="text-[15px] font-semibold">Deals not listed yet</p>
@@ -338,6 +333,59 @@ export function Spot() {
           </div>
         </section>
       )}
+
+      {/* About, nearby, more hubs, questions: the same words the static page
+          carries (scripts/prerender.mjs), so search sees one page. */}
+      <section style={{ "--i": 5 } as CSSProperties} className="animate-rise mt-8 px-5">
+        <h2 className="mb-2 font-display text-[20px] font-bold tracking-tight">About {venue.name}</h2>
+        <p className="text-[15px] leading-relaxed text-muted-foreground">{venueAbout(venue)}</p>
+      </section>
+
+      {near.length > 0 && (
+        <section style={{ "--i": 6 } as CSSProperties} className="animate-rise mt-8 px-5">
+          <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Happy hours nearby</h2>
+          <ul className="rounded-[22px] bg-ink-2 px-4">
+            {near.map((o) => (
+              <li key={o.id} className="border-b border-border last:border-0">
+                <Link to={spotPath(o.id)} className="flex min-h-12 items-center justify-between gap-3 py-3 text-[15px]">
+                  <span className="min-w-0 truncate font-semibold">{o.name}</span>
+                  <span className="shrink-0 text-[13px] text-muted-foreground tabular">{fmtRange(o.hh.start, o.hh.end || "23:59")}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {BROWSER_ROUTER && (venue.hubs?.length ?? 0) > 0 && (
+        <nav aria-label="More happy hours" className="mt-6 flex flex-wrap gap-2 px-5">
+          {venue.hubs!.map((path) => {
+            const slug = path.split("/").filter(Boolean).pop()!;
+            const hub = hubs[slug];
+            if (!hub) return null;
+            return (
+              <a key={path} href={path} className="inline-flex min-h-10 items-center rounded-full bg-ink-2 px-3.5 text-[14px] font-medium ring-1 ring-edge/5">
+                {hub.kind === "city" || hub.kind === "area" ? `Happy hours in ${hub.label}` : hub.label}
+              </a>
+            );
+          })}
+        </nav>
+      )}
+
+      <section style={{ "--i": 7 } as CSSProperties} className="animate-rise mt-8 px-5">
+        <h2 className="mb-2 font-display text-[20px] font-bold tracking-tight">{venue.name} happy hour questions</h2>
+        <div className="rounded-[22px] bg-ink-2 px-4">
+          {venueFaq(venue).map((f) => (
+            <details key={f.q} className="group border-b border-border last:border-0">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 [&::-webkit-details-marker]:hidden">
+                <h3 className="text-[15px] font-semibold">{f.q}</h3>
+                <ChevronDown className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+              </summary>
+              <p className="pb-4 text-[14px] leading-relaxed text-muted-foreground">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
 
       <Link to="/" className="sr-only">
         Back to list
