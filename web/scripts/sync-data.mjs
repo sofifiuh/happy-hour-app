@@ -81,12 +81,17 @@ const host = (u) => {
     return null;
   }
 };
+// Sites that are clearly not the venue's own; anything else (a second
+// domain, a .com vs .ca) is still their website.
+const ELSEWHERE = /(^|\.)(facebook|instagram|opentable|yelp|tripadvisor|google|ubereats|doordash|toasttab|resy|tock|linktr)\./;
 function sourceOf(v) {
-  const url = v.trust?.source_url;
+  let url = v.trust?.source_url;
   if (!url || !host(url)) return null;
-  const kind = /\.pdf(\?|$)/i.test(url) ? "pdf" : /\.(jpe?g|png|webp)(\?|$)/i.test(url) ? "image" : "page";
-  const own = !v.website || host(v.website) === host(url);
-  return { url, kind, host: own ? null : host(url) };
+  const u = new URL(url);
+  for (const k of [...u.searchParams.keys()]) if (/^(utm_|fbclid$|gclid$)/.test(k)) u.searchParams.delete(k);
+  url = u.toString();
+  const kind = /\.pdf$/i.test(u.pathname) ? "pdf" : /\.(jpe?g|png|webp)$/i.test(u.pathname) ? "image" : "page";
+  return { url, kind, host: ELSEWHERE.test(host(url)) ? host(url) : null };
 }
 
 const slim = venues

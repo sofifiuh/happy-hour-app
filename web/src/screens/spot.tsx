@@ -199,7 +199,7 @@ export function Spot() {
           )}
         </div>
         {pills.length > 0 && (
-          <div className="no-scrollbar -mx-5 mt-4 flex gap-2 overflow-x-auto px-5">
+          <div role="region" aria-label="Amenities" tabIndex={0} className="no-scrollbar -mx-5 mt-4 flex gap-2 overflow-x-auto px-5">
             {pills.map((p) => (
               <Badge key={p.label} className="h-8 shrink-0 bg-ink-2 px-3">
                 <span>{p.emoji}</span> {p.label}
