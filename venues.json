@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-23-54a7884b",
+ "data_version": "2026-10-23-cae805e1",
  "venues": [
   {
    "id": "ancora",
@@ -29254,8 +29254,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "changed",
+    "confidence": "low",
     "source_url": "https://notoriousgreyfox.com/wp-content/uploads/2025/09/notoriousgreyfox-menu-happy-hour-092025.pdf",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-23",
@@ -36040,8 +36040,8 @@
    "last_synced_at": "2026-09-03",
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "changed",
+    "confidence": "low",
     "source_url": "https://www.farinaalegna.com/happy-hour/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-23",

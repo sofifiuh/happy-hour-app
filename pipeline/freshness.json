@@ -517,7 +517,8 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "last_ok_at": "2026-10-23"
+  "last_ok_at": "2026-10-23",
+  "rendered": true
  },
  "bellaggio-cafe": {
   "url": "https://images.unoapp.com/boxdata/asset89882/images/50791__BELLAGGIOCAFE-HappyHours-MENU_2.pdf",
@@ -1216,7 +1217,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "75e92b815997eaca",
+  "hh_hash": "9662a5de1f8978d7",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -1232,7 +1233,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "2543d158a1d3da89",
+  "hh_hash": "d61d33d424bb3e99",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -1380,7 +1381,7 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "48a19abb22e56d83",
+  "hh_hash": "bec1fb4a9272f9f6",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -1485,7 +1486,7 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "aae6277b94eb297d",
+  "hh_hash": "3ad2801d166b49a2",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -1659,12 +1660,12 @@
   "http_status": 200,
   "kind": "html",
   "hh_mentioned": true,
-  "times_seen": true,
+  "times_seen": false,
   "extra_windows_seen": 1,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "55bc8aee4a55fb22",
+  "hh_hash": "3c63647fec5c3a07",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -2058,7 +2059,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "6ac1af3d52f5fc1c",
+  "hh_hash": "73a37068d8ce6963",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -2464,7 +2465,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 6,
+  "fail_count": 7,
   "error": "curl: (6) Could not resolve host: www.jacksonsrestobutcher.com"
  },
  "jamjar-canteen-commercial-dr": {
@@ -4432,7 +4433,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 6,
+  "fail_count": 7,
   "error": "curl: (6) Could not resolve host: romersurgerbar.com"
  },
  "rongsi-rong-see-thai-bar-bistro": {
@@ -4668,7 +4669,7 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "1237d9c5ee71394d",
+  "hh_hash": "b55711e555a3a70e",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -4890,9 +4891,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "5372d46d9dea0c98",
+  "hh_hash": "17ba00410fa9178b",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23"
+  "last_confirmed_at": "2026-10-23",
+  "changed_at": "2026-10-23"
  },
  "st-augustine-s": {
   "url": "http://staugustinesvancouver.com/",
@@ -5117,7 +5119,7 @@
   "ok": true,
   "fail_count": 0,
   "rendered": true,
-  "hh_hash": "2b0632921e58cf85",
+  "hh_hash": "8f3cac77fec7b0ac",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -5579,15 +5581,16 @@
  "the-great-bear-pub": {
   "url": "http://greatbearpub.com/files/2019/01/Great-BearEatin-2019.pdf",
   "checked_at": "2026-10-23",
-  "http_status": 200,
-  "kind": "pdf",
-  "ok": true,
-  "fail_count": 0,
+  "http_status": 0,
+  "kind": "html",
+  "ok": false,
+  "fail_count": 1,
   "hh_mentioned": false,
   "times_seen": false,
   "extra_windows_seen": 0,
   "extra_windows_total": 1,
-  "last_ok_at": "2026-10-23"
+  "last_ok_at": "2026-10-23",
+  "error": "curl: (28) Connection timed out after 25001 milliseconds"
  },
  "the-greek-by-anatoli-yaletown": {
   "url": "https://www.thegreekbyanatoli.com/yaletown-menu",
@@ -5771,7 +5774,7 @@
  "the-naam": {
   "url": "http://www.thenaam.com/menu",
   "checked_at": "2026-10-23",
-  "http_status": 301,
+  "http_status": 200,
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": true,
@@ -5779,10 +5782,9 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "5c6d18dae49443bc",
+  "hh_hash": "13b3a3a0bf94dd10",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
-  "rendered": true,
   "changed_at": "2026-10-23"
  },
  "the-narrow-lounge": {
@@ -5811,8 +5813,9 @@
   "ok": true,
   "fail_count": 0,
   "rendered": true,
-  "hh_hash": "7a65a9d23efeafab",
-  "last_ok_at": "2026-10-23"
+  "hh_hash": "5b4f03b4b59737b5",
+  "last_ok_at": "2026-10-23",
+  "changed_at": "2026-10-23"
  },
  "the-ocean-beach-crafts-drafts-eats": {
   "url": "http://www.oceanbeachwr.ca/",
@@ -6209,9 +6212,10 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "a5d7e54a637b0c76",
+  "hh_hash": "57796406c6974c82",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23"
+  "last_confirmed_at": "2026-10-23",
+  "changed_at": "2026-10-23"
  },
  "tobiko-1-sushi": {
   "url": "http://tobikosushi.com/",
