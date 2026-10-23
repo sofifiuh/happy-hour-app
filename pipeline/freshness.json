@@ -107,16 +107,15 @@
   "checked_at": "2026-10-23",
   "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": 0,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "1854163c34052f8b",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23",
-  "rendered": true
+  "last_confirmed_at": "2026-10-23"
  },
  "alimentaria-mexicana": {
   "url": "https://www.alimentariamexicana.com/happy-hour",
@@ -174,8 +173,9 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "6c62636b0db12002",
-  "last_ok_at": "2026-10-23"
+  "hh_hash": "c43f5cd3511a48ea",
+  "last_ok_at": "2026-10-23",
+  "changed_at": "2026-10-23"
  },
  "amogha-indian-kitchen-bar": {
   "url": "https://amoghakitchens.com/vera-level-happy-hour.html",
@@ -518,7 +518,8 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "last_ok_at": "2026-10-23"
+  "last_ok_at": "2026-10-23",
+  "rendered": true
  },
  "bellaggio-cafe": {
   "url": "https://images.unoapp.com/boxdata/asset89882/images/50791__BELLAGGIOCAFE-HappyHours-MENU_2.pdf",
@@ -823,7 +824,7 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "376584fdb9fae498",
+  "hh_hash": "fc28b73acd41b5cb",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -1107,17 +1108,16 @@
  "chit-chat-burger-bar": {
   "url": "https://chitchatburgerbar.com/drinks-menu/",
   "checked_at": "2026-10-23",
-  "http_status": 202,
+  "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
+  "hh_mentioned": true,
   "times_seen": false,
-  "extra_windows_seen": 0,
+  "extra_windows_seen": 1,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "75c767a11422ec9d",
-  "last_ok_at": "2026-10-23",
-  "rendered": true
+  "last_ok_at": "2026-10-23"
  },
  "chop-steakhouse-bar": {
   "url": "https://chop.ca/happy-hour",
@@ -1244,17 +1244,18 @@
  "crave-bistro-bar": {
   "url": "https://www.cravebistro.ca/happy-hour",
   "checked_at": "2026-10-23",
-  "http_status": 200,
+  "http_status": 0,
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": true,
   "extra_windows_seen": 0,
   "extra_windows_total": 1,
-  "ok": true,
-  "fail_count": 0,
+  "ok": false,
+  "fail_count": 1,
   "hh_hash": "167e0903c1713cbc",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23"
+  "last_confirmed_at": "2026-10-23",
+  "error": "curl: (28) Connection timed out after 25000 milliseconds"
  },
  "crazy-raven-bar-and-grill": {
   "url": "https://www.cypressmountain.com/hours",
@@ -1274,16 +1275,15 @@
   "checked_at": "2026-10-23",
   "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
-  "extra_windows_seen": 0,
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "950c311e00afcccd",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23",
-  "rendered": true
+  "last_confirmed_at": "2026-10-23"
  },
  "d6-bar-lounge": {
   "url": "https://www.parqcasino.com/_files/ugd/93f176_2fd639380cfc4f2f90f0f842fdfcbd8d.pdf",
@@ -2063,7 +2063,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "cbf1f955c967591e",
+  "hh_hash": "3d5e6cd964c5937a",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -2469,7 +2469,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 8,
+  "fail_count": 9,
   "error": "curl: (6) Could not resolve host: www.jacksonsrestobutcher.com"
  },
  "jamjar-canteen-commercial-dr": {
@@ -3146,15 +3146,14 @@
   "url": "https://www.madhatterbistro.ca/happy-hour-menu",
   "checked_at": "2026-10-23",
   "http_status": 200,
-  "kind": "html",
+  "kind": "pdf",
   "hh_mentioned": false,
   "times_seen": false,
   "extra_windows_seen": 0,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "last_ok_at": "2026-10-23",
-  "rendered": true
+  "last_ok_at": "2026-10-23"
  },
  "mahony-s-tavern-convention-centre": {
   "url": "https://www.mahonystavern.com/",
@@ -3481,17 +3480,18 @@
  "moltaqa-moroccan-restaurant": {
   "url": "https://moltaqarestaurant.ca/menu/",
   "checked_at": "2026-10-23",
-  "http_status": 403,
+  "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
-  "ok": false,
-  "fail_count": 1,
+  "ok": true,
+  "fail_count": 0,
   "rendered": true,
   "last_ok_at": "2026-10-23",
-  "error": "HTTP 403"
+  "hh_hash": "09be2c38d377f4ee",
+  "last_confirmed_at": "2026-10-23"
  },
  "moose-s-down-under-bar-and-grill-vancouver": {
   "url": "https://moosesdownunder.com/wp-content/uploads/2025/07/mooses-drink-menu-2025-3.pdf",
@@ -3947,16 +3947,15 @@
   "checked_at": "2026-10-23",
   "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "08dace91cbbf990a",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23",
-  "rendered": true
+  "last_confirmed_at": "2026-10-23"
  },
  "park-drive": {
   "url": "https://www.parkdrive.ca/dailyfeatures",
@@ -4440,7 +4439,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 8,
+  "fail_count": 9,
   "error": "curl: (6) Could not resolve host: romersurgerbar.com"
  },
  "rongsi-rong-see-thai-bar-bistro": {
@@ -4567,16 +4566,15 @@
   "checked_at": "2026-10-23",
   "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
-  "extra_windows_seen": 0,
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "7e12849b2e0a5f8c",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23",
-  "rendered": true
+  "last_confirmed_at": "2026-10-23"
  },
  "selene-aegean-bistro": {
   "url": "http://www.seleneagn.com/happy-hour",
@@ -4664,8 +4662,7 @@
   "fail_count": 0,
   "hh_hash": "744a14d9045d0841",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23",
-  "rendered": true
+  "last_confirmed_at": "2026-10-23"
  },
  "sing-sing-main-st": {
   "url": "https://www.freehouse.co/locations/sing-sing?utm_source=google&utm_medium=organic&utm_campaign=gmb",
@@ -4900,7 +4897,7 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "17ba00410fa9178b",
+  "hh_hash": "29ef8e7a527ceee1",
   "last_ok_at": "2026-10-23",
   "last_confirmed_at": "2026-10-23",
   "changed_at": "2026-10-23"
@@ -5459,16 +5456,15 @@
   "checked_at": "2026-10-23",
   "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": 0,
   "extra_windows_total": 2,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "9949cf2b1559151f",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23",
-  "rendered": true
+  "last_confirmed_at": "2026-10-23"
  },
  "the-clayton-public-house": {
   "url": "https://theclaytonpub.com/menu/",
@@ -6025,16 +6021,15 @@
   "checked_at": "2026-10-23",
   "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
-  "extra_windows_seen": 0,
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "ced1a3d178afddc2",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23",
-  "rendered": true
+  "last_confirmed_at": "2026-10-23"
  },
  "the-sandbar-seafood-restaurant": {
   "url": "https://www.vancouverdine.com/sandbar/menus/",
@@ -6602,16 +6597,15 @@
   "checked_at": "2026-10-23",
   "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
-  "extra_windows_seen": 0,
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "50e59641bd1b832a",
   "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23",
-  "rendered": true
+  "last_confirmed_at": "2026-10-23"
  },
  "zarak-by-afghan-kitchen": {
   "url": "https://www.zarakvancouver.com/menu",
