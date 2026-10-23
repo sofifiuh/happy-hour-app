@@ -62,13 +62,21 @@ function galleryFor(v) {
   return [...new Set(urls)].slice(0, 8);
 }
 
+// Some names arrive in all caps ("ARC RESTAURANT"); show them in title case.
+// Very short all-caps names stay (acronyms).
+function displayName(name) {
+  const letters = name.replace(/[^A-Za-z]/g, "");
+  if (letters.length < 4 || letters !== letters.toUpperCase()) return name;
+  return name.toLowerCase().replace(/(^|[\s\-/(&])([a-z])/g, (m, p, c) => p + c.toUpperCase());
+}
+
 const { data_version, venues } = JSON.parse(readFileSync(resolve(root, "venues.json"), "utf8"));
 
 const slim = venues
   .filter((v) => v.business_status !== "CLOSED_PERMANENTLY")
   .map((v) => ({
     id: v.id,
-    name: v.name,
+    name: displayName(v.name),
     address: cleanAddress(v.formatted_address || ""),
     city: v.address_components?.locality || null,
     // trust.last_confirmed_at is the last day our times matched the venue's
@@ -115,6 +123,14 @@ const slim = venues
 // lists every hub for the home page's "Explore" links.
 const { places, topics, combos } = buildHubs(slim);
 const placeSet = new Set(places.map((h) => h.slug));
+// Chains listed more than once ("Cactus Club Cafe" x2) get their area or
+// city in the name, so each has its own page title.
+const nameCount = {};
+for (const v of slim) nameCount[v.name] = (nameCount[v.name] ?? 0) + 1;
+for (const v of slim) {
+  const where = v.area ? AREAS[v.area] : v.city;
+  if (nameCount[v.name] > 1 && where) v.name = `${v.name} (${where})`;
+}
 const PREFER = { deal: 0, vibe: 1, day: 2 };
 const hubs = {};
 for (const h of places) hubs[h.slug] = { label: h.kind === "area" ? `${h.name}` : h.name, kind: h.kind, count: h.venues.length };

@@ -374,7 +374,7 @@ const HUB_CSS = `@font-face{font-family:"Funnel Display";font-weight:800;font-di
 @font-face{font-family:"Funnel Sans";font-weight:400;font-display:swap;src:url(/assets/${font(/^funnel-sans-latin-400-/)}) format("woff2")}
 @font-face{font-family:"Funnel Sans";font-weight:600;font-display:swap;src:url(/assets/${font(/^funnel-sans-latin-600-/)}) format("woff2")}
 :root{--ink:#1b1b1b;--ink-2:#242322;--ink-3:#2f2d2b;--line:#3a3835;--cream:#f3efe4;--dim:#a7a196;--orange:#ff4900;--pink:#f7b2b7;--lime:#ecfe54;color-scheme:dark}
-@media (prefers-color-scheme:light){:root{--ink:#f5f1e7;--ink-2:#fffdf7;--ink-3:#ebe5d6;--line:#ddd5c4;--cream:#1b1b1b;--dim:#6b6559;--orange:#d93e00;--pink:#a8384b;--lime:#5f6e00;color-scheme:light}}
+@media (prefers-color-scheme:light){:root{--ink:#f5f1e7;--ink-2:#fffdf7;--ink-3:#ebe5d6;--line:#ddd5c4;--cream:#1b1b1b;--dim:#6b6559;--orange:#c23700;--pink:#a8384b;--lime:#5f6e00;color-scheme:light}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--ink);color:var(--cream);font:16px/1.55 "Funnel Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
@@ -691,14 +691,15 @@ for (const p of places) {
 }
 
 for (const t of topics) {
-  const where = { in: t.kind === "deal" ? `for ${t.short.toLowerCase()} in Vancouver` : t.kind === "day" ? `on ${t.slug === "weekend" ? "weekends" : SCHEMA_DAYS[dayIndex(t)] + "s"} in Vancouver` : `in Vancouver (${t.short.toLowerCase()})` };
-  const label = `${t.label} in Vancouver`;
+  const where = { in: t.kind === "deal" ? `for ${t.short.toLowerCase()} in Metro Vancouver` : t.kind === "day" ? `on ${t.slug === "weekend" ? "weekends" : SCHEMA_DAYS[dayIndex(t)] + "s"} in Metro Vancouver` : `in Metro Vancouver (${t.short.toLowerCase()})` };
+  // Topic hubs cover every city; "Vancouver" is the city hub's combos.
+  const label = `${t.label} in Metro Vancouver`;
   hubPage({
     slug: t.slug,
     h1: label,
     listTitle: `All ${t.venues.length} ${t.label.toLowerCase().replace(/^happy hours with/, "spots with")}`,
     where,
-    title: fitTitle(`${titleCase(t.label)} in Vancouver: ${t.venues.length} Spots | ${SITE}`, `${titleCase(t.label)} in Vancouver | ${SITE}`, `${titleCase(t.label)} in Vancouver`),
+    title: fitTitle(`${titleCase(t.label)} in Metro Vancouver: ${t.venues.length} Spots | ${SITE}`, `${titleCase(t.label)} in Metro Vancouver | ${SITE}`, `${titleCase(t.label)} in Metro Vancouver`),
     description: describe(where, t.venues, t),
     list: t.venues,
     topic: t,
