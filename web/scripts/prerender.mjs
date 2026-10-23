@@ -12,12 +12,11 @@
 // The app boots on every page except the hubs and takes over from the
 // static markup. Venue copy (titles, about, questions) comes from
 // src/lib/seo.ts, which the app uses too, so both say the same thing.
-import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
-import { basename, dirname, resolve } from "node:path";
-import { homedir } from "node:os";
+import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import opentype from "opentype.js";
 import sharp from "sharp";
 import { fmtRange } from "../src/lib/hours.ts";
 import { dayRuns, dealPhrase, fmtDate, money, nearby, parsePrice, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
@@ -350,20 +349,25 @@ ${venueFaq(v)
 // ---------- share cards ----------
 const FONT_DISPLAY = resolve(here, "fonts/FunnelDisplay-ExtraBold.ttf");
 const FONT_SANS = resolve(here, "fonts/FunnelSans-Medium.ttf");
-// libvips on the CI runner ignores `fontfile` and draws DejaVu instead.
-// Registering the fonts with fontconfig lets `font` find them by name.
-try {
-  const dir = resolve(homedir(), ".local/share/fonts");
-  mkdirSync(dir, { recursive: true });
-  for (const f of [FONT_DISPLAY, FONT_SANS]) copyFileSync(f, resolve(dir, basename(f)));
-  execFileSync("fc-cache", ["-f", dir], { stdio: "ignore" });
-} catch {
-  // No fontconfig tools: fontfile alone still works on most machines.
-}
-const pango = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+// Text is drawn as glyph outlines (opentype.js) rather than through
+// libvips/pango, which picks fonts via fontconfig and fell back to DejaVu
+// on the CI runner.
+const faces = { display: opentype.loadSync(FONT_DISPLAY), sans: opentype.loadSync(FONT_SANS) };
 
-async function text(markup, fontfile, font, width) {
-  return sharp({ text: { text: markup, font, fontfile, width, dpi: 72, rgba: true, wrap: "word" } }).png().toBuffer();
+// Word-wrapped text as a transparent PNG, `width` wide at most.
+async function text(str, font, size, color, width) {
+  const lines = [];
+  for (const word of str.split(/\s+/)) {
+    const tryLine = lines.length ? `${lines[lines.length - 1]} ${word}` : word;
+    if (lines.length && font.getAdvanceWidth(tryLine, size) <= width) lines[lines.length - 1] = tryLine;
+    else lines.push(word);
+  }
+  const scale = size / font.unitsPerEm;
+  const ascent = font.ascender * scale, descent = -font.descender * scale, lh = size * 1.08;
+  const h = Math.ceil(ascent + descent + lh * (lines.length - 1));
+  const paths = lines.map((l, i) => font.getPath(l, 0, ascent + i * lh, size).toPathData(2)).join(" ");
+  const w = Math.ceil(Math.max(...lines.map((l) => font.getAdvanceWidth(l, size)))) + 2;
+  return sharp(Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}"><path d="${paths}" fill="${color}"/></svg>`)).png().toBuffer();
 }
 
 const localPhoto = (v) => (v.photo && !/^https?:/.test(v.photo) && existsSync(resolve(web, "public", v.photo)) ? resolve(web, "public", v.photo) : null);
@@ -375,7 +379,7 @@ function shareCard(v) {
 // 1200×630 card: photo (or brand gradient), logo top right, title and one
 // lime line at the bottom. Cached by content in node_modules/.cache/og.
 async function renderCard({ id, title, line, photo }) {
-  const key = createHash("sha1").update(JSON.stringify([title, line, photo ? readFileSync(photo).length : 0, 4])).digest("hex").slice(0, 10);
+  const key = createHash("sha1").update(JSON.stringify([title, line, photo ? readFileSync(photo).length : 0, 5])).digest("hex").slice(0, 10);
   const cached = resolve(cache, `${id}-${key}.jpg`);
   if (existsSync(cached)) return cached;
 
@@ -386,8 +390,8 @@ async function renderCard({ id, title, line, photo }) {
   const shade = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}"><defs><linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b1b1b" stop-opacity=".15"/><stop offset=".45" stop-color="#1b1b1b" stop-opacity=".55"/><stop offset="1" stop-color="#1b1b1b" stop-opacity=".97"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#s)"/></svg>`);
   const mark = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 124" width="150" height="143"><path d="${logo}" fill="#f3efe4"/></svg>`);
   const nameSize = title.length > 34 ? 60 : title.length > 22 ? 72 : 84;
-  const name = await text(`<span foreground="#f3efe4" font_weight="800" size="${nameSize * 1024}">${pango(title)}</span>`, FONT_DISPLAY, "Funnel Display Light", 900);
-  const times = await text(`<span foreground="#ecfe54" size="${34 * 1024}">${pango(line)}</span>`, FONT_SANS, "Funnel Sans Light", 900);
+  const name = await text(title, faces.display, nameSize, "#f3efe4", 900);
+  const times = await text(line, faces.sans, 34, "#ecfe54", 900);
   const nameH = (await sharp(name).metadata()).height;
   const timesH = (await sharp(times).metadata()).height;
   await sharp(bg)
