@@ -931,7 +931,7 @@ function listFacts(v, b, first) {
     if (!test(v)) return;
     const k = list.filter(test).length;
     if (k === 1) facts.push({ amenity, text: `It's the only one here with ${what}.` });
-    else if (k <= 3) facts.push({ amenity, text: `It's one of just ${k} on this list with ${what}.` });
+    else if (k === 2) facts.push({ amenity, text: `It's one of just two on this list with ${what}.` });
   };
   few((x) => hoursFacts(x).late, "a late-night happy hour");
   few((x) => hoursFacts(x).weekend > 0, "happy hour on weekends");
@@ -978,7 +978,7 @@ function bestEntry(v, i, b) {
   const n = i + 1;
   const photo = v.photo ? `<img src="${esc(/^https?:/.test(v.photo) ? v.photo : `/${v.photo}`)}" alt="${esc(`${v.name}, ${whereLabel(v)}`)}" loading="${i < 2 ? "eager" : "lazy"}" width="720" height="360" />` : "";
   return `<article class="entry" id="rank-${n}">
-<header><span class="num${n <= 3 ? " top" : ""}" aria-hidden="true">${n}</span><div><h2><a href="/spots/${v.id}.html">${esc(v.name)}</a></h2><p class="where">${esc(whereLabel(v))} · ${esc(v.address.split(",")[0])}</p></div><span class="sc${s.total >= 7.5 ? " top" : ""}" aria-label="Hangout Score ${s.total.toFixed(1)} out of 10">${s.total.toFixed(1)}<small>/10</small></span></header>
+<header><span class="num${n <= 3 ? " top" : ""}" aria-hidden="true">${n}</span><div><h2><a href="/spots/${v.id}.html">${esc(v.name)}</a></h2><p class="where">${esc(whereLabel(v))} · ${esc(v.address.split(",")[0]).replace(/ (?=\S+$)/, "&nbsp;")}</p></div><span class="sc${s.total >= 7.5 ? " top" : ""}" aria-label="Hangout Score ${s.total.toFixed(1)} out of 10">${s.total.toFixed(1)}<small>/10</small></span></header>
 ${photo}
 <p>${esc(writeup(v, n, b))}</p>
 <p class="parts">${PART_LABELS.map(([l, k]) => `${l} ${s[k].toFixed(1)}`).join(" · ")}${v.confirmed ? ` · times confirmed on their menu ${esc(fmtDate(v.confirmed))}` : ""}</p>
