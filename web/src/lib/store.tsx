@@ -169,9 +169,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   // Cached copy renders instantly; the network copy replaces it only when
   // the pipeline's data_version changed.
   useEffect(() => {
-    fetch(asset("venues.json"), { cache: "no-cache" })
-      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
-      .then(({ data_version, hubs: index, best: lists, venues: fresh }: { data_version: string; hubs?: Record<string, Hub>; best?: BestList[]; venues: Venue[] }) => {
+    type Data = { data_version: string; hubs?: Record<string, Hub>; best?: BestList[]; venues: Venue[] };
+    const get = (url: string) => fetch(url, { cache: "no-cache" }).then((r) => (r.ok ? (r.json() as Promise<Data>) : Promise.reject(r.status)));
+    get(asset("venues.json"))
+      // A copy cached before a deploy can predate a field (best-of lists
+      // came later): fetch past the CDN and offline caches once.
+      .then((d) => (d.best ? d : get(asset(`venues.json?fresh=${Date.now()}`)).catch(() => d)))
+      .then(({ data_version, hubs: index, best: lists, venues: fresh }) => {
         setHubs(index ?? {});
         setBest(lists ?? []);
         let cached: string | null = null;

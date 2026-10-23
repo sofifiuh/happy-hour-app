@@ -33,8 +33,8 @@ const isCombo = (d) => d.category === "drink" && COMBO.test(`${d.name} ${d.descr
 // leave them out. Mixers in a description ("clamato juice", "soda water")
 // don't count when the drink names a spirit, beer, wine or cocktail.
 const NO_ALCOHOL = /non[- ]?alc|alcohol[- ]free|zero[- ]proof|spirit[- ]free|(?<![\d.])0(\.0)? ?%|\bvirgin\b|mocktails?|\bn\/a\b|\bna (beer|lager|cocktail)/i;
-const SOFT = /\bsoft drinks?|\bsodas?\b|\bpop\b|root beer|lemonade|\bteas?\b|milkshakes?|\bshakes?\b|red bull|energy drink|\bjuices?\b|coffee|latte|espresso|kombucha|\bcokes?\b|sprite|ginger ale|lassi|smoothie|slush|refresher/i;
-const BOOZE = /vodka|\bgin\b|\brum\b|tequila|whisk|bourbon|\brye\b|mezcal|scotch|brandy|cognac|\bsake\b|soju|\bbeers?\b|lager|\bales?\b|\bipa\b|pilsner|stout|cider|\bwines?\b|prosecco|\bcava\b|champagne|sparkling|spritz|margarita|martini|mojito|negroni|caesar|cocktail|highball|\bwell\b|\bshots?\b|liqueur|limoncello|aperol|campari|vermouth|sangria|mimosa|daiquiri|paloma|\bmule\b|\bsour\b|old fashioned|fire ?ball|baileys|long island|bacardi|jameson|cuervo|lot 40|choya|boozy|spiked|\bhard\b|\bspirits?\b|wheat|\babv\b|\b[1-9](\.\d)? ?%|\b[12](\.5)? ?oz\b/i;
+const SOFT = /\bsoft drinks?|\bsodas?\b|\bpop\b|root beer|lemonade|\bteas?\b|milkshakes?|\bshakes?\b|red bull|energy drink|\bjuices?\b|coffee|latte|espresso|kombucha|\bcokes?\b|sprite|ginger ale|lassi|smoothie|slush|refresher|coca[- ]?cola|pepsi|\bwater\b|perrier|pellegrino/i;
+const BOOZE = /vodka|\bgin\b|\brum\b|tequila|whisk|bourbon|\brye\b|mezcal|scotch|brandy|cognac|\bsake\b|soju|\bbeers?\b|lager|\bales?\b|\bipa\b|pilsner|stout|cider|\bwines?\b|prosecco|\bcava\b|champagne|sparkling|spritz|margarita|martini|mojito|negroni|caesar|cocktail|highball|\bwell\b|\bshots?\b|liqueur|limoncello|aperol|campari|vermouth|sangria|mimosa|daiquiri|paloma|\bmule\b|\bsour\b|old fashioned|fire ?ball|baileys|long island|ranch water|bacardi|jameson|cuervo|lot 40|choya|boozy|spiked|\bhard\b|\bspirits?\b|wheat|\babv\b|\b[1-9](\.\d)? ?%|\b[12](\.5)? ?oz\b/i;
 export const isNonAlc = (d) => {
   if (d.category !== "drink") return false;
   // "Aperol, Campari … or Fre-Spritz (non-alc)": an alcohol-free option on an alcoholic drink.
@@ -108,7 +108,7 @@ function windowMinutes(start, end) {
   return len > 0 ? len : len + 24 * 60;
 }
 
-function hoursFacts(v) {
+export function hoursFacts(v) {
   const wins = [{ days: v.hh.days, start: v.hh.start, end: v.hh.end }, ...v.hh.extra];
   let minutes = 0;
   const days = new Set();

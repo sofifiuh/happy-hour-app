@@ -22,8 +22,8 @@ import opentype from "opentype.js";
 import sharp from "sharp";
 import { fmtRange } from "../src/lib/hours.ts";
 import { dayRuns, dealPhrase, fmtDate, money, nearby, parsePrice, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
-import { AREAS, BEST_FLOOR, bestPath, buildHubs, hubPath } from "./seo-data.mjs";
-import { cheapestDrink, isNonAlc, WEIGHTS } from "./hang-score.mjs";
+import { AREAS, BEST_FLOOR, BEST_FRESH_DAYS, bestPath, buildHubs, hubPath } from "./seo-data.mjs";
+import { cheapestDrink, hoursFacts, isNonAlc, WEIGHTS } from "./hang-score.mjs";
 
 const BASE = "https://alittlehang.com";
 const SITE = "A Little Hang";
@@ -505,9 +505,10 @@ a:focus-visible{outline:2px solid var(--orange)}
 .bestmap{position:relative;height:min(62vh,420px);margin:16px 0 0;border-radius:24px;overflow:hidden;background:var(--ink-2);display:grid;place-items:center;color:var(--dim);font-size:14px}
 .bestmap.ready{display:block}
 .bestmap.ready>p{display:none}
-.pin{display:flex;align-items:center;justify-content:center;width:30px;height:30px;padding:0;border:2px solid var(--ink);border-radius:999px;background:var(--cream);color:var(--ink);font:800 14px/1 "Funnel Display",sans-serif;cursor:pointer;box-shadow:0 4px 14px rgb(0 0 0/.35);transition:scale .2s}
-.pin.top{background:var(--lime)}
-.pin.on,.pin:hover{scale:1.2;background:var(--orange);color:#1b1b1b}
+.pin{width:30px;height:30px;padding:0;border:0;border-radius:999px;background:none;cursor:pointer}
+.pin span{display:flex;align-items:center;justify-content:center;width:30px;height:30px;box-sizing:border-box;border:2px solid var(--ink);border-radius:999px;background:var(--cream);color:var(--ink);font:800 14px/1 "Funnel Display",sans-serif;box-shadow:0 4px 14px rgb(0 0 0/.35);transition:transform .2s}
+.pin.top span{background:var(--lime)}
+.pin.on span,.pin:hover span{transform:scale(1.2);background:var(--orange);color:#1b1b1b}
 .bestmap .maplibregl-popup{z-index:200}
 .bestmap .maplibregl-popup-content{background:var(--ink-2);color:var(--cream);border-radius:16px;padding:12px 14px;box-shadow:0 10px 30px rgb(0 0 0/.35);font:14px/1.4 "Funnel Sans",system-ui,sans-serif}
 .bestmap .maplibregl-popup-tip{display:none}
@@ -518,16 +519,16 @@ a:focus-visible{outline:2px solid var(--orange)}
 .pop-links{display:flex;gap:14px;margin:6px 0 0}
 .pop-links a{color:var(--orange);font-weight:600}
 .entry{margin:44px 0 0;scroll-margin-top:80px}
-.entry header{display:flex;align-items:center;gap:12px}
-.entry h2{margin:0;flex:1;min-width:0}
+.entry header{display:grid;grid-template-columns:auto minmax(0,1fr) auto;column-gap:14px;align-items:center}
+.entry h2{margin:0;line-height:1.15}
 .entry h2 a{text-decoration:none}
 .entry h2 a:hover{text-decoration:underline}
-.entry .num{flex:none;display:grid;place-items:center;width:38px;height:38px;border-radius:999px;background:var(--ink-3);font:800 18px/1 "Funnel Display",sans-serif}
+.entry .num{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:999px;background:var(--ink-3);font:800 18px/1 "Funnel Display",sans-serif;font-variant-numeric:tabular-nums;text-box:trim-both cap alphabetic}
 .entry .num.top{background:var(--orange);color:#1b1b1b}
-.entry .sc{flex:none;display:flex;flex-direction:column;align-items:center;justify-content:center;width:56px;height:56px;border-radius:16px;background:var(--ink-3);font:800 21px/1 "Funnel Display",sans-serif;font-variant-numeric:tabular-nums;text-align:center}
+.entry .sc{display:flex;align-items:baseline;gap:3px;padding:9px 12px;border-radius:14px;background:var(--ink-3);font:800 22px/1 "Funnel Display",sans-serif;font-variant-numeric:tabular-nums;white-space:nowrap}
 .entry .sc.top{background:var(--lime);color:var(--ink)}
-.entry .sc small{display:block;font:600 10px/1 "Funnel Sans",sans-serif;margin-top:2px}
-.entry .where{margin:6px 0 0 50px}
+.entry .sc small{font:600 12px/1 "Funnel Sans",sans-serif}
+.entry .where{margin:4px 0 0;font-size:14px;color:var(--dim)}
 .entry img{display:block;width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;border-radius:20px;margin:14px 0 0;background:var(--ink-3)}
 .entry>p:not(.where):not(.parts){font-size:17px;max-width:62ch;margin:14px 0 0}
 .parts{margin:8px 0 0;font-size:13px;color:var(--dim);font-variant-numeric:tabular-nums}
@@ -912,24 +913,61 @@ function standouts(v) {
   return [...ok.filter((d) => d.category === "drink").slice(0, 2), ...ok.filter((d) => d.category === "food").slice(0, 1)];
 }
 
+// What sets a spot apart from the others on this list, from the data: the
+// list's cheapest drink, most deals, most hours, or a feature few others
+// have. The same spot reads differently on each list it's on.
+function listFacts(v, b, first) {
+  const list = b.venues;
+  const facts = [];
+  const cheap = (x) => cheapestDrink(x)?.p ?? Infinity;
+  const c = cheapestDrink(v);
+  if (c && list.every((o) => o === v || cheap(o) > c.p)) facts.push({ deal: c.d, text: `Its ${dealPhrase(c.d)} is the cheapest drink on this list.` });
+  const hrs = (x) => hoursFacts(x).minutes;
+  const h = hrs(v);
+  if (first !== "hours" && list.every((o) => o === v || hrs(o) < h)) facts.push({ text: `No spot on this list runs a longer happy hour: ${Math.round(h / 60)} hours a week.` });
+  const nd = v.hh.deals.length;
+  if (first !== "selection" && list.every((o) => o === v || o.hh.deals.length < nd)) facts.push({ text: `With ${nd} deals, it has the most choice of the ${list.length}.` });
+  const few = (test, what, amenity) => {
+    if (!test(v)) return;
+    const k = list.filter(test).length;
+    if (k === 1) facts.push({ amenity, text: `It's the only one here with ${what}.` });
+    else if (k <= 3) facts.push({ amenity, text: `It's one of just ${k} on this list with ${what}.` });
+  };
+  few((x) => hoursFacts(x).late, "a late-night happy hour");
+  few((x) => hoursFacts(x).weekend > 0, "happy hour on weekends");
+  few((x) => x.amenities.patio, "a patio", "patio");
+  few((x) => x.amenities.liveMusic, "live music", "liveMusic");
+  return facts.slice(0, 2);
+}
+
+// A stable pick per spot and list, so openers don't all read the same.
+const pick = (key, xs) => xs[parseInt(createHash("sha1").update(key).digest("hex").slice(0, 6), 16) % xs.length];
+
 function writeup(v, rank, b) {
   const s = v.score;
   const parts = PART_LABELS.map(([, k]) => k).sort((x, y) => s[y] - s[x]);
   const [first, second] = parts;
   const score = s.total.toFixed(1);
+  const key = `${b.slug}/${v.id}`;
   const lead =
     rank === 1
       ? `${v.name} takes the top spot in ${b.name} with a Hangout Score of ${score}.`
-      : rank <= 3
-        ? `At number ${rank}, ${v.name} scores ${score}.`
-        : `${v.name} comes in at number ${rank} with ${score}.`;
+      : pick(key, [
+          `${v.name} comes in at number ${rank} with ${score}.`,
+          `Number ${rank} is ${v.name}, at ${score}.`,
+          `${v.name} lands at number ${rank}, scoring ${score}.`,
+        ]);
+  const facts = listFacts(v, b, first);
   const out = [lead, PART_LEADS[first](s.notes, s)];
   if (s[second] >= 7) out.push(`It's strong on ${partWord[second]} too (${s[second].toFixed(1)}).`);
-  const deals = standouts(v).map(dealPhrase);
-  if (deals.length) out.push(`On the menu: ${deals.length < 3 ? deals.join(" and ") : `${deals.slice(0, -1).join(", ")} and ${deals.at(-1)}`}.`);
+  out.push(...facts.map((f) => f.text));
+  const used = new Set(facts.map((f) => f.deal?.name).filter(Boolean));
+  const said = new Set(facts.map((f) => f.amenity).filter(Boolean));
+  const deals = standouts(v).filter((d) => !used.has(d.name)).map(dealPhrase);
+  if (deals.length) out.push(`${pick(`${key}/menu`, ["On the menu", "Worth ordering", "Deals include"])}: ${deals.length < 3 ? deals.join(" and ") : `${deals.slice(0, -1).join(", ")} and ${deals.at(-1)}`}.`);
   out.push(`Happy hour runs ${summary(v).replace(/^Every/, "every")}.`);
   const a = v.amenities;
-  const extras = [a.patio && "there's a patio", a.liveMusic && "there's live music on some nights", a.groups && "it's good for groups"].filter(Boolean);
+  const extras = [a.patio && !said.has("patio") && "there's a patio", a.liveMusic && !said.has("liveMusic") && "there's live music on some nights", a.groups && "it's good for groups"].filter(Boolean);
   if (extras.length) out.push(`${cap(extras.length < 3 ? extras.join(" and ") : `${extras.slice(0, -1).join(", ")} and ${extras.at(-1)}`)}.`);
   if (a.transitStation) out.push(`The nearest SkyTrain is ${a.transitStation}.`);
   return out.join(" ");
@@ -940,11 +978,10 @@ function bestEntry(v, i, b) {
   const n = i + 1;
   const photo = v.photo ? `<img src="${esc(/^https?:/.test(v.photo) ? v.photo : `/${v.photo}`)}" alt="${esc(`${v.name}, ${whereLabel(v)}`)}" loading="${i < 2 ? "eager" : "lazy"}" width="720" height="360" />` : "";
   return `<article class="entry" id="rank-${n}">
-<header><span class="num${n <= 3 ? " top" : ""}" aria-hidden="true">${n}</span><h2><a href="/spots/${v.id}.html">${esc(v.name)}</a></h2><span class="sc${s.total >= 7.5 ? " top" : ""}" aria-label="Hangout Score ${s.total.toFixed(1)} out of 10">${s.total.toFixed(1)}<small>/10</small></span></header>
-<p class="where">${esc(whereLabel(v))} · ${esc(v.address.split(",")[0])}</p>
+<header><span class="num${n <= 3 ? " top" : ""}" aria-hidden="true">${n}</span><div><h2><a href="/spots/${v.id}.html">${esc(v.name)}</a></h2><p class="where">${esc(whereLabel(v))} · ${esc(v.address.split(",")[0])}</p></div><span class="sc${s.total >= 7.5 ? " top" : ""}" aria-label="Hangout Score ${s.total.toFixed(1)} out of 10">${s.total.toFixed(1)}<small>/10</small></span></header>
 ${photo}
 <p>${esc(writeup(v, n, b))}</p>
-<p class="parts">${PART_LABELS.map(([l, k]) => `${l} ${s[k].toFixed(1)}`).join(" · ")}${v.checked ? ` · menu checked ${esc(fmtDate(v.checked))}` : ""}</p>
+<p class="parts">${PART_LABELS.map(([l, k]) => `${l} ${s[k].toFixed(1)}`).join(" · ")}${v.confirmed ? ` · times confirmed on their menu ${esc(fmtDate(v.confirmed))}` : ""}</p>
 <a class="more" href="/spots/${v.id}.html">All ${v.hh.deals.length} deals and times at ${esc(v.name)}</a>
 </article>`;
 }
@@ -963,7 +1000,7 @@ function bestIntro2(b) {
   ].filter(Boolean);
   const hi = list[0].score.total.toFixed(1);
   const lo = list.at(-1).score.total.toFixed(1);
-  return `${cap(bits.length < 3 ? bits.join(" and ") : `${bits.slice(0, -1).join(", ")}, and ${bits.at(-1)}`)}. Scores on this list run from ${hi} down to ${lo}. Below: the map, then why each spot made it.`;
+  return `${cap(bits.length < 3 ? bits.join(" and ") : `${bits.slice(0, -1).join(", ")}, and ${bits.at(-1)}`)}. Scores on this list run from ${hi} down to ${lo}.`;
 }
 
 function bestFaq(b) {
@@ -1068,7 +1105,7 @@ async function bestPage(b) {
     .map((c, i) => (i < crumbs.length - 1 ? `<a href="${c.path}">${esc(i === 0 ? SITE : c.name)}</a>` : `<span>${esc(c.name)}</span>`))
     .join(" › ")}</nav>
 <h1>${esc(h1)}</h1>
-<p class="byline">By the ${SITE} team${updated ? ` · Updated <time datetime="${updated}">${esc(fmtDate(updated))}</time>` : ""} · Ranked from ${b.scored} scored spots</p>
+<p class="byline">By the <a href="/about">${SITE} team</a>${updated ? ` · Updated <time datetime="${updated}">${esc(fmtDate(updated))}</time>` : ""} · Ranked from ${b.scored} scored spots</p>
 <p class="lede">${esc(intro)}</p>
 <p class="lede">${esc(bestIntro2(b))}</p>
 <nav class="glance" aria-label="The list at a glance"><h2>At a glance</h2><ol>${list.map((v, i) => `<li><a href="#rank-${i + 1}">${esc(v.name)}</a> <b>${v.score.total.toFixed(1)}</b></li>`).join("")}</ol></nav>
@@ -1084,14 +1121,15 @@ ${list.map((v, i) => bestEntry(v, i, b)).join("\n")}
 <li><b>Hours (${pct("hours")})</b>: hours of happy hour a week, weekends and late night.</li>
 <li><b>Vibe (${pct("vibe")})</b>: patio, live music, good for groups and near transit.</li>
 </ul>
-<p class="meta">Spots need at least 3 deals, 2 with prices, and confirmed times to be scored${unscored > 0 ? `, so ${unscored} of the ${pool.length} spots ${b.kind === "metro" ? "we track" : `in ${esc(b.name)}`} aren't ranked yet` : ""}. A spot needs ${BEST_FLOOR} or more to make a best-of list. No venue pays to be listed or ranked, and we don't use Google star ratings. Menus are re-checked every night and the list updates with them. <a href="/about/#hang-score">Full method</a>.</p>
+<p class="meta">Spots need at least 3 deals, 2 with prices, and confirmed times to be scored${unscored > 0 ? `, so ${unscored} of the ${pool.length} spots ${b.kind === "metro" ? "we track" : `in ${esc(b.name)}`} aren't ranked yet` : ""}. A spot needs ${BEST_FLOOR} or more to make a best-of list. No venue pays to be listed or ranked, and we don't use Google star ratings. Every spot here had its times confirmed on its own menu within the last ${BEST_FRESH_DAYS} days (oldest: ${esc(fmtDate(list.map((v) => v.confirmed).sort()[0]))}); a spot whose page stops showing our times drops off until it's confirmed again. Menus are re-checked every night and the list updates with them. <a href="/about/#hang-score">Full method</a>.</p>
 ${place ? `<h2>All happy hours in ${esc(b.name)}</h2>\n<ul class="chips"><li><a href="${hubPath(b.slug)}">Every ${esc(b.name)} happy hour <small>${place.venues.length}</small></a></li></ul>` : ""}
 ${nearbyLists.length ? `<h2>Best happy hours nearby</h2>\n${chipsFor(nearbyLists)}` : ""}
 ${!place ? `<h2>Best happy hours by neighbourhood</h2>\n${chipsFor(others.filter((o) => o.kind === "area"))}\n<h2>Best happy hours by city</h2>\n${chipsFor(others.filter((o) => o.kind === "city"))}` : `<h2>More best-of lists</h2>\n<ul class="chips"><li><a href="${bestPath("metro")}">All of Metro Vancouver</a></li></ul>`}
 <h2>Questions about the best happy hours in ${esc(b.name)}</h2>
 <div class="faq">${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("")}</div>`;
-  write(`${path.slice(1)}index.html`, hubDoc({ path, title, description, jsonld, body, image, script: BEST_MAP_JS }));
-  sitemapDates.set(path, updated);
+  write(`${path.slice(1)}index.html`, hubDoc({ path, title, description, jsonld, body, image, script: BEST_MAP_JS, robots: b.index ? undefined : "noindex,follow" }));
+  // Lists close to their place's hub page (few scored spots) stay for people but out of search.
+  if (b.index) sitemapDates.set(path, updated);
 }
 
 for (const b of bestLists) {
@@ -1297,7 +1335,7 @@ ${places.filter((p) => p.kind === "city").map((p) => linkLine(p, `Happy hours in
 ${places.filter((p) => p.kind === "area").map((p) => linkLine(p, `Happy hours in ${p.name}`)).join("\n")}
 
 ## Best happy hours, ranked by Hangout Score
-${bestLists.map((b) => `- [${bestH1(b)}](${BASE}${bestPath(b.slug)}): #1 ${b.venues[0].name} (${b.venues[0].score.total.toFixed(1)}/10)`).join("\n")}
+${bestLists.filter((b) => b.index).map((b) => `- [${bestH1(b)}](${BASE}${bestPath(b.slug)}): #1 ${b.venues[0].name} (${b.venues[0].score.total.toFixed(1)}/10)`).join("\n")}
 
 ## By day and deal (Metro Vancouver)
 ${topics.map((t) => linkLine(t, t.label)).join("\n")}

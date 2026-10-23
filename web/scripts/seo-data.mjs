@@ -177,6 +177,14 @@ export const BEST_SIZE = 10; // spots ranked on each list
 // components/hang-score.tsx), and ships only with at least BEST_MIN_LISTED.
 export const BEST_FLOOR = 4.5;
 export const BEST_MIN_LISTED = 6;
+// A ranked spot's times must have matched its own menu in the last
+// BEST_FRESH_DAYS (trust.last_confirmed_at, as `confirmed`), so a list never
+// tops out with a spot whose page has stopped stating our times.
+export const BEST_FRESH_DAYS = 14;
+// Below MIN_BEST_INDEX scored spots a list is most of the place's scored
+// spots, close to the hub page itself: it stays for people (noindex) but
+// isn't offered to search engines as its own page.
+export const MIN_BEST_INDEX = 15;
 
 export const byScore = (a, b) => b.score.total - a.score.total || b.score.value - a.score.value || b.score.selection - a.score.selection || a.name.localeCompare(b.name);
 
@@ -184,11 +192,13 @@ export const byScore = (a, b) => b.score.total - a.score.total || b.score.value 
 // MIN_BEST, by size. `slug` is the place's hub slug ("metro" for all).
 export function buildBest(venues, places) {
   const lists = [];
+  const asOf = venues.map((v) => v.confirmed).filter(Boolean).sort().pop();
+  const since = asOf ? new Date(Date.parse(asOf) - BEST_FRESH_DAYS * 864e5).toISOString().slice(0, 10) : "";
   const add = (slug, name, kind, pool) => {
     const scored = pool.filter((v) => v.score);
     // A best happy hour has at least one alcoholic drink deal.
-    const top = scored.filter((v) => v.score.total >= BEST_FLOOR && hasAlcohol(v)).sort(byScore).slice(0, BEST_SIZE);
-    if (scored.length >= MIN_BEST && top.length >= BEST_MIN_LISTED) lists.push({ slug, name, kind, scored: scored.length, venues: top });
+    const top = scored.filter((v) => v.score.total >= BEST_FLOOR && hasAlcohol(v) && v.confirmed >= since).sort(byScore).slice(0, BEST_SIZE);
+    if (scored.length >= MIN_BEST && top.length >= BEST_MIN_LISTED) lists.push({ slug, name, kind, scored: scored.length, index: scored.length >= MIN_BEST_INDEX, venues: top });
   };
   add("metro", "Metro Vancouver", "metro", venues);
   for (const p of places) add(p.slug, p.name, p.kind, p.venues);
