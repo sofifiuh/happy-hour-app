@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import type { HangScore, ScorePart } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
-// The Hang Score (scripts/hang-score.mjs): our own 0-10 rating of a happy
+// The Hangout Score (scripts/hang-score.mjs): our own 0-10 rating of a happy
 // hour from its prices, deals, hours and setting. Shown out of 10, never as
 // stars, so it doesn't read as a review score.
 
@@ -26,14 +26,14 @@ export function scoreWord(n: number) {
 export function ScoreChip({ score, className }: { score: HangScore; className?: string }) {
   return (
     <span
-      title={`Hang Score ${fmtScore(score.total)} out of 10`}
+      title={`Hangout Score ${fmtScore(score.total)} out of 10`}
       className={cn(
         "inline-flex items-center rounded-full px-1.5 py-px font-display text-[12px] leading-[1.3] font-bold tabular",
         score.total >= TOP_SCORE ? "bg-lime text-on-pop" : "bg-ink-3 text-cream",
         className,
       )}
     >
-      <span className="sr-only">Hang Score </span>
+      <span className="sr-only">Hangout Score </span>
       {fmtScore(score.total)}
     </span>
   );
@@ -54,7 +54,7 @@ export function ScoreCard({ score }: { score: HangScore }) {
         </span>
         <div className="min-w-0">
           <p className="font-display text-[18px] leading-tight font-bold">{scoreWord(score.total)}</p>
-          <p className="mt-0.5 text-[13px] text-muted-foreground">Hang Score out of 10, from the deals and times on this page</p>
+          <p className="mt-0.5 text-[13px] text-muted-foreground">Hangout Score out of 10, from the deals and times on this page</p>
         </div>
       </div>
       <ul className="mt-4 space-y-3.5">

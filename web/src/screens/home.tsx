@@ -38,12 +38,6 @@ export function Home() {
   const [selected, setSelected] = useState<string | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
 
-  // Desktop: a pin click brings its row into view in the list.
-  useEffect(() => {
-    if (!selected) return;
-    document.getElementById(`row-${selected}`)?.scrollIntoView({ block: "center", behavior: reducedMotion() ? "auto" : "smooth" });
-  }, [selected]);
-
   const sections = useMemo(() => {
     if (filters.tab === "plan" && filters.plan) {
       return [{ title: `On ${DAY_FULL[filters.plan.day]} at ${fmtTime(filters.plan.time)}`, rows }];
@@ -59,12 +53,33 @@ export function Home() {
       else none.push(r);
     }
     return [
-      { title: "Happening now", rows: live, live: true },
+      { title: "Happy hours happening now", rows: live, live: true },
       { title: "Later today", rows: soon },
       { title: "Coming up", rows: later },
       { title: "Times not listed", rows: none },
     ].filter((s) => s.rows.length);
   }, [rows, filters.tab, filters.plan, now]);
+
+  // Desktop: a pin click brings its row into view in the list, showing
+  // more rows first if it's further down than the list has loaded.
+  const order = useMemo(() => sections.flatMap((s) => s.rows.map((r) => r.venue.id)), [sections]);
+  const at = selected ? order.indexOf(selected) : -1;
+  useEffect(() => {
+    if (at >= limit) setLimit(at + PAGE);
+  }, [at, limit]);
+  useEffect(() => {
+    if (!selected || at < 0 || at >= limit) return;
+    const id = requestAnimationFrame(() => {
+      const el = document.getElementById(`row-${selected}`);
+      if (!el) return;
+      // Glide to nearby rows; jump to far ones rather than scroll for seconds.
+      const far = Math.abs(el.getBoundingClientRect().top) > window.innerHeight * 2;
+      el.scrollIntoView({ block: "center", behavior: far || reducedMotion() ? "auto" : "smooth" });
+    });
+    return () => cancelAnimationFrame(id);
+    // Scroll on a new selection (or once its row has loaded), not on every refresh.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selected, at >= 0 && at < limit]);
 
   let budget = limit;
   let n = 0;
@@ -173,7 +188,11 @@ export function Home() {
                       key={r.venue.id}
                       id={`row-${r.venue.id}`}
                       style={{ "--i": n++ } as CSSProperties}
-                      className={cn("animate-rise scroll-mt-48 rounded-2xl transition-shadow", selected === r.venue.id && "ring-2 ring-primary")}
+                      aria-current={selected === r.venue.id || undefined}
+                      className={cn(
+                        "animate-rise scroll-mt-48 rounded-2xl transition-[box-shadow,transform] duration-300 ease-out",
+                        selected === r.venue.id && "animate-pop ring-2 ring-primary shadow-[0_0_0_6px_color-mix(in_srgb,var(--color-primary)_18%,transparent)]",
+                      )}
                     >
                       <VenueRow row={r} now={now} onHover={desktop ? setHovered : undefined} />
                     </li>
