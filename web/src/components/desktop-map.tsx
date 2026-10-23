@@ -5,7 +5,7 @@ import { VenueMap } from "@/components/venue-map";
 import type { Row } from "@/lib/store";
 
 // Right-hand pane of the desktop layout: every listed spot as a pin, and
-// the picked spot's card floating over the bottom of the map.
+// the picked spot's card popping up beside its pin.
 export default function DesktopMap({
   rows,
   now,
@@ -22,20 +22,26 @@ export default function DesktopMap({
   const mappable = useMemo(() => rows.filter((r) => r.venue.lat != null && r.venue.lng != null), [rows]);
   const picked = selected ? mappable.find((r) => r.venue.id === selected) : undefined;
   return (
-    <>
-      <VenueMap rows={mappable} selected={selected} hovered={hovered} onSelect={onSelect} focusOffset={picked ? 120 : 0} locateClassName={picked ? "bottom-[276px]" : "bottom-5"} />
-      {picked && (
-        <div key={picked.venue.id} className="animate-rise absolute inset-x-0 bottom-0 z-10 mx-auto w-full max-w-[400px] p-4">
-          <button
-            onClick={() => onSelect(null)}
-            aria-label="Close"
-            className="absolute top-1 right-1 z-10 grid size-11 place-items-center rounded-full bg-ink-2 text-cream shadow-lg ring-1 ring-edge/10 transition-transform active:scale-90"
-          >
-            <X className="size-4" />
-          </button>
-          <MapCard row={picked} now={now} active />
-        </div>
-      )}
-    </>
+    <VenueMap
+      rows={mappable}
+      selected={selected}
+      hovered={hovered}
+      onSelect={onSelect}
+      locateClassName="bottom-5"
+      popover={
+        picked && (
+          <>
+            <MapCard row={picked} now={now} active />
+            <button
+              onClick={() => onSelect(null)}
+              aria-label="Close"
+              className="absolute -top-2.5 -right-2.5 z-10 grid size-8 place-items-center rounded-full bg-ink-2 text-cream shadow-lg ring-1 ring-edge/15 transition-transform hover:scale-105 active:scale-90"
+            >
+              <X className="size-3.5" />
+            </button>
+          </>
+        )
+      }
+    />
   );
 }

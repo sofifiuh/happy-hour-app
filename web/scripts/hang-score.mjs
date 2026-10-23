@@ -1,4 +1,4 @@
-// The Hang Score: our own 0–10 rating of how good a happy hour is, worked
+// The Hangout Score: our own 0–10 rating of how good a happy hour is, worked
 // out from the deals and times we publish, so anyone can check it.
 //
 //   Value      40%  deal prices against what Vancouver spots charge for the same thing

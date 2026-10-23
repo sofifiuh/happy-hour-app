@@ -1,4 +1,4 @@
-import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Globe, Heart, Images, Navigation, Phone, Share, Star } from "lucide-react";
+import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Navigation, Phone, Share, Star } from "lucide-react";
 import { type CSSProperties, useCallback, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
@@ -171,10 +171,10 @@ export function Spot() {
           {venue.score && (
             <button
               onClick={() => document.getElementById("hang-score")?.scrollIntoView({ behavior: "smooth", block: "start" })}
-              aria-label={`${venue.score.total.toFixed(1)} Hang Score out of 10, see how it scores`}
+              aria-label={`${venue.score.total.toFixed(1)} Hangout Score out of 10, see how it scores`}
               className="-my-3 inline-flex min-h-11 items-center gap-1.5 font-semibold"
             >
-              <ScoreChip score={venue.score} /> Hang Score
+              <ScoreChip score={venue.score} /> Hangout Score
             </button>
           )}
           {venue.rating != null && (
@@ -336,7 +336,7 @@ export function Spot() {
         <section style={{ "--i": 4 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Find us here</h2>
           <button onClick={() => setDirectionsOpen(true)} className="block w-full overflow-hidden rounded-[22px] bg-ink-2 text-left">
-            <MiniMap lat={venue.lat} lng={venue.lng} className="h-[170px] w-full" />
+            <MiniMap lat={venue.lat} lng={venue.lng} others={near as { lat: number; lng: number }[]} className="h-[170px] w-full" />
             <div className="flex items-center justify-between gap-3 p-4">
               <span className="text-[15px]">{venue.address}</span>
               <span className="inline-flex shrink-0 items-center gap-1.5 text-[14px] font-semibold text-orange-fg">
@@ -370,14 +370,26 @@ export function Spot() {
         <section style={{ "--i": 6 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Happy hours nearby</h2>
           <ul className="rounded-[22px] bg-ink-2 px-4">
-            {near.map((o) => (
-              <li key={o.id} className="border-b border-border last:border-0">
-                <Link to={spotPath(o.id)} className="flex min-h-12 items-center justify-between gap-3 py-3 text-[15px]">
-                  <span className="min-w-0 truncate font-semibold">{o.name}</span>
-                  <span className="shrink-0 text-[13px] text-muted-foreground tabular">{fmtRange(o.hh.start, o.hh.end || "23:59")}</span>
-                </Link>
-              </li>
-            ))}
+            {near.map((o) => {
+              // Walk from this spot, not from you: "3 min walk" or "1.4 km away".
+              const walk = walkLabel(distanceKm({ lat: venue.lat!, lng: venue.lng! }, { lat: o.lat!, lng: o.lng! }));
+              return (
+                <li key={o.id} className="border-b border-border last:border-0">
+                  <Link to={spotPath(o.id)} className="flex min-h-12 items-center justify-between gap-3 py-3 text-[15px]">
+                    <span className="min-w-0">
+                      <span className="block truncate font-semibold">{o.name}</span>
+                      {walk && (
+                        <span className="mt-0.5 flex items-center gap-1 text-[13px] text-sky-fg">
+                          <Footprints className="size-3.5 shrink-0" />
+                          {walk}
+                        </span>
+                      )}
+                    </span>
+                    <span className="shrink-0 text-[13px] text-muted-foreground tabular">{fmtRange(o.hh.start, o.hh.end || "23:59")}</span>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </section>
       )}

@@ -141,7 +141,7 @@ const slim = venues
     },
   }));
 
-// Hang Scores (scripts/hang-score.mjs) need every venue to rank against.
+// Hangout Scores (scripts/hang-score.mjs) need every venue to rank against.
 const { scored } = addHangScores(slim);
 
 // City, neighbourhood and hub pages (scripts/seo-data.mjs). Each venue keeps
@@ -176,4 +176,4 @@ for (const v of slim) {
 
 writeFileSync(resolve(out, "venues.json"), JSON.stringify({ data_version, hubs, venues: slim }));
 console.log(`sync-data: ${places.length} place hubs, ${topics.length} topic hubs, ${combos.length} combinations`);
-console.log(`sync-data: ${slim.length} venues (${data_version}), ${scored} with a Hang Score`);
+console.log(`sync-data: ${slim.length} venues (${data_version}), ${scored} with a Hangout Score`);

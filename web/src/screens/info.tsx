@@ -65,10 +65,10 @@ function About() {
         menu by a person. Times change, so if something looks off, tap "Report a wrong time" on the spot's page and we'll fix it.
       </p>
       <H>
-        <span id="hang-score">How the Hang Score works</span>
+        <span id="hang-score">How the Hangout Score works</span>
       </H>
       <p>
-        Every happy hour with enough deal info gets a Hang Score out of 10. It's worked out from what's on the spot's page, the same way
+        Every happy hour with enough deal info gets a Hangout Score out of 10. It's worked out from what's on the spot's page, the same way
         for every venue:
       </p>
       <ul className="mt-2 list-disc space-y-1 pl-5">
