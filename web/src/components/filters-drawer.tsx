@@ -5,6 +5,7 @@ import { Switch } from "@/components/ui/switch";
 import { matchesAmenity, useStore, type AmenityKey } from "@/lib/store";
 
 export const AMENITIES: { key: AmenityKey; emoji: string; label: string }[] = [
+  { key: "topScore", emoji: "✨", label: "Top happy hours (Hang Score 7.5+)" },
   { key: "patio", emoji: "🌳", label: "Patio" },
   { key: "lateNight", emoji: "🌙", label: "Late night (on till 9pm or later)" },
   { key: "food", emoji: "🍟", label: "Food deals" },

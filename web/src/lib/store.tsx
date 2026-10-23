@@ -13,8 +13,8 @@ const SAVED_KEY = "alh:saved";
 const AREA_KEY = "alh:area";
 
 export type TimeTab = "all" | "live" | "upcoming" | "plan";
-export type AmenityKey = "patio" | "food" | "drink" | "transit" | "lateNight";
-const AMENITY_KEYS: AmenityKey[] = ["patio", "food", "drink", "transit", "lateNight"];
+export type AmenityKey = "patio" | "food" | "drink" | "transit" | "lateNight" | "topScore";
+const AMENITY_KEYS: AmenityKey[] = ["patio", "food", "drink", "transit", "lateNight", "topScore"];
 
 export interface Plan {
   day: number;
@@ -133,6 +133,8 @@ export function matchesAmenity(v: Venue, key: AmenityKey) {
       return v.hh.deals.some((d) => d.category === "food");
     case "drink":
       return v.hh.deals.some((d) => d.category === "drink");
+    case "topScore":
+      return (v.score?.total ?? 0) >= 7.5; // TOP_SCORE in components/hang-score.tsx
     case "lateNight":
       // An evening window still running at 9pm: ends 21:00+, runs past
       // midnight, or "until close" from 6pm on (all-day specials don't count).

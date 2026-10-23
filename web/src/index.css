@@ -253,6 +253,11 @@ body {
     transform: scale(1.03);
   }
 }
+@keyframes grow {
+  from {
+    transform: scaleX(0);
+  }
+}
 @keyframes live-ring {
   0% {
     box-shadow: 0 0 0 0 var(--live-glow);
@@ -278,6 +283,9 @@ body {
 }
 @utility animate-pop {
   animation: pop 300ms var(--ease-out) both;
+}
+@utility animate-grow {
+  animation: grow 520ms var(--ease-out) both;
 }
 @utility animate-live {
   animation: live-ring 2s var(--ease-out) infinite;

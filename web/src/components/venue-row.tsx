@@ -5,6 +5,7 @@ import { endingSoon, fmtRange, statusLabel } from "@/lib/hours";
 import { heroName, markHero } from "@/lib/motion";
 import type { Row } from "@/lib/store";
 import { cn } from "@/lib/utils";
+import { ScoreChip, TOP_SCORE } from "./hang-score";
 import { Countdown, StatusDot } from "./status";
 import { VenuePhoto } from "./venue-photo";
 
@@ -15,6 +16,8 @@ export function VenueRow({ row, now, onHover }: { row: Row; now: Date; onHover?:
   const street = venue.address.split(",")[0];
   const soon = endingSoon(occ, now);
   const walk = km != null ? walkLabel(km) : "";
+  // Rows only call out the top happy hours; the full score is on the venue page.
+  const top = venue.score && venue.score.total >= TOP_SCORE ? venue.score : null;
   return (
     <Link
       to={spotPath(venue.id)}
@@ -39,8 +42,15 @@ export function VenueRow({ row, now, onHover }: { row: Row; now: Date; onHover?:
           {street}
           {walk && <span className="text-sky-fg"> · {walk}</span>}
         </span>
-        {occ.status !== "scheduled" && (
-          <Countdown label={statusLabel(occ, now)} className={cn("text-[12px] font-medium", soon ? "text-orange-fg" : occ.status === "live" ? "text-lime-fg/80" : "text-muted-foreground")} />
+        {(occ.status !== "scheduled" || top) && (
+          <span className="flex items-center justify-between gap-3">
+            {occ.status !== "scheduled" ? (
+              <Countdown label={statusLabel(occ, now)} className={cn("text-[12px] font-medium", soon ? "text-orange-fg" : occ.status === "live" ? "text-lime-fg/80" : "text-muted-foreground")} />
+            ) : (
+              <span />
+            )}
+            {top && <ScoreChip score={top} className="shrink-0" />}
+          </span>
         )}
       </div>
     </Link>

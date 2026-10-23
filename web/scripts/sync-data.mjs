@@ -5,6 +5,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { AREAS, buildHubs, hubPath } from "./seo-data.mjs";
+import { addHangScores } from "./hang-score.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "../..");
@@ -118,6 +119,9 @@ const slim = venues
     },
   }));
 
+// Hang Scores (scripts/hang-score.mjs) need every venue to rank against.
+const { scored } = addHangScores(slim);
+
 // City, neighbourhood and hub pages (scripts/seo-data.mjs). Each venue keeps
 // links to its area and city hubs and up to three topic hubs; the index
 // lists every hub for the home page's "Explore" links.
@@ -150,4 +154,4 @@ for (const v of slim) {
 
 writeFileSync(resolve(out, "venues.json"), JSON.stringify({ data_version, hubs, venues: slim }));
 console.log(`sync-data: ${places.length} place hubs, ${topics.length} topic hubs, ${combos.length} combinations`);
-console.log(`sync-data: ${slim.length} venues (${data_version})`);
+console.log(`sync-data: ${slim.length} venues (${data_version}), ${scored} with a Hang Score`);
