@@ -37,20 +37,46 @@ export async function mount(el: HTMLElement) {
   map.touchZoomRotate.disableRotation();
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
 
-  const popup = new maplibregl.Popup({ closeButton: true, offset: 20, maxWidth: "260px", focusAfterOpen: false });
+  const popup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, offset: 20, maxWidth: "260px", focusAfterOpen: false });
+  // The popup opens off the pin where it's drawn: spread pins sit away from their true spot.
+  const R = 20;
+  const D = Math.round(R * 0.7);
+  const popAt = (mk: maplibregl.Marker) => {
+    const { x, y } = mk.getOffset();
+    const at = (dx: number, dy: number): [number, number] => [x + dx, y + dy];
+    popup.setOffset({
+      center: at(0, 0),
+      top: at(0, R),
+      bottom: at(0, -R),
+      left: at(R, 0),
+      right: at(-R, 0),
+      "top-left": at(D, D),
+      "top-right": at(-D, D),
+      "bottom-left": at(D, -D),
+      "bottom-right": at(-D, -D),
+    });
+  };
   let on: HTMLElement | null = null;
+  let onMarker: maplibregl.Marker | null = null;
   const markers: maplibregl.Marker[] = [];
   for (const p of pins) {
+    // maplibre positions the marker element with a transform, so the pin's
+    // hover scale goes on an inner face: scaling the element itself would
+    // scale that translate too and throw the pin away from the pointer.
     const pin = document.createElement("button");
     pin.type = "button";
     pin.className = `pin${p.n <= 3 ? " top" : ""}`;
-    pin.textContent = String(p.n);
+    const face = document.createElement("span");
+    face.textContent = String(p.n);
+    pin.append(face);
     pin.setAttribute("aria-label", `${p.n}. ${p.name}, Hangout Score ${p.score}`);
     pin.addEventListener("click", (e) => {
       e.stopPropagation();
       on?.classList.remove("on");
       on = pin;
+      onMarker = marker;
       pin.classList.add("on");
+      popAt(marker);
       popup
         .setLngLat([p.lng, p.lat])
         .setHTML(
@@ -60,13 +86,23 @@ export async function mount(el: HTMLElement) {
     });
     // Higher ranks sit on top where pins overlap.
     pin.style.zIndex = String(100 - p.n);
-    markers.push(new maplibregl.Marker({ element: pin }).setLngLat([p.lng, p.lat]).addTo(map));
+    const marker = new maplibregl.Marker({ element: pin }).setLngLat([p.lng, p.lat]).addTo(map);
+    markers.push(marker);
   }
-  const spread = () => spreadMarkers(map, markers);
-  map.once("idle", spread);
+  const spread = () => {
+    spreadMarkers(map, markers);
+    if (onMarker) popAt(onMarker);
+  };
+  // Spread as soon as the map can project, not when tiles finish: a tap before then would see its pin jump.
+  map.once("load", spread);
   map.on("zoomend", spread);
+  // Closes on a tap on the map, not on the tap on a pin that opened it.
+  map.on("click", (e) => {
+    if (!(e.originalEvent.target as HTMLElement | null)?.closest(".pin")) popup.remove();
+  });
   popup.on("close", () => {
     on?.classList.remove("on");
     on = null;
+    onMarker = null;
   });
 }

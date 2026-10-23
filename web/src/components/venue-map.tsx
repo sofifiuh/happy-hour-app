@@ -180,14 +180,20 @@ export function VenueMap({
     markers.current.clear();
     const bounds = new maplibregl.LngLatBounds();
     rows.forEach((r, i) => {
+      // The marker element carries maplibre's positioning transform, so the
+      // pin's own scale goes on an inner face (scaling the element would
+      // scale that translate too and throw the pin across the map).
       const el = document.createElement("button");
       el.type = "button";
-      el.textContent = String(i + 1);
       el.setAttribute("aria-label", `${i + 1}. ${r.venue.name}`);
-      el.className = cn(
-        "grid size-8 place-items-center rounded-full font-display text-[14px] font-extrabold tabular shadow-lg ring-2 ring-ink transition-transform duration-200 data-[on=true]:scale-125 data-[on=true]:bg-primary data-[on=true]:text-primary-foreground",
+      el.className = "group size-8 rounded-full";
+      const face = document.createElement("span");
+      face.textContent = String(i + 1);
+      face.className = cn(
+        "grid size-8 place-items-center rounded-full font-display text-[14px] font-extrabold tabular shadow-lg ring-2 ring-ink transition-transform duration-200 group-data-[on=true]:scale-125 group-data-[on=true]:bg-primary group-data-[on=true]:text-primary-foreground",
         i < 3 ? "bg-lime text-on-pop" : "bg-cream text-ink",
       );
+      el.append(face);
       el.addEventListener("click", (e) => {
         e.stopPropagation();
         select.current(r.venue.id);

@@ -225,7 +225,7 @@ export function BestScreen() {
                   <h2 className="font-display text-[17px] font-bold">How we rank</h2>
                   <p className="mt-1.5 text-muted-foreground">
                     Value 40%, selection 25%, hours 20% and vibe 15%, worked out the same way for every spot from its own menu. Nobody pays to rank,
-                    and Google star ratings aren't used. Lists update every night with the menus.
+                    and Google star ratings aren't used. A spot is listed only while its times match its own menu (confirmed in the last two weeks), and lists update every night.
                   </p>
                   <div className="mt-2 flex flex-wrap gap-x-5">
                     <Link to="/about#hang-score" className="inline-flex min-h-11 items-center font-semibold text-orange-fg underline-offset-4 hover:underline">

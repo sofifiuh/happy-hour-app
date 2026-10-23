@@ -2,6 +2,7 @@
 //   pages      network first, falling back to the cached app shell
 //   assets/*   cache first (file names are content-hashed)
 //   venues     stale-while-revalidate, so the list opens instantly offline
+//              (?fresh=… skips it: the app's retry when the cached copy is an older shape)
 //   photos     cache first
 const CACHE = "alh-v1";
 
@@ -36,7 +37,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(networkFirst(req, "./"));
   } else if (url.pathname.includes("/assets/") || url.pathname.includes("/photos/")) {
     event.respondWith(cacheFirst(req));
-  } else if (url.pathname.endsWith("/venues.json")) {
+  } else if (url.pathname.endsWith("/venues.json") && !url.searchParams.has("fresh")) {
     event.respondWith(staleWhileRevalidate(req, event));
   }
 });
