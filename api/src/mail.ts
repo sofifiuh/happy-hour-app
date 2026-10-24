@@ -8,11 +8,12 @@ export interface Mail {
   lines: (string | { label: string; href: string })[];
 }
 
-// Sent through Resend's HTTP API. Without a key (local dev) the mail is
-// logged instead, so every flow still runs end to end.
+// Sent through Cloudflare Email Service when its binding is there, else
+// Resend's HTTP API. With neither (local dev) the mail is logged instead,
+// so every flow still runs end to end.
 export async function send(env: Env, mail: Mail) {
   const text = mail.lines.map((l) => (typeof l === "string" ? l : `${l.label}: ${l.href}`)).join("\n\n");
-  if (!env.RESEND_API_KEY) {
+  if (!env.EMAIL && !env.RESEND_API_KEY) {
     if (env.DEV_LINKS === "1") {
       console.log(`[mail] to ${mail.to}: ${mail.subject}\n${text}`);
       return;
@@ -26,6 +27,17 @@ export async function send(env: Env, mail: Mail) {
         : `<p style="margin:24px 0"><a href="${esc(l.href)}" style="background:#d63d00;color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:600">${esc(l.label)}</a></p>`,
     )
     .join("");
+  const body = `<div style="font:16px/1.5 -apple-system,Helvetica,Arial,sans-serif;color:#1b1b1b;max-width:520px">${html}<p style="color:#6a645a;font-size:13px">A Little Hang · alittlehang.com</p></div>`;
+  if (env.EMAIL) {
+    const m = /^(.*)<(.+)>$/.exec(env.MAIL_FROM);
+    try {
+      await env.EMAIL.send({ from: m ? { name: m[1].trim(), email: m[2] } : env.MAIL_FROM, to: mail.to, subject: mail.subject, text, html: body });
+      return;
+    } catch (e) {
+      console.error("mail failed", e);
+      throw new HttpError(502, "Couldn't send the email, try again in a minute");
+    }
+  }
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, "content-type": "application/json" },
@@ -34,7 +46,7 @@ export async function send(env: Env, mail: Mail) {
       to: mail.to,
       subject: mail.subject,
       text,
-      html: `<div style="font:16px/1.5 -apple-system,Helvetica,Arial,sans-serif;color:#1b1b1b;max-width:520px">${html}<p style="color:#6a645a;font-size:13px">A Little Hang · alittlehang.com</p></div>`,
+      html: body,
     }),
   });
   if (!res.ok) {

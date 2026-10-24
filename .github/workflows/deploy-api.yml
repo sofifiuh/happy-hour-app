@@ -4,9 +4,11 @@ name: Deploy venue API (Cloudflare)
 # editing, stats and reports). Pull requests only type-check.
 #
 # Needs repo secrets CLOUDFLARE_API_TOKEN (Workers, D1, R2 edit) and
-# CLOUDFLARE_ACCOUNT_ID. Optional secrets: RESEND_API_KEY (sends email),
-# SIGNING_KEY (made automatically on the first deploy if absent). Optional repo variable API_DOMAIN
-# (e.g. api.alittlehang.com, once that zone is on Cloudflare); without it
+# CLOUDFLARE_ACCOUNT_ID. Email: set the repo variable EMAIL_PROVIDER to
+# "cloudflare" (Cloudflare Email Service), or add the secret RESEND_API_KEY.
+# Optional secret SIGNING_KEY (made automatically on the first deploy if
+# absent). Optional repo variable API_DOMAIN (e.g. api.alittlehang.com,
+# once that zone is on Cloudflare); without it
 # the Worker answers on its workers.dev address.
 #
 # The first run creates the D1 database and R2 bucket, so nobody has to
@@ -76,6 +78,12 @@ jobs:
           # Top-level keys must come before the first [table].
           { cat routes.toml; cat wrangler.toml; } > w.toml && mv w.toml wrangler.toml
           sed -i "s#^API_URL = .*#API_URL = \"https://${{ vars.API_DOMAIN }}\"#" wrangler.toml
+
+      # Cloudflare Email Service (needs Workers Paid and the domain on
+      # Cloudflare DNS). Otherwise mail goes through Resend.
+      - name: Use Cloudflare Email Service
+        if: steps.keys.outputs.ready == 'true' && vars.EMAIL_PROVIDER == 'cloudflare'
+        run: printf '\n[[send_email]]\nname = "EMAIL"\nremote = true\n' >> wrangler.toml
 
       - name: Apply database migrations
         if: steps.keys.outputs.ready == 'true'

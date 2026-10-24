@@ -4,7 +4,8 @@ A Cloudflare Worker (D1 database, R2 files) behind venue claiming on
 alittlehang.com. The public site stays on GitHub Pages; this only holds what
 venues and guests send us.
 
-- **Sign in:** owners get a one-time email link (Resend); the site keeps a
+- **Sign in:** owners get a one-time email link (Cloudflare Email Service,
+  or Resend); the site keeps a
   bearer session in localStorage.
 - **Claims:** an email at the venue's own website domain is approved at
   once. Anything else waits in the review queue (`/venue/admin` on the site),
@@ -41,8 +42,10 @@ and open http://localhost:5173. Sign-in links come straight back in dev.
 It needs the repo secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`,
 and creates the database and bucket itself on the first run. Then:
 
-1. Add the secret `RESEND_API_KEY` and verify alittlehang.com in Resend so
-   sign-in emails send.
+1. Email, either: set the repo variable `EMAIL_PROVIDER=cloudflare` (needs
+   Workers Paid and alittlehang.com on Cloudflare DNS, then onboard the
+   domain under Email Service), or add the secret `RESEND_API_KEY` and verify
+   alittlehang.com in Resend.
 2. Optional: with alittlehang.com's DNS on Cloudflare, set the repo variable
    `API_DOMAIN=api.alittlehang.com`. Otherwise the Worker answers on its
    workers.dev address.
