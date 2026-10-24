@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-24-41d59e4d",
+ "data_version": "2026-10-24-6008cc18",
  "venues": [
   {
    "id": "ancora",
@@ -1973,21 +1973,9 @@
      "source": "official_website"
     },
     {
-     "url": "https://tapandbarrel.com/wp-content/uploads/2021/04/tap-locations-interior-tap001-2016-proshot-upstairs-people4-15.12-2-1600x1000.jpg",
-     "credit_name": "Tap & Barrel (Convention Centre)",
-     "credit_url": "https://tapandbarrel.com/story/",
-     "source": "official_website"
-    },
-    {
      "url": "https://tapandbarrel.com/wp-content/uploads/2020/04/STORY-E-Local-Craft-Beer_Winer-1600x1000.jpg",
      "credit_name": "Tap & Barrel (Convention Centre)",
      "credit_url": "https://tapandbarrel.com/story/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tapandbarrel.com/wp-content/uploads/2020/03/tap-locations-interior-tap001-2016-proshot-upstairs-library3-16.01.jpg-1600x1000.jpg",
-     "credit_name": "Tap & Barrel (Convention Centre)",
-     "credit_url": "https://tapandbarrel.com/locations/",
      "source": "official_website"
     },
     {
@@ -1998,9 +1986,9 @@
     }
    ],
    "cover_image": {
-    "url": "https://tapandbarrel.com/wp-content/uploads/2021/04/024-scaled.jpg",
-    "credit_name": "Tap & Barrel",
-    "credit_url": "https://tapandbarrel.com/locations/tap-barrel-convention-centre/",
+    "url": "https://tapandbarrel.com/wp-content/uploads/2020/03/tap-locations-interior-tap001-2016-proshot-upstairs-library3-16.01.jpg-1600x1000.jpg",
+    "credit_name": "Tap & Barrel (Convention Centre)",
+    "credit_url": "https://tapandbarrel.com/locations/",
     "source": "official_website"
    },
    "happy_hour": {
@@ -2879,14 +2867,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://byzubu.com/wp-content/uploads/2020/08/img_hero_menu_02.jpg",
-     "credit_name": "ZUBU Ramen (Downtown)",
-     "credit_url": "https://byzubu.com/ramen/menu/downtown-menu/?category=drink&section=drinkFes",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "cover_image": {
     "url": "https://byzubu.com/wp-content/uploads/2024/03/Tonkotsu-Ramen-1-500x500.jpg",
     "credit_name": "ZUBU Ramen",
@@ -4277,7 +4258,7 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/696559eeb2270933e9839fd5/34f8e260-577b-46f1-bc63-f671d82c9e03/8_IMAGE_TACOFINO_26-02-21_LANGFORD_CHARLESRNASBY_HI-RES.jpg",
+     "url": "https://images.squarespace-cdn.com/content/v1/696559eeb2270933e9839fd5/bac6b6a3-4805-44f5-bed1-50b7d35c730d/2_IMAGE_TACOFINO_26-05-14_VICTORIA-LOCATION_CHARLESRNASBY_HI-RES.jpg",
      "credit_name": "Tacofino Yaletown Burrito Bar",
      "credit_url": "https://www.tacofino.com/locations",
      "source": "official_website"
@@ -4307,12 +4288,6 @@
      "source": "official_website"
     },
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/696559eeb2270933e9839fd5/e3e66ddc-db46-4acf-b644-f9de4d020801/Oasis+Front.jpg",
-     "credit_name": "Tacofino Yaletown Burrito Bar",
-     "credit_url": "https://www.tacofino.com/locations",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/696559eeb2270933e9839fd5/af8ab0a2-0e90-43c2-9921-3107923384a6/37_IMAGE_TACOFINO_26-06-19_KITS-LOCATION_CHARLESRNASBY_HI-RES.jpg",
      "credit_name": "Tacofino Yaletown Burrito Bar",
      "credit_url": "https://www.tacofino.com/locations",
@@ -4326,7 +4301,7 @@
     }
    ],
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/696559eeb2270933e9839fd5/bac6b6a3-4805-44f5-bed1-50b7d35c730d/2_IMAGE_TACOFINO_26-05-14_VICTORIA-LOCATION_CHARLESRNASBY_HI-RES.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/696559eeb2270933e9839fd5/34f8e260-577b-46f1-bc63-f671d82c9e03/8_IMAGE_TACOFINO_26-02-21_LANGFORD_CHARLESRNASBY_HI-RES.jpg",
     "credit_name": "Tacofino Yaletown Burrito Bar",
     "credit_url": "https://www.tacofino.com/locations",
     "source": "official_website"
@@ -4425,20 +4400,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://thegreekbyanatoli.com/assets/images/private-dining/yaletown.jpg",
-     "credit_name": "The Greek by Anatoli — Yaletown",
-     "credit_url": "https://thegreekbyanatoli.com/private-dining",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thegreekbyanatoli.com/assets/images/private-dining/gastown.jpg",
-     "credit_name": "The Greek by Anatoli — Yaletown",
-     "credit_url": "https://thegreekbyanatoli.com/private-dining",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "cover_image": {
     "url": "https://thegreekbyanatoli.com/assets/images/private-dining/north-vancouver.jpg",
     "credit_name": "The Greek by Anatoli — Yaletown",
@@ -4677,18 +4639,6 @@
    },
    "photos": [
     {
-     "url": "https://theparlourrestaurants.com/wp-content/uploads/2014/07/2369d4_5579af6e9f574ca2ad0c3cf0e0bf5ae9-mv2_d_8632_5755_s_4_2-2048x1152.jpg",
-     "credit_name": "The Parlour",
-     "credit_url": "https://theparlourrestaurants.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "http://theparlourrestaurants.com/wp-content/uploads/2014/05/2369d4_838b3ee204d746d39ba1c49a57a5b278-mv2_d_2400_1600_s_2.jpg",
-     "credit_name": "The Parlour",
-     "credit_url": "https://theparlourrestaurants.com/contact/",
-     "source": "official_website"
-    },
-    {
      "url": "http://theparlourrestaurants.com/wp-content/uploads/2014/05/parlour_fb.jpg",
      "credit_name": "The Parlour",
      "credit_url": "https://theparlourrestaurants.com/",
@@ -4696,7 +4646,7 @@
     }
    ],
    "cover_image": {
-    "url": "https://theparlourrestaurants.com/wp-content/uploads/2014/05/2369d4_d6c7216cebb04e7693af7a50c2e64c11-mv2_d_2400_1600_s_2-2048x1365.jpg",
+    "url": "https://theparlourrestaurants.com/wp-content/uploads/2014/07/2369d4_5579af6e9f574ca2ad0c3cf0e0bf5ae9-mv2_d_8632_5755_s_4_2-2048x1152.jpg",
     "credit_name": "The Parlour",
     "credit_url": "https://theparlourrestaurants.com/",
     "source": "official_website"
@@ -4887,37 +4837,13 @@
    },
    "photos": [
     {
-     "url": "https://theflyingpigvan.com/wp-content/uploads/2018/04/TFP__0031_0E5A0065.jpg",
-     "credit_name": "The Flying Pig (Yaletown)",
-     "credit_url": "https://theflyingpigvan.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://theflyingpigvan.com/wp-content/uploads/2018/04/TFP__0029_0E5A0079.jpg",
-     "credit_name": "The Flying Pig (Yaletown)",
-     "credit_url": "https://theflyingpigvan.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://theflyingpigvan.com/wp-content/uploads/2018/04/TFP__0030_0E5A0077.jpg",
+     "url": "https://www.theflyingpigvan.com/wp-content/uploads/2018/04/TFP__0001_0E5A9985.jpg",
      "credit_name": "The Flying Pig (Yaletown)",
      "credit_url": "https://theflyingpigvan.com/",
      "source": "official_website"
     },
     {
      "url": "https://theflyingpigvan.com/wp-content/uploads/2018/04/TFP__0015_0E5A0348.jpg",
-     "credit_name": "The Flying Pig (Yaletown)",
-     "credit_url": "https://theflyingpigvan.com/about-us/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://theflyingpigvan.com/wp-content/uploads/2018/04/TFP__0007_0E5A9667-1920x1600.jpg",
-     "credit_name": "The Flying Pig (Yaletown)",
-     "credit_url": "https://theflyingpigvan.com/gallery/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://theflyingpigvan.com/wp-content/uploads/2018/04/TFP__0002_0E5A0468-1920x1280.jpg",
      "credit_name": "The Flying Pig (Yaletown)",
      "credit_url": "https://theflyingpigvan.com/about-us/",
      "source": "official_website"
@@ -4936,8 +4862,8 @@
     }
    ],
    "cover_image": {
-    "url": "https://www.theflyingpigvan.com/wp-content/uploads/2018/04/TFP__0001_0E5A9985.jpg",
-    "credit_name": "The Flying Pig",
+    "url": "https://theflyingpigvan.com/wp-content/uploads/2018/04/TFP__0029_0E5A0079.jpg",
+    "credit_name": "The Flying Pig (Yaletown)",
     "credit_url": "https://theflyingpigvan.com/",
     "source": "official_website"
    },
@@ -5075,18 +5001,6 @@
    },
    "photos": [
     {
-     "url": "https://cdn.sanity.io/images/dw0heewu/production/2adc8d0bfda9330382bc6416522797dd435c417f-5464x8192.jpg?rect=0,2995,5464,3444&w=1920&fit=max&auto=format",
-     "credit_name": "The Keg Steakhouse + Bar (Yaletown)",
-     "credit_url": "https://thekeg.com/en/our-story",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.sanity.io/images/dw0heewu/production/27fac17a82c710f9fd01089eada6ddd36079029e-2048x1330.jpg?rect=0,40,2048,1212&w=1920&fit=max&auto=format",
-     "credit_name": "The Keg Steakhouse + Bar (Yaletown)",
-     "credit_url": "https://thekeg.com/en/our-story",
-     "source": "official_website"
-    },
-    {
      "url": "https://cdn.sanity.io/images/dw0heewu/production/cf5b60331e2e5b4fdbeaf1177fe3dfc26d8bb128-2645x1488.jpg?w=1920&fit=max&auto=format",
      "credit_name": "The Keg Steakhouse + Bar (Yaletown)",
      "credit_url": "https://thekeg.com/en/locations/yaletown",
@@ -5103,28 +5017,10 @@
      "credit_name": "The Keg Steakhouse + Bar (Yaletown)",
      "credit_url": "https://thekeg.com/en/our-story",
      "source": "official_website"
-    },
-    {
-     "url": "https://cdn.sanity.io/images/dw0heewu/production/8ab7c31da25b348f584420c94663ad4d44694c07-1013x638.png?w=1013&fit=max&auto=format",
-     "credit_name": "The Keg Steakhouse + Bar (Yaletown)",
-     "credit_url": "https://thekeg.com/en/locations",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.sanity.io/images/dw0heewu/production/ddd652e979d0da0d4c6986c5ab83ad6853c34dc7-1000x594.jpg?rect=0,13,1000,509&w=1000&fit=max&auto=format",
-     "credit_name": "The Keg Steakhouse + Bar (Yaletown)",
-     "credit_url": "https://thekeg.com/en/our-story",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.sanity.io/images/dw0heewu/production/372d47220d20abda1993c87e7a7fd0344ad7a11f-2000x1333.jpg?w=1920&fit=max&auto=format",
-     "credit_name": "The Keg Steakhouse + Bar (Yaletown)",
-     "credit_url": "https://thekeg.com/en/our-story",
-     "source": "official_website"
     }
    ],
    "cover_image": {
-    "url": "https://cdn.sanity.io/images/dw0heewu/production/80330ce6bbdf224f473f8dd2a6d51e91357e3ad9-2742x4096.jpg?rect=0,691,2742,1909&w=1920&fit=max&auto=format",
+    "url": "https://cdn.sanity.io/images/dw0heewu/production/372d47220d20abda1993c87e7a7fd0344ad7a11f-2000x1333.jpg?w=1920&fit=max&auto=format",
     "credit_name": "The Keg Steakhouse + Bar (Yaletown)",
     "credit_url": "https://thekeg.com/en/our-story",
     "source": "official_website"
@@ -5841,17 +5737,11 @@
      "credit_name": "Yaletown Brewing Company",
      "credit_url": "https://yaletownbrewing.com/",
      "source": "official_website"
-    },
-    {
-     "url": "https://yaletownbrewing.com/wp-content/uploads/2023/09/IMG_20131018_131735-768x576.jpeg",
-     "credit_name": "Yaletown Brewing Company",
-     "credit_url": "https://yaletownbrewing.com/gallery/",
-     "source": "official_website"
     }
    ],
    "cover_image": {
     "url": "https://yaletownbrewing.com/wp-content/uploads/2023/09/YaletownBrw_124-HDR_preview.jpeg",
-    "credit_name": "Yaletown Brewing Co.",
+    "credit_name": "Yaletown Brewing Company",
     "credit_url": "https://yaletownbrewing.com/",
     "source": "official_website"
    },
@@ -5970,31 +5860,7 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/6179cb7c78f5f10b7245aa2d/b2331f10-c85b-471b-9738-ead1faacc3d0/The-Heatley-9.jpg",
-     "credit_name": "The Heatley",
-     "credit_url": "https://heatley.ca/gallery",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/6179cb7c78f5f10b7245aa2d/520f963b-29ea-46bb-90ce-8eabbfd6f1e8/The-Heatley-13-2.jpg",
-     "credit_name": "The Heatley",
-     "credit_url": "https://heatley.ca/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/6179cb7c78f5f10b7245aa2d/8e06a339-ab82-4ac4-b0f6-241d1207ba79/The-Heatley-28.jpg",
-     "credit_name": "The Heatley",
-     "credit_url": "https://heatley.ca/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/6179cb7c78f5f10b7245aa2d/f57fe315-ce97-43a1-b3a6-2e5348a2f169/The-Heatley-60.jpg",
-     "credit_name": "The Heatley",
-     "credit_url": "https://heatley.ca/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/6179cb7c78f5f10b7245aa2d/582acb3d-a800-40f7-b88f-edf0729d5bd8/The-Heatley-64.jpg",
      "credit_name": "The Heatley",
      "credit_url": "https://heatley.ca/gallery",
      "source": "official_website"
@@ -6007,12 +5873,6 @@
     },
     {
      "url": "https://images.squarespace-cdn.com/content/v1/6179cb7c78f5f10b7245aa2d/be5f4cbf-4c30-45df-818a-4be4ee3e6203/heatley-livemusic-1-2.jpg",
-     "credit_name": "The Heatley",
-     "credit_url": "https://heatley.ca/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/6179cb7c78f5f10b7245aa2d/cbcc627a-ce57-404c-8a2b-d14c8561f0b2/heatley-livemusic-5.jpg",
      "credit_name": "The Heatley",
      "credit_url": "https://heatley.ca/gallery",
      "source": "official_website"
@@ -6075,9 +5935,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/6179cb7c78f5f10b7245aa2d/b4a12aba-a59b-4c6c-87ee-60cb26131b12/The-Heatley-76.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/6179cb7c78f5f10b7245aa2d/8e06a339-ab82-4ac4-b0f6-241d1207ba79/The-Heatley-28.jpg",
     "credit_name": "The Heatley",
-    "credit_url": "https://heatley.ca/story",
+    "credit_url": "https://heatley.ca/gallery",
     "source": "official_website"
    },
    "last_synced_at": "2026-10-24",
@@ -6619,30 +6479,6 @@
      "credit_name": "Sun Star Restaurant",
      "credit_url": "https://www.sunstarrestaurant.ca/",
      "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/383fc8_9b85afeaf1ab4a97b9b6e76dd0dd2989~mv2.jpg/v1/fill/w_980,h_576,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/383fc8_9b85afeaf1ab4a97b9b6e76dd0dd2989~mv2.jpg",
-     "credit_name": "Sun Star Restaurant",
-     "credit_url": "https://www.sunstarrestaurant.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/383fc8_ab551c8174e14de182ef5a6be580e9e6~mv2.jpg/v1/fill/w_830,h_452,al_c,lg_1,q_85,enc_avif,quality_auto/383fc8_ab551c8174e14de182ef5a6be580e9e6~mv2.jpg",
-     "credit_name": "Sun Star Restaurant",
-     "credit_url": "https://www.sunstarrestaurant.ca/about",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/383fc8_4c21848d231f49e0a326e304c8f0f48e~mv2.jpg/v1/crop/x_0,y_8,w_1080,h_1424/fill/w_926,h_1126,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/sun%20star%20exterior.jpg",
-     "credit_name": "Sun Star Restaurant",
-     "credit_url": "https://www.sunstarrestaurant.ca/about",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/383fc8_43508501a1e642be86feeffdfd0b7c0e~mv2.png/v1/fill/w_1050,h_636,al_c,q_90,enc_avif,quality_auto/menu%20front.png",
-     "credit_name": "Sun Star Restaurant",
-     "credit_url": "https://www.sunstarrestaurant.ca/menu-1",
-     "source": "official_website"
     }
    ],
    "amenities": {
@@ -6708,9 +6544,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/383fc8_e987770f024e4d84975de077251628e0~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/383fc8_e987770f024e4d84975de077251628e0~mv2.jpg",
+    "url": "https://static.wixstatic.com/media/383fc8_9b85afeaf1ab4a97b9b6e76dd0dd2989~mv2.jpg/v1/fill/w_980,h_576,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/383fc8_9b85afeaf1ab4a97b9b6e76dd0dd2989~mv2.jpg",
     "credit_name": "Sun Star Restaurant",
-    "credit_url": "https://www.sunstarrestaurant.ca/about",
+    "credit_url": "https://www.sunstarrestaurant.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -8277,26 +8113,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/664ea0ba3054de67a5e2d38d/a541f45b-ade6-479b-9a5b-76452df136f8/WhatsApp+Image+2026-09-22+at+1.09.23+AM.jpeg",
-     "credit_name": "TacoLoco",
-     "credit_url": "https://www.tacolocokits.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/664ea0ba3054de67a5e2d38d/7f3fcbff-423c-49ac-b8de-cf7ff15529e6/WhatsApp+Image+2026-09-21+at+11.05.14+PM.jpeg",
-     "credit_name": "TacoLoco",
-     "credit_url": "https://www.tacolocokits.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/664ea0ba3054de67a5e2d38d/f4c39578-5ac4-43b5-b4da-1ece53c4dfaa/WhatsApp+Image+2026-09-21+at+11.02.26+PM.jpeg",
-     "credit_name": "TacoLoco",
-     "credit_url": "https://www.tacolocokits.com/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8341,7 +8158,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/664ea0ba3054de67a5e2d38d/197a2676-e880-4909-bad1-ed5cfc1e3c08/WhatsApp+Image+2026-04-09+at+4.30.33+PM.jpeg",
+    "url": "http://static1.squarespace.com/static/664ea0ba3054de67a5e2d38d/t/69d6dc5ce87ead2ceaed6da4/1775688796664/taco-loco9.png?format=1500w",
     "credit_name": "TacoLoco",
     "credit_url": "https://www.tacolocokits.com/",
     "source": "official_website"
@@ -8377,20 +8194,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://cdn.prod.website-files.com/64fa5bbb321bc75b84724308/6a6e7d9464d42e3e534cdfbb_657ba3fcf15f9c1fb0f845d0_Story%201-4.avif",
-     "credit_name": "Take Out Shack",
-     "credit_url": "https://takeoutshack.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/64fa5bbb321bc75b84724308/6a6e79f42c071c033505e22d_Story%204.avif",
-     "credit_name": "Take Out Shack",
-     "credit_url": "https://takeoutshack.ca/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8892,12 +8696,6 @@
      "source": "official_website"
     },
     {
-     "url": "https://img1.wsimg.com/isteam/ip/5e236959-9cd0-494c-a234-1a99eb928d06/TheNaam4-1024x683.jpeg/:/cr=t:0%25,l:5.65%25,w:88.71%25,h:100%25/rs=w:1024,h:770,cg:true",
-     "credit_name": "The Naam",
-     "credit_url": "https://thenaam.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://img1.wsimg.com/isteam/ip/5e236959-9cd0-494c-a234-1a99eb928d06/the-naam-restaurant-old-photo-vancouver-bc.jpeg/:/cr=t:0%25,l:3.85%25,w:92.3%25,h:100%25/rs=w:1000,h:752,cg:true",
      "credit_name": "The Naam",
      "credit_url": "https://thenaam.com/",
@@ -8967,9 +8765,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://img1.wsimg.com/isteam/ip/5e236959-9cd0-494c-a234-1a99eb928d06/IMG_4935-7f420de.jpg",
+    "url": "https://img1.wsimg.com/isteam/ip/5e236959-9cd0-494c-a234-1a99eb928d06/TheNaam4-1024x683.jpeg/:/cr=t:0%25,l:5.65%25,w:88.71%25,h:100%25/rs=w:1024,h:770,cg:true",
     "credit_name": "The Naam",
-    "credit_url": "http://www.thenaam.com/",
+    "credit_url": "https://thenaam.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -9856,25 +9654,7 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/6483777b13d0023e9093594c/8aba0781-1277-4b22-98ae-e2c59e6cbabc/WBPatio+1.png",
-     "credit_name": "Way Back Brew Co.",
-     "credit_url": "https://www.waybackbrewco.com/tap-room-new",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/6483777b13d0023e9093594c/1aca8ee0-c8b0-45fe-af3f-1ae5fe5681ff/SXR02907%2Bcopy.png",
-     "credit_name": "Way Back Brew Co.",
-     "credit_url": "https://www.waybackbrewco.com/tap-room-new",
-     "source": "official_website"
-    },
-    {
-     "url": "https://video.squarespace-cdn.com/content/v1/6483777b13d0023e9093594c/c1cb6916-2748-4660-a6ed-221b19db997a/thumbnail",
-     "credit_name": "Way Back Brew Co.",
-     "credit_url": "https://www.waybackbrewco.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/6483777b13d0023e9093594c/9ffec04d-65f5-49f5-bb1c-9669ecb9c51c/SXR02867%2Bcopy.png",
      "credit_name": "Way Back Brew Co.",
      "credit_url": "https://www.waybackbrewco.com/tap-room-new",
      "source": "official_website"
@@ -9934,9 +9714,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/6483777b13d0023e9093594c/3fa51df2-2fc9-4744-904b-8c5f979db776/team.png",
+    "url": "https://images.squarespace-cdn.com/content/v1/6483777b13d0023e9093594c/9ffec04d-65f5-49f5-bb1c-9669ecb9c51c/SXR02867%2Bcopy.png",
     "credit_name": "Way Back Brew Co.",
-    "credit_url": "https://www.waybackbrewco.com/about-new",
+    "credit_url": "https://www.waybackbrewco.com/tap-room-new",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -11870,7 +11650,7 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/1787099306658-8JNHAPIANSC5TF05U1LZ/DSC01854.jpg",
+     "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/8280843a-031d-420a-9221-561a5c6b17f8/A48I5496.jpg",
      "credit_name": "The Ocean Beach Crafts, Drafts & Eats",
      "credit_url": "https://www.oceanbeachwr.ca/",
      "source": "official_website"
@@ -11879,30 +11659,6 @@
      "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/125807b9-4fca-4fae-a7c9-d80d3f8bab78/DSC01980.jpeg",
      "credit_name": "The Ocean Beach Crafts, Drafts & Eats",
      "credit_url": "https://www.oceanbeachwr.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/e67393c3-86e5-4e5d-b7cc-30cb99ca5f39/thumbnail_A4449AFA-E502-4A83-BABC-E82853054D3F.jpg",
-     "credit_name": "The Ocean Beach Crafts, Drafts & Eats",
-     "credit_url": "https://www.oceanbeachwr.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/e284a7c4-9119-4c50-8be9-26acec7d1e54/OB+70s+-+1.jpg",
-     "credit_name": "The Ocean Beach Crafts, Drafts & Eats",
-     "credit_url": "https://www.oceanbeachwr.ca/our-story",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/d023599f-cdea-4348-861b-bb116c1b0d21/OBH.jpg",
-     "credit_name": "The Ocean Beach Crafts, Drafts & Eats",
-     "credit_url": "https://www.oceanbeachwr.ca/our-story",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/fe978d7d-8652-4b8c-9ab6-353dcbc9c7b5/OB+70s.jpg",
-     "credit_name": "The Ocean Beach Crafts, Drafts & Eats",
-     "credit_url": "https://www.oceanbeachwr.ca/our-story",
      "source": "official_website"
     }
    ],
@@ -11949,7 +11705,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/8280843a-031d-420a-9221-561a5c6b17f8/A48I5496.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/e67393c3-86e5-4e5d-b7cc-30cb99ca5f39/thumbnail_A4449AFA-E502-4A83-BABC-E82853054D3F.jpg",
     "credit_name": "The Ocean Beach Crafts, Drafts & Eats",
     "credit_url": "https://www.oceanbeachwr.ca/",
     "source": "official_website"
@@ -12683,18 +12439,6 @@
      "credit_name": "The Beer Shack",
      "credit_url": "https://thebeershackwr.com/",
      "source": "official_website"
-    },
-    {
-     "url": "https://thebeershackwr.com/_assets/media/48c775f49a313154e7ce23f899da991b.jpg",
-     "credit_name": "The Beer Shack",
-     "credit_url": "https://thebeershackwr.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thebeershackwr.com/_assets/media/1236f42b3daac87c56a2116a469f9240.jpg",
-     "credit_name": "The Beer Shack",
-     "credit_url": "https://thebeershackwr.com/",
-     "source": "official_website"
     }
    ],
    "amenities": {
@@ -13011,30 +12755,6 @@
    },
    "photos": [
     {
-     "url": "https://stanleyparkbrewing.com/cdn/shop/files/IMG_2519.jpg?v=1783628512&width=1800",
-     "credit_name": "Stanley Park Brewing Restaurant & Brewpub",
-     "credit_url": "https://stanleyparkbrewing.com/products/murder-mystery-event-oct-30?_pos=1&_psq=murder&_psid=dac86825a&_ss=e",
-     "source": "official_website"
-    },
-    {
-     "url": "https://stanleyparkbrewing.com/cdn/shop/files/Screenshot2026-03-19at4.50.13PM.png?v=1773964266&width=1400",
-     "credit_name": "Stanley Park Brewing Restaurant & Brewpub",
-     "credit_url": "https://stanleyparkbrewing.com/products/murder-mystery-event-oct-30?_pos=1&_psq=murder&_psid=dac86825a&_ss=e",
-     "source": "official_website"
-    },
-    {
-     "url": "https://d2zjr4930cxu48.cloudfront.net/event/342332/Socials_Post_Murder_Mystery.png?1792617775",
-     "credit_name": "Stanley Park Brewing Restaurant & Brewpub",
-     "credit_url": "https://stanleyparkbrewing.com/pages/brewpub",
-     "source": "official_website"
-    },
-    {
-     "url": "https://d2zjr4930cxu48.cloudfront.net/event/335308/Screenshot_2025-10-02_at_9.54.13%E2%80%AFAM.png?1788387851",
-     "credit_name": "Stanley Park Brewing Restaurant & Brewpub",
-     "credit_url": "https://stanleyparkbrewing.com/pages/brewpub",
-     "source": "official_website"
-    },
-    {
      "url": "https://stanleyparkbrewing.com/cdn/shop/files/resized-_0001_5_copy.jpg?v=1728677247",
      "credit_name": "Stanley Park Brewing Restaurant & Brewpub",
      "credit_url": "https://stanleyparkbrewing.com/pages/brewpub",
@@ -13042,12 +12762,6 @@
     },
     {
      "url": "https://stanleyparkbrewing.com/cdn/shop/files/resized-_0002_6.jpg?v=1728677247",
-     "credit_name": "Stanley Park Brewing Restaurant & Brewpub",
-     "credit_url": "https://stanleyparkbrewing.com/pages/brewpub",
-     "source": "official_website"
-    },
-    {
-     "url": "https://stanleyparkbrewing.com/cdn/shop/files/resized-_0003_7.jpg?v=1728677247",
      "credit_name": "Stanley Park Brewing Restaurant & Brewpub",
      "credit_url": "https://stanleyparkbrewing.com/pages/brewpub",
      "source": "official_website"
@@ -13101,9 +12815,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://stanleyparkbrewing.com/cdn/shop/files/IMG_2518.jpg?v=1783628544&width=1800",
+    "url": "https://stanleyparkbrewing.com/cdn/shop/files/resized-_0003_7.jpg?v=1728677247",
     "credit_name": "Stanley Park Brewing Restaurant & Brewpub",
-    "credit_url": "https://stanleyparkbrewing.com/products/murder-mystery-event-oct-30?_pos=1&_psq=murder&_psid=dac86825a&_ss=e",
+    "credit_url": "https://stanleyparkbrewing.com/pages/brewpub",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -13338,37 +13052,13 @@
    },
    "photos": [
     {
-     "url": "https://static.wixstatic.com/media/c56d11_20e8281f73e74f1c9151e22f4a9b630df000.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/c56d11_20e8281f73e74f1c9151e22f4a9b630df000.jpg",
-     "credit_name": "Union Latino's food",
-     "credit_url": "https://www.unionlatinosrestaurant.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=8532792806179112619",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/c56d11_00139473a8eb4a20b3731416f54f1810~mv2.png/v1/fill/w_1098,h_642,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c56d11_00139473a8eb4a20b3731416f54f1810~mv2.png",
-     "credit_name": "Union Latino's food",
-     "credit_url": "https://www.unionlatinosrestaurant.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=8532792806179112619",
-     "source": "official_website"
-    },
-    {
      "url": "https://static.wixstatic.com/media/c56d11_dacb101849904eefa44222003eeb1a3b~mv2.jpg/v1/fill/w_721,h_402,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c56d11_dacb101849904eefa44222003eeb1a3b~mv2.jpg",
      "credit_name": "Union Latino's food",
      "credit_url": "https://www.unionlatinosrestaurant.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=8532792806179112619",
      "source": "official_website"
     },
     {
-     "url": "https://static.wixstatic.com/media/c56d11_81b287ab37db44bc8b23b86f9c616934~mv2.jpg/v1/fill/w_1440,h_583,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c56d11_81b287ab37db44bc8b23b86f9c616934~mv2.jpg",
-     "credit_name": "Union Latino's food",
-     "credit_url": "https://www.unionlatinosrestaurant.com/events",
-     "source": "official_website"
-    },
-    {
      "url": "https://static.wixstatic.com/media/c56d11_6d7391453d4940508cfdf6da725c90e1~mv2.jpg/v1/fill/w_1440,h_901,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c56d11_6d7391453d4940508cfdf6da725c90e1~mv2.jpg",
-     "credit_name": "Union Latino's food",
-     "credit_url": "https://www.unionlatinosrestaurant.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=8532792806179112619",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/c56d11_4c7c288343a346c78f2a957e59b18c0a~mv2.jpeg/v1/fill/w_721,h_451,al_r,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/c56d11_4c7c288343a346c78f2a957e59b18c0a~mv2.jpeg",
      "credit_name": "Union Latino's food",
      "credit_url": "https://www.unionlatinosrestaurant.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=8532792806179112619",
      "source": "official_website"
@@ -13415,7 +13105,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/45d10e_01a8eb9619c64fbaa4c9a3cc8a22e6fb~mv2_d_2992_3740_s_4_2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/45d10e_01a8eb9619c64fbaa4c9a3cc8a22e6fb~mv2_d_2992_3740_s_4_2.jpg",
+    "url": "https://static.wixstatic.com/media/c56d11_20e8281f73e74f1c9151e22f4a9b630df000.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/c56d11_20e8281f73e74f1c9151e22f4a9b630df000.jpg",
     "credit_name": "Union Latino's food",
     "credit_url": "https://www.unionlatinosrestaurant.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=8532792806179112619",
     "source": "official_website"
@@ -13453,7 +13143,7 @@
    },
    "photos": [
     {
-     "url": "https://img1.wsimg.com/isteam/stock/6605/:/rs=w:1535,m",
+     "url": "https://img1.wsimg.com/isteam/stock/39157",
      "credit_name": "Tidewaters Pub",
      "credit_url": "https://tidewaterspub.com/",
      "source": "official_website"
@@ -13518,9 +13208,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://img1.wsimg.com/isteam/stock/39157",
+    "url": "https://img1.wsimg.com/isteam/stock/6605/:/rs=w:1535,m",
     "credit_name": "Tidewaters Pub",
-    "credit_url": "http://www.tidewaterspub.com/",
+    "credit_url": "https://tidewaterspub.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -14420,10 +14110,10 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/a66a51_7cb950e17e4a49d0a9a0ab13ee081be8~mv2.jpg/v1/fill/w_3360,h_1794,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Background%20Iteration%202.jpg",
-    "credit_name": "The Chickadee Room",
-    "credit_url": "https://www.thechickadeeroom.com/",
-    "source": "official_website"
+    "url": "photos/the-chickadee-room.jpg",
+    "credit_name": "A D",
+    "credit_url": "https://maps.google.com/maps/contrib/101240296302274590599",
+    "source": "google_places"
    },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
@@ -16340,49 +16030,7 @@
    },
    "photos": [
     {
-     "url": "https://tworiversmeats.com/wp-content/uploads/2021/12/low.res-01924.jpg",
-     "credit_name": "Two Rivers Meats",
-     "credit_url": "https://tworiversmeats.com/about/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tworiversmeats.com/wp-content/uploads/2021/12/Garthwaites-Gather-2010-039.jpg",
-     "credit_name": "Two Rivers Meats",
-     "credit_url": "https://tworiversmeats.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tworiversmeats.com/wp-content/uploads/2022/04/head2.jpg",
-     "credit_name": "Two Rivers Meats",
-     "credit_url": "https://tworiversmeats.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tworiversmeats.com/wp-content/uploads/2021/12/20160219_Two-Rivers-MeatsD81_4971.reduced-1.jpg",
-     "credit_name": "Two Rivers Meats",
-     "credit_url": "https://tworiversmeats.com/about/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tworiversmeats.com/wp-content/uploads/2021/12/DSC_1200.reduced-1024x731.jpg",
-     "credit_name": "Two Rivers Meats",
-     "credit_url": "https://tworiversmeats.com/about/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tworiversmeats.com/wp-content/uploads/2021/12/farmcrest-hero-1024x685.jpeg",
-     "credit_name": "Two Rivers Meats",
-     "credit_url": "https://tworiversmeats.com/our-products/",
-     "source": "official_website"
-    },
-    {
      "url": "https://tworiversmeats.com/wp-content/uploads/2021/12/low.res-9545-1024x684.jpg",
-     "credit_name": "Two Rivers Meats",
-     "credit_url": "https://tworiversmeats.com/our-products/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tworiversmeats.com/wp-content/uploads/2021/12/trm-hogwild-1024x683.jpeg",
      "credit_name": "Two Rivers Meats",
      "credit_url": "https://tworiversmeats.com/our-products/",
      "source": "official_website"
@@ -16482,21 +16130,9 @@
      "source": "official_website"
     },
     {
-     "url": "https://zawarestaurant.com/wp-content/uploads/2022/04/sam-van-bussel-MrE4n1hzvLg-unsplash.jpg",
-     "credit_name": "Zawa Restaurant",
-     "credit_url": "https://zawarestaurant.com/index.php/events-shows/",
-     "source": "official_website"
-    },
-    {
      "url": "https://zawarestaurant.com/wp-content/uploads/2022/04/video-bg-fallback.jpg",
      "credit_name": "Zawa Restaurant",
      "credit_url": "https://zawarestaurant.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://zawarestaurant.com/wp-content/uploads/2025/12/zany-zawas.jpg",
-     "credit_name": "Zawa Restaurant",
-     "credit_url": "https://zawarestaurant.com/index.php/events-shows/",
      "source": "official_website"
     },
     {
@@ -16509,12 +16145,6 @@
      "url": "https://zawarestaurant.com/wp-content/uploads/2022/08/zawas-special-entree.jpg",
      "credit_name": "Zawa Restaurant",
      "credit_url": "https://zawarestaurant.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://zawarestaurant.com/wp-content/uploads/2022/08/about-zawa.jpg",
-     "credit_name": "Zawa Restaurant",
-     "credit_url": "https://zawarestaurant.com/index.php/about/",
      "source": "official_website"
     }
    ],
@@ -18261,21 +17891,9 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e8421e3572f04793d6e75cf/a028ba39-8f4a-40e9-bfb1-d1a817914552/20250416-Torafuku-1884-LeilaKwok-2.jpg",
+     "url": "https://images.squarespace-cdn.com/content/v1/5e8421e3572f04793d6e75cf/9b391ac6-ff05-4abb-b00e-995fb6b1d996/20260826-Torafuku-7787-E-LeilaKwok.jpg",
      "credit_name": "Torafuku",
      "credit_url": "https://www.torafuku.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e8421e3572f04793d6e75cf/e8c62d18-abd4-42d6-8c9b-9fe51e9a5b0a/20210718-Torafuku-2207-E-LeilaKwok.jpg",
-     "credit_name": "Torafuku",
-     "credit_url": "https://www.torafuku.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e8421e3572f04793d6e75cf/1586719026657-UDAGBL9ACCOBIXKDQV5R/20190723-Torafuku-5886-LeilaKwok-2.jpg",
-     "credit_name": "Torafuku",
-     "credit_url": "https://www.torafuku.ca/our-story",
      "source": "official_website"
     },
     {
@@ -18285,25 +17903,7 @@
      "source": "official_website"
     },
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e8421e3572f04793d6e75cf/ae7c913f-2737-4608-a512-7c45abc4e21f/vancouver-food-events-and-happenings-things-to-do-torafuku-restaurant.jpg",
-     "credit_name": "Torafuku",
-     "credit_url": "https://www.torafuku.ca/happenings-and-upcoming-events-vancouver",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e8421e3572f04793d6e75cf/1586718010693-GDT77M6TN15U4MJ3ZJ23/20180711-Torafuku-8410-LeilaKwok_7gE-2+copy.jpg",
-     "credit_name": "Torafuku",
-     "credit_url": "https://www.torafuku.ca/our-story",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/5e8421e3572f04793d6e75cf/1586718947702-MCC49GG8H7PQHG5HV6EM/20200409-Torafuku-7288-E-Leila+Kwok.jpg",
-     "credit_name": "Torafuku",
-     "credit_url": "https://www.torafuku.ca/our-story",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e8421e3572f04793d6e75cf/1586718588984-81A1LAAFNJ9PH5ABMQ2Y/20180711-Torafuku-8399-LeilaKwok_dDF.jpg",
      "credit_name": "Torafuku",
      "credit_url": "https://www.torafuku.ca/our-story",
      "source": "official_website"
@@ -18436,9 +18036,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/5e8421e3572f04793d6e75cf/9b391ac6-ff05-4abb-b00e-995fb6b1d996/20260826-Torafuku-7787-E-LeilaKwok.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e8421e3572f04793d6e75cf/1586719026657-UDAGBL9ACCOBIXKDQV5R/20190723-Torafuku-5886-LeilaKwok-2.jpg",
     "credit_name": "Torafuku",
-    "credit_url": "https://www.torafuku.ca/",
+    "credit_url": "https://www.torafuku.ca/our-story",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -18474,6 +18074,12 @@
    },
    "photos": [
     {
+     "url": "https://tavolavancouver.com/wp-content/uploads/2021/10/2MBPhoto-2018-01-06-5-54-25-PM-scaled.jpg",
+     "credit_name": "Tavola",
+     "credit_url": "https://tavolavancouver.com/",
+     "source": "official_website"
+    },
+    {
      "url": "https://tavolavancouver.com/wp-content/uploads/2021/09/IMG_6003-scaled.jpg",
      "credit_name": "Tavola",
      "credit_url": "https://tavolavancouver.com/",
@@ -18481,18 +18087,6 @@
     },
     {
      "url": "https://tavolavancouver.com/wp-content/uploads/2021/09/IMG_5921-scaled.jpg",
-     "credit_name": "Tavola",
-     "credit_url": "https://tavolavancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tavolavancouver.com/wp-content/uploads/2021/09/IMG_5901-scaled.jpg",
-     "credit_name": "Tavola",
-     "credit_url": "https://tavolavancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tavolavancouver.com/wp-content/uploads/2021/09/P20210923_172558-scaled.jpg",
      "credit_name": "Tavola",
      "credit_url": "https://tavolavancouver.com/",
      "source": "official_website"
@@ -18511,12 +18105,6 @@
     },
     {
      "url": "https://tavolavancouver.com/wp-content/uploads/2021/09/IMG_6047-scaled.jpg",
-     "credit_name": "Tavola",
-     "credit_url": "https://tavolavancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tavolavancouver.com/wp-content/uploads/2021/09/IMG_5990-scaled.jpg",
      "credit_name": "Tavola",
      "credit_url": "https://tavolavancouver.com/",
      "source": "official_website"
@@ -18651,7 +18239,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://tavolavancouver.com/wp-content/uploads/2021/10/2MBPhoto-2018-01-06-5-54-25-PM-scaled.jpg",
+    "url": "https://tavolavancouver.com/wp-content/uploads/2021/09/P20210923_172558-scaled.jpg",
     "credit_name": "Tavola",
     "credit_url": "https://tavolavancouver.com/",
     "source": "official_website"
@@ -18695,12 +18283,6 @@
      "source": "official_website"
     },
     {
-     "url": "https://www.takovancouver.com/_next/image?url=%2Fmenu%2Fbeer.jpg&w=3840&q=75",
-     "credit_name": "TAKO - Taqueria Korean",
-     "credit_url": "https://www.takovancouver.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://www.takovancouver.com/_next/image?url=%2Fmenu%2Fpoutine-koreano.jpg&w=3840&q=75",
      "credit_name": "TAKO - Taqueria Korean",
      "credit_url": "https://www.takovancouver.com/",
@@ -18708,24 +18290,6 @@
     },
     {
      "url": "https://www.takovancouver.com/_next/image?url=%2Fmenu%2Fques-kimchi.jpg&w=3840&q=75",
-     "credit_name": "TAKO - Taqueria Korean",
-     "credit_url": "https://www.takovancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.takovancouver.com/_next/image?url=%2Fmenu%2Ftaco-tako.jpg&w=3840&q=75",
-     "credit_name": "TAKO - Taqueria Korean",
-     "credit_url": "https://www.takovancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.takovancouver.com/_next/image?url=%2Fmenu%2Ftaco-jeju.jpg&w=3840&q=75",
-     "credit_name": "TAKO - Taqueria Korean",
-     "credit_url": "https://www.takovancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.takovancouver.com/_next/image?url=%2Fmenu%2Fburrito-bulgogi.jpg&w=3840&q=75",
      "credit_name": "TAKO - Taqueria Korean",
      "credit_url": "https://www.takovancouver.com/",
      "source": "official_website"
@@ -18798,7 +18362,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://www.takovancouver.com/_next/image?url=%2FHero.png&w=3840&q=75",
+    "url": "https://www.takovancouver.com/_next/image?url=%2Fmenu%2Ftaco-tako.jpg&w=3840&q=75",
     "credit_name": "TAKO - Taqueria Korean",
     "credit_url": "https://www.takovancouver.com/",
     "source": "official_website"
@@ -19831,18 +19395,6 @@
      "source": "official_website"
     },
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/66b27ba14653a20d731e1c95/bdda5ac4-2654-4d0a-8c35-fa8007415d95/Bazaart_861769B1-E362-4FD5-91F8-CA611DAE1779.JPEG",
-     "credit_name": "Virtuous Pie",
-     "credit_url": "https://www.virtuouspie.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/66b27ba14653a20d731e1c95/eff87838-0334-4470-a958-1bfa87e038da/unsplash-image-VQsV9yDspnw.jpg",
-     "credit_name": "Virtuous Pie",
-     "credit_url": "https://www.virtuouspie.com/events-catering",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/66b27ba14653a20d731e1c95/3c84f37b-991d-4360-beed-761418a08691/Virtuous-Pie-Fall-2023-Menu-48.jpg",
      "credit_name": "Virtuous Pie",
      "credit_url": "https://www.virtuouspie.com/about-us",
@@ -19864,12 +19416,6 @@
      "url": "https://images.squarespace-cdn.com/content/v1/66b27ba14653a20d731e1c95/532844a9-dd4e-48d8-abd7-86c7ba473148/IMG_1349-e1614121121786.jpg",
      "credit_name": "Virtuous Pie",
      "credit_url": "https://www.virtuouspie.com/about-us",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/66b27ba14653a20d731e1c95/e22f84c5-9af7-4ec3-b22c-2a470a673ca2/small+sgt+pep.jpg",
-     "credit_name": "Virtuous Pie",
-     "credit_url": "https://www.virtuouspie.com/",
      "source": "official_website"
     }
    ],
@@ -19957,9 +19503,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/66b27ba14653a20d731e1c95/t/67aeb8040695c8393d13bd1c/1739503628030/263dbc71-36e9-4902-93b3-a2da4de8669d.jpg?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/66b27ba14653a20d731e1c95/bdda5ac4-2654-4d0a-8c35-fa8007415d95/Bazaart_861769B1-E362-4FD5-91F8-CA611DAE1779.JPEG",
     "credit_name": "Virtuous Pie",
-    "credit_url": "http://virtuouspie.com/",
+    "credit_url": "https://www.virtuouspie.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -20923,12 +20469,6 @@
      "source": "official_website"
     },
     {
-     "url": "http://tobikosushi.com/wp-content/uploads/2024/08/IMG_6855.jpg",
-     "credit_name": "Tobiko #1 Sushi",
-     "credit_url": "http://tobikosushi.com/http-tobikosushi-com-wp-content-uploads-2023-10-tobiko-1-2023-10-no-discount-pdf/",
-     "source": "official_website"
-    },
-    {
      "url": "http://tobikosushi.com/wp-content/uploads/2024/08/IMG_7044.jpg",
      "credit_name": "Tobiko #1 Sushi",
      "credit_url": "http://tobikosushi.com/http-tobikosushi-com-wp-content-uploads-2023-10-tobiko-1-2023-10-no-discount-pdf/",
@@ -20950,12 +20490,6 @@
      "url": "http://tobikosushi.com/wp-content/uploads/2023/10/IMG_4264-1-scaled.jpg",
      "credit_name": "Tobiko #1 Sushi",
      "credit_url": "http://tobikosushi.com/http-tobikosushi-com-wp-content-uploads-2023-10-tobiko-1-2023-10-no-discount-pdf/",
-     "source": "official_website"
-    },
-    {
-     "url": "http://tobikosushi.com/wp-content/uploads/2026/04/2026-summer-new.png",
-     "credit_name": "Tobiko #1 Sushi",
-     "credit_url": "http://tobikosushi.com/",
      "source": "official_website"
     }
    ],
@@ -21570,20 +21104,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://cdn.prod.website-files.com/6504762900e0b934f0b50be1/6a235f6c80a69816969dd468_sports-sketch-bronze-b.jpg",
-     "credit_name": "The Derby Bar and Grill",
-     "credit_url": "https://www.derbybarandgrill.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6504762900e0b934f0b50be1/6a2720db62a0882a6b4408b5_Derby-barview-fadeB2.jpg",
-     "credit_name": "The Derby Bar and Grill",
-     "credit_url": "https://www.derbybarandgrill.com/events",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": true,
     "gluten_free_options": null,
@@ -21731,9 +21252,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://cdn.prod.website-files.com/6504762900e0b934f0b50be1/69fe006a6766c689a1b14687_Derby-open-graph.jpg",
+    "url": "https://cdn.prod.website-files.com/6504762900e0b934f0b50be1/6a2720db62a0882a6b4408b5_Derby-barview-fadeB2.jpg",
     "credit_name": "The Derby Bar and Grill",
-    "credit_url": "https://www.derbybarandgrill.com/",
+    "credit_url": "https://www.derbybarandgrill.com/events",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -22767,33 +22288,9 @@
    },
    "photos": [
     {
-     "url": "https://thecanadianbrewhouse.com/wp-content/uploads/2020/12/IceRoomKelowna.jpg",
-     "credit_name": "The Canadian Brewhouse & Grill (Richmond)",
-     "credit_url": "https://thecanadianbrewhouse.com/the-ice-room/",
-     "source": "official_website"
-    },
-    {
      "url": "https://thecanadianbrewhouse.com/wp-content/uploads/2022/12/Ice-Room-2.jpg",
      "credit_name": "The Canadian Brewhouse & Grill (Richmond)",
      "credit_url": "https://thecanadianbrewhouse.com/the-ice-room/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thecanadianbrewhouse.com/wp-content/uploads/2022/12/Ice-Room-1.jpg",
-     "credit_name": "The Canadian Brewhouse & Grill (Richmond)",
-     "credit_url": "https://thecanadianbrewhouse.com/the-ice-room/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thecanadianbrewhouse.com/wp-content/uploads/2022/12/Ice-Room-3.jpg",
-     "credit_name": "The Canadian Brewhouse & Grill (Richmond)",
-     "credit_url": "https://thecanadianbrewhouse.com/the-ice-room/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thecanadianbrewhouse.com/wp-content/uploads/2021/05/0003_Richmond.jpg",
-     "credit_name": "The Canadian Brewhouse & Grill (Richmond)",
-     "credit_url": "https://thecanadianbrewhouse.com/locations/richmond/",
      "source": "official_website"
     }
    ],
@@ -22985,9 +22482,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://thecanadianbrewhouse.com/wp-content/uploads/2023/03/CBH_WebCreative_Mar2023_1920x1080-2048x1152.png",
+    "url": "https://thecanadianbrewhouse.com/wp-content/uploads/2021/05/0003_Richmond.jpg",
     "credit_name": "The Canadian Brewhouse & Grill (Richmond)",
-    "credit_url": "https://thecanadianbrewhouse.com/what-is-happening/weekly-events/",
+    "credit_url": "https://thecanadianbrewhouse.com/locations/richmond/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -24444,9 +23941,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/5afe60462baf41e79586f3fdaf78d664.jpg/v1/fill/w_1165,h_1200,al_c,q_85,enc_avif,quality_auto/5afe60462baf41e79586f3fdaf78d664.jpg",
+    "url": "https://static.wixstatic.com/media/8f0180_31aee8bbd4594f27a93dfa4afe55f034%7Emv2.png/v1/fit/w_2500,h_1330,al_c/8f0180_31aee8bbd4594f27a93dfa4afe55f034%7Emv2.png",
     "credit_name": "Two Parrots Bar & Grill",
-    "credit_url": "https://www.twoparrotsvancouver.com/",
+    "credit_url": "http://www.twoparrotsvancouver.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -24860,30 +24357,6 @@
    },
    "photos": [
     {
-     "url": "https://theclaytonpub.com/wp-content/uploads/2025/02/happy-people-the-clayton-public-house.jpg",
-     "credit_name": "The Clayton Public House",
-     "credit_url": "https://theclaytonpub.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://theclaytonpub.com/wp-content/uploads/2026/10/new-weekly-2026-the-clayton-pub.png",
-     "credit_name": "The Clayton Public House",
-     "credit_url": "https://theclaytonpub.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://theclaytonpub.com/wp-content/uploads/2026/06/happy-hour-fo-web.png",
-     "credit_name": "The Clayton Public House",
-     "credit_url": "https://theclaytonpub.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://theclaytonpub.com/wp-content/uploads/2026/06/2026-seafood-1.png",
-     "credit_name": "The Clayton Public House",
-     "credit_url": "https://theclaytonpub.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://theclaytonpub.com/wp-content/uploads/2025/02/smash-burger-1.jpg",
      "credit_name": "The Clayton Public House",
      "credit_url": "https://theclaytonpub.com/",
@@ -24897,12 +24370,6 @@
     },
     {
      "url": "https://theclaytonpub.com/wp-content/uploads/2025/02/clayton-inside.jpg",
-     "credit_name": "The Clayton Public House",
-     "credit_url": "https://theclaytonpub.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://theclaytonpub.com/wp-content/uploads/2025/02/the-clayton-public-house-1.jpg",
      "credit_name": "The Clayton Public House",
      "credit_url": "https://theclaytonpub.com/",
      "source": "official_website"
@@ -25006,7 +24473,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://theclaytonpub.com/wp-content/uploads/2026/10/Drink-Menu-The-Clayton-Public-House-Oct-2026.png",
+    "url": "https://theclaytonpub.com/wp-content/uploads/2025/02/the-clayton-public-house-1.jpg",
     "credit_name": "The Clayton Public House",
     "credit_url": "https://theclaytonpub.com/",
     "source": "official_website"
@@ -26262,12 +25729,6 @@
    },
    "photos": [
     {
-     "url": "https://static.wixstatic.com/media/914129_7f7687ae2dd94ae6957b0561b128521c~mv2.jpg/v1/fill/w_2500,h_1666,al_c/914129_7f7687ae2dd94ae6957b0561b128521c~mv2.jpg",
-     "credit_name": "The Park Pub",
-     "credit_url": "https://www.parkpub.ca/events",
-     "source": "official_website"
-    },
-    {
      "url": "https://static.wixstatic.com/media/914129_0a4eb3cf2a8f40a49659f3c4d0dfcc50~mv2.jpg/v1/fill/w_2500,h_1562,al_c/914129_0a4eb3cf2a8f40a49659f3c4d0dfcc50~mv2.jpg",
      "credit_name": "The Park Pub",
      "credit_url": "https://www.parkpub.ca/venue-rental",
@@ -26275,12 +25736,6 @@
     },
     {
      "url": "https://static.wixstatic.com/media/914129_9f173b3f148240729162b17a0e73a637~mv2.jpg/v1/fill/w_1082,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/914129_9f173b3f148240729162b17a0e73a637~mv2.jpg",
-     "credit_name": "The Park Pub",
-     "credit_url": "https://www.parkpub.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/914129_23669fba923a45fd9005c875add42dfd~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC00350.jpg",
      "credit_name": "The Park Pub",
      "credit_url": "https://www.parkpub.ca/",
      "source": "official_website"
@@ -26746,12 +26201,6 @@
    },
    "photos": [
     {
-     "url": "https://stjameswell.ca/wp-content/uploads/2024/09/DSC02740-scaled.jpg",
-     "credit_name": "St James Well Pub",
-     "credit_url": "https://stjameswell.ca/events/",
-     "source": "official_website"
-    },
-    {
      "url": "https://stjameswell.ca/wp-content/uploads/2024/09/yorkies.jpg",
      "credit_name": "St James Well Pub",
      "credit_url": "https://stjameswell.ca/about/",
@@ -26764,39 +26213,9 @@
      "source": "official_website"
     },
     {
-     "url": "https://stjameswell.ca/wp-content/uploads/2024/09/tacos.jpg",
-     "credit_name": "St James Well Pub",
-     "credit_url": "https://stjameswell.ca/about/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://stjameswell.ca/wp-content/uploads/2024/09/DSC03651.jpg",
-     "credit_name": "St James Well Pub",
-     "credit_url": "https://stjameswell.ca/about/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://stjameswell.ca/wp-content/uploads/2024/09/DSC03666.jpg",
-     "credit_name": "St James Well Pub",
-     "credit_url": "https://stjameswell.ca/about/",
-     "source": "official_website"
-    },
-    {
      "url": "https://stjameswell.ca/wp-content/uploads/2024/09/DSC03763.jpg",
      "credit_name": "St James Well Pub",
      "credit_url": "https://stjameswell.ca/about/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://stjameswell.ca/wp-content/uploads/2024/09/DSC08663.jpg",
-     "credit_name": "St James Well Pub",
-     "credit_url": "https://stjameswell.ca/events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://stjameswell.ca/wp-content/uploads/2024/09/DSC03735.jpg",
-     "credit_name": "St James Well Pub",
-     "credit_url": "https://stjameswell.ca/events/",
      "source": "official_website"
     }
    ],
@@ -26948,9 +26367,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://stjameswell.ca/wp-content/uploads/2024/09/big_table_hp-1.png",
+    "url": "https://stjameswell.ca/wp-content/uploads/2024/09/DSC03735.jpg",
     "credit_name": "St James Well Pub",
-    "credit_url": "http://stjameswell.ca/",
+    "credit_url": "https://stjameswell.ca/events/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -26984,20 +26403,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://www.thewicklow.com/wp-content/uploads/2020/07/False-Creek_homepage_Slider-min1.png",
-     "credit_name": "The Wicklow Pub",
-     "credit_url": "https://www.thewicklow.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.thewicklow.com/wp-content/uploads/2020/07/image33.jpeg",
-     "credit_name": "The Wicklow Pub",
-     "credit_url": "https://www.thewicklow.com/location/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": true,
     "gluten_free_options": null,
@@ -27358,14 +26764,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2020/05/narrow-group.jpg",
-     "credit_name": "The Narrow Lounge",
-     "credit_url": "https://narrowgroup.ca/project/the-narrow/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": true,
     "gluten_free_options": null,
@@ -27459,9 +26858,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2025/12/events-banner-1-dark-top.jpg",
+    "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2020/05/narrow-group.jpg",
     "credit_name": "The Narrow Lounge",
-    "credit_url": "https://narrowgroup.ca/about/",
+    "credit_url": "https://narrowgroup.ca/project/the-narrow/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -27784,12 +27183,6 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/64ac26b099a1f736bde108d3/17e0e2b1-f483-47fa-98bf-b9ad53e2f03f/IMG_7493%2B%281%29+%281%29.jpeg",
-     "credit_name": "The Terminal Pub",
-     "credit_url": "https://www.theterminalpub.com/aboutus",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/64ac26b099a1f736bde108d3/726aa5e4-9883-4775-805f-1d1b4896ad3a/94e98698-7804-45f4-8d83-1cae8922ef8c.jpg",
      "credit_name": "The Terminal Pub",
      "credit_url": "https://www.theterminalpub.com/events",
@@ -27797,12 +27190,6 @@
     },
     {
      "url": "https://images.squarespace-cdn.com/content/v1/64ac26b099a1f736bde108d3/0e52542e-857b-4fb9-b7fe-9a3830f1621c/20230705_132738.jpg",
-     "credit_name": "The Terminal Pub",
-     "credit_url": "https://www.theterminalpub.com/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/64ac26b099a1f736bde108d3/ba50a0b5-a33d-48f6-b902-d56108d8d7d8/20230705_132224.jpg",
      "credit_name": "The Terminal Pub",
      "credit_url": "https://www.theterminalpub.com/gallery",
      "source": "official_website"
@@ -27925,9 +27312,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/64ac26b099a1f736bde108d3/1759171164918-1GQUXOFYKWO8IG35D4JL/NFL-+25.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/64ac26b099a1f736bde108d3/ba50a0b5-a33d-48f6-b902-d56108d8d7d8/20230705_132224.jpg",
     "credit_name": "The Terminal Pub",
-    "credit_url": "https://www.theterminalpub.com/events",
+    "credit_url": "https://www.theterminalpub.com/gallery",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -28597,14 +27984,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://thereachpub.ca/wp-content/uploads/2021/11/TheReach_HomePage_7-1024x728.jpg",
-     "credit_name": "The Reach Neighbourhood Pub & Grill",
-     "credit_url": "https://thereachpub.ca/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": true,
     "gluten_free_options": null,
@@ -28748,25 +28128,7 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/5b4d03c1b98a78935509262a/1532989539666-WBXVMAOLQAWTCFWZPPPX/LRS+Interior+02.jpg",
-     "credit_name": "TugBoat Annie's Pub & Grille",
-     "credit_url": "https://www.tugboatannies.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5b4d03c1b98a78935509262a/1534369653391-K72C8R7DGSILSK7LY11D/IMG_3672.jpg",
-     "credit_name": "TugBoat Annie's Pub & Grille",
-     "credit_url": "https://www.tugboatannies.ca/",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/5b4d03c1b98a78935509262a/1534369663386-P7GWQK4J94NV4MT74CUU/IMG_3689.jpg",
-     "credit_name": "TugBoat Annie's Pub & Grille",
-     "credit_url": "https://www.tugboatannies.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5b4d03c1b98a78935509262a/1532376604298-K4H4GLT4WRCDKT41YAZ9/IMG_3638.JPG",
      "credit_name": "TugBoat Annie's Pub & Grille",
      "credit_url": "https://www.tugboatannies.ca/",
      "source": "official_website"
@@ -28785,12 +28147,6 @@
     },
     {
      "url": "https://images.squarespace-cdn.com/content/v1/5b4d03c1b98a78935509262a/1532130882894-1O9QFRPQDSNQ8B775N6I/HOME_BANNER.jpg",
-     "credit_name": "TugBoat Annie's Pub & Grille",
-     "credit_url": "https://www.tugboatannies.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5b4d03c1b98a78935509262a/1532375969779-DWFH4PCVMTEXMB5R6Y3T/IMG_3636-1.jpg",
      "credit_name": "TugBoat Annie's Pub & Grille",
      "credit_url": "https://www.tugboatannies.ca/",
      "source": "official_website"
@@ -28931,7 +28287,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/5b4d03c1b98a78935509262a/1532989562055-P6BUBJZK63NXJ6FJBF6M/LRS+Interior+01.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/5b4d03c1b98a78935509262a/1534369653391-K72C8R7DGSILSK7LY11D/IMG_3672.jpg",
     "credit_name": "TugBoat Annie's Pub & Grille",
     "credit_url": "https://www.tugboatannies.ca/",
     "source": "official_website"
@@ -29147,9 +28503,9 @@
    },
    "photos": [
     {
-     "url": "https://tequilacocina.com/photos/vibe-sombreros.jpg",
+     "url": "https://tequilacocina.com/photos/dish-brunch.jpg",
      "credit_name": "Tequila Cocina | Mexican Restaurant, Cantina & Brunch.",
-     "credit_url": "https://tequilacocina.com/events",
+     "credit_url": "https://tequilacocina.com/",
      "source": "official_website"
     },
     {
@@ -29162,12 +28518,6 @@
      "url": "https://tequilacocina.com/photos/dish-trompo.jpg",
      "credit_name": "Tequila Cocina | Mexican Restaurant, Cantina & Brunch.",
      "credit_url": "https://tequilacocina.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://tequilacocina.com/photos/hero-interior.jpg",
-     "credit_name": "Tequila Cocina | Mexican Restaurant, Cantina & Brunch.",
-     "credit_url": "https://tequilacocina.com/events",
      "source": "official_website"
     },
     {
@@ -29287,9 +28637,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://tequilacocina.com/photos/dish-brunch.jpg",
+    "url": "https://tequilacocina.com/photos/hero-interior.jpg",
     "credit_name": "Tequila Cocina | Mexican Restaurant, Cantina & Brunch.",
-    "credit_url": "https://tequilacocina.com/",
+    "credit_url": "https://tequilacocina.com/events",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -29990,49 +29340,13 @@
    },
    "photos": [
     {
-     "url": "https://www.wildfig.ca/wp-content/uploads/2022/08/brunch2.jpg",
-     "credit_name": "The Wild Fig Restaurant + Bar",
-     "credit_url": "https://www.wildfig.ca/events/sunday-brunch/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.wildfig.ca/wp-content/uploads/2022/10/events-description.jpg",
-     "credit_name": "The Wild Fig Restaurant + Bar",
-     "credit_url": "https://www.wildfig.ca/events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.wildfig.ca/wp-content/uploads/2022/10/live-music.jpg",
-     "credit_name": "The Wild Fig Restaurant + Bar",
-     "credit_url": "https://www.wildfig.ca/events/live-music/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.wildfig.ca/wp-content/uploads/2022/09/Live-Music-.jpg",
-     "credit_name": "The Wild Fig Restaurant + Bar",
-     "credit_url": "https://www.wildfig.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.wildfig.ca/wp-content/uploads/2022/09/happy-hour-.jpg",
+     "url": "https://www.wildfig.ca/wp-content/uploads/2022/08/PPASTA.jpg",
      "credit_name": "The Wild Fig Restaurant + Bar",
      "credit_url": "https://www.wildfig.ca/",
      "source": "official_website"
     },
     {
      "url": "https://www.wildfig.ca/wp-content/uploads/2022/08/BRUNCH-1.jpg",
-     "credit_name": "The Wild Fig Restaurant + Bar",
-     "credit_url": "https://www.wildfig.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.wildfig.ca/wp-content/uploads/2022/09/best-table.jpg",
-     "credit_name": "The Wild Fig Restaurant + Bar",
-     "credit_url": "https://www.wildfig.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.wildfig.ca/wp-content/uploads/2022/09/private-dinning-.jpg",
      "credit_name": "The Wild Fig Restaurant + Bar",
      "credit_url": "https://www.wildfig.ca/",
      "source": "official_website"
@@ -30243,7 +29557,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://www.wildfig.ca/wp-content/uploads/2022/08/PPASTA.jpg",
+    "url": "https://www.wildfig.ca/wp-content/uploads/2022/09/best-table.jpg",
     "credit_name": "The Wild Fig Restaurant + Bar",
     "credit_url": "https://www.wildfig.ca/",
     "source": "official_website"
@@ -30520,43 +29834,7 @@
    },
    "photos": [
     {
-     "url": "https://www.thethirstyduckpub.com/images/menu-cat-7.jpg",
-     "credit_name": "The Thirsty Duck Pub",
-     "credit_url": "https://www.thethirstyduckpub.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.thethirstyduckpub.com/images/happy-hour.jpg",
-     "credit_name": "The Thirsty Duck Pub",
-     "credit_url": "https://www.thethirstyduckpub.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.thethirstyduckpub.com/images/restaurant1.jpg",
-     "credit_name": "The Thirsty Duck Pub",
-     "credit_url": "https://www.thethirstyduckpub.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://www.thethirstyduckpub.com/images/taco-tuesday.jpg",
-     "credit_name": "The Thirsty Duck Pub",
-     "credit_url": "https://www.thethirstyduckpub.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.thethirstyduckpub.com/images/restaurant2.jpg",
-     "credit_name": "The Thirsty Duck Pub",
-     "credit_url": "https://www.thethirstyduckpub.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.thethirstyduckpub.com/images/parallax-4.jpg",
-     "credit_name": "The Thirsty Duck Pub",
-     "credit_url": "https://www.thethirstyduckpub.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.thethirstyduckpub.com/images/parallax-5.jpg",
      "credit_name": "The Thirsty Duck Pub",
      "credit_url": "https://www.thethirstyduckpub.com/",
      "source": "official_website"
@@ -31547,12 +30825,6 @@
      "credit_name": "The Princeton Pub & Grill",
      "credit_url": "https://www.theprincetonpub.ca/",
      "source": "official_website"
-    },
-    {
-     "url": "https://www.theprincetonpub.ca/wp-content/uploads/2026/10/oct23.jpg",
-     "credit_name": "The Princeton Pub & Grill",
-     "credit_url": "https://www.theprincetonpub.ca/events/savonarola/",
-     "source": "official_website"
     }
    ],
    "amenities": {
@@ -32168,7 +31440,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://brownsville.ca/wp-content/uploads/2025/07/469179325_455856947546135_6431271347391016601_n.jpg",
+    "url": "https://brownsville.ca/wp-content/uploads/2025/07/Brownsville_Logos_White-e1753652150494.png",
     "credit_name": "The Brownsville Pub",
     "credit_url": "https://brownsville.ca/",
     "source": "official_website"
@@ -32614,18 +31886,6 @@
      "credit_name": "Uva Wine & Cocktail Bar",
      "credit_url": "https://www.uvavancouver.com/",
      "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/8385f7_3cba50ff9fb44a36b27abd2f19a63440~mv2_d_3904_2320_s_2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8385f7_3cba50ff9fb44a36b27abd2f19a63440~mv2_d_3904_2320_s_2.jpg",
-     "credit_name": "Uva Wine & Cocktail Bar",
-     "credit_url": "https://www.uvavancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/8385f7_7c66202475fe4d88b0843f426ef0b615~mv2.jpg/v1/fill/w_1440,h_729,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8385f7_7c66202475fe4d88b0843f426ef0b615~mv2.jpg",
-     "credit_name": "Uva Wine & Cocktail Bar",
-     "credit_url": "https://www.uvavancouver.com/",
-     "source": "official_website"
     }
    ],
    "amenities": {
@@ -32824,31 +32084,7 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/6a63afce32c82911531322b4/b9bd1066-a286-434f-bbca-74f2eab0bc9f/patio-cheers.jpg",
-     "credit_name": "Wildeye Brewing",
-     "credit_url": "https://www.wildeyebrewing.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/6a63afce32c82911531322b4/bab3db66-b479-406a-b18f-432a4f68d68b/keg-filling.jpg",
-     "credit_name": "Wildeye Brewing",
-     "credit_url": "https://www.wildeyebrewing.ca/",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/6a63afce32c82911531322b4/293382a1-c410-465c-8fa5-12726f72de8b/pour-hazy.jpg",
-     "credit_name": "Wildeye Brewing",
-     "credit_url": "https://www.wildeyebrewing.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/6a63afce32c82911531322b4/918b264d-cec2-4dfe-9d87-a00e252e981f/indoor-cheers.jpg",
-     "credit_name": "Wildeye Brewing",
-     "credit_url": "https://www.wildeyebrewing.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static1.squarespace.com/static/6a63afce32c82911531322b4/t/6a6cbb0720c64a6b2739cb1f/1785510663666/wildeye-tapwall.png",
      "credit_name": "Wildeye Brewing",
      "credit_url": "https://www.wildeyebrewing.ca/",
      "source": "official_website"
@@ -32941,19 +32177,13 @@
    },
    "photos": [
     {
+     "url": "https://images.squarespace-cdn.com/content/v1/63dcac73bdce287ac01d550a/9147033b-f82e-48b6-b119-03d62eac3678/Social+Tavern+040.jpg",
+     "credit_name": "The Social Tavern",
+     "credit_url": "https://socialtavern.ca/",
+     "source": "official_website"
+    },
+    {
      "url": "https://images.squarespace-cdn.com/content/v1/63dcac73bdce287ac01d550a/f123ae65-0ebc-43c0-9e51-f0190f009717/Social+Tavern+538.jpg",
-     "credit_name": "The Social Tavern",
-     "credit_url": "https://socialtavern.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/63dcac73bdce287ac01d550a/6d1fc4a6-5ef6-4ee0-a8c1-e5af97cba836/Social+Tavern+082.jpg",
-     "credit_name": "The Social Tavern",
-     "credit_url": "https://socialtavern.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/63dcac73bdce287ac01d550a/f68e9f50-7df2-478c-9673-b8aedec4abf6/Social+Tavern+260.jpg",
      "credit_name": "The Social Tavern",
      "credit_url": "https://socialtavern.ca/",
      "source": "official_website"
@@ -33139,7 +32369,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/63dcac73bdce287ac01d550a/9147033b-f82e-48b6-b119-03d62eac3678/Social+Tavern+040.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/63dcac73bdce287ac01d550a/6d1fc4a6-5ef6-4ee0-a8c1-e5af97cba836/Social+Tavern+082.jpg",
     "credit_name": "The Social Tavern",
     "credit_url": "https://socialtavern.ca/",
     "source": "official_website"
@@ -33519,24 +32749,6 @@
      "credit_name": "The Fountainhead Pub",
      "credit_url": "https://thefountainheadpub.com/",
      "source": "official_website"
-    },
-    {
-     "url": "https://thefountainheadpub.com/wp-content/uploads/2026/08/all-about-the-food.jpg",
-     "credit_name": "The Fountainhead Pub",
-     "credit_url": "https://thefountainheadpub.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thefountainheadpub.com/wp-content/uploads/2026/06/pngtree-entertainment-flyer-picture-image_15588025.png",
-     "credit_name": "The Fountainhead Pub",
-     "credit_url": "https://thefountainheadpub.com/fh-events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thefountainheadpub.com/wp-content/uploads/2025/09/fountainhead-pub-bar.png",
-     "credit_name": "The Fountainhead Pub",
-     "credit_url": "https://thefountainheadpub.com/",
-     "source": "official_website"
     }
    ],
    "amenities": {
@@ -33620,7 +32832,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://thefountainheadpub.com/wp-content/uploads/2026/05/e502488d313745a6a17570ab83e66e2f.jpeg",
+    "url": "https://thefountainheadpub.com/wp-content/uploads/2025/09/fountainhead-pub-bar.png",
     "credit_name": "The Fountainhead Pub",
     "credit_url": "https://thefountainheadpub.com/",
     "source": "official_website"
@@ -33658,6 +32870,12 @@
    },
    "photos": [
     {
+     "url": "https://zapoteca.com/wp-content/uploads/2024/06/Breakfast-2048x1536.jpg",
+     "credit_name": "Zapoteca",
+     "credit_url": "https://zapoteca.com/kitsilano/about-kitsilano/",
+     "source": "official_website"
+    },
+    {
      "url": "https://zapoteca.com/wp-content/uploads/2025/03/Taco-Platter.jpeg",
      "credit_name": "Zapoteca",
      "credit_url": "https://zapoteca.com/kitsilano/menu-kitsilano/menu-happy-hour-kitsilano/",
@@ -33667,12 +32885,6 @@
      "url": "https://zapoteca.com/wp-content/uploads/2025/03/CarmelaCombo-1536x1152.jpeg",
      "credit_name": "Zapoteca",
      "credit_url": "https://zapoteca.com/kitsilano/menu-kitsilano/menu-happy-hour-kitsilano/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://zapoteca.com/wp-content/uploads/2025/02/Kits-2025-Indoors.jpeg",
-     "credit_name": "Zapoteca",
-     "credit_url": "https://zapoteca.com/kitsilano/",
      "source": "official_website"
     },
     {
@@ -33689,12 +32901,6 @@
     },
     {
      "url": "https://zapoteca.com/wp-content/uploads/2024/06/Dinner.jpg",
-     "credit_name": "Zapoteca",
-     "credit_url": "https://zapoteca.com/kitsilano/about-kitsilano/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://zapoteca.com/wp-content/uploads/2025/02/Imagen-de-WhatsApp-2025-02-05-a-las-00.44.51_686beda3.jpg",
      "credit_name": "Zapoteca",
      "credit_url": "https://zapoteca.com/kitsilano/about-kitsilano/",
      "source": "official_website"
@@ -33820,9 +33026,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://zapoteca.com/wp-content/uploads/2024/06/Breakfast-2048x1536.jpg",
+    "url": "https://zapoteca.com/wp-content/uploads/2025/02/Kits-2025-Indoors.jpeg",
     "credit_name": "Zapoteca",
-    "credit_url": "https://zapoteca.com/kitsilano/about-kitsilano/",
+    "credit_url": "https://zapoteca.com/kitsilano/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -34923,7 +34129,7 @@
    },
    "photos": [
     {
-     "url": "https://notoriousgreyfox.com/wp-content/uploads/2026/09/Grey-Fox-Pub-Food.jpg",
+     "url": "https://notoriousgreyfox.com/wp-content/uploads/2026/09/Grey-Fox-Beer-Cheers.jpg",
      "credit_name": "The Notorious Grey Fox Taps & Patio",
      "credit_url": "https://notoriousgreyfox.com/",
      "source": "official_website"
@@ -34932,18 +34138,6 @@
      "url": "https://notoriousgreyfox.com/wp-content/uploads/2026/09/Grey-Fox-Exterior-Hero.jpg",
      "credit_name": "The Notorious Grey Fox Taps & Patio",
      "credit_url": "https://notoriousgreyfox.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://notoriousgreyfox.com/wp-content/uploads/2026/09/Grey-Fox-Historic-Building.jpg",
-     "credit_name": "The Notorious Grey Fox Taps & Patio",
-     "credit_url": "https://notoriousgreyfox.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://notoriousgreyfox.com/wp-content/uploads/2026/09/notoriousgreyfox-graphics-event-flyer-notorious-comedy-v4-1080x1350-05052026-copy.png",
-     "credit_name": "The Notorious Grey Fox Taps & Patio",
-     "credit_url": "https://notoriousgreyfox.com/events/",
      "source": "official_website"
     }
    ],
@@ -35169,7 +34363,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://notoriousgreyfox.com/wp-content/uploads/2026/09/Grey-Fox-Beer-Cheers.jpg",
+    "url": "https://notoriousgreyfox.com/wp-content/uploads/2026/09/Grey-Fox-Pub-Food.jpg",
     "credit_name": "The Notorious Grey Fox Taps & Patio",
     "credit_url": "https://notoriousgreyfox.com/",
     "source": "official_website"
@@ -35207,49 +34401,19 @@
    },
    "photos": [
     {
+     "url": "https://images.squarespace-cdn.com/content/v1/5ca3daed9d41495c5d099b93/1573076190989-WB3EQX1ANEESNC55GQ1X/DSC_9407.jpg",
+     "credit_name": "Ventura Room",
+     "credit_url": "https://www.venturaroom.com/",
+     "source": "official_website"
+    },
+    {
      "url": "https://images.squarespace-cdn.com/content/v1/5ca3daed9d41495c5d099b93/1573076118928-1JMAZ7A9RHFZAA2U0HZY/DSC_9503.jpg",
      "credit_name": "Ventura Room",
      "credit_url": "https://www.venturaroom.com/",
      "source": "official_website"
     },
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/5ca3daed9d41495c5d099b93/1573076165160-CMV056F8VHW97G7PIN3V/DSC_9432.jpg",
-     "credit_name": "Ventura Room",
-     "credit_url": "https://www.venturaroom.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/5ca3daed9d41495c5d099b93/1573076212376-JGZIIDC1SAGYATONFJ2V/DSC_9337.jpg",
-     "credit_name": "Ventura Room",
-     "credit_url": "https://www.venturaroom.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5ca3daed9d41495c5d099b93/1573075792018-Y14E1JHRKTEL0XUNFWO5/Ventura_Staging_Ext_28.10.20.jpg",
-     "credit_name": "Ventura Room",
-     "credit_url": "https://www.venturaroom.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5ca3daed9d41495c5d099b93/1554323020964-KQB990IQ0OAGNTDNFSTC/WebFrontSurf.jpg",
-     "credit_name": "Ventura Room",
-     "credit_url": "https://www.venturaroom.com/reservations",
-     "source": "official_website"
-    },
-    {
-     "url": "http://static1.squarespace.com/static/5ca3daed9d41495c5d099b93/t/6abf2319940270043bba0484/1790911257229/VENTURA+ROOM+HALLOWEEN+Banner.png?format=1500w",
-     "credit_name": "Ventura Room",
-     "credit_url": "https://www.venturaroom.com/calendar/burlesque-night-hb4am-2b7bf-s4c2k",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5ca3daed9d41495c5d099b93/1573075859904-W40OPW8DLFDBY6761TAD/Ventura_Staging_Int_28.10.20-6.jpg",
-     "credit_name": "Ventura Room",
-     "credit_url": "https://www.venturaroom.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5ca3daed9d41495c5d099b93/1573075832786-6TXXUC2PYYDQD65IABJQ/Ventura_Staging_Int_28.10.20-3.jpg",
      "credit_name": "Ventura Room",
      "credit_url": "https://www.venturaroom.com/",
      "source": "official_website"
@@ -35373,7 +34537,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/5ca3daed9d41495c5d099b93/1573076190989-WB3EQX1ANEESNC55GQ1X/DSC_9407.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/5ca3daed9d41495c5d099b93/1573075832786-6TXXUC2PYYDQD65IABJQ/Ventura_Staging_Int_28.10.20-3.jpg",
     "credit_name": "Ventura Room",
     "credit_url": "https://www.venturaroom.com/",
     "source": "official_website"
@@ -36120,9 +35284,9 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/632b57d28692f713c60c84f2/1728337500244-MHZTT7NE0FSVL1WGZZ0U/the-flamingo-room-events-groups.jpg",
+     "url": "https://images.squarespace-cdn.com/content/v1/632b57d28692f713c60c84f2/6ec9df4d-d1f6-4c01-a969-91af3ce7ef04/Violete%CC%81+Kitchen-17.jpg",
      "credit_name": "The Flamingo Room",
-     "credit_url": "https://www.flamingoroomvan.com/events",
+     "credit_url": "https://www.flamingoroomvan.com/",
      "source": "official_website"
     },
     {
@@ -36135,18 +35299,6 @@
      "url": "https://images.squarespace-cdn.com/content/v1/632b57d28692f713c60c84f2/2d5b26e0-ac5c-479b-b082-bfdbe5105539/BK-Interior.jpeg",
      "credit_name": "The Flamingo Room",
      "credit_url": "https://www.flamingoroomvan.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "http://static1.squarespace.com/static/632b57d28692f713c60c84f2/t/670584d90f45045dfb039d25/1728414951612/signature-shots.jpg?format=1500w",
-     "credit_name": "The Flamingo Room",
-     "credit_url": "https://www.flamingoroomvan.com/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/632b57d28692f713c60c84f2/029a5dc5-4df8-485f-a79a-dcc2c8ab39ed/october+%281%29.png",
-     "credit_name": "The Flamingo Room",
-     "credit_url": "https://www.flamingoroomvan.com/our-events",
      "source": "official_website"
     },
     {
@@ -36297,9 +35449,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/632b57d28692f713c60c84f2/6ec9df4d-d1f6-4c01-a969-91af3ce7ef04/Violete%CC%81+Kitchen-17.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/632b57d28692f713c60c84f2/1728337500244-MHZTT7NE0FSVL1WGZZ0U/the-flamingo-room-events-groups.jpg",
     "credit_name": "The Flamingo Room",
-    "credit_url": "https://www.flamingoroomvan.com/",
+    "credit_url": "https://www.flamingoroomvan.com/events",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -36496,25 +35648,7 @@
      "source": "official_website"
     },
     {
-     "url": "https://strathconabeer.com/cdn/shop/files/DSC_1620-19.jpg?v=1727525219&width=3200",
-     "credit_name": "Strathcona North",
-     "credit_url": "https://strathconabeer.com/pages/hastings-st-taproom",
-     "source": "official_website"
-    },
-    {
      "url": "https://strathconabeer.com/cdn/shop/files/Beer1.jpg?v=1776719517&width=1500",
-     "credit_name": "Strathcona North",
-     "credit_url": "https://strathconabeer.com/pages/hastings-st-taproom",
-     "source": "official_website"
-    },
-    {
-     "url": "https://strathconabeer.com/cdn/shop/files/Pat1.jpg?v=1777572348&width=3200",
-     "credit_name": "Strathcona North",
-     "credit_url": "https://strathconabeer.com/pages/hastings-st-taproom",
-     "source": "official_website"
-    },
-    {
-     "url": "https://strathconabeer.com/cdn/shop/files/Nick.jpg?v=1777572486&width=3200",
      "credit_name": "Strathcona North",
      "credit_url": "https://strathconabeer.com/pages/hastings-st-taproom",
      "source": "official_website"
@@ -36830,20 +35964,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/69963283b66f4903dd7331f6/acb2afcd-b292-47a0-9dde-8fe122c87dd5/DSC02260.jpg",
-     "credit_name": "The Cozy Wok",
-     "credit_url": "https://www.thecozywok.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "http://static1.squarespace.com/static/69963283b66f4903dd7331f6/t/69b1f34fe819302963d7a267/1790972896169/DSC02383.jpg?format=1500w",
-     "credit_name": "The Cozy Wok",
-     "credit_url": "https://www.thecozywok.com/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": false,
     "gluten_free_options": null,
@@ -36927,9 +36048,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/69963283b66f4903dd7331f6/t/69b1f34fe819302963d7a267/1773269839509/DSC02383.jpg?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/69963283b66f4903dd7331f6/acb2afcd-b292-47a0-9dde-8fe122c87dd5/DSC02260.jpg",
     "credit_name": "The Cozy Wok",
-    "credit_url": "http://www.thecozywok.com/",
+    "credit_url": "https://www.thecozywok.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -36963,32 +36084,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://static.wixstatic.com/media/850880_d3b4700f5fa74138b2f4d15d4512aa88~mv2.jpeg/v1/crop/x_16,y_0,w_968,h_785/fill/w_942,h_756,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/66a646e56e.jpeg",
-     "credit_name": "The Flapper Lounge",
-     "credit_url": "https://www.flapperlounge.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/850880_b14084e2ac5645f6a88665c7a0e515c7~mv2.jpeg/v1/fill/w_960,h_667,al_c,q_85,enc_avif,quality_auto/850880_b14084e2ac5645f6a88665c7a0e515c7~mv2.jpeg",
-     "credit_name": "The Flapper Lounge",
-     "credit_url": "https://www.flapperlounge.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/850880_06ea8c792f374b4e94a0bdf96d2889ca~mv2.jpeg/v1/crop/x_0,y_0,w_822,h_667/fill/w_822,h_660,al_c,q_85,enc_avif,quality_auto/8ffa31ea67.jpeg",
-     "credit_name": "The Flapper Lounge",
-     "credit_url": "https://www.flapperlounge.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/850880_07a1c97e36b74de5b241a7c641c70d5b~mv2.jpeg/v1/crop/x_396,y_0,w_571,h_667/fill/w_571,h_667,al_c,q_85,enc_avif,quality_auto/384483f46e.jpeg",
-     "credit_name": "The Flapper Lounge",
-     "credit_url": "https://www.flapperlounge.com/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": false,
     "gluten_free_options": null,
@@ -37073,9 +36169,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/850880_cae50e6ae35144ee993c49c9c904cfab~mv2.jpg/v1/fill/w_1440,h_826,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/850880_cae50e6ae35144ee993c49c9c904cfab~mv2.jpg",
+    "url": "https://static.wixstatic.com/media/850880_130f8407ce374914b2679fe5f346a589%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/850880_130f8407ce374914b2679fe5f346a589%7Emv2.jpg",
     "credit_name": "The Flapper Lounge",
-    "credit_url": "https://www.flapperlounge.com/",
+    "credit_url": "http://www.flapperlounge.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -37255,18 +36351,6 @@
      "source": "official_website"
     },
     {
-     "url": "https://irp.cdn-website.com//md/unsplash/dms3rep/multi/opt/photo-1510915361894-db8b60106cb1-2880w.jpg",
-     "credit_name": "The Horse and Ryder Pub",
-     "credit_url": "https://www.thehorseandryder.com/events",
-     "source": "official_website"
-    },
-    {
-     "url": "https://lirp.cdn-website.com/f40a9cc6/dms3rep/multi/opt/H%26R_Header-3625h.jpg",
-     "credit_name": "The Horse and Ryder Pub",
-     "credit_url": "https://www.thehorseandryder.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://cdn.dwhitelabel.com/e504029522244071a09505a62bcfe8d9/dms3rep/multi/icecream_kitchen_black-1920x867.jpg",
      "credit_name": "The Horse and Ryder Pub",
      "credit_url": "https://www.thehorseandryder.com/about",
@@ -37354,7 +36438,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://irp.cdn-website.com//f40a9cc6/dms3rep/multi/opt/horse_ryder_pub_website-1920w.jpg",
+    "url": "https://lirp.cdn-website.com/f40a9cc6/dms3rep/multi/opt/H%26R_Header-3625h.jpg",
     "credit_name": "The Horse and Ryder Pub",
     "credit_url": "https://www.thehorseandryder.com/",
     "source": "official_website"
@@ -37924,14 +37008,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/664fc1ecbb65052f9d51f1f3/b83555bc-4d32-4dd2-aead-0ab27212b3cb/Mainstay+-+Mar+27-47.jpg",
-     "credit_name": "The Mainstay",
-     "credit_url": "https://www.themainstay.ca/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -39459,27 +38536,9 @@
    },
    "photos": [
     {
-     "url": "https://washingtonavenuegrill.com/wp-content/uploads/2015/03/wag-7.jpg",
+     "url": "https://washingtonavenuegrill.com/wp-content/uploads/2020/10/IMG_1133-scaled.jpg",
      "credit_name": "Washington Avenue Grill",
      "credit_url": "https://washingtonavenuegrill.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://washingtonavenuegrill.com/wp-content/uploads/2020/12/BO-pinot-Noir-xmas-scaled.jpg",
-     "credit_name": "Washington Avenue Grill",
-     "credit_url": "https://washingtonavenuegrill.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://washingtonavenuegrill.com/wp-content/uploads/2015/03/wag-16.jpg",
-     "credit_name": "Washington Avenue Grill",
-     "credit_url": "https://washingtonavenuegrill.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "http://washingtonave.wpengine.com/wp-content/uploads/2015/03/wag-13.jpg",
-     "credit_name": "Washington Avenue Grill",
-     "credit_url": "https://washingtonavenuegrill.com/special-events/",
      "source": "official_website"
     },
     {
@@ -39574,7 +38633,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://washingtonavenuegrill.com/wp-content/uploads/2020/10/IMG_1133-scaled.jpg",
+    "url": "https://washingtonavenuegrill.com/wp-content/uploads/2015/03/wag-7.jpg",
     "credit_name": "Washington Avenue Grill",
     "credit_url": "https://washingtonavenuegrill.com/",
     "source": "official_website"
@@ -39618,24 +38677,6 @@
      "source": "official_website"
     },
     {
-     "url": "https://img1.wsimg.com/isteam/ip/cf008c8a-2275-4a0e-a284-c94f6977a5e3/blob-8eaed1d.png/:/rs=w:1209,h:907",
-     "credit_name": "The Barley Merchant Taproom & Kitchen",
-     "credit_url": "https://thebarleymerchant.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://img1.wsimg.com/isteam/ip/cf008c8a-2275-4a0e-a284-c94f6977a5e3/_DSC3559.jpg/:/rs=w:1209,h:806",
-     "credit_name": "The Barley Merchant Taproom & Kitchen",
-     "credit_url": "https://thebarleymerchant.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://img1.wsimg.com/isteam/ip/cf008c8a-2275-4a0e-a284-c94f6977a5e3/The%20Barley%20Merchant%20_%20Harvest%20Pizza.png/:/cr=t:0%25,l:0.01%25,w:99.98%25,h:100%25/rs=w:1209,h:806",
-     "credit_name": "The Barley Merchant Taproom & Kitchen",
-     "credit_url": "https://thebarleymerchant.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://img1.wsimg.com/isteam/ip/cf008c8a-2275-4a0e-a284-c94f6977a5e3/3DC85E90-A8E4-4D13-9E90-0C4C5A496316%202.jpg/:/rs=w:1209,h:764",
      "credit_name": "The Barley Merchant Taproom & Kitchen",
      "credit_url": "https://thebarleymerchant.com/",
@@ -39651,12 +38692,6 @@
      "url": "https://img1.wsimg.com/isteam/ip/cf008c8a-2275-4a0e-a284-c94f6977a5e3/_DSC2305.jpg/:/rs=w:1209,h:806",
      "credit_name": "The Barley Merchant Taproom & Kitchen",
      "credit_url": "https://thebarleymerchant.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://img1.wsimg.com/isteam/ip/cf008c8a-2275-4a0e-a284-c94f6977a5e3/MUSIC%20-%20Untappd%20-%20Sept%20-%20Nov%202026.png/:/rs=w:1209,h:680",
-     "credit_name": "The Barley Merchant Taproom & Kitchen",
-     "credit_url": "https://thebarleymerchant.com/music-%26-events",
      "source": "official_website"
     }
    ],
@@ -39828,7 +38863,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://img1.wsimg.com/isteam/ip/cf008c8a-2275-4a0e-a284-c94f6977a5e3/IMG_3572.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1535,m",
+    "url": "https://img1.wsimg.com/isteam/ip/cf008c8a-2275-4a0e-a284-c94f6977a5e3/The%20Barley%20Merchant%20_%20Harvest%20Pizza.png/:/cr=t:0%25,l:0.01%25,w:99.98%25,h:100%25/rs=w:1209,h:806",
     "credit_name": "The Barley Merchant Taproom & Kitchen",
     "credit_url": "https://thebarleymerchant.com/",
     "source": "official_website"
@@ -43340,18 +42375,6 @@
      "source": "official_website"
     },
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/63daee57d16a59469232f249/cf9638ad-2ec6-4bd7-9d49-a0dcc1c8326d/230.jpg",
-     "credit_name": "The Lobby Restaurant & Lounge",
-     "credit_url": "https://www.lobbyrestaurant.ca/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/63daee57d16a59469232f249/cfcc95b9-7b01-4a5e-ae21-93e2e3827ab0/024.jpg",
-     "credit_name": "The Lobby Restaurant & Lounge",
-     "credit_url": "https://www.lobbyrestaurant.ca/gallery",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/63daee57d16a59469232f249/150e9a1d-53db-48f1-baa8-f1f9f021ae8c/1-ROSE1814.jpg",
      "credit_name": "The Lobby Restaurant & Lounge",
      "credit_url": "https://www.lobbyrestaurant.ca/gallery",
@@ -43367,12 +42390,6 @@
      "url": "https://images.squarespace-cdn.com/content/v1/63daee57d16a59469232f249/823f1501-7e0b-405e-937d-696dbb49a958/magnific_brmY6dV5Y2.png",
      "credit_name": "The Lobby Restaurant & Lounge",
      "credit_url": "https://www.lobbyrestaurant.ca/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/63daee57d16a59469232f249/25529c6e-de3c-4d16-ad1b-2c3e30e52a72/Monday.png",
-     "credit_name": "The Lobby Restaurant & Lounge",
-     "credit_url": "https://www.lobbyrestaurant.ca/",
      "source": "official_website"
     }
    ],
@@ -43511,9 +42528,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/63daee57d16a59469232f249/095f4a9e-b5a6-4c7a-854e-dad02b0193b6/IMG_9789_resize.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/63daee57d16a59469232f249/cf9638ad-2ec6-4bd7-9d49-a0dcc1c8326d/230.jpg",
     "credit_name": "The Lobby Restaurant & Lounge",
-    "credit_url": "https://www.lobbyrestaurant.ca/",
+    "credit_url": "https://www.lobbyrestaurant.ca/gallery",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -43752,25 +42769,13 @@
    },
    "photos": [
     {
-     "url": "https://farmhouseon10th.com/assets/images/wine.jpg",
+     "url": "https://farmhouseon10th.com/assets/images/room.jpg",
      "credit_name": "The Farmhouse",
      "credit_url": "https://farmhouseon10th.com/",
      "source": "official_website"
     },
     {
      "url": "https://farmhouseon10th.com/static/media/header-1.ceace2c35a3efe1983ea.jpg",
-     "credit_name": "The Farmhouse",
-     "credit_url": "https://farmhouseon10th.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://farmhouseon10th.com/assets/images/menu.jpg",
-     "credit_name": "The Farmhouse",
-     "credit_url": "https://farmhouseon10th.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://farmhouseon10th.com/static/media/popup.848784e5a72a357cadb9.png",
      "credit_name": "The Farmhouse",
      "credit_url": "https://farmhouseon10th.com/",
      "source": "official_website"
@@ -43899,7 +42904,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://farmhouseon10th.com/assets/images/room.jpg",
+    "url": "https://farmhouseon10th.com/assets/images/menu.jpg",
     "credit_name": "The Farmhouse",
     "credit_url": "https://farmhouseon10th.com/",
     "source": "official_website"
@@ -44957,37 +43962,13 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/938493b4-6be7-4ce3-85b2-40b1724e6328/1DX_0020.jpg",
-     "credit_name": "Trading Post Brewery & Tasting Room",
-     "credit_url": "https://www.tradingpostbrewing.com/brewery-tastingroom",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/870addf6-6cb5-4bef-80f7-ac954dc9381b/1DX_0129.jpg",
      "credit_name": "Trading Post Brewery & Tasting Room",
      "credit_url": "https://www.tradingpostbrewing.com/brewery-tastingroom",
      "source": "official_website"
     },
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/c5f352b5-44cf-46b9-ae43-27ede79c347a/A48I4190.jpg",
-     "credit_name": "Trading Post Brewery & Tasting Room",
-     "credit_url": "https://www.tradingpostbrewing.com/brewery-tastingroom",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/4b294a9d-e377-465b-a030-fe97930af314/1DX_2095.jpg",
-     "credit_name": "Trading Post Brewery & Tasting Room",
-     "credit_url": "https://www.tradingpostbrewing.com/brewery-tastingroom",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/a6eea22e-dbf8-4f3a-81ff-f0c83a04b485/Tasting+Room+events.jpg",
-     "credit_name": "Trading Post Brewery & Tasting Room",
-     "credit_url": "https://www.tradingpostbrewing.com/upcoming-events",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/99db2c7e-e121-41be-a984-2982e46e635a/1DX_2094.jpg",
      "credit_name": "Trading Post Brewery & Tasting Room",
      "credit_url": "https://www.tradingpostbrewing.com/brewery-tastingroom",
      "source": "official_website"
@@ -45082,9 +44063,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/1704659084252-XIUIUFF64F1XOZ71GG10/1DX_2117.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/a6eea22e-dbf8-4f3a-81ff-f0c83a04b485/Tasting+Room+events.jpg",
     "credit_name": "Trading Post Brewery & Tasting Room",
-    "credit_url": "https://www.tradingpostbrewing.com/brewery-tastingroom",
+    "credit_url": "https://www.tradingpostbrewing.com/upcoming-events",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -46739,18 +45720,6 @@
      "source": "official_website"
     },
     {
-     "url": "https://static.wixstatic.com/media/5b3dad_1ec0241a226344bdb064a6ab774e1942~mv2.jpg/v1/fill/w_1275,h_902,q_90,enc_avif,quality_auto/5b3dad_1ec0241a226344bdb064a6ab774e1942~mv2.jpg",
-     "credit_name": "The Orchard Gleneagles Clubhouse",
-     "credit_url": "https://www.theboatshedgroup.com/venues-catering",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/5b3dad_0b2d93cbc2084c998972f6dd59cfffe8~mv2.webp/v1/fill/w_1303,h_725,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Britania%20Beach.webp",
-     "credit_name": "The Orchard Gleneagles Clubhouse",
-     "credit_url": "https://www.theboatshedgroup.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://static.wixstatic.com/media/5b3dad_4897250692214c8887ce461c5a77be03~mv2.jpg/v1/fill/w_640,h_514,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Shed-19.jpg",
      "credit_name": "The Orchard Gleneagles Clubhouse",
      "credit_url": "https://www.theboatshedgroup.com/",
@@ -46766,12 +45735,6 @@
      "url": "https://static.wixstatic.com/media/5b3dad_336aa018fa1c415991962009c7e5ac55~mv2.jpg/v1/fill/w_1080,h_512,al_c,q_85,enc_avif,quality_auto/358663295_292581696500713_5955018509067320065_n.jpg",
      "credit_name": "The Orchard Gleneagles Clubhouse",
      "credit_url": "https://www.theboatshedgroup.com/venues-catering",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/5b3dad_68a48c9461e843538bafbc09754dc0de~mv2.jpg/v1/fill/w_640,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/294958848_548243013398349_1289247972394795532_n.jpg",
-     "credit_name": "The Orchard Gleneagles Clubhouse",
-     "credit_url": "https://www.theboatshedgroup.com/",
      "source": "official_website"
     },
     {
@@ -47108,9 +46071,9 @@
    },
    "photos": [
     {
-     "url": "https://thepleasant.ca/wp-content/uploads/2023/04/1F1A4058-1-copy-scaled.webp",
+     "url": "https://thepleasant.ca/wp-content/uploads/2023/05/1F1A4262-1-copy.webp",
      "credit_name": "The Pleasant",
-     "credit_url": "https://thepleasant.ca/",
+     "credit_url": "https://thepleasant.ca/gallery/",
      "source": "official_website"
     },
     {
@@ -47126,25 +46089,7 @@
      "source": "official_website"
     },
     {
-     "url": "https://thepleasant.ca/wp-content/uploads/2024/06/1F1A7393-copy.jpg",
-     "credit_name": "The Pleasant",
-     "credit_url": "https://thepleasant.ca/gallery/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thepleasant.ca/wp-content/uploads/2024/06/1F1A7400-copy.jpg",
-     "credit_name": "The Pleasant",
-     "credit_url": "https://thepleasant.ca/gallery/",
-     "source": "official_website"
-    },
-    {
      "url": "https://thepleasant.ca/wp-content/uploads/2024/06/1F1A7418-1-copy.jpg",
-     "credit_name": "The Pleasant",
-     "credit_url": "https://thepleasant.ca/gallery/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thepleasant.ca/wp-content/uploads/2024/06/1F1A7431-copy.jpg",
      "credit_name": "The Pleasant",
      "credit_url": "https://thepleasant.ca/gallery/",
      "source": "official_website"
@@ -47265,9 +46210,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://thepleasant.ca/wp-content/uploads/2023/05/1F1A4262-1-copy.webp",
+    "url": "https://thepleasant.ca/wp-content/uploads/2023/04/1F1A4058-1-copy-scaled.webp",
     "credit_name": "The Pleasant",
-    "credit_url": "https://thepleasant.ca/gallery/",
+    "credit_url": "https://thepleasant.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -48145,39 +47090,9 @@
    },
    "photos": [
     {
-     "url": "https://static.wixstatic.com/media/10319a_e5ce847795064b54a268aae411095f67~mv2.jpg/v1/fill/w_5055,h_3375,q_90,enc_avif,quality_auto/10319a_e5ce847795064b54a268aae411095f67~mv2.jpg",
-     "credit_name": "Time & Place Kitchen I Bar",
-     "credit_url": "https://www.timeandplaceburnaby.com/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/10319a_41d47f70adbf44838b811ad063d0ea10~mv2.jpg/v1/fill/w_3345,h_2235,q_90,enc_avif,quality_auto/10319a_41d47f70adbf44838b811ad063d0ea10~mv2.jpg",
-     "credit_name": "Time & Place Kitchen I Bar",
-     "credit_url": "https://www.timeandplaceburnaby.com/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/10319a_ce36a81cd82248909cfb0c99af53b7f8~mv2.jpg/v1/fill/w_2375,h_1585,q_90,enc_avif,quality_auto/10319a_ce36a81cd82248909cfb0c99af53b7f8~mv2.jpg",
-     "credit_name": "Time & Place Kitchen I Bar",
-     "credit_url": "https://www.timeandplaceburnaby.com/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/10319a_49b7ce3eca6b45bf9101e7f7c10dffe3~mv2.jpg/v1/fill/w_2365,h_1575,q_90,enc_avif,quality_auto/10319a_49b7ce3eca6b45bf9101e7f7c10dffe3~mv2.jpg",
-     "credit_name": "Time & Place Kitchen I Bar",
-     "credit_url": "https://www.timeandplaceburnaby.com/gallery",
-     "source": "official_website"
-    },
-    {
      "url": "https://static.wixstatic.com/media/10319a_1fb625cd340f44a98f09282ba3966b89~mv2.jpg/v1/fill/w_1599,h_1200,q_90,enc_avif,quality_auto/10319a_1fb625cd340f44a98f09282ba3966b89~mv2.jpg",
      "credit_name": "Time & Place Kitchen I Bar",
      "credit_url": "https://www.timeandplaceburnaby.com/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/10319a_ab2e3b9167ae4ec18cd0c68d4f70c3d7~mv2.jpg/v1/crop/x_0,y_856,w_8186,h_4603/fill/w_1722,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hilton%20Vancouver%20Metrotown%20-%2014.jpg",
-     "credit_name": "Time & Place Kitchen I Bar",
-     "credit_url": "https://www.timeandplaceburnaby.com/private-dining-room",
      "source": "official_website"
     },
     {
@@ -48342,9 +47257,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/10319a_5661d1730a07406fb209339044f6d880~mv2.jpg/v1/fill/w_2500,h_1666,al_c/10319a_5661d1730a07406fb209339044f6d880~mv2.jpg",
+    "url": "https://static.wixstatic.com/media/10319a_e5ce847795064b54a268aae411095f67~mv2.jpg/v1/fill/w_5055,h_3375,q_90,enc_avif,quality_auto/10319a_e5ce847795064b54a268aae411095f67~mv2.jpg",
     "credit_name": "Time & Place Kitchen I Bar",
-    "credit_url": "http://www.timeandplaceburnaby.com/?SEO_id=GMB--R-YVRVMHF-1",
+    "credit_url": "https://www.timeandplaceburnaby.com/gallery",
     "source": "official_website"
    },
    "last_synced_at": "2026-09-03",
@@ -52751,15 +51666,9 @@
    },
    "photos": [
     {
-     "url": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yvrwc-the-apron/site-images/migrated-images/the-apron-new-menu.png?width=1800&height=808",
+     "url": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yvrwc-the-apron/site-images/migrated-images/short-rib-at-the-apron.png?width=1200&height=630",
      "credit_name": "the apron",
      "credit_url": "https://www.theapronrichmond.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yvrwc-the-apron/site-images/migrated-images/chef-clement-ratio.png?cropW=750&cropH=500&width=750&height=500",
-     "credit_name": "the apron",
-     "credit_url": "https://www.theapronrichmond.com/about-us",
      "source": "official_website"
     },
     {
@@ -52946,7 +51855,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yvrwc-the-apron/site-images/migrated-images/short-rib-at-the-apron.png?width=1200&height=630",
+    "url": "https://mds-assets.marriott.com/cdn-cgi/image/f=auto/cms-platform-for-marriott/yvrwc-the-apron/site-images/migrated-images/the-apron-new-menu.png?width=1800&height=808",
     "credit_name": "the apron",
     "credit_url": "https://www.theapronrichmond.com/",
     "source": "official_website"
@@ -53721,25 +52630,7 @@
      "source": "official_website"
     },
     {
-     "url": "https://images.getbento.com/accounts/1c7466fe8f322173d80e3e8613a89c6f/media/images/91127shutterstock_1104963008_VER_2.jpg?w=1200&fit=max&auto=compress,format&cs=origin",
-     "credit_name": "The Boathouse Restaurant",
-     "credit_url": "https://www.boathouserestaurants.ca/private-events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.getbento.com/accounts/1c7466fe8f322173d80e3e8613a89c6f/media/images/77460shutterstock_612593618.jpg?w=1200&fit=max&auto=compress,format&cs=origin",
-     "credit_name": "The Boathouse Restaurant",
-     "credit_url": "https://www.boathouserestaurants.ca/about/",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.getbento.com/accounts/1c7466fe8f322173d80e3e8613a89c6f/media/images/455553phasefilms-9.jpg?w=1200&fit=max&auto=compress,format&cs=origin",
-     "credit_name": "The Boathouse Restaurant",
-     "credit_url": "https://www.boathouserestaurants.ca/location/boathouse-restaurants-new-westminster/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.getbento.com/accounts/1c7466fe8f322173d80e3e8613a89c6f/media/images/598213phasefilms-15.jpg?w=1200&fit=max&auto=compress,format&cs=origin",
      "credit_name": "The Boathouse Restaurant",
      "credit_url": "https://www.boathouserestaurants.ca/location/boathouse-restaurants-new-westminster/",
      "source": "official_website"
@@ -53752,12 +52643,6 @@
     },
     {
      "url": "https://images.getbento.com/accounts/1c7466fe8f322173d80e3e8613a89c6f/media/images/43862WhatsApp_Image_2020-03-22_at_6.20.38_PM_2.jpeg?w=1200&fit=max&auto=compress,format&cs=origin",
-     "credit_name": "The Boathouse Restaurant",
-     "credit_url": "https://www.boathouserestaurants.ca/private-events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.getbento.com/accounts/1c7466fe8f322173d80e3e8613a89c6f/media/images/640561706_whiterock_boathouse-chicken-salad.jpg?w=1200&fit=max&auto=compress,format&cs=origin",
      "credit_name": "The Boathouse Restaurant",
      "credit_url": "https://www.boathouserestaurants.ca/private-events/",
      "source": "official_website"
@@ -53824,7 +52709,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.getbento.com/accounts/1c7466fe8f322173d80e3e8613a89c6f/media/images/350203phasefilms.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&h=600",
+    "url": "https://images.getbento.com/accounts/1c7466fe8f322173d80e3e8613a89c6f/media/images/598213phasefilms-15.jpg?w=1200&fit=max&auto=compress,format&cs=origin",
     "credit_name": "The Boathouse Restaurant",
     "credit_url": "https://www.boathouserestaurants.ca/location/boathouse-restaurants-new-westminster/",
     "source": "official_website"
@@ -53994,30 +52879,6 @@
      "url": "https://popmenucloud.com/cdn-cgi/image/width%3D2304%2Cheight%3D2304%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/lmbrhjnc/897cee3a-f8f5-44b8-8c7f-9fc45362ee56.jpeg",
      "credit_name": "Taps and Tacos",
      "credit_url": "https://www.tapsandtacos.ca/about",
-     "source": "official_website"
-    },
-    {
-     "url": "https://popmenucloud.com/cdn-cgi/image/width%3D2304%2Cheight%3D2304%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/lmbrhjnc/3e928232-c5ad-47ae-80f2-371b1567a5bb.jpeg",
-     "credit_name": "Taps and Tacos",
-     "credit_url": "https://www.tapsandtacos.ca/about",
-     "source": "official_website"
-    },
-    {
-     "url": "https://popmenucloud.com/cdn-cgi/image/width%3D1440%2Cheight%3D1440%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/lmbrhjnc/82e653c8-2dec-42f2-9fa5-ac5b3010979b.jpeg",
-     "credit_name": "Taps and Tacos",
-     "credit_url": "https://www.tapsandtacos.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://popmenucloud.com/cdn-cgi/image/width%3D1440%2Cheight%3D1440%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/lmbrhjnc/8e921920-7789-4227-adfd-ffb822e17b78.jpeg",
-     "credit_name": "Taps and Tacos",
-     "credit_url": "https://www.tapsandtacos.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://popmenucloud.com/cdn-cgi/image/width%3D1440%2Cheight%3D1440%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/lmbrhjnc/a296b414-db1b-485e-a7c9-61d28e83d5c1.jpg",
-     "credit_name": "Taps and Tacos",
-     "credit_url": "https://www.tapsandtacos.ca/",
      "source": "official_website"
     },
     {
@@ -55651,13 +54512,13 @@
    },
    "photos": [
     {
-     "url": "https://villagetaphouse.com/wp-content/uploads/2022/01/VTH_BeerTaps_1500x1000.jpg",
+     "url": "https://villagetaphouse.com/wp-content/uploads/2022/10/VTH_150101_Taphouse_Exterior_H276_1500x1000-1.jpg",
      "credit_name": "The Village Taphouse",
      "credit_url": "https://villagetaphouse.com/",
      "source": "official_website"
     },
     {
-     "url": "https://villagetaphouse.com/wp-content/uploads/2015/08/TAP-cover-north-shore.jpg",
+     "url": "https://villagetaphouse.com/wp-content/uploads/2022/01/VTH_BeerTaps_1500x1000.jpg",
      "credit_name": "The Village Taphouse",
      "credit_url": "https://villagetaphouse.com/",
      "source": "official_website"
@@ -55877,7 +54738,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://villagetaphouse.com/wp-content/uploads/2022/10/VTH_150101_Taphouse_Exterior_H276_1500x1000-1.jpg",
+    "url": "https://villagetaphouse.com/wp-content/uploads/2015/08/TAP-cover-north-shore.jpg",
     "credit_name": "The Village Taphouse",
     "credit_url": "https://villagetaphouse.com/",
     "source": "official_website"
@@ -56627,51 +55488,9 @@
    },
    "photos": [
     {
-     "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/Wedgewood-Hotel-Lobby-Photoshoot-2000x0-c-default.jpg",
-     "credit_name": "Wedgewood Hotel & Spa",
-     "credit_url": "https://wedgewoodhotel.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://wedgewoodhotel.com/wp-content/uploads/2025/12/BDP8265.jpg",
-     "credit_name": "Wedgewood Hotel & Spa",
-     "credit_url": "https://wedgewoodhotel.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/Wedgewood_Hotel_312.jpg",
-     "credit_name": "Wedgewood Hotel & Spa",
-     "credit_url": "https://wedgewoodhotel.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/Junior-Suite-Living-Room-scaled-768x0-c-default.jpg",
-     "credit_name": "Wedgewood Hotel & Spa",
-     "credit_url": "https://wedgewoodhotel.com/accommodations/?category=guest-rooms",
-     "source": "official_website"
-    },
-    {
      "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/DSC_3129-scaled-768x0-c-default.jpg",
      "credit_name": "Wedgewood Hotel & Spa",
      "credit_url": "https://wedgewoodhotel.com/dining/in-room-dining/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://wedgewoodhotel.com/wp-content/uploads/2026/07/DSDDF-DeluxeSuiteTwoDoubles-ConnectingDoors-768x0-c-default.jpg",
-     "credit_name": "Wedgewood Hotel & Spa",
-     "credit_url": "https://wedgewoodhotel.com/accommodations/?category=guest-rooms",
-     "source": "official_website"
-    },
-    {
-     "url": "https://wedgewoodhotel.com/wp-content/uploads/2024/03/BDP8577-768x0-c-default.jpg",
-     "credit_name": "Wedgewood Hotel & Spa",
-     "credit_url": "https://wedgewoodhotel.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/EKB-ExecutiveKingRoom-Bedroom-768x0-c-default.jpg",
-     "credit_name": "Wedgewood Hotel & Spa",
-     "credit_url": "https://wedgewoodhotel.com/accommodations/?category=guest-rooms",
      "source": "official_website"
     }
    ],
@@ -56820,7 +55639,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/lorenapierce_p-74.jpg",
+    "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/Wedgewood-Hotel-Lobby-Photoshoot-2000x0-c-default.jpg",
     "credit_name": "Wedgewood Hotel & Spa",
     "credit_url": "https://wedgewoodhotel.com/",
     "source": "official_website"
@@ -57263,37 +56082,7 @@
      "source": "official_website"
     },
     {
-     "url": "https://www.therecroom.com/_next/image?url=https%3A%2F%2Fcdn.aglty.io%2F050cb3de%2Ftrr%2Fhomepage%2FTRR-Web-Images-16x10-1321x826-72ppi_0007_AdobeStock_683480571-md_opt.jpg%3Fformat%3Dwebp&w=2048&q=75",
-     "credit_name": "The Rec Room Granville",
-     "credit_url": "https://www.therecroom.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.therecroom.com/_next/image?url=https%3A%2F%2Fcdn.aglty.io%2F050cb3de%2Ftrr%2Fhomepage%2FTRR-WebImages-16x10-2600x1626-72ppi_0006_TRR-GAMES-01_3492_lg_opt.jpg%3Fformat%3Dwebp&w=2048&q=75",
-     "credit_name": "The Rec Room Granville",
-     "credit_url": "https://www.therecroom.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://www.therecroom.com/_next/image?url=https%3A%2F%2Fcdn.aglty.io%2F050cb3de%2Ftrr%2Fgames-attractions%2FTRR-Web%20Images-16x10-2600x1626-72ppi_0015_TRR-GAMES-03_4043_20240926021001_0_opt.jpg%3Fformat%3Dwebp&w=3840&q=75",
-     "credit_name": "The Rec Room Granville",
-     "credit_url": "https://www.therecroom.com/calgary-deerfoot?utm_source=google-my-business_CalgaryDeerfoot&utm_medium=profile&utm_campaign=owned_media",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.therecroom.com/_next/image?url=https%3A%2F%2Fcdn.aglty.io%2F050cb3de%2Ftrr%2Fparties-groups%2FTRR-Web-Images-16x10-2600x1626-72ppi_0013_TRR_GREV_Den_opt.jpg%3Fformat%3Dwebp&w=1920&q=75",
-     "credit_name": "The Rec Room Granville",
-     "credit_url": "https://www.therecroom.com/calgary-deerfoot?utm_source=google-my-business_CalgaryDeerfoot&utm_medium=profile&utm_campaign=owned_media",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.therecroom.com/_next/image?url=https%3A%2F%2Fcdn.aglty.io%2Ff69f983b%2FAttachments%2FNewItems%2FCDF%20AUG2026%20PORTRAIT-6_20260730043408.png%3Fw%3D500%26h%3D500%26q%3D60%26c%3D1%26format%3Dauto%3Fformat%3Dwebp&w=1920&q=75",
-     "credit_name": "The Rec Room Granville",
-     "credit_url": "https://www.therecroom.com/calgary-deerfoot?utm_source=google-my-business_CalgaryDeerfoot&utm_medium=profile&utm_campaign=owned_media",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.therecroom.com/_next/image?url=https%3A%2F%2Fcdn.aglty.io%2Ff69f983b%2F2770019b-9ccd-43f6-a406-d982349d9512_20260924031254.jpg%3Fw%3D500%26h%3D500%26q%3D60%26c%3D1%26format%3Dauto%3Fformat%3Dwebp&w=3840&q=75",
      "credit_name": "The Rec Room Granville",
      "credit_url": "https://www.therecroom.com/calgary-deerfoot?utm_source=google-my-business_CalgaryDeerfoot&utm_medium=profile&utm_campaign=owned_media",
      "source": "official_website"
@@ -57409,20 +56198,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://video.squarespace-cdn.com/content/v1/63dc57ef827c5e1f284cd929/fe8775b6-0d30-4a4c-877d-8d0027d327fd/thumbnail",
-     "credit_name": "The One Sixty Wine Bar & Cafe",
-     "credit_url": "https://www.theonesixty.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/63dc57ef827c5e1f284cd929/a4ac3938-a714-40c0-a715-1c8c12637cdf/golden_plates_facebook_banner.jpg",
-     "credit_name": "The One Sixty Wine Bar & Cafe",
-     "credit_url": "https://www.theonesixty.com/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": true,
     "gluten_free_options": null,
@@ -57599,7 +56375,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://video.squarespace-cdn.com/content/v1/63dc57ef827c5e1f284cd929/94eb9fe1-6298-443a-b153-612c53b479c2/thumbnail",
+    "url": "http://static1.squarespace.com/static/63dc57ef827c5e1f284cd929/t/63dd606cfadc43118d55bcc9/1675452524339/The+One+Sixty_Logo_Dark+grey.png?format=1500w",
     "credit_name": "The One Sixty Wine Bar & Cafe",
     "credit_url": "https://www.theonesixty.com/",
     "source": "official_website"
@@ -57635,56 +56411,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://vancouver.thepint.ca/wp-content/uploads/2026/10/VAN-NFL-Sundays-0926.jpg",
-     "credit_name": "The Pint Public House",
-     "credit_url": "https://vancouver.thepint.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://vancouver.thepint.ca/wp-content/uploads/2026/10/VAN-Hockey-0926-0926.jpg",
-     "credit_name": "The Pint Public House",
-     "credit_url": "https://vancouver.thepint.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://vancouver.thepint.ca/wp-content/uploads/2026/07/VAN-Pint-Trivia-Comedy-Night-RETURNING-SEPT-2026-1080x1350-0726.jpg",
-     "credit_name": "The Pint Public House",
-     "credit_url": "https://vancouver.thepint.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://vancouver.thepint.ca/wp-content/uploads/2024/04/VAN-Wednesday-424.jpg",
-     "credit_name": "The Pint Public House",
-     "credit_url": "https://vancouver.thepint.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://vancouver.thepint.ca/wp-content/uploads/2026/10/VAN-Pint-Saturdays-Late-night-1080X1350-1026.jpg",
-     "credit_name": "The Pint Public House",
-     "credit_url": "https://vancouver.thepint.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://vancouver.thepint.ca/wp-content/uploads/2026/10/VAN-AESPA-CONCERT-1080X1350-1.jpg",
-     "credit_name": "The Pint Public House",
-     "credit_url": "https://vancouver.thepint.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://vancouver.thepint.ca/wp-content/uploads/2026/10/Bruno-Mars-CONCERT-1080X1350-contest-1026-2.jpg",
-     "credit_name": "The Pint Public House",
-     "credit_url": "https://vancouver.thepint.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://vancouver.thepint.ca/wp-content/uploads/2026/10/Dermot-Kennedy-CONCERT-1080X1350.jpg",
-     "credit_name": "The Pint Public House",
-     "credit_url": "https://vancouver.thepint.ca/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": false,
     "gluten_free_options": null,
@@ -57777,7 +56504,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://vancouver.thepint.ca/wp-content/uploads/2026/10/Van-Calendar-October-2026-Social-1.jpg",
+    "url": "https://vancouver.thepint.ca/wp-content/uploads/2024/04/VAN-Wednesday-424.jpg",
     "credit_name": "The Pint Public House",
     "credit_url": "https://vancouver.thepint.ca/",
     "source": "official_website"
@@ -58442,12 +57169,6 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/61393359acc59146c0e60516/16228385-44c5-4801-a9b3-6a8e21962e67/Zarak+Interior-05+2.jpg",
-     "credit_name": "Zarak by Afghan Kitchen",
-     "credit_url": "https://www.zarakvancouver.com/gallery-1",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/61393359acc59146c0e60516/8c9a53fe-6041-476a-a153-5b8711f4a8d0/Zarak+Interior-06.jpg",
      "credit_name": "Zarak by Afghan Kitchen",
      "credit_url": "https://www.zarakvancouver.com/gallery-1",
@@ -58592,7 +57313,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/61393359acc59146c0e60516/696feed8-0c38-4ce3-88f4-88fa9896a9cc/Zarak+Interior-11+2.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/61393359acc59146c0e60516/16228385-44c5-4801-a9b3-6a8e21962e67/Zarak+Interior-05+2.jpg",
     "credit_name": "Zarak by Afghan Kitchen",
     "credit_url": "https://www.zarakvancouver.com/gallery-1",
     "source": "official_website"
@@ -58630,13 +57351,13 @@
    },
    "photos": [
     {
-     "url": "https://sulaindianrestaurant.com/wp-content/uploads/2026/07/indian-food-restaurant-downtown-vancouver.webp",
+     "url": "https://sulaindianrestaurant.com/wp-content/uploads/2026/03/Best-Indian-Restaurant-Vancouver.jpg",
      "credit_name": "Sula Indian Restaurant, Main Street",
      "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
      "source": "official_website"
     },
     {
-     "url": "https://sulaindianrestaurant.com/wp-content/uploads/2026/07/indian-afternoon-tea-vancouver-bc.webp",
+     "url": "https://sulaindianrestaurant.com/wp-content/uploads/2026/07/indian-food-restaurant-downtown-vancouver.webp",
      "credit_name": "Sula Indian Restaurant, Main Street",
      "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
      "source": "official_website"
@@ -58655,18 +57376,6 @@
     },
     {
      "url": "https://7bbqugyezktmnrnd.public.blob.vercel-storage.com/instagram/17993874596814717.jpg",
-     "credit_name": "Sula Indian Restaurant, Main Street",
-     "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
-     "source": "official_website"
-    },
-    {
-     "url": "https://7bbqugyezktmnrnd.public.blob.vercel-storage.com/instagram/17984036760051499.jpg",
-     "credit_name": "Sula Indian Restaurant, Main Street",
-     "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
-     "source": "official_website"
-    },
-    {
-     "url": "https://sulaindianrestaurant.com/wp-content/uploads/2026/03/Indian-Restaurant-Vancouver-Davie-Street.jpg",
      "credit_name": "Sula Indian Restaurant, Main Street",
      "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
      "source": "official_website"
@@ -58863,7 +57572,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://sulaindianrestaurant.com/wp-content/uploads/2026/03/Best-Indian-Restaurant-Vancouver.jpg",
+    "url": "https://sulaindianrestaurant.com/wp-content/uploads/2026/03/Indian-Restaurant-Vancouver-Davie-Street.jpg",
     "credit_name": "Sula Indian Restaurant, Main Street",
     "credit_url": "https://sulaindianrestaurant.com/?utm_source=google&utm_medium=organic&utm_campaign=gmb_main_hp",
     "source": "official_website"
@@ -61540,15 +60249,15 @@
    },
    "photos": [
     {
-     "url": "https://westoakrestaurant.com/cdn/shop/files/WestOak_2026_-376_web_resolution_5000x.jpg?v=1786468703",
+     "url": "https://westoakrestaurant.com/cdn/shop/files/OrderOnline_8fd2d9c3-01cb-4d6f-97a2-9c574dc0f74a_5000x.jpg?v=1682767480",
      "credit_name": "WestOak",
-     "credit_url": "https://westoakrestaurant.com/pages/private-booking",
+     "credit_url": "https://westoakrestaurant.com/",
      "source": "official_website"
     },
     {
-     "url": "https://westoakrestaurant.com/cdn/shop/files/WestOak_2026_-268_web_resolution_5000x.jpg?v=1786468986",
+     "url": "https://westoakrestaurant.com/cdn/shop/files/WestOak_2026_-376_web_resolution_5000x.jpg?v=1786468703",
      "credit_name": "WestOak",
-     "credit_url": "https://westoakrestaurant.com/",
+     "credit_url": "https://westoakrestaurant.com/pages/private-booking",
      "source": "official_website"
     },
     {
@@ -61609,7 +60318,7 @@
    },
    "last_synced_at": "2026-08-31",
    "cover_image": {
-    "url": "https://westoakrestaurant.com/cdn/shop/files/OrderOnline_8fd2d9c3-01cb-4d6f-97a2-9c574dc0f74a_5000x.jpg?v=1682767480",
+    "url": "https://westoakrestaurant.com/cdn/shop/files/WestOak_2026_-268_web_resolution_5000x.jpg?v=1786468986",
     "credit_name": "WestOak",
     "credit_url": "https://westoakrestaurant.com/",
     "source": "official_website"
@@ -61911,14 +60620,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/63dc3537de004d21c5b2d5be/96b305e5-0c91-4f9f-b24e-b148f47d47ea/web_Cascade_2863.jpg",
-     "credit_name": "The Cascade Room",
-     "credit_url": "https://www.thecascade.ca/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": true,
     "gluten_free_options": null,
@@ -62107,9 +60809,9 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/63dc3537de004d21c5b2d5be/f503ea97-0132-458d-89f9-684acee99796/CAS_Martini-Time_Banner_Update.jpg",
+    "url": "http://static1.squarespace.com/static/63dc3537de004d21c5b2d5be/t/6647ac8157454e6e1a12ea04/1715973261442/The-Cascade-Room-Logo-2023.png?format=1500w",
     "credit_name": "The Cascade Room",
-    "credit_url": "https://www.thecascade.ca/",
+    "credit_url": "http://www.thecascade.ca/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -62144,7 +60846,7 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/59f4ebb3692ebe8ce16a79f6/1581490700077-826M5EAVVSQAWKJR81PN/Bar.jpg",
+     "url": "https://images.squarespace-cdn.com/content/v1/59f4ebb3692ebe8ce16a79f6/1523592160351-1E5B8JA084KSCSJFINPW/hero-3.jpg",
      "credit_name": "Tocador",
      "credit_url": "https://www.tocador.ca/",
      "source": "official_website"
@@ -62169,18 +60871,6 @@
     },
     {
      "url": "https://images.squarespace-cdn.com/content/v1/59f4ebb3692ebe8ce16a79f6/1668628929057-NPIZBP1XHSC1GRH88CFB/hero+shot.jpeg",
-     "credit_name": "Tocador",
-     "credit_url": "https://www.tocador.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/59f4ebb3692ebe8ce16a79f6/1668557405444-AGMJWPH3VO2TXLTE6BTL/4V1A2882.jpg",
-     "credit_name": "Tocador",
-     "credit_url": "https://www.tocador.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/59f4ebb3692ebe8ce16a79f6/1668557087592-0RFD4QHZSD5AOOSM6UF4/4V1A2713.jpg",
      "credit_name": "Tocador",
      "credit_url": "https://www.tocador.ca/",
      "source": "official_website"
@@ -62231,7 +60921,7 @@
    },
    "last_synced_at": "2026-08-30",
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/59f4ebb3692ebe8ce16a79f6/1523592160351-1E5B8JA084KSCSJFINPW/hero-3.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/59f4ebb3692ebe8ce16a79f6/1581490700077-826M5EAVVSQAWKJR81PN/Bar.jpg",
     "credit_name": "Tocador",
     "credit_url": "https://www.tocador.ca/",
     "source": "official_website"
@@ -62849,21 +61539,9 @@
      "source": "official_website"
     },
     {
-     "url": "https://themac.ca/wp-content/uploads/2026/07/20260705_091423-2-scaled.jpg",
-     "credit_name": "The Mac Billiards",
-     "credit_url": "https://themac.ca/",
-     "source": "official_website"
-    },
-    {
      "url": "https://themac.ca/wp-content/uploads/2026/07/20260704_214321-scaled.jpg",
      "credit_name": "The Mac Billiards",
      "credit_url": "https://themac.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://themac.ca/wp-content/uploads/2026/07/20260628_231829-scaled.jpg",
-     "credit_name": "The Mac Billiards",
-     "credit_url": "https://themac.ca/gallery-page-2/",
      "source": "official_website"
     },
     {
@@ -62880,12 +61558,6 @@
     },
     {
      "url": "https://themac.ca/wp-content/uploads/2026/07/20260711_102525-scaled.jpg",
-     "credit_name": "The Mac Billiards",
-     "credit_url": "https://themac.ca/gallery-page-2/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://themac.ca/wp-content/uploads/2026/07/20260711_102635-scaled.jpg",
      "credit_name": "The Mac Billiards",
      "credit_url": "https://themac.ca/gallery-page-2/",
      "source": "official_website"
@@ -62946,9 +61618,9 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://themac.ca/wp-content/uploads/2026/08/20260705_091423-2-1-scaled-1.jpg",
+    "url": "https://themac.ca/wp-content/uploads/2026/07/20260628_231829-scaled.jpg",
     "credit_name": "The Mac Billiards",
-    "credit_url": "https://themac.ca/",
+    "credit_url": "https://themac.ca/gallery-page-2/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -63154,21 +61826,9 @@
      "source": "official_website"
     },
     {
-     "url": "https://cdn.prod.website-files.com/61b235126b51dd0b923b9429/61d77513a0ec209f64d9a39a_2nd%20Floor%20Sherry%207.jpg",
-     "credit_name": "Water St. Café",
-     "credit_url": "https://www.waterstreetcafe.ca/",
-     "source": "official_website"
-    },
-    {
      "url": "https://cdn.prod.website-files.com/61b235126b51dd0b923b9429/61d7771d582efc04c1575b41_Water-Street-Cafe-19%20(1).jpg",
      "credit_name": "Water St. Café",
      "credit_url": "https://www.waterstreetcafe.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/61b235126b51dd0b923b9429/6202d5f7a689adc05ef99be5_IMG_1036%20(1).jpg",
-     "credit_name": "Water St. Café",
-     "credit_url": "https://www.waterstreetcafe.ca/our-story",
      "source": "official_website"
     },
     {
@@ -63488,9 +62148,9 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://cdn.prod.website-files.com/61b235126b51dd0b923b9429/61d777b0cd02732077ba743b_IMG_1849.jpg",
+    "url": "https://cdn.prod.website-files.com/61b235126b51dd0b923b9429/61d77513a0ec209f64d9a39a_2nd%20Floor%20Sherry%207.jpg",
     "credit_name": "Water St. Café",
-    "credit_url": "https://www.waterstreetcafe.ca/our-story",
+    "credit_url": "https://www.waterstreetcafe.ca/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -64499,21 +63159,9 @@
      "source": "official_website"
     },
     {
-     "url": "https://steamworks.com/wp-content/uploads/2021/04/taproom_1.jpg",
-     "credit_name": "Steamworks Mount Pleasant",
-     "credit_url": "https://steamworks.com/the-brewery/taproom/",
-     "source": "official_website"
-    },
-    {
      "url": "https://steamworks.com/wp-content/uploads/2021/04/pub_menu_hero_bg.jpg",
      "credit_name": "Steamworks Mount Pleasant",
      "credit_url": "https://steamworks.com/brew-pub/our-menu-2/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://steamworks.com/wp-content/uploads/2021/04/beers_hero_bg.jpeg",
-     "credit_name": "Steamworks Mount Pleasant",
-     "credit_url": "https://steamworks.com/our-beer/",
      "source": "official_website"
     },
     {
@@ -64526,12 +63174,6 @@
      "url": "https://steamworks.com/wp-content/uploads/2025/09/SWMP.png",
      "credit_name": "Steamworks Mount Pleasant",
      "credit_url": "https://steamworks.com/mount-pleasant/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://steamworks.com/wp-content/uploads/2021/05/Website-Banner-Small-1-scaled.jpg",
-     "credit_name": "Steamworks Mount Pleasant",
-     "credit_url": "https://steamworks.com/our-beer/",
      "source": "official_website"
     },
     {
@@ -65275,20 +63917,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://thekingsheadkits.com/wp-content/uploads/2019/05/kings-head-kits-header.jpg",
-     "credit_name": "The King's Head Public House",
-     "credit_url": "https://thekingsheadkits.com/our-story/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thekingsheadkits.com/wp-content/uploads/bb-plugin/cache/new-sign-sq-square.jpg",
-     "credit_name": "The King's Head Public House",
-     "credit_url": "https://thekingsheadkits.com/our-story/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": true,
     "gluten_free_options": null,
@@ -65470,10 +64099,10 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://thekingsheadkits.com/wp-content/uploads/2019/05/long-live.jpg",
-    "credit_name": "The King's Head Public House",
-    "credit_url": "https://thekingsheadkits.com/",
-    "source": "official_website"
+    "url": "photos/the-king-s-head-public-house.jpg",
+    "credit_name": "Reza Omidi",
+    "credit_url": "https://maps.google.com/maps/contrib/107224103226393356729",
+    "source": "google_places"
    },
    "primary_type": null,
    "reservable": null,
@@ -65840,30 +64469,6 @@
      "credit_name": "The Cambie Bar & Grill",
      "credit_url": "https://cambiepubs.com/",
      "source": "official_website"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/6aa4345a66230d3884f98872_Home-ppage-Slider-Happy-Hour-Update.jpg",
-     "credit_name": "The Cambie Bar & Grill",
-     "credit_url": "https://cambiepubs.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/62fea9f2f54272f93427d228_cambie-background.avif",
-     "credit_name": "The Cambie Bar & Grill",
-     "credit_url": "https://cambiepubs.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/62fea9f2f5427243f127d227_cambie-exterior.avif",
-     "credit_name": "The Cambie Bar & Grill",
-     "credit_url": "https://cambiepubs.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/62fea9f2f54272af7027d1c9/6ab584dc63ccca350ca89008_16923.jpg",
-     "credit_name": "The Cambie Bar & Grill",
-     "credit_url": "https://cambiepubs.com/events",
-     "source": "official_website"
     }
    ],
    "amenities": {
@@ -66076,9 +64681,9 @@
    },
    "last_synced_at": "2026-10-24",
    "cover_image": {
-    "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/6925144e26dafdde14d3a2c2_6916abb8d2861347aa74ab12_691014e720de4e6f3fec889b_CambiePub%25281%2529.avif",
+    "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/62fea9f2f5427243f127d227_cambie-exterior.avif",
     "credit_name": "The Cambie Bar & Grill",
-    "credit_url": "http://www.cambiepubs.com/",
+    "credit_url": "https://cambiepubs.com/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -68471,12 +67076,6 @@
      "credit_name": "The Butcher & Bullock Public House",
      "credit_url": "https://www.freehouse.co/events-booking",
      "source": "official_website"
-    },
-    {
-     "url": "https://www.datocms-assets.com/75587/1774912998-freehouse-lamplighter-vancouver-pub-square-burger.jpg?auto=format&q=40&dpr=0.25",
-     "credit_name": "The Butcher & Bullock Public House",
-     "credit_url": "https://www.freehouse.co/locations/butcher-and-bullock?utm_source=google&utm_medium=organic&utm_campaign=gmb",
-     "source": "official_website"
     }
    ],
    "amenities": {
@@ -68565,7 +67164,7 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://www.datocms-assets.com/75587/1663200050-restaurant-vancouver-butcherbullock-neon-sign.jpg?auto=format&fit=max&w=1200",
+    "url": "https://www.datocms-assets.com/75587/1774912998-freehouse-lamplighter-vancouver-pub-square-burger.jpg?auto=format&q=40&dpr=0.25",
     "credit_name": "The Butcher & Bullock Public House",
     "credit_url": "https://www.freehouse.co/locations/butcher-and-bullock?utm_source=google&utm_medium=organic&utm_campaign=gmb",
     "source": "official_website"
@@ -68762,42 +67361,6 @@
    },
    "photos": [
     {
-     "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2021/03/HAPPY-2.jpg",
-     "credit_name": "The Charlatan",
-     "credit_url": "https://thecharlatanrestaurant.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/bg-patio.jpg",
-     "credit_name": "The Charlatan",
-     "credit_url": "https://thecharlatanrestaurant.com/spaces/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/bg-lounge.jpg",
-     "credit_name": "The Charlatan",
-     "credit_url": "https://thecharlatanrestaurant.com/spaces/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/bg-bar-2.jpg",
-     "credit_name": "The Charlatan",
-     "credit_url": "https://thecharlatanrestaurant.com/spaces/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/bg-den-1.jpg",
-     "credit_name": "The Charlatan",
-     "credit_url": "https://thecharlatanrestaurant.com/spaces/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2016/06/patio.jpg",
-     "credit_name": "The Charlatan",
-     "credit_url": "https://thecharlatanrestaurant.com/spaces/",
-     "source": "official_website"
-    },
-    {
      "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/spaces-bar-1.jpg",
      "credit_name": "The Charlatan",
      "credit_url": "https://thecharlatanrestaurant.com/spaces/",
@@ -68886,9 +67449,9 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2021/03/foot-1.jpg",
+    "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2016/06/patio.jpg",
     "credit_name": "The Charlatan",
-    "credit_url": "https://thecharlatanrestaurant.com/",
+    "credit_url": "https://thecharlatanrestaurant.com/spaces/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -70222,56 +68785,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/events-2.jpg",
-     "credit_name": "The Cider House",
-     "credit_url": "https://ciderhouserules.ca/events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/about-us.jpg",
-     "credit_name": "The Cider House",
-     "credit_url": "https://ciderhouserules.ca/about/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/about-2.jpg",
-     "credit_name": "The Cider House",
-     "credit_url": "https://ciderhouserules.ca/about/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/about-3.jpg",
-     "credit_name": "The Cider House",
-     "credit_url": "https://ciderhouserules.ca/about/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/events-2-1.jpg",
-     "credit_name": "The Cider House",
-     "credit_url": "https://ciderhouserules.ca/events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/events-3.jpg",
-     "credit_name": "The Cider House",
-     "credit_url": "https://ciderhouserules.ca/events/",
-     "source": "official_website"
-    },
-    {
-     "url": "http://ciderhouserules.ca/wp-content/uploads/2024/01/events-1.jpg",
-     "credit_name": "The Cider House",
-     "credit_url": "https://ciderhouserules.ca/events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/beach-life.jpg",
-     "credit_name": "The Cider House",
-     "credit_url": "https://ciderhouserules.ca/about/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": true,
     "gluten_free_options": null,
@@ -70468,9 +68982,9 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/ciderhouse-full-home.jpg",
+    "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/about-2.jpg",
     "credit_name": "The Cider House",
-    "credit_url": "https://ciderhouserules.ca/",
+    "credit_url": "https://ciderhouserules.ca/about/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -71157,14 +69671,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2020/05/hanging-out-at-uncle-abes.jpg",
-     "credit_name": "Uncle Abe's",
-     "credit_url": "https://narrowgroup.ca/project/uncle-abes/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": true,
     "gluten_free_options": null,
@@ -71229,9 +69736,9 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2025/12/events-banner-1-dark-top.jpg",
+    "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2020/05/hanging-out-at-uncle-abes.jpg",
     "credit_name": "Uncle Abe's",
-    "credit_url": "https://narrowgroup.ca/about/",
+    "credit_url": "https://narrowgroup.ca/project/uncle-abes/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -71272,18 +69779,6 @@
      "source": "official_website"
     },
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/6482752355fc7c5b659d79ed/599a4bf4-87da-4d29-9e56-f9cef1df2eaf/DSC01368.jpg",
-     "credit_name": "The Watson",
-     "credit_url": "https://www.thewatson.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/6482752355fc7c5b659d79ed/a2c2bf52-6cdf-412a-9821-23b2af3b2e4b/P1266504.jpg",
-     "credit_name": "The Watson",
-     "credit_url": "https://www.thewatson.ca/",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/6482752355fc7c5b659d79ed/801469af-ffb7-4fb5-9ae4-9fc298649e17/P1266771.jpg",
      "credit_name": "The Watson",
      "credit_url": "https://www.thewatson.ca/",
@@ -71297,12 +69792,6 @@
     },
     {
      "url": "https://images.squarespace-cdn.com/content/v1/6482752355fc7c5b659d79ed/669b6ba9-d222-42ed-945f-97ad9dbfbf95/DSC01105.jpg",
-     "credit_name": "The Watson",
-     "credit_url": "https://www.thewatson.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/6482752355fc7c5b659d79ed/9ab77b18-6d68-4969-b17d-8c9cd50866cf/DSC01291.jpg",
      "credit_name": "The Watson",
      "credit_url": "https://www.thewatson.ca/",
      "source": "official_website"
@@ -71817,12 +70306,6 @@
    },
    "photos": [
     {
-     "url": "https://oldspaghettifactory.ca/wp-content/uploads/2026/05/2026_OSF_food_64.jpg",
-     "credit_name": "The Old Spaghetti Factory (Gastown)",
-     "credit_url": "https://oldspaghettifactory.ca/about-the-old-spaghetti-factory/",
-     "source": "official_website"
-    },
-    {
      "url": "https://oldspaghettifactory.ca/wp-content/uploads/2020/11/2026_OSF_food_68-e1777403267641.jpg",
      "credit_name": "The Old Spaghetti Factory (Gastown)",
      "credit_url": "https://oldspaghettifactory.ca/locations/gastown/",
@@ -71841,31 +70324,7 @@
      "source": "official_website"
     },
     {
-     "url": "https://oldspaghettifactory.ca/wp-content/uploads/2020/10/2026_OSF_food_40_web.jpg",
-     "credit_name": "The Old Spaghetti Factory (Gastown)",
-     "credit_url": "https://oldspaghettifactory.ca/locations/gastown/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://oldspaghettifactory.ca/wp-content/uploads/2020/12/OSF-Trolley.jpg",
-     "credit_name": "The Old Spaghetti Factory (Gastown)",
-     "credit_url": "https://oldspaghettifactory.ca/about-the-old-spaghetti-factory/",
-     "source": "official_website"
-    },
-    {
      "url": "https://oldspaghettifactory.ca/wp-content/uploads/2026/03/OSF_202404_wb_80_warm-e1773172320654.jpg",
-     "credit_name": "The Old Spaghetti Factory (Gastown)",
-     "credit_url": "https://oldspaghettifactory.ca/locations/gastown/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://oldspaghettifactory.ca/wp-content/uploads/2026/07/IMG_1756_edit.jpg",
-     "credit_name": "The Old Spaghetti Factory (Gastown)",
-     "credit_url": "https://oldspaghettifactory.ca/about-the-old-spaghetti-factory/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://oldspaghettifactory.ca/wp-content/uploads/2026/03/2026_OSF_food_45_web-e1773172151161.jpg",
      "credit_name": "The Old Spaghetti Factory (Gastown)",
      "credit_url": "https://oldspaghettifactory.ca/locations/gastown/",
      "source": "official_website"
@@ -71916,9 +70375,9 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://oldspaghettifactory.ca/wp-content/uploads/2020/11/OSF-Gastown.jpg",
+    "url": "https://oldspaghettifactory.ca/wp-content/uploads/2020/10/2026_OSF_food_40_web.jpg",
     "credit_name": "The Old Spaghetti Factory (Gastown)",
-    "credit_url": "http://www.oldspaghettifactory.ca/locations/gastown",
+    "credit_url": "https://oldspaghettifactory.ca/locations/gastown/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -72051,12 +70510,6 @@
     },
     {
      "url": "https://www.vancouverdine.com/wp-content/uploads/2019/06/IMG_E5031.jpg",
-     "credit_name": "The Sandbar Seafood Restaurant",
-     "credit_url": "https://www.vancouverdine.com/sandbar/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.vancouverdine.com/wp-content/uploads/2021/06/Untitled.png",
      "credit_name": "The Sandbar Seafood Restaurant",
      "credit_url": "https://www.vancouverdine.com/sandbar/",
      "source": "official_website"
@@ -72434,31 +70887,7 @@
    },
    "photos": [
     {
-     "url": "https://topofvancouver.com/wp-content/uploads/2025/12/Top-of-vancouver-restaurant-fine-dining.png",
-     "credit_name": "Top Of Vancouver Revolving Restaurant",
-     "credit_url": "https://topofvancouver.com/events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://gtb.maq.mybluehost.me/wp-content/uploads/2024/02/restaurant-hero-03.jpg",
-     "credit_name": "Top Of Vancouver Revolving Restaurant",
-     "credit_url": "https://topofvancouver.com/events/",
-     "source": "official_website"
-    },
-    {
      "url": "https://topofvancouver.com/wp-content/uploads/2025/10/top-of-vancouver-restaurant-harbour-tower.png",
-     "credit_name": "Top Of Vancouver Revolving Restaurant",
-     "credit_url": "https://topofvancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://i0.wp.com/topofvancouver.com/wp-content/uploads/2025/02/TOV-events-vancouver-venues.png",
-     "credit_name": "Top Of Vancouver Revolving Restaurant",
-     "credit_url": "https://topofvancouver.com/events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://i0.wp.com/topofvancouver.com/wp-content/uploads/2026/10/TOV-holiday-promo.png?w=800&ssl=1",
      "credit_name": "Top Of Vancouver Revolving Restaurant",
      "credit_url": "https://topofvancouver.com/",
      "source": "official_website"
@@ -72660,7 +71089,7 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://gtb.maq.mybluehost.me/wp-content/uploads/2024/03/TOv-background-1.png",
+    "url": "https://topofvancouver.com/wp-content/uploads/2025/12/Top-of-vancouver-restaurant-fine-dining.png",
     "credit_name": "Top Of Vancouver Revolving Restaurant",
     "credit_url": "https://topofvancouver.com/events/",
     "source": "official_website"
@@ -72697,6 +71126,12 @@
    },
    "photos": [
     {
+     "url": "https://vanfish.com/wp-content/uploads/2020/01/FT_ft_hp_005.jpg",
+     "credit_name": "The Vancouver Fish Company",
+     "credit_url": "https://vanfish.com/",
+     "source": "official_website"
+    },
+    {
      "url": "https://vanfish.com/wp-content/uploads/2020/01/FT_ft_hp_001.jpg",
      "credit_name": "The Vancouver Fish Company",
      "credit_url": "https://vanfish.com/",
@@ -72721,25 +71156,7 @@
      "source": "official_website"
     },
     {
-     "url": "https://vanfish.com/wp-content/uploads/2020/01/IMG_6415.jpg",
-     "credit_name": "The Vancouver Fish Company",
-     "credit_url": "https://vanfish.com/gallery/",
-     "source": "official_website"
-    },
-    {
      "url": "https://vanfish.com/wp-content/uploads/2020/01/MS_HP_003.jpg",
-     "credit_name": "The Vancouver Fish Company",
-     "credit_url": "https://vanfish.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://vanfish.com/wp-content/uploads/2020/01/IMG_2380-scaled.jpg",
-     "credit_name": "The Vancouver Fish Company",
-     "credit_url": "https://vanfish.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://vanfish.com/wp-content/uploads/2026/10/VFC_Lobsterfest_2026_PopUp002.jpg",
      "credit_name": "The Vancouver Fish Company",
      "credit_url": "https://vanfish.com/",
      "source": "official_website"
@@ -72902,7 +71319,7 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://vanfish.com/wp-content/uploads/2020/01/FT_ft_hp_005.jpg",
+    "url": "https://vanfish.com/wp-content/uploads/2020/01/IMG_2380-scaled.jpg",
     "credit_name": "The Vancouver Fish Company",
     "credit_url": "https://vanfish.com/",
     "source": "official_website"
@@ -73110,38 +71527,7 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [
-    {
-     "url": "https://sylviahotel.com/wp-content/uploads/1154-Gilford-St-Vancouver-BC-017-18-Interior-MLS_Size-scaled.jpg.webp",
-     "credit_name": "Sylvia Hotel, Restaurant and Lounge",
-     "credit_url": "https://sylviahotel.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://sylviahotel.com/wp-content/uploads/Sylvia-Hotel-Sign.jpeg",
-     "credit_name": "Sylvia Hotel, Restaurant and Lounge",
-     "credit_url": "https://sylviahotel.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://sylviahotel.com/wp-content/uploads/king-room.jpeg.webp",
-     "credit_name": "Sylvia Hotel, Restaurant and Lounge",
-     "credit_url": "https://sylviahotel.com/king-room/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://sylviahotel.com/wp-content/uploads/bw-hotel-header.jpg",
-     "credit_name": "Sylvia Hotel, Restaurant and Lounge",
-     "credit_url": "https://sylviahotel.com/history/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://sylviahotel.com/wp-content/uploads/Sylvia_Hotel_FULL-9-1024x683.jpg",
-     "credit_name": "Sylvia Hotel, Restaurant and Lounge",
-     "credit_url": "https://sylviahotel.com/history/",
-     "source": "official_website"
-    }
-   ],
+   "photos": [],
    "amenities": {
     "outdoor_seating": true,
     "gluten_free_options": null,
@@ -73204,9 +71590,9 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://sylviahotel.com/wp-content/uploads/slider_2-1.jpeg",
+    "url": "https://sylviahotel.com/wp-content/uploads/Sylvia_Hotel_FULL-9-1024x683.jpg",
     "credit_name": "Sylvia Hotel, Restaurant and Lounge",
-    "credit_url": "https://sylviahotel.com/",
+    "credit_url": "https://sylviahotel.com/history/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -73241,12 +71627,6 @@
    },
    "photos": [
     {
-     "url": "https://thepawnshopyvr.com/wp-content/uploads/2025/09/4G0A4262-scaled.jpg",
-     "credit_name": "The Pawn Shop YVR Taco Bar",
-     "credit_url": "https://thepawnshopyvr.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://thepawnshopyvr.com/wp-content/uploads/2025/09/Bodega-Sept2025-53-scaled.jpg",
      "credit_name": "The Pawn Shop YVR Taco Bar",
      "credit_url": "https://thepawnshopyvr.com/",
@@ -73259,31 +71639,7 @@
      "source": "official_website"
     },
     {
-     "url": "https://thepawnshopyvr.com/wp-content/uploads/2025/05/Pawn-April2025-45-scaled.jpg",
-     "credit_name": "The Pawn Shop YVR Taco Bar",
-     "credit_url": "https://thepawnshopyvr.com/about-us/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thepawnshopyvr.com/wp-content/uploads/2025/05/Pawn-May20252-124-scaled.jpg",
-     "credit_name": "The Pawn Shop YVR Taco Bar",
-     "credit_url": "https://thepawnshopyvr.com/about-us/",
-     "source": "official_website"
-    },
-    {
      "url": "https://thepawnshopyvr.com/wp-content/uploads/2025/07/4G0A3495-scaled.jpg",
-     "credit_name": "The Pawn Shop YVR Taco Bar",
-     "credit_url": "https://thepawnshopyvr.com/private-events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thepawnshopyvr.com/wp-content/uploads/2025/07/4G0A3492-scaled.jpg",
-     "credit_name": "The Pawn Shop YVR Taco Bar",
-     "credit_url": "https://thepawnshopyvr.com/private-events/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thepawnshopyvr.com/wp-content/uploads/2025/07/4G0A3498-scaled.jpg",
      "credit_name": "The Pawn Shop YVR Taco Bar",
      "credit_url": "https://thepawnshopyvr.com/private-events/",
      "source": "official_website"
@@ -73385,7 +71741,7 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://thepawnshopyvr.com/wp-content/uploads/2025/07/4G0A0652-scaled.jpg",
+    "url": "https://thepawnshopyvr.com/wp-content/uploads/2025/07/4G0A3492-scaled.jpg",
     "credit_name": "The Pawn Shop YVR Taco Bar",
     "credit_url": "https://thepawnshopyvr.com/private-events/",
     "source": "official_website"
@@ -74019,37 +72375,13 @@
    },
    "photos": [
     {
-     "url": "https://static.wixstatic.com/media/fc95b3_78eb442d48dc4ba5b9f38673fb68e4aa~mv2.jpg/v1/fill/w_1440,h_1000,al_b,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc95b3_78eb442d48dc4ba5b9f38673fb68e4aa~mv2.jpg",
+     "url": "https://static.wixstatic.com/media/fc95b3_25f219b35cf0403c97839712896abc0ef000.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/fc95b3_25f219b35cf0403c97839712896abc0ef000.jpg",
      "credit_name": "Tableau Bar Bistro",
-     "credit_url": "https://www.tableaubarbistro.com/events",
+     "credit_url": "https://www.tableaubarbistro.com/",
      "source": "official_website"
     },
     {
      "url": "https://static.wixstatic.com/media/fc95b3_5c9166f2d6454841907ef3fb0d4e9c38~mv2.jpg/v1/fill/w_1440,h_931,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc95b3_5c9166f2d6454841907ef3fb0d4e9c38~mv2.jpg",
-     "credit_name": "Tableau Bar Bistro",
-     "credit_url": "https://www.tableaubarbistro.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/fc95b3_b3a815fec25b4fcc958b94bb89009ae4~mv2.png/v1/fill/w_1440,h_688,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc95b3_b3a815fec25b4fcc958b94bb89009ae4~mv2.png",
-     "credit_name": "Tableau Bar Bistro",
-     "credit_url": "https://www.tableaubarbistro.com/events",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/fc95b3_edce9eb146d847eaa70a56ef107f9ebe~mv2.jpg/v1/crop/x_643,y_0,w_1714,h_1688/fill/w_938,h_924,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4_edited.jpg",
-     "credit_name": "Tableau Bar Bistro",
-     "credit_url": "https://www.tableaubarbistro.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/fc95b3_e2a58d78c7914983aa91907cc9f6a36c~mv2.jpg/v1/fill/w_818,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5672.jpg",
-     "credit_name": "Tableau Bar Bistro",
-     "credit_url": "https://www.tableaubarbistro.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/fc95b3_d38eec6efa7a4bdd8a16fe2392b6c791~mv2.png/v1/fill/w_1200,h_1080,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Tableau.png",
      "credit_name": "Tableau Bar Bistro",
      "credit_url": "https://www.tableaubarbistro.com/",
      "source": "official_website"
@@ -74197,7 +72529,7 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/fc95b3_25f219b35cf0403c97839712896abc0ef000.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/fc95b3_25f219b35cf0403c97839712896abc0ef000.jpg",
+    "url": "https://static.wixstatic.com/media/fc95b3_e2a58d78c7914983aa91907cc9f6a36c~mv2.jpg/v1/fill/w_818,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5672.jpg",
     "credit_name": "Tableau Bar Bistro",
     "credit_url": "https://www.tableaubarbistro.com/",
     "source": "official_website"
@@ -74449,15 +72781,9 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/60e648fc0a65645b7cc2db16/1628122082203-W6NX3I6OFZ1I32BJ3394/The+Red+Accordion+-+Sign+%26+Cardero+St.jpg",
+     "url": "https://images.squarespace-cdn.com/content/v1/60e648fc0a65645b7cc2db16/1628122633861-JZ5B0NE9OKY0HXPEGDDT/The+Red+Accordion+-+Exterior+Sign+%26+Table.jpg",
      "credit_name": "The Red Accordion",
-     "credit_url": "https://www.theredaccordion.com/location",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/60e648fc0a65645b7cc2db16/1625704713706-KOPHKNBQ31DW1P2B2O0L/World+Wine+Synergy+Red+Accordion-59+copy.jpg",
-     "credit_name": "The Red Accordion",
-     "credit_url": "https://www.theredaccordion.com/location",
+     "credit_url": "https://www.theredaccordion.com/",
      "source": "official_website"
     },
     {
@@ -74467,25 +72793,7 @@
      "source": "official_website"
     },
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/60e648fc0a65645b7cc2db16/1628122898755-C8ODLD4D5QPQ7R4LM52N/The+Red+Accordion+-+Upstairs+Bar.jpg",
-     "credit_name": "The Red Accordion",
-     "credit_url": "https://www.theredaccordion.com/happy-hour-menu",
-     "source": "official_website"
-    },
-    {
      "url": "http://static1.squarespace.com/static/60e648fc0a65645b7cc2db16/t/60e688d9237d0d3606f7dbdb/1625721050071/20191018-DSC02184.jpg?format=1500w",
-     "credit_name": "The Red Accordion",
-     "credit_url": "https://www.theredaccordion.com/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/60e648fc0a65645b7cc2db16/1625704717003-15SR7P9SVF8NSZR8SJNA/20191018-DSC02134.jpg",
-     "credit_name": "The Red Accordion",
-     "credit_url": "https://www.theredaccordion.com/gallery",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/60e648fc0a65645b7cc2db16/1625704716990-J9M3QY843478BYIF8P9N/20191018-DSC02107.jpg",
      "credit_name": "The Red Accordion",
      "credit_url": "https://www.theredaccordion.com/gallery",
      "source": "official_website"
@@ -74662,9 +72970,9 @@
    },
    "last_synced_at": "2026-08-31",
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/60e648fc0a65645b7cc2db16/1628122633861-JZ5B0NE9OKY0HXPEGDDT/The+Red+Accordion+-+Exterior+Sign+%26+Table.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/60e648fc0a65645b7cc2db16/1628122898755-C8ODLD4D5QPQ7R4LM52N/The+Red+Accordion+-+Upstairs+Bar.jpg",
     "credit_name": "The Red Accordion",
-    "credit_url": "https://www.theredaccordion.com/",
+    "credit_url": "https://www.theredaccordion.com/happy-hour-menu",
     "source": "official_website"
    },
    "primary_type": null,
@@ -75413,21 +73721,9 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e696210b248185a7740eb9e/f32ddf4c-25d3-4f1b-9a87-ded155c3c5a5/Photo+2023-04-20%2C+10+21+35+AM.jpg",
-     "credit_name": "Tutto Italian Restaurant & Bar",
-     "credit_url": "https://tuttorestaurant.ca/",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/5e696210b248185a7740eb9e/5d844a00-86bc-4340-903f-daadd274c50f/Photo+2021-06-26%2C+10+43+42+AM+copy.jpg",
      "credit_name": "Tutto Italian Restaurant & Bar",
      "credit_url": "https://tuttorestaurant.ca/about",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e696210b248185a7740eb9e/f8947087-0d00-4db0-ba33-2ad594d235f3/Cheers.JPG",
-     "credit_name": "Tutto Italian Restaurant & Bar",
-     "credit_url": "https://tuttorestaurant.ca/private-dining",
      "source": "official_website"
     },
     {
@@ -75437,27 +73733,9 @@
      "source": "official_website"
     },
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e696210b248185a7740eb9e/7eb556c7-26de-41e4-8b01-70c7eea9cf7c/ChatGPT+Image+Sep+21%2C+2026%2C+10_51_18+AM.png",
-     "credit_name": "Tutto Italian Restaurant & Bar",
-     "credit_url": "https://tuttorestaurant.ca/puglia-event",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/5e696210b248185a7740eb9e/8ea7c822-1720-4a52-9622-0c15d9c30571/6.jpg",
      "credit_name": "Tutto Italian Restaurant & Bar",
      "credit_url": "https://tuttorestaurant.ca/about",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e696210b248185a7740eb9e/76a6e701-08f1-4f12-beb7-6c9e0e5e3e3e/Tutto-exterior.jpg",
-     "credit_name": "Tutto Italian Restaurant & Bar",
-     "credit_url": "https://tuttorestaurant.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5e696210b248185a7740eb9e/174c76f9-73c7-4c7f-99f7-418c5f4434a1/Chefs-15.png",
-     "credit_name": "Tutto Italian Restaurant & Bar",
-     "credit_url": "https://tuttorestaurant.ca/puglia-event",
      "source": "official_website"
     }
    ],
@@ -75565,9 +73843,9 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/5e696210b248185a7740eb9e/1614196191986-5VU4MDWVFMGQNFMMJCOG/Tutto+bar4+negroni.jpg",
+    "url": "https://images.squarespace-cdn.com/content/v1/5e696210b248185a7740eb9e/7eb556c7-26de-41e4-8b01-70c7eea9cf7c/ChatGPT+Image+Sep+21%2C+2026%2C+10_51_18+AM.png",
     "credit_name": "Tutto Italian Restaurant & Bar",
-    "credit_url": "https://tuttorestaurant.ca/about",
+    "credit_url": "https://tuttorestaurant.ca/puglia-event",
     "source": "official_website"
    },
    "primary_type": null,
@@ -76207,30 +74485,6 @@
    },
    "photos": [
     {
-     "url": "https://3a4a332e3b6b87212f8e.cdn6.editmysite.com/uploads/b/3a4a332e3b6b87212f8e1e7d098c41bc94430b9ed797d08d7fa24c419664c34c/streethawker-03049_1685115843.jpeg?width=2400&optimize=medium",
-     "credit_name": "Street Hawker - Mount Pleasant",
-     "credit_url": "https://www.streethawker.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://3a4a332e3b6b87212f8e.cdn6.editmysite.com/uploads/b/3a4a332e3b6b87212f8e1e7d098c41bc94430b9ed797d08d7fa24c419664c34c/SH_ChickenWings_FeatureScreen_1779690355.jpg?width=2400&optimize=medium",
-     "credit_name": "Street Hawker - Mount Pleasant",
-     "credit_url": "https://www.streethawker.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://3a4a332e3b6b87212f8e.cdn6.editmysite.com/uploads/b/3a4a332e3b6b87212f8e1e7d098c41bc94430b9ed797d08d7fa24c419664c34c/SH_TurboMode_DigitalScreen_Oct_2026_1791736241.jpg?width=2400&optimize=medium",
-     "credit_name": "Street Hawker - Mount Pleasant",
-     "credit_url": "https://www.streethawker.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://3a4a332e3b6b87212f8e.cdn6.editmysite.com/uploads/b/3a4a332e3b6b87212f8e1e7d098c41bc94430b9ed797d08d7fa24c419664c34c/SH_Digital_MenuScreens_SHAKE_May20_2026_vs2_1779690355.jpg?width=2400&optimize=medium",
-     "credit_name": "Street Hawker - Mount Pleasant",
-     "credit_url": "https://www.streethawker.ca/",
-     "source": "official_website"
-    },
-    {
      "url": "https://3a4a332e3b6b87212f8e.cdn6.editmysite.com/uploads/b/3a4a332e3b6b87212f8e1e7d098c41bc94430b9ed797d08d7fa24c419664c34c/BANNER%20%281%29_1767606544.jpg?width=2400&optimize=medium",
      "credit_name": "Street Hawker - Mount Pleasant",
      "credit_url": "https://www.streethawker.ca/",
@@ -76317,7 +74571,7 @@
    "cover_image": {
     "url": "https://www.streethawker.ca/uploads/b/47d14d50-dd7e-11ed-84ba-93a1c49a3583/streethawker-03029.jpeg",
     "credit_name": "Street Hawker - Mount Pleasant",
-    "credit_url": "http://streethawker.ca/",
+    "credit_url": "https://www.streethawker.ca/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -76894,6 +75148,12 @@
    },
    "photos": [
     {
+     "url": "https://thesequel.ca/wp-content/uploads/2025/05/32_IMAGE_SEQUEL_SOCIAL-SHOOT_25-04-15_CHARLESRNASBY-HI-RES-1-scaled.jpg",
+     "credit_name": "The Sequel - Kitchen & Bar",
+     "credit_url": "https://thesequel.ca/our-menus/",
+     "source": "official_website"
+    },
+    {
      "url": "https://thesequel.ca/wp-content/uploads/2025/05/44_IMAGE_THE-SEQUEL_SOCIAL-SHOOT_25-02-18_CHARLESRNASBY-scaled.jpg",
      "credit_name": "The Sequel - Kitchen & Bar",
      "credit_url": "https://thesequel.ca/our-menus/",
@@ -76907,36 +75167,6 @@
     },
     {
      "url": "https://thesequel.ca/wp-content/uploads/2025/05/34_IMAGE_SEQUEL_SOCIAL-SHOOT_25-04-15_CHARLESRNASBY-HI-RES-scaled.jpg",
-     "credit_name": "The Sequel - Kitchen & Bar",
-     "credit_url": "https://thesequel.ca/our-menus/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thesequel.ca/wp-content/uploads/2024/11/1-scaled.jpg",
-     "credit_name": "The Sequel - Kitchen & Bar",
-     "credit_url": "https://thesequel.ca/about-us/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thesequel.ca/wp-content/uploads/2024/12/eatingpasta.jpg",
-     "credit_name": "The Sequel - Kitchen & Bar",
-     "credit_url": "https://thesequel.ca/about-us/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thesequel.ca/wp-content/uploads/2024/11/people-having-food-together-in-black-and-white-2023-11-27-05-12-10-utcc-scaled.jpg",
-     "credit_name": "The Sequel - Kitchen & Bar",
-     "credit_url": "https://thesequel.ca/our-menus/day-menu/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thesequel.ca/wp-content/uploads/2025/05/6_IMAGE_SEQUEL_SOCIAL-SHOOT_25-04-15_CHARLESRNASBY-HI-RES-scaled.jpg",
-     "credit_name": "The Sequel - Kitchen & Bar",
-     "credit_url": "https://thesequel.ca/our-menus/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://thesequel.ca/wp-content/uploads/2024/11/barista-pours-milk-2023-11-27-05-18-41-utcs.jpg",
      "credit_name": "The Sequel - Kitchen & Bar",
      "credit_url": "https://thesequel.ca/our-menus/",
      "source": "official_website"
@@ -77183,7 +75413,7 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://thesequel.ca/wp-content/uploads/2025/05/32_IMAGE_SEQUEL_SOCIAL-SHOOT_25-04-15_CHARLESRNASBY-HI-RES-1-scaled.jpg",
+    "url": "https://thesequel.ca/wp-content/uploads/2025/05/6_IMAGE_SEQUEL_SOCIAL-SHOOT_25-04-15_CHARLESRNASBY-HI-RES-scaled.jpg",
     "credit_name": "The Sequel - Kitchen & Bar",
     "credit_url": "https://thesequel.ca/our-menus/",
     "source": "official_website"
@@ -78249,51 +76479,9 @@
    },
    "photos": [
     {
-     "url": "https://static.wixstatic.com/media/61f744_4971d7c45a784cd685f1f544e5f6e486~mv2.jpg/v1/fill/w_1200,h_734,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/61f744_4971d7c45a784cd685f1f544e5f6e486~mv2.jpg",
-     "credit_name": "The Boxcar",
-     "credit_url": "https://www.boxcarvancouver.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://static.wixstatic.com/media/61f744_4fbc234697984553a063ebd155f34d3d~mv2.jpg/v1/fill/w_818,h_546,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/61f744_4fbc234697984553a063ebd155f34d3d~mv2.jpg",
      "credit_name": "The Boxcar",
      "credit_url": "https://www.boxcarvancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/61f744_53d02897e8f44a4db8ed05a1f7c56f61~mv2.jpg/v1/crop/x_0,y_0,w_4497,h_2565/fill/w_938,h_546,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/61f744_53d02897e8f44a4db8ed05a1f7c56f61~mv2.jpg",
-     "credit_name": "The Boxcar",
-     "credit_url": "https://www.boxcarvancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/013b9a_d6d40ee4858d44b7a19422d10da2dec9~mv2.png/v1/fill/w_451,h_451,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/013b9a_d6d40ee4858d44b7a19422d10da2dec9~mv2.png",
-     "credit_name": "The Boxcar",
-     "credit_url": "https://www.boxcarvancouver.com/event-list",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/013b9a_128a542f170f4bbca25dc8533226a90d~mv2.jpeg/v1/fill/w_451,h_451,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/013b9a_128a542f170f4bbca25dc8533226a90d~mv2.jpeg",
-     "credit_name": "The Boxcar",
-     "credit_url": "https://www.boxcarvancouver.com/event-list",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/013b9a_bbfc319042f64d0395ac8e08b6fae336~mv2.jpg/v1/fill/w_451,h_451,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/013b9a_bbfc319042f64d0395ac8e08b6fae336~mv2.jpg",
-     "credit_name": "The Boxcar",
-     "credit_url": "https://www.boxcarvancouver.com/event-list",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/543942_3c513fd696a944c1b44b585e7a64198a~mv2.jpg/v1/fill/w_451,h_451,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/543942_3c513fd696a944c1b44b585e7a64198a~mv2.jpg",
-     "credit_name": "The Boxcar",
-     "credit_url": "https://www.boxcarvancouver.com/event-list",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/013b9a_87a226292a1b48deb7615e4530dae20a~mv2.png/v1/fill/w_451,h_451,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/013b9a_87a226292a1b48deb7615e4530dae20a~mv2.png",
-     "credit_name": "The Boxcar",
-     "credit_url": "https://www.boxcarvancouver.com/event-list",
      "source": "official_website"
     }
    ],
@@ -78361,9 +76549,9 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/61f744_9c7da82f770e41c19a98eef5a773dee7%7Emv2.jpg",
+    "url": "https://static.wixstatic.com/media/61f744_4971d7c45a784cd685f1f544e5f6e486~mv2.jpg/v1/fill/w_1200,h_734,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/61f744_4971d7c45a784cd685f1f544e5f6e486~mv2.jpg",
     "credit_name": "The Boxcar",
-    "credit_url": "https://www.boxcarvancouver.com",
+    "credit_url": "https://www.boxcarvancouver.com/",
     "source": "official_website"
    },
    "primary_type": null,
@@ -78850,13 +77038,7 @@
    },
    "photos": [
     {
-     "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a2216ce0144acaf4a007eeb_4%20-%20First%20Blurry%20Neon.avif",
-     "credit_name": "The 515 Bar",
-     "credit_url": "https://the515bar.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a2216ce0589867409b06ed3_1%20-%20515Front.avif",
+     "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a2216ce41a0de5c80753755_3%20-%20Paloma%20.avif",
      "credit_name": "The 515 Bar",
      "credit_url": "https://the515bar.ca/",
      "source": "official_website"
@@ -78869,24 +77051,6 @@
     },
     {
      "url": "https://images.weserv.nl/?url=https%3A%2F%2Fscontent-iad3-1.cdninstagram.com%2Fv%2Ft51.82787-15%2F836663448_18090216461680793_264436529556913277_n.jpg%3Fstp%3Ddst-jpg_e35_tt6%26_nc_cat%3D110%26ccb%3D7-5%26_nc_sid%3D18de74%26efg%3DeyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9%26_nc_ohc%3DLKU0GVXHZZAQ7kNvwFnQapC%26_nc_oc%3DAdp2u6-Cd2Tta4c1uQXTZD5fekTSgt-uONtaIhwA-x-ihAO6bAmy0vZrOZXvllCZU2I%26_nc_zt%3D23%26_nc_ht%3Dscontent-iad3-1.cdninstagram.com%26edm%3DANo9K5cEAAAA%26_nc_gid%3D31T3CS3GBIim6vmyIfKvMw%26_nc_tpa%3DQ5bMBQLX7js1iXiCvHkmqD7sa8a9zcrrMD96i2M-gVHEq80D9rpWo5OZIC2MEzkEjojHfXNJ1EoZpUlqqg%26oh%3D00_AQPxeIdXD7-Uzfe6M8c9yejqnfrE8RPm3fNd2VfznkQhXw%26oe%3D6AE1DFF7&w=1050&h=1050&fit=cover&output=webp&q=72",
-     "credit_name": "The 515 Bar",
-     "credit_url": "https://the515bar.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.weserv.nl/?url=https%3A%2F%2Fscontent-iad3-1.cdninstagram.com%2Fv%2Ft51.82787-15%2F825269841_18088770830680793_2240200898544531888_n.jpg%3Fstp%3Ddst-jpg_e35_tt6%26_nc_cat%3D110%26ccb%3D7-5%26_nc_sid%3D18de74%26efg%3DeyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9%26_nc_ohc%3DhTshyeUoSJsQ7kNvwFXfPPi%26_nc_oc%3DAdqOW8YPaGq4odhArlAhPSAx9Egko0UONklnxoCa7TQg76WegwlxkP0whPwwPqlrQxc%26_nc_zt%3D23%26_nc_ht%3Dscontent-iad3-1.cdninstagram.com%26edm%3DANo9K5cEAAAA%26_nc_gid%3D31T3CS3GBIim6vmyIfKvMw%26_nc_tpa%3DQ5bMBQJqJr6ulTxfAP13aK_KjGzQVTo924L3Toeh0PplSPj4jnXYqvz6-_MaB6ox8y4lNW-2-w3mFWXJbg%26oh%3D00_AQMe4IinA9ll7aPJTDFM2FI8mYk8ByK_E9B0fMCAQRiEwQ%26oe%3D6AE1CE7B&w=1050&h=1050&fit=cover&output=webp&q=72",
-     "credit_name": "The 515 Bar",
-     "credit_url": "https://the515bar.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.weserv.nl/?url=https%3A%2F%2Fscontent-iad3-2.cdninstagram.com%2Fv%2Ft51.82787-15%2F856983968_18092055959680793_1495092763109579807_n.jpg%3Fstp%3Ddst-jpg_e35_tt6%26_nc_cat%3D111%26ccb%3D7-5%26_nc_sid%3D18de74%26efg%3DeyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9%26_nc_ohc%3Dhg7ZmUqI34QQ7kNvwGtDG3v%26_nc_oc%3DAdrVrAKwiW-4VyskQ4lUDTTs0DeskKB_31aavF0UQv2FKNyasyDdPP-taAISZqTA5os%26_nc_zt%3D23%26_nc_ht%3Dscontent-iad3-2.cdninstagram.com%26edm%3DANo9K5cEAAAA%26_nc_gid%3D31T3CS3GBIim6vmyIfKvMw%26_nc_tpa%3DQ5bMBQLRRnz_QTb3DYzN7O9A1Xsh_eQd0h-jjuiVWfGu2bgVky0rJ072MmIjZ-Fh04hP90eG_-6USeJuhg%26oh%3D00_AQNn07IQuRXrfvVTmxVXn84BFB1ddTZ3rOErWc4mbOyaOg%26oe%3D6AE1E359&w=1050&h=1050&fit=cover&output=webp&q=72",
-     "credit_name": "The 515 Bar",
-     "credit_url": "https://the515bar.ca/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a63d5f471c7d77bf326cb9d_622a3aa6bcd48977c810a6a4_Share%20BG.jpg",
      "credit_name": "The 515 Bar",
      "credit_url": "https://the515bar.ca/",
      "source": "official_website"
@@ -78998,7 +77162,7 @@
    },
    "last_synced_at": "2026-09-03",
    "cover_image": {
-    "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a2216ce41a0de5c80753755_3%20-%20Paloma%20.avif",
+    "url": "https://cdn.prod.website-files.com/69f7795119da359fe44fd45e/6a2216ce0589867409b06ed3_1%20-%20515Front.avif",
     "credit_name": "The 515 Bar",
     "credit_url": "https://the515bar.ca/",
     "source": "official_website"
