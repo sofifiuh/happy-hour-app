@@ -8,7 +8,7 @@ import type { BestList, Hub, Occurrence, Venue } from "./types";
 const CACHE_KEY = "alh:venues";
 const VERSION_KEY = "alh:venues-version";
 // Bump when sync-data.mjs changes the venue shape, so old caches refresh.
-const SCHEMA = "3";
+const SCHEMA = "4";
 const FILTERS_KEY = "alh:filters";
 const SAVED_KEY = "alh:saved";
 const AREA_KEY = "alh:area";
