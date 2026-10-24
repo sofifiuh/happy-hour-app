@@ -44,8 +44,6 @@ export interface Venue {
   placeId?: string | null;
   // Short press quotes about the happy hour, hand-picked (quotes.json).
   quotes?: Quote[];
-  rating: number | null;
-  ratings: number | null;
   photo: string | null;
   photoCredit: string | null;
   photoCreditUrl?: string | null;

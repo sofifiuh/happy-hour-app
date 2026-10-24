@@ -220,12 +220,6 @@ export function Spot() {
               <ScoreChip score={venue.score} /> Hangout Score
             </button>
           )}
-          {venue.rating != null && (
-            <span className="inline-flex items-center gap-1">
-              <Star className="size-3.5 fill-amber text-amber-fg" /> {venue.rating.toFixed(1)}
-              {venue.ratings ? <span className="text-muted-foreground">({venue.ratings.toLocaleString()})</span> : null}
-            </span>
-          )}
           {venue.hh.verified && (
             <Badge variant="sky" size="sm">
               <BadgeCheck className="size-3.5" /> Verified
