@@ -19,6 +19,11 @@ on:
   schedule:
     - cron: "17 11 * * *"
   workflow_dispatch:
+    inputs:
+      indexnow_all:
+        description: "Send every URL to IndexNow, not just changed ones"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -95,6 +100,21 @@ jobs:
           echo "old venue URLs missing from the new build: $missing"
           echo "pages: $(find . -name '*.html' | wc -l), size: $(du -sh . | cut -f1)"
 
+      # Which pages changed against the live sitemap, for IndexNow after deploy.
+      - if: steps.site.outputs.kind == 'app' && github.event_name != 'pull_request'
+        name: List changed URLs for IndexNow
+        working-directory: web
+        run: node scripts/indexnow.mjs diff
+        env:
+          INDEXNOW_ALL: ${{ inputs.indexnow_all && '1' || '' }}
+
+      - if: steps.site.outputs.kind == 'app' && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-urls
+          path: web/indexnow-urls.txt
+          retention-days: 3
+
       # ---------- legacy site ----------
       - if: steps.site.outputs.kind == 'legacy'
         name: Generate config.js from secrets
@@ -122,3 +142,21 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      # Ping Bing and the other IndexNow engines about the changed pages.
+      # A failure here never fails the deploy.
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            web/scripts/indexnow.mjs
+            web/public/*.txt
+      - uses: actions/download-artifact@v4
+        continue-on-error: true
+        with:
+          name: indexnow-urls
+          path: web
+      - name: Submit changed URLs to IndexNow
+        continue-on-error: true
+        working-directory: web
+        run: node scripts/indexnow.mjs submit

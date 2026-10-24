@@ -42,7 +42,8 @@ export const isNonAlc = (d) => {
   if (NO_ALCOHOL.test(text)) return true;
   return SOFT.test(text) && !BOOZE.test(text.replace(/root beer|ginger beer|ginger ale|sparkling (lemonade|water|soda|juice)/gi, ""));
 };
-const skip = (d) => BULK.test(d) || isCombo(d) || isNonAlc(d);
+// Bottles, combos and soft drinks: not a price to compare with a glass or a plate.
+export const skip = (d) => BULK.test(d) || isCombo(d) || isNonAlc(d);
 
 // Alcoholic drink deals, the thing a happy hour is for.
 export const hasAlcohol = (v) => v.hh.deals.some((d) => d.category === "drink" && !isNonAlc(d));
@@ -78,7 +79,8 @@ function dealType(d) {
 
 // "$8", "$11–19" (low end), "$3 ea", "$6.50". "$2 off" and "50% off" aren't prices.
 export function dealPrice(d) {
-  const p = (d.price || "").replace(/,/g, "");
+  // "$4¾" is $4.75.
+  const p = (d.price || "").replace(/,/g, "").replace(/(\d)\s*([¼½¾])/, (m, n, f) => `${n}.${{ "¼": 25, "½": 5, "¾": 75 }[f]}`);
   if (/off|%|free|half|1\/2|\/\s*oz|per\s*oz/i.test(p)) return null;
   const m = p.match(/\$\s*(\d+(?:\.\d+)?)/) || p.match(/^\s*(\d+(?:\.\d+)?)\s*$/);
   if (!m) return null;

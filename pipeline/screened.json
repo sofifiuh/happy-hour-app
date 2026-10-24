@@ -5889,7 +5889,7 @@
     "id": "millennium-karaoke",
     "name": "Millennium Karaoke",
     "verdict": "published",
-    "checked_at": "2026-09-03"
+    "checked_at": "2026-10-24"
   },
   "ChIJkyUvUCt4hlQRrnIySefoEPo": {
     "id": "dageraad-brewing",
@@ -6015,7 +6015,7 @@
     "id": "hail-mary-s",
     "name": "Hail Mary's",
     "verdict": "published",
-    "checked_at": "2026-09-03"
+    "checked_at": "2026-10-24"
   },
   "ChIJ5djFj854hlQRGCw6qPkUe3o": {
     "id": "mariner-brewing",
@@ -21190,5 +21190,551 @@
     "name": "Horin Ramen new Westminster",
     "verdict": "no_happy_hour",
     "checked_at": "2026-09-03"
+  },
+  "ChIJ18-j2oJxhlQRcq-nkLQ528w": {
+    "id": "five-sails-by-alex-kim",
+    "name": "Five Sails by Alex Kim",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJeRU6feJzhlQRuDkJm1Yjr_Q": {
+    "id": "biltmore-cabaret",
+    "name": "Biltmore Cabaret",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJjSjM_2l9C0ERrXmfPB-HK2Q": {
+    "id": "red-truck-beer-company",
+    "name": "Red Truck Beer Company",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJe3IZnGDmhVQRaW-tgYoAE4M": {
+    "id": "wood-n-frog-coffee-company",
+    "name": "Wood N Frog Coffee Company",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJpwbgtEFxhlQRE-QxNGY40wo": {
+    "id": "strange-fellows-brewing",
+    "name": "Strange Fellows Brewing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJC5WhkW1xhlQRVK3i50oRB8s": {
+    "id": "the-heatley",
+    "name": "The Heatley",
+    "verdict": "published",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJJwfntn9xhlQRXRl_KTiNob8": {
+    "id": "taf-s-cafe",
+    "name": "Taf's Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJb_eZYkfUhVQRJN_wjEiuom0": {
+    "id": "foamers-folly-brewing-co",
+    "name": "Foamers' Folly Brewing Co.",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ5yEvz4NxhlQRhosecgIPXcU": {
+    "id": "koffie",
+    "name": "Koffie",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJx1CgjtFzhlQR6mhLhBDU3qE": {
+    "id": "shamrock-storehouse-dunbar",
+    "name": "Shamrock Storehouse Dunbar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJoTa_FmkLhlQRv5BaNir0fx8": {
+    "id": "whistler-taphouse-grill",
+    "name": "Whistler Taphouse & Grill",
+    "verdict": "error",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJFdpdHkx0hlQRSVAjcxQjaBQ": {
+    "id": "dogwood-brewing",
+    "name": "Dogwood Brewing",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJpTiZ-O5zhlQRu-jlYwJ8_mU": {
+    "id": "prive-kitchen-bar",
+    "name": "Prive Kitchen + Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJZ4tZAo53hlQRAKzeDkvJ9zg": {
+    "id": "happy-gilmore-golf-lounge",
+    "name": "Happy Gilmore Golf Lounge",
+    "verdict": "hours_only",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJkQJnOhlsK4gRFssYmhCxai8": {
+    "id": "brandis-show-lounge",
+    "name": "Brandis Show Lounge",
+    "verdict": "error",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJSQCRsspzhlQRUmb6hQuO8rI": {
+    "id": "royal-canadian-legion-branch-176",
+    "name": "Royal Canadian Legion Branch 176",
+    "verdict": "hours_only",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJg4aqLwDXhVQRZ25iKz3I8zw": {
+    "id": "savanna-restaurant-lounge-grill",
+    "name": "Savanna Restaurant & Lounge Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJr1nEWQBxhlQRDhkZ-_AiTSs": {
+    "id": "yoona-s-cafe-tapas",
+    "name": "Yoona's Cafe & Tapas",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJPTN23TPbhVQRDRuIqjp49Lo": {
+    "id": "d-lounge-kitchen-bar",
+    "name": "D Lounge Kitchen & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJW2YgAKdzhlQRbwV3y1GcTDM": {
+    "id": "shamrock-storehouse-granville",
+    "name": "Shamrock Storehouse Granville",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJAZB9kRnXhVQR4NCo_ynTnHU": {
+    "id": "fixins-bar-grill",
+    "name": "Fixins Bar & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJrbESvoh5hlQRF0mJdkwlJ3Q": {
+    "id": "maverick-s-social-room",
+    "name": "Maverick's Social Room",
+    "verdict": "published",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJq1lhWq_VhVQRDT-a8fx0vY4": {
+    "id": "blue-heron-bar-and-grill-at-pitt-meadows-golf-club",
+    "name": "Blue Heron Bar and Grill at Pitt Meadows Golf Club",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJh35stnNxhlQR9w7WxtQXVBQ": {
+    "id": "good-company-lager",
+    "name": "Good Company Lager",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ6Ybx5D5xhlQR880xcjncy-U": {
+    "id": "shamrock-storehouse-commercial",
+    "name": "Shamrock Storehouse Commercial",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJK1LBZgBzhlQR8gH_ZweiCMA": {
+    "id": "vancouver-fringe-patio",
+    "name": "Vancouver Fringe Patio",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJxYt_e75xhlQRN0BZ3V4G-LY": {
+    "id": "inside-voices",
+    "name": "INSIDE VOICES",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJe9_lJKt2hlQRZ5uLMp4w3xE": {
+    "id": "dosa-factory",
+    "name": "Dosa Factory",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJawAAmS51hlQRMy2KD0DxULA": {
+    "id": "hk-bbq-master",
+    "name": "HK BBQ Master",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJccEWRdTZhVQRBXroh-EoL7w": {
+    "id": "fresgo-inn-restaurant",
+    "name": "Fresgo Inn Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJBShI_ql1hlQRIZI7YnB2KGY": {
+    "id": "daddy-s-grill",
+    "name": "Daddy's Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJD4ThDQ14hlQRAWMsBCMzgwk": {
+    "id": "my-greek-taverna",
+    "name": "My Greek Taverna",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ9RNp1-V3hlQRCSbgwB636XY": {
+    "id": "new-mandarin-seafood-restaurant",
+    "name": "New Mandarin Seafood Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ9ZT2w3LZhVQR9SxKYEf6g1U": {
+    "id": "ihop",
+    "name": "IHOP",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ3fPYPndzhlQR2aDKGEtgJOs": {
+    "id": "sahel-market-restaurant",
+    "name": "Sahel Market & Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJvZZmQpd2hlQR4uFHqA3XZgU": {
+    "id": "chili-pepper-house",
+    "name": "Chili Pepper House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJc8G7nyNxhlQRJzYYqcLYls0": {
+    "id": "picado",
+    "name": "PiCaDo",
+    "verdict": "error",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJZV-t8GVxhlQR_e49w10QaFQ": {
+    "id": "zaatar-w-zeit",
+    "name": "ZAATAR W ZEIT",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJN5S_tR90hlQRe-FAM4e1PiU": {
+    "id": "banh-mi-saigon",
+    "name": "Banh Mi Saigon",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJCQwlt7JzhlQRZaFU12v4XQI": {
+    "id": "dark-table",
+    "name": "Dark Table",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJibVo6LHQhVQRsMwSetJhRoM": {
+    "id": "jerusalem-grill-shawarma-fleetwood",
+    "name": "Jerusalem Grill Shawarma (Fleetwood)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJSTnVJcl3hlQRyLBq3aQTOUU": {
+    "id": "aria-afghan-grill",
+    "name": "Aria Afghan Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJb_PGBlbZhVQRzSvovPuG_oU": {
+    "id": "kathmandu-bar-and-grill",
+    "name": "Kathmandu Bar and Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJrze9xnhxhlQR_Ti-FoVCy9k": {
+    "id": "homa-kebab-donair-restaurant",
+    "name": "Homa Kebab & Donair Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJMT2k32XZhVQRfSMdSAo5gqw": {
+    "id": "the-bhojan",
+    "name": "The Bhojan",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJAQBwO6t2hlQRZgyCaYHhQVA": {
+    "id": "sun-bo-kong-vegetarian-restaurant-chinese",
+    "name": "Sun Bo Kong Vegetarian Restaurant | Chinese",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJDQS71-FzhlQR1SNZ80yIhu8": {
+    "id": "budgies-burritos",
+    "name": "Budgies Burritos",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJfR7W5hR0hlQR7WrOIYfvh7o": {
+    "id": "ho-yuen-kee-restaurant",
+    "name": "Ho Yuen Kee Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJgw0EczLahVQRzglX9wjo-Ac": {
+    "id": "tasty-donair",
+    "name": "Tasty Donair",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJbSuII6t2hlQR5dXyYzlSTa8": {
+    "id": "po-kong",
+    "name": "Po Kong",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJKRnP67TVhVQRIMApysQVD2Y": {
+    "id": "inkantu-peru-canada",
+    "name": "Inkantu Peru Canada",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ2x6wW7zZhVQRYkSW6yu0Xrk": {
+    "id": "pizza-art-surrey",
+    "name": "Pizza Art - Surrey",
+    "verdict": "error",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJFfSr3PxzhlQROOe-E0bdNxk": {
+    "id": "babylon-cafe",
+    "name": "Babylon Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJx9c0UOdzhlQRRS8CiWNDkJw": {
+    "id": "fatburger-west-broadway",
+    "name": "Fatburger West Broadway",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJd352ckfXhVQR1-vwRzSyhxE": {
+    "id": "veerji-fish-n-grill-fraser-highway",
+    "name": "Veerji Fish 'n' Grill - Fraser Highway",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ5Qg8CcdzhlQRLVzT-a95-FA": {
+    "id": "masa-japanese-restaurant-vancouver",
+    "name": "Masa Japanese Restaurant Vancouver",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJUSUaGtRzhlQRxwoNRDUpUjI": {
+    "id": "yamato-sushi",
+    "name": "Yamato Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJjf3PDTt1hlQREmEcJ9vTSlw": {
+    "id": "fatburger-richmond",
+    "name": "Fatburger Richmond",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJuTRXDZ9zhlQRuGKaUegoK7g": {
+    "id": "a-w-canada",
+    "name": "A&W Canada",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJR4SezkZ5hlQRG6KICGNTepk": {
+    "id": "kook-s-cooks",
+    "name": "Kook's Cooks",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJzahcjCxxhlQRZOAJ2aRv1yE": {
+    "id": "nene-chicken",
+    "name": "NeNe Chicken",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJsfgHKAB5hlQRdvMc2hljYyU": {
+    "id": "memory-corner-coquitlam",
+    "name": "Memory Corner 有香 (Coquitlam)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJpZ9V1xd4hlQRiYMPDgrA8fY": {
+    "id": "bbong-korean-restaurant",
+    "name": "Bbong Korean Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ81BXpKB2hlQRVJ_8jN3CcM8": {
+    "id": "el-caracol-cafe",
+    "name": "El Caracol Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJg_9AndrZhVQR7nOBCPqcsNk": {
+    "id": "mucho-burrito-fresh-mexican-grill",
+    "name": "Mucho Burrito Fresh Mexican Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJx1ecIEbQhVQRSx4s1SJQ0y0": {
+    "id": "denji-sushi-japanese-restaurant",
+    "name": "Denji Sushi Japanese restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJg9uUPN1zhlQRCCYIvXrgwyo": {
+    "id": "kamei-on-broadway",
+    "name": "Kamei on Broadway",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJtfZFRT14hlQR7LaxX6h_wYs": {
+    "id": "wang-ga-ma",
+    "name": "Wang Ga Ma",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ5VloSqd2hlQRrQmBXCg-DIY": {
+    "id": "h-i-an-caf",
+    "name": "Hội An Café",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJx8Ts_YdxhlQRltXu3n3Fv6A": {
+    "id": "momo-sushi-bidwell",
+    "name": "MOMO SUSHI BIDWELL",
+    "verdict": "published",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJq6p6jn_XhVQRlIhZkt8lD1o": {
+    "id": "bon-ga-korean-restaurant",
+    "name": "Bon Ga Korean Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJLxs4kmh4hlQRPXnQn6q4JQU": {
+    "id": "hfc-grill",
+    "name": "HFC Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJIdP7usZzhlQR_sznvH1QV7o": {
+    "id": "royal-seoul-house-restaurant",
+    "name": "Royal Seoul House Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJrRJmv3txhlQR3MkGD9d3OPA": {
+    "id": "after-hours-kitchen-bar",
+    "name": "After Hours Kitchen & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJH7b5TRfXhVQR3YpzbTqd8kg": {
+    "id": "nila-dosa-curry-pure-veg-indian-restaurant",
+    "name": "Nila Dosa & Curry Pure veg Indian Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJqWVBhTVxhlQRqIQz2VJ71OM": {
+    "id": "got-ph-thi-n-kim",
+    "name": "Got Phở Thiên Kim",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJU48nGKtzhlQRK80MsnfI3us": {
+    "id": "mamalee-malaysian-delight",
+    "name": "Mamalee Malaysian Delight",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJz9sGZX1xhlQR7uAwQS9T6ts": {
+    "id": "fresh-sushi",
+    "name": "Fresh Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJeYjiEbHIhVQRnqNPvdse0BI": {
+    "id": "fraser-valley-cider-company",
+    "name": "Fraser Valley Cider Company",
+    "verdict": "published",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJI2dlU2ZxhlQRiHpluvenOso": {
+    "id": "bibi-s-kitchen",
+    "name": "Bibi's Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJK_D5wqV2hlQR1sAxRjhdvN4": {
+    "id": "happy-family-restaurant",
+    "name": "Happy Family Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ-zuJFbd3hlQR0qzhKqQOmp0": {
+    "id": "viet-mama-restaurant",
+    "name": "VIET MAMA RESTAURANT",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJxaUHZmh4hlQRi5HANihcqco": {
+    "id": "mika-sushi",
+    "name": "Mika Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJSyxOuOp5hlQRbmCgbE6M5VA": {
+    "id": "sfu-dining-commons",
+    "name": "SFU Dining Commons",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJL2IKzUB2hlQRVbqgr7gcS-U": {
+    "id": "adam-s-crepes",
+    "name": "Adam's Crepes",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ90JNlnLXhVQRXTRGxzL5neQ": {
+    "id": "elvis-pizza",
+    "name": "Elvis Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ-_BpAIZ3hlQRXkr9B4w5O64": {
+    "id": "isushi-japanese-korean-restaurant",
+    "name": "iSushi Japanese & Korean Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ7W08la0KhlQRLQWKxy98u8M": {
+    "id": "master-hung-bbq-won-ton",
+    "name": "Master Hung BBQ & Won Ton",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ7S34XtJzhlQRaDLW1dZRPvg": {
+    "id": "fatburger-waterfront-centre",
+    "name": "Fatburger Waterfront Centre",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJ3wGrA35zhlQRCMKBszTEdOU": {
+    "id": "saiko-sushi",
+    "name": "Saiko Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
+  },
+  "ChIJdaZxWV9xhlQR141jd0ChrLE": {
+    "id": "hime-sushi",
+    "name": "Hime Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-24"
   }
 }

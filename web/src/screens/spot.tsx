@@ -17,7 +17,8 @@ import { VenuePhoto } from "@/components/venue-photo";
 import { walkLabel, distanceKm } from "@/lib/geo";
 import { endingSoon, fmtRange, nowHHMM, occurrence, statusLabel } from "@/lib/hours";
 import { fmtChecked, reportLink } from "@/lib/links";
-import { goBack } from "@/lib/motion";
+import { backLabel, goBackToBase } from "@/lib/back-to";
+import { useIsDesktop } from "@/lib/use-media";
 import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
@@ -56,13 +57,19 @@ export function Spot() {
   }, [viewedId]);
   const page = useRef<HTMLElement>(null);
   const bar = useRef<HTMLElement>(null);
-  useSwipeBack([page, bar], () => goBack(navigate, true), !!venue);
+  const desktop = useIsDesktop();
+  const back = backLabel(desktop);
+  useSwipeBack([page, bar], () => goBackToBase(navigate, desktop, true), !!venue);
   useTitle(venue ? venueTitle(venue) : loading ? null : "Spot not found", !!venue);
   const [cat, setCat] = useState<Category>("drink");
   const [directionsOpen, setDirectionsOpen] = useState(false);
   const [photosOpen, setPhotosOpen] = useState(false);
   const [reportOpen, setReportOpen] = useState(false);
   const closePhotos = useCallback(() => setPhotosOpen(false), []);
+  // The header shade waits for the photo, then fades in over it, so the
+  // dark wash never lands on an empty frame or pops in after the hero flight.
+  const [shadeFor, setShadeFor] = useState<string | null>(null);
+  const showShade = useCallback(() => setShadeFor(id), [id]);
   const [notifyOpen, setNotifyOpen] = useState(() => queryParams().get("sheet") === "notify");
 
   const deals = useMemo(() => {
@@ -135,8 +142,15 @@ export function Spot() {
     <main ref={page} className="mx-auto min-h-dvh max-w-2xl pb-28">
       {/* Photo header */}
       <div className="relative">
-        <VenuePhoto venue={venue} eager hero="hero" large className={cn("w-full lg:rounded-b-[28px]", venue.photo ? "h-[min(42vh,340px)]" : "h-[240px]")} />
-        <div className={cn("pointer-events-none absolute inset-0 bg-gradient-to-b via-transparent to-ink", venue.photo ? "from-black/45" : "from-black/15")} />
+        <VenuePhoto venue={venue} eager hero="hero" large onReady={showShade} className={cn("w-full lg:rounded-b-[28px]", venue.photo ? "h-[min(42vh,340px)]" : "h-[240px]")} />
+        <div
+          style={{ viewTransitionName: "hero-shade" }}
+          className={cn(
+            "pointer-events-none absolute inset-0 bg-gradient-to-b via-transparent to-ink transition-opacity duration-700 ease-[var(--ease-out)]",
+            venue.photo ? "from-black/45" : "from-black/15",
+            shadeFor === id ? "opacity-100 delay-150" : "opacity-0",
+          )}
+        />
         {photos.length > 0 && (
           <button onClick={() => setPhotosOpen(true)} aria-label={photos.length > 1 ? `View ${photos.length} photos` : "View photo"} className="absolute inset-0 cursor-zoom-in">
             {photos.length > 1 && (
@@ -147,12 +161,14 @@ export function Spot() {
           </button>
         )}
         <div className="pointer-events-none absolute inset-x-0 top-0 flex justify-between px-4 pt-[max(env(safe-area-inset-top),14px)] [&_button]:pointer-events-auto">
+          {/* Always back to where browsing started, not the previous venue. */}
           <button
-            onClick={() => goBack(navigate)}
-            aria-label="Back"
-            className="grid size-11 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90"
+            onClick={() => goBackToBase(navigate, desktop)}
+            aria-label={back === "Back" ? "Back" : `Back to ${back}`}
+            className="flex h-11 items-center gap-1.5 rounded-full bg-ink/70 pr-4 pl-3 text-[14px] font-semibold text-cream backdrop-blur transition-transform active:scale-90"
           >
             <ArrowLeft className="size-5" />
+            {back}
           </button>
           <div className="flex gap-2">
             <button
@@ -358,15 +374,23 @@ export function Spot() {
               </>
             )}
           </span>
-          {apiEnabled ? (
-            <button onClick={() => setReportOpen(true)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
-              <Flag className="size-3.5" /> Report a wrong time
-            </button>
-          ) : (
-            <a href={reportLink(venue)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
-              <Flag className="size-3.5" /> Report a wrong time
-            </a>
-          )}
+          <span className="flex flex-wrap gap-x-4">
+            {apiEnabled ? (
+              <button onClick={() => setReportOpen(true)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
+                <Flag className="size-3.5" /> Report a wrong time
+              </button>
+            ) : (
+              <a href={reportLink(venue)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
+                <Flag className="size-3.5" /> Report a wrong time
+              </a>
+            )}
+            {/* Static page with the venue's embed badge (scripts/badges.mjs); only the alittlehang.com build has it. */}
+            {BROWSER_ROUTER && (
+              <a href={`/badge/${venue.id}/`} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
+                <BadgeCheck className="size-3.5" /> Get a badge for your site
+              </a>
+            )}
+          </span>
         </div>
       </section>
 

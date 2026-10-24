@@ -4,7 +4,7 @@
 // only on the live site, never for visitors who send Do Not Track.
 import type { PostHog } from "posthog-js";
 
-const TOKEN = "phc_vpCAZkvuCo5JL7mGDDgyDHqzA58X6LLLY4rCke8igp4C";
+const TOKEN = "phc_CQ9AgH4sVrTuwucHjP5k3sLN6qgos3bbSPNAPSWNFz2Z";
 const HOST = "https://us.i.posthog.com";
 const LIVE_HOSTS = ["alittlehang.com", "www.alittlehang.com"];
 
@@ -54,7 +54,7 @@ export function startAnalytics() {
         capture_exceptions: false,
         disable_external_dependency_loading: true,
       });
-      // Shares a PostHog project with setsail.ca; this keeps the two apart.
+      // Own PostHog project; the tag keeps events identifiable if they are ever exported or merged.
       posthog.register({ app: "alittlehang" });
       ph = posthog;
       for (const e of queue.splice(0)) track(e);

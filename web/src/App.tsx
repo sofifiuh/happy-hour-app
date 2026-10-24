@@ -1,6 +1,7 @@
-import { lazy, Suspense } from "react";
-import { createBrowserRouter, createHashRouter, Navigate, Outlet, RouterProvider, ScrollRestoration, useParams } from "react-router";
+import { lazy, Suspense, useEffect } from "react";
+import { createBrowserRouter, createHashRouter, Navigate, Outlet, RouterProvider, ScrollRestoration, useLocation, useParams } from "react-router";
 import { ToastProvider } from "@/components/toast";
+import { noteLocation } from "@/lib/back-to";
 import { BROWSER_ROUTER, spotPath } from "@/lib/routes";
 import { IS_FRAME, StoreProvider } from "@/lib/store";
 import { useStaticHead } from "@/lib/use-static-head";
@@ -40,6 +41,8 @@ function seenWelcome() {
 
 function Shell() {
   useStaticHead();
+  const { pathname, search } = useLocation();
+  useEffect(() => noteLocation(pathname, search), [pathname, search]);
   return (
     <>
       <ScrollRestoration />
