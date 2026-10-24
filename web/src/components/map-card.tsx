@@ -6,6 +6,7 @@ import { endingSoon, fmtRange, statusLabel } from "@/lib/hours";
 import { markHero } from "@/lib/motion";
 import type { Row } from "@/lib/store";
 import { cn } from "@/lib/utils";
+import { ScoreChip } from "./hang-score";
 import { Countdown, StatusDot } from "./status";
 import { VenuePhoto } from "./venue-photo";
 
@@ -27,7 +28,12 @@ export function MapCard({ row, now, active }: { row: Row; now: Date; active: boo
         active ? "ring-edge/15" : "scale-[0.95] opacity-75 ring-edge/5",
       )}
     >
-      <VenuePhoto venue={venue} className="size-[72px] shrink-0 rounded-[16px]" />
+      {/* The Hangout Score sits on the photo's corner so the name keeps its
+          width; spots without a score just show the photo. */}
+      <div className="relative shrink-0">
+        <VenuePhoto venue={venue} className="size-[72px] rounded-[16px]" />
+        {venue.score && <ScoreChip score={venue.score} className="absolute -right-1.5 -bottom-1.5 shadow-md ring-[2.5px] ring-ink-2" />}
+      </div>
       <div className="min-w-0 flex-1">
         <h2 className="flex items-center gap-1.5 font-display text-[17px] leading-tight font-extrabold tracking-tight">
           <span className="truncate">{venue.name}</span>
