@@ -307,7 +307,7 @@ export function claimRejectedEmail(site: string, o: { name: string; venue: Venue
     paragraphs: [`Hi ${o.name}, we weren't able to confirm that you manage ${o.venue.name}.`],
     quote: o.note ?? undefined,
     cta: { label: "Send us proof", href: `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(`Claim for ${o.venue.name}`)}` },
-    note: `Email ${SUPPORT_EMAIL} a photo of the liquor licence and we'll take another look. Or claim again from a work email at the venue's own domain, which is approved instantly.`,
+    note: `Email ${SUPPORT_EMAIL} a photo of the liquor licence and we'll take another look. Or claim again from a work email at the venue's own domain, which is usually approved instantly.`,
     reason: `You're getting this because you asked to manage ${o.venue.name} on A Little Hang.`,
   });
 }
