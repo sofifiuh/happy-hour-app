@@ -7123,5 +7123,73 @@
     },
     "matched_name": "MIXT Lobby Lounge @ Sheraton Vancouver Guildford Hotel",
     "synced_at": "2026-09-03"
+  },
+  "the-heatley": {
+    "place_id": "ChIJC5WhkW1xhlQRVK3i50oRB8s",
+    "rating": 4.3,
+    "user_ratings_total": 579,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Heatley",
+    "synced_at": "2026-10-24"
+  },
+  "maverick-s-social-room": {
+    "place_id": "ChIJrbESvoh5hlQRF0mJdkwlJ3Q",
+    "rating": 3.8,
+    "user_ratings_total": 26,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Maverick's Social Room",
+    "synced_at": "2026-10-24"
+  },
+  "momo-sushi-bidwell": {
+    "place_id": "ChIJx8Ts_YdxhlQRltXu3n3Fv6A",
+    "rating": 4.4,
+    "user_ratings_total": 808,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "MOMO SUSHI BIDWELL",
+    "synced_at": "2026-10-24"
+  },
+  "fraser-valley-cider-company": {
+    "place_id": "ChIJeYjiEbHIhVQRnqNPvdse0BI",
+    "rating": 4.6,
+    "user_ratings_total": 707,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Fraser Valley Cider Company",
+    "synced_at": "2026-10-24"
   }
 }
