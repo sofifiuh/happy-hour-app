@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
 import { Switch } from "@/components/ui/switch";
+import { track } from "@/lib/analytics";
 import { matchesAmenity, useStore, type AmenityKey } from "@/lib/store";
 
 export const AMENITIES: { key: AmenityKey; emoji: string; label: string }[] = [
@@ -19,8 +20,10 @@ export function FiltersDrawer({ open, onOpenChange }: { open: boolean; onOpenCha
     () => Object.fromEntries(AMENITIES.map((a) => [a.key, venues.filter((v) => matchesAmenity(v, a.key)).length])),
     [venues],
   );
-  const toggle = (key: AmenityKey, on: boolean) =>
+  const toggle = (key: AmenityKey, on: boolean) => {
+    if (on) track({ name: "filter_applied", filter: key });
     setFilters({ amenities: on ? [...filters.amenities, key] : filters.amenities.filter((k) => k !== key) });
+  };
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>

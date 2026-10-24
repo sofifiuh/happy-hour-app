@@ -19,6 +19,7 @@ export function ScreensBoard() {
     { title: "Date & time", note: "Plan by day + named time slots", path: "/?sheet=plan" },
     { title: "Planned: Fri after work", note: "Results for a chosen day and time", path: "/?tab=plan&plan=5@16:00" },
     { title: "Map", note: "Pins by status, swipeable cards", path: "/map" },
+    { title: "Best of", note: "Top Hangout Scores by neighbourhood and city", path: "/best?in=gastown" },
     ...(withDeals ? [{ title: "Venue page", note: `${withDeals.name}: deals, times, map, sticky bar`, path: `/spot/${withDeals.id}` }] : []),
     ...(noDeals ? [{ title: "Venue: deals not listed", note: `${noDeals.name}: times only`, path: `/spot/${noDeals.id}` }] : []),
     { title: "Search: neighbourhood", note: "Search covers name, street, city and neighbourhood", path: "/?q=gastown" },

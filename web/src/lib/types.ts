@@ -82,4 +82,14 @@ export interface Hub {
   count: number;
 }
 
+// Best-of lists from venues.json (scripts/seo-data.mjs buildBest): a place's
+// top Hangout Scores, highest first. slug "metro" is all of Metro Vancouver.
+export interface BestList {
+  slug: string;
+  name: string;
+  kind: "metro" | "city" | "area";
+  scored: number; // venues with a score in the place
+  ids: string[];
+}
+
 export type Photo = { src: string; credit: string | null; link: string | null };

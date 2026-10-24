@@ -1,5 +1,5 @@
 import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Navigation, Phone, Share, Star } from "lucide-react";
-import { type CSSProperties, useCallback, useMemo, useRef, useState } from "react";
+import { type CSSProperties, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { ScoreCard, ScoreChip } from "@/components/hang-score";
@@ -21,9 +21,10 @@ import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
 import { dayRuns, nearby, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
+import { track } from "@/lib/analytics";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
-import type { Category, Photo, Venue } from "@/lib/types";
+import type { BestList, Category, Photo, Venue } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 
@@ -41,10 +42,14 @@ function amenityPills(v: Venue) {
 export function Spot() {
   const params = useParams();
   const id = (params.id ?? params.file ?? "").replace(/\.html$/, "");
-  const { byId, venues, hubs, now, loading, deviceLocation, area, saved, toggleSaved } = useStore();
+  const { byId, venues, hubs, best, now, loading, deviceLocation, area, saved, toggleSaved } = useStore();
   const navigate = useNavigate();
   const toast = useToast();
   const venue = byId(id);
+  const viewedId = venue?.id;
+  useEffect(() => {
+    if (viewedId) track({ name: "venue_viewed", venue_id: viewedId });
+  }, [viewedId]);
   const page = useRef<HTMLElement>(null);
   const bar = useRef<HTMLElement>(null);
   useSwipeBack([page, bar], () => goBack(navigate, true), !!venue);
@@ -98,12 +103,19 @@ export function Spot() {
   const isSaved = saved.includes(venue.id);
   const onSave = () => {
     const nowSaved = toggleSaved(venue.id);
+    if (nowSaved) track({ name: "saved", venue_id: venue.id });
     toast(nowSaved ? "Saved to your spots" : "Removed from your spots");
     if (nowSaved && !remindersAsked()) setTimeout(() => setNotifyOpen(true), 600);
   };
   const checked = venue.checked ? fmtChecked(venue.checked, now) : null;
 
+  const openDirections = () => {
+    track({ name: "directions_clicked", venue_id: venue.id });
+    setDirectionsOpen(true);
+  };
+
   const onShare = async () => {
+    track({ name: "share_clicked", venue_id: venue.id });
     const res = await shareLink(`${venue.name} on A Little Hang`, `Happy hour at ${venue.name}: ${fmtRange(venue.hh.start, venue.hh.end)}`, absoluteUrl(spotPath(venue.id)));
     if (res === "copied") toast("Link copied");
   };
@@ -270,6 +282,7 @@ export function Spot() {
         <section id="hang-score" style={{ "--i": 3 } as CSSProperties} className="animate-rise mt-8 scroll-mt-6 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">How this happy hour scores</h2>
           <ScoreCard score={venue.score} />
+          <RankLink best={best} venue={venue} />
         </section>
       )}
 
@@ -335,7 +348,7 @@ export function Spot() {
       {venue.lat != null && venue.lng != null && (
         <section style={{ "--i": 4 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Find us here</h2>
-          <button onClick={() => setDirectionsOpen(true)} className="block w-full overflow-hidden rounded-[22px] bg-ink-2 text-left">
+          <button onClick={openDirections} className="block w-full overflow-hidden rounded-[22px] bg-ink-2 text-left">
             <MiniMap lat={venue.lat} lng={venue.lng} others={near as { lat: number; lng: number }[]} className="h-[170px] w-full" />
             <div className="flex items-center justify-between gap-3 p-4">
               <span className="text-[15px]">{venue.address}</span>
@@ -448,7 +461,7 @@ export function Spot() {
             )}
           </div>
           {venue.lat != null && venue.lng != null ? (
-            <Button onClick={() => setDirectionsOpen(true)} className="shrink-0">
+            <Button onClick={openDirections} className="shrink-0">
               <Navigation /> Directions
             </Button>
           ) : (
@@ -478,5 +491,25 @@ export function Spot() {
       <NotifyDrawer open={notifyOpen} onOpenChange={setNotifyOpen} />
       {photosOpen && <PhotoViewer photos={photos} name={venue.name} open onClose={closePhotos} />}
     </>
+  );
+}
+
+// "#3 of the best in Gastown": where the venue places on its own
+// neighbourhood's (else city's) best-of list, linking to that list.
+function RankLink({ best, venue }: { best: BestList[]; venue: Venue }) {
+  const lists = [venue.area?.slug, venue.city?.toLowerCase().replace(/[^a-z0-9]+/g, "-")].map((s) => best.find((b) => b.slug === s));
+  const list = lists.find((b) => b?.ids.includes(venue.id));
+  if (!list) return null;
+  const rank = list.ids.indexOf(venue.id) + 1;
+  return (
+    <Link
+      to={`/best?in=${list.slug}`}
+      viewTransition
+      className="mt-2.5 flex min-h-12 items-center gap-3 rounded-2xl bg-ink-2 px-4 py-2.5 text-[14px] font-semibold transition-colors hover:bg-ink-3"
+    >
+      <span className="grid size-8 shrink-0 place-items-center rounded-full bg-primary font-display text-[14px] font-extrabold text-primary-foreground tabular">#{rank}</span>
+      <span className="flex-1">Ranked #{rank} of the best happy hours in {list.name}</span>
+      <ChevronDown className="size-4 -rotate-90 text-muted-foreground" />
+    </Link>
   );
 }

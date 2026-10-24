@@ -5,6 +5,7 @@ import { BROWSER_ROUTER, spotPath } from "@/lib/routes";
 import { IS_FRAME, StoreProvider } from "@/lib/store";
 import { useStaticHead } from "@/lib/use-static-head";
 import { AllSpots } from "@/screens/all-spots";
+import { BestScreen } from "@/screens/best";
 import { Home } from "@/screens/home";
 import { Info } from "@/screens/info";
 import { Landing, SEEN_KEY } from "@/screens/landing";
@@ -65,6 +66,7 @@ const router = createRouter([
       { path: "/menu.html", element: <OldMenuLink /> },
       { path: "/welcome", element: <Landing /> },
       { path: "/map", element: <MapScreen /> },
+      { path: "/best", element: <BestScreen /> },
       { path: "/spot/:id", element: <Spot /> },
       { path: "/spots", element: <AllSpots /> },
       { path: "/spots/:file", element: <SpotsFile /> },

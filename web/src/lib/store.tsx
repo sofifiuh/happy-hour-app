@@ -2,7 +2,7 @@ import { asset, queryParams } from "@/lib/routes";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { AREAS, distanceKm, nearestArea, type Area, type LatLng } from "./geo";
 import { occurrence, occurrenceAt } from "./hours";
-import type { Hub, Occurrence, Venue } from "./types";
+import type { BestList, Hub, Occurrence, Venue } from "./types";
 
 const CACHE_KEY = "alh:venues";
 const VERSION_KEY = "alh:venues-version";
@@ -39,6 +39,7 @@ export interface Row {
 interface Store {
   venues: Venue[];
   hubs: Record<string, Hub>; // hub pages by slug, once the network copy arrives
+  best: BestList[]; // best-of lists, once the network copy arrives
   loading: boolean;
   now: Date;
   location: LatLng; // device location, else the neighbourhood (Downtown by default)
@@ -150,6 +151,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [venues, setVenues] = useState<Venue[]>(readCache);
   const [loading, setLoading] = useState(venues.length === 0);
   const [hubs, setHubs] = useState<Record<string, Hub>>({});
+  const [best, setBest] = useState<BestList[]>([]);
   const [now, setNow] = useState(() => new Date());
   const [deviceLocation, setLocation] = useState<LatLng | null>(null);
   const [area, setAreaState] = useState<Area | null>(() => (IS_FRAME ? null : readJSON<Area | null>(AREA_KEY, null)));
@@ -167,10 +169,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   // Cached copy renders instantly; the network copy replaces it only when
   // the pipeline's data_version changed.
   useEffect(() => {
-    fetch(asset("venues.json"), { cache: "no-cache" })
-      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
-      .then(({ data_version, hubs: index, venues: fresh }: { data_version: string; hubs?: Record<string, Hub>; venues: Venue[] }) => {
+    type Data = { data_version: string; hubs?: Record<string, Hub>; best?: BestList[]; venues: Venue[] };
+    const get = (url: string) => fetch(url, { cache: "no-cache" }).then((r) => (r.ok ? (r.json() as Promise<Data>) : Promise.reject(r.status)));
+    get(asset("venues.json"))
+      // A copy cached before a deploy can predate a field (best-of lists
+      // came later): fetch past the CDN and offline caches once.
+      .then((d) => (d.best ? d : get(asset(`venues.json?fresh=${Date.now()}`)).catch(() => d)))
+      .then(({ data_version, hubs: index, best: lists, venues: fresh }) => {
         setHubs(index ?? {});
+        setBest(lists ?? []);
         let cached: string | null = null;
         try {
           cached = localStorage.getItem(VERSION_KEY);
@@ -303,6 +310,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const value: Store = {
     venues,
     hubs,
+    best,
     loading,
     now,
     location,

@@ -1,11 +1,20 @@
 import { Search, SlidersHorizontal, X } from "lucide-react";
+import { useEffect } from "react";
 import { Input } from "@/components/ui/input";
+import { track } from "@/lib/analytics";
 import { useStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 export function SearchBar({ onOpenFilters, className }: { onOpenFilters: () => void; className?: string }) {
   const { filters, setFilters } = useStore();
   const count = filters.amenities.length;
+  // One "search" per pause in typing; the words themselves are never sent.
+  const typed = filters.query.trim().length >= 2;
+  useEffect(() => {
+    if (!typed) return;
+    const t = setTimeout(() => track({ name: "search" }), 1500);
+    return () => clearTimeout(t);
+  }, [filters.query, typed]);
   return (
     <div className={cn("flex items-center gap-2", className)}>
       <label className="relative flex-1">

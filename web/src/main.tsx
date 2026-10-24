@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
+import { startAnalytics } from "./lib/analytics";
 
 const root = document.getElementById("root")!;
 const mount = () =>
@@ -24,6 +25,8 @@ if (staticHero && !staticHero.complete) {
 } else {
   mount();
 }
+
+startAnalytics();
 
 // Offline shell and cached venues (public/sw.js). Production builds only;
 // hosts that don't allow service workers just skip it.

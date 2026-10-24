@@ -1,9 +1,9 @@
 import { absoluteUrl, spotPath } from "@/lib/routes";
 import type { Venue } from "./types";
 
-// Where "Report a wrong time" goes. Placeholder until the support address
-// for the stores (tracker item stor-09) is set up.
-export const SUPPORT_EMAIL = "hello@alittlehang.com";
+// Where "Report a wrong time" and the About page contact go. Jason's address
+// for now; no separate org inbox yet.
+export const SUPPORT_EMAIL = "jason@setsail.ca";
 
 export function reportLink(v: Venue) {
   const subject = `Wrong happy hour info: ${v.name}`;

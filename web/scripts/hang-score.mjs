@@ -28,7 +28,35 @@ const BULK = {
 // Drink-plus-food combos ("Beer & Pho $20") aren't a drink price.
 const COMBO = /\bcombo\b|\bmeal\b|\+|\b(pho|burgers?|wings?|pizzas?|tacos?|fries|nachos|sliders?|ramen|noodles?|sandwich(es)?|vermicelli|rice|grill|hot ?dogs?)\b/i;
 const isCombo = (d) => d.category === "drink" && COMBO.test(`${d.name} ${d.description || ""}`);
-const skip = (d) => BULK.test(d) || isCombo(d);
+// Soft drinks, juice, tea, shakes, energy drinks and alcohol-free beer
+// aren't what a happy hour drink price means, so Value and "drinks from"
+// leave them out. Mixers in a description ("clamato juice", "soda water")
+// don't count when the drink names a spirit, beer, wine or cocktail.
+const NO_ALCOHOL = /non[- ]?alc|alcohol[- ]free|zero[- ]proof|spirit[- ]free|(?<![\d.])0(\.0)? ?%|\bvirgin\b|mocktails?|\bn\/a\b|\bna (beer|lager|cocktail)/i;
+const SOFT = /\bsoft drinks?|\bsodas?\b|\bpop\b|root beer|lemonade|\bteas?\b|milkshakes?|\bshakes?\b|red bull|energy drink|\bjuices?\b|coffee|latte|espresso|kombucha|\bcokes?\b|sprite|ginger ale|lassi|smoothie|slush|refresher|coca[- ]?cola|pepsi|\bwater\b|perrier|pellegrino/i;
+const BOOZE = /vodka|\bgin\b|\brum\b|tequila|whisk|bourbon|\brye\b|mezcal|scotch|brandy|cognac|\bsake\b|soju|\bbeers?\b|lager|\bales?\b|\bipa\b|pilsner|stout|cider|\bwines?\b|prosecco|\bcava\b|champagne|sparkling|spritz|margarita|martini|mojito|negroni|caesar|cocktail|highball|\bwell\b|\bshots?\b|liqueur|limoncello|aperol|campari|vermouth|sangria|mimosa|daiquiri|paloma|\bmule\b|\bsour\b|old fashioned|fire ?ball|baileys|long island|ranch water|bacardi|jameson|cuervo|lot 40|choya|boozy|spiked|\bhard\b|\bspirits?\b|wheat|\babv\b|\b[1-9](\.\d)? ?%|\b[12](\.5)? ?oz\b/i;
+export const isNonAlc = (d) => {
+  if (d.category !== "drink") return false;
+  // "Aperol, Campari … or Fre-Spritz (non-alc)": an alcohol-free option on an alcoholic drink.
+  const text = `${d.name} ${(d.description || "").replace(/\bor\b[^,;]*non[- ]?alc[^,;]*/gi, "")}`;
+  if (NO_ALCOHOL.test(text)) return true;
+  return SOFT.test(text) && !BOOZE.test(text.replace(/root beer|ginger beer|ginger ale|sparkling (lemonade|water|soda|juice)/gi, ""));
+};
+const skip = (d) => BULK.test(d) || isCombo(d) || isNonAlc(d);
+
+// Alcoholic drink deals, the thing a happy hour is for.
+export const hasAlcohol = (v) => v.hh.deals.some((d) => d.category === "drink" && !isNonAlc(d));
+
+// The cheapest priced alcoholic drink (not a bottle, pitcher or combo): { d, p } or null.
+export function cheapestDrink(v) {
+  let best = null;
+  for (const d of v.hh.deals) {
+    if (d.category !== "drink" || skip(d)) continue;
+    const p = dealPrice(d);
+    if (p != null && (!best || p < best.p)) best = { d, p };
+  }
+  return best;
+}
 
 const DRINK_TYPES = [
   ["highball", /highball|\bwell\b|\brail\b|\bshots?\b|\bhi-?ball|spirits?\b|\bbar ?pour/i],
@@ -80,7 +108,7 @@ function windowMinutes(start, end) {
   return len > 0 ? len : len + 24 * 60;
 }
 
-function hoursFacts(v) {
+export function hoursFacts(v) {
   const wins = [{ days: v.hh.days, start: v.hh.start, end: v.hh.end }, ...v.hh.extra];
   let minutes = 0;
   const days = new Set();
@@ -139,9 +167,10 @@ export function addHangScores(venues) {
     const value = sum / weight + (cheapest < Infinity ? Math.max(0, (9 - cheapest) / 12) : 0) + Math.min(discounts, 3) * 0.03;
 
     // Selection: deal count (to 14), kinds of drink (of 4), and food alongside drinks.
-    const drinks = v.hh.deals.filter((d) => d.category === "drink");
+    const drinks = v.hh.deals.filter((d) => d.category === "drink" && !isNonAlc(d));
     const food = v.hh.deals.filter((d) => d.category === "food");
     const kinds = new Set(drinks.filter((d) => !isCombo(d)).map(dealType));
+    // (drinks here and below are alcoholic ones; see isNonAlc)
     const selection = 0.5 * Math.min(v.hh.deals.length, 14) / 14 + 0.25 * kinds.size / 4 + 0.25 * (drinks.length && food.length ? 1 : drinks.length ? 0.5 : 0.3);
 
     // Hours: weekly minutes on a log scale, plus weekends and a late-night window.

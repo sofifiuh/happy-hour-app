@@ -12,12 +12,14 @@ export default function DesktopMap({
   selected,
   hovered,
   onSelect,
+  ranked,
 }: {
   rows: Row[];
   now: Date;
   selected: string | null;
   hovered: string | null;
   onSelect: (id: string | null) => void;
+  ranked?: boolean;
 }) {
   const mappable = useMemo(() => rows.filter((r) => r.venue.lat != null && r.venue.lng != null), [rows]);
   const picked = selected ? mappable.find((r) => r.venue.id === selected) : undefined;
@@ -27,6 +29,7 @@ export default function DesktopMap({
       selected={selected}
       hovered={hovered}
       onSelect={onSelect}
+      ranked={ranked}
       locateClassName="bottom-5"
       popover={
         picked && (

@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
-import { Link } from "react-router";
+import { useEffect, type ReactNode } from "react";
+import { Link, useLocation } from "react-router";
 import { PageHeader } from "@/components/page-header";
 import { Wordmark } from "@/components/wordmark";
 import { SUPPORT_EMAIL } from "@/lib/links";
@@ -12,6 +12,11 @@ const TITLES: Record<InfoPage, string> = { about: "About", privacy: "Privacy", t
 // Plain-language about, privacy and terms pages, linked from the list.
 export function Info({ page }: { page: InfoPage }) {
   useTitle(TITLES[page]);
+  // In-app links like /about#hang-score don't scroll on their own.
+  const { hash } = useLocation();
+  useEffect(() => {
+    if (hash) document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView({ block: "start" });
+  }, [hash]);
   return (
     <main className="mx-auto min-h-dvh max-w-2xl pb-16">
       <PageHeader title={TITLES[page]} />
@@ -57,6 +62,51 @@ function About() {
         A Little Hang shows you which Vancouver bars and restaurants have happy hour on right now, what's starting soon, and what the deals
         are, so you can pick a spot in seconds.
       </p>
+      <H>Why we made it</H>
+      <blockquote className="space-y-3 border-l-2 border-orange pl-4">
+        <p>
+          I've run Setsail Marketing for the past ten years, and the best parts have been the times spent with people: travelling, trying
+          new places, and sharing a good time with friends and strangers alike.
+        </p>
+        <p>
+          I've never seen anything bring people together like a good happy hour. It's easy on the wallet, so it works for people from
+          every side of the planet and every background. But there was nothing out there that helped you find a good hangout spot without
+          spending a fortune on a night out. So we set out to find the best happy hours and hangout spots in Vancouver, and put them in one
+          place.
+        </p>
+        <p>
+          What I hope it does is simple: a livelier city and a livelier community, with more people getting together, more conversations,
+          more good laughs and more good moments. There's nothing more precious than happy time spent with loved ones, friends and
+          strangers, wherever it happens.
+        </p>
+        <footer className="text-[13px] text-muted-foreground">Jason, founder</footer>
+      </blockquote>
+      <H>Who it's for</H>
+      <p>
+        Anyone who wants a good time with people without a big bill: friends picking a spot after work, newcomers and visitors getting to
+        know the city, couples and families after an easy evening out. It's free, there's no account, and you'll know where to go in
+        seconds. For venues it's free too: every listing comes from your own menu and links back to your site.
+      </p>
+      <H>The people behind it</H>
+      <div className="grid gap-3 sm:grid-cols-2">
+        <Person
+          id="jason"
+          initial="J"
+          tone="bg-orange"
+          name="Jason"
+          role="Founder"
+          bio="Founder of Setsail Marketing, which he's run for ten years. Loves travelling and a good time with people, wherever he is."
+        />
+        <Person
+          id="sofia"
+          initial="S"
+          tone="bg-sky"
+          name="Sofia Alvarenga"
+          role="Designer"
+          bio="A product designer for many years. She designed how A Little Hang looks and works, from the first screen to the last tap."
+        />
+      </div>
+      <p className="mt-3">Jason and Sofia are married, and built A Little Hang together.</p>
       <H>Where the times come from</H>
       <p>
         We read happy hour times and deals from each venue's own website: their happy hour page, a menu PDF, or a photo of the menu. A
@@ -65,7 +115,7 @@ function About() {
         menu by a person. Times change, so if something looks off, tap "Report a wrong time" on the spot's page and we'll fix it.
       </p>
       <H>
-        <span id="hang-score">How the Hangout Score works</span>
+        <span id="hang-score" className="block scroll-mt-20">How the Hangout Score works</span>
       </H>
       <p>
         Every happy hour with enough deal info gets a Hangout Score out of 10. It's worked out from what's on the spot's page, the same way
@@ -92,15 +142,32 @@ function About() {
         listed deals show no score until we have their menu.
       </p>
       <H>Made in Vancouver</H>
-      <p>Designed by Sofia. Built for people who like a deal and a good patio.</p>
+      <p>Built for people who like a deal, a good patio and good company.</p>
     </>
+  );
+}
+
+function Person({ id, initial, tone, name, role, bio }: { id: string; initial: string; tone: string; name: string; role: string; bio: string }) {
+  return (
+    <section id={id} className="scroll-mt-20 rounded-2xl bg-ink-2 p-4">
+      <div className="flex items-center gap-3">
+        <span aria-hidden className={`grid size-11 place-items-center rounded-full font-display text-[19px] font-bold text-on-pop ${tone}`}>
+          {initial}
+        </span>
+        <div>
+          <h3 className="font-display text-[17px] font-bold leading-tight text-cream">{name}</h3>
+          <p className="text-[13px] text-muted-foreground">{role}</p>
+        </div>
+      </div>
+      <p className="mt-3 text-[14px]">{bio}</p>
+    </section>
   );
 }
 
 function Privacy() {
   return (
     <>
-      <p className="mt-2">The short version: we don't have accounts, and what you do in the app stays on your device.</p>
+      <p className="mt-2">The short version: we don't have accounts, your location and saved spots stay on your device, and our analytics is cookieless and anonymous.</p>
       <H>Location</H>
       <p>
         If you allow it, your location is used on your device to sort spots by walking distance. It isn't sent to us or stored. You can
@@ -113,9 +180,15 @@ function Privacy() {
       </p>
       <H>Usage data</H>
       <p>
-        We don't use analytics, advertising or tracking tools. If we ever add anonymous usage counts to improve the app, this page
-        will say which tool and what it collects before it's switched on.
+        We use PostHog for cookieless, privacy-friendly analytics, so we can see which features help and fix what doesn't. It sets no
+        cookies, stores no identifier on your device, records no sessions or screens, and we don't use it for advertising.
       </p>
+      <p className="mt-3">What we count: pages viewed, and a few actions such as searching (not what you typed), turning on a filter,
+        opening a venue, saving, sharing, asking for directions and installing the app. Like any web request, these reach PostHog's
+        servers in the US with your browser type and IP address, which PostHog uses for a rough location. We don't collect your name,
+        email, precise location or anything you type.</p>
+      <p className="mt-3">If your browser sends Do Not Track, analytics stays off. We don't use any other analytics, advertising or
+        tracking tools.</p>
       <H>Links to other sites</H>
       <p>Venue websites, maps and phone links open other services, which have their own privacy policies.</p>
     </>

@@ -76,7 +76,7 @@ export function ScoreCard({ score }: { score: HangScore }) {
           </li>
         ))}
       </ul>
-      <Link to="/about" className="mt-3 inline-flex min-h-11 items-center text-[13px] font-semibold text-orange-fg underline-offset-4 hover:underline">
+      <Link to="/about#hang-score" className="mt-3 inline-flex min-h-11 items-center text-[13px] font-semibold text-orange-fg underline-offset-4 hover:underline">
         How we score
       </Link>
     </div>
