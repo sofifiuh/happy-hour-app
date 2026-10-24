@@ -1721,7 +1721,7 @@ ${topics.map((t) => linkLine(t, t.label)).join("\n")}
 - [Sitemap](${BASE}/sitemap.xml)
 `,
 );
-write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /screens\n\nSitemap: ${BASE}/sitemap.xml\n`);
+write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /screens\nDisallow: /venue\n\nSitemap: ${BASE}/sitemap.xml\n`);
 const cname = resolve(web, "../CNAME");
 if (existsSync(cname)) copyFileSync(cname, resolve(dist, "CNAME"));
 writeFileSync(resolve(dist, ".nojekyll"), "");
