@@ -7,6 +7,8 @@
 //                            place + topic), static HTML without the app
 //   happy-hour/<place>/best/ best-of lists ranked by Hangout Score, and
 //   happy-hour/best/         Metro Vancouver's (static, like the hubs)
+//   happy-hour-index/        price index (medians, cheapest, by place) + data.csv
+//   badge/<id>.svg|-light.svg venue badges, badge/<id>/ embed page (noindex)
 //   spots/index.html         A–Z of every venue
 //   og/<id>.jpg              1200×630 share card per venue
 //   map/, saved/, about/, privacy/, terms/, welcome/, menu.html, 404.html
@@ -20,10 +22,12 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import opentype from "opentype.js";
 import sharp from "sharp";
-import { fmtRange } from "../src/lib/hours.ts";
+import { fmtRange, fmtTime } from "../src/lib/hours.ts";
 import { dayRuns, dealPhrase, fmtDate, money, nearby, parsePrice, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
 import { AREAS, BEST_FLOOR, BEST_FRESH_DAYS, bestPath, buildHubs, hubPath } from "./seo-data.mjs";
 import { cheapestDrink, hoursFacts, isNonAlc, WEIGHTS } from "./hang-score.mjs";
+import { buildIndex, cheapestOf, KINDS, MIN_SAMPLE } from "./price-index.mjs";
+import { BADGE_H, badgeSvg, badgeText, TOP_SCORE } from "./badges.mjs";
 
 const BASE = "https://alittlehang.com";
 const SITE = "A Little Hang";
@@ -536,6 +540,32 @@ a:focus-visible{outline:2px solid var(--orange)}
 .method{margin:0;padding-left:20px;max-width:62ch}
 .method li{margin:4px 0}
 .open{display:inline-flex;align-items:center;min-height:44px;margin-top:16px;padding:0 18px;border-radius:999px;background:var(--ink-2);text-decoration:none;font-weight:600;font-size:14px}
+.stats{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(7rem,1fr));gap:10px}
+.stats li{display:flex;flex-direction:column;gap:2px;padding:14px 16px;border-radius:20px;background:var(--ink-2)}
+.stats b{font:800 34px/1 "Funnel Display",system-ui,sans-serif;letter-spacing:-.02em;color:var(--lime);font-variant-numeric:tabular-nums}
+.stats span{font-weight:600;margin-top:6px}
+.stats small{color:var(--dim);font-size:13px}
+.cheaplists{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:4px 24px}
+.cheaplists h3{margin:16px 0 6px}
+.cheap{list-style:none;padding:0;margin:0}
+.cheap li{padding:6px 0;border-bottom:1px solid var(--line);font-size:15px}
+.cheap b{color:var(--pink);font-variant-numeric:tabular-nums;margin-right:4px}
+.cheap span{display:block;color:var(--dim);font-size:13px}
+.tablewrap{overflow-x:auto;border-radius:20px;background:var(--ink-2);margin:12px 0 0}
+.tablewrap table{border-collapse:collapse;width:100%;min-width:34rem;font-size:15px;font-variant-numeric:tabular-nums}
+.tablewrap caption{text-align:left;padding:14px 16px 4px;color:var(--dim);font-size:13px}
+.tablewrap th,.tablewrap td{text-align:right;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+.tablewrap th[scope=row],.tablewrap thead th:first-child{text-align:left;padding-left:16px}
+.tablewrap thead th{font-size:12px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+.tablewrap tr:last-child>*{border-bottom:0}
+.tablewrap td small{display:block;color:var(--dim);font-size:11px}
+.tablewrap td.low{color:var(--lime);font-weight:700}
+.tablewrap td.na{color:var(--dim)}
+.cite{margin:6px 0 0;padding:12px 14px;border-radius:14px;background:var(--ink-2);overflow-x:auto;font-size:13px;line-height:1.5;white-space:pre-wrap;word-break:break-all}
+.badgeprev{display:flex;padding:24px;border-radius:20px;margin:12px 0 0}
+.badgeprev.dark{background:#2f2d2b}
+.badgeprev.light{background:#f5f1e7}
+.badgeprev img{max-width:100%;height:auto}
 `;
 write("hub.css", HUB_CSS);
 const cssHash = createHash("sha1").update(HUB_CSS).digest("hex").slice(0, 8);
@@ -590,7 +620,7 @@ ${script ? `    <script type="module" src="${script}"></script>\n` : ""}  </body
 function footerHtml() {
   const cities = places.filter((p) => p.kind === "city");
   return `<footer>
-<ul class="chips">${cities.map((c) => `<li><a href="${hubPath(c.slug)}">${esc(c.name)}</a></li>`).join("")}${bestBySlug.has("metro") ? `<li><a href="${bestPath("metro")}">Best happy hours, ranked</a></li>` : ""}<li><a href="/spots/">All spots A–Z</a></li><li><a href="/about/">About</a></li></ul>
+<ul class="chips">${cities.map((c) => `<li><a href="${hubPath(c.slug)}">${esc(c.name)}</a></li>`).join("")}${bestBySlug.has("metro") ? `<li><a href="${bestPath("metro")}">Best happy hours, ranked</a></li>` : ""}<li><a href="/happy-hour-index/">Happy hour prices</a></li><li><a href="/spots/">All spots A–Z</a></li><li><a href="/about/">About</a></li></ul>
 <p>Times and deals come from each venue's own menu and are re-checked every night. Something wrong? Tell us from the venue's page.</p>
 </footer>`;
 }
@@ -1137,6 +1167,196 @@ for (const b of bestLists) {
   hubCount++;
 }
 
+// ---------- happy hour index ----------
+// /happy-hour-index/: what a happy hour pint, glass of wine, cocktail,
+// highball and oyster cost across Metro Vancouver (scripts/price-index.mjs),
+// with the method and a CSV, for writers and anyone else to cite.
+const INDEX_PATH = "/happy-hour-index/";
+// When the index first went up, for the Dataset's datePublished.
+const INDEX_PUBLISHED = "2026-10-24";
+const ix = buildIndex(venues, places);
+const kindByKey = Object.fromEntries(KINDS.map((k) => [k.key, k]));
+const fmtMoney = (n) => money(Math.round(n * 100) / 100);
+const medianOf = (st, key) => (st[key].n >= MIN_SAMPLE ? fmtMoney(st[key].median) : null);
+const placeWhere = (v) => whereLabel(v) || v.city || "";
+// "$4 at Harry's Fish & Chips (Delta)"
+const cheapLine = (r) => `${fmtMoney(r.p)} at ${r.v.name} (${placeWhere(r.v)})`;
+// Three cheapest, one per venue already (one price per venue per kind).
+const cheapest3 = (key) => ix.all[key].rows.slice(0, 3);
+
+function indexFaq() {
+  const a = ix.all;
+  const qs = [];
+  const ask = (key, q) => {
+    if (!a[key].n) return;
+    const [c] = cheapest3(key);
+    qs.push({ q, a: `${fmtMoney(a[key].median)} is the median across the ${a[key].n} Metro Vancouver happy hours with a fixed ${kindByKey[key].short} price. The cheapest is ${cheapLine(c)}.` });
+  };
+  ask("pint", "How much is a happy hour pint in Vancouver?");
+  ask("wine", "How much is a glass of wine at happy hour in Vancouver?");
+  ask("cocktail", "How much is a happy hour cocktail in Vancouver?");
+  ask("oyster", "Where are the cheapest happy hour oysters in Vancouver?");
+  const priced = ix.cities.filter((c) => medianOf(c.stats, "pint"));
+  const low = Math.min(...priced.map((c) => c.stats.pint.median));
+  const cheapCities = priced.filter((c) => c.stats.pint.median === low);
+  if (cheapCities.length) qs.push({ q: "Which city in Metro Vancouver has the cheapest happy hour beer?", a: `${cheapCities.map((c) => c.name).join(" and ")}, where the median happy hour pint is ${fmtMoney(low)}${cheapCities.length === 1 ? ` across ${cheapCities[0].stats.pint.n} spots` : ""}, against ${fmtMoney(ix.all.pint.median)} for Metro Vancouver as a whole. Only cities with ${MIN_SAMPLE} or more priced spots are compared.` });
+  const hhmm = ix.facts.topStart ? fmtTime(ix.facts.topStart) : null;
+  if (hhmm) qs.push({ q: "When does happy hour usually start in Vancouver?", a: `${hhmm} is the most common start (${ix.facts.topStartCount} of ${ix.venues} spots). ${ix.facts.everyDay} run happy hour every day, ${ix.facts.weekend} on at least one weekend day, and ${ix.facts.lateNight} have a late-night window starting at 8pm or later.` });
+  return qs;
+}
+
+const csvCell = (s) => (s == null ? "" : /[",\n]/.test(String(s)) ? `"${String(s).replace(/"/g, '""')}"` : String(s));
+function indexCsv() {
+  const head = ["venue", "city", "neighbourhood", "url", ...KINDS.map((k) => `${k.key}_cad`), "times_confirmed"];
+  const rows = venues
+    .filter((v) => v.confidence !== "low")
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((v) => [v.name, v.city, v.area?.name ?? "", `${BASE}/spots/${v.id}.html`, ...KINDS.map((k) => cheapestOf(v, k)?.p ?? ""), v.confirmed ?? ""]);
+  return [head, ...rows].map((r) => r.map(csvCell).join(",")).join("\n") + "\n";
+}
+
+async function indexPage() {
+  const url = BASE + INDEX_PATH;
+  const asOf = newest(venues);
+  const h1 = `Vancouver Happy Hour Index (${YEAR})`;
+  const a = ix.all;
+  const head = ["pint", "wine", "cocktail"].filter((k) => a[k].n).map((k) => `${kindByKey[k].short} ${fmtMoney(a[k].median)}`);
+  const title = fitTitle(`Vancouver Happy Hour Prices (${YEAR}): Pint, Wine, Cocktails | ${SITE}`, `Vancouver Happy Hour Prices (${YEAR}) | ${SITE}`);
+  let description = `What happy hour costs in Metro Vancouver: median ${head.join(", ")}, from ${ix.venues} venues' own menus. Cheapest spots, prices by city and the data.`;
+  if (description.length > 160) description = description.replace(/ Cheapest spots.*$/, "");
+  const faq = indexFaq();
+  const crumbs = [{ name: "Happy hours", path: "/" }, { name: "Happy Hour Index" }];
+  mkdirSync(resolve(dist, "og"), { recursive: true });
+  copyFileSync(await renderCard({ id: "happy-hour-index", title: h1, line: `Median ${head.join(" · ")}`, photo: null }), resolve(dist, "og", "happy-hour-index.jpg"));
+  const image = { url: `${BASE}/og/happy-hour-index.jpg`, alt: `${h1}: median ${head.join(", ")}` };
+  write("happy-hour-index/data.csv", indexCsv());
+  const jsonld = {
+    "@context": "https://schema.org",
+    "@graph": [
+      ...SITE_GRAPH,
+      { "@type": "WebPage", "@id": url, url, name: h1, description, isPartOf: { "@id": WEBSITE_ID }, mainEntity: { "@id": `${url}#dataset` }, breadcrumb: { "@id": `${url}#breadcrumb` }, ...(asOf ? { dateModified: asOf } : {}), inLanguage: "en-CA", primaryImageOfPage: { "@type": "ImageObject", url: image.url, width: 1200, height: 630 } },
+      {
+        "@type": "Dataset",
+        "@id": `${url}#dataset`,
+        name: `${h1}: happy hour prices in Metro Vancouver`,
+        description: `Each venue's cheapest fixed happy hour price for a pint of beer, a glass of wine, a cocktail, a highball and an oyster, read from the menus of ${ix.venues} bars and restaurants in Metro Vancouver, BC, and re-checked nightly. Prices in Canadian dollars.`,
+        url,
+        creator: { "@id": ORG_ID },
+        publisher: { "@id": ORG_ID },
+        license: "https://creativecommons.org/licenses/by/4.0/",
+        isAccessibleForFree: true,
+        datePublished: INDEX_PUBLISHED,
+        ...(asOf ? { dateModified: asOf, temporalCoverage: `${asOf}/${asOf}` } : {}),
+        spatialCoverage: { "@type": "Place", name: "Metro Vancouver, British Columbia, Canada" },
+        variableMeasured: KINDS.map((k) => ({ "@type": "PropertyValue", name: `${k.label} (${k.note})`, unitText: "CAD" })),
+        distribution: [{ "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `${url}data.csv` }],
+        keywords: ["happy hour", "Vancouver", "drink prices", "beer prices", "cost of living"],
+      },
+      breadcrumb(url, crumbs),
+      faqPage(url, faq),
+    ],
+  };
+  const statCells = KINDS.filter((k) => a[k.key].n)
+    .map((k) => `<li><b>${fmtMoney(a[k.key].median)}</b><span>${esc(k.label)}</span><small>${esc(k.note)} · ${a[k.key].n} spots</small></li>`)
+    .join("");
+  const cheapLists = KINDS.filter((k) => a[k.key].n)
+    .map(
+      (k) =>
+        `<div><h3>${esc(k.label)}</h3><ol class="cheap">${cheapest3(k.key)
+          .map((r) => `<li><b>${fmtMoney(r.p)}</b> <a href="/spots/${r.v.id}.html">${esc(r.v.name)}</a> <span>${esc(placeWhere(r.v))} · ${esc(r.d.name)}</span></li>`)
+          .join("")}</ol></div>`,
+    )
+    .join("\n");
+  const cols = KINDS.filter((k) => k.key !== "oyster");
+  // Lowest median in each column, for the highlight.
+  const table = (all, label) => {
+    // Places with no column over MIN_SAMPLE would be a row of dashes.
+    const rows = all.filter((r) => cols.some((k) => medianOf(r.stats, k.key)));
+    const low = Object.fromEntries(cols.map((k) => [k.key, Math.min(...rows.map((r) => (medianOf(r.stats, k.key) ? r.stats[k.key].median : Infinity)))]));
+    return `<div class="tablewrap"><table><caption>${esc(label)}</caption><thead><tr><th scope="col">Where</th><th scope="col">Spots</th>${cols.map((k) => `<th scope="col">${esc(k.label)}</th>`).join("")}</tr></thead><tbody>${rows
+      .map(
+        (r) =>
+          `<tr><th scope="row"><a href="${hubPath(r.slug)}">${esc(r.name)}</a></th><td>${r.count}</td>${cols
+            .map((k) => {
+              const m = medianOf(r.stats, k.key);
+              return m ? `<td${r.stats[k.key].median === low[k.key] ? ' class="low"' : ""}>${m}<small>${r.stats[k.key].n}</small></td>` : `<td class="na" title="Fewer than ${MIN_SAMPLE} priced spots">–</td>`;
+            })
+            .join("")}</tr>`,
+      )
+      .join("")}</tbody></table></div>`;
+  };
+  const cite = `<a href="${url}">${h1}, ${SITE}</a>`;
+  const body = `<nav class="crumbs" aria-label="Breadcrumb">${crumbs.map((c, i) => (i < crumbs.length - 1 ? `<a href="${c.path}">${esc(SITE)}</a>` : `<span>${esc(c.name)}</span>`)).join(" › ")}</nav>
+<h1>${esc(h1)}</h1>
+<p class="byline">By the <a href="/about">${SITE} team</a>${asOf ? ` · Data as of <time datetime="${asOf}">${esc(fmtDate(asOf))}</time>` : ""} · ${ix.venues} venues, ${ix.deals.toLocaleString("en-CA")} deals</p>
+<p class="lede">What happy hour actually costs in Metro Vancouver right now. We read the happy hour menu of every bar and restaurant we track, re-check each one every night, and take each venue's cheapest fixed price for the five things people order most. These are the medians: half the spots charge less, half charge more.</p>
+<ul class="stats">${statCells}</ul>
+<h2>The cheapest right now</h2>
+<div class="cheaplists">${cheapLists}</div>
+<h2>Prices by city</h2>
+<p class="meta">Median happy hour price per city; the small number is how many spots it's based on. The lowest in each column is highlighted. A dash means fewer than ${MIN_SAMPLE} spots list that price.</p>
+${table(ix.cities, "Median happy hour prices by city, Metro Vancouver")}
+<h2>Prices by Vancouver neighbourhood</h2>
+${table(ix.areas, "Median happy hour prices by neighbourhood, City of Vancouver")}
+<h2>When happy hour happens</h2>
+<ul class="method">
+<li><b>${ix.facts.topStart ? esc(fmtTime(ix.facts.topStart)) : ""}</b> is the most common start time (${ix.facts.topStartCount} spots).</li>
+<li><b>${ix.facts.everyDay}</b> of ${ix.venues} spots run happy hour every day of the week, and <b>${ix.facts.weekend}</b> on at least one weekend day (<a href="${hubPath("weekend")}">weekend happy hours</a>).</li>
+<li><b>${ix.facts.lateNight}</b> have a late-night window starting at 8pm or later (<a href="${hubPath("late-night")}">late-night happy hours</a>).</li>
+</ul>
+<h2>How we worked it out</h2>
+<ul class="method">
+<li>Every price comes from the venue's own website, menu PDF or menu photo, linked from its page on ${SITE}. Menus are re-checked every night, and this page updates with them.</li>
+<li>Each venue counts once per drink or dish: its cheapest fixed happy hour price for it. A bar listing ten cheap beers counts as one.</li>
+<li>Discounts without a final price ("$2 off"), prices per ounce, bottles, pitchers, food-and-drink combos and alcohol-free drinks are left out. A pint is 14 to 20oz; a glass of wine is a full pour, not a 3oz taste; an oyster over $6 is a plate and is left out.</li>
+<li>Spots whose times we couldn't confirm (${venues.length - ix.venues} of ${venues.length}) are left out.</li>
+<li>Prices are in Canadian dollars, before tax and tip.</li>
+</ul>
+<h2>Use this data</h2>
+<p class="lede">You're welcome to quote, chart or republish these numbers. Please credit ${SITE} and link to this page. The data is under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>.</p>
+<ul class="chips"><li><a href="${INDEX_PATH}data.csv">Download the venue-level CSV</a></li><li><a href="/about/">About ${SITE}</a></li></ul>
+<p class="meta">Link to cite:</p>
+<pre class="cite"><code>${esc(cite)}</code></pre>
+<p class="meta">Need a different cut (one neighbourhood, late night only, food prices)? Email <a href="mailto:jason@setsail.ca">jason@setsail.ca</a>.</p>
+<h2>Questions</h2>
+<div class="faq">${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("")}</div>`;
+  write(`${INDEX_PATH.slice(1)}index.html`, hubDoc({ path: INDEX_PATH, title, description, jsonld, body, image }));
+  sitemapDates.set(INDEX_PATH, asOf);
+}
+await indexPage();
+
+// ---------- venue badges ----------
+// badge/<id>.svg (dark), badge/<id>-light.svg, and badge/<id>/ with a
+// preview and the embed code (scripts/badges.mjs). The pages are for venue
+// owners following "Get your badge", so they stay out of search.
+function badgePage(v, says) {
+  const path = `/badge/${v.id}/`;
+  const embed = (theme) => `<a href="${BASE}/spots/${v.id}.html"><img src="${BASE}/badge/${v.id}${theme === "light" ? "-light" : ""}.svg" alt="${esc(says.alt)}" height="${BADGE_H}" loading="lazy"></a>`;
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">${SITE}</a> › <a href="/spots/${v.id}.html">${esc(v.name)}</a> › <span>Badge</span></nav>
+<h1>Badge for ${esc(v.name)}</h1>
+<p class="lede">Add this badge to your website so guests can check your happy hour times and deals on ${SITE}. It's free, and it updates on its own: it shows your rank if you're on a best-of list, or your Hangout Score if it's ${TOP_SCORE} or higher.</p>
+<div class="badgeprev dark"><img src="/badge/${v.id}.svg" alt="${esc(says.alt)}" height="${BADGE_H}"></div>
+<p class="meta">For light backgrounds:</p>
+<div class="badgeprev light"><img src="/badge/${v.id}-light.svg" alt="${esc(says.alt)}" height="${BADGE_H}"></div>
+<h2>Embed code</h2>
+<p class="meta">Paste this where you'd like the badge, for example next to your happy hour menu. Dark version:</p>
+<pre class="cite"><code>${esc(embed("dark"))}</code></pre>
+<p class="meta">Light version:</p>
+<pre class="cite"><code>${esc(embed("light"))}</code></pre>
+<h2>Good to know</h2>
+<ul class="method">
+<li>Your listing, score and rank never depend on adding the badge, and no venue can pay for them. <a href="/about/#hang-score">How the Hangout Score works</a>.</li>
+<li>Times or deals out of date? Update your own menu page and we'll pick it up on the next nightly check, or email <a href="mailto:jason@setsail.ca">jason@setsail.ca</a>.</li>
+</ul>`;
+  write(`badge/${v.id}/index.html`, hubDoc({ path, title: `${v.name} badge | ${SITE}`, description: `A free "find our happy hour on ${SITE}" badge for ${v.name}'s website.`, jsonld: { "@context": "https://schema.org", "@graph": SITE_GRAPH }, body, image: { url: `${BASE}/og/${v.id}.jpg`, alt: v.name }, robots: "noindex,follow" }));
+}
+for (const v of venues) {
+  const says = badgeText(v, rankOf(v));
+  write(`badge/${v.id}.svg`, badgeSvg(says, { faces, logo }));
+  write(`badge/${v.id}-light.svg`, badgeSvg(says, { faces, logo, theme: "light" }));
+  badgePage(v, says);
+}
+
 // ---------- venue pages ----------
 mkdirSync(resolve(dist, "og"), { recursive: true });
 let n = 0;
@@ -1243,6 +1463,7 @@ const exploreHtml = `<h2 style="${S.h2}">Vancouver neighbourhoods</h2><nav>${pla
   .map((p) => `<a href="${hubPath(p.slug)}" style="${S.chip}">${esc(p.name)}</a>`)
   .join("")}</nav>
 <h2 style="${S.h2}">Best happy hours, ranked</h2><nav>${bestLists.map((b) => `<a href="${bestPath(b.slug)}" style="${S.chip}">${esc(b.kind === "metro" ? "All of Metro Vancouver" : b.name)}</a>`).join("")}</nav>
+<h2 style="${S.h2}">What happy hour costs</h2><nav><a href="/happy-hour-index/" style="${S.chip}">Vancouver Happy Hour Index</a></nav>
 <h2 style="${S.h2}">By day and deal</h2><nav>${topics.map((t) => `<a href="${hubPath(t.slug)}" style="${S.chip}">${esc(t.label)}</a>`).join("")}</nav>`;
 
 const HOME_DESC = `Live happy hour times and deals from ${venues.length} Vancouver bars and restaurants, checked against their own menus every night.`;
@@ -1334,6 +1555,8 @@ ${places.filter((p) => p.kind === "city").map((p) => linkLine(p, `Happy hours in
 ## Vancouver neighbourhoods
 ${places.filter((p) => p.kind === "area").map((p) => linkLine(p, `Happy hours in ${p.name}`)).join("\n")}
 
+## Prices
+- [Vancouver Happy Hour Index](${BASE}/happy-hour-index/): median happy hour ${KINDS.filter((k) => ix.all[k.key].n).map((k) => `${k.short} ${money(Math.round(ix.all[k.key].median * 100) / 100)}`).join(", ")} across Metro Vancouver, cheapest spots and prices by city ([CSV](${BASE}/happy-hour-index/data.csv))
 ## Best happy hours, ranked by Hangout Score
 ${bestLists.filter((b) => b.index).map((b) => `- [${bestH1(b)}](${BASE}${bestPath(b.slug)}): #1 ${b.venues[0].name} (${b.venues[0].score.total.toFixed(1)}/10)`).join("\n")}
 
