@@ -264,7 +264,11 @@ let merged = loadSeed().map((v) => {
   if (!sp) return v;
   const official = (p) => ({ url: p.url, credit_name: v.name, credit_url: p.page, source: "official_website" });
   const swap = sp.cover && (sp.cover_problem || !v.cover_image?.url || v.cover_image.source === "google_places");
-  const cover = swap ? official(sp.cover) : v.cover_image;
+  // review-photos.js can reject a cover the pixel checks passed (a flyer, a
+  // staff portrait); with nothing to swap in, it goes, and the Places
+  // backfill or the gallery stands in.
+  const drop = !swap && String(sp.cover_problem || "").startsWith("review:");
+  const cover = swap ? official(sp.cover) : drop ? null : v.cover_image;
   const seen = new Set([cover?.url]);
   const photos = [...(v.photos || []), ...(swap ? [] : sp.cover ? [official(sp.cover)] : []), ...sp.gallery.map(official)].filter((p) => p?.url && !seen.has(p.url) && seen.add(p.url));
   return { ...v, cover_image: cover, photos };
