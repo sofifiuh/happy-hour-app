@@ -214,6 +214,12 @@ export function googleReviewsLink(v: Venue) {
   return `https://www.google.com/maps/search/?api=1&query=${q}${v.placeId ? `&query_place_id=${encodeURIComponent(v.placeId)}` : ""}`;
 }
 
+// "The Greek by Anatoli — Yaletown (Mainland)" -> "The Greek by Anatoli":
+// Reddit matches every word, so branch names and city leave few results.
+export function redditName(v: Venue) {
+  return v.name.replace(/\s*\([^)]*\)/g, "").split(/\s+[—–-]\s+/)[0].trim() || v.name;
+}
+
 export function redditLink(v: Venue) {
-  return `https://www.reddit.com/search/?q=${encodeURIComponent(`${v.name} happy hour ${v.city || "Vancouver"}`)}`;
+  return `https://www.reddit.com/search/?q=${encodeURIComponent(`${redditName(v)} happy hour`)}`;
 }

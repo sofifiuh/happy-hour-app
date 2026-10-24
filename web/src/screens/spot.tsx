@@ -20,7 +20,7 @@ import { goBack } from "@/lib/motion";
 import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
-import { dayRuns, googleReviewsLink, nearby, redditLink, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
+import { dayRuns, googleReviewsLink, nearby, redditLink, redditName, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
 import { track } from "@/lib/analytics";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
@@ -370,7 +370,7 @@ export function Spot() {
         <p className="mb-3 text-[14px] text-muted-foreground">See what locals say about the {venue.name} happy hour.</p>
         <ul className="rounded-[22px] bg-ink-2 px-4">
           {[
-            { href: redditLink(venue), icon: MessageCircle, label: "Search Reddit", sub: `“${venue.name} happy hour”`, ext: true, kind: "reddit" },
+            { href: redditLink(venue), icon: MessageCircle, label: "Search Reddit", sub: `“${redditName(venue)} happy hour”`, ext: true, kind: "reddit" },
             { href: googleReviewsLink(venue), icon: Star, label: "Read Google reviews", sub: "Opens Google Maps", ext: true, kind: "google" },
             { href: tipLink(venue), icon: Lightbulb, label: "Been here? Send us a tip", sub: "Best deal, busy times, what to skip", ext: false, kind: "tip" },
           ].map((l) => (
@@ -385,7 +385,10 @@ export function Spot() {
                   <l.icon className="size-4" />
                 </span>
                 <span className="min-w-0 flex-1">
-                  <span className="block text-[15px] font-semibold">{l.label}</span>
+                  <span className="block text-[15px] font-semibold">
+                    {l.label}
+                    {l.ext && <span className="sr-only"> (opens in a new tab)</span>}
+                  </span>
                   <span className="block truncate text-[13px] text-muted-foreground">{l.sub}</span>
                 </span>
                 {l.ext ? <ExternalLink className="size-4 shrink-0 text-muted-foreground" /> : <ChevronDown className="size-4 shrink-0 -rotate-90 text-muted-foreground" />}
@@ -397,7 +400,7 @@ export function Spot() {
 
       {/* Location */}
       {venue.lat != null && venue.lng != null && (
-        <section style={{ "--i": 4 } as CSSProperties} className="animate-rise mt-8 px-5">
+        <section style={{ "--i": 5 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Find us here</h2>
           <button onClick={openDirections} className="block w-full overflow-hidden rounded-[22px] bg-ink-2 text-left">
             <MiniMap lat={venue.lat} lng={venue.lng} others={near as { lat: number; lng: number }[]} className="h-[170px] w-full" />
@@ -425,13 +428,13 @@ export function Spot() {
 
       {/* About, nearby, more hubs, questions: the same words the static page
           carries (scripts/prerender.mjs), so search sees one page. */}
-      <section style={{ "--i": 5 } as CSSProperties} className="animate-rise mt-8 px-5">
+      <section style={{ "--i": 6 } as CSSProperties} className="animate-rise mt-8 px-5">
         <h2 className="mb-2 font-display text-[20px] font-bold tracking-tight">About {venue.name}</h2>
         <p className="text-[15px] leading-relaxed text-muted-foreground">{venueAbout(venue)}</p>
       </section>
 
       {near.length > 0 && (
-        <section style={{ "--i": 6 } as CSSProperties} className="animate-rise mt-8 px-5">
+        <section style={{ "--i": 7 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Happy hours nearby</h2>
           <ul className="rounded-[22px] bg-ink-2 px-4">
             {near.map((o) => {
@@ -473,7 +476,7 @@ export function Spot() {
         </nav>
       )}
 
-      <section style={{ "--i": 7 } as CSSProperties} className="animate-rise mt-8 px-5">
+      <section style={{ "--i": 8 } as CSSProperties} className="animate-rise mt-8 px-5">
         <h2 className="mb-2 font-display text-[20px] font-bold tracking-tight">{venue.name} happy hour questions</h2>
         <div className="rounded-[22px] bg-ink-2 px-4">
           {venueFaq(venue).map((f) => (
