@@ -293,7 +293,7 @@ export function claimApprovedEmail(site: string, o: { name: string; venue: Venue
       ["See what's working", "How many people view, save, call and get directions."],
     ],
     cta: { label: "Edit your listing", href: `${site}/venue/${o.venue.id}` },
-    note: "Each month we'll send a quick reminder to check your times. One tap if nothing changed.",
+    note: "Every couple of months we'll send a quick reminder to check your times. One tap if nothing changed.",
     reason: `You're getting this because you manage ${o.venue.name} on A Little Hang.`,
   });
 }
@@ -384,8 +384,8 @@ export function monthlyCheckEmail(site: string, o: { venue: Venue; month: string
     ],
     cta: o.confirmHref ? { label: "Yes, it's still right", href: o.confirmHref } : { label: "Check your listing", href: edit },
     secondary: o.confirmHref ? { label: "Something changed", href: edit } : undefined,
-    note: o.confirmHref ? "Tapping “Yes” marks your times as checked this month. No sign-in needed." : undefined,
-    reason: `You're getting this because you manage ${o.venue.name} on A Little Hang. We send one check-in a month.`,
+    note: o.confirmHref ? "Tapping “Yes” marks your times as checked. No sign-in needed." : undefined,
+    reason: `You're getting this because you manage ${o.venue.name} on A Little Hang. We send a check-in every two months.`,
   });
 }
 

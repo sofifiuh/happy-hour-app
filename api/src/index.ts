@@ -378,9 +378,9 @@ on("POST", "/admin/email-samples", async (req, env) => {
   return json({ sent, of: all.length });
 });
 
-// ---------- Monthly "still right?" ----------
+// ---------- Every-two-months "still right?" ----------
 
-// One-tap link from the monthly email: no sign in, signed per venue + month.
+// One-tap link from the check-in email: no sign in, signed per venue + month.
 on("GET", "/confirm", async (req, env) => {
   const u = new URL(req.url);
   const v = u.searchParams.get("v") ?? "";
