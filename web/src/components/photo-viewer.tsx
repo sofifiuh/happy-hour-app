@@ -57,17 +57,25 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: Photo[]; 
     // Trackpad: one sideways swipe moves one photo. Every wheel event is
     // cancelled, which also keeps Chrome's two-finger back/forward gesture
     // from navigating the page underneath.
+    // Momentum keeps the events coming for a second after the fingers lift,
+    // so after a step the rest of that stream is ignored: the next swipe
+    // counts only once the wheel has been quiet for a moment.
     let acc = 0,
-      lockUntil = 0;
+      last = 0,
+      locked = false;
     const onWheel = (e: WheelEvent) => {
       e.preventDefault();
-      if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
-      if (e.timeStamp < lockUntil) return;
+      const quiet = e.timeStamp - last > 180;
+      last = e.timeStamp;
+      if (quiet) {
+        acc = 0;
+        locked = false;
+      }
+      if (locked || Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
       acc += e.deltaX;
       if (Math.abs(acc) > 40) {
         step(acc > 0 ? 1 : -1);
-        acc = 0;
-        lockUntil = e.timeStamp + 450;
+        locked = true;
       }
     };
     const overscroll = document.documentElement.style.overscrollBehaviorX;
@@ -147,6 +155,13 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: Photo[]; 
       el.removeEventListener("touchcancel", end);
     };
   }, [open, onClose, step]);
+
+  // Stepping to either end disables the arrow that was just pressed; keep
+  // focus in the viewer instead of letting it fall to the page.
+  useEffect(() => {
+    const a = document.activeElement as HTMLButtonElement | null;
+    if (open && (!a || a === document.body || a.disabled)) strip.current?.focus();
+  }, [index, open]);
 
   if (!open) return null;
   const credit = photos[index];
