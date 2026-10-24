@@ -556,6 +556,7 @@ a:focus-visible{outline:2px solid var(--orange)}
 .tablewrap caption{text-align:left;padding:14px 16px 4px;color:var(--dim);font-size:13px}
 .tablewrap th,.tablewrap td{text-align:right;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
 .tablewrap th[scope=row],.tablewrap thead th:first-child{text-align:left;padding-left:16px;position:sticky;left:0;z-index:1;background:var(--ink-2)}
+.tablewrap th[scope=row]{white-space:normal;min-width:7rem;max-width:9rem}
 .scrollhint{display:none;margin:8px 0 0;color:var(--dim);font-size:13px}
 @media (max-width:40rem){.scrollhint{display:block}}
 .tablewrap thead th{font-size:12px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
