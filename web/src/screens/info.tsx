@@ -167,7 +167,7 @@ function Person({ id, initial, tone, name, role, bio }: { id: string; initial: s
 function Privacy() {
   return (
     <>
-      <p className="mt-2">The short version: we don't have accounts, your location and saved spots stay on your device, and our analytics is cookieless and anonymous.</p>
+      <p className="mt-2">The short version: guests don't need an account, your location and saved spots stay on your device, and our analytics is cookieless and anonymous.</p>
       <H>Location</H>
       <p>
         If you allow it, your location is used on your device to sort spots by walking distance. It isn't sent to us or stored. You can
@@ -189,6 +189,19 @@ function Privacy() {
         email, precise location or anything you type.</p>
       <p className="mt-3">If your browser sends Do Not Track, analytics stays off. We don't use any other analytics, advertising or
         tracking tools.</p>
+      <H>Venue counts</H>
+      <p>
+        Venues that manage their listing see how many people viewed, saved, shared or tapped through on their page each day. Each person
+        counts once a day, using a code that changes daily and is deleted the next day, so nobody can be followed from one day to the
+        next. Venues never see who you are.
+      </p>
+      <H>Reports and venue accounts</H>
+      <p>
+        If you report a wrong time, we keep your message, and your email if you add one, to fix the listing and reply. Venue managers who
+        sign in give us their name, role, email and, optionally, a phone number and licence, which we use only to confirm they manage the
+        venue and to email them about their listing. Venue data is stored with Cloudflare, and email is sent through Resend. Ask us to
+        delete any of it at any time.
+      </p>
       <H>Links to other sites</H>
       <p>Venue websites, maps and phone links open other services, which have their own privacy policies.</p>
     </>
@@ -208,6 +221,13 @@ function Terms() {
       <p>You must be of legal drinking age in British Columbia (19+) to buy alcohol. Please don't drink and drive.</p>
       <H>Venue names and photos</H>
       <p>Venue names, logos and photos belong to their owners and are shown to help you find them. Photo credits appear where known.</p>
+      <H>For venues</H>
+      <p>
+        Claiming a listing is free. Only claim a venue you own or are authorised to manage. Keep your times, deals and prices accurate and
+        within BC's liquor rules, including minimum drink prices, and only upload photos you have the right to use. We may check, edit or
+        remove anything that's wrong or misleading, and remove access from anyone who misuses it. Your edits show on your page with an
+        "Updated by the venue" label; the "Verified" badge is never for sale.
+      </p>
       <H>Changes</H>
       <p>We may update these terms. The latest version is always here.</p>
     </>

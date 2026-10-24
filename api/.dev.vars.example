@@ -1,0 +1,6 @@
+# Copy to .dev.vars for `npm run dev`. Sign-in links come back in the
+# response instead of by email, and venues load from the local web build.
+DEV_LINKS=1
+SIGNING_KEY=dev-only-key
+ADMIN_EMAILS=admin@example.com
+VENUES_URL=http://127.0.0.1:8799/venues.json

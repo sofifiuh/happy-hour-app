@@ -26,13 +26,20 @@ export function heroName(id: string) {
   return heroId === id && document.documentElement.dataset.nav === "back" ? "hero" : undefined;
 }
 
+// After hopping between venues the photo on screen isn't the one that left
+// the list, so it shouldn't fly into that row.
+export function clearHero() {
+  heroId = null;
+}
+
 export function setNav(kind: "forward" | "back" | "swap") {
   document.documentElement.dataset.nav = kind;
 }
 
 // `instant` skips the transition, for a swipe that already slid the page out.
-export function goBack(navigate: NavigateFunction, instant = false) {
-  const go = () => (window.history.length > 1 ? navigate(-1) : navigate("/", { replace: true }));
+// `delta` pops more than one entry, back past several venues to the map.
+export function goBack(navigate: NavigateFunction, instant = false, delta = -1) {
+  const go = () => (window.history.length > 1 ? navigate(delta) : navigate("/", { replace: true }));
   if (instant || !canTransition()) return void go();
   setNav("back");
   const t = document.startViewTransition(

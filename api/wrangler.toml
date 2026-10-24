@@ -1,0 +1,30 @@
+# A Little Hang venue API: logins, claims, venue edits, photos, stats and
+# reports. The public site stays on GitHub Pages; this Worker serves
+# api.alittlehang.com. Deployed by .github/workflows/deploy-api.yml, which
+# creates the D1 database and R2 bucket on first run and fills in the id.
+name = "alittlehang-api"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+SITE_URL = "https://alittlehang.com"
+API_URL = "https://api.alittlehang.com"
+ALLOWED_ORIGINS = "https://alittlehang.com,https://www.alittlehang.com,http://localhost:5173,http://localhost:4173"
+ADMIN_EMAILS = "jason@setsail.ca"
+MAIL_FROM = "A Little Hang <hello@alittlehang.com>"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "alh"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "alittlehang-files"
+
+# Daily: purge yesterday's de-duplication rows; on the 1st, the monthly
+# "still right?" email to every claimed venue.
+[triggers]
+crons = ["7 12 * * *"]

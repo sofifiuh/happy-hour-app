@@ -64,6 +64,11 @@ export interface Venue {
   // Our own 0-10 rating of the happy hour (scripts/hang-score.mjs);
   // null when there isn't enough deal info to score it fairly.
   score?: HangScore | null;
+  // Set when the venue manages its own listing (lib/store.tsx lays the
+  // venue's edits from the API over this nightly data).
+  byVenue?: { updated: string; confirmed: string } | null;
+  description?: string | null;
+  closed?: boolean;
   amenities: {
     patio: boolean;
     accessible: boolean;
