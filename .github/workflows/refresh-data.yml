@@ -74,12 +74,14 @@ jobs:
         run: |
           git config user.name "a-little-hang-data"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json pipeline/screened.json pipeline/photos.json pipeline/GROWTH.md spots sitemap.xml
+          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json pipeline/screened.json pipeline/photos.json pipeline/GROWTH.md spots sitemap.xml robots.txt
           if git diff --cached --quiet; then
             echo "No data changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
           git commit -m "data: daily refresh $(date -u +%F)"
-          git pull --rebase origin main
+          # Other scratch files the run touched (photo store, caches) are not
+          # data; set them aside so the rebase onto a moving main can't fail.
+          git pull --rebase --autostash origin main
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
