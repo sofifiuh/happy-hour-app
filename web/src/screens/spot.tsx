@@ -58,6 +58,10 @@ export function Spot() {
   const [directionsOpen, setDirectionsOpen] = useState(false);
   const [photosOpen, setPhotosOpen] = useState(false);
   const closePhotos = useCallback(() => setPhotosOpen(false), []);
+  // The header shade waits for the photo, then fades in over it, so the
+  // dark wash never lands on an empty frame or pops in after the hero flight.
+  const [shadeFor, setShadeFor] = useState<string | null>(null);
+  const showShade = useCallback(() => setShadeFor(id), [id]);
   const [notifyOpen, setNotifyOpen] = useState(() => queryParams().get("sheet") === "notify");
 
   const deals = useMemo(() => {
@@ -125,8 +129,15 @@ export function Spot() {
     <main ref={page} className="mx-auto min-h-dvh max-w-2xl pb-28">
       {/* Photo header */}
       <div className="relative">
-        <VenuePhoto venue={venue} eager hero="hero" large className={cn("w-full lg:rounded-b-[28px]", venue.photo ? "h-[min(42vh,340px)]" : "h-[240px]")} />
-        <div className={cn("pointer-events-none absolute inset-0 bg-gradient-to-b via-transparent to-ink", venue.photo ? "from-black/45" : "from-black/15")} />
+        <VenuePhoto venue={venue} eager hero="hero" large onReady={showShade} className={cn("w-full lg:rounded-b-[28px]", venue.photo ? "h-[min(42vh,340px)]" : "h-[240px]")} />
+        <div
+          style={{ viewTransitionName: "hero-shade" }}
+          className={cn(
+            "pointer-events-none absolute inset-0 bg-gradient-to-b via-transparent to-ink transition-opacity duration-700 ease-[var(--ease-out)]",
+            venue.photo ? "from-black/45" : "from-black/15",
+            shadeFor === id ? "opacity-100 delay-150" : "opacity-0",
+          )}
+        />
         {photos.length > 0 && (
           <button onClick={() => setPhotosOpen(true)} aria-label={photos.length > 1 ? `View ${photos.length} photos` : "View photo"} className="absolute inset-0 cursor-zoom-in">
             {photos.length > 1 && (
