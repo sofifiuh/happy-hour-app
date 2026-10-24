@@ -20,7 +20,7 @@ import { goBack } from "@/lib/motion";
 import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
-import { dayRuns, googleReviewsLink, nearby, redditLink, redditName, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
+import { dayRuns, googleReviewsLink, nearby, quoteCredit, redditLink, redditName, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
 import { track } from "@/lib/analytics";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
@@ -367,7 +367,22 @@ export function Spot() {
           copying or summarizing their reviews, so we send people to them. */}
       <section style={{ "--i": 4 } as CSSProperties} className="animate-rise mt-8 px-5">
         <h2 className="mb-1 font-display text-[20px] font-bold tracking-tight">What people say</h2>
-        <p className="mb-3 text-[14px] text-muted-foreground">See what locals say about the {venue.name} happy hour.</p>
+        <p className="mb-3 text-[14px] text-muted-foreground">
+          {venue.quotes?.length ? `What's been written about the ${venue.name} happy hour, and where to read more.` : `See what locals say about the ${venue.name} happy hour.`}
+        </p>
+        {venue.quotes?.map((q) => (
+          <figure key={q.url + q.text} className="mb-2 rounded-[22px] bg-ink-2 px-4 pt-4 pb-1">
+            <blockquote cite={q.url} className="text-[15px] leading-snug font-medium">
+              “{q.text}”
+            </blockquote>
+            <figcaption className="mt-0.5 text-[13px] text-muted-foreground">
+              <a href={q.url} target="_blank" rel="nofollow noopener noreferrer" onClick={() => track({ name: "people_say_clicked", venue_id: venue.id, kind: "quote" })} className="inline-flex min-h-11 items-center gap-1 underline underline-offset-2 hover:text-cream">
+                {quoteCredit(q)}
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+            </figcaption>
+          </figure>
+        ))}
         <ul className="rounded-[22px] bg-ink-2 px-4">
           {[
             { href: redditLink(venue), icon: MessageCircle, label: "Search Reddit", sub: `“${redditName(venue)} happy hour”`, ext: true, kind: "reddit" },

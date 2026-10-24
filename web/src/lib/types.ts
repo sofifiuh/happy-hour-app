@@ -14,6 +14,14 @@ export interface Window {
   label?: string | null;
 }
 
+export interface Quote {
+  text: string;
+  author: string | null;
+  source: string; // publication
+  url: string;
+  date: string; // "YYYY-MM-DD" published or last updated
+}
+
 export interface Venue {
   id: string;
   name: string;
@@ -34,6 +42,8 @@ export interface Venue {
   website: string | null;
   // Google place ID (the one Places field we may keep), for the Maps link.
   placeId?: string | null;
+  // Short press quotes about the happy hour, hand-picked (quotes.json).
+  quotes?: Quote[];
   rating: number | null;
   ratings: number | null;
   photo: string | null;

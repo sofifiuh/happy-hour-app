@@ -83,6 +83,8 @@ function displayName(name) {
 }
 
 const { data_version, venues } = JSON.parse(readFileSync(resolve(root, "venues.json"), "utf8"));
+// Hand-picked press quotes about each happy hour (quotes.json; rules in its _about).
+const quotes = existsSync(resolve(root, "quotes.json")) ? JSON.parse(readFileSync(resolve(root, "quotes.json"), "utf8")).quotes : {};
 
 // Where the times were read from, for the "Source" line on venue pages.
 const host = (u) => {
@@ -133,6 +135,7 @@ const slim = venues
     phone: v.formatted_phone_number || null,
     website: v.website || null,
     placeId: v.place_id || null,
+    ...(quotes[v.id]?.length && { quotes: quotes[v.id].map(({ text, author, source, url, date }) => ({ text, author, source, url, date })) }),
     rating: v.rating ?? null,
     ratings: v.user_ratings_total ?? null,
     ...photosOf(v),

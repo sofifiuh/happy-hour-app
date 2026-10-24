@@ -4,7 +4,7 @@
 // it, so crawlers see the same words before and after the app boots.
 // Every sentence is built from data fields; nothing is invented.
 import { DAY_FULL, DAY_SHORT, fmtRange, windowsForDay } from "./hours.ts";
-import type { Deal, Venue } from "./types";
+import type { Deal, Quote, Venue } from "./types";
 
 export const SITE = "A Little Hang";
 
@@ -222,4 +222,12 @@ export function redditName(v: Venue) {
 
 export function redditLink(v: Venue) {
   return `https://www.reddit.com/search/?q=${encodeURIComponent(`${redditName(v)} happy hour`)}`;
+}
+
+// "Ashley Harris, Narcity · May 2022": who said it and when, so an older
+// quote reads as dated rather than current.
+export function quoteCredit(q: Quote) {
+  const d = new Date(`${q.date}T12:00:00`);
+  const when = Number.isNaN(d.getTime()) ? "" : ` · ${d.toLocaleDateString("en-US", { month: "short", year: "numeric" })}`;
+  return `${q.author ? `${q.author}, ` : ""}${q.source}${when}`;
 }
