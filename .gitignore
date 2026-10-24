@@ -3,3 +3,5 @@ pipeline/cache/
 pipeline/results/
 pipeline/node_modules/
 pipeline/secrets.json
+photos/g/
+photos/sources.json

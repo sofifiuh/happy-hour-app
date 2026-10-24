@@ -26,7 +26,7 @@ import { track } from "@/lib/analytics";
 import { apiEnabled, count } from "@/lib/api";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
-import type { BestList, Category, Venue } from "@/lib/types";
+import type { BestList, Category, Photo, Venue } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 
@@ -102,7 +102,7 @@ export function Spot() {
   const location = deviceLocation ?? area;
   const km = location && venue.lat != null && venue.lng != null ? distanceKm(location, { lat: venue.lat, lng: venue.lng }) : null;
   const pills = amenityPills(venue);
-  const photos = venue.photo ? [venue.photo, ...(venue.gallery ?? [])] : [];
+  const photos: Photo[] = venue.photo ? [{ src: venue.photo, credit: venue.photoCredit, link: venue.photoCreditUrl ?? null }, ...(venue.gallery ?? [])] : [];
   const q = encodeURIComponent(`${venue.name}, ${venue.address}`);
 
   const isSaved = saved.includes(venue.id);

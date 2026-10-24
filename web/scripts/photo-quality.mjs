@@ -2,6 +2,7 @@
 // and graphics (transparent PNGs, a handful of flat colours), near-black
 // shots, washed-out flat images and tiny thumbnails. Returns the reason a
 // photo is rejected, or null when it's fine.
+import { createHash } from "node:crypto";
 import sharp from "sharp";
 
 export async function photoProblem(src) {
@@ -42,6 +43,29 @@ export async function photoProblem(src) {
   if (top3 > 0.6 || (bins.size < 40 && top3 > 0.4)) return "graphic";
   return null;
 }
+
+// Size and tone of a photo that passed: width, height, mean luminance (0-255)
+// and its spread, for ranking candidates (pipeline/site-photos.js).
+export async function photoStats(src) {
+  const meta = await sharp(src, { failOn: "none" }).rotate().metadata();
+  const { channels } = await sharp(src, { failOn: "none" }).rotate().flatten({ background: "#ffffff" }).greyscale().resize(64, 64, { fit: "fill" }).stats();
+  const swap = (meta.orientation ?? 1) >= 5;
+  return { width: swap ? meta.height : meta.width, height: swap ? meta.width : meta.height, mean: channels[0].mean, sd: channels[0].stdev };
+}
+
+// 64-bit difference hash: the same photo at two sizes (or recompressed)
+// lands within a few bits.
+export async function photoHash(src) {
+  const { data } = await sharp(src, { failOn: "none" }).rotate().flatten({ background: "#ffffff" }).greyscale().resize(9, 8, { fit: "fill" }).raw().toBuffer({ resolveWithObject: true });
+  let bits = 0n;
+  for (let y = 0; y < 8; y++) for (let x = 0; x < 8; x++) bits = (bits << 1n) | (data[y * 9 + x] > data[y * 9 + x + 1] ? 1n : 0n);
+  return bits;
+}
+
+// File stem for a venue's gallery photo, shared by scripts/photos.mjs (which
+// downloads it to ../photos/g and writes public/photos/g/<stem>.webp) and
+// scripts/sync-data.mjs (which points the app at it).
+export const galleryStem = (id, url) => `${id}-${createHash("sha1").update(url).digest("hex").slice(0, 10)}`;
 
 // CLI: node scripts/photo-quality.mjs <files...> prints a score line each.
 if (import.meta.url === `file://${process.argv[1]}`) {

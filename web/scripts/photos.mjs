@@ -1,21 +1,23 @@
 // Turns each venue's cover photo into a local 640px WebP in public/photos,
+// and its gallery photos into 1080px WebPs in public/photos/g,
 // so the app never hotlinks venue websites (slow, fragile, and 110 of them
 // are http:// mixed content). Local originals live in ../photos.
 //
 //   node scripts/photos.mjs           convert local originals only (build)
 //   node scripts/photos.mjs --remote  also download remote covers into
 //                                     ../photos first (daily refresh job)
-import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { dirname, extname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
-import { photoProblem } from "./photo-quality.mjs";
+import { galleryStem, photoProblem } from "./photo-quality.mjs";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "../..");
 const originals = resolve(root, "photos");
 const out = resolve(here, "../public/photos");
-mkdirSync(out, { recursive: true });
+mkdirSync(resolve(out, "g"), { recursive: true });
+mkdirSync(resolve(originals, "g"), { recursive: true });
 
 const remote = process.argv.includes("--remote");
 // Downloads run 12 at a time and stop starting new ones after the deadline,
@@ -24,6 +26,24 @@ const remote = process.argv.includes("--remote");
 const CONCURRENCY = 12;
 const deadline = Date.now() + Number(process.env.PHOTOS_DEADLINE_MS || 180_000);
 const { venues } = JSON.parse(readFileSync(resolve(root, "venues.json"), "utf8"));
+
+// Which URL each downloaded cover came from. When a venue's cover changes
+// (pipeline/site-photos.js swapping a logo for a real photo), the old
+// download and its WebP go, so the cached copy can't outlive it. The first
+// run without this file adopts what's there.
+const sourcesFile = resolve(originals, "sources.json");
+const firstRun = !existsSync(sourcesFile);
+const sources = firstRun ? {} : JSON.parse(readFileSync(sourcesFile, "utf8"));
+for (const v of venues) {
+  const url = v.cover_image?.url;
+  if (!url || !/^https?:/.test(url) || sources[v.id] === url) continue;
+  if (!firstRun) {
+    for (const ext of [".jpg", ".jpeg", ".png", ".webp"]) rmSync(resolve(originals, v.id + ext), { force: true });
+    rmSync(resolve(out, `${v.id}.webp`), { force: true });
+  }
+  sources[v.id] = url;
+}
+writeFileSync(sourcesFile, JSON.stringify(sources));
 
 // The original for a venue: its committed local file, or a previously
 // downloaded remote cover saved as ../photos/<id>.<ext>.
@@ -38,15 +58,25 @@ export function originalFor(v) {
   return null;
 }
 
-async function download(v) {
-  const url = v.cover_image.url.replace(/^http:/, "https:");
-  for (const u of [url, v.cover_image.url]) {
+// A gallery photo's original: ../photos/g/<stem>.<ext> once downloaded.
+function galleryOriginal(v, url) {
+  const stem = galleryStem(v.id, url);
+  for (const ext of [".jpg", ".jpeg", ".png", ".webp"]) {
+    const p = resolve(originals, "g", stem + ext);
+    if (existsSync(p)) return p;
+  }
+  return null;
+}
+
+async function download(rawUrl, stem) {
+  const url = rawUrl.replace(/^http:/, "https:");
+  for (const u of [url, rawUrl]) {
     try {
       const res = await fetch(u, { signal: AbortSignal.timeout(Math.max(1000, Math.min(10_000, deadline - Date.now()))), headers: { "user-agent": "alittlehang-photos/1.0" } });
       if (!res.ok || !/^image\//.test(res.headers.get("content-type") || "")) continue;
       const buf = Buffer.from(await res.arrayBuffer());
       const ext = extname(new URL(u).pathname).toLowerCase();
-      const file = resolve(originals, v.id + ([".png", ".webp", ".jpeg"].includes(ext) ? ext : ".jpg"));
+      const file = resolve(originals, stem + ([".png", ".webp", ".jpeg"].includes(ext) ? ext : ".jpg"));
       writeFileSync(file, buf);
       return file;
     } catch {
@@ -62,34 +92,47 @@ let fetched = 0;
 let skipped = 0;
 const live = venues.filter((v) => v.business_status !== "CLOSED_PERMANENTLY" && v.cover_image?.url);
 
+// Gallery photos: every https photo after the cover (scripts/sync-data.mjs
+// shows the first 8 that pass the quality check).
+const galleryOf = (v) => [...new Set((v.photos || []).map((p) => p?.url).filter((u) => u && /^https?:/.test(u) && u !== v.cover_image?.url))].slice(0, 12);
+const gallery = venues.filter((v) => v.business_status !== "CLOSED_PERMANENTLY").flatMap((v) => galleryOf(v).map((url) => ({ v, url, stem: galleryStem(v.id, url) })));
+
 if (remote) {
-  const queue = live.filter((v) => !originalFor(v));
+  const queue = [
+    ...live.filter((v) => !originalFor(v)).map((v) => () => download(v.cover_image.url, v.id)),
+    ...gallery.filter((g) => !galleryOriginal(g.v, g.url)).map((g) => () => download(g.url, `g/${g.stem}`)),
+  ];
   const worker = async () => {
-    for (let v = queue.shift(); v; v = queue.shift()) {
+    for (let job = queue.shift(); job; job = queue.shift()) {
       if (Date.now() > deadline) {
         skipped++;
         continue;
       }
-      if (await download(v)) fetched++;
+      if (await job()) fetched++;
     }
   };
   await Promise.all(Array.from({ length: CONCURRENCY }, worker));
   console.log(`photos: ${fetched} downloaded${skipped ? `, ${skipped} left for the next run (deadline)` : ""}`);
 }
 
-for (const v of live) {
-  const src = originalFor(v);
-  if (!src || !existsSync(src)) continue;
-  const dest = resolve(out, `${v.id}.webp`);
-  if (existsSync(dest) && statSync(dest).mtimeMs >= statSync(src).mtimeMs) continue;
+const convert = async (src, dest, width) => {
+  if (existsSync(dest) && statSync(dest).mtimeMs >= statSync(src).mtimeMs) return;
   try {
-    await sharp(src).rotate().resize({ width: 640, height: 640, fit: "inside", withoutEnlargement: true }).webp({ quality: 72 }).toFile(dest);
+    await sharp(src).rotate().resize({ width, height: width, fit: "inside", withoutEnlargement: true }).webp({ quality: 72 }).toFile(dest);
     made++;
   } catch {
     failed++;
   }
+};
+for (const v of live) {
+  const src = originalFor(v);
+  if (src && existsSync(src)) await convert(src, resolve(out, `${v.id}.webp`), 640);
 }
-console.log(`photos: ${made} converted, ${failed} failed, ${live.length} venues with a cover`);
+for (const g of gallery) {
+  const src = galleryOriginal(g.v, g.url);
+  if (src) await convert(src, resolve(out, "g", `${g.stem}.webp`), 1080);
+}
+console.log(`photos: ${made} converted, ${failed} failed, ${live.length} venues with a cover, ${gallery.length} gallery photos`);
 
 // Score every original so sync-data can drop covers that would make a bad
 // hero (logos, near-black graphics). Cached by file mtime next to the WebPs.
@@ -107,6 +150,14 @@ for (const v of live) {
   const mtime = Math.round(statSync(src).mtimeMs);
   const prev = quality[v.id];
   scored[v.id] = prev && prev.mtime === mtime ? prev : { mtime, problem: await photoProblem(src).catch(() => "unreadable") };
+}
+for (const g of gallery) {
+  const src = galleryOriginal(g.v, g.url);
+  if (!src) continue;
+  const key = `g/${g.stem}`;
+  const mtime = Math.round(statSync(src).mtimeMs);
+  const prev = quality[key];
+  scored[key] = prev && prev.mtime === mtime ? prev : { mtime, problem: await photoProblem(src).catch(() => "unreadable") };
 }
 writeFileSync(qualityFile, JSON.stringify(scored));
 const rejected = Object.entries(scored).filter(([, q]) => q.problem);
