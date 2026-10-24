@@ -30,7 +30,7 @@ export function backLabel(desktop: boolean) {
   if (path === "/" || path === "/index.html") return desktop ? "Map" : "List";
   if (path === "/best") return "Best of";
   if (path === "/saved") return "Saved";
-  if (path === "/spots" || path === "/spots/index.html") return "All spots";
+  if (path === "/spots" || path === "/spots/" || path === "/spots/index.html") return "All spots";
   if (!base || path === "/map") return "Map";
   return "Back";
 }

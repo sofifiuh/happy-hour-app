@@ -54,6 +54,7 @@ export function Spot() {
   const page = useRef<HTMLElement>(null);
   const bar = useRef<HTMLElement>(null);
   const desktop = useIsDesktop();
+  const back = backLabel(desktop);
   useSwipeBack([page, bar], () => goBackToBase(navigate, desktop, true), !!venue);
   useTitle(venue ? venueTitle(venue) : loading ? null : "Spot not found", !!venue);
   const [cat, setCat] = useState<Category>("drink");
@@ -153,10 +154,11 @@ export function Spot() {
           {/* Always back to where browsing started, not the previous venue. */}
           <button
             onClick={() => goBackToBase(navigate, desktop)}
+            aria-label={back === "Back" ? "Back" : `Back to ${back}`}
             className="flex h-11 items-center gap-1.5 rounded-full bg-ink/70 pr-4 pl-3 text-[14px] font-semibold text-cream backdrop-blur transition-transform active:scale-90"
           >
             <ArrowLeft className="size-5" />
-            {backLabel(desktop)}
+            {back}
           </button>
           <div className="flex gap-2">
             <button
