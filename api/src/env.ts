@@ -10,7 +10,7 @@ export interface Env {
   // variable EMAIL_PROVIDER is "cloudflare". Without it, Resend sends.
   EMAIL?: { send(msg: { from: string | { email: string; name?: string }; to: string; subject: string; text: string; html: string }): Promise<{ messageId: string }> };
   // Secrets (wrangler secret put): RESEND_API_KEY sends email; SIGNING_KEY
-  // signs the monthly one-tap confirm links.
+  // signs the every-2-months one-tap confirm links.
   RESEND_API_KEY?: string;
   SIGNING_KEY?: string;
   // Local development only: return sign-in links in the response instead

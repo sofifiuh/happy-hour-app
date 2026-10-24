@@ -363,15 +363,15 @@ on("POST", "/admin/edits/:id/clear", async (req, env, p) => {
   return json({ ok: true });
 });
 
-// ---------- Monthly "still right?" ----------
+// ---------- "Still right?" every 2 months ----------
 
-// One-tap link from the monthly email: no sign in, signed per venue + month.
+// One-tap link from the every-2-months email: no sign in, signed per venue + month.
 on("GET", "/confirm", async (req, env) => {
   const u = new URL(req.url);
   const v = u.searchParams.get("v") ?? "";
   const m = u.searchParams.get("m") ?? "";
-  // Good for the month it was sent and the next, so a late tap still counts.
-  const last = new Date(Date.now() - 31 * 86_400_000).toISOString().slice(0, 7);
+  // Good until the next email goes out, so a late tap still counts.
+  const last = new Date(Date.now() - 62 * 86_400_000).toISOString().slice(0, 7);
   if (u.searchParams.get("s") !== (await sign(env, `confirm|${v}|${m}`)) || m < last)
     return Response.redirect(`${env.SITE_URL}/venue/${encodeURIComponent(v)}?confirm=expired`, 302);
   await env.DB.prepare("UPDATE venue_edits SET confirmed_at = ? WHERE venue_id = ?").bind(now(), v).run();
@@ -388,7 +388,7 @@ async function monthlyCheck(env: Env) {
        LEFT JOIN venue_edits e ON e.venue_id = o.venue_id
        WHERE e.confirmed_at IS NULL OR e.confirmed_at < ?`,
     )
-      .bind(new Date(Date.now() - 20 * 86_400_000).toISOString())
+      .bind(new Date(Date.now() - 50 * 86_400_000).toISOString())
       .all<{ venue_id: string; email: string }>()
   ).results;
   for (const r of rows) {
@@ -442,7 +442,9 @@ export default {
 
   async scheduled(_ev, env) {
     await env.DB.prepare("DELETE FROM event_seen WHERE day < ?").bind(today()).run();
-    if (new Date().getUTCDate() === 1) await monthlyCheck(env);
+    const d = new Date();
+    // 1st of Jan, Mar, May, Jul, Sep and Nov: once every 2 months.
+    if (d.getUTCDate() === 1 && d.getUTCMonth() % 2 === 0) await monthlyCheck(env);
   },
 } satisfies ExportedHandler<Env>;
 

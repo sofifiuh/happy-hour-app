@@ -20,7 +20,7 @@ venues and guests send us.
   that is deleted the next day.
 - **Reports:** guests' "Report a wrong time" lands in the queue and is
   emailed to the venue's managers.
-- **Monthly check:** on the 1st, managers get a one-tap "still right?" email.
+- **Check every 2 months:** on the 1st of Jan, Mar, May, Jul, Sep and Nov, managers get a one-tap "still right?" email.
 
 ## Run it locally
 
