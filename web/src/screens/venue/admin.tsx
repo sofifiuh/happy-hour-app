@@ -192,6 +192,14 @@ export function VenueAdmin() {
               </ul>
             </>
           )}
+
+          <H2>Emails</H2>
+          <Card className="flex items-center justify-between gap-4 text-[15px] text-muted-foreground">
+            <span>Get one of every email we send, with sample data, to see how they look in your inbox.</span>
+            <Button size="sm" variant="secondary" onClick={() => act("/admin/email-samples", {}, `Sent to ${me.email}`)}>
+              Email me samples
+            </Button>
+          </Card>
         </>
       )}
     </VenueShell>

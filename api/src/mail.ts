@@ -1,37 +1,27 @@
 import type { Env } from "./env";
-import { esc, HttpError } from "./http";
+import type { Email } from "./email";
+import { HttpError } from "./http";
 
-export interface Mail {
+export interface Mail extends Email {
   to: string;
-  subject: string;
-  // Plain paragraphs; a { link } entry becomes a button.
-  lines: (string | { label: string; href: string })[];
 }
 
 // Sent through Cloudflare Email Service when its binding is there, else
 // Resend's HTTP API. With neither (local dev) the mail is logged instead,
-// so every flow still runs end to end.
+// so every flow still runs end to end. The bodies come from ./email.
 export async function send(env: Env, mail: Mail) {
-  const text = mail.lines.map((l) => (typeof l === "string" ? l : `${l.label}: ${l.href}`)).join("\n\n");
+  const { to, subject, text, html } = mail;
   if (!env.EMAIL && !env.RESEND_API_KEY) {
     if (env.DEV_LINKS === "1") {
-      console.log(`[mail] to ${mail.to}: ${mail.subject}\n${text}`);
+      console.log(`[mail] to ${to}: ${subject}\n${text}`);
       return;
     }
     throw new HttpError(503, "Email isn't set up yet");
   }
-  const html = mail.lines
-    .map((l) =>
-      typeof l === "string"
-        ? `<p style="margin:0 0 16px">${esc(l)}</p>`
-        : `<p style="margin:24px 0"><a href="${esc(l.href)}" style="background:#d63d00;color:#fff;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:600">${esc(l.label)}</a></p>`,
-    )
-    .join("");
-  const body = `<div style="font:16px/1.5 -apple-system,Helvetica,Arial,sans-serif;color:#1b1b1b;max-width:520px">${html}<p style="color:#6a645a;font-size:13px">A Little Hang · alittlehang.com</p></div>`;
   if (env.EMAIL) {
     const m = /^(.*)<(.+)>$/.exec(env.MAIL_FROM);
     try {
-      await env.EMAIL.send({ from: m ? { name: m[1].trim(), email: m[2] } : env.MAIL_FROM, to: mail.to, subject: mail.subject, text, html: body });
+      await env.EMAIL.send({ from: m ? { name: m[1].trim(), email: m[2] } : env.MAIL_FROM, to, subject, text, html });
       return;
     } catch (e) {
       console.error("mail failed", e);
@@ -43,10 +33,10 @@ export async function send(env: Env, mail: Mail) {
     headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, "content-type": "application/json" },
     body: JSON.stringify({
       from: env.MAIL_FROM,
-      to: mail.to,
-      subject: mail.subject,
+      to,
+      subject,
       text,
-      html: body,
+      html,
     }),
   });
   if (!res.ok) {

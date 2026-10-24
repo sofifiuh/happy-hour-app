@@ -1,5 +1,6 @@
 import type { Env } from "./env";
 import { HttpError, newId, now, randomToken, sha256 } from "./http";
+import { signInEmail } from "./email";
 import { admins, send } from "./mail";
 
 const LINK_MINUTES = 30;
@@ -34,15 +35,7 @@ export async function startLogin(env: Env, email: string, next: string) {
     .run();
   const path = next.startsWith("/") && !next.startsWith("//") ? next : "/venue";
   const link = `${env.SITE_URL}/venue/login?token=${token}&next=${encodeURIComponent(path)}`;
-  await send(env, {
-    to: email,
-    subject: "Your A Little Hang sign-in link",
-    lines: [
-      "Tap the button to sign in. The link works once and expires in 30 minutes.",
-      { label: "Sign in", href: link },
-      "If you didn't ask for this, you can ignore this email.",
-    ],
-  });
+  await send(env, { to: email, ...signInEmail(env.SITE_URL, link, LINK_MINUTES) });
   return env.DEV_LINKS === "1" ? link : null;
 }
 
