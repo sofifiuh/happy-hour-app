@@ -11,6 +11,7 @@ import {
   type Email,
   monthlyCheckEmail,
   ownerReportEmail,
+  samples,
 } from "./email";
 import { admins, send } from "./mail";
 import { cleanEdit, emailMatchesWebsite, venue, venueDirectory } from "./venues";
@@ -357,6 +358,18 @@ on("POST", "/admin/edits/:id/clear", async (req, env, p) => {
   await requireAdmin(req, env);
   await env.DB.prepare("UPDATE venue_edits SET flagged = NULL WHERE venue_id = ?").bind(p.id).run();
   return json({ ok: true });
+});
+
+// Sends the signed-in admin one of every email, with sample data, to check
+// how they look in a real inbox. At most once every 10 minutes.
+on("POST", "/admin/email-samples", async (req, env) => {
+  const admin = await requireAdmin(req, env);
+  const key = `samples:${admin.email}:${now().slice(0, 15)}`;
+  if ((await env.DB.prepare("INSERT OR IGNORE INTO event_seen (hash, day) VALUES (?, ?)").bind(key, today()).run()).meta.changes === 0)
+    throw new HttpError(429, "Samples went out a few minutes ago, check your inbox");
+  const all = Object.entries(samples(env.SITE_URL, env.API_URL));
+  for (const [i, [, m]] of all.entries()) await send(env, { to: admin.email, ...m, subject: `[Sample ${i + 1}/${all.length}] ${m.subject}` });
+  return json({ sent: all.length });
 });
 
 // ---------- Monthly "still right?" ----------

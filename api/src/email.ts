@@ -402,3 +402,24 @@ export function adminEditFlagEmail(site: string, o: { venue: Venue; flags: strin
     reason: "You're getting this because you're an admin on A Little Hang.",
   });
 }
+
+// Every email with sample data, for the preview script and the admin's
+// "send me every email" button.
+export function samples(site: string, api: string): Record<string, Email> {
+  const venue = { id: "ancora", name: "Ancora Waterfront Dining", address: "1600 Howe St, Vancouver", phone: "(604) 681-1164", website: "https://ancoradining.com" };
+  const report = "Happy hour ends at 5 now, not 6. The oyster deal is gone too.";
+  const month = new Date().toISOString().slice(0, 7);
+  return {
+    "1-sign-in": signInEmail(site, `${site}/venue/login?token=sample&next=%2Fvenue`, 30),
+    "2-claim-received": claimReceivedEmail(site, { name: "Maya", role: "General manager", venue }),
+    "3-claim-approved": claimApprovedEmail(site, { name: "Maya", venue }),
+    "4-claim-rejected": claimRejectedEmail(site, { name: "Maya", venue, note: "We called the listed number and the manager on shift didn't recognise the name." }),
+    "5-monthly-check": monthlyCheckEmail(site, { venue, month, confirmHref: `${api}/confirm?v=ancora&m=${month}&s=sample` }),
+    "6-monthly-check-new": monthlyCheckEmail(site, { venue, month, confirmHref: null }),
+    "7-owner-report": ownerReportEmail(site, { venue, message: report }),
+    "8-admin-claim-review": adminClaimEmail(site, { auto: false, name: "Maya", role: "General manager", email: "maya@gmail.com", phone: "604 555 0199", venue }),
+    "9-admin-claim-auto": adminClaimEmail(site, { auto: true, name: "Maya", role: "Owner", email: "maya@ancoradining.com", phone: null, venue }),
+    "10-admin-report": adminReportEmail(site, { venue, message: report, email: "guest@example.com" }),
+    "11-admin-edit-flag": adminEditFlagEmail(site, { venue, flags: ["Drink under $3: Draft lager $2.50"] }),
+  };
+}
