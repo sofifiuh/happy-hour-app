@@ -364,6 +364,14 @@ html[data-nav="swap"]::view-transition-old(root) {
   height: 100%;
   object-fit: cover;
 }
+/* The venue header's shade rides above the flying photo in its own layer
+   and fades itself in (see spot.tsx), so the transition leaves it alone. */
+::view-transition-new(hero-shade) {
+  animation: none;
+}
+::view-transition-old(hero-shade) {
+  animation: 160ms var(--ease-in) both fade reverse;
+}
 
 @media (prefers-reduced-motion: reduce) {
   *,

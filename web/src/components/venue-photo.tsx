@@ -1,5 +1,5 @@
 import { asset } from "@/lib/routes";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import type { Venue } from "@/lib/types";
 
@@ -16,10 +16,29 @@ const FALLBACKS = [
 // lib/motion.ts); data-hero marks every photo that can take the name.
 // `large` is the venue page header: with no usable photo it shows an
 // oversized initial as a quiet brand mark instead of a centred letter.
-export function VenuePhoto({ venue, className, eager = false, hero, large = false }: { venue: Venue; className?: string; eager?: boolean; hero?: string; large?: boolean }) {
+// `onReady` fires once there's something to show: the photo has loaded
+// (or was already cached), or the warm fallback is in place.
+export function VenuePhoto({
+  venue,
+  className,
+  eager = false,
+  hero,
+  large = false,
+  onReady,
+}: {
+  venue: Venue;
+  className?: string;
+  eager?: boolean;
+  hero?: string;
+  large?: boolean;
+  onReady?: () => void;
+}) {
   const [failed, setFailed] = useState(false);
   const hash = [...venue.id].reduce((a, c) => a + c.charCodeAt(0), 0);
   const src = venue.photo && !failed ? asset(venue.photo) : null;
+  useEffect(() => {
+    if (!src) onReady?.();
+  }, [src, onReady]);
   return (
     <div data-hero style={{ viewTransitionName: hero }} className={cn("relative overflow-hidden bg-ink-3", className)}>
       {src ? (
@@ -29,6 +48,10 @@ export function VenuePhoto({ venue, className, eager = false, hero, large = fals
           loading={eager ? "eager" : "lazy"}
           decoding="async"
           referrerPolicy="no-referrer"
+          ref={(img) => {
+            if (img?.complete && img.naturalWidth) onReady?.();
+          }}
+          onLoad={onReady}
           onError={() => setFailed(true)}
           className="absolute inset-0 size-full object-cover"
         />
