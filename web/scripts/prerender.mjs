@@ -564,15 +564,15 @@ a:focus-visible{outline:2px solid var(--orange)}
 .tablewrap td small{display:block;color:var(--dim);font-size:11px}
 .tablewrap td.low{color:var(--lime);font-weight:700}
 .tablewrap td.na{color:var(--dim)}
-.cite{margin:6px 0 0;padding:12px 14px;border-radius:14px;background:var(--ink-2);overflow-x:auto;font-size:13px;line-height:1.5;white-space:pre-wrap;word-break:break-all}
+.cite{margin:6px 0 0;padding:12px 14px;border-radius:14px;background:var(--ink-2);overflow-x:auto;font-size:13px;line-height:1.5;white-space:pre-wrap;word-break:break-all;user-select:all;-webkit-user-select:all}
 .topnav{display:flex;align-items:center;gap:6px}
 .topnav>a:not(.cta){display:inline-flex;align-items:center;min-height:40px;padding:0 12px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px}
 .topnav>a:not(.cta):hover,.topnav>a[aria-current]{background:var(--ink-2)}
 .eyebrow{margin:18px 0 0;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--pink)}
 .eyebrow+h1{margin-top:6px}
-.feature{display:flex;flex-direction:column;gap:6px;margin:24px 0 0;padding:22px 22px 20px;border-radius:24px;background:var(--orange);color:#1b1b1b;text-decoration:none;transition:transform .2s}
+.feature{display:flex;flex-direction:column;gap:6px;margin:24px 0 0;padding:22px 22px 20px;border-radius:24px;background:#ff4900;color:#1b1b1b;text-decoration:none;transition:transform .2s}
 .feature:hover{transform:translateY(-2px)}
-.kicker{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
 .ftitle{font:800 clamp(24px,5vw,32px)/1.05 "Funnel Display",system-ui,sans-serif;letter-spacing:-.02em;text-wrap:balance}
 .fdesc{max-width:52ch;font-size:15px}
 .fnums{display:flex;flex-wrap:wrap;gap:8px 22px;margin:10px 0 2px}
@@ -1429,7 +1429,7 @@ ${asOf ? `<p class="meta">Data as of <time datetime="${asOf}">${esc(fmtDate(asOf
 <li><b>Credit ${SITE}</b><span>Name us as the source, the way you'd credit any study.</span></li>
 <li><b>Link to the page</b><span>The data updates every night, so the link always takes your readers to the latest prices and rankings.</span></li>
 </ol>
-<p class="meta">Copy a credit line:</p>
+<p class="meta">Copy a credit line (tap to select it), and link to the page you used if it isn't the index:</p>
 <pre class="cite"><code>${esc(cite)}</code></pre>
 <pre class="cite"><code>${esc(citeText)}</code></pre>
 <p class="meta">Licence: <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Need a custom cut (one neighbourhood, late night only, food prices) or a quote for a story? Email <a href="mailto:jason@setsail.ca">jason@setsail.ca</a>.</p>
@@ -1437,11 +1437,11 @@ ${asOf ? `<p class="meta">Data as of <time datetime="${asOf}">${esc(fmtDate(asOf
 
 <h2>Explore the research</h2>
 <ul class="tiles">
-<li><a href="${bestPath("metro")}"><span class="tnum">${lists.length}</span><b>Best happy hours, ranked</b><span>Top 10 lists for Metro Vancouver and each neighbourhood and city, by Hangout Score.</span></a></li>
+<li><a href="${bestPath("metro")}"><span class="tnum">${lists.length}</span><b>Best happy hours, ranked</b><span>Top 10 lists for Metro Vancouver and ${lists.length - 1} neighbourhoods and cities, by Hangout Score.</span></a></li>
 <li><a href="#neighbourhoods"><span class="tnum">${areas.length}</span><b>Neighbourhood guides</b><span>Every Vancouver neighbourhood's happy hours, with times, deals and the cheapest drink.</span></a></li>
 <li><a href="#cities"><span class="tnum">${cities.length}</span><b>City guides</b><span>From Vancouver to Langley: every happy hour we track, city by city.</span></a></li>
 <li><a href="#guides"><span class="tnum">${guides.length}</span><b>Day, deal and vibe guides</b><span>Oysters, wings, patios, late night, Sunday and more.</span></a></li>
-<li><a href="/about/#hang-score"><span class="tnum">4</span><b>How the Hangout Score works</b><span>Value, selection, hours and vibe, worked out the same way for every spot.</span></a></li>
+<li><a href="/about/#hang-score"><span class="tnum">0–10</span><b>How the Hangout Score works</b><span>Value, selection, hours and vibe, worked out the same way for every spot.</span></a></li>
 <li><a href="/spots/"><span class="tnum">${venues.length}</span><b>Every spot, A–Z</b><span>Each venue's page has its full menu, times and the source we read.</span></a></li>
 </ul>
 
