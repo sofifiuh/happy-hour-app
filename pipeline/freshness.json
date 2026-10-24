@@ -682,18 +682,17 @@
  "boulevard-kitchen-oyster-bar": {
   "url": "https://boulevardvancouver.ca/happy-hour/",
   "checked_at": "2026-10-24",
-  "http_status": 0,
+  "http_status": 200,
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
-  "ok": false,
-  "fail_count": 1,
+  "ok": true,
+  "fail_count": 0,
   "hh_hash": "ba1e6be8896e85ac",
-  "last_ok_at": "2026-10-23",
-  "last_confirmed_at": "2026-10-23",
-  "error": "curl: (28) Operation timed out after 25002 milliseconds with 0 bytes received"
+  "last_ok_at": "2026-10-24",
+  "last_confirmed_at": "2026-10-24"
  },
  "brewhall": {
   "url": "https://brewhall.com/",
@@ -824,7 +823,7 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "ffdeeaac158fd037",
+  "hh_hash": "0d06d5175e624822",
   "last_ok_at": "2026-10-24",
   "last_confirmed_at": "2026-10-24",
   "changed_at": "2026-10-24"
@@ -976,7 +975,7 @@
  "cascades-casino": {
   "url": "https://cascadescasino.ca/",
   "checked_at": "2026-10-24",
-  "http_status": 200,
+  "http_status": 202,
   "kind": "html",
   "hh_mentioned": false,
   "times_seen": false,
@@ -984,7 +983,8 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "last_ok_at": "2026-10-24"
+  "last_ok_at": "2026-10-24",
+  "rendered": true
  },
  "cat-fiddle-sports-bar-restaurant": {
   "url": "https://i0.wp.com/catandfiddlepub.ca/wp-content/uploads/2025/12/Happy-hour-WINTER-2025-PRINT.jpg?ssl=1",
@@ -1107,17 +1107,16 @@
  "chit-chat-burger-bar": {
   "url": "https://chitchatburgerbar.com/drinks-menu/",
   "checked_at": "2026-10-24",
-  "http_status": 202,
+  "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
+  "hh_mentioned": true,
   "times_seen": false,
-  "extra_windows_seen": 0,
+  "extra_windows_seen": 1,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "75c767a11422ec9d",
-  "last_ok_at": "2026-10-24",
-  "rendered": true
+  "last_ok_at": "2026-10-24"
  },
  "chop-steakhouse-bar": {
   "url": "https://chop.ca/happy-hour",
@@ -1130,7 +1129,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "e5e32b6cabb5576e",
+  "hh_hash": "12ccb976c299ff0c",
   "last_ok_at": "2026-10-24",
   "last_confirmed_at": "2026-10-24",
   "changed_at": "2026-10-24"
@@ -1220,7 +1219,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "ca4f1f807aeee718",
+  "hh_hash": "9662a5de1f8978d7",
   "last_ok_at": "2026-10-24",
   "last_confirmed_at": "2026-10-24",
   "changed_at": "2026-10-24"
@@ -1236,7 +1235,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "92b43b9c4a9781fe",
+  "hh_hash": "dafd63bead41e0a9",
   "last_ok_at": "2026-10-24",
   "last_confirmed_at": "2026-10-24",
   "changed_at": "2026-10-24"
@@ -2062,7 +2061,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "01b06e50962e8e8f",
+  "hh_hash": "f6ad01676c9b1aa8",
   "last_ok_at": "2026-10-24",
   "last_confirmed_at": "2026-10-24",
   "changed_at": "2026-10-24"
@@ -2468,7 +2467,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 10,
+  "fail_count": 11,
   "error": "curl: (6) Could not resolve host: www.jacksonsrestobutcher.com"
  },
  "jamjar-canteen-commercial-dr": {
@@ -3481,8 +3480,8 @@
   "checked_at": "2026-10-24",
   "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
@@ -3490,7 +3489,7 @@
   "rendered": true,
   "last_ok_at": "2026-10-24",
   "hh_hash": "09be2c38d377f4ee",
-  "last_confirmed_at": "2026-10-23"
+  "last_confirmed_at": "2026-10-24"
  },
  "moose-s-down-under-bar-and-grill-vancouver": {
   "url": "https://moosesdownunder.com/wp-content/uploads/2025/07/mooses-drink-menu-2025-3.pdf",
@@ -4439,7 +4438,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 10,
+  "fail_count": 11,
   "error": "curl: (6) Could not resolve host: romersurgerbar.com"
  },
  "rongsi-rong-see-thai-bar-bistro": {
@@ -4967,17 +4966,18 @@
  "starlight-casino": {
   "url": "https://starlightcasino.ca/casino-happy-hour/",
   "checked_at": "2026-10-24",
-  "http_status": 200,
+  "http_status": 202,
   "kind": "html",
-  "hh_mentioned": true,
-  "times_seen": true,
+  "hh_mentioned": false,
+  "times_seen": false,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
   "hh_hash": "37ffff41811e7b1a",
   "last_ok_at": "2026-10-24",
-  "last_confirmed_at": "2026-10-24"
+  "last_confirmed_at": "2026-10-24",
+  "rendered": true
  },
  "steamworks-mount-pleasant": {
   "url": "https://steamworks.com/wp-content/uploads/2026/03/SWMP_Mar2026_print.pdf",
@@ -5119,8 +5119,8 @@
   "checked_at": "2026-10-24",
   "http_status": 200,
   "kind": "html",
-  "hh_mentioned": true,
-  "times_seen": true,
+  "hh_mentioned": false,
+  "times_seen": false,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
@@ -5588,15 +5588,16 @@
  "the-great-bear-pub": {
   "url": "http://greatbearpub.com/files/2019/01/Great-BearEatin-2019.pdf",
   "checked_at": "2026-10-24",
-  "http_status": 200,
-  "kind": "pdf",
-  "ok": true,
-  "fail_count": 0,
+  "http_status": 0,
+  "kind": "html",
+  "ok": false,
+  "fail_count": 1,
   "hh_mentioned": false,
   "times_seen": false,
   "extra_windows_seen": 0,
   "extra_windows_total": 1,
-  "last_ok_at": "2026-10-24"
+  "last_ok_at": "2026-10-24",
+  "error": "curl: (28) Connection timed out after 25002 milliseconds"
  },
  "the-greek-by-anatoli-yaletown": {
   "url": "https://www.thegreekbyanatoli.com/yaletown-menu",

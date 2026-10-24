@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-24-81d759f8",
+ "data_version": "2026-10-24-a95f5eb1",
  "venues": [
   {
    "id": "ancora",
@@ -988,7 +988,7 @@
     "source_url": "https://boulevardvancouver.ca/happy-hour/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-23"
+    "last_confirmed_at": "2026-10-24"
    }
   },
   {
@@ -4762,8 +4762,8 @@
    "maps_url": null,
    "trust": {
     "level": "verified",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "changed",
+    "confidence": "medium",
     "source_url": "https://www.facebook.com/tacofinolovesyou/posts/tacofino-happy-hour-instant-mood-booster-join-us-every-monday-friday-from-3-6-pm/1016478513816229/",
     "data_as_of": null,
     "last_checked_at": "2026-10-24",
@@ -5923,12 +5923,12 @@
    "maps_url": null,
    "trust": {
     "level": "verified",
-    "status": "unconfirmed",
+    "status": "confirmed",
     "confidence": "high",
     "source_url": "https://moltaqarestaurant.ca/menu/",
     "data_as_of": null,
     "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-23"
+    "last_confirmed_at": "2026-10-24"
    }
   },
   {
@@ -23624,8 +23624,8 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "https://starlightcasino.ca/casino-happy-hour/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-10-24",
