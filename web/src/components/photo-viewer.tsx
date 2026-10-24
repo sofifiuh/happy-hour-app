@@ -3,10 +3,12 @@ import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { asset } from "@/lib/routes";
 import { reducedMotion } from "@/lib/motion";
+import type { Photo } from "@/lib/types";
 
 // Full-screen photo gallery for the venue page. Swipe sideways between
-// photos, swipe down (or tap ×, or Esc) to close.
-export function PhotoViewer({ photos, name, open, onClose }: { photos: string[]; name: string; open: boolean; onClose: () => void }) {
+// photos, swipe down (or tap ×, or Esc) to close. Each photo credits its
+// source and links back to the page it came from.
+export function PhotoViewer({ photos, name, open, onClose }: { photos: Photo[]; name: string; open: boolean; onClose: () => void }) {
   const [index, setIndex] = useState(0);
   const [broken, setBroken] = useState<Set<number>>(() => new Set());
   const strip = useRef<HTMLDivElement>(null);
@@ -25,9 +27,11 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: string[];
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
       if (e.key === "Tab") {
-        // Two stops: the close button and the photo track.
+        // Focus stays in the viewer: close button, photo track, credit link.
         e.preventDefault();
-        (document.activeElement === closeBtn.current ? strip.current : closeBtn.current)?.focus();
+        const stops = [closeBtn.current, strip.current, sheet.current?.querySelector<HTMLElement>("a[href]")].filter((el): el is HTMLElement => !!el);
+        const at = stops.indexOf(document.activeElement as HTMLElement);
+        stops[(at + (e.shiftKey ? -1 : 1) + stops.length) % stops.length]?.focus();
       }
       const s = strip.current;
       if (s && (e.key === "ArrowRight" || e.key === "ArrowLeft"))
@@ -105,6 +109,7 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: string[];
   }, [open, onClose]);
 
   if (!open) return null;
+  const credit = photos[index];
   const onScroll = () => {
     const s = strip.current;
     if (s) setIndex(Math.round(s.scrollLeft / s.clientWidth));
@@ -122,7 +127,7 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: string[];
           aria-label={photos.length > 1 ? "Photos, use the arrow keys to move between them" : "Photo"}
           className="no-scrollbar flex size-full snap-x snap-mandatory overflow-x-auto outline-none focus-visible:ring-2 focus-visible:ring-cream/60 focus-visible:ring-inset"
         >
-          {photos.map((src, i) => (
+          {photos.map(({ src }, i) => (
             <div key={src} className="grid size-full shrink-0 snap-center place-items-center">
               {broken.has(i) ? (
                 <div className="grid aspect-[4/3] w-[min(90vw,520px)] place-items-center rounded-[24px] bg-gradient-to-br from-[#ff4900] to-[#751927]">
@@ -158,9 +163,21 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: string[];
             <X className="size-5" />
           </button>
         </div>
+        {credit?.credit && (
+          <p className={`absolute inset-x-0 ${photos.length > 1 ? "bottom-[calc(max(env(safe-area-inset-bottom),20px)+18px)]" : "bottom-[max(env(safe-area-inset-bottom),20px)]"} text-center text-[12px] text-cream/70`}>
+            Photo:{" "}
+            {credit.link ? (
+              <a href={credit.link} target="_blank" rel="noopener" className="inline-block py-2 underline decoration-cream/40 underline-offset-2 hover:text-cream">
+                {credit.credit}
+              </a>
+            ) : (
+              credit.credit
+            )}
+          </p>
+        )}
         {photos.length > 1 && (
           <div className="pointer-events-none absolute inset-x-0 bottom-[max(env(safe-area-inset-bottom),20px)] flex justify-center gap-1.5">
-            {photos.map((src, i) => (
+            {photos.map(({ src }, i) => (
               <span key={src} className={i === index ? "h-1.5 w-4 rounded-full bg-cream transition-all" : "size-1.5 rounded-full bg-cream/40 transition-all"} />
             ))}
           </div>

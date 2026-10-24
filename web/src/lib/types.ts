@@ -36,8 +36,10 @@ export interface Venue {
   ratings: number | null;
   photo: string | null;
   photoCredit: string | null;
-  // Extra photos after the cover, shown in the venue page gallery.
-  gallery?: string[];
+  photoCreditUrl?: string | null;
+  // Extra photos after the cover, shown in the venue page gallery, each with
+  // who to credit and the page it came from.
+  gallery?: Photo[];
   hh: {
     days: number[];
     start: string;
@@ -89,3 +91,5 @@ export interface BestList {
   scored: number; // venues with a score in the place
   ids: string[];
 }
+
+export type Photo = { src: string; credit: string | null; link: string | null };
