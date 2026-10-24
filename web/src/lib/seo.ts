@@ -4,7 +4,7 @@
 // it, so crawlers see the same words before and after the app boots.
 // Every sentence is built from data fields; nothing is invented.
 import { DAY_FULL, DAY_SHORT, fmtRange, windowsForDay } from "./hours.ts";
-import type { Deal, Venue } from "./types";
+import type { Deal, Quote, Venue } from "./types";
 
 export const SITE = "A Little Hang";
 
@@ -204,4 +204,30 @@ export function nearby(v: Venue, venues: Venue[], n = 6) {
     .sort((a, b) => a.d - b.d)
     .slice(0, n)
     .map((x) => x.o);
+}
+
+// "What people say": links out to where people talk about the spot. Google's
+// and Reddit's terms don't let us copy, store or summarize their reviews and
+// posts, so we only link (never quote, never in Review/AggregateRating schema).
+export function googleReviewsLink(v: Venue) {
+  const q = encodeURIComponent(`${v.name} ${v.address}`);
+  return `https://www.google.com/maps/search/?api=1&query=${q}${v.placeId ? `&query_place_id=${encodeURIComponent(v.placeId)}` : ""}`;
+}
+
+// "The Greek by Anatoli — Yaletown (Mainland)" -> "The Greek by Anatoli":
+// Reddit matches every word, so branch names and city leave few results.
+export function redditName(v: Venue) {
+  return v.name.replace(/\s*\([^)]*\)/g, "").split(/\s+[—–-]\s+/)[0].trim() || v.name;
+}
+
+export function redditLink(v: Venue) {
+  return `https://www.reddit.com/search/?q=${encodeURIComponent(`${redditName(v)} happy hour`)}`;
+}
+
+// "Ashley Harris, Narcity · May 2022": who said it and when, so an older
+// quote reads as dated rather than current.
+export function quoteCredit(q: Quote) {
+  const d = new Date(`${q.date}T12:00:00`);
+  const when = Number.isNaN(d.getTime()) ? "" : ` · ${d.toLocaleDateString("en-US", { month: "short", year: "numeric" })}`;
+  return `${q.author ? `${q.author}, ` : ""}${q.source}${when}`;
 }

@@ -1,0 +1,34 @@
+{
+  "_about": "Hand-picked, short quotes about a venue's happy hour from published articles. Rules: quote verbatim (use … where trimmed), 125 characters or less, about the happy hour, never from Google reviews, credit the author and publication, link the article, record when it was published and when we checked it. Remove any quote on request. Never put these in Review or AggregateRating schema.",
+  "quotes": {
+    "como-taperia": [
+      { "text": "Happy hour is when the room feels closest to the bars that inspired it.", "author": null, "source": "Tastet", "url": "https://tastet.ca/en/lists/the-best-happy-hours-in-vancouver/", "date": "2026-10-15", "checked": "2026-10-24" },
+      { "text": "Expect a queue for the standing-room-only bar where Happy Hour means free tapas when you purchase a drink.", "author": "Scout Editors", "source": "Scout Magazine", "url": "https://scoutmagazine.ca/the-best-happy-hour-situations-in-vancouver-our-picks/", "date": "2024-06-13", "checked": "2026-10-24" }
+    ],
+    "the-flamingo-room": [
+      { "text": "Here, happy hour goes by the name Happy Daiquiri Hour.", "author": null, "source": "Tastet", "url": "https://tastet.ca/en/lists/the-best-happy-hours-in-vancouver/", "date": "2026-10-15", "checked": "2026-10-24" }
+    ],
+    "dear-gus-snack-bar": [
+      { "text": "Glasses and half carafes come down in price, amaro and vermouth spritzes join the lineup…", "author": null, "source": "Tastet", "url": "https://tastet.ca/en/lists/the-best-happy-hours-in-vancouver/", "date": "2026-10-15", "checked": "2026-10-24" }
+    ],
+    "lucky-taco": [
+      { "text": "…it makes an easy late-afternoon stop on the way back from the beach.", "author": null, "source": "Tastet", "url": "https://tastet.ca/en/lists/the-best-happy-hours-in-vancouver/", "date": "2026-10-15", "checked": "2026-10-24" }
+    ],
+    "the-pawn-shop-yvr-taco-bar": [
+      { "text": "This bar is always buzzing and happy hour here means cheap drinks and delicious tacos.", "author": "Ashley Harris", "source": "Narcity", "url": "https://www.narcity.com/vancouver/vancouver-bars-have-some-of-the-best-happy-hours-in-the-city-according-to-yelp", "date": "2022-05-09", "checked": "2026-10-24" }
+    ],
+    "fanny-bay-oyster-bar": [
+      { "text": "You’ll find your true-love oyster here, with a huge selection in various flavours, ages, and growing methods.", "author": "Irene Chuang", "source": "Vancouver Magazine", "url": "https://www.vanmag.com/taste/restaurants/buck-a-shuck-vancouver/", "date": "2025-08-18", "checked": "2026-10-24" },
+      { "text": "The happy hour runs 2 p.m. to 6 p.m. daily and you bet those oysters are on special.", "author": "Dani Wright", "source": "Vancouver Magazine", "url": "https://vanmag.com/taste/restaurants/where-to-find-the-best-happy-hour-downtown", "date": "2024-05-05", "checked": "2026-10-24" }
+    ],
+    "hydra-estiatorio-mediterranean": [
+      { "text": "Oysters and aesthetics? Hydra Estiatorio is the place to be.", "author": "Irene Chuang", "source": "Vancouver Magazine", "url": "https://www.vanmag.com/taste/restaurants/buck-a-shuck-vancouver/", "date": "2025-08-18", "checked": "2026-10-24" }
+    ],
+    "the-park-pub": [
+      { "text": "This West End spot offers up great old-school happy hour deals…", "author": "Isabelle Vauclair", "source": "Curiocity", "url": "https://curiocity.com/happy-hours-vancouver/", "date": "2024-03-19", "checked": "2026-10-24" }
+    ],
+    "caffe-barney-on-granville": [
+      { "text": "…the back patio makes for the perfect stop for happy hour.", "author": "Isabelle Vauclair", "source": "Curiocity", "url": "https://curiocity.com/happy-hours-vancouver/", "date": "2024-03-19", "checked": "2026-10-24" }
+    ]
+  }
+}

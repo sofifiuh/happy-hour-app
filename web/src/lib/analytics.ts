@@ -15,6 +15,7 @@ export type AnalyticsEvent =
   | { name: "share_clicked"; venue_id: string }
   | { name: "directions_clicked"; venue_id: string }
   | { name: "saved"; venue_id: string }
+  | { name: "people_say_clicked"; venue_id: string; kind: string }
   | { name: "install_prompt"; outcome: "shown" | "installed" };
 
 let ph: PostHog | null = null;

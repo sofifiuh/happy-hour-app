@@ -1,4 +1,4 @@
-import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Navigation, Phone, Share, Star, Store } from "lucide-react";
+import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Lightbulb, MessageCircle, Navigation, Phone, Share, Star, Store } from "lucide-react";
 import { type CSSProperties, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
@@ -16,13 +16,13 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { VenuePhoto } from "@/components/venue-photo";
 import { walkLabel, distanceKm } from "@/lib/geo";
 import { endingSoon, fmtRange, nowHHMM, occurrence, statusLabel } from "@/lib/hours";
-import { fmtChecked, reportLink } from "@/lib/links";
+import { fmtChecked, reportLink, tipLink } from "@/lib/links";
 import { backLabel, goBackToBase } from "@/lib/back-to";
 import { useIsDesktop } from "@/lib/use-media";
 import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
-import { dayRuns, nearby, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
+import { dayRuns, googleReviewsLink, nearby, quoteCredit, redditLink, redditName, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
 import { track } from "@/lib/analytics";
 import { apiEnabled, count } from "@/lib/api";
 import { shareLink } from "@/lib/share";
@@ -394,9 +394,60 @@ export function Spot() {
         </div>
       </section>
 
+      {/* What people say: hand-picked press quotes (quotes.json), then links.
+          Google's and Reddit's terms don't allow copying or summarizing their
+          reviews and posts, so for those we only link. */}
+      <section style={{ "--i": 4 } as CSSProperties} className="animate-rise mt-8 px-5">
+        <h2 className="mb-1 font-display text-[20px] font-bold tracking-tight">What people say</h2>
+        <p className="mb-3 text-[14px] text-muted-foreground">
+          {venue.quotes?.length ? `What's been written about the ${venue.name} happy hour, and where to read more.` : `See what locals say about the ${venue.name} happy hour.`}
+        </p>
+        {venue.quotes?.map((q) => (
+          <figure key={q.url + q.text} className="mb-2 rounded-[22px] bg-ink-2 px-4 pt-4 pb-1">
+            <blockquote cite={q.url} className="text-[15px] leading-snug font-medium">
+              “{q.text}”
+            </blockquote>
+            <figcaption className="mt-0.5 text-[13px] text-muted-foreground">
+              <a href={q.url} target="_blank" rel="nofollow noopener noreferrer" onClick={() => track({ name: "people_say_clicked", venue_id: venue.id, kind: "quote" })} className="inline-flex min-h-11 items-center gap-1 underline underline-offset-2 hover:text-cream">
+                {quoteCredit(q)}
+                <span className="sr-only"> (opens in a new tab)</span>
+              </a>
+            </figcaption>
+          </figure>
+        ))}
+        <ul className="rounded-[22px] bg-ink-2 px-4">
+          {[
+            { href: redditLink(venue), icon: MessageCircle, label: "Search Reddit", sub: `“${redditName(venue)} happy hour”`, ext: true, kind: "reddit" },
+            { href: googleReviewsLink(venue), icon: Star, label: "Read Google reviews", sub: "Opens Google Maps", ext: true, kind: "google" },
+            { href: tipLink(venue), icon: Lightbulb, label: "Been here? Send us a tip", sub: "Best deal, busy times, what to skip", ext: false, kind: "tip" },
+          ].map((l) => (
+            <li key={l.kind} className="border-b border-border last:border-0">
+              <a
+                href={l.href}
+                {...(l.ext && { target: "_blank", rel: "nofollow noopener noreferrer" })}
+                onClick={() => track({ name: "people_say_clicked", venue_id: venue.id, kind: l.kind })}
+                className="flex min-h-14 items-center gap-3 py-3"
+              >
+                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-ink-3">
+                  <l.icon className="size-4" />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[15px] font-semibold">
+                    {l.label}
+                    {l.ext && <span className="sr-only"> (opens in a new tab)</span>}
+                  </span>
+                  <span className="block truncate text-[13px] text-muted-foreground">{l.sub}</span>
+                </span>
+                {l.ext ? <ExternalLink className="size-4 shrink-0 text-muted-foreground" /> : <ChevronDown className="size-4 shrink-0 -rotate-90 text-muted-foreground" />}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       {/* Location */}
       {venue.lat != null && venue.lng != null && (
-        <section style={{ "--i": 4 } as CSSProperties} className="animate-rise mt-8 px-5">
+        <section style={{ "--i": 5 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Find us here</h2>
           <button onClick={openDirections} className="block w-full overflow-hidden rounded-[22px] bg-ink-2 text-left">
             <MiniMap lat={venue.lat} lng={venue.lng} others={near as { lat: number; lng: number }[]} className="h-[170px] w-full" />
@@ -428,14 +479,14 @@ export function Spot() {
 
       {/* About, nearby, more hubs, questions: the same words the static page
           carries (scripts/prerender.mjs), so search sees one page. */}
-      <section style={{ "--i": 5 } as CSSProperties} className="animate-rise mt-8 px-5">
+      <section style={{ "--i": 6 } as CSSProperties} className="animate-rise mt-8 px-5">
         <h2 className="mb-2 font-display text-[20px] font-bold tracking-tight">About {venue.name}</h2>
         {venue.description && <p className="mb-2 text-[15px] leading-relaxed text-cream">{venue.description}</p>}
         <p className="text-[15px] leading-relaxed text-muted-foreground">{venueAbout(venue)}</p>
       </section>
 
       {near.length > 0 && (
-        <section style={{ "--i": 6 } as CSSProperties} className="animate-rise mt-8 px-5">
+        <section style={{ "--i": 7 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Happy hours nearby</h2>
           <ul className="rounded-[22px] bg-ink-2 px-4">
             {near.map((o) => {
@@ -477,7 +528,7 @@ export function Spot() {
         </nav>
       )}
 
-      <section style={{ "--i": 7 } as CSSProperties} className="animate-rise mt-8 px-5">
+      <section style={{ "--i": 8 } as CSSProperties} className="animate-rise mt-8 px-5">
         <h2 className="mb-2 font-display text-[20px] font-bold tracking-tight">{venue.name} happy hour questions</h2>
         <div className="rounded-[22px] bg-ink-2 px-4">
           {venueFaq(venue).map((f) => (
