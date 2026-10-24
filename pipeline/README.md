@@ -52,6 +52,10 @@ brightest site photo, and puts the rest in `photos` for the venue page
 gallery. Every one credits the venue and links back to its page; the site
 build (`web/scripts/photos.mjs`) downloads and resizes them, so the app
 never hotlinks. Venues are re-checked every 30 days, worst covers first.
+`review-photos.js` then shows Claude (Claude Code CLI, subscription token)
+each venue's cover and site photos and drops what pixel checks can't catch:
+staff portraits, photographed logos, flyers and menus, near-duplicates.
+It also picks the cover. A venue is reviewed again when its photo set changes.
 
 ## Engine & auth
 
