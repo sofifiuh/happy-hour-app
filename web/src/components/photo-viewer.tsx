@@ -1,16 +1,32 @@
-import { X } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { asset } from "@/lib/routes";
 import { reducedMotion } from "@/lib/motion";
 import type { Photo } from "@/lib/types";
 
-// Full-screen photo gallery for the venue page. Swipe sideways between
-// photos, swipe down (or tap ×, or Esc) to close. Each photo credits its
-// source and links back to the page it came from.
+// Full-screen photo gallery for the venue page. Photos crossfade in place
+// rather than sliding, which felt queasy on a big screen. Arrows, arrow keys,
+// a sideways swipe or trackpad swipe step between them; swipe down, tap
+// outside the photo, tap ×, or Esc closes. The viewer never touches browser
+// history, and it swallows sideways trackpad swipes so Chrome's swipe-to-go-
+// back gesture can't fire behind it. Each photo credits its source and links
+// back to the page it came from.
 export function PhotoViewer({ photos, name, open, onClose }: { photos: Photo[]; name: string; open: boolean; onClose: () => void }) {
   const [index, setIndex] = useState(0);
   const [broken, setBroken] = useState<Set<number>>(() => new Set());
+  const [seen, setSeen] = useState<Set<number>>(() => new Set([0, 1]));
+  const count = photos.length;
+  const step = useCallback(
+    (by: number) =>
+      setIndex((i) => {
+        const next = Math.min(count - 1, Math.max(0, i + by));
+        // Keep the photo after next warm so the fade never waits on a load.
+        setSeen((s) => (s.has(next + 1) ? s : new Set(s).add(next).add(next + 1)));
+        return next;
+      }),
+    [count],
+  );
   const strip = useRef<HTMLDivElement>(null);
   const sheet = useRef<HTMLDivElement>(null);
   const closeBtn = useRef<HTMLButtonElement>(null);
@@ -27,27 +43,46 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: Photo[]; 
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
       if (e.key === "Tab") {
-        // Focus stays in the viewer: close button, photo track, credit link.
+        // Focus stays in the viewer: close button, photos, arrows, credit link.
         e.preventDefault();
-        const stops = [closeBtn.current, strip.current, sheet.current?.querySelector<HTMLElement>("a[href]")].filter((el): el is HTMLElement => !!el);
+        const stops = [closeBtn.current, strip.current, ...(sheet.current?.querySelectorAll<HTMLElement>("[aria-label$='photo']:not(:disabled), a[href]") ?? [])].filter(
+          (el): el is HTMLElement => !!el && el.offsetParent !== null,
+        );
         const at = stops.indexOf(document.activeElement as HTMLElement);
         stops[(at + (e.shiftKey ? -1 : 1) + stops.length) % stops.length]?.focus();
       }
-      const s = strip.current;
-      if (s && (e.key === "ArrowRight" || e.key === "ArrowLeft"))
-        s.scrollBy({
-          left: (e.key === "ArrowRight" ? 1 : -1) * s.clientWidth,
-          behavior: "smooth",
-        });
+      if (e.key === "ArrowRight") step(1);
+      if (e.key === "ArrowLeft") step(-1);
     };
+    // Trackpad: one sideways swipe moves one photo. Every wheel event is
+    // cancelled, which also keeps Chrome's two-finger back/forward gesture
+    // from navigating the page underneath.
+    let acc = 0,
+      lockUntil = 0;
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
+      if (e.timeStamp < lockUntil) return;
+      acc += e.deltaX;
+      if (Math.abs(acc) > 40) {
+        step(acc > 0 ? 1 : -1);
+        acc = 0;
+        lockUntil = e.timeStamp + 450;
+      }
+    };
+    const overscroll = document.documentElement.style.overscrollBehaviorX;
+    document.documentElement.style.overscrollBehaviorX = "none";
     window.addEventListener("keydown", onKey);
+    window.addEventListener("wheel", onWheel, { passive: false });
     return () => {
       document.documentElement.style.overflow = overflow;
+      document.documentElement.style.overscrollBehaviorX = overscroll;
       app?.removeAttribute("inert");
       window.removeEventListener("keydown", onKey);
+      window.removeEventListener("wheel", onWheel);
       prev?.focus();
     };
-  }, [open, onClose]);
+  }, [open, onClose, step]);
 
   // Swipe down to dismiss: the photos follow the finger and the backdrop fades.
   useEffect(() => {
@@ -57,7 +92,8 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: Photo[]; 
       y0 = 0,
       t0 = 0,
       dy = 0,
-      mode: "idle" | "pending" | "drag" | "off" = "idle";
+      mx = 0,
+      mode: "idle" | "pending" | "drag" | "side" | "off" = "idle";
     const paint = (y: number, animate: boolean) => {
       el.style.transition = animate ? "transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1), background-color 220ms" : "none";
       el.style.transform = y ? `translate3d(0,${y}px,0)` : "";
@@ -71,15 +107,18 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: Photo[]; 
       mode = "pending";
     };
     const move = (e: TouchEvent) => {
-      if (mode !== "pending" && mode !== "drag") return;
-      const mx = e.touches[0].clientX - x0;
+      if (mode !== "pending" && mode !== "drag" && mode !== "side") return;
+      mx = e.touches[0].clientX - x0;
       const my = e.touches[0].clientY - y0;
       if (mode === "pending") {
         if (Math.abs(mx) < 10 && Math.abs(my) < 10) return;
         if (my > 0 && my > Math.abs(mx) * 1.4) mode = "drag";
+        else if (Math.abs(mx) > Math.abs(my)) mode = "side";
         else return void (mode = "off");
       }
       e.preventDefault();
+      // Sideways: the photo stays put and changes on release.
+      if (mode === "side") return;
       dy = Math.max(0, my);
       paint(dy, false);
     };
@@ -94,6 +133,7 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: Photo[]; 
           }
         } else paint(0, true);
       }
+      if (mode === "side" && Math.abs(mx) > 50) step(mx < 0 ? 1 : -1);
       mode = "idle";
     };
     el.addEventListener("touchstart", start, { passive: true });
@@ -106,30 +146,35 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: Photo[]; 
       el.removeEventListener("touchend", end);
       el.removeEventListener("touchcancel", end);
     };
-  }, [open, onClose]);
+  }, [open, onClose, step]);
 
   if (!open) return null;
   const credit = photos[index];
-  const onScroll = () => {
-    const s = strip.current;
-    if (s) setIndex(Math.round(s.scrollLeft / s.clientWidth));
-  };
+  const fade = reducedMotion() ? "" : "transition-opacity duration-200 ease-out";
+  const arrow =
+    "pointer-events-auto absolute top-1/2 hidden size-11 -translate-y-1/2 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-opacity hover:bg-ink/90 disabled:opacity-0 sm:grid";
 
   return createPortal(
     <div role="dialog" aria-modal="true" aria-label={`Photos of ${name}`} className="theme-dark fixed inset-0 z-50">
       <div ref={sheet} data-no-swipe className="animate-fade absolute inset-0 bg-black/[0.96]">
         <div
           ref={strip}
-          onScroll={onScroll}
+          // Tapping the dark space around the photo closes the viewer.
+          onClick={(e) => e.target === e.currentTarget && onClose()}
           tabIndex={0}
           role="group"
           aria-roledescription="carousel"
-          aria-label={photos.length > 1 ? "Photos, use the arrow keys to move between them" : "Photo"}
-          className="no-scrollbar flex size-full snap-x snap-mandatory overflow-x-auto outline-none focus-visible:ring-2 focus-visible:ring-cream/60 focus-visible:ring-inset"
+          aria-label={count > 1 ? "Photos, use the arrow keys to move between them" : "Photo"}
+          className="relative size-full outline-none focus-visible:ring-2 focus-visible:ring-cream/60 focus-visible:ring-inset"
         >
           {photos.map(({ src }, i) => (
-            <div key={src} className="grid size-full shrink-0 snap-center place-items-center">
-              {broken.has(i) ? (
+            <div
+              key={src}
+              aria-hidden={i !== index}
+              onClick={(e) => e.target === e.currentTarget && onClose()}
+              className={`absolute inset-0 grid place-items-center ${fade} ${i === index ? "opacity-100" : "pointer-events-none opacity-0"}`}
+            >
+              {!seen.has(i) && i !== index ? null : broken.has(i) ? (
                 <div className="grid aspect-[4/3] w-[min(90vw,520px)] place-items-center rounded-[24px] bg-gradient-to-br from-[#ff4900] to-[#751927]">
                   <span className="text-center">
                     <span className="block font-display text-[64px] leading-none font-extrabold text-white/30">{name.charAt(0)}</span>
@@ -140,19 +185,29 @@ export function PhotoViewer({ photos, name, open, onClose }: { photos: Photo[]; 
                 <img
                   onError={() => setBroken((b) => new Set(b).add(i))}
                   src={asset(src)}
-                  alt={`${name}, photo ${i + 1} of ${photos.length}`}
-                  loading={i === 0 ? "eager" : "lazy"}
+                  alt={`${name}, photo ${i + 1} of ${count}`}
                   decoding="async"
+                  draggable={false}
                   referrerPolicy="no-referrer"
-                  className="max-h-full max-w-full object-contain"
+                  className="max-h-full max-w-full object-contain select-none"
                 />
               )}
             </div>
           ))}
+          {count > 1 && (
+            <>
+              <button onClick={() => step(-1)} disabled={index === 0} aria-label="Previous photo" className={`${arrow} left-4`}>
+                <ChevronLeft className="size-5" />
+              </button>
+              <button onClick={() => step(1)} disabled={index === count - 1} aria-label="Next photo" className={`${arrow} right-4`}>
+                <ChevronRight className="size-5" />
+              </button>
+            </>
+          )}
         </div>
         <div className="pointer-events-none absolute inset-x-0 top-0 flex items-center justify-between px-4 pt-[max(env(safe-area-inset-top),14px)]">
           <span className="rounded-full bg-ink/70 px-3 py-1.5 text-[13px] font-semibold text-cream tabular backdrop-blur" aria-live="polite">
-            {photos.length > 1 ? `${index + 1} / ${photos.length}` : name}
+            {count > 1 ? `${index + 1} / ${count}` : name}
           </span>
           <button
             ref={closeBtn}
