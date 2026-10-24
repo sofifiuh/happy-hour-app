@@ -1,7 +1,7 @@
 // The Vancouver Happy Hour Index: what a happy hour pint, glass of wine,
 // cocktail, highball and oyster typically cost, from the fixed prices on
 // every venue's own menu. prerender.mjs turns it into /happy-hour-index/
-// (the page the press and Reddit link to) and its CSV.
+// (the page the press and Reddit link to).
 //
 // One price per venue per kind: its cheapest qualifying deal. Medians are
 // across venues, so a bar listing ten cheap beers counts once. "$2 off",
