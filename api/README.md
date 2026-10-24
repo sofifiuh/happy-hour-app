@@ -36,6 +36,16 @@ npm test                  # end-to-end smoke test (use a fresh local db)
 For the site, run `VITE_API_URL=http://127.0.0.1:8787 npm run dev` in `web/`
 and open http://localhost:5173. Sign-in links come straight back in dev.
 
+## Emails
+
+Every email lives in `src/email.ts`, on one branded layout (light and dark,
+plain-text twin). The logo it loads is `web/public/email/logo.png` on the
+site. To look at them all with sample data:
+
+```sh
+node --experimental-strip-types scripts/email-preview.ts /tmp/emails
+```
+
 ## Deploy
 
 `.github/workflows/deploy-api.yml` runs on pushes to main that touch `api/`.

@@ -1,6 +1,17 @@
 import { cleanEmail, finishLogin, logout, requireOwner, requireUser, sign, startLogin } from "./auth";
 import type { Env } from "./env";
 import { body, cors, HttpError, json, newId, now, sha256, str, today } from "./http";
+import {
+  adminClaimEmail,
+  adminEditFlagEmail,
+  adminReportEmail,
+  claimApprovedEmail,
+  claimReceivedEmail,
+  claimRejectedEmail,
+  type Email,
+  monthlyCheckEmail,
+  ownerReportEmail,
+} from "./email";
 import { admins, send } from "./mail";
 import { cleanEdit, emailMatchesWebsite, venue, venueDirectory } from "./venues";
 
@@ -86,14 +97,11 @@ on("POST", "/claims", async (req, env) => {
   if (auto) writes.push(env.DB.prepare("INSERT OR IGNORE INTO owners (venue_id, user_id, created_at) VALUES (?, ?, ?)").bind(v.id, user.id, stamp));
   await env.DB.batch(writes);
 
-  await notifyAdmins(env, {
-    subject: `${auto ? "Claimed" : "Claim to review"}: ${v.name}`,
-    lines: [
-      `${name} (${role}, ${user.email}${phone ? `, ${phone}` : ""}) ${auto ? "claimed" : "asked to claim"} ${v.name}, ${v.address}.`,
-      auto ? "Approved automatically: their email matches the venue's website." : `Listed phone: ${v.phone ?? "none"}. Website: ${v.website ?? "none"}.`,
-      { label: "Open the review queue", href: `${env.SITE_URL}/venue/admin` },
-    ],
-  });
+  await notifyAdmins(env, adminClaimEmail(env.SITE_URL, { auto, name, role, email: user.email, phone, venue: v }));
+  // The claimant hears back either way: welcome aboard, or "we're on it".
+  await send(env, { to: user.email, ...(auto ? claimApprovedEmail(env.SITE_URL, { name, venue: v }) : claimReceivedEmail(env.SITE_URL, { name, role, venue: v })) }).catch((e) =>
+    console.error("claim mail", e),
+  );
   return json({ claim }, 201);
 });
 
@@ -139,7 +147,7 @@ on("PUT", "/venues/:id/edit", async (req, env, p) => {
   await caches.default.delete(PUBLIC_EDITS);
   if (flags.length) {
     const v = await venue(env, p.id);
-    await notifyAdmins(env, { subject: `Edit to check: ${v.name}`, lines: [...flags, { label: "Open the review queue", href: `${env.SITE_URL}/venue/admin` }] });
+    await notifyAdmins(env, adminEditFlagEmail(env.SITE_URL, { venue: v, flags }));
   }
   return json({ ok: true, updated_at: stamp, flags });
 });
@@ -256,10 +264,8 @@ on("POST", "/reports", async (req, env) => {
   const owners = (
     await env.DB.prepare("SELECT u.email FROM owners o JOIN users u ON u.id = o.user_id WHERE o.venue_id = ?").bind(v.id).all<{ email: string }>()
   ).results.map((r) => r.email);
-  const lines = [`Someone reported a problem with ${v.name}:`, message, ...(email ? [`They left an email: ${email}`] : [])];
-  await notifyAdmins(env, { subject: `Report: ${v.name}`, lines: [...lines, { label: "Open the review queue", href: `${env.SITE_URL}/venue/admin` }] });
-  for (const to of owners)
-    await send(env, { to, subject: `A guest flagged your listing: ${v.name}`, lines: [...lines.slice(0, 2), { label: "Update your listing", href: `${env.SITE_URL}/venue/${v.id}` }] }).catch(() => {});
+  await notifyAdmins(env, adminReportEmail(env.SITE_URL, { venue: v, message, email }));
+  for (const to of owners) await send(env, { to, ...ownerReportEmail(env.SITE_URL, { venue: v, message }) }).catch(() => {});
   return json({ ok: true }, 201);
 });
 
@@ -327,20 +333,10 @@ on("POST", "/admin/claims/:id", async (req, env, p) => {
   if (b.decision === "approve") writes.push(env.DB.prepare("INSERT OR IGNORE INTO owners (venue_id, user_id, created_at) VALUES (?, ?, ?)").bind(c.venue_id, c.user_id, stamp));
   await env.DB.batch(writes);
   await caches.default.delete(PUBLIC_EDITS);
-  await send(
-    env,
-    b.decision === "approve"
-      ? {
-          to: c.email,
-          subject: `You now manage ${v.name} on A Little Hang`,
-          lines: [`Hi ${c.name}, you're all set.`, "Update your happy hour times, deals and photos any time. Changes show on the site within a few minutes.", { label: "Edit your listing", href: `${env.SITE_URL}/venue/${v.id}` }],
-        }
-      : {
-          to: c.email,
-          subject: `About your claim for ${v.name}`,
-          lines: [`Hi ${c.name}, we couldn't confirm you manage ${v.name}.`, ...(note ? [note] : []), "Reply to this email with something that shows it (a work email, or a photo of the liquor licence) and we'll take another look."],
-        },
-  ).catch(() => {});
+  await send(env, {
+    to: c.email,
+    ...(b.decision === "approve" ? claimApprovedEmail(env.SITE_URL, { name: c.name, venue: v }) : claimRejectedEmail(env.SITE_URL, { name: c.name, venue: v, note })),
+  }).catch(() => {});
   return json({ ok: true });
 });
 
@@ -396,19 +392,12 @@ async function monthlyCheck(env: Env) {
     if (!v) continue;
     const s = await sign(env, `confirm|${r.venue_id}|${month}`);
     const edited = await env.DB.prepare("SELECT 1 FROM venue_edits WHERE venue_id = ?").bind(r.venue_id).first();
-    await send(env, {
-      to: r.email,
-      subject: `Is ${v.name}'s happy hour still right?`,
-      lines: [
-        "Guests trust A Little Hang because the times are right. Take ten seconds to check yours.",
-        ...(edited ? [{ label: "Yes, it's still right", href: `${env.API_URL}/confirm?v=${encodeURIComponent(r.venue_id)}&m=${month}&s=${s}` }] : []),
-        { label: edited ? "Something changed" : "Check your listing", href: `${env.SITE_URL}/venue/${r.venue_id}` },
-      ],
-    }).catch((e) => console.error("monthly mail", r.venue_id, e));
+    const confirmHref = edited ? `${env.API_URL}/confirm?v=${encodeURIComponent(r.venue_id)}&m=${month}&s=${s}` : null;
+    await send(env, { to: r.email, ...monthlyCheckEmail(env.SITE_URL, { venue: v, month, confirmHref }) }).catch((e) => console.error("monthly mail", r.venue_id, e));
   }
 }
 
-async function notifyAdmins(env: Env, mail: { subject: string; lines: (string | { label: string; href: string })[] }) {
+async function notifyAdmins(env: Env, mail: Email) {
   for (const to of admins(env)) await send(env, { to, ...mail }).catch((e) => console.error("admin mail", e));
 }
 
