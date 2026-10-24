@@ -368,8 +368,14 @@ on("POST", "/admin/email-samples", async (req, env) => {
   if ((await env.DB.prepare("INSERT OR IGNORE INTO event_seen (hash, day) VALUES (?, ?)").bind(key, today()).run()).meta.changes === 0)
     throw new HttpError(429, "Samples went out a few minutes ago, check your inbox");
   const all = Object.entries(samples(env.SITE_URL, env.API_URL));
-  for (const [i, [, m]] of all.entries()) await send(env, { to: admin.email, ...m, subject: `[Sample ${i + 1}/${all.length}] ${m.subject}` });
-  return json({ sent: all.length });
+  let sent = 0;
+  for (const [i, [, m]] of all.entries())
+    await send(env, { to: admin.email, ...m, subject: `[Sample ${i + 1}/${all.length}] ${m.subject}` }).then(() => sent++, (e) => console.error("sample mail", e));
+  if (!sent) {
+    await env.DB.prepare("DELETE FROM event_seen WHERE hash = ?").bind(key).run();
+    throw new HttpError(502, "Couldn't send the samples, try again in a minute");
+  }
+  return json({ sent, of: all.length });
 });
 
 // ---------- Monthly "still right?" ----------

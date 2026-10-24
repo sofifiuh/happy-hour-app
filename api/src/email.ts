@@ -64,7 +64,7 @@ const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`)
 function button(link: Link, primary: boolean) {
   const style = primary
     ? `background:${C.orange};color:${C.ink};border:2px solid ${C.orange}`
-    : `background:transparent;color:${C.text};border:2px solid ${C.line}`;
+    : `background:transparent;color:${C.text};border:2px solid #b9ae9a`;
   // The <i> spacers give Outlook for Windows the padding it ignores on <a>.
   return `<a href="${esc(link.href)}" class="${primary ? "btn" : "btn2 t-main bd"}" style="${style};display:inline-block;border-radius:999px;padding:14px 26px;font-family:${SANS};font-size:16px;line-height:20px;font-weight:600;text-decoration:none;mso-padding-alt:0;text-align:center"><!--[if mso]><i style="mso-font-width:130%;mso-text-raise:28px" hidden>&#8202;&#8202;&#8202;</i><![endif]--><span style="mso-text-raise:14px">${esc(link.label)}</span><!--[if mso]><i style="mso-font-width:130%" hidden>&#8202;&#8202;&#8202;&#8203;</i><![endif]--></a>`;
 }
@@ -166,6 +166,7 @@ a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !importa
   .t-link{color:${DARK.link} !important}
   .bd{border-color:${DARK.line} !important}
   .card{border-color:${DARK.line} !important}
+  .btn2{border-color:#6a645a !important}
 }
 [data-ogsc] .t-main{color:${DARK.text} !important}
 [data-ogsc] .t-dim{color:${DARK.dim} !important}
@@ -187,7 +188,7 @@ a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !importa
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="card bg-card" style="background:${C.card};border:1px solid ${C.line};border-radius:24px;border-collapse:separate;mso-border-alt:none">
     <tr><td class="pad hero" style="background:${C.ink};border-radius:23px 23px 0 0;padding:28px 40px 36px">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-        <td valign="top"><a href="${esc(l.site)}" style="text-decoration:none"><img src="${esc(l.site)}/email/logo.png" width="56" height="54" alt="A Little Hang" style="display:block;width:56px;height:54px;color:${C.cream};font-family:${DISPLAY};font-size:16px;font-weight:700"></a></td>
+        <td valign="top"><a href="${esc(l.site)}" style="text-decoration:none"><img src="${esc(l.site)}/email/logo.png" width="56" height="54" alt="A Little Hang" style="display:block;width:56px;height:54px;color:${C.cream};font-family:${DISPLAY};font-size:11px;line-height:13px;font-weight:700"></a></td>
         <td valign="top" align="right" style="padding-top:4px;font-family:${SANS};font-size:12px;line-height:16px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:${C.cream};white-space:nowrap"><span style="color:${C.pops[2]};font-size:14px">&#9679;</span>&nbsp; ${esc(l.kicker)}</td>
       </tr></table>
       <h1 class="h1" style="margin:36px 0 0;font-family:${DISPLAY};font-size:34px;line-height:40px;font-weight:800;letter-spacing:-0.7px;color:${C.cream}">${esc(l.title).replace(/ (\S+)$/, "&nbsp;$1")}</h1>
@@ -274,7 +275,7 @@ export function claimReceivedEmail(site: string, o: { name: string; role: string
       ["Your role", o.role],
     ],
     cta: { label: "View your claim", href: `${site}/venue/claim/${o.venue.id}` },
-    note: "Want it faster? Upload a photo of your liquor licence on the claim page and we can approve it without a call.",
+    note: `Want it faster? Email a photo of your liquor licence to ${SUPPORT_EMAIL} and we can approve it without a call.`,
     reason: `You're getting this because you asked to manage ${o.venue.name} on A Little Hang.`,
   });
 }
@@ -305,9 +306,8 @@ export function claimRejectedEmail(site: string, o: { name: string; venue: Venue
     title: "We couldn't confirm it yet",
     paragraphs: [`Hi ${o.name}, we weren't able to confirm that you manage ${o.venue.name}.`],
     quote: o.note ?? undefined,
-    cta: { label: "Try again with your licence", href: `${site}/venue/claim/${o.venue.id}` },
-    secondary: { label: "Email us", href: `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(`Claim for ${o.venue.name}`)}` },
-    note: "A work email at the venue's own domain, or a photo of the liquor licence, is usually all it takes.",
+    cta: { label: "Send us proof", href: `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(`Claim for ${o.venue.name}`)}` },
+    note: `Email ${SUPPORT_EMAIL} a photo of the liquor licence and we'll take another look. Or claim again from a work email at the venue's own domain, which is approved instantly.`,
     reason: `You're getting this because you asked to manage ${o.venue.name} on A Little Hang.`,
   });
 }
@@ -373,11 +373,11 @@ export function ownerReportEmail(site: string, o: { venue: Venue; message: strin
 export function monthlyCheckEmail(site: string, o: { venue: Venue; month: string; confirmHref: string | null }) {
   const monthName = new Date(`${o.month}-15T12:00:00Z`).toLocaleString("en-CA", { month: "long", timeZone: "UTC" });
   const edit = `${site}/venue/${o.venue.id}`;
-  return build(`Is ${o.venue.name}'s happy hour still right?`, {
+  return build(`Is the happy hour at ${o.venue.name} still right?`, {
     site,
     preheader: "Ten seconds, one tap. Guests trust A Little Hang because the times are right.",
     kicker: `${monthName} check-in`,
-    title: `Is ${o.venue.name}'s happy hour still right?`,
+    title: `Is the happy hour at ${o.venue.name} still right?`,
     paragraphs: [
       "Guests trust A Little Hang because the times are right. Take ten seconds to check yours.",
       ...(o.confirmHref ? [] : ["You haven't added your own times yet, so guests see what we found online. Take a look and fix anything that's off."]),
