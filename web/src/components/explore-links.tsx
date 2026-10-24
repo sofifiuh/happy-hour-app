@@ -19,6 +19,10 @@ export function ExploreLinks() {
   return (
     <nav aria-label="Explore happy hours" className="mt-8 space-y-5 border-t border-border pt-6">
       <h2 className="font-display text-[20px] font-bold tracking-tight">Explore happy hours</h2>
+      <a href="/research/" className="flex flex-col gap-0.5 rounded-2xl bg-ink-2 px-4 py-3 ring-1 ring-edge/5">
+        <span className="font-semibold">Research and data</span>
+        <span className="text-[13px] text-muted-foreground">Happy hour prices, rankings and free data to use with a credit</span>
+      </a>
       {best.length > 0 && (
         <section>
           <h3 className="mb-2 text-xs font-semibold tracking-wider text-muted-foreground uppercase">Best happy hours, ranked</h3>
