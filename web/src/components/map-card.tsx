@@ -32,7 +32,7 @@ export function MapCard({ row, now, active }: { row: Row; now: Date; active: boo
           width; spots without a score just show the photo. */}
       <div className="relative shrink-0">
         <VenuePhoto venue={venue} className="size-[72px] rounded-[16px]" />
-        {venue.score && <ScoreChip score={venue.score} className="absolute -right-1.5 -bottom-1.5 shadow-sm ring-[2.5px] ring-ink-2" />}
+        {venue.score && <ScoreChip score={venue.score} className="absolute -right-1.5 -bottom-1.5 shadow-md ring-[2.5px] ring-ink-2" />}
       </div>
       <div className="min-w-0 flex-1">
         <h2 className="flex items-center gap-1.5 font-display text-[17px] leading-tight font-extrabold tracking-tight">
