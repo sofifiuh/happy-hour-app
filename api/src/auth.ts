@@ -100,7 +100,7 @@ export async function requireOwner(env: Env, user: User, venueId: string) {
   if (!(await ownsVenue(env, user, venueId))) throw new HttpError(403, "You don't manage this venue");
 }
 
-// HMAC for links that act without signing in (the monthly confirm email).
+// HMAC for links that act without signing in (the every-2-months confirm email).
 export async function sign(env: Env, text: string) {
   if (!env.SIGNING_KEY) throw new HttpError(503, "Signing key isn't set");
   const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(env.SIGNING_KEY), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
