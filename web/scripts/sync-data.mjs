@@ -136,8 +136,7 @@ const slim = venues
     website: v.website || null,
     placeId: v.place_id || null,
     ...(quotes[v.id]?.length && { quotes: quotes[v.id].map(({ text, author, source, url, date }) => ({ text, author, source, url, date })) }),
-    rating: v.rating ?? null,
-    ratings: v.user_ratings_total ?? null,
+    // No Google rating: Maps terms don't allow showing Places content beside our (non-Google) maps.
     ...photosOf(v),
     hh: {
       days: v.happy_hour.days,
