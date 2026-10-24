@@ -1,4 +1,4 @@
-import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Navigation, Phone, Share, Star } from "lucide-react";
+import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Navigation, Phone, Share, Star, Store } from "lucide-react";
 import { type CSSProperties, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
@@ -6,6 +6,7 @@ import { ScoreCard, ScoreChip } from "@/components/hang-score";
 import { MiniMap } from "@/components/mini-map";
 import { NotifyDrawer, remindersAsked } from "@/components/notify-drawer";
 import { PhotoViewer } from "@/components/photo-viewer";
+import { ReportDrawer } from "@/components/report-drawer";
 import { StatusDot } from "@/components/status";
 import { useToast } from "@/components/toast";
 import { Badge } from "@/components/ui/badge";
@@ -22,6 +23,7 @@ import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
 import { dayRuns, nearby, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
 import { track } from "@/lib/analytics";
+import { apiEnabled, count } from "@/lib/api";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
 import type { BestList, Category, Venue } from "@/lib/types";
@@ -42,13 +44,15 @@ function amenityPills(v: Venue) {
 export function Spot() {
   const params = useParams();
   const id = (params.id ?? params.file ?? "").replace(/\.html$/, "");
-  const { byId, venues, hubs, best, now, loading, deviceLocation, area, saved, toggleSaved } = useStore();
+  const { byId, venues, hubs, best, now, loading, deviceLocation, area, saved, toggleSaved, claimed } = useStore();
   const navigate = useNavigate();
   const toast = useToast();
   const venue = byId(id);
   const viewedId = venue?.id;
   useEffect(() => {
-    if (viewedId) track({ name: "venue_viewed", venue_id: viewedId });
+    if (!viewedId) return;
+    track({ name: "venue_viewed", venue_id: viewedId });
+    count(viewedId, "view");
   }, [viewedId]);
   const page = useRef<HTMLElement>(null);
   const bar = useRef<HTMLElement>(null);
@@ -57,6 +61,7 @@ export function Spot() {
   const [cat, setCat] = useState<Category>("drink");
   const [directionsOpen, setDirectionsOpen] = useState(false);
   const [photosOpen, setPhotosOpen] = useState(false);
+  const [reportOpen, setReportOpen] = useState(false);
   const closePhotos = useCallback(() => setPhotosOpen(false), []);
   const [notifyOpen, setNotifyOpen] = useState(() => queryParams().get("sheet") === "notify");
 
@@ -103,7 +108,10 @@ export function Spot() {
   const isSaved = saved.includes(venue.id);
   const onSave = () => {
     const nowSaved = toggleSaved(venue.id);
-    if (nowSaved) track({ name: "saved", venue_id: venue.id });
+    if (nowSaved) {
+      track({ name: "saved", venue_id: venue.id });
+      count(venue.id, "save");
+    }
     toast(nowSaved ? "Saved to your spots" : "Removed from your spots");
     if (nowSaved && !remindersAsked()) setTimeout(() => setNotifyOpen(true), 600);
   };
@@ -111,11 +119,13 @@ export function Spot() {
 
   const openDirections = () => {
     track({ name: "directions_clicked", venue_id: venue.id });
+    count(venue.id, "directions");
     setDirectionsOpen(true);
   };
 
   const onShare = async () => {
     track({ name: "share_clicked", venue_id: venue.id });
+    count(venue.id, "share");
     const res = await shareLink(`${venue.name} on A Little Hang`, `Happy hour at ${venue.name}: ${fmtRange(venue.hh.start, venue.hh.end)}`, absoluteUrl(spotPath(venue.id)));
     if (res === "copied") toast("Link copied");
   };
@@ -162,7 +172,12 @@ export function Spot() {
 
       {/* Identity */}
       <section style={{ "--i": 1 } as CSSProperties} className="animate-rise relative -mt-14 px-5">
-        {occ.status === "live" ? (
+        {venue.closed && (
+          <p role="status" className="mb-3 inline-flex rounded-full bg-orange px-3 py-1 text-[13px] font-semibold text-on-pop">
+            Temporarily closed
+          </p>
+        )}
+        {venue.closed ? null : occ.status === "live" ? (
           <Badge variant="live" className="mb-3">
             <span className="size-1.5 rounded-full bg-on-pop" /> Happening now · {statusLabel(occ, now).toLowerCase()}
           </Badge>
@@ -198,6 +213,11 @@ export function Spot() {
           {venue.hh.verified && (
             <Badge variant="sky" size="sm">
               <BadgeCheck className="size-3.5" /> Verified
+            </Badge>
+          )}
+          {venue.byVenue && (
+            <Badge variant="sky" size="sm">
+              <Store className="size-3.5" /> Updated by the venue
             </Badge>
           )}
           {checked && <span className="text-muted-foreground">Times checked {checked}</span>}
@@ -328,7 +348,7 @@ export function Spot() {
         </ul>
         <div className="mt-1 flex flex-wrap items-center justify-between gap-x-4 px-3 text-[13px] text-muted-foreground">
           <span>
-            {venue.hh.verified ? "Verified against their menu" : "From their website"}
+            {venue.byVenue ? "From the venue" : venue.hh.verified ? "Verified against their menu" : "From their website"}
             {venue.hh.source && (
               <>
                 {" · "}
@@ -338,9 +358,15 @@ export function Spot() {
               </>
             )}
           </span>
-          <a href={reportLink(venue)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
-            <Flag className="size-3.5" /> Report a wrong time
-          </a>
+          {apiEnabled ? (
+            <button onClick={() => setReportOpen(true)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
+              <Flag className="size-3.5" /> Report a wrong time
+            </button>
+          ) : (
+            <a href={reportLink(venue)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
+              <Flag className="size-3.5" /> Report a wrong time
+            </a>
+          )}
         </div>
       </section>
 
@@ -359,12 +385,16 @@ export function Spot() {
           </button>
           <div className="mt-3 grid grid-cols-2 gap-2">
             {venue.phone && (
-              <Button variant="secondary" render={<a href={`tel:${venue.phone}`} />}>
+              <Button variant="secondary" render={<a href={`tel:${venue.phone}`} onClick={() => count(venue.id, "call")} />}>
                 <Phone /> Call
               </Button>
             )}
             {venue.website && (
-              <Button variant="secondary" render={<a href={venue.website} target="_blank" rel="noopener" />} className={cn(!venue.phone && "col-span-2")}>
+              <Button
+                variant="secondary"
+                render={<a href={venue.website} target="_blank" rel="noopener" onClick={() => count(venue.id, "website")} />}
+                className={cn(!venue.phone && "col-span-2")}
+              >
                 <Globe /> Website
               </Button>
             )}
@@ -376,6 +406,7 @@ export function Spot() {
           carries (scripts/prerender.mjs), so search sees one page. */}
       <section style={{ "--i": 5 } as CSSProperties} className="animate-rise mt-8 px-5">
         <h2 className="mb-2 font-display text-[20px] font-bold tracking-tight">About {venue.name}</h2>
+        {venue.description && <p className="mb-2 text-[15px] leading-relaxed text-cream">{venue.description}</p>}
         <p className="text-[15px] leading-relaxed text-muted-foreground">{venueAbout(venue)}</p>
       </section>
 
@@ -437,6 +468,26 @@ export function Spot() {
         </div>
       </section>
 
+      {apiEnabled && (
+        <Link
+          to={claimed.has(venue.id) ? `/venue/${venue.id}` : `/venue/claim/${venue.id}`}
+          className="mx-5 mt-8 flex min-h-14 items-center gap-3 rounded-2xl px-4 py-3 text-[14px] ring-1 ring-edge/10 transition-colors hover:bg-ink-2"
+        >
+          <Store className="size-5 shrink-0 text-pink-fg" />
+          <span className="flex-1">
+            {claimed.has(venue.id) ? (
+              <span className="font-semibold">Manage this listing</span>
+            ) : (
+              <>
+                <span className="block font-semibold">Own or manage {venue.name}?</span>
+                <span className="text-muted-foreground">Claim this listing free to keep your times and deals right.</span>
+              </>
+            )}
+          </span>
+          <ChevronDown className="size-4 -rotate-90 text-muted-foreground" />
+        </Link>
+      )}
+
       <Link to="/" className="sr-only">
         Back to list
       </Link>
@@ -489,6 +540,7 @@ export function Spot() {
       </Drawer>
 
       <NotifyDrawer open={notifyOpen} onOpenChange={setNotifyOpen} />
+      {apiEnabled && <ReportDrawer venue={venue} open={reportOpen} onOpenChange={setReportOpen} />}
       {photosOpen && <PhotoViewer photos={photos} name={venue.name} open onClose={closePhotos} />}
     </>
   );

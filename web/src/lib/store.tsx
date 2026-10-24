@@ -1,3 +1,4 @@
+import { api, apiEnabled, type PublicEdit } from "@/lib/api";
 import { asset, queryParams } from "@/lib/routes";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { AREAS, distanceKm, nearestArea, type Area, type LatLng } from "./geo";
@@ -11,6 +12,7 @@ const SCHEMA = "3";
 const FILTERS_KEY = "alh:filters";
 const SAVED_KEY = "alh:saved";
 const AREA_KEY = "alh:area";
+const EDITS_KEY = "alh:venue-edits";
 
 export type TimeTab = "all" | "live" | "upcoming" | "plan";
 export type AmenityKey = "patio" | "food" | "drink" | "transit" | "lateNight" | "topScore";
@@ -58,6 +60,8 @@ interface Store {
   resetFilters: () => void;
   rows: Row[]; // filtered, sorted
   byId: (id: string) => Venue | undefined;
+  claimed: Set<string>; // venues someone manages
+  refreshEdits: () => void; // after an owner saves
 }
 
 const Ctx = createContext<Store | null>(null);
@@ -147,8 +151,34 @@ export function matchesAmenity(v: Venue, key: AmenityKey) {
   }
 }
 
+// A venue's own edits win over the nightly data, field by field.
+export function applyEdit(v: Venue, e: PublicEdit | undefined): Venue {
+  if (!e) return v;
+  return {
+    ...v,
+    hh: e.hh ? { ...v.hh, ...e.hh } : v.hh,
+    description: e.description ?? v.description ?? null,
+    phone: e.phone !== undefined ? e.phone : v.phone,
+    website: e.website !== undefined ? e.website : v.website,
+    photo: e.photo ?? v.photo,
+    gallery: e.gallery?.length ? e.gallery.filter((g) => g !== (e.photo ?? v.photo)) : v.gallery,
+    amenities: e.amenities ? { ...v.amenities, ...e.amenities } : v.amenities,
+    closed: e.closed === true,
+    checked: e.confirmed > (v.checked ?? "") ? e.confirmed : v.checked,
+    byVenue: { updated: e.updated, confirmed: e.confirmed },
+  };
+}
+
+interface EditsFeed {
+  edits: Record<string, PublicEdit>;
+  claimed: string[];
+}
+
 export function StoreProvider({ children }: { children: ReactNode }) {
-  const [venues, setVenues] = useState<Venue[]>(readCache);
+  const [base, setVenues] = useState<Venue[]>(readCache);
+  const [feed, setFeed] = useState<EditsFeed>(() => readJSON<EditsFeed>(EDITS_KEY, { edits: {}, claimed: [] }));
+  const venues = useMemo(() => (Object.keys(feed.edits).length ? base.map((v) => applyEdit(v, feed.edits[v.id])) : base), [base, feed]);
+  const claimed = useMemo(() => new Set(feed.claimed), [feed]);
   const [loading, setLoading] = useState(venues.length === 0);
   const [hubs, setHubs] = useState<Record<string, Hub>>({});
   const [best, setBest] = useState<BestList[]>([]);
@@ -185,7 +215,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
           // storage blocked: always take the network copy
         }
         const version = `${data_version}/${SCHEMA}`;
-        if (cached !== version || venues.length === 0) {
+        if (cached !== version || base.length === 0) {
           setVenues(fresh);
           try {
             localStorage.setItem(CACHE_KEY, JSON.stringify(fresh));
@@ -199,6 +229,17 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       .finally(() => setLoading(false));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const refreshEdits = useCallback(() => {
+    if (!apiEnabled || IS_FRAME) return;
+    api<EditsFeed>("GET", "/public/edits")
+      .then((f) => {
+        setFeed(f);
+        writeJSON(EDITS_KEY, f);
+      })
+      .catch(() => {});
+  }, []);
+  useEffect(refreshEdits, [refreshEdits]);
 
   useEffect(() => {
     const on = () => setOnline(true);
@@ -277,6 +318,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     const plan = filters.tab === "plan" ? filters.plan : null;
     const out: Row[] = [];
     for (const venue of venues) {
+      if (venue.closed) continue;
       if (q && !searchText(venue).includes(q)) continue;
       if (!filters.amenities.every((a) => matchesAmenity(venue, a))) continue;
       const occ = plan ? occurrenceAt(venue, plan.day, plan.time) : occurrence(venue, now);
@@ -329,6 +371,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     resetFilters,
     rows,
     byId,
+    claimed,
+    refreshEdits,
   };
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
 }

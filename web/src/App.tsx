@@ -16,6 +16,13 @@ import { Spot } from "@/screens/spot";
 
 // MapLibre is most of the bundle; keep it off the list view's critical path.
 const MapScreen = lazy(() => import("@/screens/map").then((m) => ({ default: m.MapScreen })));
+// Venue owners' tools: only venue managers ever load these.
+const venueTools = () => import("@/screens/venue");
+const VenueHome = lazy(() => venueTools().then((m) => ({ default: m.VenueHome })));
+const VenueLogin = lazy(() => venueTools().then((m) => ({ default: m.VenueLogin })));
+const VenueClaim = lazy(() => venueTools().then((m) => ({ default: m.VenueClaim })));
+const VenueEditor = lazy(() => venueTools().then((m) => ({ default: m.VenueEditor })));
+const VenueAdmin = lazy(() => venueTools().then((m) => ({ default: m.VenueAdmin })));
 
 // Checked on every visit to "/", not once when the router is built, so the
 // welcome screen's buttons land on the list straight away.
@@ -75,6 +82,11 @@ const router = createRouter([
       { path: "/privacy", element: <Info page="privacy" /> },
       { path: "/terms", element: <Info page="terms" /> },
       { path: "/screens", element: <ScreensBoard /> },
+      { path: "/venue", element: <VenueHome /> },
+      { path: "/venue/login", element: <VenueLogin /> },
+      { path: "/venue/admin", element: <VenueAdmin /> },
+      { path: "/venue/claim/:id", element: <VenueClaim /> },
+      { path: "/venue/:id", element: <VenueEditor /> },
       { path: "*", element: <NotFound /> },
     ],
   },

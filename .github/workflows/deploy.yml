@@ -73,8 +73,12 @@ jobs:
         working-directory: web
         run: npm run photos
 
+      # Venue tools (claim, edit, report form) switch on when the repo
+      # variable VITE_API_URL points at the venue API (deploy-api.yml).
       - if: steps.site.outputs.kind == 'app'
         working-directory: web
+        env:
+          VITE_API_URL: ${{ vars.VITE_API_URL }}
         run: npm run build:site
 
       - if: steps.site.outputs.kind == 'app'
