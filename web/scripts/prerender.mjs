@@ -7,7 +7,7 @@
 //                            place + topic), static HTML without the app
 //   happy-hour/<place>/best/ best-of lists ranked by Hangout Score, and
 //   happy-hour/best/         Metro Vancouver's (static, like the hubs)
-//   happy-hour-index/        price index (medians, cheapest, by place) + data.csv
+//   happy-hour-index/        price index (medians, cheapest, by place)
 //   badge/<id>.svg|-light.svg venue badges, badge/<id>/ embed page (noindex)
 //   spots/index.html         A–Z of every venue
 //   og/<id>.jpg              1200×630 share card per venue
@@ -26,7 +26,7 @@ import { fmtRange, fmtTime } from "../src/lib/hours.ts";
 import { dayRuns, dealPhrase, fmtDate, money, nearby, parsePrice, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
 import { AREAS, BEST_FLOOR, BEST_FRESH_DAYS, bestPath, buildHubs, hubPath } from "./seo-data.mjs";
 import { cheapestDrink, hoursFacts, isNonAlc, WEIGHTS } from "./hang-score.mjs";
-import { buildIndex, cheapestOf, KINDS, MIN_SAMPLE } from "./price-index.mjs";
+import { buildIndex, KINDS, MIN_SAMPLE } from "./price-index.mjs";
 import { BADGE_H, badgeSvg, badgeText, TOP_SCORE } from "./badges.mjs";
 
 const BASE = "https://alittlehang.com";
@@ -592,10 +592,6 @@ a:focus-visible{outline:2px solid var(--orange)}
 .tnum{font:800 26px/1 "Funnel Display",system-ui,sans-serif;color:var(--lime);font-variant-numeric:tabular-nums;margin-bottom:4px}
 .tiles b{font-size:16px}
 .tiles span:last-child{color:var(--dim);font-size:14px}
-.dl{list-style:none;padding:0;margin:0;display:grid;gap:8px}
-.dl a{display:flex;flex-direction:column;padding:12px 16px;border-radius:16px;background:var(--ink-2);text-decoration:none}
-.dl a:hover{background:var(--ink-3)}
-.dl span{color:var(--dim);font-size:13px}
 @media (max-width:30rem){.topnav>a:not(.cta){padding:0 8px}.cta{padding:0 12px}}
 @media (prefers-reduced-motion:reduce){.feature{transition:none}.feature:hover{transform:none}}
 .badgeprev{display:flex;padding:24px;border-radius:20px;margin:12px 0 0}
@@ -1206,7 +1202,7 @@ for (const b of bestLists) {
 // ---------- happy hour index ----------
 // /happy-hour-index/: what a happy hour pint, glass of wine, cocktail,
 // highball and oyster cost across Metro Vancouver (scripts/price-index.mjs),
-// with the method and a CSV, for writers and anyone else to cite.
+// with the method, for writers and anyone else to cite.
 const INDEX_PATH = "/happy-hour-index/";
 // When the index first went up, for the Dataset's datePublished.
 const INDEX_PUBLISHED = "2026-10-24";
@@ -1241,16 +1237,6 @@ function indexFaq() {
   return qs;
 }
 
-const csvCell = (s) => (s == null ? "" : /[",\n]/.test(String(s)) ? `"${String(s).replace(/"/g, '""')}"` : String(s));
-function indexCsv() {
-  const head = ["venue", "city", "neighbourhood", "url", ...KINDS.map((k) => `${k.key}_cad`), "times_confirmed"];
-  const rows = venues
-    .filter((v) => v.confidence !== "low")
-    .sort((a, b) => a.name.localeCompare(b.name))
-    .map((v) => [v.name, v.city, v.area?.name ?? "", `${BASE}/spots/${v.id}.html`, ...KINDS.map((k) => cheapestOf(v, k)?.p ?? ""), v.confirmed ?? ""]);
-  return [head, ...rows].map((r) => r.map(csvCell).join(",")).join("\n") + "\n";
-}
-
 async function indexPage() {
   const url = BASE + INDEX_PATH;
   const asOf = newest(venues);
@@ -1265,7 +1251,6 @@ async function indexPage() {
   mkdirSync(resolve(dist, "og"), { recursive: true });
   copyFileSync(await renderCard({ id: "happy-hour-index", title: h1, line: `Median ${head.join(" · ")}`, photo: null }), resolve(dist, "og", "happy-hour-index.jpg"));
   const image = { url: `${BASE}/og/happy-hour-index.jpg`, alt: `${h1}: median ${head.join(", ")}` };
-  write("happy-hour-index/data.csv", indexCsv());
   const jsonld = {
     "@context": "https://schema.org",
     "@graph": [
@@ -1285,7 +1270,6 @@ async function indexPage() {
         ...(asOf ? { dateModified: asOf, temporalCoverage: `${asOf}/${asOf}` } : {}),
         spatialCoverage: { "@type": "Place", name: "Metro Vancouver, British Columbia, Canada" },
         variableMeasured: KINDS.map((k) => ({ "@type": "PropertyValue", name: `${k.label} (${k.note})`, unitText: "CAD" })),
-        distribution: [{ "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: `${url}data.csv` }],
         keywords: ["happy hour", "Vancouver", "drink prices", "beer prices", "cost of living"],
       },
       breadcrumb(url, crumbs),
@@ -1350,7 +1334,7 @@ ${table(ix.areas, "Median happy hour prices by neighbourhood, City of Vancouver"
 </ul>
 <h2>Use this data</h2>
 <p class="lede">You're welcome to quote, chart or republish these numbers. Please credit ${SITE} and link to this page. The data is under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>.</p>
-<ul class="chips"><li><a href="${INDEX_PATH}data.csv">Download the venue-level CSV</a></li><li><a href="/research/">All our research and data</a></li><li><a href="/about/">About ${SITE}</a></li></ul>
+<ul class="chips"><li><a href="/research/">All our research and data</a></li><li><a href="/about/">About ${SITE}</a></li></ul>
 <p class="meta">Link to cite:</p>
 <pre class="cite"><code>${esc(cite)}</code></pre>
 <p class="meta">Need a different cut (one neighbourhood, late night only, food prices)? Email <a href="mailto:jason@setsail.ca">jason@setsail.ca</a>.</p>
@@ -1363,7 +1347,7 @@ await indexPage();
 
 // ---------- research hub ----------
 // /research/: one page that leads to every data page (the index, the
-// ranked lists, the area and deal guides, the downloads) and says how
+// ranked lists, the area and deal guides) and says how
 // anyone can use them: free, with a credit and a link back.
 const RESEARCH_PATH = "/research/";
 async function researchPage() {
@@ -1371,7 +1355,7 @@ async function researchPage() {
   const asOf = newest(venues);
   const a = ix.all;
   const title = `Vancouver Happy Hour Research and Data | ${SITE}`;
-  const description = `Every A Little Hang data page in one place: the Happy Hour Index, best-of rankings, ${places.length} area guides and a free CSV. Use it with a credit and a link.`;
+  const description = `Every A Little Hang data page in one place: the Happy Hour Index, best-of rankings, ${places.length} area guides and the method behind them. Use it with a credit and a link.`;
   const crumbs = [{ name: "Happy hours", path: "/" }, { name: "Research and data" }];
   const lists = bestLists.filter((b) => b.index);
   const cities = places.filter((p) => p.kind === "city");
@@ -1443,13 +1427,6 @@ ${asOf ? `<p class="meta">Data as of <time datetime="${asOf}">${esc(fmtDate(asOf
 <li><a href="#guides"><span class="tnum">${guides.length}</span><b>Day, deal and vibe guides</b><span>Oysters, wings, patios, late night, Sunday and more.</span></a></li>
 <li><a href="/about/#hang-score"><span class="tnum">0–10</span><b>How the Hangout Score works</b><span>Value, selection, hours and vibe, worked out the same way for every spot.</span></a></li>
 <li><a href="/spots/"><span class="tnum">${venues.length}</span><b>Every spot, A–Z</b><span>Each venue's page has its full menu, times and the source we read.</span></a></li>
-</ul>
-
-<h2>Downloads</h2>
-<ul class="dl">
-<li><a href="${INDEX_PATH}data.csv"><b>Happy hour prices, venue by venue</b><span>CSV · one row per venue · pint, wine, cocktail, highball and oyster prices</span></a></li>
-<li><a href="/llms.txt"><b>Site map for AI assistants</b><span>llms.txt · every guide and ranking in plain text</span></a></li>
-<li><a href="/sitemap.xml"><b>XML sitemap</b><span>Every page, with the date it last changed</span></a></li>
 </ul>
 
 <h2>Best happy hours, ranked</h2>
@@ -1706,8 +1683,8 @@ ${places.filter((p) => p.kind === "city").map((p) => linkLine(p, `Happy hours in
 ${places.filter((p) => p.kind === "area").map((p) => linkLine(p, `Happy hours in ${p.name}`)).join("\n")}
 
 ## Prices
-- [Research and data](${BASE}/research/): every data page, downloads, and how to use and credit the data (free with a credit and a link)
-- [Vancouver Happy Hour Index](${BASE}/happy-hour-index/): median happy hour ${KINDS.filter((k) => ix.all[k.key].n).map((k) => `${k.short} ${money(Math.round(ix.all[k.key].median * 100) / 100)}`).join(", ")} across Metro Vancouver, cheapest spots and prices by city ([CSV](${BASE}/happy-hour-index/data.csv))
+- [Research and data](${BASE}/research/): every data page and how to use and credit the data (free with a credit and a link)
+- [Vancouver Happy Hour Index](${BASE}/happy-hour-index/): median happy hour ${KINDS.filter((k) => ix.all[k.key].n).map((k) => `${k.short} ${money(Math.round(ix.all[k.key].median * 100) / 100)}`).join(", ")} across Metro Vancouver, cheapest spots and prices by city
 ## Best happy hours, ranked by Hangout Score
 ${bestLists.filter((b) => b.index).map((b) => `- [${bestH1(b)}](${BASE}${bestPath(b.slug)}): #1 ${b.venues[0].name} (${b.venues[0].score.total.toFixed(1)}/10)`).join("\n")}
 
