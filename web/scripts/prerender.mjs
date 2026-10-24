@@ -564,7 +564,40 @@ a:focus-visible{outline:2px solid var(--orange)}
 .tablewrap td small{display:block;color:var(--dim);font-size:11px}
 .tablewrap td.low{color:var(--lime);font-weight:700}
 .tablewrap td.na{color:var(--dim)}
-.cite{margin:6px 0 0;padding:12px 14px;border-radius:14px;background:var(--ink-2);overflow-x:auto;font-size:13px;line-height:1.5;white-space:pre-wrap;word-break:break-all}
+.cite{margin:6px 0 0;padding:12px 14px;border-radius:14px;background:var(--ink-2);overflow-x:auto;font-size:13px;line-height:1.5;white-space:pre-wrap;word-break:break-all;user-select:all;-webkit-user-select:all}
+.topnav{display:flex;align-items:center;gap:6px}
+.topnav>a:not(.cta){display:inline-flex;align-items:center;min-height:40px;padding:0 12px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px}
+.topnav>a:not(.cta):hover,.topnav>a[aria-current]{background:var(--ink-2)}
+.eyebrow{margin:18px 0 0;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--pink)}
+.eyebrow+h1{margin-top:6px}
+.feature{display:flex;flex-direction:column;gap:6px;margin:24px 0 0;padding:22px 22px 20px;border-radius:24px;background:#ff4900;color:#1b1b1b;text-decoration:none;transition:transform .2s}
+.feature:hover{transform:translateY(-2px)}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.ftitle{font:800 clamp(24px,5vw,32px)/1.05 "Funnel Display",system-ui,sans-serif;letter-spacing:-.02em;text-wrap:balance}
+.fdesc{max-width:52ch;font-size:15px}
+.fnums{display:flex;flex-wrap:wrap;gap:8px 22px;margin:10px 0 2px}
+.fnums span{display:flex;flex-direction:column;font-size:13px;font-weight:600}
+.fnums b{font:800 30px/1 "Funnel Display",system-ui,sans-serif;font-variant-numeric:tabular-nums}
+.fgo{font-weight:600;margin-top:4px}
+.use{padding:18px 18px 16px;border-radius:24px;background:var(--ink-2)}
+.steps{list-style:none;padding:0;margin:0 0 14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:14px;counter-reset:s}
+.steps li{display:flex;flex-direction:column;gap:4px;counter-increment:s}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:30px;height:30px;border-radius:999px;background:var(--lime);color:var(--ink);font:800 15px/1 "Funnel Display",sans-serif}
+.steps b{font-size:16px}
+.steps span{color:var(--dim);font-size:14px}
+.use .cite{background:var(--ink-3)}
+.tiles{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:10px}
+.tiles a{display:flex;flex-direction:column;gap:4px;height:100%;padding:16px;border-radius:20px;background:var(--ink-2);text-decoration:none}
+.tiles a:hover{background:var(--ink-3)}
+.tnum{font:800 26px/1 "Funnel Display",system-ui,sans-serif;color:var(--lime);font-variant-numeric:tabular-nums;margin-bottom:4px}
+.tiles b{font-size:16px}
+.tiles span:last-child{color:var(--dim);font-size:14px}
+.dl{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.dl a{display:flex;flex-direction:column;padding:12px 16px;border-radius:16px;background:var(--ink-2);text-decoration:none}
+.dl a:hover{background:var(--ink-3)}
+.dl span{color:var(--dim);font-size:13px}
+@media (max-width:30rem){.topnav>a:not(.cta){padding:0 8px}.cta{padding:0 12px}}
+@media (prefers-reduced-motion:reduce){.feature{transition:none}.feature:hover{transform:none}}
 .badgeprev{display:flex;padding:24px;border-radius:20px;margin:12px 0 0}
 .badgeprev.dark{background:#2f2d2b}
 .badgeprev.light{background:#f5f1e7}
@@ -610,7 +643,7 @@ function hubDoc({ path, title, description, jsonld, body, robots, image, script 
     ${ldScript(jsonld)}
   </head>
   <body>
-    <header class="top"><a class="brand" href="/" aria-label="${SITE} home">${logoSvg}</a><a class="cta" href="/">Happening now</a></header>
+    <header class="top"><a class="brand" href="/" aria-label="${SITE} home">${logoSvg}</a><nav class="topnav" aria-label="Site"><a href="/research/"${path === "/research/" ? ' aria-current="page"' : ""}>Research</a><a class="cta" href="/">Happening now</a></nav></header>
     <main>
 ${body}
 ${footerHtml()}
@@ -623,7 +656,7 @@ ${script ? `    <script type="module" src="${script}"></script>\n` : ""}  </body
 function footerHtml() {
   const cities = places.filter((p) => p.kind === "city");
   return `<footer>
-<ul class="chips">${cities.map((c) => `<li><a href="${hubPath(c.slug)}">${esc(c.name)}</a></li>`).join("")}${bestBySlug.has("metro") ? `<li><a href="${bestPath("metro")}">Best happy hours, ranked</a></li>` : ""}<li><a href="/happy-hour-index/">Happy hour prices</a></li><li><a href="/spots/">All spots A–Z</a></li><li><a href="/about/">About</a></li></ul>
+<ul class="chips">${cities.map((c) => `<li><a href="${hubPath(c.slug)}">${esc(c.name)}</a></li>`).join("")}${bestBySlug.has("metro") ? `<li><a href="${bestPath("metro")}">Best happy hours, ranked</a></li>` : ""}<li><a href="/research/">Research and data</a></li><li><a href="/happy-hour-index/">Happy hour prices</a></li><li><a href="/spots/">All spots A–Z</a></li><li><a href="/about/">About</a></li></ul>
 <p>Times and deals come from each venue's own menu and are re-checked every night. Something wrong? Tell us from the venue's page.</p>
 </footer>`;
 }
@@ -1260,7 +1293,7 @@ async function indexPage() {
     ],
   };
   const statCells = KINDS.filter((k) => a[k.key].n)
-    .map((k) => `<li><b>${fmtMoney(a[k.key].median)}</b><span>${esc(k.label)}</span><small>${esc(k.note)} · ${a[k.key].n} spots</small></li>`)
+    .map((k) => `<li><b>${fmtMoney(a[k.key].median)}</b><span>${esc(k.label)}</span><small>${esc(k.note)}</small><small>${a[k.key].n} spots</small></li>`)
     .join("");
   const cheapLists = KINDS.filter((k) => a[k.key].n)
     .map(
@@ -1317,7 +1350,7 @@ ${table(ix.areas, "Median happy hour prices by neighbourhood, City of Vancouver"
 </ul>
 <h2>Use this data</h2>
 <p class="lede">You're welcome to quote, chart or republish these numbers. Please credit ${SITE} and link to this page. The data is under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>.</p>
-<ul class="chips"><li><a href="${INDEX_PATH}data.csv">Download the venue-level CSV</a></li><li><a href="/about/">About ${SITE}</a></li></ul>
+<ul class="chips"><li><a href="${INDEX_PATH}data.csv">Download the venue-level CSV</a></li><li><a href="/research/">All our research and data</a></li><li><a href="/about/">About ${SITE}</a></li></ul>
 <p class="meta">Link to cite:</p>
 <pre class="cite"><code>${esc(cite)}</code></pre>
 <p class="meta">Need a different cut (one neighbourhood, late night only, food prices)? Email <a href="mailto:jason@setsail.ca">jason@setsail.ca</a>.</p>
@@ -1327,6 +1360,119 @@ ${table(ix.areas, "Median happy hour prices by neighbourhood, City of Vancouver"
   sitemapDates.set(INDEX_PATH, asOf);
 }
 await indexPage();
+
+// ---------- research hub ----------
+// /research/: one page that leads to every data page (the index, the
+// ranked lists, the area and deal guides, the downloads) and says how
+// anyone can use them: free, with a credit and a link back.
+const RESEARCH_PATH = "/research/";
+async function researchPage() {
+  const url = BASE + RESEARCH_PATH;
+  const asOf = newest(venues);
+  const a = ix.all;
+  const title = `Vancouver Happy Hour Research and Data | ${SITE}`;
+  const description = `Every A Little Hang data page in one place: the Happy Hour Index, best-of rankings, ${places.length} area guides and a free CSV. Use it with a credit and a link.`;
+  const crumbs = [{ name: "Happy hours", path: "/" }, { name: "Research and data" }];
+  const lists = bestLists.filter((b) => b.index);
+  const cities = places.filter((p) => p.kind === "city");
+  const areas = places.filter((p) => p.kind === "area");
+  const guides = topics;
+  const headline = ["pint", "wine", "cocktail"].filter((k) => a[k].n);
+  const cite = `Source: <a href="${BASE}${INDEX_PATH}">${SITE}</a>`;
+  const citeText = `Source: ${SITE} (alittlehang.com), happy hour prices as of ${asOf ? fmtDate(asOf) : "today"}`;
+  const chip = (path, label, count) => `<li><a href="${path}">${esc(label)}${count != null ? ` <small>${count}</small>` : ""}</a></li>`;
+  const parts = [
+    { name: "Vancouver Happy Hour Index", url: `${BASE}${INDEX_PATH}` },
+    ...lists.map((b) => ({ name: bestH1(b), url: `${BASE}${bestPath(b.slug)}` })),
+    ...places.map((p) => ({ name: `Happy hours in ${p.name}`, url: `${BASE}${hubPath(p.slug)}` })),
+  ];
+  const jsonld = {
+    "@context": "https://schema.org",
+    "@graph": [
+      ...SITE_GRAPH,
+      {
+        "@type": "CollectionPage",
+        "@id": url,
+        url,
+        name: "Vancouver happy hour research and data",
+        description,
+        isPartOf: { "@id": WEBSITE_ID },
+        about: { "@id": `${BASE}${INDEX_PATH}#dataset` },
+        mainEntity: { "@id": `${url}#list` },
+        breadcrumb: { "@id": `${url}#breadcrumb` },
+        ...(asOf ? { dateModified: asOf } : {}),
+        inLanguage: "en-CA",
+        license: "https://creativecommons.org/licenses/by/4.0/",
+      },
+      { "@type": "ItemList", "@id": `${url}#list`, numberOfItems: parts.length, itemListElement: parts.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: p.url, name: p.name })) },
+      breadcrumb(url, crumbs),
+    ],
+  };
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">${SITE}</a> › <span>Research and data</span></nav>
+<p class="eyebrow">Research and data</p>
+<h1>Vancouver happy hours, by the numbers</h1>
+<p class="lede">Everything we've learned from reading the happy hour menus of ${venues.length} Metro Vancouver bars and restaurants, re-checked every night. Browse it, quote it, chart it. It's free to use. Just credit ${SITE} with a link.</p>
+${asOf ? `<p class="meta">Data as of <time datetime="${asOf}">${esc(fmtDate(asOf))}</time> · ${ix.deals.toLocaleString("en-CA")} deals · updates nightly</p>` : ""}
+
+<a class="feature" href="${INDEX_PATH}">
+<span class="kicker">The headline study</span>
+<span class="ftitle">Vancouver Happy Hour Index (${YEAR})</span>
+<span class="fdesc">What a happy hour pint, glass of wine, cocktail, highball and oyster cost, the cheapest spots for each, and prices city by city.</span>
+<span class="fnums">${headline.map((k) => `<span><b>${fmtMoney(a[k].median)}</b>${esc(kindByKey[k].short)}</span>`).join("")}</span>
+<span class="fgo">Read the index →</span>
+</a>
+
+<h2>Use our research</h2>
+<div class="use">
+<ol class="steps">
+<li><b>Use it</b><span>Quote the numbers, chart them, put them in an article, a post or a class project. No need to ask.</span></li>
+<li><b>Credit ${SITE}</b><span>Name us as the source, the way you'd credit any study.</span></li>
+<li><b>Link to the page</b><span>The data updates every night, so the link always takes your readers to the latest prices and rankings.</span></li>
+</ol>
+<p class="meta">Copy a credit line (tap to select it), and link to the page you used if it isn't the index:</p>
+<pre class="cite"><code>${esc(cite)}</code></pre>
+<pre class="cite"><code>${esc(citeText)}</code></pre>
+<p class="meta">Licence: <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>. Need a custom cut (one neighbourhood, late night only, food prices) or a quote for a story? Email <a href="mailto:jason@setsail.ca">jason@setsail.ca</a>.</p>
+</div>
+
+<h2>Explore the research</h2>
+<ul class="tiles">
+<li><a href="${bestPath("metro")}"><span class="tnum">${lists.length}</span><b>Best happy hours, ranked</b><span>Top 10 lists for Metro Vancouver and ${lists.length - 1} neighbourhoods and cities, by Hangout Score.</span></a></li>
+<li><a href="#neighbourhoods"><span class="tnum">${areas.length}</span><b>Neighbourhood guides</b><span>Every Vancouver neighbourhood's happy hours, with times, deals and the cheapest drink.</span></a></li>
+<li><a href="#cities"><span class="tnum">${cities.length}</span><b>City guides</b><span>From Vancouver to Langley: every happy hour we track, city by city.</span></a></li>
+<li><a href="#guides"><span class="tnum">${guides.length}</span><b>Day, deal and vibe guides</b><span>Oysters, wings, patios, late night, Sunday and more.</span></a></li>
+<li><a href="/about/#hang-score"><span class="tnum">0–10</span><b>How the Hangout Score works</b><span>Value, selection, hours and vibe, worked out the same way for every spot.</span></a></li>
+<li><a href="/spots/"><span class="tnum">${venues.length}</span><b>Every spot, A–Z</b><span>Each venue's page has its full menu, times and the source we read.</span></a></li>
+</ul>
+
+<h2>Downloads</h2>
+<ul class="dl">
+<li><a href="${INDEX_PATH}data.csv"><b>Happy hour prices, venue by venue</b><span>CSV · one row per venue · pint, wine, cocktail, highball and oyster prices</span></a></li>
+<li><a href="/llms.txt"><b>Site map for AI assistants</b><span>llms.txt · every guide and ranking in plain text</span></a></li>
+<li><a href="/sitemap.xml"><b>XML sitemap</b><span>Every page, with the date it last changed</span></a></li>
+</ul>
+
+<h2>Best happy hours, ranked</h2>
+<ul class="chips">${lists.map((b) => chip(bestPath(b.slug), b.kind === "metro" ? "All of Metro Vancouver" : b.name)).join("")}</ul>
+<h2 id="neighbourhoods">Vancouver neighbourhood guides</h2>
+<ul class="chips">${areas.map((p) => chip(hubPath(p.slug), p.name, p.venues.length)).join("")}</ul>
+<h2 id="cities">City guides</h2>
+<ul class="chips">${cities.map((p) => chip(hubPath(p.slug), p.name, p.venues.length)).join("")}</ul>
+<h2 id="guides">Day, deal and vibe guides</h2>
+<ul class="chips">${guides.map((t) => chip(hubPath(t.slug), t.label, t.venues.length)).join("")}</ul>
+
+<h2>For venues</h2>
+<p class="lede">Every venue page has a free badge that shows your rank or Hangout Score and updates by itself. Find your spot in the <a href="/spots/">A–Z list</a> and tap "Get a badge for your site".</p>
+<h2>How we collect it</h2>
+<ul class="method">
+<li>Times, deals and prices come from each venue's own website, menu PDF or menu photo. Each venue's page links to the exact source.</li>
+<li>Every source is re-checked every night, and every page here rebuilds with it.</li>
+<li>No venue pays to be listed, ranked or scored, and we don't use Google star ratings.</li>
+</ul>`;
+  write(`${RESEARCH_PATH.slice(1)}index.html`, hubDoc({ path: RESEARCH_PATH, title, description, jsonld, body, image: { url: `${BASE}/og/happy-hour-index.jpg`, alt: `Vancouver happy hour research and data from ${SITE}` } }));
+  sitemapDates.set(RESEARCH_PATH, asOf);
+}
+await researchPage();
 
 // ---------- venue badges ----------
 // badge/<id>.svg (dark), badge/<id>-light.svg, and badge/<id>/ with a
@@ -1467,7 +1613,7 @@ const exploreHtml = `<h2 style="${S.h2}">Vancouver neighbourhoods</h2><nav>${pla
   .map((p) => `<a href="${hubPath(p.slug)}" style="${S.chip}">${esc(p.name)}</a>`)
   .join("")}</nav>
 <h2 style="${S.h2}">Best happy hours, ranked</h2><nav>${bestLists.map((b) => `<a href="${bestPath(b.slug)}" style="${S.chip}">${esc(b.kind === "metro" ? "All of Metro Vancouver" : b.name)}</a>`).join("")}</nav>
-<h2 style="${S.h2}">What happy hour costs</h2><nav><a href="/happy-hour-index/" style="${S.chip}">Vancouver Happy Hour Index</a></nav>
+<h2 style="${S.h2}">What happy hour costs</h2><nav><a href="/happy-hour-index/" style="${S.chip}">Vancouver Happy Hour Index</a><a href="/research/" style="${S.chip}">All research and data</a></nav>
 <h2 style="${S.h2}">By day and deal</h2><nav>${topics.map((t) => `<a href="${hubPath(t.slug)}" style="${S.chip}">${esc(t.label)}</a>`).join("")}</nav>`;
 
 const HOME_DESC = `Live happy hour times and deals from ${venues.length} Vancouver bars and restaurants, checked against their own menus every night.`;
@@ -1560,6 +1706,7 @@ ${places.filter((p) => p.kind === "city").map((p) => linkLine(p, `Happy hours in
 ${places.filter((p) => p.kind === "area").map((p) => linkLine(p, `Happy hours in ${p.name}`)).join("\n")}
 
 ## Prices
+- [Research and data](${BASE}/research/): every data page, downloads, and how to use and credit the data (free with a credit and a link)
 - [Vancouver Happy Hour Index](${BASE}/happy-hour-index/): median happy hour ${KINDS.filter((k) => ix.all[k.key].n).map((k) => `${k.short} ${money(Math.round(ix.all[k.key].median * 100) / 100)}`).join(", ")} across Metro Vancouver, cheapest spots and prices by city ([CSV](${BASE}/happy-hour-index/data.csv))
 ## Best happy hours, ranked by Hangout Score
 ${bestLists.filter((b) => b.index).map((b) => `- [${bestH1(b)}](${BASE}${bestPath(b.slug)}): #1 ${b.venues[0].name} (${b.venues[0].score.total.toFixed(1)}/10)`).join("\n")}
