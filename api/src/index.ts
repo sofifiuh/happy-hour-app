@@ -363,9 +363,9 @@ on("POST", "/admin/edits/:id/clear", async (req, env, p) => {
   return json({ ok: true });
 });
 
-// ---------- "Still right?" every 2 months ----------
+// ---------- Monthly "still right?" ----------
 
-// One-tap link from the every-2-months email: no sign in, signed per venue + month.
+// One-tap link from the monthly email: no sign in, signed per venue + month.
 on("GET", "/confirm", async (req, env) => {
   const u = new URL(req.url);
   const v = u.searchParams.get("v") ?? "";
