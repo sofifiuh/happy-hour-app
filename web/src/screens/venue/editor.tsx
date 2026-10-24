@@ -2,7 +2,7 @@ import { ArrowDown, ArrowUp, Check, ImagePlus, Plus, Star, Trash2 } from "lucide
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router";
 import { useToast } from "@/components/toast";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Switch } from "@/components/ui/switch";
@@ -94,9 +94,9 @@ export function VenueEditor() {
       <VenueShell title={venue.name}>
         <Card>
           <p className="text-[15px]">You don't manage this venue yet.</p>
-          <Button className="mt-4" nativeButton={false} render={<Link to={`/venue/claim/${id}`} />}>
+          <Link to={`/venue/claim/${id}`} className={cn(buttonVariants(), "mt-4")}>
             Claim it
-          </Button>
+          </Link>
         </Card>
       </VenueShell>
     );

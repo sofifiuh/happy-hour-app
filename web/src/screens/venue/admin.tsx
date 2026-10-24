@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router";
 import { useToast } from "@/components/toast";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { api, API_URL, session } from "@/lib/api";
@@ -97,14 +97,14 @@ export function VenueAdmin() {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {c.venue_phone && (
-                      <Button size="sm" variant="secondary" nativeButton={false} render={<a href={`tel:${c.venue_phone}`} />}>
+                      <a href={`tel:${c.venue_phone}`} className={buttonVariants({ size: "sm", variant: "secondary" })}>
                         <Phone /> Call the venue
-                      </Button>
+                      </a>
                     )}
                     {c.venue_website && (
-                      <Button size="sm" variant="secondary" nativeButton={false} render={<a href={c.venue_website} target="_blank" rel="noopener" />}>
+                      <a href={c.venue_website} target="_blank" rel="noopener" className={buttonVariants({ size: "sm", variant: "secondary" })}>
                         <ExternalLink /> Website
-                      </Button>
+                      </a>
                     )}
                     {c.licence && (
                       <Button size="sm" variant="secondary" onClick={() => licence(c.id)}>

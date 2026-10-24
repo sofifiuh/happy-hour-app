@@ -160,8 +160,11 @@ export function applyEdit(v: Venue, e: PublicEdit | undefined): Venue {
     description: e.description ?? v.description ?? null,
     phone: e.phone !== undefined ? e.phone : v.phone,
     website: e.website !== undefined ? e.website : v.website,
+    // The venue's own photos are theirs, so no credit line.
     photo: e.photo ?? v.photo,
-    gallery: e.gallery?.length ? e.gallery.filter((g) => g !== (e.photo ?? v.photo)) : v.gallery,
+    photoCredit: e.photo ? null : v.photoCredit,
+    photoCreditUrl: e.photo ? null : v.photoCreditUrl,
+    gallery: e.gallery?.length ? e.gallery.filter((g) => g !== (e.photo ?? v.photo)).map((src) => ({ src, credit: null, link: null })) : v.gallery,
     amenities: e.amenities ? { ...v.amenities, ...e.amenities } : v.amenities,
     closed: e.closed === true,
     checked: e.confirmed > (v.checked ?? "") ? e.confirmed : v.checked,

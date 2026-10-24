@@ -2,10 +2,11 @@ import { ChevronRight, Clock, ShieldCheck, Store } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { api, setSession } from "@/lib/api";
 import { queryParams } from "@/lib/routes";
+import { cn } from "@/lib/utils";
 import { Card, ErrorLine, H2, message, SignIn, useMe, VenueShell } from "./shared";
 
 // /venue: the owner's venues and claims, or the sign-in form.
@@ -116,9 +117,9 @@ export function VenueLogin() {
       {error ? (
         <Card>
           <ErrorLine error={error} />
-          <Button className="mt-4" nativeButton={false} render={<Link to="/venue" />}>
+          <Link to="/venue" className={cn(buttonVariants(), "mt-4")}>
             Get a new link
-          </Button>
+          </Link>
         </Card>
       ) : (
         <Skeleton className="h-24 rounded-[22px]" />

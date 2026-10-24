@@ -1,11 +1,12 @@
 import { BadgeCheck, Clock } from "lucide-react";
 import { useState, type FormEvent } from "react";
 import { Link, useParams } from "react-router";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { api } from "@/lib/api";
 import { useStore } from "@/lib/store";
+import { cn } from "@/lib/utils";
 import { Card, ErrorLine, Field, message, SignIn, useMe, VenueShell } from "./shared";
 
 // /venue/claim/:id: "Own or manage this place?"
@@ -58,9 +59,9 @@ export function VenueClaim() {
           <BadgeCheck className="mx-auto size-10 text-lime-fg" />
           <p className="mt-3 font-display text-[20px] font-bold">You manage {venue.name}</p>
           <p className="mt-1 text-[15px] text-muted-foreground">Your email matches the venue's website, so you're confirmed.</p>
-          <Button size="lg" className="mt-5 w-full" nativeButton={false} render={<Link to={`/venue/${id}`} />}>
+          <Link to={`/venue/${id}`} className={cn(buttonVariants({ size: "lg" }), "mt-5 w-full")}>
             Edit your listing
-          </Button>
+          </Link>
         </Card>
       )}
 
