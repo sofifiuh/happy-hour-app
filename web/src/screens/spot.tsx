@@ -349,9 +349,17 @@ export function Spot() {
               </>
             )}
           </span>
-          <a href={reportLink(venue)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
-            <Flag className="size-3.5" /> Report a wrong time
-          </a>
+          <span className="flex flex-wrap gap-x-4">
+            <a href={reportLink(venue)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
+              <Flag className="size-3.5" /> Report a wrong time
+            </a>
+            {/* Static page with the venue's embed badge (scripts/badges.mjs); only the alittlehang.com build has it. */}
+            {BROWSER_ROUTER && (
+              <a href={`/badge/${venue.id}/`} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
+                <BadgeCheck className="size-3.5" /> Get a badge for your site
+              </a>
+            )}
+          </span>
         </div>
       </section>
 
