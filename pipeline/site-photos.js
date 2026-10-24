@@ -34,7 +34,10 @@ const MAX = Number(args.max) || 150;
 const DAYS = Number(args.days ?? 30);
 const CONCURRENCY = Number(args.concurrency) || 4;
 const GALLERY = 8;
-const deadline = Date.now() + Number(process.env.SITE_PHOTOS_DEADLINE_MS || 80 * 60_000);
+const deadline = Date.now() + Number(process.env.SITE_PHOTOS_DEADLINE_MS || 50 * 60_000);
+// A venue whose site hangs the browser (a script that never yields, a
+// download that never ends) is given up on after this long.
+const VENUE_TIMEOUT = 3 * 60_000;
 
 // Same tells as web/scripts/sync-data.mjs, plus icons, sprites and
 // placeholders that only ever show up deeper in a site.
@@ -243,12 +246,17 @@ async function photosFor(v) {
   };
 }
 
+// Saved after every venue, so a run cut short keeps what it found.
+// Sorted keys keep the daily diff readable.
+const save = () => fs.writeFileSync(STORE, JSON.stringify(Object.fromEntries(Object.entries(store).sort(([a], [b]) => a.localeCompare(b))), null, 2) + "\n");
+
 let found = 0;
 let failed = 0;
 await mapConcurrent(targets, CONCURRENCY, async (v) => {
   if (Date.now() > deadline) return;
+  let timer;
   try {
-    const r = await photosFor(v);
+    const r = await Promise.race([photosFor(v), new Promise((_, reject) => (timer = setTimeout(() => reject(new Error("timed out")), VENUE_TIMEOUT)))]);
     store[v.id] = r;
     const n = (r.cover ? 1 : 0) + r.gallery.length;
     if (n) found++;
@@ -258,10 +266,13 @@ await mapConcurrent(targets, CONCURRENCY, async (v) => {
     // Remember the attempt so a dead site isn't retried every night.
     store[v.id] = { checked_at: TODAY, error: String(e.message || e).slice(0, 160), pages: [], cover: null, gallery: [] };
     console.log(`  ! ${v.id.padEnd(34)} ${store[v.id].error}`);
+  } finally {
+    clearTimeout(timer);
   }
+  save();
 });
-await browser.close();
-
-// Sorted keys keep the daily diff readable.
-fs.writeFileSync(STORE, JSON.stringify(Object.fromEntries(Object.entries(store).sort(([a], [b]) => a.localeCompare(b))), null, 2) + "\n");
+save();
 console.log(`\nsite photos: ${found} venues with photos, ${failed} failed; store covers ${Object.keys(store).length} venues`);
+// A venue that timed out can leave a page that blocks browser.close().
+await Promise.race([browser.close(), new Promise((r) => setTimeout(r, 15_000))]);
+process.exit(0);

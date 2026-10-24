@@ -47,7 +47,11 @@ jobs:
           (cd pipeline && npm ci && npx playwright-core install --with-deps chromium)
           (cd web && npm ci)
 
+      # The finder stops starting venues after 50 minutes and saves as it
+      # goes; the step limit is the backstop if a browser hangs anyway.
       - name: Find photos
+        timeout-minutes: 65
+        continue-on-error: true
         run: >-
           node pipeline/site-photos.js
           --max "${{ inputs.max || '150' }}"
