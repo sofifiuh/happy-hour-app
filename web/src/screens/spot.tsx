@@ -16,7 +16,8 @@ import { VenuePhoto } from "@/components/venue-photo";
 import { walkLabel, distanceKm } from "@/lib/geo";
 import { endingSoon, fmtRange, nowHHMM, occurrence, statusLabel } from "@/lib/hours";
 import { fmtChecked, reportLink } from "@/lib/links";
-import { goBack } from "@/lib/motion";
+import { backLabel, goBackToBase } from "@/lib/back-to";
+import { useIsDesktop } from "@/lib/use-media";
 import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
@@ -52,7 +53,9 @@ export function Spot() {
   }, [viewedId]);
   const page = useRef<HTMLElement>(null);
   const bar = useRef<HTMLElement>(null);
-  useSwipeBack([page, bar], () => goBack(navigate, true), !!venue);
+  const desktop = useIsDesktop();
+  const back = backLabel(desktop);
+  useSwipeBack([page, bar], () => goBackToBase(navigate, desktop, true), !!venue);
   useTitle(venue ? venueTitle(venue) : loading ? null : "Spot not found", !!venue);
   const [cat, setCat] = useState<Category>("drink");
   const [directionsOpen, setDirectionsOpen] = useState(false);
@@ -148,12 +151,14 @@ export function Spot() {
           </button>
         )}
         <div className="pointer-events-none absolute inset-x-0 top-0 flex justify-between px-4 pt-[max(env(safe-area-inset-top),14px)] [&_button]:pointer-events-auto">
+          {/* Always back to where browsing started, not the previous venue. */}
           <button
-            onClick={() => goBack(navigate)}
-            aria-label="Back"
-            className="grid size-11 place-items-center rounded-full bg-ink/70 text-cream backdrop-blur transition-transform active:scale-90"
+            onClick={() => goBackToBase(navigate, desktop)}
+            aria-label={back === "Back" ? "Back" : `Back to ${back}`}
+            className="flex h-11 items-center gap-1.5 rounded-full bg-ink/70 pr-4 pl-3 text-[14px] font-semibold text-cream backdrop-blur transition-transform active:scale-90"
           >
             <ArrowLeft className="size-5" />
+            {back}
           </button>
           <div className="flex gap-2">
             <button
