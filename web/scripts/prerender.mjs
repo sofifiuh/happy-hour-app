@@ -555,7 +555,9 @@ a:focus-visible{outline:2px solid var(--orange)}
 .tablewrap table{border-collapse:collapse;width:100%;min-width:34rem;font-size:15px;font-variant-numeric:tabular-nums}
 .tablewrap caption{text-align:left;padding:14px 16px 4px;color:var(--dim);font-size:13px}
 .tablewrap th,.tablewrap td{text-align:right;padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
-.tablewrap th[scope=row],.tablewrap thead th:first-child{text-align:left;padding-left:16px}
+.tablewrap th[scope=row],.tablewrap thead th:first-child{text-align:left;padding-left:16px;position:sticky;left:0;z-index:1;background:var(--ink-2)}
+.scrollhint{display:none;margin:8px 0 0;color:var(--dim);font-size:13px}
+@media (max-width:40rem){.scrollhint{display:block}}
 .tablewrap thead th{font-size:12px;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
 .tablewrap tr:last-child>*{border-bottom:0}
 .tablewrap td small{display:block;color:var(--dim);font-size:11px}
@@ -1273,7 +1275,7 @@ async function indexPage() {
     // Places with no column over MIN_SAMPLE would be a row of dashes.
     const rows = all.filter((r) => cols.some((k) => medianOf(r.stats, k.key)));
     const low = Object.fromEntries(cols.map((k) => [k.key, Math.min(...rows.map((r) => (medianOf(r.stats, k.key) ? r.stats[k.key].median : Infinity)))]));
-    return `<div class="tablewrap"><table><caption>${esc(label)}</caption><thead><tr><th scope="col">Where</th><th scope="col">Spots</th>${cols.map((k) => `<th scope="col">${esc(k.label)}</th>`).join("")}</tr></thead><tbody>${rows
+    return `<p class="scrollhint" aria-hidden="true">Swipe the table sideways for each price →</p><div class="tablewrap"><table><caption>${esc(label)}</caption><thead><tr><th scope="col">Where</th><th scope="col">Spots</th>${cols.map((k) => `<th scope="col">${esc(k.label)}</th>`).join("")}</tr></thead><tbody>${rows
       .map(
         (r) =>
           `<tr><th scope="row"><a href="${hubPath(r.slug)}">${esc(r.name)}</a></th><td>${r.count}</td>${cols
@@ -1331,7 +1333,8 @@ await indexPage();
 // owners following "Get your badge", so they stay out of search.
 function badgePage(v, says) {
   const path = `/badge/${v.id}/`;
-  const embed = (theme) => `<a href="${BASE}/spots/${v.id}.html"><img src="${BASE}/badge/${v.id}${theme === "light" ? "-light" : ""}.svg" alt="${esc(says.alt)}" height="${BADGE_H}" loading="lazy"></a>`;
+  // The alt stays true whatever the badge says next month (rank and score change nightly; the SVG's own title follows them).
+  const embed = (theme) => `<a href="${BASE}/spots/${v.id}.html"><img src="${BASE}/badge/${v.id}${theme === "light" ? "-light" : ""}.svg" alt="${esc(`${v.name} happy hour on ${SITE}`)}" height="${BADGE_H}" loading="lazy"></a>`;
   const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">${SITE}</a> › <a href="/spots/${v.id}.html">${esc(v.name)}</a> › <span>Badge</span></nav>
 <h1>Badge for ${esc(v.name)}</h1>
 <p class="lede">Add this badge to your website so guests can check your happy hour times and deals on ${SITE}. It's free, and it updates on its own: it shows your rank if you're on a best-of list, or your Hangout Score if it's ${TOP_SCORE} or higher.</p>

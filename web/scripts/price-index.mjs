@@ -20,12 +20,14 @@ const WINE = /\bwines?\b|prosecco|\bcava\b|sparkling|bubbles|\bros[eé]\b|house 
 // Tasting pours (3oz) aren't a glass.
 const SMALL_POUR = /\b[1-4] ?oz\b/i;
 const HIGHBALL = /highball|hi-?ball|\bwell\b|\brail\b/i;
-const COCKTAIL = /cocktail|margarita|martini|spritz|negroni|caesar|\bmule\b|old fashioned|daiquiri|mojito|paloma|\bsours?\b|sangria|mimosa/i;
+// "Whisky sour" is a cocktail; "Sour Key" (a candy shooter) isn't.
+const COCKTAIL = /cocktail|margarita|martini|spritz|negroni|caesar|\bmule\b|old fashioned|daiquiri|mojito|paloma|(whiske?y|amaretto|pisco|gin|vodka|midori|tequila) sours?\b|sangria|mimosa/i;
+const SHOT = /\bshots?\b|shooters?/i;
 
 export const KINDS = [
   { key: "pint", label: "Pint of beer", short: "pint", note: "14–20oz draught", test: (d) => d.category === "drink" && BEER.test(text(d)) && PINT_SIZE.test(text(d)) && !SMALL_BEER.test(text(d)) },
   { key: "wine", label: "Glass of wine", short: "glass of wine", note: "5oz pour or more", test: (d) => d.category === "drink" && WINE.test(text(d)) && !BEER.test(text(d)) && !COCKTAIL.test(text(d)) && !SMALL_POUR.test(text(d)) },
-  { key: "cocktail", label: "Cocktail", short: "cocktail", note: "signature or classic", test: (d) => d.category === "drink" && COCKTAIL.test(text(d)) && !HIGHBALL.test(text(d)) && !BEER.test(text(d)) && !/vermouth/i.test(text(d)) },
+  { key: "cocktail", label: "Cocktail", short: "cocktail", note: "signature or classic", test: (d) => d.category === "drink" && COCKTAIL.test(text(d)) && !HIGHBALL.test(text(d)) && !BEER.test(text(d)) && !SHOT.test(text(d)) && !/vermouth/i.test(text(d)) },
   { key: "highball", label: "Highball", short: "highball", note: "well spirit and mixer", test: (d) => d.category === "drink" && HIGHBALL.test(text(d)) },
   // Over $6 it's a plate or a half dozen, not one oyster.
   { key: "oyster", label: "Oyster", short: "oyster", note: "price each", max: 6, test: (d) => d.category === "food" && /\boysters?\b/i.test(text(d)) && !/\bdozen\b|\bhalf\b/i.test(`${d.name} ${d.price}`) },
@@ -40,22 +42,26 @@ const median = (xs) => {
   return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
 };
 
+const ounces = (d) => Number(text(d).match(/(\d+(?:\.\d+)?) ?oz\b/i)?.[1]) || null;
+
 // The venue's cheapest deal of a kind: { d, p } or null.
 export function cheapestOf(v, kind) {
-  let best = null;
-  for (const d of v.hh.deals) {
-    if (skip(d) || !kind.test(d)) continue;
-    const p = dealPrice(d);
-    if (p != null && p <= (kind.max ?? Infinity) && (!best || p < best.p)) best = { d, p };
-  }
-  return best;
+  const all = v.hh.deals
+    .filter((d) => !skip(d) && kind.test(d))
+    .map((d) => ({ d, p: dealPrice(d), oz: ounces(d) }))
+    .filter((c) => c.p != null && c.p <= (kind.max ?? Infinity));
+  // A bigger pour listed for less than a smaller one ("Wine 6oz $7",
+  // "Wine 9oz $4") is the upsize charge, not a price.
+  const ok = all.filter((c) => !all.some((o) => c.oz && o.oz && o.oz < c.oz && o.p > c.p));
+  return ok.reduce((best, c) => (!best || c.p < best.p ? { d: c.d, p: c.p } : best), null);
 }
 
 function stats(pool) {
   const out = {};
   for (const k of KINDS) {
     const rows = pool.map((v) => ({ v, ...cheapestOf(v, k) })).filter((r) => r.p != null);
-    out[k.key] = rows.length ? { n: rows.length, median: median(rows.map((r) => r.p)), rows: rows.sort((a, b) => a.p - b.p || a.v.name.localeCompare(b.v.name)) } : { n: 0, median: null, rows: [] };
+    // Medians to the nearest 25¢: "$10.44" reads as more precise than a median of menu prices is.
+    out[k.key] = rows.length ? { n: rows.length, median: Math.round(median(rows.map((r) => r.p)) * 4) / 4, rows: rows.sort((a, b) => a.p - b.p || a.v.name.localeCompare(b.v.name)) } : { n: 0, median: null, rows: [] };
   }
   return out;
 }
