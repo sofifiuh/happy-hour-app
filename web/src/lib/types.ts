@@ -32,6 +32,8 @@ export interface Venue {
   lng: number | null;
   phone: string | null;
   website: string | null;
+  // Google place ID (the one Places field we may keep), for the Maps link.
+  placeId?: string | null;
   rating: number | null;
   ratings: number | null;
   photo: string | null;

@@ -132,6 +132,7 @@ const slim = venues
     lng: v.geometry?.location?.lng ?? null,
     phone: v.formatted_phone_number || null,
     website: v.website || null,
+    placeId: v.place_id || null,
     rating: v.rating ?? null,
     ratings: v.user_ratings_total ?? null,
     ...photosOf(v),

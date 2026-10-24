@@ -1,4 +1,4 @@
-import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Navigation, Phone, Share, Star } from "lucide-react";
+import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Lightbulb, MessageCircle, Navigation, Phone, Share, Star } from "lucide-react";
 import { type CSSProperties, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
@@ -15,12 +15,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { VenuePhoto } from "@/components/venue-photo";
 import { walkLabel, distanceKm } from "@/lib/geo";
 import { endingSoon, fmtRange, nowHHMM, occurrence, statusLabel } from "@/lib/hours";
-import { fmtChecked, reportLink } from "@/lib/links";
+import { fmtChecked, reportLink, tipLink } from "@/lib/links";
 import { goBack } from "@/lib/motion";
 import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
-import { dayRuns, nearby, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
+import { dayRuns, googleReviewsLink, nearby, redditLink, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
 import { track } from "@/lib/analytics";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
@@ -361,6 +361,38 @@ export function Spot() {
             )}
           </span>
         </div>
+      </section>
+
+      {/* What people say: links only. Google's and Reddit's terms don't allow
+          copying or summarizing their reviews, so we send people to them. */}
+      <section style={{ "--i": 4 } as CSSProperties} className="animate-rise mt-8 px-5">
+        <h2 className="mb-1 font-display text-[20px] font-bold tracking-tight">What people say</h2>
+        <p className="mb-3 text-[14px] text-muted-foreground">See what locals say about the {venue.name} happy hour.</p>
+        <ul className="rounded-[22px] bg-ink-2 px-4">
+          {[
+            { href: redditLink(venue), icon: MessageCircle, label: "Search Reddit", sub: `“${venue.name} happy hour”`, ext: true, kind: "reddit" },
+            { href: googleReviewsLink(venue), icon: Star, label: "Read Google reviews", sub: "Opens Google Maps", ext: true, kind: "google" },
+            { href: tipLink(venue), icon: Lightbulb, label: "Been here? Send us a tip", sub: "Best deal, busy times, what to skip", ext: false, kind: "tip" },
+          ].map((l) => (
+            <li key={l.kind} className="border-b border-border last:border-0">
+              <a
+                href={l.href}
+                {...(l.ext && { target: "_blank", rel: "nofollow noopener noreferrer" })}
+                onClick={() => track({ name: "people_say_clicked", venue_id: venue.id, kind: l.kind })}
+                className="flex min-h-14 items-center gap-3 py-3"
+              >
+                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-ink-3">
+                  <l.icon className="size-4" />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-[15px] font-semibold">{l.label}</span>
+                  <span className="block truncate text-[13px] text-muted-foreground">{l.sub}</span>
+                </span>
+                {l.ext ? <ExternalLink className="size-4 shrink-0 text-muted-foreground" /> : <ChevronDown className="size-4 shrink-0 -rotate-90 text-muted-foreground" />}
+              </a>
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* Location */}

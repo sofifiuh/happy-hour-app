@@ -205,3 +205,15 @@ export function nearby(v: Venue, venues: Venue[], n = 6) {
     .slice(0, n)
     .map((x) => x.o);
 }
+
+// "What people say": links out to where people talk about the spot. Google's
+// and Reddit's terms don't let us copy, store or summarize their reviews and
+// posts, so we only link (never quote, never in Review/AggregateRating schema).
+export function googleReviewsLink(v: Venue) {
+  const q = encodeURIComponent(`${v.name} ${v.address}`);
+  return `https://www.google.com/maps/search/?api=1&query=${q}${v.placeId ? `&query_place_id=${encodeURIComponent(v.placeId)}` : ""}`;
+}
+
+export function redditLink(v: Venue) {
+  return `https://www.reddit.com/search/?q=${encodeURIComponent(`${v.name} happy hour ${v.city || "Vancouver"}`)}`;
+}

@@ -23,7 +23,7 @@ import { fileURLToPath } from "node:url";
 import opentype from "opentype.js";
 import sharp from "sharp";
 import { fmtRange, fmtTime } from "../src/lib/hours.ts";
-import { dayRuns, dealPhrase, fmtDate, money, nearby, parsePrice, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
+import { dayRuns, dealPhrase, fmtDate, googleReviewsLink, money, nearby, parsePrice, redditLink, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
 import { AREAS, BEST_FLOOR, BEST_FRESH_DAYS, bestPath, buildHubs, hubPath } from "./seo-data.mjs";
 import { cheapestDrink, hoursFacts, isNonAlc, WEIGHTS } from "./hang-score.mjs";
 import { buildIndex, cheapestOf, KINDS, MIN_SAMPLE } from "./price-index.mjs";
@@ -371,6 +371,8 @@ ${dayRuns(v)
   .map((r) => `<div style="${S.row}"><span>${runLabel(r.days)}</span><span>${r.wins.length ? r.wins.map((w) => `${w.label ? `${esc(w.label)} ` : ""}${fmtRange(w.start, w.end)}`).join(" · ") : "None"}</span></div>`)
   .join("\n")}
 <p style="${S.muted};margin-top:12px">${v.hh.verified ? "Verified against their menu" : "From their website"}${v.checked ? `, times checked ${esc(fmtDate(v.checked))}` : ""}.${v.source ? ` Source: <a href="${esc(v.source.url)}" rel="nofollow noopener" style="${S.plain}">${esc(sourceLabel(v))}</a>.` : ""}</p>
+<h2 style="${S.h2}">What people say</h2>
+<p style="${S.p}">See what locals say about the ${esc(v.name)} happy hour: <a href="${esc(redditLink(v))}" rel="nofollow noopener" style="${S.plain}">search Reddit</a> · <a href="${esc(googleReviewsLink(v))}" rel="nofollow noopener" style="${S.plain}">read Google reviews</a> · <a href="mailto:jason@setsail.ca?subject=${encodeURIComponent(`Happy hour tip: ${v.name}`)}" style="${S.plain}">send us a tip</a>.</p>
 <h2 style="${S.h2}">About ${esc(v.name)}</h2>
 <p style="${S.p}">${esc(venueAbout(v))}</p>
 <h2 style="${S.h2}">Find us here</h2>

@@ -21,3 +21,9 @@ export function fmtChecked(iso: string, now = new Date()) {
     ...(d.getFullYear() !== now.getFullYear() && { year: "numeric" }),
   });
 }
+
+export function tipLink(v: Venue) {
+  const subject = `Happy hour tip: ${v.name}`;
+  const body = `Venue: ${v.name}\nLink: ${absoluteUrl(spotPath(v.id))}\n\nYour tip (best deal, when it gets busy, what to skip):\n`;
+  return `mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
