@@ -373,6 +373,48 @@ html[data-nav="swap"]::view-transition-old(root) {
   animation: 160ms var(--ease-in) both fade reverse;
 }
 
+/* Venue claim: the owner's stamp turns slowly, and lands with a thump
+   when a claim goes through. Sparks burst out from behind it once. */
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes stamp {
+  0% {
+    opacity: 0;
+    transform: scale(1.9) rotate(-28deg);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(0.94) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1) rotate(-12deg);
+  }
+}
+@keyframes spark {
+  from {
+    opacity: 1;
+    transform: rotate(var(--a)) translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: rotate(var(--a)) translateY(-70px) scale(0.4);
+  }
+}
+@utility animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
+}
+@utility animate-stamp {
+  animation: stamp 560ms var(--ease-out) both;
+  animation-delay: 120ms;
+}
+@utility animate-spark {
+  animation: spark 700ms var(--ease-out) both;
+  animation-delay: 260ms;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
