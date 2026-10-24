@@ -242,7 +242,7 @@ export function VenueEditor() {
             <Field label="Phone">
               <Input type="tel" value={form.phone ?? ""} onChange={(e) => set({ phone: e.target.value || null })} />
             </Field>
-            <Field label="Website" hint="Starts with https://">
+            <Field label="Website" hint="The full link, like https://yourplace.ca">
               <Input type="url" value={form.website ?? ""} onChange={(e) => set({ website: e.target.value || null })} />
             </Field>
             <Toggle label="Patio" checked={!!form.amenities.patio} onChange={(patio) => set({ amenities: { ...form.amenities, patio } })} />
