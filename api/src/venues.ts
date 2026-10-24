@@ -144,7 +144,7 @@ export function cleanEdit(input: unknown, photoBase: string): { data: EditData; 
   if ("phone" in i) data.phone = text(i.phone, "Phone", 30) || null;
   if ("website" in i) {
     const w = text(i.website, "Website", 300);
-    if (w && !/^https:\/\/[^\s]+\.[^\s]+$/.test(w)) throw new HttpError(400, "Website must start with https://");
+    if (w && !/^https?:\/\/[^\s]+\.[^\s]+$/i.test(w)) throw new HttpError(400, "Website must start with https:// or http://");
     data.website = w || null;
   }
   if (i.amenities != null) {

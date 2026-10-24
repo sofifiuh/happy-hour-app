@@ -73,6 +73,8 @@ const bad = await call("PUT", "/venues/earls-test-kitchen/edit", { token: other.
 ok(bad.status === 400, "bad times are refused");
 const hot = await call("PUT", "/venues/earls-test-kitchen/edit", { token: other.session, body: { photo: "https://evil.example/x.jpg" } });
 ok(hot.status === 400, "outside photos are refused");
+ok((await call("PUT", "/venues/earls-test-kitchen/edit", { token: other.session, body: { website: "http://www.example.ca/" } })).status === 200, "plain http websites are kept");
+ok((await call("PUT", "/venues/earls-test-kitchen/edit", { token: other.session, body: { website: "javascript:alert(1)" } })).status === 400, "non-web links are refused");
 
 const png = Uint8Array.from(atob("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg=="), (c) => c.charCodeAt(0));
 const up = await call("POST", "/venues/earls-test-kitchen/photos", { token: other.session, raw: png, type: "image/png" });
