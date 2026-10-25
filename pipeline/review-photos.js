@@ -47,8 +47,13 @@ function candidates(id, sp) {
   const v = byId.get(id);
   const list = [];
   const current = v?.cover_image?.url;
-  // A cover writeback already swapped in from this store is judged as a site photo.
-  if (current && /^https?:/.test(current) && !sp.cover_problem && current !== sp.cover?.url) list.push({ url: current, role: "current" });
+  // A cover writeback already swapped in from this store is judged as a site
+  // photo; one about to be swapped out, or already rejected, is skipped. A
+  // cover the pixel checks flagged with nothing to replace it is still shown,
+  // so a logo card goes and a moody real photo stays.
+  const replaced = !!sp.cover && !!sp.cover_problem;
+  const rejected = String(sp.cover_problem || "").startsWith("review:");
+  if (current && /^https?:/.test(current) && !replaced && !rejected && current !== sp.cover?.url) list.push({ url: current, role: "current" });
   if (sp.cover) list.push({ url: sp.cover.url, role: "site", photo: sp.cover });
   for (const g of sp.gallery || []) list.push({ url: g.url, role: "site", photo: g });
   return list.slice(0, 12);
