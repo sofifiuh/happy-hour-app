@@ -7191,5 +7191,56 @@
     },
     "matched_name": "Fraser Valley Cider Company",
     "synced_at": "2026-10-24"
+  },
+  "karakoram-restaurant": {
+    "place_id": "ChIJB3MMFXV1hlQRFAa0ix8KpvA",
+    "rating": 4.4,
+    "user_ratings_total": 5153,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Karakoram Restaurant",
+    "synced_at": "2026-10-25"
+  },
+  "caff-la-tana": {
+    "place_id": "ChIJn9FuS6pxhlQR39FNX2yee2o",
+    "rating": 4.6,
+    "user_ratings_total": 652,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Caffè La Tana",
+    "synced_at": "2026-10-25"
+  },
+  "chao-mami-express": {
+    "place_id": "ChIJdwtgKaBxhlQRR8ya774rI7w",
+    "rating": 4.7,
+    "user_ratings_total": 410,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Chao Mami Express",
+    "synced_at": "2026-10-25"
   }
 }

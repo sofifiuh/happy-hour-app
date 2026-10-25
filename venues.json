@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-25-0aa66a9b",
+ "data_version": "2026-10-25-2e1026a6",
  "venues": [
   {
    "id": "ancora",
@@ -124,8 +124,8 @@
     "confidence": "high",
     "source_url": "https://www.ancoradining.com/contact",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -300,8 +300,8 @@
     "confidence": "high",
     "source_url": "https://earls.ca/locations/test-kitchen/menu/happy-hour/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -468,7 +468,7 @@
     "confidence": "low",
     "source_url": null,
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -692,8 +692,8 @@
     "confidence": "high",
     "source_url": "https://hapaizakaya.com/yaletown-menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -938,8 +938,8 @@
     "confidence": "high",
     "source_url": "https://boulevardvancouver.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -1094,8 +1094,8 @@
     "confidence": "high",
     "source_url": "https://www.chambar.com/menus/happyhour/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -1252,8 +1252,8 @@
     "confidence": "high",
     "source_url": "https://www.parqcasino.com/_files/ugd/93f176_2fd639380cfc4f2f90f0f842fdfcbd8d.pdf",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -1404,8 +1404,8 @@
     "confidence": "high",
     "source_url": "https://www.havanavancouver.com/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -1549,7 +1549,7 @@
     "confidence": "high",
     "source_url": "https://brewhall.com/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -1731,8 +1731,8 @@
     "confidence": "high",
     "source_url": "https://www.glowbalgroup.com/glowbal/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -1895,8 +1895,8 @@
     "confidence": "high",
     "source_url": "https://centralrestaurants.ca/vancouver-bentall/menu",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -2310,8 +2310,8 @@
     "confidence": "high",
     "source_url": "https://tapandbarrel.com/wp-content/uploads/2026/04/Convention-Centre-Food-Menu.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -2524,8 +2524,8 @@
     "confidence": "high",
     "source_url": "https://www.p2bbistro.com/happyhour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -2682,8 +2682,8 @@
     "confidence": "high",
     "source_url": "https://www.relishthepub.com/_files/ugd/d4cdc4_4af3aaf831a140ff86a15c5f2163c3b2.pdf",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -2815,8 +2815,8 @@
     "confidence": "high",
     "source_url": "https://frenchcreekpub.com/menus/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -2910,7 +2910,7 @@
     "confidence": "high",
     "source_url": "https://byzubu.com/ramen/menu/downtown-menu/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -3234,8 +3234,8 @@
     "confidence": "high",
     "source_url": "https://www.1931gallerybistro.com/happyhour-1",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -3398,8 +3398,8 @@
     "confidence": "high",
     "source_url": "https://www.parkerrooftop.com/s/Parker-HH-April-28-2026.pdf",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -3548,8 +3548,8 @@
     "confidence": "high",
     "source_url": "https://www.notch8-dining.com/menus/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -3840,8 +3840,8 @@
     "confidence": "high",
     "source_url": "https://hawksworthrestaurant.com/wp-content/uploads/2026/05/Features-May-15-2026.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -4037,8 +4037,8 @@
     "confidence": "high",
     "source_url": "https://banterroom.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -4204,7 +4204,7 @@
     "confidence": "high",
     "source_url": "https://elguapo.ca/assets/content/el-guapo-2025-happy-hour.webp",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -4348,8 +4348,8 @@
     "confidence": "high",
     "source_url": "https://www.facebook.com/tacofinolovesyou/posts/tacofino-happy-hour-instant-mood-booster-join-us-every-monday-friday-from-3-6-pm/1016478513816229/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -4585,8 +4585,8 @@
     "confidence": "high",
     "source_url": "https://www.thegreekbyanatoli.com/yaletown-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -4783,8 +4783,8 @@
     "confidence": "high",
     "source_url": "https://theparlourrestaurants.com/vancouver-menu/#happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -4947,8 +4947,8 @@
     "confidence": "high",
     "source_url": "https://theflyingpigvan.com/menu/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -5105,7 +5105,7 @@
     "confidence": "high",
     "source_url": "https://thekeg.com/en/locations/yaletown/menu",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -5287,8 +5287,8 @@
     "confidence": "high",
     "source_url": "https://earls.ca/locations/yaletown/menu/happy-hour/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -5424,7 +5424,7 @@
     "confidence": "high",
     "source_url": "https://moltaqarestaurant.ca/menu/",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": "2026-10-24"
    }
   },
@@ -5643,8 +5643,8 @@
     "confidence": "high",
     "source_url": "https://www.alchemybar-kitchen.ca/happyhour.html",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -5825,7 +5825,421 @@
     "confidence": "high",
     "source_url": "https://yaletownbrewing.com/wp-content/uploads/2025/08/YBC-Happy-Hour.pdf",
     "data_as_of": null,
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJB3MMFXV1hlQRFAa0ix8KpvA",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 5153,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "karakoram-restaurant",
+   "name": "Karakoram Restaurant",
+   "formatted_address": "6990 Victoria Dr, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2204656,
+     "lng": -123.0656147
+    }
+   },
+   "formatted_phone_number": "(604) 737-1000",
+   "website": "https://www.karakoramrestaurant.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.karakoramrestaurant.com/our-menu",
+    "deals": [
+     {
+      "name": "Veggie Pakora",
+      "price": "$5.99",
+      "category": "food",
+      "description": "Crispy fritters with onions, potatoes, gram flour; 7-8 pieces with Imli chutney"
+     },
+     {
+      "name": "Fish Pakora",
+      "price": "$9.99",
+      "category": "food",
+      "description": "Basa fillet coated with gram flour; 7-8 pieces with green chutney"
+     },
+     {
+      "name": "Beef Seekh Kabab",
+      "price": "$12.99",
+      "category": "food",
+      "description": "Ground meat marinated and grilled; 2 skewers with green chutney"
+     },
+     {
+      "name": "Chicken Seekh Kabab",
+      "price": "$12.99",
+      "category": "food",
+      "description": "Ground chicken marinated and grilled; 2 skewers with green chutney"
+     },
+     {
+      "name": "Chicken Karahi (Half)",
+      "price": "$35.99",
+      "category": "food",
+      "description": "Choose style; served with 2 naans, includes mocktail and 2 gulab jamun"
+     },
+     {
+      "name": "Pindi Kabab Karahi (Half)",
+      "price": "$35.99",
+      "category": "food",
+      "description": "Choose style; served with 2 naans, includes mocktail and 2 gulab jamun"
+     },
+     {
+      "name": "Butter Chicken",
+      "price": "$13.99",
+      "category": "food",
+      "description": "Boneless chicken with spiced tomato and creamy butter sauce"
+     },
+     {
+      "name": "Daal Chana",
+      "price": "$12.99",
+      "category": "food",
+      "description": "Slow-cooked with masala"
+     },
+     {
+      "name": "Daal Mash",
+      "price": "$12.99",
+      "category": "food",
+      "description": "Creamy, garlicky mash daal with tarka"
+     },
+     {
+      "name": "Chicken Tikka Wrap",
+      "price": "$9.99",
+      "category": "food",
+      "description": "Smoky boneless chicken tikka wrapped in naan"
+     },
+     {
+      "name": "Beef Kabab Wrap",
+      "price": "$9.99",
+      "category": "food",
+      "description": "Juicy beef kabab with chutney and crunch"
+     },
+     {
+      "name": "Chicken Kabab Wrap",
+      "price": "$9.99",
+      "category": "food",
+      "description": "Juicy chicken kabab with chutney and crunch"
+     },
+     {
+      "name": "Any Mocktails",
+      "price": "$8.99",
+      "category": "drink",
+      "description": "Choose from regular menu"
+     },
+     {
+      "name": "Any Chai",
+      "price": "$3.49",
+      "category": "drink",
+      "description": "Choose from regular menu"
+     },
+     {
+      "name": "Rasmalai",
+      "price": "$8.99",
+      "category": "food",
+      "description": "Dessert"
+     },
+     {
+      "name": "Gulab Jamun",
+      "price": "$7.99",
+      "category": "food",
+      "description": "Dessert"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://www.karakoramrestaurant.com/opengraph-image",
+    "credit_name": "Karakoram Restaurant",
+    "credit_url": "https://www.karakoramrestaurant.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-10-25",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "https://www.karakoramrestaurant.com/our-menu",
+    "data_as_of": "2026-10-25",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJn9FuS6pxhlQR39FNX2yee2o",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.6,
+   "user_ratings_total": 652,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "caff-la-tana",
+   "name": "Caffè La Tana",
+   "formatted_address": "635 Commercial Dr, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2787824,
+     "lng": -123.07061899999998
+    }
+   },
+   "formatted_phone_number": "(604) 428-5462",
+   "website": "http://www.caffelatana.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Volpe di Notte"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.caffelatana.ca/",
+    "deals": [
+     {
+      "name": "Wine by the glass",
+      "price": "$9",
+      "category": "drink",
+      "description": "Feature White or Red"
+     },
+     {
+      "name": "All beers",
+      "price": "$8",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Blood Orange Spritz",
+      "price": "$10",
+      "category": "drink",
+      "description": "Blood Orange Soda, Prosecco, Grapefruit"
+     },
+     {
+      "name": "Peach Bellini Spritz",
+      "price": "$10",
+      "category": "drink",
+      "description": "Cipriani Peach Bellini, Prosecco, Grapefruit"
+     },
+     {
+      "name": "Mezzo e Mezzo",
+      "price": "$10",
+      "category": "drink",
+      "description": "Nardini Mezzo e Mezzo, Club Soda, Lemon Twist"
+     },
+     {
+      "name": "Banda Spaghett",
+      "price": "$10",
+      "category": "drink",
+      "description": "Aperol, Lemon, Banda Volpi Italian Pilsner, Orange"
+     },
+     {
+      "name": "Milanese G&T",
+      "price": "$10",
+      "category": "drink",
+      "description": "Tanqueray Gin, Campari, Scrappy's Grapefruit Bitters, Tonic, Orange"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://cdn.shopify.com/s/files/1/0052/7414/0765/files/GreenLogo.png?height=628&pad_color=dfe5e3&v=1613519640&width=1200",
+    "credit_name": "Caffè La Tana",
+    "credit_url": "http://www.caffelatana.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-10-25",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "http://www.caffelatana.ca/",
+    "data_as_of": "2026-10-25",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJdwtgKaBxhlQRR8ya774rI7w",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 1,
+   "rating": 4.7,
+   "user_ratings_total": 410,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "chao-mami-express",
+   "name": "Chao Mami Express",
+   "formatted_address": "678 Dunsmuir St #80, Vancouver, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.2833159,
+     "lng": -123.11620599999999
+    }
+   },
+   "formatted_phone_number": "(604) 428-7574",
+   "website": "http://chaomamiexpress.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "14:00",
+    "end": "18:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://chaomamiexpress.com/",
+    "deals": [
+     {
+      "name": "3 baos, rolls or mini pho",
+      "price": "$10",
+      "category": "food",
+      "description": "mix & match"
+     },
+     {
+      "name": "Pho",
+      "price": "$10",
+      "category": "food",
+      "description": "beef or vegan, dine-in only"
+     },
+     {
+      "name": "Drink",
+      "price": "+$4",
+      "category": "drink",
+      "description": "with happy-hour food deal"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://www.chaomamiexpress.com/img/og-image.jpg",
+    "credit_name": "Chao Mami Express",
+    "credit_url": "http://chaomamiexpress.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-10-25",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "http://chaomamiexpress.com/",
+    "data_as_of": "2026-10-25",
+    "last_checked_at": null,
     "last_confirmed_at": null
    }
   },
@@ -5934,12 +6348,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.heatley.ca/",
     "data_as_of": "2026-10-24",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -6179,11 +6593,11 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
+    "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://maverickssocialroom.com/wp-content/uploads/99720a-Happy-Hour-Menu.pdf",
     "data_as_of": "2026-10-24",
-    "last_checked_at": null,
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -6301,12 +6715,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://momosushibidwell.com/",
     "data_as_of": "2026-10-24",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -6436,12 +6850,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://www.fraservalleycider.ca/menu",
     "data_as_of": "2026-10-24",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -6547,8 +6961,8 @@
     "confidence": "high",
     "source_url": "https://www.sunstarrestaurant.ca/specials-and-promotions",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -6684,8 +7098,8 @@
     "confidence": "high",
     "source_url": "http://www.pardhandhaba.ca/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -6857,8 +7271,8 @@
     "confidence": "high",
     "source_url": "https://mixtlounge.ca/menus/cocktail-list/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -6956,7 +7370,7 @@
     "confidence": "medium",
     "source_url": "https://neverlandtea.com/menus",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -7216,8 +7630,8 @@
     "confidence": "high",
     "source_url": "https://johnnysonoak.ca/menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -7377,8 +7791,8 @@
     "confidence": "high",
     "source_url": "https://www.kypriaki.ca/wine--drinks.html",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -7483,8 +7897,8 @@
     "confidence": "high",
     "source_url": "http://www.chefsflavour.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -7583,8 +7997,8 @@
     "confidence": "high",
     "source_url": "https://karmaindianbistro.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -7674,8 +8088,8 @@
     "confidence": "high",
     "source_url": "http://www.apolloniagreekrestaurant.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -7823,8 +8237,8 @@
     "confidence": "high",
     "source_url": "https://www.puredelightcafe.com/_files/ugd/5c106d_d08883fe082f434fb718379bff8cd4af.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -7999,8 +8413,8 @@
     "confidence": "high",
     "source_url": "https://amoghakitchens.com/vera-level-happy-hour.html",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -8080,7 +8494,7 @@
     "confidence": "medium",
     "source_url": "http://www.hendricksrestaurant.com/menu/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -8145,7 +8559,12 @@
     "source_url": "https://www.tacolocokits.com/menu",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/tacoloco.jpg",
+    "credit_name": "TacoLoco",
+    "credit_url": "https://maps.google.com/maps/contrib/100949075331651990184",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -8156,8 +8575,8 @@
     "confidence": "high",
     "source_url": "https://www.tacolocokits.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -8277,8 +8696,8 @@
     "confidence": "high",
     "source_url": "http://www.takeoutshack.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -8376,8 +8795,8 @@
     "confidence": "high",
     "source_url": "https://www.g3kitchen.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -8469,8 +8888,8 @@
     "confidence": "high",
     "source_url": "https://thehestiahearth.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -8650,8 +9069,8 @@
     "confidence": "high",
     "source_url": "https://riverrock.com/the-chairmans-room-lounge/",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -8763,8 +9182,8 @@
     "confidence": "high",
     "source_url": "http://www.thenaam.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -8915,8 +9334,8 @@
     "confidence": "high",
     "source_url": "https://dochay.ca/kingsway",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -9015,7 +9434,7 @@
     "confidence": "medium",
     "source_url": "http://hungryzus.com/menus/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -9208,8 +9627,8 @@
     "confidence": "high",
     "source_url": "https://www.loscuervostaqueria.net/hhmenu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -9308,8 +9727,8 @@
     "confidence": "high",
     "source_url": "https://www.luluislandwinery.com/event-details-registration/vibes-vino-happy-hour-featuring-daniel-reece/form",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -9449,8 +9868,8 @@
     "confidence": "high",
     "source_url": "http://www.eastvanbrewing.com/happy-hour-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -9614,7 +10033,7 @@
     "confidence": "medium",
     "source_url": "https://ottertrailwinery.com/wp-content/uploads/2026/08/Otter-Trail-Winery-Happy-Hour.png",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -9712,8 +10131,8 @@
     "confidence": "high",
     "source_url": "https://www.waybackbrewco.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -9835,8 +10254,8 @@
     "confidence": "high",
     "source_url": "https://www.mahonystavern.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -9974,8 +10393,8 @@
     "confidence": "high",
     "source_url": "https://ondayvr.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -10129,8 +10548,8 @@
     "confidence": "high",
     "source_url": "https://www.harrysfishandchipsrestaurant.com/happy-hour-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -10231,8 +10650,8 @@
     "confidence": "high",
     "source_url": "https://www.bacirestaurant.ca/baci-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -10317,8 +10736,8 @@
     "confidence": "high",
     "source_url": "http://eternalabundance.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -10462,8 +10881,8 @@
     "confidence": "high",
     "source_url": "http://www.bufala.ca/edgemont",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -10564,8 +10983,8 @@
     "confidence": "high",
     "source_url": "https://sdeatery.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -10814,8 +11233,8 @@
     "confidence": "high",
     "source_url": "https://www.bufala.ca/happy-hourbrd",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -10877,7 +11296,12 @@
     "source_url": "https://www.hoshijapanesecuisine.com/menu-1",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/hoshi-japanese-cuisine.jpg",
+    "credit_name": "Phah Sajjaphot",
+    "credit_url": "https://maps.google.com/maps/contrib/107277165672844030479",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -10888,8 +11312,8 @@
     "confidence": "high",
     "source_url": "https://www.hoshijapanesecuisine.com/menu-1",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -11020,7 +11444,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/autostrada-osteria-vancouver-house.jpg",
+    "credit_name": "Autostrada Osteria Vancouver House",
+    "credit_url": "https://maps.google.com/maps/contrib/114060036872907512241",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -11031,8 +11460,8 @@
     "confidence": "high",
     "source_url": "http://www.autostradahospitality.ca/menus",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -11183,8 +11612,8 @@
     "confidence": "high",
     "source_url": "http://www.mamasaidpizza.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -11303,7 +11732,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/mercato-di-luigi-chinatown.jpg",
+    "credit_name": "Mercato di Luigi Chinatown",
+    "credit_url": "https://maps.google.com/maps/contrib/115543298474456086754",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -11314,8 +11748,8 @@
     "confidence": "high",
     "source_url": "https://mercatodiluigi.com/pages/chinatown",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -11423,8 +11857,8 @@
     "confidence": "high",
     "source_url": "https://www.whereisfranks.com/hereatfranks",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -11595,8 +12029,8 @@
     "confidence": "high",
     "source_url": "https://www.proudup.ca/menu?location=Proud+up+restaurant&menu=happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -11688,8 +12122,8 @@
     "confidence": "high",
     "source_url": "http://www.oceanbeachwr.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -11827,7 +12261,7 @@
     "confidence": "medium",
     "source_url": "https://sprezzatura.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -11892,7 +12326,12 @@
     "source_url": "https://www.misotaco.ca/menu",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/miso-taco-cambie.jpg",
+    "credit_name": "Miso Taco - Cambie",
+    "credit_url": "https://maps.google.com/maps/contrib/100824489673425381920",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -11903,8 +12342,8 @@
     "confidence": "high",
     "source_url": "https://www.misotaco.ca/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -11977,7 +12416,12 @@
     "source_url": "https://www.arcanabar.com/hours/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/arcana-food-and-spirits.jpg",
+    "credit_name": "Arcana Food and Spirits",
+    "credit_url": "https://maps.google.com/maps/contrib/115823968450155957629",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -11988,8 +12432,8 @@
     "confidence": "high",
     "source_url": "https://www.arcanabar.com/hours/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -12080,8 +12524,8 @@
     "confidence": "high",
     "source_url": "http://www.sabafoods.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -12182,7 +12626,7 @@
     "confidence": "medium",
     "source_url": "http://www.pizzeriaspaccanapoli.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -12276,8 +12720,8 @@
     "confidence": "high",
     "source_url": "https://admiralpub.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -12370,8 +12814,8 @@
     "confidence": "high",
     "source_url": "http://www.queenscross.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -12456,8 +12900,8 @@
     "confidence": "high",
     "source_url": "https://thebeershackwr.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -12572,8 +13016,8 @@
     "confidence": "high",
     "source_url": "http://www.lataqueria.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -12690,8 +13134,8 @@
     "confidence": "high",
     "source_url": "http://www.spice72.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -12788,8 +13232,8 @@
     "confidence": "high",
     "source_url": "https://www.stanleyparkbrewing.com/brewpub/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -12874,8 +13318,8 @@
     "confidence": "high",
     "source_url": "http://www.sandcastlelanes.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -12983,11 +13427,11 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": "2026-10-24"
    }
   },
@@ -13078,8 +13522,8 @@
     "confidence": "high",
     "source_url": "https://www.unionlatinosrestaurant.com/event-details/happy-hour-2024-03-07-15-00",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -13181,8 +13625,8 @@
     "confidence": "high",
     "source_url": "http://www.tidewaterspub.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -13255,7 +13699,12 @@
     "source_url": "https://www.thegull.ca/menus",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-gull-bar-and-kitchen.jpg",
+    "credit_name": "Daphne A. Yang",
+    "credit_url": "https://maps.google.com/maps/contrib/111131797552340114171",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -13266,8 +13715,8 @@
     "confidence": "high",
     "source_url": "https://www.thegull.ca/menus",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -13370,8 +13819,8 @@
     "confidence": "high",
     "source_url": "https://karmalounge.ca/products/karmas-happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -13494,8 +13943,8 @@
     "confidence": "high",
     "source_url": "http://www.georgieslocal.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -13618,8 +14067,8 @@
     "confidence": "high",
     "source_url": "https://www.backandforthbar.com/menu-1",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -13711,8 +14160,8 @@
     "confidence": "high",
     "source_url": "http://www.grapesandsoda.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -13775,7 +14224,12 @@
     "source_url": "http://www.barra41.com/find-us",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/barra-41.jpg",
+    "credit_name": "Barra 41",
+    "credit_url": "https://maps.google.com/maps/contrib/108447064892600134497",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -13786,8 +14240,8 @@
     "confidence": "high",
     "source_url": "http://www.barra41.com/find-us",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -13866,7 +14320,7 @@
     "confidence": "medium",
     "source_url": "https://www.cypressmountain.com/hours",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -13977,8 +14431,8 @@
     "confidence": "high",
     "source_url": "http://www.bargobo.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -14073,8 +14527,8 @@
     "confidence": "high",
     "source_url": "https://www.thechickadeeroom.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -14174,8 +14628,8 @@
     "confidence": "high",
     "source_url": "http://www.rongsithaimill.com/",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -14239,7 +14693,12 @@
     "source_url": "https://www.misotaco.ca/menu",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/miso-taco-west-pender.jpg",
+    "credit_name": "Collector Guy",
+    "credit_url": "https://maps.google.com/maps/contrib/106857209222412542439",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -14250,8 +14709,8 @@
     "confidence": "high",
     "source_url": "https://www.misotaco.ca/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -14383,8 +14842,8 @@
     "confidence": "high",
     "source_url": "https://www.craftbeermarket.com/locations/vancouver-false-creek/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -14522,8 +14981,8 @@
     "confidence": "high",
     "source_url": "https://chop.ca/locations/richmond-airport?utm_source=GMB&utm_medium=google-location-listing&utm_campaign=organic",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -14603,8 +15062,8 @@
     "confidence": "high",
     "source_url": "http://gringogastown.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -14730,8 +15189,8 @@
     "confidence": "high",
     "source_url": "https://www.craftbeermarket.ca/locations/vancouver-english-bay/?utm_source=google&utm_medium=organic&utm_campaign=gmb",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -14818,8 +15277,8 @@
     "confidence": "high",
     "source_url": "http://www.smokeandbones.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -14964,8 +15423,8 @@
     "confidence": "high",
     "source_url": "https://milestonesrestaurants.com/locations/test-kitchen?utm_source=google&utm_medium=organic&utm_campaign=gbp",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -15087,7 +15546,7 @@
     "confidence": "medium",
     "source_url": "https://www.opheliakitchen.ca/",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -15220,7 +15679,7 @@
     "confidence": "medium",
     "source_url": "http://www.oddfishrestaurant.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -15307,8 +15766,8 @@
     "confidence": "high",
     "source_url": "https://saba.ca/bistrohours",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -15567,7 +16026,7 @@
     "confidence": "medium",
     "source_url": "http://www.claudiosristorante.ca/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -15654,8 +16113,8 @@
     "confidence": "high",
     "source_url": "http://pkscafe.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -15799,8 +16258,8 @@
     "confidence": "high",
     "source_url": "https://sobusocial.ca/",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -15950,8 +16409,8 @@
     "confidence": "high",
     "source_url": "https://localpubliceatery.com/lpe-river-district/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -16038,8 +16497,8 @@
     "confidence": "high",
     "source_url": "https://tworiversmeats.com/menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -16150,8 +16609,8 @@
     "confidence": "high",
     "source_url": "http://zawarestaurant.com/",
     "data_as_of": "2026-09-02",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -16262,8 +16721,8 @@
     "confidence": "high",
     "source_url": "https://www.cprime.ca/",
     "data_as_of": "2026-09-02",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -16465,8 +16924,8 @@
     "confidence": "high",
     "source_url": "https://www.niclipizzeria.com/happy-hour-menu-main",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -16658,11 +17117,11 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "changed",
+    "confidence": "low",
     "source_url": "https://www.hideoutgolf.ca/menu?menu=happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -16992,8 +17451,8 @@
     "confidence": "high",
     "source_url": "https://anindianaffair.com/willowbrook/happy-hour.html",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -17194,8 +17653,8 @@
     "confidence": "high",
     "source_url": "https://aksurrey.com/s/Afghan-Kitchen-7.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -17358,8 +17817,8 @@
     "confidence": "high",
     "source_url": "https://www.boteco.ca/menus-1",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -17590,8 +18049,8 @@
     "confidence": "high",
     "source_url": "https://chefron.ca/happy-hour-menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -17811,8 +18270,8 @@
     "confidence": "high",
     "source_url": "https://www.pidginvancouver.com/menu/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -17994,8 +18453,8 @@
     "confidence": "high",
     "source_url": "https://www.torafuku.ca/happy-hour-menu-vancouver",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -18197,8 +18656,8 @@
     "confidence": "high",
     "source_url": "https://tavolavancouver.com/daily-specials/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -18320,8 +18779,8 @@
     "confidence": "high",
     "source_url": "http://www.takovancouver.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -18540,8 +18999,8 @@
     "confidence": "high",
     "source_url": "http://www.hookrestaurant.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -18694,7 +19153,7 @@
     "confidence": "medium",
     "source_url": "https://www.redcardsportsbar.ca/_files/ugd/2cf2fd_048c9eb23e0842e0a3c5a6c83fb4a926.pdf",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -18810,8 +19269,8 @@
     "confidence": "high",
     "source_url": "http://brewingaugust.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -19005,8 +19464,8 @@
     "confidence": "high",
     "source_url": "http://www.persesocialcorner.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -19182,8 +19641,8 @@
     "confidence": "high",
     "source_url": "http://www.lasmargaritas.com/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -19293,7 +19752,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-burrow.jpg",
+    "credit_name": "The Burrow",
+    "credit_url": "https://maps.google.com/maps/contrib/113189711558482155361",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -19304,8 +19768,8 @@
     "confidence": "high",
     "source_url": "https://theburrowrestaurant.com/happy-hour-daily-specials",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -19456,8 +19920,8 @@
     "confidence": "high",
     "source_url": "https://www.virtuouspie.com/vancouver",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -19638,8 +20102,8 @@
     "confidence": "high",
     "source_url": "https://www.rockymountainflatbread.ca/locations/vancouver/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -19781,8 +20245,8 @@
     "confidence": "high",
     "source_url": "https://www.alimentariamexicana.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -19998,8 +20462,8 @@
     "confidence": "high",
     "source_url": "http://vaultrestaurant.com/menu/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -20133,8 +20597,8 @@
     "confidence": "high",
     "source_url": "http://www.littledonkey.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -20280,8 +20744,8 @@
     "confidence": "high",
     "source_url": "https://www.povera.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -20372,7 +20836,7 @@
     "confidence": "medium",
     "source_url": "http://murasaki.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -20497,7 +20961,7 @@
     "confidence": "low",
     "source_url": "http://tobikosushi.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -20709,8 +21173,8 @@
     "confidence": "high",
     "source_url": "https://luppolobrewing.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -20908,8 +21372,8 @@
     "confidence": "high",
     "source_url": "https://www.nobleath.com/s/NATH_FallBarMenu_251016.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -21021,7 +21485,7 @@
     "confidence": "medium",
     "source_url": "http://www.streetcarbrewing.com/happy-hour",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -21205,8 +21669,8 @@
     "confidence": "high",
     "source_url": "https://www.derbybarandgrill.com/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -21365,8 +21829,8 @@
     "confidence": "high",
     "source_url": "http://ilcappello.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -21450,8 +21914,8 @@
     "confidence": "high",
     "source_url": "https://theflyingbeaver.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -21553,8 +22017,8 @@
     "confidence": "high",
     "source_url": "https://thestory.cafe/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -21729,8 +22193,8 @@
     "confidence": "high",
     "source_url": "https://milltownbar.com/milltown-happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -21891,7 +22355,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/cat-fiddle-sports-bar-restaurant.jpg",
+    "credit_name": "Cat & Fiddle Sports Bar & Restaurant",
+    "credit_url": "https://maps.google.com/maps/contrib/117815940959243415548",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -21902,7 +22371,7 @@
     "confidence": "medium",
     "source_url": "https://i0.wp.com/catandfiddlepub.ca/wp-content/uploads/2025/12/Happy-hour-WINTER-2025-PRINT.jpg?ssl=1",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -22014,8 +22483,8 @@
     "confidence": "high",
     "source_url": "https://starlightcasino.ca/casino-happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -22198,8 +22667,8 @@
     "confidence": "high",
     "source_url": "http://www.dublincrossing.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -22430,8 +22899,8 @@
     "confidence": "high",
     "source_url": "https://thecanadianbrewhouse.com/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -22631,8 +23100,8 @@
     "confidence": "high",
     "source_url": "https://moxies.ca/restaurants/langley/?menu=true",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -22915,8 +23384,8 @@
     "confidence": "high",
     "source_url": "http://www.roguewetbar.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -23129,8 +23598,8 @@
     "confidence": "high",
     "source_url": "https://www.fortpub.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -23336,8 +23805,8 @@
     "confidence": "high",
     "source_url": "http://www.devilselbowalehouse.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -23639,8 +24108,8 @@
     "confidence": "high",
     "source_url": "https://www.librarysquarepub.com/_files/ugd/f78fe4_a70aca7b52e24f10a6b7535e2e1bdf7b.pdf",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -23873,7 +24342,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/two-parrots-bar-grill.jpg",
+    "credit_name": "Angus Praught",
+    "credit_url": "https://maps.google.com/maps/contrib/115367665338872173201",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -23884,8 +24358,8 @@
     "confidence": "high",
     "source_url": "https://www.twoparrotsvancouver.com/_files/ugd/8f0180_a21efa48cb3746a482ce249e320a6dc8.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -24087,8 +24561,8 @@
     "confidence": "high",
     "source_url": "http://jimymacspub.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -24262,8 +24736,8 @@
     "confidence": "high",
     "source_url": "https://kingfisherspub.com/wp-content/uploads/2026/05/Happy-Hour-2026-New.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -24416,8 +24890,8 @@
     "confidence": "high",
     "source_url": "https://theclaytonpub.com/menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -24535,8 +25009,8 @@
     "confidence": "high",
     "source_url": "https://www.arcdining.com/event/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -24660,8 +25134,8 @@
     "confidence": "high",
     "source_url": "http://www.lionspub.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -24781,7 +25255,7 @@
     "confidence": "medium",
     "source_url": "http://greatbearpub.com/files/2019/01/Great-BearEatin-2019.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -24957,8 +25431,8 @@
     "confidence": "high",
     "source_url": "http://bellsandwhistlesyvr.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -25157,8 +25631,8 @@
     "confidence": "high",
     "source_url": "https://luchalibretacos.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -25354,8 +25828,8 @@
     "confidence": "high",
     "source_url": "https://www.riverhouserestaurantandpub.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -25521,8 +25995,8 @@
     "confidence": "high",
     "source_url": "https://www.htastinglounge.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -25634,8 +26108,8 @@
     "confidence": "high",
     "source_url": "https://eastsidecrafthouse.com/south-vancouver-happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -25891,8 +26365,8 @@
     "confidence": "high",
     "source_url": "https://www.parkpub.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -26106,8 +26580,8 @@
     "confidence": "high",
     "source_url": "https://jollycoachman.com/menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -26310,8 +26784,8 @@
     "confidence": "high",
     "source_url": "http://stjameswell.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -26446,8 +26920,8 @@
     "confidence": "high",
     "source_url": "https://www.thewicklow.com/wp-content/uploads/2026/06/WICKLOW-HAPPY-HOUR-DAILY-SPECIALS-MENU-4-x-6.5-in-4.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -26671,8 +27145,8 @@
     "confidence": "high",
     "source_url": "https://donegals.pub/features%2Fhh",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -26801,7 +27275,7 @@
     "confidence": "medium",
     "source_url": "https://narrowgroup.ca/project/the-narrow/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -27088,8 +27562,8 @@
     "confidence": "high",
     "source_url": "http://rustyspub.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -27255,8 +27729,8 @@
     "confidence": "high",
     "source_url": "http://www.theterminalpub.com/happyhour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -27468,7 +27942,7 @@
     "confidence": "medium",
     "source_url": "https://jacklonsdales.ca/wp-content/uploads/2026/08/Jack-Lonsdales-Aug-26-MENU.pdf",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -27633,7 +28107,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/brewster-s-sports-pub.jpg",
+    "credit_name": "Brewster's Sports Pub",
+    "credit_url": "https://maps.google.com/maps/contrib/116923114269280057131",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -27644,8 +28123,8 @@
     "confidence": "high",
     "source_url": "https://www.brewsterspub.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -27886,8 +28365,8 @@
     "confidence": "high",
     "source_url": "http://www.seymourspub.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -28012,7 +28491,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-reach-neighbourhood-pub-grill.jpg",
+    "credit_name": "Corey Reynolds",
+    "credit_url": "https://maps.google.com/maps/contrib/115907647723759069261",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -28023,8 +28507,8 @@
     "confidence": "high",
     "source_url": "http://thereachpub.ca/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -28220,7 +28704,7 @@
     "confidence": "medium",
     "source_url": "https://www.tugboatannies.ca/s/2025-08-HappyHour-Specials.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -28398,7 +28882,7 @@
     "confidence": "medium",
     "source_url": "https://www.murrayvilletownpub.com/s/2026-04-MAIN-MENU.pdf",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -28570,8 +29054,8 @@
     "confidence": "high",
     "source_url": "https://tequilacocina.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -28744,8 +29228,8 @@
     "confidence": "high",
     "source_url": "https://foysirishbar.com/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -29031,8 +29515,8 @@
     "confidence": "high",
     "source_url": "http://www.greentimberspub.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -29235,8 +29719,8 @@
     "confidence": "high",
     "source_url": "https://locusonmain.com/wp-content/uploads/2026/04/Happy-Hour-Menu-Spring-Summer-2026.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -29490,8 +29974,8 @@
     "confidence": "high",
     "source_url": "https://www.wildfig.ca/menus/",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -29729,8 +30213,8 @@
     "confidence": "high",
     "source_url": "https://www.medleysgrill.com/_files/ugd/aa151a_1a5c6d8332f4431a8dd73fae5ac86843.pdf",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -29917,8 +30401,8 @@
     "confidence": "high",
     "source_url": "https://www.thethirstyduckpub.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -30017,8 +30501,8 @@
     "confidence": "high",
     "source_url": "http://www.kennedyssportspub.com/menu/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -30220,8 +30704,8 @@
     "confidence": "high",
     "source_url": "https://www.papisoysterbar.com/_files/ugd/2cf2fd_29e6d1ffc48f4df2a88d773b46647b52.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -30388,7 +30872,7 @@
     "confidence": "medium",
     "source_url": "https://chitchatburgerbar.com/drinks-menu/",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -30565,8 +31049,8 @@
     "confidence": "high",
     "source_url": "https://www.beachavebarandgrill.com/s/Beach-Ave-Drink-Menu-April-2026.pdf",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -30716,8 +31200,8 @@
     "confidence": "high",
     "source_url": "https://redlionbarandgrill.net/drinks",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -30835,8 +31319,8 @@
     "confidence": "high",
     "source_url": "http://www.theprincetonpub.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -31077,8 +31561,8 @@
     "confidence": "high",
     "source_url": "https://raysrestaurant.com/menu-qr/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -31161,7 +31645,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/elwoods.jpg",
+    "credit_name": "Elwoods",
+    "credit_url": "https://maps.google.com/maps/contrib/114469932820227043531",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -31172,8 +31661,8 @@
     "confidence": "high",
     "source_url": "http://www.elwoods.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -31352,7 +31841,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-brownsville-pub.jpg",
+    "credit_name": "Mark McFadyen",
+    "credit_url": "https://maps.google.com/maps/contrib/111596576062528897802",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -31363,8 +31857,8 @@
     "confidence": "high",
     "source_url": "https://brownsville.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -31530,8 +32024,8 @@
     "confidence": "high",
     "source_url": "https://www.howesound.com/_files/ugd/0393bd_f68268d10303424fb991f84514057f5f.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -31767,8 +32261,8 @@
     "confidence": "high",
     "source_url": "http://www.speedspubladner.ca/happyhour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -31969,8 +32463,8 @@
     "confidence": "high",
     "source_url": "https://www.uvavancouver.com/_files/ugd/8385f7_c5e42a9ca0d149d89a011a295561e208.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -32062,8 +32556,8 @@
     "confidence": "high",
     "source_url": "https://www.wildeyebrewing.ca/menus",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -32292,8 +32786,8 @@
     "confidence": "high",
     "source_url": "https://socialtavern.ca/s/Happy-Hour-2026.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -32436,8 +32930,8 @@
     "confidence": "high",
     "source_url": "https://www.bar-asra.com/happy-hour-vancouver",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -32630,8 +33124,8 @@
     "confidence": "high",
     "source_url": "https://curryngrill.ca/happy.html",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -32755,8 +33249,8 @@
     "confidence": "high",
     "source_url": "https://thefountainheadpub.com/daily-specials/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -32949,8 +33443,8 @@
     "confidence": "high",
     "source_url": "https://zapoteca.com/kitsilano/menu-kitsilano/menu-happy-hour-kitsilano/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -33071,7 +33565,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/park-drive.jpg",
+    "credit_name": "Park Drive",
+    "credit_url": "https://maps.google.com/maps/contrib/111850601096835959288",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -33082,7 +33581,7 @@
     "confidence": "medium",
     "source_url": "https://www.parkdrive.ca/dailyfeatures",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -33285,7 +33784,7 @@
     "confidence": "medium",
     "source_url": "https://files.sites.man-go.co/sites/a010bc47-b5d0-485a-b891-d248a3df8d68/menu/Happy%20Hour.png",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -33412,8 +33911,8 @@
     "confidence": "high",
     "source_url": "http://blindrabbit.ca/",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -33582,8 +34081,8 @@
     "confidence": "high",
     "source_url": "https://www.juniorspub.ca/menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -33799,8 +34298,8 @@
     "confidence": "high",
     "source_url": "https://www.courtsideonmain.com/food-and-drinks",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -34009,8 +34508,8 @@
     "confidence": "high",
     "source_url": "https://acquarestaurantandbar.com/pdf/Acqua-HH-Menu-may-2025.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -34281,7 +34780,7 @@
     "confidence": "low",
     "source_url": "https://notoriousgreyfox.com/wp-content/uploads/2025/09/notoriousgreyfox-menu-happy-hour-092025.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -34455,7 +34954,7 @@
     "confidence": "medium",
     "source_url": "https://www.venturaroom.com/s/VR-May-2026-Website.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -34622,7 +35121,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/jackson-s-resto-butcher.jpg",
+    "credit_name": "Jackson's on 4th",
+    "credit_url": "https://maps.google.com/maps/contrib/113562190628741234599",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -34633,7 +35137,7 @@
     "confidence": "low",
     "source_url": "http://www.jacksonsrestobutcher.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -34909,7 +35413,7 @@
     "confidence": "medium",
     "source_url": "https://divavancouver.com/our-menus",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -35028,8 +35532,8 @@
     "confidence": "high",
     "source_url": "https://morgancreekgolf.com/news/restaurant-menu/weekday-features/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -35164,8 +35668,8 @@
     "confidence": "high",
     "source_url": "https://www.mayfairlakes.com/course_offers/mayfair_lakes/offers/2022/07/10013_2207221832-256",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -35367,8 +35871,8 @@
     "confidence": "high",
     "source_url": "https://www.flamingoroomvan.com/happyhour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -35522,8 +36026,8 @@
     "confidence": "high",
     "source_url": "https://www.howesound.com/_files/ugd/0393bd_faa668d2f0534a15acf3960445f23b2d.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -35727,7 +36231,7 @@
     "confidence": "medium",
     "source_url": "https://cdn.shopify.com/s/files/1/0711/4686/4860/files/Happy_Hour_Menu_-_updated_Jan_2026.png",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -35846,8 +36350,8 @@
     "confidence": "high",
     "source_url": "https://thesquareriggerpub.com/menu.html",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -35966,8 +36470,8 @@
     "confidence": "high",
     "source_url": "http://www.thecozywok.com/happy-hour-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -36071,7 +36575,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-flapper-lounge.jpg",
+    "credit_name": "The Flapper Lounge",
+    "credit_url": "https://maps.google.com/maps/contrib/104255021793944822070",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -36082,8 +36591,8 @@
     "confidence": "high",
     "source_url": "http://www.flapperlounge.com/menus/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -36214,8 +36723,8 @@
     "confidence": "high",
     "source_url": "https://www.legion119.ca/food-drinks/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -36351,8 +36860,8 @@
     "confidence": "high",
     "source_url": "https://www.thehorseandryder.com/bar-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -36489,7 +36998,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/stages-bistro-lounge.jpg",
+    "credit_name": "Godwin C",
+    "credit_url": "https://maps.google.com/maps/contrib/105228349541098182324",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -36500,8 +37014,8 @@
     "confidence": "high",
     "source_url": "http://www.stagesbistroandlounge.com/specials",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -36677,7 +37191,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/fraser-bar.jpg",
+    "credit_name": "Fraser Bar",
+    "credit_url": "https://maps.google.com/maps/contrib/107323887554492320125",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -36688,7 +37207,7 @@
     "confidence": "medium",
     "source_url": "https://fraserbar.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -36875,7 +37394,7 @@
     "confidence": "medium",
     "source_url": "https://planetice.ca/coquitlam/amenities/boomers-bar-grill/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -36979,8 +37498,8 @@
     "confidence": "high",
     "source_url": "http://www.themainstay.ca/happyhour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -37142,8 +37661,8 @@
     "confidence": "high",
     "source_url": "https://ilovegigis.com/bar-lucia/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -37400,7 +37919,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/ocean-beach-hotel.jpg",
+    "credit_name": "zi-feng chen",
+    "credit_url": "https://maps.google.com/maps/contrib/111381727680808566307",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -37411,8 +37935,8 @@
     "confidence": "high",
     "source_url": "https://www.oceanbeachwr.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -37669,8 +38193,8 @@
     "confidence": "high",
     "source_url": "https://moxies.ca/happy-hour-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -37769,7 +38293,7 @@
     "confidence": "medium",
     "source_url": "https://cascadescasino.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -37844,73 +38368,73 @@
     ],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.bodegaonmain.ca/wp-content/uploads/2025/05/2025-05-10-Happy-Hour_Page_1-700x1030.jpg",
+    "source_url": "https://www.bodegaonmain.ca/wp-content/uploads/2025/05/2025-05-10-Happy-Hour.pdf",
     "deals": [
      {
       "name": "Ensalada Mixta",
       "price": "$12",
       "category": "food",
-      "description": "Mixed salad"
+      "description": "Happy hour Spanish-style bite"
      },
      {
       "name": "Arroz Español",
       "price": "$14",
       "category": "food",
-      "description": "Spanish rice"
+      "description": "Happy hour Spanish-style bite"
      },
      {
       "name": "Montaditos de Lomo",
       "price": "$13",
       "category": "food",
-      "description": "Loin bites"
+      "description": "Happy hour Spanish-style bite"
      },
      {
       "name": "Patatas Bravas",
       "price": "$8",
       "category": "food",
-      "description": "Fried potatoes with sauce"
+      "description": "Happy hour Spanish-style bite"
      },
      {
       "name": "Jamón Serrano",
       "price": "$14",
       "category": "food",
-      "description": "Cured Spanish ham"
+      "description": "Happy hour Spanish-style bite"
      },
      {
       "name": "Calamares Fritos",
       "price": "$15",
       "category": "food",
-      "description": "Fried squid"
+      "description": "Happy hour Spanish-style bite"
      },
      {
       "name": "Pollo Frito",
       "price": "$12",
       "category": "food",
-      "description": "Fried chicken"
+      "description": "Happy hour Spanish-style bite"
      },
      {
       "name": "Albóndigas",
       "price": "$13",
       "category": "food",
-      "description": "Meatballs"
+      "description": "Happy hour Spanish-style bite"
      },
      {
       "name": "Churros",
       "price": "$11",
       "category": "food",
-      "description": "Spanish fried pastry"
+      "description": "Happy hour Spanish-style bite"
      },
      {
-      "name": "Wine",
-      "price": "$8/$12",
+      "name": "Wine (red, white, rosé)",
+      "price": "$8 / $12",
       "category": "drink",
-      "description": "Red, White, or Rosé (5oz or 9oz)"
+      "description": "$8 for 6oz, $12 for 9oz"
      },
      {
-      "name": "High Balls",
-      "price": "$6/$9",
+      "name": "High balls",
+      "price": "$6 / $9",
       "category": "drink",
-      "description": "1oz or 2oz"
+      "description": "$6 for 1oz, $9 for 2oz"
      },
      {
       "name": "Bodega Lager",
@@ -37928,7 +38452,7 @@
       "name": "Vermouths",
       "price": "$3 off",
       "category": "drink",
-      "description": "All varieties"
+      "description": "La Hora del Vermut: $3 off all vermouths"
      }
     ]
    },
@@ -37938,18 +38462,18 @@
     "credit_url": "https://maps.google.com/maps/contrib/115673815074563962496",
     "source": "google_places"
    },
-   "last_synced_at": "2026-09-03",
+   "last_synced_at": "2026-10-25",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
-    "source_url": "https://www.bodegaonmain.ca/wp-content/uploads/2025/05/2025-05-10-Happy-Hour_Page_1-700x1030.jpg",
-    "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": null
+    "status": "confirmed",
+    "confidence": "high",
+    "source_url": "https://www.bodegaonmain.ca/wp-content/uploads/2025/05/2025-05-10-Happy-Hour.pdf",
+    "data_as_of": "2026-10-25",
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -38205,8 +38729,8 @@
     "confidence": "high",
     "source_url": "http://www.liftbarandgrill.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -38396,7 +38920,7 @@
     "confidence": "medium",
     "source_url": "https://www.matsuyama.ca/_files/ugd/db4ea6_71c05a7acbe1466ba612251791beb144.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -38531,8 +39055,8 @@
     "confidence": "high",
     "source_url": "https://washingtonavenuegrill.com/menus",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -38761,8 +39285,8 @@
     "confidence": "high",
     "source_url": "http://www.thebarleymerchant.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -38915,7 +39439,7 @@
     "confidence": "medium",
     "source_url": "https://www.labattoir.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -39072,8 +39596,8 @@
     "confidence": "high",
     "source_url": "https://www.jrg.ca/the-italian-osteria-cheesebar/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -39322,8 +39846,8 @@
     "confidence": "high",
     "source_url": "https://www.harthouserestaurant.com/happy-hour-2026",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -39567,8 +40091,8 @@
     "confidence": "high",
     "source_url": "http://www.marioskitchen.ca/menu/drinks-menu/download",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -39785,8 +40309,8 @@
     "confidence": "high",
     "source_url": "http://www.glasshouserestaurant.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -40004,8 +40528,8 @@
     "confidence": "high",
     "source_url": "https://persesocialcorner.com/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -40079,7 +40603,6 @@
    "happy_hour": {
     "days": [
      0,
-     1,
      2,
      3,
      4,
@@ -40091,55 +40614,67 @@
     "extra_windows": [],
     "verified": false,
     "verified_source": null,
-    "source_url": "http://www.minervas.ca/happy-hour",
+    "source_url": "https://minervas.ca/happy-hour",
     "deals": [
      {
       "name": "Peroni Nastro Azzurro",
-      "price": "$6.50",
+      "price": "$7.5",
       "category": "drink",
-      "description": "Beer on Tap (16oz), crisp and clean lager"
+      "description": "16oz draft lager"
      },
      {
       "name": "Strange Fellows Blackmail Stout",
-      "price": "$6.50",
+      "price": "$6.5",
       "category": "drink",
-      "description": "Beer on Tap (16oz), rich and smooth"
+      "description": "16oz draft"
      },
      {
       "name": "Powell St Old Jalopy Pale Ale",
-      "price": "$6.50",
+      "price": "$6.5",
       "category": "drink",
-      "description": "Beer on Tap (16oz), english pale and caramel malts"
+      "description": "16oz draft"
      },
      {
-      "name": "Red Truck Beer Hard Day Northwest IPA",
-      "price": "$6.50",
+      "name": "Red Truck Hard Day Northwest IPA",
+      "price": "$6.5",
       "category": "drink",
-      "description": "Beer on Tap (16oz), juicy pacific northwest hops"
+      "description": "16oz draft"
+     },
+     {
+      "name": "Rotating Seasonal Tap",
+      "price": "$7",
+      "category": "drink",
+      "description": "16oz draft; ask server for details"
      },
      {
       "name": "Feature Cocktail",
       "price": "$12",
       "category": "drink",
-      "description": "Selection varies, ask server for details"
+      "description": "Rotating feature cocktail"
      },
      {
       "name": "Bottega Prosecco",
       "price": "$6",
       "category": "drink",
-      "description": "Sparkling wine by glass"
+      "description": "Sparkling, per glass"
      },
      {
       "name": "House White",
-      "price": "$6-$9",
+      "price": "$6/$9",
       "category": "drink",
-      "description": "6oz or 9oz glass"
+      "description": "6oz / 9oz"
      },
      {
       "name": "House Red",
-      "price": "$6-$9",
+      "price": "$6/$9",
       "category": "drink",
-      "description": "6oz or 9oz glass"
+      "description": "6oz / 9oz"
+     },
+     {
+      "name": "Premium wines by the glass",
+      "price": "$10-13",
+      "category": "drink",
+      "description": "6oz price; 9oz $15-19. Includes JoieFarm Noble Blend, Roche Chardonnay, Mt. Boucherie Rosé, Burrowing Owl Merlot, Catena Malbec, San Felice Chianti Classico Riserva"
      },
      {
       "name": "Spiced Nuts",
@@ -40157,7 +40692,7 @@
       "name": "Pita & Dip",
       "price": "$10",
       "category": "food",
-      "description": "House-made hummus or tzatziki with baked pita"
+      "description": "House-made hummus or tzatziki, baked pita"
      },
      {
       "name": "Barra Fries",
@@ -40169,7 +40704,13 @@
       "name": "Meat Balls",
       "price": "$12",
       "category": "food",
-      "description": "3 meat balls with meat sauce"
+      "description": "3 meat balls, meat sauce"
+     },
+     {
+      "name": "Caprese Salad",
+      "price": "$14",
+      "category": "food",
+      "description": "Bocconcini, vine-ripe tomatoes, basil, EVOO, balsamic"
      },
      {
       "name": "Crispy Kalamari",
@@ -40191,7 +40732,7 @@
     "credit_url": "https://minervas.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-03",
+   "last_synced_at": "2026-10-25",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -40199,9 +40740,9 @@
     "level": "venue_site",
     "status": "unconfirmed",
     "confidence": "medium",
-    "source_url": "http://www.minervas.ca/happy-hour",
-    "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "source_url": "https://minervas.ca/happy-hour",
+    "data_as_of": "2026-10-25",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -40298,8 +40839,8 @@
     "confidence": "high",
     "source_url": "https://www.randbbrewing.com/menu?location=East+4th+Avenue&menu=ale--pizza-house-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -40529,8 +41070,8 @@
     "confidence": "high",
     "source_url": "http://patquinns.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -40648,8 +41189,8 @@
     "confidence": "high",
     "source_url": "http://sharkeys.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -40742,8 +41283,8 @@
     "confidence": "high",
     "source_url": "http://www.okiniyvr.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -40953,8 +41494,8 @@
     "confidence": "high",
     "source_url": "https://www.littlemexicocantina.ca/menu/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -41168,8 +41709,8 @@
     "confidence": "high",
     "source_url": "http://www.shaughnessyrestaurant.com/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -41353,8 +41894,8 @@
     "confidence": "high",
     "source_url": "https://www.gtccwestwoodplateau.com/restaurants/jess-fine/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -41586,8 +42127,8 @@
     "confidence": "high",
     "source_url": "https://fiorerestaurants.ca/wp-content/uploads/2023/03/Happy-Hour-Summer-2026.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -41746,8 +42287,8 @@
     "confidence": "high",
     "source_url": "https://www.farinaalegna.com/happy-hour",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -41833,55 +42374,73 @@
     "extra_windows": [],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.thefreebird.ca/s/FBS-Happy-Hour-July-2026-PRINT-v2-website.pdf",
+    "source_url": "https://www.thefreebird.ca/s/FBR-Happy-Hour-March-2026-web.pdf",
     "deals": [
      {
-      "name": "Chipotle Quinoa Salad",
+      "name": "Skillet Corn Bread",
       "price": "$9",
       "category": "food",
-      "description": "GF/VG - spicy chipotle vinaigrette, mixed greens, pickled onions, cucumber, tomato"
+      "description": "From the kitchen"
      },
      {
-      "name": "Wings",
-      "price": "$9",
+      "name": "House Hot Wings",
+      "price": "$13",
       "category": "food",
-      "description": "GF - buffalo, bbq or salt and pepper, house made buttermilk ranch, celery"
+      "description": "From the kitchen"
      },
      {
-      "name": "Pulled Pork Sliders",
-      "price": "$9",
+      "name": "Pork Belly Sliders",
+      "price": "$13",
       "category": "food",
-      "description": "smoked pork, slaw, spicy mayo, toasted brioche bun"
+      "description": "From the kitchen"
      },
      {
-      "name": "Maple Brussels",
-      "price": "$9",
+      "name": "Chicken Sliders",
+      "price": "$13",
       "category": "food",
-      "description": "VG - deep fried brussel sprouts, maple syrup"
+      "description": "From the kitchen"
      },
      {
-      "name": "Skillet Apple Crumble",
-      "price": "$9",
+      "name": "Skillet Corn Dip",
+      "price": "$13",
       "category": "food",
-      "description": "vanilla ice cream"
+      "description": "From the kitchen"
      },
      {
-      "name": "Feature Draft Beer",
-      "price": "$5",
+      "name": "Dirty Fries",
+      "price": "$13",
+      "category": "food",
+      "description": "From the kitchen"
+     },
+     {
+      "name": "Bacon & Jalapeno Deviled Eggs",
+      "price": "$13",
+      "category": "food",
+      "description": "From the kitchen"
+     },
+     {
+      "name": "BBQ Ribs",
+      "price": "$13",
+      "category": "food",
+      "description": "From the kitchen"
+     },
+     {
+      "name": "Glass of wine",
+      "price": "$6",
       "category": "drink",
-      "description": ""
+      "description": "Red, white, rosé or sparkling"
      },
      {
-      "name": "Feature Wine",
-      "price": "$5",
+      "name": "Featured draught",
+      "price": "$6",
       "category": "drink",
-      "description": ""
+      "description": "Featured draught beer"
      },
      {
-      "name": "Highball",
-      "price": "$5-7",
+      "name": "Featured cocktail",
+      "price": "$9",
       "category": "drink",
-      "description": "1oz $5 or 2oz $7"
+      "description": "Featured cocktail"
      }
     ]
    },
@@ -41891,7 +42450,7 @@
     "credit_url": "https://www.thefreebird.ca/aboutrichmond",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-03",
+   "last_synced_at": "2026-10-25",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -41899,9 +42458,9 @@
     "level": "venue_site",
     "status": "unconfirmed",
     "confidence": "medium",
-    "source_url": "https://www.thefreebird.ca/s/FBS-Happy-Hour-July-2026-PRINT-v2-website.pdf",
-    "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "source_url": "https://www.thefreebird.ca/s/FBR-Happy-Hour-March-2026-web.pdf",
+    "data_as_of": "2026-10-25",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -42223,8 +42782,8 @@
     "confidence": "high",
     "source_url": "https://sector7kb.com/new-menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -42426,8 +42985,8 @@
     "confidence": "high",
     "source_url": "http://lobbyrestaurant.ca/happyhour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -42629,8 +43188,8 @@
     "confidence": "high",
     "source_url": "https://www.lavashseasidegrill.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -42802,7 +43361,7 @@
     "confidence": "medium",
     "source_url": "https://farmhouseon10th.com/assets/menus/the_farmhouse_Happy_Hour.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -42986,8 +43545,8 @@
     "confidence": "high",
     "source_url": "https://www.folietta.com/_files/ugd/fc95b3_d1ca228b7f7e4d108cc1e15831986b03.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -43091,79 +43650,79 @@
        4
       ],
       "start": "20:00",
-      "end": null,
-      "label": "Evening"
+      "end": "21:00",
+      "label": "Late night"
      }
     ],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.gtccwestwoodplateau.com/restaurants/jess-sky/",
+    "source_url": "https://www.gtccwestwoodplateau.com/wp-content/uploads/2026/06/Jess-Sky-20260618-Menu.pdf",
     "deals": [
      {
       "name": "Beef Dip",
       "price": "$18",
       "category": "food",
-      "description": "Shaved AAA Canadian beef, horseradish aioli, bacon onion jam, provolone cheese, au jus, toasted ciabatta. Choice of fries or garden salad."
+      "description": "Shaved AAA Canadian beef, horseradish aioli, bacon onion jam, provolone, au jus, toasted ciabatta; choice of fries or garden salad"
      },
      {
       "name": "Halibut Fish & Chips",
       "price": "$24",
       "category": "food",
-      "description": "One piece vodka battered pacific halibut, house made tartar sauce, slaw, lemon. Choice of fries or garden salad."
+      "description": "One piece vodka battered pacific halibut, tartar sauce, slaw, lemon; choice of fries or garden salad"
      },
      {
       "name": "Gyoza",
       "price": "$14",
       "category": "food",
-      "description": "Miso mayo, pickled radish, scallion, sesame yuzu soy. Vegetable or beef; vegan upon request."
+      "description": "Vegetable or beef, miso mayo, pickled radish, scallion, sesame yuzu soy"
      },
      {
       "name": "Wings",
       "price": "$12",
       "category": "food",
-      "description": "Salt & pepper or hot."
+      "description": "Salt & pepper or hot"
      },
      {
       "name": "Birdie Bites",
       "price": "$16",
       "category": "food",
-      "description": "Waffle fries, onion rings, cream cheese jalapeño poppers, garlic aioli. Vegetarian."
+      "description": "Waffle fries, onion rings, cream cheese jalapeño poppers, garlic aioli"
      },
      {
       "name": "Yam Fries",
       "price": "$8",
       "category": "food",
-      "description": "Served with spicy yogurt. Vegetarian."
+      "description": "Served with spicy yogurt"
      },
      {
       "name": "Fries",
       "price": "$6",
       "category": "food",
-      "description": "Waffle cut, served with garlic aioli. Vegetarian."
+      "description": "Waffle cut, served with garlic aioli"
      },
      {
       "name": "Stone Road Wine",
-      "price": "$5-$8",
+      "price": "$5 (6oz) / $8 (8oz)",
       "category": "drink",
-      "description": "Red/white/rosé. Okanagan Valley, BC. 6oz for $5, 8oz for $8."
+      "description": "Red, white or rosé, Okanagan Valley BC"
      },
      {
       "name": "House Highballs",
-      "price": "$5-$8.50",
+      "price": "$5 (1oz) / $8.50 (2oz)",
       "category": "drink",
-      "description": "Well spirits. 1oz for $5, 2oz for $8.50."
+      "description": "Well spirits"
      },
      {
       "name": "Jess' Lager",
       "price": "$5",
       "category": "drink",
-      "description": "Greentees' house lager with Yellow Dog brewing. 16oz pint."
+      "description": "16oz pint of the house lager brewed with Yellow Dog Brewing"
      },
      {
       "name": "Jess' Cocktail",
       "price": "$12",
       "category": "drink",
-      "description": "Empress gin, elderflower, tonic. 2oz."
+      "description": "2oz Empress gin, elderflower, tonic"
      }
     ]
    },
@@ -43173,18 +43732,18 @@
     "credit_url": "https://www.gtccwestwoodplateau.com/restaurants/jess-sky/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-03",
+   "last_synced_at": "2026-10-25",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
-    "source_url": "https://www.gtccwestwoodplateau.com/restaurants/jess-sky/",
-    "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": null
+    "status": "confirmed",
+    "confidence": "high",
+    "source_url": "https://www.gtccwestwoodplateau.com/wp-content/uploads/2026/06/Jess-Sky-20260618-Menu.pdf",
+    "data_as_of": "2026-10-25",
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -43233,17 +43792,26 @@
    "happy_hour": {
     "days": [
      0,
+     1,
      2,
      3,
-     4
+     4,
+     5,
+     6
     ],
-    "start": "12:00",
-    "end": "15:00",
+    "start": "14:00",
+    "end": "17:00",
     "extra_windows": [
      {
       "days": [
-       0,
-       2,
+       1
+      ],
+      "start": "17:00",
+      "end": "21:00",
+      "label": "All day Monday (to close)"
+     },
+     {
+      "days": [
        3,
        4
       ],
@@ -43253,17 +43821,24 @@
      },
      {
       "days": [
-       1
+       5,
+       6
       ],
-      "start": "12:00",
-      "end": "22:00",
-      "label": "All day Monday"
+      "start": "21:00",
+      "end": "23:00",
+      "label": "Late night"
      }
     ],
     "verified": false,
     "verified_source": null,
-    "source_url": "http://www.fuggles.beer/",
+    "source_url": "https://www.fugglesbeer.com/s/HAPPY-HOUR-MENU.pdf",
     "deals": [
+     {
+      "name": "Beer sleeves",
+      "price": "$5",
+      "category": "drink",
+      "description": "All sleeves $5. Canned cocktails, wine and non-alcoholic drinks are also available."
+     },
      {
       "name": "Falafels",
       "price": "$5",
@@ -43271,38 +43846,37 @@
       "description": "With creamy dill dip"
      },
      {
-      "name": "Waffle Fries",
+      "name": "Tater tots",
       "price": "$5",
       "category": "food",
-      "description": "With choice of dip (ketchup, chipotle aioli, or garlic aioli)"
+      "description": "Choice of dip: ketchup, chipotle aioli or garlic aioli"
      },
      {
-      "name": "Sausage Bombs",
+      "name": "Sausage bombs",
       "price": "$8",
       "category": "food",
-      "description": "5 mini gouda sausages made in Richmond"
-     },
-     {
-      "name": "Beer",
-      "price": "$5",
-      "category": "drink",
-      "description": "All sleeves"
+      "description": "5 mini gouda sausages made in Richmond by D'Original Sausage House"
      }
     ]
    },
-   "cover_image": null,
-   "last_synced_at": "2026-09-03",
+   "cover_image": {
+    "url": "photos/fuggles-beer-co.jpg",
+    "credit_name": "Fuggles Beer Co.",
+    "credit_url": "https://maps.google.com/maps/contrib/115987893966747965441",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-10-25",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
-    "source_url": "http://www.fuggles.beer/",
-    "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": null
+    "status": "confirmed",
+    "confidence": "high",
+    "source_url": "https://www.fugglesbeer.com/s/HAPPY-HOUR-MENU.pdf",
+    "data_as_of": "2026-10-25",
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -43472,8 +44046,8 @@
     "confidence": "high",
     "source_url": "http://district-eleven.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -43682,11 +44256,11 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "changed",
+    "confidence": "low",
     "source_url": "http://www.seleneagn.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -43817,8 +44391,8 @@
     "confidence": "high",
     "source_url": "https://www.barneysonmain.com/evening-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -43956,8 +44530,8 @@
     "confidence": "high",
     "source_url": "https://www.tradingpostbrewing.com/food",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -44079,8 +44653,8 @@
     "confidence": "high",
     "source_url": "https://cerveceria-astilleros.com/pages/happy-hour-north-vancouver",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -44316,8 +44890,8 @@
     "confidence": "high",
     "source_url": "https://radishrestaurant.com/happy-hour-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -44470,8 +45044,8 @@
     "confidence": "high",
     "source_url": "https://www.palmsbeachhouse.ca/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -44593,8 +45167,8 @@
     "confidence": "high",
     "source_url": "https://www.railandriversteakandseafood.com/drink-menus",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -44764,8 +45338,8 @@
     "confidence": "high",
     "source_url": "http://www.eatscratchkitchen.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -44849,7 +45423,7 @@
     "confidence": "medium",
     "source_url": "http://www.northpointbrewing.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -45153,7 +45727,7 @@
     "confidence": "low",
     "source_url": null,
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -45282,8 +45856,8 @@
     "confidence": "high",
     "source_url": "https://www.deargus.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -45462,8 +46036,8 @@
     "confidence": "high",
     "source_url": "https://www.lilarestaurant.ca/happyhour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -45558,7 +46132,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/soi-ram.jpg",
+    "credit_name": "George",
+    "credit_url": "https://maps.google.com/maps/contrib/118143057451268068425",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -45569,8 +46148,8 @@
     "confidence": "high",
     "source_url": "http://soiram.ca/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -45724,8 +46303,8 @@
     "confidence": "high",
     "source_url": "https://www.theboatshedgroup.com/menus-the-orchard?menu=happy-hour---daily-specials",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -45910,7 +46489,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/il-corvo.jpg",
+    "credit_name": "Munro Stuff",
+    "credit_url": "https://maps.google.com/maps/contrib/101258701806417487400",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -45921,8 +46505,8 @@
     "confidence": "high",
     "source_url": "https://www.ilcorvo.ca/s/NEW-Happy-Hour-Menu-May-4-2026.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -46098,8 +46682,8 @@
     "confidence": "high",
     "source_url": "https://thepleasant.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -46313,8 +46897,8 @@
     "confidence": "high",
     "source_url": "https://www.fredsrestaurant.com/menu-freds-west4th",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -46504,8 +47088,8 @@
     "confidence": "high",
     "source_url": "https://www.northviewgolf.com/restaurants/duffeys-sports-grill/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -46738,8 +47322,8 @@
     "confidence": "high",
     "source_url": "https://jeonvancouver.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -46940,7 +47524,7 @@
     "confidence": "medium",
     "source_url": "https://www.madhatterbistro.ca/happy-hour-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -47145,8 +47729,8 @@
     "confidence": "high",
     "source_url": "https://www.timeandplaceburnaby.com/menus-happyhour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -47303,8 +47887,8 @@
     "confidence": "high",
     "source_url": "https://www.cravebistro.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -47436,7 +48020,7 @@
     "credit_url": "https://www.grizzlyflatbread.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-03",
+   "last_synced_at": "2026-10-25",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -47445,8 +48029,8 @@
     "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://www.grizzlyflatbread.ca/special-offers",
-    "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "data_as_of": "2026-10-25",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -47570,8 +48154,8 @@
     "confidence": "high",
     "source_url": "http://wharfandflame.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -47632,20 +48216,20 @@
    "website": "http://sonsofvancouver.ca/",
    "happy_hour": {
     "days": [
-     2
+     0
     ],
     "start": "17:00",
     "end": "21:00",
     "extra_windows": [],
     "verified": false,
     "verified_source": null,
-    "source_url": "https://www.sonsofvancouver.ca/s/SOV-Menu-Jun-2025-1.pdf",
+    "source_url": "https://www.sonsofvancouver.ca/s/SOV-DRINK-MENU-Jul-2026.pdf",
     "deals": [
      {
-      "name": "Drinks",
+      "name": "Menu cocktails",
       "price": "$3 off",
       "category": "drink",
-      "description": "Every drink on the menu"
+      "description": "Sunday all-night happy hour: $3 off every menu cocktail all night long"
      }
     ]
    },
@@ -47655,7 +48239,7 @@
     "credit_url": "https://www.sonsofvancouver.ca/menu-4",
     "source": "official_website"
    },
-   "last_synced_at": "2026-09-03",
+   "last_synced_at": "2026-10-25",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -47663,9 +48247,9 @@
     "level": "venue_site",
     "status": "unconfirmed",
     "confidence": "medium",
-    "source_url": "https://www.sonsofvancouver.ca/s/SOV-Menu-Jun-2025-1.pdf",
-    "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "source_url": "https://www.sonsofvancouver.ca/s/SOV-DRINK-MENU-Jul-2026.pdf",
+    "data_as_of": "2026-10-25",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -47855,8 +48439,8 @@
     "confidence": "high",
     "source_url": "https://paulsburger.com/pauls-burger-menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -48037,8 +48621,8 @@
     "confidence": "high",
     "source_url": "https://queensboroughtaphouse.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -48122,7 +48706,7 @@
     "confidence": "medium",
     "source_url": "https://www.northpointbrewing.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -48216,8 +48800,8 @@
     "confidence": "high",
     "source_url": "https://www.pocobrothersbrewing.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -48403,8 +48987,8 @@
     "confidence": "high",
     "source_url": "https://greatwings.ca/menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -48588,7 +49172,7 @@
     "confidence": "medium",
     "source_url": "https://www.samz.ca/features/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -48729,7 +49313,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/ricky-s-all-day-grill.jpg",
+    "credit_name": "Ricky's All Day Grill",
+    "credit_url": "https://maps.google.com/maps/contrib/104169788069454834934",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -48740,8 +49329,8 @@
     "confidence": "high",
     "source_url": "https://rickysrestaurants.ca/wp-content/uploads/2026/07/DDCovers_HappyHour_3.875x7.375_0626_LR.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -48938,7 +49527,7 @@
     "confidence": "medium",
     "source_url": "https://onyxsteakhouse.ca/wp-content/uploads/2025/07/Copy-of-Happy-Hour-Card-6.75-x-5-1.png",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -49120,8 +49709,8 @@
     "confidence": "high",
     "source_url": "http://75west.ca/menus",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -49233,7 +49822,7 @@
     "confidence": "medium",
     "source_url": "http://www.cafe-orso.ca/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -49412,8 +50001,8 @@
     "confidence": "high",
     "source_url": "http://www.haroldskitchenbar.com/specials",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -49669,8 +50258,8 @@
     "confidence": "high",
     "source_url": "https://www.hellonori.com/s/2026-HN-Park-Royal-Happy-Hour-Menu-V4.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -49941,8 +50530,8 @@
     "confidence": "high",
     "source_url": "https://www.novarestaurant.ca/menu/port-moody-happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -50096,8 +50685,8 @@
     "confidence": "high",
     "source_url": "http://www.armsreachbistro.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -50400,8 +50989,8 @@
     "confidence": "high",
     "source_url": "https://dominionkitchen.com/happy-hour-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -50531,8 +51120,8 @@
     "confidence": "high",
     "source_url": "http://chaomami.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -50684,8 +51273,8 @@
     "confidence": "high",
     "source_url": "https://meneds.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -50849,8 +51438,8 @@
     "confidence": "high",
     "source_url": "https://meneds.ca/wp-content/uploads/2026/04/Happy-Hour.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -50961,7 +51550,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/sfinaki-greek-taverna.jpg",
+    "credit_name": "Sfinaki Greek Taverna",
+    "credit_url": "https://maps.google.com/maps/contrib/106044241941404789965",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -50972,7 +51566,7 @@
     "confidence": "medium",
     "source_url": "https://sfinaki.ca/pages/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -51196,8 +51790,8 @@
     "confidence": "high",
     "source_url": "http://cavukitchenbar.com/menus",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -51384,7 +51978,7 @@
     "confidence": "low",
     "source_url": "https://romersurgerbar.com/wp-content/uploads/Romers_RD_April2026_final-web.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -51506,8 +52100,8 @@
     "confidence": "high",
     "source_url": "https://loambistro.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -51733,8 +52327,8 @@
     "confidence": "high",
     "source_url": "https://www.theapronrichmond.com/our-menus",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -51836,8 +52430,8 @@
     "confidence": "high",
     "source_url": "https://www.holytaco.ca/restaurant-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -52067,8 +52661,8 @@
     "confidence": "high",
     "source_url": "https://www.redrobin.com/happy-hour-ca",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -52306,8 +52900,8 @@
     "confidence": "high",
     "source_url": "https://hawknightingale.com/wp-content/uploads/2026/03/Happy-Hour-Website-March-4-2025.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -52458,8 +53052,8 @@
     "confidence": "high",
     "source_url": "https://www.honsushi.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -52587,8 +53181,8 @@
     "confidence": "high",
     "source_url": "https://www.boathouserestaurants.ca/event/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -52716,8 +53310,8 @@
     "confidence": "high",
     "source_url": "https://ulisrestaurant.com/menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -52863,8 +53457,8 @@
     "confidence": "high",
     "source_url": "https://www.tapsandtacos.ca/menus/happy-hour-margarita-monday?location=taps-and-tacos",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -53048,8 +53642,8 @@
     "confidence": "high",
     "source_url": "https://thehardbeanbrunchco.com/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -53254,8 +53848,8 @@
     "confidence": "high",
     "source_url": "https://www.bananaleaf-vancouver.com/kits-happyhourlatenight",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -53376,8 +53970,8 @@
     "confidence": "high",
     "source_url": "https://www.dovetailrestaurant.ca/martini-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -53560,8 +54154,8 @@
     "confidence": "high",
     "source_url": "http://www.luckytaco.ca/menu/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -53760,7 +54354,7 @@
     "confidence": "medium",
     "source_url": "https://skyeavenue.com/wp-content/themes/SkyeAvenue/assets/img/features/Cocktail%20Menu%20NF%20v1.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -53977,8 +54571,8 @@
     "confidence": "high",
     "source_url": "https://loulastaverna.com/menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -54162,8 +54756,8 @@
     "confidence": "high",
     "source_url": "https://foodbyfanta.com/wp-content/uploads/2026/06/260623-FANTA-Happy-Hour-Menu.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -54336,7 +54930,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/lucia.jpg",
+    "credit_name": "Byron Sheardown",
+    "credit_url": "https://maps.google.com/maps/contrib/102022222275245034688",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -54347,8 +54946,8 @@
     "confidence": "high",
     "source_url": "https://www.luciaonmain.com/s/Lucia_Dinner-and-Cocktail-Menu_8x145_April_2026.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -54611,8 +55210,8 @@
     "confidence": "high",
     "source_url": "http://www.villagetaphouse.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -54783,7 +55382,7 @@
     "confidence": "medium",
     "source_url": "https://moosesdownunder.com/wp-content/uploads/2025/07/mooses-drink-menu-2025-3.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -54947,8 +55546,8 @@
     "confidence": "high",
     "source_url": "https://www.hestiakitchenlab.ca/copy-of-eat",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -55186,8 +55785,8 @@
     "confidence": "high",
     "source_url": "https://acquafarina.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -55323,8 +55922,8 @@
     "confidence": "high",
     "source_url": "https://www.londonpubvan.com/drinks?location=The+London+Pub&menu=happy-hour-2",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -55512,7 +56111,7 @@
     "confidence": "medium",
     "source_url": "https://wedgewoodhotel.com/dining/menus/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -55669,8 +56268,8 @@
     "confidence": "high",
     "source_url": "https://www.sappertondistricttaphouse.com/menu?location=East+Columbia+Street&menu=happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -55905,8 +56504,8 @@
     "confidence": "high",
     "source_url": "https://www.caffebarney.com/menu?location=Caffe+Barney+on+Granville&menu=drinks",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -56029,8 +56628,8 @@
     "confidence": "high",
     "source_url": "https://www.therecroom.com/granville/deals",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -56226,7 +56825,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-one-sixty-wine-bar-cafe.jpg",
+    "credit_name": "Andrew Walker",
+    "credit_url": "https://maps.google.com/maps/contrib/116743760404127620146",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -56237,8 +56841,8 @@
     "confidence": "high",
     "source_url": "https://www.theonesixty.com/s/Happy-Hour-MENU-June-2026docx.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -56366,7 +56970,7 @@
     "confidence": "medium",
     "source_url": "https://vancouver.thepint.ca/wp-content/uploads/2026/06/VAN-Summer-Drink-Menu-0626-scaled.jpg",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -56560,8 +57164,8 @@
     "confidence": "high",
     "source_url": "https://gurkha.ca/c/happy-hours/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -56772,8 +57376,8 @@
     "confidence": "high",
     "source_url": "https://www.kobcob.com/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -56993,8 +57597,8 @@
     "confidence": "high",
     "source_url": "http://www.pierseven.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -57175,7 +57779,7 @@
     "confidence": "medium",
     "source_url": "https://www.zarakvancouver.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -57434,8 +58038,8 @@
     "confidence": "high",
     "source_url": "https://sulaindianrestaurant.com/happy-hour-vancouver/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -57639,8 +58243,8 @@
     "confidence": "high",
     "source_url": "https://www.catch122.ca/home/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -57904,8 +58508,8 @@
     "confidence": "high",
     "source_url": "http://themainonmain.com/happy-hour.php",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -58134,7 +58738,7 @@
     "confidence": "medium",
     "source_url": "https://kingtaps.com/locations/lonsdale-quay/menu/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -58340,7 +58944,7 @@
     "confidence": "medium",
     "source_url": "https://pizzacarano.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -58461,8 +59065,8 @@
     "confidence": "high",
     "source_url": "https://brownssocialhouse.com/point-grey",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -58687,8 +59291,8 @@
     "confidence": "high",
     "source_url": "https://www.provisionsitaliana.com/s/Provisions-HH-July-web.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -58795,8 +59399,8 @@
     "confidence": "high",
     "source_url": "http://www.hynesirishpub.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -59007,8 +59611,8 @@
     "confidence": "high",
     "source_url": "https://eatmeet.ca/happy-hour-menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -59287,8 +59891,8 @@
     "confidence": "high",
     "source_url": "https://bin4burgerlounge.com/happy-hour-menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -59490,8 +60094,8 @@
     "confidence": "high",
     "source_url": "https://www.fishworks.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -59624,8 +60228,8 @@
     "confidence": "high",
     "source_url": "http://www.alley16.com/drinks",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -59815,8 +60419,8 @@
     "confidence": "high",
     "source_url": "https://www.bravovancouver.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -59970,7 +60574,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/collective-goods.jpg",
+    "credit_name": "Collective Goods Bistro",
+    "credit_url": "https://maps.google.com/maps/contrib/108591311822891271567",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-09-03",
    "primary_type": null,
    "reservable": null,
@@ -59981,8 +60590,8 @@
     "confidence": "high",
     "source_url": "https://www.collectivegoods.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -60068,8 +60677,8 @@
     "confidence": "high",
     "source_url": "http://dublincalling.com/vancouver/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -60174,8 +60783,8 @@
     "confidence": "high",
     "source_url": "https://westoakrestaurant.com/",
     "data_as_of": "2026-08-31",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -60441,8 +61050,8 @@
     "confidence": "high",
     "source_url": "https://laterrazza.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -60650,7 +61259,12 @@
     ]
    },
    "last_synced_at": "2026-09-03",
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-cascade-room.jpg",
+    "credit_name": "The Cascade Room",
+    "credit_url": "https://maps.google.com/maps/contrib/109816749546022977990",
+    "source": "google_places"
+   },
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -60660,8 +61274,8 @@
     "confidence": "high",
     "source_url": "https://www.thecascade.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -60772,8 +61386,8 @@
     "confidence": "high",
     "source_url": "http://www.tocador.ca/",
     "data_as_of": "2026-08-30",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -60943,7 +61557,7 @@
     "confidence": "medium",
     "source_url": "https://ignitepizzeria.com/yaletown-menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -61187,8 +61801,8 @@
     "confidence": "high",
     "source_url": "https://www.prophecybar.com/happy-hour",
     "data_as_of": "2026-08-31",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -61347,8 +61961,8 @@
     "confidence": "high",
     "source_url": "https://www.daviesocial.ca/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -61469,8 +62083,8 @@
     "confidence": "high",
     "source_url": "https://themac.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -61622,7 +62236,7 @@
     "confidence": "medium",
     "source_url": "https://guu-izakaya.com/ThurlowDinnerMenu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -61999,8 +62613,8 @@
     "confidence": "high",
     "source_url": "https://www.waterstreetcafe.ca/menu/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -62116,8 +62730,8 @@
     "confidence": "high",
     "source_url": "https://kintonramen.com/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -62289,8 +62903,8 @@
     "confidence": "high",
     "source_url": "https://images.unoapp.com/boxdata/asset89882/images/50791__BELLAGGIOCAFE-HappyHours-MENU_2.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -62468,8 +63082,8 @@
     "confidence": "high",
     "source_url": "https://www.maxinescafebar.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -62605,7 +63219,7 @@
     "confidence": "medium",
     "source_url": "https://guu-izakaya.com/OtokomaeMenu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -62823,8 +63437,8 @@
     "confidence": "high",
     "source_url": "https://cocoricocafe.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -62967,7 +63581,7 @@
     "confidence": "medium",
     "source_url": "https://www.capoandspritz.com/daily-happy-hour-and-late-night",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -63243,8 +63857,8 @@
     "confidence": "high",
     "source_url": "https://steamworks.com/wp-content/uploads/2026/03/SWMP_Mar2026_print.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -63387,7 +64001,12 @@
     "extra_windows": []
    },
    "last_synced_at": "2026-09-03",
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/pizza-coming-soon.jpg",
+    "credit_name": "Pizza Coming Soon",
+    "credit_url": "https://maps.google.com/maps/contrib/114547482930277438464",
+    "source": "google_places"
+   },
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -63397,8 +64016,8 @@
     "confidence": "high",
     "source_url": "http://pizzacomingsoon.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -63557,7 +64176,7 @@
     "confidence": "medium",
     "source_url": "https://desilounge.ca/pages/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -63728,8 +64347,8 @@
     "confidence": "high",
     "source_url": "https://guu-izakaya.com/Davie_QR",
     "data_as_of": "2026-08-30",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -63945,8 +64564,8 @@
     "confidence": "high",
     "source_url": "https://thekingsheadkits.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -64060,8 +64679,8 @@
     "confidence": "high",
     "source_url": "https://www.prestonsvancouver.ca/menus",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -64274,7 +64893,7 @@
     "confidence": "low",
     "source_url": "https://www.amber99.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -64527,8 +65146,8 @@
     "confidence": "high",
     "source_url": "https://cambiepubs.com/menu/daily-specials-happy-hour",
     "data_as_of": "2026-10-24",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -64799,7 +65418,7 @@
     "confidence": "medium",
     "source_url": "https://www.cactusclubcafe.com/locations/bentall-5/menu/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -64947,8 +65566,8 @@
     "confidence": "high",
     "source_url": "https://marcellopizzeria.com/wp-content/uploads/2026/03/marcello-happyhour-menu-march2026.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -65160,8 +65779,8 @@
     "confidence": "high",
     "source_url": "https://www.mangosvancouver.com/menu/happy-hour-and-daily-specials",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -65248,7 +65867,12 @@
     ]
    },
    "last_synced_at": "2026-09-03",
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/st-augustine-s.jpg",
+    "credit_name": "Kevin T",
+    "credit_url": "https://maps.google.com/maps/contrib/114288042566495812069",
+    "source": "google_places"
+   },
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -65258,8 +65882,8 @@
     "confidence": "high",
     "source_url": "http://staugustinesvancouver.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -65549,7 +66173,7 @@
     "confidence": "medium",
     "source_url": "https://www.cactusclubcafe.com/locations/yaletown/menu/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -65854,8 +66478,8 @@
     "confidence": "high",
     "source_url": "https://malones.bc.ca/menu/hoppy-hour-and-highlights",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -66018,8 +66642,8 @@
     "confidence": "high",
     "source_url": "https://www.lamezcaleria.ca/happy-hour-lunch",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -66212,7 +66836,7 @@
     "confidence": "medium",
     "source_url": "https://www.cactusclubcafe.com/locations/broadway-ash/menu/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -66316,8 +66940,8 @@
     "confidence": "high",
     "source_url": "https://www.freehouse.co/locations/sing-sing?utm_source=google&utm_medium=organic&utm_campaign=gmb",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -66483,8 +67107,8 @@
     "confidence": "high",
     "source_url": "http://www.jamjarcanteen.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -66737,8 +67361,8 @@
     "confidence": "high",
     "source_url": "https://biminis1975.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -66870,8 +67494,8 @@
     "confidence": "high",
     "source_url": "https://www.between2bunsburgers.ca/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -67005,8 +67629,8 @@
     "confidence": "high",
     "source_url": "https://www.freehouse.co/locations/butcher-and-bullock?utm_source=google&utm_medium=organic&utm_campaign=gmb",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -67165,8 +67789,8 @@
     "confidence": "high",
     "source_url": "http://kitsilanopub.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -67290,8 +67914,8 @@
     "confidence": "high",
     "source_url": "https://thecharlatanrestaurant.com/specials/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -67371,7 +67995,7 @@
     "confidence": "medium",
     "source_url": "https://opushotel.com/eat-drink/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -67478,8 +68102,8 @@
     "confidence": "high",
     "source_url": "https://www.memphisbluesbbq.com/locations/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -67572,8 +68196,8 @@
     "confidence": "high",
     "source_url": "https://www.caffecittadella.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -67708,8 +68332,8 @@
     "confidence": "high",
     "source_url": "http://fiorinovancouver.com/",
     "data_as_of": "2026-08-30",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -67826,8 +68450,8 @@
     "confidence": "high",
     "source_url": "https://bombaykitchenondenman.ca/pxl-template/template_menu_house-specials/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -67931,8 +68555,8 @@
     "confidence": "high",
     "source_url": "http://www.liviasweets.com/",
     "data_as_of": "2026-08-31",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -67997,7 +68621,12 @@
     "extra_windows": []
    },
    "last_synced_at": "2026-09-03",
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/forecast-coffee-main-street.jpg",
+    "credit_name": "Forecast Coffee - Main Street",
+    "credit_url": "https://maps.google.com/maps/contrib/113315648918602301082",
+    "source": "google_places"
+   },
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -68007,8 +68636,8 @@
     "confidence": "high",
     "source_url": "http://forecastcoffee.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -68177,8 +68806,8 @@
     "confidence": "high",
     "source_url": "https://www.noahscafe604.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -68336,7 +68965,12 @@
     ]
    },
    "last_synced_at": "2026-09-03",
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/bartholomew.jpg",
+    "credit_name": "Bartholomew",
+    "credit_url": "https://maps.google.com/maps/contrib/105616840146967823246",
+    "source": "google_places"
+   },
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -68346,8 +68980,8 @@
     "confidence": "high",
     "source_url": "https://www.bartholomewbar.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -68581,8 +69215,8 @@
     "confidence": "high",
     "source_url": "https://www.baysidelounge.ca/menu?location=Location+1&menu=happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -68813,8 +69447,8 @@
     "confidence": "high",
     "source_url": "https://ciderhouserules.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -68990,8 +69624,8 @@
     "confidence": "high",
     "source_url": "https://www.barcorso.ca/_files/ugd/ec361e_94d56fd70d6443fba7ec22209e6445de.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -69212,8 +69846,8 @@
     "confidence": "high",
     "source_url": "https://www.songyvr.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -69314,8 +69948,8 @@
     "confidence": "high",
     "source_url": "https://www.mainstreetbeer.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -69467,8 +70101,8 @@
     "confidence": "high",
     "source_url": "https://switch-vancouver.ca/wp-content/uploads/2025/10/HAPPY-HOUR-MENU-2025-10.pdf",
     "data_as_of": "2026-08-31",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -69567,8 +70201,8 @@
     "confidence": "high",
     "source_url": "http://www.uncleabes.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -69789,8 +70423,8 @@
     "confidence": "high",
     "source_url": "https://www.thewatson.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -69926,7 +70560,7 @@
     "confidence": "medium",
     "source_url": "https://www.junctionpub.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -70100,8 +70734,8 @@
     "confidence": "high",
     "source_url": "https://www.mumsvancouver.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -70206,8 +70840,8 @@
     "confidence": "high",
     "source_url": "http://www.oldspaghettifactory.ca/locations/gastown",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -70285,8 +70919,8 @@
     "confidence": "high",
     "source_url": "https://www.daebakbonga.com/dbbgmenu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -70486,8 +71120,8 @@
     "confidence": "high",
     "source_url": "https://www.vancouverdine.com/sandbar/menus/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -70681,8 +71315,8 @@
     "confidence": "high",
     "source_url": "https://www.minamirestaurant.com/s/MinamiVan-HH-Menu-MAY2026-V2.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -70920,8 +71554,8 @@
     "confidence": "high",
     "source_url": "https://topofvancouver.com/menus/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -71150,8 +71784,8 @@
     "confidence": "high",
     "source_url": "https://vanfish.com/menus/menus_dining_happy_hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -71323,8 +71957,8 @@
     "confidence": "high",
     "source_url": "https://www.gothamsteakhouse.com/2026/07/13/social-hour-at-gotham",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -71421,8 +72055,8 @@
     "confidence": "high",
     "source_url": "https://sylviahotel.com/restaurant-lounge/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -71572,8 +72206,8 @@
     "confidence": "high",
     "source_url": "https://thepawnshopyvr.com/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -71703,8 +72337,8 @@
     "confidence": "high",
     "source_url": "https://www.dibeppe.com/happy-hour-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -71863,8 +72497,8 @@
     "confidence": "high",
     "source_url": "https://www.burgoo.ca/food-drink-menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -71969,8 +72603,8 @@
     "confidence": "high",
     "source_url": "https://skewersgastown.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -72169,8 +72803,8 @@
     "confidence": "high",
     "source_url": "https://soprasotto.ca/vancouver-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -72360,8 +72994,8 @@
     "confidence": "high",
     "source_url": "https://www.tableaubarbistro.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -72575,8 +73209,8 @@
     "confidence": "high",
     "source_url": "https://nookrestaurants.com/kitsilano-menus/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -72801,8 +73435,8 @@
     "confidence": "high",
     "source_url": "http://theredaccordion.com/",
     "data_as_of": "2026-08-31",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -72905,7 +73539,7 @@
     "confidence": "medium",
     "source_url": "http://www.bigwayhotpot.com/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -73200,8 +73834,8 @@
     "confidence": "high",
     "source_url": "https://www.haraheri.ca/menu?location=Downtown&menu=happy-hour-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -73330,8 +73964,8 @@
     "confidence": "high",
     "source_url": "https://www.comotaperia.com/pages/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -73515,8 +74149,8 @@
     "confidence": "high",
     "source_url": "https://www.alouettevancouver.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -73674,8 +74308,8 @@
     "confidence": "high",
     "source_url": "https://tuttorestaurant.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -73937,8 +74571,8 @@
     "confidence": "high",
     "source_url": "https://www.carlinorestaurant.com/menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -74043,7 +74677,12 @@
     ]
    },
    "last_synced_at": "2026-09-03",
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/zoomak-korean-tavern.jpg",
+    "credit_name": "Joyce Chen",
+    "credit_url": "https://maps.google.com/maps/contrib/110857504028409768647",
+    "source": "google_places"
+   },
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -74053,8 +74692,8 @@
     "confidence": "high",
     "source_url": "https://www.zoomakyvr.com/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -74274,8 +74913,8 @@
     "confidence": "high",
     "source_url": "https://www.novoitalian.com/happyhour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -74395,8 +75034,8 @@
     "confidence": "high",
     "source_url": "http://streethawker.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -74603,8 +75242,8 @@
     "confidence": "high",
     "source_url": "https://lavantine.ca/wp-content/uploads/2026/06/Happy-Hour_Lavantine_May-2026.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -74813,8 +75452,8 @@
     "confidence": "high",
     "source_url": "https://nookrestaurants.com/coal-harbour-menus-2/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -74937,8 +75576,8 @@
     "confidence": "high",
     "source_url": "http://www.bhouse.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -75239,7 +75878,7 @@
     "confidence": "medium",
     "source_url": "https://thesequel.ca/wp-content/uploads/2026/03/TheSequel-Menu-Mar2026-BarMenu-ForPrint.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -75466,7 +76105,7 @@
     "confidence": "medium",
     "source_url": "https://www.fannybayoysters.com/uploads/pdf/2026summermenumaster.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
+    "last_checked_at": "2026-10-25",
     "last_confirmed_at": null
    }
   },
@@ -75666,8 +76305,8 @@
     "confidence": "high",
     "source_url": "https://www.hydravancouver.com/s/Happy-Hour-July-20-web.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -75873,8 +76512,8 @@
     "confidence": "high",
     "source_url": "https://www.pourhousevancouver.com/menu/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -76085,8 +76724,8 @@
     "confidence": "high",
     "source_url": "https://gretabar.com/vancouver/food-menu/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -76268,8 +76907,8 @@
     "confidence": "high",
     "source_url": "https://www.sixacres.ca/happy-hour",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -76375,8 +77014,8 @@
     "confidence": "high",
     "source_url": "https://www.boxcarvancouver.com/pizza-menu",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -76607,8 +77246,8 @@
     "confidence": "high",
     "source_url": "https://www.brixandmortar.ca/happy-hour/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -76827,8 +77466,8 @@
     "confidence": "high",
     "source_url": "https://www.joefortes.ca/wp-content/uploads/2026/05/156939-CFWC-Joe-Fortes-Happy-Hour-May-2026-P3.pdf",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   },
   {
@@ -76988,8 +77627,8 @@
     "confidence": "high",
     "source_url": "https://the515bar.ca/",
     "data_as_of": "2026-09-03",
-    "last_checked_at": "2026-10-24",
-    "last_confirmed_at": "2026-10-24"
+    "last_checked_at": "2026-10-25",
+    "last_confirmed_at": "2026-10-25"
    }
   }
  ]
