@@ -40,6 +40,7 @@ for (const v of venues) {
   if (!firstRun) {
     for (const ext of [".jpg", ".jpeg", ".png", ".webp"]) rmSync(resolve(originals, v.id + ext), { force: true });
     rmSync(resolve(out, `${v.id}.webp`), { force: true });
+    rmSync(resolve(out, "email", `${v.id}.jpg`), { force: true });
   }
   sources[v.id] = url;
 }
@@ -124,9 +125,32 @@ const convert = async (src, dest, width) => {
     failed++;
   }
 };
+// Emails get a JPEG banner too (Outlook for Windows can't show WebP), with
+// the claim page's dark fade baked in so white text sits on it in any client.
+const SHADE = Buffer.from(
+  `<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="640"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000" stop-opacity="0.15"/><stop offset="0.45" stop-color="#000" stop-opacity="0.3"/><stop offset="1" stop-color="#000" stop-opacity="0.86"/></linearGradient></defs><rect width="1120" height="640" fill="url(#g)"/></svg>`,
+);
+const banner = async (src, dest) => {
+  if (existsSync(dest) && statSync(dest).mtimeMs >= statSync(src).mtimeMs) return;
+  try {
+    await sharp(src)
+      .rotate()
+      .resize({ width: 1120, height: 640, fit: "cover", position: "attention" })
+      .composite([{ input: SHADE }])
+      .jpeg({ quality: 70, mozjpeg: true })
+      .toFile(dest);
+    made++;
+  } catch {
+    failed++;
+  }
+};
+mkdirSync(resolve(out, "email"), { recursive: true });
 for (const v of live) {
   const src = originalFor(v);
-  if (src && existsSync(src)) await convert(src, resolve(out, `${v.id}.webp`), 640);
+  if (src && existsSync(src)) {
+    await convert(src, resolve(out, `${v.id}.webp`), 640);
+    await banner(src, resolve(out, "email", `${v.id}.jpg`));
+  }
 }
 for (const g of gallery) {
   const src = galleryOriginal(g.v, g.url);

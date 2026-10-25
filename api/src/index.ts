@@ -367,7 +367,8 @@ on("POST", "/admin/email-samples", async (req, env) => {
   const key = `samples:${admin.email}:${now().slice(0, 15)}`;
   if ((await env.DB.prepare("INSERT OR IGNORE INTO event_seen (hash, day) VALUES (?, ?)").bind(key, today()).run()).meta.changes === 0)
     throw new HttpError(429, "Samples went out a few minutes ago, check your inbox");
-  const all = Object.entries(samples(env.SITE_URL, env.API_URL));
+  const withPhoto = [...(await venueDirectory(env)).values()].find((v) => v.photo?.startsWith("photos/"));
+  const all = Object.entries(samples(env.SITE_URL, env.API_URL, withPhoto));
   let sent = 0;
   for (const [i, [, m]] of all.entries())
     await send(env, { to: admin.email, ...m, subject: `[Sample ${i + 1}/${all.length}] ${m.subject}` }).then(() => sent++, (e) => console.error("sample mail", e));
