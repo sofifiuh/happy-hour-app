@@ -111,6 +111,7 @@ async function submit(fields, photos = [png]) {
 const s1 = await submit({ venue_id: "brewhall", email: "guest@example.com", name: "Maya", hh: JSON.stringify({ days: [1, 2, 3], start: "15:00", end: "18:00" }), note: "New menu" });
 ok(s1.status === 201 && s1.data.id, "a guest sends a menu photo for a listed venue");
 ok((await submit({ email: "guest@example.com" }, [])).status === 400, "a submission needs a photo");
+ok((await submit({ venue_id: "brewhall", email: "guest@example.com" }, [new TextEncoder().encode("not a photo")])).status === 415, "a file that isn't really a photo is refused");
 ok((await submit({ email: "guest@example.com", place_name: "X" })).status === 400, "a new spot needs an address");
 ok((await submit({ email: "bot@example.com", company: "Spam Inc" })).status === 201, "the honeypot pretends to work");
 const s2 = await submit({ email: "guest2@example.com", place_name: "The Sunny Side", place_address: "2245 Commercial Dr", works_there: "1" });

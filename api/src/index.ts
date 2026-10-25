@@ -30,6 +30,13 @@ const on = (method: string, path: string, h: Handler) =>
 const EVENT_TYPES = new Set(["view", "save", "directions", "call", "website", "share"]);
 const MAX_UPLOAD = 8 * 1024 * 1024;
 const IMAGE_TYPES: Record<string, string> = { "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp" };
+// What the first bytes say a photo is, so a renamed or broken file isn't stored as one.
+function sniff(b: Uint8Array): string | null {
+  if (b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) return "image/jpeg";
+  if (b[0] === 0x89 && b[1] === 0x50 && b[2] === 0x4e && b[3] === 0x47) return "image/png";
+  if (String.fromCharCode(...b.slice(0, 4)) === "RIFF" && String.fromCharCode(...b.slice(8, 12)) === "WEBP") return "image/webp";
+  return null;
+}
 const PUBLIC_EDITS = "https://cache.internal/public/edits";
 
 const apiBase = (req: Request) => new URL(req.url).origin;
@@ -354,6 +361,7 @@ on("POST", "/submissions", async (req, env) => {
     if (!IMAGE_TYPES[f.type]) throw new HttpError(415, "Photos must be JPEG, PNG or WebP");
     if (f.size > MAX_UPLOAD) throw new HttpError(413, "Photos up to 8 MB each");
     if (!f.size) throw new HttpError(400, "One of the photos was empty");
+    if (sniff(new Uint8Array(await f.slice(0, 12).arrayBuffer())) !== f.type) throw new HttpError(415, "One of the photos didn't open. Try a JPEG or PNG");
   }
 
   // At most 5 an hour from one connection and 6 a day from one email.

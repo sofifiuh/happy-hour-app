@@ -35,7 +35,8 @@ interface NewPlace {
 // Menus need their small print, so keep more pixels than venue photos do.
 // JPEG because the API takes it from every browser; HEIC from an iPhone
 // decodes here in Safari and arrives as a JPEG.
-async function shrink(file: File): Promise<Blob> {
+// null when the browser can't decode it, so a broken file never gets sent.
+async function shrink(file: File): Promise<Blob | null> {
   try {
     const img = await createImageBitmap(file);
     const scale = Math.min(1, 2000 / Math.max(img.width, img.height));
@@ -46,7 +47,7 @@ async function shrink(file: File): Promise<Blob> {
     const blob = await new Promise<Blob | null>((r) => canvas.toBlob(r, "image/jpeg", 0.86));
     return blob ?? file;
   } catch {
-    return file;
+    return null;
   }
 }
 
@@ -95,7 +96,7 @@ export function SubmitScreen() {
     setPhotos((p) => [...p, ...added]);
     for (const [i, f] of list.entries()) {
       const blob = await shrink(f);
-      if (!["image/jpeg", "image/png", "image/webp"].includes(blob.type)) {
+      if (!blob || !["image/jpeg", "image/png", "image/webp"].includes(blob.type)) {
         setPhotos((p) => p.filter((x) => x.key !== added[i].key));
         setError({ step: 2, text: "That photo format didn't open here. Try a screenshot, or a JPEG or PNG." });
         continue;
