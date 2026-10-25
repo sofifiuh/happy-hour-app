@@ -133,7 +133,8 @@ const slim = venues
     city: v.address_components?.locality || null,
     // trust.last_confirmed_at is the last day our times matched the venue's
     // own page (pipeline freshness check); fall back to the last sync.
-    checked: v.trust?.last_confirmed_at || (v.last_synced_at ? String(v.last_synced_at).slice(0, 10) : null),
+    // A happy hour read from a guest's photo counts as checked that day.
+    checked: [v.trust?.last_confirmed_at, v.happy_hour.community?.approved_at?.slice(0, 10)].filter(Boolean).sort().pop() || (v.last_synced_at ? String(v.last_synced_at).slice(0, 10) : null),
     confirmed: v.trust?.last_confirmed_at || null,
     confidence: v.trust?.confidence || null,
     source: sourceOf(v),
@@ -160,6 +161,7 @@ const slim = venues
       })),
       verified: v.happy_hour.verified === true,
       source: v.happy_hour.deals_source?.url || v.happy_hour.verified_source || v.happy_hour.source_url || null,
+      ...(v.happy_hour.community && { fromGuest: v.happy_hour.community.approved_at.slice(0, 10) }),
     },
     amenities: {
       patio: v.amenities?.outdoor_seating === true,

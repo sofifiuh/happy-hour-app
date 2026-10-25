@@ -5,16 +5,22 @@ import {
   adminClaimEmail,
   adminEditFlagEmail,
   adminReportEmail,
+  adminSubmissionEmail,
   claimApprovedEmail,
   claimReceivedEmail,
   claimRejectedEmail,
   type Email,
   monthlyCheckEmail,
+  fmtHours,
   ownerReportEmail,
   samples,
+  type Spot,
+  submissionClosedEmail,
+  submissionLiveEmail,
+  submissionReceivedEmail,
 } from "./email";
 import { admins, send } from "./mail";
-import { cleanEdit, emailMatchesWebsite, venue, venueDirectory } from "./venues";
+import { cleanEdit, cleanHours, days, emailMatchesWebsite, slugFor, text, time, venue, venueDirectory, type EditData, type VenueInfo } from "./venues";
 
 type Handler = (req: Request, env: Env, p: Record<string, string>, ctx: ExecutionContext) => Promise<Response>;
 const routes: [string, RegExp, Handler][] = [];
@@ -219,7 +225,21 @@ on("GET", "/public/edits", async (_req, env, _p, ctx) => {
   const edits = Object.fromEntries(
     rows.map((r) => [r.venue_id, { ...JSON.parse(r.data), updated: r.updated_at.slice(0, 10), confirmed: r.confirmed_at.slice(0, 10) }]),
   );
-  const res = json({ edits, claimed }, 200, { "cache-control": "public, max-age=60" });
+  // Happy hours published from guests' photos this week, so they show at
+  // once. By then the site's own data has them (pipeline/submissions.js),
+  // and newer data from the venue's page can take over again.
+  const community: Record<string, { hh: EditData["hh"]; published: string }> = {};
+  for (const r of (
+    await env.DB.prepare(
+      "SELECT published, decided_at FROM submissions WHERE status = 'published' AND decided_at > ? ORDER BY decided_at",
+    )
+      .bind(new Date(Date.now() - 7 * 86_400_000).toISOString())
+      .all<{ published: string; decided_at: string }>()
+  ).results) {
+    const p = JSON.parse(r.published) as Published;
+    if (!p.new) community[p.venue_id] = { hh: p.hh, published: r.decided_at.slice(0, 10) };
+  }
+  const res = json({ edits, claimed, community }, 200, { "cache-control": "public, max-age=60" });
   ctx.waitUntil(caches.default.put(PUBLIC_EDITS, res.clone()));
   return res;
 });
@@ -270,6 +290,119 @@ on("POST", "/reports", async (req, env) => {
   return json({ ok: true }, 201);
 });
 
+// ---------- "Submit a happy hour" (no sign in) ----------
+
+const MAX_PHOTOS = 4;
+
+// What an admin published from a submission: the venue it went to (a new
+// spot gets the id the pipeline will give it) and the checked happy hour.
+interface Published {
+  venue_id: string;
+  new?: boolean;
+  name?: string;
+  address?: string;
+  website?: string | null;
+  hh: NonNullable<EditData["hh"]>;
+}
+
+// A guest's photo of a menu or happy hour sign, for a venue we list or a
+// spot we don't. Multipart: the fields below plus 1 to 4 `photos`.
+on("POST", "/submissions", async (req, env) => {
+  let form: FormData;
+  try {
+    form = await req.formData();
+  } catch {
+    throw new HttpError(400, "Expected a form with photos");
+  }
+  const field = (k: string) => {
+    const v = form.get(k);
+    return typeof v === "string" ? v : null;
+  };
+  // A field people never see; bots fill it in. Pretend it worked.
+  if (field("company")) return json({ id: newId() }, 201);
+
+  const email = cleanEmail(field("email"));
+  const name = str(field("name"), "Your name", 60, false);
+  const note = str(field("note"), "Anything else", 600, false);
+  const worksThere = field("works_there") === "1";
+  let spot: Spot & { phone?: string | null; website?: string | null };
+  let place: { name: string; address: string; website: string | null } | null = null;
+  const venueId = str(field("venue_id"), "venue_id", 120, false);
+  if (venueId) spot = await venue(env, venueId);
+  else {
+    place = {
+      name: str(field("place_name"), "The spot's name", 100)!,
+      address: str(field("place_address"), "Where it is", 160)!,
+      website: str(field("place_website"), "Website or Instagram", 300, false),
+    };
+    spot = { id: null, ...place };
+  }
+  // The guest's own reading of the times is a head start for the admin,
+  // not something we publish, so a bad one is just dropped.
+  let hh: { days: number[]; start: string; end: string | null } | null = null;
+  try {
+    const h = JSON.parse(field("hh") ?? "null");
+    if (h) hh = { days: days(h.days, "Days"), start: time(h.start, "Start")!, end: time(h.end, "End", true) };
+  } catch {
+    hh = null;
+  }
+
+  const photos = form.getAll("photos").filter((f): f is File => typeof f !== "string");
+  if (!photos.length) throw new HttpError(400, "Add a photo of the menu or sign");
+  if (photos.length > MAX_PHOTOS) throw new HttpError(400, `Up to ${MAX_PHOTOS} photos`);
+  for (const f of photos) {
+    if (!IMAGE_TYPES[f.type]) throw new HttpError(415, "Photos must be JPEG, PNG or WebP");
+    if (f.size > MAX_UPLOAD) throw new HttpError(413, "Photos up to 8 MB each");
+    if (!f.size) throw new HttpError(400, "One of the photos was empty");
+  }
+
+  // At most 5 an hour from one connection and 6 a day from one email.
+  const hour = now().slice(0, 13);
+  const who = await sha256(`${env.SIGNING_KEY ?? "alh"}|${hour}|${req.headers.get("cf-connecting-ip") ?? ""}`);
+  const fromHere = await env.DB.prepare("SELECT COUNT(*) AS n FROM event_seen WHERE hash > ? AND hash < ?")
+    .bind(`s:${who}:`, `s:${who};`)
+    .first<{ n: number }>();
+  const fromEmail = await env.DB.prepare("SELECT COUNT(*) AS n FROM submissions WHERE email = ? AND created_at > ?")
+    .bind(email, new Date(Date.now() - 86_400_000).toISOString())
+    .first<{ n: number }>();
+  if ((fromHere?.n ?? 0) >= 5 || (fromEmail?.n ?? 0) >= 6) throw new HttpError(429, "Thanks for all of these! Give us a little while to catch up, then send more");
+
+  const id = newId();
+  for (const [n, f] of photos.entries()) await env.FILES.put(`submissions/${id}/${n}`, await f.arrayBuffer(), { httpMetadata: { contentType: f.type } });
+  await env.DB.batch([
+    env.DB.prepare(
+      `INSERT INTO submissions (id, venue_id, place_name, place_address, place_website, hh, note, name, email, works_there, photos, created_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    ).bind(id, spot.id, place?.name ?? null, place?.address ?? null, place?.website ?? null, hh ? JSON.stringify(hh) : null, note, name, email, worksThere ? 1 : 0, photos.length, now()),
+    env.DB.prepare("INSERT INTO event_seen (hash, day) VALUES (?, ?)").bind(`s:${who}:${id}`, today()),
+  ]);
+
+  const managed = !!spot.id && !!(await env.DB.prepare("SELECT 1 FROM owners WHERE venue_id = ?").bind(spot.id).first());
+  await notifyAdmins(
+    env,
+    adminSubmissionEmail(env.SITE_URL, { spot, name, email, photos: photos.length, hours: hh ? fmtHours(hh) : null, note, worksThere, managed }),
+  );
+  await send(env, { to: email, ...submissionReceivedEmail(env.SITE_URL, { name, spot, worksThere }) }).catch((e) => console.error("submission mail", e));
+  return json({ id }, 201);
+});
+
+// Published happy hours, for the nightly pipeline (pipeline/submissions.js)
+// to write into the site's own data. Nothing about who sent them.
+on("GET", "/public/submissions", async (_req, env) => {
+  const rows = (
+    await env.DB.prepare("SELECT id, published, decided_at FROM submissions WHERE status = 'published' ORDER BY decided_at").all<{
+      id: string;
+      published: string;
+      decided_at: string;
+    }>()
+  ).results;
+  return json(
+    { submissions: rows.map((r) => ({ id: r.id, published_at: r.decided_at, ...(JSON.parse(r.published) as Published) })) },
+    200,
+    { "cache-control": "public, max-age=60" },
+  );
+});
+
 // ---------- Admin ----------
 
 async function requireAdmin(req: Request, env: Env) {
@@ -306,7 +439,20 @@ on("GET", "/admin/queue", async (req, env) => {
   const recent = (
     await env.DB.prepare("SELECT venue_id, updated_at FROM venue_edits ORDER BY updated_at DESC LIMIT 20").all<Record<string, string>>()
   ).results.map((f) => ({ ...f, venue_name: name(f.venue_id) }));
-  return json({ claims, reports, flagged, recent });
+  const managed = new Set((await env.DB.prepare("SELECT DISTINCT venue_id FROM owners").all<{ venue_id: string }>()).results.map((r) => r.venue_id));
+  const submissions = (
+    await env.DB.prepare(
+      `SELECT id, venue_id, place_name, place_address, place_website, hh, note, name, email, works_there, photos, created_at
+       FROM submissions WHERE status = 'pending' ORDER BY created_at`,
+    ).all<Record<string, string | number | null>>()
+  ).results.map((r) => ({
+    ...r,
+    hh: r.hh ? JSON.parse(r.hh as string) : null,
+    works_there: r.works_there === 1,
+    venue_name: r.venue_id ? name(r.venue_id as string) : null,
+    managed: !!r.venue_id && managed.has(r.venue_id as string),
+  }));
+  return json({ claims, reports, flagged, recent, submissions });
 });
 
 on("POST", "/admin/claims/:id", async (req, env, p) => {
@@ -346,6 +492,110 @@ on("GET", "/admin/claims/:id/licence", async (req, env, p) => {
   const obj = await env.FILES.get(`licences/${p.id}`);
   if (!obj) throw new HttpError(404, "No licence uploaded");
   return new Response(obj.body, { headers: { "content-type": obj.httpMetadata?.contentType ?? "application/octet-stream", "cache-control": "private, no-store" } });
+});
+
+on("GET", "/admin/submissions/:id/photos/:n", async (req, env, p) => {
+  await requireAdmin(req, env);
+  const obj = await env.FILES.get(`submissions/${p.id}/${Number(p.n)}`);
+  if (!obj) throw new HttpError(404, "No such photo");
+  return new Response(obj.body, { headers: { "content-type": obj.httpMetadata?.contentType ?? "image/jpeg", "cache-control": "private, max-age=3600" } });
+});
+
+// publish: the admin's checked happy hour goes live (at once for a venue we
+// list; a new spot joins the map with the next data publish, and the guest
+// hears when it's there). decline: the guest gets the reason. forward: the
+// venue manages its own listing, so its managers get the photo's reading.
+on("POST", "/admin/submissions/:id", async (req, env, p) => {
+  const admin = await requireAdmin(req, env);
+  const b = await body<Record<string, unknown>>(req);
+  const s = await env.DB.prepare("SELECT * FROM submissions WHERE id = ? AND status = 'pending'").bind(p.id).first<{
+    venue_id: string | null;
+    place_name: string | null;
+    place_address: string | null;
+    place_website: string | null;
+    hh: string | null;
+    note: string | null;
+    name: string | null;
+    email: string;
+  }>();
+  if (!s) throw new HttpError(404, "No open submission with that id");
+  const dir = await venueDirectory(env);
+  const listed = s.venue_id ? dir.get(s.venue_id) : undefined;
+  const spot: Spot = listed ?? { id: null, name: s.place_name ?? "a new spot", address: s.place_address ?? "" };
+  const stamp = now();
+  const decide = (status: string, extra: { published?: Published; reason?: string | null; notified?: boolean }) =>
+    env.DB.prepare("UPDATE submissions SET status = ?, published = ?, reason = ?, decided_at = ?, decided_by = ?, notified_at = ? WHERE id = ?")
+      .bind(status, extra.published ? JSON.stringify(extra.published) : null, extra.reason ?? null, stamp, admin.email, extra.notified ? stamp : null, p.id)
+      .run();
+
+  if (b.decision === "decline") {
+    const reason = str(b.reason, "Reason", 500, false);
+    await decide("declined", { reason });
+    await send(env, { to: s.email, ...submissionClosedEmail(env.SITE_URL, { name: s.name, spot, reason, forwarded: false }) }).catch(() => {});
+    return json({ ok: true });
+  }
+
+  if (b.decision === "forward") {
+    if (!listed) throw new HttpError(400, "Only a venue we list can be passed on");
+    const owners = (
+      await env.DB.prepare("SELECT u.email FROM owners o JOIN users u ON u.id = o.user_id WHERE o.venue_id = ?").bind(listed.id).all<{ email: string }>()
+    ).results.map((r) => r.email);
+    if (!owners.length) throw new HttpError(409, "Nobody manages this venue, so publish it instead");
+    const reading = s.hh ? fmtHours(JSON.parse(s.hh)) : null;
+    const message = [
+      "A guest sent us a photo of your happy hour menu.",
+      reading ? `They read it as: ${reading}.` : "",
+      s.note ? `They added: ${s.note}` : "",
+      "If your listing already matches, there's nothing to do.",
+    ]
+      .filter(Boolean)
+      .join("\n");
+    for (const to of owners) await send(env, { to, ...ownerReportEmail(env.SITE_URL, { venue: listed, message, photo: true }) }).catch(() => {});
+    await decide("forwarded", {});
+    await send(env, { to: s.email, ...submissionClosedEmail(env.SITE_URL, { name: s.name, spot, reason: null, forwarded: true }) }).catch(() => {});
+    return json({ ok: true });
+  }
+
+  if (b.decision !== "publish") throw new HttpError(400, "decision is publish, decline or forward");
+  const hh = cleanHours(b.hh);
+  // The admin can point a "new spot" at a venue we already list.
+  const targetId = typeof b.venue_id === "string" && b.venue_id ? b.venue_id : s.venue_id;
+  let published: Published;
+  let live: Spot & { id: string };
+  if (targetId) {
+    const v = await venue(env, targetId);
+    if (await env.DB.prepare("SELECT 1 FROM owners WHERE venue_id = ?").bind(v.id).first())
+      throw new HttpError(409, "The venue keeps its own listing. Pass it to them instead");
+    published = { venue_id: v.id, hh };
+    live = v;
+  } else {
+    const place = (b.place ?? {}) as Record<string, unknown>;
+    const placeName = text(place.name ?? s.place_name, "Name", 100);
+    const address = text(place.address ?? s.place_address, "Address", 160);
+    const website = text(place.website ?? s.place_website, "Website", 300) || null;
+    if (!placeName || !address) throw new HttpError(400, "A new spot needs a name and address");
+    if (website && !/^https?:\/\/[^\s]+\.[^\s]+$/i.test(website)) throw new HttpError(400, "Website must start with https:// or http://");
+    // The id the pipeline will give it, so the "it's live" link is right.
+    const taken = new Set([
+      ...dir.keys(),
+      ...(
+        await env.DB.prepare("SELECT published FROM submissions WHERE status = 'published' AND published LIKE '%\"new\":true%'").all<{ published: string }>()
+      ).results.map((r) => (JSON.parse(r.published) as Published).venue_id),
+    ]);
+    published = { venue_id: slugFor(placeName, taken), new: true, name: placeName, address, website, hh };
+    live = { id: published.venue_id, name: placeName, address };
+  }
+  // A venue we list changes at once, so the guest hears now; a new spot
+  // waits for the site's next data publish (see newSpotsLive).
+  await decide("published", { published, notified: !published.new });
+  if (!published.new) {
+    await caches.default.delete(PUBLIC_EDITS);
+    await send(env, {
+      to: s.email,
+      ...submissionLiveEmail(env.SITE_URL, { name: s.name, spot: live, hours: fmtHours(hh), deals: hh.deals.length, isNew: false }),
+    }).catch(() => {});
+  }
+  return json({ ok: true, venue_id: published.venue_id, new: !!published.new });
 });
 
 on("POST", "/admin/reports/:id", async (req, env, p) => {
@@ -417,6 +667,29 @@ async function monthlyCheck(env: Env) {
   }
 }
 
+// A new spot from a guest's photo shows up once the pipeline has added it
+// to the site's data; then the guest gets their "it's live" email. Gives up
+// after 3 days (the spot matched a venue under another name, say).
+async function newSpotsLive(env: Env) {
+  const rows = (
+    await env.DB.prepare(
+      "SELECT id, name, email, published FROM submissions WHERE status = 'published' AND notified_at IS NULL AND decided_at > ?",
+    )
+      .bind(new Date(Date.now() - 3 * 86_400_000).toISOString())
+      .all<{ id: string; name: string | null; email: string; published: string }>()
+  ).results;
+  if (!rows.length) return;
+  const dir = await venueDirectory(env);
+  for (const r of rows) {
+    const p = JSON.parse(r.published) as Published;
+    const v: VenueInfo | undefined = dir.get(p.venue_id);
+    if (!v) continue;
+    await send(env, { to: r.email, ...submissionLiveEmail(env.SITE_URL, { name: r.name, spot: v, hours: fmtHours(p.hh), deals: p.hh.deals.length, isNew: true }) })
+      .then(() => env.DB.prepare("UPDATE submissions SET notified_at = ? WHERE id = ?").bind(now(), r.id).run())
+      .catch((e) => console.error("live mail", r.id, e));
+  }
+}
+
 async function notifyAdmins(env: Env, mail: Email) {
   for (const to of admins(env)) await send(env, { to, ...mail }).catch((e) => console.error("admin mail", e));
 }
@@ -449,7 +722,9 @@ export default {
     return cors(req, env, res);
   },
 
-  async scheduled(_ev, env) {
+  async scheduled(ev, env) {
+    await newSpotsLive(env);
+    if (ev.cron !== "7 12 * * *") return;
     await env.DB.prepare("DELETE FROM event_seen WHERE day < ?").bind(today()).run();
     const d = new Date();
     // 1st of Jan, Mar, May, Jul, Sep and Nov: once every 2 months.

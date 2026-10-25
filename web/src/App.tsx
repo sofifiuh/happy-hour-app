@@ -25,6 +25,7 @@ const VenueLogin = lazy(() => venueTools().then((m) => ({ default: m.VenueLogin 
 const VenueClaim = lazy(() => venueTools().then((m) => ({ default: m.VenueClaim })));
 const VenueEditor = lazy(() => venueTools().then((m) => ({ default: m.VenueEditor })));
 const VenueAdmin = lazy(() => venueTools().then((m) => ({ default: m.VenueAdmin })));
+const SubmitScreen = lazy(() => import("@/screens/submit").then((m) => ({ default: m.SubmitScreen })));
 
 // Checked on every visit to "/", not once when the router is built, so the
 // welcome screen's buttons land on the list straight away.
@@ -112,6 +113,7 @@ const router = createRouter([
       { path: "/privacy", element: <Info page="privacy" /> },
       { path: "/terms", element: <Info page="terms" /> },
       { path: "/screens", element: <ScreensBoard /> },
+      { path: "/submit", element: <SubmitScreen /> },
       { path: "/venue", element: <VenueHome /> },
       { path: "/venue/login", element: <VenueLogin /> },
       { path: "/venue/admin", element: <VenueAdmin /> },

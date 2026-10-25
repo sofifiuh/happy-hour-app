@@ -58,6 +58,9 @@ export interface Venue {
     deals: Deal[];
     verified: boolean;
     source: string | null;
+    // "YYYY-MM-DD" when the times came from a guest's menu photo that we
+    // checked ("Add a happy hour"); see pipeline/submissions.js.
+    fromGuest?: string | null;
   };
   // Our own 0-10 rating of the happy hour (scripts/hang-score.mjs);
   // null when there isn't enough deal info to score it fairly.

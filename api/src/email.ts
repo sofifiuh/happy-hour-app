@@ -32,7 +32,7 @@ interface Hero {
   sub?: string; // its address
   photo?: string | null; // banner image, 1120x480
   tint?: number; // which warm gradient when there's no photo
-  stamp?: "owner" | "claim";
+  stamp?: "owner" | "claim" | "thanks";
 }
 
 interface Row {
@@ -121,7 +121,7 @@ function hero(l: Layout) {
             </td>
           </tr></table>
         </td>
-        ${h.stamp ? `<td valign="top" align="right" width="92" style="width:92px">${img(`stamp-${h.stamp}.png`, 92, h.stamp === "owner" ? "Official owner" : "")}</td>` : ""}
+        ${h.stamp ? `<td valign="top" align="right" width="92" style="width:92px">${img(`stamp-${h.stamp}.png`, 92, h.stamp === "owner" ? "Official owner" : h.stamp === "thanks" ? "Thank you" : "")}</td>` : ""}
       </tr></table>
       <h1 class="h1" style="margin:${h.photo ? 96 : h.stamp ? 24 : 72}px 0 0;font-family:${DISPLAY};font-size:36px;line-height:38px;font-weight:800;letter-spacing:-0.8px;color:#ffffff">${noWidow(h.name)}</h1>
       ${h.sub ? `<p style="margin:8px 0 0;font-family:${SANS};font-size:15px;line-height:20px;color:#e9e4da"><a href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(h.sub)}" style="color:#e9e4da;text-decoration:none">${esc(h.sub)}</a></p>` : ""}`;
@@ -450,13 +450,13 @@ export function adminReportEmail(site: string, o: { venue: Venue; message: strin
   });
 }
 
-export function ownerReportEmail(site: string, o: { venue: Venue; message: string }) {
-  return build(`A guest flagged your listing: ${o.venue.name}`, {
+export function ownerReportEmail(site: string, o: { venue: Venue; message: string; photo?: boolean }) {
+  return build(o.photo ? `A guest sent your happy hour menu: ${o.venue.name}` : `A guest flagged your listing: ${o.venue.name}`, {
     site,
     preheader: o.message.slice(0, 120),
-    hero: venueHero(site, o.venue, { chip: "Guest report", chipIcon: "flag", stamp: "owner" }),
-    title: "A guest flagged your listing",
-    paragraphs: ["Someone looking at your spot on A Little Hang thinks something's off:"],
+    hero: venueHero(site, o.venue, { chip: o.photo ? "From a guest" : "Guest report", chipIcon: o.photo ? "camera" : "flag", stamp: "owner" }),
+    title: o.photo ? "A guest sent your happy hour" : "A guest flagged your listing",
+    paragraphs: [o.photo ? "You keep your own listing, so we passed this straight to you:" : "Someone looking at your spot on A Little Hang thinks something's off:"],
     quote: o.message,
     cta: { label: "Update your listing", href: `${site}/venue/${o.venue.id}` },
     note: "If everything's already right, there's nothing to do. Guests trust listings that are kept fresh.",
@@ -496,6 +496,129 @@ export function adminEditFlagEmail(site: string, o: { venue: Venue; flags: strin
   });
 }
 
+// ---------- "Submit a happy hour" ----------
+
+// A guest's submission: a venue we list, or a new spot by name.
+export interface Spot {
+  id: string | null; // set for a venue we list
+  name: string;
+  address: string;
+  photo?: string | null;
+}
+
+const DAY = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+// "Mon–Fri" / "Mon, Wed, Sat" / "Every day", Monday first.
+export function fmtDays(days: number[]) {
+  if (days.length === 7) return "Every day";
+  const order = [...days].sort((a, b) => ((a + 6) % 7) - ((b + 6) % 7));
+  const idx = order.map((d) => (d + 6) % 7);
+  const run = idx.every((d, i) => i === 0 || d === idx[i - 1] + 1);
+  return run && order.length > 2 ? `${DAY[order[0]]}–${DAY[order[order.length - 1]]}` : order.map((d) => DAY[d]).join(", ");
+}
+
+// "3pm" / "3:30pm" from "15:00" / "15:30".
+export function fmtTime(t: string) {
+  const [h, m] = t.split(":").map(Number);
+  const hh = h % 12 || 12;
+  return `${hh}${m ? `:${String(m).padStart(2, "0")}` : ""}${h < 12 ? "am" : "pm"}`;
+}
+
+export function fmtHours(hh: { days: number[]; start: string; end: string | null }) {
+  return `${fmtDays(hh.days)}, ${fmtTime(hh.start)}–${hh.end ? fmtTime(hh.end) : "close"}`;
+}
+
+function spotHero(site: string, s: Spot, h: Omit<Hero, "name" | "sub" | "photo" | "tint">): Hero {
+  if (s.id) return venueHero(site, { id: s.id, name: s.name, address: s.address, photo: s.photo }, h);
+  return { ...h, name: s.name, sub: s.address, photo: null, tint: [...s.name].reduce((a, c) => a + c.charCodeAt(0), 1) };
+}
+
+const hi = (name: string | null) => (name ? `Thanks, ${name}.` : "Thank you.");
+
+export function submissionReceivedEmail(site: string, o: { name: string | null; spot: Spot; worksThere: boolean }) {
+  return build(`Thanks for the happy hour at ${o.spot.name}`, {
+    site,
+    preheader: "It's in our queue. A real person reads every photo and we'll email you when it's live.",
+    hero: spotHero(site, o.spot, { chip: "Happy hour received", chipIcon: "camera", stamp: "thanks" }),
+    title: `${hi(o.name)} We've got it.`,
+    paragraphs: [
+      `Your photo of the happy hour at ${o.spot.name} is in our queue. A real person reads every one, checks the times and deals, and puts it live.`,
+    ],
+    cta: o.spot.id ? { label: `See ${o.spot.name}`, href: `${site}/spots/${encodeURIComponent(o.spot.id)}.html` } : { label: "Find a happy hour now", href: site },
+    note: o.worksThere && o.spot.id ? `Work at ${o.spot.name}? Claim the listing for free and update your times yourself, any time: ${site}/venue/claim/${o.spot.id}` : undefined,
+    rowsLabel: "What happens next",
+    rows: [
+      { icon: "scan-search", title: "We read your photo", body: "Times, days and every deal, checked by a person." },
+      { icon: "badge-check", title: "It goes live", body: o.spot.id ? "Usually within a day." : "We add the spot to the map, usually within a day." },
+      { icon: "mail", title: "You hear from us", body: "We email you the link the moment it's up." },
+    ],
+    reason: `You're getting this because you sent A Little Hang the happy hour at ${o.spot.name}.`,
+  });
+}
+
+export function submissionLiveEmail(site: string, o: { name: string | null; spot: Spot & { id: string }; hours: string; deals: number; isNew: boolean }) {
+  return build(`It's live: the happy hour at ${o.spot.name}`, {
+    site,
+    preheader: `${o.hours}. Thanks for helping everyone find a good hang.`,
+    hero: spotHero(site, o.spot, { chip: "It's live", chipIcon: "badge-check", stamp: "thanks" }),
+    title: o.isNew ? `${o.spot.name} is on the map` : "Your happy hour is live",
+    paragraphs: [
+      `${hi(o.name)} ${o.isNew ? `We added ${o.spot.name} to A Little Hang` : `We updated ${o.spot.name}`} from your photo, so the next person who goes gets the right times.`,
+    ],
+    details: [
+      ["When", o.hours],
+      ...(o.deals ? ([["Deals", `${o.deals} listed`]] as [string, string][]) : []),
+    ],
+    cta: { label: "See it live", href: `${site}/spots/${encodeURIComponent(o.spot.id)}.html` },
+    secondary: { label: "Send another happy hour", href: `${site}/submit` },
+    reason: `You're getting this because you sent A Little Hang the happy hour at ${o.spot.name}.`,
+  });
+}
+
+export function submissionClosedEmail(site: string, o: { name: string | null; spot: Spot; reason: string | null; forwarded: boolean }) {
+  return build(o.forwarded ? `We passed your photo to ${o.spot.name}` : `About the happy hour at ${o.spot.name}`, {
+    site,
+    preheader: o.forwarded ? "They keep their own listing, so it's in their hands now." : "We couldn't put this one live, but thank you for sending it.",
+    hero: spotHero(site, o.spot, { chip: o.forwarded ? "Passed to the venue" : "Submission update", chipIcon: "camera" }),
+    title: o.forwarded ? "It's with the venue now" : "We couldn't add this one",
+    paragraphs: [
+      o.forwarded
+        ? `${hi(o.name)} ${o.spot.name} keeps its own listing on A Little Hang, so we sent your photo straight to their team to update.`
+        : `${hi(o.name)} We read your photo of ${o.spot.name}, but we couldn't put it live this time.`,
+    ],
+    quote: o.reason ?? undefined,
+    cta: { label: "Send another happy hour", href: `${site}/submit` },
+    note: o.forwarded ? undefined : `Have a clearer photo, or think we got it wrong? Reply to ${SUPPORT_EMAIL} and we'll take another look.`,
+    reason: `You're getting this because you sent A Little Hang the happy hour at ${o.spot.name}.`,
+  });
+}
+
+export function adminSubmissionEmail(
+  site: string,
+  o: { spot: Spot; name: string | null; email: string; photos: number; hours: string | null; note: string | null; worksThere: boolean; managed: boolean },
+) {
+  return build(`Happy hour to review: ${o.spot.name}`, {
+    site,
+    preheader: `${o.photos} photo${o.photos === 1 ? "" : "s"} from ${o.name ?? o.email}${o.spot.id ? "" : ", a spot we don't list yet"}.`,
+    hero: spotHero(site, o.spot, { chip: o.spot.id ? "Happy hour update" : "New spot", chipIcon: "camera" }),
+    title: o.spot.id ? "A happy hour to check" : "A new spot to add",
+    paragraphs: [
+      o.managed
+        ? `A guest sent a photo for ${o.spot.name}. The venue manages its own listing, so pass it to them from the queue.`
+        : "Read the photo, fix the times and deals, then publish or decline.",
+    ],
+    quote: o.note ?? undefined,
+    details: [
+      ["From", o.name ? `${o.name}${o.worksThere ? " (works there)" : ""}` : o.worksThere ? "Works there" : "A guest"],
+      ["Email", o.email],
+      ["Photos", String(o.photos)],
+      ["Their reading", o.hours ?? "Not given"],
+    ],
+    cta: { label: "Open the review queue", href: `${site}/venue/admin` },
+    reason: "You're getting this because you're an admin on A Little Hang.",
+  });
+}
+
 // Every email with sample data, for the preview script and the admin's
 // "Email me samples" button.
 // `real` is a venue with its own photo, so the samples show a real banner.
@@ -503,6 +626,7 @@ export function samples(site: string, api: string, real?: Venue): Record<string,
   const venue = { id: "ancora", name: "Ancora Waterfront Dining", address: "1600 Howe St, Vancouver", phone: "(604) 681-1164", website: "https://ancoradining.com", photo: "photos/ancora.webp", ...real };
   const plain = { ...venue, id: "brewhall", name: "Brewhall", address: "97 E 2nd Ave, Vancouver", photo: null };
   const report = "Happy hour ends at 5 now, not 6. The oyster deal is gone too.";
+  const newSpot = { id: null, name: "The Sunny Side", address: "2245 Commercial Dr, Vancouver" };
   const month = new Date().toISOString().slice(0, 7);
   return {
     "1-sign-in": signInEmail(site, `${site}/venue/login?token=sample&next=%2Fvenue`, 30),
@@ -516,5 +640,13 @@ export function samples(site: string, api: string, real?: Venue): Record<string,
     "9-admin-claim-auto": adminClaimEmail(site, { auto: true, name: "Maya", role: "Owner", email: "maya@ancoradining.com", phone: null, venue: plain }),
     "10-admin-report": adminReportEmail(site, { venue, message: report, email: "guest@example.com" }),
     "11-admin-edit-flag": adminEditFlagEmail(site, { venue: plain, flags: ["Drink under $3: Draft lager $2.50"] }),
+    "12-submission-received": submissionReceivedEmail(site, { name: "Maya", spot: venue, worksThere: false }),
+    "13-submission-received-new": submissionReceivedEmail(site, { name: null, spot: newSpot, worksThere: false }),
+    "14-submission-live": submissionLiveEmail(site, { name: "Maya", spot: venue, hours: fmtHours({ days: [1, 2, 3, 4, 5], start: "15:00", end: "18:00" }), deals: 6, isNew: false }),
+    "15-submission-live-new": submissionLiveEmail(site, { name: "Maya", spot: { ...newSpot, id: "the-sunny-side" }, hours: fmtHours({ days: [0, 1, 2, 3, 4, 5, 6], start: "14:00", end: "17:00" }), deals: 0, isNew: true }),
+    "16-submission-declined": submissionClosedEmail(site, { name: "Maya", spot: plain, reason: "The photo was too blurry to read the prices. Could you send a closer one?", forwarded: false }),
+    "17-submission-forwarded": submissionClosedEmail(site, { name: null, spot: venue, reason: null, forwarded: true }),
+    "18-admin-submission": adminSubmissionEmail(site, { spot: newSpot, name: "Maya", email: "maya@gmail.com", photos: 2, hours: fmtHours({ days: [1, 2, 3, 4], start: "15:00", end: "18:00" }), note: "New patio, half-price wings until 6.", worksThere: false, managed: false }),
+    "19-owner-photo": ownerReportEmail(site, { venue, photo: true, message: "A guest sent us a photo of your happy hour menu.\nThey read it as: Mon–Fri, 3pm–6pm." }),
   };
 }

@@ -11,7 +11,7 @@
 //   badge/<id>.svg|-light.svg venue badges, badge/<id>/ embed page (noindex)
 //   spots/index.html         A–Z of every venue
 //   og/<id>.jpg              1200×630 share card per venue
-//   map/, saved/, about/, privacy/, terms/, welcome/, menu.html, 404.html
+//   map/, saved/, about/, privacy/, terms/, submit/, welcome/, menu.html, 404.html
 //   sitemap.xml (index) + sitemap-{pages,venues,hubs}.xml, robots.txt, CNAME
 // The app boots on every page except the hubs and takes over from the
 // static markup. Venue copy (titles, about, questions) comes from
@@ -1617,6 +1617,7 @@ write(
 );
 sitemapDates.set("/", newest(venues));
 
+const SUBMIT_DESC = "Know a Vancouver happy hour we're missing, or a menu that changed? Snap the menu or sign and send it in. We check every one and put it on the map.";
 const PAGES = [
   ["map/index.html", "/map/", "Map of Vancouver Happy Hours", "Map of happy hours", true],
   // The app's Best of screen; the static /happy-hour/<place>/best/ pages are the indexed copies.
@@ -1625,6 +1626,7 @@ const PAGES = [
   ["about/index.html", "/about/", "About", "About A Little Hang", true],
   ["privacy/index.html", "/privacy/", "Privacy", "Privacy", true],
   ["terms/index.html", "/terms/", "Terms", "Terms", true],
+  ["submit/index.html", "/submit/", "Add a Happy Hour", "Add a happy hour", true],
   ["welcome/index.html", "/welcome/", null, null, false],
 ];
 for (const [file, path, title, h1, index] of PAGES) {
@@ -1633,7 +1635,7 @@ for (const [file, path, title, h1, index] of PAGES) {
     page({
       path,
       title: title ? `${title} | ${SITE}` : `Vancouver Happy Hours Right Now | ${SITE}`,
-      description: path === "/about/" ? ABOUT_DESC : HOME_DESC,
+      description: path === "/about/" ? ABOUT_DESC : path === "/submit/" ? SUBMIT_DESC : HOME_DESC,
       robots: index ? undefined : "noindex,follow",
       jsonld: path === "/about/" ? aboutLd() : undefined,
       body: h1 ? `<main style="${S.wrap}">${crumbHtml([{ name: "Happy hours", path: "/" }, { name: h1 }])}<h1 style="${S.h1}">${esc(h1)}</h1>${path === "/about/" ? aboutHtml() : ""}</main>` : "",

@@ -9,7 +9,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { api, API_URL, session } from "@/lib/api";
 import { fmtChecked } from "@/lib/links";
 import { spotPath } from "@/lib/routes";
+import { useStore } from "@/lib/store";
 import { Card, ErrorLine, H2, message, SignIn, useMe, VenueShell } from "./shared";
+import { SubmissionCard, type Submission } from "./submissions";
 
 interface Queue {
   claims: {
@@ -30,14 +32,17 @@ interface Queue {
   reports: { id: string; venue_id: string; venue_name: string; message: string; email: string | null; created_at: string }[];
   flagged: { venue_id: string; venue_name: string; flagged: string; updated_at: string }[];
   recent: { venue_id: string; venue_name: string; updated_at: string }[];
+  submissions: Submission[];
 }
 
 const day = (iso: string) => fmtChecked(iso.slice(0, 10)) ?? iso.slice(0, 10);
 
-// /venue/admin: claims to decide, guest reports, edits to double-check.
+// /venue/admin: happy hours guests sent in, claims to decide, guest
+// reports, edits to double-check.
 export function VenueAdmin() {
   const { me, state } = useMe();
   const toast = useToast();
+  const { refreshEdits } = useStore();
   const [q, setQ] = useState<Queue | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [notes, setNotes] = useState<Record<string, string>>({});
@@ -59,6 +64,19 @@ export function VenueAdmin() {
     }
   };
 
+  const decideSubmission = async (id: string, body: Record<string, unknown>, done: string) => {
+    try {
+      await api("POST", `/admin/submissions/${id}`, body);
+      toast(done);
+      refreshEdits();
+      load();
+      return true;
+    } catch (e) {
+      setError(message(e));
+      return false;
+    }
+  };
+
   const licence = async (id: string) => {
     const res = await fetch(`${API_URL}/admin/claims/${id}/licence`, { headers: { authorization: `Bearer ${session()}` } });
     if (!res.ok) return setError("Couldn't open the licence");
@@ -76,7 +94,17 @@ export function VenueAdmin() {
         <Skeleton className="h-60 rounded-[22px]" />
       ) : (
         <>
-          <H2 className="mt-2">Claims {q.claims.length > 0 && <Badge size="sm">{q.claims.length}</Badge>}</H2>
+          <H2 className="mt-2">Happy hours sent in {q.submissions.length > 0 && <Badge size="sm">{q.submissions.length}</Badge>}</H2>
+          {q.submissions.length === 0 && <Card className="text-[15px] text-muted-foreground">Nothing waiting.</Card>}
+          <ul className="space-y-3">
+            {q.submissions.map((s) => (
+              <li key={s.id}>
+                <SubmissionCard s={s} onDecide={(body, done) => decideSubmission(s.id, body, done)} />
+              </li>
+            ))}
+          </ul>
+
+          <H2>Claims {q.claims.length > 0 && <Badge size="sm">{q.claims.length}</Badge>}</H2>
           {q.claims.length === 0 && <Card className="text-[15px] text-muted-foreground">Nothing waiting.</Card>}
           <ul className="space-y-3">
             {q.claims.map((c) => (

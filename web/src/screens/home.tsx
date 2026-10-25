@@ -1,4 +1,4 @@
-import { Heart, LocateFixed, MapPin } from "lucide-react";
+import { Camera, Heart, LocateFixed, MapPin } from "lucide-react";
 import { type CSSProperties, lazy, Suspense, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
@@ -16,6 +16,8 @@ import { Wordmark } from "@/components/wordmark";
 import { DAY_FULL, fmtTime } from "@/lib/hours";
 import { InfoNav } from "@/screens/info";
 import { ExploreLinks } from "@/components/explore-links";
+import { SubmitPrompt } from "@/components/submit-prompt";
+import { apiEnabled } from "@/lib/api";
 import { goBackToBase } from "@/lib/back-to";
 import { reducedMotion } from "@/lib/motion";
 import { spotPath } from "@/lib/routes";
@@ -186,6 +188,17 @@ export function Home({ panel = null }: { panel?: string | null }) {
                 </>
               )}
             </button>
+            {apiEnabled && (
+              <Link
+                to="/submit?from=header"
+                viewTransition
+                aria-label="Add a happy hour"
+                title="Add a happy hour"
+                className="grid size-11 place-items-center rounded-full bg-ink-2 text-cream transition-transform active:scale-90"
+              >
+                <Camera className="size-[18px]" />
+              </Link>
+            )}
             <Link to="/saved" aria-label="Saved spots" className="relative grid size-11 place-items-center rounded-full bg-ink-2 text-cream transition-transform active:scale-90">
               <Heart className="size-[18px]" />
               {saved.length > 0 && (
@@ -228,9 +241,16 @@ export function Home({ panel = null }: { panel?: string | null }) {
               filters.tab === "live" ? (
                 <Button onClick={() => setFilters({ tab: "upcoming" })}>See upcoming</Button>
               ) : (
-                <Button variant="secondary" onClick={() => { resetFilters(); setFilters({ query: "" }); }}>
-                  Clear everything
-                </Button>
+                <div className="flex flex-wrap justify-center gap-2">
+                  <Button variant="secondary" onClick={() => { resetFilters(); setFilters({ query: "" }); }}>
+                    Clear everything
+                  </Button>
+                  {apiEnabled && filters.query.trim().length >= 2 && (
+                    <Button render={<Link to={`/submit?from=search&name=${encodeURIComponent(filters.query.trim())}`} />}>
+                      <Camera /> Add “{filters.query.trim()}”
+                    </Button>
+                  )}
+                </div>
               )
             }
           />
@@ -272,6 +292,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
             </Button>
           </div>
         )}
+        {rows.length > 0 && <SubmitPrompt from="list" className="mt-6" />}
         <ExploreLinks />
         {rows.length > 0 && rows.length <= limit && <InfoNav />}
       </main>
