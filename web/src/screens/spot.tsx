@@ -247,7 +247,9 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
               <ScoreChip score={venue.score} /> Hangout Score
             </button>
           )}
-          <GoogleRating placeId={venue.placeId} />
+          {/* Not in the desktop panel: it sits beside our MapLibre map, and Google's
+              terms bar showing Places content near a non-Google map. */}
+          {!panel && <GoogleRating placeId={venue.placeId} />}
           {venue.hh.verified && (
             <Badge variant="sky" size="sm">
               <BadgeCheck className="size-3.5" /> Verified
