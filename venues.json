@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-25-2e1026a6",
+ "data_version": "2026-10-25-c789a8c6",
  "venues": [
   {
    "id": "ancora",
@@ -5846,7 +5846,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fgallery%2Fhalwa-puri-brunch-home.jpg&w=3840&q=75",
+     "credit_name": "Karakoram Restaurant",
+     "credit_url": "https://www.karakoramrestaurant.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Finterior%2Finterior-arch-design.jpeg&w=3840&q=75",
+     "credit_name": "Karakoram Restaurant",
+     "credit_url": "https://www.karakoramrestaurant.com/our-story",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fmenu%2Fmenu-lahori-chicken-karahi.jpg&w=3840&q=75",
+     "credit_name": "Karakoram Restaurant",
+     "credit_url": "https://www.karakoramrestaurant.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fgallery%2Fgulab-jamun-kulfi.jpg&w=3840&q=75",
+     "credit_name": "Karakoram Restaurant",
+     "credit_url": "https://www.karakoramrestaurant.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fgallery%2Fgrand-tawa-platter.jpg&w=3840&q=75",
+     "credit_name": "Karakoram Restaurant",
+     "credit_url": "https://www.karakoramrestaurant.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fhero%2Fmenu-hero-collage-mobile.jpg&w=3840&q=75",
+     "credit_name": "Karakoram Restaurant",
+     "credit_url": "https://www.karakoramrestaurant.com/our-menu",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -5985,7 +6022,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://www.karakoramrestaurant.com/opengraph-image",
+    "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fhero%2Fhome-hero-video-poster.jpg&w=3840&q=75",
     "credit_name": "Karakoram Restaurant",
     "credit_url": "https://www.karakoramrestaurant.com/",
     "source": "official_website"
@@ -6124,9 +6161,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://cdn.shopify.com/s/files/1/0052/7414/0765/files/GreenLogo.png?height=628&pad_color=dfe5e3&v=1613519640&width=1200",
+    "url": "https://caffelatana.ca/cdn/shop/files/Untitled_design_4_1500x.jpg?v=1783626313",
     "credit_name": "Caffè La Tana",
-    "credit_url": "http://www.caffelatana.ca/",
+    "credit_url": "https://caffelatana.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-10-25",
@@ -6160,7 +6197,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://www.chaomamiexpress.com/img/cater-mini-drink-box.webp",
+     "credit_name": "Chao Mami Express",
+     "credit_url": "https://www.chaomamiexpress.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.chaomamiexpress.com/img/cdn/p1040129-edited-2.jpg",
+     "credit_name": "Chao Mami Express",
+     "credit_url": "https://www.chaomamiexpress.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.chaomamiexpress.com/img/hero-rotation/chicken-bowl.webp",
+     "credit_name": "Chao Mami Express",
+     "credit_url": "https://www.chaomamiexpress.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -6224,9 +6280,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://www.chaomamiexpress.com/img/og-image.jpg",
+    "url": "https://www.chaomamiexpress.com/img/hero-rotation/bao-coffee.webp",
     "credit_name": "Chao Mami Express",
-    "credit_url": "http://chaomamiexpress.com/",
+    "credit_url": "https://www.chaomamiexpress.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-10-25",

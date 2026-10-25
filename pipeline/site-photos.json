@@ -3099,6 +3099,54 @@
       ]
     }
   },
+  "caff-la-tana": {
+    "checked_at": "2026-10-25",
+    "pages": [
+      "https://caffelatana.ca/"
+    ],
+    "cover_problem": "graphic",
+    "cover": {
+      "url": "https://caffelatana.ca/cdn/shop/files/Untitled_design_4_1500x.jpg?v=1783626313",
+      "page": "https://caffelatana.ca/",
+      "w": 1500,
+      "h": 844
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "2ae00ff2c1ae",
+      "rejected": [
+        {
+          "url": "https://caffelatana.ca/cdn/shop/files/lt_pasta_2_2200x.jpg?v=1783627029",
+          "why": "close-up pasta only, minimal context"
+        },
+        {
+          "url": "https://caffelatana.ca/cdn/shop/files/Volpi_for_ecommerce_1of1_12.31.11AM_1500x.jpg?v=1691000773",
+          "why": "branded product label (olive oil)"
+        },
+        {
+          "url": "https://caffelatana.ca/cdn/shop/files/LA_TANA_ONLINE_43_of_77_1500x.jpg?v=1641339537",
+          "why": "near-duplicate of photo1, tortellini close-up"
+        },
+        {
+          "url": "https://caffelatana.ca/cdn/shop/collections/LA_TANA_ONLINE_15of17_1500x.jpg?v=1650381702",
+          "why": "kitchen equipment, not venue"
+        },
+        {
+          "url": "https://caffelatana.ca/cdn/shop/files/Volpi_for_ecommerce_1of1_12.31.11AM_750x960_crop_center.jpg?v=1691000773",
+          "why": "branded product label (olive oil)"
+        },
+        {
+          "url": "https://caffelatana.ca/cdn/shop/files/LA_TANA_ONLINE_43_of_77_750x960_crop_center.jpg?v=1641339537",
+          "why": "near-duplicate of photo1, tortellini close-up"
+        },
+        {
+          "url": "https://caffelatana.ca/cdn/shop/collections/LA_TANA_ONLINE_15of17_750x960_crop_center.jpg?v=1650381702",
+          "why": "kitchen equipment, not venue"
+        }
+      ]
+    }
+  },
   "caffe-barney-on-granville": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -3702,6 +3750,65 @@
         {
           "url": "https://www.chaomami.com/img/kitchen.jpg",
           "why": "chef staff portrait"
+        }
+      ]
+    }
+  },
+  "chao-mami-express": {
+    "checked_at": "2026-10-25",
+    "pages": [
+      "https://www.chaomamiexpress.com/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://www.chaomamiexpress.com/img/hero-rotation/bao-coffee.webp",
+      "page": "https://www.chaomamiexpress.com/",
+      "w": 1400,
+      "h": 1400
+    },
+    "gallery": [
+      {
+        "url": "https://www.chaomamiexpress.com/img/cater-mini-drink-box.webp",
+        "page": "https://www.chaomamiexpress.com/",
+        "w": 1600,
+        "h": 1200
+      },
+      {
+        "url": "https://www.chaomamiexpress.com/img/cdn/p1040129-edited-2.jpg",
+        "page": "https://www.chaomamiexpress.com/",
+        "w": 1500,
+        "h": 1000
+      },
+      {
+        "url": "https://www.chaomamiexpress.com/img/hero-rotation/chicken-bowl.webp",
+        "page": "https://www.chaomamiexpress.com/",
+        "w": 1400,
+        "h": 1400
+      }
+    ],
+    "review": {
+      "at": "2026-10-25",
+      "key": "ee969f691802",
+      "rejected": [
+        {
+          "url": "https://www.chaomamiexpress.com/img/cdn/p1040124-edited.jpg",
+          "why": "near-duplicate of photo3"
+        },
+        {
+          "url": "https://www.chaomamiexpress.com/img/cater-party-roll-box.webp",
+          "why": "menu/pricing text prominent on display"
+        },
+        {
+          "url": "https://www.chaomamiexpress.com/img/hero-rotation/party-boxes.webp",
+          "why": "logo and branding packaging focus"
+        },
+        {
+          "url": "https://www.chaomamiexpress.com/img/hero-rotation/satay-bowl.webp",
+          "why": "near-duplicate of photo10"
+        },
+        {
+          "url": "https://www.chaomamiexpress.com/img/hero-rotation/roll-boxes.webp",
+          "why": "packaged food boxes with text signage"
         }
       ]
     }
@@ -8788,6 +8895,70 @@
     "cover_problem": null,
     "cover": null,
     "gallery": []
+  },
+  "karakoram-restaurant": {
+    "checked_at": "2026-10-25",
+    "pages": [
+      "https://www.karakoramrestaurant.com/",
+      "https://www.karakoramrestaurant.com/our-menu",
+      "https://www.karakoramrestaurant.com/gallery",
+      "https://www.karakoramrestaurant.com/our-story"
+    ],
+    "cover_problem": "graphic",
+    "cover": {
+      "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fhero%2Fhome-hero-video-poster.jpg&w=3840&q=75",
+      "page": "https://www.karakoramrestaurant.com/",
+      "w": 1920,
+      "h": 1080
+    },
+    "gallery": [
+      {
+        "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fgallery%2Fhalwa-puri-brunch-home.jpg&w=3840&q=75",
+        "page": "https://www.karakoramrestaurant.com/",
+        "w": 1600,
+        "h": 1212
+      },
+      {
+        "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Finterior%2Finterior-arch-design.jpeg&w=3840&q=75",
+        "page": "https://www.karakoramrestaurant.com/our-story",
+        "w": 1500,
+        "h": 910
+      },
+      {
+        "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fmenu%2Fmenu-lahori-chicken-karahi.jpg&w=3840&q=75",
+        "page": "https://www.karakoramrestaurant.com/",
+        "w": 1000,
+        "h": 745
+      },
+      {
+        "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fgallery%2Fgulab-jamun-kulfi.jpg&w=3840&q=75",
+        "page": "https://www.karakoramrestaurant.com/",
+        "w": 1500,
+        "h": 1467
+      },
+      {
+        "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fgallery%2Fgrand-tawa-platter.jpg&w=3840&q=75",
+        "page": "https://www.karakoramrestaurant.com/",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fhero%2Fmenu-hero-collage-mobile.jpg&w=3840&q=75",
+        "page": "https://www.karakoramrestaurant.com/our-menu",
+        "w": 1200,
+        "h": 1200
+      }
+    ],
+    "review": {
+      "at": "2026-10-25",
+      "key": "7109c29c3a4a",
+      "rejected": [
+        {
+          "url": "https://www.karakoramrestaurant.com/_next/image?url=%2Fimages%2Fhero%2Fmenu-hero-collage.jpg&w=3840&q=75",
+          "why": "near-duplicate of photo8, same food collage grid"
+        }
+      ]
+    }
   },
   "karma-indian-bistro": {
     "checked_at": "2026-10-24",
