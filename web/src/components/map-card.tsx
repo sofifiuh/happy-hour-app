@@ -5,6 +5,7 @@ import { walkLabel } from "@/lib/geo";
 import { endingSoon, fmtRange, statusLabel } from "@/lib/hours";
 import { markHero } from "@/lib/motion";
 import type { Row } from "@/lib/store";
+import { useIsDesktop } from "@/lib/use-media";
 import { cn } from "@/lib/utils";
 import { ScoreChip } from "./hang-score";
 import { Countdown, StatusDot } from "./status";
@@ -15,14 +16,16 @@ import { VenuePhoto } from "./venue-photo";
 // Sofia's Sep 10 card iterations), then one action.
 export function MapCard({ row, now, active }: { row: Row; now: Date; active: boolean }) {
   const { venue, occ, km } = row;
+  const desktop = useIsDesktop();
   const soon = endingSoon(occ, now);
   const walk = km != null ? walkLabel(km) : null;
   const countdown = occ.start && occ.end && occ.status !== "scheduled" && occ.status !== "none" ? statusLabel(occ, now) : null;
   return (
     <Link
       to={spotPath(venue.id)}
-      viewTransition
-      onClick={(e) => markHero(e.currentTarget, venue.id)}
+      // Desktop opens the venue in a panel beside the list, with its own slide.
+      viewTransition={!desktop}
+      onClick={(e) => !desktop && markHero(e.currentTarget, venue.id)}
       className={cn(
         "flex w-full items-center gap-3 rounded-[22px] bg-ink-2 p-2.5 pr-3 shadow-(--shadow-float) ring-1 transition-[transform,opacity,box-shadow] duration-300 ease-out active:scale-[0.98]",
         active ? "ring-edge/15" : "scale-[0.95] opacity-75 ring-edge/5",

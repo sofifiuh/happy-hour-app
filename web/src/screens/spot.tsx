@@ -1,4 +1,4 @@
-import { ArrowLeft, BadgeCheck, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Lightbulb, MessageCircle, Navigation, Phone, Share, Star, Store } from "lucide-react";
+import { ArrowLeft, BadgeCheck, X, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Lightbulb, MessageCircle, Navigation, Phone, Share, Star, Store } from "lucide-react";
 import { type CSSProperties, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
@@ -43,9 +43,11 @@ function amenityPills(v: Venue) {
   ].filter(Boolean) as { emoji: string; label: string }[];
 }
 
-export function Spot() {
+// `panel`: shown beside the list and map on desktop (screens/home.tsx),
+// which passes the venue's `id` and closes it with `onClose`.
+export function Spot({ id: panelId, panel = false, onClose }: { id?: string; panel?: boolean; onClose?: () => void }) {
   const params = useParams();
-  const id = (params.id ?? params.file ?? "").replace(/\.html$/, "");
+  const id = panelId ?? (params.id ?? params.file ?? "").replace(/\.html$/, "");
   const { byId, venues, hubs, best, now, loading, deviceLocation, area, saved, toggleSaved } = useStore();
   const navigate = useNavigate();
   const toast = useToast();
@@ -60,7 +62,10 @@ export function Spot() {
   const bar = useRef<HTMLElement>(null);
   const desktop = useIsDesktop();
   const back = backLabel(desktop);
-  useSwipeBack([page, bar], () => goBackToBase(navigate, desktop, true), !!venue);
+  // In the panel, going back to the list or map is closing it.
+  const closes = panel && (back === "Map" || back === "List");
+  const onBack = panel && onClose ? onClose : () => goBackToBase(navigate, desktop);
+  useSwipeBack([page, bar], () => goBackToBase(navigate, desktop, true), !!venue && !panel);
   useTitle(venue ? venueTitle(venue) : loading ? null : "Spot not found", !!venue);
   const [cat, setCat] = useState<Category>("drink");
   const [directionsOpen, setDirectionsOpen] = useState(false);
@@ -94,12 +99,14 @@ export function Spot() {
       );
     }
     return (
-      <div className="grid min-h-dvh place-items-center">
+      <div className={cn("grid place-items-center", panel ? "h-full" : "min-h-dvh")}>
         <EmptyState emoji="🍂" title="We can't find that spot" body="It may have closed or moved." action={<Button onClick={() => navigate("/")}>Back to the list</Button>} />
       </div>
     );
   }
 
+  // The list beside the panel is the page's <main>.
+  const Root = panel ? "article" : "main";
   const near = nearby(venue, venues);
   const occ = occurrence(venue, now);
   const soon = endingSoon(occ, now);
@@ -140,12 +147,19 @@ export function Spot() {
 
   return (
     <>
-    <main ref={page} className="mx-auto min-h-dvh max-w-2xl pb-28">
+    <Root ref={page} className={cn(panel ? "pb-8" : "mx-auto min-h-dvh max-w-2xl pb-28")}>
       {/* Photo header */}
       <div className="relative">
-        <VenuePhoto venue={venue} eager hero="hero" large onReady={showShade} className={cn("w-full lg:rounded-b-[28px]", venue.photo ? "h-[min(42vh,340px)]" : "h-[240px]")} />
+        <VenuePhoto
+          venue={venue}
+          eager
+          hero={panel ? undefined : "hero"}
+          large
+          onReady={showShade}
+          className={cn("w-full", panel ? (venue.photo ? "h-[min(36vh,300px)]" : "h-[200px]") : cn("lg:rounded-b-[28px]", venue.photo ? "h-[min(42vh,340px)]" : "h-[240px]"))}
+        />
         <div
-          style={{ viewTransitionName: "hero-shade" }}
+          style={{ viewTransitionName: panel ? undefined : "hero-shade" }}
           className={cn(
             "pointer-events-none absolute inset-0 bg-gradient-to-b via-transparent to-ink transition-opacity duration-700 ease-[var(--ease-out)]",
             venue.photo ? "from-black/45" : "from-black/15",
@@ -163,14 +177,26 @@ export function Spot() {
         )}
         <div className="pointer-events-none absolute inset-x-0 top-0 flex justify-between px-4 pt-[max(env(safe-area-inset-top),14px)] [&_button]:pointer-events-auto">
           {/* Always back to where browsing started, not the previous venue. */}
-          <button
-            onClick={() => goBackToBase(navigate, desktop)}
-            aria-label={back === "Back" ? "Back" : `Back to ${back}`}
-            className="flex h-11 items-center gap-1.5 rounded-full bg-ink/70 pr-4 pl-3 text-[14px] font-semibold text-cream backdrop-blur transition-transform active:scale-90"
-          >
-            <ArrowLeft className="size-5" />
-            {back}
-          </button>
+          {closes ? (
+            <button
+              onClick={onBack}
+              aria-label="Close"
+              aria-keyshortcuts="Escape"
+              className="flex h-11 items-center gap-1.5 rounded-full bg-ink/70 pr-4 pl-3 text-[14px] font-semibold text-cream backdrop-blur transition-[transform,background-color] hover:bg-ink/85 active:scale-90"
+            >
+              <X className="size-5" />
+              Close
+            </button>
+          ) : (
+            <button
+              onClick={onBack}
+              aria-label={back === "Back" ? "Back" : `Back to ${back}`}
+              className="flex h-11 items-center gap-1.5 rounded-full bg-ink/70 pr-4 pl-3 text-[14px] font-semibold text-cream backdrop-blur transition-transform active:scale-90"
+            >
+              <ArrowLeft className="size-5" />
+              {back}
+            </button>
+          )}
           <div className="flex gap-2">
             <button
               onClick={onSave}
@@ -201,7 +227,7 @@ export function Spot() {
         ) : occ.status === "upcoming" ? (
           <Badge variant="upcoming" className="mb-3">{statusLabel(occ, now)}</Badge>
         ) : null}
-        <h1 className="font-display text-[34px] leading-[1.02] font-extrabold tracking-[-0.025em]">
+        <h1 className={cn("font-display font-extrabold tracking-[-0.025em]", panel ? "text-[30px]" : "text-[34px]", "leading-[1.02]")}>
           <span className="mb-1.5 block font-sans text-[12px] leading-none font-semibold tracking-[0.12em] text-pink-fg uppercase">
             Happy hour{venue.area ? ` · ${venue.area.name}` : venue.city ? ` · ${venue.city}` : ""}
           </span>{" "}
@@ -567,11 +593,15 @@ export function Spot() {
       <Link to="/" className="sr-only">
         Back to list
       </Link>
-    </main>
+    </Root>
 
       {/* Sticky bar (outside main so the swipe-back transform doesn't pin it to the page) */}
-      <aside ref={bar} aria-label="Happy hour and directions" className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-ink/95 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-md items-center justify-between gap-3 px-5 lg:max-w-2xl pt-3 pb-[max(env(safe-area-inset-bottom),14px)]">
+      <aside
+        ref={bar}
+        aria-label="Happy hour and directions"
+        className={cn("z-30 border-t border-border bg-ink/95 backdrop-blur-xl", panel ? "sticky bottom-0" : "fixed inset-x-0 bottom-0")}
+      >
+        <div className={cn("mx-auto flex items-center justify-between gap-3 px-5 pt-3", panel ? "pb-3.5" : "max-w-md pb-[max(env(safe-area-inset-bottom),14px)] lg:max-w-2xl")}>
           <div className="min-w-0">
             {occ.start && occ.end ? (
               <>

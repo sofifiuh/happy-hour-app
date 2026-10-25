@@ -1,9 +1,10 @@
 import { lazy, Suspense, useEffect } from "react";
 import { createBrowserRouter, createHashRouter, Navigate, Outlet, RouterProvider, ScrollRestoration, useLocation, useParams } from "react-router";
 import { ToastProvider } from "@/components/toast";
-import { noteLocation } from "@/lib/back-to";
+import { isSpotPath, noteLocation } from "@/lib/back-to";
 import { BROWSER_ROUTER, spotPath } from "@/lib/routes";
 import { IS_FRAME, StoreProvider } from "@/lib/store";
+import { isDesktop, useIsDesktop } from "@/lib/use-media";
 import { useStaticHead } from "@/lib/use-static-head";
 import { AllSpots } from "@/screens/all-spots";
 import { BestScreen } from "@/screens/best";
@@ -39,18 +40,39 @@ function seenWelcome() {
   }
 }
 
+const isHomePath = (path: string) => path === "/" || path === "/index.html";
+const spotIdOf = (path: string) => (isSpotPath(path) ? decodeURIComponent(path.split("/").pop()!).replace(/\.html$/, "") : null);
+
+// On desktop the list and a venue panel beside it are one screen, so
+// opening or closing a venue keeps the list where it was scrolled.
+const scrollKey = (location: { pathname: string; key: string }) =>
+  isDesktop() && (isHomePath(location.pathname) || isSpotPath(location.pathname)) ? "browse" : location.key;
+
 function Shell() {
   useStaticHead();
   const { pathname, search } = useLocation();
   useEffect(() => noteLocation(pathname, search), [pathname, search]);
   return (
     <>
-      <ScrollRestoration />
+      <ScrollRestoration getKey={scrollKey} />
       <Suspense fallback={<div className="min-h-dvh bg-ink" />}>
         <Outlet />
       </Suspense>
     </>
   );
+}
+
+// Desktop opens a venue in a panel beside the list, with the map still
+// on the right; the venue keeps its own URL (/spots/<id>.html) and the
+// list stays mounted underneath, so closing it lands back where you were.
+// Phones keep the full-page venue.
+function Browse() {
+  const desktop = useIsDesktop();
+  const { pathname } = useLocation();
+  const spot = spotIdOf(pathname);
+  if (!desktop || (!spot && !isHomePath(pathname))) return <Outlet />;
+  if (!spot && !seenWelcome()) return <Navigate to="/welcome" replace />;
+  return <Home panel={spot} />;
 }
 
 // /spots/<id>.html is a venue; /spots/index.html is the A–Z list.
@@ -71,15 +93,20 @@ const router = createRouter([
   {
     element: <Shell />,
     children: [
-      { path: "/", element: <Root /> },
-      { path: "/index.html", element: <Root /> },
+      {
+        element: <Browse />,
+        children: [
+          { path: "/", element: <Root /> },
+          { path: "/index.html", element: <Root /> },
+          { path: "/spot/:id", element: <Spot /> },
+          { path: "/spots/:file", element: <SpotsFile /> },
+        ],
+      },
       { path: "/menu.html", element: <OldMenuLink /> },
       { path: "/welcome", element: <Landing /> },
       { path: "/map", element: <MapScreen /> },
       { path: "/best", element: <BestScreen /> },
-      { path: "/spot/:id", element: <Spot /> },
       { path: "/spots", element: <AllSpots /> },
-      { path: "/spots/:file", element: <SpotsFile /> },
       { path: "/saved", element: <Saved /> },
       { path: "/about", element: <Info page="about" /> },
       { path: "/privacy", element: <Info page="privacy" /> },
