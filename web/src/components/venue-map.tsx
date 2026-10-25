@@ -230,8 +230,24 @@ export function VenueMap({
     const m = map.current;
     const el = pop.current;
     const at = pinned.current;
-    if (!ready || !m || !el || !at || shownFor.current === selected) return;
+    if (!ready || !m || !at || shownFor.current === selected) return;
     shownFor.current = selected;
+    // No card (the desktop venue panel has the details): bring the pin
+    // into view if it's off the map or tucked under its edge.
+    // Checked once the map has settled at its new width: opening the
+    // panel squeezes it.
+    if (!el) {
+      setTimeout(() => {
+        if (map.current !== m) return;
+        const p = m.project(at);
+        const W = m.getContainer().clientWidth;
+        const H = m.getContainer().clientHeight;
+        const pad = 64;
+        if (p.x < pad || p.x > W - pad || p.y < insets.current.top + pad || p.y > H - insets.current.bottom - pad)
+          m.easeTo({ center: at, duration: reducedMotion() ? 0 : 600 });
+      }, reducedMotion() ? 0 : 440);
+      return;
+    }
     const p = m.project(at);
     const W = m.getContainer().clientWidth;
     const H = m.getContainer().clientHeight;

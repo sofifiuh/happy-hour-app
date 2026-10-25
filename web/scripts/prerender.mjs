@@ -342,7 +342,10 @@ function venueBody(v) {
   const ranked = rankOf(v);
   // The photo matches the app's venue header (full width, same height) so
   // the page doesn't jump when the app takes over.
-  return `<main style="max-width:42rem;margin:0 auto">
+  // Desktop shows the venue in a panel beside the list and map
+  // (src/screens/home.tsx); sit the static page where that panel opens.
+  return `<style>@media (min-width:1024px){#root>main{max-width:none!important;width:436px;margin:0 0 0 12px!important}#root>main:first-of-type{margin-top:12px!important}#root>main>img{height:min(36vh,300px)!important;border-radius:28px 28px 0 0}}@media (min-width:1280px){#root>main{width:476px;margin-left:400px!important}}@media (min-width:1536px){#root>main{width:516px;margin-left:440px!important}}</style>
+<main style="max-width:42rem;margin:0 auto">
 ${v.photo ? `<img src="${esc(/^https?:/.test(v.photo) ? v.photo : `/${v.photo}`)}" alt="${esc(`${v.name}${v.area ? ` in ${v.area.name}` : v.city ? ` in ${v.city}` : ""}`)}" fetchpriority="high" style="display:block;width:100%;height:min(42vh,340px);object-fit:cover;background:#2f2d2b" />` : ""}
 </main>
 <main style="${S.wrap}">

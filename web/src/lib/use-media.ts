@@ -1,17 +1,32 @@
 import { useSyncExternalStore } from "react";
 
 const DESKTOP = "(min-width: 1024px)";
+const WIDE = "(min-width: 1280px)";
 
-function subscribe(cb: () => void) {
-  const mq = window.matchMedia(DESKTOP);
-  mq.addEventListener("change", cb);
-  return () => mq.removeEventListener("change", cb);
+function useMedia(query: string) {
+  return useSyncExternalStore(
+    (cb) => {
+      const mq = window.matchMedia(query);
+      mq.addEventListener("change", cb);
+      return () => mq.removeEventListener("change", cb);
+    },
+    () => window.matchMedia(query).matches,
+    () => false,
+  );
 }
+
+export const isDesktop = () => typeof window !== "undefined" && window.matchMedia(DESKTOP).matches;
 
 // List beside the map from 1024px up; phones and portrait tablets keep
 // the List / Map toggle.
 export function useIsDesktop() {
-  return useSyncExternalStore(subscribe, () => window.matchMedia(DESKTOP).matches, () => false);
+  return useMedia(DESKTOP);
+}
+
+// Room for list, venue panel and map side by side (lib/browse.tsx).
+// Narrower desktops lay the panel over the list instead.
+export function useIsWide() {
+  return useMedia(WIDE);
 }
 
 const LIGHT = "(prefers-color-scheme: light)";

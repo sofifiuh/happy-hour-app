@@ -1,6 +1,6 @@
 import { Heart, LocateFixed, MapPin } from "lucide-react";
-import { type CSSProperties, lazy, Suspense, useEffect, useMemo, useState } from "react";
-import { Link, useSearchParams } from "react-router";
+import { type CSSProperties, lazy, Suspense, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { Link, useNavigate, useSearchParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { FiltersDrawer } from "@/components/filters-drawer";
 import { LocationDrawer } from "@/components/location-drawer";
@@ -16,9 +16,12 @@ import { Wordmark } from "@/components/wordmark";
 import { DAY_FULL, fmtTime } from "@/lib/hours";
 import { InfoNav } from "@/screens/info";
 import { ExploreLinks } from "@/components/explore-links";
+import { goBackToBase } from "@/lib/back-to";
 import { reducedMotion } from "@/lib/motion";
+import { spotPath } from "@/lib/routes";
+import { Spot } from "@/screens/spot";
 import { useStore, type Row } from "@/lib/store";
-import { useIsDesktop } from "@/lib/use-media";
+import { useIsDesktop, useIsWide } from "@/lib/use-media";
 import { useTitle } from "@/lib/use-title";
 import { cn } from "@/lib/utils";
 
@@ -26,7 +29,8 @@ const DesktopMap = lazy(() => import("@/components/desktop-map"));
 
 const PAGE = 40;
 
-export function Home() {
+// `panel` is the venue open beside the list on desktop (App.tsx, Browse).
+export function Home({ panel = null }: { panel?: string | null }) {
   const { rows, now, loading, loadFailed, filters, resetFilters, setFilters, locationState, origin, saved } = useStore();
   const [params] = useSearchParams();
   const [filtersOpen, setFiltersOpen] = useState(params.get("sheet") === "filters");
@@ -34,9 +38,58 @@ export function Home() {
   const [locationOpen, setLocationOpen] = useState(params.get("sheet") === "location");
   const [limit, setLimit] = useState(PAGE);
   const desktop = useIsDesktop();
-  useTitle(null);
+  const wide = useIsWide();
+  const navigate = useNavigate();
+  useTitle(null, false, !panel);
   const [selected, setSelected] = useState<string | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
+
+  // The venue panel stays on screen for its slide out after closing.
+  const [shown, setShown] = useState(panel);
+  const open = !!panel;
+  if (panel && panel !== shown) setShown(panel);
+  useEffect(() => {
+    if (open) return;
+    const t = setTimeout(() => setShown(null), reducedMotion() ? 0 : 320);
+    return () => clearTimeout(t);
+  }, [open]);
+  // A pin's card would only repeat the panel, and shouldn't pop up
+  // after it closes either.
+  if (panel && selected) setSelected(null);
+  const closePanel = () => goBackToBase(navigate, true, true);
+  // With a venue open, a pin opens that venue instead of its card.
+  const pick = (id: string | null) => {
+    if (!panel) return setSelected(id);
+    if (id && id !== panel) navigate(spotPath(id));
+  };
+  const focusId = panel ?? selected;
+
+  // Keyboard: the panel takes focus when a venue opens and hands it back
+  // to that venue's row when it closes. Escape closes it.
+  const panelRef = useRef<HTMLDivElement>(null);
+  const lastPanel = useRef<string | null>(null);
+  useLayoutEffect(() => {
+    if (panelRef.current) panelRef.current.scrollTop = 0;
+  }, [shown]);
+  useEffect(() => {
+    if (panel) {
+      lastPanel.current = panel;
+      panelRef.current?.focus({ preventScroll: true });
+    } else if (lastPanel.current) {
+      document.querySelector<HTMLElement>(`#row-${CSS.escape(lastPanel.current)} a`)?.focus({ preventScroll: true });
+      lastPanel.current = null;
+    }
+  }, [panel]);
+  useEffect(() => {
+    if (!panel) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "Escape" || e.defaultPrevented || (e.target as Element | null)?.closest?.("[role=dialog]")) return;
+      closePanel();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [panel]);
 
   const sections = useMemo(() => {
     if (filters.tab === "plan" && filters.plan) {
@@ -63,15 +116,18 @@ export function Home() {
   // Desktop: a pin click brings its row into view in the list, showing
   // more rows first if it's further down than the list has loaded.
   const order = useMemo(() => sections.flatMap((s) => s.rows.map((r) => r.venue.id)), [sections]);
-  const at = selected ? order.indexOf(selected) : -1;
+  const at = focusId ? order.indexOf(focusId) : -1;
   useEffect(() => {
     if (at >= limit) setLimit(at + PAGE);
   }, [at, limit]);
   useEffect(() => {
-    if (!selected || at < 0 || at >= limit) return;
+    if (!focusId || at < 0 || at >= limit) return;
     const id = requestAnimationFrame(() => {
-      const el = document.getElementById(`row-${selected}`);
+      const el = document.getElementById(`row-${focusId}`);
       if (!el) return;
+      // Already in view (the row just clicked): leave the list still.
+      const r = el.getBoundingClientRect();
+      if (r.top >= 200 && r.bottom <= window.innerHeight) return;
       // Glide to nearby rows; jump to far ones rather than scroll for seconds.
       const far = Math.abs(el.getBoundingClientRect().top) > window.innerHeight * 2;
       el.scrollIntoView({ block: "center", behavior: far || reducedMotion() ? "auto" : "smooth" });
@@ -79,13 +135,19 @@ export function Home() {
     return () => cancelAnimationFrame(id);
     // Scroll on a new selection (or once its row has loaded), not on every refresh.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selected, at >= 0 && at < limit]);
+  }, [focusId, at >= 0 && at < limit]);
 
   let budget = limit;
   let n = 0;
   return (
-    <div className="lg:grid lg:grid-cols-[minmax(400px,460px)_1fr]">
-    <div className="relative min-h-dvh pb-28 lg:pb-10">
+    <div
+      className={cn(
+        "lg:grid lg:grid-cols-[460px_0px_1fr] lg:transition-[grid-template-columns] lg:duration-[420ms] lg:ease-[var(--ease-out)] motion-reduce:transition-none",
+        open && "xl:grid-cols-[400px_480px_1fr] 2xl:grid-cols-[440px_520px_1fr]",
+      )}
+    >
+    {/* Narrower desktops lay the venue panel over the list. */}
+    <div inert={open && !wide} className="relative min-h-dvh min-w-0 pb-28 lg:col-start-1 lg:row-start-1 lg:pb-10">
       <a
         href="#results"
         onClick={(e) => {
@@ -97,7 +159,8 @@ export function Home() {
         Skip to spots
       </a>
       <header className="sticky top-0 z-20 bg-ink/90 pt-safe backdrop-blur-xl">
-        <h1 className="sr-only">Happy hours in Vancouver</h1>
+        {/* The open venue's name is the page heading while the panel shows it. */}
+        {panel ? <h2 className="sr-only">Happy hours in Vancouver</h2> : <h1 className="sr-only">Happy hours in Vancouver</h1>}
         <div className="flex items-center justify-between px-4 pt-3 pb-2">
           <Link to="/welcome" aria-label="A Little Hang" className="grid min-h-11 min-w-11 place-items-center">
             <Wordmark className="h-10 text-cream" />
@@ -188,10 +251,10 @@ export function Home() {
                       key={r.venue.id}
                       id={`row-${r.venue.id}`}
                       style={{ "--i": n++ } as CSSProperties}
-                      aria-current={selected === r.venue.id || undefined}
+                      aria-current={focusId === r.venue.id || undefined}
                       className={cn(
                         "animate-rise scroll-mt-48 rounded-2xl transition-[box-shadow,transform] duration-300 ease-out",
-                        selected === r.venue.id && "animate-pop ring-2 ring-primary shadow-[0_0_0_6px_color-mix(in_srgb,var(--color-primary)_18%,transparent)]",
+                        focusId === r.venue.id && "animate-pop ring-2 ring-primary shadow-[0_0_0_6px_color-mix(in_srgb,var(--color-primary)_18%,transparent)]",
                       )}
                     >
                       <VenueRow row={r} now={now} onHover={desktop ? setHovered : undefined} />
@@ -224,10 +287,33 @@ export function Home() {
       <LocationDrawer open={locationOpen} onOpenChange={setLocationOpen} />
     </div>
     {desktop && (
-      <aside aria-label="Map" className="sticky top-0 h-dvh p-3 pl-1">
+      // The venue panel: its own column on wide screens (the grid track
+      // opens to make room, squeezing the map), over the list on narrower
+      // ones. The card slides in from the list's edge.
+      <div className="pointer-events-none sticky top-0 z-30 h-dvh min-w-0 max-xl:fixed max-xl:left-0 max-xl:w-[460px] xl:col-start-2 xl:row-start-1 xl:overflow-clip xl:[overflow-clip-margin:24px]">
+        {/* Covers the list the panel sits over on narrower desktops. */}
+        <div aria-hidden className={cn("absolute inset-0 bg-ink transition-opacity duration-300 xl:hidden", open ? "opacity-100" : "opacity-0")} />
+        {shown && (
+          <div className={cn("absolute inset-y-0 left-0 w-[460px] py-3 pr-1 max-xl:pl-3 xl:w-[480px] 2xl:w-[520px]", open && "pointer-events-auto")}>
+            <div
+              ref={panelRef}
+              tabIndex={-1}
+              role="region"
+              aria-label="Spot details"
+              data-open={open}
+              className="no-scrollbar h-full overflow-y-auto overscroll-contain rounded-[28px] bg-ink shadow-(--shadow-float) ring-1 ring-edge/10 outline-none data-[open=false]:animate-panel-out data-[open=true]:animate-panel-in"
+            >
+              <Spot key={shown} id={shown} panel onClose={closePanel} />
+            </div>
+          </div>
+        )}
+      </div>
+    )}
+    {desktop && (
+      <aside aria-label="Map" className="sticky top-0 h-dvh min-w-0 p-3 pl-1 lg:col-start-3 lg:row-start-1">
         <div className="relative h-full overflow-hidden rounded-[28px] bg-ink-2 ring-1 ring-edge/5">
           <Suspense fallback={null}>
-            <DesktopMap rows={rows} now={now} selected={selected} hovered={hovered} onSelect={setSelected} />
+            <DesktopMap rows={rows} now={now} selected={focusId} hovered={hovered} onSelect={pick} card={!panel} />
           </Suspense>
         </div>
       </aside>
