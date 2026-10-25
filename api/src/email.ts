@@ -109,7 +109,7 @@ function hero(l: Layout) {
   // the dark fade baked in, and Outlook for Windows gets it through VML.
   const bg = h.photo
     ? `background-color:${C.ink};background-image:url('${esc(h.photo)}');background-size:cover;background-position:center`
-    : `background-color:${bottom};background-image:linear-gradient(160deg,${top} 0%,${bottom} 100%)`;
+    : `background-color:${bottom};background-image:linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.6)),linear-gradient(160deg,${top} 0%,${bottom} 100%)`;
   const inner = `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
         <td valign="top">
           <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
@@ -130,7 +130,7 @@ function hero(l: Layout) {
     <tr><td class="pad hero" bgcolor="${h.photo ? C.ink : bottom}" ${h.photo ? `background="${esc(h.photo)}" ` : ""}style="${bg};border-radius:28px;padding:20px 26px 26px">
       ${
         h.photo
-          ? `<!--[if gte mso 9]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:560px;height:320px"><v:fill type="frame" src="${esc(h.photo)}" color="${C.ink}"/><v:textbox inset="20px,20px,26px,26px"><![endif]--><div>${inner}</div><!--[if gte mso 9]></v:textbox></v:rect><![endif]-->`
+          ? `<!--[if gte mso 9]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:560px;height:320px"><v:fill type="frame" src="${esc(h.photo)}" color="${C.ink}"/><v:textbox inset="20px,20px,26px,26px" style="mso-fit-shape-to-text:true"><![endif]--><div>${inner}</div><!--[if gte mso 9]></v:textbox></v:rect><![endif]-->`
           : inner
       }
     </td></tr>
@@ -374,7 +374,7 @@ export function claimApprovedEmail(site: string, o: { name: string; venue: Venue
     site,
     preheader: "Update your happy hour times, deals and photos any time.",
     hero: venueHero(site, o.venue, { chip: "Official owner", chipIcon: "store", stamp: "owner" }),
-    title: `You run ${o.venue.name} on A Little Hang`,
+    title: `You run ${o.venue.name} on A Little Hang`,
     paragraphs: [
       `You're all set, ${o.name}. Your listing now carries an Updated by the venue badge, and changes show on the site within a few minutes.`,
     ],
