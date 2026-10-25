@@ -124,7 +124,7 @@ function hero(l: Layout) {
         ${h.stamp ? `<td valign="top" align="right" width="92" style="width:92px">${img(`stamp-${h.stamp}.png`, 92, h.stamp === "owner" ? "Official owner" : "")}</td>` : ""}
       </tr></table>
       <h1 class="h1" style="margin:${h.photo ? 96 : h.stamp ? 24 : 72}px 0 0;font-family:${DISPLAY};font-size:36px;line-height:38px;font-weight:800;letter-spacing:-0.8px;color:#ffffff">${noWidow(h.name)}</h1>
-      ${h.sub ? `<p style="margin:8px 0 0;font-family:${SANS};font-size:15px;line-height:20px;color:#e9e4da">${esc(h.sub)}</p>` : ""}`;
+      ${h.sub ? `<p style="margin:8px 0 0;font-family:${SANS};font-size:15px;line-height:20px;color:#e9e4da"><a href="https://www.google.com/maps/search/?api=1&amp;query=${encodeURIComponent(h.sub)}" style="color:#e9e4da;text-decoration:none">${esc(h.sub)}</a></p>` : ""}`;
   return `<tr><td style="padding:0 0 16px">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate">
     <tr><td class="pad hero" bgcolor="${h.photo ? C.ink : bottom}" ${h.photo ? `background="${esc(h.photo)}" ` : ""}style="${bg};border-radius:28px;padding:20px 26px 26px">
