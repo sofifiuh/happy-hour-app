@@ -3,6 +3,7 @@ import { type CSSProperties, useCallback, useEffect, useMemo, useRef, useState }
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { ScoreCard, ScoreChip } from "@/components/hang-score";
+import { GOOGLE_KEY, GoogleMapEmbed, GoogleRating } from "@/components/google-place";
 import { MiniMap } from "@/components/mini-map";
 import { NotifyDrawer, remindersAsked } from "@/components/notify-drawer";
 import { PhotoViewer } from "@/components/photo-viewer";
@@ -220,6 +221,7 @@ export function Spot() {
               <ScoreChip score={venue.score} /> Hangout Score
             </button>
           )}
+          <GoogleRating placeId={venue.placeId} />
           {venue.hh.verified && (
             <Badge variant="sky" size="sm">
               <BadgeCheck className="size-3.5" /> Verified
@@ -444,7 +446,12 @@ export function Spot() {
         <section style={{ "--i": 5 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Find us here</h2>
           <button onClick={openDirections} className="block w-full overflow-hidden rounded-[22px] bg-ink-2 text-left">
-            <MiniMap lat={venue.lat} lng={venue.lng} others={near as { lat: number; lng: number }[]} className="h-[170px] w-full" />
+            {/* Google's terms: its rating can't sit near a non-Google map. */}
+            {GOOGLE_KEY ? (
+              <GoogleMapEmbed placeId={venue.placeId} query={`${venue.name} ${venue.address}`} className="h-[170px] w-full" />
+            ) : (
+              <MiniMap lat={venue.lat} lng={venue.lng} others={near as { lat: number; lng: number }[]} className="h-[170px] w-full" />
+            )}
             <div className="flex items-center justify-between gap-3 p-4">
               <span className="text-[15px]">{venue.address}</span>
               <span className="inline-flex shrink-0 items-center gap-1.5 text-[14px] font-semibold text-orange-fg">
