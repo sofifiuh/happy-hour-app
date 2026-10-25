@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-24-6008cc18",
+ "data_version": "2026-10-25-805c294e",
  "venues": [
   {
    "id": "ancora",
@@ -342,18 +342,6 @@
    },
    "photos": [
     {
-     "url": "https://static.wixstatic.com/media/fc95b3_bd8f4b64f6f147adb3e101cb8c08d604~mv2.jpg/v1/fill/w_613,h_460,fp_0.45_0.63,q_90,enc_avif,quality_auto/fc95b3_bd8f4b64f6f147adb3e101cb8c08d604~mv2.jpg",
-     "credit_name": "Homer St. Cafe and Bar",
-     "credit_url": "https://www.homerstreetcafebar.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/fc95b3_9aeb8b3113b449fba5f90dffe439ced9~mv2.jpg/v1/fill/w_613,h_460,q_90,enc_avif,quality_auto/fc95b3_9aeb8b3113b449fba5f90dffe439ced9~mv2.jpg",
-     "credit_name": "Homer St. Cafe and Bar",
-     "credit_url": "https://www.homerstreetcafebar.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://static.wixstatic.com/media/fc95b3_eca119bc0c8a49ad9c6e8c7189c37665~mv2.jpg/v1/fill/w_3065,h_2300,q_90,enc_avif,quality_auto/fc95b3_eca119bc0c8a49ad9c6e8c7189c37665~mv2.jpg",
      "credit_name": "Homer St. Cafe and Bar",
      "credit_url": "https://www.homerstreetcafebar.com/",
@@ -385,6 +373,12 @@
     },
     {
      "url": "https://static.wixstatic.com/media/fc95b3_fdf38d61345a4cbf9c3a896548c3acf6~mv2.jpg/v1/fill/w_3065,h_2300,q_90,enc_avif,quality_auto/fc95b3_fdf38d61345a4cbf9c3a896548c3acf6~mv2.jpg",
+     "credit_name": "Homer St. Cafe and Bar",
+     "credit_url": "https://www.homerstreetcafebar.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/fc95b3_bd8f4b64f6f147adb3e101cb8c08d604~mv2.jpg/v1/fill/w_613,h_460,fp_0.45_0.63,q_90,enc_avif,quality_auto/fc95b3_bd8f4b64f6f147adb3e101cb8c08d604~mv2.jpg",
      "credit_name": "Homer St. Cafe and Bar",
      "credit_url": "https://www.homerstreetcafebar.com/",
      "source": "official_website"
@@ -986,18 +980,6 @@
    },
    "photos": [
     {
-     "url": "https://www.chambar.com/media/DINNER_LO_Mussels_Scott%20Little%20IMG_1313.jpg",
-     "credit_name": "Chambar Belgian Restaurant",
-     "credit_url": "https://www.chambar.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.chambar.com/media/DINNER_LO_Halibut_Jlow_1H2A2525.jpg",
-     "credit_name": "Chambar Belgian Restaurant",
-     "credit_url": "https://www.chambar.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://www.chambar.com/media/1900x900/Homepage_2026_Tuna.png",
      "credit_name": "Chambar Belgian Restaurant",
      "credit_url": "https://www.chambar.com/",
@@ -1013,6 +995,18 @@
      "url": "https://www.chambar.com/media/999x999/2(0).jpg",
      "credit_name": "Chambar Belgian Restaurant",
      "credit_url": "https://www.chambar.com/about-us/philosophy/mission/mission",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.chambar.com/media/DINNER_LO_Mussels_Scott%20Little%20IMG_1313.jpg",
+     "credit_name": "Chambar Belgian Restaurant",
+     "credit_url": "https://www.chambar.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.chambar.com/media/DINNER_LO_Halibut_Jlow_1H2A2525.jpg",
+     "credit_name": "Chambar Belgian Restaurant",
+     "credit_url": "https://www.chambar.com/",
      "source": "official_website"
     }
    ],
@@ -1142,18 +1136,6 @@
    },
    "photos": [
     {
-     "url": "https://static.wixstatic.com/media/93f176_93e9b668ed06483ea0aa7ea600e78499~mv2.jpg/v1/fill/w_241,h_363,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC00622.jpg",
-     "credit_name": "D/6 Lounge",
-     "credit_url": "https://www.parqcasino.com/d-6-lounge",
-     "source": "official_website"
-    },
-    {
-     "url": "https://static.wixstatic.com/media/93f176_467f1b37761545eab5722a9f72709723~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/93f176_467f1b37761545eab5722a9f72709723~mv2.jpg",
-     "credit_name": "D/6 Lounge",
-     "credit_url": "https://www.parqcasino.com/d-6-lounge",
-     "source": "official_website"
-    },
-    {
      "url": "https://static.wixstatic.com/media/6eb957_3cffb9778ea447a9b5f63e56c535ec27~mv2.jpg/v1/fill/w_1440,h_671,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6eb957_3cffb9778ea447a9b5f63e56c535ec27~mv2.jpg",
      "credit_name": "D/6 Lounge",
      "credit_url": "https://www.parqcasino.com/group-bookings",
@@ -1167,6 +1149,18 @@
     },
     {
      "url": "https://static.wixstatic.com/media/6eb957_5b5dcf50a71248448a3a5d7b63c5a376~mv2.jpg/v1/fill/w_400,h_504,q_90,enc_avif,quality_auto/6eb957_5b5dcf50a71248448a3a5d7b63c5a376~mv2.jpg",
+     "credit_name": "D/6 Lounge",
+     "credit_url": "https://www.parqcasino.com/d-6-lounge",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/93f176_93e9b668ed06483ea0aa7ea600e78499~mv2.jpg/v1/fill/w_241,h_363,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC00622.jpg",
+     "credit_name": "D/6 Lounge",
+     "credit_url": "https://www.parqcasino.com/d-6-lounge",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/93f176_467f1b37761545eab5722a9f72709723~mv2.jpg/v1/fill/w_147,h_221,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/93f176_467f1b37761545eab5722a9f72709723~mv2.jpg",
      "credit_name": "D/6 Lounge",
      "credit_url": "https://www.parqcasino.com/d-6-lounge",
      "source": "official_website"
@@ -1300,18 +1294,6 @@
    },
    "photos": [
     {
-     "url": "https://images.squarespace-cdn.com/content/v1/5dc5cfa1f5318a3348ec2af7/1737403701670-I3UG0H7TWTKTE2QHUSUF/havana-vancouver-interior.jpeg",
-     "credit_name": "Havana Vancouver",
-     "credit_url": "https://www.havanavancouver.com/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/5dc5cfa1f5318a3348ec2af7/1723504679194-0M6M717KIKHFR89H14JV/sharing-with-friends-havana-vancouver.jpg",
-     "credit_name": "Havana Vancouver",
-     "credit_url": "https://www.havanavancouver.com/",
-     "source": "official_website"
-    },
-    {
      "url": "https://images.squarespace-cdn.com/content/v1/5dc5cfa1f5318a3348ec2af7/e8c440d3-286d-4428-ac80-235f04d806fb/Havana+2026-17+%281%29.jpg",
      "credit_name": "Havana",
      "credit_url": "https://www.havanavancouver.com/",
@@ -1327,6 +1309,12 @@
      "url": "https://images.squarespace-cdn.com/content/v1/5dc5cfa1f5318a3348ec2af7/1730487969362-YIGC63JRYZ7E90E1IZ8M/delicious-food-havana-vancouver.jpg",
      "credit_name": "Havana",
      "credit_url": "https://www.havanavancouver.com/reservations",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5dc5cfa1f5318a3348ec2af7/1737403701670-I3UG0H7TWTKTE2QHUSUF/havana-vancouver-interior.jpeg",
+     "credit_name": "Havana Vancouver",
+     "credit_url": "https://www.havanavancouver.com/",
      "source": "official_website"
     }
    ],
@@ -1603,18 +1591,6 @@
    },
    "photos": [
     {
-     "url": "https://www.glowbalgroup.com/img/glow-img/resto-gallery/img1.jpg",
-     "credit_name": "Glowbal",
-     "credit_url": "https://www.glowbalgroup.com/glowbal/",
-     "source": "official_website"
-    },
-    {
-     "url": "https://www.glowbalgroup.com/img/glow-img/food-gallery/img1.jpg",
-     "credit_name": "Glowbal",
-     "credit_url": "https://www.glowbalgroup.com/glowbal/",
-     "source": "official_website"
-    },
-    {
      "url": "https://glowbalgroup.com/holiday-events/photos/gallery/glowbal-1.jpg",
      "credit_name": "Glowbal",
      "credit_url": "https://glowbalgroup.com/holiday-events/vancouver/glowbal/",
@@ -1654,6 +1630,18 @@
      "url": "https://www.glowbalgroup.com/img/news-bg.jpg",
      "credit_name": "Glowbal",
      "credit_url": "https://www.glowbalgroup.com/news.html",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.glowbalgroup.com/img/glow-img/resto-gallery/img1.jpg",
+     "credit_name": "Glowbal",
+     "credit_url": "https://www.glowbalgroup.com/glowbal/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.glowbalgroup.com/img/glow-img/food-gallery/img1.jpg",
+     "credit_name": "Glowbal",
+     "credit_url": "https://www.glowbalgroup.com/glowbal/",
      "source": "official_website"
     }
    ],
@@ -55676,12 +55664,6 @@
     "weekday_text": []
    },
    "photos": [
-    {
-     "url": "https://static.wixstatic.com/media/9fcea2_9f033af051e54b0a817f77841a38c5f4~mv2.jpg/v1/fill/w_2500,h_1875,al_c/9fcea2_9f033af051e54b0a817f77841a38c5f4~mv2.jpg",
-     "credit_name": "Sapperton District Taphouse",
-     "credit_url": "https://www.sappertondistricttaphouse.com/",
-     "source": "official_website"
-    },
     {
      "url": "https://static.wixstatic.com/media/9fcea2_d360954c73824399af3b18074326204b~mv2.jpg/v1/fill/w_2223,h_1875,q_90,enc_avif,quality_auto/9fcea2_d360954c73824399af3b18074326204b~mv2.jpg",
      "credit_name": "Sapperton District Taphouse",

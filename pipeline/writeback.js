@@ -114,6 +114,13 @@ const DISCOVERED_DEFAULTS = {
 const places = readJson(PLACES_STORE, {});
 const placePhotos = readJson(PHOTOS_STORE, {});
 const sitePhotos = readJson(SITE_PHOTOS_STORE, {});
+// The same image at different sizes: Wix serves one media id through many
+// /v1/fill/... transforms, Squarespace through ?format=.
+function photoKey(url) {
+  const wix = /wixstatic\.com\/media\/([^/]+?~mv2\.\w+)/.exec(url);
+  if (wix) return wix[1];
+  return /squarespace-cdn\.com/.test(url) ? url.split("?")[0] : url;
+}
 
 /** Apply a fresh extraction to an already-stored discovered venue. These
  *  records are unverified, so a clean re-extraction updates their whole
@@ -269,8 +276,10 @@ let merged = loadSeed().map((v) => {
   // backfill or the gallery stands in.
   const drop = !swap && String(sp.cover_problem || "").startsWith("review:");
   const cover = swap ? official(sp.cover) : drop ? null : v.cover_image;
-  const seen = new Set([cover?.url]);
-  const photos = [...(v.photos || []), ...(swap ? [] : sp.cover ? [official(sp.cover)] : []), ...sp.gallery.map(official)].filter((p) => p?.url && !seen.has(p.url) && seen.add(p.url));
+  // Site photos lead (reviewed, biggest copy). One copy per image, even when
+  // the CDN serves it at several sizes, and nothing the review rejected.
+  const seen = new Set([cover?.url && photoKey(cover.url), ...(sp.review?.rejected || []).map((r) => photoKey(r.url))]);
+  const photos = [...(swap ? [] : sp.cover ? [official(sp.cover)] : []), ...sp.gallery.map(official), ...(v.photos || [])].filter((p) => p?.url && !seen.has(photoKey(p.url)) && seen.add(photoKey(p.url)));
   return { ...v, cover_image: cover, photos };
 }).map((v) => {
   // Places photo backfill (pipeline/places-photos.js): only for venues whose

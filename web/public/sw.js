@@ -3,8 +3,11 @@
 //   assets/*   cache first (file names are content-hashed)
 //   venues     stale-while-revalidate, so the list opens instantly offline
 //              (?fresh=… skips it: the app's retry when the cached copy is an older shape)
-//   photos     cache first
-const CACHE = "alh-v1";
+//   photos/g/* cache first (file names are content-hashed)
+//   photos/*   stale-while-revalidate: a cover keeps its name (photos/<id>.webp)
+//              when the photo behind it changes, so the cached copy refreshes
+// v2 drops the v1 cache, which held covers cache-first and never refreshed them.
+const CACHE = "alh-v2";
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -35,8 +38,10 @@ self.addEventListener("fetch", (event) => {
 
   if (req.mode === "navigate") {
     event.respondWith(networkFirst(req, "./"));
-  } else if (url.pathname.includes("/assets/") || url.pathname.includes("/photos/")) {
+  } else if (url.pathname.includes("/assets/") || url.pathname.includes("/photos/g/")) {
     event.respondWith(cacheFirst(req));
+  } else if (url.pathname.includes("/photos/")) {
+    event.respondWith(staleWhileRevalidate(req, event));
   } else if (url.pathname.endsWith("/venues.json") && !url.searchParams.has("fresh")) {
     event.respondWith(staleWhileRevalidate(req, event));
   }
