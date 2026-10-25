@@ -159,7 +159,8 @@ export function Home({ panel = null }: { panel?: string | null }) {
         Skip to spots
       </a>
       <header className="sticky top-0 z-20 bg-ink/90 pt-safe backdrop-blur-xl">
-        <h1 className="sr-only">Happy hours in Vancouver</h1>
+        {/* The open venue's name is the page heading while the panel shows it. */}
+        {panel ? <h2 className="sr-only">Happy hours in Vancouver</h2> : <h1 className="sr-only">Happy hours in Vancouver</h1>}
         <div className="flex items-center justify-between px-4 pt-3 pb-2">
           <Link to="/welcome" aria-label="A Little Hang" className="grid min-h-11 min-w-11 place-items-center">
             <Wordmark className="h-10 text-cream" />
