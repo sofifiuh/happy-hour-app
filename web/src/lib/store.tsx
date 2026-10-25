@@ -332,19 +332,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       out.push({ venue, occ, km });
     }
     const rank = { live: 0, scheduled: 0, upcoming: 1, none: 2 } as const;
-    // Times compare in 30-minute buckets so a spot nearby beats one across
-    // town that starts or ends a few minutes sooner.
-    const bucket = (d: Date | null | undefined) => (d ? Math.floor(d.getTime() / 1_800_000) : 0);
+    // Nearest first within each status group, so the list reads as a walk
+    // down the street rather than a zigzag across town. "location" is the
+    // device fix, else the picked neighbourhood, else Downtown.
     out.sort((a, b) => {
       if (rank[a.occ.status] !== rank[b.occ.status]) return rank[a.occ.status] - rank[b.occ.status];
-      // Further than 10 km sinks below everything closer in the same group.
-      const far = Number((a.km ?? 0) > 10) - Number((b.km ?? 0) > 10);
-      if (far) return far;
-      // Happening now: least time left first. Upcoming: soonest first. Then nearest.
-      if (a.occ.status === "live" && bucket(a.occ.end) !== bucket(b.occ.end)) return bucket(a.occ.end) - bucket(b.occ.end);
-      if (a.occ.status === "upcoming" && bucket(a.occ.start) !== bucket(b.occ.start)) return bucket(a.occ.start) - bucket(b.occ.start);
-      if (a.km != null && b.km != null && Math.abs(a.km - b.km) > 0.05) return a.km - b.km;
-      return a.venue.name.localeCompare(b.venue.name);
+      // Spots without coordinates go last.
+      return (a.km ?? 1e9) - (b.km ?? 1e9) || a.venue.name.localeCompare(b.venue.name);
     });
     return out;
   }, [venues, filters, now, location]);

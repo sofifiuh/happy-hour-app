@@ -28,7 +28,7 @@ export function Saved() {
         occ: occurrence(venue, now),
         km: location && venue.lat != null && venue.lng != null ? distanceKm(location, { lat: venue.lat, lng: venue.lng }) : null,
       }))
-      .sort((a, b) => rank[a.occ.status] - rank[b.occ.status]);
+      .sort((a, b) => rank[a.occ.status] - rank[b.occ.status] || (a.km ?? 1e9) - (b.km ?? 1e9));
   }, [saved, byId, now, location]);
 
   return (
