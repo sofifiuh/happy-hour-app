@@ -4,7 +4,9 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import * as e from "../src/email.ts";
 
-const emails = e.samples("https://alittlehang.com", "https://api.alittlehang.com");
+// A venue with a banner in web/public/photos/email, when photos have been synced.
+const real = { id: "the-chickadee-room", name: "The Chickadee Room", address: "182 Keefer St, Vancouver, BC", photo: "photos/the-chickadee-room.webp" };
+const emails = e.samples("https://alittlehang.com", "https://api.alittlehang.com", real);
 
 const out = process.argv[2] ?? "email-preview";
 mkdirSync(out, { recursive: true });

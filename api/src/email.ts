@@ -1,12 +1,15 @@
-// Every email the Worker sends, built on one branded layout. Each template
-// returns the subject plus an HTML and a plain-text body.
+// Every email the Worker sends, built on one layout that matches the claim
+// page: the venue's photo with an owner's stamp, a card with one big
+// button, and icon rows for what to do next. Each template returns the
+// subject plus an HTML and a plain-text body.
 //
 // The HTML is written for email clients, not browsers: tables for layout,
-// inline styles, no SVG (Gmail drops it), and a dark mode that Apple Mail,
-// iOS Mail and Outlook.com pick up from the classes in <style>. Clients
-// that ignore <style> still get the light version. The header band is
-// always ink with an opaque logo image, so it survives Gmail's forced
-// dark mode too. Colours are the brand tokens in web/src/index.css.
+// inline styles, PNG images (Gmail drops SVG; they're drawn by
+// scripts/email-assets.mjs into web/public/email/), and a dark mode that
+// Apple Mail, iOS Mail and Outlook.com pick up from the classes in <style>.
+// Clients that ignore <style> get the light version. The hero is always
+// dark, so it survives Gmail's forced dark mode too. Colours are the brand
+// tokens in web/src/index.css.
 //
 // This file has no runtime imports, so `node scripts/email-preview.ts`
 // can render every template without the Worker.
@@ -22,19 +25,36 @@ interface Link {
   href: string;
 }
 
+interface Hero {
+  chip: string; // the label in the pill, e.g. "Official owner"
+  chipIcon: string; // a white icon in web/public/email/chip-*.png
+  name: string; // the venue's name, big
+  sub?: string; // its address
+  photo?: string | null; // banner image, 1120x480
+  tint?: number; // which warm gradient when there's no photo
+  stamp?: "owner" | "claim";
+}
+
+interface Row {
+  icon: string; // web/public/email/icon-*.png
+  title: string;
+  body: string;
+}
+
 interface Layout {
   site: string;
   preheader: string;
-  kicker: string; // the small label in the header band
+  hero: Hero;
   title: string;
   paragraphs: string[];
   quote?: string; // something a person wrote, shown as a panel
   details?: [string, string][]; // label / value rows
-  perks?: [string, string][]; // title / line, with pop-colour markers
   cta?: Link;
   secondary?: Link;
   showLink?: boolean; // print the button's URL under it
-  note?: string; // small print under the buttons
+  note?: string; // small print at the bottom of the card
+  rowsLabel?: string;
+  rows?: Row[];
   reason: string; // footer: why this email came
 }
 
@@ -48,84 +68,132 @@ const C = {
   text: "#1b1b1b",
   dim: "#625c53",
   link: "#bd3600",
+  tint: "#ffe3d6", // orange at ~15% on the card, behind icons
   ink: "#1b1b1b",
   cream: "#f3efe4",
-  creamDim: "#a7a196",
   orange: "#ff4900",
-  pops: ["#ff4900", "#ffb530", "#ecfe54", "#f7b2b7", "#bfdbe6"],
 };
-const DARK = { page: "#121212", card: "#242322", panel: "#2f2d2b", line: "#3a3835", text: "#f3efe4", dim: "#a7a196", link: "#ff7a45" };
+const DARK = { page: "#1b1b1b", card: "#242322", panel: "#2f2d2b", line: "#3a3835", text: "#f3efe4", dim: "#a7a196", link: "#ff7a45", tint: "#3d2519" };
+
+// The venue page's warm fallbacks for spots without a photo, darkened at the
+// bottom so the name stays readable. [top, bottom]
+const TINTS: [string, string][] = [
+  ["#ff4900", "#751927"],
+  ["#ffb530", "#8a2a0b"],
+  ["#f7b2b7", "#6b3d3a"],
+  ["#ff6237", "#2f2d2b"],
+];
 
 const SANS = "'Funnel Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif";
 const DISPLAY = "'Funnel Display','Funnel Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif";
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
+// Keep the last two words together so a headline never ends on one word.
+const noWidow = (s: string) => esc(s).replace(/ (\S+)$/, "&nbsp;$1");
 
 function button(link: Link, primary: boolean) {
   const style = primary
     ? `background:${C.orange};color:${C.ink};border:2px solid ${C.orange}`
     : `background:transparent;color:${C.text};border:2px solid #b9ae9a`;
+  const label = primary ? `${esc(link.label)}&nbsp;&nbsp;&rarr;` : esc(link.label);
   // The <i> spacers give Outlook for Windows the padding it ignores on <a>.
-  return `<a href="${esc(link.href)}" class="${primary ? "btn" : "btn2 t-main bd"}" style="${style};display:inline-block;border-radius:999px;padding:14px 26px;font-family:${SANS};font-size:16px;line-height:20px;font-weight:600;text-decoration:none;mso-padding-alt:0;text-align:center"><!--[if mso]><i style="mso-font-width:130%;mso-text-raise:28px" hidden>&#8202;&#8202;&#8202;</i><![endif]--><span style="mso-text-raise:14px">${esc(link.label)}</span><!--[if mso]><i style="mso-font-width:130%" hidden>&#8202;&#8202;&#8202;&#8203;</i><![endif]--></a>`;
+  return `<a href="${esc(link.href)}" class="${primary ? "btn" : "btn2 t-main"}" style="${style};display:block;border-radius:999px;padding:16px 24px;font-family:${SANS};font-size:17px;line-height:22px;font-weight:600;text-decoration:none;text-align:center;mso-padding-alt:0"><!--[if mso]><i style="mso-font-width:150%;mso-text-raise:30px" hidden>&#8202;&#8202;</i><![endif]--><span style="mso-text-raise:15px">${label}</span><!--[if mso]><i style="mso-font-width:150%" hidden>&#8202;&#8202;&#8203;</i><![endif]--></a>`;
+}
+
+function hero(l: Layout) {
+  const h = l.hero;
+  const [top, bottom] = TINTS[(h.tint ?? 0) % TINTS.length];
+  const img = (file: string, w: number, alt = "") =>
+    `<img src="${esc(l.site)}/email/${file}" width="${w}" height="${w}" alt="${alt}" style="display:block;width:${w}px;height:${w}px;border:0">`;
+  // With a photo, the text sits on it like the claim page: the banner has
+  // the dark fade baked in, and Outlook for Windows gets it through VML.
+  const bg = h.photo
+    ? `background-color:${C.ink};background-image:url('${esc(h.photo)}');background-size:cover;background-position:center`
+    : `background-color:${bottom};background-image:linear-gradient(180deg,rgba(0,0,0,0.1),rgba(0,0,0,0.6)),linear-gradient(160deg,${top} 0%,${bottom} 100%)`;
+  const inner = `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+        <td valign="top">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+            <td style="background:#3a3330;background:rgba(0,0,0,0.45);border-radius:999px;padding:7px 14px 7px 11px">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+                <td valign="middle" style="padding-right:7px">${img(`chip-${h.chipIcon}.png`, 14)}</td>
+                <td valign="middle" style="font-family:${SANS};font-size:12px;line-height:16px;font-weight:600;color:#ffffff;white-space:nowrap">${esc(h.chip)}</td>
+              </tr></table>
+            </td>
+          </tr></table>
+        </td>
+        ${h.stamp ? `<td valign="top" align="right" width="92" style="width:92px">${img(`stamp-${h.stamp}.png`, 92, h.stamp === "owner" ? "Official owner" : "")}</td>` : ""}
+      </tr></table>
+      <h1 class="h1" style="margin:${h.photo ? 96 : h.stamp ? 24 : 72}px 0 0;font-family:${DISPLAY};font-size:36px;line-height:38px;font-weight:800;letter-spacing:-0.8px;color:#ffffff">${noWidow(h.name)}</h1>
+      ${h.sub ? `<p style="margin:8px 0 0;font-family:${SANS};font-size:15px;line-height:20px;color:#e9e4da">${esc(h.sub)}</p>` : ""}`;
+  return `<tr><td style="padding:0 0 16px">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate">
+    <tr><td class="pad hero" bgcolor="${h.photo ? C.ink : bottom}" ${h.photo ? `background="${esc(h.photo)}" ` : ""}style="${bg};border-radius:28px;padding:20px 26px 26px">
+      ${
+        h.photo
+          ? `<!--[if gte mso 9]><v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:560px;height:320px"><v:fill type="frame" src="${esc(h.photo)}" color="${C.ink}"/><v:textbox inset="20px,20px,26px,26px" style="mso-fit-shape-to-text:true"><![endif]--><div>${inner}</div><!--[if gte mso 9]></v:textbox></v:rect><![endif]-->`
+          : inner
+      }
+    </td></tr>
+  </table>
+</td></tr>`;
 }
 
 function html(l: Layout) {
-  const p = (s: string, extra = "") =>
-    `<p class="t-main" style="margin:0 0 16px;font-family:${SANS};font-size:16px;line-height:26px;color:${C.text}${extra}">${esc(s)}</p>`;
-  const pops = C.pops.map((c) => `<td width="20%" height="4" style="background:${c};font-size:0;line-height:0">&nbsp;</td>`).join("");
+  const p = (s: string) =>
+    `<p class="t-dim" style="margin:0 0 14px;font-family:${SANS};font-size:16px;line-height:25px;color:${C.dim}">${esc(s)}</p>`;
 
   const quote = l.quote
-    ? `<tr><td style="padding:4px 0 20px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    ? `<tr><td style="padding:6px 0 18px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
         <td width="4" style="background:${C.orange};border-radius:4px;font-size:0;line-height:0">&nbsp;</td>
-        <td class="bg-panel t-main" style="background:${C.panel};border-radius:0 12px 12px 0;padding:16px 18px;font-family:${SANS};font-size:16px;line-height:24px;color:${C.text}">${esc(l.quote).replace(/\n/g, "<br>")}</td>
+        <td class="bg-panel t-main" align="left" style="background:${C.panel};border-radius:0 14px 14px 0;padding:16px 18px;font-family:${SANS};font-size:16px;line-height:24px;color:${C.text}">${esc(l.quote).replace(/\n/g, "<br>")}</td>
       </tr></table></td></tr>`
     : "";
 
   const details = l.details?.length
-    ? `<tr><td style="padding:4px 0 24px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-panel" style="background:${C.panel};border-radius:14px">
+    ? `<tr><td style="padding:6px 0 22px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-panel" style="background:${C.panel};border-radius:16px;border-collapse:separate">
         ${l.details
           .map(
             ([k, v], i) => `<tr>
-          <td class="t-dim${i ? " bd" : ""}" valign="top" style="padding:12px 0 12px 18px;${i ? `border-top:1px solid ${C.line};` : ""}font-family:${SANS};font-size:13px;line-height:20px;color:${C.dim};white-space:nowrap;width:30%">${esc(k)}</td>
-          <td class="t-main${i ? " bd" : ""}" valign="top" style="padding:12px 18px 12px 12px;${i ? `border-top:1px solid ${C.line};` : ""}font-family:${SANS};font-size:15px;line-height:20px;color:${C.text};font-weight:500;word-break:break-word">${esc(v)}</td>
+          <td class="t-dim${i ? " bd" : ""}" align="left" valign="top" style="padding:12px 0 12px 18px;${i ? `border-top:1px solid ${C.line};` : ""}font-family:${SANS};font-size:13px;line-height:20px;color:${C.dim};white-space:nowrap;width:30%">${esc(k)}</td>
+          <td class="t-main${i ? " bd" : ""}" align="left" valign="top" style="padding:12px 18px 12px 12px;${i ? `border-top:1px solid ${C.line};` : ""}font-family:${SANS};font-size:15px;line-height:20px;color:${C.text};font-weight:500;word-break:break-word">${esc(v)}</td>
         </tr>`,
           )
           .join("")}
       </table></td></tr>`
     : "";
 
-  const perks = l.perks?.length
-    ? `<tr><td style="padding:4px 0 20px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-        ${l.perks
-          .map(
-            ([t, s], i) => `<tr>
-          <td width="28" valign="top" style="padding:5px 0 14px"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="12" height="12" style="background:${[C.pops[0], C.pops[1], C.pops[3]][i % 3]};border-radius:12px;font-size:0;line-height:0">&nbsp;</td></tr></table></td>
-          <td valign="top" style="padding:0 0 14px;font-family:${SANS};font-size:15px;line-height:22px">
-            <span class="t-main" style="color:${C.text};font-weight:600">${esc(t)}</span><br>
-            <span class="t-dim" style="color:${C.dim}">${esc(s)}</span>
-          </td>
-        </tr>`,
-          )
-          .join("")}
-      </table></td></tr>`
-    : "";
-
-  const buttons =
-    l.cta || l.secondary
-      ? `<tr><td style="padding:8px 0 8px">
-        ${l.cta ? `<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="stack" style="display:inline-table;margin:0 8px 8px 0"><tr><td>${button(l.cta, true)}</td></tr></table>` : ""}
-        ${l.secondary ? `<table role="presentation" cellpadding="0" cellspacing="0" border="0" class="stack" style="display:inline-table;margin:0 0 8px 0"><tr><td>${button(l.secondary, false)}</td></tr></table>` : ""}
-      </td></tr>`
-      : "";
+  const buttons = [l.cta && button(l.cta, true), l.secondary && button(l.secondary, false)]
+    .filter(Boolean)
+    .map((b) => `<tr><td style="padding:6px 0 4px">${b}</td></tr>`)
+    .join("");
 
   const showLink =
     l.showLink && l.cta
-      ? `<tr><td class="t-dim" style="padding:8px 0 0;font-family:${SANS};font-size:13px;line-height:20px;color:${C.dim}">Button not working? Paste this into your browser:<br><a href="${esc(l.cta.href)}" class="t-link" style="color:${C.link};word-break:break-all;text-decoration:underline">${esc(l.cta.href)}</a></td></tr>`
+      ? `<tr><td class="t-dim" style="padding:14px 0 0;font-family:${SANS};font-size:13px;line-height:20px;color:${C.dim}">Button not working? Paste this into your browser:<br><a href="${esc(l.cta.href)}" class="t-link" style="color:${C.link};word-break:break-all;text-decoration:underline">${esc(l.cta.href)}</a></td></tr>`
       : "";
 
   const note = l.note
-    ? `<tr><td style="padding:20px 0 0"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="bd" style="border-top:1px solid ${C.line};font-size:0;line-height:0">&nbsp;</td></tr></table></td></tr>
+    ? `<tr><td style="padding:22px 0 0"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td class="bd" style="border-top:1px solid ${C.line};font-size:0;line-height:0">&nbsp;</td></tr></table></td></tr>
        <tr><td class="t-dim" style="padding:16px 0 0;font-family:${SANS};font-size:14px;line-height:22px;color:${C.dim}">${esc(l.note)}</td></tr>`
+    : "";
+
+  const rows = l.rows?.length
+    ? `<tr><td style="padding:12px 0 0">
+        ${l.rowsLabel ? `<p class="t-dim" style="margin:0 0 10px;padding:0 4px;font-family:${SANS};font-size:13px;line-height:18px;font-weight:600;color:${C.dim}">${esc(l.rowsLabel)}</p>` : ""}
+        ${l.rows
+          .map(
+            (r) => `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-card card" style="background:${C.card};border:1px solid ${C.line};border-radius:20px;border-collapse:separate;margin:0 0 10px"><tr>
+          <td width="44" valign="middle" style="padding:16px 0 16px 16px;width:44px">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td class="bg-tint" width="44" height="44" align="center" valign="middle" style="background:${C.tint};border-radius:44px;width:44px;height:44px"><img src="${esc(l.site)}/email/icon-${r.icon}.png" width="22" height="22" alt="" style="display:block;width:22px;height:22px;border:0;margin:0 auto"></td></tr></table>
+          </td>
+          <td valign="middle" style="padding:16px 18px 16px 14px;font-family:${SANS};font-size:15px;line-height:21px">
+            <span class="t-main" style="color:${C.text};font-weight:600">${esc(r.title)}</span><br>
+            <span class="t-dim" style="color:${C.dim}">${esc(r.body)}</span>
+          </td>
+        </tr></table>`,
+          )
+          .join("")}
+      </td></tr>`
     : "";
 
   const host = l.site.replace(/^https?:\/\//, "");
@@ -151,21 +219,22 @@ img{border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic}
 a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !important}
 .btn:hover{background:#ff6a2e !important;border-color:#ff6a2e !important}
 @media (max-width:620px){
-  .wrap{padding:16px 10px 32px !important}
-  .pad{padding-left:24px !important;padding-right:24px !important}
-  .h1{font-size:28px !important;line-height:34px !important}
-  .stack{display:table !important;width:100% !important;margin:0 0 10px 0 !important}
-  .stack a{display:block !important}
+  .wrap{padding:16px 12px 32px !important}
+  .pad{padding-left:22px !important;padding-right:22px !important}
+  .h1{font-size:30px !important;line-height:32px !important}
+  .hero{padding:16px 18px 22px !important}
+  .h2{font-size:24px !important;line-height:29px !important}
 }
 @media (prefers-color-scheme:dark){
   .bg-page{background:${DARK.page} !important}
   .bg-card{background:${DARK.card} !important}
   .bg-panel{background:${DARK.panel} !important}
+  .bg-tint{background:${DARK.tint} !important}
   .t-main{color:${DARK.text} !important}
   .t-dim{color:${DARK.dim} !important}
   .t-link{color:${DARK.link} !important}
   .bd{border-color:${DARK.line} !important}
-  .card{border-color:${DARK.line} !important}
+  .card{border-color:${DARK.card} !important}
   .btn2{border-color:#6a645a !important}
 }
 [data-ogsc] .t-main{color:${DARK.text} !important}
@@ -174,34 +243,34 @@ a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !importa
 [data-ogsb] .bg-page{background:${DARK.page} !important}
 [data-ogsb] .bg-card{background:${DARK.card} !important}
 [data-ogsb] .bg-panel{background:${DARK.panel} !important}
+[data-ogsb] .bg-tint{background:${DARK.tint} !important}
 </style>
 </head>
 <body class="bg-page" style="margin:0;padding:0;background:${C.page};word-spacing:normal">
-<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:${C.page};opacity:0">${esc(l.preheader)}${"&#847;&zwnj;&nbsp;".repeat(60)}</div>
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:${C.page};opacity:0">${esc(l.preheader)}${"&#847;&zwnj;&nbsp;".repeat(40)}</div>
 <div role="article" aria-roledescription="email" aria-label="${esc(l.title)}" lang="en">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-page" style="background:${C.page}">
-<tr><td align="center" class="wrap" style="padding:40px 16px 48px">
+<tr><td align="center" class="wrap" style="padding:32px 16px 48px">
 <!--[if mso]><table role="presentation" width="560" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:560px;margin:0 auto">
 
+<tr><td style="padding:0 4px 16px"><a href="${esc(l.site)}" style="text-decoration:none"><img src="${esc(l.site)}/email/logo.png" width="44" height="42" alt="A Little Hang" style="display:block;width:44px;height:42px;border-radius:10px;color:${C.text};font-family:${DISPLAY};font-size:11px;line-height:13px;font-weight:700"></a></td></tr>
+
+${hero(l)}
+
 <tr><td>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="card bg-card" style="background:${C.card};border:1px solid ${C.line};border-radius:24px;border-collapse:separate;mso-border-alt:none">
-    <tr><td class="pad hero" style="background:${C.ink};border-radius:23px 23px 0 0;padding:28px 40px 36px">
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-        <td valign="top"><a href="${esc(l.site)}" style="text-decoration:none"><img src="${esc(l.site)}/email/logo.png" width="56" height="54" alt="A Little Hang" style="display:block;width:56px;height:54px;color:${C.cream};font-family:${DISPLAY};font-size:11px;line-height:13px;font-weight:700"></a></td>
-        <td valign="top" align="right" style="padding-top:4px;font-family:${SANS};font-size:12px;line-height:16px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:${C.cream};white-space:nowrap"><span style="color:${C.pops[2]};font-size:14px">&#9679;</span>&nbsp; ${esc(l.kicker)}</td>
-      </tr></table>
-      <h1 class="h1" style="margin:36px 0 0;font-family:${DISPLAY};font-size:34px;line-height:40px;font-weight:800;letter-spacing:-0.7px;color:${C.cream}">${esc(l.title).replace(/ (\S+)$/, "&nbsp;$1")}</h1>
-    </td></tr>
-    <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>${pops}</tr></table></td></tr>
-    <tr><td class="pad" style="padding:32px 40px 36px">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="card bg-card" style="background:${C.card};border:1px solid ${C.line};border-radius:24px;border-collapse:separate">
+    <tr><td class="pad" align="center" style="padding:32px 32px 30px;text-align:center">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr><td>${l.paragraphs.map((s) => p(s)).join("")}</td></tr>
-        ${quote}${details}${perks}${buttons}${showLink}${note}
+        <tr><td align="center" style="padding:0 0 12px"><h2 class="h2 t-main" style="margin:0;font-family:${DISPLAY};font-size:27px;line-height:32px;font-weight:800;letter-spacing:-0.5px;color:${C.text}">${noWidow(l.title)}</h2></td></tr>
+        <tr><td align="center">${l.paragraphs.map(p).join("")}</td></tr>
+        ${quote}${details}${buttons}${showLink}${note}
       </table>
     </td></tr>
   </table>
 </td></tr>
+
+${rows}
 
 <tr><td align="center" style="padding:28px 24px 0">
   <p class="t-main" style="margin:0 0 6px;font-family:${DISPLAY};font-size:15px;line-height:20px;font-weight:700;color:${C.text}">A Little Hang</p>
@@ -227,10 +296,10 @@ function text(l: Layout) {
   const out = [l.title, "", ...l.paragraphs.flatMap((s) => [s, ""])];
   if (l.quote) out.push(...l.quote.split("\n").map((s) => `> ${s}`), "");
   if (l.details) out.push(...l.details.map(([k, v]) => `${k}: ${v}`), "");
-  if (l.perks) out.push(...l.perks.map(([t, s]) => `- ${t}: ${s}`), "");
   if (l.cta) out.push(`${l.cta.label}:`, l.cta.href, "");
   if (l.secondary) out.push(`${l.secondary.label}:`, l.secondary.href, "");
   if (l.note) out.push(l.note, "");
+  if (l.rows) out.push(...(l.rowsLabel ? [l.rowsLabel] : []), ...l.rows.map((r) => `- ${r.title}: ${r.body}`), "");
   out.push("--", "A Little Hang", "Happy hours near you, right now.", l.site.replace(/^https?:\/\//, ""), "", l.reason, `Help: ${SUPPORT_EMAIL}`);
   return out.join("\n");
 }
@@ -239,19 +308,39 @@ const build = (subject: string, l: Layout): Email => ({ subject, html: html(l), 
 
 // ---------- The emails ----------
 
-interface Venue {
+export interface Venue {
   id: string;
   name: string;
   address: string;
+  // From the site's venues.json: "photos/<id>.webp" when the site has its
+  // own copy, which also means a JPEG banner at photos/email/<id>.jpg.
+  photo?: string | null;
 }
+
+// The venue's own photo when the site has one, else a warm gradient.
+function venueHero(site: string, v: Venue, h: Omit<Hero, "name" | "sub" | "photo" | "tint">): Hero {
+  return {
+    ...h,
+    name: v.name,
+    sub: v.address,
+    photo: v.photo?.startsWith("photos/") ? `${site}/photos/email/${encodeURIComponent(v.id)}.jpg` : null,
+    tint: [...v.id].reduce((a, c) => a + c.charCodeAt(0), 0),
+  };
+}
+
+const WINS: Row[] = [
+  { icon: "clock", title: "Check your happy hour times", body: "Guests plan around them, so make them exact." },
+  { icon: "sparkles", title: "Add this week's deals", body: "Prices and specials are what people tap for." },
+  { icon: "image-plus", title: "Upload your best photo", body: "Your own shot leads your listing." },
+];
 
 export function signInEmail(site: string, link: string, minutes: number) {
   return build("Your A Little Hang sign-in link", {
     site,
     preheader: `Tap to sign in. The link works once and expires in ${minutes} minutes.`,
-    kicker: "Sign in",
-    title: "Here's your sign-in link",
-    paragraphs: [`Tap the button to sign in to A Little Hang. The link works once and expires in ${minutes} minutes.`],
+    hero: { chip: "Sign in", chipIcon: "key-round", name: "Your sign-in link is here", sub: `Works once, for ${minutes} minutes`, tint: 0 },
+    title: "Tap to sign in",
+    paragraphs: ["One tap and you're in. No password to remember."],
     cta: { label: "Sign in to A Little Hang", href: link },
     showLink: true,
     note: "Didn't ask for this? You can safely ignore this email. Nobody can sign in without the link.",
@@ -263,19 +352,19 @@ export function claimReceivedEmail(site: string, o: { name: string; role: string
   return build(`We got your claim for ${o.venue.name}`, {
     site,
     preheader: "We check every claim by hand and will email you as soon as it's done.",
-    kicker: "Claim received",
+    hero: venueHero(site, o.venue, { chip: "Claim received", chipIcon: "store", stamp: "claim" }),
     title: `Thanks, ${o.name}. We're on it.`,
     paragraphs: [
-      `We got your claim for ${o.venue.name}. A real person checks every claim, usually by calling the venue's listed number, so nobody can take over a listing that isn't theirs.`,
-      "We'll email you as soon as it's done.",
-    ],
-    details: [
-      ["Venue", o.venue.name],
-      ["Address", o.venue.address],
-      ["Your role", o.role],
+      "A real person checks every claim, so nobody can take over a listing that isn't theirs. We'll email you as soon as it's done.",
     ],
     cta: { label: "View your claim", href: `${site}/venue/claim/${o.venue.id}` },
     note: `Want it faster? Email a photo of your liquor licence to ${SUPPORT_EMAIL} and we can approve it without a call.`,
+    rowsLabel: "What happens next",
+    rows: [
+      { icon: "phone", title: "We call the venue", body: `Usually the listed number, to confirm you're the ${o.role.toLowerCase()}.` },
+      { icon: "badge-check", title: "You get the keys", body: "We email you the moment it's approved." },
+      { icon: "pencil-line", title: "Make it yours", body: "Fix times, deals and photos yourself, any time." },
+    ],
     reason: `You're getting this because you asked to manage ${o.venue.name} on A Little Hang.`,
   });
 }
@@ -284,16 +373,15 @@ export function claimApprovedEmail(site: string, o: { name: string; venue: Venue
   return build(`You now manage ${o.venue.name} on A Little Hang`, {
     site,
     preheader: "Update your happy hour times, deals and photos any time.",
-    kicker: "Claim approved",
-    title: `${o.venue.name} is yours`,
-    paragraphs: [`You're all set, ${o.name}. Your listing now has an official owner, and changes you make show on the site within a few minutes.`],
-    perks: [
-      ["Keep your times right", "Happy hour days, times and deals, straight from you."],
-      ["Show it off", "Add your own photos and tags so guests know the vibe."],
-      ["See what's working", "How many people view, save, call and get directions."],
+    hero: venueHero(site, o.venue, { chip: "Official owner", chipIcon: "store", stamp: "owner" }),
+    title: `You run ${o.venue.name} on A Little Hang`,
+    paragraphs: [
+      `You're all set, ${o.name}. Your listing now carries an Updated by the venue badge, and changes show on the site within a few minutes.`,
     ],
-    cta: { label: "Edit your listing", href: `${site}/venue/${o.venue.id}` },
+    cta: { label: "Make it yours", href: `${site}/venue/${o.venue.id}` },
     note: "Every couple of months we'll send a quick reminder to check your times. One tap if nothing changed.",
+    rowsLabel: "Three quick wins",
+    rows: WINS,
     reason: `You're getting this because you manage ${o.venue.name} on A Little Hang.`,
   });
 }
@@ -302,7 +390,7 @@ export function claimRejectedEmail(site: string, o: { name: string; venue: Venue
   return build(`About your claim for ${o.venue.name}`, {
     site,
     preheader: "Send us one thing that shows you run it and we'll take another look.",
-    kicker: "Claim update",
+    hero: venueHero(site, o.venue, { chip: "Claim update", chipIcon: "store", stamp: "claim" }),
     title: "We couldn't confirm it yet",
     paragraphs: [`Hi ${o.name}, we weren't able to confirm that you manage ${o.venue.name}.`],
     quote: o.note ?? undefined,
@@ -319,18 +407,17 @@ export function adminClaimEmail(
   return build(`${o.auto ? "Claimed" : "Claim to review"}: ${o.venue.name}`, {
     site,
     preheader: `${o.name} (${o.role}) ${o.auto ? "claimed" : "wants to claim"} ${o.venue.name}.`,
-    kicker: o.auto ? "Auto-approved" : "Needs review",
-    title: o.auto ? `${o.venue.name} was claimed` : `${o.venue.name} needs a look`,
+    hero: venueHero(site, o.venue, o.auto ? { chip: "Auto-approved", chipIcon: "badge-check", stamp: "owner" } : { chip: "Needs review", chipIcon: "store", stamp: "claim" }),
+    title: o.auto ? "Claimed and approved" : "A claim to review",
     paragraphs: [
       o.auto
-        ? `${o.name} claimed ${o.venue.name}. Approved automatically: their email matches the venue's website.`
-        : `${o.name} asked to claim ${o.venue.name}. Call the listed number or check their licence, then approve or reject.`,
+        ? `${o.name} claimed it. Approved automatically: their email matches the venue's website.`
+        : `${o.name} asked to claim it. Call the listed number or check their licence, then approve or reject.`,
     ],
     details: [
       ["Name", `${o.name}, ${o.role}`],
       ["Email", o.email],
       ...(o.phone ? ([["Their phone", o.phone]] as [string, string][]) : []),
-      ["Venue", `${o.venue.name}, ${o.venue.address}`],
       ["Listed phone", o.venue.phone ?? "None"],
       ["Website", o.venue.website ?? "None"],
     ],
@@ -343,14 +430,11 @@ export function adminReportEmail(site: string, o: { venue: Venue; message: strin
   return build(`Report: ${o.venue.name}`, {
     site,
     preheader: o.message.slice(0, 120),
-    kicker: "Guest report",
-    title: `Report on ${o.venue.name}`,
-    paragraphs: ["Someone reported a problem with this listing:"],
+    hero: venueHero(site, o.venue, { chip: "Guest report", chipIcon: "flag" }),
+    title: "A guest reported a problem",
+    paragraphs: ["Here's what they said:"],
     quote: o.message,
-    details: [
-      ["Venue", `${o.venue.name}, ${o.venue.address}`],
-      ["Reply to", o.email ?? "They didn't leave an email"],
-    ],
+    details: [["Reply to", o.email ?? "They didn't leave an email"]],
     cta: { label: "Open the review queue", href: `${site}/venue/admin` },
     reason: "You're getting this because you're an admin on A Little Hang.",
   });
@@ -360,9 +444,9 @@ export function ownerReportEmail(site: string, o: { venue: Venue; message: strin
   return build(`A guest flagged your listing: ${o.venue.name}`, {
     site,
     preheader: o.message.slice(0, 120),
-    kicker: "Guest report",
+    hero: venueHero(site, o.venue, { chip: "Guest report", chipIcon: "flag", stamp: "owner" }),
     title: "A guest flagged your listing",
-    paragraphs: [`Someone looking at ${o.venue.name} on A Little Hang thinks something's off:`],
+    paragraphs: ["Someone looking at your spot on A Little Hang thinks something's off:"],
     quote: o.message,
     cta: { label: "Update your listing", href: `${site}/venue/${o.venue.id}` },
     note: "If everything's already right, there's nothing to do. Guests trust listings that are kept fresh.",
@@ -376,8 +460,8 @@ export function monthlyCheckEmail(site: string, o: { venue: Venue; month: string
   return build(`Is the happy hour at ${o.venue.name} still right?`, {
     site,
     preheader: "Ten seconds, one tap. Guests trust A Little Hang because the times are right.",
-    kicker: `${monthName} check-in`,
-    title: `Is the happy hour at ${o.venue.name} still right?`,
+    hero: venueHero(site, o.venue, { chip: `${monthName} check-in`, chipIcon: "calendar-check", stamp: "owner" }),
+    title: "Is your happy hour still right?",
     paragraphs: [
       "Guests trust A Little Hang because the times are right. Take ten seconds to check yours.",
       ...(o.confirmHref ? [] : ["You haven't added your own times yet, so guests see what we found online. Take a look and fix anything that's off."]),
@@ -393,33 +477,34 @@ export function adminEditFlagEmail(site: string, o: { venue: Venue; flags: strin
   return build(`Edit to check: ${o.venue.name}`, {
     site,
     preheader: o.flags.join("; ").slice(0, 120),
-    kicker: "Edit to check",
-    title: `${o.venue.name} changed something odd`,
-    paragraphs: ["The owner saved an edit that's live now but worth a look. BC has minimum drink prices, so very cheap drinks are usually a typo."],
+    hero: venueHero(site, o.venue, { chip: "Edit to check", chipIcon: "triangle-alert" }),
+    title: "An edit worth a look",
+    paragraphs: ["The owner saved an edit that's live now. BC has minimum drink prices, so very cheap drinks are usually a typo."],
     quote: o.flags.join("\n"),
-    details: [["Venue", `${o.venue.name}, ${o.venue.address}`]],
     cta: { label: "Open the review queue", href: `${site}/venue/admin` },
     reason: "You're getting this because you're an admin on A Little Hang.",
   });
 }
 
 // Every email with sample data, for the preview script and the admin's
-// "send me every email" button.
-export function samples(site: string, api: string): Record<string, Email> {
-  const venue = { id: "ancora", name: "Ancora Waterfront Dining", address: "1600 Howe St, Vancouver", phone: "(604) 681-1164", website: "https://ancoradining.com" };
+// "Email me samples" button.
+// `real` is a venue with its own photo, so the samples show a real banner.
+export function samples(site: string, api: string, real?: Venue): Record<string, Email> {
+  const venue = { id: "ancora", name: "Ancora Waterfront Dining", address: "1600 Howe St, Vancouver", phone: "(604) 681-1164", website: "https://ancoradining.com", photo: "photos/ancora.webp", ...real };
+  const plain = { ...venue, id: "brewhall", name: "Brewhall", address: "97 E 2nd Ave, Vancouver", photo: null };
   const report = "Happy hour ends at 5 now, not 6. The oyster deal is gone too.";
   const month = new Date().toISOString().slice(0, 7);
   return {
     "1-sign-in": signInEmail(site, `${site}/venue/login?token=sample&next=%2Fvenue`, 30),
     "2-claim-received": claimReceivedEmail(site, { name: "Maya", role: "General manager", venue }),
     "3-claim-approved": claimApprovedEmail(site, { name: "Maya", venue }),
-    "4-claim-rejected": claimRejectedEmail(site, { name: "Maya", venue, note: "We called the listed number and the manager on shift didn't recognise the name." }),
-    "5-monthly-check": monthlyCheckEmail(site, { venue, month, confirmHref: `${api}/confirm?v=ancora&m=${month}&s=sample` }),
-    "6-monthly-check-new": monthlyCheckEmail(site, { venue, month, confirmHref: null }),
+    "4-claim-rejected": claimRejectedEmail(site, { name: "Maya", venue: plain, note: "We called the listed number and the manager on shift didn't recognise the name." }),
+    "5-check-in": monthlyCheckEmail(site, { venue, month, confirmHref: `${api}/confirm?v=ancora&m=${month}&s=sample` }),
+    "6-check-in-new": monthlyCheckEmail(site, { venue: plain, month, confirmHref: null }),
     "7-owner-report": ownerReportEmail(site, { venue, message: report }),
     "8-admin-claim-review": adminClaimEmail(site, { auto: false, name: "Maya", role: "General manager", email: "maya@gmail.com", phone: "604 555 0199", venue }),
-    "9-admin-claim-auto": adminClaimEmail(site, { auto: true, name: "Maya", role: "Owner", email: "maya@ancoradining.com", phone: null, venue }),
+    "9-admin-claim-auto": adminClaimEmail(site, { auto: true, name: "Maya", role: "Owner", email: "maya@ancoradining.com", phone: null, venue: plain }),
     "10-admin-report": adminReportEmail(site, { venue, message: report, email: "guest@example.com" }),
-    "11-admin-edit-flag": adminEditFlagEmail(site, { venue, flags: ["Drink under $3: Draft lager $2.50"] }),
+    "11-admin-edit-flag": adminEditFlagEmail(site, { venue: plain, flags: ["Drink under $3: Draft lager $2.50"] }),
   };
 }

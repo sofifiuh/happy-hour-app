@@ -7,6 +7,7 @@ export interface VenueInfo {
   address: string;
   phone: string | null;
   website: string | null;
+  photo?: string | null; // "photos/<id>.webp" when the site has its own copy
 }
 
 // The site's own venues.json is the directory: the Worker never keeps a
