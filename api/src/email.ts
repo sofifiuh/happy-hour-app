@@ -155,7 +155,7 @@ function html(l: Layout) {
           .map(
             ([k, v], i) => `<tr>
           <td class="t-dim${i ? " bd" : ""}" align="left" valign="top" style="padding:12px 0 12px 18px;${i ? `border-top:1px solid ${C.line};` : ""}font-family:${SANS};font-size:13px;line-height:20px;color:${C.dim};white-space:nowrap;width:30%">${esc(k)}</td>
-          <td class="t-main${i ? " bd" : ""}" align="left" valign="top" style="padding:12px 18px 12px 12px;${i ? `border-top:1px solid ${C.line};` : ""}font-family:${SANS};font-size:15px;line-height:20px;color:${C.text};font-weight:500;word-break:break-word">${esc(v)}</td>
+          <td class="t-main${i ? " bd" : ""}" align="left" valign="top" style="padding:12px 18px 12px 12px;${i ? `border-top:1px solid ${C.line};` : ""}font-family:${SANS};font-size:15px;line-height:20px;color:${C.text};font-weight:500;word-break:break-word">${detailValue(v)}</td>
         </tr>`,
           )
           .join("")}
@@ -216,7 +216,8 @@ function html(l: Layout) {
 body{margin:0;padding:0;width:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 table{border-collapse:collapse;mso-table-lspace:0;mso-table-rspace:0}
 img{border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic}
-a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !important}
+a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !important;font-size:inherit !important;font-family:inherit !important;font-weight:inherit !important;line-height:inherit !important}
+u + #body a,#MessageViewBody a,.x_body a{color:inherit;text-decoration:none;font-size:inherit;font-family:inherit;font-weight:inherit;line-height:inherit}
 .btn:hover{background:#ff6a2e !important;border-color:#ff6a2e !important}
 @media (max-width:620px){
   .wrap{padding:16px 12px 32px !important}
@@ -246,7 +247,7 @@ a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !importa
 [data-ogsb] .bg-tint{background:${DARK.tint} !important}
 </style>
 </head>
-<body class="bg-page" style="margin:0;padding:0;background:${C.page};word-spacing:normal">
+<body id="body" class="bg-page x_body" style="margin:0;padding:0;background:${C.page};word-spacing:normal">
 <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:${C.page};opacity:0">${esc(l.preheader)}${"&#847;&zwnj;&nbsp;".repeat(40)}</div>
 <div role="article" aria-roledescription="email" aria-label="${esc(l.title)}" lang="en">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="bg-page" style="background:${C.page}">
@@ -315,6 +316,15 @@ export interface Venue {
   // From the site's venues.json: "photos/<id>.webp" when the site has its
   // own copy, which also means a JPEG banner at photos/email/<id>.jpg.
   photo?: string | null;
+}
+
+// Emails and phone numbers in details are our own links, so mail apps
+// don't auto-link them in their own blue.
+function detailValue(v: string): string {
+  const link = (href: string) => `<a href="${esc(href)}" class="t-link" style="color:${C.link};text-decoration:none">${esc(v)}</a>`;
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)) return link(`mailto:${v}`);
+  if (/^\+?[\d\s().-]{7,}$/.test(v)) return link(`tel:${v.replace(/[^\d+]/g, "")}`);
+  return esc(v);
 }
 
 // The venue's own photo when the site has one, else a warm gradient.
