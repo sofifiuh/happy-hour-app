@@ -86,7 +86,7 @@ export function VenueEditor() {
     if (p.get("confirm") === "expired") toast("That link expired. Tap “Still right” below instead");
   }, [toast]);
 
-  if (!venue) return <VenueShell title="Your listing">{loading ? <Skeleton className="h-60 rounded-[22px]" /> : <Card>We can't find that venue.</Card>}</VenueShell>;
+  if (!venue) return <VenueShell title="Your listing">{loading ? <Skeleton className="h-60 rounded-[22px]" /> : <Card>We can't find that venue. <Link to="/venue" className="font-semibold text-primary underline-offset-4 hover:underline">Back to your venues</Link></Card>}</VenueShell>;
   if (state === "loading") return <VenueShell title={venue.name}><Skeleton className="h-60 rounded-[22px]" /></VenueShell>;
   if (state === "out") return <VenueShell title={venue.name}><SignIn next={`/venue/${id}`} lead="Sign in to edit your listing." /></VenueShell>;
   if (!allowed)

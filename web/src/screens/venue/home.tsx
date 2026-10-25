@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
-import { api, setSession } from "@/lib/api";
+import { api, session, setSession } from "@/lib/api";
 import { queryParams } from "@/lib/routes";
 import { cn } from "@/lib/utils";
 import { Card, ErrorLine, H2, message, SignIn, useMe, VenueShell } from "./shared";
@@ -21,6 +21,7 @@ export function VenueHome() {
   return (
     <VenueShell
       title="For venues"
+      back="/"
       right={
         me && (
           <Button variant="ghost" size="sm" onClick={signOut}>
@@ -74,10 +75,16 @@ export function VenueHome() {
                 {me.claims
                   .filter((c) => c.status !== "approved")
                   .map((c) => (
-                    <li key={c.id} className="flex min-h-14 items-center gap-3 rounded-2xl bg-ink-2 px-4 py-3 text-[15px]">
-                      <Clock className="size-5 text-amber-fg" />
-                      <span className="flex-1">{c.venue_name}</span>
-                      <Badge size="sm">{c.status === "pending" ? "Being checked" : "Not approved"}</Badge>
+                    <li key={c.id}>
+                      <Link
+                        to={`/venue/claim/${c.venue_id}`}
+                        className="flex min-h-14 items-center gap-3 rounded-2xl bg-ink-2 px-4 py-3 text-[15px] transition-colors hover:bg-ink-3"
+                      >
+                        <Clock className="size-5 text-amber-fg" />
+                        <span className="flex-1">{c.venue_name}</span>
+                        <Badge size="sm">{c.status === "pending" ? "Being checked" : "Not approved"}</Badge>
+                        <ChevronRight className="size-4 text-muted-foreground" />
+                      </Link>
                     </li>
                   ))}
               </ul>
@@ -104,12 +111,14 @@ export function VenueLogin() {
       setError("That link is missing its sign-in code.");
       return;
     }
+    const go = () => navigate(next.startsWith("/") && !next.startsWith("//") ? next : "/venue", { replace: true });
     api<{ session: string }>("POST", "/auth/verify", { token })
       .then((r) => {
         setSession(r.session);
-        navigate(next.startsWith("/") && !next.startsWith("//") ? next : "/venue", { replace: true });
+        go();
       })
-      .catch((e) => setError(message(e)));
+      // An old link opened again while still signed in: just carry on.
+      .catch((e) => (session() ? api("GET", "/me").then(go, () => setError(message(e))) : setError(message(e))));
   }, [navigate]);
 
   return (

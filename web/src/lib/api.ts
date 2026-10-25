@@ -5,6 +5,9 @@ export const API_URL: string | null = import.meta.env.VITE_API_URL || null;
 export const apiEnabled = API_URL !== null;
 
 const SESSION_KEY = "alh:session";
+// Venues the signed-in person manages, cached so venue pages can say
+// "Manage this listing" without asking the API.
+const MINE_KEY = "alh:my-venues";
 
 export function session() {
   try {
@@ -17,9 +20,28 @@ export function session() {
 export function setSession(token: string | null) {
   try {
     if (token) localStorage.setItem(SESSION_KEY, token);
-    else localStorage.removeItem(SESSION_KEY);
+    else {
+      localStorage.removeItem(SESSION_KEY);
+      localStorage.removeItem(MINE_KEY);
+    }
   } catch {
     // storage blocked: signed in for this page only
+  }
+}
+
+export function myVenues(): string[] {
+  try {
+    return session() ? (JSON.parse(localStorage.getItem(MINE_KEY) ?? "[]") as string[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+export function setMyVenues(ids: string[]) {
+  try {
+    localStorage.setItem(MINE_KEY, JSON.stringify(ids));
+  } catch {
+    // storage blocked
   }
 }
 

@@ -26,7 +26,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { VenuePhoto } from "@/components/venue-photo";
 import { api } from "@/lib/api";
 import { reducedMotion } from "@/lib/motion";
-import { BROWSER_ROUTER } from "@/lib/routes";
+import { BROWSER_ROUTER, spotPath } from "@/lib/routes";
 import { useStore } from "@/lib/store";
 import type { Venue } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -71,7 +71,7 @@ export function VenueClaim() {
 
   if (!venue)
     return (
-      <VenueShell title="Claim a listing">
+      <VenueShell title="Claim a listing" back="/spots">
         {loading ? (
           <Skeleton className="h-72 rounded-[28px]" />
         ) : (
@@ -126,8 +126,11 @@ export function VenueClaim() {
   };
 
   return (
-    <VenueShell title={owned ? "It's official" : "Claim your listing"}>
-      <ClaimHero venue={venue} owned={owned} />
+    <VenueShell
+      title={owned ? "It's official" : "Claim your listing"}
+      back={spotPath(id)}
+    >
+      <ClaimHero venue={venue} owned={owned} landed={result === "approved"} />
 
       {state === "loading" && <Skeleton className="mt-5 h-40 rounded-[22px]" />}
 
@@ -378,7 +381,15 @@ export function VenueClaim() {
 
 // The venue's own photo with an owner's stamp turning in the corner. When the
 // claim goes through, the stamp lands on the photo and sparks fly.
-function ClaimHero({ venue, owned }: { venue: Venue; owned: boolean }) {
+function ClaimHero({
+  venue,
+  owned,
+  landed,
+}: {
+  venue: Venue;
+  owned: boolean;
+  landed: boolean;
+}) {
   return (
     <section className="relative overflow-hidden rounded-[28px] bg-ink-2">
       <VenuePhoto venue={venue} eager large className="h-56 sm:h-64" />
@@ -388,7 +399,7 @@ function ClaimHero({ venue, owned }: { venue: Venue; owned: boolean }) {
         {owned ? "Official owner" : "Is this your place?"}
       </span>
       <div className="absolute top-3 right-3">
-        <Stamp owned={owned} />
+        <Stamp owned={owned} landed={landed} />
       </div>
       <div className="absolute inset-x-0 bottom-0 p-5 text-white">
         <p className="font-display text-[30px] leading-[1.02] font-extrabold tracking-tight text-balance">
@@ -407,10 +418,12 @@ const RING = {
   open: "CLAIM YOUR LISTING · A LITTLE HANG · ",
 };
 
-function Stamp({ owned }: { owned: boolean }) {
+// `landed`: the claim just went through, so the stamp lands with sparks.
+// Coming back to an approved claim shows it already in place.
+function Stamp({ owned, landed }: { owned: boolean; landed: boolean }) {
   return (
     <div className="relative size-[92px]" aria-hidden>
-      {owned &&
+      {landed &&
         [0, 45, 90, 135, 180, 225, 270, 315].map((a) => (
           <span
             key={a}
@@ -421,7 +434,11 @@ function Stamp({ owned }: { owned: boolean }) {
       <div
         className={cn(
           "relative size-full",
-          owned ? "animate-stamp" : "-rotate-12 opacity-90",
+          landed
+            ? "animate-stamp"
+            : owned
+              ? "-rotate-12"
+              : "-rotate-12 opacity-90",
         )}
       >
         <svg
