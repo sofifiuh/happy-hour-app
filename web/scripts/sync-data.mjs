@@ -34,6 +34,8 @@ const looksLikeLogo = (url) => LOGO_URL.test(decodeURIComponent(url));
 const PHOTO_ALLOW = new Set(["diva-at-the-met", "tableau-bar-bistro", "elwoods", "water-st-caf"]);
 
 function photoFor(v) {
+  // No cover in the data means none, even if an old download is still on disk.
+  if (!v.cover_image?.url) return null;
   if (quality[v.id]?.problem && !PHOTO_ALLOW.has(v.id)) return null;
   if (v.cover_image?.url && looksLikeLogo(v.cover_image.url)) return null;
   if (existsSync(resolve(out, "photos", `${v.id}.webp`))) return `photos/${v.id}.webp`;
