@@ -75,12 +75,12 @@
       "https://www.75west.ca/our-story",
       "https://www.75west.ca/events"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: a person fills half the frame (QA, by eye)",
     "cover": {
-      "url": "https://images.squarespace-cdn.com/content/v1/691a2c62b13113248eb0cd6d/732bd3e7-f007-4d2f-83bc-b5e1cdab9c9d/75-west-beer-happy-hour.png",
+      "url": "https://images.squarespace-cdn.com/content/v1/691a2c62b13113248eb0cd6d/c0155793-0ef1-4a5d-9adb-771ae07f7c48/75-West-Coast-Grill-Blackened-Halibut-Pasta.png",
       "page": "https://www.75west.ca/",
-      "w": 1200,
-      "h": 700
+      "w": 1728,
+      "h": 2304
     },
     "gallery": [
       {
@@ -100,17 +100,11 @@
         "page": "https://www.75west.ca/events",
         "w": 1200,
         "h": 700
-      },
-      {
-        "url": "https://images.squarespace-cdn.com/content/v1/691a2c62b13113248eb0cd6d/c0155793-0ef1-4a5d-9adb-771ae07f7c48/75-West-Coast-Grill-Blackened-Halibut-Pasta.png",
-        "page": "https://www.75west.ca/",
-        "w": 1728,
-        "h": 2304
       }
     ],
     "review": {
       "at": "2026-10-24",
-      "key": "46e28b3250b9",
+      "key": "2292a75a8326",
       "rejected": [
         {
           "url": "https://images.squarespace-cdn.com/content/v1/691a2c62b13113248eb0cd6d/1777417290012-RBPB6Q28E9STVMN2YSMQ/live-music-75west.png",
@@ -127,6 +121,10 @@
         {
           "url": "https://images.squarespace-cdn.com/content/v1/691a2c62b13113248eb0cd6d/1787523029517-PPNAF0VQ7J0EVIAP12MY/75west-nfl-event.png",
           "why": "football on field, unrelated to venue"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/691a2c62b13113248eb0cd6d/732bd3e7-f007-4d2f-83bc-b5e1cdab9c9d/75-west-beer-happy-hour.png",
+          "why": "a person fills half the frame (QA, by eye)"
         }
       ]
     }
