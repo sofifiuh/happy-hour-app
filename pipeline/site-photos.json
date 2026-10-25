@@ -925,9 +925,19 @@
       "https://arcanabar.com/",
       "https://arcanabar.com/hours/"
     ],
-    "cover_problem": "graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://www.arcanabar.com/images/arcana-og-preview.jpg",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "arms-reach-bistro": {
     "checked_at": "2026-10-24",
@@ -999,24 +1009,16 @@
       "https://www.autostradahospitality.ca/private-dining",
       "https://www.autostradahospitality.ca/our-story"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark only",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/68522412a749ab6a13e42cc3/1750213653693-45QVW3SF690DBMUUQXPZ/britney-gill-photography_AUTOSTRADA_2018_104.jpeg",
-          "why": "staff/bartender portrait"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/68522412a749ab6a13e42cc3/bb5d7e52-a151-416d-a943-1b7f8e820242/Autostrada_OysterBG2.png",
-          "why": "promotional graphic with staff portrait"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/68522412a749ab6a13e42cc3/d61eac58-a6b9-478f-8a43-64a59759e8ac/Autostrada_Osteria_3.png",
-          "why": "promotional graphic with logo overlay"
+          "url": "http://static1.squarespace.com/static/68522412a749ab6a13e42cc3/t/6854c025e65a40287994ca3f/1750384677102/Autostrada_Logo_Navy_Digital.png?format=1500w",
+          "why": "logo/wordmark only"
         }
       ]
     }
@@ -1554,9 +1556,19 @@
       "http://www.barra41.com/happy-hour-1",
       "http://www.barra41.com/photos"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/5778360537c581dd7deeddfa/t/57a905f803596e915f8cfd01/1470694906992/barra-logo.png?format=1500w",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "bartholomew": {
     "checked_at": "2026-10-24",
@@ -1564,9 +1576,19 @@
       "https://www.bartholomewbar.com/",
       "https://www.bartholomewbar.com/visit"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark graphic",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/5d62eac6567e6b00010d19dd/t/68e74597dba01c1c30bced3e/1759987095874/barts+text+logo.png?format=1500w",
+          "why": "logo/wordmark graphic"
+        }
+      ]
+    }
   },
   "bayside-lounge-english-bay": {
     "checked_at": "2026-10-24",
@@ -2380,16 +2402,16 @@
       "https://brewsterspub.ca/about/",
       "https://brewsterspub.ca/event/"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: black-and-white with extensive decorative text overlay; appears promotional/desi",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://i0.wp.com/brewsterspub.ca/wp-content/uploads/2020/01/img-new-7-copyright.jpg?fit=960%2C865&ssl=1",
-          "why": "black-and-white photo with people as the primary subject; rejected for being BW "
+          "url": "https://brewsterspub.ca/wp-content/uploads/2020/03/img-new-2-copyright.png",
+          "why": "black-and-white with extensive decorative text overlay; appears promotional/desi"
         }
       ]
     }
@@ -3380,9 +3402,19 @@
     "pages": [
       "https://catandfiddlepub.ca/"
     ],
-    "cover_problem": "graphic",
+    "cover_problem": "review: logo/wordmark graphic",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvaTAud3AuY29tXC9jYXRhbmRmaWRkbGVwdWIuY2FcL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjFcLzA3XC9jcm9wcGVkLW5lb24tY2F0LWNyb3AuanBnP2ZpdD01NjUlMkM1NjUmc3NsPTEiLCJ0eHQiOiJDYXQgJmFtcDsgRmlkZGxlIFB1YiIsInRlbXBsYXRlIjoiZWRnZSIsImZvbnQiOiIiLCJibG9nX2lkIjo2Njg3Mjk0M30.QaT0kP8-XDIvEwRnEmvdukXFPYmcsD5euhRX1TotANgMQ",
+          "why": "logo/wordmark graphic"
+        }
+      ]
+    }
   },
   "catch-122-cafe-bistro": {
     "checked_at": "2026-10-24",
@@ -3987,9 +4019,19 @@
       "https://www.collectivegoods.ca/",
       "https://www.collectivegoods.ca/happy-hour-1"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/609ac6162013d659830647a8/t/613524ea7a172e50d6c29956/1630872810232/CG-FinalLogo-HandDrawn-3k-TransparentBlue.png?format=1500w",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "como-taperia": {
     "checked_at": "2026-10-24",
@@ -5364,9 +5406,19 @@
     "pages": [
       "https://elwoods.ca/"
     ],
-    "cover_problem": "graphic",
+    "cover_problem": "review: black-and-white historic photo, person as subject, sign/text graphic predominate",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://elwoods.ca/wp-content/uploads/2021/08/image0.png",
+          "why": "black-and-white historic photo, person as subject, sign/text graphic predominate"
+        }
+      ]
+    }
   },
   "eternal-abundance-organic-market-eatery": {
     "checked_at": "2026-10-24",
@@ -5781,16 +5833,16 @@
       "https://forecastcoffee.ca/pages/locations",
       "https://forecastcoffee.ca/pages/about-us"
     ],
-    "cover_problem": "graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://forecastcoffee.ca/cdn/shop/files/Forecast_Bottle_-_Kelowna-2-1.jpg?v=1761327193&width=800",
-          "why": "branded merchandise shot with person's hand; lifestyle photo, not venue interior"
+          "url": "http://forecastcoffee.ca/cdn/shop/files/Forecast_Coffee_Stack.png?v=1671059059",
+          "why": "logo/wordmark"
         }
       ]
     }
@@ -5950,9 +6002,19 @@
     "pages": [
       "https://fraserbar.com/"
     ],
-    "cover_problem": "too dark",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://fraserbar.com/wp-content/uploads/2025/07/opengraph-fraserbar.png",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "fraser-valley-cider-company": {
     "checked_at": "2026-10-24",
@@ -6200,24 +6262,16 @@
       "https://www.fugglesbeer.com/events",
       "https://www.fugglesbeer.com/events-2-1"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: image too faint to discern; appears to be logo or text-heavy content",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/630e71970bc8ea7374d32eb7/a47544e0-e630-46bc-8c3a-9fbd13a58c37/Unknown-1.jpeg",
-          "why": "product shot with branded logo background, not venue"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/630e71970bc8ea7374d32eb7/b2dad8d5-b793-4574-a945-2f0b19b2e2c8/Pixel+Can+with+Background.jpg",
-          "why": "product shot with branded logo background, not venue"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/630e71970bc8ea7374d32eb7/d16204ab-abdc-42a9-b09d-6fee1d1ce0ca/Fuggles_Social_DestinyIPA%5B1%5D.jpg",
-          "why": "product shot with branded logo background, not venue"
+          "url": "http://static1.squarespace.com/static/630e71970bc8ea7374d32eb7/t/6658e8a325f8e350a29ba1c7/1717102755970/FugglesBC-logo-rgb-white-2500px%4072dpi.png?format=1500w",
+          "why": "image too faint to discern; appears to be logo or text-heavy content"
         }
       ]
     }
@@ -7817,9 +7871,19 @@
       "https://www.hoshijapanesecuisine.com/",
       "https://www.hoshijapanesecuisine.com/experiences"
     ],
-    "cover_problem": "graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/698192_b256ced9c04242a8b7c5d5f6a83005bb~mv2.jpg/v1/fill/w_2500,h_1872,al_c/698192_b256ced9c04242a8b7c5d5f6a83005bb~mv2.jpg",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "howe-sound-taphouse-kitchen-east-van": {
     "checked_at": "2026-10-24",
@@ -8250,9 +8314,19 @@
       "https://www.ilcorvo.ca/",
       "https://www.ilcorvo.ca/private-events"
     ],
-    "cover_problem": "graphic",
+    "cover_problem": "review: Logo and wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/6854788a9b9bf47355cc289e/t/68f682227299ba1a416880bd/1760985634069/Il+Corvo_Logo.jpg?format=1500w",
+          "why": "Logo and wordmark"
+        }
+      ]
+    }
   },
   "jack-lonsdale-s-public-house": {
     "checked_at": "2026-10-24",
@@ -10327,9 +10401,19 @@
     "pages": [
       "https://www.luciaonmain.com/"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: black-and-white illustration, not a photograph of the venue",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/683e7aa6fbc1a5266be61daa/t/68469c09cc6de75b44dc6e2f/1749457929370/moth1.png?format=1500w",
+          "why": "black-and-white illustration, not a photograph of the venue"
+        }
+      ]
+    }
   },
   "lucky-taco": {
     "checked_at": "2026-10-24",
@@ -11297,16 +11381,16 @@
     "pages": [
       "https://mercatodiluigi.com/"
     ],
-    "cover_problem": "tiny file",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://mercatodiluigi.com/cdn/shop/files/Copy_of__UBER_EATS_HERO_IMAGE_2.jpg?v=1785522294&width=3840",
-          "why": "ingredient/product display (canned tomatoes, raw pasta) not plated food or venue"
+          "url": "http://mercatodiluigi.com/cdn/shop/files/327937603_151672304381132_1083130301921734912_n.jpg?v=1677001976",
+          "why": "logo/wordmark"
         }
       ]
     }
@@ -11574,9 +11658,19 @@
       "https://www.misotaco.ca/",
       "https://www.misotaco.ca/catering-and-events"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/6958291df3f62c42463c37e7/t/69582967e49be87856b735f3/1767385447125/MisoTacoLogoNew.png?format=1500w",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "miso-taco-west-pender": {
     "checked_at": "2026-10-24",
@@ -11584,9 +11678,19 @@
       "https://www.misotaco.ca/",
       "https://www.misotaco.ca/catering-and-events"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/6958291df3f62c42463c37e7/t/69582967e49be87856b735f3/1767385447125/MisoTacoLogoNew.png?format=1500w",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "mixt-lobby-lounge-sheraton-vancouver-guildford-hotel": {
     "checked_at": "2026-10-24",
@@ -12681,28 +12785,16 @@
       "https://www.oceanbeachwr.ca/",
       "https://www.oceanbeachwr.ca/our-story"
     ],
-    "cover_problem": "graphic",
+    "cover_problem": "review: logo/wordmark graphic",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/e67393c3-86e5-4e5d-b7cc-30cb99ca5f39/thumbnail_A4449AFA-E502-4A83-BABC-E82853054D3F.jpg",
-          "why": "primary focus is the 'OCEAN BEACH' signage/logo"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/e284a7c4-9119-4c50-8be9-26acec7d1e54/OB+70s+-+1.jpg",
-          "why": "historic photo"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/d023599f-cdea-4348-861b-bb116c1b0d21/OBH.jpg",
-          "why": "black-and-white historic photo"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/fe978d7d-8652-4b8c-9ab6-353dcbc9c7b5/OB+70s.jpg",
-          "why": "historic photo"
+          "url": "http://static1.squarespace.com/static/5ee810382e448119b4ac9017/t/5f0ea9c5451a530cf1fd8aac/1594796489445/OB+BANNER-01.png?format=1500w",
+          "why": "logo/wordmark graphic"
         }
       ]
     }
@@ -13350,16 +13442,16 @@
     "pages": [
       "https://www.parkdrive.ca/"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/666002fda86e94004de823d8/8eab8c73-fbb3-4d62-9dac-fb10de45a3a2/DCB2B1EA-E17B-4821-9F26-18872F195174.jpg",
-          "why": "image is primarily about signage/branding (Park Drive wordmark painted on storef"
+          "url": "http://static1.squarespace.com/static/666002fda86e94004de823d8/t/66600de7e90cd3351da74307/1717571047680/Park+Drive+Logo+Stacked+Black%404x.png?format=1500w",
+          "why": "logo/wordmark"
         }
       ]
     }
@@ -13685,9 +13777,19 @@
     "pages": [
       "http://pizzacomingsoon.com/"
     ],
-    "cover_problem": "unreadable",
+    "cover_problem": "review: person as subject",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://pizzacomingsoon.com/images/PepEyes.gif",
+          "why": "person as subject"
+        }
+      ]
+    }
   },
   "pizzeria-spacca-napoli": {
     "checked_at": "2026-10-24",
@@ -14710,9 +14812,19 @@
       "https://rickysrestaurants.ca/host-your-group/",
       "https://rickysrestaurants.ca/download-our-app/"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://rickysrestaurants.ca/wp-content/uploads/2022/06/Rickys-1807fill-Kbanner.png",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "river-rock-casino-resort": {
     "checked_at": "2026-10-24",
@@ -15467,16 +15579,16 @@
     "pages": [
       "https://sfinaki.ca/"
     ],
-    "cover_problem": "graphic",
+    "cover_problem": "review: logo and wordmark",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://sfinaki.ca/cdn/shop/files/nov11fam1_1370x.jpg?v=1763318051",
-          "why": "group photo (people as main subject)"
+          "url": "https://cdn.shopify.com/s/files/1/0578/3217/7832/files/headlogoeatdrinkenjoy.png?height=628&pad_color=ffffff&v=1635455064&width=1200",
+          "why": "logo and wordmark"
         }
       ]
     }
@@ -16456,9 +16568,19 @@
     "pages": [
       "https://staugustinesvancouver.com/"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo with text",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://staugustinesvancouver.com/assets/logo-50782319.png",
+          "why": "logo with text"
+        }
+      ]
+    }
   },
   "st-james-well-pub": {
     "checked_at": "2026-10-24",
@@ -16531,9 +16653,19 @@
     "pages": [
       "https://www.stagesbistroandlounge.com/"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/a752b5_462f46fb705a4bfb86389058c2fd4ef1%7Emv2.png/v1/fit/w_2500,h_1330,al_c/a752b5_462f46fb705a4bfb86389058c2fd4ef1%7Emv2.png",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "stanley-park-brewing-restaurant-brewpub": {
     "checked_at": "2026-10-24",
@@ -17081,28 +17213,16 @@
       "https://www.tacolocokits.com/",
       "https://www.tacolocokits.com/about-2"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo graphic",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/664ea0ba3054de67a5e2d38d/197a2676-e880-4909-bad1-ed5cfc1e3c08/WhatsApp+Image+2026-04-09+at+4.30.33+PM.jpeg",
-          "why": "sign graphic with logo painted on window"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/664ea0ba3054de67a5e2d38d/a541f45b-ade6-479b-9a5b-76452df136f8/WhatsApp+Image+2026-09-22+at+1.09.23+AM.jpeg",
-          "why": "promo image with text overlay, not the actual venue"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/664ea0ba3054de67a5e2d38d/7f3fcbff-423c-49ac-b8de-cf7ff15529e6/WhatsApp+Image+2026-09-21+at+11.05.14+PM.jpeg",
-          "why": "performer is the main subject"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/664ea0ba3054de67a5e2d38d/f4c39578-5ac4-43b5-b4da-1ece53c4dfaa/WhatsApp+Image+2026-09-21+at+11.02.26+PM.jpeg",
-          "why": "person portrait, appears to be staff"
+          "url": "http://static1.squarespace.com/static/664ea0ba3054de67a5e2d38d/t/69d6dc5ce87ead2ceaed6da4/1775688796664/taco-loco9.png?format=1500w",
+          "why": "logo graphic"
         }
       ]
     }
@@ -17778,16 +17898,16 @@
     "pages": [
       "https://brownsville.ca/"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: blank or unidentifiable image",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://brownsville.ca/wp-content/uploads/2025/07/469179325_455856947546135_6431271347391016601_n.jpg",
-          "why": "bridge infrastructure, not the venue"
+          "url": "https://brownsville.ca/wp-content/uploads/2025/07/Brownsville_Logos_White-e1753652150494.png",
+          "why": "blank or unidentifiable image"
         }
       ]
     }
@@ -17799,9 +17919,19 @@
       "https://theburrowrestaurant.com/about",
       "https://theburrowrestaurant.com/happy-hour-daily-specials"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/583c7a8ab3db2b24515a3ee2/t/624b37e4faf0d468d9ee7e1a/1649096676531/TheBurrow_OwlBadge_Black.png?format=1500w",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "the-butcher-bullock-public-house": {
     "checked_at": "2026-10-24",
@@ -17943,20 +18073,16 @@
     "pages": [
       "https://www.thecascade.ca/"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/63dc3537de004d21c5b2d5be/f503ea97-0132-458d-89f9-684acee99796/CAS_Martini-Time_Banner_Update.jpg",
-          "why": "promotional flyer with sponsor logos and pricing text"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/63dc3537de004d21c5b2d5be/96b305e5-0c91-4f9f-b24e-b148f47d47ea/web_Cascade_2863.jpg",
-          "why": "bartender person as main subject"
+          "url": "http://static1.squarespace.com/static/63dc3537de004d21c5b2d5be/t/6647ac8157454e6e1a12ea04/1715973261442/The-Cascade-Room-Logo-2023.png?format=1500w",
+          "why": "logo/wordmark"
         }
       ]
     }
@@ -18323,32 +18449,16 @@
       "https://www.flapperlounge.com/",
       "https://www.flapperlounge.com/fullroombuyouts"
     ],
-    "cover_problem": "shape",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://static.wixstatic.com/media/850880_cae50e6ae35144ee993c49c9c904cfab~mv2.jpg/v1/fill/w_1440,h_826,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/850880_cae50e6ae35144ee993c49c9c904cfab~mv2.jpg",
-          "why": "people as subject - styled portrait"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/850880_d3b4700f5fa74138b2f4d15d4512aa88~mv2.jpeg/v1/crop/x_16,y_0,w_968,h_785/fill/w_942,h_756,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/66a646e56e.jpeg",
-          "why": "black-and-white historic photo AND people as subject"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/850880_b14084e2ac5645f6a88665c7a0e515c7~mv2.jpeg/v1/fill/w_960,h_667,al_c,q_85,enc_avif,quality_auto/850880_b14084e2ac5645f6a88665c7a0e515c7~mv2.jpeg",
-          "why": "people as subject - styled portrait, desaturated historic style"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/850880_06ea8c792f374b4e94a0bdf96d2889ca~mv2.jpeg/v1/crop/x_0,y_0,w_822,h_667/fill/w_822,h_660,al_c,q_85,enc_avif,quality_auto/8ffa31ea67.jpeg",
-          "why": "people as subject - portrait"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/850880_07a1c97e36b74de5b241a7c641c70d5b~mv2.jpeg/v1/crop/x_396,y_0,w_571,h_667/fill/w_571,h_667,al_c,q_85,enc_avif,quality_auto/384483f46e.jpeg",
-          "why": "black-and-white historic photo AND people as subject"
+          "url": "https://static.wixstatic.com/media/850880_130f8407ce374914b2679fe5f346a589%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/850880_130f8407ce374914b2679fe5f346a589%7Emv2.jpg",
+          "why": "logo/wordmark"
         }
       ]
     }
@@ -18500,9 +18610,19 @@
     "pages": [
       "https://www.thegull.ca/"
     ],
-    "cover_problem": "graphic",
+    "cover_problem": "review: logo and wordmark, not a photo of the venue or what it serves",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/5a1f73af8dd04196f96c1a4d/t/5e7bed686b8b1f1cdbcbf417/1585180010022/the+gull+facbeook+logo.jpg?format=1500w",
+          "why": "logo and wordmark, not a photo of the venue or what it serves"
+        }
+      ]
+    }
   },
   "the-hard-bean-brunch-co": {
     "checked_at": "2026-10-24",
@@ -19178,24 +19298,16 @@
     "pages": [
       "https://www.theonesixty.com/"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://video.squarespace-cdn.com/content/v1/63dc57ef827c5e1f284cd929/94eb9fe1-6298-443a-b153-612c53b479c2/thumbnail",
-          "why": "sign graphic/wordmark on exterior"
-        },
-        {
-          "url": "https://video.squarespace-cdn.com/content/v1/63dc57ef827c5e1f284cd929/fe8775b6-0d30-4a4c-877d-8d0027d327fd/thumbnail",
-          "why": "sign graphic/wordmark on exterior"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/63dc57ef827c5e1f284cd929/a4ac3938-a714-40c0-a715-1c8c12637cdf/golden_plates_facebook_banner.jpg",
-          "why": "promotional award graphic overlay (mostly text)"
+          "url": "http://static1.squarespace.com/static/63dc57ef827c5e1f284cd929/t/63dd606cfadc43118d55bcc9/1675452524339/The+One+Sixty_Logo_Dark+grey.png?format=1500w",
+          "why": "logo/wordmark"
         }
       ]
     }
@@ -19568,16 +19680,16 @@
       "https://thereachpub.ca/our-menu/",
       "https://thereachpub.ca/our-menu/"
     ],
-    "cover_problem": "tiny file",
+    "cover_problem": "review: blank or unreadable image",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://thereachpub.ca/wp-content/uploads/2021/11/TheReach_HomePage_7-1024x728.jpg",
-          "why": "staff portrait—person posing is the subject, not the venue"
+          "url": "https://thereachpub.ca/wp-content/uploads/2017/07/the-reach-logo-white-mobile.png",
+          "why": "blank or unreadable image"
         }
       ]
     }
@@ -20763,16 +20875,16 @@
     "pages": [
       "https://www.twoparrotsvancouver.com/"
     ],
-    "cover_problem": "too small",
+    "cover_problem": "review: logo graphic",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-10-24",
+      "at": "2026-10-25",
       "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://static.wixstatic.com/media/5afe60462baf41e79586f3fdaf78d664.jpg/v1/fill/w_1165,h_1200,al_c,q_85,enc_avif,quality_auto/5afe60462baf41e79586f3fdaf78d664.jpg",
-          "why": "scenic water view, not the venue or its food/service"
+          "url": "https://static.wixstatic.com/media/8f0180_31aee8bbd4594f27a93dfa4afe55f034%7Emv2.png/v1/fit/w_2500,h_1330,al_c/8f0180_31aee8bbd4594f27a93dfa4afe55f034%7Emv2.png",
+          "why": "logo graphic"
         }
       ]
     }
@@ -21764,9 +21876,19 @@
     "pages": [
       "https://www.zoomakyvr.com/"
     ],
-    "cover_problem": "transparent graphic",
+    "cover_problem": "review: logo/illustration, not venue photography",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-25",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/671af9d0bc57847c268ffd6c/t/672d9aaadb431b2e123f458d/1731041962507/Zoomak+Side+Sign+Logo_Logo+copy.png?format=1500w",
+          "why": "logo/illustration, not venue photography"
+        }
+      ]
+    }
   },
   "zubu-ramen-downtown": {
     "checked_at": "2026-10-24",
