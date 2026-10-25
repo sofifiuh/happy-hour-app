@@ -34,14 +34,22 @@ const { venues } = JSON.parse(readFileSync(resolve(root, "venues.json"), "utf8")
 const sourcesFile = resolve(originals, "sources.json");
 const firstRun = !existsSync(sourcesFile);
 const sources = firstRun ? {} : JSON.parse(readFileSync(sourcesFile, "utf8"));
+// A cover dropped altogether (the photo review rejected it with nothing to
+// swap in) takes its files with it too.
+const dropCover = (id) => {
+  for (const ext of [".jpg", ".jpeg", ".png", ".webp"]) rmSync(resolve(originals, id + ext), { force: true });
+  rmSync(resolve(out, `${id}.webp`), { force: true });
+  rmSync(resolve(out, "email", `${id}.jpg`), { force: true });
+};
 for (const v of venues) {
   const url = v.cover_image?.url;
-  if (!url || !/^https?:/.test(url) || sources[v.id] === url) continue;
-  if (!firstRun) {
-    for (const ext of [".jpg", ".jpeg", ".png", ".webp"]) rmSync(resolve(originals, v.id + ext), { force: true });
-    rmSync(resolve(out, `${v.id}.webp`), { force: true });
-    rmSync(resolve(out, "email", `${v.id}.jpg`), { force: true });
+  if (!url) {
+    if (!firstRun) dropCover(v.id);
+    delete sources[v.id];
+    continue;
   }
+  if (!/^https?:/.test(url) || sources[v.id] === url) continue;
+  if (!firstRun) dropCover(v.id);
   sources[v.id] = url;
 }
 writeFileSync(sourcesFile, JSON.stringify(sources));
