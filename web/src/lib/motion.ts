@@ -38,8 +38,12 @@ export function setNav(kind: "forward" | "back" | "swap") {
 
 // `instant` skips the transition, for a swipe that already slid the page out.
 // `delta` pops more than one entry, back past several venues to the map.
-export function goBack(navigate: NavigateFunction, instant = false, delta = -1) {
-  const go = () => (window.history.length > 1 ? navigate(delta) : navigate("/", { replace: true }));
+// Pops only within the app (react-router's history index), so a page
+// opened cold never sends the back arrow off the site; it goes to
+// `fallback`, the page's parent, instead.
+export function goBack(navigate: NavigateFunction, instant = false, delta = -1, fallback = "/") {
+  const idx = (window.history.state as { idx?: unknown } | null)?.idx;
+  const go = () => (typeof idx === "number" && idx + delta >= 0 ? navigate(delta) : navigate(fallback, { replace: true }));
   if (instant || !canTransition()) return void go();
   setNav("back");
   const t = document.startViewTransition(

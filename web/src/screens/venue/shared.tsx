@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState, type FormEvent, type ReactNode } from
 import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { api, ApiError, apiEnabled, session, type Me } from "@/lib/api";
+import { api, ApiError, apiEnabled, session, setMyVenues, type Me } from "@/lib/api";
 import { absoluteUrl } from "@/lib/routes";
 import { useTitle } from "@/lib/use-title";
 import { cn } from "@/lib/utils";
@@ -20,20 +20,32 @@ export function useMe() {
     }
     api<Me>("GET", "/me")
       .then((m) => {
+        setMyVenues(m.venues.map((v) => v.id));
         setMe(m);
         setState("in");
       })
       .catch(() => setState("out"));
   }, []);
   useEffect(reload, [reload]);
+  // Signing in from the email opens a new tab; pick that session up here too.
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => e.key === "alh:session" && reload();
+    const onVisible = () => document.visibilityState === "visible" && !!session() !== (state !== "out") && reload();
+    window.addEventListener("storage", onStorage);
+    document.addEventListener("visibilitychange", onVisible);
+    return () => {
+      window.removeEventListener("storage", onStorage);
+      document.removeEventListener("visibilitychange", onVisible);
+    };
+  }, [reload, state]);
   return { me, state, reload };
 }
 
-export function VenueShell({ title, children, right }: { title: string; children: ReactNode; right?: ReactNode }) {
+export function VenueShell({ title, children, right, back = "/venue" }: { title: string; children: ReactNode; right?: ReactNode; back?: string }) {
   useTitle(title);
   return (
     <main className="mx-auto min-h-dvh max-w-2xl pb-24">
-      <PageHeader title={title} right={right} />
+      <PageHeader title={title} right={right} back={back} />
       <div className="px-5">
         {apiEnabled ? (
           children

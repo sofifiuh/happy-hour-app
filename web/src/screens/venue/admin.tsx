@@ -67,7 +67,7 @@ export function VenueAdmin() {
 
   if (state === "loading") return <VenueShell title="Review queue"><Skeleton className="h-60 rounded-[22px]" /></VenueShell>;
   if (state === "out") return <VenueShell title="Review queue"><SignIn next="/venue/admin" /></VenueShell>;
-  if (!me?.admin) return <VenueShell title="Review queue"><Card>This page is for the A Little Hang team.</Card></VenueShell>;
+  if (!me?.admin) return <VenueShell title="Review queue"><Card>This page is for the A Little Hang team. <Link to="/venue" className="font-semibold text-primary underline-offset-4 hover:underline">Go to your venues</Link></Card></VenueShell>;
 
   return (
     <VenueShell title="Review queue">

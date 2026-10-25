@@ -25,7 +25,7 @@ import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
 import { dayRuns, googleReviewsLink, nearby, quoteCredit, redditLink, redditName, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
 import { track } from "@/lib/analytics";
-import { apiEnabled, count } from "@/lib/api";
+import { apiEnabled, count, myVenues } from "@/lib/api";
 import { shareLink } from "@/lib/share";
 import { useStore } from "@/lib/store";
 import type { BestList, Category, Photo, Venue } from "@/lib/types";
@@ -46,7 +46,7 @@ function amenityPills(v: Venue) {
 export function Spot() {
   const params = useParams();
   const id = (params.id ?? params.file ?? "").replace(/\.html$/, "");
-  const { byId, venues, hubs, best, now, loading, deviceLocation, area, saved, toggleSaved, claimed } = useStore();
+  const { byId, venues, hubs, best, now, loading, deviceLocation, area, saved, toggleSaved } = useStore();
   const navigate = useNavigate();
   const toast = useToast();
   const venue = byId(id);
@@ -546,12 +546,12 @@ export function Spot() {
 
       {apiEnabled && (
         <Link
-          to={claimed.has(venue.id) ? `/venue/${venue.id}` : `/venue/claim/${venue.id}`}
+          to={myVenues().includes(venue.id) ? `/venue/${venue.id}` : `/venue/claim/${venue.id}`}
           className="mx-5 mt-8 flex min-h-14 items-center gap-3 rounded-2xl px-4 py-3 text-[14px] ring-1 ring-edge/10 transition-colors hover:bg-ink-2"
         >
           <Store className="size-5 shrink-0 text-pink-fg" />
           <span className="flex-1">
-            {claimed.has(venue.id) ? (
+            {myVenues().includes(venue.id) ? (
               <span className="font-semibold">Manage this listing</span>
             ) : (
               <>
