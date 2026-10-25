@@ -6,6 +6,8 @@
     <meta name="color-scheme" content="dark light" />
     <meta name="theme-color" content="#1b1b1b" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f5f1e7" media="(prefers-color-scheme: light)" />
+    <!-- Light or dark before first paint: the pick from Filters, else the system setting (src/lib/use-media.ts). -->
+    <script>(function(d){var t;try{t=localStorage.getItem("theme")}catch(e){}var s=t==="light"||t==="dark"?t:matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";d.documentElement.dataset.theme=s;if(t)d.querySelectorAll('meta[name="theme-color"]').forEach(function(m){m.content=s==="light"?"#f5f1e7":"#1b1b1b"})})(document)</script>
     <meta name="description" content="Happy hours near you, right now. Real deals from 450+ Vancouver bars and restaurants." />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />

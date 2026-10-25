@@ -19,7 +19,7 @@ const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replac
 export async function mount(el: HTMLElement) {
   const pins: Pin[] = JSON.parse(document.getElementById("best-map-data")?.textContent || "[]");
   if (!pins.length) return;
-  const scheme = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  const scheme = document.documentElement.dataset.theme === "light" ? "light" : "dark";
   const style = await loadMapStyle(scheme);
   const bounds = new maplibregl.LngLatBounds();
   for (const p of pins) bounds.extend([p.lng, p.lat]);
