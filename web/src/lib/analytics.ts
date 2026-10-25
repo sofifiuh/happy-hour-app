@@ -16,7 +16,9 @@ export type AnalyticsEvent =
   | { name: "directions_clicked"; venue_id: string }
   | { name: "saved"; venue_id: string }
   | { name: "people_say_clicked"; venue_id: string; kind: string }
-  | { name: "install_prompt"; outcome: "shown" | "installed" };
+  | { name: "install_prompt"; outcome: "shown" | "installed" }
+  | { name: "submit_opened"; from: string }
+  | { name: "happy_hour_submitted"; kind: "listed" | "new"; photos: number };
 
 let ph: PostHog | null = null;
 const queue: AnalyticsEvent[] = [];

@@ -1,0 +1,74 @@
+name: Publish happy hours from guests
+
+# Hourly: happy hours that guests photographed ("Add a happy hour") and an
+# admin read and published in the review queue (/venue/admin) go into the
+# site's own data. A listed venue takes the checked schedule; a new spot
+# joins the map, placed by Google Places from its name and address. See
+# pipeline/submissions.js. With nothing new it stops after the check.
+#
+# Uses the repo variable VITE_API_URL (the venue API) and the secret
+# GOOGLE_PLACES_API_KEY (for new spots' map pins).
+on:
+  schedule:
+    - cron: "11 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+# Same group as the daily refresh, so the two never commit over each other.
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      API_URL: ${{ vars.VITE_API_URL }}
+      GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY || secrets.GOOGLE_MAPS_API_KEY || secrets.PLACES_API_KEY || secrets.GOOGLE_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Anything new?
+        id: check
+        run: |
+          out=$(node pipeline/submissions.js --check)
+          echo "$out"
+          if echo "$out" | grep -qx 'new=0'; then echo "todo=false" >> "$GITHUB_OUTPUT"; else echo "todo=true" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Write them into the data
+        if: steps.check.outputs.todo == 'true'
+        run: |
+          node pipeline/submissions.js
+          node pipeline/writeback.js
+          node pipeline/build-pages.js
+
+      - name: Commit data
+        id: commit
+        if: steps.check.outputs.todo == 'true'
+        run: |
+          git config user.name "a-little-hang-data"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add venues.json pipeline/submissions.json spots sitemap.xml robots.txt
+          if git diff --cached --quiet; then
+            echo "No data changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          git commit -m "data: happy hours from guests $(date -u +%F)"
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN don't trigger other workflows, so
+      # redeploy explicitly.
+      - name: Redeploy site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main

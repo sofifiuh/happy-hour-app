@@ -1,6 +1,6 @@
 // End-to-end run of the venue API against `wrangler dev` (see README):
 // sign in, claim by matching domain, claim by review, admin approve, edit,
-// photo, counts, stats, report, public edits.
+// photo, counts, stats, report, public edits, submit a happy hour.
 const API = process.env.API ?? "http://127.0.0.1:8787";
 let failures = 0;
 const ok = (cond, what) => {
@@ -100,6 +100,43 @@ const q2 = await call("GET", "/admin/queue", { token: admin.session });
 ok(q2.data.reports.some((r) => r.venue_id === "ancora") && q2.data.flagged.some((f) => f.venue_id === "earls-test-kitchen"), "report and flagged edit in the queue");
 
 ok((await call("POST", "/venues/earls-test-kitchen/confirm", { token: other.session })).status === 200, "owner confirms it's still right");
+// ---------- Submit a happy hour ----------
+async function submit(fields, photos = [png]) {
+  const form = new FormData();
+  for (const [k, v] of Object.entries(fields)) form.append(k, v);
+  for (const p of photos) form.append("photos", new Blob([p], { type: "image/png" }), "menu.png");
+  const res = await fetch(API + "/submissions", { method: "POST", body: form, headers: { origin: "http://localhost:5173" } });
+  return { status: res.status, data: await res.json().catch(() => null) };
+}
+const s1 = await submit({ venue_id: "brewhall", email: "guest@example.com", name: "Maya", hh: JSON.stringify({ days: [1, 2, 3], start: "15:00", end: "18:00" }), note: "New menu" });
+ok(s1.status === 201 && s1.data.id, "a guest sends a menu photo for a listed venue");
+ok((await submit({ email: "guest@example.com" }, [])).status === 400, "a submission needs a photo");
+ok((await submit({ venue_id: "brewhall", email: "guest@example.com" }, [new TextEncoder().encode("not a photo")])).status === 415, "a file that isn't really a photo is refused");
+ok((await submit({ email: "guest@example.com", place_name: "X" })).status === 400, "a new spot needs an address");
+ok((await submit({ email: "bot@example.com", company: "Spam Inc" })).status === 201, "the honeypot pretends to work");
+const s2 = await submit({ email: "guest2@example.com", place_name: "The Sunny Side", place_address: "2245 Commercial Dr", works_there: "1" });
+ok(s2.status === 201, "a guest sends a spot we don't list");
+const s3 = await submit({ venue_id: "ancora", email: "guest3@example.com" });
+const q3 = await call("GET", "/admin/queue", { token: admin.session });
+const sub1 = q3.data.submissions.find((x) => x.id === s1.data.id);
+ok(sub1?.hh?.start === "15:00" && sub1.photos === 1 && sub1.venue_name, "submission with the guest's reading in the queue");
+ok(q3.data.submissions.find((x) => x.id === s3.data.id)?.managed === true, "the queue knows ancora manages itself");
+const photo = await fetch(`${API}/admin/submissions/${s1.data.id}/photos/0`, { headers: { authorization: `Bearer ${admin.session}` } });
+ok(photo.status === 200 && photo.headers.get("content-type") === "image/png", "admin sees the photo");
+ok((await fetch(`${API}/admin/submissions/${s1.data.id}/photos/0`)).status === 401, "photos are private");
+const hhPub = { days: [1, 2, 3, 4, 5], start: "15:00", end: "18:00", extra: [], deals: [{ name: "Lager", price: "$6", category: "drink", description: "" }] };
+ok((await call("POST", `/admin/submissions/${s3.data.id}`, { token: admin.session, body: { decision: "publish", hh: hhPub } })).status === 409, "a self-managed venue can't be overwritten");
+ok((await call("POST", `/admin/submissions/${s3.data.id}`, { token: admin.session, body: { decision: "forward" } })).status === 200, "it's passed to the venue instead");
+const p1 = await call("POST", `/admin/submissions/${s1.data.id}`, { token: admin.session, body: { decision: "publish", hh: hhPub } });
+ok(p1.status === 200 && p1.data.venue_id === "brewhall" && !p1.data.new, "publish a listed venue");
+const pub2 = await call("GET", "/public/edits");
+ok(pub2.data.community?.brewhall?.hh?.deals?.length === 1, "it shows at once in the public feed");
+const p2 = await call("POST", `/admin/submissions/${s2.data.id}`, { token: admin.session, body: { decision: "publish", hh: hhPub, place: { name: "The Sunny Side", address: "2245 Commercial Dr, Vancouver", website: "https://sunny.example" } } });
+ok(p2.status === 200 && p2.data.venue_id === "the-sunny-side" && p2.data.new, "publish a new spot with the pipeline's id");
+const feed = await call("GET", "/public/submissions");
+ok(feed.data.submissions.length === 2 && feed.data.submissions.every((x) => !x.email) && feed.data.submissions.some((x) => x.new && x.address), "the pipeline feed has both, without emails");
+ok((await call("POST", `/admin/submissions/${s2.data.id}`, { token: admin.session, body: { decision: "decline" } })).status === 404, "a decided submission is closed");
+
 const bye = await call("POST", "/auth/logout", { token: other.session });
 ok(bye.status === 200 && (await call("GET", "/me", { token: other.session })).status === 401, "sign out ends the session");
 

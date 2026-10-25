@@ -1,4 +1,4 @@
-import { ArrowLeft, BadgeCheck, X, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Lightbulb, MessageCircle, Navigation, Phone, Share, Star, Store } from "lucide-react";
+import { ArrowLeft, BadgeCheck, Camera, X, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Lightbulb, MessageCircle, Navigation, Phone, Share, Star, Store } from "lucide-react";
 import { type CSSProperties, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
@@ -388,7 +388,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
         </ul>
         <div className="mt-1 flex flex-wrap items-center justify-between gap-x-4 px-3 text-[13px] text-muted-foreground">
           <span>
-            {venue.byVenue ? "From the venue" : venue.hh.verified ? "Verified against their menu" : "From their website"}
+            {venue.byVenue ? "From the venue" : venue.hh.fromGuest ? "From a guest's menu photo, checked by us" : venue.hh.verified ? "Verified against their menu" : "From their website"}
             {venue.hh.source && (
               <>
                 {" · "}
@@ -400,9 +400,14 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
           </span>
           <span className="flex flex-wrap gap-x-4">
             {apiEnabled ? (
-              <button onClick={() => setReportOpen(true)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
-                <Flag className="size-3.5" /> Report a wrong time
-              </button>
+              <>
+                <button onClick={() => setReportOpen(true)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
+                  <Flag className="size-3.5" /> Report a wrong time
+                </button>
+                <Link to={`/submit?venue=${encodeURIComponent(venue.id)}`} viewTransition className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
+                  <Camera className="size-3.5" /> Send a newer menu
+                </Link>
+              </>
             ) : (
               <a href={reportLink(venue)} className="inline-flex min-h-11 items-center gap-1.5 font-medium text-cream">
                 <Flag className="size-3.5" /> Report a wrong time

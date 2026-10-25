@@ -26,5 +26,6 @@ bucket_name = "alittlehang-files"
 
 # Daily: purge yesterday's de-duplication rows; on the 1st of Jan, Mar, May,
 # Jul, Sep and Nov, the "still right?" email to every claimed venue.
+# Hourly: tell guests their new spot is on the map once the site has it.
 [triggers]
-crons = ["7 12 * * *"]
+crons = ["7 12 * * *", "37 * * * *"]

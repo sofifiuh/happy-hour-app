@@ -20,6 +20,17 @@ venues and guests send us.
   that is deleted the next day.
 - **Reports:** guests' "Report a wrong time" lands in the queue and is
   emailed to the venue's managers.
+- **Add a happy hour:** anyone can send a photo of a menu or sign at
+  `/submit` (no account; honeypot plus 5 an hour per IP and 6 a day per
+  email). Photos go to R2, the guest gets a thank-you email and admins get
+  one with the photos. In the queue an admin reads the photo, fixes the
+  times and publishes, declines with a reason, or passes it to a claimed
+  venue's managers (a claimed venue's listing is never overwritten). A spot
+  we list goes live through `GET /public/edits` within a minute and the
+  guest is emailed at once. A new spot gets an id here; the hourly
+  `publish-submissions` workflow reads `GET /public/submissions`, places it
+  with Google Places and deploys, and the Worker's hourly cron emails the
+  guest once it is in `venues.json`.
 - **Check every 2 months:** on the 1st of Jan, Mar, May, Jul, Sep and Nov, managers get a one-tap "still right?" email.
 
 ## Run it locally

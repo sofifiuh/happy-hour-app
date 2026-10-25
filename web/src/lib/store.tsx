@@ -1,4 +1,4 @@
-import { api, apiEnabled, type PublicEdit } from "@/lib/api";
+import { api, apiEnabled, type CommunityEdit, type PublicEdit } from "@/lib/api";
 import { asset, queryParams } from "@/lib/routes";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { AREAS, distanceKm, nearestArea, type Area, type LatLng } from "./geo";
@@ -151,6 +151,13 @@ export function matchesAmenity(v: Venue, key: AmenityKey) {
   }
 }
 
+// A happy hour we published from a guest's photo, shown at once until the
+// site's own data carries it (pipeline/submissions.js, within the hour).
+export function applyCommunity(v: Venue, c: CommunityEdit | undefined): Venue {
+  if (!c || (v.hh.fromGuest ?? "") >= c.published) return v;
+  return { ...v, hh: { ...v.hh, ...c.hh, verified: true, source: null, fromGuest: c.published }, checked: c.published };
+}
+
 // A venue's own edits win over the nightly data, field by field.
 export function applyEdit(v: Venue, e: PublicEdit | undefined): Venue {
   if (!e) return v;
@@ -175,12 +182,19 @@ export function applyEdit(v: Venue, e: PublicEdit | undefined): Venue {
 interface EditsFeed {
   edits: Record<string, PublicEdit>;
   claimed: string[];
+  community?: Record<string, CommunityEdit>;
 }
 
 export function StoreProvider({ children }: { children: ReactNode }) {
   const [base, setVenues] = useState<Venue[]>(readCache);
   const [feed, setFeed] = useState<EditsFeed>(() => readJSON<EditsFeed>(EDITS_KEY, { edits: {}, claimed: [] }));
-  const venues = useMemo(() => (Object.keys(feed.edits).length ? base.map((v) => applyEdit(v, feed.edits[v.id])) : base), [base, feed]);
+  const venues = useMemo(
+    () =>
+      Object.keys(feed.edits).length || Object.keys(feed.community ?? {}).length
+        ? base.map((v) => applyEdit(applyCommunity(v, feed.community?.[v.id]), feed.edits[v.id]))
+        : base,
+    [base, feed],
+  );
   const claimed = useMemo(() => new Set(feed.claimed), [feed]);
   const [loading, setLoading] = useState(venues.length === 0);
   const [hubs, setHubs] = useState<Record<string, Hub>>({});
