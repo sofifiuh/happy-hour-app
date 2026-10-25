@@ -30,8 +30,13 @@ const LOGO_URL = /logo|lockup|wordmark|favicon|badge|site-identity|transparent|o
 const looksLikeLogo = (url) => LOGO_URL.test(decodeURIComponent(url));
 
 // Real photos the scoring misreads as graphics (black-and-white or dark,
-// low-colour shots); checked by eye on the live site, 2026-10-22.
-const PHOTO_ALLOW = new Set(["diva-at-the-met", "tableau-bar-bistro", "elwoods", "water-st-caf"]);
+// low-colour shots); checked by eye on the live site, 2026-10-22 and
+// (warm, candlelit and flame shots) 2026-10-25.
+const PHOTO_ALLOW = new Set([
+  "diva-at-the-met", "tableau-bar-bistro", "elwoods", "water-st-caf",
+  "rongsi-rong-see-thai-bar-bistro", "hook-restaurant", "vault-restaurant", "dublin-crossing-irish-pub",
+  "palms-beach-house", "lucky-taco", "caff-cittadella", "six-acres",
+]);
 
 function photoFor(v) {
   // No cover in the data means none, even if an old download is still on disk.
