@@ -25,6 +25,369 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "karakoram-restaurant",
+    "name": "Karakoram Restaurant",
+    "formatted_address": "6990 Victoria Dr, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2204656,
+        "lng": -123.0656147
+      }
+    },
+    "formatted_phone_number": "(604) 737-1000",
+    "website": "https://www.karakoramrestaurant.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.karakoramrestaurant.com/our-menu",
+      "deals": [
+        {
+          "name": "Veggie Pakora",
+          "price": "$5.99",
+          "category": "food",
+          "description": "Crispy fritters with onions, potatoes, gram flour; 7-8 pieces with Imli chutney"
+        },
+        {
+          "name": "Fish Pakora",
+          "price": "$9.99",
+          "category": "food",
+          "description": "Basa fillet coated with gram flour; 7-8 pieces with green chutney"
+        },
+        {
+          "name": "Beef Seekh Kabab",
+          "price": "$12.99",
+          "category": "food",
+          "description": "Ground meat marinated and grilled; 2 skewers with green chutney"
+        },
+        {
+          "name": "Chicken Seekh Kabab",
+          "price": "$12.99",
+          "category": "food",
+          "description": "Ground chicken marinated and grilled; 2 skewers with green chutney"
+        },
+        {
+          "name": "Chicken Karahi (Half)",
+          "price": "$35.99",
+          "category": "food",
+          "description": "Choose style; served with 2 naans, includes mocktail and 2 gulab jamun"
+        },
+        {
+          "name": "Pindi Kabab Karahi (Half)",
+          "price": "$35.99",
+          "category": "food",
+          "description": "Choose style; served with 2 naans, includes mocktail and 2 gulab jamun"
+        },
+        {
+          "name": "Butter Chicken",
+          "price": "$13.99",
+          "category": "food",
+          "description": "Boneless chicken with spiced tomato and creamy butter sauce"
+        },
+        {
+          "name": "Daal Chana",
+          "price": "$12.99",
+          "category": "food",
+          "description": "Slow-cooked with masala"
+        },
+        {
+          "name": "Daal Mash",
+          "price": "$12.99",
+          "category": "food",
+          "description": "Creamy, garlicky mash daal with tarka"
+        },
+        {
+          "name": "Chicken Tikka Wrap",
+          "price": "$9.99",
+          "category": "food",
+          "description": "Smoky boneless chicken tikka wrapped in naan"
+        },
+        {
+          "name": "Beef Kabab Wrap",
+          "price": "$9.99",
+          "category": "food",
+          "description": "Juicy beef kabab with chutney and crunch"
+        },
+        {
+          "name": "Chicken Kabab Wrap",
+          "price": "$9.99",
+          "category": "food",
+          "description": "Juicy chicken kabab with chutney and crunch"
+        },
+        {
+          "name": "Any Mocktails",
+          "price": "$8.99",
+          "category": "drink",
+          "description": "Choose from regular menu"
+        },
+        {
+          "name": "Any Chai",
+          "price": "$3.49",
+          "category": "drink",
+          "description": "Choose from regular menu"
+        },
+        {
+          "name": "Rasmalai",
+          "price": "$8.99",
+          "category": "food",
+          "description": "Dessert"
+        },
+        {
+          "name": "Gulab Jamun",
+          "price": "$7.99",
+          "category": "food",
+          "description": "Dessert"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://www.karakoramrestaurant.com/opengraph-image",
+      "credit_name": "Karakoram Restaurant",
+      "credit_url": "https://www.karakoramrestaurant.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-10-25"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "caff-la-tana",
+    "name": "Caffè La Tana",
+    "formatted_address": "635 Commercial Dr, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2787824,
+        "lng": -123.07061899999998
+      }
+    },
+    "formatted_phone_number": "(604) 428-5462",
+    "website": "http://www.caffelatana.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Volpe di Notte"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.caffelatana.ca/",
+      "deals": [
+        {
+          "name": "Wine by the glass",
+          "price": "$9",
+          "category": "drink",
+          "description": "Feature White or Red"
+        },
+        {
+          "name": "All beers",
+          "price": "$8",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Blood Orange Spritz",
+          "price": "$10",
+          "category": "drink",
+          "description": "Blood Orange Soda, Prosecco, Grapefruit"
+        },
+        {
+          "name": "Peach Bellini Spritz",
+          "price": "$10",
+          "category": "drink",
+          "description": "Cipriani Peach Bellini, Prosecco, Grapefruit"
+        },
+        {
+          "name": "Mezzo e Mezzo",
+          "price": "$10",
+          "category": "drink",
+          "description": "Nardini Mezzo e Mezzo, Club Soda, Lemon Twist"
+        },
+        {
+          "name": "Banda Spaghett",
+          "price": "$10",
+          "category": "drink",
+          "description": "Aperol, Lemon, Banda Volpi Italian Pilsner, Orange"
+        },
+        {
+          "name": "Milanese G&T",
+          "price": "$10",
+          "category": "drink",
+          "description": "Tanqueray Gin, Campari, Scrappy's Grapefruit Bitters, Tonic, Orange"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://cdn.shopify.com/s/files/1/0052/7414/0765/files/GreenLogo.png?height=628&pad_color=dfe5e3&v=1613519640&width=1200",
+      "credit_name": "Caffè La Tana",
+      "credit_url": "http://www.caffelatana.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-10-25"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "chao-mami-express",
+    "name": "Chao Mami Express",
+    "formatted_address": "678 Dunsmuir St #80, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2833159,
+        "lng": -123.11620599999999
+      }
+    },
+    "formatted_phone_number": "(604) 428-7574",
+    "website": "http://chaomamiexpress.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://chaomamiexpress.com/",
+      "deals": [
+        {
+          "name": "3 baos, rolls or mini pho",
+          "price": "$10",
+          "category": "food",
+          "description": "mix & match"
+        },
+        {
+          "name": "Pho",
+          "price": "$10",
+          "category": "food",
+          "description": "beef or vegan, dine-in only"
+        },
+        {
+          "name": "Drink",
+          "price": "+$4",
+          "category": "drink",
+          "description": "with happy-hour food deal"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://www.chaomamiexpress.com/img/og-image.jpg",
+      "credit_name": "Chao Mami Express",
+      "credit_url": "http://chaomamiexpress.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-10-25"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "the-heatley",
     "name": "The Heatley",
     "formatted_address": "696 E Hastings St, Vancouver, BC",
@@ -24877,73 +25240,73 @@
       ],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://www.bodegaonmain.ca/wp-content/uploads/2025/05/2025-05-10-Happy-Hour_Page_1-700x1030.jpg",
+      "source_url": "https://www.bodegaonmain.ca/wp-content/uploads/2025/05/2025-05-10-Happy-Hour.pdf",
       "deals": [
         {
           "name": "Ensalada Mixta",
           "price": "$12",
           "category": "food",
-          "description": "Mixed salad"
+          "description": "Happy hour Spanish-style bite"
         },
         {
           "name": "Arroz Español",
           "price": "$14",
           "category": "food",
-          "description": "Spanish rice"
+          "description": "Happy hour Spanish-style bite"
         },
         {
           "name": "Montaditos de Lomo",
           "price": "$13",
           "category": "food",
-          "description": "Loin bites"
+          "description": "Happy hour Spanish-style bite"
         },
         {
           "name": "Patatas Bravas",
           "price": "$8",
           "category": "food",
-          "description": "Fried potatoes with sauce"
+          "description": "Happy hour Spanish-style bite"
         },
         {
           "name": "Jamón Serrano",
           "price": "$14",
           "category": "food",
-          "description": "Cured Spanish ham"
+          "description": "Happy hour Spanish-style bite"
         },
         {
           "name": "Calamares Fritos",
           "price": "$15",
           "category": "food",
-          "description": "Fried squid"
+          "description": "Happy hour Spanish-style bite"
         },
         {
           "name": "Pollo Frito",
           "price": "$12",
           "category": "food",
-          "description": "Fried chicken"
+          "description": "Happy hour Spanish-style bite"
         },
         {
           "name": "Albóndigas",
           "price": "$13",
           "category": "food",
-          "description": "Meatballs"
+          "description": "Happy hour Spanish-style bite"
         },
         {
           "name": "Churros",
           "price": "$11",
           "category": "food",
-          "description": "Spanish fried pastry"
+          "description": "Happy hour Spanish-style bite"
         },
         {
-          "name": "Wine",
-          "price": "$8/$12",
+          "name": "Wine (red, white, rosé)",
+          "price": "$8 / $12",
           "category": "drink",
-          "description": "Red, White, or Rosé (5oz or 9oz)"
+          "description": "$8 for 6oz, $12 for 9oz"
         },
         {
-          "name": "High Balls",
-          "price": "$6/$9",
+          "name": "High balls",
+          "price": "$6 / $9",
           "category": "drink",
-          "description": "1oz or 2oz"
+          "description": "$6 for 1oz, $9 for 2oz"
         },
         {
           "name": "Bodega Lager",
@@ -24961,12 +25324,12 @@
           "name": "Vermouths",
           "price": "$3 off",
           "category": "drink",
-          "description": "All varieties"
+          "description": "La Hora del Vermut: $3 off all vermouths"
         }
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-25"
   },
   {
     "place_id": null,
@@ -26656,7 +27019,6 @@
     "happy_hour": {
       "days": [
         0,
-        1,
         2,
         3,
         4,
@@ -26668,55 +27030,67 @@
       "extra_windows": [],
       "verified": false,
       "verified_source": null,
-      "source_url": "http://www.minervas.ca/happy-hour",
+      "source_url": "https://minervas.ca/happy-hour",
       "deals": [
         {
           "name": "Peroni Nastro Azzurro",
-          "price": "$6.50",
+          "price": "$7.5",
           "category": "drink",
-          "description": "Beer on Tap (16oz), crisp and clean lager"
+          "description": "16oz draft lager"
         },
         {
           "name": "Strange Fellows Blackmail Stout",
-          "price": "$6.50",
+          "price": "$6.5",
           "category": "drink",
-          "description": "Beer on Tap (16oz), rich and smooth"
+          "description": "16oz draft"
         },
         {
           "name": "Powell St Old Jalopy Pale Ale",
-          "price": "$6.50",
+          "price": "$6.5",
           "category": "drink",
-          "description": "Beer on Tap (16oz), english pale and caramel malts"
+          "description": "16oz draft"
         },
         {
-          "name": "Red Truck Beer Hard Day Northwest IPA",
-          "price": "$6.50",
+          "name": "Red Truck Hard Day Northwest IPA",
+          "price": "$6.5",
           "category": "drink",
-          "description": "Beer on Tap (16oz), juicy pacific northwest hops"
+          "description": "16oz draft"
+        },
+        {
+          "name": "Rotating Seasonal Tap",
+          "price": "$7",
+          "category": "drink",
+          "description": "16oz draft; ask server for details"
         },
         {
           "name": "Feature Cocktail",
           "price": "$12",
           "category": "drink",
-          "description": "Selection varies, ask server for details"
+          "description": "Rotating feature cocktail"
         },
         {
           "name": "Bottega Prosecco",
           "price": "$6",
           "category": "drink",
-          "description": "Sparkling wine by glass"
+          "description": "Sparkling, per glass"
         },
         {
           "name": "House White",
-          "price": "$6-$9",
+          "price": "$6/$9",
           "category": "drink",
-          "description": "6oz or 9oz glass"
+          "description": "6oz / 9oz"
         },
         {
           "name": "House Red",
-          "price": "$6-$9",
+          "price": "$6/$9",
           "category": "drink",
-          "description": "6oz or 9oz glass"
+          "description": "6oz / 9oz"
+        },
+        {
+          "name": "Premium wines by the glass",
+          "price": "$10-13",
+          "category": "drink",
+          "description": "6oz price; 9oz $15-19. Includes JoieFarm Noble Blend, Roche Chardonnay, Mt. Boucherie Rosé, Burrowing Owl Merlot, Catena Malbec, San Felice Chianti Classico Riserva"
         },
         {
           "name": "Spiced Nuts",
@@ -26734,7 +27108,7 @@
           "name": "Pita & Dip",
           "price": "$10",
           "category": "food",
-          "description": "House-made hummus or tzatziki with baked pita"
+          "description": "House-made hummus or tzatziki, baked pita"
         },
         {
           "name": "Barra Fries",
@@ -26746,7 +27120,13 @@
           "name": "Meat Balls",
           "price": "$12",
           "category": "food",
-          "description": "3 meat balls with meat sauce"
+          "description": "3 meat balls, meat sauce"
+        },
+        {
+          "name": "Caprese Salad",
+          "price": "$14",
+          "category": "food",
+          "description": "Bocconcini, vine-ripe tomatoes, basil, EVOO, balsamic"
         },
         {
           "name": "Crispy Kalamari",
@@ -26763,7 +27143,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-25"
   },
   {
     "place_id": null,
@@ -28040,55 +28420,73 @@
       "extra_windows": [],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://www.thefreebird.ca/s/FBS-Happy-Hour-July-2026-PRINT-v2-website.pdf",
+      "source_url": "https://www.thefreebird.ca/s/FBR-Happy-Hour-March-2026-web.pdf",
       "deals": [
         {
-          "name": "Chipotle Quinoa Salad",
+          "name": "Skillet Corn Bread",
           "price": "$9",
           "category": "food",
-          "description": "GF/VG - spicy chipotle vinaigrette, mixed greens, pickled onions, cucumber, tomato"
+          "description": "From the kitchen"
         },
         {
-          "name": "Wings",
-          "price": "$9",
+          "name": "House Hot Wings",
+          "price": "$13",
           "category": "food",
-          "description": "GF - buffalo, bbq or salt and pepper, house made buttermilk ranch, celery"
+          "description": "From the kitchen"
         },
         {
-          "name": "Pulled Pork Sliders",
-          "price": "$9",
+          "name": "Pork Belly Sliders",
+          "price": "$13",
           "category": "food",
-          "description": "smoked pork, slaw, spicy mayo, toasted brioche bun"
+          "description": "From the kitchen"
         },
         {
-          "name": "Maple Brussels",
-          "price": "$9",
+          "name": "Chicken Sliders",
+          "price": "$13",
           "category": "food",
-          "description": "VG - deep fried brussel sprouts, maple syrup"
+          "description": "From the kitchen"
         },
         {
-          "name": "Skillet Apple Crumble",
-          "price": "$9",
+          "name": "Skillet Corn Dip",
+          "price": "$13",
           "category": "food",
-          "description": "vanilla ice cream"
+          "description": "From the kitchen"
         },
         {
-          "name": "Feature Draft Beer",
-          "price": "$5",
+          "name": "Dirty Fries",
+          "price": "$13",
+          "category": "food",
+          "description": "From the kitchen"
+        },
+        {
+          "name": "Bacon & Jalapeno Deviled Eggs",
+          "price": "$13",
+          "category": "food",
+          "description": "From the kitchen"
+        },
+        {
+          "name": "BBQ Ribs",
+          "price": "$13",
+          "category": "food",
+          "description": "From the kitchen"
+        },
+        {
+          "name": "Glass of wine",
+          "price": "$6",
           "category": "drink",
-          "description": ""
+          "description": "Red, white, rosé or sparkling"
         },
         {
-          "name": "Feature Wine",
-          "price": "$5",
+          "name": "Featured draught",
+          "price": "$6",
           "category": "drink",
-          "description": ""
+          "description": "Featured draught beer"
         },
         {
-          "name": "Highball",
-          "price": "$5-7",
+          "name": "Featured cocktail",
+          "price": "$9",
           "category": "drink",
-          "description": "1oz $5 or 2oz $7"
+          "description": "Featured cocktail"
         }
       ]
     },
@@ -28098,7 +28496,7 @@
       "credit_url": "http://thefreebird.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-25"
   },
   {
     "place_id": null,
@@ -29017,79 +29415,79 @@
             4
           ],
           "start": "20:00",
-          "end": null,
-          "label": "Evening"
+          "end": "21:00",
+          "label": "Late night"
         }
       ],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://www.gtccwestwoodplateau.com/restaurants/jess-sky/",
+      "source_url": "https://www.gtccwestwoodplateau.com/wp-content/uploads/2026/06/Jess-Sky-20260618-Menu.pdf",
       "deals": [
         {
           "name": "Beef Dip",
           "price": "$18",
           "category": "food",
-          "description": "Shaved AAA Canadian beef, horseradish aioli, bacon onion jam, provolone cheese, au jus, toasted ciabatta. Choice of fries or garden salad."
+          "description": "Shaved AAA Canadian beef, horseradish aioli, bacon onion jam, provolone, au jus, toasted ciabatta; choice of fries or garden salad"
         },
         {
           "name": "Halibut Fish & Chips",
           "price": "$24",
           "category": "food",
-          "description": "One piece vodka battered pacific halibut, house made tartar sauce, slaw, lemon. Choice of fries or garden salad."
+          "description": "One piece vodka battered pacific halibut, tartar sauce, slaw, lemon; choice of fries or garden salad"
         },
         {
           "name": "Gyoza",
           "price": "$14",
           "category": "food",
-          "description": "Miso mayo, pickled radish, scallion, sesame yuzu soy. Vegetable or beef; vegan upon request."
+          "description": "Vegetable or beef, miso mayo, pickled radish, scallion, sesame yuzu soy"
         },
         {
           "name": "Wings",
           "price": "$12",
           "category": "food",
-          "description": "Salt & pepper or hot."
+          "description": "Salt & pepper or hot"
         },
         {
           "name": "Birdie Bites",
           "price": "$16",
           "category": "food",
-          "description": "Waffle fries, onion rings, cream cheese jalapeño poppers, garlic aioli. Vegetarian."
+          "description": "Waffle fries, onion rings, cream cheese jalapeño poppers, garlic aioli"
         },
         {
           "name": "Yam Fries",
           "price": "$8",
           "category": "food",
-          "description": "Served with spicy yogurt. Vegetarian."
+          "description": "Served with spicy yogurt"
         },
         {
           "name": "Fries",
           "price": "$6",
           "category": "food",
-          "description": "Waffle cut, served with garlic aioli. Vegetarian."
+          "description": "Waffle cut, served with garlic aioli"
         },
         {
           "name": "Stone Road Wine",
-          "price": "$5-$8",
+          "price": "$5 (6oz) / $8 (8oz)",
           "category": "drink",
-          "description": "Red/white/rosé. Okanagan Valley, BC. 6oz for $5, 8oz for $8."
+          "description": "Red, white or rosé, Okanagan Valley BC"
         },
         {
           "name": "House Highballs",
-          "price": "$5-$8.50",
+          "price": "$5 (1oz) / $8.50 (2oz)",
           "category": "drink",
-          "description": "Well spirits. 1oz for $5, 2oz for $8.50."
+          "description": "Well spirits"
         },
         {
           "name": "Jess' Lager",
           "price": "$5",
           "category": "drink",
-          "description": "Greentees' house lager with Yellow Dog brewing. 16oz pint."
+          "description": "16oz pint of the house lager brewed with Yellow Dog Brewing"
         },
         {
           "name": "Jess' Cocktail",
           "price": "$12",
           "category": "drink",
-          "description": "Empress gin, elderflower, tonic. 2oz."
+          "description": "2oz Empress gin, elderflower, tonic"
         }
       ]
     },
@@ -29099,7 +29497,7 @@
       "credit_url": "https://www.gtccwestwoodplateau.com/restaurants/jess-sky/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-25"
   },
   {
     "place_id": null,
@@ -29142,17 +29540,26 @@
     "happy_hour": {
       "days": [
         0,
+        1,
         2,
         3,
-        4
+        4,
+        5,
+        6
       ],
-      "start": "12:00",
-      "end": "15:00",
+      "start": "14:00",
+      "end": "17:00",
       "extra_windows": [
         {
           "days": [
-            0,
-            2,
+            1
+          ],
+          "start": "17:00",
+          "end": "21:00",
+          "label": "All day Monday (to close)"
+        },
+        {
+          "days": [
             3,
             4
           ],
@@ -29162,17 +29569,24 @@
         },
         {
           "days": [
-            1
+            5,
+            6
           ],
-          "start": "12:00",
-          "end": "22:00",
-          "label": "All day Monday"
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Late night"
         }
       ],
       "verified": false,
       "verified_source": null,
-      "source_url": "http://www.fuggles.beer/",
+      "source_url": "https://www.fugglesbeer.com/s/HAPPY-HOUR-MENU.pdf",
       "deals": [
+        {
+          "name": "Beer sleeves",
+          "price": "$5",
+          "category": "drink",
+          "description": "All sleeves $5. Canned cocktails, wine and non-alcoholic drinks are also available."
+        },
         {
           "name": "Falafels",
           "price": "$5",
@@ -29180,22 +29594,16 @@
           "description": "With creamy dill dip"
         },
         {
-          "name": "Waffle Fries",
+          "name": "Tater tots",
           "price": "$5",
           "category": "food",
-          "description": "With choice of dip (ketchup, chipotle aioli, or garlic aioli)"
+          "description": "Choice of dip: ketchup, chipotle aioli or garlic aioli"
         },
         {
-          "name": "Sausage Bombs",
+          "name": "Sausage bombs",
           "price": "$8",
           "category": "food",
-          "description": "5 mini gouda sausages made in Richmond"
-        },
-        {
-          "name": "Beer",
-          "price": "$5",
-          "category": "drink",
-          "description": "All sleeves"
+          "description": "5 mini gouda sausages made in Richmond by D'Original Sausage House"
         }
       ]
     },
@@ -29205,7 +29613,7 @@
       "credit_url": "http://www.fuggles.beer/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-25"
   },
   {
     "place_id": null,
@@ -32538,7 +32946,7 @@
       "credit_url": "https://www.grizzlyflatbread.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-25"
   },
   {
     "place_id": null,
@@ -32682,20 +33090,20 @@
     "website": "http://sonsofvancouver.ca/",
     "happy_hour": {
       "days": [
-        2
+        0
       ],
       "start": "17:00",
       "end": "21:00",
       "extra_windows": [],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://www.sonsofvancouver.ca/s/SOV-Menu-Jun-2025-1.pdf",
+      "source_url": "https://www.sonsofvancouver.ca/s/SOV-DRINK-MENU-Jul-2026.pdf",
       "deals": [
         {
-          "name": "Drinks",
+          "name": "Menu cocktails",
           "price": "$3 off",
           "category": "drink",
-          "description": "Every drink on the menu"
+          "description": "Sunday all-night happy hour: $3 off every menu cocktail all night long"
         }
       ]
     },
@@ -32705,7 +33113,7 @@
       "credit_url": "http://sonsofvancouver.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-25"
   },
   {
     "place_id": null,

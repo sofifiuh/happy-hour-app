@@ -35,6 +35,7 @@ const DISCOVERED_STORE = path.join(REPO_ROOT, "pipeline", "discovered.json");
 const PLACES_STORE = path.join(REPO_ROOT, "pipeline", "places.json");
 const PHOTOS_STORE = path.join(REPO_ROOT, "pipeline", "photos.json");
 const SITE_PHOTOS_STORE = path.join(REPO_ROOT, "pipeline", "site-photos.json");
+const SUBMISSIONS_STORE = path.join(REPO_ROOT, "pipeline", "submissions.json");
 const TODAY = new Date().toISOString().slice(0, 10);
 
 const skipped = [];
@@ -293,6 +294,58 @@ let merged = loadSeed().map((v) => {
   };
 });
 
+// --- Happy hours from guests' photos ("Add a happy hour"), read and
+// --- published by a person in the review queue; pipeline/submissions.js
+// --- keeps the store. A new spot joins the map; a listed venue takes the
+// --- checked schedule, until a later re-extraction of the venue's own page
+// --- (a newer last_synced_at) supersedes it. Newest submission wins.
+const subs = Object.entries(readJson(SUBMISSIONS_STORE, {}))
+  .filter(([, s]) => !s.unresolved)
+  .sort((a, b) => a[1].approved_at.localeCompare(b[1].approved_at));
+const fromGuest = (id, s, hh) => ({
+  ...hh,
+  days: s.hh.days,
+  start: s.hh.start,
+  end: s.hh.end,
+  extra_windows: normalizeWindows(s.hh.extra),
+  deals: normalizeDeals(s.hh.deals),
+  verified: true, // a person read it off the venue's own menu or sign
+  verified_source: null,
+  source_url: null,
+  deals_source: undefined,
+  community: { submission_id: id, approved_at: s.approved_at },
+});
+const byId = new Map(merged.map((v) => [v.id, v]));
+let guestUpdates = 0;
+for (const [id, s] of subs) {
+  const day = s.approved_at.slice(0, 10);
+  const v = byId.get(s.venue_id);
+  if (v) {
+    if (!s.new && String(v.last_synced_at || "") > day) continue;
+    byId.set(v.id, { ...v, happy_hour: fromGuest(id, s, v.happy_hour), last_synced_at: day });
+    guestUpdates++;
+  } else if (s.new && s.place) {
+    byId.set(s.venue_id, {
+      ...DISCOVERED_DEFAULTS,
+      id: s.venue_id,
+      name: s.name,
+      place_id: s.place.place_id,
+      formatted_address: s.place.formatted_address,
+      address_components: { locality: s.place.city, administrative_area_level_1: "BC", country: "CA" },
+      geometry: { location: { lat: s.place.lat, lng: s.place.lng } },
+      formatted_phone_number: s.place.phone,
+      website: s.place.website,
+      business_status: s.place.business_status || "OPERATIONAL",
+      happy_hour: fromGuest(id, s, {}),
+      cover_image: placePhotos[s.venue_id] ? { url: placePhotos[s.venue_id].url, credit_name: placePhotos[s.venue_id].credit_name, credit_url: placePhotos[s.venue_id].credit_url, source: "google_places" } : null,
+      data_source: "guest_submission",
+      last_synced_at: day,
+    });
+    guestUpdates++;
+  }
+}
+merged = [...byId.values()];
+
 // A venue Google reports as permanently closed comes off the map. Its record
 // stays in the stores, so a reopening (or a bad match) is one sync away.
 const closed = merged.filter((v) => places[v.id]?.business_status === "CLOSED_PERMANENTLY").map((v) => v.id);
@@ -305,7 +358,7 @@ if (closed.length) {
 // so every regeneration re-stamps them; writeVenuesJson owns the version stamp.
 const stamp = writeVenuesJson(applyTrust(merged, readJson(FRESHNESS_STORE, {})), TODAY);
 
-console.log(`venues.json: ${merged.length} venues (${Object.keys(enrich).length} enriched, ${discovered.length} discovered, ${coversAdded} covers backfilled, Places identity for ${Object.keys(places).length}) — ${stamp}`);
+console.log(`venues.json: ${merged.length} venues (${Object.keys(enrich).length} enriched, ${discovered.length} discovered, ${guestUpdates} from guests' photos, ${coversAdded} covers backfilled, Places identity for ${Object.keys(places).length}) — ${stamp}`);
 for (const d of discovered) console.log(`  + ${d.id.padEnd(30)} days[${d.happy_hour.days}] ${d.happy_hour.start}-${d.happy_hour.end}  ${d.happy_hour.deals.length} deals`);
 for (const [id, e] of Object.entries(enrich)) console.log(`  ${id.padEnd(30)} ${e.deals.length} deals  (${e.source_url})`);
 console.log(`\nReview queue (schedule disagreements — NOT applied):`);

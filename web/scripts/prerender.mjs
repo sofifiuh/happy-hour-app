@@ -11,7 +11,7 @@
 //   badge/<id>.svg|-light.svg venue badges, badge/<id>/ embed page (noindex)
 //   spots/index.html         A–Z of every venue
 //   og/<id>.jpg              1200×630 share card per venue
-//   map/, saved/, about/, privacy/, terms/, welcome/, menu.html, 404.html
+//   map/, saved/, about/, privacy/, terms/, submit/, welcome/, menu.html, 404.html
 //   sitemap.xml (index) + sitemap-{pages,venues,hubs}.xml, robots.txt, CNAME
 // The app boots on every page except the hubs and takes over from the
 // static markup. Venue copy (titles, about, questions) comes from
@@ -342,7 +342,10 @@ function venueBody(v) {
   const ranked = rankOf(v);
   // The photo matches the app's venue header (full width, same height) so
   // the page doesn't jump when the app takes over.
-  return `<main style="max-width:42rem;margin:0 auto">
+  // Desktop shows the venue in a panel beside the list and map
+  // (src/screens/home.tsx); sit the static page where that panel opens.
+  return `<style>@media (min-width:1024px){#root>main{max-width:none!important;width:436px;margin:0 0 0 12px!important}#root>main:first-of-type{margin-top:12px!important}#root>main>img{height:min(36vh,300px)!important;border-radius:28px 28px 0 0}}@media (min-width:1280px){#root>main{width:476px;margin-left:400px!important}}@media (min-width:1536px){#root>main{width:516px;margin-left:440px!important}}</style>
+<main style="max-width:42rem;margin:0 auto">
 ${v.photo ? `<img src="${esc(/^https?:/.test(v.photo) ? v.photo : `/${v.photo}`)}" alt="${esc(`${v.name}${v.area ? ` in ${v.area.name}` : v.city ? ` in ${v.city}` : ""}`)}" fetchpriority="high" style="display:block;width:100%;height:min(42vh,340px);object-fit:cover;background:#2f2d2b" />` : ""}
 </main>
 <main style="${S.wrap}">
@@ -453,14 +456,14 @@ async function renderCard({ id, title, line, photo }) {
 // ---------- hub pages ----------
 // Static pages, no app: a list of venues plus links to related hubs. They
 // carry their own small stylesheet (hub.css) in the brand's colours and
-// fonts, light or dark with the system setting.
+// fonts, light or dark like the app (the same pick, else the system setting).
 const font = (re) => fontFiles.find((f) => re.test(f));
 const HUB_CSS = `@font-face{font-family:"Funnel Display";font-weight:800;font-display:swap;src:url(/assets/${font(/^funnel-display-latin-800-/)}) format("woff2")}
 @font-face{font-family:"Funnel Display";font-weight:700;font-display:swap;src:url(/assets/${font(/^funnel-display-latin-700-/)}) format("woff2")}
 @font-face{font-family:"Funnel Sans";font-weight:400;font-display:swap;src:url(/assets/${font(/^funnel-sans-latin-400-/)}) format("woff2")}
 @font-face{font-family:"Funnel Sans";font-weight:600;font-display:swap;src:url(/assets/${font(/^funnel-sans-latin-600-/)}) format("woff2")}
 :root{--ink:#1b1b1b;--ink-2:#242322;--ink-3:#2f2d2b;--line:#3a3835;--cream:#f3efe4;--dim:#a7a196;--orange:#ff4900;--pink:#f7b2b7;--lime:#ecfe54;color-scheme:dark}
-@media (prefers-color-scheme:light){:root{--ink:#f5f1e7;--ink-2:#fffdf7;--ink-3:#ebe5d6;--line:#ddd5c4;--cream:#1b1b1b;--dim:#6b6559;--orange:#c23700;--pink:#a8384b;--lime:#5f6e00;color-scheme:light}}
+[data-theme=light]{--ink:#f5f1e7;--ink-2:#fffdf7;--ink-3:#ebe5d6;--line:#ddd5c4;--cream:#1b1b1b;--dim:#6b6559;--orange:#c23700;--pink:#a8384b;--lime:#5f6e00;color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;background:var(--ink);color:var(--cream);font:16px/1.55 "Funnel Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 a{color:inherit}
@@ -468,7 +471,7 @@ a{color:inherit}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 18px/1 "Funnel Display",system-ui,sans-serif;letter-spacing:-.02em}
 .brand svg{width:46px;height:44px;fill:var(--orange)}
 .cta{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:999px;background:var(--orange);color:#1b1b1b;font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap}
-@media (prefers-color-scheme:light){.cta{color:#fff}}
+[data-theme=light] .cta{color:#fff}
 main{max-width:46rem;margin:0 auto;padding:20px max(20px,env(safe-area-inset-right)) 72px max(20px,env(safe-area-inset-left))}
 .crumbs{font-size:14px;color:var(--dim);margin:4px 0 0}
 .crumbs a{color:var(--dim)}
@@ -605,6 +608,10 @@ a:focus-visible{outline:2px solid var(--orange)}
 write("hub.css", HUB_CSS);
 const cssHash = createHash("sha1").update(HUB_CSS).digest("hex").slice(0, 8);
 
+// The app's before-first-paint light/dark script, lifted from the built
+// index.html so both kinds of page read the same saved pick.
+const themeScript = template.match(/<script>[^<]*dataset\.theme[^<]*<\/script>/)?.[0] ?? "";
+
 const logoSvg = `<svg viewBox="0 0 130 124" aria-hidden="true"><path d="${logo}"/></svg>`;
 
 function hubDoc({ path, title, description, jsonld, body, robots, image, script }) {
@@ -617,6 +624,7 @@ function hubDoc({ path, title, description, jsonld, body, robots, image, script 
     <meta name="color-scheme" content="dark light" />
     <meta name="theme-color" content="#1b1b1b" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f5f1e7" media="(prefers-color-scheme: light)" />
+    ${themeScript}
     <title>${esc(title)}</title>
     <meta name="description" content="${esc(description)}" />
     <link rel="canonical" href="${url}" />
@@ -1609,6 +1617,7 @@ write(
 );
 sitemapDates.set("/", newest(venues));
 
+const SUBMIT_DESC = "Know a Vancouver happy hour we're missing, or a menu that changed? Snap the menu or sign and send it in. We check every one and put it on the map.";
 const PAGES = [
   ["map/index.html", "/map/", "Map of Vancouver Happy Hours", "Map of happy hours", true],
   // The app's Best of screen; the static /happy-hour/<place>/best/ pages are the indexed copies.
@@ -1617,6 +1626,7 @@ const PAGES = [
   ["about/index.html", "/about/", "About", "About A Little Hang", true],
   ["privacy/index.html", "/privacy/", "Privacy", "Privacy", true],
   ["terms/index.html", "/terms/", "Terms", "Terms", true],
+  ["submit/index.html", "/submit/", "Add a Happy Hour", "Add a happy hour", true],
   ["welcome/index.html", "/welcome/", null, null, false],
 ];
 for (const [file, path, title, h1, index] of PAGES) {
@@ -1625,7 +1635,7 @@ for (const [file, path, title, h1, index] of PAGES) {
     page({
       path,
       title: title ? `${title} | ${SITE}` : `Vancouver Happy Hours Right Now | ${SITE}`,
-      description: path === "/about/" ? ABOUT_DESC : HOME_DESC,
+      description: path === "/about/" ? ABOUT_DESC : path === "/submit/" ? SUBMIT_DESC : HOME_DESC,
       robots: index ? undefined : "noindex,follow",
       jsonld: path === "/about/" ? aboutLd() : undefined,
       body: h1 ? `<main style="${S.wrap}">${crumbHtml([{ name: "Happy hours", path: "/" }, { name: h1 }])}<h1 style="${S.h1}">${esc(h1)}</h1>${path === "/about/" ? aboutHtml() : ""}</main>` : "",

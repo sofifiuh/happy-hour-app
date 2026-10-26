@@ -11,7 +11,8 @@
 /*
  * A Little Hang brand tokens, from Sofia's Branding page in Figma
  * ("dark mode, pops of colour"; shortlisted swatches on #1b1b1b).
- * Dark is the brand; light follows the system setting and keeps the same
+ * Dark is the brand; light (picked in Filters, or following the system via
+ * data-theme, set in index.html) keeps the same
  * pops on warm paper (the board's cream and white logo lockups).
  * shadcn components read the semantic names below, so a rebrand is an
  * edit to these blocks. Repeated on body so a host page that sets
@@ -85,33 +86,31 @@ body,
  * cream 13.7+, cream-dim 5.3+, orange-fg 4.5+, lime/sky/amber/pink-fg
  * 4.6+ (lime-fg still 4.5+ at the 80% the list rows use).
  */
-@media (prefers-color-scheme: light) {
-  :root,
-  body {
-    --ink: #f5f1e7;
-    --ink-2: #fffdf8;
-    --ink-3: #ebe5d8;
-    --line: #d8d0c0;
-    --cream: #1b1b1b;
-    --cream-dim: #625c53;
+:root[data-theme="light"],
+[data-theme="light"] body {
+  --ink: #f5f1e7;
+  --ink-2: #fffdf8;
+  --ink-3: #ebe5d8;
+  --line: #d8d0c0;
+  --cream: #1b1b1b;
+  --cream-dim: #625c53;
 
-    --orange-fg: #bd3600;
-    --amber-fg: #94560a;
-    --lime-fg: #465200;
-    --pink-fg: #b03a55;
-    --sky-fg: #2b6478;
-    --lime-inv: #ecfe54;
+  --orange-fg: #bd3600;
+  --amber-fg: #94560a;
+  --lime-fg: #465200;
+  --pink-fg: #b03a55;
+  --sky-fg: #2b6478;
+  --lime-inv: #ecfe54;
 
-    --edge: #000000;
-    --dot-ring: rgb(27 27 27 / 0.55);
-    --live-glow: rgb(122 138 0 / 0.45);
-    --shadow-float: 0 10px 30px rgb(60 40 10 / 0.16);
-    --scrim: rgb(27 20 10 / 0.35);
+  --edge: #000000;
+  --dot-ring: rgb(27 27 27 / 0.55);
+  --live-glow: rgb(122 138 0 / 0.45);
+  --shadow-float: 0 10px 30px rgb(60 40 10 / 0.16);
+  --scrim: rgb(27 20 10 / 0.35);
 
-    --destructive: #d12c1f;
+  --destructive: #d12c1f;
 
-    color-scheme: light;
-  }
+  color-scheme: light;
 }
 
 @theme inline {
@@ -274,6 +273,19 @@ body {
     transform: scale(0.86) translateY(6px);
   }
 }
+/* Desktop venue panel sliding out from the list's edge, and back. */
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+}
+@keyframes panel-out {
+  to {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+}
 @keyframes toast-in {
   from {
     opacity: 0;
@@ -299,6 +311,12 @@ body {
 }
 @utility animate-pop-in {
   animation: pop-in 280ms cubic-bezier(0.34, 1.4, 0.64, 1) both;
+}
+@utility animate-panel-in {
+  animation: panel-in 420ms var(--ease-out) both;
+}
+@utility animate-panel-out {
+  animation: panel-out 220ms var(--ease-in) both;
 }
 @utility animate-toast {
   animation: toast-in 240ms var(--ease-out) both;

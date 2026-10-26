@@ -1,5 +1,6 @@
 import { Mail } from "lucide-react";
 import { useCallback, useEffect, useState, type FormEvent, type ReactNode } from "react";
+import { Field } from "@/components/field";
 import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -67,15 +68,7 @@ export function H2({ children, className }: { children: ReactNode; className?: s
   return <h2 className={cn("mt-8 mb-3 font-display text-[20px] font-bold tracking-tight", className)}>{children}</h2>;
 }
 
-export function Field({ label, hint, children }: { label: string; hint?: string; children: ReactNode }) {
-  return (
-    <label className="block">
-      <span className="mb-1.5 block text-[13px] font-semibold text-cream">{label}</span>
-      {children}
-      {hint && <span className="mt-1 block text-[12px] text-muted-foreground">{hint}</span>}
-    </label>
-  );
-}
+export { Field };
 
 export function ErrorLine({ error }: { error: string | null }) {
   if (!error) return null;

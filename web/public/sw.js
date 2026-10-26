@@ -35,6 +35,8 @@ self.addEventListener("fetch", (event) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return;
+  // Social bio short links (/ig, /threads, /tt) are redirect stubs; never cache one as the app shell.
+  if (/^\/(ig|threads|tt)\/?(index\.html)?$/.test(url.pathname)) return;
 
   if (req.mode === "navigate") {
     event.respondWith(networkFirst(req, "./"));

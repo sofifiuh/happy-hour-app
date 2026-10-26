@@ -1,8 +1,8 @@
 // Daily refresh: keep the published data honest without a human in the loop.
 //
-//   check-sources -> pick venues whose page changed or no longer shows our
-//   times -> re-crawl + re-extract just those (when a Claude engine is
-//   available) -> writeback -> stamp trust -> sanity gate
+//   check-sources -> guests' published happy hours -> pick venues whose page
+//   changed or no longer shows our times -> re-crawl + re-extract just those
+//   (when a Claude engine is available) -> writeback -> stamp trust -> sanity gate
 //
 // Hand-verified schedules still never auto-change (writeback.js). Without a
 // Claude engine the run is check-only: it still refreshes every venue's
@@ -38,6 +38,17 @@ const before = readJson(VENUES_FILE).venues;
 // --- 1. Check every source page.
 run("check-sources.js", ["--render", RENDER]);
 const freshness = readJson(FRESHNESS_STORE, {});
+
+// --- 1b. Happy hours guests photographed and an admin published (see
+// --- pipeline/submissions.js; the hourly workflow usually got there first).
+const SUBS = path.join(REPO_ROOT, "pipeline", "submissions.json");
+const subsBefore = fs.existsSync(SUBS) ? fs.readFileSync(SUBS, "utf8") : "";
+try {
+  run("submissions.js");
+} catch (e) {
+  console.log(`[submissions] failed: ${String(e.message).slice(0, 200)}`);
+}
+if ((fs.existsSync(SUBS) ? fs.readFileSync(SUBS, "utf8") : "") !== subsBefore) run("writeback.js");
 
 // --- 2. Choose what to re-extract: pages that changed first, then pages that
 // --- no longer show our times, oldest data first. Unreachable pages are not

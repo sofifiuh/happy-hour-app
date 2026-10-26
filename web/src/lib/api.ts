@@ -81,6 +81,20 @@ export async function api<T>(method: string, path: string, body?: unknown, raw?:
   return data as T;
 }
 
+// A multipart POST (photos plus fields), for "Add a happy hour".
+export async function apiForm<T>(path: string, form: FormData): Promise<T> {
+  if (!API_URL) throw new ApiError(0, "This isn't switched on yet");
+  let res: Response;
+  try {
+    res = await fetch(API_URL + path, { method: "POST", body: form });
+  } catch {
+    throw new ApiError(0, "You seem to be offline. Try again in a moment");
+  }
+  const data = await res.json().catch(() => null);
+  if (!res.ok) throw new ApiError(res.status, (data as { error?: string } | null)?.error ?? "Something went wrong");
+  return data as T;
+}
+
 export type CountType = "view" | "save" | "directions" | "call" | "website" | "share";
 
 // The numbers on a venue's dashboard. Fire and forget; the API counts each
@@ -123,6 +137,13 @@ export interface VenueEdit {
 }
 
 export type PublicEdit = VenueEdit & { updated: string; confirmed: string };
+
+// A happy hour published from a guest's photo this week (the site's own
+// data picks it up within the hour; this makes it show at once).
+export interface CommunityEdit {
+  hh: NonNullable<VenueEdit["hh"]>;
+  published: string; // YYYY-MM-DD
+}
 
 export interface Stats {
   week: Record<CountType, number>;

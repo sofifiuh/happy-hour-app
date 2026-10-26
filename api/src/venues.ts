@@ -56,6 +56,15 @@ export function emailMatchesWebsite(email: string, website: string | null) {
   return domain === host || host.endsWith(`.${domain}`) || domain.endsWith(`.${host}`);
 }
 
+// The id the data pipeline gives a new venue (normName in
+// pipeline/lib/venues.js, then dashes), with -2, -3… when it's taken.
+export function slugFor(name: string, taken: Set<string>) {
+  const base = name.toLowerCase().replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim().replace(/ /g, "-") || "spot";
+  let id = base;
+  for (let n = 2; taken.has(id); n++) id = `${base}-${n}`;
+  return id;
+}
+
 // ---------- The venue's edits ----------
 
 export interface Deal {
@@ -83,20 +92,63 @@ export interface EditData {
 
 const TIME = /^([01]\d|2[0-3]):[0-5]\d$/;
 
-function days(v: unknown, field: string) {
+export function days(v: unknown, field: string) {
   if (!Array.isArray(v) || v.some((d) => !Number.isInteger(d) || d < 0 || d > 6)) throw new HttpError(400, `${field}: days are 0 (Sun) to 6 (Sat)`);
   return [...new Set(v as number[])].sort();
 }
-function time(v: unknown, field: string, nullable = false) {
+export function time(v: unknown, field: string, nullable = false) {
   if (nullable && v == null) return null;
   if (typeof v !== "string" || !TIME.test(v)) throw new HttpError(400, `${field}: use 24-hour HH:MM`);
   return v;
 }
-function text(v: unknown, field: string, max: number) {
+export function text(v: unknown, field: string, max: number) {
   if (v == null) return "";
   if (typeof v !== "string") throw new HttpError(400, `${field} must be text`);
   if (v.length > max) throw new HttpError(400, `${field} is too long (max ${max})`);
   return v.trim();
+}
+
+// A happy hour's days, times, extra windows and deals, checked and tidied.
+// Used for an owner's edit and for an admin publishing a guest's photo.
+export function cleanHours(input: unknown): NonNullable<EditData["hh"]> {
+  if (!input || typeof input !== "object") throw new HttpError(400, "Expected the happy hour");
+  const h = input as Record<string, unknown>;
+  const deals = Array.isArray(h.deals) ? h.deals : [];
+  const extra = Array.isArray(h.extra) ? h.extra : [];
+  if (deals.length > 40) throw new HttpError(400, "Up to 40 deals");
+  if (extra.length > 6) throw new HttpError(400, "Up to 6 extra time windows");
+  return {
+    days: days(h.days, "Happy hour"),
+    start: time(h.start, "Start")!,
+    end: time(h.end, "End")!,
+    extra: extra.map((w: Record<string, unknown>, n) => ({
+      days: days(w.days, `Window ${n + 1}`),
+      start: time(w.start, `Window ${n + 1} start`)!,
+      end: time(w.end, `Window ${n + 1} end`, true),
+      label: text(w.label, "Label", 40) || null,
+    })),
+    deals: deals.map((d: Record<string, unknown>) => {
+      const deal: Deal = {
+        name: text(d.name, "Deal name", 80),
+        price: text(d.price, "Price", 30),
+        category: d.category === "food" ? "food" : "drink",
+        description: text(d.description, "Deal description", 200),
+      };
+      if (!deal.name) throw new HttpError(400, "Every deal needs a name");
+      return deal;
+    }),
+  };
+}
+
+// BC sets a minimum price for drinks; a very low drink price is probably a
+// typo or a rule problem, so a person takes a look.
+export function priceFlags(deals: Deal[]) {
+  const flags: string[] = [];
+  for (const d of deals) {
+    const n = parseFloat(d.price.replace(/[^0-9.]/g, ""));
+    if (d.category === "drink" && n > 0 && n < 3 && !/off|%/i.test(d.price)) flags.push(`Drink under $3: ${d.name} ${d.price}`);
+  }
+  return flags;
 }
 
 // Validates and normalises a venue's edit; returns it plus any reason to
@@ -108,38 +160,8 @@ export function cleanEdit(input: unknown, photoBase: string): { data: EditData; 
   const flags: string[] = [];
 
   if (i.hh != null) {
-    const h = i.hh as Record<string, unknown>;
-    const deals = Array.isArray(h.deals) ? h.deals : [];
-    const extra = Array.isArray(h.extra) ? h.extra : [];
-    if (deals.length > 40) throw new HttpError(400, "Up to 40 deals");
-    if (extra.length > 6) throw new HttpError(400, "Up to 6 extra time windows");
-    data.hh = {
-      days: days(h.days, "Happy hour"),
-      start: time(h.start, "Start")!,
-      end: time(h.end, "End")!,
-      extra: extra.map((w: Record<string, unknown>, n) => ({
-        days: days(w.days, `Window ${n + 1}`),
-        start: time(w.start, `Window ${n + 1} start`)!,
-        end: time(w.end, `Window ${n + 1} end`, true),
-        label: text(w.label, "Label", 40) || null,
-      })),
-      deals: deals.map((d: Record<string, unknown>) => {
-        const deal: Deal = {
-          name: text(d.name, "Deal name", 80),
-          price: text(d.price, "Price", 30),
-          category: d.category === "food" ? "food" : "drink",
-          description: text(d.description, "Deal description", 200),
-        };
-        if (!deal.name) throw new HttpError(400, "Every deal needs a name");
-        return deal;
-      }),
-    };
-    // BC sets a minimum price for drinks; a very low drink price is
-    // probably a typo or a rule problem, so a person takes a look.
-    for (const d of data.hh.deals) {
-      const n = parseFloat(d.price.replace(/[^0-9.]/g, ""));
-      if (d.category === "drink" && n > 0 && n < 3 && !/off|%/i.test(d.price)) flags.push(`Drink under $3: ${d.name} ${d.price}`);
-    }
+    data.hh = cleanHours(i.hh);
+    flags.push(...priceFlags(data.hh.deals));
   }
   if ("description" in i) data.description = text(i.description, "Description", 400) || null;
   if ("phone" in i) data.phone = text(i.phone, "Phone", 30) || null;

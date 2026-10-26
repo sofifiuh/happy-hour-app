@@ -57,6 +57,19 @@ each venue's cover and site photos and drops what pixel checks can't catch:
 staff portraits, photographed logos, flyers and menus, near-duplicates.
 It also picks the cover. A venue is reviewed again when its photo set changes.
 
+## Guests' happy hours (hourly, automated)
+
+Guests send menu photos at `/submit` and an admin publishes them from the
+review queue (see `api/README.md`). `submissions.js`
+(`.github/workflows/publish-submissions.yml`, hourly, and step 1b of
+`refresh.js`) pulls the published ones from the API's `/public/submissions`
+into `submissions.json`. A spot we list takes the checked happy hour
+(`verified`, `community.approved_at`) unless the pipeline re-extracted it
+later. A new spot is placed with Places Text Search inside Metro Vancouver;
+if Google can't find it, it stays `unresolved` and is retried. If it turns
+out to be a place we already list, the happy hour goes to that venue.
+`writeback.js` lays all of it over the data, and the workflow deploys.
+
 ## Engine & auth
 
 `lib/claude.js` calls headless `claude -p` — it reuses the machine's
