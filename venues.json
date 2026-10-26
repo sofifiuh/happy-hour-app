@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-25-c789a8c6",
+ "data_version": "2026-10-26-9beb9951",
  "venues": [
   {
    "id": "ancora",
@@ -49622,12 +49622,6 @@
      "credit_name": "75 West Coast Grill",
      "credit_url": "https://www.75west.ca/events",
      "source": "official_website"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/691a2c62b13113248eb0cd6d/c0155793-0ef1-4a5d-9adb-771ae07f7c48/75-West-Coast-Grill-Blackened-Halibut-Pasta.png",
-     "credit_name": "75 West Coast Grill",
-     "credit_url": "https://www.75west.ca/",
-     "source": "official_website"
     }
    ],
    "amenities": {
@@ -49750,7 +49744,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://images.squarespace-cdn.com/content/v1/691a2c62b13113248eb0cd6d/732bd3e7-f007-4d2f-83bc-b5e1cdab9c9d/75-west-beer-happy-hour.png",
+    "url": "https://images.squarespace-cdn.com/content/v1/691a2c62b13113248eb0cd6d/c0155793-0ef1-4a5d-9adb-771ae07f7c48/75-West-Coast-Grill-Blackened-Halibut-Pasta.png",
     "credit_name": "75 West Coast Grill",
     "credit_url": "https://www.75west.ca/",
     "source": "official_website"
