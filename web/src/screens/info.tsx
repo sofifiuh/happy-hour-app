@@ -167,6 +167,7 @@ function Person({ id, initial, tone, name, role, bio }: { id: string; initial: s
 function Privacy() {
   return (
     <>
+      <p className="mt-2 text-[13px] text-muted-foreground">Last updated 26 October 2026</p>
       <p className="mt-2">The short version: guests don't need an account, your location and saved spots stay on your device, and our analytics is cookieless and anonymous.</p>
       <H>Location</H>
       <p>
@@ -195,12 +196,26 @@ function Privacy() {
         counts once a day, using a code that changes daily and is deleted the next day, so nobody can be followed from one day to the
         next. Venues never see who you are.
       </p>
-      <H>Reports and venue accounts</H>
+      <H>Reports, photos and venue accounts</H>
       <p>
-        If you report a wrong time, we keep your message, and your email if you add one, to fix the listing and reply. Venue managers who
-        sign in give us their name, role, email and, optionally, a phone number and licence, which we use only to confirm they manage the
-        venue and to email them about their listing. Venue data is stored with Cloudflare, and email is sent through Resend. Ask us to
-        delete any of it at any time.
+        If you report a wrong time, we keep your message, and your email if you add one, to fix the listing and reply. If you send in a
+        happy hour photo, we keep the photos, your note, your email and your first name if you give it. Only our team sees the photos. We
+        use your email only to tell you what happened to this happy hour. If the venue manages its own listing, we may pass the times and
+        your note to its managers, never your name, email or the photos.
+      </p>
+      <p className="mt-3">
+        Venue managers who sign in give us their name, role, email and, optionally, a phone number and licence, which we use only to
+        confirm they manage the venue and to email them about their listing. All of this is stored with Cloudflare, and our emails are
+        sent through Cloudflare. Ask us to delete any of it at any time.
+      </p>
+      <H>Google Maps</H>
+      <p>
+        Venue pages show a Google map and, on phones, the venue's Google rating. These load straight from Google when you open the page,
+        so Google receives your IP address and browser details, under{" "}
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer" className="text-cream underline underline-offset-4">
+          Google's privacy policy
+        </a>
+        . We don't store anything Google sends back.
       </p>
       <H>Links to other sites</H>
       <p>Venue websites, maps and phone links open other services, which have their own privacy policies.</p>
