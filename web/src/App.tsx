@@ -30,7 +30,9 @@ const SubmitScreen = lazy(() => import("@/screens/submit").then((m) => ({ defaul
 // Checked on every visit to "/", not once when the router is built, so the
 // welcome screen's buttons land on the list straight away.
 function Root() {
-  return seenWelcome() ? <Home /> : <Navigate to="/welcome" replace />;
+  const { search } = useLocation();
+  // Keep the query string so tracking tags from social links survive the hop to /welcome.
+  return seenWelcome() ? <Home /> : <Navigate to={{ pathname: "/welcome", search }} replace />;
 }
 
 function seenWelcome() {
@@ -69,10 +71,10 @@ function Shell() {
 // Phones keep the full-page venue.
 function Browse() {
   const desktop = useIsDesktop();
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
   const spot = spotIdOf(pathname);
   if (!desktop || (!spot && !isHomePath(pathname))) return <Outlet />;
-  if (!spot && !seenWelcome()) return <Navigate to="/welcome" replace />;
+  if (!spot && !seenWelcome()) return <Navigate to={{ pathname: "/welcome", search }} replace />;
   return <Home panel={spot} />;
 }
 
