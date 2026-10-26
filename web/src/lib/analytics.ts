@@ -38,6 +38,12 @@ export function track(event: AnalyticsEvent) {
 
 export function startAnalytics() {
   if (!enabled()) return;
+  // Read the tracking tags now, before the router can rewrite the URL (first
+  // visits hop from / to /welcome), and attach them to every event this visit.
+  const landing = new URLSearchParams(location.search);
+  const utm = Object.fromEntries(
+    ["utm_source", "utm_medium", "utm_campaign", "utm_content"].flatMap((k) => (landing.get(k) ? [[k, landing.get(k)]] : [])),
+  );
   const load = () =>
     import("posthog-js").then(({ default: posthog }) => {
       posthog.init(TOKEN, {
@@ -58,7 +64,7 @@ export function startAnalytics() {
         disable_external_dependency_loading: true,
       });
       // Own PostHog project; the tag keeps events identifiable if they are ever exported or merged.
-      posthog.register({ app: "alittlehang" });
+      posthog.register({ app: "alittlehang", ...utm });
       ph = posthog;
       for (const e of queue.splice(0)) track(e);
     });
