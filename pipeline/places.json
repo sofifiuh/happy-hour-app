@@ -7242,5 +7242,22 @@
     },
     "matched_name": "Chao Mami Express",
     "synced_at": "2026-10-25"
+  },
+  "dahlia": {
+    "place_id": "ChIJM8nta4JxhlQRbETCrxUtj68",
+    "rating": 4.5,
+    "user_ratings_total": 322,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Dahlia",
+    "synced_at": "2026-10-26"
   }
 }

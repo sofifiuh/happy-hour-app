@@ -25,6 +25,143 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "dahlia",
+    "name": "Dahlia",
+    "formatted_address": "833 W Pender St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2857792,
+        "lng": -123.1163804
+      }
+    },
+    "formatted_phone_number": "(604) 416-2845",
+    "website": "https://dahlia-restaurant.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://dahlia-restaurant.ca/wp-content/uploads/2025/11/Dahlia-HH-Nov-2025.pdf",
+      "deals": [
+        {
+          "name": "Marinated Olives with House Bread",
+          "price": "$9",
+          "category": "food",
+          "description": "Niçoise, Castelvetrano, Arbequina, Sourdough"
+        },
+        {
+          "name": "Crudo",
+          "price": "$18",
+          "category": "food",
+          "description": "Market Fish, Citrus, Cucumber, Shallots"
+        },
+        {
+          "name": "Oysters on the Half Shell",
+          "price": "$12",
+          "category": "food",
+          "description": "½ Dozen, Freshly Shucked, Mignonette, Cocktail Sauce, Horseradish, Lemon"
+        },
+        {
+          "name": "Chicken Teriyaki Skewer",
+          "price": "$14",
+          "category": "food",
+          "description": "Chicken Breast, Soy"
+        },
+        {
+          "name": "Fin & Bun",
+          "price": "$12",
+          "category": "food",
+          "description": "Battered Fish, Pickled Shallot, Brioche Roll, Avocado Cream"
+        },
+        {
+          "name": "Dahlia Burger",
+          "price": "$15",
+          "category": "food",
+          "description": "Sesame Brioche, Lettuce, Mozzarella, Garlic Aioli"
+        },
+        {
+          "name": "Dahlia Highball",
+          "price": "$10",
+          "category": "drink",
+          "description": "Choice of Gin, Vodka or Tequila, Daily House Soda"
+        },
+        {
+          "name": "Mediterranean Mule",
+          "price": "$12",
+          "category": "drink",
+          "description": "Aronia, Ketel One, Citrus, Ginger Beer"
+        },
+        {
+          "name": "White Wine Sangria",
+          "price": "$9",
+          "category": "drink",
+          "description": "Pinot Grigio, Roku Gin, Cocchi Extra Dry, Banana, Pineapple, Mango, Dragon Fruit, Citrus, Aloe Vera"
+        },
+        {
+          "name": "Vetiver Negroni",
+          "price": "$12",
+          "category": "drink",
+          "description": "Roku Gin, Campari infused with Vetiver, Sweet Vermouth, Sumac, Kiwi Bitters"
+        },
+        {
+          "name": "Veuve Clicquot Brut",
+          "price": "$16",
+          "category": "drink",
+          "description": "Champagne"
+        },
+        {
+          "name": "Bottled Beer, White or Red Wines",
+          "price": "$8",
+          "category": "drink",
+          "description": "Selection includes Burrowing Owl Merlot and Tantalus Pinot Gris"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://dahlia-restaurant.ca/wp-content/uploads/2023/09/main-logo.png",
+      "credit_name": "Dahlia",
+      "credit_url": "https://dahlia-restaurant.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-10-26"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "karakoram-restaurant",
     "name": "Karakoram Restaurant",
     "formatted_address": "6990 Victoria Dr, Vancouver, BC",
@@ -17191,16 +17328,16 @@
           "description": "1 oz"
         },
         {
-          "name": "Sleeve of House Lager",
+          "name": "House Lager",
           "price": "$5",
           "category": "drink",
-          "description": "16 oz"
+          "description": "16 oz sleeve"
         },
         {
-          "name": "Sleeve of Red Truck Amber Ale",
+          "name": "Red Truck Amber Ale",
           "price": "$5",
           "category": "drink",
-          "description": "16 oz"
+          "description": "16 oz sleeve"
         },
         {
           "name": "Bar Highballs",
@@ -17209,64 +17346,64 @@
           "description": "1 oz"
         },
         {
-          "name": "House Wines",
+          "name": "House Wine 6 oz",
           "price": "$6",
           "category": "drink",
-          "description": "6 ounce pour"
+          "description": "6 ounce glass of house wine"
         },
         {
-          "name": "House Wines",
+          "name": "House Wine 9 oz",
           "price": "$9",
           "category": "drink",
-          "description": "9 ounce pour"
+          "description": "9 ounce glass of house wine"
         },
         {
           "name": "Veggie Spring Rolls",
           "price": "$8",
           "category": "food",
-          "description": "Appetizer special"
+          "description": "$8 appetizer special"
         },
         {
           "name": "Happy Hour Poutine",
           "price": "$8",
           "category": "food",
-          "description": "Appetizer special"
+          "description": "$8 appetizer special"
         },
         {
           "name": "Loaded Potato Boats",
           "price": "$8",
           "category": "food",
-          "description": "Appetizer special"
+          "description": "$8 appetizer special"
         },
         {
           "name": "Vietnamese Spring Rolls",
           "price": "$8",
           "category": "food",
-          "description": "3 rolls, appetizer special"
+          "description": "3 rolls; $8 appetizer special"
         },
         {
           "name": "Chicken Strips and Fries",
           "price": "$8",
           "category": "food",
-          "description": "2 strips, appetizer special"
+          "description": "2 chicken strips with fries"
         },
         {
-          "name": "Wings",
+          "name": "Half Order of Wings",
           "price": "$8",
           "category": "food",
-          "description": "Half order with choice of flavour"
+          "description": "Choice of flavour"
         },
         {
           "name": "Marinated Steak Bites",
           "price": "$12",
           "category": "food",
-          "description": "Appetizer special"
+          "description": "$12 appetizer special"
         },
         {
           "name": "Dry Ribs",
           "price": "$12",
           "category": "food",
-          "description": "1 pound"
+          "description": "1 pound; $12 appetizer special"
         }
       ]
     },
@@ -17276,7 +17413,7 @@
       "credit_url": "http://www.tugboatannies.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-26"
   },
   {
     "place_id": null,
@@ -22257,28 +22394,28 @@
     "website": "http://venturaroom.com/",
     "happy_hour": {
       "days": [
-        0,
         2,
         3,
         4,
         5,
-        6
+        6,
+        0
       ],
-      "start": "17:30",
-      "end": "21:00",
+      "start": "16:00",
+      "end": "17:30",
       "extra_windows": [
         {
           "days": [
-            0,
             2,
             3,
             4,
             5,
-            6
+            6,
+            0
           ],
           "start": "21:00",
           "end": null,
-          "label": "Food only"
+          "label": "Late night (food only)"
         }
       ],
       "verified": false,
@@ -22305,7 +22442,7 @@
         },
         {
           "name": "Spicy Tuna Crispy Rice",
-          "price": "$10½",
+          "price": "$10.50",
           "category": "food",
           "description": "serrano chili, miso aioli"
         },
@@ -22319,31 +22456,37 @@
           "name": "Social Sliders",
           "price": "$13",
           "category": "food",
-          "description": "2 sliders with CAB patties, smoked cheddar, bacon onion jam"
+          "description": "2 sliders made with CAB patties, smoked cheddar, bacon onion jam"
         },
         {
           "name": "Nitro Cocktails",
           "price": "$15",
           "category": "drink",
-          "description": ""
+          "description": "Nitro cocktails"
         },
         {
-          "name": "All Glasses of Wine",
+          "name": "Glasses of Wine",
           "price": "$12",
           "category": "drink",
-          "description": ""
+          "description": "All glasses of wine"
         },
         {
-          "name": "Local's Only",
-          "price": "$14½",
+          "name": "Bartender Creation",
+          "price": "MP",
           "category": "drink",
-          "description": "havana 3yo, toasted coconut, lime, cold pressed pineapple"
+          "description": "rotating creation inspired by the moment; ask what's stirring"
+        },
+        {
+          "name": "Locals Only",
+          "price": "$14.50",
+          "category": "drink",
+          "description": "Locals Only cocktail"
         },
         {
           "name": "Ventura Lager",
-          "price": "$6¼",
+          "price": "$6.25",
           "category": "drink",
-          "description": ""
+          "description": "Ventura Lager beer"
         }
       ]
     },
@@ -22353,7 +22496,7 @@
       "credit_url": "http://venturaroom.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-26"
   },
   {
     "place_id": null,
@@ -34031,104 +34174,95 @@
     "website": "http://www.onyxsteakhouse.ca/",
     "happy_hour": {
       "days": [
+        0,
         3,
         4,
         5,
-        6,
-        0
+        6
       ],
       "start": "16:00",
       "end": "18:00",
-      "extra_windows": [
-        {
-          "days": [
-            3
-          ],
-          "start": "16:00",
-          "end": null,
-          "label": "All-Day (Wed)"
-        }
-      ],
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
       "source_url": "https://onyxsteakhouse.ca/wp-content/uploads/2025/07/Copy-of-Happy-Hour-Card-6.75-x-5-1.png",
       "deals": [
         {
           "name": "Arugula Salad",
-          "price": "$15",
+          "price": "$13",
           "category": "food",
-          "description": "poached pear, julienne apple & bell pepper, goat cheese fritter, candied pecan, port wine dressing"
-        },
-        {
-          "name": "Arancini",
-          "price": "$9",
-          "category": "food",
-          "description": "smoked corn yuzu butter, mushroom duxelles, toasted almond, crispy enoki"
+          "description": "Poached pear, julienne apple & bell pepper, goat cheese fritter, candied pecan, port wine dressing"
         },
         {
           "name": "Stuffed Garlic Bombolini",
           "price": "$9",
           "category": "food",
-          "description": "molten garlic triple cheese, rosemary brown butter brushed, vancouver island sea salt, romesco"
+          "description": "Molten garlic triple cheese, rosemary brown butter brushed, Vancouver Island sea salt, romesco"
+        },
+        {
+          "name": "Arancini",
+          "price": "$9",
+          "category": "food",
+          "description": "Smoked corn yuzu butter, mushroom duxelles, toasted almond, crispy enoki"
         },
         {
           "name": "Prawns",
           "price": "$17",
           "category": "food",
-          "description": "flamed tableside, sambal brown butter, charred red pepper, scallion ginger love, citrus fire"
+          "description": "Flamed tableside, sambal brown butter, charred red pepper, scallion ginger love, citrus fire"
         },
         {
           "name": "Steak Fries",
           "price": "$9",
           "category": "food",
-          "description": "triple cooked, garlic, shaved parmesan, white truffle oil, house made aioli"
+          "description": "Triple cooked, garlic, shaved parmesan, white truffle oil, house made aioli"
         },
         {
           "name": "Brussel Sprouts",
           "price": "$12",
           "category": "food",
-          "description": "black garlic honey sherry glaze, bacon crumble, smoked maldon, marcona crunch, charred lemon yuzu cube"
+          "description": "Black garlic honey sherry glaze, bacon crumble, smoked maldon, marcona crunch, charred lemon yuzu cube"
         },
         {
           "name": "Maple Bacon Cheesecake",
           "price": "$10",
           "category": "food",
-          "description": "pecans, whipped cream, candied bacon"
+          "description": "Pecans, whipped cream, candied bacon"
         },
         {
           "name": "Freshly Baked Chocolate Chunk Cookie",
           "price": "$10",
           "category": "food",
-          "description": "french vanilla ice cream, balsamic caramel sauce"
+          "description": "French vanilla ice cream, balsamic caramel sauce; allow 10-15 minutes for baking"
         },
         {
           "name": "Delmonico 8oz",
           "price": "$49",
           "category": "food",
-          "description": "northern gold AAA+, 100% premium canadian beef, brooks, alberta, grass fed & finished with highest quality of grain"
+          "description": "Northern Gold AAA+, 100% premium Canadian beef, Brooks, Alberta, grass fed & finished with highest quality grain"
         },
         {
           "name": "Short Rib",
           "price": "$37",
           "category": "food",
-          "description": "braised, potato purée, blue cheese crust, crispy onion, pickled radish, braised beef reduction"
+          "description": "Braised, potato purée, blue cheese crust, crispy onion, pickled radish, braised beef reduction"
         },
         {
           "name": "Yellowfin Tuna 5oz",
           "price": "$31",
           "category": "food",
-          "description": "seared rare, togarashi crust, garlic parmesan steak fries, lemon aioli, black garlic cherry glaze"
+          "description": "Seared rare, togarashi crust, garlic parmesan steak fries, lemon aioli, black garlic sherry glaze"
         },
         {
           "name": "Prawn Linguine",
           "price": "$29",
           "category": "food",
-          "description": "trap caught prawns, brandy flambée, arugula, tarragon, ancho chili, white wine garlic cream sauce"
+          "description": "Trap caught prawns, brandy flambée, arugula, tarragon, ancho chili, white wine garlic cream sauce"
         }
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-26"
   },
   {
     "place_id": null,
@@ -34310,26 +34444,34 @@
     "website": "http://www.cafe-orso.ca/",
     "happy_hour": {
       "days": [
-        0,
         1,
         2,
         3,
         4,
-        5,
-        6
+        5
       ],
       "start": "14:00",
-      "end": "17:00",
-      "extra_windows": [],
+      "end": "16:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            6
+          ],
+          "start": "14:00",
+          "end": "17:00",
+          "label": "Weekend"
+        }
+      ],
       "verified": false,
       "verified_source": null,
-      "source_url": "http://www.cafe-orso.ca/menu",
+      "source_url": "https://www.cafe-orso.ca/menu",
       "deals": [
         {
-          "name": "Wine",
-          "price": "$6.00",
+          "name": "Glass of wine",
+          "price": "$6",
           "category": "drink",
-          "description": "Glass add-on with Charcuterie board"
+          "description": "Add a glass of wine for $6.00 to a charcuterie board ($25.00) during Happy Hour."
         }
       ]
     },
@@ -34339,7 +34481,7 @@
       "credit_url": "http://www.cafe-orso.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-26"
   },
   {
     "place_id": null,
@@ -35686,11 +35828,11 @@
     "website": "http://www.sfinaki.ca/",
     "happy_hour": {
       "days": [
-        1,
         2,
         3,
         4,
-        5
+        5,
+        6
       ],
       "start": "11:30",
       "end": "15:00",
@@ -35700,52 +35842,76 @@
       "source_url": "https://sfinaki.ca/pages/menu",
       "deals": [
         {
-          "name": "Local Beer (Canned)",
-          "price": "$7",
-          "category": "drink",
-          "description": "355ml"
-        },
-        {
-          "name": "Canned Cocktails",
-          "price": "$7",
-          "category": "drink",
-          "description": "Various varieties"
-        },
-        {
-          "name": "House Wine",
-          "price": "$7",
-          "category": "drink",
-          "description": "Per glass"
-        },
-        {
-          "name": "Sfinaki Fries",
+          "name": "Tzatziki dip + pita",
           "price": "$11",
           "category": "food",
-          "description": "Feta, oregano, ladolemono"
+          "description": "Happy hour dip and pita"
         },
         {
-          "name": "Skewer Meze",
-          "price": "$11-12",
+          "name": "Sfinaki fries",
+          "price": "$12",
           "category": "food",
-          "description": "Chicken $11, Lamb $12; with tzatziki and flat pita"
+          "description": "Happy hour portion of fries"
         },
         {
-          "name": "Keftedes Meze",
+          "name": "Skewer meze",
+          "price": "$12-13",
+          "category": "food",
+          "description": "$12 chicken, $13 lamb; served with tzatziki; add a handful of fries for $7"
+        },
+        {
+          "name": "Keftedes meze",
+          "price": "$14",
+          "category": "food",
+          "description": "Served with tzatziki; add a handful of fries for $7"
+        },
+        {
+          "name": "Kalamari meze",
+          "price": "$16",
+          "category": "food",
+          "description": "Fried; served with tzatziki"
+        },
+        {
+          "name": "Original gyro wrap",
+          "price": "$12",
+          "category": "food",
+          "description": "Add a handful of fries for $7"
+        },
+        {
+          "name": "Chicken gyro wrap",
           "price": "$13",
           "category": "food",
-          "description": "Grilled ground sirloin patties with tzatziki"
+          "description": "Add a handful of fries for $7"
         },
         {
-          "name": "Kalamari Meze",
-          "price": "$15",
+          "name": "Souvlaki piato",
+          "price": "$22-24",
           "category": "food",
-          "description": "Fried with tzatziki"
+          "description": "$22 chicken, $24 lamb; rice pilaf, lemon potato, greek salad, tzatziki"
         },
         {
-          "name": "Gyro Wrap",
-          "price": "$11-12",
+          "name": "Arni psito piato",
+          "price": "$27",
           "category": "food",
-          "description": "Original $11, Chicken $12; with optional fries"
+          "description": "Rice pilaf, lemon potato, greek salad"
+        },
+        {
+          "name": "Spanakopita piato",
+          "price": "$23",
+          "category": "food",
+          "description": "Rice pilaf, lemon potato, greek salad, tzatziki"
+        },
+        {
+          "name": "Kalamari piato",
+          "price": "$24",
+          "category": "food",
+          "description": "Fried; rice pilaf, lemon potato, greek salad, tzatziki"
+        },
+        {
+          "name": "Sips",
+          "price": "$7",
+          "category": "drink",
+          "description": "Local beer, canned cocktails, or house wine per glass"
         }
       ]
     },
@@ -35755,7 +35921,7 @@
       "credit_url": "http://www.sfinaki.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-26"
   },
   {
     "place_id": null,
@@ -37868,16 +38034,7 @@
       ],
       "start": "16:00",
       "end": "18:00",
-      "extra_windows": [
-        {
-          "days": [
-            3
-          ],
-          "start": "18:00",
-          "end": null,
-          "label": "Whisky Wednesdays"
-        }
-      ],
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
       "source_url": "https://skyeavenue.com/wp-content/themes/SkyeAvenue/assets/img/features/Cocktail%20Menu%20NF%20v1.pdf",
@@ -37898,13 +38055,25 @@
           "name": "Chicken Lettuce Bites",
           "price": "$10",
           "category": "food",
-          "description": "Fraser Valley Farm chicken, butter lettuce, togarashi aioli, peanut glaze, pickled vegetables"
+          "description": "Fraser Valley Farm chicken, butter lettuce, togarashi aioli, peanut glaze, pickled vegetables (n)"
+        },
+        {
+          "name": "Burrata Salad",
+          "price": "$24",
+          "category": "food",
+          "description": "Herb-marinated eggplant, brioche, red pesto, Peruvian pepper (v+n)"
         },
         {
           "name": "Truffle Fries",
           "price": "$9",
           "category": "food",
           "description": "Grana Padano, truffle oil (v)"
+        },
+        {
+          "name": "Wagyu Carpaccio",
+          "price": "$25",
+          "category": "food",
+          "description": "Snake River Farm wagyu beef, aged pecorino, truffle cookies, arugula"
         },
         {
           "name": "Meatball Duo",
@@ -37916,55 +38085,55 @@
           "name": "Flat Bread Marinara",
           "price": "$10",
           "category": "food",
-          "description": "Baked pizza with tomato sauce, herbs, arugula, balsamic reduction (V)"
+          "description": "Baked pizza with tomato sauce, herbs, arugula, balsamic reduction (v)"
         },
         {
           "name": "Old Fashioned",
           "price": "$10",
           "category": "drink",
-          "description": "Evan Williams bourbon, Angostura bitters"
+          "description": "2 oz. Evan Williams bourbon, Angostura bitters"
         },
         {
           "name": "Paper Plane",
           "price": "$10",
           "category": "drink",
-          "description": "Evan Williams bourbon, Aperol, Amaro Nonino, lemon juice"
+          "description": "2 oz. Evan Williams bourbon, Aperol, Amaro Nonino, lemon juice"
         },
         {
           "name": "Rob Roy",
           "price": "$10",
           "category": "drink",
-          "description": "Naked Malt whisky, Cinzano, Angostura bitters"
+          "description": "2 oz. Naked Malt whisky, Cinzano, Angostura bitters"
         },
         {
           "name": "Penicillin",
           "price": "$10",
           "category": "drink",
-          "description": "Naked Malt whisky, Talisker Storm whisky, lemon juice, honey-ginger syrup"
+          "description": "2 oz. Naked Malt whisky, Talisker Storm whisky, lemon juice, honey-ginger syrup"
         },
         {
           "name": "Jewel of Denial",
           "price": "$10",
           "category": "drink",
-          "description": "Vodka, Chambord, cranberry juice, lime"
+          "description": "2 oz. Vodka, Chambord, cranberry juice, lime"
         },
         {
           "name": "Manhattan",
           "price": "$10",
           "category": "drink",
-          "description": "Evan Williams bourbon, Cinzano, Angostura bitters"
+          "description": "2 oz. Evan Williams bourbon, Cinzano, Angostura bitters"
         },
         {
-          "name": "House White Wine",
-          "price": "$6-$9",
+          "name": "House White",
+          "price": "$6",
           "category": "drink",
-          "description": "6 oz for $6, 9 oz for $9"
+          "description": "6 oz glass; $9 for 9 oz"
         },
         {
-          "name": "House Red Wine",
-          "price": "$6-$9",
+          "name": "House Red",
+          "price": "$6",
           "category": "drink",
-          "description": "6 oz for $6, 9 oz for $9"
+          "description": "6 oz glass; $9 for 9 oz"
         }
       ]
     },
@@ -37974,7 +38143,7 @@
       "credit_url": "https://www.skyeavenue.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-26"
   },
   {
     "place_id": null,
@@ -41557,6 +41726,7 @@
     "happy_hour": {
       "days": [
         0,
+        1,
         5,
         6
       ],
@@ -41571,15 +41741,15 @@
           ],
           "start": "15:00",
           "end": "17:00",
-          "label": "Open to 5pm"
+          "label": "Happy hour (opens 3pm)"
         },
         {
           "days": [
             1
           ],
-          "start": "12:00",
+          "start": "17:00",
           "end": "21:00",
-          "label": "All day Monday"
+          "label": "Monday open to close"
         }
       ],
       "verified": false,
@@ -41590,13 +41760,13 @@
           "name": "Lager",
           "price": "$6",
           "category": "drink",
-          "description": "16 oz draught lager"
+          "description": "Draft lager"
         },
         {
           "name": "Pineapple daiquiri",
           "price": "$8",
           "category": "drink",
-          "description": "Bacardi white, lime, pineapple oleo"
+          "description": "Happy hour price"
         },
         {
           "name": "Aperol spritz",
@@ -41620,72 +41790,72 @@
           "name": "Olives",
           "price": "$3",
           "category": "food",
-          "description": "Applewood smoked castelvetrano olives"
+          "description": "Happy hour price"
         },
         {
           "name": "Meatball",
           "price": "$3",
           "category": "food",
-          "description": "Seasoned beef & pork meatball"
+          "description": "Single meatball"
         },
         {
           "name": "Garlic toast",
           "price": "$3",
           "category": "food",
-          "description": "House focaccia, garlic butter"
+          "description": "Happy hour price"
         },
         {
           "name": "Anchovy toast",
           "price": "$7",
           "category": "food",
-          "description": "Toasted house focaccia, salsa verde, boquerone white anchovies"
+          "description": "Happy hour price"
         },
         {
           "name": "Meatball sliders",
           "price": "$10",
           "category": "food",
-          "description": ""
+          "description": "Happy hour price"
         },
         {
           "name": "Caesar",
           "price": "$12",
           "category": "food",
-          "description": "Romaine, grana padano, mung beans, croutons, caesar dressing"
+          "description": "Happy hour price"
         },
         {
           "name": "Cacio e pepe",
           "price": "$16",
           "category": "food",
-          "description": "Bucatini, grana padano, cracked black pepper"
+          "description": "Pasta"
         },
         {
           "name": "Alla vodka",
           "price": "$16",
           "category": "food",
-          "description": "Radiatori, vodka sauce, burrata, calabrian chili"
+          "description": "Pasta"
         },
         {
           "name": "Margherita",
           "price": "$16",
           "category": "food",
-          "description": "Red sauce, fior di latte, grana padano, fresh basil"
+          "description": "Pizza"
         },
         {
           "name": "Funghi",
           "price": "$16",
           "category": "food",
-          "description": "White sauce, seasonal mushroom mix, fior di latte, chive, sherry/truffle oil"
+          "description": "Pizza"
         },
         {
           "name": "Spicy pep",
           "price": "$16",
           "category": "food",
-          "description": "Red sauce, pepperoni, mozzarella, chili, basil, fermented honey"
+          "description": "Pizza"
         }
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-26"
   },
   {
     "place_id": null,
