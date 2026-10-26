@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-26-24b3f69e",
+ "data_version": "2026-10-26-7ac3151b",
  "venues": [
   {
    "id": "ancora",
@@ -5846,7 +5846,20 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-3.jpg",
+     "credit_name": "Dahlia",
+     "credit_url": "https://dahlia-restaurant.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-4.jpg",
+     "credit_name": "Dahlia",
+     "credit_url": "https://dahlia-restaurant.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -5964,7 +5977,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://dahlia-restaurant.ca/wp-content/uploads/2023/09/main-logo.png",
+    "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-1.jpg",
     "credit_name": "Dahlia",
     "credit_url": "https://dahlia-restaurant.ca/",
     "source": "official_website"

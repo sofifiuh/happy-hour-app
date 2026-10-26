@@ -4571,6 +4571,51 @@
       "rejected": []
     }
   },
+  "dahlia": {
+    "checked_at": "2026-10-26",
+    "pages": [
+      "https://dahlia-restaurant.ca/"
+    ],
+    "cover_problem": "tiny file",
+    "cover": {
+      "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-1.jpg",
+      "page": "https://dahlia-restaurant.ca/",
+      "w": 797,
+      "h": 900
+    },
+    "gallery": [
+      {
+        "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-3.jpg",
+        "page": "https://dahlia-restaurant.ca/",
+        "w": 797,
+        "h": 900
+      },
+      {
+        "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-4.jpg",
+        "page": "https://dahlia-restaurant.ca/",
+        "w": 797,
+        "h": 900
+      }
+    ],
+    "review": {
+      "at": "2026-10-26",
+      "key": "2ad4d96379e9",
+      "rejected": [
+        {
+          "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-2.jpg",
+          "why": "people as subject"
+        },
+        {
+          "url": "https://dahlia-restaurant.ca/wp-content/uploads/2025/06/events-at-dahlia.jpg",
+          "why": "text overlay (promo graphic)"
+        },
+        {
+          "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-5.jpg",
+          "why": "people as subject"
+        }
+      ]
+    }
+  },
   "davie-social": {
     "checked_at": "2026-10-24",
     "pages": [
