@@ -1,6 +1,7 @@
 import { Popover } from "@base-ui/react/popover";
 import { Info } from "lucide-react";
 import { type CSSProperties } from "react";
+import { Star } from "lucide-react";
 import { Link } from "react-router";
 import type { HangScore, ScorePart } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -24,19 +25,23 @@ export function scoreWord(n: number) {
   return n >= TOP_SCORE ? "Great happy hour" : n >= 6 ? "Good happy hour" : n >= 4.5 ? "Decent happy hour" : "Basic happy hour";
 }
 
-// Small pill for list rows and the venue header.
+// Small pill for list rows, map cards and the venue header. Top happy
+// hours (7.5+) are pink with a star; the rest are neutral.
 export function ScoreChip({ score, className }: { score: HangScore; className?: string }) {
+  const top = score.total >= TOP_SCORE;
   return (
     <span
-      title={`Hangout Score ${fmtScore(score.total)} out of 10`}
+      title={`Hangout Score ${fmtScore(score.total)} out of 10${top ? ", a top happy hour" : ""}`}
       className={cn(
-        "inline-flex items-center rounded-full px-1.5 py-px font-display text-[12px] leading-[1.3] font-bold tabular",
-        score.total >= TOP_SCORE ? "bg-score text-on-pop" : "bg-ink-3 text-cream",
+        "inline-flex items-center gap-0.5 rounded-full px-1.5 py-px font-display text-[12px] leading-[1.3] font-bold tabular",
+        top ? "bg-score text-on-pop" : "bg-ink-3 text-cream",
         className,
       )}
     >
+      {top && <Star aria-hidden className="size-2.5 fill-current" strokeWidth={0} />}
       <span className="sr-only">Hangout Score </span>
       {fmtScore(score.total)}
+      {top && <span className="sr-only">, top happy hour</span>}
     </span>
   );
 }
