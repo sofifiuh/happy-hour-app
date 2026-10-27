@@ -40,7 +40,7 @@ export function MapCard({ row, now, active }: { row: Row; now: Date; active: boo
       <div className="min-w-0 flex-1">
         <h2 className="flex items-center gap-1.5 font-display text-[17px] leading-tight font-extrabold tracking-tight">
           <span className="truncate">{venue.name}</span>
-          {venue.hh.verified && <BadgeCheck aria-label="Verified" className="size-4 shrink-0 text-sky-fg" />}
+          {venue.hh.verified && <BadgeCheck aria-label="Verified" className="size-4 shrink-0 text-info-fg" />}
         </h2>
         <p className="mt-1 flex items-center gap-1.5 text-[13px] whitespace-nowrap">
           <StatusDot occ={occ} />
@@ -57,7 +57,7 @@ export function MapCard({ row, now, active }: { row: Row; now: Date; active: boo
             {countdown && <Countdown label={countdown} className={cn("shrink-0", soon ? "font-semibold text-orange-fg" : "text-muted-foreground")} />}
             {countdown && walk && <span className="text-muted-foreground">·</span>}
             {walk && (
-              <span className="flex min-w-0 items-center gap-1 text-sky-fg">
+              <span className="flex min-w-0 items-center gap-1 text-info-fg">
                 <Footprints className="size-3.5 shrink-0" />
                 {/* The footprints say "walk"; keep the visible label short. */}
                 <span className="truncate">

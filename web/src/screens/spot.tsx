@@ -228,14 +228,14 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
           <Badge variant="upcoming" className="mb-3">{statusLabel(occ, now)}</Badge>
         ) : null}
         <h1 className={cn("font-display font-extrabold tracking-[-0.025em]", panel ? "text-[30px]" : "text-[34px]", "leading-[1.02]")}>
-          <span className="mb-1.5 block font-sans text-[12px] leading-none font-semibold tracking-[0.12em] text-pink-fg uppercase">
+          <span className="mb-1.5 block font-sans text-[12px] leading-none font-semibold tracking-[0.12em] text-muted-foreground uppercase">
             Happy hour{venue.area ? ` · ${venue.area.name}` : venue.city ? ` · ${venue.city}` : ""}
           </span>{" "}
           {venue.name}
         </h1>
         <p className="mt-2 text-[15px] text-muted-foreground">
           {venue.address}
-          {km != null && walkLabel(km) && <span className="text-sky-fg"> · {walkLabel(km)}</span>}
+          {km != null && walkLabel(km) && <span className="text-info-fg"> · {walkLabel(km)}</span>}
         </p>
         <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-[13px]">
           {venue.score && (
@@ -251,12 +251,12 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
               terms bar showing Places content near a non-Google map. */}
           {!panel && <GoogleRating placeId={venue.placeId} />}
           {venue.hh.verified && (
-            <Badge variant="sky" size="sm">
+            <Badge variant="info" size="sm">
               <BadgeCheck className="size-3.5" /> Verified
             </Badge>
           )}
           {venue.byVenue && (
-            <Badge variant="sky" size="sm">
+            <Badge variant="info" size="sm">
               <Store className="size-3.5" /> Updated by the venue
             </Badge>
           )}
@@ -315,7 +315,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
                         <li key={`${d.name}-${i}`} className="border-b border-border py-3.5 last:border-0">
                           <div className="flex items-baseline justify-between gap-3">
                             <span className="text-[15px] font-semibold">{d.name}</span>
-                            <span className="shrink-0 font-display text-[16px] font-bold text-pink-fg tabular">{d.price}</span>
+                            <span className="shrink-0 font-display text-[16px] font-bold tabular">{d.price}</span>
                           </div>
                           {d.description && <p className="mt-1 text-[13px] leading-snug text-muted-foreground">{d.description}</p>}
                         </li>
@@ -364,7 +364,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
               >
                 <span className="flex flex-col">
                   <span className={cn(isToday && "font-semibold")}>{runLabel(run.days)}</span>
-                  {isToday && <span className="mt-0.5 text-[11px] font-bold tracking-[0.08em] text-pink-fg uppercase">Today</span>}
+                  {isToday && <span className="mt-0.5 text-[11px] font-bold tracking-[0.08em] text-foreground uppercase">Today</span>}
                 </span>
                 {wins.length ? (
                   <ul className="flex flex-col items-end gap-1.5 tabular">
@@ -374,7 +374,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
                         <li key={i} className="flex items-center gap-2 whitespace-nowrap">
                           {w.label && <span className="text-[13px] text-muted-foreground">{w.label}</span>}
                           {live && <StatusDot occ={occ} />}
-                          <span className={cn(live && "font-bold text-lime-fg")}>{fmtRange(w.start, w.end)}</span>
+                          <span className={cn(live && "font-bold text-live-fg")}>{fmtRange(w.start, w.end)}</span>
                         </li>
                       );
                     })}
@@ -532,7 +532,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
                     <span className="min-w-0">
                       <span className="block truncate font-semibold">{o.name}</span>
                       {walk && (
-                        <span className="mt-0.5 flex items-center gap-1 text-[13px] text-sky-fg">
+                        <span className="mt-0.5 flex items-center gap-1 text-[13px] text-info-fg">
                           <Footprints className="size-3.5 shrink-0" />
                           {walk}
                         </span>
@@ -582,7 +582,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
           to={myVenues().includes(venue.id) ? `/venue/${venue.id}` : `/venue/claim/${venue.id}`}
           className="mx-5 mt-8 flex min-h-14 items-center gap-3 rounded-2xl px-4 py-3 text-[14px] ring-1 ring-edge/10 transition-colors hover:bg-ink-2"
         >
-          <Store className="size-5 shrink-0 text-pink-fg" />
+          <Store className="size-5 shrink-0 text-orange-fg" />
           <span className="flex-1">
             {myVenues().includes(venue.id) ? (
               <span className="font-semibold">Manage this listing</span>
@@ -672,7 +672,7 @@ function RankLink({ best, venue }: { best: BestList[]; venue: Venue }) {
       viewTransition
       className="mt-2.5 flex min-h-12 items-center gap-3 rounded-2xl bg-ink-2 px-4 py-2.5 text-[14px] font-semibold transition-colors hover:bg-ink-3"
     >
-      <span className="grid size-8 shrink-0 place-items-center rounded-full bg-primary font-display text-[14px] font-extrabold text-primary-foreground tabular">#{rank}</span>
+      <span className="grid size-8 shrink-0 place-items-center rounded-full bg-score font-display text-[14px] font-extrabold text-on-pop tabular">#{rank}</span>
       <span className="flex-1">Ranked #{rank} of the best happy hours in {list.name}</span>
       <ChevronDown className="size-4 -rotate-90 text-muted-foreground" />
     </Link>

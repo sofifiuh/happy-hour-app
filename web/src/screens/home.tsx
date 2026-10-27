@@ -170,7 +170,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setLocationOpen(true)}
-              className="inline-flex h-11 items-center gap-1.5 rounded-full bg-ink-2 px-3.5 text-[13px] font-medium text-sky-fg transition-transform active:scale-95"
+              className="inline-flex h-11 items-center gap-1.5 rounded-full bg-ink-2 px-3.5 text-[13px] font-medium text-info-fg transition-transform active:scale-95"
             >
               {locationState === "granted" ? (
                 <>

@@ -47,7 +47,7 @@ export function VenueHome() {
           <p className="text-[14px] text-muted-foreground">Signed in as {me.email}</p>
           {me.admin && (
             <Link to="/venue/admin" className="mt-4 flex min-h-14 items-center gap-3 rounded-2xl bg-ink-2 px-4 text-[15px] font-semibold">
-              <ShieldCheck className="size-5 text-sky-fg" /> <span className="flex-1">Review queue</span> <ChevronRight className="size-4 text-muted-foreground" />
+              <ShieldCheck className="size-5 text-info-fg" /> <span className="flex-1">Review queue</span> <ChevronRight className="size-4 text-muted-foreground" />
             </Link>
           )}
           <H2>Your venues</H2>
@@ -56,7 +56,7 @@ export function VenueHome() {
               {me.venues.map((v) => (
                 <li key={v.id}>
                   <Link to={`/venue/${v.id}`} className="flex min-h-14 items-center gap-3 rounded-2xl bg-ink-2 px-4 text-[15px] font-semibold transition-colors hover:bg-ink-3">
-                    <Store className="size-5 text-pink-fg" /> <span className="flex-1">{v.name}</span> <ChevronRight className="size-4 text-muted-foreground" />
+                    <Store className="size-5 text-orange-fg" /> <span className="flex-1">{v.name}</span> <ChevronRight className="size-4 text-muted-foreground" />
                   </Link>
                 </li>
               ))}

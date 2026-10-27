@@ -277,7 +277,7 @@ function BestRow({ row, rank, now, onHover }: { row: Row; rank: number; now: Dat
         aria-label={`Number ${rank}`}
         className={cn(
           "absolute top-1.5 left-1.5 grid h-7 min-w-7 place-items-center rounded-full px-1.5 font-display text-[14px] leading-none font-extrabold tabular shadow-md",
-          rank <= 3 ? "bg-primary text-primary-foreground" : "bg-ink/85 text-cream",
+          rank <= 3 ? "bg-score text-on-pop" : "bg-ink/85 text-cream",
         )}
       >
         {rank}
@@ -286,20 +286,20 @@ function BestRow({ row, rank, now, onHover }: { row: Row; rank: number; now: Dat
         <span className="line-clamp-2 font-display text-[16px] leading-[1.15] font-bold">{venue.name}</span>
         <span className="truncate text-[13px] text-muted-foreground">
           {venue.area?.name ?? venue.city}
-          {walk && <span className="text-sky-fg"> · {walk}</span>}
+          {walk && <span className="text-info-fg"> · {walk}</span>}
         </span>
         <span className="flex items-center gap-1.5 text-[12px]">
           <StatusDot occ={occ} />
           {occ.start && occ.end ? <span className="font-semibold tabular">{fmtRange(occ.start, occ.end)}</span> : <span className="text-muted-foreground">No times listed</span>}
           {occ.status !== "scheduled" && occ.status !== "none" && (
-            <Countdown label={statusLabel(occ, now)} className={cn("truncate", soon ? "text-orange-fg" : occ.status === "live" ? "text-lime-fg/80" : "text-muted-foreground")} />
+            <Countdown label={statusLabel(occ, now)} className={cn("truncate", soon ? "text-orange-fg" : occ.status === "live" ? "text-live-fg/80" : "text-muted-foreground")} />
           )}
         </span>
       </div>
       <span
         className={cn(
           "my-auto grid size-[52px] shrink-0 place-items-center rounded-2xl font-display text-[20px] leading-none font-extrabold tabular",
-          score.total >= TOP_SCORE ? "bg-lime text-on-pop" : "bg-ink-3 text-cream",
+          score.total >= TOP_SCORE ? "bg-score text-on-pop" : "bg-ink-3 text-cream",
         )}
       >
         <span className="sr-only">Hangout Score </span>

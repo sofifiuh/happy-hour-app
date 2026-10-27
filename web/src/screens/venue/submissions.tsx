@@ -163,7 +163,7 @@ export function SubmissionCard({ s, onDecide }: { s: Submission; onDecide: (body
             ) : (
               <span className="font-display text-[18px] font-bold">{s.place_name}</span>
             )}
-            {!s.venue_id && <Badge size="sm" variant="pink">New spot</Badge>}
+            {!s.venue_id && <Badge size="sm" variant="info">New spot</Badge>}
             {s.managed && (
               <Badge size="sm" variant="outline">
                 <Store /> Runs its own listing

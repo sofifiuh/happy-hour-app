@@ -273,7 +273,7 @@ function StatsCard({ stats }: { stats: Stats | null }) {
   const max = useMemo(() => Math.max(1, ...(stats?.daily.map((d) => d.views) ?? [1])), [stats]);
   return (
     <Card className="mt-2">
-      <p className="text-[13px] font-semibold tracking-[0.08em] text-pink-fg uppercase">Last 7 days</p>
+      <p className="text-[13px] font-semibold tracking-[0.08em] text-muted-foreground uppercase">Last 7 days</p>
       {!stats ? (
         <Skeleton className="mt-3 h-24" />
       ) : (
