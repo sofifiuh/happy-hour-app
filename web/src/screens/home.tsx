@@ -23,7 +23,7 @@ import { reducedMotion } from "@/lib/motion";
 import { spotPath } from "@/lib/routes";
 import { Spot } from "@/screens/spot";
 import { useStore, type Row } from "@/lib/store";
-import { useIsDesktop, useIsWide } from "@/lib/use-media";
+import { useIsDesktop, useIsWide, useIsWider } from "@/lib/use-media";
 import { useTitle } from "@/lib/use-title";
 import { cn } from "@/lib/utils";
 
@@ -41,6 +41,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
   const [limit, setLimit] = useState(PAGE);
   const desktop = useIsDesktop();
   const wide = useIsWide();
+  const wider = useIsWider();
   const navigate = useNavigate();
   useTitle(null, false, !panel);
   const [selected, setSelected] = useState<string | null>(null);
@@ -142,12 +143,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
   let budget = limit;
   let n = 0;
   return (
-    <div
-      className={cn(
-        "lg:grid lg:grid-cols-[460px_0px_1fr] lg:transition-[grid-template-columns] lg:duration-[420ms] lg:ease-[var(--ease-out)] motion-reduce:transition-none",
-        open && "xl:grid-cols-[400px_480px_1fr] 2xl:grid-cols-[440px_520px_1fr]",
-      )}
-    >
+    <div className="lg:grid lg:grid-cols-[460px_1fr]">
     {/* Narrower desktops lay the venue panel over the list. */}
     <div inert={open && !wide} className="relative min-h-dvh min-w-0 pb-28 lg:col-start-1 lg:row-start-1 lg:pb-10">
       <a
@@ -308,14 +304,16 @@ export function Home({ panel = null }: { panel?: string | null }) {
       <LocationDrawer open={locationOpen} onOpenChange={setLocationOpen} />
     </div>
     {desktop && (
-      // The venue panel: its own column on wide screens (the grid track
-      // opens to make room, squeezing the map), over the list on narrower
-      // ones. The card slides in from the list's edge.
-      <div className="pointer-events-none sticky top-0 z-30 h-dvh min-w-0 max-xl:fixed max-xl:left-0 max-xl:w-[460px] xl:col-start-2 xl:row-start-1 xl:overflow-clip xl:[overflow-clip-margin:24px]">
+      // The venue panel: a card floating over the map's left edge on wide
+      // screens, over the list on narrower ones. Nothing resizes when it
+      // opens or closes (resizing the map every frame was what made it
+      // judder): the card slides on transform and opacity, and the map
+      // eases its camera over to keep the spot in the uncovered part.
+      <div className="pointer-events-none fixed inset-y-0 left-0 z-30 w-[460px] xl:left-[464px] xl:w-[504px] 2xl:w-[544px]">
         {/* Covers the list the panel sits over on narrower desktops. */}
         <div aria-hidden className={cn("absolute inset-0 bg-ink transition-opacity duration-300 xl:hidden", open ? "opacity-100" : "opacity-0")} />
         {shown && (
-          <div className={cn("absolute inset-y-0 left-0 w-[460px] py-3 pr-1 max-xl:pl-3 xl:w-[480px] 2xl:w-[520px]", open && "pointer-events-auto")}>
+          <div className={cn("absolute inset-0 py-3 pr-1 pl-3 xl:pr-0", open && "pointer-events-auto")}>
             <div
               ref={panelRef}
               tabIndex={-1}
@@ -331,10 +329,10 @@ export function Home({ panel = null }: { panel?: string | null }) {
       </div>
     )}
     {desktop && (
-      <aside aria-label="Map" className="sticky top-0 h-dvh min-w-0 p-3 pl-1 lg:col-start-3 lg:row-start-1">
+      <aside aria-label="Map" className="sticky top-0 h-dvh min-w-0 p-3 pl-1 lg:col-start-2 lg:row-start-1">
         <div className="relative h-full overflow-hidden rounded-[28px] bg-ink-2 ring-1 ring-edge/5">
           <Suspense fallback={null}>
-            <DesktopMap rows={rows} now={now} selected={focusId} hovered={hovered} onSelect={pick} card={!panel} />
+            <DesktopMap rows={rows} now={now} selected={focusId} hovered={hovered} onSelect={pick} card={!panel} coverLeft={open && wide ? (wider ? 544 : 504) : 0} />
           </Suspense>
         </div>
       </aside>

@@ -2,6 +2,7 @@ import { useSyncExternalStore } from "react";
 
 const DESKTOP = "(min-width: 1024px)";
 const WIDE = "(min-width: 1280px)";
+const WIDER = "(min-width: 1536px)";
 
 function useMedia(query: string) {
   return useSyncExternalStore(
@@ -27,6 +28,11 @@ export function useIsDesktop() {
 // Narrower desktops lay the panel over the list instead.
 export function useIsWide() {
   return useMedia(WIDE);
+}
+
+// The venue panel's wider size (screens/home.tsx).
+export function useIsWider() {
+  return useMedia(WIDER);
 }
 
 const LIGHT = "(prefers-color-scheme: light)";
