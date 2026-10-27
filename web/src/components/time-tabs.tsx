@@ -41,6 +41,8 @@ export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; cl
           aria-selected={filters.tab === t.key}
           className={chip(filters.tab === t.key)}
           onClick={() => {
+            // A new tab scrolls to the top in screens/home.tsx; tapping the open one does too.
+            if (filters.tab === t.key) window.scrollTo({ top: 0, behavior: "smooth" });
             setFilters({ tab: t.key });
             if (t.key !== "all") track({ name: "filter_applied", filter: t.key });
           }}

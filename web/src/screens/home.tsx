@@ -34,6 +34,16 @@ const PAGE = 40;
 // `panel` is the venue open beside the list on desktop (App.tsx, Browse).
 export function Home({ panel = null }: { panel?: string | null }) {
   const { rows, now, loading, loadFailed, filters, resetFilters, setFilters, locationState, origin, saved } = useStore();
+  // A new time tab (All, Happening now, Upcoming, Date & Time) starts its list
+  // from the top instead of wherever the last one was scrolled to.
+  const planKey = filters.plan ? `${filters.plan.day}-${filters.plan.time}` : "";
+  const tabSeen = useRef(`${filters.tab}|${planKey}`);
+  useEffect(() => {
+    const key = `${filters.tab}|${planKey}`;
+    if (tabSeen.current === key) return;
+    tabSeen.current = key;
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [filters.tab, planKey]);
   const [params] = useSearchParams();
   const [filtersOpen, setFiltersOpen] = useState(params.get("sheet") === "filters");
   const [planOpen, setPlanOpen] = useState(params.get("sheet") === "plan");
