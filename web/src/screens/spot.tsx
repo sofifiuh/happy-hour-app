@@ -242,13 +242,6 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
             Temporarily closed
           </p>
         )}
-        {venue.closed ? null : occ.status === "live" ? (
-          <Badge variant="live" className="mb-3">
-            <span className="size-1.5 rounded-full bg-on-pop" /> Happening now · {statusLabel(occ, now).toLowerCase()}
-          </Badge>
-        ) : occ.status === "upcoming" ? (
-          <Badge variant="upcoming" className="mb-3">{statusLabel(occ, now)}</Badge>
-        ) : null}
         {places.length > 0 && (
           <nav aria-label="Breadcrumb" className="mb-1.5 text-[12px] leading-none font-semibold tracking-[0.12em] text-muted-foreground uppercase">
             {places.map((p, i) => (
@@ -653,30 +646,22 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
         aria-label="Happy hour and directions"
         className={cn("z-30 border-t border-border bg-ink/95 backdrop-blur-xl", panel ? "sticky bottom-0" : "fixed inset-x-0 bottom-0")}
       >
-        <div className={cn("mx-auto flex items-center justify-between gap-3 px-5 pt-3", panel ? "pb-3.5" : "max-w-md pb-[max(env(safe-area-inset-bottom),14px)] lg:max-w-2xl")}>
-          <div className="min-w-0">
-            {occ.start && occ.end ? (
-              <>
-                <p className="flex items-center gap-2 font-display text-[20px] leading-tight font-extrabold whitespace-nowrap tabular">
-                  <StatusDot occ={occ} />
-                  {fmtRange(occ.start, occ.end)}
+        {/* One line: the window on the left, where it stands on the right ("happening now", "Starts in 1h 40m"). */}
+        <div className={cn("mx-auto flex min-h-11 items-center justify-between gap-3 px-5 pt-3", panel ? "pb-3.5" : "max-w-md pb-[max(env(safe-area-inset-bottom),14px)] lg:max-w-2xl")}>
+          {occ.start && occ.end ? (
+            <>
+              <p className="flex items-center gap-2 font-display text-[20px] leading-tight font-extrabold whitespace-nowrap tabular">
+                <StatusDot occ={occ} />
+                {fmtRange(occ.start, occ.end)}
+              </p>
+              {occ.status !== "scheduled" && (
+                <p className={cn("min-w-0 truncate text-[15px]", soon ? "font-semibold text-orange-fg" : "text-cream")}>
+                  {occ.status === "live" && !soon ? "happening now" : statusLabel(occ, now)}
                 </p>
-                <p className={cn("mt-0.5 truncate text-xs", soon ? "font-semibold text-orange-fg" : "text-muted-foreground")}>
-                  {occ.status === "live" ? `On now · ${statusLabel(occ, now).toLowerCase()}` : statusLabel(occ, now)}
-                </p>
-              </>
-            ) : (
-              <p className="text-sm text-muted-foreground">No happy hour times listed</p>
-            )}
-          </div>
-          {venue.lat != null && venue.lng != null ? (
-            <Button onClick={openDirections} className="shrink-0">
-              <Navigation /> Directions
-            </Button>
+              )}
+            </>
           ) : (
-            <Button variant="cream" onClick={onShare} className="shrink-0">
-              <Share /> Share
-            </Button>
+            <p className="text-sm text-muted-foreground">No happy hour times listed</p>
           )}
         </div>
       </aside>
