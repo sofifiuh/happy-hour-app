@@ -1,5 +1,5 @@
-import { ArrowLeft, BadgeCheck, Camera, X, ChevronDown, ExternalLink, Flag, Footprints, Globe, Heart, Images, Lightbulb, MessageCircle, Navigation, Phone, Share, Star, Store } from "lucide-react";
-import { type CSSProperties, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { ArrowLeft, BadgeCheck, Camera, X, ChevronDown, ChevronRight, ExternalLink, Flag, Footprints, Globe, Heart, Images, Lightbulb, MessageCircle, Navigation, Phone, Share, Star, Store } from "lucide-react";
+import { type CSSProperties, useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { ScoreCard, ScoreChip } from "@/components/hang-score";
@@ -10,7 +10,7 @@ import { PhotoViewer } from "@/components/photo-viewer";
 import { ReportDrawer } from "@/components/report-drawer";
 import { StatusDot } from "@/components/status";
 import { useToast } from "@/components/toast";
-import { Badge } from "@/components/ui/badge";
+import { Badge, badgeVariants } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -66,6 +66,26 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
     track({ name: "venue_viewed", venue_id: viewedId });
     count(viewedId, "view");
   }, [viewedId]);
+  // The top bar's breadcrumb drops the city when the full trail doesn't fit.
+  // fullWidth is measured while the trail shows whole and never truncates.
+  const crumbRef = useRef<HTMLElement>(null);
+  const crumbFull = useRef(0);
+  const [crumbFit, setCrumbFit] = useState({ id: viewedId, tight: false });
+  const crumbTight = crumbFit.id === viewedId && crumbFit.tight;
+  useLayoutEffect(() => {
+    const nav = crumbRef.current;
+    if (!nav) return;
+    const fit = () => {
+      const trail = nav.firstElementChild as HTMLElement | null;
+      if (!crumbTight && trail) crumbFull.current = trail.scrollWidth;
+      const tight = crumbFull.current > nav.clientWidth;
+      setCrumbFit((f) => (f.id === viewedId && f.tight === tight ? f : { id: viewedId, tight }));
+    };
+    fit();
+    const ro = new ResizeObserver(fit);
+    ro.observe(nav);
+    return () => ro.disconnect();
+  }, [crumbTight, viewedId]);
   const page = useRef<HTMLElement>(null);
   const bar = useRef<HTMLElement>(null);
   const desktop = useIsDesktop();
@@ -219,7 +239,30 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
               {back}
             </button>
           )}
-          <div className="flex gap-2">
+          {/* City › neighbourhood, linking to their hub pages (the static
+              page's breadcrumb). Ellipsised when the bar is tight. */}
+          {places.length > 0 ? (
+            <nav ref={crumbRef} aria-label="Breadcrumb" className="pointer-events-auto mx-2 flex min-w-0 flex-1 items-center justify-center">
+              <p className="flex h-11 max-w-full min-w-0 items-center rounded-full bg-ink/70 px-3.5 text-[13px] font-semibold text-cream/80 backdrop-blur">
+                {places.map((p, i) => (
+                  // When both don't fit, only the neighbourhood shows.
+                  <span key={p.label} className={cn("flex items-center", crumbTight ? (i < places.length - 1 ? "hidden" : "min-w-0") : "shrink-0")}>
+                    {i > 0 && !crumbTight && <ChevronRight aria-hidden className="mx-0.5 size-3.5 shrink-0 opacity-60" />}
+                    {p.path ? (
+                      <a href={p.path} className="truncate underline-offset-4 hover:text-cream hover:underline">
+                        {p.label}
+                      </a>
+                    ) : (
+                      <span className="truncate">{p.label}</span>
+                    )}
+                  </span>
+                ))}
+              </p>
+            </nav>
+          ) : (
+            <span className="flex-1" />
+          )}
+          <div className="flex shrink-0 gap-2">
             <button
               onClick={onSave}
               aria-label={isSaved ? "Remove from saved" : "Save"}
@@ -249,22 +292,6 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
         ) : occ.status === "upcoming" ? (
           <Badge variant="upcoming" className="mb-3">{statusLabel(occ, now)}</Badge>
         ) : null}
-        {places.length > 0 && (
-          <nav aria-label="Breadcrumb" className="mb-1.5 text-[12px] leading-none font-semibold tracking-[0.12em] text-muted-foreground uppercase">
-            {places.map((p, i) => (
-              <span key={p.label}>
-                {i > 0 && <span aria-hidden className="px-1.5 opacity-60">›</span>}
-                {p.path ? (
-                  <a href={p.path} className="-my-2 inline-block py-2 underline-offset-4 hover:text-cream hover:underline">
-                    {p.label}
-                  </a>
-                ) : (
-                  p.label
-                )}
-              </span>
-            ))}
-          </nav>
-        )}
         {/* Reads as the search: "Mangos Kitchen Bar Happy Hour", same words as the title. */}
         <h1 className={cn("font-display font-extrabold tracking-[-0.025em] text-balance", panel ? "text-[30px]" : "text-[34px]", "leading-[1.02]")}>
           {venue.name}
@@ -274,32 +301,31 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
           {venue.address}
           {km != null && walkLabel(km) && <span className="text-info-fg"> · {walkLabel(km)}</span>}
         </p>
-        <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-[13px]">
-          {venue.score && (
-            <button
-              onClick={() => document.getElementById("hang-score")?.scrollIntoView({ behavior: "smooth", block: "start" })}
-              aria-label={`${venue.score.total.toFixed(1)} Hangout Score out of 10, see how it scores`}
-              className="-my-3 inline-flex min-h-11 items-center gap-1.5 font-semibold"
-            >
-              <ScoreChip score={venue.score} /> Hangout Score
-            </button>
-          )}
-          {/* Not in the desktop panel: it sits beside our MapLibre map, and Google's
-              terms bar showing Places content near a non-Google map. */}
-          {!panel && <GoogleRating placeId={venue.placeId} />}
-          {venue.hh.verified && (
-            <Badge variant="info" size="sm">
-              <BadgeCheck className="size-3.5" /> Verified
-            </Badge>
-          )}
-          {venue.byVenue && (
-            <Badge variant="info" size="sm">
-              <Store className="size-3.5" /> Updated by the venue
-            </Badge>
-          )}
-        </div>
-        {pills.length > 0 && (
-          <div role="region" aria-label="Amenities" tabIndex={0} className="no-scrollbar -mx-5 mt-4 flex gap-2 overflow-x-auto px-5">
+        {/* Score first, then the venue's checks and amenities, all one pill style. */}
+        {(venue.score || !panel || venue.hh.verified || venue.byVenue || pills.length > 0) && (
+          <div role="region" aria-label="Highlights" tabIndex={0} className="no-scrollbar -mx-5 mt-4 flex gap-2 overflow-x-auto px-5">
+            {venue.score && (
+              <button
+                onClick={() => document.getElementById("hang-score")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                aria-label={`${venue.score.total.toFixed(1)} Hangout Score out of 10, see how it scores`}
+                className={cn(badgeVariants(), "h-8 shrink-0 bg-ink-2 pr-3 pl-1.5 font-semibold transition-transform active:scale-95")}
+              >
+                <ScoreChip score={venue.score} className="px-2 py-0.5 text-[13px]" /> Hangout Score
+              </button>
+            )}
+            {/* Not in the desktop panel: it sits beside our MapLibre map, and Google's
+                terms bar showing Places content near a non-Google map. */}
+            {!panel && <GoogleRating placeId={venue.placeId} className={cn(badgeVariants(), "my-0 h-8 min-h-0 shrink-0 bg-ink-2 px-3")} />}
+            {venue.hh.verified && (
+              <Badge className="h-8 shrink-0 bg-ink-2 px-3">
+                <BadgeCheck className="size-4 text-info-fg" /> Verified
+              </Badge>
+            )}
+            {venue.byVenue && (
+              <Badge className="h-8 shrink-0 bg-ink-2 px-3">
+                <Store className="size-4 text-info-fg" /> Updated by the venue
+              </Badge>
+            )}
             {pills.map((p) => (
               <Badge key={p.label} className="h-8 shrink-0 bg-ink-2 px-3">
                 <span>{p.emoji}</span> {p.label}
