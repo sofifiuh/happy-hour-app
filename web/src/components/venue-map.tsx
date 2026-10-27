@@ -32,6 +32,7 @@ export function VenueMap({
   insetBottom = EDGE,
   locateClassName,
   ranked = false,
+  coverLeft = 0,
 }: {
   rows: Row[];
   selected: string | null;
@@ -43,6 +44,7 @@ export function VenueMap({
   insetBottom?: number;
   locateClassName?: string;
   ranked?: boolean;
+  coverLeft?: number;
 }) {
   const { deviceLocation: location, location: start, area, requestLocation, locationState } = useStore();
   const scheme = useColorScheme();
@@ -60,6 +62,9 @@ export function VenueMap({
   const pinned = useRef<[number, number] | null>(null);
   const picked = selected ? rows.find((r) => r.venue.id === selected) : undefined;
   pinned.current = picked ? [picked.venue.lng!, picked.venue.lat!] : null;
+  // Strip on the left covered by the desktop venue panel.
+  const cover = useRef(coverLeft);
+  cover.current = coverLeft;
   const insets = useRef({ top: insetTop, bottom: insetBottom });
   insets.current = { top: insetTop, bottom: insetBottom };
   // Where the map opens: you, else your neighbourhood, else Downtown.
@@ -232,20 +237,17 @@ export function VenueMap({
     const at = pinned.current;
     if (!ready || !m || !at || shownFor.current === selected) return;
     shownFor.current = selected;
-    // No card (the desktop venue panel has the details): bring the pin
-    // into view if it's off the map or tucked under its edge.
-    // Checked once the map has settled at its new width: opening the
-    // panel squeezes it.
+    // No card (the desktop venue panel has the details): the map stays
+    // still unless the pin is off the map or under the panel, then it
+    // glides to the middle of the part the panel leaves uncovered.
     if (!el) {
-      setTimeout(() => {
-        if (map.current !== m) return;
-        const p = m.project(at);
-        const W = m.getContainer().clientWidth;
-        const H = m.getContainer().clientHeight;
-        const pad = 64;
-        if (p.x < pad || p.x > W - pad || p.y < insets.current.top + pad || p.y > H - insets.current.bottom - pad)
-          m.easeTo({ center: at, duration: reducedMotion() ? 0 : 600 });
-      }, reducedMotion() ? 0 : 440);
+      const p = m.project(at);
+      const W = m.getContainer().clientWidth;
+      const H = m.getContainer().clientHeight;
+      const pad = 48;
+      const left = cover.current;
+      if (p.x < left + pad || p.x > W - pad || p.y < insets.current.top + pad || p.y > H - insets.current.bottom - pad)
+        m.easeTo({ center: at, offset: [left / 2, 0], duration: reducedMotion() ? 0 : 650 });
       return;
     }
     const p = m.project(at);

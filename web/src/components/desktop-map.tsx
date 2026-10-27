@@ -14,6 +14,7 @@ export default function DesktopMap({
   onSelect,
   ranked,
   card = true,
+  coverLeft = 0,
 }: {
   rows: Row[];
   now: Date;
@@ -23,6 +24,8 @@ export default function DesktopMap({
   ranked?: boolean;
   // false while the venue panel shows the picked spot: just its pin.
   card?: boolean;
+  // Width of the venue panel floating over the map's left edge.
+  coverLeft?: number;
 }) {
   const mappable = useMemo(() => rows.filter((r) => r.venue.lat != null && r.venue.lng != null), [rows]);
   const picked = selected ? mappable.find((r) => r.venue.id === selected) : undefined;
@@ -33,6 +36,7 @@ export default function DesktopMap({
       hovered={hovered}
       onSelect={onSelect}
       ranked={ranked}
+      coverLeft={coverLeft}
       locateClassName="bottom-5"
       popover={
         picked &&

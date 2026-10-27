@@ -274,16 +274,23 @@ body {
   }
 }
 /* Desktop venue panel sliding out from the list's edge, and back. */
+/* Opaque early so the map doesn't show through the card for long. */
 @keyframes panel-in {
   from {
     opacity: 0;
-    transform: translateX(-28px);
+    transform: translateX(-32px);
+  }
+  35% {
+    opacity: 1;
   }
 }
 @keyframes panel-out {
+  60% {
+    opacity: 1;
+  }
   to {
     opacity: 0;
-    transform: translateX(-28px);
+    transform: translateX(-32px);
   }
 }
 @keyframes toast-in {
