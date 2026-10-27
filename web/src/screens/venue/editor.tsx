@@ -293,7 +293,7 @@ function StatsCard({ stats }: { stats: Stats | null }) {
                   <dd className="flex items-baseline gap-1.5">
                     <span className="font-display text-[24px] font-extrabold tabular">{now}</span>
                     {diff !== 0 && (
-                      <span className={cn("inline-flex items-center text-[12px] font-semibold", diff > 0 ? "text-lime-fg" : "text-muted-foreground")}>
+                      <span className={cn("inline-flex items-center text-[12px] font-semibold", diff > 0 ? "text-info-fg" : "text-muted-foreground")}>
                         {diff > 0 ? <ArrowUp className="size-3" /> : <ArrowDown className="size-3" />}
                         {Math.abs(diff)}
                       </span>

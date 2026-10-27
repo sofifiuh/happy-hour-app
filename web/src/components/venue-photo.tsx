@@ -8,7 +8,7 @@ import type { Venue } from "@/lib/types";
 const FALLBACKS = [
   "from-[#ff4900] to-[#751927]",
   "from-[#ffb530] to-[#ff4900]",
-  "from-[#f7b2b7] to-[#a3726d]",
+  "from-[#a7a196] to-[#3a3835]",
   "from-[#ff6237] to-[#2f2d2b]",
 ];
 
