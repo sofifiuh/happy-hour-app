@@ -3,9 +3,9 @@ import type { Occurrence } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 const DOT = {
-  live: "bg-lime dot-ring animate-live",
-  scheduled: "bg-lime dot-ring",
-  upcoming: "bg-amber dot-ring",
+  live: "bg-live dot-ring animate-live",
+  scheduled: "bg-live dot-ring",
+  upcoming: "bg-soon dot-ring",
   none: "bg-line",
 } as const;
 

@@ -31,7 +31,7 @@ export function ScoreChip({ score, className }: { score: HangScore; className?: 
       title={`Hangout Score ${fmtScore(score.total)} out of 10`}
       className={cn(
         "inline-flex items-center rounded-full px-1.5 py-px font-display text-[12px] leading-[1.3] font-bold tabular",
-        score.total >= TOP_SCORE ? "bg-lime text-on-pop" : "bg-ink-3 text-cream",
+        score.total >= TOP_SCORE ? "bg-score text-on-pop" : "bg-ink-3 text-cream",
         className,
       )}
     >
@@ -50,7 +50,7 @@ export function ScoreCard({ score }: { score: HangScore }) {
         <span
           className={cn(
             "grid size-16 shrink-0 place-items-center rounded-2xl font-display text-[28px] leading-none font-extrabold tabular",
-            score.total >= TOP_SCORE ? "bg-lime text-on-pop" : "bg-ink-3 text-cream",
+            score.total >= TOP_SCORE ? "bg-score text-on-pop" : "bg-ink-3 text-cream",
           )}
         >
           <span className="flex flex-col items-center">
@@ -78,7 +78,7 @@ export function ScoreCard({ score }: { score: HangScore }) {
             <div className="mt-1.5 h-1.5 overflow-hidden rounded-full bg-ink-3" aria-hidden>
               <div
                 style={{ "--w": `${score[p.key] * 10}%`, animationDelay: `${120 + i * 70}ms` } as CSSProperties}
-                className="animate-grow h-full w-(--w) origin-left rounded-full bg-pink"
+                className="animate-grow h-full w-(--w) origin-left rounded-full bg-score"
               />
             </div>
             <p className="mt-1 text-[13px] leading-snug text-muted-foreground">{score.notes[p.key]}</p>

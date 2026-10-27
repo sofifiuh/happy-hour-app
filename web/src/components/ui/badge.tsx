@@ -6,10 +6,10 @@ const badgeVariants = cva("inline-flex items-center gap-1.5 rounded-full font-me
   variants: {
     variant: {
       default: "bg-ink-3 text-cream",
-      live: "bg-lime text-on-pop",
-      upcoming: "bg-amber text-on-pop",
-      pink: "bg-pink text-on-pop",
-      sky: "bg-sky-fg/15 text-sky-fg",
+      live: "bg-live text-on-pop",
+      upcoming: "bg-soon text-on-pop",
+      score: "bg-score text-on-pop",
+      info: "bg-info-fg/15 text-info-fg",
       outline: "border border-border text-muted-foreground",
     },
     size: {
