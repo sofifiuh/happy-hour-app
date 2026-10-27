@@ -1,6 +1,5 @@
-import { X } from "lucide-react";
-import { type CSSProperties, useEffect, useMemo, useRef, useState } from "react";
-import { Navigate } from "react-router";
+import { type CSSProperties, useMemo, useRef, useState } from "react";
+import { Navigate, useNavigate } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { FiltersDrawer } from "@/components/filters-drawer";
 import { MapCard } from "@/components/map-card";
@@ -9,10 +8,11 @@ import { SearchBar } from "@/components/search-bar";
 import { TimeTabs } from "@/components/time-tabs";
 import { VenueMap } from "@/components/venue-map";
 import { ViewToggle } from "@/components/view-toggle";
+import { markHero } from "@/lib/motion";
+import { spotPath } from "@/lib/routes";
 import { useStore } from "@/lib/store";
 import { useIsDesktop } from "@/lib/use-media";
 import { useTitle } from "@/lib/use-title";
-import { cn } from "@/lib/utils";
 
 const CAROUSEL_MAX = 40;
 
@@ -22,29 +22,15 @@ export function MapScreen() {
   const { rows, now } = useStore();
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [planOpen, setPlanOpen] = useState(false);
-  // A pin tap selects a spot and pops its card up beside the pin, and the
-  // card strip steps aside. Swiping the strip only follows a spot: it
-  // rings that pin and eases the map to it.
-  const [selected, setSelected] = useState<string | null>(null);
+  // A pin tap opens that spot straight away. Swiping the strip only
+  // follows a spot: it rings that pin and eases the map to it.
+  const navigate = useNavigate();
   const [focused, setFocused] = useState<string | null>(null);
   const strip = useRef<HTMLDivElement>(null);
   const programmaticScroll = useRef(false);
 
   const mappable = useMemo(() => rows.filter((r) => r.venue.lat != null && r.venue.lng != null), [rows]);
   const cards = useMemo(() => mappable.slice(0, CAROUSEL_MAX), [mappable]);
-  const picked = selected ? mappable.find((r) => r.venue.id === selected) : undefined;
-
-  // Closing a pin's card brings the strip back on the card it had.
-  useEffect(() => {
-    if (selected || !focused) return;
-    const el = strip.current?.querySelector<HTMLElement>(`[data-id="${CSS.escape(focused)}"]`);
-    if (el && strip.current) {
-      programmaticScroll.current = true;
-      strip.current.scrollTo({ left: el.offsetLeft - 16, behavior: "auto" });
-      setTimeout(() => (programmaticScroll.current = false), 100);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selected]);
 
   // Desktop shows the map beside the list on "/".
   if (desktop) return <Navigate to="/" replace />;
@@ -69,27 +55,17 @@ export function MapScreen() {
     <main className="relative h-dvh overflow-hidden bg-ink">
       <VenueMap
         rows={mappable}
-        selected={selected}
-        hovered={selected ? null : focused}
-        follow={selected ? null : focused}
-        onSelect={setSelected}
+        selected={null}
+        hovered={focused}
+        follow={focused}
+        onSelect={(id) => {
+          if (!id) return;
+          markHero(null, id);
+          navigate(spotPath(id), { viewTransition: true });
+        }}
         insetTop={150}
         insetBottom={96}
-        locateClassName={cards.length && !selected ? "bottom-[176px]" : "bottom-24"}
-        popover={
-          picked && (
-            <>
-              <MapCard row={picked} now={now} active />
-              <button
-                onClick={() => setSelected(null)}
-                aria-label="Close"
-                className="absolute -top-3 -right-2 z-10 grid size-9 place-items-center rounded-full bg-ink-2 text-cream shadow-lg ring-1 ring-edge/15 transition-transform active:scale-90"
-              >
-                <X className="size-4" />
-              </button>
-            </>
-          )
-        }
+        locateClassName={cards.length ? "bottom-[176px]" : "bottom-24"}
       />
 
       <h1 className="sr-only">Map of happy hours</h1>
@@ -103,12 +79,7 @@ export function MapScreen() {
           <div
             ref={strip}
             onScroll={onStripScroll}
-            aria-hidden={!!selected || undefined}
-            inert={!!selected || undefined}
-            className={cn(
-              "no-scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-2.5 transition-[transform,opacity] duration-300 ease-out",
-              selected && "pointer-events-none translate-y-[calc(100%+16px)] opacity-0",
-            )}
+            className="no-scrollbar flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-px-4 px-4 pb-2.5"
           >
             {cards.map((r, i) => (
               <div
