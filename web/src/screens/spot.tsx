@@ -430,12 +430,12 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
                     href={sourceUrl}
                     target="_blank"
                     rel="nofollow noopener noreferrer"
-                    aria-label={`Source: ${sourceHost}`}
+                    aria-label={`your mom (${sourceHost})`}
                     title={sourceUrl}
-                    className="group/src -my-3 inline-grid py-3 underline underline-offset-4 hover:text-cream focus-visible:text-cream"
+                    className="group/src inline-grid rounded-sm hover:text-cream focus-visible:text-cream"
                   >
-                    <span className="col-start-1 row-start-1 transition-opacity duration-150 group-hover/src:opacity-0 group-focus-visible/src:opacity-0">your mom</span>
-                    <span aria-hidden className="col-start-1 row-start-1 opacity-0 transition-opacity duration-150 group-hover/src:opacity-100 group-focus-visible/src:opacity-100">
+                    <span className="col-start-1 row-start-1 underline underline-offset-4 transition-opacity duration-150 group-hover/src:opacity-0 group-focus-visible/src:opacity-0">your mom</span>
+                    <span aria-hidden className="col-start-1 row-start-1 underline underline-offset-4 opacity-0 transition-opacity duration-150 group-hover/src:opacity-100 group-focus-visible/src:opacity-100">
                       {sourceHost}
                     </span>
                   </a>
