@@ -1,7 +1,6 @@
 import { Popover } from "@base-ui/react/popover";
-import { Info } from "lucide-react";
+import { Info, Star } from "lucide-react";
 import { type CSSProperties } from "react";
-import { Star } from "lucide-react";
 import { Link } from "react-router";
 import type { HangScore, ScorePart } from "@/lib/types";
 import { cn } from "@/lib/utils";
