@@ -1,4 +1,4 @@
-import { type CSSProperties, useMemo, useRef, useState } from "react";
+import { type CSSProperties, useEffect, useMemo, useRef, useState } from "react";
 import { Navigate, useNavigate } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { FiltersDrawer } from "@/components/filters-drawer";
@@ -15,6 +15,7 @@ import { useIsDesktop } from "@/lib/use-media";
 import { useTitle } from "@/lib/use-title";
 
 const CAROUSEL_MAX = 40;
+const FOCUS_KEY = "alh:map-focus";
 
 export function MapScreen() {
   const desktop = useIsDesktop();
@@ -25,12 +26,36 @@ export function MapScreen() {
   // A pin tap opens that spot straight away. Swiping the strip only
   // follows a spot: it rings that pin and eases the map to it.
   const navigate = useNavigate();
-  const [focused, setFocused] = useState<string | null>(null);
+  // Coming back from a venue puts the strip and map where you left them.
+  const [focused, setFocused] = useState<string | null>(() => {
+    try {
+      return sessionStorage.getItem(FOCUS_KEY);
+    } catch {
+      return null;
+    }
+  });
   const strip = useRef<HTMLDivElement>(null);
   const programmaticScroll = useRef(false);
 
   const mappable = useMemo(() => rows.filter((r) => r.venue.lat != null && r.venue.lng != null), [rows]);
   const cards = useMemo(() => mappable.slice(0, CAROUSEL_MAX), [mappable]);
+
+  useEffect(() => {
+    try {
+      if (focused) sessionStorage.setItem(FOCUS_KEY, focused);
+    } catch {
+      // Private mode: the strip just starts at the top next time.
+    }
+  }, [focused]);
+  // Scroll the strip back to the remembered card, once.
+  useEffect(() => {
+    const el = focused && strip.current?.querySelector<HTMLElement>(`[data-id="${CSS.escape(focused)}"]`);
+    if (!el || !strip.current) return;
+    programmaticScroll.current = true;
+    strip.current.scrollTo({ left: el.offsetLeft - 16, behavior: "auto" });
+    setTimeout(() => (programmaticScroll.current = false), 100);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Desktop shows the map beside the list on "/".
   if (desktop) return <Navigate to="/" replace />;
@@ -63,6 +88,7 @@ export function MapScreen() {
           markHero(null, id);
           navigate(spotPath(id), { viewTransition: true });
         }}
+        remember="alh:map-camera"
         insetTop={150}
         insetBottom={96}
         locateClassName={cards.length ? "bottom-[176px]" : "bottom-24"}

@@ -23,6 +23,7 @@ const VenueMap = lazy(() => import("@/components/venue-map").then((m) => ({ defa
 
 // The static, indexed copy of each list (scripts/prerender.mjs).
 const bestPath = (slug: string) => (slug === "metro" ? "/happy-hour/best/" : `/happy-hour/${slug}/best/`);
+const VIEW_KEY = "alh:best-view";
 
 // "Best of": each neighbourhood's and city's top Hangout Scores, picked
 // with chips, as a ranked list (and a map of the same spots). Opens on the
@@ -33,7 +34,23 @@ export function BestScreen() {
   const navigate = useNavigate();
   const toast = useToast();
   const desktop = useIsDesktop();
-  const [view, setView] = useState<"list" | "map">("list");
+  // Remembered for the session, so Back from a venue opened on the map
+  // returns to the map.
+  const [view, setViewState] = useState<"list" | "map">(() => {
+    try {
+      return sessionStorage.getItem(VIEW_KEY) === "map" ? "map" : "list";
+    } catch {
+      return "list";
+    }
+  });
+  const setView = (v: "list" | "map") => {
+    setViewState(v);
+    try {
+      sessionStorage.setItem(VIEW_KEY, v);
+    } catch {
+      // Private mode: Back lands on the list.
+    }
+  };
   const [hovered, setHovered] = useState<string | null>(null);
 
   // Nearest neighbourhood or city list to you (or your picked area), if
