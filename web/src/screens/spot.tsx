@@ -84,7 +84,13 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
     fit();
     const ro = new ResizeObserver(fit);
     ro.observe(nav);
-    return () => ro.disconnect();
+    // The web font can land after the first measure; measure the whole trail again then.
+    let live = true;
+    document.fonts?.ready.then(() => live && setCrumbFit((f) => (f.tight ? { id: viewedId, tight: false } : f)));
+    return () => {
+      live = false;
+      ro.disconnect();
+    };
   }, [crumbTight, viewedId]);
   const page = useRef<HTMLElement>(null);
   const bar = useRef<HTMLElement>(null);
@@ -249,8 +255,8 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
                   <span key={p.label} className={cn("flex items-center", crumbTight ? (i < places.length - 1 ? "hidden" : "min-w-0") : "shrink-0")}>
                     {i > 0 && !crumbTight && <ChevronRight aria-hidden className="mx-0.5 size-3.5 shrink-0 opacity-60" />}
                     {p.path ? (
-                      <a href={p.path} className="truncate underline-offset-4 hover:text-cream hover:underline">
-                        {p.label}
+                      <a href={p.path} className="group/crumb flex h-11 min-w-0 items-center hover:text-cream">
+                        <span className="truncate underline-offset-4 group-hover/crumb:underline">{p.label}</span>
                       </a>
                     ) : (
                       <span className="truncate">{p.label}</span>
@@ -303,7 +309,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
         </p>
         {/* Score first, then the venue's checks and amenities, all one pill style. */}
         {(venue.score || !panel || venue.hh.verified || venue.byVenue || pills.length > 0) && (
-          <div role="region" aria-label="Highlights" tabIndex={0} className="no-scrollbar -mx-5 mt-4 flex gap-2 overflow-x-auto px-5">
+          <div role="region" aria-label="Highlights" tabIndex={0} className="no-scrollbar -mx-5 mt-4 flex gap-2 overflow-x-auto px-5 empty:hidden">
             {venue.score && (
               <button
                 onClick={() => document.getElementById("hang-score")?.scrollIntoView({ behavior: "smooth", block: "start" })}
