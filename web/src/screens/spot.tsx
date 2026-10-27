@@ -655,7 +655,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
                 {fmtRange(occ.start, occ.end)}
               </p>
               {occ.status !== "scheduled" && (
-                <p className={cn("min-w-0 truncate text-[15px]", soon ? "font-semibold text-orange-fg" : "text-cream")}>
+                <p className={cn("min-w-0 truncate text-[15px]", soon ? "font-semibold text-orange-fg" : occ.status === "live" ? "font-semibold text-live-fg" : "text-cream")}>
                   {occ.status === "live" && !soon ? "happening now" : statusLabel(occ, now)}
                 </p>
               )}
