@@ -44,7 +44,6 @@ export function Home({ panel = null }: { panel?: string | null }) {
   const wider = useIsWider();
   const navigate = useNavigate();
   useTitle(null, false, !panel);
-  const [selected, setSelected] = useState<string | null>(null);
   const [hovered, setHovered] = useState<string | null>(null);
 
   // The venue panel stays on screen for its slide out after closing.
@@ -56,16 +55,11 @@ export function Home({ panel = null }: { panel?: string | null }) {
     const t = setTimeout(() => setShown(null), reducedMotion() ? 0 : 320);
     return () => clearTimeout(t);
   }, [open]);
-  // A pin's card would only repeat the panel, and shouldn't pop up
-  // after it closes either.
-  if (panel && selected) setSelected(null);
   const closePanel = () => goBackToBase(navigate, true, true);
-  // With a venue open, a pin opens that venue instead of its card.
+  // A pin opens its venue in the panel straight away.
   const pick = (id: string | null) => {
-    if (!panel) return setSelected(id);
     if (id && id !== panel) navigate(spotPath(id));
   };
-  const focusId = panel ?? selected;
 
   // Keyboard: the panel takes focus when a venue opens and hands it back
   // to that venue's row when it closes. Escape closes it.
@@ -119,14 +113,14 @@ export function Home({ panel = null }: { panel?: string | null }) {
   // Desktop: a pin click brings its row into view in the list, showing
   // more rows first if it's further down than the list has loaded.
   const order = useMemo(() => sections.flatMap((s) => s.rows.map((r) => r.venue.id)), [sections]);
-  const at = focusId ? order.indexOf(focusId) : -1;
+  const at = panel ? order.indexOf(panel) : -1;
   useEffect(() => {
     if (at >= limit) setLimit(at + PAGE);
   }, [at, limit]);
   useEffect(() => {
-    if (!focusId || at < 0 || at >= limit) return;
+    if (!panel || at < 0 || at >= limit) return;
     const id = requestAnimationFrame(() => {
-      const el = document.getElementById(`row-${focusId}`);
+      const el = document.getElementById(`row-${panel}`);
       if (!el) return;
       // Already in view (the row just clicked): leave the list still.
       const r = el.getBoundingClientRect();
@@ -138,7 +132,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
     return () => cancelAnimationFrame(id);
     // Scroll on a new selection (or once its row has loaded), not on every refresh.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [focusId, at >= 0 && at < limit]);
+  }, [panel, at >= 0 && at < limit]);
 
   let budget = limit;
   let n = 0;
@@ -267,10 +261,10 @@ export function Home({ panel = null }: { panel?: string | null }) {
                       key={r.venue.id}
                       id={`row-${r.venue.id}`}
                       style={{ "--i": n++ } as CSSProperties}
-                      aria-current={focusId === r.venue.id || undefined}
+                      aria-current={panel === r.venue.id || undefined}
                       className={cn(
                         "animate-rise scroll-mt-48 rounded-2xl transition-[box-shadow,transform] duration-300 ease-out",
-                        focusId === r.venue.id && "animate-pop ring-2 ring-primary shadow-[0_0_0_6px_color-mix(in_srgb,var(--color-primary)_18%,transparent)]",
+                        panel === r.venue.id && "animate-pop ring-2 ring-primary shadow-[0_0_0_6px_color-mix(in_srgb,var(--color-primary)_18%,transparent)]",
                       )}
                     >
                       <VenueRow row={r} now={now} onHover={desktop ? setHovered : undefined} />
@@ -332,7 +326,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
       <aside aria-label="Map" className="sticky top-0 h-dvh min-w-0 p-3 pl-1 lg:col-start-2 lg:row-start-1">
         <div className="relative h-full overflow-hidden rounded-[28px] bg-ink-2 ring-1 ring-edge/5">
           <Suspense fallback={null}>
-            <DesktopMap rows={rows} now={now} selected={focusId} hovered={hovered} onSelect={pick} card={!panel} coverLeft={open && wide ? (wider ? 544 : 504) : 0} />
+            <DesktopMap rows={rows} selected={panel} hovered={hovered} onSelect={pick} coverLeft={open && wide ? (wider ? 544 : 504) : 0} />
           </Suspense>
         </div>
       </aside>

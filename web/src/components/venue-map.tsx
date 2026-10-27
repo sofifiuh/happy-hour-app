@@ -20,7 +20,8 @@ const GAP = 18;
 // covered by floating UI, which the card stays clear of. `follow` eases the
 // map to a spot without selecting it (the phone card strip). `ranked`
 // (the Best of lists) numbers the pins in row order and fits the map to
-// them instead of opening on you.
+// them instead of opening on you. `remember` keeps the camera for the
+// session under that key, so coming back from a venue lands where you were.
 export function VenueMap({
   rows,
   selected,
@@ -33,6 +34,7 @@ export function VenueMap({
   locateClassName,
   ranked = false,
   coverLeft = 0,
+  remember,
 }: {
   rows: Row[];
   selected: string | null;
@@ -45,6 +47,7 @@ export function VenueMap({
   locateClassName?: string;
   ranked?: boolean;
   coverLeft?: number;
+  remember?: string;
 }) {
   const { deviceLocation: location, location: start, area, requestLocation, locationState } = useStore();
   const scheme = useColorScheme();
@@ -68,7 +71,10 @@ export function VenueMap({
   const insets = useRef({ top: insetTop, bottom: insetBottom });
   insets.current = { top: insetTop, bottom: insetBottom };
   // Where the map opens: you, else your neighbourhood, else Downtown.
-  const opening = useRef({ center: start, zoom: location ? 14.5 : area ? 14 : 13.2 });
+  // A remembered camera wins, and the strip's first follow then stays put.
+  const memory = useRef(remember);
+  const saved = useRef(remember ? readCamera(remember) : null);
+  const opening = useRef(saved.current ?? { center: start, zoom: location ? 14.5 : area ? 14 : 13.2 });
 
   // Keep the popover on its pin: above it, or below when there's no room
   // above, slid sideways to stay inside the map. Runs on every map move.
@@ -134,6 +140,16 @@ export function VenueMap({
         m.on("mouseleave", "venue-hit", () => (m.getCanvas().style.cursor = ""));
         m.on("move", place);
         m.on("resize", place);
+        const key = memory.current;
+        if (key)
+          m.on("moveend", () => {
+            const c = m.getCenter();
+            try {
+              sessionStorage.setItem(key, JSON.stringify({ center: { lat: c.lat, lng: c.lng }, zoom: m.getZoom() }));
+            } catch {
+              // Private mode: the map just opens fresh next time.
+            }
+          });
         setStyleGen(1);
       });
       map.current = created = m;
@@ -278,7 +294,11 @@ export function VenueMap({
 
   // The phone card strip eases the map to the card in view.
   useEffect(() => {
-    if (!ready || !follow || !map.current) return;
+    if (!ready || !map.current) return;
+    // Back on a remembered camera, the strip's restored card is already in view.
+    const restored = saved.current;
+    saved.current = null;
+    if (restored || !follow) return;
     const r = rows.find((x) => x.venue.id === follow);
     if (r) map.current.easeTo({ center: [r.venue.lng!, r.venue.lat!], offset: [0, -70], duration: reducedMotion() ? 0 : 450 });
     // Only when the followed spot changes, not every time the rows refresh.
@@ -400,4 +420,13 @@ function addVenueLayers(m: MLMap, scheme: Scheme) {
     source: "venues",
     paint: { "circle-radius": 22, "circle-color": "#000", "circle-opacity": 0 },
   });
+}
+
+function readCamera(key: string): { center: { lat: number; lng: number }; zoom: number } | null {
+  try {
+    const v = JSON.parse(sessionStorage.getItem(key) || "null");
+    return v && Number.isFinite(v.zoom) && Number.isFinite(v.center?.lat) && Number.isFinite(v.center?.lng) ? v : null;
+  } catch {
+    return null;
+  }
 }

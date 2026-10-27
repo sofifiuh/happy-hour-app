@@ -1,9 +1,8 @@
-import { ArrowLeft, List, Map as MapIcon, Share2, X } from "lucide-react";
+import { ArrowLeft, List, Map as MapIcon, Share2 } from "lucide-react";
 import { type CSSProperties, lazy, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { fmtScore, TOP_SCORE } from "@/components/hang-score";
-import { MapCard } from "@/components/map-card";
 import { Countdown, StatusDot } from "@/components/status";
 import { useToast } from "@/components/toast";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -24,6 +23,7 @@ const VenueMap = lazy(() => import("@/components/venue-map").then((m) => ({ defa
 
 // The static, indexed copy of each list (scripts/prerender.mjs).
 const bestPath = (slug: string) => (slug === "metro" ? "/happy-hour/best/" : `/happy-hour/${slug}/best/`);
+const VIEW_KEY = "alh:best-view";
 
 // "Best of": each neighbourhood's and city's top Hangout Scores, picked
 // with chips, as a ranked list (and a map of the same spots). Opens on the
@@ -34,8 +34,23 @@ export function BestScreen() {
   const navigate = useNavigate();
   const toast = useToast();
   const desktop = useIsDesktop();
-  const [view, setView] = useState<"list" | "map">("list");
-  const [selected, setSelected] = useState<string | null>(null);
+  // Remembered for the session, so Back from a venue opened on the map
+  // returns to the map.
+  const [view, setViewState] = useState<"list" | "map">(() => {
+    try {
+      return sessionStorage.getItem(VIEW_KEY) === "map" ? "map" : "list";
+    } catch {
+      return "list";
+    }
+  });
+  const setView = (v: "list" | "map") => {
+    setViewState(v);
+    try {
+      sessionStorage.setItem(VIEW_KEY, v);
+    } catch {
+      // Private mode: Back lands on the list.
+    }
+  };
   const [hovered, setHovered] = useState<string | null>(null);
 
   // Nearest neighbourhood or city list to you (or your picked area), if
@@ -82,7 +97,6 @@ export function BestScreen() {
   }, [list?.slug]);
 
   const pick = (s: string) => {
-    setSelected(null);
     setParams(s === nearest && !params.get("in") ? {} : { in: s }, { replace: true });
   };
   const groups: { label: string; lists: BestList[] }[] = [
@@ -98,7 +112,12 @@ export function BestScreen() {
     if (r === "copied") toast("Link copied");
   };
 
-  const picked = selected ? rows.find((r) => r.venue.id === selected) : undefined;
+  // A pin opens its venue straight away.
+  const openPin = (id: string | null) => {
+    if (!id) return;
+    if (!desktop) markHero(null, id);
+    navigate(spotPath(id), { viewTransition: !desktop });
+  };
   const showMap = !desktop && view === "map";
 
   return (
@@ -175,25 +194,11 @@ export function BestScreen() {
             <Suspense fallback={<div className="h-full bg-ink-2" />}>
               <VenueMap
                 rows={rows.filter((r) => r.venue.lat != null)}
-                selected={selected}
-                onSelect={setSelected}
+                selected={null}
+                onSelect={openPin}
                 ranked
                 insetTop={190}
                 locateClassName="bottom-6"
-                popover={
-                  picked && (
-                    <>
-                      <MapCard row={picked} now={now} active />
-                      <button
-                        onClick={() => setSelected(null)}
-                        aria-label="Close"
-                        className="absolute -top-3 -right-2 z-10 grid size-9 place-items-center rounded-full bg-ink-2 text-cream shadow-lg ring-1 ring-edge/15 transition-transform active:scale-90"
-                      >
-                        <X className="size-4" />
-                      </button>
-                    </>
-                  )
-                }
               />
             </Suspense>
           </div>
@@ -216,7 +221,7 @@ export function BestScreen() {
                 </p>
                 <ol key={list.slug} className="space-y-2.5">
                   {rows.map((r, i) => (
-                    <li key={r.venue.id} id={`row-${r.venue.id}`} style={{ "--i": i } as CSSProperties} className={cn("animate-rise rounded-2xl", selected === r.venue.id && "ring-2 ring-primary")}>
+                    <li key={r.venue.id} id={`row-${r.venue.id}`} style={{ "--i": i } as CSSProperties} className="animate-rise rounded-2xl">
                       <BestRow row={r} rank={i + 1} now={now} onHover={desktop ? setHovered : undefined} />
                     </li>
                   ))}
@@ -247,7 +252,7 @@ export function BestScreen() {
         <aside aria-label="Map" className="sticky top-0 h-dvh p-3 pl-1">
           <div className="relative h-full overflow-hidden rounded-[28px] bg-ink-2 ring-1 ring-edge/5">
             <Suspense fallback={null}>
-              <DesktopMap ranked rows={rows} now={now} selected={selected} hovered={hovered} onSelect={setSelected} />
+              <DesktopMap ranked rows={rows} selected={null} hovered={hovered} onSelect={openPin} />
             </Suspense>
           </div>
         </aside>
