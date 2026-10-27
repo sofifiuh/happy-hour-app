@@ -250,12 +250,12 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
           <Badge variant="upcoming" className="mb-3">{statusLabel(occ, now)}</Badge>
         ) : null}
         {places.length > 0 && (
-          <nav aria-label="Breadcrumb" className="mb-1.5 text-[12px] leading-none font-semibold tracking-[0.12em] text-pink-fg uppercase">
+          <nav aria-label="Breadcrumb" className="mb-1.5 text-[12px] leading-none font-semibold tracking-[0.12em] text-muted-foreground uppercase">
             {places.map((p, i) => (
               <span key={p.label}>
                 {i > 0 && <span aria-hidden className="px-1.5 opacity-60">›</span>}
                 {p.path ? (
-                  <a href={p.path} className="-my-2 inline-block py-2 underline-offset-4 hover:underline">
+                  <a href={p.path} className="-my-2 inline-block py-2 underline-offset-4 hover:text-cream hover:underline">
                     {p.label}
                   </a>
                 ) : (
@@ -268,7 +268,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
         {/* Reads as the search: "Mangos Kitchen Bar Happy Hour", same words as the title. */}
         <h1 className={cn("font-display font-extrabold tracking-[-0.025em] text-balance", panel ? "text-[30px]" : "text-[34px]", "leading-[1.02]")}>
           {venue.name}
-          {!/happy hour/i.test(venue.name) && <span className="text-pink-fg"> Happy Hour</span>}
+          {!/happy hour/i.test(venue.name) && <span className="text-muted-foreground"> Happy Hour</span>}
         </h1>
         <p className="mt-2 text-[15px] text-muted-foreground">
           {venue.address}
@@ -368,7 +368,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
 
       {venue.score && (
         <section id="hang-score" style={{ "--i": 3 } as CSSProperties} className="animate-rise mt-8 scroll-mt-6 px-5">
-          <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">How this happy hour scores</h2>
+          <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Happy hour score</h2>
           <ScoreCard score={venue.score} />
           <RankLink best={best} venue={venue} />
         </section>

@@ -7,11 +7,11 @@ import { cn } from "@/lib/utils";
 // hour from its prices, deals, hours and setting. Shown out of 10, never as
 // stars, so it doesn't read as a review score.
 
-const PARTS: { key: ScorePart; label: string; weight: string }[] = [
-  { key: "value", label: "Value", weight: "40%" },
-  { key: "selection", label: "Selection", weight: "25%" },
-  { key: "hours", label: "Hours", weight: "20%" },
-  { key: "vibe", label: "Vibe", weight: "15%" },
+const PARTS: { key: ScorePart; label: string }[] = [
+  { key: "value", label: "Value" },
+  { key: "selection", label: "Selection" },
+  { key: "hours", label: "Hours" },
+  { key: "vibe", label: "Vibe" },
 ];
 
 export const fmtScore = (n: number) => n.toFixed(1);
@@ -39,7 +39,8 @@ export function ScoreChip({ score, className }: { score: HangScore; className?: 
   );
 }
 
-// Venue page card: the number, a word for it, and a bar plus one plain line per part.
+// Venue page card: the number out of 10, a word for it, and a bar plus one
+// plain line per part. Weights live on the "How we score" page.
 export function ScoreCard({ score }: { score: HangScore }) {
   return (
     <div className="rounded-[22px] bg-ink-2 p-4">
@@ -50,19 +51,25 @@ export function ScoreCard({ score }: { score: HangScore }) {
             score.total >= TOP_SCORE ? "bg-lime text-on-pop" : "bg-ink-3 text-cream",
           )}
         >
-          {fmtScore(score.total)}
+          <span className="flex flex-col items-center">
+            {fmtScore(score.total)}
+            <span className="mt-1 text-[11px] font-bold opacity-70">/ 10</span>
+          </span>
         </span>
         <div className="min-w-0">
           <p className="font-display text-[18px] leading-tight font-bold">{scoreWord(score.total)}</p>
-          <p className="mt-0.5 text-[13px] text-muted-foreground">Hangout Score out of 10, from the deals and times on this page</p>
+          <p className="mt-0.5 text-[14px] text-muted-foreground">
+            Scores <b className="font-semibold text-cream">{fmtScore(score.total)} out of 10</b>
+          </p>
         </div>
       </div>
-      <ul className="mt-4 space-y-3.5">
+      <p className="mt-4 text-[12px] font-semibold tracking-[0.08em] text-muted-foreground uppercase">What we look at</p>
+      <ul className="mt-2.5 space-y-3.5">
         {PARTS.map((p, i) => (
           <li key={p.key}>
             <div className="flex items-baseline justify-between gap-3 text-[14px]">
               <span className="font-semibold">
-                {p.label} <span className="text-[12px] font-normal text-muted-foreground">{p.weight}</span>
+                {p.label}
               </span>
               <span className="font-display font-bold tabular">{fmtScore(score[p.key])}</span>
             </div>
