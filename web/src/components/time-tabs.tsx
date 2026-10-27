@@ -28,7 +28,7 @@ export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; cl
         to="/best"
         viewTransition
         onClick={() => setNav("forward")}
-        className="inline-flex h-11 shrink-0 items-center gap-1.5 rounded-full bg-lime/15 px-4 text-[14px] font-semibold text-lime-fg ring-1 ring-lime/30 transition-[background-color,transform] duration-200 hover:bg-lime/25 active:scale-95"
+        className="inline-flex h-11 shrink-0 items-center gap-1.5 rounded-full bg-score/15 px-4 text-[14px] font-semibold text-score-fg ring-1 ring-score/30 transition-[background-color,transform] duration-200 hover:bg-score/25 active:scale-95"
       >
         <Trophy className="size-4" />
         Best of
@@ -45,7 +45,7 @@ export function TimeTabs({ onOpenPlan, className }: { onOpenPlan: () => void; cl
             if (t.key !== "all") track({ name: "filter_applied", filter: t.key });
           }}
         >
-          {t.key === "live" && <span className={cn("size-2 rounded-full bg-lime dot-ring", filters.tab === "live" && "bg-lime-inv outline-transparent")} />}
+          {t.key === "live" && <span className={cn("size-2 rounded-full bg-live dot-ring", filters.tab === "live" && "bg-lime-inv outline-transparent")} />}
           {t.label}
         </button>
       ))}

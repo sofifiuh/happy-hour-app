@@ -48,6 +48,25 @@ body,
   --sky-fg: var(--sky);
   --lime-inv: #7a8a00; /* lime dot on an inverted (cream) chip */
 
+  /*
+   * Colour categories. Each pop means one thing, so two colours side by
+   * side never say the same thing (README "Colour"). Reach for these names,
+   * not the raw pops, in new code:
+   *   live   lime   happening now; also done/success ticks
+   *   soon   amber  starts later / upcoming
+   *   urgent orange-fg text only: ending soon (and links/actions, as brand)
+   *   score  pink   Hangout Score, rankings, Best of
+   *   info   sky    place facts: walk time, verified, my location
+   *   neutral cream/ink  names, prices, labels, everything else
+   */
+  --live: var(--lime);
+  --live-fg: var(--lime-fg);
+  --soon: var(--amber);
+  --soon-fg: var(--amber-fg);
+  --score: var(--pink);
+  --score-fg: var(--pink-fg);
+  --info-fg: var(--sky-fg);
+
   /* edges and depth */
   --edge: #ffffff; /* hairline rings, used at low alpha */
   --dot-ring: transparent; /* outlines pop dots where the canvas is light */
@@ -153,6 +172,13 @@ body,
   --color-pink-fg: var(--pink-fg);
   --color-sky-fg: var(--sky-fg);
   --color-lime-inv: var(--lime-inv);
+  --color-live: var(--live);
+  --color-live-fg: var(--live-fg);
+  --color-soon: var(--soon);
+  --color-soon-fg: var(--soon-fg);
+  --color-score: var(--score);
+  --color-score-fg: var(--score-fg);
+  --color-info-fg: var(--info-fg);
   --color-edge: var(--edge);
 
   --radius-sm: calc(var(--radius) - 8px);

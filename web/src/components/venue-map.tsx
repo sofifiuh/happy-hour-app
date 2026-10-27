@@ -191,7 +191,7 @@ export function VenueMap({
       face.textContent = String(i + 1);
       face.className = cn(
         "grid size-8 place-items-center rounded-full font-display text-[14px] font-extrabold tabular shadow-lg ring-2 ring-ink transition-transform duration-200 group-data-[on=true]:scale-125 group-data-[on=true]:bg-primary group-data-[on=true]:text-primary-foreground",
-        i < 3 ? "bg-lime text-on-pop" : "bg-cream text-ink",
+        i < 3 ? "bg-score text-on-pop" : "bg-cream text-ink",
       );
       el.append(face);
       el.addEventListener("click", (e) => {
@@ -312,7 +312,7 @@ export function VenueMap({
     if (!ready || !map.current || !location) return;
     if (!userMarker.current) {
       const el = document.createElement("div");
-      el.className = "size-4 rounded-full border-2 border-ink-2 bg-sky-fg ring-4 ring-sky-fg/25";
+      el.className = "size-4 rounded-full border-2 border-ink-2 bg-info-fg ring-4 ring-info-fg/25";
       userMarker.current = new maplibregl.Marker({ element: el }).setLngLat([location.lng, location.lat]).addTo(map.current);
       const c = map.current.getCenter();
       // Already opened on you: no need to move.
