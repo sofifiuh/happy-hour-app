@@ -303,7 +303,6 @@ const SITE_GRAPH = [
 // it must look right without the app's CSS classes.
 const S = {
   wrap: "max-width:42rem;margin:0 auto;padding:24px 20px 64px;font-family:'Funnel Sans',system-ui,sans-serif;color:#f3efe4",
-  eyebrow: "display:block;font-family:'Funnel Sans',system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#f7b2b7;margin-bottom:6px",
   h1: "font-family:'Funnel Display',system-ui,sans-serif;font-weight:800;font-size:34px;line-height:1.02;letter-spacing:-.025em;margin:16px 0 8px",
   h2: "font-family:'Funnel Display',system-ui,sans-serif;font-weight:700;font-size:20px;margin:28px 0 10px",
   h3: "font-size:15px;font-weight:600;margin:16px 0 4px",
@@ -350,7 +349,7 @@ ${v.photo ? `<img src="${esc(/^https?:/.test(v.photo) ? v.photo : `/${v.photo}`)
 </main>
 <main style="${S.wrap}">
 ${crumbHtml([...trail(city, area), { name: v.name }])}
-<h1 style="${S.h1}"><span style="${S.eyebrow}">Happy hour${v.area ? ` · ${esc(v.area.name)}` : v.city ? ` · ${esc(v.city)}` : ""}</span> ${esc(v.name)}</h1>
+<h1 style="${S.h1}">${esc(v.name)}${/happy hour/i.test(v.name) ? "" : ` <span style="color:#a7a196">Happy Hour</span>`}</h1>
 <p style="${S.muted}">${esc(v.address)}</p>
 <h2 style="${S.h2}">Happy hour deals</h2>
 ${
@@ -362,8 +361,8 @@ ${
   // Our own Hangout Score as plain text only: no Review/Rating markup, since
   // it's a computed score rather than reviews from people.
   v.score
-    ? `<h2 style="${S.h2}">How this happy hour scores</h2>
-<p><b>Hangout Score ${v.score.total.toFixed(1)} out of 10.</b> <span style="color:#a7a196">From the deals and times on this page; <a href="/about" style="${S.link}">how we score</a>.</span>${ranked ? ` Ranked #${ranked.rank} in <a href="${bestPath(ranked.list.slug)}" style="${S.link}">the best happy hours in ${esc(ranked.list.name)}</a>.` : ""}</p>
+    ? `<h2 style="${S.h2}">Happy hour score</h2>
+<p><b>${v.score.total.toFixed(1)} out of 10.</b> <span style="color:#a7a196">Our Hangout Score, from the prices, deals, hours and setting on this page; <a href="/about#hang-score" style="${S.link}">how we score</a>.</span>${ranked ? ` Ranked #${ranked.rank} in <a href="${bestPath(ranked.list.slug)}" style="${S.link}">the best happy hours in ${esc(ranked.list.name)}</a>.` : ""}</p>
 ${[["Value", "value"], ["Selection", "selection"], ["Hours", "hours"], ["Vibe", "vibe"]]
   .map(([label, k]) => `<div style="${S.row}"><span>${label}<br><small style="color:#a7a196">${esc(v.score.notes[k])}</small></span><span>${v.score[k].toFixed(1)}</span></div>`)
   .join("\n")}`

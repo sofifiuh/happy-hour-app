@@ -23,7 +23,7 @@ import { useIsDesktop } from "@/lib/use-media";
 import { useSwipeBack } from "@/lib/use-swipe-back";
 import { useTitle } from "@/lib/use-title";
 import { absoluteUrl, BROWSER_ROUTER, queryParams, spotPath } from "@/lib/routes";
-import { dayRuns, googleReviewsLink, nearby, quoteCredit, redditLink, redditName, runLabel, sourceLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
+import { dayRuns, googleReviewsLink, nearby, quoteCredit, redditLink, redditName, runLabel, venueAbout, venueFaq, venueTitle } from "@/lib/seo";
 import { track } from "@/lib/analytics";
 import { apiEnabled, count, myVenues } from "@/lib/api";
 import { shareLink } from "@/lib/share";
@@ -31,6 +31,14 @@ import { useStore } from "@/lib/store";
 import type { BestList, Category, Photo, Venue } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
+
+function hostOf(url: string) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "their website";
+  }
+}
 
 function amenityPills(v: Venue) {
   const a = v.amenities;
@@ -131,6 +139,20 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
     if (nowSaved && !remindersAsked()) setTimeout(() => setNotifyOpen(true), 600);
   };
   const checked = venue.checked ? fmtChecked(venue.checked, now) : null;
+  const sourceUrl = venue.source?.url ?? venue.hh.source ?? null;
+  const sourceHost = sourceUrl ? hostOf(sourceUrl) : null;
+  // City › neighbourhood above the name, linking to their hub pages (the
+  // static page's breadcrumb). Without hub pages, the names alone.
+  const placeHubs = BROWSER_ROUTER
+    ? (venue.hubs ?? [])
+        .map((path) => ({ path, hub: hubs[path.split("/").filter(Boolean).pop()!] }))
+        .filter(({ hub }) => hub?.kind === "city" || hub?.kind === "area")
+        .sort((a, b) => (a.hub.kind === "city" ? -1 : 1) - (b.hub.kind === "city" ? -1 : 1))
+        .map(({ path, hub }) => ({ label: hub.label, path: path as string | null }))
+    : [];
+  const places = placeHubs.length
+    ? placeHubs
+    : [venue.city, venue.area?.name].filter((l, i, a): l is string => !!l && a.indexOf(l) === i).map((label) => ({ label, path: null }));
 
   const openDirections = () => {
     track({ name: "directions_clicked", venue_id: venue.id });
@@ -227,11 +249,26 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
         ) : occ.status === "upcoming" ? (
           <Badge variant="upcoming" className="mb-3">{statusLabel(occ, now)}</Badge>
         ) : null}
-        <h1 className={cn("font-display font-extrabold tracking-[-0.025em]", panel ? "text-[30px]" : "text-[34px]", "leading-[1.02]")}>
-          <span className="mb-1.5 block font-sans text-[12px] leading-none font-semibold tracking-[0.12em] text-muted-foreground uppercase">
-            Happy hour{venue.area ? ` · ${venue.area.name}` : venue.city ? ` · ${venue.city}` : ""}
-          </span>{" "}
+        {places.length > 0 && (
+          <nav aria-label="Breadcrumb" className="mb-1.5 text-[12px] leading-none font-semibold tracking-[0.12em] text-muted-foreground uppercase">
+            {places.map((p, i) => (
+              <span key={p.label}>
+                {i > 0 && <span aria-hidden className="px-1.5 opacity-60">›</span>}
+                {p.path ? (
+                  <a href={p.path} className="-my-2 inline-block py-2 underline-offset-4 hover:text-cream hover:underline">
+                    {p.label}
+                  </a>
+                ) : (
+                  p.label
+                )}
+              </span>
+            ))}
+          </nav>
+        )}
+        {/* Reads as the search: "Mangos Kitchen Bar Happy Hour", same words as the title. */}
+        <h1 className={cn("font-display font-extrabold tracking-[-0.025em] text-balance", panel ? "text-[30px]" : "text-[34px]", "leading-[1.02]")}>
           {venue.name}
+          {!/happy hour/i.test(venue.name) && <span className="text-muted-foreground"> Happy Hour</span>}
         </h1>
         <p className="mt-2 text-[15px] text-muted-foreground">
           {venue.address}
@@ -259,15 +296,6 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
             <Badge variant="info" size="sm">
               <Store className="size-3.5" /> Updated by the venue
             </Badge>
-          )}
-          {checked && <span className="text-muted-foreground">Times checked {checked}</span>}
-          {venue.source && (
-            <span className="text-muted-foreground">
-              Source:{" "}
-              <a href={venue.source.url} target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2 hover:text-cream">
-                {sourceLabel(venue)}
-              </a>
-            </span>
           )}
         </div>
         {pills.length > 0 && (
@@ -340,7 +368,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
 
       {venue.score && (
         <section id="hang-score" style={{ "--i": 3 } as CSSProperties} className="animate-rise mt-8 scroll-mt-6 px-5">
-          <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">How this happy hour scores</h2>
+          <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Happy hour score</h2>
           <ScoreCard score={venue.score} />
           <RankLink best={best} venue={venue} />
         </section>
@@ -389,12 +417,29 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
         <div className="mt-1 flex flex-wrap items-center justify-between gap-x-4 px-3 text-[13px] text-muted-foreground">
           <span>
             {venue.byVenue ? "From the venue" : venue.hh.fromGuest ? "From a guest's menu photo, checked by us" : venue.hh.verified ? "Verified against their menu" : "From their website"}
-            {venue.hh.source && (
+            {checked && `, times checked ${checked}`}
+            {sourceUrl && (
               <>
                 {" · "}
-                <a href={venue.hh.source} target="_blank" rel="noopener" className="inline-flex min-h-11 items-center underline underline-offset-4">
-                  source
-                </a>
+                {/* "your mom" until hovered or focused, then the real site. Both
+                    share one grid cell so the link doesn't change size under the
+                    pointer. Taps still open it; screen readers get the site. */}
+                <span className="whitespace-nowrap">
+                  Source:{" "}
+                  <a
+                    href={sourceUrl}
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    aria-label={`your mom (${sourceHost})`}
+                    title={sourceUrl}
+                    className="group/src inline-grid rounded-sm hover:text-cream focus-visible:text-cream"
+                  >
+                    <span className="col-start-1 row-start-1 underline underline-offset-4 transition-opacity duration-150 group-hover/src:opacity-0 group-focus-visible/src:opacity-0">your mom</span>
+                    <span aria-hidden className="col-start-1 row-start-1 underline underline-offset-4 opacity-0 transition-opacity duration-150 group-hover/src:opacity-100 group-focus-visible/src:opacity-100">
+                      {sourceHost}
+                    </span>
+                  </a>
+                </span>
               </>
             )}
           </span>
