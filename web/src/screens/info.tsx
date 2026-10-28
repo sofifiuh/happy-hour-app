@@ -210,7 +210,7 @@ function Privacy() {
       </p>
       <H>Google Maps</H>
       <p>
-        Venue pages show a Google map and, on phones, the venue's Google rating. These load straight from Google when you open the page,
+        Venue pages show a Google map, with the venue's Google rating in its place card. It loads straight from Google when you open the page,
         so Google receives your IP address and browser details, under{" "}
         <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer" className="text-cream underline underline-offset-4">
           Google's privacy policy
