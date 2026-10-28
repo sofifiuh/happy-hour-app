@@ -12320,7 +12320,12 @@
         }
       ]
     },
-    "cover_image": null,
+    "cover_image": {
+      "url": "https://starlightcasino.ca/wp-content/uploads/2020/12/Match-Logo_rgb-300x119.png",
+      "credit_name": "Starlight Casino",
+      "credit_url": "https://starlightcasino.ca/",
+      "source": "official_website"
+    },
     "last_synced_at": "2026-09-03"
   },
   {
@@ -15998,122 +16003,166 @@
       ],
       "start": "15:00",
       "end": "18:00",
-      "extra_windows": [
-        {
-          "days": [
-            3,
-            4
-          ],
-          "start": "21:00",
-          "end": null,
-          "label": "Late night"
-        }
-      ],
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://donegals.pub/features%2Fhh",
+      "source_url": "https://donegals.pub/food-menu?menu_id=1647066",
       "deals": [
         {
           "name": "Tacos",
           "price": "$4.50",
           "category": "food",
-          "description": "Choice of Ground Beef, Pulled Pork, or Crispy Fried Fish"
+          "description": "Happy Hour Bites"
         },
         {
-          "name": "½ Potato Skins",
+          "name": "1/2 Potato Skins",
           "price": "$6.25",
           "category": "food",
-          "description": ""
+          "description": "Half order of potato skins"
         },
         {
           "name": "Mini Fish & Chips",
           "price": "$6.25",
           "category": "food",
-          "description": ""
+          "description": "Happy Hour Bites"
         },
         {
           "name": "Parm Dip",
           "price": "$6.25",
           "category": "food",
-          "description": ""
+          "description": "Happy Hour Bites"
         },
         {
           "name": "Mini Poutine",
           "price": "$6.25",
           "category": "food",
-          "description": ""
+          "description": "Happy Hour Bites"
+        },
+        {
+          "name": "NY Hot Dog",
+          "price": "$10.50",
+          "category": "food",
+          "description": "Served with fries"
         },
         {
           "name": "Flatbread",
-          "price": "$14",
+          "price": "$14.00",
           "category": "food",
-          "description": ""
+          "description": "Happy Hour Bites"
         },
         {
-          "name": "Burger with fries",
-          "price": "$14",
+          "name": "Rueben Sandwich",
+          "price": "$14.00",
           "category": "food",
-          "description": ""
+          "description": "Served with fries"
         },
         {
-          "name": "Craft Lager Sleeve",
+          "name": "Cheese Burger",
+          "price": "$14.00",
+          "category": "food",
+          "description": "Served with fries"
+        },
+        {
+          "name": "Buffalo Wrap",
+          "price": "$15.00",
+          "category": "food",
+          "description": "Served with fries"
+        },
+        {
+          "name": "Tropical Salad",
+          "price": "$16.00",
+          "category": "food",
+          "description": "Happy Hour Bites"
+        },
+        {
+          "name": "Chorizo Penne",
+          "price": "$16.00",
+          "category": "food",
+          "description": "Happy Hour Bites"
+        },
+        {
+          "name": "Craft Lager",
           "price": "$5.50",
           "category": "drink",
-          "description": ""
+          "description": "Sleeve"
         },
         {
-          "name": "Domestic Draft Sleeve",
+          "name": "Wildeye Lime Wedge Lager",
           "price": "$5.75",
           "category": "drink",
-          "description": "Budweiser, Canadian, Coors Light"
+          "description": "Sleeve"
         },
         {
-          "name": "Harp Lager Sleeve",
+          "name": "Wildeye Pale Ale",
+          "price": "$5.75",
+          "category": "drink",
+          "description": "Sleeve"
+        },
+        {
+          "name": "Domestic Draft",
+          "price": "$5.75",
+          "category": "drink",
+          "description": "Sleeve; Budweiser, Canadian, Coors Light"
+        },
+        {
+          "name": "Harp Lager",
           "price": "$6.75",
           "category": "drink",
-          "description": ""
+          "description": "Sleeve"
         },
         {
-          "name": "Guinness Pint",
-          "price": "$9",
+          "name": "Guinness",
+          "price": "$9.00",
           "category": "drink",
-          "description": ""
+          "description": "Pint"
         },
         {
-          "name": "House Wine Glass",
+          "name": "Kronenbourg Blanc",
+          "price": "$9.00",
+          "category": "drink",
+          "description": "Pint"
+        },
+        {
+          "name": "Strongbow",
           "price": "$6.75",
           "category": "drink",
-          "description": ""
+          "description": "Sleeve"
         },
         {
-          "name": "Wine Glass",
+          "name": "House Wine",
+          "price": "$6.75",
+          "category": "drink",
+          "description": "Glass"
+        },
+        {
+          "name": "Rose",
+          "price": "$9.00",
+          "category": "drink",
+          "description": "Glass"
+        },
+        {
+          "name": "Other Glasses of Wine",
           "price": "$0.75 off",
           "category": "drink",
-          "description": "All other glasses"
+          "description": "Off regular glass price"
         },
         {
-          "name": "Wine Bottle",
-          "price": "$4 off",
+          "name": "Bottles of Wine",
+          "price": "$4.00 off",
           "category": "drink",
-          "description": "All bottles"
+          "description": "Off regular bottle price"
         },
         {
-          "name": "Bar Highball",
+          "name": "Smirnoff Vodka",
           "price": "$5.75",
           "category": "drink",
-          "description": ""
+          "description": "Spirits"
         },
         {
-          "name": "Whiskey Shot",
-          "price": "$7.75",
+          "name": "Captain Morgan Rum",
+          "price": "$5.75",
           "category": "drink",
-          "description": "Jamesons Irish Whiskey"
-        },
-        {
-          "name": "Tequila Shot",
-          "price": "$7.75",
-          "category": "drink",
-          "description": "El Tequilieno"
+          "description": "Spirits"
         }
       ]
     },
@@ -16123,7 +16172,7 @@
       "credit_url": "https://donegals.pub/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-10-28"
   },
   {
     "place_id": null,
@@ -45974,93 +46023,138 @@
         6
       ],
       "start": "14:30",
-      "end": "17:30",
+      "end": "17:00",
       "verified": false,
       "verified_source": null,
       "source_url": "https://desilounge.ca/pages/happy-hour",
       "deals": [
         {
-          "name": "Craft Beer",
+          "name": "Draft Beer (Lager/IPA)",
           "price": "$5",
           "category": "drink",
-          "description": "Craft beer"
-        },
-        {
-          "name": "Mojito",
-          "price": "$11",
-          "category": "drink",
-          "description": "Lime or mango, 1.5oz"
-        },
-        {
-          "name": "Margarita",
-          "price": "$11",
-          "category": "drink",
-          "description": "Tamarind or jalapeno, 2oz"
+          "description": "16oz"
         },
         {
           "name": "House Wine",
-          "price": "$7",
+          "price": "$5",
           "category": "drink",
-          "description": "Red or white, 6oz"
+          "description": "5oz"
         },
         {
-          "name": "High Balls",
-          "price": "$5 | $7",
+          "name": "HighBalls",
+          "price": "$5-7",
           "category": "drink",
-          "description": "Vodka, tequila, gin, rum; 1oz $5 / 2oz $7"
+          "description": "$5 for 1oz, $7 for 2oz"
+        },
+        {
+          "name": "Rosé Sangria",
+          "price": "$10",
+          "category": "drink",
+          "description": "Rosé wine, berries, peach, citrus and soda"
         },
         {
           "name": "Aperol Spritz",
-          "price": "$11",
+          "price": "$10",
           "category": "drink",
-          "description": "Aperol spritz"
+          "description": "Aperol, prosecco, soda, orange"
+        },
+        {
+          "name": "Margarita",
+          "price": "$10",
+          "category": "drink",
+          "description": "2oz; Lime/Jalapeno/Tamarind"
+        },
+        {
+          "name": "CocoMelon",
+          "price": "$10",
+          "category": "drink",
+          "description": "2oz; cantaloupe, citrus, honey and coconut soda"
         },
         {
           "name": "Mango Lassi",
-          "price": "$4",
+          "price": "$5",
           "category": "drink",
-          "description": "Mango lassi"
+          "description": "Non-alcoholic"
         },
         {
-          "name": "Virgin Mojito",
-          "price": "$6.5",
+          "name": "Malabar Melon",
+          "price": "$8",
           "category": "drink",
-          "description": "Lime or mango, non-alcoholic"
+          "description": "Non-alcoholic; cantaloupe, makrut lime, honey and coconut soda"
+        },
+        {
+          "name": "Aam Panna",
+          "price": "$8",
+          "category": "drink",
+          "description": "Non-alcoholic; roasted raw mango, mint, house mix, jaggery and soda"
+        },
+        {
+          "name": "Lotus Root Chaat",
+          "price": "$10",
+          "category": "food",
+          "description": "Crispy lotus root, avocado, yogurt, chutney and sev"
+        },
+        {
+          "name": "Thepla Tacos",
+          "price": "$10",
+          "category": "food",
+          "description": "Paneer or chicken"
+        },
+        {
+          "name": "Chilli Bao Bun",
+          "price": "$10",
+          "category": "food",
+          "description": "Jackfruit or chicken"
         },
         {
           "name": "Momos",
-          "price": "$9 | $10",
+          "price": "$10",
           "category": "food",
-          "description": "Veg $9 / chicken $10"
+          "description": "Veg or chicken"
         },
         {
           "name": "Cochin Cauliflower Bites",
-          "price": "$9",
+          "price": "$10",
           "category": "food",
-          "description": "Gluten-free, dairy-free"
+          "description": "Crispy cauliflower bites, South Indian chilli sauce (GF, DF)"
         },
         {
           "name": "Gunpowder Cassava Kebab",
-          "price": "$9",
+          "price": "$10",
           "category": "food",
-          "description": "Gluten-free, dairy-free"
+          "description": "Cassava fritters, gunpowder spice and chutney (GF, DF)"
         },
         {
           "name": "Onion Bhajiya",
-          "price": "$9",
+          "price": "$10",
           "category": "food",
-          "description": "Gluten-free, dairy-free"
+          "description": "Onions mixed with spices and gram flour, deep-fried (GF, DF)"
         },
         {
           "name": "Kerala Pepper Chicken",
           "price": "$10",
           "category": "food",
-          "description": "Gluten-free, dairy-free"
+          "description": "Chicken, pepper, curry leaves, tamarind (GF, DF)"
         }
       ],
-      "extra_windows": []
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:30",
+          "end": null,
+          "label": "Late night"
+        }
+      ]
     },
-    "last_synced_at": "2026-09-03",
+    "last_synced_at": "2026-10-28",
     "cover_image": null
   },
   {

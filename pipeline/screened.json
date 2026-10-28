@@ -5889,7 +5889,7 @@
     "id": "millennium-karaoke",
     "name": "Millennium Karaoke",
     "verdict": "published",
-    "checked_at": "2026-10-27"
+    "checked_at": "2026-10-28"
   },
   "ChIJkyUvUCt4hlQRrnIySefoEPo": {
     "id": "dageraad-brewing",
@@ -6015,7 +6015,7 @@
     "id": "hail-mary-s",
     "name": "Hail Mary's",
     "verdict": "published",
-    "checked_at": "2026-10-27"
+    "checked_at": "2026-10-28"
   },
   "ChIJ5djFj854hlQRGCw6qPkUe3o": {
     "id": "mariner-brewing",
@@ -23344,5 +23344,41 @@
     "name": "K - PLAT TRADING INC.",
     "verdict": "no_happy_hour",
     "checked_at": "2026-10-27"
+  },
+  "ChIJLbBUiX51hlQRF0KxVbMOtqk": {
+    "id": "loon-fong-hotpot-vancouver",
+    "name": "Loon Fong Hotpot（Vancouver）",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-28"
+  },
+  "ChIJzzPojI11hlQRZYeXEyWGyXQ": {
+    "id": "the-one-bbq-kitchen",
+    "name": "The One BBQ Kitchen 一哥燒臘廚房",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-28"
+  },
+  "ChIJTfOnpENxhlQRsgl8YWcNhM4": {
+    "id": "the-hideout-diner",
+    "name": "The Hideout Diner",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-28"
+  },
+  "ChIJoUaS5OdzhlQRyYh3LBsNrMk": {
+    "id": "salad-house",
+    "name": "Salad House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-28"
+  },
+  "ChIJJ5GbhkNxhlQRDfxJROZFHcM": {
+    "id": "l-orangerie",
+    "name": "L’Orangerie",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-28"
+  },
+  "ChIJP1b6TwB1hlQRb9NTiD4yBuA": {
+    "id": "armani-caff-vancouver",
+    "name": "Armani/Caffè Vancouver",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-10-28"
   }
 }
