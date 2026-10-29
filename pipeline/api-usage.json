@@ -7,5 +7,10 @@
     "details_enterprise": 950,
     "nearby": 1150,
     "text": 1150
+  },
+  "2026-10": {
+    "sweep_pro": 1778,
+    "sweep_enterprise": 0,
+    "details_enterprise": 209
   }
 }
