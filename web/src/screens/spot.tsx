@@ -3,7 +3,7 @@ import { type CSSProperties, useCallback, useEffect, useLayoutEffect, useMemo, u
 import { Link, useNavigate, useParams } from "react-router";
 import { EmptyState } from "@/components/empty-state";
 import { ScoreCard, ScoreChip } from "@/components/hang-score";
-import { GOOGLE_KEY, GoogleMapEmbed, GoogleRating } from "@/components/google-place";
+import { GOOGLE_KEY, GoogleMapEmbed } from "@/components/google-place";
 import { MiniMap } from "@/components/mini-map";
 import { NotifyDrawer, remindersAsked } from "@/components/notify-drawer";
 import { PhotoViewer } from "@/components/photo-viewer";
@@ -319,9 +319,6 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
                 <ScoreChip score={venue.score} className="px-2 py-0.5 text-[13px]" /> Hangout Score
               </button>
             )}
-            {/* Not in the desktop panel: it sits beside our MapLibre map, and Google's
-                terms bar showing Places content near a non-Google map. */}
-            {!panel && <GoogleRating placeId={venue.placeId} className={cn(badgeVariants(), "my-0 h-8 min-h-0 shrink-0 bg-ink-2 px-3")} />}
             {venue.hh.verified && (
               <Badge className="h-8 shrink-0 bg-ink-2 px-3">
                 <BadgeCheck className="size-4 text-info-fg" /> Verified
@@ -556,7 +553,7 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
         <section style={{ "--i": 5 } as CSSProperties} className="animate-rise mt-8 px-5">
           <h2 className="mb-3 font-display text-[20px] font-bold tracking-tight">Find us here</h2>
           <button onClick={openDirections} className="block w-full overflow-hidden rounded-[22px] bg-ink-2 text-left">
-            {/* Google's terms: its rating can't sit near a non-Google map. */}
+            {/* The embed's place card shows Google's rating, free. */}
             {GOOGLE_KEY ? (
               <GoogleMapEmbed placeId={venue.placeId} query={`${venue.name} ${venue.address}`} className="h-[170px] w-full" />
             ) : (
