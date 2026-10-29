@@ -76,7 +76,10 @@ jobs:
         run: |
           git config user.name "a-little-hang-data"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json pipeline/screened.json pipeline/photos.json pipeline/submissions.json pipeline/GROWTH.md spots sitemap.xml robots.txt
+          # api-usage.json is the per-SKU monthly Places ledger. Left uncommitted it
+          # resets every night, the caps never bite, and Text Search ran past
+          # its free 5,000 in Oct 2026.
+          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json pipeline/screened.json pipeline/photos.json pipeline/submissions.json pipeline/api-usage.json pipeline/GROWTH.md spots sitemap.xml robots.txt
           if git diff --cached --quiet; then
             echo "No data changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
