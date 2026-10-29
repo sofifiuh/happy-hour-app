@@ -1,5 +1,5 @@
 {
- "data_version": "2026-10-29-cd3c8942",
+ "data_version": "2026-10-29-e73407cb",
  "venues": [
   {
    "id": "ancora",
@@ -22691,10 +22691,10 @@
     ]
    },
    "cover_image": {
-    "url": "https://starlightcasino.ca/wp-content/uploads/2020/12/Match-Logo_rgb-300x119.png",
+    "url": "photos/starlight-casino.jpg",
     "credit_name": "Starlight Casino",
-    "credit_url": "https://starlightcasino.ca/",
-    "source": "official_website"
+    "credit_url": "https://maps.google.com/maps/contrib/115231590337747797388",
+    "source": "google_places"
    },
    "last_synced_at": "2026-09-03",
    "primary_type": null,

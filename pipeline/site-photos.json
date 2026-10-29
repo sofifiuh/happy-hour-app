@@ -16947,9 +16947,19 @@
     "pages": [
       "https://starlightcasino.ca/.well-known/sgcaptcha/?r=%2F&y=ipr:185.94.142.98:1792809612.775"
     ],
-    "cover_problem": null,
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
-    "gallery": []
+    "gallery": [],
+    "review": {
+      "at": "2026-10-29",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://starlightcasino.ca/wp-content/uploads/2020/12/Match-Logo_rgb-300x119.png",
+          "why": "logo/wordmark"
+        }
+      ]
+    }
   },
   "steamworks-mount-pleasant": {
     "checked_at": "2026-10-24",
