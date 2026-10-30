@@ -51321,7 +51321,7 @@
           "name": "Draft beers",
           "price": "$6.25",
           "category": "drink",
-          "description": "Draught beer"
+          "description": "Draft beer special"
         },
         {
           "name": "House wine",
@@ -51333,7 +51333,7 @@
           "name": "Growers ciders",
           "price": "$6.50",
           "category": "drink",
-          "description": "Growers cider"
+          "description": "Growers ciders"
         },
         {
           "name": "Jameson shot",
@@ -51342,13 +51342,13 @@
           "description": "Shot of Jameson"
         },
         {
-          "name": "Well highballs",
+          "name": "Single well highballs",
           "price": "$6",
           "category": "drink",
-          "description": "Single well highballs: Polar Ice Vodka, Lambs White or Dark Rum, Beefeater Gin, Wisers Rye, Ballantines Scotch"
+          "description": "Polar Ice Vodka, Lambs White or Dark Rum, Beefeater Gin, Wisers Rye, Ballantines Scotch"
         },
         {
-          "name": "Beef burger",
+          "name": "Beef burger w/ fries",
           "price": "$10",
           "category": "food",
           "description": "Beef burger with fries"
@@ -51366,12 +51366,12 @@
             1
           ],
           "start": "13:30",
-          "end": null,
+          "end": "03:00",
           "label": "All day Monday"
         }
       ]
     },
-    "last_synced_at": "2026-09-03",
+    "last_synced_at": "2026-10-30",
     "cover_image": null
   },
   {
@@ -53636,7 +53636,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-09-03",
+    "last_synced_at": "2026-10-30",
     "cover_image": null
   },
   {
