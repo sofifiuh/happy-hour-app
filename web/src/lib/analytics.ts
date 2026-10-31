@@ -38,8 +38,8 @@ export function track(event: AnalyticsEvent) {
 
 export function startAnalytics() {
   if (!enabled()) return;
-  // Read the tracking tags now, before the router can rewrite the URL (first
-  // visits hop from / to /welcome), and attach them to every event this visit.
+  // Read the tracking tags now, before the router can rewrite the URL (old
+  // /welcome links hop to /), and attach them to every event this visit.
   const landing = new URLSearchParams(location.search);
   const utm = Object.fromEntries(
     ["utm_source", "utm_medium", "utm_campaign", "utm_content"].flatMap((k) => (landing.get(k) ? [[k, landing.get(k)]] : [])),

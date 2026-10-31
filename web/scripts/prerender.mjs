@@ -1626,6 +1626,7 @@ const PAGES = [
   ["privacy/index.html", "/privacy/", "Privacy", "Privacy", true],
   ["terms/index.html", "/terms/", "Terms", "Terms", true],
   ["submit/index.html", "/submit/", "Add a Happy Hour", "Add a happy hour", true],
+  // No welcome screen any more; old links boot the app, which sends them to "/".
   ["welcome/index.html", "/welcome/", null, null, false],
 ];
 for (const [file, path, title, h1, index] of PAGES) {
