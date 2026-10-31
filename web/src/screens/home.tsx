@@ -33,7 +33,9 @@ const PAGE = 40;
 
 // `panel` is the venue open beside the list on desktop (App.tsx, Browse).
 export function Home({ panel = null }: { panel?: string | null }) {
-  const { rows, now, loading, loadFailed, filters, resetFilters, setFilters, locationState, origin, saved } = useStore();
+  const { rows, now, loading, loadFailed, filters, resetFilters, setFilters, locationState, requestLocation, origin, area, saved } = useStore();
+  // Nobody has shared a location or picked a neighbourhood yet.
+  const firstAsk = locationState === "idle" && !area;
   // A new time tab (All, Happening now, Upcoming, Date & Time) starts its list
   // from the top instead of wherever the last one was scrolled to.
   const planKey = filters.plan ? `${filters.plan.day}-${filters.plan.time}` : "";
@@ -164,10 +166,25 @@ export function Home({ panel = null }: { panel?: string | null }) {
         {/* The open venue's name is the page heading while the panel shows it. */}
         {panel ? <h2 className="sr-only">Happy hours in Vancouver</h2> : <h1 className="sr-only">Happy hours in Vancouver</h1>}
         <div className="flex items-center justify-between px-4 pt-3 pb-2">
-          <Link to="/welcome" aria-label="A Little Hang" className="grid min-h-11 min-w-11 place-items-center">
+          <Link
+            to="/"
+            aria-label="A Little Hang"
+            onClick={() => window.scrollTo({ top: 0, behavior: reducedMotion() ? "instant" : "smooth" })}
+            className="grid min-h-11 min-w-11 place-items-center"
+          >
             <Wordmark className="h-10 text-cream" />
           </Link>
           <div className="flex items-center gap-2">
+            {/* First visit: the welcome screen's "near me" ask, in place. One tap
+                asks the browser; a "no" falls back to the neighbourhood chip. */}
+            {firstAsk ? (
+              <button
+                onClick={requestLocation}
+                className="inline-flex h-11 animate-pop items-center gap-1.5 rounded-full bg-primary px-4 text-[13px] font-semibold text-primary-foreground shadow-[0_6px_20px_-6px_var(--color-orange)] transition-transform active:scale-95"
+              >
+                <LocateFixed className="size-4" /> Hangs near me
+              </button>
+            ) : (
             <button
               onClick={() => setLocationOpen(true)}
               className="inline-flex h-11 items-center gap-1.5 rounded-full bg-ink-2 px-3.5 text-[13px] font-medium text-info-fg transition-transform active:scale-95"
@@ -188,6 +205,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
                 </>
               )}
             </button>
+            )}
             {apiEnabled && (
               <Link
                 to="/submit?from=header"

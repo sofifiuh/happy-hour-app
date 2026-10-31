@@ -12,7 +12,6 @@ export function ScreensBoard() {
   const savedIds = rows.slice(0, 4).map((r) => r.venue.id).join(",");
 
   const screens: { title: string; note: string; path: string }[] = [
-    { title: "Welcome", note: "First run: brand moment + location ask", path: "/welcome" },
     { title: "List: all", note: "Grouped by happening now / later today / coming up", path: "/" },
     { title: "List: happening now", note: "Live deals only, soonest-ending first", path: "/?tab=live" },
     { title: "Filters", note: "Amenity switches with live counts", path: "/?sheet=filters" },

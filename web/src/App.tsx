@@ -3,14 +3,13 @@ import { createBrowserRouter, createHashRouter, Navigate, Outlet, RouterProvider
 import { ToastProvider } from "@/components/toast";
 import { isSpotPath, noteLocation } from "@/lib/back-to";
 import { BROWSER_ROUTER, spotPath } from "@/lib/routes";
-import { IS_FRAME, StoreProvider } from "@/lib/store";
+import { StoreProvider } from "@/lib/store";
 import { isDesktop, useIsDesktop } from "@/lib/use-media";
 import { useStaticHead } from "@/lib/use-static-head";
 import { AllSpots } from "@/screens/all-spots";
 import { BestScreen } from "@/screens/best";
 import { Home } from "@/screens/home";
 import { Info } from "@/screens/info";
-import { Landing, SEEN_KEY } from "@/screens/landing";
 import { NotFound } from "@/screens/not-found";
 import { Saved } from "@/screens/saved";
 import { ScreensBoard } from "@/screens/screens";
@@ -27,20 +26,12 @@ const VenueEditor = lazy(() => venueTools().then((m) => ({ default: m.VenueEdito
 const VenueAdmin = lazy(() => venueTools().then((m) => ({ default: m.VenueAdmin })));
 const SubmitScreen = lazy(() => import("@/screens/submit").then((m) => ({ default: m.SubmitScreen })));
 
-// Checked on every visit to "/", not once when the router is built, so the
-// welcome screen's buttons land on the list straight away.
-function Root() {
+// There's no welcome screen any more: everyone lands on the list and map.
+// Old /welcome links (and the installed app's first-run hop) come here too,
+// keeping the query string so tracking tags from social links survive.
+function OldWelcome() {
   const { search } = useLocation();
-  // Keep the query string so tracking tags from social links survive the hop to /welcome.
-  return seenWelcome() ? <Home /> : <Navigate to={{ pathname: "/welcome", search }} replace />;
-}
-
-function seenWelcome() {
-  try {
-    return IS_FRAME || localStorage.getItem(SEEN_KEY) === "1";
-  } catch {
-    return true;
-  }
+  return <Navigate to={{ pathname: "/", search }} replace />;
 }
 
 const isHomePath = (path: string) => path === "/" || path === "/index.html";
@@ -71,10 +62,9 @@ function Shell() {
 // Phones keep the full-page venue.
 function Browse() {
   const desktop = useIsDesktop();
-  const { pathname, search } = useLocation();
+  const { pathname } = useLocation();
   const spot = spotIdOf(pathname);
   if (!desktop || (!spot && !isHomePath(pathname))) return <Outlet />;
-  if (!spot && !seenWelcome()) return <Navigate to={{ pathname: "/welcome", search }} replace />;
   return <Home panel={spot} />;
 }
 
@@ -99,14 +89,14 @@ const router = createRouter([
       {
         element: <Browse />,
         children: [
-          { path: "/", element: <Root /> },
-          { path: "/index.html", element: <Root /> },
+          { path: "/", element: <Home /> },
+          { path: "/index.html", element: <Home /> },
           { path: "/spot/:id", element: <Spot /> },
           { path: "/spots/:file", element: <SpotsFile /> },
         ],
       },
       { path: "/menu.html", element: <OldMenuLink /> },
-      { path: "/welcome", element: <Landing /> },
+      { path: "/welcome", element: <OldWelcome /> },
       { path: "/map", element: <MapScreen /> },
       { path: "/best", element: <BestScreen /> },
       { path: "/spots", element: <AllSpots /> },
