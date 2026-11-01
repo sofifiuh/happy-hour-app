@@ -7312,24 +7312,24 @@
           ],
           "start": "21:00",
           "end": null,
-          "label": "Late Night"
+          "label": "Late night"
         }
       ],
       "verified": false,
       "verified_source": null,
-      "source_url": "http://www.claudiosristorante.ca/menu",
+      "source_url": "https://www.claudiosristorante.ca/menu",
       "deals": [
         {
           "name": "Draft Beer",
           "price": "$5",
           "category": "drink",
-          "description": "12oz"
+          "description": "12oz draft beer"
         },
         {
           "name": "House Wine",
           "price": "$5",
           "category": "drink",
-          "description": "5oz (Red, White, or Rosé)"
+          "description": "5oz house red, white or rosé"
         },
         {
           "name": "Prosecco",
@@ -7387,9 +7387,9 @@
         },
         {
           "name": "Cacio e Pepe Arancini",
-          "price": "$4",
+          "price": "$4 per piece",
           "category": "food",
-          "description": "per piece"
+          "description": "Arborio rice, pecorino, parmigiano, black pepper"
         },
         {
           "name": "Truffle Potato Chips",
@@ -7401,7 +7401,7 @@
           "name": "Garlic Parmesan Bites",
           "price": "$8",
           "category": "food",
-          "description": "Garlice, Grana Padano, pomodoro sauce"
+          "description": "Garlic, Grana Padano, pomodoro sauce"
         },
         {
           "name": "Margherita Pizza",
@@ -7425,7 +7425,7 @@
           "name": "Chicken Parmigiana",
           "price": "$21",
           "category": "food",
-          "description": "Tomato sauce, fior di latte, Grana Padano"
+          "description": "Tomato sauce, fior di latte, Grana Padano; add rigatoni pomodoro $8"
         },
         {
           "name": "Chitarra Carbonara",
@@ -7447,7 +7447,7 @@
       "credit_url": "http://www.claudiosristorante.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-01"
   },
   {
     "place_id": null,
