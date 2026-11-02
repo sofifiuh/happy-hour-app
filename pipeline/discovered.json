@@ -37374,49 +37374,55 @@
           "name": "Lime Margarita",
           "price": "$10",
           "category": "drink",
-          "description": "Tequila Blanco, Lime Juice, simple syrup, salt rim, 2oz"
+          "description": "Tequila Blanco, lime juice, simple syrup, salt rim; 2oz. Substitute Mezcal +$3"
         },
         {
-          "name": "Jalapéño Margarita",
+          "name": "Jalapéno Margarita",
           "price": "$11",
           "category": "drink",
-          "description": "2oz Tequila Reposado, lime juice, house-made Jalapeño simple syrup, Jalapeño salt rim"
+          "description": "2oz Tequila Reposado, lime juice, house-made jalapeño simple syrup, jalapeño salt rim. Mezcal +$3; Don Julio Reposado or Casamigos Reposado +$5"
         },
         {
           "name": "Spicy Mango Margarita",
           "price": "$13",
           "category": "drink",
-          "description": "2oz Tequila Blanco, Mango, lime juice, fire bitters, tajin rim"
+          "description": "2oz Tequila Blanco, mango, lime juice, fire bitters, tajin rim. Substitute Mezcal +$3"
         },
         {
           "name": "Coconut Margarita",
           "price": "$11",
           "category": "drink",
-          "description": "2oz Tequila Blanco, lime juice, Coconut"
+          "description": "2oz Tequila Blanco, lime juice, coconut. Mezcal +$3; Don Julio Reposado or Casamigos Reposado +$5"
         },
         {
           "name": "Guava Margarita",
           "price": "$13",
           "category": "drink",
-          "description": "2oz Tequila Blanco, guava, lime juice"
+          "description": "2oz Tequila Blanco, guava, lime juice. Substitute Mezcal +$3"
         },
         {
           "name": "Passion Fruit Mezcal Margarita",
           "price": "$14",
           "category": "drink",
-          "description": "Mezcal, Cointreau, lime, passion fruit puree, salted rim, 2oz"
+          "description": "2oz Mezcal, Cointreau, lime, passion fruit puree, salted rim"
         },
         {
           "name": "House Wine",
           "price": "$6",
           "category": "drink",
-          "description": "5 oz, red or white"
+          "description": "House red or white wine, 5 oz"
         },
         {
           "name": "Tequila Shot",
           "price": "$5",
           "category": "drink",
           "description": "Tequila Blanco"
+        },
+        {
+          "name": "Draft Beer",
+          "price": "Happy hour price not listed",
+          "category": "drink",
+          "description": "All draft beer, 14 oz; price not shown on the happy hour menu"
         }
       ]
     },
@@ -37426,7 +37432,7 @@
       "credit_url": "https://www.tapsandtacos.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-02"
   },
   {
     "place_id": null,
@@ -55605,61 +55611,67 @@
       "end": "18:00",
       "verified": false,
       "verified_source": null,
-      "source_url": "https://www.fannybayoysters.com/uploads/pdf/2026summermenumaster.pdf",
+      "source_url": "https://www.fannybayoysters.com/location/oyster-bar--shellfish-market",
       "deals": [
         {
-          "name": "Featured Oysters",
+          "name": "Daily Featured Oyster",
           "price": "$2 ea",
           "category": "food",
-          "description": "Served with lemon, horseradish, mignonette (GF)"
+          "description": "Served with lemon, horseradish & mignonette"
         },
         {
-          "name": "Premium Featured Oysters",
+          "name": "Daily Premium Featured Oyster",
           "price": "$2.75 ea",
           "category": "food",
-          "description": "Served with lemon, horseradish, mignonette (GF)"
+          "description": "Served with lemon, horseradish & mignonette"
         },
         {
-          "name": "Truffle Fries",
+          "name": "Parm Fries",
           "price": "$12",
           "category": "food",
-          "description": "Kennebec fries, truffle oil, Parmesan, chives, aioli"
+          "description": "Kennebec fries, Parmesan, chives, garlic aioli"
+        },
+        {
+          "name": "Crispy Kelp Rings",
+          "price": "$16",
+          "category": "food",
+          "description": "Fried bull kelp stipe rings, Cajun seasoning, tartare sauce"
         },
         {
           "name": "Fish Tacos",
           "price": "$18",
           "category": "food",
-          "description": "2pc marinated & grilled fish tacos, guacamole, taco sauce, pico de gallo (GF)"
-        },
-        {
-          "name": "Sablefish Collars",
-          "price": "$19",
-          "category": "food",
-          "description": "3pc soy marinated fried collars, Korean BBQ glaze, cilantro, sesame"
+          "description": "2pc blackened fish tacos, guacamole, chicharrón, chipotle crema, pico de gallo, cilantro"
         },
         {
           "name": "Snapper Ceviche",
           "price": "$19",
           "category": "food",
-          "description": "Avocado, sweet potato, leche de tigre, chilli, tortilla chips (GF)"
+          "description": "Avocado, sweet potato, leche de tigre, chili, tortilla chips"
+        },
+        {
+          "name": "Crab & Artichoke Dip",
+          "price": "$21",
+          "category": "food",
+          "description": "Hot crab dip, artichokes, Cajun seasoning, kelp focaccia"
         },
         {
           "name": "Tuna Tartare",
           "price": "$21",
           "category": "food",
-          "description": "BC Albacore, Asian pear, avocado mayo, ginger citrus vinaigrette, trout roe, wonton chips"
+          "description": "BC Albacore, Asian pear, avocado mayo, ginger-citrus vinaigrette, trout roe, wonton chips"
         },
         {
-          "name": "Smoked Oyster Dip",
-          "price": "$21",
+          "name": "Beef Tartare",
+          "price": "$24",
           "category": "food",
-          "description": "Ekone smoked oysters, crispy shallots, chives, Ritz crackers"
+          "description": "Smoked-oyster mayo, sourdough bread"
         },
         {
           "name": "Mussels & Clams",
           "price": "$25",
           "category": "food",
-          "description": "Mixed or solo in your choice of white wine & herbs or miso cream broth (GF)"
+          "description": "Mixed or solo, white wine & herb broth or miso cream broth"
         },
         {
           "name": "Lobster Roll",
@@ -55677,43 +55689,55 @@
           "name": "Fanny Bay Oyster Shooter",
           "price": "$9",
           "category": "drink",
-          "description": "1oz Forty Creek Rye, house made Clamato Caesar mix, fresh oyster"
+          "description": "1oz Forty Creek Rye, house-made Clamato Caesar mix, fresh oyster"
         },
         {
           "name": "Draft Beer",
-          "price": "$7",
+          "price": "$7/14oz",
           "category": "drink",
-          "description": "14oz Phillips Tilt Lager or Blue Buck Pale Ale"
+          "description": "Phillips Tilt Lager or Blue Buck Pale Ale"
         },
         {
-          "name": "House Wines",
-          "price": "$11",
+          "name": "House White",
+          "price": "$11/6oz, $40/btl",
           "category": "drink",
-          "description": "6oz; $40/bottle. Sauvignon Blanc / Rosé / Merlot - Open Estate, Okanagan, BC"
+          "description": "Open Estate Sauvignon Blanc, Okanagan BC"
         },
         {
-          "name": "Premium Wine",
-          "price": "$13",
+          "name": "Premium White",
+          "price": "$13/6oz, $43/btl",
           "category": "drink",
-          "description": "6oz; $43/bottle. Chardonnay - Kettle Valley, Okanagan, BC"
+          "description": "Kettle Valley Chardonnay, Okanagan BC"
+        },
+        {
+          "name": "House Rosé",
+          "price": "$11/6oz, $40/btl",
+          "category": "drink",
+          "description": "Open Estate Merlot Blend, Okanagan BC"
+        },
+        {
+          "name": "House Red",
+          "price": "$11/6oz, $40/btl",
+          "category": "drink",
+          "description": "Open Estate Merlot, Okanagan BC"
         },
         {
           "name": "House Sparkling",
-          "price": "$12",
+          "price": "$12/6oz, $42/btl",
           "category": "drink",
-          "description": "6oz; $42/bottle. Rosé Prosecco - Serena, Veneto, IT"
+          "description": "Serena Extra Brut Prosecco or Rosé Prosecco, Veneto IT"
         },
         {
           "name": "Champagne",
-          "price": "$25",
+          "price": "$25/6oz, $100/btl",
           "category": "drink",
-          "description": "6oz; $100/bottle. Duval-Leroy Brut NV - Cotes de Blanc, FR"
+          "description": "La Chapelle Ecrin Brut Reserve, Champagne FR"
         },
         {
           "name": "Sparkling Sake",
-          "price": "$35",
+          "price": "$35/300ml btl",
           "category": "drink",
-          "description": "300ml bottle, rotating sparkling sake - Japan"
+          "description": "Rotating sparkling sake, Japan"
         },
         {
           "name": "Non-Alc Beer Cans",
@@ -55729,7 +55753,7 @@
       "id": 4842937821,
       "amenity": "restaurant"
     },
-    "last_synced_at": "2026-09-03",
+    "last_synced_at": "2026-11-02",
     "cover_image": null
   },
   {

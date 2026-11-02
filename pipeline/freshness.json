@@ -839,7 +839,7 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "0d06d5175e624822",
+  "hh_hash": "7aaa1b677c3c4a39",
   "last_ok_at": "2026-11-02",
   "last_confirmed_at": "2026-11-02",
   "changed_at": "2026-11-02"
@@ -1006,18 +1006,17 @@
  "cascades-casino": {
   "url": "https://cascadescasino.ca/casino-happy-hour/",
   "checked_at": "2026-11-02",
-  "http_status": 202,
+  "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
   "last_ok_at": "2026-11-02",
   "hh_hash": "a10028131ab9b5c6",
-  "last_confirmed_at": "2026-10-31",
-  "rendered": true
+  "last_confirmed_at": "2026-11-02"
  },
  "cat-fiddle-sports-bar-restaurant": {
   "url": "https://i0.wp.com/catandfiddlepub.ca/wp-content/uploads/2025/12/Happy-hour-WINTER-2025-PRINT.jpg?ssl=1",
@@ -1179,7 +1178,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "26e21329df1ccbf4",
+  "hh_hash": "2d655b73f769d160",
   "last_ok_at": "2026-11-02",
   "last_confirmed_at": "2026-11-02",
   "changed_at": "2026-11-02"
@@ -1270,7 +1269,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "d0a1085c91d5e547",
+  "hh_hash": "920f8044cef4c5a6",
   "last_ok_at": "2026-11-02",
   "last_confirmed_at": "2026-11-02",
   "changed_at": "2026-11-02"
@@ -1286,7 +1285,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "349669a1002fa960",
+  "hh_hash": "71b05cff29dd7b20",
   "last_ok_at": "2026-11-02",
   "last_confirmed_at": "2026-11-02",
   "changed_at": "2026-11-02"
@@ -1717,17 +1716,19 @@
   "last_confirmed_at": "2026-11-02"
  },
  "fanny-bay-oyster-bar": {
-  "url": "https://www.fannybayoysters.com/uploads/pdf/2026summermenumaster.pdf",
+  "url": "https://www.fannybayoysters.com/location/oyster-bar--shellfish-market",
   "checked_at": "2026-11-02",
   "http_status": 200,
-  "kind": "pdf",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "last_ok_at": "2026-11-02"
+  "last_ok_at": "2026-11-02",
+  "hh_hash": "e0b8bcdc6e2edc11",
+  "last_confirmed_at": "2026-11-02"
  },
  "farina-a-legna": {
   "url": "https://www.farinaalegna.com/happy-hour",
@@ -2158,7 +2159,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "151379dd00c7abc5",
+  "hh_hash": "8ba9fea24fd99d8b",
   "last_ok_at": "2026-11-02",
   "last_confirmed_at": "2026-11-02",
   "changed_at": "2026-11-02"
@@ -2569,7 +2570,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 21,
+  "fail_count": 22,
   "error": "curl: (6) Could not resolve host: www.jacksonsrestobutcher.com"
  },
  "jamjar-canteen-commercial-dr": {
@@ -3894,9 +3895,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "e3e0811794f3096d",
+  "hh_hash": "23dc6fd4ab74141c",
   "last_ok_at": "2026-11-02",
-  "last_confirmed_at": "2026-11-02"
+  "last_confirmed_at": "2026-11-02",
+  "changed_at": "2026-11-02"
  },
  "nova-kitchen-bar": {
   "url": "https://www.novarestaurant.ca/menu/port-moody-happy-hour",
@@ -4602,7 +4604,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 21,
+  "fail_count": 22,
   "error": "curl: (6) Could not resolve host: romersurgerbar.com"
  },
  "rongsi-rong-see-thai-bar-bistro": {
@@ -5139,16 +5141,17 @@
   "checked_at": "2026-11-02",
   "http_status": 202,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "37ffff41811e7b1a",
+  "hh_hash": "8469da5c572ceb88",
   "last_ok_at": "2026-11-02",
-  "last_confirmed_at": "2026-10-31",
-  "changed_at": "2026-10-31"
+  "last_confirmed_at": "2026-11-02",
+  "changed_at": "2026-11-02",
+  "rendered": true
  },
  "steamworks-mount-pleasant": {
   "url": "https://steamworks.com/wp-content/uploads/2026/03/SWMP_Mar2026_print.pdf",
@@ -5300,10 +5303,10 @@
   "ok": true,
   "fail_count": 0,
   "rendered": true,
-  "hh_hash": "0da9a16d6db9add2",
+  "hh_hash": "248f610456c83b05",
   "last_ok_at": "2026-11-02",
   "last_confirmed_at": "2026-11-02",
-  "changed_at": "2026-11-01"
+  "changed_at": "2026-11-02"
  },
  "tacoloco": {
   "url": "https://www.tacolocokits.com/menu",
@@ -5362,10 +5365,10 @@
   "ok": true,
   "fail_count": 0,
   "rendered": true,
-  "hh_hash": "c60f98723b92b86b",
+  "hh_hash": "76db317696f54b9f",
   "last_ok_at": "2026-11-02",
   "last_confirmed_at": "2026-11-02",
-  "changed_at": "2026-10-30"
+  "changed_at": "2026-11-02"
  },
  "taps-and-tacos": {
   "url": "https://www.tapsandtacos.ca/menus/happy-hour-margarita-monday?location=taps-and-tacos",
@@ -5379,9 +5382,10 @@
   "ok": true,
   "fail_count": 0,
   "rendered": true,
-  "hh_hash": "e850ff2968ad9eba",
+  "hh_hash": "eb4c895ee84b603a",
   "last_ok_at": "2026-11-02",
-  "last_confirmed_at": "2026-11-02"
+  "last_confirmed_at": "2026-11-02",
+  "changed_at": "2026-11-02"
  },
  "tavola": {
   "url": "https://tavolavancouver.com/daily-specials/",
@@ -5640,10 +5644,10 @@
   "extra_windows_total": 2,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "7afd314cf73f6e47",
+  "hh_hash": "07444fed9ace6e22",
   "last_ok_at": "2026-11-02",
   "last_confirmed_at": "2026-11-02",
-  "changed_at": "2026-10-31"
+  "changed_at": "2026-11-02"
  },
  "the-clayton-public-house": {
   "url": "https://theclaytonpub.com/menu/",
@@ -5987,10 +5991,11 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "13b3a3a0bf94dd10",
+  "hh_hash": "5c6d18dae49443bc",
   "last_ok_at": "2026-11-02",
   "last_confirmed_at": "2026-11-02",
-  "changed_at": "2026-10-25"
+  "changed_at": "2026-11-02",
+  "rendered": true
  },
  "the-narrow-lounge": {
   "url": "https://narrowgroup.ca/project/the-narrow/",
@@ -6400,7 +6405,7 @@
  "tidewaters-pub": {
   "url": "http://www.tidewaterspub.com/",
   "checked_at": "2026-11-02",
-  "http_status": 200,
+  "http_status": 308,
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": true,
@@ -6408,10 +6413,11 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "02bd5932f0319c01",
+  "hh_hash": "eb99ac3d845f565c",
   "last_ok_at": "2026-11-02",
   "last_confirmed_at": "2026-11-02",
-  "changed_at": "2026-11-02"
+  "changed_at": "2026-11-02",
+  "rendered": true
  },
  "time-place-kitchen-i-bar": {
   "url": "https://www.timeandplaceburnaby.com/menus-happyhour",
