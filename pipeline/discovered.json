@@ -46595,111 +46595,122 @@
     "happy_hour": {
       "days": [
         0,
-        1,
         3,
         4,
         5,
         6
       ],
-      "start": "14:00",
-      "end": "17:00",
+      "start": "16:00",
+      "end": "18:00",
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.amber99.com/menu",
       "deals": [
         {
-          "name": "Margarita",
+          "name": "Hemingway Gimlet",
           "price": "$12",
           "category": "drink",
-          "description": "Cazadores blanco, Cointreau and fresh lime juice – 2oz"
+          "description": "Tanqueray Flor de Sevilla, Luxardo maraschino, grapefruit, lime, Sauv Blanc saline, 2oz"
         },
         {
           "name": "Negroni",
           "price": "$12",
           "category": "drink",
-          "description": "Bombay Sapphire, Campari & Cinzano – 2oz"
+          "description": "Tanqueray, Campari & Cinzano, 3oz"
         },
         {
           "name": "Old Fashioned",
           "price": "$12",
           "category": "drink",
-          "description": "Bearface triple oak whiskey, demerara syrup & Angostura bitters – 2oz"
+          "description": "Bearface triple oak whiskey, demerara syrup, Angostura bitters, 2oz; brown butter fat wash sub $2"
         },
         {
           "name": "Aperol Spritz",
           "price": "$12",
           "category": "drink",
-          "description": "Aperol, sparkling wine, & club soda – 3oz"
+          "description": "Aperol, sparkling wine, club soda, 3oz"
         },
         {
           "name": "Mocha Martini",
           "price": "$12",
           "category": "drink",
-          "description": "Cocoa infused Ketel One vodka, Kahlua, espresso – 2oz"
+          "description": "Cocoa infused Ketel One vodka, Kahlua, espresso, 2oz"
         },
         {
           "name": "Slowhand Wrong Lager",
           "price": "$7",
           "category": "drink",
-          "description": "Draft beer"
+          "description": "Beer"
         },
         {
           "name": "Driftwood Fat Tug IPA",
           "price": "$7",
           "category": "drink",
-          "description": "Draft beer"
+          "description": "Beer"
         },
         {
           "name": "Red Wine",
           "price": "$10",
           "category": "drink",
-          "description": "House red by the glass"
+          "description": "House red"
         },
         {
           "name": "White Wine",
           "price": "$10",
           "category": "drink",
-          "description": "House white by the glass"
+          "description": "House white"
         },
         {
-          "name": "Oyster",
-          "price": "$1.75/pc",
+          "name": "Bubbles",
+          "price": "$10",
+          "category": "drink",
+          "description": "Sparkling wine"
+        },
+        {
+          "name": "West Coast / East Coast Oyster",
+          "price": "$1.75 / $2.75 ea",
           "category": "food",
-          "description": "Rotating, house mignonette, cucumber & thai basil granita"
+          "description": "Rotating, house mignonette, cocktail sauce"
+        },
+        {
+          "name": "Caviar Bump 3g",
+          "price": "$12",
+          "category": "food",
+          "description": "Sasanian sturgeon roe"
         },
         {
           "name": "House Salt & Vinegar Chips",
-          "price": "$4",
+          "price": "$5",
           "category": "food",
-          "description": "House-made salt & vinegar chips"
+          "description": "House-made chips"
         },
         {
           "name": "Hand-cut Fries",
           "price": "$7",
           "category": "food",
-          "description": "Sub Old Bay fries $1"
+          "description": "Old Bay fries sub $1"
         },
         {
-          "name": "Endswell Salad",
-          "price": "$11",
+          "name": "Cropthorne Farm Salad",
+          "price": "$12",
           "category": "food",
-          "description": "Bowen Island greens, farm vegetables, honey-lemon vinaigrette"
+          "description": "Westham Island greens, farm vegetables, honey-lemon vinaigrette"
         },
         {
-          "name": "Snow Leopard Melon Ajo Blanco",
-          "price": "$14",
+          "name": "Green Bullhorn Gazpacho",
+          "price": "$13",
           "category": "food",
-          "description": "Yuzu & shoyu compressed Cropthorne farm melon, shiso, egg yolk snow, scallion oil"
+          "description": "Vive le veg bullhorns & ambrosias, crispy lomo, brown butter & almond crumble, sherry"
         },
         {
-          "name": "\"Chicken Fried\" Spot Prawns",
-          "price": "$22",
+          "name": "Chicken Fried Spot Prawns",
+          "price": "$23",
           "category": "food",
           "description": "Meyer lemon aioli"
         },
         {
-          "name": "Beef Tartare",
-          "price": "$21",
+          "name": "Wagyu Beef Tartare",
+          "price": "$22",
           "category": "food",
           "description": "Classic garnishes, yuzu compressed kohlrabi, pickled garlic scapes, Pecorino Romano, salt & vinegar chips"
         },
@@ -46707,18 +46718,45 @@
           "name": "Steamed Mussels",
           "price": "$18",
           "category": "food",
-          "description": "½ lb, spring garlic, crab brain & coconut broth, served with focaccia"
+          "description": "1/2 lb, farm leeks, crab brain & coconut broth, with focaccia"
         },
         {
           "name": "Amber Burger",
-          "price": "$23",
+          "price": "$24",
           "category": "food",
-          "description": "Dry-aged house-ground beef, taleggio, huitlacoche aioli, sherry caramelized onions, bap, served with hand-cut fries"
+          "description": "Dry-aged house-ground beef, taleggio, huitlacoche aioli, sherry caramelized onions, bap, with hand-cut fries"
         }
       ],
-      "extra_windows": []
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            3
+          ],
+          "start": "22:00",
+          "end": "23:00",
+          "label": "Late night HH oysters"
+        },
+        {
+          "days": [
+            4
+          ],
+          "start": "22:00",
+          "end": "00:00",
+          "label": "Late night HH oysters"
+        },
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "22:00",
+          "end": "01:00",
+          "label": "Late night HH oysters"
+        }
+      ]
     },
-    "last_synced_at": "2026-09-03",
+    "last_synced_at": "2026-11-02",
     "cover_image": {
       "url": "http://static1.squarespace.com/static/69177c7462644178b259bde8/t/691780701c60da79402e44f2/1763147888355/Amber+Logo+White.png?format=1500w",
       "credit_name": "Amber Gastown",

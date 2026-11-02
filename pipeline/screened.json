@@ -23380,5 +23380,11 @@
     "name": "Armani/Caffè Vancouver",
     "verdict": "no_happy_hour",
     "checked_at": "2026-10-28"
+  },
+  "ChIJpUYGZT3ZhVQRJXQQdCPPNzw": {
+    "id": "a-1-pizza",
+    "name": "A-1 Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-02"
   }
 }
