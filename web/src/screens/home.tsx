@@ -17,6 +17,7 @@ import { DAY_FULL, fmtTime } from "@/lib/hours";
 import { InfoNav } from "@/screens/info";
 import { ExploreLinks } from "@/components/explore-links";
 import { HomeIntro } from "@/components/home-intro";
+import { GuidesButton, GuidesPill } from "@/components/guides-menu";
 import { SubmitPrompt } from "@/components/submit-prompt";
 import { apiEnabled } from "@/lib/api";
 import { goBackToBase } from "@/lib/back-to";
@@ -318,8 +319,9 @@ export function Home({ panel = null }: { panel?: string | null }) {
       </main>
 
       {!desktop && (
-        <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 flex justify-center pb-[max(env(safe-area-inset-bottom),20px)]">
+        <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 flex justify-center gap-2 pb-[max(env(safe-area-inset-bottom),20px)]">
           <ViewToggle view="list" />
+          <GuidesButton from="list" />
         </div>
       )}
 
@@ -358,6 +360,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
           <Suspense fallback={null}>
             <DesktopMap rows={rows} selected={panel} hovered={hovered} onSelect={pick} coverLeft={open && wide ? (wider ? 544 : 504) : 0} />
           </Suspense>
+          <GuidesPill className="absolute top-4 right-4 z-10" />
         </div>
       </aside>
     )}

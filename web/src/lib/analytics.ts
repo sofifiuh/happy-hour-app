@@ -18,6 +18,8 @@ export type AnalyticsEvent =
   | { name: "people_say_clicked"; venue_id: string; kind: string }
   | { name: "install_prompt"; outcome: "shown" | "installed" }
   | { name: "submit_opened"; from: string }
+  | { name: "guides_opened"; from: "desktop" | "list" | "map" }
+  | { name: "guide_clicked"; guide: string }
   | { name: "happy_hour_submitted"; kind: "listed" | "new"; photos: number };
 
 let ph: PostHog | null = null;
