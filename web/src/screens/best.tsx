@@ -135,7 +135,7 @@ export function BestScreen() {
             <h1 className="min-w-0 flex-1 font-display text-[24px] leading-[1.05] font-extrabold tracking-tight">
               Best of
               <span className="block truncate text-[13px] font-sans font-medium tracking-normal text-muted-foreground">
-                {list ? `${list.name} · ${year} · ranked by Hangout Score` : "Ranked by Hangout Score"}
+                {list ? `${list.kind === "metro" ? "Every city" : list.name} · ${year} · ranked by Hangout Score` : "Ranked by Hangout Score"}
               </span>
             </h1>
             {list && (
