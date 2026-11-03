@@ -34,6 +34,13 @@ function OldWelcome() {
   return <Navigate to={{ pathname: "/", search }} replace />;
 }
 
+// Venue pages live at /spots/<id>. Old links ending in .html still load the
+// same file, so swap the address bar to the clean URL without a reload.
+const cleanSpotPath = (path: string) => {
+  const m = /^\/spots\/([^/]+)\.html$/.exec(path);
+  return BROWSER_ROUTER && m && m[1] !== "index" ? `/spots/${m[1]}` : null;
+};
+
 const isHomePath = (path: string) => path === "/" || path === "/index.html";
 const spotIdOf = (path: string) => (isSpotPath(path) ? decodeURIComponent(path.split("/").pop()!).replace(/\.html$/, "") : null);
 
@@ -44,8 +51,10 @@ const scrollKey = (location: { pathname: string; key: string }) =>
 
 function Shell() {
   useStaticHead();
-  const { pathname, search } = useLocation();
+  const { pathname, search, hash } = useLocation();
   useEffect(() => noteLocation(pathname, search), [pathname, search]);
+  const clean = cleanSpotPath(pathname);
+  if (clean) return <Navigate to={{ pathname: clean, search, hash }} replace />;
   return (
     <>
       <ScrollRestoration getKey={scrollKey} />
@@ -57,7 +66,7 @@ function Shell() {
 }
 
 // Desktop opens a venue in a panel beside the list, with the map still
-// on the right; the venue keeps its own URL (/spots/<id>.html) and the
+// on the right; the venue keeps its own URL (/spots/<id>) and the
 // list stays mounted underneath, so closing it lands back where you were.
 // Phones keep the full-page venue.
 function Browse() {
@@ -68,7 +77,8 @@ function Browse() {
   return <Home panel={spot} />;
 }
 
-// /spots/<id>.html is a venue; /spots/index.html is the A–Z list.
+// /spots/<id> is a venue (old /spots/<id>.html links redirect in Shell);
+// /spots/index.html is the A–Z list.
 function SpotsFile() {
   const { file = "" } = useParams();
   return file === "index.html" || file === "" ? <AllSpots /> : <Spot />;
