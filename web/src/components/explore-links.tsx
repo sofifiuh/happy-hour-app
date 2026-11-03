@@ -17,7 +17,7 @@ export function ExploreLinks() {
   const entries = Object.entries(hubs);
   if (!BROWSER_ROUTER || !entries.length) return null;
   return (
-    <nav aria-label="Explore happy hours" className="mt-8 space-y-5 border-t border-border pt-6">
+    <nav id="explore" tabIndex={-1} aria-label="Explore happy hours" className="scroll-mt-48 outline-none mt-8 space-y-5 border-t border-border pt-6">
       <h2 className="font-display text-[20px] font-bold tracking-tight">Explore happy hours</h2>
       <a href="/research/" className="flex flex-col gap-0.5 rounded-2xl bg-ink-2 px-4 py-3 ring-1 ring-edge/5">
         <span className="font-semibold">Research and data</span>
