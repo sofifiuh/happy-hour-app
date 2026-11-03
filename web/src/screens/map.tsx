@@ -7,6 +7,7 @@ import { PlanDrawer } from "@/components/plan-drawer";
 import { SearchBar } from "@/components/search-bar";
 import { TimeTabs } from "@/components/time-tabs";
 import { VenueMap } from "@/components/venue-map";
+import { GuidesButton } from "@/components/guides-menu";
 import { ViewToggle } from "@/components/view-toggle";
 import { markHero } from "@/lib/motion";
 import { spotPath } from "@/lib/routes";
@@ -123,8 +124,9 @@ export function MapScreen() {
             <EmptyState emoji="🗺️" title="No spots on the map" body="Nothing matches here. Try another time or fewer filters." />
           </div>
         )}
-        <div className="flex justify-center">
+        <div className="flex justify-center gap-2">
           <ViewToggle view="map" />
+          <GuidesButton from="map" />
         </div>
       </div>
 
