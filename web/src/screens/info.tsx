@@ -79,7 +79,7 @@ function About() {
           more good laughs and more good moments. There's nothing more precious than happy time spent with loved ones, friends and
           strangers, wherever it happens.
         </p>
-        <footer className="text-[13px] text-muted-foreground">Jason, founder</footer>
+        <footer className="text-[13px] text-muted-foreground">Jason Atakhanov, founder</footer>
       </blockquote>
       <H>Who it's for</H>
       <p>
@@ -93,7 +93,7 @@ function About() {
           id="jason"
           initial="J"
           tone="bg-orange"
-          name="Jason"
+          name="Jason Atakhanov"
           role="Founder"
           bio="Founder of Setsail Marketing, which he's run for ten years. Loves travelling and a good time with people, wherever he is."
         />
