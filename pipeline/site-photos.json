@@ -1,4 +1,69 @@
 {
+  "14th-avenue-pub": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://14thavenue.ca/",
+      "https://14thavenue.ca/about-us/",
+      "https://14thavenue.ca/gallery/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://14thavenue.ca/wp-content/uploads/2018/03/bar-1.jpg",
+      "page": "https://14thavenue.ca/about-us/",
+      "w": 1650,
+      "h": 1100
+    },
+    "gallery": [
+      {
+        "url": "https://14thavenue.ca/wp-content/uploads/2018/08/Homepage-botom.jpg",
+        "page": "https://14thavenue.ca/",
+        "w": 1650,
+        "h": 1100
+      },
+      {
+        "url": "https://14thavenue.ca/wp-content/uploads/2018/03/beer-1.jpg",
+        "page": "https://14thavenue.ca/about-us/",
+        "w": 1650,
+        "h": 1100
+      },
+      {
+        "url": "https://14thavenue.ca/wp-content/uploads/2018/08/About-us-Bottom-.jpg",
+        "page": "https://14thavenue.ca/about-us/",
+        "w": 1650,
+        "h": 1100
+      },
+      {
+        "url": "https://14thavenue.ca/wp-content/uploads/2018/06/Steak-Prawns2.jpg",
+        "page": "https://14thavenue.ca/gallery/",
+        "w": 1650,
+        "h": 1100
+      },
+      {
+        "url": "https://14thavenue.ca/wp-content/uploads/2018/03/food-1.jpg",
+        "page": "https://14thavenue.ca/about-us/",
+        "w": 1000,
+        "h": 667
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "a008f793a8df",
+      "rejected": [
+        {
+          "url": "https://14thavenue.ca/wp-content/uploads/2018/08/about-us.jpg",
+          "why": "people/staff as subject"
+        },
+        {
+          "url": "https://14thavenue.ca/wp-content/uploads/2018/01/home-banner.jpg",
+          "why": "near-duplicate of photo8"
+        },
+        {
+          "url": "https://14thavenue.ca/wp-content/uploads/2023/11/Screenshot-2023-11-08-at-2.58.00%E2%80%AFPM.png",
+          "why": "promotional flyer with text"
+        }
+      ]
+    }
+  },
   "1931-gallery-bistro": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -637,6 +702,72 @@
       ]
     }
   },
+  "amato-trattoria": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://amatotrattoria.ca/",
+      "https://amatotrattoria.ca/gallery/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://amatotrattoria.ca/wp-content/uploads/2026/05/Upper-Left-Photography-Amato-Trattoria-9-1024x898.jpg",
+      "page": "https://amatotrattoria.ca/",
+      "w": 1024,
+      "h": 898
+    },
+    "gallery": [
+      {
+        "url": "https://amatotrattoria.ca/wp-content/uploads/2026/03/WDM00131.jpg",
+        "page": "https://amatotrattoria.ca/gallery/",
+        "w": 1013,
+        "h": 1350
+      },
+      {
+        "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square-1.webp",
+        "page": "https://amatotrattoria.ca/",
+        "w": 700,
+        "h": 700
+      },
+      {
+        "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square-4.webp",
+        "page": "https://amatotrattoria.ca/",
+        "w": 700,
+        "h": 700
+      },
+      {
+        "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square-3.webp",
+        "page": "https://amatotrattoria.ca/",
+        "w": 700,
+        "h": 700
+      },
+      {
+        "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square.webp",
+        "page": "https://amatotrattoria.ca/",
+        "w": 700,
+        "h": 700
+      },
+      {
+        "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square-5.webp",
+        "page": "https://amatotrattoria.ca/",
+        "w": 700,
+        "h": 700
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "5a08d47c8ec6",
+      "rejected": [
+        {
+          "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square-6.webp",
+          "why": "duplicate of photo1"
+        },
+        {
+          "url": "https://amatotrattoria.ca/wp-content/uploads/2026/10/Amato-Website-Images-square.webp",
+          "why": "people as primary subject"
+        }
+      ]
+    }
+  },
   "amber-gastown": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -1202,6 +1333,68 @@
       ]
     }
   },
+  "balam": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://balamwhistler.ca/",
+      "https://balamwhistler.ca/about/"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://balamwhistler.ca/wp-content/uploads/2025/01/1280-x-720.png",
+      "page": "https://balamwhistler.ca/",
+      "w": 1280,
+      "h": 720
+    },
+    "gallery": [
+      {
+        "url": "https://balamwhistler.ca/wp-content/uploads/2024/12/Balam-Landing-Bg.jpg",
+        "page": "https://balamwhistler.ca/",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "url": "https://balamwhistler.ca/wp-content/uploads/2024/11/IMAGE-07.jpg",
+        "page": "https://balamwhistler.ca/",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "url": "https://balamwhistler.ca/wp-content/uploads/sb-instagram-feed-images/827470332_1058989156974979_6583165649961602844_nfull.webp",
+        "page": "https://balamwhistler.ca/about/",
+        "w": 640,
+        "h": 800
+      },
+      {
+        "url": "https://balamwhistler.ca/wp-content/uploads/sb-instagram-feed-images/749354948_995223280018234_1040297010997671867_nfull.webp",
+        "page": "https://balamwhistler.ca/about/",
+        "w": 640,
+        "h": 800
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "6047d63716fe",
+      "rejected": [
+        {
+          "url": "https://balamwhistler.ca/wp-content/uploads/sb-instagram-feed-images/859187131_1081328171407744_3090615637205745357_nfull.webp",
+          "why": "promo image with text overlay"
+        },
+        {
+          "url": "https://balamwhistler.ca/wp-content/uploads/sb-instagram-feed-images/840333104_1068257792714782_9040525235462075610_nfull.webp",
+          "why": "near-duplicate of photo9"
+        },
+        {
+          "url": "https://balamwhistler.ca/wp-content/uploads/sb-instagram-feed-images/822384570_1053324337541461_6389610314268635966_nfull.webp",
+          "why": "menu item with text overlay"
+        },
+        {
+          "url": "https://balamwhistler.ca/wp-content/uploads/sb-instagram-feed-images/753857398_1001583672715528_3390807129797061573_nfull.webp",
+          "why": "person as subject"
+        }
+      ]
+    }
+  },
   "banana-leaf-in-kitsilano": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -1706,6 +1899,55 @@
         {
           "url": "https://images.squarespace-cdn.com/content/v1/600f521243af0e3d03f3c572/1611697718330-S566F6KI6Y7SLOIWKM0F/sangria.jpg",
           "why": "hand holding drink with person as prominent subject"
+        }
+      ]
+    }
+  },
+  "beacon-pub-eatery": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://www.beaconwhistler.com/",
+      "https://www.beaconwhistler.com/join-our-team",
+      "https://www.beaconwhistler.com/contact"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5b233d8d5cfd79fa3c9af676/1531979118657-O7U3R4R7Z3T3OQC87SV1/Copyright-Darby-Magill-1589-sm.jpg",
+      "page": "https://www.beaconwhistler.com/contact",
+      "w": 2225,
+      "h": 1669
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5b233d8d5cfd79fa3c9af676/1531979286781-Z0N5NMNWS2N6AQOHDU01/Copyright-Darby-Magill-1664-sm.jpg",
+        "page": "https://www.beaconwhistler.com/join-our-team",
+        "w": 2225,
+        "h": 1669
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5b233d8d5cfd79fa3c9af676/1533954443043-QUCH57VGAN4JB03AJ7AF/Copyright-Darby-Magill-1383_adj.jpg",
+        "page": "https://www.beaconwhistler.com/",
+        "w": 2500,
+        "h": 1669
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5b233d8d5cfd79fa3c9af676/1531974533391-6R3AC2OVJWN7Q1354ML2/Copyright-Darby-Magill-1352_darken-sm.jpg",
+        "page": "https://www.beaconwhistler.com/",
+        "w": 2500,
+        "h": 1669
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "61205af3fed6",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5b233d8d5cfd79fa3c9af676/1662577044860-X4GR2HG9WPKVW8GEDQJ2/image-asset.jpeg",
+          "why": "staff portrait"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5b233d8d5cfd79fa3c9af676/1662061685674-L0IK9BCEI5DRAFVKGWZC/image-asset.jpeg",
+          "why": "person wearing branded merchandise"
         }
       ]
     }
@@ -2272,6 +2514,65 @@
         {
           "url": "https://boulevardvancouver.ca/wp-content/uploads/2026/06/team.jpg",
           "why": "team photo with people posing at event"
+        }
+      ]
+    }
+  },
+  "bow-stern": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://www.bowandstern.ca/",
+      "https://www.bowandstern.ca/our-story",
+      "https://www.bowandstern.ca/abbotsford",
+      "https://www.bowandstern.ca/our-story"
+    ],
+    "cover_problem": "review: people posing and toasting at camera",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6503f84e4355510ffeffec58/12e045f1-faac-4b13-b43c-dfe5377dc07a/robyn-bessenger-photography-2-1500x1001.jpg",
+      "page": "https://www.bowandstern.ca/abbotsford",
+      "w": 1500,
+      "h": 1001
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-11-03",
+      "key": "1822ec5e8afe",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/6503f84e4355510ffeffec58/t/654840cc1e7bb17aaa3c7bd1/1699234044660/ANABELXB%2BS-24.jpg?format=1500w",
+          "why": "people posing and toasting at camera"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6503f84e4355510ffeffec58/d90d7e0d-5e62-4e52-a9e0-b0ab59881c16/ANABELXCROSSMITH-45.jpg",
+          "why": "group family portrait posing"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6503f84e4355510ffeffec58/7c729ce9-5735-4890-9185-6e2948dd8806/ANABELXCROSSMITH-60.jpg",
+          "why": "group headshot of four men posing"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6503f84e4355510ffeffec58/d8dc1aac-0539-409f-ae82-25e401c9148f/ANABELXB%2BS-24.jpg",
+          "why": "duplicate of photo1, people posing"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6503f84e4355510ffeffec58/5b28a14c-ebbb-4115-a1ff-fdd965df13ea/ANABELXB%2BS-15.jpg",
+          "why": "people as main subjects smiling at camera"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6503f84e4355510ffeffec58/77db95ff-5a6c-4515-809d-3ba43c6d1c9c/4.png",
+          "why": "promotional overlay text 'ALL LOCATIONS'"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6503f84e4355510ffeffec58/1e6d9673-acb5-45fb-925d-804cd89201b5/7.png",
+          "why": "promotional text overlay 'SEA YOU SOON' with logo"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6503f84e4355510ffeffec58/a576a5e9-92dd-41e2-9fde-2ee12e14da1b/2.png",
+          "why": "promotional text overlay 'JOIN US FOR OYSTER HOUR'"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6503f84e4355510ffeffec58/a1e26f98-617a-4a8d-95a2-8c5541132002/3.png",
+          "why": "promotional text overlay 'GREAT DEALS & GOOD EATS'"
         }
       ]
     }
@@ -3264,6 +3565,48 @@
       ]
     }
   },
+  "caramba-restaurant": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://www.carambarestaurant.com/",
+      "https://www.carambarestaurant.com/our-restaurant/",
+      "https://www.carambarestaurant.com/wp-content/uploads/2025/05/gallery1-caramba.webp",
+      "https://www.carambarestaurant.com/wp-content/uploads/2025/05/gallery10-caramba.webp"
+    ],
+    "cover_problem": "graphic",
+    "cover": {
+      "url": "https://www.carambarestaurant.com/wp-content/uploads/2025/08/CarambaRest-JR.webp",
+      "page": "https://www.carambarestaurant.com/our-restaurant/",
+      "w": 1400,
+      "h": 721
+    },
+    "gallery": [
+      {
+        "url": "https://www.carambarestaurant.com/wp-content/uploads/2025/05/hero-section-caramba.webp",
+        "page": "https://www.carambarestaurant.com/",
+        "w": 1440,
+        "h": 900
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "5a6d8d831016",
+      "rejected": [
+        {
+          "url": "https://www.carambarestaurant.com/wp-content/uploads/2025/05/gallery10-caramba.webp",
+          "why": "people as subject - staff and guests in social interaction"
+        },
+        {
+          "url": "https://www.carambarestaurant.com/wp-content/uploads/2025/05/alex-reeve.webp",
+          "why": "chef portrait"
+        },
+        {
+          "url": "https://www.carambarestaurant.com/wp-content/uploads/2025/05/gallery1-caramba.webp",
+          "why": "staff portrait - bartender making cocktail"
+        }
+      ]
+    }
+  },
   "carano": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -3678,6 +4021,75 @@
         {
           "url": "https://www.chambar.com/media/1900x900/2024%20Fall_Nico_Gambier.webp",
           "why": "nature/landscape scene unrelated to venue"
+        }
+      ]
+    }
+  },
+  "chameleon-restaurant": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://chameleonmapleridge.squarespace.com/",
+      "https://chameleonmapleridge.squarespace.com/our-story",
+      "https://chameleonmapleridge.squarespace.com/private-dining-events"
+    ],
+    "cover_problem": "dark",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1755144064768-W25OU38JXLY1LHVXB60R/Screenshot+2025-08-13+at+8.57.01%E2%80%AFPM.png",
+      "page": "https://chameleonmapleridge.squarespace.com/",
+      "w": 1360,
+      "h": 1696
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1764291828037-4GKZ7T0WMR474RK55EA5/584222350_18537178489050249_2142214402161121019_n.jpg",
+        "page": "https://chameleonmapleridge.squarespace.com/",
+        "w": 1440,
+        "h": 1920
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1764291828125-9T3AQF1YIS98HUAGFTMF/582279422_18537332950050249_7780892058863693545_n.jpg",
+        "page": "https://chameleonmapleridge.squarespace.com/",
+        "w": 1440,
+        "h": 1920
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1791579405023-F4ZY52DHOY6A856T0ZYW/Screenshot+2026-10-08+at+3.14.01%E2%80%AFPM.png",
+        "page": "https://chameleonmapleridge.squarespace.com/",
+        "w": 1388,
+        "h": 1710
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1755144066467-RV5C823GSB00Q6DXGKSM/Screenshot+2025-08-13+at+8.57.22%E2%80%AFPM.png",
+        "page": "https://chameleonmapleridge.squarespace.com/",
+        "w": 1368,
+        "h": 1694
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1755144083651-QCSPTOQDQ1M9ZQ22O4CN/Screenshot+2025-08-13+at+8.57.51%E2%80%AFPM.png",
+        "page": "https://chameleonmapleridge.squarespace.com/",
+        "w": 1360,
+        "h": 1698
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1755144099541-93XHK3319AXH9JHWULUL/Screenshot+2025-08-13+at+8.58.23%E2%80%AFPM.png",
+        "page": "https://chameleonmapleridge.squarespace.com/",
+        "w": 1362,
+        "h": 1680
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1755144084554-4GRC2AMNGJNGCU6D0GQB/Screenshot+2025-08-13+at+8.57.42%E2%80%AFPM.png",
+        "page": "https://chameleonmapleridge.squarespace.com/",
+        "w": 1356,
+        "h": 1674
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "d4299fa64881",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/ce962ec3-c559-495b-bfeb-86c9672d74dd/Screenshot+2025-08-13+at+8.11.06%E2%80%AFPM.png",
+          "why": "prominent sign/logo"
         }
       ]
     }
@@ -4818,6 +5230,51 @@
       ]
     }
   },
+  "district-bar-restaurant-garrison": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://garrison.districtbar.ca/",
+      "https://garrison.districtbar.ca/about/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://garrison.districtbar.ca/wp-content/uploads/2024/05/728dc812d3abfc-IS415962629-1.webp",
+      "page": "https://garrison.districtbar.ca/",
+      "w": 960,
+      "h": 640
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-11-03",
+      "key": "4ab25e0f3e54",
+      "rejected": [
+        {
+          "url": "https://districtbar.ca/wp-content/uploads/2021/09/bar-menu-district-bar-adn-restaurant.jpg",
+          "why": "mostly text overlay (BAR MENU)"
+        },
+        {
+          "url": "https://districtbar.ca/wp-content/uploads/2021/09/district-bar-and-restaurant-vancouver.jpg",
+          "why": "wordmark logo overlay"
+        },
+        {
+          "url": "https://garrison.districtbar.ca/wp-content/uploads/2023/05/District-Bar-Web-Bannerss-1200-%C3%97-600-px-1024x512.jpg",
+          "why": "mostly text overlay (BRUNCH SAT & SUN 11AM - 2PM)"
+        },
+        {
+          "url": "https://garrison.districtbar.ca/wp-content/uploads/2024/05/Web-Images-1.jpg",
+          "why": "mostly text overlay (WEEKEND BRUNCH)"
+        },
+        {
+          "url": "https://garrison.districtbar.ca/wp-content/uploads/2024/12/Garrison-District-Bar-Web-Banners-1200-%C3%97-600-px-1024x512.png",
+          "why": "mostly text overlay (ORDER GIFT CARDS ONLINE)"
+        },
+        {
+          "url": "https://garrison.districtbar.ca/wp-content/uploads/2024/05/Web-Images-2.jpg",
+          "why": "mostly text overlay (KITCHEN MENU)"
+        }
+      ]
+    }
+  },
   "district-eleven": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -5074,6 +5531,74 @@
         {
           "url": "http://static1.squarespace.com/static/64ef945afb9da6016dfe45d5/t/6a078db90c21f6637a54045b/1778879929711/Dovetail-SocialSharing.jpg?format=1500w",
           "why": "has prominent logo overlay (large '5' watermark)"
+        }
+      ]
+    }
+  },
+  "dubh-linn-gate-irish-pub": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://whistler.dubhlinngate.com/",
+      "https://whistler.dubhlinngate.com/story/index.php",
+      "https://whistler.dubhlinngate.com/story/perfect-pint.php",
+      "https://whistler.dubhlinngate.com/story/the-old-goats.php"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://whistler.dubhlinngate.com/database/images/Front_Patio_with_skis_Banner.jpg",
+      "page": "https://whistler.dubhlinngate.com/",
+      "w": 1150,
+      "h": 453
+    },
+    "gallery": [
+      {
+        "url": "https://whistler.dubhlinngate.com/database/images/Cheers.jpeg",
+        "page": "https://whistler.dubhlinngate.com/",
+        "w": 1150,
+        "h": 453
+      },
+      {
+        "url": "https://whistler.dubhlinngate.com/database/images/Billie___banner.jpg",
+        "page": "https://whistler.dubhlinngate.com/",
+        "w": 1150,
+        "h": 453
+      },
+      {
+        "url": "https://whistler.dubhlinngate.com/database/images/Rik_on_patio_Banner.jpg",
+        "page": "https://whistler.dubhlinngate.com/",
+        "w": 1150,
+        "h": 453
+      },
+      {
+        "url": "https://whistler.dubhlinngate.com/database/images/Chad_and_Ian_Singing_Banner.jpg",
+        "page": "https://whistler.dubhlinngate.com/",
+        "w": 1150,
+        "h": 453
+      },
+      {
+        "url": "https://whistler.dubhlinngate.com/database/images/Guinness_Cheers.jpeg",
+        "page": "https://whistler.dubhlinngate.com/story/index.php",
+        "w": 1150,
+        "h": 453
+      },
+      {
+        "url": "https://whistler.dubhlinngate.com/database/images/Beth_and_Mark_Banner.jpg",
+        "page": "https://whistler.dubhlinngate.com/story/index.php",
+        "w": 1150,
+        "h": 453
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "a437bd817f04",
+      "rejected": [
+        {
+          "url": "https://whistler.dubhlinngate.com/database/images/DGP_Site_MainImage_1150x453_Stage(1).jpg",
+          "why": "near-duplicate of photo5, live music"
+        },
+        {
+          "url": "https://whistler.dubhlinngate.com/database/images/Dutchie_Banner.jpg",
+          "why": "staff as primary subject with food"
         }
       ]
     }
@@ -6825,6 +7350,46 @@
       ]
     }
   },
+  "greek-islands-restaurant": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://greekislandsrestaurants.com/greek-islands-abbotsford-langdon/",
+      "https://greekislandsrestaurants.com/story/"
+    ],
+    "cover_problem": "shape",
+    "cover": null,
+    "gallery": [],
+    "review": {
+      "at": "2026-11-03",
+      "key": "0a633d81c7f1",
+      "rejected": [
+        {
+          "url": "https://greekislandsrestaurants.com/wp-content/uploads/2026/02/Gi1-Menu-Lunch_page-0001.jpg",
+          "why": "menu image"
+        }
+      ]
+    }
+  },
+  "greek-islands-restaurant-2": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://greekislandsrestaurants.com/greek-islands-abbotsford-sfraserway/",
+      "https://greekislandsrestaurants.com/story/"
+    ],
+    "cover_problem": "review: menu - mostly text",
+    "cover": null,
+    "gallery": [],
+    "review": {
+      "at": "2026-11-03",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://greekislandsrestaurants.com/wp-content/uploads/2026/02/Gi1-Menu-Appetizers-Salads-Entrees_page-0001-625x1030.jpg",
+          "why": "menu - mostly text"
+        }
+      ]
+    }
+  },
   "green-timbers-pub": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -7747,6 +8312,58 @@
       "rejected": []
     }
   },
+  "heyhey-bar-grill": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://heyheybarandgrill.ca/",
+      "https://heyheybarandgrill.ca/locations/",
+      "https://heyheybarandgrill.ca/maple-ridge-events/",
+      "https://heyheybarandgrill.ca/delta-events/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://heyheybarandgrill.ca/wp-content/uploads/2026/08/Heyhey-MNP.jpg",
+      "page": "https://heyheybarandgrill.ca/locations/",
+      "w": 1066,
+      "h": 661
+    },
+    "gallery": [
+      {
+        "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/pizza-img.webp",
+        "page": "https://heyheybarandgrill.ca/",
+        "w": 1600,
+        "h": 1205
+      },
+      {
+        "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/mr-bar-img.webp",
+        "page": "https://heyheybarandgrill.ca/locations/",
+        "w": 1500,
+        "h": 1125
+      },
+      {
+        "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/cheeseburger-img.webp",
+        "page": "https://heyheybarandgrill.ca/",
+        "w": 1232,
+        "h": 928
+      },
+      {
+        "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/wings-img-1.webp",
+        "page": "https://heyheybarandgrill.ca/",
+        "w": 1232,
+        "h": 928
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "fbb52ef6b66a",
+      "rejected": [
+        {
+          "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/beef-dip-img.webp",
+          "why": "near-duplicate of photo1"
+        }
+      ]
+    }
+  },
   "hideout-golf": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -8474,6 +9091,74 @@
         {
           "url": "http://static1.squarespace.com/static/6854788a9b9bf47355cc289e/t/68f682227299ba1a416880bd/1760985634069/Il+Corvo_Logo.jpg?format=1500w",
           "why": "Logo and wordmark"
+        }
+      ]
+    }
+  },
+  "islands-patio-lounge": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://www.harrisonresort.com/dining/islands-bar/",
+      "https://www.harrisonresort.com/events",
+      "https://www.harrisonresort.com/photo-gallery",
+      "https://www.harrisonresort.com/dining/islands-bar"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://image-tc.galaxy.tf/wijpeg-4jklceepgvunsthb9tbp14tsv/3_standard.jpg?crop=0%2C0%2C640%2C480&width=1140",
+      "page": "https://www.harrisonresort.com/dining/islands-bar/",
+      "w": 640,
+      "h": 480
+    },
+    "gallery": [
+      {
+        "url": "https://image-tc.galaxy.tf/wijpeg-ctra5t3czj6kekqifgc9qitp8/34_standard.jpg?crop=0%2C438%2C1500%2C1125&width=1140",
+        "page": "https://www.harrisonresort.com/dining/islands-bar/",
+        "w": 1140,
+        "h": 855
+      },
+      {
+        "url": "https://image-tc.galaxy.tf/wijpeg-azxhmfn45sc8lx5z34f3ic8lp/38_standard.jpg?crop=0%2C435%2C1356%2C1017&width=1140",
+        "page": "https://www.harrisonresort.com/dining/islands-bar/",
+        "w": 1140,
+        "h": 855
+      },
+      {
+        "url": "https://image-tc.galaxy.tf/wijpeg-ewvjsgf7q4ll0jql9mglquhw4/28_standard.jpg?crop=0%2C438%2C1500%2C1125&width=1140",
+        "page": "https://www.harrisonresort.com/dining/islands-bar/",
+        "w": 1140,
+        "h": 855
+      },
+      {
+        "url": "https://image-tc.galaxy.tf/wijpeg-dmluq7kfexj1a9fonxp3v2zky/18_standard.jpg?crop=0%2C111%2C1506%2C1130&width=1140",
+        "page": "https://www.harrisonresort.com/dining/islands-bar/",
+        "w": 1140,
+        "h": 855
+      },
+      {
+        "url": "https://image-tc.galaxy.tf/wijpeg-840zmagir3xf4feglkc1awdye/12_standard.jpg?crop=0%2C0%2C1434%2C1076&width=1140",
+        "page": "https://www.harrisonresort.com/dining/islands-bar/",
+        "w": 1140,
+        "h": 855
+      },
+      {
+        "url": "https://image-tc.galaxy.tf/wijpeg-30328q7io4fsvp2egcizgxngy/island_standard.jpg?crop=66%2C0%2C1052%2C789&width=1140",
+        "page": "https://www.harrisonresort.com/dining/islands-bar/",
+        "w": 1052,
+        "h": 789
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "9f88ecc08bd4",
+      "rejected": [
+        {
+          "url": "https://image-tc.galaxy.tf/wijpeg-3ss29iylgq376m0x03iz0eczx/10_standard.jpg?crop=0%2C0%2C2000%2C1500&width=1140",
+          "why": "people are the subject"
+        },
+        {
+          "url": "https://image-tc.galaxy.tf/wijpeg-bipechrz1zgz8wh9ida5e9ri0/drinks-margret-min_standard.jpg?rotate=0&crop=200%2C150%2C1600%2C1200&width=1140",
+          "why": "not this venue; appears to be casino/hotel floor"
         }
       ]
     }
@@ -16162,6 +16847,27 @@
       ]
     }
   },
+  "sneakers-sports-lounge": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://sneakerssportslounge.ca/",
+      "https://sneakerssportslounge.ca/about.php",
+      "https://sneakerssportslounge.ca/events.php"
+    ],
+    "cover_problem": "graphic",
+    "cover": null,
+    "gallery": [],
+    "review": {
+      "at": "2026-11-03",
+      "key": "d529c53c5946",
+      "rejected": [
+        {
+          "url": "https://sneakerssportslounge.ca/assets/img/karaoke-nights-post.webp",
+          "why": "promotional poster/flyer - mostly text"
+        }
+      ]
+    }
+  },
   "sobu-social": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -17892,6 +18598,90 @@
       ]
     }
   },
+  "the-aroma-bistro-bar-abbotsford": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://thearomabistro.ca/",
+      "https://thearomabistro.ca/private-events/",
+      "https://thearomabistro.ca/occasions/corporate-events/",
+      "https://thearomabistro.ca/occasions/networking-events/"
+    ],
+    "cover_problem": "shape",
+    "cover": {
+      "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-staff-appreciation-parties.jpg",
+      "page": "https://thearomabistro.ca/",
+      "w": 1400,
+      "h": 935
+    },
+    "gallery": [
+      {
+        "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-birthday-parties.jpg",
+        "page": "https://thearomabistro.ca/",
+        "w": 1400,
+        "h": 934
+      },
+      {
+        "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-fundraisers-community-events.jpg",
+        "page": "https://thearomabistro.ca/",
+        "w": 1400,
+        "h": 933
+      },
+      {
+        "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-wedding-receptions.jpg",
+        "page": "https://thearomabistro.ca/",
+        "w": 1400,
+        "h": 935
+      },
+      {
+        "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-networking-events.jpg",
+        "page": "https://thearomabistro.ca/",
+        "w": 1400,
+        "h": 933
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "4ff3ab6c6aac",
+      "rejected": [
+        {
+          "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-rehearsal-dinners.jpg",
+          "why": "people as subject"
+        },
+        {
+          "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-retirement-parties.jpg",
+          "why": "people as subject"
+        },
+        {
+          "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/venue-bg.jpg",
+          "why": "people as subject"
+        },
+        {
+          "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-baby-showers.jpg",
+          "why": "logo/signage as primary focus"
+        }
+      ]
+    }
+  },
+  "the-backyard": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://www.backyardsquamish.com/",
+      "https://www.backyardsquamish.com/events"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/50d097_095b7a81195b4bebb17d0684712e1117~mv2.png/v1/fill/w_430,h_543,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/50d097_095b7a81195b4bebb17d0684712e1117~mv2.png",
+      "page": "https://www.backyardsquamish.com/",
+      "w": 430,
+      "h": 543
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-11-03",
+      "key": "e1aadd622416",
+      "rejected": []
+    }
+  },
   "the-barley-merchant-taproom-kitchen": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -18113,6 +18903,68 @@
         {
           "url": "https://static.wixstatic.com/media/013b9a_87a226292a1b48deb7615e4530dae20a~mv2.png/v1/fill/w_451,h_451,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/013b9a_87a226292a1b48deb7615e4530dae20a~mv2.png",
           "why": "event poster with people as subjects"
+        }
+      ]
+    }
+  },
+  "the-broken-seal": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://www.thebrokenseal.ca/",
+      "https://www.thebrokenseal.ca/photos",
+      "https://www.thebrokenseal.ca/groupevents",
+      "https://www.thebrokenseal.ca/our-menus"
+    ],
+    "cover_problem": "tiny file",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/0d222271-d85e-4c58-85f3-a8384e179f51/The+Broken+Seal-65.jpg",
+      "page": "https://www.thebrokenseal.ca/our-menus",
+      "w": 1600,
+      "h": 1067
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/e1ebf483-2769-4cb5-8ac4-0a4d69c8b2f5/a0436812-e570-4bc4-afde-79542bbfa3bb.jpg",
+        "page": "https://www.thebrokenseal.ca/",
+        "w": 2500,
+        "h": 1668
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/c46c91a1-b676-4d71-ba41-f49df9bf7db5/Carrot+Menage.JPG",
+        "page": "https://www.thebrokenseal.ca/",
+        "w": 2500,
+        "h": 1668
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/4e42c90e-275a-4728-8051-372cb942ed57/BS-14.jpg",
+        "page": "https://www.thebrokenseal.ca/",
+        "w": 2500,
+        "h": 1667
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "f1fe23d0aca7",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/0c041019-d6f8-4da5-84e5-cc2b13e3141b/The+Broken+Seal-135.jpg",
+          "why": "people as subject, group photo"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/d0035514-fa40-4cad-aacc-69cea50f229e/The+Broken+Seal-124.jpg",
+          "why": "people as subject, toasting silhouettes"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/2ffe2e8d-b4a7-4614-bac5-784625af08b4/Highlights+%2821+of+28%29.jpg",
+          "why": "people as subject, group photo"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/8180748a-3c97-4490-804d-2789e50f141a/Image+%2818%29.png",
+          "why": "near-duplicate of photo7, people as subject"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/376bc403-b0fa-41f8-8610-93932e25181c/Image+%2821%29.png",
+          "why": "people as subject, duplicate variant"
         }
       ]
     }
@@ -18829,6 +19681,26 @@
       ]
     }
   },
+  "the-greek-islands-restaurant": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://greekislandsrestaurants.com/greek-islands-chilliwack/",
+      "https://greekislandsrestaurants.com/story/"
+    ],
+    "cover_problem": "review: menu with prices - text/informational, not venue photography",
+    "cover": null,
+    "gallery": [],
+    "review": {
+      "at": "2026-11-03",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://greekislandsrestaurants.com/wp-content/uploads/2026/04/Gi2_250410_Menu_Dining_01_1275_2100-625x1030.webp",
+          "why": "menu with prices - text/informational, not venue photography"
+        }
+      ]
+    }
+  },
   "the-gull-bar-and-kitchen": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -18947,6 +19819,73 @@
       "at": "2026-10-24",
       "key": "7967fbed1466",
       "rejected": []
+    }
+  },
+  "the-highwayman-pub": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://highwaymanpubonline.com/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/IMG_0740-2048x1536.jpg",
+      "page": "https://highwaymanpubonline.com/",
+      "w": 2048,
+      "h": 1536
+    },
+    "gallery": [
+      {
+        "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/Exterior-3-2048x1536.jpg",
+        "page": "https://highwaymanpubonline.com/",
+        "w": 2048,
+        "h": 1536
+      },
+      {
+        "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/IMG_0745-2048x1536.jpg",
+        "page": "https://highwaymanpubonline.com/",
+        "w": 2048,
+        "h": 1536
+      },
+      {
+        "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/Benny-Bowl-Landscape-2.jpg",
+        "page": "https://highwaymanpubonline.com/",
+        "w": 2000,
+        "h": 1333
+      },
+      {
+        "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/Cookie-ZoomIn-Landscape.jpg",
+        "page": "https://highwaymanpubonline.com/",
+        "w": 2000,
+        "h": 1333
+      },
+      {
+        "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/FishChips-Landscape.jpg",
+        "page": "https://highwaymanpubonline.com/",
+        "w": 2000,
+        "h": 1333
+      },
+      {
+        "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/French-Toast-Landscape-2.jpg",
+        "page": "https://highwaymanpubonline.com/",
+        "w": 2000,
+        "h": 1333
+      },
+      {
+        "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/MapelBaconBourbonBurger-ZoomIn-Landscape.jpg",
+        "page": "https://highwaymanpubonline.com/",
+        "w": 2000,
+        "h": 1333
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "bda35aed8c3b",
+      "rejected": [
+        {
+          "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/Eggs-Benny-Cutting-Landscape-2.jpg",
+          "why": "hands in shot; photo4 better for appetizers"
+        }
+      ]
     }
   },
   "the-horse-and-ryder-pub": {
@@ -19445,6 +20384,72 @@
         {
           "url": "https://images.squarespace-cdn.com/content/v1/5ee810382e448119b4ac9017/fe978d7d-8652-4b8c-9ab6-353dcbc9c7b5/OB+70s.jpg",
           "why": "historic tinted photo"
+        }
+      ]
+    }
+  },
+  "the-offy": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://www.theoffyco.com/",
+      "https://www.theoffyco.com/our-story",
+      "https://www.theoffyco.com/join-our-team",
+      "https://www.theoffyco.com/thespace"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/9e151722-d1e5-4049-b0f6-793087d6b482/IMG_7715.JPG",
+      "page": "https://www.theoffyco.com/thespace",
+      "w": 1600,
+      "h": 1067
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/4f9dc5ae-8ad7-487f-9039-78e151964680/KA5A7605_websize.jpg",
+        "page": "https://www.theoffyco.com/thespace",
+        "w": 1600,
+        "h": 1067
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/3779db9a-9d59-4aeb-90ae-10774ffd7773/KA5A7652_websize.jpg",
+        "page": "https://www.theoffyco.com/thespace",
+        "w": 1600,
+        "h": 1067
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/1758257268191-8NZ0943LPYSJD6X8LZ9X/KA5A7632_websize.jpg",
+        "page": "https://www.theoffyco.com/thespace",
+        "w": 1600,
+        "h": 1041
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/975aa832-6db6-43d5-963c-6cc245ef4ce6/KA5A0311_websize.jpg",
+        "page": "https://www.theoffyco.com/our-story",
+        "w": 1600,
+        "h": 1067
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/1758257206624-GQLB1JVIN54NTKKU3OZK/KA5A6785_websize.jpg",
+        "page": "https://www.theoffyco.com/thespace",
+        "w": 1067,
+        "h": 1422
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "ad4c1c3c6991",
+      "rejected": [
+        {
+          "url": "https://video.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/8509af91-6434-4b7c-821e-7c4ce53b43b6/thumbnail",
+          "why": "kitchen staff portrait"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/1758257475229-YED92598SXV4MQBP1DJ3/KA5A6812_websize.jpg",
+          "why": "close-up flowers only"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/1758257224395-RX02U3DTULMQEYBV6E0F/KA5A3235_websize.jpg",
+          "why": "near-duplicate of photo8, photo8 is better"
         }
       ]
     }
@@ -20163,6 +21168,77 @@
       ]
     }
   },
+  "the-settler-pub": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://thesettlerpub.com/",
+      "https://thesettlerpub.com/about-us/",
+      "https://thesettlerpub.com/our-team/",
+      "https://thesettlerpub.com/large-party-platter-menu/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://thesettlerpub.com/wp-content/uploads/2025/12/img7.webp",
+      "page": "https://thesettlerpub.com/",
+      "w": 1920,
+      "h": 1281
+    },
+    "gallery": [
+      {
+        "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/DSC_7198.jpg",
+        "page": "https://thesettlerpub.com/",
+        "w": 1920,
+        "h": 1288
+      },
+      {
+        "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A3783-1.jpg",
+        "page": "https://thesettlerpub.com/",
+        "w": 1920,
+        "h": 1281
+      },
+      {
+        "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A3699.jpg",
+        "page": "https://thesettlerpub.com/",
+        "w": 1920,
+        "h": 1281
+      },
+      {
+        "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A3635.jpg",
+        "page": "https://thesettlerpub.com/",
+        "w": 1920,
+        "h": 1281
+      },
+      {
+        "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A3952.jpg",
+        "page": "https://thesettlerpub.com/",
+        "w": 1920,
+        "h": 1281
+      },
+      {
+        "url": "https://thesettlerpub.com/wp-content/uploads/2026/06/DSC_6996.jpg",
+        "page": "https://thesettlerpub.com/about-us/",
+        "w": 1920,
+        "h": 1229
+      },
+      {
+        "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A4244-Edit.jpg",
+        "page": "https://thesettlerpub.com/about-us/",
+        "w": 1920,
+        "h": 1281
+      },
+      {
+        "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A3392.jpg",
+        "page": "https://thesettlerpub.com/about-us/",
+        "w": 1920,
+        "h": 1281
+      }
+    ],
+    "review": {
+      "at": "2026-11-03",
+      "key": "373e98ff3847",
+      "rejected": []
+    }
+  },
   "the-social-tavern": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -20336,6 +21412,36 @@
         {
           "url": "https://www.thethirstyduckpub.com/images/parallax-5.jpg",
           "why": "group of people, crowd posing"
+        }
+      ]
+    }
+  },
+  "the-tipsy-barrel": {
+    "checked_at": "2026-11-03",
+    "pages": [
+      "https://www.thetipsybarrelpub.com/",
+      "https://www.thetipsybarrelpub.com/about.php",
+      "https://www.thetipsybarrelpub.com/events.php"
+    ],
+    "cover_problem": "too small",
+    "cover": {
+      "url": "https://www.thetipsybarrelpub.com/wp-content/uploads/nfl-gameday.jpg",
+      "page": "https://www.thetipsybarrelpub.com/",
+      "w": 662,
+      "h": 870
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-11-03",
+      "key": "b73bb4df30c9",
+      "rejected": [
+        {
+          "url": "https://www.thetipsybarrelpub.com/wp-content/uploads/nfl-combo.webp",
+          "why": "promotional flyer with mostly text (combo offer, pricing, contact info)"
+        },
+        {
+          "url": "https://www.thetipsybarrelpub.com/wp-content/uploads/2025/07/Dj.png",
+          "why": "promotional poster with mostly text (event announcement, date/time)"
         }
       ]
     }

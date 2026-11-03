@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-03-d5796e33",
+ "data_version": "2026-11-03-2617770e",
  "venues": [
   {
    "id": "ancora",
@@ -8702,7 +8702,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://whistler.dubhlinngate.com/database/images/Cheers.jpeg",
+     "credit_name": "Dubh Linn Gate Irish Pub",
+     "credit_url": "https://whistler.dubhlinngate.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://whistler.dubhlinngate.com/database/images/Billie___banner.jpg",
+     "credit_name": "Dubh Linn Gate Irish Pub",
+     "credit_url": "https://whistler.dubhlinngate.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://whistler.dubhlinngate.com/database/images/Rik_on_patio_Banner.jpg",
+     "credit_name": "Dubh Linn Gate Irish Pub",
+     "credit_url": "https://whistler.dubhlinngate.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://whistler.dubhlinngate.com/database/images/Chad_and_Ian_Singing_Banner.jpg",
+     "credit_name": "Dubh Linn Gate Irish Pub",
+     "credit_url": "https://whistler.dubhlinngate.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://whistler.dubhlinngate.com/database/images/Guinness_Cheers.jpeg",
+     "credit_name": "Dubh Linn Gate Irish Pub",
+     "credit_url": "https://whistler.dubhlinngate.com/story/index.php",
+     "source": "official_website"
+    },
+    {
+     "url": "https://whistler.dubhlinngate.com/database/images/Beth_and_Mark_Banner.jpg",
+     "credit_name": "Dubh Linn Gate Irish Pub",
+     "credit_url": "https://whistler.dubhlinngate.com/story/index.php",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8765,10 +8802,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/dubh-linn-gate-irish-pub.jpg",
+    "url": "https://whistler.dubhlinngate.com/database/images/Front_Patio_with_skis_Banner.jpg",
     "credit_name": "Dubh Linn Gate Irish Pub",
-    "credit_url": "https://maps.google.com/maps/contrib/103895192605160587756",
-    "source": "google_places"
+    "credit_url": "https://whistler.dubhlinngate.com/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
    "primary_type": null,
@@ -8976,9 +9013,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/6503f84e4355510ffeffec58/t/654840cc1e7bb17aaa3c7bd1/1699234044660/ANABELXB%2BS-24.jpg?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/6503f84e4355510ffeffec58/12e045f1-faac-4b13-b43c-dfe5377dc07a/robyn-bessenger-photography-2-1500x1001.jpg",
     "credit_name": "Bow & Stern",
-    "credit_url": "http://www.bowandstern.ca/",
+    "credit_url": "https://www.bowandstern.ca/abbotsford",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
@@ -9012,7 +9049,56 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/DSC_7198.jpg",
+     "credit_name": "The Settler Pub",
+     "credit_url": "https://thesettlerpub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A3783-1.jpg",
+     "credit_name": "The Settler Pub",
+     "credit_url": "https://thesettlerpub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A3699.jpg",
+     "credit_name": "The Settler Pub",
+     "credit_url": "https://thesettlerpub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A3635.jpg",
+     "credit_name": "The Settler Pub",
+     "credit_url": "https://thesettlerpub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A3952.jpg",
+     "credit_name": "The Settler Pub",
+     "credit_url": "https://thesettlerpub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thesettlerpub.com/wp-content/uploads/2026/06/DSC_6996.jpg",
+     "credit_name": "The Settler Pub",
+     "credit_url": "https://thesettlerpub.com/about-us/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A4244-Edit.jpg",
+     "credit_name": "The Settler Pub",
+     "credit_url": "https://thesettlerpub.com/about-us/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/0V9A3392.jpg",
+     "credit_name": "The Settler Pub",
+     "credit_url": "https://thesettlerpub.com/about-us/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9199,7 +9285,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://thesettlerpub.com/wp-content/uploads/2026/04/DSC_7198.jpg",
+    "url": "https://thesettlerpub.com/wp-content/uploads/2025/12/img7.webp",
     "credit_name": "The Settler Pub",
     "credit_url": "https://thesettlerpub.com/",
     "source": "official_website"
@@ -9235,7 +9321,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-birthday-parties.jpg",
+     "credit_name": "The Aroma Bistro & Bar Abbotsford",
+     "credit_url": "https://thearomabistro.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-fundraisers-community-events.jpg",
+     "credit_name": "The Aroma Bistro & Bar Abbotsford",
+     "credit_url": "https://thearomabistro.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-wedding-receptions.jpg",
+     "credit_name": "The Aroma Bistro & Bar Abbotsford",
+     "credit_url": "https://thearomabistro.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-networking-events.jpg",
+     "credit_name": "The Aroma Bistro & Bar Abbotsford",
+     "credit_url": "https://thearomabistro.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9440,9 +9551,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/room.jpg",
+    "url": "https://thearomabistro.ca/wp-content/themes/brewhub-h3/assets/img/photos/occ-staff-appreciation-parties.jpg",
     "credit_name": "The Aroma Bistro & Bar Abbotsford",
-    "credit_url": "http://thearomabistro.ca/",
+    "credit_url": "https://thearomabistro.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
@@ -9476,7 +9587,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5b233d8d5cfd79fa3c9af676/1531979286781-Z0N5NMNWS2N6AQOHDU01/Copyright-Darby-Magill-1664-sm.jpg",
+     "credit_name": "Beacon Pub & Eatery",
+     "credit_url": "https://www.beaconwhistler.com/join-our-team",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5b233d8d5cfd79fa3c9af676/1533954443043-QUCH57VGAN4JB03AJ7AF/Copyright-Darby-Magill-1383_adj.jpg",
+     "credit_name": "Beacon Pub & Eatery",
+     "credit_url": "https://www.beaconwhistler.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5b233d8d5cfd79fa3c9af676/1531974533391-6R3AC2OVJWN7Q1354ML2/Copyright-Darby-Magill-1352_darken-sm.jpg",
+     "credit_name": "Beacon Pub & Eatery",
+     "credit_url": "https://www.beaconwhistler.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9583,9 +9713,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/5b233d8d5cfd79fa3c9af676/t/5b234386575d1f2490ae3787/1529037704017/LogoIcon-500px.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/5b233d8d5cfd79fa3c9af676/1531979118657-O7U3R4R7Z3T3OQC87SV1/Copyright-Darby-Magill-1589-sm.jpg",
     "credit_name": "Beacon Pub & Eatery",
-    "credit_url": "http://www.beaconwhistler.com/",
+    "credit_url": "https://www.beaconwhistler.com/contact",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
@@ -9619,7 +9749,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/Exterior-3-2048x1536.jpg",
+     "credit_name": "The Highwayman Pub",
+     "credit_url": "https://highwaymanpubonline.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/IMG_0745-2048x1536.jpg",
+     "credit_name": "The Highwayman Pub",
+     "credit_url": "https://highwaymanpubonline.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/Benny-Bowl-Landscape-2.jpg",
+     "credit_name": "The Highwayman Pub",
+     "credit_url": "https://highwaymanpubonline.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/Cookie-ZoomIn-Landscape.jpg",
+     "credit_name": "The Highwayman Pub",
+     "credit_url": "https://highwaymanpubonline.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/FishChips-Landscape.jpg",
+     "credit_name": "The Highwayman Pub",
+     "credit_url": "https://highwaymanpubonline.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/French-Toast-Landscape-2.jpg",
+     "credit_name": "The Highwayman Pub",
+     "credit_url": "https://highwaymanpubonline.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/MapelBaconBourbonBurger-ZoomIn-Landscape.jpg",
+     "credit_name": "The Highwayman Pub",
+     "credit_url": "https://highwaymanpubonline.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9790,10 +9963,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/the-highwayman-pub.jpg",
-    "credit_name": "The Highwayman Pub - Abbotsford",
-    "credit_url": "https://maps.google.com/maps/contrib/113475883553679848149",
-    "source": "google_places"
+    "url": "https://highwaymanpubonline.com/wp-content/uploads/2024/02/IMG_0740-2048x1536.jpg",
+    "credit_name": "The Highwayman Pub",
+    "credit_url": "https://highwaymanpubonline.com/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
    "primary_type": null,
@@ -9826,7 +9999,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://14thavenue.ca/wp-content/uploads/2018/08/Homepage-botom.jpg",
+     "credit_name": "14th Avenue Pub",
+     "credit_url": "https://14thavenue.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://14thavenue.ca/wp-content/uploads/2018/03/beer-1.jpg",
+     "credit_name": "14th Avenue Pub",
+     "credit_url": "https://14thavenue.ca/about-us/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://14thavenue.ca/wp-content/uploads/2018/08/About-us-Bottom-.jpg",
+     "credit_name": "14th Avenue Pub",
+     "credit_url": "https://14thavenue.ca/about-us/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://14thavenue.ca/wp-content/uploads/2018/06/Steak-Prawns2.jpg",
+     "credit_name": "14th Avenue Pub",
+     "credit_url": "https://14thavenue.ca/gallery/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://14thavenue.ca/wp-content/uploads/2018/03/food-1.jpg",
+     "credit_name": "14th Avenue Pub",
+     "credit_url": "https://14thavenue.ca/about-us/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9941,10 +10145,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/14th-avenue-pub.jpg",
-    "credit_name": "14th Avenue Pub & Liquor Store",
-    "credit_url": "https://maps.google.com/maps/contrib/113704600103111631850",
-    "source": "google_places"
+    "url": "https://14thavenue.ca/wp-content/uploads/2018/03/bar-1.jpg",
+    "credit_name": "14th Avenue Pub",
+    "credit_url": "https://14thavenue.ca/about-us/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
    "primary_type": null,
@@ -9977,7 +10181,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1764291828037-4GKZ7T0WMR474RK55EA5/584222350_18537178489050249_2142214402161121019_n.jpg",
+     "credit_name": "Chameleon Restaurant",
+     "credit_url": "https://chameleonmapleridge.squarespace.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1764291828125-9T3AQF1YIS98HUAGFTMF/582279422_18537332950050249_7780892058863693545_n.jpg",
+     "credit_name": "Chameleon Restaurant",
+     "credit_url": "https://chameleonmapleridge.squarespace.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1791579405023-F4ZY52DHOY6A856T0ZYW/Screenshot+2026-10-08+at+3.14.01%E2%80%AFPM.png",
+     "credit_name": "Chameleon Restaurant",
+     "credit_url": "https://chameleonmapleridge.squarespace.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1755144066467-RV5C823GSB00Q6DXGKSM/Screenshot+2025-08-13+at+8.57.22%E2%80%AFPM.png",
+     "credit_name": "Chameleon Restaurant",
+     "credit_url": "https://chameleonmapleridge.squarespace.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1755144083651-QCSPTOQDQ1M9ZQ22O4CN/Screenshot+2025-08-13+at+8.57.51%E2%80%AFPM.png",
+     "credit_name": "Chameleon Restaurant",
+     "credit_url": "https://chameleonmapleridge.squarespace.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1755144099541-93XHK3319AXH9JHWULUL/Screenshot+2025-08-13+at+8.58.23%E2%80%AFPM.png",
+     "credit_name": "Chameleon Restaurant",
+     "credit_url": "https://chameleonmapleridge.squarespace.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1755144084554-4GRC2AMNGJNGCU6D0GQB/Screenshot+2025-08-13+at+8.57.42%E2%80%AFPM.png",
+     "credit_name": "Chameleon Restaurant",
+     "credit_url": "https://chameleonmapleridge.squarespace.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10060,7 +10307,7 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/586ad13ebebafbc74740e964/t/5f250f9644abb10a17489884/1596264347674/RoomShot2.jpg?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/586ad13ebebafbc74740e964/1755144064768-W25OU38JXLY1LHVXB60R/Screenshot+2025-08-13+at+8.57.01%E2%80%AFPM.png",
     "credit_name": "Chameleon Restaurant",
     "credit_url": "https://chameleonmapleridge.squarespace.com/",
     "source": "official_website"
@@ -10414,10 +10661,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/district-bar-restaurant-garrison.jpg",
+    "url": "https://garrison.districtbar.ca/wp-content/uploads/2024/05/728dc812d3abfc-IS415962629-1.webp",
     "credit_name": "District Bar Restaurant Garrison",
-    "credit_url": "https://maps.google.com/maps/contrib/111933637553130900430",
-    "source": "google_places"
+    "credit_url": "https://garrison.districtbar.ca/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
    "primary_type": null,
@@ -10538,10 +10785,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/the-backyard.jpg",
+    "url": "https://static.wixstatic.com/media/50d097_095b7a81195b4bebb17d0684712e1117~mv2.png/v1/fill/w_430,h_543,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/50d097_095b7a81195b4bebb17d0684712e1117~mv2.png",
     "credit_name": "The Backyard",
-    "credit_url": "https://maps.google.com/maps/contrib/109708191865078055662",
-    "source": "google_places"
+    "credit_url": "https://www.backyardsquamish.com/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
    "primary_type": null,
@@ -10574,7 +10821,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://amatotrattoria.ca/wp-content/uploads/2026/03/WDM00131.jpg",
+     "credit_name": "Amato Trattoria",
+     "credit_url": "https://amatotrattoria.ca/gallery/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square-1.webp",
+     "credit_name": "Amato Trattoria",
+     "credit_url": "https://amatotrattoria.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square-4.webp",
+     "credit_name": "Amato Trattoria",
+     "credit_url": "https://amatotrattoria.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square-3.webp",
+     "credit_name": "Amato Trattoria",
+     "credit_url": "https://amatotrattoria.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square.webp",
+     "credit_name": "Amato Trattoria",
+     "credit_url": "https://amatotrattoria.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://amatotrattoria.ca/wp-content/uploads/2026/09/Amato-Website-Images-square-5.webp",
+     "credit_name": "Amato Trattoria",
+     "credit_url": "https://amatotrattoria.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10722,10 +11006,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/amato-trattoria.jpg",
+    "url": "https://amatotrattoria.ca/wp-content/uploads/2026/05/Upper-Left-Photography-Amato-Trattoria-9-1024x898.jpg",
     "credit_name": "Amato Trattoria",
-    "credit_url": "https://maps.google.com/maps/contrib/116518015218877926730",
-    "source": "google_places"
+    "credit_url": "https://amatotrattoria.ca/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
    "primary_type": null,
@@ -10911,7 +11195,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://thetipsybarrelpub.com/wp-content/uploads/2025/07/TPS-logo.png",
+    "url": "https://www.thetipsybarrelpub.com/wp-content/uploads/nfl-gameday.jpg",
     "credit_name": "The Tipsy Barrel",
     "credit_url": "https://www.thetipsybarrelpub.com/",
     "source": "official_website"
@@ -10947,7 +11231,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/e1ebf483-2769-4cb5-8ac4-0a4d69c8b2f5/a0436812-e570-4bc4-afde-79542bbfa3bb.jpg",
+     "credit_name": "The Broken Seal",
+     "credit_url": "https://www.thebrokenseal.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/c46c91a1-b676-4d71-ba41-f49df9bf7db5/Carrot+Menage.JPG",
+     "credit_name": "The Broken Seal",
+     "credit_url": "https://www.thebrokenseal.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/4e42c90e-275a-4728-8051-372cb942ed57/BS-14.jpg",
+     "credit_name": "The Broken Seal",
+     "credit_url": "https://www.thebrokenseal.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11043,9 +11346,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/664bea8593aa5f2ebe1a232f/t/664d0a5ebadc2f2f4a04df12/1716324958223/wordmark-emerald.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/664bea8593aa5f2ebe1a232f/0d222271-d85e-4c58-85f3-a8384e179f51/The+Broken+Seal-65.jpg",
     "credit_name": "The Broken Seal",
-    "credit_url": "https://thebrokenseal.ca/",
+    "credit_url": "https://www.thebrokenseal.ca/our-menus",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
@@ -11079,7 +11382,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://image-tc.galaxy.tf/wijpeg-ctra5t3czj6kekqifgc9qitp8/34_standard.jpg?crop=0%2C438%2C1500%2C1125&width=1140",
+     "credit_name": "Islands Patio & Lounge",
+     "credit_url": "https://www.harrisonresort.com/dining/islands-bar/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://image-tc.galaxy.tf/wijpeg-azxhmfn45sc8lx5z34f3ic8lp/38_standard.jpg?crop=0%2C435%2C1356%2C1017&width=1140",
+     "credit_name": "Islands Patio & Lounge",
+     "credit_url": "https://www.harrisonresort.com/dining/islands-bar/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://image-tc.galaxy.tf/wijpeg-ewvjsgf7q4ll0jql9mglquhw4/28_standard.jpg?crop=0%2C438%2C1500%2C1125&width=1140",
+     "credit_name": "Islands Patio & Lounge",
+     "credit_url": "https://www.harrisonresort.com/dining/islands-bar/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://image-tc.galaxy.tf/wijpeg-dmluq7kfexj1a9fonxp3v2zky/18_standard.jpg?crop=0%2C111%2C1506%2C1130&width=1140",
+     "credit_name": "Islands Patio & Lounge",
+     "credit_url": "https://www.harrisonresort.com/dining/islands-bar/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://image-tc.galaxy.tf/wijpeg-840zmagir3xf4feglkc1awdye/12_standard.jpg?crop=0%2C0%2C1434%2C1076&width=1140",
+     "credit_name": "Islands Patio & Lounge",
+     "credit_url": "https://www.harrisonresort.com/dining/islands-bar/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://image-tc.galaxy.tf/wijpeg-30328q7io4fsvp2egcizgxngy/island_standard.jpg?crop=66%2C0%2C1052%2C789&width=1140",
+     "credit_name": "Islands Patio & Lounge",
+     "credit_url": "https://www.harrisonresort.com/dining/islands-bar/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11191,10 +11531,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/islands-patio-lounge.jpg",
-    "credit_name": "Kimia",
-    "credit_url": "https://maps.google.com/maps/contrib/117674346373627797638",
-    "source": "google_places"
+    "url": "https://image-tc.galaxy.tf/wijpeg-4jklceepgvunsthb9tbp14tsv/3_standard.jpg?crop=0%2C0%2C640%2C480&width=1140",
+    "credit_name": "Islands Patio & Lounge",
+    "credit_url": "https://www.harrisonresort.com/dining/islands-bar/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
    "primary_type": null,
@@ -11227,7 +11567,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/pizza-img.webp",
+     "credit_name": "heyhey Bar & Grill",
+     "credit_url": "https://heyheybarandgrill.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/mr-bar-img.webp",
+     "credit_name": "heyhey Bar & Grill",
+     "credit_url": "https://heyheybarandgrill.ca/locations/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/cheeseburger-img.webp",
+     "credit_name": "heyhey Bar & Grill",
+     "credit_url": "https://heyheybarandgrill.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/wings-img-1.webp",
+     "credit_name": "heyhey Bar & Grill",
+     "credit_url": "https://heyheybarandgrill.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11372,9 +11737,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/beef-dip-img.webp",
+    "url": "https://heyheybarandgrill.ca/wp-content/uploads/2026/08/Heyhey-MNP.jpg",
     "credit_name": "heyhey Bar & Grill",
-    "credit_url": "http://heyheybarandgrill.ca/",
+    "credit_url": "https://heyheybarandgrill.ca/locations/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
@@ -11531,7 +11896,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://www.carambarestaurant.com/wp-content/uploads/2025/05/hero-section-caramba.webp",
+     "credit_name": "Caramba Restaurant",
+     "credit_url": "https://www.carambarestaurant.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11680,9 +12052,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://www.carambarestaurant.com/wp-content/uploads/2026/01/Quattro-Full-Logo.jpg",
+    "url": "https://www.carambarestaurant.com/wp-content/uploads/2025/08/CarambaRest-JR.webp",
     "credit_name": "Caramba Restaurant",
-    "credit_url": "http://www.carambarestaurant.com/",
+    "credit_url": "https://www.carambarestaurant.com/our-restaurant/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
@@ -11814,12 +12186,7 @@
      }
     ]
    },
-   "cover_image": {
-    "url": "https://greekislandsrestaurants.com/wp-content/uploads/2026/04/Gi2_250410_Menu_Dining_01_1275_2100-625x1030.webp",
-    "credit_name": "The Greek Islands Restaurant",
-    "credit_url": "https://greekislandsrestaurants.com/greek-islands-chilliwack/",
-    "source": "official_website"
-   },
+   "cover_image": null,
    "last_synced_at": "2026-11-03",
    "primary_type": null,
    "reservable": null,
@@ -11851,7 +12218,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://balamwhistler.ca/wp-content/uploads/2024/12/Balam-Landing-Bg.jpg",
+     "credit_name": "Balam",
+     "credit_url": "https://balamwhistler.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://balamwhistler.ca/wp-content/uploads/2024/11/IMAGE-07.jpg",
+     "credit_name": "Balam",
+     "credit_url": "https://balamwhistler.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://balamwhistler.ca/wp-content/uploads/sb-instagram-feed-images/827470332_1058989156974979_6583165649961602844_nfull.webp",
+     "credit_name": "Balam",
+     "credit_url": "https://balamwhistler.ca/about/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://balamwhistler.ca/wp-content/uploads/sb-instagram-feed-images/749354948_995223280018234_1040297010997671867_nfull.webp",
+     "credit_name": "Balam",
+     "credit_url": "https://balamwhistler.ca/about/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11985,9 +12377,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://balamwhistler.ca/wp-content/uploads/2024/08/BALAM-logo-original-transparency.png",
+    "url": "https://balamwhistler.ca/wp-content/uploads/2025/01/1280-x-720.png",
     "credit_name": "Balam",
-    "credit_url": "http://www.balamwhistler.ca/",
+    "credit_url": "https://balamwhistler.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
@@ -12021,7 +12413,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/4f9dc5ae-8ad7-487f-9039-78e151964680/KA5A7605_websize.jpg",
+     "credit_name": "The Offy",
+     "credit_url": "https://www.theoffyco.com/thespace",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/3779db9a-9d59-4aeb-90ae-10774ffd7773/KA5A7652_websize.jpg",
+     "credit_name": "The Offy",
+     "credit_url": "https://www.theoffyco.com/thespace",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/1758257268191-8NZ0943LPYSJD6X8LZ9X/KA5A7632_websize.jpg",
+     "credit_name": "The Offy",
+     "credit_url": "https://www.theoffyco.com/thespace",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/975aa832-6db6-43d5-963c-6cc245ef4ce6/KA5A0311_websize.jpg",
+     "credit_name": "The Offy",
+     "credit_url": "https://www.theoffyco.com/our-story",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/1758257206624-GQLB1JVIN54NTKKU3OZK/KA5A6785_websize.jpg",
+     "credit_name": "The Offy",
+     "credit_url": "https://www.theoffyco.com/thespace",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -12142,9 +12565,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/686177e2e939720fee901e85/t/686177f5e939720fee90210d/1706893334988/TheOffy-Logo_TheOffy-Logo-Wordmark-White.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/686177e2e939720fee901e85/9e151722-d1e5-4049-b0f6-793087d6b482/IMG_7715.JPG",
     "credit_name": "The Offy",
-    "credit_url": "http://www.theoffyco.com/",
+    "credit_url": "https://www.theoffyco.com/thespace",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-03",
@@ -12250,12 +12673,7 @@
      }
     ]
    },
-   "cover_image": {
-    "url": "https://greekislandsrestaurants.com/wp-content/uploads/2026/02/Gi1-Menu-Appetizers-Salads-Entrees_page-0001-625x1030.jpg",
-    "credit_name": "Greek Islands Restaurant",
-    "credit_url": "https://greekislandsrestaurants.com/greek-islands-abbotsford-sfraserway/",
-    "source": "official_website"
-   },
+   "cover_image": null,
    "last_synced_at": "2026-11-03",
    "primary_type": null,
    "reservable": null,
