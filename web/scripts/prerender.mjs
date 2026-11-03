@@ -1629,7 +1629,7 @@ const introHtml = homeIntro(hubIndex, venues.length)
   .join("");
 const homeRow = (v) => {
   const deals = topDeals(v, 2);
-  return `<li style="padding:12px 0;border-bottom:1px solid #3a3835"><a href="/spots/${v.id}.html" style="${S.plain};font-weight:600;font-size:16px;text-decoration:none">${esc(v.name)}</a> <span style="color:#a7a196;font-size:14px">· ${esc(whereLabel(v))}</span><br /><span style="color:#f3efe4;font-size:14px;font-weight:600">${esc(summary(v))}</span>${
+  return `<li style="padding:12px 0;border-bottom:1px solid #3a3835"><a href="/spots/${v.id}" style="${S.plain};font-weight:600;font-size:16px;text-decoration:none">${esc(v.name)}</a> <span style="color:#a7a196;font-size:14px">· ${esc(whereLabel(v))}</span><br /><span style="color:#f3efe4;font-size:14px;font-weight:600">${esc(summary(v))}</span>${
     deals.length ? `<br /><span style="color:#a7a196;font-size:14px">${esc(deals.map(dealPhrase).join(" · "))}</span>` : ""
   }</li>`;
 };
@@ -1649,7 +1649,7 @@ write(
       "@context": "https://schema.org",
       "@graph": [
         { "@type": "CollectionPage", "@id": homeUrl, url: homeUrl, name: "Happy hours in Vancouver", description: HOME_DESC, isPartOf: { "@id": WEBSITE_ID }, mainEntity: { "@id": `${homeUrl}#top` }, inLanguage: "en-CA" },
-        { "@type": "ItemList", "@id": `${homeUrl}#top`, name: "Top-rated happy hours in Metro Vancouver", numberOfItems: homeTop.length, itemListElement: homeTop.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}.html` })) },
+        { "@type": "ItemList", "@id": `${homeUrl}#top`, name: "Top-rated happy hours in Metro Vancouver", numberOfItems: homeTop.length, itemListElement: homeTop.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}` })) },
         ...SITE_GRAPH,
       ],
     },
