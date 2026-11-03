@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 // stars, so it doesn't read as a review score.
 
 const PARTS: { key: ScorePart; label: string; weight: string; what: string }[] = [
-  { key: "value", label: "Value", weight: "40%", what: "deal prices against what Vancouver spots charge" },
+  { key: "value", label: "Value", weight: "40%", what: "deal prices against what spots across the region charge" },
   { key: "selection", label: "Selection", weight: "25%", what: "how many deals and kinds of drink, plus food" },
   { key: "hours", label: "Hours", weight: "20%", what: "hours a week, weekends and late night" },
   { key: "vibe", label: "Vibe", weight: "15%", what: "patio, live music, groups, transit" },

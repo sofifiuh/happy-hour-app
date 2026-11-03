@@ -1,7 +1,7 @@
 // The Hangout Score: our own 0–10 rating of how good a happy hour is, worked
 // out from the deals and times we publish, so anyone can check it.
 //
-//   Value      40%  deal prices against what Vancouver spots charge for the same thing
+//   Value      40%  deal prices against what spots across the region charge for the same thing
 //   Selection  25%  how many deals, across which kinds of drink, with food or not
 //   Hours      20%  hours of happy hour a week, weekends and late night
 //   Vibe       15%  patio, live music, good for groups, near transit
@@ -215,7 +215,7 @@ function notes(v, r) {
   const share = r.under / r.priced;
   const value = [
     r.cheapest < Infinity ? `Drinks from ${money(r.cheapest)}` : r.drinks ? "No priced drink deals" : "Food deals only",
-    share >= 0.6 ? "most deals under the Vancouver norm" : share >= 0.35 ? "about half under the Vancouver norm" : "priced around or above the Vancouver norm",
+    share >= 0.6 ? "most deals under the local norm" : share >= 0.35 ? "about half under the local norm" : "priced around or above the local norm",
   ].join(", ");
   const kinds = ["beer", "wine", "cocktail", "highball"].filter((k) => r.kinds.has(k)).map((k) => KIND_WORDS[k]);
   const selection = `${v.hh.deals.length} deals${kinds.length ? ` across ${list(kinds)}` : ""}${r.food ? (r.drinks ? ", plus food" : ", food only") : ", no food"}`;

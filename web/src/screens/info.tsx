@@ -59,7 +59,7 @@ function About() {
     <>
       <Wordmark className="my-4 h-24 text-cream" />
       <p>
-        A Little Hang shows you which Vancouver bars and restaurants have happy hour on right now, what's starting soon, and what the deals
+        A Little Hang shows you which bars and restaurants near you have happy hour on right now, what's starting soon, and what the deals
         are, so you can pick a spot in seconds.
       </p>
       <H>Why we made it</H>
@@ -123,7 +123,7 @@ function About() {
       </p>
       <ul className="mt-2 list-disc space-y-1 pl-5">
         <li>
-          <b className="text-cream">Value (40%)</b>: each deal's price against what Vancouver spots typically charge for the same kind of
+          <b className="text-cream">Value (40%)</b>: each deal's price against what spots across the region typically charge for the same kind of
           thing (a pint, a glass of wine, a cocktail, oysters), plus how cheap the cheapest drink is.
         </li>
         <li>

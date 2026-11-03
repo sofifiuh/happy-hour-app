@@ -166,7 +166,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
       </a>
       <header className="sticky top-0 z-20 bg-ink/90 pt-safe backdrop-blur-xl">
         {/* The open venue's name is the page heading while the panel shows it. */}
-        {panel ? <h2 className="sr-only">Happy hours in Vancouver</h2> : <h1 className="sr-only">Happy hours in Vancouver</h1>}
+        {panel ? <h2 className="sr-only">Happy hours near you</h2> : <h1 className="sr-only">Happy hours near you</h1>}
         <div className="flex items-center justify-between px-4 pt-3 pb-2">
           <Link
             to="/"

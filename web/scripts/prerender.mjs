@@ -25,7 +25,7 @@ import { fileURLToPath } from "node:url";
 import opentype from "opentype.js";
 import sharp from "sharp";
 import { fmtRange, fmtTime } from "../src/lib/hours.ts";
-import { dayRuns, dealPhrase, homeIntro, fmtDate, googleReviewsLink, money, nearby, parsePrice, quoteCredit, redditLink, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
+import { citiesPhrase, REGION, dayRuns, dealPhrase, homeIntro, fmtDate, googleReviewsLink, money, nearby, parsePrice, quoteCredit, redditLink, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
 import { AREAS, BEST_FLOOR, BEST_FRESH_DAYS, bestPath, buildHubs, hubPath } from "./seo-data.mjs";
 import { cheapestDrink, hoursFacts, isNonAlc, WEIGHTS } from "./hang-score.mjs";
 import { buildIndex, KINDS, MIN_SAMPLE } from "./price-index.mjs";
@@ -52,7 +52,10 @@ const template = readFileSync(resolve(dist, "index.html"), "utf8")
     `${fonts.map((f) => `    <link rel="preload" href="/assets/${f}" as="font" type="font/woff2" crossorigin />`).join("\n")}\n  </head>`,
   );
 writeFileSync(resolve(dist, "index.html"), template);
-const { venues, best: bestIndex = [] } = JSON.parse(readFileSync(resolve(web, "public/venues.json"), "utf8"));
+const { venues, best: bestIndex = [], hubs: hubIndex = {} } = JSON.parse(readFileSync(resolve(web, "public/venues.json"), "utf8"));
+// "Vancouver, Surrey, North Vancouver, Richmond and 14 more cities": how the
+// brand-level pages name where we are, instead of one city.
+const CITIES = citiesPhrase(hubIndex, 4);
 // Fields the app doesn't ship (Google place id, price level) from the source.
 const source = new Map(JSON.parse(readFileSync(resolve(web, "../venues.json"), "utf8")).venues.map((v) => [v.id, v]));
 const logo = readFileSync(resolve(web, "src/components/logo-path.ts"), "utf8").match(/LOGO_PATH =\s*"([^"]+)"/)[1];
@@ -95,7 +98,7 @@ const ogTitle = (title) => {
   const bare = title.replace(` | ${SITE}`, "");
   return bare.length < 20 ? `${bare} · ${SITE}` : bare;
 };
-function page({ path, title, description, image = `${BASE}/og.png`, imageAlt = `${SITE}: Vancouver happy hours right now`, type = "website", jsonld, body = "", preload, robots, extraHead = [] }) {
+function page({ path, title, description, image = `${BASE}/og.png`, imageAlt = `${SITE}: happy hours near you right now`, type = "website", jsonld, body = "", preload, robots, extraHead = [] }) {
   const url = BASE + path;
   let html = template
     .replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`)
@@ -294,8 +297,8 @@ function venueJsonLd(v, image) {
 }
 
 const SITE_GRAPH = [
-  { "@type": "WebSite", "@id": WEBSITE_ID, url: `${BASE}/`, name: SITE, alternateName: ["alittlehang.com", "A Little Hang Vancouver Happy Hours"], description: `Directory of happy hour times and deals at ${venues.length} bars and restaurants in Vancouver and Metro Vancouver, BC.`, inLanguage: "en-CA", publisher: { "@id": ORG_ID } },
-  { "@type": "Organization", "@id": ORG_ID, name: SITE, url: `${BASE}/`, logo: `${BASE}/icon-512.png`, description: "A Little Hang lists Vancouver happy hours: times, prices and deals taken from each venue's own menu and rechecked nightly.", email: "jason@setsail.ca", founder: [{ "@id": FOUNDER_ID }, { "@id": DESIGNER_ID }], areaServed: { "@type": "City", name: "Vancouver", containedInPlace: { "@type": "AdministrativeArea", name: "British Columbia" } } },
+  { "@type": "WebSite", "@id": WEBSITE_ID, url: `${BASE}/`, name: SITE, alternateName: ["alittlehang.com", "A Little Hang Happy Hours"], description: `Directory of happy hour times and deals at ${venues.length} bars and restaurants in ${CITIES}, BC.`, inLanguage: "en-CA", publisher: { "@id": ORG_ID } },
+  { "@type": "Organization", "@id": ORG_ID, name: SITE, url: `${BASE}/`, logo: `${BASE}/icon-512.png`, description: `A Little Hang lists local happy hours in ${CITIES}: times, prices and deals taken from each venue's own menu and rechecked nightly.`, email: "jason@setsail.ca", founder: [{ "@id": FOUNDER_ID }, { "@id": DESIGNER_ID }], areaServed: Object.values(hubIndex).filter((h) => h.kind === "city").map((h) => ({ "@type": "City", name: h.label, containedInPlace: { "@type": "AdministrativeArea", name: "British Columbia" } })) },
   { "@type": "Person", "@id": FOUNDER_ID, name: "Jason Atakhanov", givenName: "Jason", familyName: "Atakhanov", jobTitle: "Founder", url: `${BASE}/about/#jason`, worksFor: [{ "@id": ORG_ID }, { "@type": "Organization", name: "Setsail Marketing", url: "https://setsail.ca/" }], spouse: { "@id": DESIGNER_ID } },
   { "@type": "Person", "@id": DESIGNER_ID, name: "Sofia Alvarenga", givenName: "Sofia", familyName: "Alvarenga", jobTitle: "Product designer", url: `${BASE}/about/#sofia`, worksFor: { "@id": ORG_ID }, spouse: { "@id": FOUNDER_ID } },
 ];
@@ -849,7 +852,7 @@ function placeIntro(p, list) {
 }
 
 function topicIntro(t, list, placeLabel) {
-  const where = placeLabel ?? "Metro Vancouver";
+  const where = placeLabel ?? REGION;
   if (t.kind === "deal") {
     const cheapest = sortFor(list, t)[0];
     const d = cheapest && matchingDeal(cheapest, t);
@@ -905,15 +908,15 @@ for (const p of places) {
 }
 
 for (const t of topics) {
-  const where = { in: t.kind === "deal" ? `for ${t.short.toLowerCase()} in Metro Vancouver` : t.kind === "day" ? `on ${t.slug === "weekend" ? "weekends" : SCHEMA_DAYS[dayIndex(t)] + "s"} in Metro Vancouver` : `in Metro Vancouver (${t.short.toLowerCase()})` };
+  const where = { in: t.kind === "deal" ? `for ${t.short.toLowerCase()} in ${REGION}` : t.kind === "day" ? `on ${t.slug === "weekend" ? "weekends" : SCHEMA_DAYS[dayIndex(t)] + "s"} in ${REGION}` : `in ${REGION} (${t.short.toLowerCase()})` };
   // Topic hubs cover every city; "Vancouver" is the city hub's combos.
-  const label = `${t.label} in Metro Vancouver`;
+  const label = `${t.label} in ${REGION}`;
   await hubPage({
     slug: t.slug,
     h1: label,
     listTitle: `All ${t.venues.length} ${t.label.toLowerCase().replace(/^happy hours with/, "spots with")}`,
     where,
-    title: fitTitle(`${titleCase(t.label)} in Metro Vancouver: ${t.venues.length} Spots | ${SITE}`, `${titleCase(t.label)} in Metro Vancouver | ${SITE}`, `${titleCase(t.label)} in Metro Vancouver`),
+    title: fitTitle(`${titleCase(t.label)} in ${REGION}: ${t.venues.length} Spots | ${SITE}`, `${titleCase(t.label)} in ${REGION} | ${SITE}`, `${titleCase(t.label)} in ${REGION}`),
     description: describe(where, t.venues, t),
     list: t.venues,
     topic: t,
@@ -946,7 +949,7 @@ for (const c of combos) {
     related: [
       { title: `All happy hours in ${p.name}`, links: [{ path: hubPath(p.slug), label: p.name, count: p.venues.length }] },
       { title: `More in ${p.name}`, links: combosFor((o) => o.place.slug === p.slug && o.slug !== c.slug) },
-      { title: `${t.short} elsewhere`, links: [{ path: hubPath(t.slug), label: `All of Metro Vancouver`, count: t.venues.length }, ...combos.filter((o) => o.topic.slug === t.slug && o.slug !== c.slug).map((o) => ({ path: hubPath(o.slug), label: o.place.name, count: o.venues.length }))] },
+      { title: `${t.short} elsewhere`, links: [{ path: hubPath(t.slug), label: `Every city`, count: t.venues.length }, ...combos.filter((o) => o.topic.slug === t.slug && o.slug !== c.slug).map((o) => ({ path: hubPath(o.slug), label: o.place.name, count: o.venues.length }))] },
     ],
   });
   hubCount++;
@@ -965,7 +968,7 @@ const BEST_PUBLISHED = "2026-10-23";
 const PART_LABELS = [["Value", "value"], ["Selection", "selection"], ["Hours", "hours"], ["Vibe", "vibe"]];
 const pct = (k) => `${Math.round(WEIGHTS[k] * 100)}%`;
 const lowerFirst = (s) => s[0].toLowerCase() + s.slice(1);
-// A score note's value line, minus "priced around or above the Vancouver
+// A score note's value line, minus "priced around or above the local
 // norm" where the sentence is praising the spot.
 const valueLine = (n) => lowerFirst(/around or above/.test(n.value) ? n.value.split(", ")[0] : n.value);
 
@@ -1087,7 +1090,7 @@ function bestFaq(b) {
     },
     {
       q: `How are these happy hours ranked?`,
-      a: `By the Hangout Score, worked out the same way for every spot from the deals and times we publish: value against typical Vancouver prices (${pct("value")}), selection (${pct("selection")}), hours (${pct("hours")}) and vibe (${pct("vibe")}).`,
+      a: `By the Hangout Score, worked out the same way for every spot from the deals and times we publish: value against typical local prices (${pct("value")}), selection (${pct("selection")}), hours (${pct("hours")}) and vibe (${pct("vibe")}).`,
     },
     { q: `Can a bar pay to rank higher?`, a: "No. Nothing a venue pays for changes its score or its place on a list, and we don't use Google star ratings. Scores change only when a venue's own menu does." },
   ];
@@ -1117,7 +1120,7 @@ async function bestPage(b) {
   );
   let description = `The ${list.length} best happy hours in ${b.name}, ranked by our Hangout Score from real menu prices, deals and hours. #1: ${top.name}.${updated ? ` Updated ${fmtDate(updated)}.` : ""}`;
   if (description.length > 160) description = description.replace(/ Updated .*$/, "");
-  const intro = `We scored ${b.scored} ${b.kind === "metro" ? "Metro Vancouver" : b.name} happy hours on the deals and times we publish, the same way for every spot, and these ${list.length} came out on top. ${top.name} leads at ${top.score.total.toFixed(1)} out of 10: ${valueLine(top.score.notes)}.`;
+  const intro = `We scored ${b.scored} ${b.kind === "metro" ? REGION : b.name} happy hours on the deals and times we publish, the same way for every spot, and these ${list.length} came out on top. ${top.name} leads at ${top.score.total.toFixed(1)} out of 10: ${valueLine(top.score.notes)}.`;
 
   const cardFile = `best-${b.slug}`;
   const cover = list.map(localPhoto).find(Boolean) ?? null;
@@ -1190,7 +1193,7 @@ ${list.map((v, i) => bestEntry(v, i, b)).join("\n")}
 <h2>How we rank</h2>
 <p class="lede">Every spot gets a Hangout Score out of 10 from what's on its page, worked out the same way for every venue:</p>
 <ul class="method">
-<li><b>Value (${pct("value")})</b>: each deal's price against what Vancouver spots typically charge for the same thing, plus the cheapest drink.</li>
+<li><b>Value (${pct("value")})</b>: each deal's price against what spots across the region typically charge for the same thing, plus the cheapest drink.</li>
 <li><b>Selection (${pct("selection")})</b>: how many deals, how many kinds of drink, and whether there's food.</li>
 <li><b>Hours (${pct("hours")})</b>: hours of happy hour a week, weekends and late night.</li>
 <li><b>Vibe (${pct("vibe")})</b>: patio, live music, good for groups and near transit.</li>
@@ -1198,7 +1201,7 @@ ${list.map((v, i) => bestEntry(v, i, b)).join("\n")}
 <p class="meta">Spots need at least 3 deals, 2 with prices, and confirmed times to be scored${unscored > 0 ? `, so ${unscored} of the ${pool.length} spots ${b.kind === "metro" ? "we track" : `in ${esc(b.name)}`} aren't ranked yet` : ""}. A spot needs ${BEST_FLOOR} or more to make a best-of list. No venue pays to be listed or ranked, and we don't use Google star ratings. Every spot here had its times confirmed on its own menu within the last ${BEST_FRESH_DAYS} days (oldest: ${esc(fmtDate(list.map((v) => v.confirmed).sort()[0]))}); a spot whose page stops showing our times drops off until it's confirmed again. Menus are re-checked every night and the list updates with them. <a href="/about/#hang-score">Full method</a>.</p>
 ${place ? `<h2>All happy hours in ${esc(b.name)}</h2>\n<ul class="chips"><li><a href="${hubPath(b.slug)}">Every ${esc(b.name)} happy hour <small>${place.venues.length}</small></a></li></ul>` : ""}
 ${nearbyLists.length ? `<h2>Best happy hours nearby</h2>\n${chipsFor(nearbyLists)}` : ""}
-${!place ? `<h2>Best happy hours by neighbourhood</h2>\n${chipsFor(others.filter((o) => o.kind === "area"))}\n<h2>Best happy hours by city</h2>\n${chipsFor(others.filter((o) => o.kind === "city"))}` : `<h2>More best-of lists</h2>\n<ul class="chips"><li><a href="${bestPath("metro")}">All of Metro Vancouver</a></li></ul>`}
+${!place ? `<h2>Best happy hours by neighbourhood</h2>\n${chipsFor(others.filter((o) => o.kind === "area"))}\n<h2>Best happy hours by city</h2>\n${chipsFor(others.filter((o) => o.kind === "city"))}` : `<h2>More best-of lists</h2>\n<ul class="chips"><li><a href="${bestPath("metro")}">Every city</a></li></ul>`}
 <h2>Questions about the best happy hours in ${esc(b.name)}</h2>
 <div class="faq">${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("")}</div>`;
   write(`${path.slice(1)}index.html`, hubDoc({ path, title, description, jsonld, body, image, script: BEST_MAP_JS, robots: b.index ? undefined : "noindex,follow" }));
@@ -1442,7 +1445,7 @@ ${asOf ? `<p class="meta">Data as of <time datetime="${asOf}">${esc(fmtDate(asOf
 </ul>
 
 <h2>Best happy hours, ranked</h2>
-<ul class="chips">${lists.map((b) => chip(bestPath(b.slug), b.kind === "metro" ? "All of Metro Vancouver" : b.name)).join("")}</ul>
+<ul class="chips">${lists.map((b) => chip(bestPath(b.slug), b.kind === "metro" ? "Every city" : b.name)).join("")}</ul>
 <h2 id="neighbourhoods">Vancouver neighbourhood guides</h2>
 <ul class="chips">${areas.map((p) => chip(hubPath(p.slug), p.name, p.venues.length)).join("")}</ul>
 <h2 id="cities">City guides</h2>
@@ -1538,8 +1541,8 @@ write(
   "spots/index.html",
   page({
     path: "/spots/",
-    title: "All Metro Vancouver Happy Hour Spots, A–Z | A Little Hang",
-    description: `Every happy hour we track across Metro Vancouver: ${venues.length} bars and restaurants with times and deals from their own menus.`,
+    title: `All Happy Hour Spots, A–Z: ${venues.length} Bars & Restaurants | A Little Hang`,
+    description: `Every happy hour we track in ${CITIES}: ${venues.length} bars and restaurants with times and deals from their own menus.`,
     jsonld: {
       "@context": "https://schema.org",
       "@graph": [
@@ -1570,7 +1573,7 @@ function aboutLd() {
   };
 }
 function aboutHtml() {
-  return `<p style="${S.p}">A Little Hang shows you which Vancouver bars and restaurants have happy hour on right now, what's starting soon, and what the deals are, so you can pick a spot in seconds.</p>
+  return `<p style="${S.p}">A Little Hang shows you which bars and restaurants near you have happy hour on right now, what's starting soon, and what the deals are, so you can pick a spot in seconds.</p>
 <h2 style="${S.h2}">Why we made it</h2>
 <blockquote style="margin:0;padding-left:16px;border-left:2px solid #ff4900">
 <p style="${S.p}">I've run Setsail Marketing for the past ten years, and the best parts have been the times spent with people: travelling, trying new places, and sharing a good time with friends and strangers alike.</p>
@@ -1597,15 +1600,15 @@ const exploreHtml = `<h2 style="${S.h2}">Vancouver neighbourhoods</h2><nav>${pla
   .filter((p) => p.kind === "area")
   .map((p) => `<a href="${hubPath(p.slug)}" style="${S.chip}">${esc(p.name)}</a>`)
   .join("")}</nav>
-<h2 style="${S.h2}">Around Metro Vancouver</h2><nav>${places
+<h2 style="${S.h2}">Cities</h2><nav>${places
   .filter((p) => p.kind === "city")
   .map((p) => `<a href="${hubPath(p.slug)}" style="${S.chip}">${esc(p.name)}</a>`)
   .join("")}</nav>
-<h2 style="${S.h2}">Best happy hours, ranked</h2><nav>${bestLists.map((b) => `<a href="${bestPath(b.slug)}" style="${S.chip}">${esc(b.kind === "metro" ? "All of Metro Vancouver" : b.name)}</a>`).join("")}</nav>
+<h2 style="${S.h2}">Best happy hours, ranked</h2><nav>${bestLists.map((b) => `<a href="${bestPath(b.slug)}" style="${S.chip}">${esc(b.kind === "metro" ? "Every city" : b.name)}</a>`).join("")}</nav>
 <h2 style="${S.h2}">What happy hour costs</h2><nav><a href="/happy-hour-index/" style="${S.chip}">Vancouver Happy Hour Index</a><a href="/research/" style="${S.chip}">All research and data</a></nav>
 <h2 style="${S.h2}">By day and deal</h2><nav>${topics.map((t) => `<a href="${hubPath(t.slug)}" style="${S.chip}">${esc(t.label)}</a>`).join("")}</nav>`;
 
-const HOME_DESC = `Live happy hour times and deals from ${venues.length} Vancouver bars and restaurants, checked against their own menus every night.`;
+const HOME_DESC = `Live happy hour times and deals from ${venues.length} bars and restaurants in ${CITIES}, checked against their own menus every night.`;
 // The home page's first-load content: the top-rated happy hours (Hangout
 // Score, at most three per neighbourhood or city so one area can't fill it),
 // the intro copy the app shows under its list, and the hub links. Rebuilt on
@@ -1623,7 +1626,6 @@ const homeTop = (() => {
     })
     .slice(0, HOME_TOP);
 })();
-const { hubs: hubIndex = {} } = JSON.parse(readFileSync(resolve(web, "public/venues.json"), "utf8"));
 const introHtml = homeIntro(hubIndex, venues.length)
   .map((para) => `<p style="${S.p};margin-top:12px">${para.map((b) => (typeof b === "string" ? esc(b) : `<a href="${b.href}" style="${S.plain};text-decoration:underline;text-underline-offset:4px">${esc(b.text)}</a>`)).join("")}</p>`)
   .join("");
@@ -1643,24 +1645,24 @@ write(
   "index.html",
   page({
     path: "/",
-    title: `Vancouver Happy Hours Right Now | ${SITE}`,
+    title: `Happy Hours Near You Right Now | ${SITE}`,
     description: HOME_DESC,
     jsonld: {
       "@context": "https://schema.org",
       "@graph": [
-        { "@type": "CollectionPage", "@id": homeUrl, url: homeUrl, name: "Happy hours in Vancouver", description: HOME_DESC, isPartOf: { "@id": WEBSITE_ID }, mainEntity: { "@id": `${homeUrl}#top` }, inLanguage: "en-CA" },
-        { "@type": "ItemList", "@id": `${homeUrl}#top`, name: "Top-rated happy hours in Metro Vancouver", numberOfItems: homeTop.length, itemListElement: homeTop.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}` })) },
+        { "@type": "CollectionPage", "@id": homeUrl, url: homeUrl, name: "Happy hours near you", description: HOME_DESC, isPartOf: { "@id": WEBSITE_ID }, mainEntity: { "@id": `${homeUrl}#top` }, inLanguage: "en-CA" },
+        { "@type": "ItemList", "@id": `${homeUrl}#top`, name: "Top-rated happy hours", numberOfItems: homeTop.length, itemListElement: homeTop.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}` })) },
         ...SITE_GRAPH,
       ],
     },
-    body: homeThemed(`<main style="${S.wrap}"><h1 style="${S.h1}">Happy hours in Vancouver</h1>${introHtml}<h2 style="${S.h2}">Top-rated happy hours in Metro Vancouver</h2><ol style="list-style:none;padding:0;margin:0">${homeTop.map(homeRow).join("")}</ol>${exploreHtml}<p style="${S.muted};margin-top:24px"><a href="/spots/" style="${S.link}">All ${venues.length} spots A–Z</a></p></main>`),
+    body: homeThemed(`<main style="${S.wrap}"><h1 style="${S.h1}">Happy hours near you, right now</h1>${introHtml}<h2 style="${S.h2}">Top-rated happy hours</h2><ol style="list-style:none;padding:0;margin:0">${homeTop.map(homeRow).join("")}</ol>${exploreHtml}<p style="${S.muted};margin-top:24px"><a href="/spots/" style="${S.link}">All ${venues.length} spots A–Z</a></p></main>`),
   }),
 );
 sitemapDates.set("/", newest(venues));
 
-const SUBMIT_DESC = "Know a Vancouver happy hour we're missing, or a menu that changed? Snap the menu or sign and send it in. We check every one and put it on the map.";
+const SUBMIT_DESC = "Know a happy hour we're missing, or a menu that changed? Snap the menu or sign and send it in. We check every one and put it on the map.";
 const PAGES = [
-  ["map/index.html", "/map/", "Map of Vancouver Happy Hours", "Map of happy hours", true],
+  ["map/index.html", "/map/", "Map of Happy Hours Near You", "Map of happy hours", true],
   // The app's Best of screen; the static /happy-hour/<place>/best/ pages are the indexed copies.
   ["best/index.html", "/best/", "Best Happy Hours, Ranked", "Best happy hours", false],
   ["saved/index.html", "/saved/", "Saved spots", "Saved spots", false],
@@ -1676,7 +1678,7 @@ for (const [file, path, title, h1, index] of PAGES) {
     file,
     page({
       path,
-      title: title ? `${title} | ${SITE}` : `Vancouver Happy Hours Right Now | ${SITE}`,
+      title: title ? `${title} | ${SITE}` : `Happy Hours Near You Right Now | ${SITE}`,
       description: path === "/about/" ? ABOUT_DESC : path === "/submit/" ? SUBMIT_DESC : HOME_DESC,
       robots: index ? undefined : "noindex,follow",
       jsonld: path === "/about/" ? aboutLd() : undefined,
@@ -1727,7 +1729,7 @@ write(
   "llms.txt",
   `# ${SITE}
 
-> ${SITE} (alittlehang.com) is a directory of happy hours in Vancouver and Metro Vancouver, BC: ${venues.length} bars and restaurants with their happy hour days, times and deal prices. Times and prices come from each venue's own menu and are rechecked every night${today ? `; last updated ${today}` : ""}.
+> ${SITE} (alittlehang.com) is a directory of local happy hours in ${CITIES}, BC: ${venues.length} bars and restaurants with their happy hour days, times and deal prices. Times and prices come from each venue's own menu and are rechecked every night${today ? `; last updated ${today}` : ""}.
 
 Every venue page (${BASE}/spots/<id>) lists the happy hour schedule by day, every food and drink deal with its price in CAD, the address, the nearest SkyTrain station and the date the menu was last checked. Hub pages group venues by city, neighbourhood, day and deal. It was founded by Jason Atakhanov (founder of Setsail Marketing) and designed by product designer Sofia Alvarenga.${beer ? ` The cheapest happy hour beer right now is ${money(beer.p.low)} at ${beer.v.name}.` : ""}
 
@@ -1743,7 +1745,7 @@ ${places.filter((p) => p.kind === "area").map((p) => linkLine(p, `Happy hours in
 ## Best happy hours, ranked by Hangout Score
 ${bestLists.filter((b) => b.index).map((b) => `- [${bestH1(b)}](${BASE}${bestPath(b.slug)}): #1 ${b.venues[0].name} (${b.venues[0].score.total.toFixed(1)}/10)`).join("\n")}
 
-## By day and deal (Metro Vancouver)
+## By day and deal (all cities)
 ${topics.map((t) => linkLine(t, t.label)).join("\n")}
 
 ## Optional

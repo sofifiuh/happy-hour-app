@@ -4,7 +4,7 @@ import type { HubKind } from "@/lib/types";
 
 const GROUPS: { title: string; kinds: HubKind[] }[] = [
   { title: "Vancouver neighbourhoods", kinds: ["area"] },
-  { title: "Around Metro Vancouver", kinds: ["city"] },
+  { title: "Cities", kinds: ["city"] },
   { title: "By day", kinds: ["day"] },
   { title: "By deal", kinds: ["deal", "vibe"] },
 ];
@@ -33,7 +33,7 @@ export function ExploreLinks() {
                   href={b.slug === "metro" ? "/happy-hour/best/" : `/happy-hour/${b.slug}/best/`}
                   className="inline-flex min-h-10 items-center rounded-full bg-ink-2 px-3.5 text-[14px] font-medium ring-1 ring-edge/5"
                 >
-                  {b.kind === "metro" ? "All of Metro Vancouver" : b.name}
+                  {b.kind === "metro" ? "Every city" : b.name}
                 </a>
               </li>
             ))}

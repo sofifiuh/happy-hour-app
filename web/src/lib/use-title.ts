@@ -9,6 +9,6 @@ const SITE = "A Little Hang";
 export function useTitle(title?: string | null, exact = false, enabled = true) {
   useEffect(() => {
     if (!enabled) return;
-    document.title = title ? (exact ? title : `${title} | ${SITE}`) : `Vancouver Happy Hours Right Now | ${SITE}`;
+    document.title = title ? (exact ? title : `${title} | ${SITE}`) : `Happy Hours Near You Right Now | ${SITE}`;
   }, [title, exact, enabled]);
 }

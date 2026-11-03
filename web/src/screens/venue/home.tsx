@@ -34,7 +34,7 @@ export function VenueHome() {
       {state === "out" && (
         <>
           <p className="mb-5 text-[16px] leading-relaxed text-muted-foreground">
-            Run a bar or restaurant in Vancouver? Claim your listing free to keep your happy hour times, deals and photos right, and see how many people look you up.
+            Run a bar or restaurant? Claim your listing free to keep your happy hour times, deals and photos right, and see how many people look you up.
           </p>
           <SignIn next="/venue" />
           <p className="mt-5 text-[14px] text-muted-foreground">

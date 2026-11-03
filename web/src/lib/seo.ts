@@ -7,6 +7,20 @@ import { DAY_FULL, DAY_SHORT, fmtRange, windowsForDay } from "./hours.ts";
 import type { Deal, Quote, Venue } from "./types";
 
 export const SITE = "A Little Hang";
+// The whole area we cover, for pages that span every city (topic hubs, the
+// all-spots list). Never the brand: each city and neighbourhood page names
+// its own place, and the home page names the cities, so a search for
+// "happy hour surrey" or "happy hour abbotsford" finds a page that says so.
+export const REGION = "the Lower Mainland";
+
+// "Vancouver, Surrey, Burnaby and 14 more cities" from the city hubs.
+export function citiesPhrase(hubs: Record<string, { label: string; kind: string; count: number }>, n = 4) {
+  const cities = Object.values(hubs).filter((h) => h.kind === "city").sort((a, b) => b.count - a.count).map((h) => h.label);
+  if (!cities.length) return REGION;
+  const shown = cities.slice(0, n);
+  const more = cities.length - shown.length;
+  return more > 0 ? `${shown.join(", ")} and ${more} more ${more === 1 ? "city" : "cities"}` : shown.length > 1 ? `${shown.slice(0, -1).join(", ")} and ${shown.at(-1)}` : shown[0];
+}
 
 // Consecutive days (Mon-first) with the same windows collapse into one
 // run: "Every day", "Mon–Fri", "Sat & Sun".
@@ -83,11 +97,18 @@ export function venueTitle(v: Venue) {
   const runs = dayRuns(v).filter((r) => r.wins.length);
   const full = scheduleSummary(v);
   const first = runs[0] ? runText(runs[0]) : "";
+  // The city in the title when it fits, for "<venue> happy hour <city>"
+  // and "happy hour <city>" searches.
+  const city = v.city && !v.name.toLowerCase().includes(v.city.toLowerCase()) ? `, ${v.city}` : "";
   const options = [
+    city && full && `${v.name} Happy Hour${city}: ${full} | ${SITE}`,
+    city && full && `${v.name} Happy Hour${city}: ${full}`,
+    city && first && `${v.name} Happy Hour${city}: ${first}`,
     full && `${v.name} Happy Hour: ${full} | ${SITE}`,
     first && `${v.name} Happy Hour: ${first} | ${SITE}`,
     full && `${v.name} Happy Hour: ${full}`,
     first && `${v.name} Happy Hour: ${first}`,
+    city && `${v.name} Happy Hour${city}: Times & Deals | ${SITE}`,
     `${v.name} Happy Hour Times & Deals | ${SITE}`,
     `${v.name} Happy Hour | ${SITE}`,
   ].filter(Boolean) as string[];
@@ -257,14 +278,14 @@ export function homeIntro(hubs: Record<string, HubRef>, count: number): IntroBit
   const lower = (h: HubRef) => (h.short ?? h.label).toLowerCase();
   const out: IntroBit[][] = [
     [
-      `${SITE} lists the happy hours at ${count} bars and restaurants across Vancouver and Metro Vancouver, with the days, times and deal prices for each one. See what's on right now, what starts later today, or plan ahead for any day and time.`,
+      `${SITE} lists the happy hours at ${count} bars and restaurants in ${citiesPhrase(hubs, 6)}, with the days, times and deal prices for each one. See what's on right now, what starts later today, or plan ahead for any day and time.`,
     ],
   ];
   if (areas.length) {
     out.push([
-      "In Vancouver that covers ",
+      "In the city of Vancouver that covers ",
       ...links(areas, (h) => h.label),
-      cities.length ? ", and around the region " : ".",
+      cities.length ? ", and beyond it " : ".",
       ...(cities.length ? [...links(cities, (h) => h.label), "."] : []),
     ]);
   }
