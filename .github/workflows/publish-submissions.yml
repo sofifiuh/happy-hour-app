@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name "a-little-hang-data"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add venues.json pipeline/submissions.json spots sitemap.xml robots.txt
+          git add venues.json pipeline/submissions.json pipeline/api-usage.json spots sitemap.xml robots.txt
           if git diff --cached --quiet; then
             echo "No data changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
