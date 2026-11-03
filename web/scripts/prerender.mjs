@@ -25,7 +25,7 @@ import { fileURLToPath } from "node:url";
 import opentype from "opentype.js";
 import sharp from "sharp";
 import { fmtRange, fmtTime } from "../src/lib/hours.ts";
-import { dayRuns, dealPhrase, fmtDate, googleReviewsLink, money, nearby, parsePrice, quoteCredit, redditLink, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
+import { dayRuns, dealPhrase, homeIntro, fmtDate, googleReviewsLink, money, nearby, parsePrice, quoteCredit, redditLink, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
 import { AREAS, BEST_FLOOR, BEST_FRESH_DAYS, bestPath, buildHubs, hubPath } from "./seo-data.mjs";
 import { cheapestDrink, hoursFacts, isNonAlc, WEIGHTS } from "./hang-score.mjs";
 import { buildIndex, KINDS, MIN_SAMPLE } from "./price-index.mjs";
@@ -1606,14 +1606,54 @@ const exploreHtml = `<h2 style="${S.h2}">Vancouver neighbourhoods</h2><nav>${pla
 <h2 style="${S.h2}">By day and deal</h2><nav>${topics.map((t) => `<a href="${hubPath(t.slug)}" style="${S.chip}">${esc(t.label)}</a>`).join("")}</nav>`;
 
 const HOME_DESC = `Live happy hour times and deals from ${venues.length} Vancouver bars and restaurants, checked against their own menus every night.`;
+// The home page's first-load content: the top-rated happy hours (Hangout
+// Score, at most three per neighbourhood or city so one area can't fill it),
+// the intro copy the app shows under its list, and the hub links. Rebuilt on
+// every deploy, which the nightly data refresh triggers.
+const HOME_TOP = 24;
+const homeTop = (() => {
+  const per = new Map();
+  return [...venues]
+    .filter((v) => v.score && summary(v))
+    .sort((a, b) => b.score.total - a.score.total || a.name.localeCompare(b.name))
+    .filter((v) => {
+      const k = v.area?.slug ?? v.city;
+      per.set(k, (per.get(k) ?? 0) + 1);
+      return per.get(k) <= 3;
+    })
+    .slice(0, HOME_TOP);
+})();
+const { hubs: hubIndex = {} } = JSON.parse(readFileSync(resolve(web, "public/venues.json"), "utf8"));
+const introHtml = homeIntro(hubIndex, venues.length)
+  .map((para) => `<p style="${S.p};margin-top:12px">${para.map((b) => (typeof b === "string" ? esc(b) : `<a href="${b.href}" style="${S.plain};text-decoration:underline;text-underline-offset:4px">${esc(b.text)}</a>`)).join("")}</p>`)
+  .join("");
+const homeRow = (v) => {
+  const deals = topDeals(v, 2);
+  return `<li style="padding:12px 0;border-bottom:1px solid #3a3835"><a href="/spots/${v.id}" style="${S.plain};font-weight:600;font-size:16px;text-decoration:none">${esc(v.name)}</a> <span style="color:#a7a196;font-size:14px">· ${esc(whereLabel(v))}</span><br /><span style="color:#f3efe4;font-size:14px;font-weight:600">${esc(summary(v))}</span>${
+    deals.length ? `<br /><span style="color:#a7a196;font-size:14px">${esc(deals.map(dealPhrase).join(" · "))}</span>` : ""
+  }</li>`;
+};
+const homeUrl = `${BASE}/`;
+// The home page loads the app's CSS, whose palette follows the light/dark
+// pick the inline theme script makes before first paint. Point the static
+// markup's dark-only colours at those variables (dark values as fallbacks).
+const HOME_VARS = { "#f3efe4": "--cream", "#a7a196": "--cream-dim", "#242322": "--ink-2", "#3a3835": "--line", "#ff4900": "--orange-fg" };
+const homeThemed = (html) => html.replace(/#(f3efe4|a7a196|242322|3a3835|ff4900)\b/g, (m) => `var(${HOME_VARS[m]},${m})`);
 write(
   "index.html",
   page({
     path: "/",
     title: `Vancouver Happy Hours Right Now | ${SITE}`,
     description: HOME_DESC,
-    jsonld: { "@context": "https://schema.org", "@graph": SITE_GRAPH },
-    body: `<main style="${S.wrap}"><h1 style="${S.h1}">Happy hours in Vancouver</h1><p style="${S.p}">${esc(HOME_DESC)} See what's on right now, what starts next, and where the cheapest pint is tonight.</p>${exploreHtml}<p style="${S.muted};margin-top:24px"><a href="/spots/" style="${S.link}">All ${venues.length} spots A–Z</a></p></main>`,
+    jsonld: {
+      "@context": "https://schema.org",
+      "@graph": [
+        { "@type": "CollectionPage", "@id": homeUrl, url: homeUrl, name: "Happy hours in Vancouver", description: HOME_DESC, isPartOf: { "@id": WEBSITE_ID }, mainEntity: { "@id": `${homeUrl}#top` }, inLanguage: "en-CA" },
+        { "@type": "ItemList", "@id": `${homeUrl}#top`, name: "Top-rated happy hours in Metro Vancouver", numberOfItems: homeTop.length, itemListElement: homeTop.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}` })) },
+        ...SITE_GRAPH,
+      ],
+    },
+    body: homeThemed(`<main style="${S.wrap}"><h1 style="${S.h1}">Happy hours in Vancouver</h1>${introHtml}<h2 style="${S.h2}">Top-rated happy hours in Metro Vancouver</h2><ol style="list-style:none;padding:0;margin:0">${homeTop.map(homeRow).join("")}</ol>${exploreHtml}<p style="${S.muted};margin-top:24px"><a href="/spots/" style="${S.link}">All ${venues.length} spots A–Z</a></p></main>`),
   }),
 );
 sitemapDates.set("/", newest(venues));
@@ -1713,7 +1753,10 @@ ${topics.map((t) => linkLine(t, t.label)).join("\n")}
 - [Sitemap](${BASE}/sitemap.xml)
 `,
 );
-write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /screens\nDisallow: /venue\n\nSitemap: ${BASE}/sitemap.xml\n`);
+// "/venue/", "/venue" and "/venue?" only: a bare "Disallow: /venue" also matches
+// /venues.json, which every app page loads, so Google rendered them all as
+// "Couldn't load happy hours".
+write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /screens\nDisallow: /venue/\nDisallow: /venue$\nDisallow: /venue?\n\nSitemap: ${BASE}/sitemap.xml\n`);
 const cname = resolve(web, "../CNAME");
 if (existsSync(cname)) copyFileSync(cname, resolve(dist, "CNAME"));
 writeFileSync(resolve(dist, ".nojekyll"), "");
