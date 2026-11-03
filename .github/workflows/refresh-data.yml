@@ -67,7 +67,7 @@ jobs:
         run: >-
           node pipeline/refresh.js --max-extract "${{ inputs.max_extract || '40' }}"
           ${{ env.DRY_RUN == 'true' && '--no-extract' || '--discover' }}
-          --discover-target "${{ vars.DISCOVER_TARGET || '10' }}"
+          --discover-target "${{ vars.DISCOVER_TARGET || '20' }}"
           --discover-budget "${{ vars.DISCOVER_BUDGET || '5' }}"
 
       - name: Commit data
@@ -79,7 +79,7 @@ jobs:
           # api-usage.json is the per-SKU monthly Places ledger. Left uncommitted it
           # resets every night, the caps never bite, and Text Search ran past
           # its free 5,000 in Oct 2026.
-          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json pipeline/screened.json pipeline/photos.json pipeline/submissions.json pipeline/api-usage.json pipeline/GROWTH.md spots sitemap.xml robots.txt
+          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json pipeline/screened.json pipeline/photos.json pipeline/submissions.json pipeline/api-usage.json pipeline/sweep-state.json pipeline/candidate-pool.json pipeline/GROWTH.md spots sitemap.xml robots.txt
           if git diff --cached --quiet; then
             echo "No data changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi

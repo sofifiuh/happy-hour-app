@@ -16,6 +16,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { parseArgs, readJson, REPO_ROOT } from "./lib/venues.js";
 import { VENUES_FILE } from "./lib/trust.js";
+import { inRegion } from "./lib/region.js";
 import { curlJson } from "./lib/curl.js";
 
 const args = parseArgs(process.argv.slice(2));
@@ -24,13 +25,8 @@ const API = (process.env.API_URL || "").replace(/\/+$/, "");
 const FEED = process.env.SUBMISSIONS_URL || (API ? `${API}/public/submissions` : null);
 const KEY = process.env.GOOGLE_PLACES_API_KEY || readJson(path.join(REPO_ROOT, "pipeline", "secrets.json"), {}).GOOGLE_PLACES_API_KEY;
 
-// Same box as places-discover.js: Metro Vancouver, and not across the border.
-const METRO = { minLat: 49.0, maxLat: 49.42, minLng: -123.35, maxLng: -122.35 };
-const inMetro = (p) => {
-  const l = p.location;
-  if (!l || l.latitude < METRO.minLat || l.latitude > METRO.maxLat || l.longitude < METRO.minLng || l.longitude > METRO.maxLng) return false;
-  return !/\b(USA|United States|WA \d{5})\b/i.test(p.formattedAddress || "");
-};
+// Same box as discovery (lib/region.js): the Lower Mainland, not across the border.
+const inMetro = inRegion;
 
 // "2245 Commercial Dr, Vancouver, BC V5N 4B6, Canada" -> street + city, the
 // way places-discover.js writes formatted_address.

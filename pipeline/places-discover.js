@@ -14,6 +14,7 @@ import path from "node:path";
 import { loadSeed, readJson, normName, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
 import { curlJson, mapConcurrent } from "./lib/curl.js";
 import { parseArgs } from "./lib/venues.js";
+import { inRegion } from "./lib/region.js";
 
 const args = parseArgs(process.argv.slice(2));
 const MAX = Number(args.max) || 260;
@@ -258,18 +259,9 @@ const TEXT_QUERIES = args["text-queries"]
 const TEXT_PAGES = Number(args["text-pages"]) || 2;
 // Text Search is not bounded by a circle the way Nearby Search is, and
 // "happy hour Delta BC" will happily return a bar in Delta, Ohio. Keep
-// results inside Metro Vancouver.
-// The 49th parallel IS the border here, and a box that dipped below it let
-// a wine bar in Blaine, Washington into a Vancouver app. Latitude alone is
-// not enough either — Point Roberts is Canadian-adjacent but American — so
-// the address has to say Canada too.
-const METRO = { minLat: 49.0, maxLat: 49.42, minLng: -123.35, maxLng: -122.35 };
-const inMetro = (p) => {
-  const l = p.location;
-  if (!l || l.latitude < METRO.minLat || l.latitude > METRO.maxLat) return false;
-  if (l.longitude < METRO.minLng || l.longitude > METRO.maxLng) return false;
-  return !/\b(USA|United States|WA \d{5})\b/i.test(p.formattedAddress || "");
-};
+// results inside the covered region (lib/region.js, shared with guest
+// submissions, which also keeps the border out).
+const inMetro = inRegion;
 const EXCLUDE_TYPES = new Set(["fast_food_restaurant", "cafe", "coffee_shop", "bakery", "meal_takeaway", "meal_delivery", "ice_cream_shop", "sandwich_shop"]);
 // Breweries and wineries belong here. "brewery taproom" is one of the text
 // queries, so the sweep was finding them and then the type filter was
