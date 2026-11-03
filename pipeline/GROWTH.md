@@ -24,3 +24,4 @@ One row per refresh run (written by `pipeline/refresh.js`).
 | 2026-11-01 | 460 → 460 | 0 | 0 | — |
 | 2026-11-02 | 460 → 460 | 0 | 0 | — |
 | 2026-11-02 | 460 → 460 | 0 | 0 | — |
+| 2026-11-03 | 460 → 482 | 22 | 0 | Dubh Linn Gate Irish Pub, Bow & Stern, The Settler Pub, The Aroma Bistro & Bar Abbotsford, Beacon Pub & Eatery, The Highwayman Pub, 14th Avenue Pub, Chameleon Restaurant, Sneakers Sports Lounge, District Bar Restaurant Garrison, The Backyard, Amato Trattoria, The Tipsy Barrel, The Broken Seal, Islands Patio & Lounge, heyhey Bar & Grill, Greek Islands Restaurant, Caramba Restaurant, The Greek Islands Restaurant, Balam, The Offy, Greek Islands Restaurant |

@@ -27601,5 +27601,379 @@
     "maps_url": "https://maps.google.com/?cid=12650379449473320044&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
     "matched_name": "Dahlia",
     "synced_at": "2026-11-01"
+  },
+  "dubh-linn-gate-irish-pub": {
+    "place_id": "ChIJTVGqokwjh1QRAN4E3Ad4v5E",
+    "rating": 4.4,
+    "user_ratings_total": 3653,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Dubh Linn Gate Irish Pub",
+    "synced_at": "2026-11-03"
+  },
+  "bow-stern": {
+    "place_id": "ChIJGRXomp1KhFQR_r-twFbePJM",
+    "rating": 4.4,
+    "user_ratings_total": 2435,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Bow & Stern",
+    "synced_at": "2026-11-03"
+  },
+  "the-settler-pub": {
+    "place_id": "ChIJl85V0IURhFQRHTLCROvHczY",
+    "rating": 4.2,
+    "user_ratings_total": 2157,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Settler Pub",
+    "synced_at": "2026-11-03"
+  },
+  "the-aroma-bistro-bar-abbotsford": {
+    "place_id": "ChIJccFdno41hFQRNSS9fbNMFC4",
+    "rating": 4.3,
+    "user_ratings_total": 1429,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Aroma Bistro & Bar Abbotsford",
+    "synced_at": "2026-11-03"
+  },
+  "beacon-pub-eatery": {
+    "place_id": "ChIJt5heVEsjh1QR_tfPzac9vCs",
+    "rating": 4.1,
+    "user_ratings_total": 1338,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Beacon Pub & Eatery",
+    "synced_at": "2026-11-03"
+  },
+  "the-highwayman-pub": {
+    "place_id": "ChIJkVPKQiE1hFQRrOkXhl3fsqc",
+    "rating": 4,
+    "user_ratings_total": 1167,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Highwayman Pub",
+    "synced_at": "2026-11-03"
+  },
+  "14th-avenue-pub": {
+    "place_id": "ChIJc3rQxeYzhFQRxAXSyAGS9nI",
+    "rating": 4.3,
+    "user_ratings_total": 1129,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "14th Avenue Pub",
+    "synced_at": "2026-11-03"
+  },
+  "chameleon-restaurant": {
+    "place_id": "ChIJUSHZyF_ThVQRzJUui5PcFpc",
+    "rating": 4.4,
+    "user_ratings_total": 886,
+    "price_level": 3,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Chameleon Restaurant",
+    "synced_at": "2026-11-03"
+  },
+  "sneakers-sports-lounge": {
+    "place_id": "ChIJ848NYOJwhlQRF_yOef3Z3QM",
+    "rating": 3.9,
+    "user_ratings_total": 770,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Sneakers Sports Lounge",
+    "synced_at": "2026-11-03"
+  },
+  "district-bar-restaurant-garrison": {
+    "place_id": "ChIJPXOYZD1HhFQRPfUHxgz5Wl0",
+    "rating": 4.3,
+    "user_ratings_total": 702,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "District Bar Restaurant Garrison",
+    "synced_at": "2026-11-03"
+  },
+  "the-backyard": {
+    "place_id": "ChIJTYNMucz5hlQRqwqOozzjMvE",
+    "rating": 4.7,
+    "user_ratings_total": 599,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Backyard",
+    "synced_at": "2026-11-03"
+  },
+  "amato-trattoria": {
+    "place_id": "ChIJE11qpXk_hFQROC0uomS8s-U",
+    "rating": 4.7,
+    "user_ratings_total": 559,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Amato Trattoria",
+    "synced_at": "2026-11-03"
+  },
+  "the-tipsy-barrel": {
+    "place_id": "ChIJ1X8f4bhLhFQRYsjfC6bz2hs",
+    "rating": 4.2,
+    "user_ratings_total": 388,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Tipsy Barrel",
+    "synced_at": "2026-11-03"
+  },
+  "the-broken-seal": {
+    "place_id": "ChIJddQwhZX5hlQRjlY7UNcmuHY",
+    "rating": 4.8,
+    "user_ratings_total": 329,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Broken Seal",
+    "synced_at": "2026-11-03"
+  },
+  "islands-patio-lounge": {
+    "place_id": "ChIJt0S05YQRhFQROeypSGZH9VE",
+    "rating": 4,
+    "user_ratings_total": 209,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Islands Patio & Lounge",
+    "synced_at": "2026-11-03"
+  },
+  "heyhey-bar-grill": {
+    "place_id": "ChIJwfGOAiLThVQRoaA3HACSpj8",
+    "rating": 3.4,
+    "user_ratings_total": 50,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "heyhey Bar & Grill",
+    "synced_at": "2026-11-03"
+  },
+  "greek-islands-restaurant": {
+    "place_id": "ChIJp5QJE081hFQRJYc_R4Roy0Q",
+    "rating": 4.7,
+    "user_ratings_total": 2037,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Greek Islands Restaurant",
+    "synced_at": "2026-11-03"
+  },
+  "caramba-restaurant": {
+    "place_id": "ChIJ81o8DrM8h1QR9NeJlPZ0ZRA",
+    "rating": 4.3,
+    "user_ratings_total": 1791,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Caramba Restaurant",
+    "synced_at": "2026-11-03"
+  },
+  "the-greek-islands-restaurant": {
+    "place_id": "ChIJhTOilmQ_hFQRFiCiaPfcMdY",
+    "rating": 4.7,
+    "user_ratings_total": 1741,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Greek Islands Restaurant",
+    "synced_at": "2026-11-03"
+  },
+  "balam": {
+    "place_id": "ChIJAYniOWsjh1QR308JR3bSW5M",
+    "rating": 4.7,
+    "user_ratings_total": 1346,
+    "price_level": 3,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Balam",
+    "synced_at": "2026-11-03"
+  },
+  "the-offy": {
+    "place_id": "ChIJDQ5qPu8_hFQRFTg1zOnz7nY",
+    "rating": 4.6,
+    "user_ratings_total": 1326,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Offy",
+    "synced_at": "2026-11-03"
+  },
+  "greek-islands-restaurant-2": {
+    "place_id": "ChIJqSzR0WA1hFQRnPXDMLGLWro",
+    "rating": 4.6,
+    "user_ratings_total": 1091,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Greek Islands Restaurant",
+    "synced_at": "2026-11-03"
   }
 }
