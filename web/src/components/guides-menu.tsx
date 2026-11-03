@@ -1,7 +1,7 @@
 import { Popover } from "@base-ui/react/popover";
 import { BookOpen, ChartNoAxesColumn, ChevronRight, ListOrdered, MapPinned, ReceiptText, Trophy, X } from "lucide-react";
 import { type ReactNode, useMemo, useState } from "react";
-import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerTitle } from "@/components/ui/drawer";
+import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import { track } from "@/lib/analytics";
 import { reducedMotion } from "@/lib/motion";
 import { BROWSER_ROUTER } from "@/lib/routes";
@@ -143,7 +143,10 @@ export function GuidesPill({ className }: { className?: string }) {
   const [open, setOpen] = useState(false);
   if (!BROWSER_ROUTER) return null;
   return (
+    // Modal, so the click that dismisses it lands on the backdrop and
+    // never reaches the map underneath (a pin click opens a venue).
     <Popover.Root
+      modal
       open={open}
       onOpenChange={(o) => {
         setOpen(o);
@@ -178,23 +181,21 @@ export function GuidesPill({ className }: { className?: string }) {
 export function GuidesButton({ from, className }: { from: "list" | "map"; className?: string }) {
   const [open, setOpen] = useState(false);
   if (!BROWSER_ROUTER) return null;
+  // A Drawer trigger, so closing the sheet hands focus back to it.
   return (
-    <>
-      <button
-        type="button"
-        aria-haspopup="dialog"
-        onClick={() => {
-          setOpen(true);
-          track({ name: "guides_opened", from });
-        }}
-        className={cn(
-          "pointer-events-auto inline-flex h-11 items-center gap-1.5 rounded-full bg-ink-2/95 pr-4 pl-3.5 text-[14px] font-semibold text-cream shadow-(--shadow-float) ring-1 ring-edge/5 backdrop-blur transition-transform active:scale-95",
-          className,
-        )}
-      >
-        <BookOpen className="size-4" /> Guides
-      </button>
       <Drawer open={open} onOpenChange={setOpen}>
+        <DrawerTrigger
+          onClick={() => {
+            setOpen(true);
+            track({ name: "guides_opened", from });
+          }}
+          className={cn(
+            "pointer-events-auto inline-flex h-11 items-center gap-1.5 rounded-full bg-ink-2/95 pr-4 pl-3.5 text-[14px] font-semibold text-cream shadow-(--shadow-float) ring-1 ring-edge/5 backdrop-blur transition-transform active:scale-95",
+            className,
+          )}
+        >
+          <BookOpen className="size-4" /> Guides
+        </DrawerTrigger>
         <DrawerContent>
           <div className="no-scrollbar overflow-y-auto pb-3">
             <GuidesContent
@@ -213,6 +214,5 @@ export function GuidesButton({ from, className }: { from: "list" | "map"; classN
           </div>
         </DrawerContent>
       </Drawer>
-    </>
   );
 }
