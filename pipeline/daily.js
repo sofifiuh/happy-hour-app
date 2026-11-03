@@ -56,10 +56,17 @@ console.log(`Daily run ${TODAY} — target ${TARGET} new venues, budget $${BUDGE
 // interruption, or after a sweep run by hand, should not pay for them twice.
 if (args["use-pool"]) {
   console.log(`\n[discover] reusing ${CANDIDATES.replace(REPO_ROOT + "/", "")} — no Places calls`);
-} else {
+} else if (args["full-sweep"]) {
+  // The one-shot sweep of the whole region (~1,300 calls). It no longer fits
+  // the free-tier daily quotas; kept for a hand-run with raised quotas.
   const poolWanted = Math.min(900, Math.ceil((TARGET / 0.13) * 1.2));
-  console.log(`\n[discover] asking for up to ${poolWanted} candidates`);
+  console.log(`\n[discover] full sweep, asking for up to ${poolWanted} candidates`);
   console.log(run("places-discover.js", ["--max", String(poolWanted), "--recheck-days", String(RECHECK_DAYS)]).trim());
+} else {
+  // Default: today's free-tier slice of the region, plus everything found on
+  // earlier days that has not been judged yet (pipeline/candidate-pool.json).
+  console.log(`\n[discover] today's slice (places-rotate.js)`);
+  console.log(run("places-rotate.js", ["--recheck-days", String(RECHECK_DAYS), ...(DRY ? ["--dry-run"] : [])]).trim());
 }
 
 // The candidate file is a snapshot, and a previous round may already have
@@ -89,7 +96,7 @@ if (rawCandidates.length !== candidates.length) {
   console.log(`[pool] ${rawCandidates.length} in file, ${rawCandidates.length - candidates.length} already judged -> ${candidates.length} left to process`);
 }
 if (!candidates.length) {
-  console.log("\nNo new candidates — Metro Vancouver is swept for now. Nothing to do.");
+  console.log("\nNo new candidates today — nothing to judge.");
   process.exit(0);
 }
 if (DRY) { console.log(`\n[dry-run] would process ${candidates.length} candidates. Stopping.`); process.exit(0); }

@@ -544,7 +544,7 @@ export function submissionReceivedEmail(site: string, o: { name: string | null; 
     paragraphs: [
       `Your photo of the happy hour at ${o.spot.name} is in our queue. A real person reads every one, checks the times and deals, and puts it live.`,
     ],
-    cta: o.spot.id ? { label: `See ${o.spot.name}`, href: `${site}/spots/${encodeURIComponent(o.spot.id)}.html` } : { label: "Find a happy hour now", href: site },
+    cta: o.spot.id ? { label: `See ${o.spot.name}`, href: `${site}/spots/${encodeURIComponent(o.spot.id)}` } : { label: "Find a happy hour now", href: site },
     note: o.worksThere && o.spot.id ? `Work at ${o.spot.name}? Claim the listing for free and update your times yourself, any time: ${site}/venue/claim/${o.spot.id}` : undefined,
     rowsLabel: "What happens next",
     rows: [
@@ -569,7 +569,7 @@ export function submissionLiveEmail(site: string, o: { name: string | null; spot
       ["When", o.hours],
       ...(o.deals ? ([["Deals", `${o.deals} listed`]] as [string, string][]) : []),
     ],
-    cta: { label: "See it live", href: `${site}/spots/${encodeURIComponent(o.spot.id)}.html` },
+    cta: { label: "See it live", href: `${site}/spots/${encodeURIComponent(o.spot.id)}` },
     secondary: { label: "Send another happy hour", href: `${site}/submit` },
     reason: `You're getting this because you sent A Little Hang the happy hour at ${o.spot.name}.`,
   });

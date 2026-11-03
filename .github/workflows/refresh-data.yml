@@ -67,7 +67,7 @@ jobs:
         run: >-
           node pipeline/refresh.js --max-extract "${{ inputs.max_extract || '40' }}"
           ${{ env.DRY_RUN == 'true' && '--no-extract' || '--discover' }}
-          --discover-target "${{ vars.DISCOVER_TARGET || '10' }}"
+          --discover-target "${{ vars.DISCOVER_TARGET || '20' }}"
           --discover-budget "${{ vars.DISCOVER_BUDGET || '5' }}"
 
       - name: Commit data
@@ -79,7 +79,7 @@ jobs:
           # api-usage.json is the per-SKU monthly Places ledger. Left uncommitted it
           # resets every night, the caps never bite, and Text Search ran past
           # its free 5,000 in Oct 2026.
-          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json pipeline/screened.json pipeline/photos.json pipeline/submissions.json pipeline/api-usage.json pipeline/GROWTH.md spots sitemap.xml robots.txt
+          git add venues.json pipeline/freshness.json pipeline/discovered.json pipeline/places.json pipeline/screened.json pipeline/photos.json pipeline/submissions.json pipeline/api-usage.json pipeline/sweep-state.json pipeline/candidate-pool.json pipeline/GROWTH.md spots sitemap.xml robots.txt
           if git diff --cached --quiet; then
             echo "No data changes."; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
@@ -89,6 +89,21 @@ jobs:
           git pull --rebase --autostash origin main
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      # The Places ledger and the discovery cursor record calls already made.
+      # If the run fails after discovery (the sanity gate keeps venue data out),
+      # still keep those three, or a re-run would re-spend the day's budget.
+      - name: Keep the Places ledger on failure
+        if: failure() && env.DRY_RUN != 'true'
+        run: |
+          git config user.name "a-little-hang-data"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pipeline/api-usage.json pipeline/sweep-state.json pipeline/candidate-pool.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: Places ledger after a failed refresh $(date -u +%F)"
+          git stash --include-untracked >/dev/null || true
+          git pull --rebase origin main
+          git push origin HEAD:main
 
       # Pushes made with GITHUB_TOKEN don't trigger other workflows, so
       # redeploy explicitly.

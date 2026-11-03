@@ -162,7 +162,11 @@ row); `confidence` is the one field a badge needs. Rules live in
 `lib/trust.js`.
 
 4. **New and closed venues** (`--discover`, on in the scheduled job). Every
-   day `daily.js` sweeps Google Places for venues we don't have yet and
+   day `daily.js` searches a slice of Google Places for venues we don't have
+   yet (`places-rotate.js`: at most 29 Text Search and 29 Nearby Search calls
+   a day at the Enterprise tier, capped at 900 a month each, inside the free
+   1,000; where it got to lives in `sweep-state.json`, unjudged finds in
+   `candidate-pool.json`; the area list there is where new cities go) and
    publishes the ones whose own site lists a happy hour with priced deals
    (default 10 new venues or $5 of extraction a day, via the `DISCOVER_TARGET` /
    `DISCOVER_BUDGET` repo variables). On the 1st of each month
