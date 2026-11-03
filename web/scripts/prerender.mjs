@@ -299,8 +299,8 @@ function venueJsonLd(v, image) {
 const SITE_GRAPH = [
   { "@type": "WebSite", "@id": WEBSITE_ID, url: `${BASE}/`, name: SITE, alternateName: ["alittlehang.com", "A Little Hang Happy Hours"], description: `Directory of happy hour times and deals at ${venues.length} bars and restaurants in ${CITIES}, BC.`, inLanguage: "en-CA", publisher: { "@id": ORG_ID } },
   { "@type": "Organization", "@id": ORG_ID, name: SITE, url: `${BASE}/`, logo: `${BASE}/icon-512.png`, description: `A Little Hang lists local happy hours in ${CITIES}: times, prices and deals taken from each venue's own menu and rechecked nightly.`, email: "jason@setsail.ca", founder: [{ "@id": FOUNDER_ID }, { "@id": DESIGNER_ID }], areaServed: Object.values(hubIndex).filter((h) => h.kind === "city").map((h) => ({ "@type": "City", name: h.label, containedInPlace: { "@type": "AdministrativeArea", name: "British Columbia" } })) },
-  { "@type": "Person", "@id": FOUNDER_ID, name: "Jason", jobTitle: "Founder", url: `${BASE}/about/#jason`, worksFor: [{ "@id": ORG_ID }, { "@type": "Organization", name: "Setsail Marketing", url: "https://setsail.ca/" }], spouse: { "@id": DESIGNER_ID } },
-  { "@type": "Person", "@id": DESIGNER_ID, name: "Sofia Alvarenga", jobTitle: "Product designer", url: `${BASE}/about/#sofia`, worksFor: { "@id": ORG_ID }, spouse: { "@id": FOUNDER_ID } },
+  { "@type": "Person", "@id": FOUNDER_ID, name: "Jason Atakhanov", givenName: "Jason", familyName: "Atakhanov", jobTitle: "Founder", url: `${BASE}/about/#jason`, worksFor: [{ "@id": ORG_ID }, { "@type": "Organization", name: "Setsail Marketing", url: "https://setsail.ca/" }], spouse: { "@id": DESIGNER_ID } },
+  { "@type": "Person", "@id": DESIGNER_ID, name: "Sofia Alvarenga", givenName: "Sofia", familyName: "Alvarenga", jobTitle: "Product designer", url: `${BASE}/about/#sofia`, worksFor: { "@id": ORG_ID }, spouse: { "@id": FOUNDER_ID } },
 ];
 
 // ---------- static markup shared by venue pages ----------
@@ -1560,7 +1560,7 @@ sitemapDates.set("/spots/", newest(venues));
 
 // About: who made it and why, in static markup for crawlers (the app shows
 // the same story in screens/info.tsx), plus AboutPage + founders schema.
-const ABOUT_DESC = "Why A Little Hang exists, who it's for, and the people behind it: founder Jason (Setsail Marketing) and designer Sofia Alvarenga.";
+const ABOUT_DESC = "Why A Little Hang exists, who it's for, and the people behind it: founder Jason Atakhanov (Setsail Marketing) and designer Sofia Alvarenga.";
 function aboutLd() {
   const url = `${BASE}/about/`;
   return {
@@ -1579,12 +1579,12 @@ function aboutHtml() {
 <p style="${S.p}">I've run Setsail Marketing for the past ten years, and the best parts have been the times spent with people: travelling, trying new places, and sharing a good time with friends and strangers alike.</p>
 <p style="${S.p};margin-top:12px">I've never seen anything bring people together like a good happy hour. It's easy on the wallet, so it works for people from every side of the planet and every background. But there was nothing out there that helped you find a good hangout spot without spending a fortune on a night out. So we set out to find the best happy hours and hangout spots in Vancouver, and put them in one place.</p>
 <p style="${S.p};margin-top:12px">What I hope it does is simple: a livelier city and a livelier community, with more people getting together, more conversations, more good laughs and more good moments. There's nothing more precious than happy time spent with loved ones, friends and strangers, wherever it happens.</p>
-<p style="${S.muted};margin-top:12px;font-size:13px">Jason, founder</p>
+<p style="${S.muted};margin-top:12px;font-size:13px">Jason Atakhanov, founder</p>
 </blockquote>
 <h2 style="${S.h2}">Who it's for</h2>
 <p style="${S.p}">Anyone who wants a good time with people without a big bill: friends picking a spot after work, newcomers and visitors getting to know the city, couples and families after an easy evening out. It's free, there's no account, and you'll know where to go in seconds. For venues it's free too: every listing comes from your own menu and links back to your site.</p>
 <h2 style="${S.h2}">The people behind it</h2>
-<h3 id="jason" style="${S.h3}">Jason, founder</h3>
+<h3 id="jason" style="${S.h3}">Jason Atakhanov, founder</h3>
 <p style="${S.p}">Founder of Setsail Marketing, which he's run for ten years. Loves travelling and a good time with people, wherever he is.</p>
 <h3 id="sofia" style="${S.h3}">Sofia Alvarenga, designer</h3>
 <p style="${S.p}">A product designer for many years. She designed how A Little Hang looks and works, from the first screen to the last tap.</p>
@@ -1731,7 +1731,7 @@ write(
 
 > ${SITE} (alittlehang.com) is a directory of local happy hours in ${CITIES}, BC: ${venues.length} bars and restaurants with their happy hour days, times and deal prices. Times and prices come from each venue's own menu and are rechecked every night${today ? `; last updated ${today}` : ""}.
 
-Every venue page (${BASE}/spots/<id>) lists the happy hour schedule by day, every food and drink deal with its price in CAD, the address, the nearest SkyTrain station and the date the menu was last checked. Hub pages group venues by city, neighbourhood, day and deal. It was founded by Jason (founder of Setsail Marketing) and designed by product designer Sofia Alvarenga.${beer ? ` The cheapest happy hour beer right now is ${money(beer.p.low)} at ${beer.v.name}.` : ""}
+Every venue page (${BASE}/spots/<id>) lists the happy hour schedule by day, every food and drink deal with its price in CAD, the address, the nearest SkyTrain station and the date the menu was last checked. Hub pages group venues by city, neighbourhood, day and deal. It was founded by Jason Atakhanov (founder of Setsail Marketing) and designed by product designer Sofia Alvarenga.${beer ? ` The cheapest happy hour beer right now is ${money(beer.p.low)} at ${beer.v.name}.` : ""}
 
 ## Cities
 ${places.filter((p) => p.kind === "city").map((p) => linkLine(p, `Happy hours in ${p.name}`)).join("\n")}
