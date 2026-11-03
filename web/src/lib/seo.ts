@@ -231,3 +231,55 @@ export function quoteCredit(q: Quote) {
   const when = Number.isNaN(d.getTime()) ? "" : ` · ${d.toLocaleDateString("en-US", { month: "short", year: "numeric" })}`;
   return `${q.author ? `${q.author}, ` : ""}${q.source}${when}`;
 }
+
+// ---------- home page ----------
+// The plain-words intro under the home list: what the site covers, where,
+// and how fresh it is, with links into the hub pages. The app (screens/home)
+// and the static home page (scripts/prerender.mjs) both render it, so the
+// words are there before and after the app boots.
+export type IntroBit = string | { text: string; href: string };
+type HubRef = { label: string; short?: string; kind: string; count: number };
+
+export function homeIntro(hubs: Record<string, HubRef>, count: number): IntroBit[][] {
+  const of = (kind: string, n: number, skip: string[] = []) =>
+    Object.entries(hubs)
+      .filter(([slug, h]) => h.kind === kind && !skip.includes(slug))
+      .sort((a, b) => b[1].count - a[1].count)
+      .slice(0, n);
+  const links = (list: [string, HubRef][], text: (h: HubRef) => string): IntroBit[] =>
+    list.flatMap(([slug, h], i) => [
+      ...(i === 0 ? [] : [i === list.length - 1 ? " and " : ", "]),
+      { text: text(h), href: `/happy-hour/${slug}/` },
+    ]);
+  const areas = of("area", 7);
+  const cities = of("city", 6, ["vancouver"]);
+  const deals = of("deal", 5, ["beer", "wine", "cocktails"]);
+  const lower = (h: HubRef) => (h.short ?? h.label).toLowerCase();
+  const out: IntroBit[][] = [
+    [
+      `${SITE} lists the happy hours at ${count} bars and restaurants across Vancouver and Metro Vancouver, with the days, times and deal prices for each one. See what's on right now, what starts later today, or plan ahead for any day and time.`,
+    ],
+  ];
+  if (areas.length) {
+    out.push([
+      "In Vancouver that covers ",
+      ...links(areas, (h) => h.label),
+      cities.length ? ", and around the region " : ".",
+      ...(cities.length ? [...links(cities, (h) => h.label), "."] : []),
+    ]);
+  }
+  if (deals.length) {
+    out.push([
+      "Hungry? Find happy hour ",
+      ...links(deals, lower),
+      ...(hubs.patio ? [", or browse ", { text: "patio", href: "/happy-hour/patio/" }] : []),
+      ...(hubs.patio && hubs["late-night"] ? [" and "] : hubs["late-night"] ? [", or browse "] : []),
+      ...(hubs["late-night"] ? [{ text: "late-night", href: "/happy-hour/late-night/" }] : []),
+      hubs.patio || hubs["late-night"] ? " happy hours." : ".",
+    ]);
+  }
+  out.push([
+    "Each spot has its own page with every deal and its price, the address and a map, and most get a Hangout Score out of 10 so the best value is easy to find. Every time and price comes from the venue's own website or menu, and we re-check each source every night, so the deals here match what's on the menu today.",
+  ]);
+  return out;
+}

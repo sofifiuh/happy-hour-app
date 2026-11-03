@@ -16,6 +16,7 @@ import { Wordmark } from "@/components/wordmark";
 import { DAY_FULL, fmtTime } from "@/lib/hours";
 import { InfoNav } from "@/screens/info";
 import { ExploreLinks } from "@/components/explore-links";
+import { HomeIntro } from "@/components/home-intro";
 import { SubmitPrompt } from "@/components/submit-prompt";
 import { apiEnabled } from "@/lib/api";
 import { goBackToBase } from "@/lib/back-to";
@@ -311,6 +312,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
           </div>
         )}
         {rows.length > 0 && <SubmitPrompt from="list" className="mt-6" />}
+        <HomeIntro />
         <ExploreLinks />
         {rows.length > 0 && rows.length <= limit && <InfoNav />}
       </main>
