@@ -66,7 +66,7 @@ if (args["use-pool"]) {
   // Default: today's free-tier slice of the region, plus everything found on
   // earlier days that has not been judged yet (pipeline/candidate-pool.json).
   console.log(`\n[discover] today's slice (places-rotate.js)`);
-  console.log(run("places-rotate.js", ["--recheck-days", String(RECHECK_DAYS)]).trim());
+  console.log(run("places-rotate.js", ["--recheck-days", String(RECHECK_DAYS), ...(DRY ? ["--dry-run"] : [])]).trim());
 }
 
 // The candidate file is a snapshot, and a previous round may already have

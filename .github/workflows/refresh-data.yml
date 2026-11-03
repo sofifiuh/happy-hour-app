@@ -90,6 +90,21 @@ jobs:
           git push origin HEAD:main
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
+      # The Places ledger and the discovery cursor record calls already made.
+      # If the run fails after discovery (the sanity gate keeps venue data out),
+      # still keep those three, or a re-run would re-spend the day's budget.
+      - name: Keep the Places ledger on failure
+        if: failure() && env.DRY_RUN != 'true'
+        run: |
+          git config user.name "a-little-hang-data"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pipeline/api-usage.json pipeline/sweep-state.json pipeline/candidate-pool.json
+          git diff --cached --quiet && exit 0
+          git commit -m "data: Places ledger after a failed refresh $(date -u +%F)"
+          git stash --include-untracked >/dev/null || true
+          git pull --rebase origin main
+          git push origin HEAD:main
+
       # Pushes made with GITHUB_TOKEN don't trigger other workflows, so
       # redeploy explicitly.
       - name: Redeploy site

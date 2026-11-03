@@ -20,6 +20,7 @@ import { inRegion } from "./lib/region.js";
 import { curlJson } from "./lib/curl.js";
 
 const args = parseArgs(process.argv.slice(2));
+const USAGE = path.join(REPO_ROOT, "pipeline", "api-usage.json");
 const SUBMISSIONS_STORE = path.join(REPO_ROOT, "pipeline", "submissions.json");
 const API = (process.env.API_URL || "").replace(/\/+$/, "");
 const FEED = process.env.SUBMISSIONS_URL || (API ? `${API}/public/submissions` : null);
@@ -54,6 +55,12 @@ async function findPlace(s) {
     },
   });
   if (data.error) throw new Error(`Places: ${data.error.status}`);
+  // websiteUri/phone make this a Text Search *Enterprise* call, the SKU
+  // places-rotate.js budgets to 900/month: count it on the same ledger.
+  const usage = readJson(USAGE, {});
+  const month = new Date().toISOString().slice(0, 7);
+  usage[month] = { ...usage[month], text_enterprise: (usage[month]?.text_enterprise || 0) + 1 };
+  fs.writeFileSync(USAGE, JSON.stringify(usage, null, 2) + "\n");
   return (data.places || []).find(inMetro) || null;
 }
 
