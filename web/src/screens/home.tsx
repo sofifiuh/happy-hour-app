@@ -196,7 +196,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
               {locationState === "granted" ? (
                 <>
                   <LocateFixed className="size-4 shrink-0" />
-                  <span className="max-w-[9.5rem] truncate">{hereCity ? `Near me · ${hereCity.name}` : "Near me"}</span>
+                  <span className="max-w-[11rem] truncate">{hereCity ? `Near me · ${hereCity.name}` : "Near me"}</span>
                 </>
               ) : locationState === "asking" ? (
                 <>
