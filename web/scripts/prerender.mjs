@@ -1,5 +1,7 @@
 // Turns the alittlehang.com build (dist-site) into a crawlable directory:
-//   spots/<id>.html          one page per venue at the old site's URLs: title,
+//   spots/<id>.html          one page per venue, served at /spots/<id> (GitHub Pages
+//                            maps the clean URL to the file; canonical, links and
+//                            sitemap all use the clean form; old .html links still load): title,
 //                            description, share image, JSON-LD graph (venue,
 //                            happy hour menu, breadcrumb) and the venue's
 //                            details pre-rendered inside #root
@@ -210,7 +212,7 @@ function menuItem(d) {
 
 function venueJsonLd(v, image) {
   const src = source.get(v.id) ?? {};
-  const url = `${BASE}/spots/${v.id}.html`;
+  const url = `${BASE}/spots/${v.id}`;
   const windows = [{ days: v.hh.days, start: v.hh.start, end: v.hh.end }, ...v.hh.extra].filter((w) => w.start && w.days?.length);
   const street = v.address.split(",")[0];
   const sections = [
@@ -385,7 +387,7 @@ ${(v.quotes || []).map((q) => `<blockquote cite="${esc(q.url)}" style="${S.p};ma
 <p style="${S.p}">${esc(v.address)}${v.phone ? ` · <a href="tel:${esc(v.phone)}" style="${S.plain}">${esc(v.phone)}</a>` : ""}${v.website ? ` · <a href="${esc(v.website)}" rel="noopener" style="${S.plain}">Website</a>` : ""}</p>
 ${
   near.length
-    ? `<h2 style="${S.h2}">Happy hours nearby</h2>\n${near.map((o) => `<div style="${S.row}"><a href="/spots/${o.id}.html" style="${S.plain}">${esc(o.name)}</a><span style="color:#a7a196">${fmtRange(o.hh.start, o.hh.end || "23:59")}</span></div>`).join("\n")}`
+    ? `<h2 style="${S.h2}">Happy hours nearby</h2>\n${near.map((o) => `<div style="${S.row}"><a href="/spots/${o.id}" style="${S.plain}">${esc(o.name)}</a><span style="color:#a7a196">${fmtRange(o.hh.start, o.hh.end || "23:59")}</span></div>`).join("\n")}`
     : ""
 }
 ${hubs.length || ranked ? `<nav aria-label="More happy hours" style="margin-top:24px">${ranked ? `<a href="${bestPath(ranked.list.slug)}" style="${S.chip}">#${ranked.rank} of the best in ${esc(ranked.list.name)}</a>` : ""}${hubs.map((p) => `<a href="${p}" style="${S.chip}">${esc(hubLabel(p.split("/").filter(Boolean).pop()))}</a>`).join("")}</nav>` : ""}
@@ -712,7 +714,7 @@ function card(v, topic) {
   const img = v.photo
     ? `<img src="${esc(/^https?:/.test(v.photo) ? v.photo : `/${v.photo}`)}" alt="" loading="lazy" width="84" height="84" />`
     : `<span class="ph" aria-hidden="true">${esc(v.name[0])}</span>`;
-  return `<li><a class="card" href="/spots/${v.id}.html">${img}<div><h3>${esc(v.name)}</h3><p class="when">${esc(d >= 0 ? `${SCHEMA_DAYS[d]} ${when}` : when)}</p>${
+  return `<li><a class="card" href="/spots/${v.id}">${img}<div><h3>${esc(v.name)}</h3><p class="when">${esc(d >= 0 ? `${SCHEMA_DAYS[d]} ${when}` : when)}</p>${
     deals.length ? `<p class="deals">${esc(deals.map(dealPhrase).join(" · "))}</p>` : ""
   }<p class="where">${esc(whereLabel(v))}</p></div></a></li>`;
 }
@@ -798,7 +800,7 @@ async function hubPage({ slug, h1, listTitle, where, title, description, list, t
         "@id": `${url}#list`,
         name: h1,
         numberOfItems: sorted.length,
-        itemListElement: sorted.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}.html`, name: v.name })),
+        itemListElement: sorted.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}`, name: v.name })),
       },
       breadcrumb(url, crumbs),
       faqPage(url, faq),
@@ -818,7 +820,7 @@ ${sorted.map((v) => card(v, topic)).join("\n")}
 ${
   best.length
     ? `<h2>Best happy hour deals ${esc(where.in)}</h2>
-<ul class="best">${best.map((b) => `<li><span>${esc(b.label)} · <a href="/spots/${b.v.id}.html">${esc(b.v.name)}</a></span><b>${esc(dealPhrase(b.d))}</b></li>`).join("")}</ul>`
+<ul class="best">${best.map((b) => `<li><span>${esc(b.label)} · <a href="/spots/${b.v.id}">${esc(b.v.name)}</a></span><b>${esc(dealPhrase(b.d))}</b></li>`).join("")}</ul>`
     : ""
 }
 ${related
@@ -1053,11 +1055,11 @@ function bestEntry(v, i, b) {
   const n = i + 1;
   const photo = v.photo ? `<img src="${esc(/^https?:/.test(v.photo) ? v.photo : `/${v.photo}`)}" alt="${esc(`${v.name}, ${whereLabel(v)}`)}" loading="${i < 2 ? "eager" : "lazy"}" width="720" height="360" />` : "";
   return `<article class="entry" id="rank-${n}">
-<header><span class="num${n <= 3 ? " top" : ""}" aria-hidden="true">${n}</span><div><h2><a href="/spots/${v.id}.html">${esc(v.name)}</a></h2><p class="where">${esc(whereLabel(v))} · ${esc(v.address.split(",")[0]).replace(/ (?=\S+$)/, "&nbsp;")}</p></div><span class="sc${s.total >= 7.5 ? " top" : ""}" aria-label="Hangout Score ${s.total.toFixed(1)} out of 10">${s.total.toFixed(1)}<small>/10</small></span></header>
+<header><span class="num${n <= 3 ? " top" : ""}" aria-hidden="true">${n}</span><div><h2><a href="/spots/${v.id}">${esc(v.name)}</a></h2><p class="where">${esc(whereLabel(v))} · ${esc(v.address.split(",")[0]).replace(/ (?=\S+$)/, "&nbsp;")}</p></div><span class="sc${s.total >= 7.5 ? " top" : ""}" aria-label="Hangout Score ${s.total.toFixed(1)} out of 10">${s.total.toFixed(1)}<small>/10</small></span></header>
 ${photo}
 <p>${esc(writeup(v, n, b))}</p>
 <p class="parts">${PART_LABELS.map(([l, k]) => `${l} ${s[k].toFixed(1)}`).join(" · ")}${v.confirmed ? ` · times confirmed on their menu ${esc(fmtDate(v.confirmed))}` : ""}</p>
-<a class="more" href="/spots/${v.id}.html">All ${v.hh.deals.length} deals and times at ${esc(v.name)}</a>
+<a class="more" href="/spots/${v.id}">All ${v.hh.deals.length} deals and times at ${esc(v.name)}</a>
 </article>`;
 }
 
@@ -1148,7 +1150,7 @@ async function bestPage(b) {
         name: h1,
         itemListOrder: "https://schema.org/ItemListOrderDescending",
         numberOfItems: list.length,
-        itemListElement: list.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}.html`, name: v.name })),
+        itemListElement: list.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}`, name: v.name })),
       },
       {
         "@type": "Article",
@@ -1296,7 +1298,7 @@ async function indexPage() {
     .map(
       (k) =>
         `<div><h3>${esc(k.label)}</h3><ol class="cheap">${cheapest3(k.key)
-          .map((r) => `<li><b>${fmtMoney(r.p)}</b> <a href="/spots/${r.v.id}.html">${esc(r.v.name)}</a> <span>${esc(placeWhere(r.v))} · ${esc(r.d.name)}</span></li>`)
+          .map((r) => `<li><b>${fmtMoney(r.p)}</b> <a href="/spots/${r.v.id}">${esc(r.v.name)}</a> <span>${esc(placeWhere(r.v))} · ${esc(r.d.name)}</span></li>`)
           .join("")}</ol></div>`,
     )
     .join("\n");
@@ -1471,8 +1473,8 @@ await researchPage();
 function badgePage(v, says) {
   const path = `/badge/${v.id}/`;
   // The alt stays true whatever the badge says next month (rank and score change nightly; the SVG's own title follows them).
-  const embed = (theme) => `<a href="${BASE}/spots/${v.id}.html"><img src="${BASE}/badge/${v.id}${theme === "light" ? "-light" : ""}.svg" alt="${esc(`${v.name} happy hour on ${SITE}`)}" height="${BADGE_H}" loading="lazy"></a>`;
-  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">${SITE}</a> › <a href="/spots/${v.id}.html">${esc(v.name)}</a> › <span>Badge</span></nav>
+  const embed = (theme) => `<a href="${BASE}/spots/${v.id}"><img src="${BASE}/badge/${v.id}${theme === "light" ? "-light" : ""}.svg" alt="${esc(`${v.name} happy hour on ${SITE}`)}" height="${BADGE_H}" loading="lazy"></a>`;
+  const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">${SITE}</a> › <a href="/spots/${v.id}">${esc(v.name)}</a> › <span>Badge</span></nav>
 <h1>Badge for ${esc(v.name)}</h1>
 <p class="lede">Add this badge to your website so guests can check your happy hour times and deals on ${SITE}. It's free, and it updates on its own: it shows your rank if you're on a best-of list, or your Hangout Score if it's ${TOP_SCORE} or higher.</p>
 <div class="badgeprev dark"><img src="/badge/${v.id}.svg" alt="${esc(says.alt)}" height="${BADGE_H}"></div>
@@ -1505,7 +1507,7 @@ for (const v of venues) {
   const image = `${BASE}/og/${v.id}.jpg`;
   const when = summary(v);
   const deals = topDeals(v, 2).map(dealPhrase);
-  const path = `/spots/${v.id}.html`;
+  const path = `/spots/${v.id}`;
   write(
     `spots/${v.id}.html`,
     page({
@@ -1545,12 +1547,12 @@ write(
       "@context": "https://schema.org",
       "@graph": [
         { "@type": "CollectionPage", "@id": azUrl, url: azUrl, name: "All happy hour spots A–Z", isPartOf: { "@id": WEBSITE_ID }, mainEntity: { "@id": `${azUrl}#list` }, breadcrumb: { "@id": `${azUrl}#breadcrumb` } },
-        { "@type": "ItemList", "@id": `${azUrl}#list`, numberOfItems: sorted.length, itemListElement: sorted.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}.html` })) },
+        { "@type": "ItemList", "@id": `${azUrl}#list`, numberOfItems: sorted.length, itemListElement: sorted.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}` })) },
         breadcrumb(azUrl, [{ name: "Happy hours", path: "/" }, { name: "All spots A–Z" }]),
       ],
     },
     body: `<main style="${S.wrap}">${crumbHtml([{ name: "Happy hours", path: "/" }, { name: "All spots A–Z" }])}<h1 style="${S.h1}">All happy hour spots A–Z</h1><ul style="list-style:none;padding:0">${sorted
-      .map((v) => `<li style="${S.row}"><a href="/spots/${v.id}.html" style="${S.plain}">${esc(v.name)}</a><span style="color:#a7a196">${esc(whereLabel(v))}</span></li>`)
+      .map((v) => `<li style="${S.row}"><a href="/spots/${v.id}" style="${S.plain}">${esc(v.name)}</a><span style="color:#a7a196">${esc(whereLabel(v))}</span></li>`)
       .join("")}</ul></main>`,
   }),
 );
@@ -1629,7 +1631,7 @@ const introHtml = homeIntro(hubIndex, venues.length)
   .join("");
 const homeRow = (v) => {
   const deals = topDeals(v, 2);
-  return `<li style="padding:12px 0;border-bottom:1px solid #3a3835"><a href="/spots/${v.id}.html" style="${S.plain};font-weight:600;font-size:16px;text-decoration:none">${esc(v.name)}</a> <span style="color:#a7a196;font-size:14px">· ${esc(whereLabel(v))}</span><br /><span style="color:#f3efe4;font-size:14px;font-weight:600">${esc(summary(v))}</span>${
+  return `<li style="padding:12px 0;border-bottom:1px solid #3a3835"><a href="/spots/${v.id}" style="${S.plain};font-weight:600;font-size:16px;text-decoration:none">${esc(v.name)}</a> <span style="color:#a7a196;font-size:14px">· ${esc(whereLabel(v))}</span><br /><span style="color:#f3efe4;font-size:14px;font-weight:600">${esc(summary(v))}</span>${
     deals.length ? `<br /><span style="color:#a7a196;font-size:14px">${esc(deals.map(dealPhrase).join(" · "))}</span>` : ""
   }</li>`;
 };
@@ -1649,7 +1651,7 @@ write(
       "@context": "https://schema.org",
       "@graph": [
         { "@type": "CollectionPage", "@id": homeUrl, url: homeUrl, name: "Happy hours near you", description: HOME_DESC, isPartOf: { "@id": WEBSITE_ID }, mainEntity: { "@id": `${homeUrl}#top` }, inLanguage: "en-CA" },
-        { "@type": "ItemList", "@id": `${homeUrl}#top`, name: "Top-rated happy hours", numberOfItems: homeTop.length, itemListElement: homeTop.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}.html` })) },
+        { "@type": "ItemList", "@id": `${homeUrl}#top`, name: "Top-rated happy hours", numberOfItems: homeTop.length, itemListElement: homeTop.map((v, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/spots/${v.id}` })) },
         ...SITE_GRAPH,
       ],
     },
@@ -1704,7 +1706,7 @@ const all = [...sitemapDates.keys()];
 const venuePaths = all.filter((p) => p.startsWith("/spots/") && p !== "/spots/");
 const hubPaths = all.filter((p) => p.startsWith("/happy-hour/"));
 const pagePaths = all.filter((p) => !venuePaths.includes(p) && !hubPaths.includes(p));
-const venueImages = new Map(venues.filter((v) => v.photo && !/^https?:/.test(v.photo)).map((v) => [`/spots/${v.id}.html`, absPhoto(v.photo)]));
+const venueImages = new Map(venues.filter((v) => v.photo && !/^https?:/.test(v.photo)).map((v) => [`/spots/${v.id}`, absPhoto(v.photo)]));
 write("sitemap-pages.xml", urlset(pagePaths));
 write("sitemap-venues.xml", urlset(venuePaths, venueImages));
 write("sitemap-hubs.xml", urlset(hubPaths));
@@ -1729,7 +1731,7 @@ write(
 
 > ${SITE} (alittlehang.com) is a directory of local happy hours in ${CITIES}, BC: ${venues.length} bars and restaurants with their happy hour days, times and deal prices. Times and prices come from each venue's own menu and are rechecked every night${today ? `; last updated ${today}` : ""}.
 
-Every venue page (${BASE}/spots/<id>.html) lists the happy hour schedule by day, every food and drink deal with its price in CAD, the address, the nearest SkyTrain station and the date the menu was last checked. Hub pages group venues by city, neighbourhood, day and deal. It was founded by Jason (founder of Setsail Marketing) and designed by product designer Sofia Alvarenga.${beer ? ` The cheapest happy hour beer right now is ${money(beer.p.low)} at ${beer.v.name}.` : ""}
+Every venue page (${BASE}/spots/<id>) lists the happy hour schedule by day, every food and drink deal with its price in CAD, the address, the nearest SkyTrain station and the date the menu was last checked. Hub pages group venues by city, neighbourhood, day and deal. It was founded by Jason (founder of Setsail Marketing) and designed by product designer Sofia Alvarenga.${beer ? ` The cheapest happy hour beer right now is ${money(beer.p.low)} at ${beer.v.name}.` : ""}
 
 ## Cities
 ${places.filter((p) => p.kind === "city").map((p) => linkLine(p, `Happy hours in ${p.name}`)).join("\n")}

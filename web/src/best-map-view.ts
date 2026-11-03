@@ -80,7 +80,7 @@ export async function mount(el: HTMLElement) {
       popup
         .setLngLat([p.lng, p.lat])
         .setHTML(
-          `<p class="pop-n">#${p.n} · ${esc(p.score)}/10</p><h3>${esc(p.name)}</h3><p class="pop-when">${esc(p.when)}</p><p class="pop-links"><a href="#rank-${p.n}">Why it ranks</a><a href="/spots/${encodeURIComponent(p.id)}.html">Deals &amp; times</a></p>`,
+          `<p class="pop-n">#${p.n} · ${esc(p.score)}/10</p><h3>${esc(p.name)}</h3><p class="pop-when">${esc(p.when)}</p><p class="pop-links"><a href="#rank-${p.n}">Why it ranks</a><a href="/spots/${encodeURIComponent(p.id)}">Deals &amp; times</a></p>`,
         )
         .addTo(map);
     });
