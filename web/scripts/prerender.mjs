@@ -1623,15 +1623,20 @@ const homeTop = (() => {
 })();
 const { hubs: hubIndex = {} } = JSON.parse(readFileSync(resolve(web, "public/venues.json"), "utf8"));
 const introHtml = homeIntro(hubIndex, venues.length)
-  .map((para) => `<p style="${S.p};margin-top:12px">${para.map((b) => (typeof b === "string" ? esc(b) : `<a href="${b.href}" style="${S.plain}">${esc(b.text)}</a>`)).join("")}</p>`)
+  .map((para) => `<p style="${S.p};margin-top:12px">${para.map((b) => (typeof b === "string" ? esc(b) : `<a href="${b.href}" style="${S.plain};text-decoration:underline;text-underline-offset:4px">${esc(b.text)}</a>`)).join("")}</p>`)
   .join("");
 const homeRow = (v) => {
   const deals = topDeals(v, 2);
-  return `<li style="padding:12px 0;border-bottom:1px solid #3a3835"><a href="/spots/${v.id}.html" style="${S.plain};font-weight:600;font-size:16px;text-decoration:none">${esc(v.name)}</a> <span style="color:#a7a196;font-size:14px">· ${esc(whereLabel(v))}</span><br /><span style="color:#ecfe54;font-size:14px">${esc(summary(v))}</span>${
+  return `<li style="padding:12px 0;border-bottom:1px solid #3a3835"><a href="/spots/${v.id}.html" style="${S.plain};font-weight:600;font-size:16px;text-decoration:none">${esc(v.name)}</a> <span style="color:#a7a196;font-size:14px">· ${esc(whereLabel(v))}</span><br /><span style="color:#f3efe4;font-size:14px;font-weight:600">${esc(summary(v))}</span>${
     deals.length ? `<br /><span style="color:#a7a196;font-size:14px">${esc(deals.map(dealPhrase).join(" · "))}</span>` : ""
   }</li>`;
 };
 const homeUrl = `${BASE}/`;
+// The home page loads the app's CSS, whose palette follows the light/dark
+// pick the inline theme script makes before first paint. Point the static
+// markup's dark-only colours at those variables (dark values as fallbacks).
+const HOME_VARS = { "#f3efe4": "--cream", "#a7a196": "--cream-dim", "#242322": "--ink-2", "#3a3835": "--line", "#ff4900": "--orange-fg" };
+const homeThemed = (html) => html.replace(/#(f3efe4|a7a196|242322|3a3835|ff4900)\b/g, (m) => `var(${HOME_VARS[m]},${m})`);
 write(
   "index.html",
   page({
@@ -1646,7 +1651,7 @@ write(
         ...SITE_GRAPH,
       ],
     },
-    body: `<main style="${S.wrap}"><h1 style="${S.h1}">Happy hours in Vancouver</h1>${introHtml}<h2 style="${S.h2}">Top-rated happy hours in Metro Vancouver</h2><ol style="list-style:none;padding:0;margin:0">${homeTop.map(homeRow).join("")}</ol>${exploreHtml}<p style="${S.muted};margin-top:24px"><a href="/spots/" style="${S.link}">All ${venues.length} spots A–Z</a></p></main>`,
+    body: homeThemed(`<main style="${S.wrap}"><h1 style="${S.h1}">Happy hours in Vancouver</h1>${introHtml}<h2 style="${S.h2}">Top-rated happy hours in Metro Vancouver</h2><ol style="list-style:none;padding:0;margin:0">${homeTop.map(homeRow).join("")}</ol>${exploreHtml}<p style="${S.muted};margin-top:24px"><a href="/spots/" style="${S.link}">All ${venues.length} spots A–Z</a></p></main>`),
   }),
 );
 sitemapDates.set("/", newest(venues));
@@ -1746,10 +1751,10 @@ ${topics.map((t) => linkLine(t, t.label)).join("\n")}
 - [Sitemap](${BASE}/sitemap.xml)
 `,
 );
-// "/venue/" and "/venue" only: a bare "Disallow: /venue" also matches
+// "/venue/", "/venue" and "/venue?" only: a bare "Disallow: /venue" also matches
 // /venues.json, which every app page loads, so Google rendered them all as
 // "Couldn't load happy hours".
-write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /screens\nDisallow: /venue/\nDisallow: /venue$\n\nSitemap: ${BASE}/sitemap.xml\n`);
+write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /screens\nDisallow: /venue/\nDisallow: /venue$\nDisallow: /venue?\n\nSitemap: ${BASE}/sitemap.xml\n`);
 const cname = resolve(web, "../CNAME");
 if (existsSync(cname)) copyFileSync(cname, resolve(dist, "CNAME"));
 writeFileSync(resolve(dist, ".nojekyll"), "");
