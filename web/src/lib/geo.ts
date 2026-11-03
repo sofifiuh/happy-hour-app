@@ -43,11 +43,34 @@ export const AREAS: Area[] = [
   { name: "Richmond", lat: 49.1666, lng: -123.1336 },
   { name: "Port Moody", lat: 49.2838, lng: -122.8317 },
   { name: "Surrey", lat: 49.1913, lng: -122.849 },
+  // Calgary: offered once it has spots (location-drawer.tsx).
+  { name: "Downtown Calgary", lat: 51.0465, lng: -114.0645 },
+  { name: "17th Ave SW", lat: 51.0379, lng: -114.0802 },
 ];
 
-export function nearestArea(p: LatLng): Area {
-  let best = AREAS[0];
-  let bestKm = Infinity;
+// Picker areas with at least one spot within `km`, so a city we have only
+// just started covering doesn't offer a neighbourhood full of far-off spots.
+export function areasWithSpots(venues: { lat: number | null; lng: number | null }[], km = 5) {
+  return AREAS.filter((a) => venues.some((v) => v.lat != null && v.lng != null && distanceKm(a, { lat: v.lat, lng: v.lng }) <= km));
+}
+
+// The city a point is in, for the home heading: the nearest spot's city,
+// when one is within `km`. Null outside the cities we cover.
+export function cityNear<V extends { lat: number | null; lng: number | null; city: string | null }>(p: LatLng, venues: V[], km = 25): string | null {
+  let city: string | null = null;
+  let bestKm = km;
+  for (const v of venues) {
+    if (v.lat == null || v.lng == null || !v.city) continue;
+    const d = distanceKm(p, { lat: v.lat, lng: v.lng });
+    if (d < bestKm) [city, bestKm] = [v.city, d];
+  }
+  return city;
+}
+
+// Within 15 km, else null (a Calgary spot is not "near Surrey").
+export function nearestArea(p: LatLng): Area | null {
+  let best: Area | null = null;
+  let bestKm = 15;
   for (const a of AREAS) {
     const km = distanceKm(p, a);
     if (km < bestKm) [best, bestKm] = [a, km];

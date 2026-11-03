@@ -90,7 +90,7 @@ export function Deals({ deals, onChange }: { deals: Deal[]; onChange: (d: Deal[]
           <Plus /> Add a deal
         </Button>
       )}
-      <p className="px-1 text-[12px] text-muted-foreground">Drink prices must follow BC's minimum drink price rules.</p>
+      <p className="px-1 text-[12px] text-muted-foreground">Drink prices must follow provincial liquor rules, including minimum drink prices.</p>
     </div>
   );
 }

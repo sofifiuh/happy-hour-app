@@ -26,7 +26,7 @@ import opentype from "opentype.js";
 import sharp from "sharp";
 import { fmtRange, fmtTime } from "../src/lib/hours.ts";
 import { citiesPhrase, REGION, dayRuns, dealPhrase, homeIntro, fmtDate, googleReviewsLink, money, nearby, parsePrice, quoteCredit, redditLink, runLabel, scheduleSummary, sourceLabel, topDeals, venueAbout, venueDescription, venueFaq, venueTitle } from "../src/lib/seo.ts";
-import { AREAS, BEST_FLOOR, BEST_FRESH_DAYS, bestPath, buildHubs, hubPath } from "./seo-data.mjs";
+import { AREAS, BEST_FLOOR, BEST_FRESH_DAYS, bestPath, buildHubs, hubPath, isAlberta, lowerMainland } from "./seo-data.mjs";
 import { cheapestDrink, hoursFacts, isNonAlc, WEIGHTS } from "./hang-score.mjs";
 import { buildIndex, KINDS, MIN_SAMPLE } from "./price-index.mjs";
 import { BADGE_H, badgeSvg, badgeText, TOP_SCORE } from "./badges.mjs";
@@ -265,8 +265,8 @@ function venueJsonLd(v, image) {
         address: {
           "@type": "PostalAddress",
           streetAddress: street,
-          addressLocality: v.city || "Vancouver",
-          addressRegion: "BC",
+          addressLocality: v.city || (isAlberta(v) ? "Calgary" : "Vancouver"),
+          addressRegion: isAlberta(v) ? "AB" : "BC",
           ...(src.address_components?.postal_code ? { postalCode: src.address_components.postal_code } : {}),
           addressCountry: "CA",
         },
@@ -297,8 +297,8 @@ function venueJsonLd(v, image) {
 }
 
 const SITE_GRAPH = [
-  { "@type": "WebSite", "@id": WEBSITE_ID, url: `${BASE}/`, name: SITE, alternateName: ["alittlehang.com", "A Little Hang Happy Hours"], description: `Directory of happy hour times and deals at ${venues.length} bars and restaurants in ${CITIES}, BC.`, inLanguage: "en-CA", publisher: { "@id": ORG_ID } },
-  { "@type": "Organization", "@id": ORG_ID, name: SITE, url: `${BASE}/`, logo: `${BASE}/icon-512.png`, description: `A Little Hang lists local happy hours in ${CITIES}: times, prices and deals taken from each venue's own menu and rechecked nightly.`, email: "jason@setsail.ca", founder: [{ "@id": FOUNDER_ID }, { "@id": DESIGNER_ID }], areaServed: Object.values(hubIndex).filter((h) => h.kind === "city").map((h) => ({ "@type": "City", name: h.label, containedInPlace: { "@type": "AdministrativeArea", name: "British Columbia" } })) },
+  { "@type": "WebSite", "@id": WEBSITE_ID, url: `${BASE}/`, name: SITE, alternateName: ["alittlehang.com", "A Little Hang Happy Hours"], description: `Directory of happy hour times and deals at ${venues.length} bars and restaurants in ${CITIES}.`, inLanguage: "en-CA", publisher: { "@id": ORG_ID } },
+  { "@type": "Organization", "@id": ORG_ID, name: SITE, url: `${BASE}/`, logo: `${BASE}/icon-512.png`, description: `A Little Hang lists local happy hours in ${CITIES}: times, prices and deals taken from each venue's own menu and rechecked nightly.`, email: "jason@setsail.ca", founder: [{ "@id": FOUNDER_ID }, { "@id": DESIGNER_ID }], areaServed: Object.values(hubIndex).filter((h) => h.kind === "city").map((h) => ({ "@type": "City", name: h.label, containedInPlace: { "@type": "AdministrativeArea", name: venues.some((v) => v.city === h.label && isAlberta(v)) ? "Alberta" : "British Columbia" } })) },
   { "@type": "Person", "@id": FOUNDER_ID, name: "Jason Atakhanov", givenName: "Jason", familyName: "Atakhanov", jobTitle: "Founder", url: `${BASE}/about/#jason`, worksFor: [{ "@id": ORG_ID }, { "@type": "Organization", name: "Setsail Marketing", url: "https://setsail.ca/" }], spouse: { "@id": DESIGNER_ID } },
   { "@type": "Person", "@id": DESIGNER_ID, name: "Sofia Alvarenga", givenName: "Sofia", familyName: "Alvarenga", jobTitle: "Product designer", url: `${BASE}/about/#sofia`, worksFor: { "@id": ORG_ID }, spouse: { "@id": FOUNDER_ID } },
 ];
@@ -1221,7 +1221,8 @@ for (const b of bestLists) {
 const INDEX_PATH = "/happy-hour-index/";
 // When the index first went up, for the Dataset's datePublished.
 const INDEX_PUBLISHED = "2026-10-24";
-const ix = buildIndex(venues, places);
+// The index is the Vancouver Happy Hour Index: Lower Mainland prices only.
+const ix = buildIndex(lowerMainland(venues), places.filter((p) => p.venues.some((v) => !isAlberta(v))));
 const kindByKey = Object.fromEntries(KINDS.map((k) => [k.key, k]));
 const fmtMoney = (n) => money(Math.round(n * 100) / 100);
 const medianOf = (st, key) => (st[key].n >= MIN_SAMPLE ? fmtMoney(st[key].median) : null);
@@ -1729,7 +1730,7 @@ write(
   "llms.txt",
   `# ${SITE}
 
-> ${SITE} (alittlehang.com) is a directory of local happy hours in ${CITIES}, BC: ${venues.length} bars and restaurants with their happy hour days, times and deal prices. Times and prices come from each venue's own menu and are rechecked every night${today ? `; last updated ${today}` : ""}.
+> ${SITE} (alittlehang.com) is a directory of local happy hours in ${CITIES}: ${venues.length} bars and restaurants with their happy hour days, times and deal prices. Times and prices come from each venue's own menu and are rechecked every night${today ? `; last updated ${today}` : ""}.
 
 Every venue page (${BASE}/spots/<id>) lists the happy hour schedule by day, every food and drink deal with its price in CAD, the address, the nearest SkyTrain station and the date the menu was last checked. Hub pages group venues by city, neighbourhood, day and deal. It was founded by Jason Atakhanov (founder of Setsail Marketing) and designed by product designer Sofia Alvarenga.${beer ? ` The cheapest happy hour beer right now is ${money(beer.p.low)} at ${beer.v.name}.` : ""}
 

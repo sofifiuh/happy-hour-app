@@ -62,6 +62,12 @@ const NEW_AREAS = [
   "Downtown Chilliwack BC", "Sardis Chilliwack BC", "Harrison Hot Springs BC",
   // Sea-to-Sky.
   "Squamish BC", "Whistler BC", "Whistler Village BC",
+  // Calgary (2026-11). Shares the same free budget as everything above.
+  "Downtown Calgary AB", "Beltline Calgary AB", "17th Avenue SW Calgary AB",
+  "Kensington Calgary AB", "Mission 4th Street Calgary AB", "Inglewood Calgary AB",
+  "East Village Calgary AB", "Bridgeland Calgary AB", "Marda Loop Calgary AB",
+  "Calgary AB", "Northwest Calgary AB", "South Calgary AB", "Northeast Calgary AB",
+  "Airdrie AB", "Cochrane AB", "Okotoks AB",
 ];
 // Swept before (places-discover.js); revisited after the new areas.
 const METRO_AREAS = [
@@ -89,6 +95,7 @@ const QUERIES = [
 ];
 // Nearby Search circles over the new areas' main strips (lat, lng, radius m).
 // Metro Vancouver's grid lives in places-discover.js and was swept already.
+// Calgary's core strips are at the end.
 const NEW_CIRCLES = [
   [49.2193, -122.6018, 600], // Maple Ridge downtown
   [49.2210, -122.6890, 500], // Pitt Meadows
@@ -108,6 +115,12 @@ const NEW_CIRCLES = [
   [50.1163, -122.9574, 500], // Whistler Village
   [50.1170, -122.9480, 400], // Whistler Upper Village
   [50.0950, -122.9900, 500], // Whistler Creekside
+  [51.0450, -114.0650, 600], // Calgary downtown / Stephen Ave
+  [51.0380, -114.0750, 600], // Calgary 17th Ave SW / Beltline
+  [51.0530, -114.0880, 500], // Kensington
+  [51.0330, -114.0710, 500], // Mission / 4th St SW
+  [51.0380, -114.0230, 500], // Inglewood
+  [51.0450, -114.0450, 500], // East Village
 ];
 const TYPE_GROUPS = [["bar", "pub", "wine_bar", "night_club", "brewery", "winery"], ["restaurant"]];
 

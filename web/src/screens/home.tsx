@@ -35,7 +35,7 @@ const PAGE = 40;
 
 // `panel` is the venue open beside the list on desktop (App.tsx, Browse).
 export function Home({ panel = null }: { panel?: string | null }) {
-  const { rows, now, loading, loadFailed, filters, resetFilters, setFilters, locationState, requestLocation, origin, area, saved } = useStore();
+  const { rows, now, loading, loadFailed, filters, resetFilters, setFilters, locationState, requestLocation, origin, area, saved, hereCity } = useStore();
   // Nobody has shared a location or picked a neighbourhood yet.
   const firstAsk = locationState === "idle" && !area;
   // A new time tab (All, Happening now, Upcoming, Date & Time) starts its list
@@ -57,7 +57,9 @@ export function Home({ panel = null }: { panel?: string | null }) {
   const wide = useIsWide();
   const wider = useIsWider();
   const navigate = useNavigate();
-  useTitle(null, false, !panel);
+  // Once we know the visitor's city, the tab says so: "Happy Hours in Calgary Right Now".
+  useTitle(hereCity ? `Happy Hours in ${hereCity.name} Right Now` : null, false, !panel);
+  const heading = hereCity ? `Happy hours in ${hereCity.name}` : "Happy hours near you";
   const [hovered, setHovered] = useState<string | null>(null);
 
   // The venue panel stays on screen for its slide out after closing.
@@ -166,7 +168,7 @@ export function Home({ panel = null }: { panel?: string | null }) {
       </a>
       <header className="sticky top-0 z-20 bg-ink/90 pt-safe backdrop-blur-xl">
         {/* The open venue's name is the page heading while the panel shows it. */}
-        {panel ? <h2 className="sr-only">Happy hours near you</h2> : <h1 className="sr-only">Happy hours near you</h1>}
+        {panel ? <h2 className="sr-only">{heading}</h2> : <h1 className="sr-only">{heading}</h1>}
         <div className="flex items-center justify-between px-4 pt-3 pb-2">
           <Link
             to="/"
@@ -193,7 +195,8 @@ export function Home({ panel = null }: { panel?: string | null }) {
             >
               {locationState === "granted" ? (
                 <>
-                  <LocateFixed className="size-4" /> Near me
+                  <LocateFixed className="size-4 shrink-0" />
+                  <span className="max-w-[9.5rem] truncate">{hereCity ? `Near me · ${hereCity.name}` : "Near me"}</span>
                 </>
               ) : locationState === "asking" ? (
                 <>

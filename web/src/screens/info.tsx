@@ -233,13 +233,13 @@ function Terms() {
         guarantee them. Please check with the venue before you go.
       </p>
       <H>Drink responsibly</H>
-      <p>You must be of legal drinking age in British Columbia (19+) to buy alcohol. Please don't drink and drive.</p>
+      <p>You must be of legal drinking age where you are (19+ in BC, 18+ in Alberta) to buy alcohol. Please don't drink and drive.</p>
       <H>Venue names and photos</H>
       <p>Venue names, logos and photos belong to their owners and are shown to help you find them. Photo credits appear where known.</p>
       <H>For venues</H>
       <p>
         Claiming a listing is free. Only claim a venue you own or are authorised to manage. Keep your times, deals and prices accurate and
-        within BC's liquor rules, including minimum drink prices, and only upload photos you have the right to use. We may check, edit or
+        within provincial liquor rules, including minimum drink prices, and only upload photos you have the right to use. We may check, edit or
         remove anything that's wrong or misleading, and remove access from anyone who misuses it. Your edits show on your page with an
         "Updated by the venue" label; the "Verified" badge is never for sale.
       </p>

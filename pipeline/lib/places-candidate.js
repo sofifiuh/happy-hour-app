@@ -1,6 +1,7 @@
 // A Places API (New) place -> the candidate stub crawl/extract/writeback
 // consume. Same shape places-discover.js writes; used by places-rotate.js.
 import { normName } from "./venues.js";
+import { splitAddress } from "./region.js";
 
 const EXCLUDE_TYPES = new Set(["fast_food_restaurant", "cafe", "coffee_shop", "bakery", "meal_takeaway", "meal_delivery", "ice_cream_shop", "sandwich_shop"]);
 // Breweries and wineries count as bars: "brewery taproom" is a query, and a
@@ -18,26 +19,16 @@ export function isWantedType(p) {
   return !EXCLUDE_TYPES.has(p.primaryType || "") && types.includes("restaurant");
 }
 
-// Anchor on the province rather than a fixed comma slot: Google writes food
-// courts, building names and unit numbers as their own parts.
-export function splitAddress(formatted) {
-  const parts = (formatted || "").split(",").map((x) => x.trim()).filter(Boolean);
-  if (parts.length && /^canada$/i.test(parts[parts.length - 1])) parts.pop();
-  const provIdx = parts.findIndex((x) => /^(BC|British Columbia)\b/i.test(x));
-  const cityIdx = provIdx > 0 ? provIdx - 1 : parts.length - 1;
-  const picked = parts[cityIdx] || "";
-  const city = !picked || /^(BC|British Columbia)\b/i.test(picked) ? "Vancouver" : picked;
-  return { city, street: parts.slice(0, cityIdx).join(", ") };
-}
+export { splitAddress };
 
 export function toCandidate(p) {
   const name = p.displayName?.text || "";
-  const { city, street } = splitAddress(p.formattedAddress);
+  const { city, prov, street } = splitAddress(p.formattedAddress);
   return {
     id: normName(name).replace(/ /g, "-"),
     name,
     website: p.websiteUri,
-    formatted_address: `${street ? street + ", " : ""}${city}, BC`,
+    formatted_address: `${street ? street + ", " : ""}${city}, ${prov}`,
     address_components: null,
     geometry: { location: { lat: p.location.latitude, lng: p.location.longitude } },
     formatted_phone_number: p.nationalPhoneNumber || null,

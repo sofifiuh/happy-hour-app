@@ -1,5 +1,5 @@
-// Daily growth run: find new happy-hour venues across Metro Vancouver and
-// publish only the ones that arrive fully armed.
+// Daily growth run: find new happy-hour venues across the Lower Mainland and Calgary,
+// and publish only the ones that arrive fully armed.
 //
 //   discover -> crawl -> extract -> gate -> enrich -> build
 //
