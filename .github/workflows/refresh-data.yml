@@ -27,7 +27,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     env:
       # Accept the common names for each key, so a differently named secret
       # still works.
@@ -67,8 +67,8 @@ jobs:
         run: >-
           node pipeline/refresh.js --max-extract "${{ inputs.max_extract || '40' }}"
           ${{ env.DRY_RUN == 'true' && '--no-extract' || '--discover' }}
-          --discover-target "${{ vars.DISCOVER_TARGET || '20' }}"
-          --discover-budget "${{ vars.DISCOVER_BUDGET || '5' }}"
+          --discover-target "${{ vars.DISCOVER_TARGET || '60' }}"
+          --discover-budget "${{ vars.DISCOVER_BUDGET || '15' }}"
 
       - name: Commit data
         id: commit
