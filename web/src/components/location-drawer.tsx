@@ -1,14 +1,15 @@
 import { LocateFixed, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
-import { AREAS } from "@/lib/geo";
+import { areasWithSpots } from "@/lib/geo";
 import { useStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 // Explains "near me" before the browser's own prompt, and offers a
 // neighbourhood instead, so the list still sorts by distance without it.
 export function LocationDrawer({ open, onOpenChange }: { open: boolean; onOpenChange: (o: boolean) => void }) {
-  const { locationState, requestLocation, area, setArea } = useStore();
+  const { locationState, requestLocation, area, setArea, venues } = useStore();
+  const areas = areasWithSpots(venues);
   const denied = locationState === "denied";
 
   return (
@@ -43,7 +44,7 @@ export function LocationDrawer({ open, onOpenChange }: { open: boolean; onOpenCh
             {denied ? "Neighbourhoods" : "Or pick a neighbourhood"}
           </p>
           <div className="flex flex-wrap gap-2">
-            {AREAS.map((a) => {
+            {areas.map((a) => {
               const on = area?.name === a.name;
               return (
                 <button

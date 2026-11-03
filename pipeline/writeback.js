@@ -331,7 +331,7 @@ for (const [id, s] of subs) {
       name: s.name,
       place_id: s.place.place_id,
       formatted_address: s.place.formatted_address,
-      address_components: { locality: s.place.city, administrative_area_level_1: "BC", country: "CA" },
+      address_components: { locality: s.place.city, administrative_area_level_1: s.place.prov || (/, AB\b/.test(s.place.formatted_address || "") ? "AB" : "BC"), country: "CA" },
       geometry: { location: { lat: s.place.lat, lng: s.place.lng } },
       formatted_phone_number: s.place.phone,
       website: s.place.website,

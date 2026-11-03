@@ -14,7 +14,7 @@ import path from "node:path";
 import { loadSeed, readJson, normName, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
 import { curlJson, mapConcurrent } from "./lib/curl.js";
 import { parseArgs } from "./lib/venues.js";
-import { inRegion } from "./lib/region.js";
+import { inRegion, splitAddress } from "./lib/region.js";
 
 const args = parseArgs(process.argv.slice(2));
 const MAX = Number(args.max) || 260;
@@ -526,19 +526,12 @@ for (const p of byId.values()) {
   // numbers as their own comma parts ("food court, 4567 Lougheed Hwy 2nd
   // floor, Burnaby, BC V5C 3Z6, Canada"), so parts[1] is the city only for
   // the simplest addresses and is the street for everything else.
-  const parts = (p.formattedAddress || "").split(",").map((x) => x.trim()).filter(Boolean);
-  if (parts.length && /^canada$/i.test(parts[parts.length - 1])) parts.pop();
-  const provIdx = parts.findIndex((x) => /^(BC|British Columbia)\b/i.test(x));
-  const cityIdx = provIdx > 0 ? provIdx - 1 : parts.length - 1;
-  const picked = parts[cityIdx] || "";
-  // A province-only address ("British Columbia, Canada") has no city slot.
-  const city = !picked || /^(BC|British Columbia)\b/i.test(picked) ? "Vancouver" : picked;
-  const street = parts.slice(0, cityIdx).join(", ");
+  const { city, prov, street } = splitAddress(p.formattedAddress);
   candidates.push({
     id: normName(name).replace(/ /g, "-"),
     name,
     website: p.websiteUri,
-    formatted_address: `${street ? street + ", " : ""}${city}, BC`,
+    formatted_address: `${street ? street + ", " : ""}${city}, ${prov}`,
     address_components: null,
     geometry: { location: { lat: p.location.latitude, lng: p.location.longitude } },
     formatted_phone_number: p.nationalPhoneNumber || null,

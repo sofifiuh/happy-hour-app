@@ -2,6 +2,7 @@
 // venues.json, plus an A–Z index, sitemap.xml, and robots.txt — the dataset
 // becomes indexable instead of living behind a client-rendered ?id= page.
 // Usage: node pipeline/build-pages.js   (run after writeback)
+import { PROV_RE, provCode } from "./lib/region.js";
 import fs from "node:fs";
 import path from "node:path";
 import { readJson, REPO_ROOT } from "./lib/venues.js";
@@ -74,16 +75,16 @@ footer{font-size:.75rem;color:#999;margin-top:30px;border-top:1px solid #eee6d8;
 function addressParts(v) {
   const parts = (v.formatted_address || "").split(",").map((x) => x.trim()).filter(Boolean);
   if (parts.length && /^canada$/i.test(parts[parts.length - 1])) parts.pop();
-  const provIdx = parts.findIndex((x) => /^(BC|British Columbia)\b/i.test(x));
+  const provIdx = parts.findIndex((x) => PROV_RE.test(x));
   const cityIdx = provIdx > 0 ? provIdx - 1 : parts.length - 1;
-  return { parts, cityIdx };
+  return { parts, cityIdx, prov: provIdx >= 0 ? provCode(parts[provIdx]) : "BC" };
 }
 
 function cityOf(v) {
   if (v.address_components?.locality) return v.address_components.locality;
   const { parts, cityIdx } = addressParts(v);
   const picked = parts[cityIdx] || "";
-  return !picked || /^(BC|British Columbia)\b/i.test(picked) ? "Vancouver" : picked;
+  return !picked || PROV_RE.test(picked) ? "Vancouver" : picked;
 }
 
 function streetOf(v) {
@@ -102,7 +103,7 @@ function venuePage(v) {
     "@context": "https://schema.org",
     "@type": "BarOrPub",
     name: v.name,
-    address: { "@type": "PostalAddress", streetAddress: streetOf(v), addressLocality: city, addressRegion: "BC", addressCountry: "CA" },
+    address: { "@type": "PostalAddress", streetAddress: streetOf(v), addressLocality: city, addressRegion: v.address_components?.administrative_area_level_1 || addressParts(v).prov, addressCountry: "CA" },
     ...(v.geometry?.location ? { geo: { "@type": "GeoCoordinates", latitude: v.geometry.location.lat, longitude: v.geometry.location.lng } } : {}),
     ...(v.website ? { url: v.website } : {}),
     ...(v.formatted_phone_number ? { telephone: v.formatted_phone_number } : {}),

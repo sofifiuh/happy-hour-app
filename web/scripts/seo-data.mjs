@@ -36,6 +36,14 @@ export function cityOf(v) {
   return city;
 }
 
+// ---------- metro ----------
+// Which region a venue belongs to (pipeline/lib/region.js has the boxes).
+// Region-wide pages (topic hubs, the overall best list, the price index)
+// cover the Lower Mainland; Calgary gets its own city hub and city pages.
+export const isAlberta = (v) => /,\s*(AB|Alberta)\b/.test(v.address || v.formatted_address || "") || (v.lng != null && v.lng > -118);
+export const metroOf = (v) => (isAlberta(v) ? "calgary" : "lower-mainland");
+export const lowerMainland = (venues) => venues.filter((v) => !isAlberta(v));
+
 // ---------- neighbourhood (City of Vancouver only) ----------
 // Downtown is a rotated grid. u grows south-east along Davie (Burrard ≈ -470,
 // Granville ≈ -120, Homer ≈ 180, Cambie ≈ 400, Main ≈ 1100); v grows
@@ -151,7 +159,9 @@ export function buildHubs(venues) {
     if (v.area) add(v.area, { kind: "area", name: AREAS[v.area], city: "Vancouver" }, v);
   }
   const places = [...groups.values()].filter((h) => h.venues.length >= MIN_PLACE).sort((a, b) => b.venues.length - a.venues.length);
-  const topics = TOPICS.map((t) => ({ ...t, venues: venues.filter(t.test) })).filter((t) => t.venues.length >= MIN_COMBO);
+  // Topic hubs are titled "... in the Lower Mainland", so only its venues.
+  const lm = lowerMainland(venues);
+  const topics = TOPICS.map((t) => ({ ...t, venues: lm.filter(t.test) })).filter((t) => t.venues.length >= MIN_COMBO);
   const combos = [];
   for (const p of places) {
     for (const t of topics) {
@@ -200,7 +210,7 @@ export function buildBest(venues, places) {
     const top = scored.filter((v) => v.score.total >= BEST_FLOOR && hasAlcohol(v) && v.confirmed >= since).sort(byScore).slice(0, BEST_SIZE);
     if (scored.length >= MIN_BEST && top.length >= BEST_MIN_LISTED) lists.push({ slug, name, kind, scored: scored.length, index: scored.length >= MIN_BEST_INDEX, venues: top });
   };
-  add("metro", "the Lower Mainland", "metro", venues);
+  add("metro", "the Lower Mainland", "metro", lowerMainland(venues));
   for (const p of places) add(p.slug, p.name, p.kind, p.venues);
   return lists;
 }

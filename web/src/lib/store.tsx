@@ -1,7 +1,7 @@
 import { api, apiEnabled, type CommunityEdit, type PublicEdit } from "@/lib/api";
 import { asset, queryParams } from "@/lib/routes";
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
-import { AREAS, distanceKm, nearestArea, type Area, type LatLng } from "./geo";
+import { AREAS, cityNear, distanceKm, nearestArea, type Area, type LatLng } from "./geo";
 import { occurrence, occurrenceAt } from "./hours";
 import type { BestList, Hub, Occurrence, Venue } from "./types";
 
@@ -47,6 +47,9 @@ interface Store {
   location: LatLng; // device location, else the neighbourhood (Downtown by default)
   deviceLocation: LatLng | null;
   origin: Area; // the picked neighbourhood, or Downtown
+  // The visitor's city once they share location (nearest spot's city), with
+  // its hub slug when it has one. Null without location or outside coverage.
+  hereCity: { name: string; slug: string | null } | null;
   locationState: "idle" | "asking" | "granted" | "denied";
   requestLocation: () => void;
   area: Area | null; // neighbourhood picked instead of sharing location
@@ -89,7 +92,7 @@ const searchCache = new WeakMap<Venue, string>();
 function searchText(v: Venue) {
   let t = searchCache.get(v);
   if (!t) {
-    const hood = v.lat != null && v.lng != null ? nearestArea({ lat: v.lat, lng: v.lng }).name : "";
+    const hood = v.lat != null && v.lng != null ? (nearestArea({ lat: v.lat, lng: v.lng })?.name ?? "") : "";
     t = [v.name, v.address, v.city, hood].join(" ").toLowerCase();
     searchCache.set(v, t);
   }
@@ -357,6 +360,13 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     return out;
   }, [venues, filters, now, location]);
 
+  const hereCity = useMemo(() => {
+    const name = deviceLocation ? cityNear(deviceLocation, venues) : null;
+    if (!name) return null;
+    const slug = Object.entries(hubs).find(([, h]) => h.kind === "city" && h.label === name)?.[0] ?? null;
+    return { name, slug };
+  }, [deviceLocation, venues, hubs]);
+
   const index = useMemo(() => new Map(venues.map((v) => [v.id, v])), [venues]);
   const byId = useCallback((id: string) => index.get(id), [index]);
 
@@ -369,6 +379,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     location,
     deviceLocation,
     origin,
+    hereCity,
     locationState,
     requestLocation,
     area,

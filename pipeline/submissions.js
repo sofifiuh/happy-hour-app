@@ -16,7 +16,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { parseArgs, readJson, REPO_ROOT } from "./lib/venues.js";
 import { VENUES_FILE } from "./lib/trust.js";
-import { inRegion } from "./lib/region.js";
+import { inRegion, splitAddress } from "./lib/region.js";
 import { curlJson } from "./lib/curl.js";
 
 const args = parseArgs(process.argv.slice(2));
@@ -26,20 +26,14 @@ const API = (process.env.API_URL || "").replace(/\/+$/, "");
 const FEED = process.env.SUBMISSIONS_URL || (API ? `${API}/public/submissions` : null);
 const KEY = process.env.GOOGLE_PLACES_API_KEY || readJson(path.join(REPO_ROOT, "pipeline", "secrets.json"), {}).GOOGLE_PLACES_API_KEY;
 
-// Same box as discovery (lib/region.js): the Lower Mainland, not across the border.
+// Same box as discovery (lib/region.js): the Lower Mainland and Calgary, not across the border.
 const inMetro = inRegion;
 
 // "2245 Commercial Dr, Vancouver, BC V5N 4B6, Canada" -> street + city, the
 // way places-discover.js writes formatted_address.
 function addressParts(formatted) {
-  const parts = (formatted || "").split(",").map((x) => x.trim()).filter(Boolean);
-  if (parts.length && /^canada$/i.test(parts[parts.length - 1])) parts.pop();
-  const provIdx = parts.findIndex((x) => /^(BC|British Columbia)\b/i.test(x));
-  const cityIdx = provIdx > 0 ? provIdx - 1 : parts.length - 1;
-  const picked = parts[cityIdx] || "";
-  const city = !picked || /^(BC|British Columbia)\b/i.test(picked) ? "Vancouver" : picked;
-  const street = parts.slice(0, cityIdx).join(", ");
-  return { city, formatted_address: `${street ? street + ", " : ""}${city}, BC` };
+  const { city, prov, street } = splitAddress(formatted);
+  return { city, prov, formatted_address: `${street ? street + ", " : ""}${city}, ${prov}` };
 }
 
 async function findPlace(s) {
@@ -51,7 +45,8 @@ async function findPlace(s) {
     body: {
       textQuery: `${s.name}, ${s.address}`,
       pageSize: 3,
-      locationBias: { circle: { center: { latitude: 49.2827, longitude: -123.1207 }, radius: 40000 } },
+      // Lean toward the guest's region; the address itself does most of the work.
+      locationBias: { circle: { center: /\b(AB|Alberta|Calgary|Airdrie|Cochrane|Okotoks)\b/i.test(s.address || "") ? { latitude: 51.0447, longitude: -114.0719 } : { latitude: 49.2827, longitude: -123.1207 }, radius: 40000 } },
     },
   });
   if (data.error) throw new Error(`Places: ${data.error.status}`);
@@ -103,7 +98,7 @@ for (const s of todo) {
       console.log(`[submissions] ${s.venue_id}: ${e.message}, will retry`);
     }
     if (!p) {
-      console.log(`[submissions] ${s.venue_id}: Google couldn't find "${s.name}, ${s.address}" in Metro Vancouver, will retry`);
+      console.log(`[submissions] ${s.venue_id}: Google couldn't find "${s.name}, ${s.address}" in the areas we cover, will retry`);
       store[s.id] = { ...rec, unresolved: "not found on Google" };
       continue;
     }
