@@ -12,7 +12,7 @@ export function HomeIntro() {
   return (
     <section aria-labelledby="home-intro" className="mt-8 border-t border-border pt-6">
       <h2 id="home-intro" className="font-display text-[20px] font-bold tracking-tight">
-        Vancouver happy hours, checked nightly
+        Local happy hours, checked nightly
       </h2>
       <div className="mt-2 space-y-3 text-[15px] leading-relaxed text-muted-foreground">
         {homeIntro(hubs, venues.length).map((para, i) => (

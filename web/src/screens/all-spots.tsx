@@ -8,7 +8,7 @@ import { useTitle } from "@/lib/use-title";
 // Every venue A–Z at /spots/ (kept from the old site for search engines and
 // people who browse by name).
 export function AllSpots() {
-  useTitle("All Metro Vancouver happy hour spots, A–Z");
+  useTitle("All happy hour spots, A–Z");
   const { venues } = useStore();
   const groups = useMemo(() => {
     const by = new Map<string, typeof venues>();
@@ -24,7 +24,7 @@ export function AllSpots() {
       <PageHeader title="All spots A–Z" />
       <main className="px-4">
         <p className="mb-4 text-[15px] text-muted-foreground">
-          {venues.length} Metro Vancouver bars and restaurants, with happy hour times and deals from their own menus.
+          {venues.length} bars and restaurants, with happy hour times and deals from their own menus.
         </p>
         {groups.map(([letter, list]) => (
           <section key={letter} className="mb-5">

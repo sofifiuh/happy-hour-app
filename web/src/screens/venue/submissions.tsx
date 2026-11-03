@@ -37,7 +37,7 @@ const REASONS = [
   "The photo was too blurry to read. Could you send a closer one?",
   "We couldn't see a happy hour on this menu.",
   "Our listing already matches this menu, so nothing needed changing.",
-  "This spot is outside Metro Vancouver, where we don't list happy hours yet.",
+  "This spot is outside the cities we cover so far.",
 ];
 
 const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();

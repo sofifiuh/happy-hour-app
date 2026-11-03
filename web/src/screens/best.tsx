@@ -54,7 +54,7 @@ export function BestScreen() {
   const [hovered, setHovered] = useState<string | null>(null);
 
   // Nearest neighbourhood or city list to you (or your picked area), if
-  // one is within a few km; otherwise all of Metro Vancouver.
+  // one is within a few km; otherwise every city.
   const nearest = useMemo(() => {
     if (!deviceLocation && !area) return "metro";
     let pick = "metro";
@@ -161,7 +161,7 @@ export function BestScreen() {
                     i === 0 && g.label !== "Metro" && "ml-2",
                   )}
                 >
-                  {b.kind === "metro" ? "All Metro" : b.name.replace(/ Vancouver$/, b.kind === "area" ? "" : " Vancouver")}
+                  {b.kind === "metro" ? "Every city" : b.name.replace(/ Vancouver$/, b.kind === "area" ? "" : " Vancouver")}
                 </button>
               )),
             )}

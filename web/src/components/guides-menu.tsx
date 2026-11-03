@@ -60,7 +60,7 @@ function GuidesContent({ onDone, title, description, explore = true }: { onDone:
             "Best happy hours, ranked",
             top ? (
               <>
-                #1 in Metro Vancouver: <span className="font-medium text-cream">{top.name}</span>
+                #1 overall: <span className="font-medium text-cream">{top.name}</span>
               </>
             ) : (
               "Top 10 by Hangout Score, place by place"
@@ -167,7 +167,7 @@ export function GuidesPill({ className }: { className?: string }) {
             <GuidesContent
               onDone={() => setOpen(false)}
               title={<Popover.Title className="font-display text-[22px] font-extrabold tracking-tight">Guides</Popover.Title>}
-              description={<Popover.Description className="mt-0.5 text-[13px] text-muted-foreground">Rankings, prices and data from Vancouver's happy hours.</Popover.Description>}
+              description={<Popover.Description className="mt-0.5 text-[13px] text-muted-foreground">Rankings, prices and data from local happy hours.</Popover.Description>}
             />
           </Popover.Popup>
         </Popover.Positioner>
@@ -209,7 +209,7 @@ export function GuidesButton({ from, className }: { from: "list" | "map"; classN
                   </DrawerClose>
                 </div>
               }
-              description={<DrawerDescription className="mt-0.5">Rankings, prices and data from Vancouver's happy hours.</DrawerDescription>}
+              description={<DrawerDescription className="mt-0.5">Rankings, prices and data from local happy hours.</DrawerDescription>}
             />
           </div>
         </DrawerContent>
