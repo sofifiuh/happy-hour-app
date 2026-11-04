@@ -15,6 +15,10 @@ on:
       max_extract:
         description: "Max venues to re-extract this run"
         default: "40"
+      force:
+        description: "Run even if today's refresh already happened"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -35,16 +39,36 @@ jobs:
       HAS_PLACES_KEY: ${{ (secrets.GOOGLE_PLACES_API_KEY || secrets.GOOGLE_MAPS_API_KEY || secrets.PLACES_API_KEY || secrets.GOOGLE_API_KEY || secrets.GOOGLE_PLACES_KEY || secrets.GOOGLE_KEY || secrets.MAPS_API_KEY || secrets.GMAPS_API_KEY || secrets.GOOGLE_CLOUD_API_KEY) != '' }}
       DRY_RUN: ${{ github.event_name == 'pull_request' }}
     steps:
+      # Check out main as it is now, not the commit that triggered the run:
+      # a run queued behind another (the late cron behind the safety net's
+      # dispatch) must see that run's data and Places ledger, or it redoes
+      # the day on stale data, re-spends the Google budget and fails to push.
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.sha || 'main' }}
+
+      # One refresh a day. GitHub's cron lands hours late, so the safety net
+      # sometimes dispatches first and the cron run queues behind it; that
+      # second run stops here. A manual dispatch with force still runs.
+      - name: Skip if today's refresh already ran
+        if: github.event_name != 'pull_request' && inputs.force != true
+        run: |
+          if grep -q "^| $(date -u +%F) |" pipeline/GROWTH.md; then
+            echo "Today's refresh already ran (pipeline/GROWTH.md); skipping."
+            echo "SKIP=true" >> "$GITHUB_ENV"
+          fi
 
       - name: Keys available
+        if: env.SKIP != 'true'
         run: echo "Claude key set=$HAS_CLAUDE_KEY, Google Places key set=$HAS_PLACES_KEY"
 
       - uses: actions/setup-node@v4
+        if: env.SKIP != 'true'
         with:
           node-version: 22
 
       - name: Install pipeline deps + Chromium
+        if: env.SKIP != 'true'
         working-directory: pipeline
         run: |
           npm ci
@@ -52,10 +76,11 @@ jobs:
           sudo apt-get install -y poppler-utils >/dev/null
 
       - name: Install Claude Code (extraction engine)
-        if: env.HAS_CLAUDE_KEY == 'true' && env.DRY_RUN != 'true'
+        if: env.HAS_CLAUDE_KEY == 'true' && env.DRY_RUN != 'true' && env.SKIP != 'true'
         run: npm install -g @anthropic-ai/claude-code
 
       - name: Refresh
+        if: env.SKIP != 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || secrets.CLAUDE_API_KEY || secrets.ANTHROPIC_KEY || secrets.CLAUDE_KEY }}
           # The Claude GitHub app's token works too; the CLI reads it directly.
@@ -72,7 +97,7 @@ jobs:
 
       - name: Commit data
         id: commit
-        if: env.DRY_RUN != 'true'
+        if: env.DRY_RUN != 'true' && env.SKIP != 'true'
         run: |
           git config user.name "a-little-hang-data"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -94,7 +119,7 @@ jobs:
       # If the run fails after discovery (the sanity gate keeps venue data out),
       # still keep those three, or a re-run would re-spend the day's budget.
       - name: Keep the Places ledger on failure
-        if: failure() && env.DRY_RUN != 'true'
+        if: failure() && env.DRY_RUN != 'true' && env.SKIP != 'true'
         run: |
           git config user.name "a-little-hang-data"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -114,7 +139,7 @@ jobs:
         run: gh workflow run deploy.yml --ref main
 
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: always() && env.SKIP != 'true'
         with:
           name: refresh-logs
           path: |
