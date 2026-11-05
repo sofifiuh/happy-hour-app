@@ -29114,5 +29114,209 @@
     },
     "matched_name": "Himalaya Indian Cuisine",
     "synced_at": "2026-11-03"
+  },
+  "pat-and-betty": {
+    "place_id": "ChIJqTWhbp5xcVMRwIiHZctZ_No",
+    "rating": 4.6,
+    "user_ratings_total": 729,
+    "price_level": 3,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Pat and Betty",
+    "synced_at": "2026-11-04"
+  },
+  "our-house": {
+    "place_id": "ChIJ07dLqbFlcVMRHRnSo_24moI",
+    "rating": 4.6,
+    "user_ratings_total": 645,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Our House",
+    "synced_at": "2026-11-04"
+  },
+  "kisoji-japanese-kitchen": {
+    "place_id": "ChIJG-E6oEnUhVQRSkTTn28who8",
+    "rating": 4.6,
+    "user_ratings_total": 527,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Kisoji Japanese Kitchen",
+    "synced_at": "2026-11-03"
+  },
+  "borough-bar-grill": {
+    "place_id": "ChIJFQHchQNvcVMRPHzxB_C0w40",
+    "rating": 4.2,
+    "user_ratings_total": 525,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Borough Bar & Grill",
+    "synced_at": "2026-11-04"
+  },
+  "the-boot-sports-bar-and-restaurant": {
+    "place_id": "ChIJq6raF7M8h1QRzfVmrZclU7Y",
+    "rating": 4.7,
+    "user_ratings_total": 473,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Boot Sports Bar and Restaurant",
+    "synced_at": "2026-11-03"
+  },
+  "the-salted-vine-kitchen-bar": {
+    "place_id": "ChIJNemP9Rb4hlQRiWZBLTyv5q0",
+    "rating": 4.3,
+    "user_ratings_total": 457,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Salted Vine Kitchen + Bar",
+    "synced_at": "2026-11-03"
+  },
+  "cowboys-taphouse": {
+    "place_id": "ChIJcxSYxTRlcVMR1LpeRySbBnM",
+    "rating": 4.2,
+    "user_ratings_total": 339,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Cowboys Taphouse",
+    "synced_at": "2026-11-04"
+  },
+  "raw-japanese-hand-roll-bar": {
+    "place_id": "ChIJI105voV7cVMRiOlNAs39vQo",
+    "rating": 4.8,
+    "user_ratings_total": 328,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "RAW - Japanese Hand Roll Bar",
+    "synced_at": "2026-11-04"
+  },
+  "the-lodge-kitchen-bar": {
+    "place_id": "ChIJjcrgTRBvcVMRqOYY2iNqtdI",
+    "rating": 4.2,
+    "user_ratings_total": 327,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Lodge Kitchen & Bar",
+    "synced_at": "2026-11-04"
+  },
+  "five-forks-bar-and-grill": {
+    "place_id": "ChIJKSfkbMczhFQRTT1LJoMOOHE",
+    "rating": 4.2,
+    "user_ratings_total": 270,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Five Forks Bar and Grill",
+    "synced_at": "2026-11-03"
+  },
+  "district48-kitchen-bar": {
+    "place_id": "ChIJDQ5dDJVlcVMR7ktvlpoPWHA",
+    "rating": 4.4,
+    "user_ratings_total": 132,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "DISTRICT48 Kitchen + Bar",
+    "synced_at": "2026-11-04"
+  },
+  "revelwoods-tavern-terrace": {
+    "place_id": "ChIJixle-BVlcVMRhoDiijBvGkU",
+    "rating": 4.5,
+    "user_ratings_total": 116,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Revelwoods Tavern & Terrace",
+    "synced_at": "2026-11-04"
   }
 }

@@ -25,6 +25,1593 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "pat-and-betty",
+    "name": "Pat and Betty",
+    "formatted_address": "1217 1 St SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0408513,
+        "lng": -114.0660482
+      }
+    },
+    "formatted_phone_number": null,
+    "website": "http://www.patandbetty.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.patandbetty.com/menus",
+      "deals": [
+        {
+          "name": "Oysters & Caviar",
+          "price": "15% off",
+          "category": "food",
+          "description": "15% discount on oysters and caviar items"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/615f20ac182dfc44574613d9/t/617044319d86567e48b4394e/1634747441933/Artboard+1.png?format=1500w",
+      "credit_name": "Pat and Betty",
+      "credit_url": "http://www.patandbetty.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "our-house",
+    "name": "Our House",
+    "formatted_address": "2411 4 St NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.073683,
+        "lng": -114.07294230000001
+      }
+    },
+    "formatted_phone_number": "(825) 540-1975",
+    "website": "http://ourhouseyyc.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "start": "16:00",
+      "end": "21:00",
+      "extra_windows": [
+        {
+          "days": [
+            5
+          ],
+          "start": "11:00",
+          "end": "01:00",
+          "label": "Cocktail Party"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "20:00",
+          "end": "01:00",
+          "label": "Her House"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "10:00",
+          "end": "23:00",
+          "label": "Sunday Happy Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://ourhouseyyc.com/specials",
+      "deals": [
+        {
+          "name": "House Beer",
+          "price": "$5",
+          "category": "drink",
+          "description": "Lager, light lager, or amber ale"
+        },
+        {
+          "name": "Wine",
+          "price": "50% off",
+          "category": "drink",
+          "description": "Half-priced bottles; 9oz pour for 6oz price"
+        },
+        {
+          "name": "Appetizers",
+          "price": "$12",
+          "category": "food",
+          "description": "Any appetizer (Tuesday)"
+        },
+        {
+          "name": "Pizza",
+          "price": "$16",
+          "category": "food",
+          "description": "Thursday special"
+        },
+        {
+          "name": "Wings",
+          "price": "50% off",
+          "category": "food",
+          "description": "Chicken wings (Monday)"
+        },
+        {
+          "name": "Burger + Fries",
+          "price": "$15",
+          "category": "food",
+          "description": "Wednesday special"
+        },
+        {
+          "name": "Prime Rib",
+          "price": "$32",
+          "category": "food",
+          "description": "Saturday and Sunday special"
+        },
+        {
+          "name": "Well Cocktails",
+          "price": "$11",
+          "category": "drink",
+          "description": "House cocktails and margaritas; specials vary by day"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/658218_website_v1/social.jpg",
+      "credit_name": "Our House",
+      "credit_url": "http://ourhouseyyc.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "kisoji-japanese-kitchen",
+    "name": "Kisoji Japanese Kitchen",
+    "formatted_address": "19040 Lougheed Hwy #1, Pitt Meadows, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2315672,
+        "lng": -122.69360010000001
+      }
+    },
+    "formatted_phone_number": "(604) 457-4567",
+    "website": "http://www.kisoji.ca/",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:30",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.kisoji.ca/happy-hour.html",
+      "deals": [
+        {
+          "name": "Edamame",
+          "price": "$6",
+          "category": "food",
+          "description": "Soybeans, lightly salted"
+        },
+        {
+          "name": "Agedashi Tofu",
+          "price": "$6.75",
+          "category": "food",
+          "description": "Bonito flakes, green onions, tempura sauce"
+        },
+        {
+          "name": "Chicken Karaage",
+          "price": "$9.25",
+          "category": "food",
+          "description": "Deep fried marinated chicken"
+        },
+        {
+          "name": "Takoyaki",
+          "price": "$8.50",
+          "category": "food",
+          "description": "5 pcs - Octopus, bonito flakes, seaweed, green onions, mayo, tonkatsu sauce"
+        },
+        {
+          "name": "Salmon Kama",
+          "price": "$10",
+          "category": "food",
+          "description": "Grilled salmon collar"
+        },
+        {
+          "name": "Wakame",
+          "price": "$7",
+          "category": "food",
+          "description": "Seaweed salad with sesame seeds"
+        },
+        {
+          "name": "Spicy Tuna Poke",
+          "price": "$4.25",
+          "category": "food",
+          "description": "1 pc - Marinated tuna, spicy mayo, avocado, sesame seeds, wonton shells"
+        },
+        {
+          "name": "Tuna Oshi",
+          "price": "$17",
+          "category": "food",
+          "description": "Pressed sushi - Tuna, avocado, yuzu kosho, mayo, lemon salt, flame seared"
+        },
+        {
+          "name": "Salmon Oshi",
+          "price": "$17",
+          "category": "food",
+          "description": "Pressed sushi - Atlantic salmon, serrano pepper, spicy mayo, flame seared"
+        },
+        {
+          "name": "Sushi Pizza",
+          "price": "$18",
+          "category": "food",
+          "description": "Sockeye salmon, tobiko, garlic mayo, parmesan cheese, nut flakes, fried rice patty"
+        },
+        {
+          "name": "Momo Sangria",
+          "price": "$10",
+          "category": "drink",
+          "description": "5oz - Red wine, peach schnapps, rum, orange juice, simple syrup"
+        },
+        {
+          "name": "Japanese Caesar",
+          "price": "$8",
+          "category": "drink",
+          "description": "1oz shot - Vodka, Clamato, tonkatsu sauce, wasabi paste, shichimi pepper"
+        },
+        {
+          "name": "Sapporo Premium",
+          "price": "$6",
+          "category": "drink",
+          "description": "415ml on tap"
+        },
+        {
+          "name": "Lonetree Cider",
+          "price": "$6",
+          "category": "drink",
+          "description": "355ml"
+        },
+        {
+          "name": "Hakutsuru Junmai",
+          "price": "$11",
+          "category": "drink",
+          "description": "9oz house junmai sake"
+        },
+        {
+          "name": "Yoshi No Gawa Honjozo",
+          "price": "$16",
+          "category": "drink",
+          "description": "9oz extra dry honjozo sake"
+        },
+        {
+          "name": "Gekkeikan Plum Wine",
+          "price": "$14",
+          "category": "drink",
+          "description": "9oz Japanese ume plum wine"
+        },
+        {
+          "name": "House Wine",
+          "price": "$9",
+          "category": "drink",
+          "description": "9oz - Chardonnay or Cabernet Sauvignon"
+        },
+        {
+          "name": "Highball",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "1oz shot"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/20141018-kisoji-03.jpg",
+      "credit_name": "Kisoji Japanese Kitchen",
+      "credit_url": "http://www.kisoji.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "borough-bar-grill",
+    "name": "Borough Bar & Grill",
+    "formatted_address": "4011 Univ Ave NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0779965,
+        "lng": -114.1450095
+      }
+    },
+    "formatted_phone_number": "(403) 210-0201",
+    "website": "https://boroughbar.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:30",
+          "end": null,
+          "label": "Late Night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://boroughbar.ca/features-events/",
+      "deals": [
+        {
+          "name": "Featured Food & Beverages",
+          "price": "$5",
+          "category": "food",
+          "description": "Selection of featured items from menu"
+        },
+        {
+          "name": "Mojitos",
+          "price": "$10",
+          "category": "drink",
+          "description": "Available all day"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-boot-sports-bar-and-restaurant",
+    "name": "The Boot Sports Bar and Restaurant",
+    "formatted_address": "4314 Main St #21, Whistler, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.1175949,
+        "lng": -122.9548679
+      }
+    },
+    "formatted_phone_number": "(604) 962-6679",
+    "website": "http://bootwhistler.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://bootwhistler.com/menu",
+      "deals": [
+        {
+          "name": "Single Hiballs",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "1oz"
+        },
+        {
+          "name": "Steelhead Lager",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "16oz"
+        },
+        {
+          "name": "Steamworks IPA",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "16oz"
+        },
+        {
+          "name": "Lager Pitchers",
+          "price": "$20",
+          "category": "drink",
+          "description": "60oz"
+        },
+        {
+          "name": "Red / White Wine or Rosé",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "6oz"
+        },
+        {
+          "name": "Mimosa",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "6oz"
+        },
+        {
+          "name": "Home-Made Soup of the Day",
+          "price": "$12",
+          "category": "food",
+          "description": "Served hot with garlic bread, veg or non-veg options"
+        },
+        {
+          "name": "Garden Salad",
+          "price": "$12",
+          "category": "food",
+          "description": "Mixed greens, carrots, beets, tomato, cucumber, basil vinaigrette"
+        },
+        {
+          "name": "Caesar Salad",
+          "price": "$12",
+          "category": "food",
+          "description": "House dressing, bacon, parmesan, croutons, romaine"
+        },
+        {
+          "name": "Chickpea Salad",
+          "price": "$12",
+          "category": "food",
+          "description": "Chickpeas, greens, olives, onion, cucumber, tomato"
+        },
+        {
+          "name": "Tacos",
+          "price": "$15",
+          "category": "food",
+          "description": "Gluten free corn shells, slaw, pico de gallo, crema; vegetarian, cajun chicken, pulled pork, or beef"
+        },
+        {
+          "name": "Double Crunch Wings",
+          "price": "$15",
+          "category": "food",
+          "description": "Hot, teriyaki, honey garlic, buffalo, S&P, lemon pepper, or thai chilli with ranch"
+        },
+        {
+          "name": "Chicken Tenders + Wedges",
+          "price": "$15",
+          "category": "food",
+          "description": "Baked tenders on potato wedges with sweet chilli"
+        },
+        {
+          "name": "Potato Skins",
+          "price": "$15",
+          "category": "food",
+          "description": "Cheddar, bacon, green onions, sour cream"
+        },
+        {
+          "name": "Spinach Dip",
+          "price": "$15",
+          "category": "food",
+          "description": "Spinach, cheese blend, baked, served with corn tortilla chips"
+        },
+        {
+          "name": "Hummus & Pita",
+          "price": "$15",
+          "category": "food",
+          "description": "Grilled pita with hummus"
+        },
+        {
+          "name": "Nachos",
+          "price": "$15",
+          "category": "food",
+          "description": "Corn nachos, three cheese, olives, green onions, tomato, jalapenos"
+        },
+        {
+          "name": "Wedge Poutine",
+          "price": "$15",
+          "category": "food",
+          "description": "Potato wedges, cheese curds, vegetarian gravy, green onions"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-salted-vine-kitchen-bar",
+    "name": "The Salted Vine Kitchen + Bar",
+    "formatted_address": "37991 Second Ave, Squamish, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.6987995,
+        "lng": -123.15522790000001
+      }
+    },
+    "formatted_phone_number": "(604) 390-1910",
+    "website": "http://www.saltedvine.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.saltedvine.ca/happy-hour",
+      "deals": [
+        {
+          "name": "Sparkling Wines + Martinis",
+          "price": "20% off",
+          "category": "drink",
+          "description": "All sparkling wines and martinis"
+        },
+        {
+          "name": "Draft Beers",
+          "price": "20% off",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Select Highballs",
+          "price": "20% off",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Wines by the Glass",
+          "price": "20% off",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Firecracker Margarita",
+          "price": "$9.50",
+          "category": "drink",
+          "description": "2oz cocktail feature"
+        },
+        {
+          "name": "Dreamcatcher Mojito",
+          "price": "$9.50",
+          "category": "drink",
+          "description": "2oz cocktail feature"
+        },
+        {
+          "name": "Pimm's Cup",
+          "price": "$9.50",
+          "category": "drink",
+          "description": "2oz cocktail feature"
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "$9.50",
+          "category": "drink",
+          "description": "2oz cocktail feature"
+        },
+        {
+          "name": "Cougar Ridge",
+          "price": "$9.50",
+          "category": "drink",
+          "description": "2oz cocktail feature"
+        },
+        {
+          "name": "Double Caesar",
+          "price": "$9.50",
+          "category": "drink",
+          "description": "2oz cocktail feature"
+        },
+        {
+          "name": "Negroni",
+          "price": "$9.50",
+          "category": "drink",
+          "description": "2oz cocktail feature"
+        },
+        {
+          "name": "Oysters",
+          "price": "$12",
+          "category": "food",
+          "description": "6 oysters, fresh daily selections, mignonette, horseradish"
+        },
+        {
+          "name": "Bread",
+          "price": "$7",
+          "category": "food",
+          "description": "house made focaccia, pesto, balsamic crema, extra virgin olive oil"
+        },
+        {
+          "name": "Frites",
+          "price": "$10",
+          "category": "food",
+          "description": "parmigiano, sea salt, malt vinegar aioli"
+        },
+        {
+          "name": "Warm Olives",
+          "price": "$8",
+          "category": "food",
+          "description": "marinated with herbs, roasted cashews"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://saltedvine.ca/wp-content/uploads/2016/07/salted-vine-og_red.jpg",
+      "credit_name": "The Salted Vine Kitchen + Bar",
+      "credit_url": "http://www.saltedvine.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "cowboys-taphouse",
+    "name": "Cowboys Taphouse",
+    "formatted_address": "55 Castleridge Blvd NE Unit 168, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0981309,
+        "lng": -113.9602985
+      }
+    },
+    "formatted_phone_number": "(403) 280-6560",
+    "website": "https://www.cowboystaphouseyyc.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "09:00",
+      "end": "21:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.cowboystaphouseyyc.com/assets/menu/cowboys-menu.pdf",
+      "deals": [
+        {
+          "name": "Cowboys draft 16oz",
+          "price": "$4.99",
+          "category": "drink",
+          "description": "Draft beer"
+        },
+        {
+          "name": "Domestic Draft Pint",
+          "price": "$5.99",
+          "category": "drink",
+          "description": "20oz pint of domestic beer"
+        },
+        {
+          "name": "Domestic Draft Jug",
+          "price": "$17.99",
+          "category": "drink",
+          "description": "60oz jug of domestic beer"
+        },
+        {
+          "name": "Domestic Bottles",
+          "price": "$5.99",
+          "category": "drink",
+          "description": "Domestic bottled beer"
+        },
+        {
+          "name": "Import Bottles & Coolers",
+          "price": "$6.99",
+          "category": "drink",
+          "description": "Import bottled beer or coolers"
+        },
+        {
+          "name": "Glass of Wine",
+          "price": "$5.99-$8.99",
+          "category": "drink",
+          "description": "6oz or 9oz pour"
+        },
+        {
+          "name": "Domestic Highball 1oz",
+          "price": "$4.99",
+          "category": "drink",
+          "description": "1oz spirit with mixer"
+        },
+        {
+          "name": "Domestic Highball 2oz",
+          "price": "$7.99",
+          "category": "drink",
+          "description": "2oz spirit with mixer"
+        },
+        {
+          "name": "Domestic Highball 3oz",
+          "price": "$11.99",
+          "category": "drink",
+          "description": "3oz spirit with mixer"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://cowboystaphouseyyc.com/assets/logo/logo.webp",
+      "credit_name": "Cowboys Taphouse",
+      "credit_url": "https://www.cowboystaphouseyyc.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "raw-japanese-hand-roll-bar",
+    "name": "RAW - Japanese Hand Roll Bar",
+    "formatted_address": "615 6 Ave SE #150, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0465111,
+        "lng": -114.050107
+      }
+    },
+    "formatted_phone_number": "(825) 747-5354",
+    "website": "https://rawyyc.ca/",
+    "happy_hour": {
+      "days": [
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6ac131a2b19cb38afc917604_Raw-%20HH%20(5%20x%207.5%20in).pdf",
+      "deals": [
+        {
+          "name": "Cucumber Salad",
+          "price": "$5",
+          "category": "food",
+          "description": "house chili dressing, cilantro, shiso"
+        },
+        {
+          "name": "Tempura",
+          "price": "$10",
+          "category": "food",
+          "description": "assorted or vegetable"
+        },
+        {
+          "name": "Chicken Karaage",
+          "price": "$12",
+          "category": "food",
+          "description": "fried chicken thigh, choice of togarashi mayo or yuzu kosho mayo"
+        },
+        {
+          "name": "Japanese Yam Fries",
+          "price": "$7",
+          "category": "food",
+          "description": "handcut fries, house garlic aioli"
+        },
+        {
+          "name": "All alcoholic beverages",
+          "price": "25% off",
+          "category": "drink",
+          "description": "including bottles of wine and sake"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-lodge-kitchen-bar",
+    "name": "The Lodge Kitchen & Bar",
+    "formatted_address": "1918 Kensington Rd NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0527868,
+        "lng": -114.10440179999999
+      }
+    },
+    "formatted_phone_number": "(587) 352-1918",
+    "website": "https://thelodgecalgary.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:18",
+      "end": "17:48",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:48",
+          "end": null,
+          "label": "Late Aprés"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "23:59",
+          "label": "Sunday Drinks All Day"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://thelodgecalgary.com/apres-hour-menu/",
+      "deals": [
+        {
+          "name": "Heron Bay Cabernet Sauvignon 5oz",
+          "price": "$6.25",
+          "category": "drink",
+          "description": "British Columbia wine, Aprés Hour Price"
+        },
+        {
+          "name": "Heron Bay Sauvignon Blanc 5oz",
+          "price": "$6.25",
+          "category": "drink",
+          "description": "British Columbia wine, Aprés Hour Price"
+        },
+        {
+          "name": "Banded Peak Mt. Crushmore Pilsner",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "Calgary, Alberta beer, Aprés Hour Price"
+        },
+        {
+          "name": "Hot Tub Mule Machine",
+          "price": "$10",
+          "category": "drink",
+          "description": "Vodka, lime juice, simple syrup, bitters, ginger beer"
+        },
+        {
+          "name": "Smoked Old Fashioned",
+          "price": "$10",
+          "category": "drink",
+          "description": "Whisky, simple syrup, angostura bitters"
+        },
+        {
+          "name": "Truffle Parm Fries",
+          "price": "$9",
+          "category": "food",
+          "description": "Truffle oil, fresh parmesan, garlic aioli"
+        },
+        {
+          "name": "Chicken Gyoza",
+          "price": "$9",
+          "category": "food",
+          "description": "Extra crispy, deep fried gyozas, ponzu, scallions, sesame seeds, togarashi mayo"
+        },
+        {
+          "name": "Bruschetta",
+          "price": "$13",
+          "category": "food",
+          "description": "Tomatoes, basil, onion, mixed olive tapenade, parmesan crostinis"
+        },
+        {
+          "name": "Tuna Tostadas",
+          "price": "$14",
+          "category": "food",
+          "description": "Ahi tuna, ponzu, sushi rice, smashed avocado, pickled onions & carrots, togarashi mayo, corn tostadas"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "five-forks-bar-and-grill",
+    "name": "Five Forks Bar and Grill",
+    "formatted_address": "32281 Lougheed Hwy, Mission, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1333389,
+        "lng": -122.33082589999998
+      }
+    },
+    "formatted_phone_number": "(604) 289-0555",
+    "website": "https://fiveforksbargrill.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "22:00",
+          "label": "Late night happy hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://fiveforksbargrill.com/menu",
+      "deals": [
+        {
+          "name": "Cauliflower Bites",
+          "price": "$12.25",
+          "category": "food",
+          "description": "Battered florets in sweet and spicy sauce with green onions"
+        },
+        {
+          "name": "Chicken Wings",
+          "price": "$13.50",
+          "category": "food",
+          "description": "Multiple sauce choices with ranch or blue cheese"
+        },
+        {
+          "name": "Forks Loaded Nachos",
+          "price": "$13.50",
+          "category": "food",
+          "description": "Black beans, corn, red onions, peppers, olives with guacamole, salsa, sour cream"
+        },
+        {
+          "name": "Fried Mac N Cheese Bites",
+          "price": "$13.50",
+          "category": "food",
+          "description": "4 pieces with marinara"
+        },
+        {
+          "name": "Crispy Fish Tacos",
+          "price": "$14.00",
+          "category": "food",
+          "description": "3 tacos with basa, coleslaw, onions, radish, cilantro, lime, chipotle sauce"
+        },
+        {
+          "name": "Garlic Prawns",
+          "price": "$12.50",
+          "category": "food",
+          "description": "Tossed in garlic butter"
+        },
+        {
+          "name": "Crispy Yam or Regular Fries",
+          "price": "$6.50",
+          "category": "food",
+          "description": "Basket with chipotle garlic aioli"
+        },
+        {
+          "name": "Highballs",
+          "price": "$4.00",
+          "category": "drink",
+          "description": "1oz, choice of Smirnoff, Beefeater, Captain Morgan White, Canadian Club, El Jimador Silver"
+        },
+        {
+          "name": "Moscow Mule",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "1oz vodka, lime, mint, ginger beer, soda"
+        },
+        {
+          "name": "Caesar",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "1oz vodka, clamato, worcestershire, tabasco, lime"
+        },
+        {
+          "name": "Sawmill Creek",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "6oz Chardonnay"
+        },
+        {
+          "name": "Bodacious",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "6oz Cabernet Sauvignon"
+        },
+        {
+          "name": "Sangria Glass",
+          "price": "$8.00",
+          "category": "drink",
+          "description": "Choice of red, white or rosé"
+        },
+        {
+          "name": "Sangria Pitcher",
+          "price": "$20.00",
+          "category": "drink",
+          "description": "Choice of red, white or rosé"
+        },
+        {
+          "name": "Draft Beer",
+          "price": "$2 off",
+          "category": "drink",
+          "description": "All draft beers"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://img1.wsimg.com/isteam/stock/106240",
+      "credit_name": "Five Forks Bar and Grill",
+      "credit_url": "https://fiveforksbargrill.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "district48-kitchen-bar",
+    "name": "DISTRICT48 Kitchen + Bar",
+    "formatted_address": "2500 48 Ave NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0967815,
+        "lng": -114.00015599999999
+      }
+    },
+    "formatted_phone_number": "(403) 604-1079",
+    "website": "https://www.district48kitchenbar.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.district48kitchenbar.com/menu?menu=happy-hour",
+      "deals": [
+        {
+          "name": "D48 Lager 16oz",
+          "price": "$7",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Las Cumbres White 6oz",
+          "price": "$7",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Las Cumbres Red 6oz",
+          "price": "$7",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "D48 Old Fashioned 2oz",
+          "price": "$12",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Jetsetter 2oz",
+          "price": "$12",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Prosecco Bottle",
+          "price": "$40",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Chef's Favourite Flatbread",
+          "price": "$13",
+          "category": "food",
+          "description": "Daily Creation"
+        },
+        {
+          "name": "Chicken Wings",
+          "price": "$15",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Chicken Tinga Tacos",
+          "price": "$15",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Pork Gyoza",
+          "price": "$12",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Calamari",
+          "price": "$14",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Sweet & Sour Cauliflower Fritters",
+          "price": "$14",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "revelwoods-tavern-terrace",
+    "name": "Revelwoods Tavern & Terrace",
+    "formatted_address": "316 3 St SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0494591,
+        "lng": -114.0550729
+      }
+    },
+    "formatted_phone_number": "(403) 454-5454",
+    "website": "http://revelwoods.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "16:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://cdn.shopify.com/s/files/1/0699/8009/4531/files/Happy_hour_New.pdf?v=1790031825",
+      "deals": [
+        {
+          "name": "Cracklins",
+          "price": "$7.95",
+          "category": "food",
+          "description": "Gluten-friendly"
+        },
+        {
+          "name": "Dry Ribs",
+          "price": "$7.95",
+          "category": "food",
+          "description": "Gluten-friendly"
+        },
+        {
+          "name": "Chicken Salad Slider",
+          "price": "$7.95",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Gougeres",
+          "price": "$7.95",
+          "category": "food",
+          "description": "Vegetarian"
+        },
+        {
+          "name": "Andouille Sausage Roll",
+          "price": "$7.95",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Popcorn",
+          "price": "$7.95",
+          "category": "food",
+          "description": "Gluten-friendly / Vegetarian"
+        },
+        {
+          "name": "Ham Biscuit",
+          "price": "$7.95",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "All Draft",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "16 floz"
+        },
+        {
+          "name": "House Red & White Wine",
+          "price": "$6.95",
+          "category": "drink",
+          "description": "6 floz"
+        },
+        {
+          "name": "House Red & White Wine",
+          "price": "$9.95",
+          "category": "drink",
+          "description": "9 floz"
+        },
+        {
+          "name": "High Balls",
+          "price": "$4.95",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Feature Cocktail",
+          "price": "$10.95",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://revelwoods.ca/cdn/shop/files/unnamed_38260d57-13f4-4be1-8072-ee2e303538ca.png?v=1784095150",
+      "credit_name": "Revelwoods Tavern & Terrace",
+      "credit_url": "http://revelwoods.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-05"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "hayden-block-smoke-whiskey",
     "name": "Hayden Block Smoke & Whiskey",
     "formatted_address": "1136 Kensington Rd NW, Calgary, AB",
@@ -20723,7 +22310,7 @@
       ],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://www.redcardsportsbar.ca/_files/ugd/2cf2fd_048c9eb23e0842e0a3c5a6c83fb4a926.pdf",
+      "source_url": "https://www.redcardsportsbar.ca/_files/ugd/2cf2fd_00722f073af7436884d997cbe0c337a4.pdf",
       "deals": [
         {
           "name": "Howe Sound Lager 16 oz",
@@ -20739,9 +22326,9 @@
         },
         {
           "name": "Highballs",
-          "price": "$6",
+          "price": "$6 / $9",
           "category": "drink",
-          "description": "$6 for a 1 oz highball, or $9 for a 2 oz"
+          "description": "$6 for 1 oz, $9 for 2 oz"
         },
         {
           "name": "Poutine or Fried Pickles",
@@ -20775,7 +22362,7 @@
       "credit_url": "http://www.redcardsportsbar.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-10-24"
+    "last_synced_at": "2026-11-05"
   },
   {
     "place_id": null,
