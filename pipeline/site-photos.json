@@ -2774,6 +2774,63 @@
     "cover": null,
     "gallery": []
   },
+  "borough-bar-grill": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://boroughbar.ca/",
+      "https://boroughbar.ca/features-events/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2025/07/Borough_0227-scaled-1.jpg?lossy=2&strip=1&webp=1",
+      "page": "https://boroughbar.ca/",
+      "w": 2560,
+      "h": 1917
+    },
+    "gallery": [
+      {
+        "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2026/04/DSC08950_1-scaled-e1777055486293-980x658.jpg?lossy=2&strip=1&webp=1",
+        "page": "https://boroughbar.ca/",
+        "w": 980,
+        "h": 658
+      },
+      {
+        "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2026/04/DSC09018_1-scaled-e1777055104312-980x560.jpg?lossy=2&strip=1&webp=1",
+        "page": "https://boroughbar.ca/",
+        "w": 980,
+        "h": 560
+      },
+      {
+        "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2026/04/DSC09034_1-scaled-e1777065296331-980x627.jpg?lossy=2&strip=1&webp=1",
+        "page": "https://boroughbar.ca/",
+        "w": 980,
+        "h": 627
+      },
+      {
+        "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2026/04/DSC09040_1-scaled-e1777055258791-980x1010.jpg?lossy=2&strip=1&webp=1",
+        "page": "https://boroughbar.ca/",
+        "w": 980,
+        "h": 1010
+      },
+      {
+        "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2026/04/DSC08961_1-scaled-e1777059890386-980x999.jpg?lossy=2&strip=1&webp=1",
+        "page": "https://boroughbar.ca/",
+        "w": 980,
+        "h": 999
+      },
+      {
+        "url": "https://boroughbar.ca/wp-content/uploads/2025/07/IMG_1442-Edit-1.jpg",
+        "page": "https://boroughbar.ca/features-events/",
+        "w": 2500,
+        "h": 1465
+      }
+    ],
+    "review": {
+      "at": "2026-11-05",
+      "key": "ddca6a4b00a0",
+      "rejected": []
+    }
+  },
   "boteco-brasil-restaurant": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -5340,6 +5397,76 @@
       ]
     }
   },
+  "cowboys-taphouse": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://www.cowboystaphouseyyc.com/",
+      "https://www.cowboystaphouseyyc.com/about",
+      "https://www.cowboystaphouseyyc.com/our-food"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://www.cowboystaphouseyyc.com/assets/catering/catering.webp",
+      "page": "https://www.cowboystaphouseyyc.com/",
+      "w": 928,
+      "h": 933
+    },
+    "gallery": [
+      {
+        "url": "https://www.cowboystaphouseyyc.com/assets/backgrounds/4.webp",
+        "page": "https://www.cowboystaphouseyyc.com/",
+        "w": 1664,
+        "h": 930
+      },
+      {
+        "url": "https://www.cowboystaphouseyyc.com/assets/banner/7.webp",
+        "page": "https://www.cowboystaphouseyyc.com/about",
+        "w": 1162,
+        "h": 927
+      },
+      {
+        "url": "https://www.cowboystaphouseyyc.com/assets/gallery/9.webp",
+        "page": "https://www.cowboystaphouseyyc.com/our-food",
+        "w": 640,
+        "h": 427
+      },
+      {
+        "url": "https://www.cowboystaphouseyyc.com/assets/popular-dishes/beef-dip.webp",
+        "page": "https://www.cowboystaphouseyyc.com/",
+        "w": 640,
+        "h": 427
+      },
+      {
+        "url": "https://www.cowboystaphouseyyc.com/assets/gallery/8.webp",
+        "page": "https://www.cowboystaphouseyyc.com/our-food",
+        "w": 640,
+        "h": 427
+      },
+      {
+        "url": "https://www.cowboystaphouseyyc.com/assets/banner/8.webp",
+        "page": "https://www.cowboystaphouseyyc.com/",
+        "w": 1360,
+        "h": 661
+      },
+      {
+        "url": "https://www.cowboystaphouseyyc.com/assets/popular-dishes/caesars.webp",
+        "page": "https://www.cowboystaphouseyyc.com/",
+        "w": 1014,
+        "h": 886
+      },
+      {
+        "url": "https://www.cowboystaphouseyyc.com/assets/about/1.webp",
+        "page": "https://www.cowboystaphouseyyc.com/about",
+        "w": 927,
+        "h": 933
+      }
+    ],
+    "review": {
+      "at": "2026-11-05",
+      "key": "cab307dfde52",
+      "rejected": []
+    }
+  },
   "craft-beer-market-english-bay": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -6064,6 +6191,43 @@
       "at": "2026-10-24",
       "key": "9d16af081aeb",
       "rejected": []
+    }
+  },
+  "district48-kitchen-bar": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://www.district48kitchenbar.com/",
+      "https://www.district48kitchenbar.com/about",
+      "https://www.district48kitchenbar.com/private-dining"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/f3ddaa_bbb967e9d96e416998d9cbde57c1db8d~mv2.png/v1/fill/w_1221,h_806,q_90,enc_avif,quality_auto/f3ddaa_bbb967e9d96e416998d9cbde57c1db8d~mv2.png",
+      "page": "https://www.district48kitchenbar.com/",
+      "w": 1221,
+      "h": 806
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/f3ddaa_f7a8629c41e944fb8030c46895dbc341~mv2.jpg/v1/fill/w_1360,h_780,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f3ddaa_f7a8629c41e944fb8030c46895dbc341~mv2.jpg",
+        "page": "https://www.district48kitchenbar.com/",
+        "w": 1360,
+        "h": 780
+      }
+    ],
+    "review": {
+      "at": "2026-11-05",
+      "key": "6289f44edafa",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/f3ddaa_d485a27dde5f470b8bccc8ddd56cd3f6~mv2.jpg/v1/fill/w_1999,h_1334,q_90,enc_avif,quality_auto/f3ddaa_d485a27dde5f470b8bccc8ddd56cd3f6~mv2.jpg",
+          "why": "people as subject, posed couple"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/f3ddaa_02fde9aef5f94cebb467b0c93199a5e3~mv2.jpg/v1/fill/w_1215,h_490,al_c,q_85,enc_avif,quality_auto/cy-yycap-private-dining-rm-2-27546-54727_Classic-Hor_jfif.jpg",
+          "why": "corporate meeting room, not happy hour venue"
+        }
+      ]
     }
   },
   "diva-at-the-met": {
@@ -7330,6 +7494,50 @@
       "at": "2026-10-24",
       "key": "68f8ab52a382",
       "rejected": []
+    }
+  },
+  "five-forks-bar-and-grill": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://fiveforksbargrill.com/",
+      "https://fiveforksbargrill.com/about-us"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://img1.wsimg.com/isteam/stock/106238/:/rs=w:1535,m",
+      "page": "https://fiveforksbargrill.com/",
+      "w": 1535,
+      "h": 1023
+    },
+    "gallery": [
+      {
+        "url": "https://img1.wsimg.com/isteam/stock/106240",
+        "page": "https://fiveforksbargrill.com/",
+        "w": 2222,
+        "h": 1440
+      },
+      {
+        "url": "https://img1.wsimg.com/isteam/stock/2200/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1535,m",
+        "page": "https://fiveforksbargrill.com/about-us",
+        "w": 1535,
+        "h": 1023
+      },
+      {
+        "url": "https://img1.wsimg.com/isteam/stock/16277/:/cr=t:0%25,l:6.99%25,w:86.02%25,h:100%25/rs=w:1209,h:937",
+        "page": "https://fiveforksbargrill.com/",
+        "w": 1209,
+        "h": 937
+      }
+    ],
+    "review": {
+      "at": "2026-11-05",
+      "key": "efce75177603",
+      "rejected": [
+        {
+          "url": "https://img1.wsimg.com/isteam/ip/68bc229f-a5a0-4212-9180-6273cdb28f8d/iStock-1012569708.jpg/:/cr=t:9.68%25,l:9.68%25,w:80.65%25,h:80.65%25/rs=w:1535,m",
+          "why": "menu document"
+        }
+      ]
     }
   },
   "flying-beaver-bar-grill": {
@@ -11246,6 +11454,73 @@
         {
           "url": "https://kintonramen.com/wp-content/uploads/2026/09/about-thin_noodles.jpg",
           "why": "plain noodles without venue context"
+        }
+      ]
+    }
+  },
+  "kisoji-japanese-kitchen": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://www.kisoji.ca/",
+      "https://www.kisoji.ca/gallery.html"
+    ],
+    "cover_problem": null,
+    "cover": null,
+    "gallery": [
+      {
+        "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/background-images/437907840.jpg",
+        "page": "https://www.kisoji.ca/",
+        "w": 1496,
+        "h": 801
+      },
+      {
+        "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/p79.png",
+        "page": "https://www.kisoji.ca/gallery.html",
+        "w": 1100,
+        "h": 734
+      },
+      {
+        "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/p80.png",
+        "page": "https://www.kisoji.ca/gallery.html",
+        "w": 1100,
+        "h": 734
+      },
+      {
+        "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/p81.png",
+        "page": "https://www.kisoji.ca/gallery.html",
+        "w": 1100,
+        "h": 734
+      },
+      {
+        "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/p77.png",
+        "page": "https://www.kisoji.ca/gallery.html",
+        "w": 1100,
+        "h": 734
+      },
+      {
+        "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/p84.png",
+        "page": "https://www.kisoji.ca/gallery.html",
+        "w": 1100,
+        "h": 734
+      },
+      {
+        "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/20141109-kisoji-25.jpg",
+        "page": "https://www.kisoji.ca/gallery.html",
+        "w": 800,
+        "h": 533
+      }
+    ],
+    "review": {
+      "at": "2026-11-05",
+      "key": "0d23df6cfcab",
+      "rejected": [
+        {
+          "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/background-images/2120646017.jpg",
+          "why": "too close-up and unclear"
+        },
+        {
+          "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/20141018-kisoji-03.jpg",
+          "why": "duplicate of photo1"
         }
       ]
     }
@@ -15773,6 +16048,74 @@
       ]
     }
   },
+  "our-house": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://ourhouseyyc.com/",
+      "https://ourhouseyyc.com/events",
+      "https://ourhouseyyc.com/about"
+    ],
+    "cover_problem": null,
+    "cover": null,
+    "gallery": [
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/1c/dd8761597a441189916fe3c404c1c6/:original",
+        "page": "https://ourhouseyyc.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/7d/3fc799561f40109877270142bcf8ee/:original",
+        "page": "https://ourhouseyyc.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/af/82b246f6ad4ff2bacbf15762122d06/:original",
+        "page": "https://ourhouseyyc.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/13/30540d3cd24a6497ad74107d3c7144/:original",
+        "page": "https://ourhouseyyc.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/bd/a243c7ed244196b2cec6d8b35e1913/:original",
+        "page": "https://ourhouseyyc.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/658218_website_v1/about3_new.jpg",
+        "page": "https://ourhouseyyc.com/about",
+        "w": 1200,
+        "h": 800
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/658218_website_v1/about2_new.jpg",
+        "page": "https://ourhouseyyc.com/about",
+        "w": 1200,
+        "h": 800
+      }
+    ],
+    "review": {
+      "at": "2026-11-05",
+      "key": "8d4a64265cec",
+      "rejected": [
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/658218_website_v1/video_poster.jpg",
+          "why": "person/hands as subject"
+        },
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/658218_website_v1/social.jpg",
+          "why": "duplicate of photo1"
+        }
+      ]
+    }
+  },
   "p2b-restaurant-bar": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -16102,6 +16445,44 @@
         {
           "url": "https://images.squarespace-cdn.com/content/v1/658f1f036aef955f1fcb9274/a8d27ea9-3175-484e-85c7-0453129cf7eb/DSC08583.jpg",
           "why": "people as subject—champagne portrait"
+        }
+      ]
+    }
+  },
+  "pat-and-betty": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://patandbetty.com/",
+      "https://patandbetty.com/about"
+    ],
+    "cover_problem": "tiny file",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/615f20ac182dfc44574613d9/f32f5969-1509-4180-a37e-242fb0c12c68/IMG_3488.jpg",
+      "page": "https://patandbetty.com/about",
+      "w": 1080,
+      "h": 1350
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/615f20ac182dfc44574613d9/897ca448-9c98-48b1-bd70-3c4f74f84b83/209A2759.jpg",
+        "page": "https://patandbetty.com/",
+        "w": 2500,
+        "h": 1977
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/615f20ac182dfc44574613d9/34b20aa4-a770-4053-ae6c-8e68d4ffe544/209A0008-3.jpg",
+        "page": "https://patandbetty.com/",
+        "w": 2500,
+        "h": 3451
+      }
+    ],
+    "review": {
+      "at": "2026-11-05",
+      "key": "ce4fb82027c3",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/615f20ac182dfc44574613d9/1634760865332-JY39X6QQA2EVSUZYLGWZ/Artboard-1-copy.jpg",
+          "why": "family portrait collage, black-and-white and historic photos, people as subject"
         }
       ]
     }
@@ -17336,6 +17717,71 @@
       ]
     }
   },
+  "raw-japanese-hand-roll-bar": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://www.rawyyc.ca/",
+      "https://www.rawyyc.ca/about",
+      "https://www.rawyyc.ca/gallery"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aadeb613d7fab6c5c89a9d8_b27e695ef444ecbbffab23a76ce96843_DSC05752.webp",
+      "page": "https://www.rawyyc.ca/gallery",
+      "w": 3330,
+      "h": 3330
+    },
+    "gallery": [
+      {
+        "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6abbdef3088a557ff3a36d21_97d28a71fdebc1af45a127cde468a9ae_About%20Us%20Page%20Photo.webp",
+        "page": "https://www.rawyyc.ca/about",
+        "w": 1400,
+        "h": 933
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aadeaf37ab6919ccdd62870_IMG_5358.avif",
+        "page": "https://www.rawyyc.ca/gallery",
+        "w": 2880,
+        "h": 3600
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aadeb61e80315dcb78e4cb0_DSC05497.jpg",
+        "page": "https://www.rawyyc.ca/gallery",
+        "w": 1812,
+        "h": 2265
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aadeaef41039439e712c0fe_DSC05600.avif",
+        "page": "https://www.rawyyc.ca/gallery",
+        "w": 1574,
+        "h": 1968
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6abbe11845d92edc1fd2de5c_2c22ebfda55adf88f1d9d9e1c8c19d0b_EF6A11A3-BF92-4197-8E87-8B8A5E14A459.avif",
+        "page": "https://www.rawyyc.ca/gallery",
+        "w": 1254,
+        "h": 1254
+      }
+    ],
+    "review": {
+      "at": "2026-11-05",
+      "key": "5b97a227c718",
+      "rejected": [
+        {
+          "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aadeaf27ab6919ccdd6285e_6ee4034f9f31c3c04914af534de7f225_F2CB4D48-6D01-402B-88FA-D28B4DC68D76.webp",
+          "why": "near-duplicate of photo1"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aadeaf14bbc2b9cf7fff636_IMG_4713.avif",
+          "why": "near-duplicate of photo4"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aebc8470d2bc40838ceeff6_Holiday%20Menu%20Popup.jpg",
+          "why": "promotional image with text"
+        }
+      ]
+    }
+  },
   "ray-s": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -17643,6 +18089,41 @@
         {
           "url": "https://static.wixstatic.com/media/d4cdc4_8373ab04764a4263aab5f03e50156269~mv2.jpg/v1/fill/w_1050,h_1050,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d4cdc4_8373ab04764a4263aab5f03e50156269~mv2.jpg",
           "why": "promotional flyer with mostly text"
+        }
+      ]
+    }
+  },
+  "revelwoods-tavern-terrace": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://revelwoods.ca/"
+    ],
+    "cover_problem": "review: sign/wordmark",
+    "cover": {
+      "url": "https://revelwoods.ca/cdn/shop/files/Revelwoods-MiniCampaign-45.jpg?v=1790032349&width=1920",
+      "page": "https://revelwoods.ca/",
+      "w": 1920,
+      "h": 1077
+    },
+    "gallery": [
+      {
+        "url": "https://revelwoods.ca/cdn/shop/files/P1029338.jpg?v=1784156899&width=2000",
+        "page": "https://revelwoods.ca/",
+        "w": 2000,
+        "h": 2001
+      }
+    ],
+    "review": {
+      "at": "2026-11-05",
+      "key": "ce1cf003600f",
+      "rejected": [
+        {
+          "url": "http://revelwoods.ca/cdn/shop/files/unnamed_38260d57-13f4-4be1-8072-ee2e303538ca.png?v=1784095150",
+          "why": "sign/wordmark"
+        },
+        {
+          "url": "http://revelwoods.ca/cdn/shop/files/unnamed_38260d57-13f4-4be1-8072-ee2e303538ca.png?v=1784095150",
+          "why": "near-duplicate of photo1, sign/wordmark"
         }
       ]
     }
@@ -21137,6 +21618,27 @@
       ]
     }
   },
+  "the-boot-sports-bar-and-restaurant": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://bootwhistler.com/",
+      "https://bootwhistler.com/gallery",
+      "https://bootwhistler.com/about-us"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://bootwhistler.com/images/slide-bg1.jpg",
+      "page": "https://bootwhistler.com/",
+      "w": 1920,
+      "h": 980
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-11-05",
+      "key": "50fb64d415dc",
+      "rejected": []
+    }
+  },
   "the-boxcar": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -22656,6 +23158,74 @@
       ]
     }
   },
+  "the-lodge-kitchen-bar": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://thelodgecalgary.com/",
+      "https://thelodgecalgary.com/apres-hour-menu/",
+      "https://thelodgecalgary.com/events-and-specials/",
+      "https://thelodgecalgary.com/about/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/bar-vert.jpg",
+      "page": "https://thelodgecalgary.com/",
+      "w": 800,
+      "h": 1008
+    },
+    "gallery": [
+      {
+        "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/parallax-fish-chips1.jpg",
+        "page": "https://thelodgecalgary.com/apres-hour-menu/",
+        "w": 1920,
+        "h": 1100
+      },
+      {
+        "url": "https://thelodgecalgary.com/wp-content/uploads/2023/09/header-about-v2.jpg",
+        "page": "https://thelodgecalgary.com/events-and-specials/",
+        "w": 1920,
+        "h": 1200
+      },
+      {
+        "url": "https://thelodgecalgary.com/wp-content/uploads/2023/09/header-food-menu-v2.jpg",
+        "page": "https://thelodgecalgary.com/apres-hour-menu/",
+        "w": 1920,
+        "h": 1200
+      },
+      {
+        "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/drink1_square.jpg",
+        "page": "https://thelodgecalgary.com/",
+        "w": 800,
+        "h": 800
+      },
+      {
+        "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/food1_square.jpg",
+        "page": "https://thelodgecalgary.com/",
+        "w": 800,
+        "h": 800
+      },
+      {
+        "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/fireplace-square-1.jpg",
+        "page": "https://thelodgecalgary.com/",
+        "w": 800,
+        "h": 726
+      }
+    ],
+    "review": {
+      "at": "2026-11-05",
+      "key": "d99c1fb85b6f",
+      "rejected": [
+        {
+          "url": "https://thelodgecalgary.com/wp-content/uploads/2023/09/bg_parallax_shuffle_board.jpg",
+          "why": "people posing at game"
+        },
+        {
+          "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/entrance-square.jpg",
+          "why": "sign graphic painted on surface"
+        }
+      ]
+    }
+  },
   "the-mac-billiards": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -23761,6 +24331,32 @@
         {
           "url": "https://www.royalyyc.ca/wp-content/uploads/2026/05/The-Royal-Exchange-Bar-Grill-Pub-in-Calgary-Alberta-SW-Restaurant-Near-Me-Food-Menu-Pictures-Photos-7.jpg",
           "why": "person's hands are the subject"
+        }
+      ]
+    }
+  },
+  "the-salted-vine-kitchen-bar": {
+    "checked_at": "2026-11-05",
+    "pages": [
+      "https://saltedvine.ca/",
+      "https://saltedvine.ca/about/",
+      "https://saltedvine.ca/events/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://saltedvine.ca/wp-content/uploads/2019/06/SaltedVine_Web.jpg",
+      "page": "https://saltedvine.ca/",
+      "w": 1000,
+      "h": 667
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-11-05",
+      "key": "cef00ba45e73",
+      "rejected": [
+        {
+          "url": "https://saltedvine.ca/wp-content/uploads/2016/07/salted-vine-og_red.jpg",
+          "why": "logo and wordmark, primarily text graphic"
         }
       ]
     }

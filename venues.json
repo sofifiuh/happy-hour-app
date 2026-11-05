@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-05-205bcf6a",
+ "data_version": "2026-11-05-b90c89d7",
  "venues": [
   {
    "id": "ancora",
@@ -8702,7 +8702,20 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/615f20ac182dfc44574613d9/897ca448-9c98-48b1-bd70-3c4f74f84b83/209A2759.jpg",
+     "credit_name": "Pat and Betty",
+     "credit_url": "https://patandbetty.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/615f20ac182dfc44574613d9/34b20aa4-a770-4053-ae6c-8e68d4ffe544/209A0008-3.jpg",
+     "credit_name": "Pat and Betty",
+     "credit_url": "https://patandbetty.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8754,9 +8767,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/615f20ac182dfc44574613d9/t/617044319d86567e48b4394e/1634747441933/Artboard+1.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/615f20ac182dfc44574613d9/f32f5969-1509-4180-a37e-242fb0c12c68/IMG_3488.jpg",
     "credit_name": "Pat and Betty",
-    "credit_url": "http://www.patandbetty.com/",
+    "credit_url": "https://patandbetty.com/about",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-05",
@@ -8790,7 +8803,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/1c/dd8761597a441189916fe3c404c1c6/:original",
+     "credit_name": "Our House",
+     "credit_url": "https://ourhouseyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/7d/3fc799561f40109877270142bcf8ee/:original",
+     "credit_name": "Our House",
+     "credit_url": "https://ourhouseyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/af/82b246f6ad4ff2bacbf15762122d06/:original",
+     "credit_name": "Our House",
+     "credit_url": "https://ourhouseyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/13/30540d3cd24a6497ad74107d3c7144/:original",
+     "credit_name": "Our House",
+     "credit_url": "https://ourhouseyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/bd/a243c7ed244196b2cec6d8b35e1913/:original",
+     "credit_name": "Our House",
+     "credit_url": "https://ourhouseyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/658218_website_v1/about3_new.jpg",
+     "credit_name": "Our House",
+     "credit_url": "https://ourhouseyyc.com/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/658218_website_v1/about2_new.jpg",
+     "credit_name": "Our House",
+     "credit_url": "https://ourhouseyyc.com/about",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8943,7 +8999,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/background-images/437907840.jpg",
+     "credit_name": "Kisoji Japanese Kitchen",
+     "credit_url": "https://www.kisoji.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/p79.png",
+     "credit_name": "Kisoji Japanese Kitchen",
+     "credit_url": "https://www.kisoji.ca/gallery.html",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/p80.png",
+     "credit_name": "Kisoji Japanese Kitchen",
+     "credit_url": "https://www.kisoji.ca/gallery.html",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/p81.png",
+     "credit_name": "Kisoji Japanese Kitchen",
+     "credit_url": "https://www.kisoji.ca/gallery.html",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/p77.png",
+     "credit_name": "Kisoji Japanese Kitchen",
+     "credit_url": "https://www.kisoji.ca/gallery.html",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/p84.png",
+     "credit_name": "Kisoji Japanese Kitchen",
+     "credit_url": "https://www.kisoji.ca/gallery.html",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.kisoji.ca/uploads/2/3/3/9/23396284/20141109-kisoji-25.jpg",
+     "credit_name": "Kisoji Japanese Kitchen",
+     "credit_url": "https://www.kisoji.ca/gallery.html",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9137,7 +9236,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2026/04/DSC08950_1-scaled-e1777055486293-980x658.jpg?lossy=2&strip=1&webp=1",
+     "credit_name": "Borough Bar & Grill",
+     "credit_url": "https://boroughbar.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2026/04/DSC09018_1-scaled-e1777055104312-980x560.jpg?lossy=2&strip=1&webp=1",
+     "credit_name": "Borough Bar & Grill",
+     "credit_url": "https://boroughbar.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2026/04/DSC09034_1-scaled-e1777065296331-980x627.jpg?lossy=2&strip=1&webp=1",
+     "credit_name": "Borough Bar & Grill",
+     "credit_url": "https://boroughbar.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2026/04/DSC09040_1-scaled-e1777055258791-980x1010.jpg?lossy=2&strip=1&webp=1",
+     "credit_name": "Borough Bar & Grill",
+     "credit_url": "https://boroughbar.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2026/04/DSC08961_1-scaled-e1777059890386-980x999.jpg?lossy=2&strip=1&webp=1",
+     "credit_name": "Borough Bar & Grill",
+     "credit_url": "https://boroughbar.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://boroughbar.ca/wp-content/uploads/2025/07/IMG_1442-Edit-1.jpg",
+     "credit_name": "Borough Bar & Grill",
+     "credit_url": "https://boroughbar.ca/features-events/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9210,10 +9346,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/borough-bar-grill.jpg",
-    "credit_name": "Nelly B",
-    "credit_url": "https://maps.google.com/maps/contrib/111513394710615470710",
-    "source": "google_places"
+    "url": "https://b4547430.assetcdn.net/2.0/4547430/wp-content/uploads/2025/07/Borough_0227-scaled-1.jpg?lossy=2&strip=1&webp=1",
+    "credit_name": "Borough Bar & Grill",
+    "credit_url": "https://boroughbar.ca/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-05",
    "primary_type": null,
@@ -9400,10 +9536,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/the-boot-sports-bar-and-restaurant.jpg",
-    "credit_name": "John H",
-    "credit_url": "https://maps.google.com/maps/contrib/108203406614767902057",
-    "source": "google_places"
+    "url": "https://bootwhistler.com/images/slide-bg1.jpg",
+    "credit_name": "The Boot Sports Bar and Restaurant",
+    "credit_url": "https://bootwhistler.com/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-05",
    "primary_type": null,
@@ -9570,9 +9706,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://saltedvine.ca/wp-content/uploads/2016/07/salted-vine-og_red.jpg",
+    "url": "https://saltedvine.ca/wp-content/uploads/2019/06/SaltedVine_Web.jpg",
     "credit_name": "The Salted Vine Kitchen + Bar",
-    "credit_url": "http://www.saltedvine.ca/",
+    "credit_url": "https://saltedvine.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-05",
@@ -9606,7 +9742,56 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://www.cowboystaphouseyyc.com/assets/backgrounds/4.webp",
+     "credit_name": "Cowboys Taphouse",
+     "credit_url": "https://www.cowboystaphouseyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.cowboystaphouseyyc.com/assets/banner/7.webp",
+     "credit_name": "Cowboys Taphouse",
+     "credit_url": "https://www.cowboystaphouseyyc.com/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.cowboystaphouseyyc.com/assets/gallery/9.webp",
+     "credit_name": "Cowboys Taphouse",
+     "credit_url": "https://www.cowboystaphouseyyc.com/our-food",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.cowboystaphouseyyc.com/assets/popular-dishes/beef-dip.webp",
+     "credit_name": "Cowboys Taphouse",
+     "credit_url": "https://www.cowboystaphouseyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.cowboystaphouseyyc.com/assets/gallery/8.webp",
+     "credit_name": "Cowboys Taphouse",
+     "credit_url": "https://www.cowboystaphouseyyc.com/our-food",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.cowboystaphouseyyc.com/assets/banner/8.webp",
+     "credit_name": "Cowboys Taphouse",
+     "credit_url": "https://www.cowboystaphouseyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.cowboystaphouseyyc.com/assets/popular-dishes/caesars.webp",
+     "credit_name": "Cowboys Taphouse",
+     "credit_url": "https://www.cowboystaphouseyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.cowboystaphouseyyc.com/assets/about/1.webp",
+     "credit_name": "Cowboys Taphouse",
+     "credit_url": "https://www.cowboystaphouseyyc.com/about",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9706,7 +9891,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://cowboystaphouseyyc.com/assets/logo/logo.webp",
+    "url": "https://www.cowboystaphouseyyc.com/assets/catering/catering.webp",
     "credit_name": "Cowboys Taphouse",
     "credit_url": "https://www.cowboystaphouseyyc.com/",
     "source": "official_website"
@@ -9742,7 +9927,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6abbdef3088a557ff3a36d21_97d28a71fdebc1af45a127cde468a9ae_About%20Us%20Page%20Photo.webp",
+     "credit_name": "RAW - Japanese Hand Roll Bar",
+     "credit_url": "https://www.rawyyc.ca/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aadeaf37ab6919ccdd62870_IMG_5358.avif",
+     "credit_name": "RAW - Japanese Hand Roll Bar",
+     "credit_url": "https://www.rawyyc.ca/gallery",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aadeb61e80315dcb78e4cb0_DSC05497.jpg",
+     "credit_name": "RAW - Japanese Hand Roll Bar",
+     "credit_url": "https://www.rawyyc.ca/gallery",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aadeaef41039439e712c0fe_DSC05600.avif",
+     "credit_name": "RAW - Japanese Hand Roll Bar",
+     "credit_url": "https://www.rawyyc.ca/gallery",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6abbe11845d92edc1fd2de5c_2c22ebfda55adf88f1d9d9e1c8c19d0b_EF6A11A3-BF92-4197-8E87-8B8A5E14A459.avif",
+     "credit_name": "RAW - Japanese Hand Roll Bar",
+     "credit_url": "https://www.rawyyc.ca/gallery",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9813,10 +10029,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/raw-japanese-hand-roll-bar.jpg",
+    "url": "https://cdn.prod.website-files.com/6aade1ca2686e834271f47ac/6aadeb613d7fab6c5c89a9d8_b27e695ef444ecbbffab23a76ce96843_DSC05752.webp",
     "credit_name": "RAW - Japanese Hand Roll Bar",
-    "credit_url": "https://maps.google.com/maps/contrib/108703482539346550555",
-    "source": "google_places"
+    "credit_url": "https://www.rawyyc.ca/gallery",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-05",
    "primary_type": null,
@@ -9849,7 +10065,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/parallax-fish-chips1.jpg",
+     "credit_name": "The Lodge Kitchen & Bar",
+     "credit_url": "https://thelodgecalgary.com/apres-hour-menu/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thelodgecalgary.com/wp-content/uploads/2023/09/header-about-v2.jpg",
+     "credit_name": "The Lodge Kitchen & Bar",
+     "credit_url": "https://thelodgecalgary.com/events-and-specials/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thelodgecalgary.com/wp-content/uploads/2023/09/header-food-menu-v2.jpg",
+     "credit_name": "The Lodge Kitchen & Bar",
+     "credit_url": "https://thelodgecalgary.com/apres-hour-menu/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/drink1_square.jpg",
+     "credit_name": "The Lodge Kitchen & Bar",
+     "credit_url": "https://thelodgecalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/food1_square.jpg",
+     "credit_name": "The Lodge Kitchen & Bar",
+     "credit_url": "https://thelodgecalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/fireplace-square-1.jpg",
+     "credit_name": "The Lodge Kitchen & Bar",
+     "credit_url": "https://thelodgecalgary.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9972,10 +10225,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/the-lodge-kitchen-bar.jpg",
-    "credit_name": "Mando",
-    "credit_url": "https://maps.google.com/maps/contrib/116477023795277997978",
-    "source": "google_places"
+    "url": "https://thelodgecalgary.com/wp-content/uploads/2023/08/bar-vert.jpg",
+    "credit_name": "The Lodge Kitchen & Bar",
+    "credit_url": "https://thelodgecalgary.com/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-05",
    "primary_type": null,
@@ -10008,7 +10261,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://img1.wsimg.com/isteam/stock/106240",
+     "credit_name": "Five Forks Bar and Grill",
+     "credit_url": "https://fiveforksbargrill.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://img1.wsimg.com/isteam/stock/2200/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1535,m",
+     "credit_name": "Five Forks Bar and Grill",
+     "credit_url": "https://fiveforksbargrill.com/about-us",
+     "source": "official_website"
+    },
+    {
+     "url": "https://img1.wsimg.com/isteam/stock/16277/:/cr=t:0%25,l:6.99%25,w:86.02%25,h:100%25/rs=w:1209,h:937",
+     "credit_name": "Five Forks Bar and Grill",
+     "credit_url": "https://fiveforksbargrill.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10159,7 +10431,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://img1.wsimg.com/isteam/stock/106240",
+    "url": "https://img1.wsimg.com/isteam/stock/106238/:/rs=w:1535,m",
     "credit_name": "Five Forks Bar and Grill",
     "credit_url": "https://fiveforksbargrill.com/",
     "source": "official_website"
@@ -10195,7 +10467,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.wixstatic.com/media/f3ddaa_f7a8629c41e944fb8030c46895dbc341~mv2.jpg/v1/fill/w_1360,h_780,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f3ddaa_f7a8629c41e944fb8030c46895dbc341~mv2.jpg",
+     "credit_name": "DISTRICT48 Kitchen + Bar",
+     "credit_url": "https://www.district48kitchenbar.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10313,10 +10592,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/district48-kitchen-bar.jpg",
+    "url": "https://static.wixstatic.com/media/f3ddaa_bbb967e9d96e416998d9cbde57c1db8d~mv2.png/v1/fill/w_1221,h_806,q_90,enc_avif,quality_auto/f3ddaa_bbb967e9d96e416998d9cbde57c1db8d~mv2.png",
     "credit_name": "DISTRICT48 Kitchen + Bar",
-    "credit_url": "https://maps.google.com/maps/contrib/116370066053292395511",
-    "source": "google_places"
+    "credit_url": "https://www.district48kitchenbar.com/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-05",
    "primary_type": null,
@@ -10349,7 +10628,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://revelwoods.ca/cdn/shop/files/P1029338.jpg?v=1784156899&width=2000",
+     "credit_name": "Revelwoods Tavern & Terrace",
+     "credit_url": "https://revelwoods.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10482,9 +10768,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://revelwoods.ca/cdn/shop/files/unnamed_38260d57-13f4-4be1-8072-ee2e303538ca.png?v=1784095150",
+    "url": "https://revelwoods.ca/cdn/shop/files/Revelwoods-MiniCampaign-45.jpg?v=1790032349&width=1920",
     "credit_name": "Revelwoods Tavern & Terrace",
-    "credit_url": "http://revelwoods.ca/",
+    "credit_url": "https://revelwoods.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-05",
