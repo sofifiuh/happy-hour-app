@@ -98,7 +98,7 @@ jobs:
           ${{ env.DRY_RUN == 'true' && '--no-extract' || '--discover' }}
           --discover-target "${{ inputs.burst && '400' || vars.DISCOVER_TARGET || '60' }}"
           --discover-budget "${{ inputs.burst && '100' || vars.DISCOVER_BUDGET || '15' }}"
-          ${{ inputs.burst && '--discover-searches 900' || '' }}
+          --discover-searches "${{ inputs.burst && '900' || vars.DISCOVER_SEARCHES || '160' }}"
 
       - name: Commit data
         id: commit
