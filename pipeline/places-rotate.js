@@ -32,8 +32,7 @@
 // Usage: node pipeline/places-rotate.js [--text 29] [--nearby 29] [--burst] [--dry-run]
 //   --burst spends up to --text/--nearby today from what is left of the month,
 //   instead of spreading it evenly over the remaining days (a one-off catch-up).
-//   The monthly caps still hold, and Google's own daily quota (160/SKU) still
-//   rejects anything above it.
+//   The monthly free-tier caps (900 per SKU) still hold.
 import fs from "node:fs";
 import path from "node:path";
 import { loadSeed, readJson, normName, parseArgs, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
@@ -134,10 +133,10 @@ const nearbyJobs = NEW_CIRCLES.flatMap(([lat, lng, radius]) =>
 
 // ── Budget ────────────────────────────────────────────────────────────────
 const USAGE = path.join(REPO_ROOT, "pipeline", "api-usage.json");
-// --month-cap N raises the monthly cap past the free 900 for a paid catch-up
-// (Jason approved a one-off paid sweep, 2026-11-06). Calls above 1,000 bill
-// at $35/1,000 per SKU.
-const MONTH_CAP = { text_enterprise: Number(args["month-cap"]) || 900, nearby_enterprise: Number(args["month-cap"]) || 900 };
+// Free tier only (Jason, 2026-11-06: "I want to sit inside the free plan").
+// Google gives 1,000 free calls per SKU a month; 900 leaves room for guest
+// submissions. Do not add a way to raise this.
+const MONTH_CAP = { text_enterprise: 900, nearby_enterprise: 900 };
 const DAY_CAP = { text_enterprise: Number(args.text ?? 29), nearby_enterprise: Number(args.nearby ?? 29) };
 const usage = readJson(USAGE, {});
 usage[MONTH] = { text_enterprise: 0, nearby_enterprise: 0, ...usage[MONTH] };

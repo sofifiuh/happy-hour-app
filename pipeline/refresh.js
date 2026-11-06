@@ -116,7 +116,6 @@ if (args.discover) {
           "--target", String(Number(args["discover-target"]) || 10),
           "--budget", String(Number(args["discover-budget"]) || 5),
           ...(Number(args["discover-searches"]) > 0 ? ["--searches", String(args["discover-searches"])] : []),
-          ...(Number(args["discover-month-cap"]) > 0 ? ["--month-cap", String(args["discover-month-cap"])] : []),
         ]);
       } catch (e) {
         console.log(`[discover] failed: ${String(e.message).slice(0, 200)}`);
