@@ -27196,5 +27196,23 @@
     "name": "Smoke 2 snack Capilano ( vape and snack store )",
     "verdict": "no_happy_hour",
     "checked_at": "2026-11-06"
+  },
+  "ChIJ8xdIWlXPhVQRVkEhSK0u8x8": {
+    "id": "township-7-vineyards-winery-south-langley",
+    "name": "Township 7 Vineyards & Winery - South Langley",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-06"
+  },
+  "ChIJ_W8bGRnFhVQRhpYTdkeSecs": {
+    "id": "gate-22-winery",
+    "name": "Gate 22 Winery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-06"
+  },
+  "ChIJ8R2flubahVQRx1W8s0NtPc0": {
+    "id": "vinoscenti-vineyards",
+    "name": "Vinoscenti Vineyards",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-06"
   }
 }

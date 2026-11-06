@@ -31450,13 +31450,13 @@
           "name": "All Starters",
           "price": "$5 off",
           "category": "food",
-          "description": "Applies to all starters"
+          "description": "Off all starters"
         },
         {
           "name": "All Pizzas",
           "price": "$5 off",
           "category": "food",
-          "description": "Applies to all pizzas"
+          "description": "Off all pizzas"
         },
         {
           "name": "Wine Bottles",
@@ -31468,25 +31468,25 @@
           "name": "Wildeye Beer",
           "price": "$1 off",
           "category": "drink",
-          "description": "Wildeye beers on tap"
+          "description": "Wildeye beer on tap"
         },
         {
           "name": "Jack's House Lager",
           "price": "$5/$7",
           "category": "drink",
-          "description": "$5 for 14 oz, $7 for 20 oz"
+          "description": "14 oz / 20 oz"
         },
         {
           "name": "Highballs",
           "price": "$5",
           "category": "drink",
-          "description": "1 oz; Boozy Bellini float +$2"
+          "description": "1 oz; Boozy Bellini Float +$2"
         },
         {
           "name": "House Wine",
           "price": "$7/$10",
           "category": "drink",
-          "description": "$7 for 6 oz, $10 for 9 oz"
+          "description": "6 oz / 9 oz"
         },
         {
           "name": "Sangria and Spritz",
@@ -31515,7 +31515,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-10-24"
+    "last_synced_at": "2026-11-06"
   },
   {
     "place_id": null,
@@ -32224,34 +32224,34 @@
       "source_url": "https://www.murrayvilletownpub.com/s/2026-04-MAIN-MENU.pdf",
       "deals": [
         {
-          "name": "Bar highballs (single)",
+          "name": "All Bar Highballs (single)",
           "price": "$5",
           "category": "drink",
-          "description": "All bar highballs, happy hour single; regular $6.85"
+          "description": "Happy hour single; regular $6.85"
         },
         {
-          "name": "Bar highballs (double)",
+          "name": "All Bar Highballs (double)",
           "price": "$8.75",
           "category": "drink",
-          "description": "All bar highballs, happy hour double; regular $12.85"
+          "description": "Happy hour double; regular $12.85"
         },
         {
-          "name": "Jackson Triggs wine",
+          "name": "Jackson Triggs Merlot or Sauvignon Blanc",
           "price": "$8",
           "category": "drink",
-          "description": "Merlot or Sauvignon Blanc, 9 oz. pour; regular $10.70"
+          "description": "9 oz. pour; regular $10.70"
         },
         {
-          "name": "Bottles of wine",
+          "name": "Bottles of Wine",
           "price": "$5 off",
           "category": "drink",
           "description": "$5 off all bottles of wine"
         },
         {
-          "name": "Sangria",
+          "name": "Sangria (Red or White)",
           "price": "$7",
           "category": "drink",
-          "description": "Red or White; regular $9.65"
+          "description": "Regular $9.65"
         },
         {
           "name": "Pabst Blue Ribbon",
@@ -32266,7 +32266,7 @@
           "description": "Pickle Back, Lemon Drop, Black Forest, Burt Reynolds, El Jimador Silver"
         },
         {
-          "name": "Landshark Lager pint",
+          "name": "Landshark Lager Pint",
           "price": "$8",
           "category": "drink",
           "description": "Regular $10"
@@ -32287,7 +32287,7 @@
           "name": "Buffalo Cauliflower",
           "price": "$8",
           "category": "food",
-          "description": "Blue cheese dip"
+          "description": "With blue cheese dip"
         },
         {
           "name": "Tiger Prawns",
@@ -32305,7 +32305,7 @@
           "name": "Deep Fried Pickles",
           "price": "$9",
           "category": "food",
-          "description": "Ranch dip"
+          "description": "With ranch dip"
         }
       ]
     },
@@ -32315,7 +32315,7 @@
       "credit_url": "http://www.murrayvilletownpub.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-10-24"
+    "last_synced_at": "2026-11-06"
   },
   {
     "place_id": null,

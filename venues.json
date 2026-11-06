@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-06-f1b1b771",
+ "data_version": "2026-11-06-31b883e1",
  "venues": [
   {
    "id": "ancora",
@@ -8832,11 +8832,11 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
+    "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://jamesjoycepub.com/james-joyce-pub-drink-menus/",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
+    "last_checked_at": "2026-11-06",
     "last_confirmed_at": null
    }
   },
@@ -8992,12 +8992,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://richmondspub.com/specials",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -9145,11 +9145,11 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
+    "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://www.thestationpubcalgary.com/s/The-station-Flip-Book-Menus-Happy-Hour-Septemeber-2026-k96g.pdf",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
+    "last_checked_at": "2026-11-06",
     "last_confirmed_at": null
    }
   },
@@ -9301,11 +9301,11 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
+    "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://stjamescorner.ca/menus/HH%20Menu%20Oct%202024_page-0001.jpg",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
+    "last_checked_at": "2026-11-06",
     "last_confirmed_at": null
    }
   },
@@ -9473,11 +9473,11 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
+    "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://pigandduke.ca/drink-menu/",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
+    "last_checked_at": "2026-11-06",
     "last_confirmed_at": null
    }
   },
@@ -9642,12 +9642,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://socialbeerhaus.com/menu/daily-features/",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -9737,12 +9737,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://thekingshead.ca/",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -9879,12 +9879,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://watchmanspub.ca/specials",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -9985,12 +9985,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://mooses.ca/happy-hour",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -10166,11 +10166,11 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
+    "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://madisonspub.ca/",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
+    "last_checked_at": "2026-11-06",
     "last_confirmed_at": null
    }
   },
@@ -10298,12 +10298,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://nixxpub.ca/specials",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -10398,12 +10398,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://toolshedbrewing.com/specials",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -10485,12 +10485,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://shelteryyc.com/wp-content/uploads/2026/07/2026-07-27-shelter-happy-hour-web-ready.pdf",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -10585,12 +10585,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://bittersisters.co/drink-menu",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -10693,12 +10693,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.pazzerspub.com/",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -10784,12 +10784,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://untitledyyc.com/specials",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -10872,12 +10872,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://stonewallpub.ca/daily-specials",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -10957,12 +10957,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://www.lolivo.ca/",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -11093,12 +11093,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://www.versantehotel.com/taste/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=10162344245732925368",
     "data_as_of": "2026-11-06",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-06",
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -15672,12 +15672,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://themexicancorner.ca/fiesta-hour/",
     "data_as_of": "2026-11-04",
     "last_checked_at": "2026-11-06",
-    "last_confirmed_at": "2026-11-05"
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -25314,12 +25314,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://garrison.districtbar.ca/happyhour",
     "data_as_of": "2026-11-03",
     "last_checked_at": "2026-11-06",
-    "last_confirmed_at": "2026-11-05"
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -25659,12 +25659,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://amatotrattoria.ca/aperitivo-hour/",
     "data_as_of": "2026-11-03",
     "last_checked_at": "2026-11-06",
-    "last_confirmed_at": "2026-11-05"
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -27035,12 +27035,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.balamwhistler.ca/happy-hour",
     "data_as_of": "2026-11-03",
     "last_checked_at": "2026-11-06",
-    "last_confirmed_at": "2026-11-05"
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -55670,12 +55670,12 @@
    "maps_url": "https://maps.google.com/?cid=2353147389792386293&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
    "trust": {
     "level": "venue_site",
-    "status": "changed",
-    "confidence": "low",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://starlightcasino.ca/casino-happy-hour/",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-11-06",
-    "last_confirmed_at": "2026-11-04"
+    "last_confirmed_at": "2026-11-06"
    }
   },
   {
@@ -59774,8 +59774,8 @@
    "maps_url": "https://maps.google.com/?cid=1767104060080618068&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
    "trust": {
     "level": "venue_site",
-    "status": "unconfirmed",
-    "confidence": "medium",
+    "status": "unreachable",
+    "confidence": "low",
     "source_url": "http://greatbearpub.com/files/2019/01/Great-BearEatin-2019.pdf",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-11-06",
@@ -63713,13 +63713,13 @@
       "name": "All Starters",
       "price": "$5 off",
       "category": "food",
-      "description": "Applies to all starters"
+      "description": "Off all starters"
      },
      {
       "name": "All Pizzas",
       "price": "$5 off",
       "category": "food",
-      "description": "Applies to all pizzas"
+      "description": "Off all pizzas"
      },
      {
       "name": "Wine Bottles",
@@ -63731,25 +63731,25 @@
       "name": "Wildeye Beer",
       "price": "$1 off",
       "category": "drink",
-      "description": "Wildeye beers on tap"
+      "description": "Wildeye beer on tap"
      },
      {
       "name": "Jack's House Lager",
       "price": "$5/$7",
       "category": "drink",
-      "description": "$5 for 14 oz, $7 for 20 oz"
+      "description": "14 oz / 20 oz"
      },
      {
       "name": "Highballs",
       "price": "$5",
       "category": "drink",
-      "description": "1 oz; Boozy Bellini float +$2"
+      "description": "1 oz; Boozy Bellini Float +$2"
      },
      {
       "name": "House Wine",
       "price": "$7/$10",
       "category": "drink",
-      "description": "$7 for 6 oz, $10 for 9 oz"
+      "description": "6 oz / 9 oz"
      },
      {
       "name": "Sangria and Spritz",
@@ -63783,7 +63783,7 @@
     "credit_url": "https://jacklonsdales.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-10-24",
+   "last_synced_at": "2026-11-06",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -63792,7 +63792,7 @@
     "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://jacklonsdales.ca/wp-content/uploads/2026/08/Jack-Lonsdales-Aug-26-MENU.pdf",
-    "data_as_of": "2026-10-24",
+    "data_as_of": "2026-11-06",
     "last_checked_at": "2026-11-06",
     "last_confirmed_at": null
    }
@@ -65016,34 +65016,34 @@
     "source_url": "https://www.murrayvilletownpub.com/s/2026-04-MAIN-MENU.pdf",
     "deals": [
      {
-      "name": "Bar highballs (single)",
+      "name": "All Bar Highballs (single)",
       "price": "$5",
       "category": "drink",
-      "description": "All bar highballs, happy hour single; regular $6.85"
+      "description": "Happy hour single; regular $6.85"
      },
      {
-      "name": "Bar highballs (double)",
+      "name": "All Bar Highballs (double)",
       "price": "$8.75",
       "category": "drink",
-      "description": "All bar highballs, happy hour double; regular $12.85"
+      "description": "Happy hour double; regular $12.85"
      },
      {
-      "name": "Jackson Triggs wine",
+      "name": "Jackson Triggs Merlot or Sauvignon Blanc",
       "price": "$8",
       "category": "drink",
-      "description": "Merlot or Sauvignon Blanc, 9 oz. pour; regular $10.70"
+      "description": "9 oz. pour; regular $10.70"
      },
      {
-      "name": "Bottles of wine",
+      "name": "Bottles of Wine",
       "price": "$5 off",
       "category": "drink",
       "description": "$5 off all bottles of wine"
      },
      {
-      "name": "Sangria",
+      "name": "Sangria (Red or White)",
       "price": "$7",
       "category": "drink",
-      "description": "Red or White; regular $9.65"
+      "description": "Regular $9.65"
      },
      {
       "name": "Pabst Blue Ribbon",
@@ -65058,7 +65058,7 @@
       "description": "Pickle Back, Lemon Drop, Black Forest, Burt Reynolds, El Jimador Silver"
      },
      {
-      "name": "Landshark Lager pint",
+      "name": "Landshark Lager Pint",
       "price": "$8",
       "category": "drink",
       "description": "Regular $10"
@@ -65079,7 +65079,7 @@
       "name": "Buffalo Cauliflower",
       "price": "$8",
       "category": "food",
-      "description": "Blue cheese dip"
+      "description": "With blue cheese dip"
      },
      {
       "name": "Tiger Prawns",
@@ -65097,7 +65097,7 @@
       "name": "Deep Fried Pickles",
       "price": "$9",
       "category": "food",
-      "description": "Ranch dip"
+      "description": "With ranch dip"
      }
     ]
    },
@@ -65107,7 +65107,7 @@
     "credit_url": "https://www.murrayvilletownpub.com/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-10-24",
+   "last_synced_at": "2026-11-06",
    "primary_type": "pub",
    "reservable": true,
    "maps_url": "https://maps.google.com/?cid=13009514881041084340&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
@@ -65116,7 +65116,7 @@
     "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://www.murrayvilletownpub.com/s/2026-04-MAIN-MENU.pdf",
-    "data_as_of": "2026-10-24",
+    "data_as_of": "2026-11-06",
     "last_checked_at": "2026-11-06",
     "last_confirmed_at": null
    }
@@ -91301,8 +91301,8 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "confirmed",
-    "confidence": "high",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "https://www.tapsandtacos.ca/menus/happy-hour-margarita-monday?location=taps-and-tacos",
     "data_as_of": "2026-11-02",
     "last_checked_at": "2026-11-06",
