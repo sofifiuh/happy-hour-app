@@ -35,8 +35,16 @@ const run = (script, extra = []) =>
 
 const before = readJson(VENUES_FILE).venues;
 
-// --- 1. Check every source page.
-run("check-sources.js", ["--render", RENDER]);
+// --- 1. Check every source page. Capped: on 2026-11-06 a hung page render
+// held this step for three hours and the job timed out with nothing saved.
+// Past the cap, carry on with yesterday's freshness rather than lose the day.
+try {
+  execFileSync("node", [path.join(REPO_ROOT, "pipeline", "check-sources.js"), "--render", RENDER], {
+    cwd: REPO_ROOT, stdio: "inherit", timeout: 45 * 60 * 1000, killSignal: "SIGKILL",
+  });
+} catch (e) {
+  console.log(`[check-sources] stopped: ${String(e.message).slice(0, 200)} — using the last saved freshness`);
+}
 const freshness = readJson(FRESHNESS_STORE, {});
 
 // --- 1b. Happy hours guests photographed and an admin published (see
