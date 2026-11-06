@@ -19,6 +19,14 @@ on:
         description: "Run even if today's refresh already happened"
         type: boolean
         default: false
+      burst:
+        description: "Catch-up run: up to 160 Text + 160 Nearby searches from the month's free 900 (not the even daily share), publish up to 400"
+        type: boolean
+        default: false
+      paid_sweep:
+        description: "One-off PAID sweep: every due search today (monthly cap 2,000; calls past 1,000 bill at $35/1,000). Needs the Places daily quotas raised first."
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -31,7 +39,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 350
     env:
       # Accept the common names for each key, so a differently named secret
       # still works.
@@ -51,7 +59,7 @@ jobs:
       # sometimes dispatches first and the cron run queues behind it; that
       # second run stops here. A manual dispatch with force still runs.
       - name: Skip if today's refresh already ran
-        if: github.event_name != 'pull_request' && inputs.force != true
+        if: github.event_name != 'pull_request' && inputs.force != true && inputs.burst != true && inputs.paid_sweep != true
         run: |
           if grep -q "^| $(date -u +%F) |" pipeline/GROWTH.md; then
             echo "Today's refresh already ran (pipeline/GROWTH.md); skipping."
@@ -92,8 +100,9 @@ jobs:
         run: >-
           node pipeline/refresh.js --max-extract "${{ inputs.max_extract || '40' }}"
           ${{ env.DRY_RUN == 'true' && '--no-extract' || '--discover' }}
-          --discover-target "${{ vars.DISCOVER_TARGET || '60' }}"
-          --discover-budget "${{ vars.DISCOVER_BUDGET || '15' }}"
+          --discover-target "${{ inputs.paid_sweep && '2000' || inputs.burst && '400' || vars.DISCOVER_TARGET || '60' }}"
+          --discover-budget "${{ inputs.paid_sweep && '500' || inputs.burst && '100' || vars.DISCOVER_BUDGET || '15' }}"
+          ${{ inputs.paid_sweep && '--discover-searches 2000 --discover-month-cap 2000' || inputs.burst && '--discover-searches 160' || '' }}
 
       - name: Commit data
         id: commit

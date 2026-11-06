@@ -17,7 +17,7 @@
 //
 // Usage: node pipeline/refresh.js [--max-extract 40] [--model <id>]
 //        [--no-extract] [--render auto|off]
-//        [--discover] [--discover-target 10] [--discover-budget 5]
+//        [--discover] [--discover-target 10] [--discover-budget 5] [--discover-searches N]
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -104,7 +104,12 @@ if (args.discover) {
       // A failed discovery must not cost the day's checks: log it and go on
       // to the sanity gate with whatever writeback last published.
       try {
-        run("daily.js", ["--target", String(Number(args["discover-target"]) || 10), "--budget", String(Number(args["discover-budget"]) || 5)]);
+        run("daily.js", [
+          "--target", String(Number(args["discover-target"]) || 10),
+          "--budget", String(Number(args["discover-budget"]) || 5),
+          ...(Number(args["discover-searches"]) > 0 ? ["--searches", String(args["discover-searches"])] : []),
+          ...(Number(args["discover-month-cap"]) > 0 ? ["--month-cap", String(args["discover-month-cap"])] : []),
+        ]);
       } catch (e) {
         console.log(`[discover] failed: ${String(e.message).slice(0, 200)}`);
       }
