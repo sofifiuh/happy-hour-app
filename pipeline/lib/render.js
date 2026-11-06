@@ -57,7 +57,23 @@ export async function renderPage(url, opts = {}) {
   return first;
 }
 
-async function renderOnce(url, { timeoutMs = 45000, settleMs = 2500 } = {}) {
+// A hard cap on one render. goto has its own timeout, but page.content() and
+// page.close() do not, and a wedged renderer once held the nightly refresh for
+// three hours until the job timed out with nothing committed (2026-11-06).
+async function renderOnce(url, opts = {}) {
+  const capMs = (opts.timeoutMs || 45000) + 30000;
+  let timer;
+  const cap = new Promise((resolve) => {
+    timer = setTimeout(() => resolve({ html: null, finalUrl: url, error: `render watchdog: no result after ${capMs / 1000}s` }), capMs);
+  });
+  try {
+    return await Promise.race([renderInner(url, opts), cap]);
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function renderInner(url, { timeoutMs = 45000, settleMs = 2500 } = {}) {
   let page = null;
   try {
     const context = await getContext();
@@ -73,7 +89,7 @@ async function renderOnce(url, { timeoutMs = 45000, settleMs = 2500 } = {}) {
     await page.close();
     return { html, finalUrl, error: null };
   } catch (e) {
-    if (page) await page.close().catch(() => {});
+    if (page) page.close().catch(() => {});
     return { html: null, finalUrl: url, error: String(e.message || e).slice(0, 300) };
   }
 }
