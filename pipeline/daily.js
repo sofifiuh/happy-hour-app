@@ -12,7 +12,9 @@
 // today's negatives. Negatives become eligible again after --recheck-days.
 //
 // Usage: node pipeline/daily.js [--target 100] [--budget 35]
-//        [--batch 60] [--recheck-days 90] [--dry-run]
+//        [--batch 60] [--recheck-days 90] [--searches N] [--dry-run]
+//   --searches N: a catch-up day. Up to N Text + N Nearby searches from what
+//   is left of the month's free allowance, not the usual even daily share.
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
@@ -66,7 +68,9 @@ if (args["use-pool"]) {
   // Default: today's free-tier slice of the region, plus everything found on
   // earlier days that has not been judged yet (pipeline/candidate-pool.json).
   console.log(`\n[discover] today's slice (places-rotate.js)`);
-  console.log(run("places-rotate.js", ["--recheck-days", String(RECHECK_DAYS), ...(DRY ? ["--dry-run"] : [])]).trim());
+  const burst = Number(args.searches) > 0
+    ? ["--text", String(args.searches), "--nearby", String(args.searches), "--burst"] : [];
+  console.log(run("places-rotate.js", ["--recheck-days", String(RECHECK_DAYS), ...burst, ...(DRY ? ["--dry-run"] : [])]).trim());
 }
 
 // The candidate file is a snapshot, and a previous round may already have

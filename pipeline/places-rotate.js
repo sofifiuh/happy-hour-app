@@ -29,7 +29,11 @@
 // and pipeline/candidate-pool.json, the places found but not yet judged, so a
 // day's finds survive until extraction gets to them.
 //
-// Usage: node pipeline/places-rotate.js [--text 29] [--nearby 29] [--dry-run]
+// Usage: node pipeline/places-rotate.js [--text 29] [--nearby 29] [--burst] [--dry-run]
+//   --burst spends up to --text/--nearby today from what is left of the month,
+//   instead of spreading it evenly over the remaining days (a one-off catch-up).
+//   The monthly caps still hold, and Google's own daily quota (160/SKU) still
+//   rejects anything above it.
 import fs from "node:fs";
 import path from "node:path";
 import { loadSeed, readJson, normName, parseArgs, RESULTS_DIR, REPO_ROOT } from "./lib/venues.js";
@@ -147,7 +151,8 @@ const daysLeft = (() => {
 // and an early burst can't starve the end of the month.
 const allowance = (sku) => {
   const monthLeft = Math.max(0, MONTH_CAP[sku] - usage[MONTH][sku]);
-  const today = Math.min(DAY_CAP[sku], Math.floor(monthLeft / daysLeft) || (monthLeft > 0 ? 1 : 0));
+  const spread = args.burst ? monthLeft : Math.floor(monthLeft / daysLeft) || (monthLeft > 0 ? 1 : 0);
+  const today = Math.min(DAY_CAP[sku], spread);
   return Math.max(0, today - usage.daily[TODAY][sku]);
 };
 const saveUsage = () => { if (!DRY) fs.writeFileSync(USAGE, JSON.stringify(usage, null, 2) + "\n"); };
