@@ -69,8 +69,7 @@ if (args["use-pool"]) {
   // earlier days that has not been judged yet (pipeline/candidate-pool.json).
   console.log(`\n[discover] today's slice (places-rotate.js)`);
   const burst = Number(args.searches) > 0
-    ? ["--text", String(args.searches), "--nearby", String(args.searches), "--burst",
-       ...(Number(args["month-cap"]) > 0 ? ["--month-cap", String(args["month-cap"])] : [])] : [];
+    ? ["--text", String(args.searches), "--nearby", String(args.searches), "--burst"] : [];
   console.log(run("places-rotate.js", ["--recheck-days", String(RECHECK_DAYS), ...burst, ...(DRY ? ["--dry-run"] : [])]).trim());
 }
 
