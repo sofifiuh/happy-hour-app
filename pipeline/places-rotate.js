@@ -134,7 +134,10 @@ const nearbyJobs = NEW_CIRCLES.flatMap(([lat, lng, radius]) =>
 
 // ── Budget ────────────────────────────────────────────────────────────────
 const USAGE = path.join(REPO_ROOT, "pipeline", "api-usage.json");
-const MONTH_CAP = { text_enterprise: 900, nearby_enterprise: 900 };
+// --month-cap N raises the monthly cap past the free 900 for a paid catch-up
+// (Jason approved a one-off paid sweep, 2026-11-06). Calls above 1,000 bill
+// at $35/1,000 per SKU.
+const MONTH_CAP = { text_enterprise: Number(args["month-cap"]) || 900, nearby_enterprise: Number(args["month-cap"]) || 900 };
 const DAY_CAP = { text_enterprise: Number(args.text ?? 29), nearby_enterprise: Number(args.nearby ?? 29) };
 const usage = readJson(USAGE, {});
 usage[MONTH] = { text_enterprise: 0, nearby_enterprise: 0, ...usage[MONTH] };
