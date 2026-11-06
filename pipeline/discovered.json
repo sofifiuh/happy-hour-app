@@ -25,6 +25,2079 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "james-joyce-irish-pub-restaurant",
+    "name": "James Joyce Irish Pub & Restaurant",
+    "formatted_address": "114 8 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.04567350000001,
+        "lng": -114.06392029999999
+      }
+    },
+    "formatted_phone_number": "(403) 262-0708",
+    "website": "http://jamesjoycepub.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://jamesjoycepub.com/james-joyce-pub-drink-menus/",
+      "deals": [
+        {
+          "name": "Beer 16oz",
+          "price": "$5.50",
+          "category": "drink",
+          "description": "The Joyce Crafted Lager or The Joyce Amber Ale"
+        },
+        {
+          "name": "House Wines",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "5oz pour - Gabianno Pinot Grigio, Jackson Triggs Merlot, Diablo Rosè"
+        },
+        {
+          "name": "Cocktails",
+          "price": "$7.50",
+          "category": "drink",
+          "description": "Chica Cherry Cola, Berry Mango Spritz, Apple Whiskey & Ginger"
+        },
+        {
+          "name": "Fried Mashed Potato Bites",
+          "price": "$12",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Whipped Feta",
+          "price": "$13",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Hummus & Naan",
+          "price": "$10",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Guinness Onion Rings",
+          "price": "$8",
+          "category": "food",
+          "description": "with chipotle mayo"
+        },
+        {
+          "name": "Ballycastle Bacon Bites",
+          "price": "$12",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Mini Shepherd Pies",
+          "price": "$13",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Home cut Chips",
+          "price": "$5",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://jamesjoycepub.ca/wp-content/uploads/2014/07/facebook.png",
+      "credit_name": "James Joyce Irish Pub & Restaurant",
+      "credit_url": "http://jamesjoycepub.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "richmond-s-pub",
+    "name": "Richmond's Pub",
+    "formatted_address": "3919 Richmond Rd SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0214734,
+        "lng": -114.14285559999999
+      }
+    },
+    "formatted_phone_number": "(403) 217-7744",
+    "website": "http://richmondspub.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "start": "16:00",
+      "end": "23:00",
+      "extra_windows": [
+        {
+          "days": [
+            4
+          ],
+          "start": "16:00",
+          "end": "00:00",
+          "label": "BEERZA"
+        },
+        {
+          "days": [
+            5
+          ],
+          "start": "16:00",
+          "end": "01:00",
+          "label": "LET THE GOOD TIMES ROLL"
+        },
+        {
+          "days": [
+            6
+          ],
+          "start": "16:00",
+          "end": "01:00",
+          "label": "WINES & STEINS"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "15:00",
+          "end": "18:00",
+          "label": "Tappy Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://richmondspub.com/specials",
+      "deals": [
+        {
+          "name": "Craft & Domestic Draft",
+          "price": "$6",
+          "category": "drink",
+          "description": "16 oz pours"
+        },
+        {
+          "name": "Imperial Pours",
+          "price": "$8",
+          "category": "drink",
+          "description": "20 oz pours"
+        },
+        {
+          "name": "Domestic Bottles",
+          "price": "$5.50",
+          "category": "drink",
+          "description": "Canadian, Kokanee, Bud, Bud Light, Coors Light"
+        },
+        {
+          "name": "Well Drinks",
+          "price": "$5-$8.50",
+          "category": "drink",
+          "description": "Shafts $5 (1.5 oz), Highballs $5 single/$8.50 double, Margarita $7"
+        },
+        {
+          "name": "House Wine",
+          "price": "$6",
+          "category": "drink",
+          "description": "6 oz pour, red or white"
+        },
+        {
+          "name": "Burger Sliders",
+          "price": "$9",
+          "category": "food",
+          "description": "2 pcs"
+        },
+        {
+          "name": "Chips & Dip",
+          "price": "$7",
+          "category": "food",
+          "description": "House potato chips with tzatziki"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/536166_website_v1/events_page_back.jpg",
+      "credit_name": "Richmond's Pub",
+      "credit_url": "http://richmondspub.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-station-pub-grill-riverbend",
+    "name": "The Station Pub + Grill (Riverbend)",
+    "formatted_address": "40 Riverglen Dr SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9764021,
+        "lng": -114.0137214
+      }
+    },
+    "formatted_phone_number": "(403) 720-5577",
+    "website": "http://www.thestationpubcalgary.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "22:00",
+          "end": null,
+          "label": "Late night"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": null,
+          "label": "All day"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.thestationpubcalgary.com/s/The-station-Flip-Book-Menus-Happy-Hour-Septemeber-2026-k96g.pdf",
+      "deals": [
+        {
+          "name": "Cocktails on tap",
+          "price": "$1 off",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Smashable cocktails",
+          "price": "$10",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "House red wine",
+          "price": "$8",
+          "category": "drink",
+          "description": "6oz"
+        },
+        {
+          "name": "House white wine",
+          "price": "$9",
+          "category": "drink",
+          "description": "9oz"
+        },
+        {
+          "name": "Domestic bottles",
+          "price": "$6.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "The Station Railway Lager",
+          "price": "$6",
+          "category": "drink",
+          "description": "16oz"
+        },
+        {
+          "name": "Local draught",
+          "price": "$7.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Shareables & street food",
+          "price": "$5 off",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/604c1eb50633472cafdad41d/t/604c1eed0df88f5b73a4dda8/1615601391790/The-Station.png?format=1500w",
+      "credit_name": "The Station Pub + Grill (Riverbend)",
+      "credit_url": "http://www.thestationpubcalgary.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "st-james-corner-restaurant-irish-pub",
+    "name": "St. James Corner Restaurant & Irish Pub",
+    "formatted_address": "1219 1 St SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.040690999999995,
+        "lng": -114.0660379
+      }
+    },
+    "formatted_phone_number": "(403) 262-1157",
+    "website": "https://stjamescorner.ca/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": "23:59",
+          "label": "All Day Sunday"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://stjamescorner.ca/menus/HH%20Menu%20Oct%202024_page-0001.jpg",
+      "deals": [
+        {
+          "name": "Fish Tacos",
+          "price": "$5",
+          "category": "food",
+          "description": "minimum 2"
+        },
+        {
+          "name": "Mac & Cheese",
+          "price": "$7",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Chicken Tenders",
+          "price": "$10",
+          "category": "food",
+          "description": "served with fries"
+        },
+        {
+          "name": "Fish & Chips",
+          "price": "$12",
+          "category": "food",
+          "description": "1 piece"
+        },
+        {
+          "name": "Tortillas & Pico de Gallo",
+          "price": "$24",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "House Wine",
+          "price": "$6",
+          "category": "drink",
+          "description": "5oz"
+        },
+        {
+          "name": "Select Draught",
+          "price": "$6",
+          "category": "drink",
+          "description": "14oz"
+        },
+        {
+          "name": "Highballs",
+          "price": "$6",
+          "category": "drink",
+          "description": "1oz"
+        },
+        {
+          "name": "Caesars",
+          "price": "$6",
+          "category": "drink",
+          "description": "1oz"
+        },
+        {
+          "name": "Cocktails on Tap",
+          "price": "$6",
+          "category": "drink",
+          "description": "1oz"
+        },
+        {
+          "name": "Bottles of Wine",
+          "price": "1/2 Price",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://stjamescorner.ca/images/og_image.jpg",
+      "credit_name": "St. James Corner Restaurant & Irish Pub",
+      "credit_url": "https://stjamescorner.ca/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "pig-duke-neighbourhood-pub",
+    "name": "Pig & Duke Neighbourhood Pub",
+    "formatted_address": "1312 12 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0425803,
+        "lng": -114.091617
+      }
+    },
+    "formatted_phone_number": "(403) 245-8487",
+    "website": "http://www.pigandduke.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "23:00",
+          "end": null,
+          "label": "Late night"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "10:00",
+          "end": "01:00",
+          "label": "All day"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://pigandduke.ca/drink-menu/",
+      "deals": [
+        {
+          "name": "Highballs",
+          "price": "$5",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "House Wine",
+          "price": "$5",
+          "category": "drink",
+          "description": "6 oz"
+        },
+        {
+          "name": "Domestic Bottles",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Jägermeister",
+          "price": "$5",
+          "category": "drink",
+          "description": "1 oz shot"
+        },
+        {
+          "name": "Moscow Mule",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "Grizzly Paw"
+        },
+        {
+          "name": "Domestic Buckets",
+          "price": "$25",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "20 oz Craft Pints",
+          "price": "$6.75",
+          "category": "drink",
+          "description": "Grizzly Paw Raspberry Wheat, Grizzly Paw Grumpy Bear Wheat, Tool Shed Red Rage, Sea Change Death Wave Light Lager"
+        },
+        {
+          "name": "Popcorn Pig",
+          "price": "$7",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Garlic Fries",
+          "price": "$8",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Poutine",
+          "price": "$8",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Tater Tots",
+          "price": "$8",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Personal Nachos",
+          "price": "$9",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://pigandduke.ca/wp-content/uploads/2025/05/PigDuke.webp",
+      "credit_name": "Pig & Duke Neighbourhood Pub",
+      "credit_url": "http://www.pigandduke.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "social-beer-haus",
+    "name": "Social Beer Haus",
+    "formatted_address": "220 8 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.045795999999996,
+        "lng": -114.0666541
+      }
+    },
+    "formatted_phone_number": "(825) 462-2402",
+    "website": "https://socialbeerhaus.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": null,
+          "label": "All Day Sunday"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://socialbeerhaus.com/menu/daily-features/",
+      "deals": [
+        {
+          "name": "Momma's Mac And Cheese",
+          "price": "$12.50",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Bayou Country Fried Pickles",
+          "price": "$12.50",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Spicy Street Corn",
+          "price": "$12.50",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Classic Poutine",
+          "price": "$12.50",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Babe Bites",
+          "price": "$12.50",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Smoked Half Chicken",
+          "price": "$12.50",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Cornbread",
+          "price": "$8.50",
+          "category": "food",
+          "description": "4 pieces"
+        },
+        {
+          "name": "Sleeve of Domestic Draft",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "16oz"
+        },
+        {
+          "name": "Sleeve of Haus Lager",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "16oz"
+        },
+        {
+          "name": "Glass of Haus Red or White Wine",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "5oz"
+        },
+        {
+          "name": "Haus Highball",
+          "price": "$5.00",
+          "category": "drink",
+          "description": "1oz"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-king-s-head-eatery-music-room",
+    "name": "The King's Head Eatery & Music Room",
+    "formatted_address": "9116 Macleod Trail S, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9720188,
+        "lng": -114.0700557
+      }
+    },
+    "formatted_phone_number": "(403) 259-0111",
+    "website": "http://thekingshead.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        6
+      ],
+      "start": "11:30",
+      "end": "19:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://thekingshead.ca/",
+      "deals": [
+        {
+          "name": "Wings",
+          "price": "$8",
+          "category": "food",
+          "description": "Half price"
+        },
+        {
+          "name": "Wine bottles",
+          "price": "50% off",
+          "category": "drink",
+          "description": "Half price"
+        },
+        {
+          "name": "House wine (glass)",
+          "price": "50% off",
+          "category": "drink",
+          "description": "Half price by the glass"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://www.thekingshead.ca/web/img_favicons/og-icon-310x310.png",
+      "credit_name": "The King's Head Eatery & Music Room",
+      "credit_url": "http://thekingshead.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "watchman-s-pub-eatery",
+    "name": "Watchman's Pub & Eatery",
+    "formatted_address": "1109 17 Ave SW #100, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0375504,
+        "lng": -114.087818
+      }
+    },
+    "formatted_phone_number": "(403) 245-8888",
+    "website": "http://watchmanspub.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "00:00",
+          "end": "02:00",
+          "label": "Midnight Madness"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://watchmanspub.ca/specials",
+      "deals": [
+        {
+          "name": "Dry Ribs",
+          "price": "$10.00",
+          "category": "food",
+          "description": "Beer mustard dipping sauce"
+        },
+        {
+          "name": "Well Hi-Balls",
+          "price": "$5.00",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Domestic Cans",
+          "price": "$6.00",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "PBR",
+          "price": "$6.00",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Clam Chowder",
+          "price": "$10.00",
+          "category": "food",
+          "description": "Home-made clam chowder"
+        },
+        {
+          "name": "Chef's Soup",
+          "price": "$10.00",
+          "category": "food",
+          "description": "Soup of the day"
+        },
+        {
+          "name": "Deep-Fried Pickle Chips",
+          "price": "$10.00",
+          "category": "food",
+          "description": "Made in house"
+        },
+        {
+          "name": "Skinny Burger",
+          "price": "$10.00",
+          "category": "food",
+          "description": "Served with fries"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/399960_website_v1/food_back.jpg",
+      "credit_name": "Watchman's Pub & Eatery",
+      "credit_url": "http://watchmanspub.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "moose-s-beanery-bar-room",
+    "name": "Moose's Beanery & Bar Room",
+    "formatted_address": "779 Northmount Dr NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.082587700000005,
+        "lng": -114.09626639999999
+      }
+    },
+    "formatted_phone_number": "(403) 300-6670",
+    "website": "http://mooses.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://mooses.ca/happy-hour",
+      "deals": [
+        {
+          "name": "1oz Shots",
+          "price": "$4.00",
+          "category": "drink",
+          "description": "Various spirits (Green Tea, Burt Reynolds, Rockstar, Fireball, Gin Peach, El Tequileno)"
+        },
+        {
+          "name": "Beer & Pints",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "Wild Rose Pints (Raspberry Ale, Velvet Fog, Pink Velvet), Corona, Budweiser Draught"
+        },
+        {
+          "name": "Wings",
+          "price": "$8.99-$26.99",
+          "category": "food",
+          "description": "Double cooked: 1lb ($8.99), 2lb ($17.99), 3lb ($26.99)"
+        },
+        {
+          "name": "Taco Trio",
+          "price": "$9.00",
+          "category": "food",
+          "description": "Chicken, shrimp, or beef"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://mooses.ca/wp-content/uploads/2022/08/Mooses_Icon_DarkBackground.jpg",
+      "credit_name": "Moose's Beanery & Bar Room",
+      "credit_url": "http://mooses.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "madisons-restaurant-bar",
+    "name": "Madisons Restaurant & Bar",
+    "formatted_address": "8120 Beddington Blvd NW #315, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.1268951,
+        "lng": -114.0733059
+      }
+    },
+    "formatted_phone_number": "(403) 295-2175",
+    "website": "https://madisonspub.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "11:00",
+          "end": "22:00",
+          "label": "Sunday all day"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://madisonspub.ca/",
+      "deals": [
+        {
+          "name": "Vodka Mule",
+          "price": "$8",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Vodka Caesars",
+          "price": "$8",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Burt Reynolds",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Fireball",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "House Draft",
+          "price": "$6.75",
+          "category": "drink",
+          "description": "20 oz - Madisons Lager, Pabst Blue Ribbon"
+        },
+        {
+          "name": "Domestic Draft",
+          "price": "$7.25",
+          "category": "drink",
+          "description": "20 oz"
+        },
+        {
+          "name": "Premium Draft",
+          "price": "$7.75",
+          "category": "drink",
+          "description": "20 oz"
+        },
+        {
+          "name": "Domestic Bottles",
+          "price": "$6",
+          "category": "drink",
+          "description": "341 ml"
+        },
+        {
+          "name": "Non-Alcoholic Beer",
+          "price": "$5",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Bar Highballs",
+          "price": "$5.50",
+          "category": "drink",
+          "description": "1 oz"
+        },
+        {
+          "name": "Red Wine",
+          "price": "$7.50-14",
+          "category": "drink",
+          "description": "6 oz / 9 oz options"
+        },
+        {
+          "name": "White Wine",
+          "price": "$7.50-12",
+          "category": "drink",
+          "description": "6 oz / 9 oz options"
+        },
+        {
+          "name": "Rosé & Sparkling",
+          "price": "$7-11",
+          "category": "drink",
+          "description": "6 oz / 9 oz options"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "nixx-neighbourhood-pub",
+    "name": "Nixx Neighbourhood Pub",
+    "formatted_address": "2418 Edmonton Trl, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0741109,
+        "lng": -114.05597259999999
+      }
+    },
+    "formatted_phone_number": "(403) 277-7715",
+    "website": "http://nixxpub.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "19:00",
+      "extra_windows": [
+        {
+          "days": [
+            0
+          ],
+          "start": "11:00",
+          "end": "00:00",
+          "label": "All day Sunday"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://nixxpub.ca/specials",
+      "deals": [
+        {
+          "name": "Hi-balls",
+          "price": "$4.00",
+          "category": "drink",
+          "description": "1 oz"
+        },
+        {
+          "name": "Domestic bottles",
+          "price": "$5.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Jager",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "1 oz"
+        },
+        {
+          "name": "Fireball",
+          "price": "$5.00",
+          "category": "drink",
+          "description": "1 oz"
+        },
+        {
+          "name": "House Wine",
+          "price": "$7.75",
+          "category": "drink",
+          "description": "6 oz"
+        },
+        {
+          "name": "House Wine",
+          "price": "$12.00",
+          "category": "drink",
+          "description": "9 oz"
+        },
+        {
+          "name": "HH burger & fries",
+          "price": "$15.00",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/392997_website_v1/social.jpg",
+      "credit_name": "Nixx Neighbourhood Pub",
+      "credit_url": "http://nixxpub.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "tool-shed-beer-bbq",
+    "name": "Tool Shed Beer & BBQ",
+    "formatted_address": "801 30 St NE #9, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.059833499999996,
+        "lng": -113.98984519999999
+      }
+    },
+    "formatted_phone_number": "(403) 775-1749",
+    "website": "http://toolshedbrewing.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://toolshedbrewing.com/specials",
+      "deals": [
+        {
+          "name": "20 oz Pints",
+          "price": "$1.00 off",
+          "category": "drink",
+          "description": "$1.00 off all pints"
+        },
+        {
+          "name": "Wood-Fired Pretzel Bites",
+          "price": "$7.00",
+          "category": "food",
+          "description": "Served with People Skills Beer Mustard Cheese Sauce"
+        },
+        {
+          "name": "Smoked, Dusted Ripple Chips",
+          "price": "$6.00",
+          "category": "food",
+          "description": "Served with chipotle paprika aioli"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/370594_website_v1/social_share.jpg",
+      "credit_name": "Tool Shed Beer & BBQ",
+      "credit_url": "http://toolshedbrewing.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "shelter-cocktail-bar",
+    "name": "Shelter Cocktail Bar",
+    "formatted_address": "1210 1 St SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.041132,
+        "lng": -114.06555469999999
+      }
+    },
+    "formatted_phone_number": "(403) 233-7730",
+    "website": "http://shelteryyc.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://shelteryyc.com/wp-content/uploads/2026/07/2026-07-27-shelter-happy-hour-web-ready.pdf",
+      "deals": [
+        {
+          "name": "Lab Cocktails",
+          "price": "$13",
+          "category": "drink",
+          "description": "2oz experimental cocktails crafted by staff"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://shelteryyc.com/wp-content/uploads/2016/04/Mask-Icon-Full.png",
+      "credit_name": "Shelter Cocktail Bar",
+      "credit_url": "http://shelteryyc.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "bitter-sisters-brewing-co",
+    "name": "Bitter Sisters Brewing Co.",
+    "formatted_address": "510 Heritage Dr SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9802241,
+        "lng": -114.0757637
+      }
+    },
+    "formatted_phone_number": "(403) 287-8811",
+    "website": "http://www.bittersisters.co/",
+    "happy_hour": {
+      "days": [
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2
+          ],
+          "start": "15:00",
+          "end": "17:00",
+          "label": "Afternoon Happy Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://bittersisters.co/drink-menu",
+      "deals": [
+        {
+          "name": "16oz draft",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "Draft beer"
+        },
+        {
+          "name": "5oz house wine",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "House wine"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5d9f860d15592a07b50d8e20/t/5e616b48ee860c6b22f0e14f/1583442767407/189B2205.jpg?format=1500w",
+      "credit_name": "Bitter Sisters Brewing Co.",
+      "credit_url": "http://www.bittersisters.co/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "pazzer-s-pub",
+    "name": "Pazzer's Pub",
+    "formatted_address": "5032 16 Ave NW #1, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0739545,
+        "lng": -114.16563749999999
+      }
+    },
+    "formatted_phone_number": "(403) 286-1500",
+    "website": "http://www.pazzerspub.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0
+          ],
+          "start": "11:00",
+          "end": "22:00",
+          "label": "Happy Hour All Day"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.pazzerspub.com/",
+      "deals": [
+        {
+          "name": "2 Shots",
+          "price": "$8",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Pilsner Pint",
+          "price": "$5.25",
+          "category": "drink",
+          "description": "Draft"
+        },
+        {
+          "name": "Wings",
+          "price": "$9",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5b79c5208ab722614fdea6a0/t/5bb8f5fe085229e8f5067d06/1605655371178/Logo.png?format=1500w",
+      "credit_name": "Pazzer's Pub",
+      "credit_url": "http://www.pazzerspub.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "untitled-champagne-lounge",
+    "name": "UNTITLED Champagne Lounge",
+    "formatted_address": "620 8 Ave SW #104, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0460232,
+        "lng": -114.07497439999999
+      }
+    },
+    "formatted_phone_number": "(403) 475-7226",
+    "website": "http://untitledyyc.com/",
+    "happy_hour": {
+      "days": [
+        5
+      ],
+      "start": "16:00",
+      "end": "19:00",
+      "extra_windows": [
+        {
+          "days": [
+            4
+          ],
+          "start": "18:00",
+          "end": "00:00",
+          "label": "Champagne Fling"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://untitledyyc.com/specials",
+      "deals": [
+        {
+          "name": "Champagne & Champagne Cocktails",
+          "price": "50% off",
+          "category": "drink",
+          "description": "1/2 off select Champagne and Champagne Cocktails"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/353430_website_v1/shared_image.jpg",
+      "credit_name": "UNTITLED Champagne Lounge",
+      "credit_url": "http://untitledyyc.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "stonewall-pub",
+    "name": "Stonewall Pub",
+    "formatted_address": "735 Ranchlands Blvd NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.1155836,
+        "lng": -114.18053929999999
+      }
+    },
+    "formatted_phone_number": "(403) 241-2877",
+    "website": "http://stonewallpub.ca/",
+    "happy_hour": {
+      "days": [
+        0
+      ],
+      "start": "11:00",
+      "end": "23:30",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://stonewallpub.ca/daily-specials",
+      "deals": [
+        {
+          "name": "Caesar",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Wings",
+          "price": "80¢",
+          "category": "food",
+          "description": "add veggies w/dip $5"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "l-olivo-cicchetti-lounge",
+    "name": "L'Olivo Cicchetti & Lounge",
+    "formatted_address": "1023 9 Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.042273400000006,
+        "lng": -114.0382757
+      }
+    },
+    "formatted_phone_number": "(403) 960-1006",
+    "website": "https://www.lolivo.ca/",
+    "happy_hour": {
+      "days": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.lolivo.ca/",
+      "deals": [
+        {
+          "name": "Cicchetti",
+          "price": "$5",
+          "category": "food",
+          "description": "Chef's selection, add to any drink from menu"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6835dab365a8a4398b81c40b/t/6840905ce6418654ca0d6b14/1749061724952/L%27OLIVO_Solid_Colour.png?format=1500w",
+      "credit_name": "L'Olivo Cicchetti & Lounge",
+      "credit_url": "https://www.lolivo.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "ova-restaurant-bar",
+    "name": "Ova | Restaurant & Bar",
+    "formatted_address": "8499 Bridgeport Rd, Richmond, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1921362,
+        "lng": -123.1310337
+      }
+    },
+    "formatted_phone_number": "(604) 242-2750",
+    "website": "https://www.versantehotel.com/taste/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=10162344245732925368",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.versantehotel.com/taste/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=10162344245732925368",
+      "deals": [
+        {
+          "name": "Peroni",
+          "price": "$6",
+          "category": "drink",
+          "description": "Beer"
+        },
+        {
+          "name": "Corona",
+          "price": "$6",
+          "category": "drink",
+          "description": "Beer"
+        },
+        {
+          "name": "House Prosecco",
+          "price": "$9",
+          "category": "drink",
+          "description": "Wine"
+        },
+        {
+          "name": "House Red",
+          "price": "$9",
+          "category": "drink",
+          "description": "Wine"
+        },
+        {
+          "name": "House White",
+          "price": "$9",
+          "category": "drink",
+          "description": "Wine"
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "$12",
+          "category": "drink",
+          "description": "Cocktail"
+        },
+        {
+          "name": "Oysters",
+          "price": "$2 per piece",
+          "category": "food",
+          "description": "Fresh oysters"
+        },
+        {
+          "name": "Wagyu Hot Dog & House Beer Combo",
+          "price": "$16",
+          "category": "food",
+          "description": "Wagyu hot dog with house beer"
+        },
+        {
+          "name": "Burger & House Beer Combo",
+          "price": "$20",
+          "category": "food",
+          "description": "Burger with house beer"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-06"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "pat-and-betty",
     "name": "Pat and Betty",
     "formatted_address": "1217 1 St SW, Calgary, AB",
@@ -7210,6 +9283,7 @@
     "website": "https://royalyyc.ca/",
     "happy_hour": {
       "days": [
+        0,
         1,
         2,
         3,
@@ -7218,14 +9292,14 @@
         6
       ],
       "start": "15:00",
-      "end": "17:00",
+      "end": "19:00",
       "extra_windows": [
         {
           "days": [
             0
           ],
-          "start": "10:00",
-          "end": null,
+          "start": "11:00",
+          "end": "23:00",
           "label": "All day Sunday"
         },
         {
@@ -7233,85 +9307,85 @@
             6
           ],
           "start": "22:00",
-          "end": null,
-          "label": "Late Night Happy Hour"
+          "end": "01:00",
+          "label": "Late night"
         }
       ],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://royalyyc.ca/happy-hour",
+      "source_url": "https://www.royalyyc.ca/menu/",
       "deals": [
         {
           "name": "Beer Pretzels",
           "price": "$10",
           "category": "food",
-          "description": ""
+          "description": "Happy hour snack"
         },
         {
           "name": "Monterey Jack Jalapeño Bites",
           "price": "$10",
           "category": "food",
-          "description": ""
+          "description": "Happy hour snack"
         },
         {
           "name": "House Ribs",
           "price": "$10",
           "category": "food",
-          "description": ""
+          "description": "Happy hour snack"
         },
         {
-          "name": "Hot Dogs",
+          "name": "2 Hot Dogs",
           "price": "$10",
           "category": "food",
-          "description": "2 pieces"
+          "description": "Two hot dogs"
+        },
+        {
+          "name": "Spaghetti",
+          "price": "$10",
+          "category": "food",
+          "description": "Happy hour pasta item"
         },
         {
           "name": "Royal Lager",
           "price": "$6",
           "category": "drink",
-          "description": ""
+          "description": "Happy hour draft"
         },
         {
           "name": "Pabst Blue Ribbon Lager",
           "price": "$6",
           "category": "drink",
-          "description": ""
-        },
-        {
-          "name": "Trolley 5 Turntable Lager",
-          "price": "$6",
-          "category": "drink",
-          "description": ""
+          "description": "Happy hour draft"
         },
         {
           "name": "Domestic Bottles",
           "price": "$6",
           "category": "drink",
-          "description": ""
+          "description": "Bottled domestic beer"
         },
         {
           "name": "Highballs",
           "price": "$6",
           "category": "drink",
-          "description": ""
+          "description": "Happy hour highball"
         },
         {
-          "name": "Grizzly Paw Canned Cocktails",
+          "name": "House Red or White Wine",
           "price": "$7",
           "category": "drink",
-          "description": ""
-        },
-        {
-          "name": "House Wine",
-          "price": "$7",
-          "category": "drink",
-          "description": "6oz, red or white"
+          "description": "Per 6oz glass"
         },
         {
           "name": "Aperol Spritz",
           "price": "$12",
           "category": "drink",
-          "description": ""
+          "description": "Happy hour spritz"
+        },
+        {
+          "name": "Grizzly Paw Canned Cocktails",
+          "price": "$7",
+          "category": "drink",
+          "description": "Canned cocktails"
         }
       ]
     },
@@ -7321,7 +9395,7 @@
       "credit_url": "https://royalyyc.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-11-04"
+    "last_synced_at": "2026-11-06"
   },
   {
     "place_id": null,
@@ -19710,7 +21784,7 @@
           ],
           "start": "21:00",
           "end": null,
-          "label": "Late night"
+          "label": "Late night happy hour"
         },
         {
           "days": [
@@ -19719,7 +21793,7 @@
           ],
           "start": "22:00",
           "end": null,
-          "label": "Late night"
+          "label": "Late night happy hour"
         }
       ],
       "verified": false,
@@ -19728,7 +21802,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-11-04"
+    "last_synced_at": "2026-11-06"
   },
   {
     "place_id": null,
@@ -32453,7 +34527,7 @@
       "extra_windows": [],
       "verified": false,
       "verified_source": null,
-      "source_url": "http://www.elwoods.ca/happy-hour",
+      "source_url": "http://www.elwoods.ca/",
       "deals": [
         {
           "name": "Highballs",
@@ -32462,13 +34536,13 @@
           "description": "3-4 PM"
         },
         {
-          "name": "Bridge Pale Ale or Blood Orange Wheat Ale",
+          "name": "Bridge Pale Ale or Bridge Blood Orange Wheat Ale",
           "price": "$5",
           "category": "drink",
           "description": "4-5 PM"
         },
         {
-          "name": "Bridge Pale Ale or Blood Orange Wheat Ale",
+          "name": "Bridge Pale Ale or Bridge Blood Orange Wheat Ale",
           "price": "$5.5",
           "category": "drink",
           "description": "5-6 PM"
@@ -32481,7 +34555,7 @@
       "credit_url": "http://www.elwoods.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-06"
   },
   {
     "place_id": null,
@@ -45292,61 +47366,61 @@
     "website": "https://www.madhatterbistro.ca/",
     "happy_hour": {
       "days": [
-        0,
         3,
         4,
         5,
-        6
+        6,
+        0
       ],
       "start": "15:30",
       "end": "17:00",
       "extra_windows": [
         {
           "days": [
-            0,
             3,
             4,
             5,
-            6
+            6,
+            0
           ],
           "start": "20:00",
           "end": "21:00",
-          "label": "Late Night"
+          "label": "Late happy hour"
         }
       ],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://www.madhatterbistro.ca/happy-hour-menu",
+      "source_url": "https://madhatterbistro.ca/wp-content/uploads/2026/07/Happy-Hour-Menu.pdf",
       "deals": [
         {
           "name": "Frozen Lime Margarita",
           "price": "$8",
           "category": "drink",
-          "description": ""
+          "description": "Happy hour drink"
         },
         {
           "name": "Frozen Mango Bellini",
           "price": "$8",
           "category": "drink",
-          "description": ""
+          "description": "Happy hour drink"
         },
         {
           "name": "Tap Beer",
           "price": "$6.50",
           "category": "drink",
-          "description": ""
+          "description": "Happy hour price"
         },
         {
-          "name": "All Classics Cocktails",
+          "name": "Classic Cocktails",
           "price": "$12",
           "category": "drink",
-          "description": ""
+          "description": "All classic cocktails"
         },
         {
           "name": "Crown Taters",
           "price": "$12",
           "category": "food",
-          "description": "Keg-size cheese taters with chipotle mayo"
+          "description": "Keg-size cheese taters served with chipotle mayo"
         },
         {
           "name": "Chicken Karaage",
@@ -45358,42 +47432,42 @@
           "name": "King's Wings",
           "price": "$13",
           "category": "food",
-          "description": "Choose flavour: Salt & Pepper, Louisiana Cajun, Korean Sweet & Spicy, Inferno, Honey Chipotle, or BBQ"
+          "description": "Choice of flavour: Salt & Pepper, Louisiana Cajun, Korean Sweet & Spicy, Inferno, Honey Chipotle, BBQ"
         },
         {
           "name": "Crispy Fries or Yams",
           "price": "$8/$9",
           "category": "food",
-          "description": "Add +$3 for Parmesan truffle mayo, Salt & Pepper chipotle mayo, or Cajun chipotle mayo"
+          "description": "Flavour add-on +$3: Parmesan with truffle mayo, Salt & Pepper with chipotle mayo, Cajun with chipotle mayo"
         },
         {
           "name": "Loaded Nachos",
           "price": "$16",
           "category": "food",
-          "description": "Corn chips, melted cheese, pico de gallo, beans, pickled onions, jalapeños, sour cream, chipotle mayo. Add protein +$5"
+          "description": "Corn chips with melted cheese, pico de gallo, beans, pickled onions, jalapeños, sour cream, chipotle mayo; add protein +$5 (ground beef, chorizo, carnitas, mushrooms)"
         },
         {
           "name": "Classic Stack Burger & Fries",
           "price": "$14",
           "category": "food",
-          "description": "Beef patty, American cheese, lettuce, tomato, pickles, house sauce on brioche. Add bacon +$4"
+          "description": "Beef patty, American cheese, lettuce, tomato, pickles, house burger sauce, brioche bun; add bacon +$4"
         },
         {
           "name": "Burrito & Fries",
           "price": "$13",
           "category": "food",
-          "description": "Rice, beans, cabbage, jalapeños, sour cream, chipotle mayo. Choice of Pulled Pork, Chicken, Fish, Shrimp or Calamari"
+          "description": "Flour tortilla with rice, beans, cabbage, jalapeños, sour cream, chipotle mayo; protein choice: pulled pork, chicken, fish, shrimp or calamari"
         },
         {
           "name": "Quesadilla & Fries",
           "price": "$13",
           "category": "food",
-          "description": "10\" flour tortilla with melted cheese, house salad, pico de gallo, sour cream. Add protein +$5"
+          "description": "10\" flour tortilla with melted cheese, small house salad, pico de gallo, sour cream; add protein +$5 (pulled pork, chicken, fish, shrimp or calamari)"
         }
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-06"
   },
   {
     "place_id": null,

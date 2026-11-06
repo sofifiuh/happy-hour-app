@@ -1503,5 +1503,33 @@
     "credit_url": "https://maps.google.com/maps/contrib/115690193498814532216",
     "photo_name": "places/ChIJeS4s__xvcVMRr_wUC0ra5JU/photos/AV-0GLc6uNIGjV2cflQ2OKSe5RkaX5ul52j8Mr5yOv9i4uStJiMIuyur-8Up7f4vUimgjAsii8upUPFrx29XdfqMf1QLqnHYNPk-v4l6TeG3CaF56UKfwCad4bcXmqtHDr1e9Sh7-cPSfIqyDHWE4qdl1VPihgLWXV-kBmAQdEBOine0a0JtQinhfbjr67kqfpce96tfOlob65bwrjfKhsa64FBNoz8QUObHCAnN8LvDyGxfgc78BOKP-cUAhMubm9H2sBVa5IzAEMchmuTQ41DzbkAkJvnAE-NYVPQKb9PageTkraoWAOGZ6iiec6Ff2yE7tUcDEOrhIE9mqXRkXVt23UJDBbAO9WKLPb0SzZDwGQ46YJOppnXNM0Cgy0MewYjv3C9arhyc7Dt2Yecu4f6Wa0fryWlETiP_24Ebd-MzyWqK",
     "fetched_at": "2026-11-05"
+  },
+  "madisons-restaurant-bar": {
+    "url": "photos/madisons-restaurant-bar.jpg",
+    "credit_name": "Madisons Restaurant & Bar",
+    "credit_url": "https://maps.google.com/maps/contrib/108923846863833325395",
+    "photo_name": "places/ChIJYZDO3NllcVMR_oggnNCnNI8/photos/AV-0GLdx1zBkvI4X5Fc2aRYfPCw_MR4Qmi-5Z3NEHBLjFl-dGqF7Y5qDJBM8bjpvbK9CqlVpyBxc3K6Uryc4rIV8TxQUYMHunGMn8Y0oep1h6Wu5vxlSt17pzVC_UDotczBAk8ioZ_gKc4T87DYR0g20TrE0HrQYJKnV4-8W72WGoRmk9YMgDrsRlD54bBD17qOsgTsvi3EhcFqe92tg1buZqrwLRdLQqqInk80Rsi4Yg324pvKnN10QyHLpmv28a4hB9eTdbF9BMX6JrgqSi0i5vPIj8JIFlxcTo8ZJ-Xul7uBiOBf4b7x6mQYkSeHtv4tKSlla4lk0j0m2aJ0FO72xZvOE_sQwOX5c3xP_HaU02TiNZ5a33qEzPnyzudJ1S0YJQCaV2y7Y8l4ThkIcAyMCJt4ea-Q",
+    "fetched_at": "2026-11-06"
+  },
+  "stonewall-pub": {
+    "url": "photos/stonewall-pub.jpg",
+    "credit_name": "Stonewall Pub",
+    "credit_url": "https://maps.google.com/maps/contrib/108151184539808792599",
+    "photo_name": "places/ChIJq7zGM9docVMRkVbuUlQ60ys/photos/AV-0GLctynMnq690M5wY80LIAktOcTsT5hOCf2kBwU_F6DR5tMndH0iXKHk5Vy0TWXNRWH5L0_ec2GVQN9BkscziTL-PsZpsTx_s7j1RPrFKJr0P8WcF6fwFI7n2Z5CdG_68p32YNKX4X53cLh5A1MnYBusqMUB-iNIr1a_r8Pdbk5_C73BTfNtAcTSP0dizhIJCnIFOfs0YoEihZBsGKmqqjm-6-HRpoCAw9_TMUi0NZz6Z8z5k_pYVuXFCQOkZq1iS_lc5YnLHecLzAu9HZO_toApBNMCH_bqKx_OMkYKdHUtTd4um-km2-Up7hhX0sFGuOUlq-VORETUUTqOZnW95bxeaycHlCb2yCv-3PDzlSMZPx85pu5nwXXuG5WwpRRrPJUVbJsdoeqLBSTUcY_-aSr1jyMk5ZIr4uhfknz66GUW0Tg",
+    "fetched_at": "2026-11-06"
+  },
+  "social-beer-haus": {
+    "url": "photos/social-beer-haus.jpg",
+    "credit_name": "Social Beer Haus",
+    "credit_url": "https://maps.google.com/maps/contrib/114380009266294640260",
+    "photo_name": "places/ChIJAQC0AP1vcVMRwr6P5pbmHt4/photos/AV-0GLeatCRRt2f2nqTD23VzywBiFsURGUbAVMpcGeM-eGCmBQaGBTWcBhgvTrdJbC_1biACKnSQxP6DBdKrjxzweev5XzFhR4uMamY5bjLiyIfyEcjoq9gFcnP7lUOfKxdFqEhnurZoZ4Rbc91JIo7rcKLUgvS5x30xTKbsSEbJ0Tz8p55CPGo9OscR0iqmEZvfZ61un_jF-yMXYdk6FsexvgNGxRdmDE9w3KNwxk_MQ16QXP73pn0WZA8d1gAJDyNLg_h3ROUKYa7U2O9dMU8QWfQElsmDET5rH4w-HhnL8H_m9BzlGfQA8RbCsAiFo7GL5_R4v7rLj0kE75N_V1g0ZDPT1vrFTUCJL7CIATLlqRlMtnE9wAal-SPSH4dAyGAUCoEQx68BwYezf4tV3QS-hqVKsQ",
+    "fetched_at": "2026-11-06"
+  },
+  "ova-restaurant-bar": {
+    "url": "photos/ova-restaurant-bar.jpg",
+    "credit_name": "Ova | Restaurant & Bar",
+    "credit_url": "https://maps.google.com/maps/contrib/107470111954264468296",
+    "photo_name": "places/ChIJiR8K_wZ1hlQRyn7nJMK6uJw/photos/AV-0GLdHQKxm9iJ2NNV7LWMwgZTp-_tbFUNNPxHtz2dNc7w6MP50193K_CxBIGMaLlj3WnxJXfl6oZdnD1yaZFxO5aipzdrxkP1zC38LFnbFHgctBYguIbet-3VUfrb9TpEE0H4M3aSnGBxaDKwt0k5sTP_QVdUuP_GJnPzfw5J26AmGjYCY6cRsPKsBGWJ6BJeESOm7-g_QASu7j79PLzFyEnAuwHmv0vVbC2t6odwZ4GztAzrZHE3WOUKFr202fLcs2FyKY4jQ-GRRm0ilNToCgQQFP4ObfoEC6pZ_i4Nw5YZKRNcTYPZGPhWvICxx_hkaVxjgPYSE-WUykxVNE3qupisx_fjsQ8ihRm8U2R2eluObElf0MEYsnXz4_jxBxqh_t-Ju1CZWiUg9M3Bq2292pnFvdJ6vdKLpfyWJGRJQ_0hpzw",
+    "fetched_at": "2026-11-06"
   }
 }

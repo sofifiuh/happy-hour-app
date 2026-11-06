@@ -29318,5 +29318,328 @@
     },
     "matched_name": "Revelwoods Tavern & Terrace",
     "synced_at": "2026-11-04"
+  },
+  "james-joyce-irish-pub-restaurant": {
+    "place_id": "ChIJ2TTb6f1vcVMROSwa7dPPWAs",
+    "rating": 4.3,
+    "user_ratings_total": 1757,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "James Joyce Irish Pub & Restaurant",
+    "synced_at": "2026-11-06"
+  },
+  "richmond-s-pub": {
+    "place_id": "ChIJI9pCyeZxcVMR14Fv1wojOn8",
+    "rating": 4.2,
+    "user_ratings_total": 1559,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Richmond's Pub",
+    "synced_at": "2026-11-06"
+  },
+  "the-station-pub-grill-riverbend": {
+    "place_id": "ChIJKVEjubBwcVMRZp1XCRQI4yk",
+    "rating": 4.3,
+    "user_ratings_total": 1510,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Station Pub + Grill (Riverbend)",
+    "synced_at": "2026-11-06"
+  },
+  "st-james-corner-restaurant-irish-pub": {
+    "place_id": "ChIJi4b7KgNwcVMRsnvgt9dfe7I",
+    "rating": 4.4,
+    "user_ratings_total": 1401,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "St. James Corner Restaurant & Irish Pub",
+    "synced_at": "2026-11-06"
+  },
+  "pig-duke-neighbourhood-pub": {
+    "place_id": "ChIJad9fk95vcVMRpDeMEWa_24Y",
+    "rating": 4.3,
+    "user_ratings_total": 1392,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Pig & Duke Neighbourhood Pub",
+    "synced_at": "2026-11-06"
+  },
+  "social-beer-haus": {
+    "place_id": "ChIJAQC0AP1vcVMRwr6P5pbmHt4",
+    "rating": 4.3,
+    "user_ratings_total": 1188,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Social Beer Haus",
+    "synced_at": "2026-11-06"
+  },
+  "the-king-s-head-eatery-music-room": {
+    "place_id": "ChIJI_wbyRNwcVMRH5lB6firIrw",
+    "rating": 4.2,
+    "user_ratings_total": 973,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The King's Head Eatery & Music Room",
+    "synced_at": "2026-11-06"
+  },
+  "watchman-s-pub-eatery": {
+    "place_id": "ChIJwXD0vSBwcVMRZ78S1oK41tw",
+    "rating": 3.9,
+    "user_ratings_total": 960,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Watchman's Pub & Eatery",
+    "synced_at": "2026-11-06"
+  },
+  "moose-s-beanery-bar-room": {
+    "place_id": "ChIJW2qEhqhvcVMReoHSSjo5pBQ",
+    "rating": 4.3,
+    "user_ratings_total": 935,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Moose's Beanery & Bar Room",
+    "synced_at": "2026-11-06"
+  },
+  "madisons-restaurant-bar": {
+    "place_id": "ChIJYZDO3NllcVMR_oggnNCnNI8",
+    "rating": 4.3,
+    "user_ratings_total": 904,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Madisons Restaurant & Bar",
+    "synced_at": "2026-11-06"
+  },
+  "nixx-neighbourhood-pub": {
+    "place_id": "ChIJcd0O2m5lcVMRs9cYRUr0bp8",
+    "rating": 4.1,
+    "user_ratings_total": 883,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Nixx Neighbourhood Pub",
+    "synced_at": "2026-11-06"
+  },
+  "tool-shed-beer-bbq": {
+    "place_id": "ChIJwYAR1yp7cVMRNzeLBiI6pl0",
+    "rating": 4.6,
+    "user_ratings_total": 854,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Tool Shed Beer & BBQ",
+    "synced_at": "2026-11-06"
+  },
+  "shelter-cocktail-bar": {
+    "place_id": "ChIJLzlP1wJwcVMRg4c1ZMZqTZQ",
+    "rating": 4.7,
+    "user_ratings_total": 706,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Shelter Cocktail Bar",
+    "synced_at": "2026-11-06"
+  },
+  "bitter-sisters-brewing-co": {
+    "place_id": "ChIJscQRBQdxcVMRjOxKeauuE9Y",
+    "rating": 4.7,
+    "user_ratings_total": 639,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Bitter Sisters Brewing Co.",
+    "synced_at": "2026-11-06"
+  },
+  "pazzer-s-pub": {
+    "place_id": "ChIJ5VQbVfhucVMRMZEltRM_KrI",
+    "rating": 4.3,
+    "user_ratings_total": 411,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Pazzer's Pub",
+    "synced_at": "2026-11-06"
+  },
+  "untitled-champagne-lounge": {
+    "place_id": "ChIJqaqadONvcVMRFb9GjCM2e2I",
+    "rating": 4.5,
+    "user_ratings_total": 381,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "UNTITLED Champagne Lounge",
+    "synced_at": "2026-11-06"
+  },
+  "stonewall-pub": {
+    "place_id": "ChIJq7zGM9docVMRkVbuUlQ60ys",
+    "rating": 4.1,
+    "user_ratings_total": 358,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Stonewall Pub",
+    "synced_at": "2026-11-06"
+  },
+  "l-olivo-cicchetti-lounge": {
+    "place_id": "ChIJK_q-RZN7cVMRSes9tfZHOWg",
+    "rating": 4.7,
+    "user_ratings_total": 166,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "L'Olivo Cicchetti & Lounge",
+    "synced_at": "2026-11-06"
+  },
+  "ova-restaurant-bar": {
+    "place_id": "ChIJiR8K_wZ1hlQRyn7nJMK6uJw",
+    "rating": 4.8,
+    "user_ratings_total": 106,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Ova | Restaurant & Bar",
+    "synced_at": "2026-11-06"
   }
 }
