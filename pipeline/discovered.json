@@ -26206,7 +26206,7 @@
           "name": "17oz Lager",
           "price": "$5",
           "category": "drink",
-          "description": "17oz lager for $5"
+          "description": "17oz lager"
         },
         {
           "name": "Pitchers",
@@ -26224,12 +26224,12 @@
           "name": "Aperol Spritz",
           "price": "$6",
           "category": "drink",
-          "description": "Aperol Spritz for $6"
+          "description": "Aperol Spritz"
         }
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-10-24"
+    "last_synced_at": "2026-11-07"
   },
   {
     "place_id": null,
