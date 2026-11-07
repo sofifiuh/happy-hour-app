@@ -390,6 +390,12 @@ export function Spot({ id: panelId, panel = false, onClose }: { id?: string; pan
                   See their menu <ExternalLink className="size-3.5" />
                 </a>
               )}
+              <p className="mt-2 text-[13px] text-muted-foreground">
+                Been there?{" "}
+                <Link to={`/submit?venue=${encodeURIComponent(venue.id)}&from=no-deals`} className="inline-flex min-h-11 items-center px-1 font-semibold text-orange-fg">
+                  Send us a photo of the menu
+                </Link>
+              </p>
             </div>
           )}
         </div>
