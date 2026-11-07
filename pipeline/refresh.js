@@ -116,6 +116,8 @@ if (args.discover) {
           "--target", String(Number(args["discover-target"]) || 10),
           "--budget", String(Number(args["discover-budget"]) || 5),
           ...(Number(args["discover-searches"]) > 0 ? ["--searches", String(args["discover-searches"])] : []),
+          ...(args["discover-allow-hours-only"] ? ["--allow-hours-only"] : []),
+          ...(args["discover-requeue-hours-only"] ? ["--requeue-hours-only"] : []),
         ]);
       } catch (e) {
         console.log(`[discover] failed: ${String(e.message).slice(0, 200)}`);

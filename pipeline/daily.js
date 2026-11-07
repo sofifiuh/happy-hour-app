@@ -70,7 +70,11 @@ if (args["use-pool"]) {
   console.log(`\n[discover] today's slice (places-rotate.js)`);
   const burst = Number(args.searches) > 0
     ? ["--text", String(args.searches), "--nearby", String(args.searches), "--burst"] : [];
-  console.log(run("places-rotate.js", ["--recheck-days", String(RECHECK_DAYS), ...burst, ...(DRY ? ["--dry-run"] : [])]).trim());
+  const hoursOnly = [
+    ...(args["allow-hours-only"] ? ["--allow-hours-only"] : []),
+    ...(args["requeue-hours-only"] ? ["--requeue-hours-only"] : []),
+  ];
+  console.log(run("places-rotate.js", ["--recheck-days", String(RECHECK_DAYS), ...burst, ...hoursOnly, ...(DRY ? ["--dry-run"] : [])]).trim());
 }
 
 // The candidate file is a snapshot, and a previous round may already have

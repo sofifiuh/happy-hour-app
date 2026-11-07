@@ -19,6 +19,10 @@ on:
         description: "Run even if today's refresh already happened"
         type: boolean
         default: false
+      requeue_hours_only:
+        description: "One-off: re-check venues judged 'times but no prices' that never went live (one free Place Details call each)"
+        type: boolean
+        default: false
       burst:
         description: "Catch-up run: spend what is left of the month's free 900 searches per type now (not the even daily share), publish up to 400. Never past the free tier."
         type: boolean
@@ -55,7 +59,7 @@ jobs:
       # sometimes dispatches first and the cron run queues behind it; that
       # second run stops here. A manual dispatch with force still runs.
       - name: Skip if today's refresh already ran
-        if: github.event_name != 'pull_request' && inputs.force != true && inputs.burst != true
+        if: github.event_name != 'pull_request' && inputs.force != true && inputs.burst != true && inputs.requeue_hours_only != true
         run: |
           if grep -q "^| $(date -u +%F) |" pipeline/GROWTH.md; then
             echo "Today's refresh already ran (pipeline/GROWTH.md); skipping."
@@ -99,6 +103,8 @@ jobs:
           --discover-target "${{ inputs.burst && '400' || vars.DISCOVER_TARGET || '60' }}"
           --discover-budget "${{ inputs.burst && '100' || vars.DISCOVER_BUDGET || '15' }}"
           --discover-searches "${{ inputs.burst && '900' || vars.DISCOVER_SEARCHES || '160' }}"
+          --discover-allow-hours-only
+          ${{ inputs.requeue_hours_only && '--discover-requeue-hours-only' || '' }}
 
       - name: Commit data
         id: commit
