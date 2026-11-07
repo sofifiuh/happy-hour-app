@@ -194,45 +194,45 @@ const pool = new Map(Object.entries(readJson(POOL, {})));
 // Drop what was judged or published since the pool was written.
 for (const [id, c] of pool) if (judged(id) || isKnown(c)) pool.delete(id);
 
-// ── One-off: bring back venues judged "hours_only" that never went live ──
-// screened.json keeps only id/name/verdict, so each needs a Place Details call
-// (Enterprise SKU: free 1,000/month, capped here at 950 with the other users
-// of that SKU on the ledger) to rebuild its candidate record.
-if (args["requeue-hours-only"] && !DRY) {
-  const usageAll = readJson(USAGE, {});
-  const DETAILS_CAP = 950;
-  usageAll[MONTH] = { details_enterprise: 0, ...usageAll[MONTH] };
-  const live = new Set(venues.map((v) => v.id));
-  const todo = Object.entries(screened)
-    .filter(([pid, r]) => r.verdict === "hours_only" && !live.has(r.id) && !pool.has(pid) && !knownPlaceIds.has(pid));
-  const DFIELDS = FIELDS.split(",").map((f) => f.replace(/^places\./, "")).join(",");
-  let got = 0;
-  for (const [pid] of todo) {
-    if (usageAll[MONTH].details_enterprise >= DETAILS_CAP) { console.log("[requeue] details_enterprise free cap reached; stopping"); break; }
-    usageAll[MONTH].details_enterprise++;
-    let p;
-    try {
-      p = await curlJson(`https://places.googleapis.com/v1/places/${pid}`, { headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${DFIELDS}`] });
-    } catch (e) { console.error(`[requeue] ${pid}: ${e.message.slice(0, 80)}`); continue; }
-    if (p.error) { usageAll[MONTH].details_enterprise--; console.error(`[requeue] ${pid}: ${p.error.status}`); if (p.error.status === "RESOURCE_EXHAUSTED") break; continue; }
-    if (!p.websiteUri || (p.businessStatus && p.businessStatus !== "OPERATIONAL")) continue;
-    const c = toCandidate(p);
-    c.found_via = "requeue hours_only"; c.found_at = TODAY;
-    pool.set(pid, c); got++;
-  }
-  fs.writeFileSync(USAGE, JSON.stringify(usageAll, null, 2) + "\n");
-  Object.assign(usage, readJson(USAGE, {}));
-  console.log(`[requeue] ${todo.length} hours-only venues not live; ${got} back in the pool. Place Details Enterprise ${usageAll[MONTH].details_enterprise}/${DETAILS_CAP} this month.`);
-}
-const poolBefore = pool.size;
-
-// ── Search ────────────────────────────────────────────────────────────────
+// Fields every Places call asks for (search and the requeue below).
 const FIELDS = [
   "places.id", "places.displayName", "places.location", "places.formattedAddress",
   "places.types", "places.primaryType", "places.businessStatus",
   "places.websiteUri", "places.rating", "places.userRatingCount",
   "places.priceLevel", "places.nationalPhoneNumber",
 ].join(",");
+
+// ── One-off: bring back venues judged "hours_only" that never went live ──
+// screened.json keeps only id/name/verdict, so each needs a Place Details call
+// (Enterprise SKU: free 1,000/month, capped here at 950 with the other users
+// of that SKU on the ledger) to rebuild its candidate record.
+if (args["requeue-hours-only"] && !DRY) {
+  const DETAILS_CAP = 950;
+  usage[MONTH].details_enterprise = usage[MONTH].details_enterprise || 0;
+  const live = new Set(venues.map((v) => v.id));
+  const todo = Object.entries(screened)
+    .filter(([pid, r]) => r.verdict === "hours_only" && !live.has(r.id) && !pool.has(pid) && !knownPlaceIds.has(pid));
+  const DFIELDS = FIELDS.split(",").map((f) => f.replace(/^places\./, "")).join(",");
+  let got = 0;
+  for (const [pid] of todo) {
+    if (usage[MONTH].details_enterprise >= DETAILS_CAP) { console.log("[requeue] details_enterprise free cap reached; stopping"); break; }
+    usage[MONTH].details_enterprise++;
+    let p;
+    try {
+      p = await curlJson(`https://places.googleapis.com/v1/places/${pid}`, { headers: [`X-Goog-Api-Key: ${KEY}`, `X-Goog-FieldMask: ${DFIELDS}`] });
+    } catch (e) { console.error(`[requeue] ${pid}: ${e.message.slice(0, 80)}`); continue; }
+    if (p.error) { usage[MONTH].details_enterprise--; console.error(`[requeue] ${pid}: ${p.error.status}`); if (p.error.status === "RESOURCE_EXHAUSTED") break; continue; }
+    if (!p.websiteUri || (p.businessStatus && p.businessStatus !== "OPERATIONAL")) continue;
+    const c = toCandidate(p);
+    c.found_via = "requeue hours_only"; c.found_at = TODAY;
+    pool.set(pid, c); got++;
+  }
+  saveUsage();
+  console.log(`[requeue] ${todo.length} hours-only venues not live; ${got} back in the pool. Place Details Enterprise ${usage[MONTH].details_enterprise}/${DETAILS_CAP} this month.`);
+}
+const poolBefore = pool.size;
+
+// ── Search ────────────────────────────────────────────────────────────────
 const stats = { found: 0, added: 0, rejected: 0, errors: 0 };
 const exhausted = new Set();
 
