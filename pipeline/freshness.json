@@ -14,6 +14,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "1861-local-bar-grill": {
+  "url": "http://1861local.ca/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
+  "extra_windows_total": 2,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "80522bac12df2d80",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "1931-gallery-bistro": {
   "url": "https://www.1931gallerybistro.com/happyhour-1",
   "checked_at": "2026-11-07",
@@ -56,6 +71,21 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "eb00218c03dc43d1",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "abbey-road-tap-house": {
+  "url": "https://www.abbeyroadtaphouse.com/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "8a1e33aca5e1201c",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
@@ -192,6 +222,20 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "amato-gelato-cafe-17th-avenue": {
+  "url": "https://www.amatogelatoalberta.com/17th-ave-menu/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": false,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "e7090bb526f03425",
+  "last_ok_at": "2026-11-07"
+ },
  "amato-trattoria": {
   "url": "https://amatotrattoria.ca/aperitivo-hour/",
   "checked_at": "2026-11-07",
@@ -203,9 +247,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "19fb3dc62a33fd2e",
+  "hh_hash": "9ed02e80b542b41b",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07"
+  "last_confirmed_at": "2026-11-07",
+  "changed_at": "2026-11-07"
  },
  "amber-gastown": {
   "url": "https://www.amber99.com/menu",
@@ -218,9 +263,9 @@
   "extra_windows_total": 3,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "def66166f3c863f0",
+  "hh_hash": "4e93334bf06a33f1",
   "last_ok_at": "2026-11-07",
-  "changed_at": "2026-11-05",
+  "changed_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
  "amogha-indian-kitchen-bar": {
@@ -280,6 +325,20 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "cb3ed7266bdbb565",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "apr-s-apr-s": {
+  "url": "http://www.apresapres.ca/happy-hour",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": false,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
@@ -756,6 +815,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "bizarre-gastro-pub": {
+  "url": "https://bizarregastropub.ca/happy-hour",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "ce6cd48f197e5179",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "blanco-cantina": {
   "url": "https://www.blancocantina.ca/en/menus/happy-hour/store-6760/ab/calgary/723-17th-avenue-sw.html",
   "checked_at": "2026-11-07",
@@ -979,6 +1053,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "bridgette-bar": {
+  "url": "https://www.bridgettebar.com/calgary",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 2,
+  "extra_windows_total": 2,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "281c3de618e23a4c",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "brix-barrel": {
   "url": "https://www.brixbarrel.ca/happy-hour-1",
   "checked_at": "2026-11-07",
@@ -1081,10 +1170,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "0d06d5175e624822",
+  "hh_hash": "5d4ffe3d0adf190c",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-11-05"
+  "changed_at": "2026-11-07"
  },
  "cactus-club-cafe": {
   "url": "https://www.cactusclubcafe.com/locations/bentall-5/menu/happy-hour/",
@@ -1200,6 +1289,22 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "cantina-norte": {
+  "url": "https://cantinanorte.com/menus/happy-hour",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "rendered": true,
+  "hh_hash": "ca0d21ad87290c97",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "capo-the-spritz": {
   "url": "https://www.capoandspritz.com/daily-happy-hour-and-late-night",
   "checked_at": "2026-11-07",
@@ -1280,7 +1385,7 @@
  "cascades-casino": {
   "url": "https://cascadescasino.ca/casino-happy-hour/",
   "checked_at": "2026-11-07",
-  "http_status": 200,
+  "http_status": 202,
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": true,
@@ -1289,9 +1394,10 @@
   "ok": true,
   "fail_count": 0,
   "last_ok_at": "2026-11-07",
-  "hh_hash": "a10028131ab9b5c6",
+  "hh_hash": "97d2e12c74585d4a",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-11-06"
+  "changed_at": "2026-11-07",
+  "rendered": true
  },
  "cat-fiddle-sports-bar-restaurant": {
   "url": "https://i0.wp.com/catandfiddlepub.ca/wp-content/uploads/2025/12/Happy-hour-WINTER-2025-PRINT.jpg?ssl=1",
@@ -1332,10 +1438,10 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "4e6be02ea2c9a089",
+  "hh_hash": "246b88cc46634381",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-11-05"
+  "changed_at": "2026-11-07"
  },
  "central-restaurants-vancouver-bentall": {
   "url": "https://centralrestaurants.ca/vancouver-bentall/menu",
@@ -1485,7 +1591,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "e82019618a256320",
+  "hh_hash": "eeaf1d86d57a01d0",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-07"
@@ -1621,7 +1727,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "843b7fd00d569aa6",
+  "hh_hash": "5661736eb256307c",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-07"
@@ -1637,7 +1743,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "16ba86be679616a0",
+  "hh_hash": "349669a1002fa960",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-07"
@@ -1971,10 +2077,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "b75f5bacc3829b64",
+  "hh_hash": "8111067865303370",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-11-06"
+  "changed_at": "2026-11-07"
  },
  "dublin-calling": {
   "url": "http://dublincalling.com/vancouver/",
@@ -1987,10 +2093,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "cc47993aca42ce54",
+  "hh_hash": "812772f53ada1d29",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-11-06"
+  "changed_at": "2026-11-07"
  },
  "dublin-crossing-irish-pub": {
   "url": "http://www.dublincrossing.com/happy-hour",
@@ -2375,6 +2481,21 @@
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-10-30"
  },
+ "fortitude-wine-bar": {
+  "url": "http://www.fortitudewinebar.com/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "2a4b214cc0db6ede",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "foy-s-irish-bar-grill": {
   "url": "https://foysirishbar.com/happy-hour/",
   "checked_at": "2026-11-07",
@@ -2704,7 +2825,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "9e2ee767cfd03911",
+  "hh_hash": "797be8390f7a285e",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-07"
@@ -2794,6 +2915,21 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "happy-gilmore-golf-lounge": {
+  "url": "https://happygilmore.golf/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "e55de0c2444c4e18",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
@@ -2977,18 +3113,17 @@
  "holy-taco-mexi-eats": {
   "url": "https://www.holytaco.ca/restaurant-menu",
   "checked_at": "2026-11-07",
-  "http_status": 0,
+  "http_status": 200,
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
-  "ok": false,
-  "fail_count": 1,
+  "ok": true,
+  "fail_count": 0,
   "hh_hash": "d80c94bccdf1943a",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07",
-  "error": "curl: (7) Failed to connect to www.holytaco.ca port 443 after 1187 ms: Could not connect to server"
+  "last_confirmed_at": "2026-11-07"
  },
  "homer-st-cafe-and-bar": {
   "url": null,
@@ -3207,7 +3342,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 29,
+  "fail_count": 30,
   "error": "curl: (6) Could not resolve host: www.jacksonsrestobutcher.com"
  },
  "james-joyce-irish-pub-restaurant": {
@@ -3917,6 +4052,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "lou-s-grill": {
+  "url": "http://www.lousgrill.com/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 0,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "80ed1ccf09c3a0f5",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "loula-s": {
   "url": "https://loulastaverna.com/menu/",
   "checked_at": "2026-11-07",
@@ -3977,6 +4127,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "lulu-bar": {
+  "url": "https://www.lulubar.ca/contact-calgary",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 0,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "7450b99b2cc385f2",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "lulu-island-winery": {
   "url": "https://www.luluislandwinery.com/event-details-registration/vibes-vino-happy-hour-featuring-daniel-reece/form",
   "checked_at": "2026-11-07",
@@ -4033,6 +4198,21 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "86da2beeedc7a391",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "madi-s-12-12": {
+  "url": "http://www.madis.restaurant/happy-hour",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "aaa8654457fbbaa0",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
@@ -4109,6 +4289,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "major-league-2": {
+  "url": "http://www.majorleague2.com/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "f1162283cdd1b1e7",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "major-tom-bar": {
   "url": "https://www.majortombar.ca/golden-hour",
   "checked_at": "2026-11-07",
@@ -4164,6 +4359,21 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "dad6e8a1275c93d8",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "maplewood-smokehouse": {
+  "url": "http://www.maplewoodsmokehouse.ca/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "13401ed8e67fccc8",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
@@ -4284,6 +4494,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "meadow-gardens-golf-club": {
+  "url": "http://www.meadowgardens.com/menu/happy-hour",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 0,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "7d2bbe3e06926d31",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "medley-s-italian-grill": {
   "url": "https://www.medleysgrill.com/_files/ugd/aa151a_1a5c6d8332f4431a8dd73fae5ac86843.pdf",
   "checked_at": "2026-11-07",
@@ -4310,6 +4535,21 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "bcd7858f90444600",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "mekong-south-east-asian-restaurant-bar": {
+  "url": "http://www.88mekong.com/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "0e48747a778b4f39",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
@@ -4340,6 +4580,21 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "ab1411a44aa3cea4",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "merchants-restaurant": {
+  "url": "http://merchantsyyc.com/specials",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 4,
+  "extra_windows_total": 4,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "31f63f9b05c8e8e7",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
@@ -4449,6 +4704,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "modern-steak-on-stephen-avenue": {
+  "url": "http://www.modernsteak.ca/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 0,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "ae848fb9b26c99b1",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "moltaqa-moroccan-restaurant": {
   "url": "https://moltaqarestaurant.ca/menu/",
   "checked_at": "2026-11-07",
@@ -4533,10 +4803,10 @@
   "extra_windows_total": 2,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "3f2c76e8bac58a05",
+  "hh_hash": "94dd11078f89bf0a",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-11-03"
+  "changed_at": "2026-11-07"
  },
  "moxies-richmond-restaurant": {
   "url": "https://moxies.ca/happy-hour-menu",
@@ -4664,10 +4934,10 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "fcc9e5e6910864c1",
+  "hh_hash": "d25abf3d08633e0b",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-11-06"
+  "changed_at": "2026-11-07"
  },
  "nicli-pizzeria-bar": {
   "url": "https://www.niclipizzeria.com/happy-hour-menu-main",
@@ -5008,9 +5278,10 @@
   "extra_windows_total": 3,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "4ee27933ffabcd46",
+  "hh_hash": "4083c65c9b43e3e2",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07"
+  "last_confirmed_at": "2026-11-07",
+  "changed_at": "2026-11-07"
  },
  "ova-restaurant-bar": {
   "url": "https://www.versantehotel.com/taste/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=10162344245732925368",
@@ -5218,9 +5489,10 @@
   "ok": true,
   "fail_count": 0,
   "rendered": true,
-  "hh_hash": "1dc1b1d5f5e1b362",
+  "hh_hash": "8068895abe33f9d2",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07"
+  "last_confirmed_at": "2026-11-07",
+  "changed_at": "2026-11-07"
  },
  "pier-7-restaurant-bar": {
   "url": "http://www.pierseven.ca/happy-hour/",
@@ -5241,18 +5513,17 @@
  "pig-duke-neighbourhood-pub": {
   "url": "https://pigandduke.ca/drink-menu/",
   "checked_at": "2026-11-07",
-  "http_status": 0,
+  "http_status": 200,
   "kind": "html",
-  "ok": false,
-  "fail_count": 1,
+  "ok": true,
+  "fail_count": 0,
   "hh_mentioned": true,
   "times_seen": true,
   "extra_windows_seen": 2,
   "extra_windows_total": 2,
   "hh_hash": "a1a1fb9fdac5d1f2",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07",
-  "error": "curl: (28) Connection timed out after 25002 milliseconds"
+  "last_confirmed_at": "2026-11-07"
  },
  "pigeonhole-downtown": {
   "url": "https://www.pigeonholeyyc.ca/pigeonholedowntown-happyhour/",
@@ -5281,10 +5552,10 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "021165178bb2ed62",
+  "hh_hash": "c95f2eede055b8b5",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-11-06"
+  "changed_at": "2026-11-07"
  },
  "pinpointe-social": {
   "url": "https://www.pinpointesocial.com/happy-hour",
@@ -5630,6 +5901,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "redchillies-sports-bar": {
+  "url": "http://redchilliessportsbar.com/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "3d694874c6c0d7c4",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "reflections-the-garden-terrace": {
   "url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace",
   "checked_at": "2026-11-07",
@@ -5644,6 +5930,21 @@
   "hh_hash": "7445d632b0b8b923",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-10-24"
+ },
+ "regal-beagle-macleod": {
+  "url": "https://regalbeagle.scvr.co/menu/specials?",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "d55bb477cb795f7e",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
  },
  "relish-the-pub": {
   "url": "https://www.relishthepub.com/_files/ugd/d4cdc4_4af3aaf831a140ff86a15c5f2163c3b2.pdf",
@@ -5782,7 +6083,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 29,
+  "fail_count": 30,
   "error": "curl: (6) Could not resolve host: romersurgerbar.com"
  },
  "rongsi-rong-see-thai-bar-bistro": {
@@ -5981,6 +6282,36 @@
   "fail_count": 0,
   "hh_hash": "b796cb45ff946463",
   "last_ok_at": "2026-11-07"
+ },
+ "shady-tree-pub": {
+  "url": "https://shadytree.pub/menu",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "d4a693c0180dfd9c",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "shark-club-sports-bar-grill": {
+  "url": "https://www.sharkclub.com/location/vancouver/happy-hour",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "4897a0d579df01e7",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
  },
  "sharkey-s-seafood-bar-grille": {
   "url": "http://sharkeys.ca/",
@@ -6313,6 +6644,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "southside-diner": {
+  "url": "https://southsidediner.ca/menu/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "9e64719eaa3eb64f",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "speed-s-neighborhood-pub": {
   "url": "http://www.speedspubladner.ca/happyhour",
   "checked_at": "2026-11-07",
@@ -6341,6 +6687,21 @@
   "fail_count": 0,
   "rendered": true,
   "hh_hash": "e64428a3b12849f4",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "spot-on-kitchen-bar": {
+  "url": "http://spotoncalgary.com/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "9072ccd47e5d52c9",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
@@ -6452,7 +6813,7 @@
  "starlight-casino": {
   "url": "https://starlightcasino.ca/casino-happy-hour/",
   "checked_at": "2026-11-07",
-  "http_status": 202,
+  "http_status": 200,
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": true,
@@ -6460,11 +6821,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "8469da5c572ceb88",
+  "hh_hash": "37ffff41811e7b1a",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-11-07",
-  "rendered": true
+  "changed_at": "2026-11-07"
  },
  "steamworks-mount-pleasant": {
   "url": "https://steamworks.com/wp-content/uploads/2026/03/SWMP_Mar2026_print.pdf",
@@ -6729,6 +7089,21 @@
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-02"
  },
+ "tavern-at-deerfoot-meadows": {
+  "url": "https://thetaverncollective.com/happy-hour/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "1dac20408c23d8e8",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "tavola": {
   "url": "https://tavolavancouver.com/daily-specials/",
   "checked_at": "2026-11-07",
@@ -6840,7 +7215,7 @@
  "the-barley-merchant-taproom-kitchen": {
   "url": "http://www.thebarleymerchant.com/happy-hour",
   "checked_at": "2026-11-07",
-  "http_status": 200,
+  "http_status": 301,
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": true,
@@ -6850,7 +7225,8 @@
   "fail_count": 0,
   "hh_hash": "afc641fa7fac0f3e",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07"
+  "last_confirmed_at": "2026-11-07",
+  "rendered": true
  },
  "the-beer-shack": {
   "url": "https://thebeershackwr.com/",
@@ -7127,6 +7503,36 @@
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-06"
  },
+ "the-dogwood-bar": {
+  "url": "http://www.thedogwoodbar.com/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "6995d0694ce00c78",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "the-dolar-shop-hot-pot-richmond": {
+  "url": "https://www.dolarshop.com/location/richmondlocation/happy-hour",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
+  "extra_windows_total": 3,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "6e217f70d63d89b7",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "the-farmhouse": {
   "url": "https://farmhouseon10th.com/assets/menus/the_farmhouse_Happy_Hour.pdf",
   "checked_at": "2026-11-07",
@@ -7222,16 +7628,15 @@
  "the-great-bear-pub": {
   "url": "http://greatbearpub.com/files/2019/01/Great-BearEatin-2019.pdf",
   "checked_at": "2026-11-07",
-  "http_status": 0,
-  "kind": "html",
-  "ok": false,
-  "fail_count": 2,
+  "http_status": 200,
+  "kind": "pdf",
+  "ok": true,
+  "fail_count": 0,
   "hh_mentioned": false,
   "times_seen": false,
   "extra_windows_seen": 0,
   "extra_windows_total": 1,
-  "last_ok_at": "2026-11-07",
-  "error": "curl: (28) Connection timed out after 25002 milliseconds"
+  "last_ok_at": "2026-11-07"
  },
  "the-greek-by-anatoli-yaletown": {
   "url": "https://www.thegreekbyanatoli.com/yaletown-menu",
@@ -7453,9 +7858,11 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "8438549340997ae7",
+  "hh_hash": "7293cec1e8a0734a",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07"
+  "last_confirmed_at": "2026-11-07",
+  "rendered": true,
+  "changed_at": "2026-11-07"
  },
  "the-lobby-restaurant-lounge": {
   "url": "http://lobbyrestaurant.ca/happyhour",
@@ -7487,6 +7894,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "the-loft-at-meadow-gardens": {
+  "url": "https://meadowgardensloft.com/menus/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 0,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "030e0933a55e4860",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "the-mac-billiards": {
   "url": "https://themac.ca/",
   "checked_at": "2026-11-07",
@@ -7499,6 +7921,22 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "1b0df48e7f422698",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "the-mad-italian-pizza-pints": {
+  "url": "https://www.maditalianpizza.ca/menu",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "rendered": true,
+  "hh_hash": "78c88ca0a7a5b7aa",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
@@ -7678,10 +8116,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "46dff16927a0b7c7",
+  "hh_hash": "f259783aa3c6b9a7",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-10-24"
+  "changed_at": "2026-11-07"
  },
  "the-parlour": {
   "url": "https://theparlourrestaurants.com/vancouver-menu/#happy-hour",
@@ -7948,6 +8386,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
+ "the-table-bistro": {
+  "url": "http://www.thetablebistro.com/happy-hour",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "9a15a902db8af52e",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
  "the-terminal-pub": {
   "url": "http://www.theterminalpub.com/happyhour",
   "checked_at": "2026-11-07",
@@ -7990,6 +8443,21 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "9ec58fc3a68d13db",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "the-tommyfield-gastro-pub": {
+  "url": "http://tommyfieldgastropub.com/specials",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 1,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "237d80fd7100e62b",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
@@ -8106,9 +8574,9 @@
   "extra_windows_total": 2,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "961966dbb19746c2",
+  "hh_hash": "29c34b3acc7a40a6",
   "last_ok_at": "2026-11-07",
-  "changed_at": "2026-10-24",
+  "changed_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },
  "tidewaters-pub": {
@@ -8142,6 +8610,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-05"
+ },
+ "tipsie": {
+  "url": "http://tipsie.ca/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "b37c24017420c1e6",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
  },
  "tobiko-1-sushi": {
   "url": "http://tobikosushi.com/",
@@ -8265,6 +8748,21 @@
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-06"
+ },
+ "twenty-two-taphouse": {
+  "url": "https://22taphouse.ca/langley/happy-hour/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": null,
+  "extra_windows_total": null,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "6732875cf7fca498",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
  },
  "two-parrots-bar-grill": {
   "url": "https://www.twoparrotsvancouver.com/_files/ugd/8f0180_a21efa48cb3746a482ce249e320a6dc8.pdf",
@@ -8503,9 +9001,10 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "7e2e7528b3eec7f5",
+  "hh_hash": "f7adf18a8a5af91c",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07"
+  "last_confirmed_at": "2026-11-07",
+  "changed_at": "2026-11-07"
  },
  "water-st-caf": {
   "url": "https://www.waterstreetcafe.ca/menu/happy-hour",
@@ -8534,6 +9033,21 @@
   "ok": true,
   "fail_count": 0,
   "hh_hash": "5c29f0abb8c4d4fc",
+  "last_ok_at": "2026-11-07",
+  "last_confirmed_at": "2026-11-07"
+ },
+ "wedge-bar-grill": {
+  "url": "https://meadowgardensgolf.com/2025/09/10/happy-hour-at-the-wedge-bar-grill/",
+  "checked_at": "2026-11-07",
+  "http_status": 200,
+  "kind": "html",
+  "hh_mentioned": true,
+  "times_seen": true,
+  "extra_windows_seen": 0,
+  "extra_windows_total": 1,
+  "ok": true,
+  "fail_count": 0,
+  "hh_hash": "7d2bbe3e06926d31",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07"
  },

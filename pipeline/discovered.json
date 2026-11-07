@@ -25,6 +25,1137 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "atlas-pizza-sports-bar",
+    "name": "Atlas Pizza & Sports Bar",
+    "formatted_address": "6060 Memorial Dr, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0532219,
+        "lng": -113.942606
+      }
+    },
+    "formatted_phone_number": "(403) 248-3344",
+    "website": "http://atlaspizzasportsbar.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "11:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://atlaspizzasportsbar.com/menus/our-specials",
+      "deals": [
+        {
+          "name": "Wings",
+          "price": "$9.95",
+          "category": "food",
+          "description": "1 pound, dine-in only"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://cdn.prod.website-files.com/615b58bf1b77938f41837d36/61677de3e8cbde1d06f84160_Logo.png",
+      "credit_name": "Atlas Pizza & Sports Bar",
+      "credit_url": "http://atlaspizzasportsbar.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-brickworks",
+    "name": "The Brickworks",
+    "formatted_address": "4308 Main St #20, Whistler, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.1169249,
+        "lng": -122.95686740000001
+      }
+    },
+    "formatted_phone_number": "(604) 962-2929",
+    "website": "http://thebrickworks.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://thebrickworks.ca/happyhour",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "citizen-brewing-company",
+    "name": "Citizen Brewing Company",
+    "formatted_address": "227 35 Ave NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0839789,
+        "lng": -114.05839639999999
+      }
+    },
+    "formatted_phone_number": "(403) 474-4677",
+    "website": "http://citizenbrewingcompany.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:00",
+          "end": "22:00",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.citizenbrewingcompany.com/our-menu",
+      "deals": [
+        {
+          "name": "Draft Beer",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "20 oz pint"
+        },
+        {
+          "name": "House Wine",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "6 oz glass, Red Blend or Pinot Grigio"
+        },
+        {
+          "name": "Italian Spiked Sodas",
+          "price": "$6.95",
+          "category": "drink",
+          "description": "1 oz vodka, Lemon Rosemary or Raspberry Cherry"
+        },
+        {
+          "name": "Italian Popcorn",
+          "price": "$3.95",
+          "category": "food",
+          "description": "Cacio e pepe seasoning"
+        },
+        {
+          "name": "Bavarian Pretzel",
+          "price": "$6.50",
+          "category": "food",
+          "description": "Soft pretzel with beer mustard"
+        },
+        {
+          "name": "Classic Poutine",
+          "price": "$10.50",
+          "category": "food",
+          "description": "Fries, cheese curds, house gravy"
+        },
+        {
+          "name": "Korean Corn Dog & Fries",
+          "price": "$14.50",
+          "category": "food",
+          "description": "Cornflake breaded hot dog, gochujang mayo, kimchi slaw"
+        },
+        {
+          "name": "Smash Beef Sliders",
+          "price": "$12.95",
+          "category": "food",
+          "description": "2 sliders, caramelized onions, cheese, pickles"
+        },
+        {
+          "name": "Fried Chicken Basket",
+          "price": "$13.95",
+          "category": "food",
+          "description": "2 fried chicken thighs, choice of sauce"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/667c7d4e464f5d417fb259a8/t/667cb0a6500ede6e93d9eddd/1719447718281/Citizen+Logo+2+-+Black+.png?format=1500w",
+      "credit_name": "Citizen Brewing Company",
+      "credit_url": "http://citizenbrewingcompany.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "chances-abbotsford",
+    "name": "Chances Abbotsford",
+    "formatted_address": "30835 Peardonville Rd, Abbotsford, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0467136,
+        "lng": -122.36887730000001
+      }
+    },
+    "formatted_phone_number": "(604) 854-6522",
+    "website": "https://abbotsfordchances.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://abbotsfordchances.ca/red21-tap-grill-new-daily-happy-hour/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "hidden-spot-entertainment-and-arcade-bar",
+    "name": "Hidden Spot Entertainment and Arcade Bar",
+    "formatted_address": "2323 32 Ave NE #125, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0799812,
+        "lng": -114.0069212
+      }
+    },
+    "formatted_phone_number": "(403) 457-9565",
+    "website": "http://hiddenspotyyc.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "22:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://hiddenspotyyc.com/specials",
+      "deals": [
+        {
+          "name": "Wings",
+          "price": "1/2 price",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Sliders",
+          "price": "1/2 price",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Hiballs",
+          "price": "$5",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "PBR",
+          "price": "$5",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "House Wine",
+          "price": "$5",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://hiddenspotyyc.com/wp-content/uploads/2024/06/HIDDEN-SPOT-JAN-2024-69-Buster-Beak-scaled-1.jpg",
+      "credit_name": "Hidden Spot Entertainment and Arcade Bar",
+      "credit_url": "http://hiddenspotyyc.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "annex-ale-project",
+    "name": "Annex Ale Project",
+    "formatted_address": "4323 1st St SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0147556,
+        "lng": -114.062272
+      }
+    },
+    "formatted_phone_number": "(403) 475-4412",
+    "website": "http://www.annexales.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": "14:00",
+      "end": "16:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "19:00",
+          "end": null,
+          "label": "Late night"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "12:00",
+          "end": "19:00",
+          "label": "All day"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.annexales.com/menu",
+      "deals": [
+        {
+          "name": "Doppelgänger Hefeweizen",
+          "price": "$6",
+          "category": "drink",
+          "description": "16oz pours"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://annexales.com/cdn/shop/files/Untitled_design_8.png?v=1790193337",
+      "credit_name": "Annex Ale Project",
+      "credit_url": "http://www.annexales.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "cabin-brewing-company",
+    "name": "Cabin Brewing Company",
+    "formatted_address": "505 36 Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0212065,
+        "lng": -114.0535917
+      }
+    },
+    "formatted_phone_number": "(403) 244-3331",
+    "website": "http://www.cabinbrewing.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": "12:00",
+      "end": "16:00",
+      "extra_windows": [
+        {
+          "days": [
+            0
+          ],
+          "start": "12:00",
+          "end": null,
+          "label": "Hazy Sundays"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.cabinbrewing.ca/s/Taproom-Menu-Nov-4.pdf",
+      "deals": [
+        {
+          "name": "Draught Beer",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "18oz and 14oz pours"
+        },
+        {
+          "name": "Draught Beer",
+          "price": "$4.50",
+          "category": "drink",
+          "description": "12oz pours"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5a5590fc0abd0444cba48ff0/t/5ae7f817575d1f30835632de/1525151772685/CAB-002+Postcards-1+Rainbow.jpg?format=1500w",
+      "credit_name": "Cabin Brewing Company",
+      "credit_url": "http://www.cabinbrewing.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "gator-s-sports-pub",
+    "name": "Gator's Sports Pub",
+    "formatted_address": "2525 Woodview Dr SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9405143,
+        "lng": -114.12071519999999
+      }
+    },
+    "formatted_phone_number": "(403) 238-5995",
+    "website": "https://www.gatorscalgary.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "20:00",
+      "extra_windows": [
+        {
+          "days": [
+            0
+          ],
+          "start": "11:00",
+          "end": null,
+          "label": "All Day"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.gatorscalgary.com/menus?menu=bar",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "le-charme",
+    "name": "Le Charme",
+    "formatted_address": "804 Edmonton Trl, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0586236,
+        "lng": -114.05409639999999
+      }
+    },
+    "formatted_phone_number": "(587) 577-4026",
+    "website": "https://www.lecharme.ca/",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            6,
+            0
+          ],
+          "start": "14:00",
+          "end": "17:00",
+          "label": "Weekend aperitif"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.lecharme.ca/",
+      "deals": [
+        {
+          "name": "Charcuterie Board",
+          "price": "$20",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Steak Frites",
+          "price": "$34",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Schnitzel Sandwich",
+          "price": "$24",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Charmant Beef Hot-Dog",
+          "price": "$12",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Chicken Wings",
+          "price": "$18",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Poutine",
+          "price": "$18",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://www.lecharme.ca/images/og-image.jpg",
+      "credit_name": "Le Charme",
+      "credit_url": "https://www.lecharme.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "33-acres-brewing-company-calgary",
+    "name": "33 Acres Brewing Company Calgary",
+    "formatted_address": "224 12 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.042251500000006,
+        "lng": -114.0674028
+      }
+    },
+    "formatted_phone_number": "(604) 620-4589",
+    "website": "http://33acresbrewing.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://33acresbrewing.com/menu/calgary/",
+      "deals": [
+        {
+          "name": "Calgary Brewed B33R",
+          "price": "$6.75",
+          "category": "drink",
+          "description": "16 oz"
+        },
+        {
+          "name": "Vegan Popcorn",
+          "price": "$4",
+          "category": "food",
+          "description": "Nutritional Yeast, Garlic Oil, Salt, Pepper"
+        },
+        {
+          "name": "Chips & Dip",
+          "price": "$6",
+          "category": "food",
+          "description": "Kettle Chips, French Onion Dip"
+        },
+        {
+          "name": "Pretzel",
+          "price": "$5",
+          "category": "food",
+          "description": "Warm Pretzel, Dijon"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://33acresbrewing.com/app/uploads/2020/02/Web-scaled-e1581460162825.jpg",
+      "credit_name": "33 Acres Brewing Company Calgary",
+      "credit_url": "http://33acresbrewing.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "atlas-brewing-airdrie",
+    "name": "Atlas Brewing Airdrie",
+    "formatted_address": "2000 Market St #100, Airdrie, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.268679999999996,
+        "lng": -113.9933801
+      }
+    },
+    "formatted_phone_number": null,
+    "website": "http://www.atlasbrewing.ca/",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.atlasbrewing.ca/",
+      "deals": [
+        {
+          "name": "Happy Hour Pints",
+          "price": "unspecified",
+          "category": "drink",
+          "description": "Pint pricing during happy hour window"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/13f8f6_58f35b743b1044f8b18a6b94c41f4504%7Emv2.png/v1/fit/w_2500,h_1330,al_c/13f8f6_58f35b743b1044f8b18a6b94c41f4504%7Emv2.png",
+      "credit_name": "Atlas Brewing Airdrie",
+      "credit_url": "http://www.atlasbrewing.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "pour-decisions",
+    "name": "Pour Decisions",
+    "formatted_address": "1312 17 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0379673,
+        "lng": -114.09246669999999
+      }
+    },
+    "formatted_phone_number": "(825) 540-1322",
+    "website": "http://pourdecisionsyyc.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "start": "23:00",
+          "end": "02:00",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://pourdecisionsyyc.com/calgary-pour-decisions-specials-page",
+      "deals": [
+        {
+          "name": "Hi-balls",
+          "price": "$5",
+          "category": "drink",
+          "description": "1 oz"
+        },
+        {
+          "name": "Jagermeister",
+          "price": "$5",
+          "category": "drink",
+          "description": "1 oz"
+        },
+        {
+          "name": "Jack Family",
+          "price": "$5",
+          "category": "drink",
+          "description": "1 oz"
+        },
+        {
+          "name": "Pour Decisions Draft",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Jello shot",
+          "price": "$5",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Fireball shot",
+          "price": "$5",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/384287_website_v1/social.jpg",
+      "credit_name": "Pour Decisions",
+      "credit_url": "http://pourdecisionsyyc.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "freestyle-social-club",
+    "name": "Freestyle Social Club",
+    "formatted_address": "119 12 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0413165,
+        "lng": -114.06476769999999
+      }
+    },
+    "formatted_phone_number": "(403) 266-8282",
+    "website": "http://freestylesocialclub.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "19:00",
+          "end": "21:00",
+          "label": "Poolside Happy Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://freestylesocialclub.ca/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "bridgette-bar",
     "name": "Bridgette Bar",
     "formatted_address": "739 10 Ave SW, Calgary, AB",
@@ -38830,37 +39961,37 @@
           "name": "Acuyo Lunch",
           "price": "$20",
           "category": "food",
-          "description": "2 tacos from asadito, tropical and el pepe plus 1 drink (Acuyo lager, limenade, jamaica, diet coke or ginger ale)"
+          "description": "2 tacos from asadito, tropical and el pepe plus 1 drink (Acuyo lager, limeade, jamaica, diet coke or ginger ale)"
         },
         {
           "name": "Las Papitas",
           "price": "$6",
           "category": "food",
-          "description": "Mexican street chips with lime, Valentina, Maggi sauce, Tajín and Mexican spices"
+          "description": "Mexican street chips with lime, Valentina, Maggi sauce, Tajín and Mexican spices. Spicy"
         },
         {
           "name": "Baked Cauliflower",
           "price": "$9",
           "category": "food",
-          "description": "Serrano chile mayo, ponzu, tajín, fresh cilantro"
+          "description": "Serrano chile mayo, ponzu, tajín, fresh cilantro. Vegetarian"
         },
         {
           "name": "Taco Asadito",
           "price": "$9",
           "category": "food",
-          "description": "1 piece. AAA ribeye, corn tortilla, onion, cilantro, green avocado salsa and red salsa. Add cheese +$2, extra rib eye slice +$4"
+          "description": "1 piece. AAA ribeye, handmade corn tortilla, onion, cilantro, green avocado salsa and red salsa. Add cheese +$2, extra rib eye slice +$4. Spicy"
         },
         {
           "name": "Taco Tropical",
           "price": "$9",
           "category": "food",
-          "description": "1 piece. Veggie taco with melted cheese, ajillo mushrooms, grilled pineapple, arugula, cherry tomatoes, chipotle mayo"
+          "description": "1 piece. Veggie taco with melted cheese, ajillo mushrooms, grilled pineapple, arugula, cherry tomatoes, chipotle mayo. Vegetarian"
         },
         {
           "name": "Taco el pepe",
           "price": "$9",
           "category": "food",
-          "description": "1 piece. Carnitas, salsa verde, avocado salsa, picked onions and cilantro"
+          "description": "1 piece. Carnitas, salsa verde, avocado salsa, pickled onions, cilantro"
         },
         {
           "name": "Cochinita",
@@ -38872,12 +40003,12 @@
           "name": "Birria",
           "price": "$50",
           "category": "food",
-          "description": "Slow-braised AAA ribeye with dried chiles, garlic, and spices, served with tortillas"
+          "description": "Slow-braised AAA ribeye with dried chiles and garlic, served with tortillas"
         }
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-10-24"
+    "last_synced_at": "2026-11-07"
   },
   {
     "place_id": null,

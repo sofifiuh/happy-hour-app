@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-07-d97f3a4b",
+ "data_version": "2026-11-07-c892d46a",
  "venues": [
   {
    "id": "ancora",
@@ -8686,6 +8686,1378 @@
    }
   },
   {
+   "place_id": "ChIJzQxBwkN7cVMR9_wn6x-xqe8",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.3,
+   "user_ratings_total": 2068,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "atlas-pizza-sports-bar",
+   "name": "Atlas Pizza & Sports Bar",
+   "formatted_address": "6060 Memorial Dr, Calgary, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 51.0532219,
+     "lng": -113.942606
+    }
+   },
+   "formatted_phone_number": "(403) 248-3344",
+   "website": "http://atlaspizzasportsbar.com/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "11:00",
+    "end": "18:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://atlaspizzasportsbar.com/menus/our-specials",
+    "deals": [
+     {
+      "name": "Wings",
+      "price": "$9.95",
+      "category": "food",
+      "description": "1 pound, dine-in only"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://cdn.prod.website-files.com/615b58bf1b77938f41837d36/61677de3e8cbde1d06f84160_Logo.png",
+    "credit_name": "Atlas Pizza & Sports Bar",
+    "credit_url": "http://atlaspizzasportsbar.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "https://atlaspizzasportsbar.com/menus/our-specials",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJY1kzeLM8h1QRN-uuPO1jUL0",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.5,
+   "user_ratings_total": 991,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "the-brickworks",
+   "name": "The Brickworks",
+   "formatted_address": "4308 Main St #20, Whistler, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 50.1169249,
+     "lng": -122.95686740000001
+    }
+   },
+   "formatted_phone_number": "(604) 962-2929",
+   "website": "http://thebrickworks.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://thebrickworks.ca/happyhour",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "photos/the-brickworks.jpg",
+    "credit_name": "The Brickworks",
+    "credit_url": "https://maps.google.com/maps/contrib/103708467882174984071",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "http://thebrickworks.ca/happyhour",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJRwhEinNlcVMRqGH9wz3Dv7E",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.6,
+   "user_ratings_total": 956,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "citizen-brewing-company",
+   "name": "Citizen Brewing Company",
+   "formatted_address": "227 35 Ave NE, Calgary, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 51.0839789,
+     "lng": -114.05839639999999
+    }
+   },
+   "formatted_phone_number": "(403) 474-4677",
+   "website": "http://citizenbrewingcompany.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "start": "14:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "20:00",
+      "end": "22:00",
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.citizenbrewingcompany.com/our-menu",
+    "deals": [
+     {
+      "name": "Draft Beer",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "20 oz pint"
+     },
+     {
+      "name": "House Wine",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "6 oz glass, Red Blend or Pinot Grigio"
+     },
+     {
+      "name": "Italian Spiked Sodas",
+      "price": "$6.95",
+      "category": "drink",
+      "description": "1 oz vodka, Lemon Rosemary or Raspberry Cherry"
+     },
+     {
+      "name": "Italian Popcorn",
+      "price": "$3.95",
+      "category": "food",
+      "description": "Cacio e pepe seasoning"
+     },
+     {
+      "name": "Bavarian Pretzel",
+      "price": "$6.50",
+      "category": "food",
+      "description": "Soft pretzel with beer mustard"
+     },
+     {
+      "name": "Classic Poutine",
+      "price": "$10.50",
+      "category": "food",
+      "description": "Fries, cheese curds, house gravy"
+     },
+     {
+      "name": "Korean Corn Dog & Fries",
+      "price": "$14.50",
+      "category": "food",
+      "description": "Cornflake breaded hot dog, gochujang mayo, kimchi slaw"
+     },
+     {
+      "name": "Smash Beef Sliders",
+      "price": "$12.95",
+      "category": "food",
+      "description": "2 sliders, caramelized onions, cheese, pickles"
+     },
+     {
+      "name": "Fried Chicken Basket",
+      "price": "$13.95",
+      "category": "food",
+      "description": "2 fried chicken thighs, choice of sauce"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/667c7d4e464f5d417fb259a8/t/667cb0a6500ede6e93d9eddd/1719447718281/Citizen+Logo+2+-+Black+.png?format=1500w",
+    "credit_name": "Citizen Brewing Company",
+    "credit_url": "http://citizenbrewingcompany.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "https://www.citizenbrewingcompany.com/our-menu",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJvTAvrLjKhVQRkANaMW2SoFs",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 3.8,
+   "user_ratings_total": 697,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "chances-abbotsford",
+   "name": "Chances Abbotsford",
+   "formatted_address": "30835 Peardonville Rd, Abbotsford, BC",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 49.0467136,
+     "lng": -122.36887730000001
+    }
+   },
+   "formatted_phone_number": "(604) 854-6522",
+   "website": "https://abbotsfordchances.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "21:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://abbotsfordchances.ca/red21-tap-grill-new-daily-happy-hour/",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "photos/chances-abbotsford.jpg",
+    "credit_name": "HangryTrashPanda",
+    "credit_url": "https://maps.google.com/maps/contrib/105466477988258487061",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "https://abbotsfordchances.ca/red21-tap-grill-new-daily-happy-hour/",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJSRtR6-BkcVMR45UckVFEgeo",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.2,
+   "user_ratings_total": 647,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "hidden-spot-entertainment-and-arcade-bar",
+   "name": "Hidden Spot Entertainment and Arcade Bar",
+   "formatted_address": "2323 32 Ave NE #125, Calgary, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 51.0799812,
+     "lng": -114.0069212
+    }
+   },
+   "formatted_phone_number": "(403) 457-9565",
+   "website": "http://hiddenspotyyc.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "15:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "22:00",
+      "end": null,
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://hiddenspotyyc.com/specials",
+    "deals": [
+     {
+      "name": "Wings",
+      "price": "1/2 price",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Sliders",
+      "price": "1/2 price",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Hiballs",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "PBR",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "House Wine",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://hiddenspotyyc.com/wp-content/uploads/2024/06/HIDDEN-SPOT-JAN-2024-69-Buster-Beak-scaled-1.jpg",
+    "credit_name": "Hidden Spot Entertainment and Arcade Bar",
+    "credit_url": "http://hiddenspotyyc.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "http://hiddenspotyyc.com/specials",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJLVfhZUJwcVMR_ggzfQLrtUI",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.7,
+   "user_ratings_total": 573,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "annex-ale-project",
+   "name": "Annex Ale Project",
+   "formatted_address": "4323 1st St SE, Calgary, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 51.0147556,
+     "lng": -114.062272
+    }
+   },
+   "formatted_phone_number": "(403) 475-4412",
+   "website": "http://www.annexales.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "start": "14:00",
+    "end": "16:00",
+    "extra_windows": [
+     {
+      "days": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "19:00",
+      "end": null,
+      "label": "Late night"
+     },
+     {
+      "days": [
+       0
+      ],
+      "start": "12:00",
+      "end": "19:00",
+      "label": "All day"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.annexales.com/menu",
+    "deals": [
+     {
+      "name": "Doppelgänger Hefeweizen",
+      "price": "$6",
+      "category": "drink",
+      "description": "16oz pours"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://annexales.com/cdn/shop/files/Untitled_design_8.png?v=1790193337",
+    "credit_name": "Annex Ale Project",
+    "credit_url": "http://www.annexales.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "http://www.annexales.com/menu",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJr0Pnjh5xcVMRRziIgLSUyXA",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.8,
+   "user_ratings_total": 534,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "cabin-brewing-company",
+   "name": "Cabin Brewing Company",
+   "formatted_address": "505 36 Ave SE, Calgary, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 51.0212065,
+     "lng": -114.0535917
+    }
+   },
+   "formatted_phone_number": "(403) 244-3331",
+   "website": "http://www.cabinbrewing.ca/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "start": "12:00",
+    "end": "16:00",
+    "extra_windows": [
+     {
+      "days": [
+       0
+      ],
+      "start": "12:00",
+      "end": null,
+      "label": "Hazy Sundays"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.cabinbrewing.ca/s/Taproom-Menu-Nov-4.pdf",
+    "deals": [
+     {
+      "name": "Draught Beer",
+      "price": "$6.50",
+      "category": "drink",
+      "description": "18oz and 14oz pours"
+     },
+     {
+      "name": "Draught Beer",
+      "price": "$4.50",
+      "category": "drink",
+      "description": "12oz pours"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "http://static1.squarespace.com/static/5a5590fc0abd0444cba48ff0/t/5ae7f817575d1f30835632de/1525151772685/CAB-002+Postcards-1+Rainbow.jpg?format=1500w",
+    "credit_name": "Cabin Brewing Company",
+    "credit_url": "http://www.cabinbrewing.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "https://www.cabinbrewing.ca/s/Taproom-Menu-Nov-4.pdf",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJlZoj-Ah0cVMR5yuL8p9sUBk",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 390,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "gator-s-sports-pub",
+   "name": "Gator's Sports Pub",
+   "formatted_address": "2525 Woodview Dr SW, Calgary, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 50.9405143,
+     "lng": -114.12071519999999
+    }
+   },
+   "formatted_phone_number": "(403) 238-5995",
+   "website": "https://www.gatorscalgary.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "16:00",
+    "end": "20:00",
+    "extra_windows": [
+     {
+      "days": [
+       0
+      ],
+      "start": "11:00",
+      "end": null,
+      "label": "All Day"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.gatorscalgary.com/menus?menu=bar",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "photos/gator-s-sports-pub.jpg",
+    "credit_name": "Gator's Sports Pub",
+    "credit_url": "https://maps.google.com/maps/contrib/113787149015552148951",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "https://www.gatorscalgary.com/menus?menu=bar",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJN0IXWiplcVMRjBCXCdRXKdM",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.8,
+   "user_ratings_total": 230,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "le-charme",
+   "name": "Le Charme",
+   "formatted_address": "804 Edmonton Trl, Calgary, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 51.0586236,
+     "lng": -114.05409639999999
+    }
+   },
+   "formatted_phone_number": "(587) 577-4026",
+   "website": "https://www.lecharme.ca/",
+   "happy_hour": {
+    "days": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [
+     {
+      "days": [
+       6,
+       0
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "label": "Weekend aperitif"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://www.lecharme.ca/",
+    "deals": [
+     {
+      "name": "Charcuterie Board",
+      "price": "$20",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Steak Frites",
+      "price": "$34",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Schnitzel Sandwich",
+      "price": "$24",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Charmant Beef Hot-Dog",
+      "price": "$12",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Chicken Wings",
+      "price": "$18",
+      "category": "food",
+      "description": ""
+     },
+     {
+      "name": "Poutine",
+      "price": "$18",
+      "category": "food",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://www.lecharme.ca/images/og-image.jpg",
+    "credit_name": "Le Charme",
+    "credit_url": "https://www.lecharme.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "https://www.lecharme.ca/",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJz474nMRxcVMRIHR2dgwpihc",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.4,
+   "user_ratings_total": 159,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "33-acres-brewing-company-calgary",
+   "name": "33 Acres Brewing Company Calgary",
+   "formatted_address": "224 12 Ave SW, Calgary, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 51.042251500000006,
+     "lng": -114.0674028
+    }
+   },
+   "formatted_phone_number": "(604) 620-4589",
+   "website": "http://33acresbrewing.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://33acresbrewing.com/menu/calgary/",
+    "deals": [
+     {
+      "name": "Calgary Brewed B33R",
+      "price": "$6.75",
+      "category": "drink",
+      "description": "16 oz"
+     },
+     {
+      "name": "Vegan Popcorn",
+      "price": "$4",
+      "category": "food",
+      "description": "Nutritional Yeast, Garlic Oil, Salt, Pepper"
+     },
+     {
+      "name": "Chips & Dip",
+      "price": "$6",
+      "category": "food",
+      "description": "Kettle Chips, French Onion Dip"
+     },
+     {
+      "name": "Pretzel",
+      "price": "$5",
+      "category": "food",
+      "description": "Warm Pretzel, Dijon"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://33acresbrewing.com/app/uploads/2020/02/Web-scaled-e1581460162825.jpg",
+    "credit_name": "33 Acres Brewing Company Calgary",
+    "credit_url": "http://33acresbrewing.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "https://33acresbrewing.com/menu/calgary/",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJ0a0p629fcVMRNnvISiXBHnY",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": null,
+   "rating": 4.6,
+   "user_ratings_total": 98,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "atlas-brewing-airdrie",
+   "name": "Atlas Brewing Airdrie",
+   "formatted_address": "2000 Market St #100, Airdrie, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 51.268679999999996,
+     "lng": -113.9933801
+    }
+   },
+   "formatted_phone_number": null,
+   "website": "http://www.atlasbrewing.ca/",
+   "happy_hour": {
+    "days": [
+     2,
+     3,
+     4
+    ],
+    "start": "15:00",
+    "end": "17:00",
+    "extra_windows": [],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://www.atlasbrewing.ca/",
+    "deals": [
+     {
+      "name": "Happy Hour Pints",
+      "price": "unspecified",
+      "category": "drink",
+      "description": "Pint pricing during happy hour window"
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://static.wixstatic.com/media/13f8f6_58f35b743b1044f8b18a6b94c41f4504%7Emv2.png/v1/fit/w_2500,h_1330,al_c/13f8f6_58f35b743b1044f8b18a6b94c41f4504%7Emv2.png",
+    "credit_name": "Atlas Brewing Airdrie",
+    "credit_url": "http://www.atlasbrewing.ca/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "http://www.atlasbrewing.ca/",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJ8bQgbABvcVMR03ehG8VD_IM",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 1,
+   "rating": 3.7,
+   "user_ratings_total": 93,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "pour-decisions",
+   "name": "Pour Decisions",
+   "formatted_address": "1312 17 Ave SW, Calgary, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 51.0379673,
+     "lng": -114.09246669999999
+    }
+   },
+   "formatted_phone_number": "(825) 540-1322",
+   "website": "http://pourdecisionsyyc.com/",
+   "happy_hour": {
+    "days": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "start": "23:00",
+      "end": "02:00",
+      "label": "Late night"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "https://pourdecisionsyyc.com/calgary-pour-decisions-specials-page",
+    "deals": [
+     {
+      "name": "Hi-balls",
+      "price": "$5",
+      "category": "drink",
+      "description": "1 oz"
+     },
+     {
+      "name": "Jagermeister",
+      "price": "$5",
+      "category": "drink",
+      "description": "1 oz"
+     },
+     {
+      "name": "Jack Family",
+      "price": "$5",
+      "category": "drink",
+      "description": "1 oz"
+     },
+     {
+      "name": "Pour Decisions Draft",
+      "price": "$6",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Jello shot",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     },
+     {
+      "name": "Fireball shot",
+      "price": "$5",
+      "category": "drink",
+      "description": ""
+     }
+    ]
+   },
+   "cover_image": {
+    "url": "https://static.spotapps.co/website_images/ab_websites/384287_website_v1/social.jpg",
+    "credit_name": "Pour Decisions",
+    "credit_url": "http://pourdecisionsyyc.com/",
+    "source": "official_website"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "https://pourdecisionsyyc.com/calgary-pour-decisions-specials-page",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
+   "place_id": "ChIJeWb03gJwcVMRZOKb2IINx0k",
+   "international_phone_number": null,
+   "types": [
+    "restaurant",
+    "bar",
+    "food",
+    "point_of_interest",
+    "establishment"
+   ],
+   "business_status": "OPERATIONAL",
+   "price_level": 2,
+   "rating": 4.4,
+   "user_ratings_total": 52,
+   "opening_hours": {
+    "weekday_text": []
+   },
+   "photos": [],
+   "amenities": {
+    "outdoor_seating": null,
+    "gluten_free_options": null,
+    "wheelchair_accessible_entrance": null,
+    "parking": null,
+    "transit": null,
+    "serves_cocktails": null,
+    "serves_beer": null,
+    "serves_wine": null,
+    "live_music": null,
+    "good_for_groups": null
+   },
+   "data_source": "discovery",
+   "id": "freestyle-social-club",
+   "name": "Freestyle Social Club",
+   "formatted_address": "119 12 Ave SW, Calgary, AB",
+   "address_components": null,
+   "geometry": {
+    "location": {
+     "lat": 51.0413165,
+     "lng": -114.06476769999999
+    }
+   },
+   "formatted_phone_number": "(403) 266-8282",
+   "website": "http://freestylesocialclub.ca/",
+   "happy_hour": {
+    "days": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "start": "15:00",
+    "end": "18:00",
+    "extra_windows": [
+     {
+      "days": [
+       0,
+       1,
+       2,
+       3,
+       4,
+       5,
+       6
+      ],
+      "start": "19:00",
+      "end": "21:00",
+      "label": "Poolside Happy Hour"
+     }
+    ],
+    "verified": false,
+    "verified_source": null,
+    "source_url": "http://freestylesocialclub.ca/",
+    "deals": []
+   },
+   "cover_image": {
+    "url": "photos/freestyle-social-club.jpg",
+    "credit_name": "Freestyle Social Club",
+    "credit_url": "https://maps.google.com/maps/contrib/107271051721384965711",
+    "source": "google_places"
+   },
+   "last_synced_at": "2026-11-07",
+   "primary_type": null,
+   "reservable": null,
+   "maps_url": null,
+   "trust": {
+    "level": "venue_site",
+    "status": "unchecked",
+    "confidence": "medium",
+    "source_url": "http://freestylesocialclub.ca/",
+    "data_as_of": "2026-11-07",
+    "last_checked_at": null,
+    "last_confirmed_at": null
+   }
+  },
+  {
    "place_id": "ChIJw_hCeOFvcVMRuvxWSfd8V_s",
    "international_phone_number": null,
    "types": [
@@ -8793,12 +10165,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://www.bridgettebar.com/calgary",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -8926,12 +10298,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.lousgrill.com/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -9134,12 +10506,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://www.sharkclub.com/location/vancouver/happy-hour",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -9261,12 +10633,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://tommyfieldgastropub.com/specials",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -9360,12 +10732,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.modernsteak.ca/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -9498,12 +10870,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.madis.restaurant/happy-hour",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -9619,12 +10991,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://thetaverncollective.com/happy-hour/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -9702,12 +11074,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.apresapres.ca/happy-hour",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -9826,12 +11198,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://spotoncalgary.com/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -9969,12 +11341,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.majorleague2.com/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -10096,12 +11468,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://www.abbeyroadtaphouse.com/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -10241,12 +11613,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://merchantsyyc.com/specials",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -10322,12 +11694,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.thetablebistro.com/happy-hour",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -10446,11 +11818,11 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
+    "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://www.amatogelatoalberta.com/17th-ave-menu/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
+    "last_checked_at": "2026-11-07",
     "last_confirmed_at": null
    }
   },
@@ -10570,12 +11942,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://regalbeagle.scvr.co/menu/specials?",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -10676,12 +12048,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://shadytree.pub/menu",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -10764,12 +12136,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.thedogwoodbar.com/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -10903,12 +12275,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://bizarregastropub.ca/happy-hour",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -11027,12 +12399,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.88mekong.com/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -11115,12 +12487,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://redchilliessportsbar.com/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -11224,12 +12596,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://1861local.ca/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -11317,12 +12689,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://happygilmore.golf/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -11385,19 +12757,24 @@
     "source_url": "http://tipsie.ca/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/tipsie.jpg",
+    "credit_name": "Julio Bravo",
+    "credit_url": "https://maps.google.com/maps/contrib/109845831751299634913",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://tipsie.ca/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -11523,12 +12900,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://22taphouse.ca/langley/happy-hour/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -11608,19 +12985,24 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/wedge-bar-grill.jpg",
+    "credit_name": "Brandon Hall",
+    "credit_url": "https://maps.google.com/maps/contrib/109796530611167411103",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://meadowgardensgolf.com/2025/09/10/happy-hour-at-the-wedge-bar-grill/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -11698,19 +13080,24 @@
     "source_url": "https://www.lulubar.ca/contact-calgary",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/lulu-bar.jpg",
+    "credit_name": "Lulu Bar",
+    "credit_url": "https://maps.google.com/maps/contrib/117042785639239640122",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://www.lulubar.ca/contact-calgary",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -11846,12 +13233,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://www.dolarshop.com/location/richmondlocation/happy-hour",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -11940,12 +13327,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://southsidediner.ca/menu/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -12043,12 +13430,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://www.maditalianpizza.ca/menu",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -12141,12 +13528,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://cantinanorte.com/menus/happy-hour",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -12291,12 +13678,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.maplewoodsmokehouse.ca/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -12376,19 +13763,24 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/meadow-gardens-golf-club.jpg",
+    "credit_name": "Meadow Gardens Golf Club",
+    "credit_url": "https://maps.google.com/maps/contrib/105257276536224582315",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.meadowgardens.com/menu/happy-hour",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -12471,12 +13863,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "http://www.fortitudewinebar.com/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -12586,12 +13978,12 @@
    "maps_url": null,
    "trust": {
     "level": "venue_site",
-    "status": "unchecked",
-    "confidence": "medium",
+    "status": "confirmed",
+    "confidence": "high",
     "source_url": "https://meadowgardensloft.com/menus/",
     "data_as_of": "2026-11-07",
-    "last_checked_at": null,
-    "last_confirmed_at": null
+    "last_checked_at": "2026-11-07",
+    "last_confirmed_at": "2026-11-07"
    }
   },
   {
@@ -13279,7 +14671,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/st-james-corner-restaurant-irish-pub.jpg",
+    "credit_name": "St. James Corner Restaurant & Irish Pub",
+    "credit_url": "https://maps.google.com/maps/contrib/108943679720357881463",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-11-06",
    "primary_type": null,
    "reservable": null,
@@ -13723,7 +15120,12 @@
      }
     ]
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "photos/the-king-s-head-eatery-music-room.jpg",
+    "credit_name": "The King's Head Eatery & Music Room",
+    "credit_url": "https://maps.google.com/maps/contrib/101392867708632682497",
+    "source": "google_places"
+   },
    "last_synced_at": "2026-11-06",
    "primary_type": null,
    "reservable": null,
@@ -64023,8 +65425,8 @@
    "maps_url": "https://maps.google.com/?cid=1767104060080618068&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
    "trust": {
     "level": "venue_site",
-    "status": "unreachable",
-    "confidence": "low",
+    "status": "unconfirmed",
+    "confidence": "medium",
     "source_url": "http://greatbearpub.com/files/2019/01/Great-BearEatin-2019.pdf",
     "data_as_of": "2026-09-03",
     "last_checked_at": "2026-11-07",
@@ -75605,37 +77007,37 @@
       "name": "Acuyo Lunch",
       "price": "$20",
       "category": "food",
-      "description": "2 tacos from asadito, tropical and el pepe plus 1 drink (Acuyo lager, limenade, jamaica, diet coke or ginger ale)"
+      "description": "2 tacos from asadito, tropical and el pepe plus 1 drink (Acuyo lager, limeade, jamaica, diet coke or ginger ale)"
      },
      {
       "name": "Las Papitas",
       "price": "$6",
       "category": "food",
-      "description": "Mexican street chips with lime, Valentina, Maggi sauce, Tajín and Mexican spices"
+      "description": "Mexican street chips with lime, Valentina, Maggi sauce, Tajín and Mexican spices. Spicy"
      },
      {
       "name": "Baked Cauliflower",
       "price": "$9",
       "category": "food",
-      "description": "Serrano chile mayo, ponzu, tajín, fresh cilantro"
+      "description": "Serrano chile mayo, ponzu, tajín, fresh cilantro. Vegetarian"
      },
      {
       "name": "Taco Asadito",
       "price": "$9",
       "category": "food",
-      "description": "1 piece. AAA ribeye, corn tortilla, onion, cilantro, green avocado salsa and red salsa. Add cheese +$2, extra rib eye slice +$4"
+      "description": "1 piece. AAA ribeye, handmade corn tortilla, onion, cilantro, green avocado salsa and red salsa. Add cheese +$2, extra rib eye slice +$4. Spicy"
      },
      {
       "name": "Taco Tropical",
       "price": "$9",
       "category": "food",
-      "description": "1 piece. Veggie taco with melted cheese, ajillo mushrooms, grilled pineapple, arugula, cherry tomatoes, chipotle mayo"
+      "description": "1 piece. Veggie taco with melted cheese, ajillo mushrooms, grilled pineapple, arugula, cherry tomatoes, chipotle mayo. Vegetarian"
      },
      {
       "name": "Taco el pepe",
       "price": "$9",
       "category": "food",
-      "description": "1 piece. Carnitas, salsa verde, avocado salsa, picked onions and cilantro"
+      "description": "1 piece. Carnitas, salsa verde, avocado salsa, pickled onions, cilantro"
      },
      {
       "name": "Cochinita",
@@ -75647,7 +77049,7 @@
       "name": "Birria",
       "price": "$50",
       "category": "food",
-      "description": "Slow-braised AAA ribeye with dried chiles, garlic, and spices, served with tortillas"
+      "description": "Slow-braised AAA ribeye with dried chiles and garlic, served with tortillas"
      }
     ]
    },
@@ -75657,7 +77059,7 @@
     "credit_url": "https://acuyo.ca/",
     "source": "official_website"
    },
-   "last_synced_at": "2026-10-24",
+   "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
    "maps_url": null,
@@ -75666,7 +77068,7 @@
     "status": "unconfirmed",
     "confidence": "medium",
     "source_url": "https://files.sites.man-go.co/sites/a010bc47-b5d0-485a-b891-d248a3df8d68/menu/Happy%20Hour.png",
-    "data_as_of": "2026-10-24",
+    "data_as_of": "2026-11-07",
     "last_checked_at": "2026-11-07",
     "last_confirmed_at": null
    }

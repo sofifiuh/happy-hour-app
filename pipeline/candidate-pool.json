@@ -1,220 +1,4 @@
 {
-  "ChIJc-rQW01xhlQRSTGakHFDvjY": {
-    "id": "shark-club-sports-bar-grill",
-    "name": "Shark Club Sports Bar & Grill",
-    "website": "https://www.sharkclub.com/location/vancouver/",
-    "formatted_address": "180 W Georgia St, Vancouver, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.278849,
-        "lng": -123.1129919
-      }
-    },
-    "formatted_phone_number": "(604) 687-4275",
-    "places": {
-      "place_id": "ChIJc-rQW01xhlQRSTGakHFDvjY",
-      "rating": 4.7,
-      "user_ratings_total": 2677,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Shark Club Sports Bar & Grill",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJc-rQW01xhlQRSTGakHFDvjY",
-    "city": "Vancouver",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJ0a9U8HlxhlQR-DXhvPSC25E": {
-    "id": "the-metropole-community-pub",
-    "name": "The Metropole Community Pub",
-    "website": "http://www.themetpub.ca/",
-    "formatted_address": "320 Abbott St, Vancouver, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.2825596,
-        "lng": -123.10681939999998
-      }
-    },
-    "formatted_phone_number": "(604) 423-5822",
-    "places": {
-      "place_id": "ChIJ0a9U8HlxhlQR-DXhvPSC25E",
-      "rating": 4,
-      "user_ratings_total": 873,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The Metropole Community Pub",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJ0a9U8HlxhlQR-DXhvPSC25E",
-    "city": "Vancouver",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJ5y0yujULhlQRB1H5nhkrqaw": {
-    "id": "jetside-lounge",
-    "name": "Jetside Lounge",
-    "website": "http://www.fairmont.com/vancouver-airport-richmond/dining/jetside-bar/",
-    "formatted_address": "3111 Grant McConachie Wy, Richmond, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.194917499999995,
-        "lng": -123.1760053
-      }
-    },
-    "formatted_phone_number": "(604) 248-3281",
-    "places": {
-      "place_id": "ChIJ5y0yujULhlQRB1H5nhkrqaw",
-      "rating": 4.1,
-      "user_ratings_total": 86,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Jetside Lounge",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJ5y0yujULhlQRB1H5nhkrqaw",
-    "city": "Richmond",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJ6V5lItdvhlQRHLNv35PXhFo": {
-    "id": "cantina-norte",
-    "name": "Cantina Norte",
-    "website": "http://cantinanorte.com/",
-    "formatted_address": "3246 Connaught Crescent #108, North Vancouver, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.3386536,
-        "lng": -123.10224889999999
-      }
-    },
-    "formatted_phone_number": "(604) 670-8226",
-    "places": {
-      "place_id": "ChIJ6V5lItdvhlQRHLNv35PXhFo",
-      "rating": 4.3,
-      "user_ratings_total": 684,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Cantina Norte",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJ6V5lItdvhlQRHLNv35PXhFo",
-    "city": "North Vancouver",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJidlUgZB3hlQR6CNZbsNA2lI": {
-    "id": "famoso-italian-pizzeria-solo",
-    "name": "Famoso Italian Pizzeria - Solo",
-    "website": "https://famoso.ca/",
-    "formatted_address": "4415 Skyline Dr #1, Burnaby, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.265729199999996,
-        "lng": -123.00574069999999
-      }
-    },
-    "formatted_phone_number": "(604) 564-1393",
-    "places": {
-      "place_id": "ChIJidlUgZB3hlQR6CNZbsNA2lI",
-      "rating": 3.9,
-      "user_ratings_total": 84,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Famoso Italian Pizzeria - Solo",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJidlUgZB3hlQR6CNZbsNA2lI",
-    "city": "Burnaby",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJv9GZFStwhlQRqA0wqZP6Lew": {
-    "id": "the-corner-stone-bistro-by-monika-s",
-    "name": "The Corner Stone Bistro by Monika's",
-    "website": "http://www.thecornerstonebistrobymonikas.com/",
-    "formatted_address": "1096 W 22nd St, North Vancouver, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.330090399999996,
-        "lng": -123.1045833
-      }
-    },
-    "formatted_phone_number": "(604) 999-6177",
-    "places": {
-      "place_id": "ChIJv9GZFStwhlQRqA0wqZP6Lew",
-      "rating": 4.4,
-      "user_ratings_total": 328,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The Corner Stone Bistro by Monika's",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJv9GZFStwhlQRqA0wqZP6Lew",
-    "city": "North Vancouver",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
   "ChIJicy1veR2hlQR5vGSwViEVGo": {
     "id": "no-1-beef-noodle",
     "name": "No. 1 Beef Noodle",
@@ -251,222 +35,6 @@
     "found_via": "requeue hours_only",
     "found_at": "2026-11-07"
   },
-  "ChIJZ4tZAo53hlQRAKzeDkvJ9zg": {
-    "id": "happy-gilmore-golf-lounge",
-    "name": "Happy Gilmore Golf Lounge",
-    "website": "https://happygilmore.golf/",
-    "formatted_address": "4172 Lougheed Hwy #232, Burnaby, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.2660681,
-        "lng": -123.01297459999999
-      }
-    },
-    "formatted_phone_number": "(604) 603-2369",
-    "places": {
-      "place_id": "ChIJZ4tZAo53hlQRAKzeDkvJ9zg",
-      "rating": 4.8,
-      "user_ratings_total": 177,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Happy Gilmore Golf Lounge",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJZ4tZAo53hlQRAKzeDkvJ9zg",
-    "city": "Burnaby",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJSQCRsspzhlQRUmb6hQuO8rI": {
-    "id": "royal-canadian-legion-branch-176",
-    "name": "Royal Canadian Legion Branch 176",
-    "website": "http://www.billybishoplegion.org/",
-    "formatted_address": "1407 Laburnum St, Vancouver, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.273221899999996,
-        "lng": -123.15186070000001
-      }
-    },
-    "formatted_phone_number": "(604) 738-4142",
-    "places": {
-      "place_id": "ChIJSQCRsspzhlQRUmb6hQuO8rI",
-      "rating": 4.6,
-      "user_ratings_total": 154,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Royal Canadian Legion Branch 176",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJSQCRsspzhlQRUmb6hQuO8rI",
-    "city": "Vancouver",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJYWDQITJ1hlQRiHUfn8ZrWV8": {
-    "id": "the-dolar-shop-hot-pot-richmond",
-    "name": "The Dolar Shop Hot Pot Richmond",
-    "website": "https://www.dolarshop.com/location/richmondlocation",
-    "formatted_address": "5300 Number 3 Rd, Richmond, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.1751581,
-        "lng": -123.134497
-      }
-    },
-    "formatted_phone_number": "(604) 370-7077",
-    "places": {
-      "place_id": "ChIJYWDQITJ1hlQRiHUfn8ZrWV8",
-      "rating": 4.2,
-      "user_ratings_total": 1610,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The Dolar Shop Hot Pot Richmond",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJYWDQITJ1hlQRiHUfn8ZrWV8",
-    "city": "Richmond",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJtbiS_TULhlQRqgSpCggXO78": {
-    "id": "salmon-n-bannock-on-the-fly",
-    "name": "Salmon n' Bannock On The Fly",
-    "website": "https://www.salmonandbannock.net/on-the-fly",
-    "formatted_address": "3211 Grant McConachie Wy, Richmond, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.1977252,
-        "lng": -123.17834769999999
-      }
-    },
-    "formatted_phone_number": "(604) 370-3239",
-    "places": {
-      "place_id": "ChIJtbiS_TULhlQRqgSpCggXO78",
-      "rating": 4.7,
-      "user_ratings_total": 373,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Salmon n' Bannock On The Fly",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJtbiS_TULhlQRqgSpCggXO78",
-    "city": "Richmond",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJ97RQHZLRhVQRs8_fZp1hFKE": {
-    "id": "the-mad-italian-pizza-pints",
-    "name": "The Mad Italian Pizza & Pints",
-    "website": "https://www.maditalianpizza.ca/",
-    "formatted_address": "20728 Willoughby Town Centre Dr #100, Langley Twp, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.1452814,
-        "lng": -122.64765899999999
-      }
-    },
-    "formatted_phone_number": "(604) 371-4410",
-    "places": {
-      "place_id": "ChIJ97RQHZLRhVQRs8_fZp1hFKE",
-      "rating": 4.4,
-      "user_ratings_total": 698,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The Mad Italian Pizza & Pints",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJ97RQHZLRhVQRs8_fZp1hFKE",
-    "city": "Langley Twp",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJBy5k-Hw1hFQRxg4yeIVVN9k": {
-    "id": "lou-s-grill",
-    "name": "Lou's Grill",
-    "website": "http://www.lousgrill.com/",
-    "formatted_address": "2852 Gladys Ave, Abbotsford, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.053582999999996,
-        "lng": -122.28652299999999
-      }
-    },
-    "formatted_phone_number": "(604) 855-8777",
-    "places": {
-      "place_id": "ChIJBy5k-Hw1hFQRxg4yeIVVN9k",
-      "rating": 4.3,
-      "user_ratings_total": 3355,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Lou's Grill",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJBy5k-Hw1hFQRxg4yeIVVN9k",
-    "city": "Abbotsford",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
   "ChIJk3NnNFIrhFQR5btFSRRR6rw": {
     "id": "black-sheep-public-house-liquor-store",
     "name": "Black Sheep Public House & Liquor Store",
@@ -499,78 +67,6 @@
     },
     "place_id": "ChIJk3NnNFIrhFQR5btFSRRR6rw",
     "city": "Maple Ridge",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJNXFi3btAhFQRzDrNCWbUf2w": {
-    "id": "major-league-2",
-    "name": "Major League 2",
-    "website": "http://www.majorleague2.com/",
-    "formatted_address": "45768 Gaetz St, Chilliwack, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.1353569,
-        "lng": -121.9575053
-      }
-    },
-    "formatted_phone_number": "(604) 858-4088",
-    "places": {
-      "place_id": "ChIJNXFi3btAhFQRzDrNCWbUf2w",
-      "rating": 4.1,
-      "user_ratings_total": 1142,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Major League 2",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJNXFi3btAhFQRzDrNCWbUf2w",
-    "city": "Chilliwack",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJKStvg5JKhFQRHIqEh5j9CEQ": {
-    "id": "abbey-road-tap-house",
-    "name": "Abbey Road Tap House",
-    "website": "https://www.abbeyroadtaphouse.com/",
-    "formatted_address": "1851 Sumas Way, Abbotsford, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.0355381,
-        "lng": -122.26891369999998
-      }
-    },
-    "formatted_phone_number": "(604) 746-0333",
-    "places": {
-      "place_id": "ChIJKStvg5JKhFQRHIqEh5j9CEQ",
-      "rating": 4,
-      "user_ratings_total": 1116,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Abbey Road Tap House",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJKStvg5JKhFQRHIqEh5j9CEQ",
-    "city": "Abbotsford",
     "is_bar": true,
     "found_via": "requeue hours_only",
     "found_at": "2026-11-07"
@@ -611,24 +107,24 @@
     "found_via": "requeue hours_only",
     "found_at": "2026-11-07"
   },
-  "ChIJy67xtBFLhFQR7b77YSfbFw0": {
-    "id": "the-table-bistro",
-    "name": "The Table Bistro",
-    "website": "http://www.thetablebistro.com/",
-    "formatted_address": "2180 Gladwin Rd #101, Abbotsford, BC",
+  "ChIJg-B2UwM1hFQRS2MHWV-C5ZM": {
+    "id": "cannon-estate-winery",
+    "name": "Cannon Estate Winery",
+    "website": "http://cannonwinery.ca/",
+    "formatted_address": "30523 Burgess Ave, Abbotsford, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 49.0414679,
-        "lng": -122.3149231
+        "lat": 49.1112505,
+        "lng": -122.3786871
       }
     },
-    "formatted_phone_number": "(866) 710-9813",
+    "formatted_phone_number": "(604) 743-9425",
     "places": {
-      "place_id": "ChIJy67xtBFLhFQR7b77YSfbFw0",
-      "rating": 4.6,
-      "user_ratings_total": 963,
-      "price_level": 2,
+      "place_id": "ChIJg-B2UwM1hFQRS2MHWV-C5ZM",
+      "rating": 4.5,
+      "user_ratings_total": 259,
+      "price_level": null,
       "business_status": "OPERATIONAL",
       "amenities": {
         "outdoor_seating": null,
@@ -638,140 +134,104 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "The Table Bistro",
+      "matched_name": "Cannon Estate Winery",
       "synced_at": "2026-11-07"
     },
-    "place_id": "ChIJy67xtBFLhFQR7b77YSfbFw0",
+    "place_id": "ChIJg-B2UwM1hFQRS2MHWV-C5ZM",
     "city": "Abbotsford",
     "is_bar": true,
-    "found_via": "requeue hours_only",
+    "found_via": "wine bar Abbotsford BC",
     "found_at": "2026-11-07"
   },
-  "ChIJm5Sw3A35hlQRiVdhGdk4vAw": {
-    "id": "shady-tree-pub",
-    "name": "Shady Tree Pub",
-    "website": "http://shadytree.pub/",
-    "formatted_address": "40456 Government Rd, Garibaldi Highlands, BC",
+  "ChIJBS4c4aE0hFQRLFSZuxyNeDM": {
+    "id": "singletree-winery",
+    "name": "Singletree Winery",
+    "website": "http://singletreewinery.com/",
+    "formatted_address": "5782 Mount Lehman Rd, Abbotsford, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 49.7419228,
-        "lng": -123.13607959999997
+        "lat": 49.106865899999995,
+        "lng": -122.37967809999999
       }
     },
-    "formatted_phone_number": "(604) 567-9305",
+    "formatted_phone_number": "(604) 381-1788",
     "places": {
-      "place_id": "ChIJm5Sw3A35hlQRiVdhGdk4vAw",
-      "rating": 4.2,
-      "user_ratings_total": 877,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Shady Tree Pub",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJm5Sw3A35hlQRiVdhGdk4vAw",
-    "city": "Garibaldi Highlands",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJV252bE8_hFQR6K3Cd0uLLrI": {
-    "id": "redchillies-sports-bar",
-    "name": "RedChillies Sports Bar",
-    "website": "http://redchilliessportsbar.com/",
-    "formatted_address": "45975 Wellington Ave, Chilliwack, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.171227699999996,
-        "lng": -121.95276869999998
-      }
-    },
-    "formatted_phone_number": "(604) 392-3007",
-    "places": {
-      "place_id": "ChIJV252bE8_hFQR6K3Cd0uLLrI",
-      "rating": 4.1,
-      "user_ratings_total": 318,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "RedChillies Sports Bar",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJV252bE8_hFQR6K3Cd0uLLrI",
-    "city": "Chilliwack",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJL9yKNF3UhVQRvosU4MRTy_E": {
-    "id": "wedge-bar-grill",
-    "name": "Wedge Bar & Grill",
-    "website": "https://meadowgardensgolf.com/restaurants/the-wedge-bar-grill/",
-    "formatted_address": "19675 Meadow Gardens Way, Pitt Meadows, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.2248988,
-        "lng": -122.6697135
-      }
-    },
-    "formatted_phone_number": "(604) 465-5474",
-    "places": {
-      "place_id": "ChIJL9yKNF3UhVQRvosU4MRTy_E",
-      "rating": 3.8,
-      "user_ratings_total": 12,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Wedge Bar & Grill",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJL9yKNF3UhVQRvosU4MRTy_E",
-    "city": "Pitt Meadows",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJ6wZtTXo_hFQRYI4QJQwHWRc": {
-    "id": "shandhar-hut-indian-cuisine-downtown",
-    "name": "Shandhar Hut Indian Cuisine - Downtown",
-    "website": "https://shandharhut.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp_downtown",
-    "formatted_address": "8835 Young Rd, Chilliwack, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.162631399999995,
-        "lng": -121.9529598
-      }
-    },
-    "formatted_phone_number": "(604) 793-0188",
-    "places": {
-      "place_id": "ChIJ6wZtTXo_hFQRYI4QJQwHWRc",
+      "place_id": "ChIJBS4c4aE0hFQRLFSZuxyNeDM",
       "rating": 4.7,
-      "user_ratings_total": 3400,
+      "user_ratings_total": 274,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Singletree Winery",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJBS4c4aE0hFQRLFSZuxyNeDM",
+    "city": "Abbotsford",
+    "is_bar": true,
+    "found_via": "wine bar Abbotsford BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ-etSWLo0hFQRhpG8v1J3Cwg": {
+    "id": "mt-lehman-winery",
+    "name": "Mt Lehman Winery",
+    "website": "https://mtlehmanwinery.com/",
+    "formatted_address": "5094 Mount Lehman Rd, Abbotsford, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.094294999999995,
+        "lng": -122.38116649999999
+      }
+    },
+    "formatted_phone_number": "(604) 746-2881",
+    "places": {
+      "place_id": "ChIJ-etSWLo0hFQRhpG8v1J3Cwg",
+      "rating": 4.7,
+      "user_ratings_total": 112,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Mt Lehman Winery",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ-etSWLo0hFQRhpG8v1J3Cwg",
+    "city": "Abbotsford",
+    "is_bar": true,
+    "found_via": "wine bar Abbotsford BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJowjNm3I1hFQRUtByN8i4cJY": {
+    "id": "the-fairway-room-cafe-bistro",
+    "name": "The Fairway Room Cafe & Bistro",
+    "website": "https://www.thefairwayroomandevents.com/winter-menu",
+    "formatted_address": "35997 McKee Rd, Abbotsford, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0714931,
+        "lng": -122.22843110000001
+      }
+    },
+    "formatted_phone_number": "(604) 864-3053",
+    "places": {
+      "place_id": "ChIJowjNm3I1hFQRUtByN8i4cJY",
+      "rating": 4.5,
+      "user_ratings_total": 57,
       "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -782,248 +242,212 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Shandhar Hut Indian Cuisine - Downtown",
+      "matched_name": "The Fairway Room Cafe & Bistro",
       "synced_at": "2026-11-07"
     },
-    "place_id": "ChIJ6wZtTXo_hFQRYI4QJQwHWRc",
-    "city": "Chilliwack",
+    "place_id": "ChIJowjNm3I1hFQRUtByN8i4cJY",
+    "city": "Abbotsford",
     "is_bar": false,
-    "found_via": "requeue hours_only",
+    "found_via": "wine bar Abbotsford BC",
     "found_at": "2026-11-07"
   },
-  "ChIJw_hCeOFvcVMRuvxWSfd8V_s": {
-    "id": "bridgette-bar",
-    "name": "Bridgette Bar",
-    "website": "https://www.bridgettebar.com/calgary",
-    "formatted_address": "739 10 Ave SW, Calgary, AB",
+  "ChIJnWSBm_4RhFQR-Im--0DdmSc": {
+    "id": "ozarks-boathouse-grill-marina",
+    "name": "Ozarks Boathouse, Grill & Marina",
+    "website": "https://ozarksboathouse.ca/",
+    "formatted_address": "6069 Rockwell Dr, Agassiz, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 51.043668,
-        "lng": -114.0786705
+        "lat": 49.3106885,
+        "lng": -121.77290450000001
+      }
+    },
+    "formatted_phone_number": "(877) 904-5724",
+    "places": {
+      "place_id": "ChIJnWSBm_4RhFQR-Im--0DdmSc",
+      "rating": 4.4,
+      "user_ratings_total": 167,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Ozarks Boathouse, Grill & Marina",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJnWSBm_4RhFQR-Im--0DdmSc",
+    "city": "Agassiz",
+    "is_bar": false,
+    "found_via": "wine bar Harrison Hot Springs BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ99_8qAUWhFQR9mDiaoOTHHw": {
+    "id": "sasquatch-inn",
+    "name": "Sasquatch Inn",
+    "website": "http://www.sasquatchinn.ca/",
+    "formatted_address": "46001 Lougheed Hwy, Harrison Mills, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.251507,
+        "lng": -121.95740400000001
+      }
+    },
+    "formatted_phone_number": "(604) 796-2730",
+    "places": {
+      "place_id": "ChIJ99_8qAUWhFQR9mDiaoOTHHw",
+      "rating": 4.4,
+      "user_ratings_total": 1751,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Sasquatch Inn",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ99_8qAUWhFQR9mDiaoOTHHw",
+    "city": "Harrison Mills",
+    "is_bar": true,
+    "found_via": "wine bar Harrison Hot Springs BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJFRmCxA0WhFQR2AnCCQ9zpoM": {
+    "id": "river-s-edge-clubhouse",
+    "name": "River's Edge Clubhouse",
+    "website": "https://sandpiperresort.ca/dine/",
+    "formatted_address": "14282 Morris Valley Rd, Harrison Mills, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2557415,
+        "lng": -121.9465499
+      }
+    },
+    "formatted_phone_number": "(604) 491-9079",
+    "places": {
+      "place_id": "ChIJFRmCxA0WhFQR2AnCCQ9zpoM",
+      "rating": 4.1,
+      "user_ratings_total": 181,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "River's Edge Clubhouse",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJFRmCxA0WhFQR2AnCCQ9zpoM",
+    "city": "Harrison Mills",
+    "is_bar": false,
+    "found_via": "wine bar Harrison Hot Springs BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJgT2bulwbhFQRYG3FRNkbC3k": {
+    "id": "molly-hogan-s-bar-grill",
+    "name": "Molly Hogan's Bar & Grill",
+    "website": "https://sasquatchmountain.ca/dining/",
+    "formatted_address": "20955 Hemlock Valley Rd, Agassiz, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.3801953,
+        "lng": -121.93634039999999
+      }
+    },
+    "formatted_phone_number": "(604) 797-4411",
+    "places": {
+      "place_id": "ChIJgT2bulwbhFQRYG3FRNkbC3k",
+      "rating": 3.5,
+      "user_ratings_total": 65,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Molly Hogan's Bar & Grill",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJgT2bulwbhFQRYG3FRNkbC3k",
+    "city": "Agassiz",
+    "is_bar": true,
+    "found_via": "wine bar Harrison Hot Springs BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJV6UuX6tHhFQRyClO4ArvYzM": {
+    "id": "whispering-horse-winery",
+    "name": "Whispering Horse Winery",
+    "website": "https://whisperinghorsewinery.com/",
+    "formatted_address": "43721 Vedder Mountain Rd, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.08951700000001,
+        "lng": -122.0161554
+      }
+    },
+    "formatted_phone_number": "(778) 539-5996",
+    "places": {
+      "place_id": "ChIJV6UuX6tHhFQRyClO4ArvYzM",
+      "rating": 4.9,
+      "user_ratings_total": 69,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Whispering Horse Winery",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJV6UuX6tHhFQRyClO4ArvYzM",
+    "city": "Chilliwack",
+    "is_bar": true,
+    "found_via": "wine bar Downtown Chilliwack BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJm4b-s-5DhFQRsXIiD0l770I": {
+    "id": "broken-tree-winery",
+    "name": "Broken Tree Winery",
+    "website": "https://brokentreewinery.com/",
+    "formatted_address": "48195 Auchenway Rd, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0815863,
+        "lng": -121.89243139999999
       }
     },
     "formatted_phone_number": null,
     "places": {
-      "place_id": "ChIJw_hCeOFvcVMRuvxWSfd8V_s",
-      "rating": 4.7,
-      "user_ratings_total": 3554,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Bridgette Bar",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJw_hCeOFvcVMRuvxWSfd8V_s",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJj-xM6nCdcVMRuKD3gPbgkfo": {
-    "id": "the-tommyfield-gastro-pub",
-    "name": "The Tommyfield Gastro Pub",
-    "website": "http://tommyfieldgastropub.com/",
-    "formatted_address": "19489 Seton Crescent SE #920, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.879765,
-        "lng": -113.9590697
-      }
-    },
-    "formatted_phone_number": "(403) 726-6330",
-    "places": {
-      "place_id": "ChIJj-xM6nCdcVMRuKD3gPbgkfo",
-      "rating": 4.1,
-      "user_ratings_total": 2121,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The Tommyfield Gastro Pub",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJj-xM6nCdcVMRuKD3gPbgkfo",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJVVVVdP5vcVMRP5GYnrsfpo8": {
-    "id": "modern-steak-on-stephen-avenue",
-    "name": "MODERN STEAK on Stephen Avenue",
-    "website": "http://www.modernsteak.ca/",
-    "formatted_address": "100 8 Ave SE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0456595,
-        "lng": -114.062787
-      }
-    },
-    "formatted_phone_number": "(403) 244-3600",
-    "places": {
-      "place_id": "ChIJVVVVdP5vcVMRP5GYnrsfpo8",
-      "rating": 4.4,
-      "user_ratings_total": 1662,
-      "price_level": 4,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "MODERN STEAK on Stephen Avenue",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJVVVVdP5vcVMRP5GYnrsfpo8",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJEe69Va56cVMRDV6lEkMhZr4": {
-    "id": "madi-s-12-12",
-    "name": "Madi's 12|12",
-    "website": "http://www.madis.restaurant/",
-    "formatted_address": "1212 9 Ave SE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.042148,
-        "lng": -114.03594109999999
-      }
-    },
-    "formatted_phone_number": "(403) 452-4970",
-    "places": {
-      "place_id": "ChIJEe69Va56cVMRDV6lEkMhZr4",
-      "rating": 4.4,
-      "user_ratings_total": 1477,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Madi's 12|12",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJEe69Va56cVMRDV6lEkMhZr4",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJDQZ_xZRxcVMReOwKw12EJ_Q": {
-    "id": "spot-on-kitchen-bar",
-    "name": "Spot On Kitchen & Bar",
-    "website": "http://spotoncalgary.com/",
-    "formatted_address": "2 Richard Way SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.006171099999996,
-        "lng": -114.1299552
-      }
-    },
-    "formatted_phone_number": "(403) 240-3619",
-    "places": {
-      "place_id": "ChIJDQZ_xZRxcVMReOwKw12EJ_Q",
-      "rating": 4.4,
-      "user_ratings_total": 1193,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Spot On Kitchen & Bar",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJDQZ_xZRxcVMReOwKw12EJ_Q",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJ31IqZNJxcVMRm0d6BWA5M6g": {
-    "id": "merchants-restaurant",
-    "name": "Merchants Restaurant",
-    "website": "http://merchantsyyc.com/",
-    "formatted_address": "2118 33 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0243282,
-        "lng": -114.1106439
-      }
-    },
-    "formatted_phone_number": "(403) 452-4001",
-    "places": {
-      "place_id": "ChIJ31IqZNJxcVMRm0d6BWA5M6g",
-      "rating": 4.2,
-      "user_ratings_total": 1003,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Merchants Restaurant",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJ31IqZNJxcVMRm0d6BWA5M6g",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJI6_BtHBxcVMRB8CItnPxyh8": {
-    "id": "amato-gelato-cafe-17th-avenue",
-    "name": "Amato Gelato Cafe - 17th Avenue",
-    "website": "https://www.amatogelatoalberta.com/",
-    "formatted_address": "602 17 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.037941499999995,
-        "lng": -114.0746989
-      }
-    },
-    "formatted_phone_number": "(587) 231-6603",
-    "places": {
-      "place_id": "ChIJI6_BtHBxcVMRB8CItnPxyh8",
-      "rating": 4.4,
-      "user_ratings_total": 926,
+      "place_id": "ChIJm4b-s-5DhFQRsXIiD0l770I",
+      "rating": 5,
+      "user_ratings_total": 1,
       "price_level": null,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -1034,392 +458,32 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Amato Gelato Cafe - 17th Avenue",
+      "matched_name": "Broken Tree Winery",
       "synced_at": "2026-11-07"
     },
-    "place_id": "ChIJI6_BtHBxcVMRB8CItnPxyh8",
-    "city": "Calgary",
+    "place_id": "ChIJm4b-s-5DhFQRsXIiD0l770I",
+    "city": "Chilliwack",
     "is_bar": true,
-    "found_via": "requeue hours_only",
+    "found_via": "wine bar Downtown Chilliwack BC",
     "found_at": "2026-11-07"
   },
-  "ChIJeSzrYLZxcVMR5M-gv0dq01A": {
-    "id": "tropical-downtown",
-    "name": "TROPICAL DOWNTOWN",
-    "website": "https://www.tropicalyyc.ca/",
-    "formatted_address": "1011 1 St SW, Calgary, AB",
+  "ChIJkxbBZqJAhFQRtBvGbW43qvw": {
+    "id": "hofstede-s-country-barn",
+    "name": "Hofstede's Country Barn",
+    "website": "http://www.hofstedes.ca/",
+    "formatted_address": "45796 Luckakuck Way, Chilliwack, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 51.04272770000001,
-        "lng": -114.06608469999999
+        "lat": 49.1444444,
+        "lng": -121.9572222
       }
     },
-    "formatted_phone_number": "(403) 909-8030",
+    "formatted_phone_number": "(604) 824-1192",
     "places": {
-      "place_id": "ChIJeSzrYLZxcVMR5M-gv0dq01A",
-      "rating": 4.4,
-      "user_ratings_total": 723,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "TROPICAL DOWNTOWN",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJeSzrYLZxcVMR5M-gv0dq01A",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJs503jCp7cVMR2k45U4uvMdY": {
-    "id": "the-dogwood-bar",
-    "name": "The Dogwood Bar",
-    "website": "http://www.thedogwoodbar.com/",
-    "formatted_address": "456 36 St NE #107, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0554644,
-        "lng": -113.98102069999999
-      }
-    },
-    "formatted_phone_number": "(403) 569-0168",
-    "places": {
-      "place_id": "ChIJs503jCp7cVMR2k45U4uvMdY",
-      "rating": 4,
-      "user_ratings_total": 513,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The Dogwood Bar",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJs503jCp7cVMR2k45U4uvMdY",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJr1I55Bd7cVMRWxHTdj4QFYQ": {
-    "id": "bizarre-gastro-pub",
-    "name": "Bizarre Gastro Pub",
-    "website": "https://bizarregastropub.ca/",
-    "formatted_address": "2016 Spiller Rd SE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.034866099999995,
-        "lng": -114.0419991
-      }
-    },
-    "formatted_phone_number": "(825) 509-5777",
-    "places": {
-      "place_id": "ChIJr1I55Bd7cVMRWxHTdj4QFYQ",
-      "rating": 4.8,
-      "user_ratings_total": 510,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Bizarre Gastro Pub",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJr1I55Bd7cVMRWxHTdj4QFYQ",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJ6T03QMwjh1QRxJYl7aAfmJY": {
-    "id": "mekong-south-east-asian-restaurant-bar",
-    "name": "Mekong - South East Asian Restaurant + Bar",
-    "website": "http://www.88mekong.com/",
-    "formatted_address": "2067 Lake Placid Rd #204, Whistler, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.094392299999996,
-        "lng": -122.9914678
-      }
-    },
-    "formatted_phone_number": "(604) 902-1694",
-    "places": {
-      "place_id": "ChIJ6T03QMwjh1QRxJYl7aAfmJY",
+      "place_id": "ChIJkxbBZqJAhFQRtBvGbW43qvw",
       "rating": 4.6,
-      "user_ratings_total": 415,
-      "price_level": 4,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Mekong - South East Asian Restaurant + Bar",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJ6T03QMwjh1QRxJYl7aAfmJY",
-    "city": "Whistler",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJ3xebPNlfcVMR2iYtvN789qw": {
-    "id": "1861-local-bar-grill",
-    "name": "1861 Local Bar & Grill",
-    "website": "http://1861local.ca/",
-    "formatted_address": "1861 Meadowbrook Dr SE #7, Airdrie, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.2752261,
-        "lng": -113.989392
-      }
-    },
-    "formatted_phone_number": "(587) 360-6594",
-    "places": {
-      "place_id": "ChIJ3xebPNlfcVMR2iYtvN789qw",
-      "rating": 4.3,
-      "user_ratings_total": 212,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "1861 Local Bar & Grill",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJ3xebPNlfcVMR2iYtvN789qw",
-    "city": "Airdrie",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJpbhR_t5vcVMRBW_w0Ys1AjA": {
-    "id": "tipsie",
-    "name": "TIPSIE",
-    "website": "http://tipsie.ca/",
-    "formatted_address": "1131 Kensington Rd NW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.052329799999995,
-        "lng": -114.0877912
-      }
-    },
-    "formatted_phone_number": "(403) 313-7536",
-    "places": {
-      "place_id": "ChIJpbhR_t5vcVMRBW_w0Ys1AjA",
-      "rating": 4.5,
-      "user_ratings_total": 24,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "TIPSIE",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJpbhR_t5vcVMRBW_w0Ys1AjA",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJk7C_Y89xcVMRokBBYQTScA8": {
-    "id": "lulu-bar",
-    "name": "Lulu Bar",
-    "website": "https://www.lulubar.ca/",
-    "formatted_address": "510 17 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0380026,
-        "lng": -114.0721888
-      }
-    },
-    "formatted_phone_number": "(403) 519-0444",
-    "places": {
-      "place_id": "ChIJk7C_Y89xcVMRokBBYQTScA8",
-      "rating": 4.5,
-      "user_ratings_total": 1839,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Lulu Bar",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJk7C_Y89xcVMRokBBYQTScA8",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJXcf3IdEih1QRvBFnXoVpQuo": {
-    "id": "southside-diner",
-    "name": "Southside Diner",
-    "website": "http://southsidediner.ca/",
-    "formatted_address": "2102 Lake Placid Rd, Whistler, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.0946388,
-        "lng": -122.99347030000001
-      }
-    },
-    "formatted_phone_number": "(604) 966-0668",
-    "places": {
-      "place_id": "ChIJXcf3IdEih1QRvBFnXoVpQuo",
-      "rating": 4.4,
-      "user_ratings_total": 1383,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Southside Diner",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJXcf3IdEih1QRvBFnXoVpQuo",
-    "city": "Whistler",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJr3nBHNzRhVQRHy8sBtQa1YQ": {
-    "id": "twenty-two-taphouse",
-    "name": "Twenty Two Taphouse",
-    "website": "http://22taphouse.ca/",
-    "formatted_address": "8399 200 St b, Langley Twp, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.154656900000006,
-        "lng": -122.668615
-      }
-    },
-    "formatted_phone_number": "(604) 371-1047",
-    "places": {
-      "place_id": "ChIJr3nBHNzRhVQRHy8sBtQa1YQ",
-      "rating": 4.3,
-      "user_ratings_total": 21,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Twenty Two Taphouse",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJr3nBHNzRhVQRHy8sBtQa1YQ",
-    "city": "Langley Twp",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJkSluC0NHhFQRL1EOF5qwi-c": {
-    "id": "maplewood-smokehouse",
-    "name": "Maplewood Smokehouse",
-    "website": "http://www.maplewoodsmokehouse.ca/",
-    "formatted_address": "6014 Vedder Rd #19, Chilliwack, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.1119122,
-        "lng": -121.9559271
-      }
-    },
-    "formatted_phone_number": "(604) 846-3030",
-    "places": {
-      "place_id": "ChIJkSluC0NHhFQRL1EOF5qwi-c",
-      "rating": 4.8,
-      "user_ratings_total": 665,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Maplewood Smokehouse",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJkSluC0NHhFQRL1EOF5qwi-c",
-    "city": "Chilliwack",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJeWGaflvUhVQRjduRIOMbtyU": {
-    "id": "meadow-gardens-golf-club",
-    "name": "Meadow Gardens Golf Club",
-    "website": "http://www.meadowgardens.com/",
-    "formatted_address": "19675 Meadow Gardens Way, Pitt Meadows, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.2248988,
-        "lng": -122.6697136
-      }
-    },
-    "formatted_phone_number": "(604) 465-5474",
-    "places": {
-      "place_id": "ChIJeWGaflvUhVQRjduRIOMbtyU",
-      "rating": 4.4,
-      "user_ratings_total": 596,
+      "user_ratings_total": 831,
       "price_level": null,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -1430,104 +494,32 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Meadow Gardens Golf Club",
+      "matched_name": "Hofstede's Country Barn",
       "synced_at": "2026-11-07"
     },
-    "place_id": "ChIJeWGaflvUhVQRjduRIOMbtyU",
-    "city": "Pitt Meadows",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJlws3uzRBhFQRI3YiKa7Xn9E": {
-    "id": "fortitude-wine-bar",
-    "name": "Fortitude Wine Bar",
-    "website": "http://www.fortitudewinebar.com/",
-    "formatted_address": "45922 Thunderbird Ln #103, Chilliwack, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.1706177,
-        "lng": -121.95221819999999
-      }
-    },
-    "formatted_phone_number": "(604) 795-4060",
-    "places": {
-      "place_id": "ChIJlws3uzRBhFQRI3YiKa7Xn9E",
-      "rating": 4.4,
-      "user_ratings_total": 221,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Fortitude Wine Bar",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJlws3uzRBhFQRI3YiKa7Xn9E",
+    "place_id": "ChIJkxbBZqJAhFQRtBvGbW43qvw",
     "city": "Chilliwack",
     "is_bar": false,
-    "found_via": "requeue hours_only",
+    "found_via": "wine bar Sardis Chilliwack BC",
     "found_at": "2026-11-07"
   },
-  "ChIJx4_iY0PUhVQRmlpMa8c0D5s": {
-    "id": "the-loft-at-meadow-gardens",
-    "name": "The LOFT at Meadow Gardens",
-    "website": "https://meadowgardensloft.com/",
-    "formatted_address": "19675 Meadow Gardens Way, Pitt Meadows, BC",
+  "ChIJKWS5plUjh1QRqndseGMjcvI": {
+    "id": "flute-fromage",
+    "name": "Flute & Fromage",
+    "website": "https://www.fluteandfromage.com/",
+    "formatted_address": "4305 Village Stroll #102, Whistler, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 49.2243971,
-        "lng": -122.67013909999999
+        "lat": 50.1147546,
+        "lng": -122.95558119999998
       }
     },
-    "formatted_phone_number": "(604) 465-5474",
+    "formatted_phone_number": "(604) 932-7000",
     "places": {
-      "place_id": "ChIJx4_iY0PUhVQRmlpMa8c0D5s",
-      "rating": 4,
-      "user_ratings_total": 215,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The LOFT at Meadow Gardens",
-      "synced_at": "2026-11-07"
-    },
-    "place_id": "ChIJx4_iY0PUhVQRmlpMa8c0D5s",
-    "city": "Pitt Meadows",
-    "is_bar": false,
-    "found_via": "requeue hours_only",
-    "found_at": "2026-11-07"
-  },
-  "ChIJW3yKLehwcVMRDNO3uvvN9cQ": {
-    "id": "tavern-at-deerfoot-meadows",
-    "name": "Tavern at Deerfoot Meadows",
-    "website": "https://thetaverncollective.com/locations/deerfoot-meadows/",
-    "formatted_address": "7995 11 St SE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.9825338,
-        "lng": -114.0445778
-      }
-    },
-    "formatted_phone_number": "(403) 250-5973",
-    "places": {
-      "place_id": "ChIJW3yKLehwcVMRDNO3uvvN9cQ",
+      "place_id": "ChIJKWS5plUjh1QRqndseGMjcvI",
       "rating": 4.8,
-      "user_ratings_total": 1412,
+      "user_ratings_total": 75,
       "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -1538,32 +530,284 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Tavern at Deerfoot Meadows",
+      "matched_name": "Flute & Fromage",
       "synced_at": "2026-11-07"
     },
-    "place_id": "ChIJW3yKLehwcVMRDNO3uvvN9cQ",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "requeue hours_only",
+    "place_id": "ChIJKWS5plUjh1QRqndseGMjcvI",
+    "city": "Whistler",
+    "is_bar": false,
+    "found_via": "wine bar Whistler BC",
     "found_at": "2026-11-07"
   },
-  "ChIJV4DOhZI9h1QR38Qb48Jiguo": {
-    "id": "apr-s-apr-s",
-    "name": "Après Après",
-    "website": "http://www.apresapres.ca/",
-    "formatted_address": "4204 Village Square #102, Whistler, BC",
+  "ChIJy905Vz4jh1QR605pavImxg4": {
+    "id": "the-cellar-by-araxi",
+    "name": "The Cellar by Araxi",
+    "website": "https://thecellarbyaraxi.com/",
+    "formatted_address": "4222 Village Square #150, Whistler, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 50.115226199999995,
-        "lng": -122.9561562
+        "lat": 50.115138,
+        "lng": -122.9550656
+      }
+    },
+    "formatted_phone_number": null,
+    "places": {
+      "place_id": "ChIJy905Vz4jh1QR605pavImxg4",
+      "rating": 5,
+      "user_ratings_total": 3,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "The Cellar by Araxi",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJy905Vz4jh1QR605pavImxg4",
+    "city": "Whistler",
+    "is_bar": false,
+    "found_via": "wine bar Whistler BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJjVyvZ0sjh1QRaJZqAdgyL4w": {
+    "id": "gibbons-whistler",
+    "name": "Gibbons Whistler",
+    "website": "http://gibbonswhistler.com/",
+    "formatted_address": "4090 Whistler Way #111, Whistler, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.1121194,
+        "lng": -122.9558898
       }
     },
     "formatted_phone_number": "(888) 823-7932",
     "places": {
-      "place_id": "ChIJV4DOhZI9h1QR38Qb48Jiguo",
+      "place_id": "ChIJjVyvZ0sjh1QRaJZqAdgyL4w",
+      "rating": 4.6,
+      "user_ratings_total": 147,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Gibbons Whistler",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJjVyvZ0sjh1QRaJZqAdgyL4w",
+    "city": "Whistler",
+    "is_bar": true,
+    "found_via": "wine bar Whistler BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJuz7pdbM8h1QR4anyiuKeddQ": {
+    "id": "alta-bistro",
+    "name": "Alta Bistro",
+    "website": "http://www.altabistro.com/menu",
+    "formatted_address": "4319 Main St #104, Whistler, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.117235699999995,
+        "lng": -122.95735099999999
+      }
+    },
+    "formatted_phone_number": "(604) 932-2582",
+    "places": {
+      "place_id": "ChIJuz7pdbM8h1QR4anyiuKeddQ",
+      "rating": 4.6,
+      "user_ratings_total": 859,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Alta Bistro",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJuz7pdbM8h1QR4anyiuKeddQ",
+    "city": "Whistler",
+    "is_bar": true,
+    "found_via": "wine bar Whistler BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJzfl7Bk0jh1QRFPl5kKlPn2U": {
+    "id": "steeps-grill-on-whistler-mountain",
+    "name": "Steeps Grill On Whistler Mountain",
+    "website": "http://www.whistlerblackcomb.com/the-village/dining/steeps-grill-and-wine-bar",
+    "formatted_address": "4853 Springs Ln, Whistler, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.0697293,
+        "lng": -122.94660669999999
+      }
+    },
+    "formatted_phone_number": "(604) 905-2382",
+    "places": {
+      "place_id": "ChIJzfl7Bk0jh1QRFPl5kKlPn2U",
+      "rating": 4.3,
+      "user_ratings_total": 47,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Steeps Grill On Whistler Mountain",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJzfl7Bk0jh1QRFPl5kKlPn2U",
+    "city": "Whistler",
+    "is_bar": false,
+    "found_via": "wine bar Whistler Village BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJV_CKYABvcVMRR8ne8HVtKRM": {
+    "id": "unfiltered-wine-bar",
+    "name": "Unfiltered Wine Bar",
+    "website": "http://www.winebarunfiltered.com/",
+    "formatted_address": "1020 14 St SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.043766899999994,
+        "lng": -114.0943887
+      }
+    },
+    "formatted_phone_number": "(403) 991-9463",
+    "places": {
+      "place_id": "ChIJV_CKYABvcVMRR8ne8HVtKRM",
       "rating": 4.9,
-      "user_ratings_total": 1317,
+      "user_ratings_total": 70,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Unfiltered Wine Bar",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJV_CKYABvcVMRR8ne8HVtKRM",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "wine bar Downtown Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJVVWFoQJwcVMR7_1KLrVNZ2w": {
+    "id": "salt-brick-calgary",
+    "name": "Salt & Brick - Calgary",
+    "website": "http://www.saltandbrick.com/",
+    "formatted_address": "211 10 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0431854,
+        "lng": -114.0663809
+      }
+    },
+    "formatted_phone_number": "(403) 371-3429",
+    "places": {
+      "place_id": "ChIJVVWFoQJwcVMR7_1KLrVNZ2w",
+      "rating": 4.6,
+      "user_ratings_total": 843,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Salt & Brick - Calgary",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJVVWFoQJwcVMR7_1KLrVNZ2w",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "wine bar Downtown Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ43AgmSxucVMRojZLwlNnb5A": {
+    "id": "cassis-bistro",
+    "name": "Cassis Bistro",
+    "website": "http://www.thecassisbistro.ca/",
+    "formatted_address": "2505 17 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.037419400000005,
+        "lng": -114.11813889999999
+      }
+    },
+    "formatted_phone_number": "(403) 262-0036",
+    "places": {
+      "place_id": "ChIJ43AgmSxucVMRojZLwlNnb5A",
+      "rating": 4.7,
+      "user_ratings_total": 740,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Cassis Bistro",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ43AgmSxucVMRojZLwlNnb5A",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "wine bar 17th Avenue SW Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJMTp87q56cVMR7e2MAiCUe1Y": {
+    "id": "cafe-gravity",
+    "name": "Cafe Gravity",
+    "website": "https://gravitycalgary.com/",
+    "formatted_address": "909 10 St SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0423573,
+        "lng": -114.03819659999999
+      }
+    },
+    "formatted_phone_number": "(403) 457-0697",
+    "places": {
+      "place_id": "ChIJMTp87q56cVMR7e2MAiCUe1Y",
+      "rating": 4.5,
+      "user_ratings_total": 966,
       "price_level": 1,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -1574,32 +818,104 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Après Après",
+      "matched_name": "Cafe Gravity",
       "synced_at": "2026-11-07"
     },
-    "place_id": "ChIJV4DOhZI9h1QR38Qb48Jiguo",
-    "city": "Whistler",
+    "place_id": "ChIJMTp87q56cVMR7e2MAiCUe1Y",
+    "city": "Calgary",
     "is_bar": true,
-    "found_via": "requeue hours_only",
+    "found_via": "wine bar Inglewood Calgary AB",
     "found_at": "2026-11-07"
   },
-  "ChIJMdHe2iRxcVMRYcCbVvOZHDY": {
-    "id": "regal-beagle-macleod",
-    "name": "Regal Beagle Macleod",
-    "website": "https://regalbeagle.scvr.co/",
-    "formatted_address": "180 94 Ave SE, Calgary, AB",
+  "ChIJdy813gJ7cVMRMj9uB4lIvnY": {
+    "id": "tori-bar",
+    "name": "Tori Bar",
+    "website": "https://toribaryyc.ca/",
+    "formatted_address": "905 13 St SE, Calgary, AB",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 50.968860799999995,
-        "lng": -114.0693498
+        "lat": 51.039954099999996,
+        "lng": -114.03210460000001
       }
     },
-    "formatted_phone_number": "(403) 640-7775",
+    "formatted_phone_number": "(825) 540-1156",
     "places": {
-      "place_id": "ChIJMdHe2iRxcVMRYcCbVvOZHDY",
-      "rating": 4.3,
-      "user_ratings_total": 890,
+      "place_id": "ChIJdy813gJ7cVMRMj9uB4lIvnY",
+      "rating": 4.9,
+      "user_ratings_total": 767,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Tori Bar",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJdy813gJ7cVMRMj9uB4lIvnY",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "wine bar Inglewood Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ59uJ3tVlcVMRrQyTYG_6HNk": {
+    "id": "pastiche",
+    "name": "Pastiche",
+    "website": "https://pasticheyyc.ca/",
+    "formatted_address": "24 4 St NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.052110299999995,
+        "lng": -114.0514582
+      }
+    },
+    "formatted_phone_number": "(587) 834-5161",
+    "places": {
+      "place_id": "ChIJ59uJ3tVlcVMRrQyTYG_6HNk",
+      "rating": 4.8,
+      "user_ratings_total": 65,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Pastiche",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ59uJ3tVlcVMRrQyTYG_6HNk",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "wine bar Bridgeland Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJN0IXWiplcVMRjBCXCdRXKdM": {
+    "id": "le-charme",
+    "name": "Le Charme",
+    "website": "https://www.lecharme.ca/",
+    "formatted_address": "804 Edmonton Trl, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0586236,
+        "lng": -114.05409639999999
+      }
+    },
+    "formatted_phone_number": "(587) 577-4026",
+    "places": {
+      "place_id": "ChIJN0IXWiplcVMRjBCXCdRXKdM",
+      "rating": 4.8,
+      "user_ratings_total": 230,
       "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -1610,13 +926,2137 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Regal Beagle Macleod",
+      "matched_name": "Le Charme",
       "synced_at": "2026-11-07"
     },
-    "place_id": "ChIJMdHe2iRxcVMRYcCbVvOZHDY",
+    "place_id": "ChIJN0IXWiplcVMRjBCXCdRXKdM",
     "city": "Calgary",
     "is_bar": true,
-    "found_via": "requeue hours_only",
+    "found_via": "wine bar Bridgeland Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJo-GTXUNlcVMRfCg1ibtzVSs": {
+    "id": "aurora-italiana",
+    "name": "AURORA ITALIANA",
+    "website": "https://www.auroraitaliana.ca/",
+    "formatted_address": "916 1 Ave NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.053358599999996,
+        "lng": -114.0422353
+      }
+    },
+    "formatted_phone_number": "(587) 327-6070",
+    "places": {
+      "place_id": "ChIJo-GTXUNlcVMRfCg1ibtzVSs",
+      "rating": 4.5,
+      "user_ratings_total": 179,
+      "price_level": 3,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "AURORA ITALIANA",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJo-GTXUNlcVMRfCg1ibtzVSs",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "wine bar Bridgeland Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJLbS5TFFlcVMR1ePkvF82iFI": {
+    "id": "villa-firenze",
+    "name": "Villa Firenze",
+    "website": "https://villafirenze.ca/",
+    "formatted_address": "610 1 Ave NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.053418799999996,
+        "lng": -114.0510662
+      }
+    },
+    "formatted_phone_number": "(403) 264-4297",
+    "places": {
+      "place_id": "ChIJLbS5TFFlcVMR1ePkvF82iFI",
+      "rating": 4.6,
+      "user_ratings_total": 728,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Villa Firenze",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJLbS5TFFlcVMR1ePkvF82iFI",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "wine bar Bridgeland Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJRZnv7E1lcVMRVzq3vWVDjk8": {
+    "id": "la-brezza-ristorante",
+    "name": "La Brezza Ristorante",
+    "website": "http://www.labrezza.ca/",
+    "formatted_address": "990 1 Ave NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0533877,
+        "lng": -114.04067339999999
+      }
+    },
+    "formatted_phone_number": "(403) 262-6230",
+    "places": {
+      "place_id": "ChIJRZnv7E1lcVMRVzq3vWVDjk8",
+      "rating": 4.7,
+      "user_ratings_total": 1648,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "La Brezza Ristorante",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJRZnv7E1lcVMRVzq3vWVDjk8",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "wine bar Bridgeland Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJDYe1UplxcVMRJo77DC7i1VI": {
+    "id": "city-country-urban-winery",
+    "name": "City & Country Urban Winery",
+    "website": "http://cityandcountrywinery.com/",
+    "formatted_address": "544 38a Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.019922799999996,
+        "lng": -114.053732
+      }
+    },
+    "formatted_phone_number": "(587) 664-3517",
+    "places": {
+      "place_id": "ChIJDYe1UplxcVMRJo77DC7i1VI",
+      "rating": 4.9,
+      "user_ratings_total": 86,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "City & Country Urban Winery",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJDYe1UplxcVMRJo77DC7i1VI",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "wine bar Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJFZWbeVtxcVMRA8JCyv4WwEw": {
+    "id": "brioche-by-avitus",
+    "name": "Brioche by AVITUS",
+    "website": "https://briocheyyc.com/",
+    "formatted_address": "1512 29 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0278995,
+        "lng": -114.0953997
+      }
+    },
+    "formatted_phone_number": null,
+    "places": {
+      "place_id": "ChIJFZWbeVtxcVMRA8JCyv4WwEw",
+      "rating": 4.8,
+      "user_ratings_total": 130,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Brioche by AVITUS",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJFZWbeVtxcVMRA8JCyv4WwEw",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "wine bar South Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJP6VhldFxcVMR7dN9em_a1FA": {
+    "id": "distilled-beauty-bar-and-social-house",
+    "name": "Distilled Beauty Bar and Social House",
+    "website": "https://www.distilledbeautybar.com/",
+    "formatted_address": "2408 34 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.023300899999995,
+        "lng": -114.1148113
+      }
+    },
+    "formatted_phone_number": "(403) 685-0119",
+    "places": {
+      "place_id": "ChIJP6VhldFxcVMR7dN9em_a1FA",
+      "rating": 4.4,
+      "user_ratings_total": 480,
+      "price_level": 3,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Distilled Beauty Bar and Social House",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJP6VhldFxcVMR7dN9em_a1FA",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "wine bar South Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ88SbWdl5hlQRrCopfmzIMlQ": {
+    "id": "mintara-atop-burnaby-mountain",
+    "name": "Mintara atop Burnaby Mountain",
+    "website": "https://burnabyhospitality.ca/restaurants/mintara-restaurant",
+    "formatted_address": "100 Centennial Way, Burnaby, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2828778,
+        "lng": -122.93471819999999
+      }
+    },
+    "formatted_phone_number": "(604) 297-4888",
+    "places": {
+      "place_id": "ChIJ88SbWdl5hlQRrCopfmzIMlQ",
+      "rating": 4.6,
+      "user_ratings_total": 207,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Mintara atop Burnaby Mountain",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ88SbWdl5hlQRrCopfmzIMlQ",
+    "city": "Burnaby",
+    "is_bar": false,
+    "found_via": "wine bar Burnaby BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ91Fh6p7FhVQRufpDRO351-s": {
+    "id": "1st-r-o-w-estate-winery-online-wine-store",
+    "name": "1st R.O.W. Estate Winery | Online Wine Store",
+    "website": "https://1row.ca/",
+    "formatted_address": "2762 190 St #104, Surrey, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0512571,
+        "lng": -122.6966923
+      }
+    },
+    "formatted_phone_number": "(604) 542-5075",
+    "places": {
+      "place_id": "ChIJ91Fh6p7FhVQRufpDRO351-s",
+      "rating": 4.4,
+      "user_ratings_total": 21,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "1st R.O.W. Estate Winery | Online Wine Store",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ91Fh6p7FhVQRufpDRO351-s",
+    "city": "Surrey",
+    "is_bar": true,
+    "found_via": "wine bar South Surrey BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJY17PelnThVQRrhmto4KOstA": {
+    "id": "switchback-brewing-company-ltd",
+    "name": "Switchback Brewing Company Ltd.",
+    "website": "http://www.switchbackbrewco.com/",
+    "formatted_address": "22775 Dewdney Trunk Rd, Maple Ridge, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.220742099999995,
+        "lng": -122.5911428
+      }
+    },
+    "formatted_phone_number": "(604) 479-0999",
+    "places": {
+      "place_id": "ChIJY17PelnThVQRrhmto4KOstA",
+      "rating": 4.5,
+      "user_ratings_total": 116,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Switchback Brewing Company Ltd.",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJY17PelnThVQRrhmto4KOstA",
+    "city": "Maple Ridge",
+    "is_bar": true,
+    "found_via": "brewery taproom Maple Ridge BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ9Twr4HzUhVQRywhmxotqsl4": {
+    "id": "cask-keg-brewmasters",
+    "name": "Cask & Keg Brewmasters",
+    "website": "https://caskandkegbrewmasters.ca/",
+    "formatted_address": "20767 Lougheed Hwy, Maple Ridge, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2184581,
+        "lng": -122.64581199999998
+      }
+    },
+    "formatted_phone_number": "(604) 463-1989",
+    "places": {
+      "place_id": "ChIJ9Twr4HzUhVQRywhmxotqsl4",
+      "rating": 4.7,
+      "user_ratings_total": 76,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Cask & Keg Brewmasters",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ9Twr4HzUhVQRywhmxotqsl4",
+    "city": "Maple Ridge",
+    "is_bar": true,
+    "found_via": "brewery taproom Maple Ridge BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJkbKG03A1hFQRX10h3ASK7p8": {
+    "id": "clearbrook-brewing-co",
+    "name": "Clearbrook Brewing Co",
+    "website": "https://www.clearbrookbrewing.ca/",
+    "formatted_address": "3275 McCallum Rd, Abbotsford, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0617313,
+        "lng": -122.29292640000001
+      }
+    },
+    "formatted_phone_number": "(604) 850-8468",
+    "places": {
+      "place_id": "ChIJkbKG03A1hFQRX10h3ASK7p8",
+      "rating": 4.7,
+      "user_ratings_total": 142,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Clearbrook Brewing Co",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJkbKG03A1hFQRX10h3ASK7p8",
+    "city": "Abbotsford",
+    "is_bar": true,
+    "found_via": "brewery taproom Downtown Abbotsford BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJZTcGFU_4hlQRpJHaojdIiQw": {
+    "id": "steins-and-vines-squamish-brewing-and-supply",
+    "name": "Steins and Vines - Squamish Brewing and Supply",
+    "website": "http://www.steinsandvines.ca/",
+    "formatted_address": "38918 Progress Way Unit 11, Squamish, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.7151141,
+        "lng": -123.1491496
+      }
+    },
+    "formatted_phone_number": "(604) 567-4565",
+    "places": {
+      "place_id": "ChIJZTcGFU_4hlQRpJHaojdIiQw",
+      "rating": 5,
+      "user_ratings_total": 16,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Steins and Vines - Squamish Brewing and Supply",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJZTcGFU_4hlQRpJHaojdIiQw",
+    "city": "Squamish",
+    "is_bar": true,
+    "found_via": "brewery taproom Squamish BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJYw2jzKwih1QR-Tw5H57pDIQ": {
+    "id": "whistler-brewing-company-taphouse",
+    "name": "Whistler Brewing Company Taphouse",
+    "website": "http://www.whistlerbeer.com/",
+    "formatted_address": "1045 Millar Creek Rd, Whistler, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.0880526,
+        "lng": -123.0401659
+      }
+    },
+    "formatted_phone_number": "(604) 962-8889",
+    "places": {
+      "place_id": "ChIJYw2jzKwih1QR-Tw5H57pDIQ",
+      "rating": 4.4,
+      "user_ratings_total": 445,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Whistler Brewing Company Taphouse",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJYw2jzKwih1QR-Tw5H57pDIQ",
+    "city": "Whistler",
+    "is_bar": true,
+    "found_via": "brewery taproom Whistler BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJz474nMRxcVMRIHR2dgwpihc": {
+    "id": "33-acres-brewing-company-calgary",
+    "name": "33 Acres Brewing Company Calgary",
+    "website": "http://33acresbrewing.com/",
+    "formatted_address": "224 12 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.042251500000006,
+        "lng": -114.0674028
+      }
+    },
+    "formatted_phone_number": "(604) 620-4589",
+    "places": {
+      "place_id": "ChIJz474nMRxcVMRIHR2dgwpihc",
+      "rating": 4.4,
+      "user_ratings_total": 159,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "33 Acres Brewing Company Calgary",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJz474nMRxcVMRIHR2dgwpihc",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Downtown Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ8UTT0zZvcVMREUpdBDfcqXM": {
+    "id": "two-house-brewing-taproom-pizza",
+    "name": "Two House Brewing Taproom + Pizza",
+    "website": "https://www.twohousebrew.ca/",
+    "formatted_address": "1901 10 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.044221699999994,
+        "lng": -114.1043732
+      }
+    },
+    "formatted_phone_number": "(403) 287-0215",
+    "places": {
+      "place_id": "ChIJ8UTT0zZvcVMREUpdBDfcqXM",
+      "rating": 4.4,
+      "user_ratings_total": 461,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Two House Brewing Taproom + Pizza",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ8UTT0zZvcVMREUpdBDfcqXM",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Downtown Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJRUErpj1lcVMRV0R2dt8kDw4": {
+    "id": "two-pillars-brewery",
+    "name": "Two Pillars Brewery",
+    "website": "http://twopillars.ca/",
+    "formatted_address": "910 Centre St NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0602607,
+        "lng": -114.0622279
+      }
+    },
+    "formatted_phone_number": "(403) 619-1194",
+    "places": {
+      "place_id": "ChIJRUErpj1lcVMRV0R2dt8kDw4",
+      "rating": 4.9,
+      "user_ratings_total": 297,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Two Pillars Brewery",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJRUErpj1lcVMRV0R2dt8kDw4",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Downtown Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJD4_tOx5vcVMRl65KtcYGnNk": {
+    "id": "tailgunner-brewing-acme-pizza-co",
+    "name": "Tailgunner Brewing + Acme Pizza Co.",
+    "website": "https://www.tailgunnerbrewing.ca/",
+    "formatted_address": "1602 10 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0445065,
+        "lng": -114.0968603
+      }
+    },
+    "formatted_phone_number": "(825) 407-8599",
+    "places": {
+      "place_id": "ChIJD4_tOx5vcVMRl65KtcYGnNk",
+      "rating": 4.9,
+      "user_ratings_total": 94,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Tailgunner Brewing + Acme Pizza Co.",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJD4_tOx5vcVMRl65KtcYGnNk",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Downtown Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJM3SZb2lxcVMRYL7eItCUiB0": {
+    "id": "the-establishment-brewing-company",
+    "name": "The Establishment Brewing Company",
+    "website": "http://establishmentbrewing.ca/",
+    "formatted_address": "4407 1st St SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.014290599999995,
+        "lng": -114.06234699999999
+      }
+    },
+    "formatted_phone_number": "(403) 453-6212",
+    "places": {
+      "place_id": "ChIJM3SZb2lxcVMRYL7eItCUiB0",
+      "rating": 4.7,
+      "user_ratings_total": 379,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "The Establishment Brewing Company",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJM3SZb2lxcVMRYL7eItCUiB0",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Downtown Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJr0Pnjh5xcVMRRziIgLSUyXA": {
+    "id": "cabin-brewing-company",
+    "name": "Cabin Brewing Company",
+    "website": "http://www.cabinbrewing.ca/",
+    "formatted_address": "505 36 Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0212065,
+        "lng": -114.0535917
+      }
+    },
+    "formatted_phone_number": "(403) 244-3331",
+    "places": {
+      "place_id": "ChIJr0Pnjh5xcVMRRziIgLSUyXA",
+      "rating": 4.8,
+      "user_ratings_total": 534,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Cabin Brewing Company",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJr0Pnjh5xcVMRRziIgLSUyXA",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Kensington Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJQbrYqcVvcVMRMXbdi9H39lE": {
+    "id": "best-of-kin-social",
+    "name": "Best of Kin Social",
+    "website": "http://bestofkin.ca/",
+    "formatted_address": "1059 14 St SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.043490299999995,
+        "lng": -114.09494910000001
+      }
+    },
+    "formatted_phone_number": "(825) 413-4233",
+    "places": {
+      "place_id": "ChIJQbrYqcVvcVMRMXbdi9H39lE",
+      "rating": 4.7,
+      "user_ratings_total": 475,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Best of Kin Social",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJQbrYqcVvcVMRMXbdi9H39lE",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Kensington Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJRwhEinNlcVMRqGH9wz3Dv7E": {
+    "id": "citizen-brewing-company",
+    "name": "Citizen Brewing Company",
+    "website": "http://citizenbrewingcompany.com/",
+    "formatted_address": "227 35 Ave NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0839789,
+        "lng": -114.05839639999999
+      }
+    },
+    "formatted_phone_number": "(403) 474-4677",
+    "places": {
+      "place_id": "ChIJRwhEinNlcVMRqGH9wz3Dv7E",
+      "rating": 4.6,
+      "user_ratings_total": 956,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Citizen Brewing Company",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJRwhEinNlcVMRqGH9wz3Dv7E",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Kensington Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJw65msqlmcVMRZ9zKN8JvqV8": {
+    "id": "railyard-brewing",
+    "name": "Railyard Brewing",
+    "website": "http://www.railyardbrewing.ca/",
+    "formatted_address": "10301 19 St NE Unit 121, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.1455621,
+        "lng": -114.0141119
+      }
+    },
+    "formatted_phone_number": "(403) 465-4831",
+    "places": {
+      "place_id": "ChIJw65msqlmcVMRZ9zKN8JvqV8",
+      "rating": 4.7,
+      "user_ratings_total": 577,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Railyard Brewing",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJw65msqlmcVMRZ9zKN8JvqV8",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Kensington Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJY2Drp2RxcVMRifk4jw8kg0Y": {
+    "id": "bow-river-brewing",
+    "name": "Bow River Brewing",
+    "website": "http://www.bowriverbrewing.ca/",
+    "formatted_address": "5769 4 St SE #110, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.002776,
+        "lng": -114.05425419999999
+      }
+    },
+    "formatted_phone_number": "(403) 917-1088",
+    "places": {
+      "place_id": "ChIJY2Drp2RxcVMRifk4jw8kg0Y",
+      "rating": 4.8,
+      "user_ratings_total": 136,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Bow River Brewing",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJY2Drp2RxcVMRifk4jw8kg0Y",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Kensington Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJNb8j5nxwcVMR_4QFKWqXSHs": {
+    "id": "village-brewery",
+    "name": "Village Brewery",
+    "website": "http://www.villagebrewery.com/",
+    "formatted_address": "5000 12a St SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.009448899999995,
+        "lng": -114.0349531
+      }
+    },
+    "formatted_phone_number": "(403) 243-3327",
+    "places": {
+      "place_id": "ChIJNb8j5nxwcVMR_4QFKWqXSHs",
+      "rating": 4.7,
+      "user_ratings_total": 264,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Village Brewery",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJNb8j5nxwcVMR_4QFKWqXSHs",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Kensington Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ1XXm-VN7cVMRLPoaPp7Aq24": {
+    "id": "bored-brewing-taproom-clubhouse",
+    "name": "Bored Brewing Taproom & Clubhouse",
+    "website": "https://boredbrewing.xyz/",
+    "formatted_address": "1212 9 Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.042172,
+        "lng": -114.0359142
+      }
+    },
+    "formatted_phone_number": "(587) 997-8759",
+    "places": {
+      "place_id": "ChIJ1XXm-VN7cVMRLPoaPp7Aq24",
+      "rating": 3.8,
+      "user_ratings_total": 13,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Bored Brewing Taproom & Clubhouse",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ1XXm-VN7cVMRLPoaPp7Aq24",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom East Village Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJLVfhZUJwcVMR_ggzfQLrtUI": {
+    "id": "annex-ale-project",
+    "name": "Annex Ale Project",
+    "website": "http://www.annexales.com/",
+    "formatted_address": "4323 1st St SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0147556,
+        "lng": -114.062272
+      }
+    },
+    "formatted_phone_number": "(403) 475-4412",
+    "places": {
+      "place_id": "ChIJLVfhZUJwcVMR_ggzfQLrtUI",
+      "rating": 4.7,
+      "user_ratings_total": 573,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Annex Ale Project",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJLVfhZUJwcVMR_ggzfQLrtUI",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom East Village Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ7WWsnPtwcVMRpMIt_eFJC18": {
+    "id": "new-level-brewing",
+    "name": "New Level Brewing",
+    "website": "http://newlevelbrewing.ca/",
+    "formatted_address": "7005 Fairmount Dr SE #4140, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9920082,
+        "lng": -114.06562799999999
+      }
+    },
+    "formatted_phone_number": "(403) 764-4359",
+    "places": {
+      "place_id": "ChIJ7WWsnPtwcVMRpMIt_eFJC18",
+      "rating": 4.7,
+      "user_ratings_total": 249,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "New Level Brewing",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ7WWsnPtwcVMRpMIt_eFJC18",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom East Village Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJEfYfZb5lcVMRCH9xsSJaElQ": {
+    "id": "wild-winds-brewery-coming-soon",
+    "name": "Wild Winds Brewery (COMING SOON)",
+    "website": "https://www.wildwindsbrewery.ca/",
+    "formatted_address": "611 Marsh Rd NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0526158,
+        "lng": -114.05097049999999
+      }
+    },
+    "formatted_phone_number": "(587) 437-5714",
+    "places": {
+      "place_id": "ChIJEfYfZb5lcVMRCH9xsSJaElQ",
+      "rating": 4.3,
+      "user_ratings_total": 6,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Wild Winds Brewery (COMING SOON)",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJEfYfZb5lcVMRCH9xsSJaElQ",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom East Village Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJH8jFRsFxcVMRfrbq5fwKYDE": {
+    "id": "wild-rose-brewery",
+    "name": "Wild Rose Brewery",
+    "website": "http://www.wildrosebrewery.com/",
+    "formatted_address": "4580 Quesnay Wood Dr SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.014527,
+        "lng": -114.12263949999999
+      }
+    },
+    "formatted_phone_number": "(403) 727-5451",
+    "places": {
+      "place_id": "ChIJH8jFRsFxcVMRfrbq5fwKYDE",
+      "rating": 4.6,
+      "user_ratings_total": 838,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Wild Rose Brewery",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJH8jFRsFxcVMRfrbq5fwKYDE",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ_T5WWylxcVMRv5S0fljXfeY": {
+    "id": "stonyslope-brewing-company",
+    "name": "Stonyslope Brewing Company",
+    "website": "https://www.stonyslope.com/",
+    "formatted_address": "9620 Elbow Dr SW #20, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9690119,
+        "lng": -114.08411819999999
+      }
+    },
+    "formatted_phone_number": null,
+    "places": {
+      "place_id": "ChIJ_T5WWylxcVMRv5S0fljXfeY",
+      "rating": 4.7,
+      "user_ratings_total": 167,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Stonyslope Brewing Company",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ_T5WWylxcVMRv5S0fljXfeY",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJiVqqfB96cVMRJQLJGFq5EJw": {
+    "id": "boiling-oar-brewing-company",
+    "name": "Boiling Oar Brewing Company",
+    "website": "http://www.boilingoar.com/",
+    "formatted_address": "7930 51 St SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9816865,
+        "lng": -113.959561
+      }
+    },
+    "formatted_phone_number": "(403) 250-1884",
+    "places": {
+      "place_id": "ChIJiVqqfB96cVMRJQLJGFq5EJw",
+      "rating": 4.8,
+      "user_ratings_total": 60,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Boiling Oar Brewing Company",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJiVqqfB96cVMRJQLJGFq5EJw",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJk4mZ8GxwcVMRCyvUvugcdBY": {
+    "id": "born-brewing-co",
+    "name": "Born Brewing Co.",
+    "website": "http://www.bornbrewing.co/",
+    "formatted_address": "414 36 Ave SE #3, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0216589,
+        "lng": -114.0543515
+      }
+    },
+    "formatted_phone_number": "(403) 247-0295",
+    "places": {
+      "place_id": "ChIJk4mZ8GxwcVMRCyvUvugcdBY",
+      "rating": 4.6,
+      "user_ratings_total": 512,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Born Brewing Co.",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJk4mZ8GxwcVMRCyvUvugcdBY",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJt9Wc0vRxcVMR_ke_btlW6WU": {
+    "id": "vaycay-brew-co",
+    "name": "Vaycay Brew Co",
+    "website": "https://www.vaycaybrew.co/",
+    "formatted_address": "2248 33 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0240861,
+        "lng": -114.1139901
+      }
+    },
+    "formatted_phone_number": "(403) 313-1463",
+    "places": {
+      "place_id": "ChIJt9Wc0vRxcVMR_ke_btlW6WU",
+      "rating": 4.5,
+      "user_ratings_total": 129,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Vaycay Brew Co",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJt9Wc0vRxcVMR_ke_btlW6WU",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Marda Loop Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJTYr60gZlcVMRnREYFHd0jCc": {
+    "id": "minhas-brewery-distillery-tap-room-kitchen",
+    "name": "Minhas Brewery, Distillery, Tap Room & Kitchen",
+    "website": "https://www.minhasbrewery.ca/",
+    "formatted_address": "1314 44 Ave NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0921288,
+        "lng": -114.03151659999999
+      }
+    },
+    "formatted_phone_number": "(403) 695-3701",
+    "places": {
+      "place_id": "ChIJTYr60gZlcVMRnREYFHd0jCc",
+      "rating": 4.2,
+      "user_ratings_total": 537,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Minhas Brewery, Distillery, Tap Room & Kitchen",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJTYr60gZlcVMRnREYFHd0jCc",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Northwest Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJD8KjKORlcVMR6HKCf5CbS7Q": {
+    "id": "origin-malting-brewing-calgary",
+    "name": "Origin Malting & Brewing - Calgary",
+    "website": "https://originbrewing.ca/",
+    "formatted_address": "943 28 St NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.061152299999996,
+        "lng": -113.9940515
+      }
+    },
+    "formatted_phone_number": "(403) 453-6150",
+    "places": {
+      "place_id": "ChIJD8KjKORlcVMR6HKCf5CbS7Q",
+      "rating": 4.6,
+      "user_ratings_total": 21,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Origin Malting & Brewing - Calgary",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJD8KjKORlcVMR6HKCf5CbS7Q",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Northeast Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJVVVFRt1kcVMR2FGBYnFr0Qk": {
+    "id": "meta-brewing-corp",
+    "name": "Meta Brewing Corp.",
+    "website": "https://metabrewery.ca/",
+    "formatted_address": "11358 Barlow Trail NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.1556175,
+        "lng": -114.00101049999999
+      }
+    },
+    "formatted_phone_number": "(403) 827-5755",
+    "places": {
+      "place_id": "ChIJVVVFRt1kcVMR2FGBYnFr0Qk",
+      "rating": 4,
+      "user_ratings_total": 24,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Meta Brewing Corp.",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJVVVFRt1kcVMR2FGBYnFr0Qk",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "brewery taproom Northeast Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ0a0p629fcVMRNnvISiXBHnY": {
+    "id": "atlas-brewing-airdrie",
+    "name": "Atlas Brewing Airdrie",
+    "website": "http://www.atlasbrewing.ca/",
+    "formatted_address": "2000 Market St #100, Airdrie, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.268679999999996,
+        "lng": -113.9933801
+      }
+    },
+    "formatted_phone_number": null,
+    "places": {
+      "place_id": "ChIJ0a0p629fcVMRNnvISiXBHnY",
+      "rating": 4.6,
+      "user_ratings_total": 98,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Atlas Brewing Airdrie",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ0a0p629fcVMRNnvISiXBHnY",
+    "city": "Airdrie",
+    "is_bar": true,
+    "found_via": "brewery taproom Airdrie AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJQ-lkB1zThVQRIkhv_AZ0Mds": {
+    "id": "revs-maple-ridge",
+    "name": "Revs Maple Ridge",
+    "website": "http://www.revs.ca/revs-mapleridge/",
+    "formatted_address": "22730 119 Ave, Maple Ridge, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.218724599999994,
+        "lng": -122.59251319999998
+      }
+    },
+    "formatted_phone_number": "(604) 467-2626",
+    "places": {
+      "place_id": "ChIJQ-lkB1zThVQRIkhv_AZ0Mds",
+      "rating": 3.9,
+      "user_ratings_total": 638,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Revs Maple Ridge",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJQ-lkB1zThVQRIkhv_AZ0Mds",
+    "city": "Maple Ridge",
+    "is_bar": true,
+    "found_via": "sports bar Maple Ridge BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJHSKI9WXRhVQRYDZ1p6gklhc": {
+    "id": "nat-s",
+    "name": "Nat's",
+    "website": "https://natsoriginal.ca/",
+    "formatted_address": "7888 200 St, Langley Twp, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1459818,
+        "lng": -122.66395859999999
+      }
+    },
+    "formatted_phone_number": "(604) 455-8896",
+    "places": {
+      "place_id": "ChIJHSKI9WXRhVQRYDZ1p6gklhc",
+      "rating": 4.5,
+      "user_ratings_total": 22,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Nat's",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJHSKI9WXRhVQRYDZ1p6gklhc",
+    "city": "Langley Twp",
+    "is_bar": false,
+    "found_via": "sports bar Willoughby Langley BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJneRINxbEhVQRT7u3ogFL01A": {
+    "id": "boston-pizza",
+    "name": "Boston Pizza",
+    "website": "https://bostonpizza.com/en/locations/cloverdale.html",
+    "formatted_address": "6486 176 St #600, Surrey, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1200362,
+        "lng": -122.73440719999999
+      }
+    },
+    "formatted_phone_number": "(604) 576-2677",
+    "places": {
+      "place_id": "ChIJneRINxbEhVQRT7u3ogFL01A",
+      "rating": 3.9,
+      "user_ratings_total": 1041,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Boston Pizza",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJneRINxbEhVQRT7u3ogFL01A",
+    "city": "Surrey",
+    "is_bar": true,
+    "found_via": "sports bar Cloverdale Surrey BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJvTAvrLjKhVQRkANaMW2SoFs": {
+    "id": "chances-abbotsford",
+    "name": "Chances Abbotsford",
+    "website": "https://abbotsfordchances.ca/",
+    "formatted_address": "30835 Peardonville Rd, Abbotsford, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0467136,
+        "lng": -122.36887730000001
+      }
+    },
+    "formatted_phone_number": "(604) 854-6522",
+    "places": {
+      "place_id": "ChIJvTAvrLjKhVQRkANaMW2SoFs",
+      "rating": 3.8,
+      "user_ratings_total": 697,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Chances Abbotsford",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJvTAvrLjKhVQRkANaMW2SoFs",
+    "city": "Abbotsford",
+    "is_bar": true,
+    "found_via": "sports bar Abbotsford BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJt_PrdMnLhVQREDwwAdD2XJ4": {
+    "id": "bar-one",
+    "name": "Bar One",
+    "website": "https://www.baronecanada.com/",
+    "formatted_address": "2950 Mount Lehman Rd, Abbotsford, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0561421,
+        "lng": -122.38069809999998
+      }
+    },
+    "formatted_phone_number": "(604) 850-7263",
+    "places": {
+      "place_id": "ChIJt_PrdMnLhVQREDwwAdD2XJ4",
+      "rating": 2.6,
+      "user_ratings_total": 20,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Bar One",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJt_PrdMnLhVQREDwwAdD2XJ4",
+    "city": "Abbotsford",
+    "is_bar": true,
+    "found_via": "sports bar Abbotsford BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJs0O_QK0zhFQRbzntP-lU1Po": {
+    "id": "protein-lounge",
+    "name": "Protein Lounge",
+    "website": "https://protein-lounge.com/",
+    "formatted_address": "32335 Fletcher Ave #102, Mission, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.133966199999996,
+        "lng": -122.32932579999998
+      }
+    },
+    "formatted_phone_number": "(236) 827-2169",
+    "places": {
+      "place_id": "ChIJs0O_QK0zhFQRbzntP-lU1Po",
+      "rating": 4.8,
+      "user_ratings_total": 135,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Protein Lounge",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJs0O_QK0zhFQRbzntP-lU1Po",
+    "city": "Mission",
+    "is_bar": false,
+    "found_via": "sports bar Mission BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJqYF05yT5hlQRbs09GsJd7zA": {
+    "id": "tandoori-flame-sports-bar-indian-cuisine",
+    "name": "Tandoori Flame Sports Bar & Indian Cuisine",
+    "website": "http://tandooriflamesquamish.com/",
+    "formatted_address": "40330 Tantalus Rd, Squamish, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.739615199999996,
+        "lng": -123.13353009999999
+      }
+    },
+    "formatted_phone_number": "(604) 449-1991",
+    "places": {
+      "place_id": "ChIJqYF05yT5hlQRbs09GsJd7zA",
+      "rating": 4.3,
+      "user_ratings_total": 469,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Tandoori Flame Sports Bar & Indian Cuisine",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJqYF05yT5hlQRbs09GsJd7zA",
+    "city": "Squamish",
+    "is_bar": false,
+    "found_via": "sports bar Squamish BC",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ39ynxARwcVMRhKhkNxiuycQ": {
+    "id": "sammy-s-sports-bar",
+    "name": "Sammy's Sports Bar",
+    "website": "https://elbowrivercasino.com/dining/",
+    "formatted_address": "218 18 Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.037222299999996,
+        "lng": -114.06023569999999
+      }
+    },
+    "formatted_phone_number": "(403) 289-8880",
+    "places": {
+      "place_id": "ChIJ39ynxARwcVMRhKhkNxiuycQ",
+      "rating": 4.1,
+      "user_ratings_total": 69,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Sammy's Sports Bar",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ39ynxARwcVMRhKhkNxiuycQ",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar Downtown Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJeWb03gJwcVMRZOKb2IINx0k": {
+    "id": "freestyle-social-club",
+    "name": "Freestyle Social Club",
+    "website": "http://freestylesocialclub.ca/",
+    "formatted_address": "119 12 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0413165,
+        "lng": -114.06476769999999
+      }
+    },
+    "formatted_phone_number": "(403) 266-8282",
+    "places": {
+      "place_id": "ChIJeWb03gJwcVMRZOKb2IINx0k",
+      "rating": 4.4,
+      "user_ratings_total": 52,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Freestyle Social Club",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJeWb03gJwcVMRZOKb2IINx0k",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar Beltline Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJl5wP2cZxcVMRKwIQGbPgcZc": {
+    "id": "hitman-s-bar",
+    "name": "Hitman's Bar",
+    "website": "https://www.hitmansbar.com/",
+    "formatted_address": "421 12 Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.040935999999995,
+        "lng": -114.0548795
+      }
+    },
+    "formatted_phone_number": "(403) 454-9595",
+    "places": {
+      "place_id": "ChIJl5wP2cZxcVMRKwIQGbPgcZc",
+      "rating": 4.4,
+      "user_ratings_total": 283,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Hitman's Bar",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJl5wP2cZxcVMRKwIQGbPgcZc",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar Beltline Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJCehXPiVucVMRkSo_pnKaiHA": {
+    "id": "regal-beagle-pub",
+    "name": "Regal Beagle Pub",
+    "website": "https://www.regalbeaglepub.ca/",
+    "formatted_address": "5308 17 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0382773,
+        "lng": -114.16100589999999
+      }
+    },
+    "formatted_phone_number": "(403) 457-4313",
+    "places": {
+      "place_id": "ChIJCehXPiVucVMRkSo_pnKaiHA",
+      "rating": 4,
+      "user_ratings_total": 588,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Regal Beagle Pub",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJCehXPiVucVMRkSo_pnKaiHA",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar 17th Avenue SW Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ8bQgbABvcVMR03ehG8VD_IM": {
+    "id": "pour-decisions",
+    "name": "Pour Decisions",
+    "website": "http://pourdecisionsyyc.com/",
+    "formatted_address": "1312 17 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0379673,
+        "lng": -114.09246669999999
+      }
+    },
+    "formatted_phone_number": "(825) 540-1322",
+    "places": {
+      "place_id": "ChIJ8bQgbABvcVMR03ehG8VD_IM",
+      "rating": 3.7,
+      "user_ratings_total": 93,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Pour Decisions",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ8bQgbABvcVMR03ehG8VD_IM",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar 17th Avenue SW Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJy9jS27dlcVMRyKjDn3AcpJA": {
+    "id": "captains-sports-lounge-grill",
+    "name": "Captains Sports Lounge & Grill",
+    "website": "http://www.captainsyyc.com/",
+    "formatted_address": "6534 4 St NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.1117937,
+        "lng": -114.0562616
+      }
+    },
+    "formatted_phone_number": "(403) 457-1603",
+    "places": {
+      "place_id": "ChIJy9jS27dlcVMRyKjDn3AcpJA",
+      "rating": 4.3,
+      "user_ratings_total": 554,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Captains Sports Lounge & Grill",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJy9jS27dlcVMRyKjDn3AcpJA",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar Mission 4th Street Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJ2efesyRxcVMRwgLD9dsAVgI": {
+    "id": "schanks-sports-grill",
+    "name": "Schanks Sports Grill",
+    "website": "https://schanks.com/",
+    "formatted_address": "9627 Macleod Trail S, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9694266,
+        "lng": -114.07349099999999
+      }
+    },
+    "formatted_phone_number": "(403) 253-7300",
+    "places": {
+      "place_id": "ChIJ2efesyRxcVMRwgLD9dsAVgI",
+      "rating": 4,
+      "user_ratings_total": 1892,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Schanks Sports Grill",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJ2efesyRxcVMRwgLD9dsAVgI",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar Inglewood Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJle1meQBlcVMRc3oqmlmvTsw": {
+    "id": "koko-s-restaurant-and-sports-bar-now-hangout-sports-bar-restaurant-party-hall",
+    "name": "Koko's Restaurant and Sports Bar(Now Hangout Sports Bar, Restaurant & Party Hall)",
+    "website": "http://www.hangoutbar.ca/",
+    "formatted_address": "4712 13 St NE Unit 115, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.095267199999995,
+        "lng": -114.0304051
+      }
+    },
+    "formatted_phone_number": "(587) 429-5672",
+    "places": {
+      "place_id": "ChIJle1meQBlcVMRc3oqmlmvTsw",
+      "rating": 4,
+      "user_ratings_total": 217,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Koko's Restaurant and Sports Bar(Now Hangout Sports Bar, Restaurant & Party Hall)",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJle1meQBlcVMRc3oqmlmvTsw",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar Inglewood Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJVT7g-uZncVMRXLR0Wqjly4s": {
+    "id": "carrington-s-sports-bar-and-grill",
+    "name": "Carrington's Sports Bar And Grill",
+    "website": "http://www.carringtonssportsbarandgrill.com/",
+    "formatted_address": "45 Carrington Blvd #120, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.1829737,
+        "lng": -114.07383069999999
+      }
+    },
+    "formatted_phone_number": "(368) 863-3290",
+    "places": {
+      "place_id": "ChIJVT7g-uZncVMRXLR0Wqjly4s",
+      "rating": 4.4,
+      "user_ratings_total": 139,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Carrington's Sports Bar And Grill",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJVT7g-uZncVMRXLR0Wqjly4s",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "sports bar Inglewood Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJzQxBwkN7cVMR9_wn6x-xqe8": {
+    "id": "atlas-pizza-sports-bar",
+    "name": "Atlas Pizza & Sports Bar",
+    "website": "http://atlaspizzasportsbar.com/",
+    "formatted_address": "6060 Memorial Dr, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0532219,
+        "lng": -113.942606
+      }
+    },
+    "formatted_phone_number": "(403) 248-3344",
+    "places": {
+      "place_id": "ChIJzQxBwkN7cVMR9_wn6x-xqe8",
+      "rating": 4.3,
+      "user_ratings_total": 2068,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Atlas Pizza & Sports Bar",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJzQxBwkN7cVMR9_wn6x-xqe8",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar Inglewood Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJz1xULvVwcVMRbK6fyX8-bVE": {
+    "id": "the-other-side-sports-pub",
+    "name": "The Other Side Sports Pub",
+    "website": "http://hotelblackfoot.com/dining/",
+    "formatted_address": "5940 Blackfoot Trl SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.000526,
+        "lng": -114.04635719999999
+      }
+    },
+    "formatted_phone_number": "(403) 212-1726",
+    "places": {
+      "place_id": "ChIJz1xULvVwcVMRbK6fyX8-bVE",
+      "rating": 4,
+      "user_ratings_total": 141,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "The Other Side Sports Pub",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJz1xULvVwcVMRbK6fyX8-bVE",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar East Village Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJW4X4GTF7cVMRCusr5Nl5Kjs": {
+    "id": "tavern-52-bar-grill",
+    "name": "Tavern 52 Bar & Grill",
+    "website": "http://www.tavern52.ca/",
+    "formatted_address": "1830 52 St. SE #110, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0369442,
+        "lng": -113.9578279
+      }
+    },
+    "formatted_phone_number": "(403) 454-6952",
+    "places": {
+      "place_id": "ChIJW4X4GTF7cVMRCusr5Nl5Kjs",
+      "rating": 4.5,
+      "user_ratings_total": 481,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Tavern 52 Bar & Grill",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJW4X4GTF7cVMRCusr5Nl5Kjs",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar Marda Loop Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJSRtR6-BkcVMR45UckVFEgeo": {
+    "id": "hidden-spot-entertainment-and-arcade-bar",
+    "name": "Hidden Spot Entertainment and Arcade Bar",
+    "website": "http://hiddenspotyyc.com/",
+    "formatted_address": "2323 32 Ave NE #125, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0799812,
+        "lng": -114.0069212
+      }
+    },
+    "formatted_phone_number": "(403) 457-9565",
+    "places": {
+      "place_id": "ChIJSRtR6-BkcVMR45UckVFEgeo",
+      "rating": 4.2,
+      "user_ratings_total": 647,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Hidden Spot Entertainment and Arcade Bar",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJSRtR6-BkcVMR45UckVFEgeo",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar Marda Loop Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJd1zRMqdxcVMROrJSZpjVO3U": {
+    "id": "iyycburg-marda-loop",
+    "name": "iyycburg (Marda Loop)",
+    "website": "https://www.iyycburg.com/",
+    "formatted_address": "1950 33 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0242006,
+        "lng": -114.10680819999999
+      }
+    },
+    "formatted_phone_number": "(587) 291-8376",
+    "places": {
+      "place_id": "ChIJd1zRMqdxcVMROrJSZpjVO3U",
+      "rating": 4.8,
+      "user_ratings_total": 310,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "iyycburg (Marda Loop)",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJd1zRMqdxcVMROrJSZpjVO3U",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "sports bar Marda Loop Calgary AB",
+    "found_at": "2026-11-07"
+  },
+  "ChIJlZoj-Ah0cVMR5yuL8p9sUBk": {
+    "id": "gator-s-sports-pub",
+    "name": "Gator's Sports Pub",
+    "website": "https://www.gatorscalgary.com/",
+    "formatted_address": "2525 Woodview Dr SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9405143,
+        "lng": -114.12071519999999
+      }
+    },
+    "formatted_phone_number": "(403) 238-5995",
+    "places": {
+      "place_id": "ChIJlZoj-Ah0cVMR5yuL8p9sUBk",
+      "rating": 4.4,
+      "user_ratings_total": 390,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Gator's Sports Pub",
+      "synced_at": "2026-11-07"
+    },
+    "place_id": "ChIJlZoj-Ah0cVMR5yuL8p9sUBk",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "sports bar Marda Loop Calgary AB",
     "found_at": "2026-11-07"
   }
 }

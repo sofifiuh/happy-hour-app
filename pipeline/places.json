@@ -30219,5 +30219,226 @@
     },
     "matched_name": "The LOFT at Meadow Gardens",
     "synced_at": "2026-11-07"
+  },
+  "atlas-pizza-sports-bar": {
+    "place_id": "ChIJzQxBwkN7cVMR9_wn6x-xqe8",
+    "rating": 4.3,
+    "user_ratings_total": 2068,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Atlas Pizza & Sports Bar",
+    "synced_at": "2026-11-07"
+  },
+  "the-brickworks": {
+    "place_id": "ChIJY1kzeLM8h1QRN-uuPO1jUL0",
+    "rating": 4.5,
+    "user_ratings_total": 991,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Brickworks",
+    "synced_at": "2026-11-07"
+  },
+  "citizen-brewing-company": {
+    "place_id": "ChIJRwhEinNlcVMRqGH9wz3Dv7E",
+    "rating": 4.6,
+    "user_ratings_total": 956,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Citizen Brewing Company",
+    "synced_at": "2026-11-07"
+  },
+  "chances-abbotsford": {
+    "place_id": "ChIJvTAvrLjKhVQRkANaMW2SoFs",
+    "rating": 3.8,
+    "user_ratings_total": 697,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Chances Abbotsford",
+    "synced_at": "2026-11-07"
+  },
+  "hidden-spot-entertainment-and-arcade-bar": {
+    "place_id": "ChIJSRtR6-BkcVMR45UckVFEgeo",
+    "rating": 4.2,
+    "user_ratings_total": 647,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Hidden Spot Entertainment and Arcade Bar",
+    "synced_at": "2026-11-07"
+  },
+  "annex-ale-project": {
+    "place_id": "ChIJLVfhZUJwcVMR_ggzfQLrtUI",
+    "rating": 4.7,
+    "user_ratings_total": 573,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Annex Ale Project",
+    "synced_at": "2026-11-07"
+  },
+  "cabin-brewing-company": {
+    "place_id": "ChIJr0Pnjh5xcVMRRziIgLSUyXA",
+    "rating": 4.8,
+    "user_ratings_total": 534,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Cabin Brewing Company",
+    "synced_at": "2026-11-07"
+  },
+  "gator-s-sports-pub": {
+    "place_id": "ChIJlZoj-Ah0cVMR5yuL8p9sUBk",
+    "rating": 4.4,
+    "user_ratings_total": 390,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Gator's Sports Pub",
+    "synced_at": "2026-11-07"
+  },
+  "le-charme": {
+    "place_id": "ChIJN0IXWiplcVMRjBCXCdRXKdM",
+    "rating": 4.8,
+    "user_ratings_total": 230,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Le Charme",
+    "synced_at": "2026-11-07"
+  },
+  "33-acres-brewing-company-calgary": {
+    "place_id": "ChIJz474nMRxcVMRIHR2dgwpihc",
+    "rating": 4.4,
+    "user_ratings_total": 159,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "33 Acres Brewing Company Calgary",
+    "synced_at": "2026-11-07"
+  },
+  "atlas-brewing-airdrie": {
+    "place_id": "ChIJ0a0p629fcVMRNnvISiXBHnY",
+    "rating": 4.6,
+    "user_ratings_total": 98,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Atlas Brewing Airdrie",
+    "synced_at": "2026-11-07"
+  },
+  "pour-decisions": {
+    "place_id": "ChIJ8bQgbABvcVMR03ehG8VD_IM",
+    "rating": 3.7,
+    "user_ratings_total": 93,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Pour Decisions",
+    "synced_at": "2026-11-07"
+  },
+  "freestyle-social-club": {
+    "place_id": "ChIJeWb03gJwcVMRZOKb2IINx0k",
+    "rating": 4.4,
+    "user_ratings_total": 52,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Freestyle Social Club",
+    "synced_at": "2026-11-07"
   }
 }
