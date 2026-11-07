@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-07-e6e7af94",
+ "data_version": "2026-11-07-d97f3a4b",
  "venues": [
   {
    "id": "ancora",
@@ -8702,7 +8702,20 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/65298e5c82d0557c8e0573c2/27f2f8aa-d553-4926-9b41-dc2586347761/Bridgette+Bar.jpg",
+     "credit_name": "Bridgette Bar",
+     "credit_url": "https://www.bridgettebar.com/gallery-calgary",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/65298e5c82d0557c8e0573c2/17089c40-1e37-4990-8ebc-18a6762fe854/bridgette-interior3.jpg",
+     "credit_name": "Bridgette Bar",
+     "credit_url": "https://www.bridgettebar.com/gallery-calgary",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8769,9 +8782,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/65298e5c82d0557c8e0573c2/t/6529c90eb5efcb43a57651bf/1697237263014/BB_IG-profile.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/65298e5c82d0557c8e0573c2/d1f56d2f-130a-4ff1-ac16-373c65e0e298/bridgette-interior4.jpg",
     "credit_name": "Bridgette Bar",
-    "credit_url": "https://www.bridgettebar.com/calgary",
+    "credit_url": "https://www.bridgettebar.com/gallery-calgary",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -8805,7 +8818,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://i1.wp.com/lousgrill.com/wp-content/uploads/2015/06/IMG_0898.jpg?fit=1200%2C800&ssl=1",
+     "credit_name": "Lou's Grill",
+     "credit_url": "https://lousgrill.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://i1.wp.com/lousgrill.com/wp-content/uploads/2015/06/IMG_3667-2.png?w=1000&ssl=1",
+     "credit_name": "Lou's Grill",
+     "credit_url": "https://lousgrill.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://i1.wp.com/lousgrill.com/wp-content/uploads/2015/06/IMG_3620-2.png?w=1000&ssl=1",
+     "credit_name": "Lou's Grill",
+     "credit_url": "https://lousgrill.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://i1.wp.com/lousgrill.com/wp-content/uploads/2015/06/interior01.jpg?fit=2000%2C2667&ssl=1",
+     "credit_name": "Lou's Grill",
+     "credit_url": "https://lousgrill.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://i1.wp.com/lousgrill.com/wp-content/uploads/2015/06/home-menu-01.jpg?w=1000&ssl=1",
+     "credit_name": "Lou's Grill",
+     "credit_url": "https://lousgrill.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://lousgrill.com/wp-content/uploads/2020/12/the-bar.jpg",
+     "credit_name": "Lou's Grill",
+     "credit_url": "https://lousgrill.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8865,9 +8915,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://s0.wp.com/i/blank.jpg",
+    "url": "https://lousgrill.com/wp-content/uploads/2020/12/interior-lous-grill.jpg",
     "credit_name": "Lou's Grill",
-    "credit_url": "http://www.lousgrill.com/",
+    "credit_url": "https://lousgrill.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -8901,7 +8951,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://www.sharkclub.com/wp-content/uploads/2018/08/Van3-1.jpg",
+     "credit_name": "Shark Club Sports Bar & Grill",
+     "credit_url": "https://www.sharkclub.com/location/vancouver/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.sharkclub.com/wp-content/uploads/2018/08/Van2-1.jpg",
+     "credit_name": "Shark Club Sports Bar & Grill",
+     "credit_url": "https://www.sharkclub.com/location/vancouver/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.sharkclub.com/wp-content/uploads/2018/08/Van1-1.jpg",
+     "credit_name": "Shark Club Sports Bar & Grill",
+     "credit_url": "https://www.sharkclub.com/location/vancouver/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.sharkclub.com/wp-content/uploads/2018/08/Van4-1.jpg",
+     "credit_name": "Shark Club Sports Bar & Grill",
+     "credit_url": "https://www.sharkclub.com/location/vancouver/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.sharkclub.com/wp-content/uploads/2018/08/1600_800latenight.jpg",
+     "credit_name": "Shark Club Sports Bar & Grill",
+     "credit_url": "https://www.sharkclub.com/our-menus/vancouver-menu/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.sharkclub.com/wp-content/uploads/2026/11/Truffle-Swiss-1200-x-600-px-.png",
+     "credit_name": "Shark Club Sports Bar & Grill",
+     "credit_url": "https://www.sharkclub.com/location/vancouver/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9036,7 +9123,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://www.sharkclub.com/wp-content/uploads/2018/08/Vancouver_Banner-BlackWhite-1-scaled.jpg",
+    "url": "https://www.sharkclub.com/wp-content/uploads/2018/08/SC-Vancouver-1.jpg",
     "credit_name": "Shark Club Sports Bar & Grill",
     "credit_url": "https://www.sharkclub.com/location/vancouver/",
     "source": "official_website"
@@ -9072,7 +9159,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/476311_website_v1/s1_02.jpg",
+     "credit_name": "The Tommyfield Gastro Pub",
+     "credit_url": "https://tommyfieldgastropub.com/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/476311_website_v1/events_v3_fall.jpg",
+     "credit_name": "The Tommyfield Gastro Pub",
+     "credit_url": "https://tommyfieldgastropub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/e2/0166554c7a4b5098901992773611cc/:original",
+     "credit_name": "The Tommyfield Gastro Pub",
+     "credit_url": "https://tommyfieldgastropub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/85/2aa7c5324a49d1b84478c1972bd09c/:original",
+     "credit_name": "The Tommyfield Gastro Pub",
+     "credit_url": "https://tommyfieldgastropub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/55/b3f932d6204a2b9b9d0e359b1b2be1/full",
+     "credit_name": "The Tommyfield Gastro Pub",
+     "credit_url": "https://tommyfieldgastropub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/476311_website_v1/s1_03.jpg",
+     "credit_name": "The Tommyfield Gastro Pub",
+     "credit_url": "https://tommyfieldgastropub.com/about",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9126,9 +9250,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/476311_website_v1/social.jpg",
+    "url": "https://static.spotapps.co/website_images/ab_websites/476311_website_v1/s1_01.jpg",
     "credit_name": "The Tommyfield Gastro Pub",
-    "credit_url": "http://tommyfieldgastropub.com/",
+    "credit_url": "https://tommyfieldgastropub.com/about",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -9162,7 +9286,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://img1.wsimg.com/isteam/ip/e1839b12-3fa8-47b0-9065-745519fe89c8/Page%2012.png/:/cr=t:17.64%25,l:0%25,w:100%25,h:64.71%25/rs=w:1209,h:605,cg:true",
+     "credit_name": "MODERN STEAK on Stephen Avenue",
+     "credit_url": "https://modernsteak.ca/private-dining",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9220,7 +9351,7 @@
    "cover_image": {
     "url": "https://img1.wsimg.com/isteam/ip/e1839b12-3fa8-47b0-9065-745519fe89c8/91c9849b-1a3a-40bf-afeb-e6c062c5a8f1.JPG",
     "credit_name": "MODERN STEAK on Stephen Avenue",
-    "credit_url": "http://www.modernsteak.ca/",
+    "credit_url": "https://modernsteak.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -9254,7 +9385,56 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://www.madis.restaurant/assets/gallery/food-gallery/5.webp",
+     "credit_name": "Madi's 12|12",
+     "credit_url": "https://www.madis.restaurant/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.madis.restaurant/assets/gallery/food-gallery/9.webp",
+     "credit_name": "Madi's 12|12",
+     "credit_url": "https://www.madis.restaurant/our-food",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.madis.restaurant/assets/popular-dishes/burger.webp",
+     "credit_name": "Madi's 12|12",
+     "credit_url": "https://www.madis.restaurant/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.madis.restaurant/assets/gallery/3.webp",
+     "credit_name": "Madi's 12|12",
+     "credit_url": "https://www.madis.restaurant/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.madis.restaurant/assets/gallery/food-gallery/2.webp",
+     "credit_name": "Madi's 12|12",
+     "credit_url": "https://www.madis.restaurant/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.madis.restaurant/assets/gallery/food-gallery/10.webp",
+     "credit_name": "Madi's 12|12",
+     "credit_url": "https://www.madis.restaurant/our-food",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.madis.restaurant/assets/popular-dishes/poke-salad.webp",
+     "credit_name": "Madi's 12|12",
+     "credit_url": "https://www.madis.restaurant/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.madis.restaurant/assets/gallery/food-gallery/3.webp",
+     "credit_name": "Madi's 12|12",
+     "credit_url": "https://www.madis.restaurant/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9307,9 +9487,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://madis.restaurant/assets/logo/logo.webp",
+    "url": "https://www.madis.restaurant/assets/banner/6.webp",
     "credit_name": "Madi's 12|12",
-    "credit_url": "http://www.madis.restaurant/",
+    "credit_url": "https://www.madis.restaurant/about",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -9343,7 +9523,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://thetaverncollective.com/wp-content/uploads/2025/06/Tavern-King-Edward-Interior.jpg",
+     "credit_name": "Tavern at Deerfoot Meadows",
+     "credit_url": "https://thetaverncollective.com/locations/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thetaverncollective.com/wp-content/uploads/2024/11/DSCF3858tinified.jpg",
+     "credit_name": "Tavern at Deerfoot Meadows",
+     "credit_url": "https://thetaverncollective.com/locations/deerfoot-meadows/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thetaverncollective.com/wp-content/uploads/2024/11/Tavern-Interior-DFM-.png",
+     "credit_name": "Tavern at Deerfoot Meadows",
+     "credit_url": "https://thetaverncollective.com/locations/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://thetaverncollective.com/wp-content/uploads/2024/11/2xgrabpizzafromtop.jpg",
+     "credit_name": "Tavern at Deerfoot Meadows",
+     "credit_url": "https://thetaverncollective.com/about-us/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9402,7 +9607,12 @@
     "source_url": "https://thetaverncollective.com/happy-hour/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "https://thetaverncollective.com/wp-content/uploads/2025/03/Texas-Meridian-470KB.jpg",
+    "credit_name": "Tavern at Deerfoot Meadows",
+    "credit_url": "https://thetaverncollective.com/locations/",
+    "source": "official_website"
+   },
    "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
@@ -9434,7 +9644,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://gibbonswhistler.com/wp-content/uploads/2020/02/Stones-05914-1-2048x1527.jpg",
+     "credit_name": "Après Après",
+     "credit_url": "https://gibbonswhistler.com/venues/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9474,9 +9691,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://gibbonswhistler.com/wp-content/uploads/2021/09/Apres360-001-scaled.jpg",
+    "url": "https://gibbonswhistler.com/wp-content/uploads/2020/02/worldcup-08794-1-2048x1365.jpg",
     "credit_name": "Après Après",
-    "credit_url": "http://www.apresapres.ca/",
+    "credit_url": "https://gibbonswhistler.com/venues/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -9510,7 +9727,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/54e8e3a3e4b0a4a22470a18a/1454281065946-NC99E223KRAXUSP8HNU8/image-asset.jpeg",
+     "credit_name": "Spot On Kitchen & Bar",
+     "credit_url": "https://www.spotoncalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/54e8e3a3e4b0a4a22470a18a/1427066499501-0WAETFXAQYUXOTZP7QYS/IMG_8222.jpg",
+     "credit_name": "Spot On Kitchen & Bar",
+     "credit_url": "https://www.spotoncalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/54e8e3a3e4b0a4a22470a18a/1427066510469-GYIJ82FGSXF97C6PG5AG/IMG_8237.jpg",
+     "credit_name": "Spot On Kitchen & Bar",
+     "credit_url": "https://www.spotoncalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/54e8e3a3e4b0a4a22470a18a/1427066541485-4H7XCNIAJNCHJR3KT64D/IMG_8303.jpg",
+     "credit_name": "Spot On Kitchen & Bar",
+     "credit_url": "https://www.spotoncalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/54e8e3a3e4b0a4a22470a18a/1427066547211-YEQJCR90PC0PNB3ZZCUT/IMG_8319.jpg",
+     "credit_name": "Spot On Kitchen & Bar",
+     "credit_url": "https://www.spotoncalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/54e8e3a3e4b0a4a22470a18a/1427066522940-USBW5NT59GFB4HLK0EB7/IMG_8254.jpg",
+     "credit_name": "Spot On Kitchen & Bar",
+     "credit_url": "https://www.spotoncalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/54e8e3a3e4b0a4a22470a18a/1443900066286-TBQY1J192QULKIZPAZA1/MAIK3091.jpg",
+     "credit_name": "Spot On Kitchen & Bar",
+     "credit_url": "https://www.spotoncalgary.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9555,9 +9815,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/54e8e3a3e4b0a4a22470a18a/t/54e8e3fbe4b0c9a277e75bba/1424548860658/SpotOn_vertical_white.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/54e8e3a3e4b0a4a22470a18a/1454281008561-28RHNQRMBC3ELMEBKKE4/image-asset.jpeg",
     "credit_name": "Spot On Kitchen & Bar",
-    "credit_url": "http://spotoncalgary.com/",
+    "credit_url": "https://www.spotoncalgary.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -9591,7 +9851,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/57b0b543e6f2e1c9bc56b01f/1471471004153-JL805QQNMAK2CUKA6K1N/Craft+Beer+Paddle+-+major+league+2.jpg",
+     "credit_name": "Major League 2",
+     "credit_url": "http://www.majorleague2.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/57b0b543e6f2e1c9bc56b01f/1778697982244-M8VEOPKPA4SVUXL7BVLW/KA5A3844.jpg",
+     "credit_name": "Major League 2",
+     "credit_url": "http://www.majorleague2.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/57b0b543e6f2e1c9bc56b01f/1778698014390-K3VSMLVPYMTSRDZOI646/KA5A3848.jpg",
+     "credit_name": "Major League 2",
+     "credit_url": "http://www.majorleague2.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/57b0b543e6f2e1c9bc56b01f/1778698049282-MJV08XHCSS1KSEXPQSJH/KA5A3927.jpg",
+     "credit_name": "Major League 2",
+     "credit_url": "http://www.majorleague2.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/57b0b543e6f2e1c9bc56b01f/1778698003822-P1YAGA4HYAB736OU9LC9/KA5A3498.jpg",
+     "credit_name": "Major League 2",
+     "credit_url": "http://www.majorleague2.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/57b0b543e6f2e1c9bc56b01f/1778698009894-D39VPMA90L6V6YACQY3X/KA5A3488.jpg",
+     "credit_name": "Major League 2",
+     "credit_url": "http://www.majorleague2.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/57b0b543e6f2e1c9bc56b01f/1778698040342-0DN2EGK6KY31BCANQYSW/KA5A3880.jpg",
+     "credit_name": "Major League 2",
+     "credit_url": "http://www.majorleague2.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9655,7 +9958,7 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/57b0b543e6f2e1c9bc56b01f/t/5ffe43db1702cf4646415bdf/1610499038115/ml+logo+.JPG?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/57b0b543e6f2e1c9bc56b01f/1778698022543-VY7NF6D31CVGKKR4NIC4/KA5A3852.jpg",
     "credit_name": "Major League 2",
     "credit_url": "http://www.majorleague2.com/",
     "source": "official_website"
@@ -9691,7 +9994,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://abbeyroadtaphouse.com/wp-content/uploads/2024/11/Band-scaled-1.jpg",
+     "credit_name": "Abbey Road Tap House",
+     "credit_url": "https://abbeyroadtaphouse.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://abbeyroadtaphouse.com/wp-content/uploads/2024/11/abbeyroad-taphouse-image37-scaled-1.jpg",
+     "credit_name": "Abbey Road Tap House",
+     "credit_url": "https://abbeyroadtaphouse.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://abbeyroadtaphouse.com/wp-content/uploads/2024/11/abbeyroad-taphouse-image36-scaled-1.jpg",
+     "credit_name": "Abbey Road Tap House",
+     "credit_url": "https://abbeyroadtaphouse.com/events/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://abbeyroadtaphouse.com/wp-content/uploads/2024/11/abbeyroad-taphouse-image10-scaled-1.jpg",
+     "credit_name": "Abbey Road Tap House",
+     "credit_url": "https://abbeyroadtaphouse.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://abbeyroadtaphouse.com/wp-content/uploads/2024/12/abbey-road-tap-house-banner1.jpg",
+     "credit_name": "Abbey Road Tap House",
+     "credit_url": "https://abbeyroadtaphouse.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9753,7 +10087,7 @@
    "cover_image": {
     "url": "https://abbeyroadtaphouse.com/wp-content/uploads/2024/11/abbeyroad-taphouse-image41-scaled-2.jpg",
     "credit_name": "Abbey Road Tap House",
-    "credit_url": "https://www.abbeyroadtaphouse.com/",
+    "credit_url": "https://abbeyroadtaphouse.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -9787,7 +10121,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/408792_website_v1/video_poster.jpg",
+     "credit_name": "Merchants Restaurant",
+     "credit_url": "https://merchantsyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/408792_website_v1/about_3.jpg",
+     "credit_name": "Merchants Restaurant",
+     "credit_url": "https://merchantsyyc.com/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/408792_website_v1/about_pg_2.jpg",
+     "credit_name": "Merchants Restaurant",
+     "credit_url": "https://merchantsyyc.com/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/408792_website_v1/about_pg_3.jpg",
+     "credit_name": "Merchants Restaurant",
+     "credit_url": "https://merchantsyyc.com/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/408792_website_v1/order_v8.jpg",
+     "credit_name": "Merchants Restaurant",
+     "credit_url": "https://merchantsyyc.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9982,7 +10347,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://www.amatogelatoalberta.com/wp-content/uploads/2024/04/IMG_1325-Edit-scaled.jpg",
+     "credit_name": "Amato Gelato Cafe - 17th Avenue",
+     "credit_url": "https://www.amatogelatoalberta.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.amatogelatoalberta.com/wp-content/uploads/2020/10/AmatoGelato-GalleryPhotos-Rectangle-10.png",
+     "credit_name": "Amato Gelato Cafe - 17th Avenue",
+     "credit_url": "https://www.amatogelatoalberta.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.amatogelatoalberta.com/wp-content/uploads/2020/10/AmatoGelato-GalleryPhotos-Rectangle-2.png",
+     "credit_name": "Amato Gelato Cafe - 17th Avenue",
+     "credit_url": "https://www.amatogelatoalberta.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.amatogelatoalberta.com/wp-content/uploads/2020/10/AmatoGelato-GalleryPhotos-Rectangle-3.png",
+     "credit_name": "Amato Gelato Cafe - 17th Avenue",
+     "credit_url": "https://www.amatogelatoalberta.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.amatogelatoalberta.com/wp-content/uploads/2020/10/AmatoGelato-GalleryPhotos-Rectangle-6.png",
+     "credit_name": "Amato Gelato Cafe - 17th Avenue",
+     "credit_url": "https://www.amatogelatoalberta.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.amatogelatoalberta.com/wp-content/uploads/2020/10/AmatoGelato-GalleryPhotos-Rectangle-7.png",
+     "credit_name": "Amato Gelato Cafe - 17th Avenue",
+     "credit_url": "https://www.amatogelatoalberta.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.amatogelatoalberta.com/wp-content/uploads/2020/10/AmatoGelato-GalleryPhotos-Rectangle.png",
+     "credit_name": "Amato Gelato Cafe - 17th Avenue",
+     "credit_url": "https://www.amatogelatoalberta.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10027,7 +10435,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://www.amatogelatoalberta.com/wp-content/uploads/2020/10/AmatoGelato-GalleryPhotos-Rectangle-4.png",
+    "url": "https://www.amatogelatoalberta.com/wp-content/uploads/2020/10/AmatoGelato-GalleryPhotos-Rectangle-1.png",
     "credit_name": "Amato Gelato Cafe - 17th Avenue",
     "credit_url": "https://www.amatogelatoalberta.com/",
     "source": "official_website"
@@ -10063,7 +10471,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-f294zjgw5xmgje9etb4i8q7p1tza/fit=contain,width=2560",
+     "credit_name": "Regal Beagle Macleod",
+     "credit_url": "https://regalbeagle.scvr.co/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-3cy2hen30q0exkk5k6es7bgrpzr1/fit=contain,width=2560",
+     "credit_name": "Regal Beagle Macleod",
+     "credit_url": "https://regalbeagle.scvr.co/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-6zzcr9juvqu6hzzbhrcwkr3gwi1j/fit=contain,width=2560",
+     "credit_name": "Regal Beagle Macleod",
+     "credit_url": "https://regalbeagle.scvr.co/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-tlyx162p32ve13tm34yh2xo7xe05/fit=contain,width=2560",
+     "credit_name": "Regal Beagle Macleod",
+     "credit_url": "https://regalbeagle.scvr.co/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-3qdhvuinhwfoekpe4jrhhns0kamp/fit=contain,width=2560",
+     "credit_name": "Regal Beagle Macleod",
+     "credit_url": "https://regalbeagle.scvr.co/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-cwlfnwkj5px7p3eyzpszt0gk2vqt/fit=contain,width=2560",
+     "credit_name": "Regal Beagle Macleod",
+     "credit_url": "https://regalbeagle.scvr.co/posts/98757/congrats-to-our-week-5",
+     "source": "official_website"
+    },
+    {
+     "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-hlv1hby5e34fcbk65dsb23lcxifc/fit=contain,width=1920",
+     "credit_name": "Regal Beagle Macleod",
+     "credit_url": "https://regalbeagle.scvr.co/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10108,7 +10559,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-hgr8iwkjfli9pcum3pxoc2mgethh/large",
+    "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-yguf7gyakpbhl9e8ezlo5s8bft3i/fit=contain,width=2560",
     "credit_name": "Regal Beagle Macleod",
     "credit_url": "https://regalbeagle.scvr.co/",
     "source": "official_website"
@@ -10144,7 +10595,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://shadytree.pub/images/caesar-salad.jpg",
+     "credit_name": "Shady Tree Pub",
+     "credit_url": "https://shadytree.pub/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://shadytree.pub/images/i-1.webp",
+     "credit_name": "Shady Tree Pub",
+     "credit_url": "https://shadytree.pub/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://shadytree.pub/images/i-6.webp",
+     "credit_name": "Shady Tree Pub",
+     "credit_url": "https://shadytree.pub/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://shadytree.pub/images/i-7.webp",
+     "credit_name": "Shady Tree Pub",
+     "credit_url": "https://shadytree.pub/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10188,7 +10664,12 @@
     "source_url": "https://shadytree.pub/menu",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "https://shadytree.pub/images/i-5.webp",
+    "credit_name": "Shady Tree Pub",
+    "credit_url": "https://shadytree.pub/",
+    "source": "official_website"
+   },
    "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
@@ -10220,7 +10701,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://thedogwoodbar.com/wp-content/uploads/2020/09/IMG_3046-copy-scaled-e1600141796426.jpg",
+     "credit_name": "The Dogwood Bar",
+     "credit_url": "https://thedogwoodbar.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10264,7 +10752,12 @@
     "source_url": "http://www.thedogwoodbar.com/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "https://thedogwoodbar.com/wp-content/uploads/2020/09/dark-night-lights-2595778.jpg",
+    "credit_name": "The Dogwood Bar",
+    "credit_url": "https://thedogwoodbar.com/",
+    "source": "official_website"
+   },
    "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
@@ -10296,7 +10789,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://bizarregastropub.ca/assets/popular-dishes/wagyu-cheeseburger.webp",
+     "credit_name": "Bizarre Gastro Pub",
+     "credit_url": "https://bizarregastropub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://bizarregastropub.ca/assets/popular-dishes/chicken-wings.webp",
+     "credit_name": "Bizarre Gastro Pub",
+     "credit_url": "https://bizarregastropub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://bizarregastropub.ca/assets/popular-dishes/smoked-maple-old-fashioned.webp",
+     "credit_name": "Bizarre Gastro Pub",
+     "credit_url": "https://bizarregastropub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://bizarregastropub.ca/assets/popular-dishes/pickleback-caesar.webp",
+     "credit_name": "Bizarre Gastro Pub",
+     "credit_url": "https://bizarregastropub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://bizarregastropub.ca/assets/banner/5.webp",
+     "credit_name": "Bizarre Gastro Pub",
+     "credit_url": "https://bizarregastropub.ca/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://bizarregastropub.ca/assets/popular-dishes/bizarre-pub-nachos.webp",
+     "credit_name": "Bizarre Gastro Pub",
+     "credit_url": "https://bizarregastropub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://bizarregastropub.ca/assets/about/1.webp",
+     "credit_name": "Bizarre Gastro Pub",
+     "credit_url": "https://bizarregastropub.ca/about",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10356,7 +10892,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://bizarregastropub.ca/assets/logo/logo.webp",
+    "url": "https://bizarregastropub.ca/assets/backgrounds/3.webp",
     "credit_name": "Bizarre Gastro Pub",
     "credit_url": "https://bizarregastropub.ca/",
     "source": "official_website"
@@ -10392,7 +10928,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/66a92a06c42cdf323a15b844/18f9326f-ebaf-4703-bb0e-30c8b1e749f2/DSC_6722.jpg",
+     "credit_name": "Mekong - South East Asian Restaurant + Bar",
+     "credit_url": "https://88mekong.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/66a92a06c42cdf323a15b844/b4690f32-12de-4999-943c-fb6c6e1e9bcf/DSC_6492.jpg",
+     "credit_name": "Mekong - South East Asian Restaurant + Bar",
+     "credit_url": "https://88mekong.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/66a92a06c42cdf323a15b844/df95b50d-e0a9-424f-b47f-9669b98c91c0/Scallop+Crudo+2.jpg",
+     "credit_name": "Mekong - South East Asian Restaurant + Bar",
+     "credit_url": "https://88mekong.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/66a92a06c42cdf323a15b844/19a61ba9-db0c-4716-8791-d77b30f941dd/IMG_5614.JPG",
+     "credit_name": "Mekong - South East Asian Restaurant + Bar",
+     "credit_url": "https://88mekong.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/66a92a06c42cdf323a15b844/d6e92094-c87f-44af-b166-d124f0f115ee/IMG_5741.JPG",
+     "credit_name": "Mekong - South East Asian Restaurant + Bar",
+     "credit_url": "https://88mekong.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/66a92a06c42cdf323a15b844/7423b788-8eb1-49e5-8c29-da5fb8e50329/IMG_3062.JPG",
+     "credit_name": "Mekong - South East Asian Restaurant + Bar",
+     "credit_url": "https://88mekong.com/gallery",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/66a92a06c42cdf323a15b844/b8d5b230-5f0d-44c6-8bf5-04d9e1fc61cc/IMG_9688.JPG",
+     "credit_name": "Mekong - South East Asian Restaurant + Bar",
+     "credit_url": "https://88mekong.com/gallery",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10437,9 +11016,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/66a92a06c42cdf323a15b844/t/66c37b2adb3ce7338a12a643/1724087083069/SOCIAL+SHARING+SQUARESPACE+%2816%29.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/66a92a06c42cdf323a15b844/3cd207fc-81e7-4180-a669-9becfc18c65e/DSC09010.jpg",
     "credit_name": "Mekong - South East Asian Restaurant + Bar",
-    "credit_url": "http://www.88mekong.com/",
+    "credit_url": "https://88mekong.com/book-now",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -10473,7 +11052,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://redchilliessportsbar.com/wp-content/uploads/2023/08/Taco-Tuesday.jpg",
+     "credit_name": "RedChillies Sports Bar",
+     "credit_url": "https://redchilliessportsbar.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10518,9 +11104,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://redchilliessportsbar.com/wp-content/uploads/2023/09/Red-Chillies.jpg",
+    "url": "https://redchilliessportsbar.com/wp-content/uploads/2023/09/Swings.jpg",
     "credit_name": "RedChillies Sports Bar",
-    "credit_url": "http://redchilliessportsbar.com/",
+    "credit_url": "https://redchilliessportsbar.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -10554,7 +11140,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "http://1861local.ca/assets/wings-Bv8FDYKn.jpg",
+     "credit_name": "1861 Local Bar & Grill",
+     "credit_url": "http://1861local.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10620,7 +11213,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://www.1861local.ca/assets/images/eventsa600x450-600x450.jpg",
+    "url": "http://1861local.ca/assets/sliders-RXpvZ3VA.jpg",
     "credit_name": "1861 Local Bar & Grill",
     "credit_url": "http://1861local.ca/",
     "source": "official_website"
@@ -10656,7 +11249,20 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://happygilmore.golf/wp-content/uploads/2026/06/A7I06689-HDR-scaled.jpg",
+     "credit_name": "Happy Gilmore Golf Lounge",
+     "credit_url": "https://happygilmore.golf/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://happygilmore.golf/wp-content/uploads/2026/06/A7I06644-HDR-scaled.jpg",
+     "credit_name": "Happy Gilmore Golf Lounge",
+     "credit_url": "https://happygilmore.golf/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10699,7 +11305,12 @@
     "source_url": "https://happygilmore.golf/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "https://happygilmore.golf/wp-content/uploads/2026/06/A7I06669-HDR-1-scaled.jpg",
+    "credit_name": "Happy Gilmore Golf Lounge",
+    "credit_url": "https://happygilmore.golf/",
+    "source": "official_website"
+   },
    "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
@@ -10806,7 +11417,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://22taphouse.ca/wp-content/uploads/2026/10/22taphouse-sechelt-hero-5.jpg",
+     "credit_name": "Twenty Two Taphouse",
+     "credit_url": "https://22taphouse.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://22taphouse.ca/wp-content/uploads/2026/10/22taphouse-sechelt-hero-2.jpg",
+     "credit_name": "Twenty Two Taphouse",
+     "credit_url": "https://22taphouse.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://22taphouse.ca/wp-content/uploads/2026/10/22taphouse-sechelt-hero-6.jpg",
+     "credit_name": "Twenty Two Taphouse",
+     "credit_url": "https://22taphouse.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://22taphouse.ca/langley/img/22taphouse-langley-hero.jpg",
+     "credit_name": "Twenty Two Taphouse",
+     "credit_url": "https://22taphouse.ca/langley/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://22taphouse.ca/wp-content/uploads/2026/10/22taphouse-sechelt-g-shots.jpg",
+     "credit_name": "Twenty Two Taphouse",
+     "credit_url": "https://22taphouse.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://22taphouse.ca/wp-content/uploads/2026/10/22taphouse-sechelt-g-duo.jpg",
+     "credit_name": "Twenty Two Taphouse",
+     "credit_url": "https://22taphouse.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://22taphouse.ca/wp-content/uploads/2026/10/22taphouse-sechelt-g-plates.jpg",
+     "credit_name": "Twenty Two Taphouse",
+     "credit_url": "https://22taphouse.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10858,9 +11512,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://22taphouse.ca/wp-content/uploads/2026/10/22taphouse-sechelt-hero.jpg",
+    "url": "https://22taphouse.ca/wp-content/uploads/2026/10/22taphouse-sechelt-hero-3.jpg",
     "credit_name": "Twenty Two Taphouse",
-    "credit_url": "http://22taphouse.ca/",
+    "credit_url": "https://22taphouse.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -11044,12 +11698,7 @@
     "source_url": "https://www.lulubar.ca/contact-calgary",
     "deals": []
    },
-   "cover_image": {
-    "url": "http://static1.squarespace.com/static/658362227b1b5851c4cf3f0c/t/6583622d7b1b5851c4cf4180/1694115876070/LL-PrimaryLogo-G.png?format=1500w",
-    "credit_name": "Lulu Bar",
-    "credit_url": "https://www.lulubar.ca/",
-    "source": "official_website"
-   },
+   "cover_image": null,
    "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
@@ -11081,7 +11730,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.wixstatic.com/media/f3843b_8de4fcd833b44f479b2b8d320b2fdd8a~mv2.jpg/v1/fill/w_720,h_539,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f3843b_8de4fcd833b44f479b2b8d320b2fdd8a~mv2.jpg",
+     "credit_name": "The Dolar Shop Hot Pot Richmond",
+     "credit_url": "https://www.dolarshop.com/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/f3843b_846f0b4b022a4c38820e73398456628d~mv2.jpg/v1/fill/w_806,h_472,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/WechatIMG266.jpg",
+     "credit_name": "The Dolar Shop Hot Pot Richmond",
+     "credit_url": "https://www.dolarshop.com/location",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/f3843b_e05564b12422480988ae45e2222dfe2d~mv2.jpg/v1/fill/w_806,h_472,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/RIchmond%20.jpg",
+     "credit_name": "The Dolar Shop Hot Pot Richmond",
+     "credit_url": "https://www.dolarshop.com/location",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/f3843b_b85fde0940894b72bb7abcb9a0c7cc91~mv2.jpg/v1/fill/w_700,h_410,al_c,lg_1,q_80,enc_avif,quality_auto/20200914081025_52736.jpg",
+     "credit_name": "The Dolar Shop Hot Pot Richmond",
+     "credit_url": "https://www.dolarshop.com/location",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/f3843b_8b838f536ddc4caeb819f246b58b48f4~mv2.jpeg/v1/fill/w_700,h_410,al_c,lg_1,q_80,enc_avif,quality_auto/20200914080538_14729.jpeg",
+     "credit_name": "The Dolar Shop Hot Pot Richmond",
+     "credit_url": "https://www.dolarshop.com/location",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11155,9 +11835,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/f3843b_e5be6010f6ed4195a2cf8460dd456269%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/f3843b_e5be6010f6ed4195a2cf8460dd456269%7Emv2.jpg",
+    "url": "https://static.wixstatic.com/media/f3843b_90b91c64748b422782d02bc42a098f1b~mv2.jpeg/v1/fill/w_700,h_410,al_c,lg_1,q_80,enc_avif,quality_auto/20201211173150_37362.jpeg",
     "credit_name": "The Dolar Shop Hot Pot Richmond",
-    "credit_url": "https://www.dolarshop.com/location/richmondlocation",
+    "credit_url": "https://www.dolarshop.com/location",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -11191,7 +11871,20 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://southsidediner.ca/wp-content/uploads/2021/04/service.jpg",
+     "credit_name": "Southside Diner",
+     "credit_url": "https://southsidediner.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://southsidediner.ca/wp-content/uploads/2023/11/wings2.jpg",
+     "credit_name": "Southside Diner",
+     "credit_url": "https://southsidediner.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11235,7 +11928,12 @@
     "source_url": "https://southsidediner.ca/menu/",
     "deals": []
    },
-   "cover_image": null,
+   "cover_image": {
+    "url": "https://southsidediner.ca/wp-content/uploads/2021/04/diner-bar.jpg",
+    "credit_name": "Southside Diner",
+    "credit_url": "https://southsidediner.ca/",
+    "source": "official_website"
+   },
    "last_synced_at": "2026-11-07",
    "primary_type": null,
    "reservable": null,
@@ -11267,7 +11965,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://www.maditalianpizza.ca/aboutpage22.jpg",
+     "credit_name": "The Mad Italian Pizza & Pints",
+     "credit_url": "https://www.maditalianpizza.ca/about",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11327,7 +12032,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://maditalianpizza.ca/shot1.jpg",
+    "url": "https://www.maditalianpizza.ca/cover2.jpg",
     "credit_name": "The Mad Italian Pizza & Pints",
     "credit_url": "https://www.maditalianpizza.ca/",
     "source": "official_website"
@@ -11363,7 +12068,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cantinanorte.com/assets/story-pozole-BVKjviqX.jpg",
+     "credit_name": "Cantina Norte",
+     "credit_url": "https://cantinanorte.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cantinanorte.com/assets/private-events-D8IjsCsp.jpg",
+     "credit_name": "Cantina Norte",
+     "credit_url": "https://cantinanorte.com/events",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cantinanorte.com/assets/buyout-DDlpeold.jpg",
+     "credit_name": "Cantina Norte",
+     "credit_url": "https://cantinanorte.com/events",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11406,9 +12130,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://cantinanorte.com/og-image.jpg",
+    "url": "https://cantinanorte.com/assets/patio-exterior-8lIZL9ir.jpg",
     "credit_name": "Cantina Norte",
-    "credit_url": "http://cantinanorte.com/",
+    "credit_url": "https://cantinanorte.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -11556,9 +12280,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/686ad83f5634896b015a1e62/t/686adc2e69aa8e49bdad9f44/1751833646997/MapleWood_logo.jpg?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/686ad83f5634896b015a1e62/8eb4ad2f-7ddc-4863-af3a-6496c172aef5/pitty+1.JPG",
     "credit_name": "Maplewood Smokehouse",
-    "credit_url": "http://www.maplewoodsmokehouse.ca/",
+    "credit_url": "https://www.maplewoodsmokehouse.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -11684,7 +12408,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://fortitudewinebar.com/wp-content/uploads/2026/06/DSC04104.jpg",
+     "credit_name": "Fortitude Wine Bar",
+     "credit_url": "https://fortitudewinebar.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11729,9 +12460,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://fortitudewinebar.com/wp-content/uploads/2022/11/Social-Share-1.jpg",
+    "url": "https://fortitudewinebar.com/wp-content/uploads/2022/10/Fortitude-Wine-Bar-016.jpg",
     "credit_name": "Fortitude Wine Bar",
-    "credit_url": "http://www.fortitudewinebar.com/",
+    "credit_url": "https://fortitudewinebar.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-07",
@@ -11765,7 +12496,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://i0.wp.com/meadowgardensloft.com/wp-content/uploads/2025/08/Patio-Balcony.webp?w=2048&ssl=1",
+     "credit_name": "The LOFT at Meadow Gardens",
+     "credit_url": "https://meadowgardensloft.com/about/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://i0.wp.com/meadowgardensloft.com/wp-content/uploads/2026/03/IMG_0775-scaled.webp?w=2558&ssl=1",
+     "credit_name": "The LOFT at Meadow Gardens",
+     "credit_url": "https://meadowgardensloft.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://i0.wp.com/meadowgardensloft.com/wp-content/uploads/2025/08/Seafood-Pasta5-scaled.webp?w=1890&ssl=1",
+     "credit_name": "The LOFT at Meadow Gardens",
+     "credit_url": "https://meadowgardensloft.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11825,7 +12575,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://meadowgardensloft.com/wp-content/uploads/2024/06/New-Loft-Logo-2024-BW.png",
+    "url": "https://meadowgardensloft.com/wp-content/uploads/2024/06/Meadow_Garden-IMG_9493.jpg",
     "credit_name": "The LOFT at Meadow Gardens",
     "credit_url": "https://meadowgardensloft.com/",
     "source": "official_website"
@@ -11861,7 +12611,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://jamesjoycepub.com/wp-content/uploads/2017/10/James-Joyce-Irish-Pub-Calgary-Downtown-StephenAve3.jpg",
+     "credit_name": "James Joyce Irish Pub & Restaurant",
+     "credit_url": "https://jamesjoycepub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://jamesjoycepub.com/wp-content/uploads/2017/10/James-Joyce-Irish-Pub-Calgary-Downtown-StephenAve2.jpg",
+     "credit_name": "James Joyce Irish Pub & Restaurant",
+     "credit_url": "https://jamesjoycepub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://jamesjoycepub.com/wp-content/uploads/2014/07/Header-Slider-1.jpg",
+     "credit_name": "James Joyce Irish Pub & Restaurant",
+     "credit_url": "https://jamesjoycepub.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -11980,9 +12749,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://jamesjoycepub.ca/wp-content/uploads/2014/07/facebook.png",
+    "url": "https://jamesjoycepub.com/wp-content/uploads/2025/01/James-Joyce-1029.jpg",
     "credit_name": "James Joyce Irish Pub & Restaurant",
-    "credit_url": "http://jamesjoycepub.com/",
+    "credit_url": "https://jamesjoycepub.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -12016,7 +12785,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/0d/05165f522f4ef995774d152bbd01b6/:original",
+     "credit_name": "Richmond's Pub",
+     "credit_url": "https://richmondspub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/25/65bfb40a27404489d007e7b70d3425/:original",
+     "credit_name": "Richmond's Pub",
+     "credit_url": "https://richmondspub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/30/2bc3218b564b548ff6535615d7058d/:original",
+     "credit_name": "Richmond's Pub",
+     "credit_url": "https://richmondspub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/536166_website_v1/video_poster_2.jpg",
+     "credit_name": "Richmond's Pub",
+     "credit_url": "https://richmondspub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/e9/2390a9c49f454181d8a3e76ed63f6a/w926",
+     "credit_name": "Richmond's Pub",
+     "credit_url": "https://richmondspub.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -12140,9 +12940,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/536166_website_v1/events_page_back.jpg",
+    "url": "https://static.spotapps.co/spots/bf/885fe60a8848949185f4c7c9eb7ca1/w926",
     "credit_name": "Richmond's Pub",
-    "credit_url": "http://richmondspub.com/",
+    "credit_url": "https://richmondspub.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -12176,7 +12976,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/604c1eb50633472cafdad41d/8bfe435e-f77c-4e6c-87e3-55769d290779/DSC07099.jpg",
+     "credit_name": "The Station Pub + Grill (Riverbend)",
+     "credit_url": "https://www.thestationpubcalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/604c1eb50633472cafdad41d/dd1135d7-b688-4a2c-8463-0243e9b320a4/DSC06436.JPG",
+     "credit_name": "The Station Pub + Grill (Riverbend)",
+     "credit_url": "https://www.thestationpubcalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/604c1eb50633472cafdad41d/48b2ff48-9992-4664-95f0-2ebe424ecbc6/DSC02574.jpg",
+     "credit_name": "The Station Pub + Grill (Riverbend)",
+     "credit_url": "https://www.thestationpubcalgary.com/events",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/604c1eb50633472cafdad41d/bfbaa93e-aec2-4388-9543-cfc27ed48eae/DSC01919.JPG",
+     "credit_name": "The Station Pub + Grill (Riverbend)",
+     "credit_url": "https://www.thestationpubcalgary.com/events",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/604c1eb50633472cafdad41d/70bf3b98-c33b-433d-8087-9fe305ec6614/DSC01826.jpg",
+     "credit_name": "The Station Pub + Grill (Riverbend)",
+     "credit_url": "https://www.thestationpubcalgary.com/events",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -12293,9 +13124,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/604c1eb50633472cafdad41d/t/604c1eed0df88f5b73a4dda8/1615601391790/The-Station.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/604c1eb50633472cafdad41d/88111b06-2fbe-4071-9ab5-0cc34a77c8e0/DSC03626.jpg",
     "credit_name": "The Station Pub + Grill (Riverbend)",
-    "credit_url": "http://www.thestationpubcalgary.com/",
+    "credit_url": "https://www.thestationpubcalgary.com/events",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -12448,12 +13279,7 @@
      }
     ]
    },
-   "cover_image": {
-    "url": "https://stjamescorner.ca/images/og_image.jpg",
-    "credit_name": "St. James Corner Restaurant & Irish Pub",
-    "credit_url": "https://stjamescorner.ca/?utm_source=google&utm_medium=organic&utm_campaign=gbp",
-    "source": "official_website"
-   },
+   "cover_image": null,
    "last_synced_at": "2026-11-06",
    "primary_type": null,
    "reservable": null,
@@ -12657,7 +13483,20 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://socialbeerhaus.com/wp-content/uploads/2023/09/contact.png",
+     "credit_name": "Social Beer Haus",
+     "credit_url": "https://socialbeerhaus.com/event-packages/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://socialbeerhaus.com/wp-content/uploads/2023/09/image006.jpg",
+     "credit_name": "Social Beer Haus",
+     "credit_url": "https://socialbeerhaus.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -12790,10 +13629,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/social-beer-haus.jpg",
+    "url": "https://socialbeerhaus.com/wp-content/uploads/2023/09/80.jpg",
     "credit_name": "Social Beer Haus",
-    "credit_url": "https://maps.google.com/maps/contrib/114380009266294640260",
-    "source": "google_places"
+    "credit_url": "https://socialbeerhaus.com/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
    "primary_type": null,
@@ -12884,12 +13723,7 @@
      }
     ]
    },
-   "cover_image": {
-    "url": "https://www.thekingshead.ca/web/img_favicons/og-icon-310x310.png",
-    "credit_name": "The King's Head Eatery & Music Room",
-    "credit_url": "http://thekingshead.ca/",
-    "source": "official_website"
-   },
+   "cover_image": null,
    "last_synced_at": "2026-11-06",
    "primary_type": null,
    "reservable": null,
@@ -12921,7 +13755,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/54/3f70b0c9174989b4e028557c7d07e2/:original",
+     "credit_name": "Watchman's Pub & Eatery",
+     "credit_url": "https://watchmanspub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/08/d14e99bf36431f88f0121a0c24b02a/:original",
+     "credit_name": "Watchman's Pub & Eatery",
+     "credit_url": "https://watchmanspub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/399960_website_v1/about1.jpg",
+     "credit_name": "Watchman's Pub & Eatery",
+     "credit_url": "https://watchmanspub.ca/calgary-watchmans-about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/399960_website_v1/about2.jpg",
+     "credit_name": "Watchman's Pub & Eatery",
+     "credit_url": "https://watchmanspub.ca/calgary-watchmans-about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/399960_website_v1/about3.jpg",
+     "credit_name": "Watchman's Pub & Eatery",
+     "credit_url": "https://watchmanspub.ca/calgary-watchmans-about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/399960_website_v1/s2_left_new.jpg",
+     "credit_name": "Watchman's Pub & Eatery",
+     "credit_url": "https://watchmanspub.ca/calgary-watchmans-about",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -13027,9 +13898,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/399960_website_v1/food_back.jpg",
+    "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/f4/42c8631d204e95946c74f8b671e9ab/:original",
     "credit_name": "Watchman's Pub & Eatery",
-    "credit_url": "http://watchmanspub.ca/",
+    "credit_url": "https://watchmanspub.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -13133,9 +14004,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://mooses.ca/wp-content/uploads/2022/08/Mooses_Icon_DarkBackground.jpg",
+    "url": "https://mooses.ca/wp-content/uploads/2025/09/Mooses_Games_Room_Booking.jpg",
     "credit_name": "Moose's Beanery & Bar Room",
-    "credit_url": "http://mooses.ca/",
+    "credit_url": "https://mooses.ca/events/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -13169,7 +14040,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://madisonspub.ca/wp-content/uploads/2026/09/A78395A3-E1BF-4E6E-91D2-5366CB2C1202.png",
+     "credit_name": "Madisons Restaurant & Bar",
+     "credit_url": "https://madisonspub.ca/events/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -13314,10 +14192,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/madisons-restaurant-bar.jpg",
+    "url": "https://madisonspub.ca/wp-content/uploads/2021/03/IMG_9598-e1615939767269.jpg",
     "credit_name": "Madisons Restaurant & Bar",
-    "credit_url": "https://maps.google.com/maps/contrib/108923846863833325395",
-    "source": "google_places"
+    "credit_url": "https://madisonspub.ca/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
    "primary_type": null,
@@ -13350,7 +14228,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/44/4c11a8f7284fb69f865f510f32d5e9/:original",
+     "credit_name": "Nixx Neighbourhood Pub",
+     "credit_url": "https://nixxpub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/392997_website_v1/parties_img.jpg",
+     "credit_name": "Nixx Neighbourhood Pub",
+     "credit_url": "https://nixxpub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/30/a01fd345d64fa1957200f57df2221f/full",
+     "credit_name": "Nixx Neighbourhood Pub",
+     "credit_url": "https://nixxpub.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -13446,9 +14343,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/392997_website_v1/social.jpg",
+    "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/aa/825e044616474f9ca5d36b901bebd5/:original",
     "credit_name": "Nixx Neighbourhood Pub",
-    "credit_url": "http://nixxpub.ca/",
+    "credit_url": "https://nixxpub.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -13482,7 +14379,20 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/370594_website_v1/about3.jpg",
+     "credit_name": "Tool Shed Beer & BBQ",
+     "credit_url": "https://toolshedbrewing.com/calgary-tool-shed-brewing-company-about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/ed/0f532c22d34110b885f53c43a631d6/full",
+     "credit_name": "Tool Shed Beer & BBQ",
+     "credit_url": "https://toolshedbrewing.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -13546,9 +14456,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/370594_website_v1/social_share.jpg",
+    "url": "https://static.spotapps.co/spots/2b/b142a43725441891dbf451ff5ac135/:original",
     "credit_name": "Tool Shed Beer & BBQ",
-    "credit_url": "http://toolshedbrewing.com/",
+    "credit_url": "https://toolshedbrewing.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -13582,7 +14492,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://shelteryyc.com/wp-content/uploads/2026/04/private-event-locations-in-calgary-cocktial-bar.jpg",
+     "credit_name": "Shelter Cocktail Bar",
+     "credit_url": "https://shelteryyc.com/events/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://shelteryyc.com/wp-content/uploads/2026/04/event-space-in-calgary-for-intimate-events-and-birthdays.jpg",
+     "credit_name": "Shelter Cocktail Bar",
+     "credit_url": "https://shelteryyc.com/events/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://shelteryyc.com/wp-content/uploads/2018/10/shelter-cocktail-bar-calgary-lighting-design-1024x682.jpg",
+     "credit_name": "Shelter Cocktail Bar",
+     "credit_url": "https://shelteryyc.com/events/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -13633,9 +14562,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://shelteryyc.com/wp-content/uploads/2016/04/Mask-Icon-Full.png",
+    "url": "https://shelteryyc.com/wp-content/uploads/2018/10/shelter-cocktail-bar-calgary-gas-masks-1024x682.jpg",
     "credit_name": "Shelter Cocktail Bar",
-    "credit_url": "http://shelteryyc.com/",
+    "credit_url": "https://shelteryyc.com/events/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -13669,7 +14598,20 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5d9f860d15592a07b50d8e20/1593140080591-0LDQAPY57PLVE5S8ZCDU/image-asset.jpeg",
+     "credit_name": "Bitter Sisters Brewing Co.",
+     "credit_url": "https://bittersisters.co/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5d9f860d15592a07b50d8e20/1592866423460-OIOLW7PXDJL6KTEOJ544/image-asset.jpeg",
+     "credit_name": "Bitter Sisters Brewing Co.",
+     "credit_url": "https://bittersisters.co/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -13733,9 +14675,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/5d9f860d15592a07b50d8e20/t/5e616b48ee860c6b22f0e14f/1583442767407/189B2205.jpg?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/5d9f860d15592a07b50d8e20/1a2e8109-b9d3-428f-a7cf-7766639248d1/Light+Blue+Simple+Light+App+Download+Website.png",
     "credit_name": "Bitter Sisters Brewing Co.",
-    "credit_url": "http://www.bittersisters.co/",
+    "credit_url": "https://bittersisters.co/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -13769,7 +14711,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5b79c5208ab722614fdea6a0/1605655152099-QXTPPA0UPMUWNM3SHRWQ/DSC_0590.jpeg",
+     "credit_name": "Pazzer's Pub",
+     "credit_url": "https://www.pazzerspub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5b79c5208ab722614fdea6a0/1605647100854-UO9XLCSO01AC8549MWXV/DSC_0310.jpeg",
+     "credit_name": "Pazzer's Pub",
+     "credit_url": "https://www.pazzerspub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5b79c5208ab722614fdea6a0/1605655173848-BQF5TGH13RTTZ2Y4P0DU/DSC_0369.jpeg",
+     "credit_name": "Pazzer's Pub",
+     "credit_url": "https://www.pazzerspub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5b79c5208ab722614fdea6a0/1605655104173-IJ8ICWTFUEJSM8CH1TFB/F336430B-C43D-4504-978E-7469A892B4A9.JPG",
+     "credit_name": "Pazzer's Pub",
+     "credit_url": "https://www.pazzerspub.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5b79c5208ab722614fdea6a0/1605655121243-0OUCEX8WGKTY4OML4AHJ/9BD14DAD-481F-43B4-B336-A9C36E84DB68.JPG",
+     "credit_name": "Pazzer's Pub",
+     "credit_url": "https://www.pazzerspub.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -13841,9 +14814,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/5b79c5208ab722614fdea6a0/t/5bb8f5fe085229e8f5067d06/1605655371178/Logo.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/5b79c5208ab722614fdea6a0/1605655111383-1FQ5IO0W8R4XVTN9ZKJM/0859E3B0-FFAB-438B-8EC6-B8B86E80F38E.JPG",
     "credit_name": "Pazzer's Pub",
-    "credit_url": "http://www.pazzerspub.com/",
+    "credit_url": "https://www.pazzerspub.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -13877,7 +14850,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.spotapps.co/spots/55/3c905009984ac5a61f77b986c87785/full",
+     "credit_name": "UNTITLED Champagne Lounge",
+     "credit_url": "https://untitledyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/00/0c3f4c3bb94583a7ad42cf9c4c00b7/full",
+     "credit_name": "UNTITLED Champagne Lounge",
+     "credit_url": "https://untitledyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/f6/95582563e84f69976c83693692fe8e/full",
+     "credit_name": "UNTITLED Champagne Lounge",
+     "credit_url": "https://untitledyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/6a/1dccd3a0b5461caa31d0498e85abc5/full",
+     "credit_name": "UNTITLED Champagne Lounge",
+     "credit_url": "https://untitledyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/e0/d960876b4b4c909c7fda458ce77d49/full",
+     "credit_name": "UNTITLED Champagne Lounge",
+     "credit_url": "https://untitledyyc.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -13932,9 +14936,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/353430_website_v1/shared_image.jpg",
+    "url": "https://static.spotapps.co/website_images/ab_websites/353430_website_v1/cover_new.jpg",
     "credit_name": "UNTITLED Champagne Lounge",
-    "credit_url": "http://untitledyyc.com/",
+    "credit_url": "https://untitledyyc.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
@@ -13968,7 +14972,56 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://stonewallpub.ca/frontend/images/banner-3.webp",
+     "credit_name": "Stonewall Pub",
+     "credit_url": "https://stonewallpub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://stonewallpub.ca/frontend/images/banner-2.webp",
+     "credit_name": "Stonewall Pub",
+     "credit_url": "https://stonewallpub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://stonewallpub.ca/frontend/images/banner-1.webp",
+     "credit_name": "Stonewall Pub",
+     "credit_url": "https://stonewallpub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://stonewallpub.ca/frontend/images/gallery-4.webp",
+     "credit_name": "Stonewall Pub",
+     "credit_url": "https://stonewallpub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://stonewallpub.ca/frontend/images/gallery-7.webp",
+     "credit_name": "Stonewall Pub",
+     "credit_url": "https://stonewallpub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://stonewallpub.ca/frontend/images/gallery-6.webp",
+     "credit_name": "Stonewall Pub",
+     "credit_url": "https://stonewallpub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://stonewallpub.ca/frontend/images/gallery-8.webp",
+     "credit_name": "Stonewall Pub",
+     "credit_url": "https://stonewallpub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://stonewallpub.ca/frontend/images/gallery-10.webp",
+     "credit_name": "Stonewall Pub",
+     "credit_url": "https://stonewallpub.ca/about-us",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -14020,10 +15073,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/stonewall-pub.jpg",
+    "url": "https://stonewallpub.ca/frontend/images/about-banner-bg.webp",
     "credit_name": "Stonewall Pub",
-    "credit_url": "https://maps.google.com/maps/contrib/108151184539808792599",
-    "source": "google_places"
+    "credit_url": "https://stonewallpub.ca/about-us",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
    "primary_type": null,
@@ -14105,7 +15158,7 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/6835dab365a8a4398b81c40b/t/6840905ce6418654ca0d6b14/1749061724952/L%27OLIVO_Solid_Colour.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/6835dab365a8a4398b81c40b/d4f26b80-9177-4cda-87cb-966bfd7aac11/L%27Olivo_Late+Night+Cicchetti+%285+x+7+in%29.png",
     "credit_name": "L'Olivo Cicchetti & Lounge",
     "credit_url": "https://www.lolivo.ca/",
     "source": "official_website"
@@ -14141,7 +15194,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://www.versantehotel.com/wp-content/uploads/2020/11/Corner-King-Suite-Living-Room-Versante-Hotel-1920x1277.jpg",
+     "credit_name": "Ova | Restaurant & Bar",
+     "credit_url": "https://www.versantehotel.com/gallery/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.versantehotel.com/wp-content/uploads/2026/11/Elegant-Buffet-with-Chafing-Dishes-and-Salads-768x921.jpg",
+     "credit_name": "Ova | Restaurant & Bar",
+     "credit_url": "https://www.versantehotel.com/taste/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=10162344245732925368",
+     "source": "official_website"
+    },
+    {
+     "url": "https://www.versantehotel.com/wp-content/uploads/2026/11/Festive-Holiday-Roulade-Feast-e1794001402287-768x768.png",
+     "credit_name": "Ova | Restaurant & Bar",
+     "credit_url": "https://www.versantehotel.com/taste/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=10162344245732925368",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -14241,10 +15313,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/ova-restaurant-bar.jpg",
+    "url": "https://www.versantehotel.com/wp-content/uploads/2021/09/Bruno-Restaurant-at-Versante-Hotel-1-HORIZ-LR-1024x546.jpg",
     "credit_name": "Ova | Restaurant & Bar",
-    "credit_url": "https://maps.google.com/maps/contrib/107470111954264468296",
-    "source": "google_places"
+    "credit_url": "https://www.versantehotel.com/taste/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=10162344245732925368",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-06",
    "primary_type": null,
