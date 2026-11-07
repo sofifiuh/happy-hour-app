@@ -25,6 +25,2587 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "bridgette-bar",
+    "name": "Bridgette Bar",
+    "formatted_address": "739 10 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.043668,
+        "lng": -114.0786705
+      }
+    },
+    "formatted_phone_number": null,
+    "website": "https://www.bridgettebar.com/calgary",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "start": "22:00",
+          "end": "23:00",
+          "label": "Late night"
+        },
+        {
+          "days": [
+            4,
+            5,
+            6
+          ],
+          "start": "23:00",
+          "end": "00:00",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.bridgettebar.com/calgary",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/65298e5c82d0557c8e0573c2/t/6529c90eb5efcb43a57651bf/1697237263014/BB_IG-profile.png?format=1500w",
+      "credit_name": "Bridgette Bar",
+      "credit_url": "https://www.bridgettebar.com/calgary",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "lou-s-grill",
+    "name": "Lou's Grill",
+    "formatted_address": "2852 Gladys Ave, Abbotsford, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.053582999999996,
+        "lng": -122.28652299999999
+      }
+    },
+    "formatted_phone_number": "(604) 855-8777",
+    "website": "http://www.lousgrill.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.lousgrill.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://s0.wp.com/i/blank.jpg",
+      "credit_name": "Lou's Grill",
+      "credit_url": "http://www.lousgrill.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "shark-club-sports-bar-grill",
+    "name": "Shark Club Sports Bar & Grill",
+    "formatted_address": "180 W Georgia St, Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.278849,
+        "lng": -123.1129919
+      }
+    },
+    "formatted_phone_number": "(604) 687-4275",
+    "website": "https://www.sharkclub.com/location/vancouver/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.sharkclub.com/location/vancouver/happy-hour",
+      "deals": [
+        {
+          "name": "Wine",
+          "price": "$5",
+          "category": "drink",
+          "description": "Shark Club White or Red (5oz)"
+        },
+        {
+          "name": "Mocktails & Corona Cero",
+          "price": "$5.50",
+          "category": "drink",
+          "description": "All Mocktails, Corona Cero 0%"
+        },
+        {
+          "name": "House Spirits Highballs",
+          "price": "$6",
+          "category": "drink",
+          "description": "A selection of house spirits (1oz)"
+        },
+        {
+          "name": "Shark Club Amber Ale or Euro Lager",
+          "price": "$7",
+          "category": "drink",
+          "description": "16oz draft"
+        },
+        {
+          "name": "Old Fashioned",
+          "price": "$10",
+          "category": "drink",
+          "description": "Bearface Canadian whisky, angostura bitters, house-made Demerara cordial (2oz)"
+        },
+        {
+          "name": "Shark Caesar",
+          "price": "$10",
+          "category": "drink",
+          "description": "Vodka, Clamato, Frank's Red Hot, Worcestershire, pepperoni, pickled green bean (2oz)"
+        },
+        {
+          "name": "Shark Marg",
+          "price": "$10",
+          "category": "drink",
+          "description": "Jose Cuervo Tradicional Plata tequila, triple sec, fresh pressed lime. Your choice of lime, strawberry, mango or raspberry (2oz)"
+        },
+        {
+          "name": "Shark Mule",
+          "price": "$10",
+          "category": "drink",
+          "description": "Ketel One vodka, ginger beer, fresh lime (2oz)"
+        },
+        {
+          "name": "Truffle Fries",
+          "price": "$5.99",
+          "category": "food",
+          "description": "Truffle oil, parmesan cheese & garlic aioli"
+        },
+        {
+          "name": "Smoky Parmesan Tater Tots",
+          "price": "$5.99",
+          "category": "food",
+          "description": "Smoky Parmesan Tater Tots"
+        },
+        {
+          "name": "Cheeseburger Spring Rolls",
+          "price": "$9.99",
+          "category": "food",
+          "description": "Crispy wonton wrappers stuffed with ground beef, cheddar cheese & pickles, served with signature burger sauce (2)"
+        },
+        {
+          "name": "Cheeseburger",
+          "price": "$11.99",
+          "category": "food",
+          "description": "Cheese, signature relish & all the fixin's. Add fries +4.99"
+        },
+        {
+          "name": "Sweet Chili Prawns",
+          "price": "$11.99",
+          "category": "food",
+          "description": "With peppers & onions"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://www.sharkclub.com/wp-content/uploads/2018/08/Vancouver_Banner-BlackWhite-1-scaled.jpg",
+      "credit_name": "Shark Club Sports Bar & Grill",
+      "credit_url": "https://www.sharkclub.com/location/vancouver/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-tommyfield-gastro-pub",
+    "name": "The Tommyfield Gastro Pub",
+    "formatted_address": "19489 Seton Crescent SE #920, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.879765,
+        "lng": -113.9590697
+      }
+    },
+    "formatted_phone_number": "(403) 726-6330",
+    "website": "http://tommyfieldgastropub.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            4
+          ],
+          "start": "16:00",
+          "end": "01:00",
+          "label": "Thursday Night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://tommyfieldgastropub.com/specials",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/476311_website_v1/social.jpg",
+      "credit_name": "The Tommyfield Gastro Pub",
+      "credit_url": "http://tommyfieldgastropub.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "modern-steak-on-stephen-avenue",
+    "name": "MODERN STEAK on Stephen Avenue",
+    "formatted_address": "100 8 Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0456595,
+        "lng": -114.062787
+      }
+    },
+    "formatted_phone_number": "(403) 244-3600",
+    "website": "http://www.modernsteak.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:30",
+      "end": "17:30",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.modernsteak.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://img1.wsimg.com/isteam/ip/e1839b12-3fa8-47b0-9065-745519fe89c8/91c9849b-1a3a-40bf-afeb-e6c062c5a8f1.JPG",
+      "credit_name": "MODERN STEAK on Stephen Avenue",
+      "credit_url": "http://www.modernsteak.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "madi-s-12-12",
+    "name": "Madi's 12|12",
+    "formatted_address": "1212 9 Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.042148,
+        "lng": -114.03594109999999
+      }
+    },
+    "formatted_phone_number": "(403) 452-4970",
+    "website": "http://www.madis.restaurant/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            6,
+            0
+          ],
+          "start": "15:00",
+          "end": "17:00",
+          "label": "Weekend"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.madis.restaurant/happy-hour",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://madis.restaurant/assets/logo/logo.webp",
+      "credit_name": "Madi's 12|12",
+      "credit_url": "http://www.madis.restaurant/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "tavern-at-deerfoot-meadows",
+    "name": "Tavern at Deerfoot Meadows",
+    "formatted_address": "7995 11 St SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9825338,
+        "lng": -114.0445778
+      }
+    },
+    "formatted_phone_number": "(403) 250-5973",
+    "website": "https://thetaverncollective.com/locations/deerfoot-meadows/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late Night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://thetaverncollective.com/happy-hour/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "apr-s-apr-s",
+    "name": "Après Après",
+    "formatted_address": "4204 Village Square #102, Whistler, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.115226199999995,
+        "lng": -122.9561562
+      }
+    },
+    "formatted_phone_number": "(888) 823-7932",
+    "website": "http://www.apresapres.ca/",
+    "happy_hour": {
+      "days": [
+        5,
+        6
+      ],
+      "start": "19:00",
+      "end": "22:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.apresapres.ca/happy-hour",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://gibbonswhistler.com/wp-content/uploads/2021/09/Apres360-001-scaled.jpg",
+      "credit_name": "Après Après",
+      "credit_url": "http://www.apresapres.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "spot-on-kitchen-bar",
+    "name": "Spot On Kitchen & Bar",
+    "formatted_address": "2 Richard Way SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.006171099999996,
+        "lng": -114.1299552
+      }
+    },
+    "formatted_phone_number": "(403) 240-3619",
+    "website": "http://spotoncalgary.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://spotoncalgary.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/54e8e3a3e4b0a4a22470a18a/t/54e8e3fbe4b0c9a277e75bba/1424548860658/SpotOn_vertical_white.png?format=1500w",
+      "credit_name": "Spot On Kitchen & Bar",
+      "credit_url": "http://spotoncalgary.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "major-league-2",
+    "name": "Major League 2",
+    "formatted_address": "45768 Gaetz St, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1353569,
+        "lng": -121.9575053
+      }
+    },
+    "formatted_phone_number": "(604) 858-4088",
+    "website": "http://www.majorleague2.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.majorleague2.com/",
+      "deals": [
+        {
+          "name": "Beer sleeves",
+          "price": "",
+          "category": "drink",
+          "description": "Beer served by the sleeve"
+        },
+        {
+          "name": "Highballs",
+          "price": "",
+          "category": "drink",
+          "description": "1oz pours"
+        },
+        {
+          "name": "Wine",
+          "price": "",
+          "category": "drink",
+          "description": "5oz glasses of wine"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/57b0b543e6f2e1c9bc56b01f/t/5ffe43db1702cf4646415bdf/1610499038115/ml+logo+.JPG?format=1500w",
+      "credit_name": "Major League 2",
+      "credit_url": "http://www.majorleague2.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "abbey-road-tap-house",
+    "name": "Abbey Road Tap House",
+    "formatted_address": "1851 Sumas Way, Abbotsford, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0355381,
+        "lng": -122.26891369999998
+      }
+    },
+    "formatted_phone_number": "(604) 746-0333",
+    "website": "https://www.abbeyroadtaphouse.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:30",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:30",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.abbeyroadtaphouse.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://abbeyroadtaphouse.com/wp-content/uploads/2024/11/abbeyroad-taphouse-image41-scaled-2.jpg",
+      "credit_name": "Abbey Road Tap House",
+      "credit_url": "https://www.abbeyroadtaphouse.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "merchants-restaurant",
+    "name": "Merchants Restaurant",
+    "formatted_address": "2118 33 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0243282,
+        "lng": -114.1106439
+      }
+    },
+    "formatted_phone_number": "(403) 452-4001",
+    "website": "http://merchantsyyc.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            1
+          ],
+          "start": "11:00",
+          "end": "23:00",
+          "label": "All Day Happy Hour"
+        },
+        {
+          "days": [
+            2
+          ],
+          "start": "11:00",
+          "end": "23:00",
+          "label": "25% off Rosé & Appies"
+        },
+        {
+          "days": [
+            3
+          ],
+          "start": "11:00",
+          "end": "00:00",
+          "label": "Half-price Wine"
+        },
+        {
+          "days": [
+            4
+          ],
+          "start": "11:00",
+          "end": "00:00",
+          "label": "Twist & Twirl"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://merchantsyyc.com/specials",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/408792_website_v1/social_share.jpg",
+      "credit_name": "Merchants Restaurant",
+      "credit_url": "http://merchantsyyc.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-table-bistro",
+    "name": "The Table Bistro",
+    "formatted_address": "2180 Gladwin Rd #101, Abbotsford, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.0414679,
+        "lng": -122.3149231
+      }
+    },
+    "formatted_phone_number": "(866) 710-9813",
+    "website": "http://www.thetablebistro.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.thetablebistro.com/happy-hour",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/65cd3d647ea10654bcda0d5c/t/65cddcce50e6bf1e1376e7bc/1707990222621/TheTableBistro_Branding.png?format=1500w",
+      "credit_name": "The Table Bistro",
+      "credit_url": "http://www.thetablebistro.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "amato-gelato-cafe-17th-avenue",
+    "name": "Amato Gelato Cafe - 17th Avenue",
+    "formatted_address": "602 17 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.037941499999995,
+        "lng": -114.0746989
+      }
+    },
+    "formatted_phone_number": "(587) 231-6603",
+    "website": "https://www.amatogelatoalberta.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:30",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.amatogelatoalberta.com/17th-ave-menu/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://www.amatogelatoalberta.com/wp-content/uploads/2020/10/AmatoGelato-GalleryPhotos-Rectangle-4.png",
+      "credit_name": "Amato Gelato Cafe - 17th Avenue",
+      "credit_url": "https://www.amatogelatoalberta.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "regal-beagle-macleod",
+    "name": "Regal Beagle Macleod",
+    "formatted_address": "180 94 Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.968860799999995,
+        "lng": -114.0693498
+      }
+    },
+    "formatted_phone_number": "(403) 640-7775",
+    "website": "https://regalbeagle.scvr.co/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://regalbeagle.scvr.co/menu/specials?",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-hgr8iwkjfli9pcum3pxoc2mgethh/large",
+      "credit_name": "Regal Beagle Macleod",
+      "credit_url": "https://regalbeagle.scvr.co/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "shady-tree-pub",
+    "name": "Shady Tree Pub",
+    "formatted_address": "40456 Government Rd, Garibaldi Highlands, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.7419228,
+        "lng": -123.13607959999997
+      }
+    },
+    "formatted_phone_number": "(604) 567-9305",
+    "website": "http://shadytree.pub/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "13:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://shadytree.pub/menu",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-dogwood-bar",
+    "name": "The Dogwood Bar",
+    "formatted_address": "456 36 St NE #107, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0554644,
+        "lng": -113.98102069999999
+      }
+    },
+    "formatted_phone_number": "(403) 569-0168",
+    "website": "http://www.thedogwoodbar.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.thedogwoodbar.com/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "bizarre-gastro-pub",
+    "name": "Bizarre Gastro Pub",
+    "formatted_address": "2016 Spiller Rd SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.034866099999995,
+        "lng": -114.0419991
+      }
+    },
+    "formatted_phone_number": "(825) 509-5777",
+    "website": "https://bizarregastropub.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:30",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://bizarregastropub.ca/happy-hour",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://bizarregastropub.ca/assets/logo/logo.webp",
+      "credit_name": "Bizarre Gastro Pub",
+      "credit_url": "https://bizarregastropub.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "mekong-south-east-asian-restaurant-bar",
+    "name": "Mekong - South East Asian Restaurant + Bar",
+    "formatted_address": "2067 Lake Placid Rd #204, Whistler, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.094392299999996,
+        "lng": -122.9914678
+      }
+    },
+    "formatted_phone_number": "(604) 902-1694",
+    "website": "http://www.88mekong.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.88mekong.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/66a92a06c42cdf323a15b844/t/66c37b2adb3ce7338a12a643/1724087083069/SOCIAL+SHARING+SQUARESPACE+%2816%29.png?format=1500w",
+      "credit_name": "Mekong - South East Asian Restaurant + Bar",
+      "credit_url": "http://www.88mekong.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "redchillies-sports-bar",
+    "name": "RedChillies Sports Bar",
+    "formatted_address": "45975 Wellington Ave, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.171227699999996,
+        "lng": -121.95276869999998
+      }
+    },
+    "formatted_phone_number": "(604) 392-3007",
+    "website": "http://redchilliessportsbar.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "12:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://redchilliessportsbar.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://redchilliessportsbar.com/wp-content/uploads/2023/09/Red-Chillies.jpg",
+      "credit_name": "RedChillies Sports Bar",
+      "credit_url": "http://redchilliessportsbar.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "1861-local-bar-grill",
+    "name": "1861 Local Bar & Grill",
+    "formatted_address": "1861 Meadowbrook Dr SE #7, Airdrie, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.2752261,
+        "lng": -113.989392
+      }
+    },
+    "formatted_phone_number": "(587) 360-6594",
+    "website": "http://1861local.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Late night"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "11:00",
+          "end": "23:00",
+          "label": "All day Sunday"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://1861local.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://www.1861local.ca/assets/images/eventsa600x450-600x450.jpg",
+      "credit_name": "1861 Local Bar & Grill",
+      "credit_url": "http://1861local.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "happy-gilmore-golf-lounge",
+    "name": "Happy Gilmore Golf Lounge",
+    "formatted_address": "4172 Lougheed Hwy #232, Burnaby, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2660681,
+        "lng": -123.01297459999999
+      }
+    },
+    "formatted_phone_number": "(604) 603-2369",
+    "website": "https://happygilmore.golf/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "09:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://happygilmore.golf/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "tipsie",
+    "name": "TIPSIE",
+    "formatted_address": "1131 Kensington Rd NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.052329799999995,
+        "lng": -114.0877912
+      }
+    },
+    "formatted_phone_number": "(403) 313-7536",
+    "website": "http://tipsie.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://tipsie.ca/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "twenty-two-taphouse",
+    "name": "Twenty Two Taphouse",
+    "formatted_address": "8399 200 St b, Langley Twp, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.154656900000006,
+        "lng": -122.668615
+      }
+    },
+    "formatted_phone_number": "(604) 371-1047",
+    "website": "http://22taphouse.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://22taphouse.ca/langley/happy-hour/",
+      "deals": [
+        {
+          "name": "Selected Food",
+          "price": "22% off",
+          "category": "food",
+          "description": "Dine-in only"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://22taphouse.ca/wp-content/uploads/2026/10/22taphouse-sechelt-hero.jpg",
+      "credit_name": "Twenty Two Taphouse",
+      "credit_url": "http://22taphouse.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "wedge-bar-grill",
+    "name": "Wedge Bar & Grill",
+    "formatted_address": "19675 Meadow Gardens Way, Pitt Meadows, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2248988,
+        "lng": -122.6697135
+      }
+    },
+    "formatted_phone_number": "(604) 465-5474",
+    "website": "https://meadowgardensgolf.com/restaurants/the-wedge-bar-grill/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:30",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            4
+          ],
+          "start": "10:30",
+          "end": null,
+          "label": "All-day happy hour (Thursday)"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://meadowgardensgolf.com/2025/09/10/happy-hour-at-the-wedge-bar-grill/",
+      "deals": [
+        {
+          "name": "Wine Bottles",
+          "price": "50% off",
+          "category": "drink",
+          "description": "Thursday"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "lulu-bar",
+    "name": "Lulu Bar",
+    "formatted_address": "510 17 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0380026,
+        "lng": -114.0721888
+      }
+    },
+    "formatted_phone_number": "(403) 519-0444",
+    "website": "https://www.lulubar.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "22:00",
+          "end": "23:00",
+          "label": "Late Night Happy Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.lulubar.ca/contact-calgary",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/658362227b1b5851c4cf3f0c/t/6583622d7b1b5851c4cf4180/1694115876070/LL-PrimaryLogo-G.png?format=1500w",
+      "credit_name": "Lulu Bar",
+      "credit_url": "https://www.lulubar.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-dolar-shop-hot-pot-richmond",
+    "name": "The Dolar Shop Hot Pot Richmond",
+    "formatted_address": "5300 Number 3 Rd, Richmond, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1751581,
+        "lng": -123.134497
+      }
+    },
+    "formatted_phone_number": "(604) 370-7077",
+    "website": "https://www.dolarshop.com/location/richmondlocation",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "11:30",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Late night"
+        },
+        {
+          "days": [
+            0,
+            6
+          ],
+          "start": "11:00",
+          "end": "16:30",
+          "label": "Weekend"
+        },
+        {
+          "days": [
+            0,
+            6
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Weekend late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.dolarshop.com/location/richmondlocation/happy-hour",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/f3843b_e5be6010f6ed4195a2cf8460dd456269%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/f3843b_e5be6010f6ed4195a2cf8460dd456269%7Emv2.jpg",
+      "credit_name": "The Dolar Shop Hot Pot Richmond",
+      "credit_url": "https://www.dolarshop.com/location/richmondlocation",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "southside-diner",
+    "name": "Southside Diner",
+    "formatted_address": "2102 Lake Placid Rd, Whistler, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.0946388,
+        "lng": -122.99347030000001
+      }
+    },
+    "formatted_phone_number": "(604) 966-0668",
+    "website": "http://southsidediner.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://southsidediner.ca/menu/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-mad-italian-pizza-pints",
+    "name": "The Mad Italian Pizza & Pints",
+    "formatted_address": "20728 Willoughby Town Centre Dr #100, Langley Twp, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1452814,
+        "lng": -122.64765899999999
+      }
+    },
+    "formatted_phone_number": "(604) 371-4410",
+    "website": "https://www.maditalianpizza.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:00",
+          "end": null,
+          "label": "Evening"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.maditalianpizza.ca/menu",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://maditalianpizza.ca/shot1.jpg",
+      "credit_name": "The Mad Italian Pizza & Pints",
+      "credit_url": "https://www.maditalianpizza.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "cantina-norte",
+    "name": "Cantina Norte",
+    "formatted_address": "3246 Connaught Crescent #108, North Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.3386536,
+        "lng": -123.10224889999999
+      }
+    },
+    "formatted_phone_number": "(604) 670-8226",
+    "website": "http://cantinanorte.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://cantinanorte.com/menus/happy-hour",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://cantinanorte.com/og-image.jpg",
+      "credit_name": "Cantina Norte",
+      "credit_url": "http://cantinanorte.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "maplewood-smokehouse",
+    "name": "Maplewood Smokehouse",
+    "formatted_address": "6014 Vedder Rd #19, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1119122,
+        "lng": -121.9559271
+      }
+    },
+    "formatted_phone_number": "(604) 846-3030",
+    "website": "http://www.maplewoodsmokehouse.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            1
+          ],
+          "start": "16:00",
+          "end": "17:00",
+          "label": "Monday"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.maplewoodsmokehouse.ca/",
+      "deals": [
+        {
+          "name": "Beer on tap",
+          "price": "$5",
+          "category": "drink",
+          "description": "16oz Old Yale Valley Lager or Fat Tug IPA"
+        },
+        {
+          "name": "Cocktails",
+          "price": "$10",
+          "category": "drink",
+          "description": "All cocktails"
+        },
+        {
+          "name": "Sawmill Creek Chardonnay",
+          "price": "$5",
+          "category": "drink",
+          "description": "6oz"
+        },
+        {
+          "name": "Copper Moon Cabernet Sauvignon",
+          "price": "$5",
+          "category": "drink",
+          "description": "6oz"
+        },
+        {
+          "name": "Pulled Pork Hush Puppies",
+          "price": "$12",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Smoked Wings",
+          "price": "$15",
+          "category": "food",
+          "description": "1lb"
+        },
+        {
+          "name": "Brussel Sprouts",
+          "price": "$10",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Pulled Pork Poutine",
+          "price": "$13",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Fried Pickles",
+          "price": "$10",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Pulled Pork Nachos",
+          "price": "$18",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/686ad83f5634896b015a1e62/t/686adc2e69aa8e49bdad9f44/1751833646997/MapleWood_logo.jpg?format=1500w",
+      "credit_name": "Maplewood Smokehouse",
+      "credit_url": "http://www.maplewoodsmokehouse.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "meadow-gardens-golf-club",
+    "name": "Meadow Gardens Golf Club",
+    "formatted_address": "19675 Meadow Gardens Way, Pitt Meadows, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2248988,
+        "lng": -122.6697136
+      }
+    },
+    "formatted_phone_number": "(604) 465-5474",
+    "website": "http://www.meadowgardens.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:30",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            4
+          ],
+          "start": "00:00",
+          "end": null,
+          "label": "All-day happy hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.meadowgardens.com/menu/happy-hour",
+      "deals": [
+        {
+          "name": "Bottles",
+          "price": "50% off",
+          "category": "drink",
+          "description": "Half-priced on Thursday's all-day happy hour"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "fortitude-wine-bar",
+    "name": "Fortitude Wine Bar",
+    "formatted_address": "45922 Thunderbird Ln #103, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1706177,
+        "lng": -121.95221819999999
+      }
+    },
+    "formatted_phone_number": "(604) 795-4060",
+    "website": "http://www.fortitudewinebar.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.fortitudewinebar.com/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://fortitudewinebar.com/wp-content/uploads/2022/11/Social-Share-1.jpg",
+      "credit_name": "Fortitude Wine Bar",
+      "credit_url": "http://www.fortitudewinebar.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "the-loft-at-meadow-gardens",
+    "name": "The LOFT at Meadow Gardens",
+    "formatted_address": "19675 Meadow Gardens Way, Pitt Meadows, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.2243971,
+        "lng": -122.67013909999999
+      }
+    },
+    "formatted_phone_number": "(604) 465-5474",
+    "website": "https://meadowgardensloft.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:30",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:30",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://meadowgardensloft.com/menus/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://meadowgardensloft.com/wp-content/uploads/2024/06/New-Loft-Logo-2024-BW.png",
+      "credit_name": "The LOFT at Meadow Gardens",
+      "credit_url": "https://meadowgardensloft.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-07"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "james-joyce-irish-pub-restaurant",
     "name": "James Joyce Irish Pub & Restaurant",
     "formatted_address": "114 8 Ave SW, Calgary, AB",
@@ -6825,43 +9406,61 @@
       "extra_windows": [],
       "verified": false,
       "verified_source": null,
-      "source_url": "http://imperialtap.ca/specials",
+      "source_url": "https://imperialtap.ca/food-menu",
       "deals": [
         {
           "name": "Chinatown Dumplings",
-          "price": "$2.00",
+          "price": "$2 ea",
           "category": "food",
-          "description": "per dumpling, minimum 2"
-        },
-        {
-          "name": "Two Beef Sliders with Fries",
-          "price": "$10.00",
-          "category": "food",
-          "description": ""
+          "description": "Minimum order of 2"
         },
         {
           "name": "Pizza Bombs",
-          "price": "$2.00",
+          "price": "$2 ea",
           "category": "food",
-          "description": "per bomb, minimum 2"
+          "description": "Minimum order of 2"
+        },
+        {
+          "name": "Two Beef Sliders with Fries",
+          "price": "$10",
+          "category": "food",
+          "description": "Two beef sliders served with fries"
         },
         {
           "name": "Highballs",
-          "price": "$6.00",
+          "price": "$6",
           "category": "drink",
-          "description": "1 oz pour: Confluence, Bacardi, Kraken Gold, Pendleton, Espolón"
+          "description": "$6 per 1 oz highball"
         },
         {
           "name": "House Wine",
-          "price": "$6.00",
+          "price": "$6",
           "category": "drink",
-          "description": "6 oz pour, Red or White"
+          "description": "6 oz pour, red or white"
         },
         {
-          "name": "Beer",
-          "price": "$6.00",
+          "name": "Pub Life Lager",
+          "price": "$6",
           "category": "drink",
-          "description": "16 oz pours: Pub Life Lager, Imperial Lager, Pub Life Copper Ale, P49 Craft Lager"
+          "description": "16 oz pour"
+        },
+        {
+          "name": "Imperial Lager",
+          "price": "$6",
+          "category": "drink",
+          "description": "16 oz pour"
+        },
+        {
+          "name": "Pub Life Copper Ale",
+          "price": "$6",
+          "category": "drink",
+          "description": "16 oz pour"
+        },
+        {
+          "name": "P49 Craft Lager",
+          "price": "$6",
+          "category": "drink",
+          "description": "16 oz pour"
         }
       ]
     },
@@ -6871,7 +9470,7 @@
       "credit_url": "http://imperialtap.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-11-04"
+    "last_synced_at": "2026-11-07"
   },
   {
     "place_id": null,
@@ -33862,11 +36461,6 @@
     "website": "http://www.chitchatburgerbar.com/",
     "happy_hour": {
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
         5,
         6
       ],
@@ -33881,9 +36475,9 @@
             3,
             4
           ],
-          "start": "18:00",
+          "start": "16:00",
           "end": null,
-          "label": "Sun-Thu happy hour continues all day"
+          "label": "All day (Sun-Thu)"
         }
       ],
       "verified": false,
@@ -33894,31 +36488,31 @@
           "name": "Highball or Shot",
           "price": "$5.50",
           "category": "drink",
-          "description": "1oz Stoli, Beefeater, Bacardí, Jägermeister or Jameson"
+          "description": "1oz: Stoli, Beefeater, Bacardí, Jägermeister or Jameson"
         },
         {
           "name": "House Lager",
           "price": "$6.50",
           "category": "drink",
-          "description": "16oz"
+          "description": "16oz draft"
         },
         {
           "name": "House Pale Ale",
           "price": "$6.50",
           "category": "drink",
-          "description": "16oz"
+          "description": "16oz draft"
         },
         {
           "name": "Pinot Grigio",
           "price": "$6.50",
           "category": "drink",
-          "description": "5oz Ruffino"
+          "description": "5oz, Ruffino"
         },
         {
           "name": "Malbec",
           "price": "$6.50",
           "category": "drink",
-          "description": "5oz Álamos"
+          "description": "5oz, Álamos"
         },
         {
           "name": "Sangría",
@@ -33947,7 +36541,7 @@
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-10-24"
+    "last_synced_at": "2026-11-07"
   },
   {
     "place_id": null,

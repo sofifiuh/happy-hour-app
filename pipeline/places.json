@@ -29641,5 +29641,583 @@
     },
     "matched_name": "Ova | Restaurant & Bar",
     "synced_at": "2026-11-06"
+  },
+  "bridgette-bar": {
+    "place_id": "ChIJw_hCeOFvcVMRuvxWSfd8V_s",
+    "rating": 4.7,
+    "user_ratings_total": 3554,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Bridgette Bar",
+    "synced_at": "2026-11-07"
+  },
+  "lou-s-grill": {
+    "place_id": "ChIJBy5k-Hw1hFQRxg4yeIVVN9k",
+    "rating": 4.3,
+    "user_ratings_total": 3355,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Lou's Grill",
+    "synced_at": "2026-11-07"
+  },
+  "shark-club-sports-bar-grill": {
+    "place_id": "ChIJc-rQW01xhlQRSTGakHFDvjY",
+    "rating": 4.7,
+    "user_ratings_total": 2677,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Shark Club Sports Bar & Grill",
+    "synced_at": "2026-11-07"
+  },
+  "the-tommyfield-gastro-pub": {
+    "place_id": "ChIJj-xM6nCdcVMRuKD3gPbgkfo",
+    "rating": 4.1,
+    "user_ratings_total": 2121,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Tommyfield Gastro Pub",
+    "synced_at": "2026-11-07"
+  },
+  "modern-steak-on-stephen-avenue": {
+    "place_id": "ChIJVVVVdP5vcVMRP5GYnrsfpo8",
+    "rating": 4.4,
+    "user_ratings_total": 1662,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "MODERN STEAK on Stephen Avenue",
+    "synced_at": "2026-11-07"
+  },
+  "madi-s-12-12": {
+    "place_id": "ChIJEe69Va56cVMRDV6lEkMhZr4",
+    "rating": 4.4,
+    "user_ratings_total": 1477,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Madi's 12|12",
+    "synced_at": "2026-11-07"
+  },
+  "tavern-at-deerfoot-meadows": {
+    "place_id": "ChIJW3yKLehwcVMRDNO3uvvN9cQ",
+    "rating": 4.8,
+    "user_ratings_total": 1412,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Tavern at Deerfoot Meadows",
+    "synced_at": "2026-11-07"
+  },
+  "apr-s-apr-s": {
+    "place_id": "ChIJV4DOhZI9h1QR38Qb48Jiguo",
+    "rating": 4.9,
+    "user_ratings_total": 1317,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Après Après",
+    "synced_at": "2026-11-07"
+  },
+  "spot-on-kitchen-bar": {
+    "place_id": "ChIJDQZ_xZRxcVMReOwKw12EJ_Q",
+    "rating": 4.4,
+    "user_ratings_total": 1193,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Spot On Kitchen & Bar",
+    "synced_at": "2026-11-07"
+  },
+  "major-league-2": {
+    "place_id": "ChIJNXFi3btAhFQRzDrNCWbUf2w",
+    "rating": 4.1,
+    "user_ratings_total": 1142,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Major League 2",
+    "synced_at": "2026-11-07"
+  },
+  "abbey-road-tap-house": {
+    "place_id": "ChIJKStvg5JKhFQRHIqEh5j9CEQ",
+    "rating": 4,
+    "user_ratings_total": 1116,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Abbey Road Tap House",
+    "synced_at": "2026-11-07"
+  },
+  "merchants-restaurant": {
+    "place_id": "ChIJ31IqZNJxcVMRm0d6BWA5M6g",
+    "rating": 4.2,
+    "user_ratings_total": 1003,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Merchants Restaurant",
+    "synced_at": "2026-11-07"
+  },
+  "the-table-bistro": {
+    "place_id": "ChIJy67xtBFLhFQR7b77YSfbFw0",
+    "rating": 4.6,
+    "user_ratings_total": 963,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Table Bistro",
+    "synced_at": "2026-11-07"
+  },
+  "amato-gelato-cafe-17th-avenue": {
+    "place_id": "ChIJI6_BtHBxcVMRB8CItnPxyh8",
+    "rating": 4.4,
+    "user_ratings_total": 926,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Amato Gelato Cafe - 17th Avenue",
+    "synced_at": "2026-11-07"
+  },
+  "regal-beagle-macleod": {
+    "place_id": "ChIJMdHe2iRxcVMRYcCbVvOZHDY",
+    "rating": 4.3,
+    "user_ratings_total": 890,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Regal Beagle Macleod",
+    "synced_at": "2026-11-07"
+  },
+  "shady-tree-pub": {
+    "place_id": "ChIJm5Sw3A35hlQRiVdhGdk4vAw",
+    "rating": 4.2,
+    "user_ratings_total": 877,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Shady Tree Pub",
+    "synced_at": "2026-11-07"
+  },
+  "the-dogwood-bar": {
+    "place_id": "ChIJs503jCp7cVMR2k45U4uvMdY",
+    "rating": 4,
+    "user_ratings_total": 513,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Dogwood Bar",
+    "synced_at": "2026-11-07"
+  },
+  "bizarre-gastro-pub": {
+    "place_id": "ChIJr1I55Bd7cVMRWxHTdj4QFYQ",
+    "rating": 4.8,
+    "user_ratings_total": 510,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Bizarre Gastro Pub",
+    "synced_at": "2026-11-07"
+  },
+  "mekong-south-east-asian-restaurant-bar": {
+    "place_id": "ChIJ6T03QMwjh1QRxJYl7aAfmJY",
+    "rating": 4.6,
+    "user_ratings_total": 415,
+    "price_level": 4,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Mekong - South East Asian Restaurant + Bar",
+    "synced_at": "2026-11-07"
+  },
+  "redchillies-sports-bar": {
+    "place_id": "ChIJV252bE8_hFQR6K3Cd0uLLrI",
+    "rating": 4.1,
+    "user_ratings_total": 318,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "RedChillies Sports Bar",
+    "synced_at": "2026-11-07"
+  },
+  "1861-local-bar-grill": {
+    "place_id": "ChIJ3xebPNlfcVMR2iYtvN789qw",
+    "rating": 4.3,
+    "user_ratings_total": 212,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "1861 Local Bar & Grill",
+    "synced_at": "2026-11-07"
+  },
+  "happy-gilmore-golf-lounge": {
+    "place_id": "ChIJZ4tZAo53hlQRAKzeDkvJ9zg",
+    "rating": 4.8,
+    "user_ratings_total": 177,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Happy Gilmore Golf Lounge",
+    "synced_at": "2026-11-07"
+  },
+  "tipsie": {
+    "place_id": "ChIJpbhR_t5vcVMRBW_w0Ys1AjA",
+    "rating": 4.5,
+    "user_ratings_total": 24,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "TIPSIE",
+    "synced_at": "2026-11-07"
+  },
+  "twenty-two-taphouse": {
+    "place_id": "ChIJr3nBHNzRhVQRHy8sBtQa1YQ",
+    "rating": 4.3,
+    "user_ratings_total": 21,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Twenty Two Taphouse",
+    "synced_at": "2026-11-07"
+  },
+  "wedge-bar-grill": {
+    "place_id": "ChIJL9yKNF3UhVQRvosU4MRTy_E",
+    "rating": 3.8,
+    "user_ratings_total": 12,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Wedge Bar & Grill",
+    "synced_at": "2026-11-07"
+  },
+  "lulu-bar": {
+    "place_id": "ChIJk7C_Y89xcVMRokBBYQTScA8",
+    "rating": 4.5,
+    "user_ratings_total": 1839,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Lulu Bar",
+    "synced_at": "2026-11-07"
+  },
+  "the-dolar-shop-hot-pot-richmond": {
+    "place_id": "ChIJYWDQITJ1hlQRiHUfn8ZrWV8",
+    "rating": 4.2,
+    "user_ratings_total": 1610,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Dolar Shop Hot Pot Richmond",
+    "synced_at": "2026-11-07"
+  },
+  "southside-diner": {
+    "place_id": "ChIJXcf3IdEih1QRvBFnXoVpQuo",
+    "rating": 4.4,
+    "user_ratings_total": 1383,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Southside Diner",
+    "synced_at": "2026-11-07"
+  },
+  "the-mad-italian-pizza-pints": {
+    "place_id": "ChIJ97RQHZLRhVQRs8_fZp1hFKE",
+    "rating": 4.4,
+    "user_ratings_total": 698,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Mad Italian Pizza & Pints",
+    "synced_at": "2026-11-07"
+  },
+  "cantina-norte": {
+    "place_id": "ChIJ6V5lItdvhlQRHLNv35PXhFo",
+    "rating": 4.3,
+    "user_ratings_total": 684,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Cantina Norte",
+    "synced_at": "2026-11-07"
+  },
+  "maplewood-smokehouse": {
+    "place_id": "ChIJkSluC0NHhFQRL1EOF5qwi-c",
+    "rating": 4.8,
+    "user_ratings_total": 665,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Maplewood Smokehouse",
+    "synced_at": "2026-11-07"
+  },
+  "meadow-gardens-golf-club": {
+    "place_id": "ChIJeWGaflvUhVQRjduRIOMbtyU",
+    "rating": 4.4,
+    "user_ratings_total": 596,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Meadow Gardens Golf Club",
+    "synced_at": "2026-11-07"
+  },
+  "fortitude-wine-bar": {
+    "place_id": "ChIJlws3uzRBhFQRI3YiKa7Xn9E",
+    "rating": 4.4,
+    "user_ratings_total": 221,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Fortitude Wine Bar",
+    "synced_at": "2026-11-07"
+  },
+  "the-loft-at-meadow-gardens": {
+    "place_id": "ChIJx4_iY0PUhVQRmlpMa8c0D5s",
+    "rating": 4,
+    "user_ratings_total": 215,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The LOFT at Meadow Gardens",
+    "synced_at": "2026-11-07"
   }
 }

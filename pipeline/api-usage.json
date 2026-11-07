@@ -18,7 +18,7 @@
     "nearby_enterprise": 96,
     "sweep_pro": 4800,
     "sweep_enterprise": 0,
-    "details_enterprise": 348
+    "details_enterprise": 393
   },
   "daily": {
     "2026-11-03": {
@@ -35,6 +35,10 @@
     },
     "2026-11-06": {
       "text_enterprise": 165,
+      "nearby_enterprise": 0
+    },
+    "2026-11-07": {
+      "text_enterprise": 0,
       "nearby_enterprise": 0
     }
   }

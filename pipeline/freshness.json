@@ -1280,19 +1280,18 @@
  "cascades-casino": {
   "url": "https://cascadescasino.ca/casino-happy-hour/",
   "checked_at": "2026-11-07",
-  "http_status": 202,
+  "http_status": 200,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
   "last_ok_at": "2026-11-07",
   "hh_hash": "a10028131ab9b5c6",
-  "last_confirmed_at": "2026-11-06",
-  "changed_at": "2026-11-06",
-  "rendered": true
+  "last_confirmed_at": "2026-11-07",
+  "changed_at": "2026-11-06"
  },
  "cat-fiddle-sports-bar-restaurant": {
   "url": "https://i0.wp.com/catandfiddlepub.ca/wp-content/uploads/2025/12/Happy-hour-WINTER-2025-PRINT.jpg?ssl=1",
@@ -1468,7 +1467,7 @@
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": false,
-  "extra_windows_seen": 0,
+  "extra_windows_seen": 1,
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
@@ -1486,7 +1485,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "5224186afc385e54",
+  "hh_hash": "e82019618a256320",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-07"
@@ -1622,7 +1621,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "311dc20e37a66c49",
+  "hh_hash": "843b7fd00d569aa6",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-07"
@@ -1638,7 +1637,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "92b43b9c4a9781fe",
+  "hh_hash": "16ba86be679616a0",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-07"
@@ -2250,10 +2249,10 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "639df2d85e233510",
+  "hh_hash": "fe5a8deaa0cae32a",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
-  "changed_at": "2026-11-06"
+  "changed_at": "2026-11-07"
  },
  "first-street-market-food-hall-bar": {
   "url": "https://fsmyyc.com/bar/",
@@ -2705,7 +2704,7 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "b01a70c5d65c18a0",
+  "hh_hash": "9e2ee767cfd03911",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-07"
@@ -2978,17 +2977,18 @@
  "holy-taco-mexi-eats": {
   "url": "https://www.holytaco.ca/restaurant-menu",
   "checked_at": "2026-11-07",
-  "http_status": 200,
+  "http_status": 0,
   "kind": "html",
   "hh_mentioned": true,
   "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
-  "ok": true,
-  "fail_count": 0,
+  "ok": false,
+  "fail_count": 1,
   "hh_hash": "d80c94bccdf1943a",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07"
+  "last_confirmed_at": "2026-11-07",
+  "error": "curl: (7) Failed to connect to www.holytaco.ca port 443 after 1187 ms: Could not connect to server"
  },
  "homer-st-cafe-and-bar": {
   "url": null,
@@ -3207,7 +3207,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 28,
+  "fail_count": 29,
   "error": "curl: (6) Could not resolve host: www.jacksonsrestobutcher.com"
  },
  "james-joyce-irish-pub-restaurant": {
@@ -5241,17 +5241,18 @@
  "pig-duke-neighbourhood-pub": {
   "url": "https://pigandduke.ca/drink-menu/",
   "checked_at": "2026-11-07",
-  "http_status": 200,
+  "http_status": 0,
   "kind": "html",
-  "ok": true,
-  "fail_count": 0,
+  "ok": false,
+  "fail_count": 1,
   "hh_mentioned": true,
   "times_seen": true,
   "extra_windows_seen": 2,
   "extra_windows_total": 2,
   "hh_hash": "a1a1fb9fdac5d1f2",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07"
+  "last_confirmed_at": "2026-11-07",
+  "error": "curl: (28) Connection timed out after 25002 milliseconds"
  },
  "pigeonhole-downtown": {
   "url": "https://www.pigeonholeyyc.ca/pigeonholedowntown-happyhour/",
@@ -5781,7 +5782,7 @@
   "http_status": 0,
   "kind": "html",
   "ok": false,
-  "fail_count": 28,
+  "fail_count": 29,
   "error": "curl: (6) Could not resolve host: romersurgerbar.com"
  },
  "rongsi-rong-see-thai-bar-bistro": {
@@ -6453,16 +6454,16 @@
   "checked_at": "2026-11-07",
   "http_status": 202,
   "kind": "html",
-  "hh_mentioned": false,
-  "times_seen": false,
+  "hh_mentioned": true,
+  "times_seen": true,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "37ffff41811e7b1a",
+  "hh_hash": "8469da5c572ceb88",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-06",
-  "changed_at": "2026-11-03",
+  "last_confirmed_at": "2026-11-07",
+  "changed_at": "2026-11-07",
   "rendered": true
  },
  "steamworks-mount-pleasant": {
@@ -6716,8 +6717,8 @@
   "checked_at": "2026-11-07",
   "http_status": 200,
   "kind": "html",
-  "hh_mentioned": true,
-  "times_seen": true,
+  "hh_mentioned": false,
+  "times_seen": false,
   "extra_windows_seen": null,
   "extra_windows_total": null,
   "ok": true,
@@ -7221,15 +7222,16 @@
  "the-great-bear-pub": {
   "url": "http://greatbearpub.com/files/2019/01/Great-BearEatin-2019.pdf",
   "checked_at": "2026-11-07",
-  "http_status": 200,
-  "kind": "pdf",
-  "ok": true,
-  "fail_count": 0,
+  "http_status": 0,
+  "kind": "html",
+  "ok": false,
+  "fail_count": 2,
   "hh_mentioned": false,
   "times_seen": false,
   "extra_windows_seen": 0,
   "extra_windows_total": 1,
-  "last_ok_at": "2026-11-07"
+  "last_ok_at": "2026-11-07",
+  "error": "curl: (28) Connection timed out after 25002 milliseconds"
  },
  "the-greek-by-anatoli-yaletown": {
   "url": "https://www.thegreekbyanatoli.com/yaletown-menu",
@@ -7347,7 +7349,7 @@
   "extra_windows_total": 2,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "b94cc94469ab28f7",
+  "hh_hash": "d592e0ffe2590138",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-07"
@@ -7381,7 +7383,7 @@
   "last_ok_at": "2026-11-07"
  },
  "the-imperial-tap": {
-  "url": "http://imperialtap.ca/specials",
+  "url": "https://imperialtap.ca/food-menu",
   "checked_at": "2026-11-07",
   "http_status": 200,
   "kind": "html",
@@ -7391,7 +7393,7 @@
   "extra_windows_total": null,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "110b24b36a371b8c",
+  "hh_hash": "7a4041de2a1a7a0c",
   "last_ok_at": "2026-11-07",
   "last_confirmed_at": "2026-11-07",
   "changed_at": "2026-11-07"
@@ -8381,9 +8383,10 @@
   "extra_windows_total": 1,
   "ok": true,
   "fail_count": 0,
-  "hh_hash": "ab50ef14cc127fda",
+  "hh_hash": "9b4720a3bce0d491",
   "last_ok_at": "2026-11-07",
-  "last_confirmed_at": "2026-11-07"
+  "last_confirmed_at": "2026-11-07",
+  "changed_at": "2026-11-07"
  },
  "uva-wine-cocktail-bar": {
   "url": "https://www.uvavancouver.com/_files/ugd/8385f7_c5e42a9ca0d149d89a011a295561e208.pdf",

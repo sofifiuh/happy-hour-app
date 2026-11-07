@@ -5090,8 +5090,8 @@
   "ChIJc-rQW01xhlQRSTGakHFDvjY": {
     "id": "shark-club-sports-bar-grill",
     "name": "Shark Club Sports Bar & Grill",
-    "verdict": "hours_only",
-    "checked_at": "2026-09-02"
+    "verdict": "published",
+    "checked_at": "2026-11-07"
   },
   "ChIJr2icA23WhVQRXb9Dj6oSDCQ": {
     "id": "gillnetter-pub",
@@ -5606,8 +5606,8 @@
   "ChIJ0a9U8HlxhlQR-DXhvPSC25E": {
     "id": "the-metropole-community-pub",
     "name": "The Metropole Community Pub",
-    "verdict": "hours_only",
-    "checked_at": "2026-09-02"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-07"
   },
   "ChIJD-WYYijZhVQRJr4zTl52Qo8": {
     "id": "tidewaters-pub",
@@ -6638,8 +6638,8 @@
   "ChIJ5y0yujULhlQRB1H5nhkrqaw": {
     "id": "jetside-lounge",
     "name": "Jetside Lounge",
-    "verdict": "hours_only",
-    "checked_at": "2026-09-02"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-07"
   },
   "ChIJb0rqn5N5hlQR6ewqJ9mQAi0": {
     "id": "fraser-bar",
@@ -7827,7 +7827,7 @@
     "id": "cantina-norte",
     "name": "Cantina Norte",
     "verdict": "hours_only",
-    "checked_at": "2026-09-02"
+    "checked_at": "2026-11-07"
   },
   "ChIJ27ojj9NzhlQRcJhTE_WSFts": {
     "id": "four-olives-restaurant-best-greek-restaurant",
@@ -15578,8 +15578,8 @@
   "ChIJidlUgZB3hlQR6CNZbsNA2lI": {
     "id": "famoso-italian-pizzeria-solo",
     "name": "Famoso Italian Pizzeria - Solo",
-    "verdict": "hours_only",
-    "checked_at": "2026-09-02"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-07"
   },
   "ChIJp3jgrXFxhlQRvU5ND1286Lk": {
     "id": "asia-market",
@@ -17636,8 +17636,8 @@
   "ChIJv9GZFStwhlQRqA0wqZP6Lew": {
     "id": "the-corner-stone-bistro-by-monika-s",
     "name": "The Corner Stone Bistro by Monika's",
-    "verdict": "hours_only",
-    "checked_at": "2026-09-03"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-07"
   },
   "ChIJqXO6kVxxhlQRqEGMO-Df8kw": {
     "id": "carnitas-don-jose",
@@ -18663,7 +18663,7 @@
     "id": "no-1-beef-noodle",
     "name": "No. 1 Beef Noodle",
     "verdict": "hours_only",
-    "checked_at": "2026-09-03"
+    "checked_at": "2026-11-07"
   },
   "ChIJdWULgytyhlQR9EUQyHopKL0": {
     "id": "davie-dosa-company",
@@ -21273,7 +21273,7 @@
     "id": "happy-gilmore-golf-lounge",
     "name": "Happy Gilmore Golf Lounge",
     "verdict": "hours_only",
-    "checked_at": "2026-10-24"
+    "checked_at": "2026-11-07"
   },
   "ChIJkQJnOhlsK4gRFssYmhCxai8": {
     "id": "brandis-show-lounge",
@@ -21284,8 +21284,8 @@
   "ChIJSQCRsspzhlQRUmb6hQuO8rI": {
     "id": "royal-canadian-legion-branch-176",
     "name": "Royal Canadian Legion Branch 176",
-    "verdict": "hours_only",
-    "checked_at": "2026-10-24"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-07"
   },
   "ChIJg4aqLwDXhVQRZ25iKz3I8zw": {
     "id": "savanna-restaurant-lounge-grill",
@@ -21795,7 +21795,7 @@
     "id": "the-dolar-shop-hot-pot-richmond",
     "name": "The Dolar Shop Hot Pot Richmond",
     "verdict": "hours_only",
-    "checked_at": "2026-10-25"
+    "checked_at": "2026-11-07"
   },
   "ChIJ3ZVCxVF0hlQRtUPfEgTaCvU": {
     "id": "dosa-corner",
@@ -22214,8 +22214,8 @@
   "ChIJtbiS_TULhlQRqgSpCggXO78": {
     "id": "salmon-n-bannock-on-the-fly",
     "name": "Salmon n' Bannock On The Fly",
-    "verdict": "hours_only",
-    "checked_at": "2026-10-25"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-07"
   },
   "ChIJ676Q80FzhlQRNJxnVzIi2Jw": {
     "id": "red-tuna-japanese-restaurant",
@@ -22323,7 +22323,7 @@
     "id": "the-mad-italian-pizza-pints",
     "name": "The Mad Italian Pizza & Pints",
     "verdict": "hours_only",
-    "checked_at": "2026-10-26"
+    "checked_at": "2026-11-07"
   },
   "ChIJ49TSqVVxhlQRCRnmrPmUbB0": {
     "id": "kingsway-lemongrass",
@@ -23421,7 +23421,7 @@
     "id": "lou-s-grill",
     "name": "Lou's Grill",
     "verdict": "hours_only",
-    "checked_at": "2026-11-03"
+    "checked_at": "2026-11-07"
   },
   "ChIJGxfhTksjh1QRflm-QFJbIaQ": {
     "id": "stonesedge-kitchen",
@@ -23433,7 +23433,7 @@
     "id": "black-sheep-public-house-liquor-store",
     "name": "Black Sheep Public House & Liquor Store",
     "verdict": "hours_only",
-    "checked_at": "2026-11-03"
+    "checked_at": "2026-11-07"
   },
   "ChIJGRXomp1KhFQR_r-twFbePJM": {
     "id": "bow-stern",
@@ -23558,8 +23558,8 @@
   "ChIJNXFi3btAhFQRzDrNCWbUf2w": {
     "id": "major-league-2",
     "name": "Major League 2",
-    "verdict": "hours_only",
-    "checked_at": "2026-11-03"
+    "verdict": "published",
+    "checked_at": "2026-11-07"
   },
   "ChIJc3rQxeYzhFQRxAXSyAGS9nI": {
     "id": "14th-avenue-pub",
@@ -23571,7 +23571,7 @@
     "id": "abbey-road-tap-house",
     "name": "Abbey Road Tap House",
     "verdict": "hours_only",
-    "checked_at": "2026-11-03"
+    "checked_at": "2026-11-07"
   },
   "ChIJV1HBVLM8h1QR5s0hTKa5zcE": {
     "id": "bar-oso",
@@ -23601,13 +23601,13 @@
     "id": "the-brickworks",
     "name": "The Brickworks",
     "verdict": "hours_only",
-    "checked_at": "2026-11-03"
+    "checked_at": "2026-11-07"
   },
   "ChIJy67xtBFLhFQR7b77YSfbFw0": {
     "id": "the-table-bistro",
     "name": "The Table Bistro",
     "verdict": "hours_only",
-    "checked_at": "2026-11-03"
+    "checked_at": "2026-11-07"
   },
   "ChIJF3WGh0xLhFQRw0fLBUa-WRQ": {
     "id": "old-yale-brewing-abbotsford-craft-brewery-kitchen",
@@ -23625,7 +23625,7 @@
     "id": "shady-tree-pub",
     "name": "Shady Tree Pub",
     "verdict": "hours_only",
-    "checked_at": "2026-11-03"
+    "checked_at": "2026-11-07"
   },
   "ChIJ848NYOJwhlQRF_yOef3Z3QM": {
     "id": "sneakers-sports-lounge",
@@ -23787,7 +23787,7 @@
     "id": "redchillies-sports-bar",
     "name": "RedChillies Sports Bar",
     "verdict": "hours_only",
-    "checked_at": "2026-11-03"
+    "checked_at": "2026-11-07"
   },
   "ChIJPe37fJxAhFQRaafjJ9S4hn8": {
     "id": "the-well-public-house-at-elements-casino-chilliwack",
@@ -23840,8 +23840,8 @@
   "ChIJL9yKNF3UhVQRvosU4MRTy_E": {
     "id": "wedge-bar-grill",
     "name": "Wedge Bar & Grill",
-    "verdict": "hours_only",
-    "checked_at": "2026-11-03"
+    "verdict": "published",
+    "checked_at": "2026-11-07"
   },
   "ChIJ914qXwARhFQRWqJ4plVKgz0": {
     "id": "hot-springs-rv-and-camping-park",
@@ -23858,8 +23858,8 @@
   "ChIJ6wZtTXo_hFQRYI4QJQwHWRc": {
     "id": "shandhar-hut-indian-cuisine-downtown",
     "name": "Shandhar Hut Indian Cuisine - Downtown",
-    "verdict": "hours_only",
-    "checked_at": "2026-11-03"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-07"
   },
   "ChIJf5RmoYURhFQRJ3A543PpQL4": {
     "id": "black-forest-steak-schnitzel-house",
@@ -24141,7 +24141,7 @@
     "id": "bridgette-bar",
     "name": "Bridgette Bar",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJ25K1r-JvcVMRSdO0u0NhN8E": {
     "id": "pampa-brazilian-steakhouse",
@@ -24255,7 +24255,7 @@
     "id": "the-tommyfield-gastro-pub",
     "name": "The Tommyfield Gastro Pub",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJwTlP2lRlcVMRcsF_hx5Hle4": {
     "id": "charbar",
@@ -24411,7 +24411,7 @@
     "id": "modern-steak-on-stephen-avenue",
     "name": "MODERN STEAK on Stephen Avenue",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJg2ThvNdvcVMR2Pxq-hs7KOU": {
     "id": "trolley-5-brewpub",
@@ -24465,7 +24465,7 @@
     "id": "madi-s-12-12",
     "name": "Madi's 12|12",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJedyLEUdxcVMRLJtV-_PaapQ": {
     "id": "south-block-barbecue-brewing-co",
@@ -24543,7 +24543,7 @@
     "id": "spot-on-kitchen-bar",
     "name": "Spot On Kitchen & Bar",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJMbzQ97I8h1QRxIQ8N6q4eUE": {
     "id": "high-mountain-brewing-co-brewhouse",
@@ -24615,7 +24615,7 @@
     "id": "merchants-restaurant",
     "name": "Merchants Restaurant",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJwe-k7RtlcVMRzPWJVFm8hEA": {
     "id": "beckham-s-pub-eatery",
@@ -24633,7 +24633,7 @@
     "id": "amato-gelato-cafe-17th-avenue",
     "name": "Amato Gelato Cafe - 17th Avenue",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJsW6832xfcVMR42_3YdgqyVo": {
     "id": "original-joe-s-3",
@@ -24722,8 +24722,8 @@
   "ChIJeSzrYLZxcVMR5M-gv0dq01A": {
     "id": "tropical-downtown",
     "name": "TROPICAL DOWNTOWN",
-    "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-07"
   },
   "ChIJAXxOcWZxcVMRlfd68DO0o84": {
     "id": "whiskey-rose",
@@ -24807,7 +24807,7 @@
     "id": "the-dogwood-bar",
     "name": "The Dogwood Bar",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJV0m_xKFxcVMRMpZJO0t0Wdo": {
     "id": "southland-yard-bar-and-table",
@@ -24825,7 +24825,7 @@
     "id": "bizarre-gastro-pub",
     "name": "Bizarre Gastro Pub",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJHYbEaNEih1QRoWHSSdkexyU": {
     "id": "roland-s-creekside-pub",
@@ -24879,7 +24879,7 @@
     "id": "mekong-south-east-asian-restaurant-bar",
     "name": "Mekong - South East Asian Restaurant + Bar",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJhztGdP1vcVMR8WnT2onCL2I": {
     "id": "francine-s-a-french-bar",
@@ -24975,7 +24975,7 @@
     "id": "1861-local-bar-grill",
     "name": "1861 Local Bar & Grill",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJW6jGoDJvcVMRKwMPInRv_Ck": {
     "id": "stable-palms-club",
@@ -25113,7 +25113,7 @@
     "id": "tipsie",
     "name": "TIPSIE",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJ91owEFFBcVMRWZK_qrlLi0E": {
     "id": "the-loft-at-half-hitch-brewing-company",
@@ -25245,7 +25245,7 @@
     "id": "lulu-bar",
     "name": "Lulu Bar",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJBcykyRlwcVMRd05JbmdfBu0": {
     "id": "mercato-mission-restaurant",
@@ -25329,7 +25329,7 @@
     "id": "southside-diner",
     "name": "Southside Diner",
     "verdict": "hours_only",
-    "checked_at": "2026-11-04"
+    "checked_at": "2026-11-07"
   },
   "ChIJmTC9cxlwcVMR7t_Y_zKmOnc": {
     "id": "blaze-pizza",
@@ -25562,8 +25562,8 @@
   "ChIJr3nBHNzRhVQRHy8sBtQa1YQ": {
     "id": "twenty-two-taphouse",
     "name": "Twenty Two Taphouse",
-    "verdict": "hours_only",
-    "checked_at": "2026-11-05"
+    "verdict": "published",
+    "checked_at": "2026-11-07"
   },
   "ChIJ0Yk2JLjVhVQRryVsUk9ib1Q": {
     "id": "hopcott-farms",
@@ -25652,8 +25652,8 @@
   "ChIJkSluC0NHhFQRL1EOF5qwi-c": {
     "id": "maplewood-smokehouse",
     "name": "Maplewood Smokehouse",
-    "verdict": "hours_only",
-    "checked_at": "2026-11-05"
+    "verdict": "published",
+    "checked_at": "2026-11-07"
   },
   "ChIJNd4y9Tj5hlQROmMqbAJ5YXA": {
     "id": "taka-ramen-sushi",
@@ -25718,8 +25718,8 @@
   "ChIJeWGaflvUhVQRjduRIOMbtyU": {
     "id": "meadow-gardens-golf-club",
     "name": "Meadow Gardens Golf Club",
-    "verdict": "hours_only",
-    "checked_at": "2026-11-05"
+    "verdict": "published",
+    "checked_at": "2026-11-07"
   },
   "ChIJ-Zj4uTjUhVQRWR2-nRFLCzg": {
     "id": "meadow-sushi",
@@ -26193,13 +26193,13 @@
     "id": "fortitude-wine-bar",
     "name": "Fortitude Wine Bar",
     "verdict": "hours_only",
-    "checked_at": "2026-11-05"
+    "checked_at": "2026-11-07"
   },
   "ChIJx4_iY0PUhVQRmlpMa8c0D5s": {
     "id": "the-loft-at-meadow-gardens",
     "name": "The LOFT at Meadow Gardens",
     "verdict": "hours_only",
-    "checked_at": "2026-11-05"
+    "checked_at": "2026-11-07"
   },
   "ChIJwWHCIWE1hFQRbsMfdqAbcHw": {
     "id": "panago-pizza",
@@ -26577,7 +26577,7 @@
     "id": "tavern-at-deerfoot-meadows",
     "name": "Tavern at Deerfoot Meadows",
     "verdict": "hours_only",
-    "checked_at": "2026-11-06"
+    "checked_at": "2026-11-07"
   },
   "ChIJi4b7KgNwcVMRsnvgt9dfe7I": {
     "id": "st-james-corner-restaurant-irish-pub",
@@ -26595,7 +26595,7 @@
     "id": "apr-s-apr-s",
     "name": "Après Après",
     "verdict": "hours_only",
-    "checked_at": "2026-11-06"
+    "checked_at": "2026-11-07"
   },
   "ChIJUQHDY4pvcVMRbK8oo8oksnk": {
     "id": "the-cat-n-fiddle-pub",
@@ -26667,7 +26667,7 @@
     "id": "regal-beagle-macleod",
     "name": "Regal Beagle Macleod",
     "verdict": "hours_only",
-    "checked_at": "2026-11-06"
+    "checked_at": "2026-11-07"
   },
   "ChIJPaj2pa96cVMRLrZtcj3VuxY": {
     "id": "ironwood-stage-grill",
