@@ -18663,7 +18663,7 @@
     "id": "no-1-beef-noodle",
     "name": "No. 1 Beef Noodle",
     "verdict": "hours_only",
-    "checked_at": "2026-11-07"
+    "checked_at": "2026-11-08"
   },
   "ChIJdWULgytyhlQR9EUQyHopKL0": {
     "id": "davie-dosa-company",
@@ -26745,7 +26745,7 @@
     "id": "brickwell-taphouse",
     "name": "Brickwell Taphouse",
     "verdict": "hours_only",
-    "checked_at": "2026-11-06"
+    "checked_at": "2026-11-08"
   },
   "ChIJVVWVDB9wcVMRlOzd6iuEMSA": {
     "id": "jungle-bird-tiki-bar-lounge",
@@ -27284,8 +27284,8 @@
   "ChIJCehXPiVucVMRkSo_pnKaiHA": {
     "id": "regal-beagle-pub",
     "name": "Regal Beagle Pub",
-    "verdict": "hours_only",
-    "checked_at": "2026-11-07"
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
   },
   "ChIJw65msqlmcVMRZ9zKN8JvqV8": {
     "id": "railyard-brewing",
@@ -27489,7 +27489,7 @@
     "id": "unfiltered-wine-bar",
     "name": "Unfiltered Wine Bar",
     "verdict": "published",
-    "checked_at": "2026-11-07"
+    "checked_at": "2026-11-08"
   },
   "ChIJV6UuX6tHhFQRyClO4ArvYzM": {
     "id": "whispering-horse-winery",
@@ -27694,5 +27694,773 @@
     "name": "The Cellar by Araxi",
     "verdict": "no_happy_hour",
     "checked_at": "2026-11-07"
+  },
+  "ChIJR7DOkeRvcVMRx661p4mqEJI": {
+    "id": "gyu-kaku-japanese-bbq",
+    "name": "Gyu-Kaku Japanese BBQ",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJHzjAa0p3cVMRZyUsIHIsrIU": {
+    "id": "the-park-kitchen-bar",
+    "name": "The Park Kitchen & Bar",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJR0GUWNlncVMR30CBx3o7hlA": {
+    "id": "state-main",
+    "name": "State & Main",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJqTo04ZFvcVMR76mTmyu2GuY": {
+    "id": "loco-lou-s-2-0-arcade-bar-grill",
+    "name": "Loco Lou's 2.0 Arcade Bar & Grill",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJX1oJ0s5fcVMRl42qL3NMXaw": {
+    "id": "boston-pizza",
+    "name": "Boston Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJT1IeSWY_cVMRKPsg23GCcYI": {
+    "id": "boston-pizza-2",
+    "name": "Boston Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJJ6EcEiNxcVMRsinRkWgeUI4": {
+    "id": "peanuts-public-house",
+    "name": "Peanuts Public House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJs4YSFTlxcVMRLztPPF89E_A": {
+    "id": "veranda-restaurant-at-burwood-distillery",
+    "name": "Veranda Restaurant at Burwood Distillery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJuSi9vv1xcVMRRUs7w0wObFI": {
+    "id": "buffalo-bob-s-canadian-pub",
+    "name": "Buffalo Bob's Canadian Pub",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJhUaJ_LF3cVMRCBS2YAIweAA": {
+    "id": "403-local",
+    "name": "403 Local",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJeecEX9pocVMRnLlqw1oNVE0": {
+    "id": "stavros-pizza-sports-bar",
+    "name": "Stavros Pizza & Sports Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJpUWMKtJlcVMR1RPzp8Lm9tE": {
+    "id": "juliets-castle-sports-bar-and-lounge",
+    "name": "Juliets Castle Sports Bar and Lounge",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJn-tIxwx3hlQRCeFXrxrIPVE": {
+    "id": "burnaby-lake-rugby-club",
+    "name": "Burnaby Lake Rugby Club",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJS6hDwbxlcVMRc3N9YsH8vnk": {
+    "id": "the-56-restaurant-lounge",
+    "name": "The 56 Restaurant & Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJf_t5oDCXcVMRpQP9CKEnKe0": {
+    "id": "hitz-sportscentre",
+    "name": "Hitz Sportscentre",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJAQAAAMdkcVMRnF2v-SUwxW0": {
+    "id": "glenn-s-job-site-1-sports-bar",
+    "name": "Glenn's Job Site 1 Sports Bar",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJawAAnLtucVMRUU6aWxfNHu4": {
+    "id": "bar-one",
+    "name": "Bar One",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJpdctW4RvcVMRhY3oXtFCx2M": {
+    "id": "state-main-2",
+    "name": "State & Main",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJk4Lr8kBlcVMRzJByVC73QSc": {
+    "id": "botanicus-kitchen-bar",
+    "name": "Botanicus Kitchen + Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJV1X-7qV2hlQRIN79w63KDRk": {
+    "id": "serra-bar-caf-live-sports",
+    "name": "Serra - Bar & Café Live Sports",
+    "verdict": "error",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJc-JZ1TZxcVMRMrJDkGtqhXA": {
+    "id": "the-district-lounge",
+    "name": "The District Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ-VL1ykJlcVMRI3qwabvwJP8": {
+    "id": "shibuya-izakaya-sushi-restaurant",
+    "name": "Shibuya Izakaya Sushi Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJBbfQVXtlcVMRA7j9dZrtjUc": {
+    "id": "4th-spot-kitchen-bar",
+    "name": "4th Spot Kitchen & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJiT3yg89lcVMRordn4xBlHvQ": {
+    "id": "tokyo-street-market-centre-street",
+    "name": "Tokyo Street Market Centre Street",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ-U3VWYdvcVMRgZmHWy0xbW0": {
+    "id": "gogi-kitchen-downtown-calgary",
+    "name": "Gogi Kitchen - Downtown, Calgary",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJfZZM5dhvcVMRaZtx5fQiN4A": {
+    "id": "ke-charcoal-grill-sushi",
+    "name": "Ke Charcoal Grill & Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJWxOZHV75hlQRGIpUJagAwPw": {
+    "id": "sunny-chibas",
+    "name": "Sunny Chibas",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJn86GtoLUhVQRz4LFtA2yyWM": {
+    "id": "home-restaurant",
+    "name": "Home Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJTUkbViD8hlQRaYmDwfdyI1c": {
+    "id": "fergie-s-caf",
+    "name": "Fergie's Café",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJO0p-sSBwcVMRye1rgXk54j8": {
+    "id": "fusion-sushi-17ave",
+    "name": "Fusion Sushi 17ave",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJz8glgpBBhFQRKbHzslhVBhs": {
+    "id": "shandhar-hut-indian-cuisine-sardis",
+    "name": "Shandhar Hut Indian Cuisine - Sardis",
+    "verdict": "hours_only",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ8ec7GFJlcVMRXCaltCVFjkc": {
+    "id": "shiki-menya",
+    "name": "Shiki Menya",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ0ywrSa1xcVMRYGCfq50WnbU": {
+    "id": "monsoon-izakaya-japanese-restaurant-macloed-trail-location",
+    "name": "Monsoon Izakaya Japanese Restaurant (Macloed Trail Location)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJVUfStjg_hFQRHJl2VJJOs8U": {
+    "id": "yellow-deli",
+    "name": "Yellow Deli",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJUcU6Q6s4hFQRPJDFeIKCQpg": {
+    "id": "cookies-grill",
+    "name": "Cookies Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJfZXHC2I1hFQRf1w_b7tpk_0": {
+    "id": "kojan-sushi-korean-food",
+    "name": "Kojan Sushi & Korean Food",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJYyMuOB1wcVMRqNLwBtvwsKo": {
+    "id": "the-beltliner",
+    "name": "The Beltliner",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ29jWWEw1hFQRvmEcmPQXBjo": {
+    "id": "midori-japanese-restaurant",
+    "name": "Midori Japanese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJQYemHeFvcVMReSmZrxnWMPM": {
+    "id": "wakado-ramen",
+    "name": "Wakado Ramen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJbUctVxlwcVMRtf7b8gX87DU": {
+    "id": "hana-sushi-mission",
+    "name": "Hana Sushi (Mission）",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJn-ddPv5pcVMRZX_66HtxcI4": {
+    "id": "flores-pine",
+    "name": "Flores & Pine",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJdZWvMbRlcVMRubjK1xivJgs": {
+    "id": "ikusa-izakaya-tokyo-market",
+    "name": "IKUSA Izakaya & Tokyo Market",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJPWqPLbTUhVQRPxbgr885LQc": {
+    "id": "humble-roots-cafe-deli",
+    "name": "Humble Roots Cafe & Deli",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJFTVLGZxfcVMREpPgvhBTGRQ": {
+    "id": "ferraro-truly-italian",
+    "name": "Ferraro Truly Italian",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJJVsctH17cVMR8cmCP3rrt84": {
+    "id": "ari-sushi",
+    "name": "Ari Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJpa5FlH2-cUERui8SnF9Ua4k": {
+    "id": "my-greek-plate",
+    "name": "My Greek Plate",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ-fMRIuJvcVMRMYlZCheuyE0": {
+    "id": "redheads-japa-cafe",
+    "name": "Redheads Japa Cafe",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJgbPqf-8_cVMRbQLuDLdi5kQ": {
+    "id": "aama-nepalese-cuisine-restaurant-in-cochrane",
+    "name": "Aama Nepalese Cuisine | Restaurant in Cochrane",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJkz58DKfahVQRwf7g-ckFLxM": {
+    "id": "coast-country-diner-and-catering",
+    "name": "Coast & Country Diner and Catering",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJTaRCUvxvcVMRIAdQldLH-Ks": {
+    "id": "goro-gun",
+    "name": "Goro + Gun",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJVY2NHepvcVMR_bS_-AzZPrE": {
+    "id": "globefish-sushi-kensington",
+    "name": "Globefish Sushi Kensington",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ5ZEHATSYcVMRAzr4P2EvRQs": {
+    "id": "pho-hoai-vietnamese-beef-house-okotoks",
+    "name": "Pho Hoai Vietnamese Beef House Okotoks",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJZamP2gv5hlQRrBOAimbIm8g": {
+    "id": "sushi-sen-japanese-restaurant",
+    "name": "Sushi Sen Japanese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ1T8Mk-JvcVMR0d52cXedNqU": {
+    "id": "sukiyaki-house",
+    "name": "Sukiyaki House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJV2P-4qVAhFQRbw7Pc_U_lvg": {
+    "id": "hana-sushi-chilliwack",
+    "name": "Hana Sushi Chilliwack",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJp47NhKJKhFQRN3jv-teys4s": {
+    "id": "restaurant-62",
+    "name": "Restaurant 62",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJw4bMyUNfcVMRfcyiHAAxYwk": {
+    "id": "alexander-s-steakhouse-pizzaria",
+    "name": "Alexander's Steakhouse & Pizzaria",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJTYMHL-NvcVMR99TD1p4d7qg": {
+    "id": "koto-sushi-izakaya",
+    "name": "Koto Sushi & Izakaya",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ55W5e1nThVQRGxs1Reg30w4": {
+    "id": "sushi-sama",
+    "name": "Sushi sama",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJQy5YInsThFQRJLKTlhPxKSs": {
+    "id": "taco-rio",
+    "name": "Taco Rio",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJlavCH5Q_cVMRh9mAp1FrPn8": {
+    "id": "mama-mia-italian-kitchen",
+    "name": "Mama Mia Italian Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJFRtODgBvcVMR1BbnX4CbBkI": {
+    "id": "ryuko-west-japanese-kitchen-bar",
+    "name": "Ryuko West - Japanese Kitchen + Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJQ6Q8wlw1hFQRWZT0xtpQtOA": {
+    "id": "yummy-sushi-gallery",
+    "name": "Yummy Sushi Gallery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ4ZMR_sRxcVMR1wTDUcUg31k": {
+    "id": "honjin-izakaya",
+    "name": "Honjin Izakaya",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJq6r6-kw1hFQRawGeEwB1XV0": {
+    "id": "noodle-road",
+    "name": "Noodle Road",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJhZrVFcJyhlQR9CXgetqpXow": {
+    "id": "university-golf-club",
+    "name": "University Golf Club",
+    "verdict": "error",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJKeLvW9rKhVQR-befABZ-r3M": {
+    "id": "ono-s-sushi",
+    "name": "Ono’s Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ3SD_l7Q8h1QR8oU59jC1x68": {
+    "id": "harajuku-izakaya-restaurant-japanese",
+    "name": "Harajuku Izakaya Restaurant | Japanese",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJQUHA7gv5hlQRObN5zOviNNA": {
+    "id": "pepe-s-chophouse",
+    "name": "Pepe's Chophouse",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJB90T3GLUhVQR5a0pRompH90": {
+    "id": "sushi-umibe",
+    "name": "Sushi Umibe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJu08AGrBvcVMR24nlwlrDJNE": {
+    "id": "sushi-in",
+    "name": "Sushi in",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJReMLbUBKhFQRlY_LSf8TVeA": {
+    "id": "sushi-nara",
+    "name": "Sushi Nara",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJU62YSzlxcVMR44F0lH9N8Rg": {
+    "id": "5-senses-ramen-bistro",
+    "name": "5 Senses Ramen & Bistro",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJvy9RFHE_hFQRF1wYcDoxBpM": {
+    "id": "yale-sushi",
+    "name": "Yale Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ3VUEnaJKhFQRfpv3RQaS1Iw": {
+    "id": "little-japan-sushi-restaurant",
+    "name": "Little Japan Sushi Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJU_tbS1o_hFQRFwwg3W9pf3c": {
+    "id": "sushico",
+    "name": "SushiCo",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJX0N1dmsThFQRipLo4-m-0dM": {
+    "id": "cheam-sushi",
+    "name": "Cheam Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJxS5pDfQzhFQRAkXEYlK6r68": {
+    "id": "sushi-te",
+    "name": "Sushi TE",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJy0C69Qv5hlQRgAF7AzxM3so": {
+    "id": "umai-sushi-grill",
+    "name": "Umai Sushi & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJSYa9vgn5hlQRiyqFwS0y9V0": {
+    "id": "samurai-sushi-squamish-garibaldi",
+    "name": "Samurai Sushi Squamish Garibaldi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJfwqNdHhxcVMR2D5rDnXDSRU": {
+    "id": "dopo",
+    "name": "DOPO",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ8w-e60jUhVQRJkjJA2Ht15o": {
+    "id": "kabuki-sushi",
+    "name": "🍣 Kabuki Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJzb1Idr1KhFQRiwp8kRasTy0": {
+    "id": "ra-sushi",
+    "name": "Ra Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ6XcEQEXThVQR61POY3LjGig": {
+    "id": "hako-sushi",
+    "name": "Hako Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJsTyJfvYzhFQRKN0770MGpvo": {
+    "id": "mission-hills-sushi",
+    "name": "Mission Hills Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ579ovv9vcVMRP3WFWXS-_RU": {
+    "id": "satsuki",
+    "name": "Satsuki",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJP0sf2XQ_hFQRbAfYQeeika8": {
+    "id": "sushi-in-wellington",
+    "name": "Sushi In Wellington",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ5XYdKLpAhFQR5wqrWklU-UE": {
+    "id": "vedder-sushi-japanese-restaurant",
+    "name": "Vedder Sushi & Japanese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJO_mQtV3ThVQR3YknGveRuL8": {
+    "id": "smile-thai-cuisine",
+    "name": "Smile Thai Cuisine",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ8cG_bABpcVMRVpkbig7cXts": {
+    "id": "kujira-sushi-izakaya",
+    "name": "Kujira Sushi & Izakaya",
+    "verdict": "published",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJmx1UBmDThVQRrXwUmVzFcQU": {
+    "id": "maple-sushi",
+    "name": "Maple Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJH-SBYVNvcVMRXA-YMwCQ2CM": {
+    "id": "fifth-avenue-sushi",
+    "name": "Fifth Avenue Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJZaFw6NnKhVQR_Vs5hXZShW4": {
+    "id": "hana-sushi-japanese-restaurant",
+    "name": "Hana Sushi Japanese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJTbzK8S1BhFQRZbQlu1nYcJE": {
+    "id": "sushiwa",
+    "name": "Sushiwa",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJSW0ncftvcVMRdCB9lwKc6cs": {
+    "id": "kabuku-downtown",
+    "name": "Kabuku Downtown",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJL76lQW6XcVMRKnuQCvgoD4w": {
+    "id": "red-rock-pizza-okotoks",
+    "name": "Red Rock Pizza Okotoks",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJKWWR4HxKhFQR9b7nNZ6JkOY": {
+    "id": "ebisu-sushi-japanese-restaurant",
+    "name": "Ebisu Sushi Japanese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJS-av5lExhFQRTk7zC_w-j6w": {
+    "id": "young-s-kitchen-sushi",
+    "name": "Young's Kitchen Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJM3TvnUPUhVQRLyt0NvL0taQ": {
+    "id": "sango-sushi-pitt-meadows",
+    "name": "Sango Sushi Pitt Meadows",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ77QZTdM1hFQRzZ0DWeutHPM": {
+    "id": "sushi-nara-gladwin",
+    "name": "Sushi Nara-Gladwin",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJiSWPubBvcVMR7SRSFnEBRmI": {
+    "id": "maru-sushi-and-don",
+    "name": "Maru Sushi and Don",
+    "verdict": "error",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJGXwOfjOYcVMRUHfrTZkb7Qk": {
+    "id": "sweetgrass-deli-eatery",
+    "name": "Sweetgrass Deli & Eatery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJa28qdrtAhFQR6oN-6tVjSuA": {
+    "id": "sushi-yama",
+    "name": "Sushi Yama",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJkRhMSURlcVMRjDNaBDtQdcU": {
+    "id": "furinkazan-izakaya",
+    "name": "Furinkazan Izakaya 🍶🍻風林火山居酒屋🍜🍱",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJm80o0upvcVMRq9dFa_74kYk": {
+    "id": "tokyo-station",
+    "name": "Tokyo Station",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ5wpR4i_4hlQRcYESnP-XGrA": {
+    "id": "kululu-cafe",
+    "name": "Kululu Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJx27uIXvVhVQR9Wq4z6WRlSc": {
+    "id": "sushi-guru-in-maple-ridge",
+    "name": "Sushi Guru in Maple Ridge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ0w7v4EZKhFQRLaDEvvNLBiM": {
+    "id": "hiko-sushi",
+    "name": "Hiko Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJQ_Iv90bQhVQRoKlWkenaRoY": {
+    "id": "village-sushi-restaurant",
+    "name": "Village Sushi Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ4SjPAyVHhFQR6MxQsK6k1Dw": {
+    "id": "coco-sushi-and-bubble-tea",
+    "name": "Coco Sushi and Bubble Tea",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJQ0I0ImTUhVQRwvVHq0J4yws": {
+    "id": "sushi-misoya",
+    "name": "Sushi Misoya",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ5RYVsWDThVQRO3KmbJSuoo0": {
+    "id": "kitchen-on-the-ridge",
+    "name": "Kitchen On The Ridge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJIVdhV2Q_hFQROIQU2hHtgTI": {
+    "id": "woo-mai-sushi-japanese-restaurant-ltd",
+    "name": "Woo Mai Sushi Japanese Restaurant Ltd",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJX_OT5ml6hlQR6q6jX8jlGAc": {
+    "id": "genji-japanese-restaurant",
+    "name": "Genji Japanese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ36herOxvcVMRieEyKr1fLHc": {
+    "id": "wakuwaku-sushi",
+    "name": "Wakuwaku Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJlxMbWkI1hFQRtRjDJo0Ufas": {
+    "id": "sushiwa-japanese-restaurant",
+    "name": "Sushiwa Japanese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJs0O0omI1hFQR3ox0HTER2J0": {
+    "id": "sushiteria",
+    "name": "Sushiteria",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJM3TvnUPUhVQRW4m3AecIL_k": {
+    "id": "sushi-house-japanese-restaurant",
+    "name": "Sushi House Japanese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJp5N_bXhxcVMRMCb13P2Pq3k": {
+    "id": "diner-deluxe-marda-loop",
+    "name": "diner deluxe - Marda Loop",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJd4ct5qtfcVMR1CvY7aK_pAk": {
+    "id": "big-t-s-bbq-smokehouse",
+    "name": "Big T's BBQ & Smokehouse",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJJ9jaAwA_hFQR8YMms9r7Ph8": {
+    "id": "ramen-house-1881",
+    "name": "Ramen House 1881",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ-Vv-c01tcVMR_wTlNsiH-aA": {
+    "id": "shoku-sushi-grill",
+    "name": "Shoku Sushi & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJZepqS4A1hFQRaPW7c6rSm-k": {
+    "id": "kira-sushi",
+    "name": "Kira Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJNcvHWqfahVQRmjxZAMFk5jM": {
+    "id": "nikko-sushi-restaurant",
+    "name": "Nikko Sushi Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJ12vSC8lyhlQRKc0MuP873R4": {
+    "id": "perugia-italian-caff",
+    "name": "Perugia Italian Caffè",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJzeV-d4NHhFQRLAvtHsg_PrI": {
+    "id": "sushi-rice",
+    "name": "Sushi Rice",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJvb0lXFI_hFQRSl1RZyb2noA": {
+    "id": "mosaic-plate",
+    "name": "Mosaic Plate",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
+  },
+  "ChIJrVeA-8pxcVMRE_7vTts0XbE": {
+    "id": "nobushi-kitchen-bar",
+    "name": "NOBUSHI Kitchen+Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-08"
   }
 }

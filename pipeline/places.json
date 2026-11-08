@@ -30440,5 +30440,345 @@
     },
     "matched_name": "Freestyle Social Club",
     "synced_at": "2026-11-07"
+  },
+  "gyu-kaku-japanese-bbq": {
+    "place_id": "ChIJR7DOkeRvcVMRx661p4mqEJI",
+    "rating": 4.4,
+    "user_ratings_total": 3715,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Gyu-Kaku Japanese BBQ",
+    "synced_at": "2026-11-08"
+  },
+  "the-park-kitchen-bar": {
+    "place_id": "ChIJHzjAa0p3cVMRZyUsIHIsrIU",
+    "rating": 4.4,
+    "user_ratings_total": 1664,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "The Park Kitchen & Bar",
+    "synced_at": "2026-11-08"
+  },
+  "loco-lou-s-2-0-arcade-bar-grill": {
+    "place_id": "ChIJqTo04ZFvcVMR76mTmyu2GuY",
+    "rating": 4.1,
+    "user_ratings_total": 1205,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Loco Lou's 2.0 Arcade Bar & Grill",
+    "synced_at": "2026-11-08"
+  },
+  "brickwell-taphouse": {
+    "place_id": "ChIJsaV14PxlcVMRNHr9QjlcGD8",
+    "rating": 4.3,
+    "user_ratings_total": 619,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Brickwell Taphouse",
+    "synced_at": "2026-11-08"
+  },
+  "buffalo-bob-s-canadian-pub": {
+    "place_id": "ChIJuSi9vv1xcVMRRUs7w0wObFI",
+    "rating": 4.3,
+    "user_ratings_total": 552,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Buffalo Bob's Canadian Pub",
+    "synced_at": "2026-11-08"
+  },
+  "403-local": {
+    "place_id": "ChIJhUaJ_LF3cVMRCBS2YAIweAA",
+    "rating": 4.3,
+    "user_ratings_total": 526,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "403 Local",
+    "synced_at": "2026-11-08"
+  },
+  "juliets-castle-sports-bar-and-lounge": {
+    "place_id": "ChIJpUWMKtJlcVMR1RPzp8Lm9tE",
+    "rating": 4,
+    "user_ratings_total": 383,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Juliets Castle Sports Bar and Lounge",
+    "synced_at": "2026-11-08"
+  },
+  "glenn-s-job-site-1-sports-bar": {
+    "place_id": "ChIJAQAAAMdkcVMRnF2v-SUwxW0",
+    "rating": 4,
+    "user_ratings_total": 123,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Glenn's Job Site 1 Sports Bar",
+    "synced_at": "2026-11-08"
+  },
+  "unfiltered-wine-bar": {
+    "place_id": "ChIJV_CKYABvcVMRR8ne8HVtKRM",
+    "rating": 4.9,
+    "user_ratings_total": 70,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Unfiltered Wine Bar",
+    "synced_at": "2026-11-07"
+  },
+  "shandhar-hut-indian-cuisine-sardis": {
+    "place_id": "ChIJz8glgpBBhFQRKbHzslhVBhs",
+    "rating": 4.9,
+    "user_ratings_total": 1980,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Shandhar Hut Indian Cuisine - Sardis",
+    "synced_at": "2026-11-08"
+  },
+  "flores-pine": {
+    "place_id": "ChIJn-ddPv5pcVMRZX_66HtxcI4",
+    "rating": 4.3,
+    "user_ratings_total": 1243,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Flores & Pine",
+    "synced_at": "2026-11-08"
+  },
+  "redheads-japa-cafe": {
+    "place_id": "ChIJ-fMRIuJvcVMRMYlZCheuyE0",
+    "rating": 4.6,
+    "user_ratings_total": 1022,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Redheads Japa Cafe",
+    "synced_at": "2026-11-08"
+  },
+  "aama-nepalese-cuisine-restaurant-in-cochrane": {
+    "place_id": "ChIJgbPqf-8_cVMRbQLuDLdi5kQ",
+    "rating": 4.8,
+    "user_ratings_total": 1019,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Aama Nepalese Cuisine | Restaurant in Cochrane",
+    "synced_at": "2026-11-08"
+  },
+  "goro-gun": {
+    "place_id": "ChIJTaRCUvxvcVMRIAdQldLH-Ks",
+    "rating": 4.2,
+    "user_ratings_total": 970,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Goro + Gun",
+    "synced_at": "2026-11-08"
+  },
+  "globefish-sushi-kensington": {
+    "place_id": "ChIJVY2NHepvcVMR_bS_-AzZPrE",
+    "rating": 4.3,
+    "user_ratings_total": 943,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Globefish Sushi Kensington",
+    "synced_at": "2026-11-08"
+  },
+  "restaurant-62": {
+    "place_id": "ChIJp47NhKJKhFQRN3jv-teys4s",
+    "rating": 4.5,
+    "user_ratings_total": 847,
+    "price_level": 3,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Restaurant 62",
+    "synced_at": "2026-11-08"
+  },
+  "koto-sushi-izakaya": {
+    "place_id": "ChIJTYMHL-NvcVMR99TD1p4d7qg",
+    "rating": 4.1,
+    "user_ratings_total": 794,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Koto Sushi & Izakaya",
+    "synced_at": "2026-11-08"
+  },
+  "harajuku-izakaya-restaurant-japanese": {
+    "place_id": "ChIJ3SD_l7Q8h1QR8oU59jC1x68",
+    "rating": 4.2,
+    "user_ratings_total": 650,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Harajuku Izakaya Restaurant | Japanese",
+    "synced_at": "2026-11-08"
+  },
+  "pepe-s-chophouse": {
+    "place_id": "ChIJQUHA7gv5hlQRObN5zOviNNA",
+    "rating": 4.3,
+    "user_ratings_total": 636,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Pepe's Chophouse",
+    "synced_at": "2026-11-08"
+  },
+  "kujira-sushi-izakaya": {
+    "place_id": "ChIJ8cG_bABpcVMRVpkbig7cXts",
+    "rating": 4.6,
+    "user_ratings_total": 444,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Kujira Sushi & Izakaya",
+    "synced_at": "2026-11-08"
   }
 }
