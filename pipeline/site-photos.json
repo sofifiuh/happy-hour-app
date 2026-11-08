@@ -164,6 +164,116 @@
       ]
     }
   },
+  "33-acres-brewing-company-calgary": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://33acresbrewing.com/",
+      "https://33acresbrewing.com/events/",
+      "https://33acresbrewing.com/our-beers/",
+      "https://33acresbrewing.com/our-space/"
+    ],
+    "cover_problem": "graphic",
+    "cover": {
+      "url": "https://33acresbrewing.com/app/uploads/2013/05/06.jpg",
+      "page": "https://33acresbrewing.com/our-space/",
+      "w": 1200,
+      "h": 800
+    },
+    "gallery": [
+      {
+        "url": "https://33acresbrewing.com/app/uploads/2013/05/07.jpg",
+        "page": "https://33acresbrewing.com/our-space/",
+        "w": 1200,
+        "h": 800
+      },
+      {
+        "url": "https://33acresbrewing.com/app/uploads/2013/05/03.jpg",
+        "page": "https://33acresbrewing.com/our-space/",
+        "w": 1200,
+        "h": 800
+      },
+      {
+        "url": "https://33acresbrewing.com/app/uploads/2013/05/OurMission_NEW.jpg",
+        "page": "https://33acresbrewing.com/our-space/",
+        "w": 1200,
+        "h": 800
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "cc0615d92f1a",
+      "rejected": [
+        {
+          "url": "https://33acresbrewing.com/app/uploads/2013/05/04.jpg",
+          "why": "sign/text graphic"
+        },
+        {
+          "url": "https://33acresbrewing.com/app/uploads/2013/05/08.jpg",
+          "why": "branded merchandise"
+        },
+        {
+          "url": "https://33acresbrewing.com/app/uploads/2013/05/09.jpg",
+          "why": "branded merchandise"
+        },
+        {
+          "url": "https://33acresbrewing.com/app/uploads/2013/05/TastingRoom_09.jpg",
+          "why": "mood board collage"
+        },
+        {
+          "url": "https://33acresbrewing.com/app/uploads/2025/04/Adapt_Melt_WEB_WEB.jpg",
+          "why": "promotional marketing image"
+        }
+      ]
+    }
+  },
+  "403-local": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.403local.com/",
+      "https://www.403local.com/upcoming-events",
+      "https://www.403local.com/about",
+      "https://www.403local.com/dog-patio"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/0e4cf8_ee9ec52fc1bb4afc810134ae8355d85b~mv2.jpg/v1/fill/w_1960,h_798,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC_7869-Enhanced-NR.jpg",
+      "page": "https://www.403local.com/about",
+      "w": 1960,
+      "h": 798
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/23086b_688f6cdb0db34ef8a511f6404dc0febc~mv2.jpg/v1/fill/w_2500,h_1660,al_c/23086b_688f6cdb0db34ef8a511f6404dc0febc~mv2.jpg",
+        "page": "https://www.403local.com/about",
+        "w": 2500,
+        "h": 1660
+      },
+      {
+        "url": "https://static.wixstatic.com/media/6d3036_e9a55aa598c24eb897f7b7ee8f68b732~mv2.jpg/v1/fill/w_721,h_604,al_t,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6d3036_e9a55aa598c24eb897f7b7ee8f68b732~mv2.jpg",
+        "page": "https://www.403local.com/upcoming-events",
+        "w": 721,
+        "h": 604
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "949ba63614ea",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/6d3036_5186ccee258a4bd0a35616f9563c2a39~mv2.jpg/v1/crop/x_259,y_0,w_1498,h_1152/fill/w_926,h_712,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11418768590342133496_edited.jpg",
+          "why": "dog portrait"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/23086b_88d2c72387fe4c3f9ddf3725628163bc~mv2.jpg/v1/fill/w_2500,h_2500,al_c/23086b_88d2c72387fe4c3f9ddf3725628163bc~mv2.jpg",
+          "why": "duplicate of photo1"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/6d3036_8e0ccfc620524521b10ff4ec928afae2~mv2.jpg/v1/fill/w_1960,h_786,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Burger%20Tots_edited_edited.jpg",
+          "why": "duplicate of photo7"
+        }
+      ]
+    }
+  },
   "75-west-coast-grill": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -289,6 +399,72 @@
         {
           "url": "https://dynl.mktgcdn.com/p/Mbiw0T23XmVAUv-PWi6TCl_g2wni8Tng3ecXF_ouASQ/1200x1200.jpg",
           "why": "near-duplicate of photo1"
+        }
+      ]
+    }
+  },
+  "aama-nepalese-cuisine-restaurant-in-cochrane": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://aamanepalesecuisine.ca/",
+      "https://aamanepalesecuisine.ca/about-us",
+      "https://aamanepalesecuisine.ca/post/restaurant-in-cochrane-that-brings-nepalese-culture-to-your-table",
+      "https://aamanepalesecuisine.ca/post/how-asian-food-in-cochrane-brings-unique-flavors-to-your-plate"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://aamanepalesecuisine.ca/images/DSC01466.jpg",
+      "page": "https://aamanepalesecuisine.ca/post/restaurant-in-cochrane-that-brings-nepalese-culture-to-your-table",
+      "w": 4240,
+      "h": 2384
+    },
+    "gallery": [
+      {
+        "url": "https://aamanepalesecuisine.ca/images/DSC01471.webp",
+        "page": "https://aamanepalesecuisine.ca/",
+        "w": 4240,
+        "h": 2384
+      },
+      {
+        "url": "https://aamanepalesecuisine.ca/images/DSC05023.webp",
+        "page": "https://aamanepalesecuisine.ca/",
+        "w": 1067,
+        "h": 800
+      },
+      {
+        "url": "https://aamanepalesecuisine.ca/images/home-bgf.webp",
+        "page": "https://aamanepalesecuisine.ca/",
+        "w": 1000,
+        "h": 667
+      },
+      {
+        "url": "https://aamanepalesecuisine.ca/images/thupka-new.webp",
+        "page": "https://aamanepalesecuisine.ca/",
+        "w": 3414,
+        "h": 3420
+      },
+      {
+        "url": "https://aamanepalesecuisine.ca/images/chowmein-new.webp",
+        "page": "https://aamanepalesecuisine.ca/",
+        "w": 1707,
+        "h": 1710
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "697226fbedbb",
+      "rejected": [
+        {
+          "url": "https://aamanepalesecuisine.ca/public/blogs/1775228954.webp",
+          "why": "marketing image with logo and promotional text"
+        },
+        {
+          "url": "https://aamanepalesecuisine.ca/public/blogs/1774020766.webp",
+          "why": "collage with logo and large promotional text"
+        },
+        {
+          "url": "https://aamanepalesecuisine.ca/images/DSC01477.webp",
+          "why": "blurry out-of-focus image"
         }
       ]
     }
@@ -1185,6 +1361,70 @@
       ]
     }
   },
+  "annex-ale-project": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://annexales.com/",
+      "https://annexales.com/pages/taproom",
+      "https://annexales.com/pages/taproom-menu",
+      "https://annexales.com/pages/taproom-events"
+    ],
+    "cover_problem": "review: person's hand is the prominent subject, not the venue or its offerings",
+    "cover": {
+      "url": "https://annexales.com/cdn/shop/files/taproom-hero.jpg?v=1787696256&width=1920",
+      "page": "https://annexales.com/",
+      "w": 1920,
+      "h": 1280
+    },
+    "gallery": [
+      {
+        "url": "https://annexales.com/cdn/shop/files/Taproom-11.jpg?v=1789742285&width=1536",
+        "page": "https://annexales.com/pages/taproom",
+        "w": 1536,
+        "h": 1024
+      },
+      {
+        "url": "https://annexales.com/cdn/shop/files/taproom-menu.jpg?v=1788884843&width=1280",
+        "page": "https://annexales.com/pages/taproom",
+        "w": 1280,
+        "h": 1532
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "fdc7c26b9e7b",
+      "rejected": [
+        {
+          "url": "http://annexales.com/cdn/shop/files/Untitled_design_8.png?v=1790193337",
+          "why": "person's hand is the prominent subject, not the venue or its offerings"
+        },
+        {
+          "url": "https://annexales.com/cdn/shop/files/NewWebsite-3.jpg?v=1789741141&width=1600",
+          "why": "near-duplicate of photo1 with same hand-and-cans composition"
+        },
+        {
+          "url": "https://annexales.com/cdn/shop/files/RiverHall-Photo-GlassFilm.jpg?v=1789512676&width=1400",
+          "why": "River Hall - different venue entirely"
+        },
+        {
+          "url": "https://annexales.com/cdn/shop/files/taproom-events.jpg?v=1788884843&width=1280",
+          "why": "musicians performing - people as subject"
+        },
+        {
+          "url": "http://annexales.com/cdn/shop/files/Untitled_design_8.png?v=1790193337",
+          "why": "duplicate of photo1"
+        },
+        {
+          "url": "https://annexales.com/cdn/shop/files/workshop-poster.png?v=1793732838&width=3363",
+          "why": "promotional poster, mostly text"
+        },
+        {
+          "url": "https://annexales.com/cdn/shop/files/gg-event_5b2485e9-14e7-44f4-bf7a-3e912772ff90.png?v=1790724329&width=3000",
+          "why": "event poster, mostly text"
+        }
+      ]
+    }
+  },
   "apollonia-greek-restaurant": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -1420,6 +1660,124 @@
         {
           "url": "https://images.squarespace-cdn.com/content/v1/556e086be4b02ae09b8c9fca/1586355455410-PACXCBH818K5T8I6GU7W/yes.JPG",
           "why": "signage with banners"
+        }
+      ]
+    }
+  },
+  "atlas-brewing-airdrie": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.atlasbrewing.ca/",
+      "https://www.atlasbrewing.ca/events",
+      "https://www.atlasbrewing.ca/taproom",
+      "https://www.atlasbrewing.ca/about"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/13f8f6_f479141f32264b4c8b836fdeb027a392~mv2.jpg/v1/fill/w_1440,h_625,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/13f8f6_f479141f32264b4c8b836fdeb027a392~mv2.jpg",
+      "page": "https://www.atlasbrewing.ca/taproom",
+      "w": 1440,
+      "h": 625
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/13f8f6_caad5146ad2a4d8ea6be4ddc90953b09~mv2.jpg/v1/crop/x_203,y_0,w_5834,h_4160/fill/w_1122,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/53152222_11282021.jpg",
+        "page": "https://www.atlasbrewing.ca/",
+        "w": 1122,
+        "h": 800
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "b7e6a73938fa",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/11062b_35f7f1c269da4915a862c75c75e22dcd~mv2_d_4014_2678_s_4_2.jpg/v1/fill/w_1440,h_790,al_br,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_35f7f1c269da4915a862c75c75e22dcd~mv2_d_4014_2678_s_4_2.jpg",
+          "why": "abstract colored smoke image, not the venue"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/57cdff_f65c4f127fe64accad08c86e7224b656~mv2.jpg/v1/fill/w_469,h_436,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/57cdff_f65c4f127fe64accad08c86e7224b656~mv2.jpg",
+          "why": "event flyer with person portrait"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/57cdff_24acc6333d5d4e5c882ae156cb87bbc9~mv2.jpg/v1/fill/w_469,h_436,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/57cdff_24acc6333d5d4e5c882ae156cb87bbc9~mv2.jpg",
+          "why": "event flyer with mostly text and person portraits"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/57cdff_0cbf999aab90457895561becefc70957~mv2.jpg/v1/fill/w_469,h_436,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/57cdff_0cbf999aab90457895561becefc70957~mv2.jpg",
+          "why": "event flyer with mostly text"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/57cdff_9f8e09e51a7d48158eb38a4d9b5b5625~mv2.jpg/v1/fill/w_469,h_436,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/57cdff_9f8e09e51a7d48158eb38a4d9b5b5625~mv2.jpg",
+          "why": "event flyer with group photo of musicians"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/57cdff_fddd4077811b40cab3d1fd736cd4a444~mv2.jpg/v1/fill/w_469,h_436,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/57cdff_fddd4077811b40cab3d1fd736cd4a444~mv2.jpg",
+          "why": "event flyer with person portrait"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/57cdff_4448d6b9fdcd4cdfb32134d4f18b2ca8~mv2.jpg/v1/fill/w_469,h_436,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/57cdff_4448d6b9fdcd4cdfb32134d4f18b2ca8~mv2.jpg",
+          "why": "event flyer with person portrait"
+        }
+      ]
+    }
+  },
+  "atlas-pizza-sports-bar": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://atlaspizzasportsbar.com/",
+      "https://atlaspizzasportsbar.com/events",
+      "https://atlaspizzasportsbar.com/our-story",
+      "https://atlaspizzasportsbar.com/menus/our-specials"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://cdn.prod.website-files.com/615b58bf1b77938f41837d36/6a3c4a0513b9bf4e3152d836_1d105102-ed93-40cb-ac54-e601fcd40600.png",
+      "page": "https://atlaspizzasportsbar.com/",
+      "w": 1717,
+      "h": 916
+    },
+    "gallery": [
+      {
+        "url": "https://cdn.prod.website-files.com/615b58bf1b77938f41837d36/66ee020defa7bc7bf4da8f37_LK.png",
+        "page": "https://atlaspizzasportsbar.com/",
+        "w": 1013,
+        "h": 675
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/615b58bf1b7793cb29837d4a/65a0419b0580cdbb119b1e58_mccccc.jpg",
+        "page": "https://atlaspizzasportsbar.com/",
+        "w": 945,
+        "h": 630
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "cc4ae7d26ae5",
+      "rejected": [
+        {
+          "url": "https://cdn.prod.website-files.com/615b58bf1b77938f41837d36/61682847fce8db2cf4185d57_resized-image-Promo.jpeg",
+          "why": "person as subject - hands/body prominent"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/615b58bf1b77938f41837d36/6a3ee5f8f68debaf54715e16_Webpage%20design.png",
+          "why": "near-duplicate of photo2"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/615b58bf1b77938f41837d36/669fd442ca62e5e10882526b_Atlas%20Runner%20Up.png",
+          "why": "promotional graphic with text overlay"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/615b58bf1b77938f41837d36/6970021cc12ed4ad0641353a_Wilcard%20Wednesdays.png",
+          "why": "menu/promo with pricing text"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/615b58bf1b77938f41837d36/697002773881fa110856b029_Saturday.png",
+          "why": "menu/promo with pricing text"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/615b58bf1b7793cb29837d4a/65a0411baf0efcb138a0e10d_ppppp.jpg",
+          "why": "staff/chef as subject"
         }
       ]
     }
@@ -3545,6 +3903,48 @@
       ]
     }
   },
+  "brickwell-taphouse": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.brickwelltaphouse.com/",
+      "https://www.brickwelltaphouse.com/about-4"
+    ],
+    "cover_problem": "graphic",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/40c8d0_c59d21a6ecf34a60875b94e260f4a170~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/40c8d0_c59d21a6ecf34a60875b94e260f4a170~mv2.jpg",
+      "page": "https://www.brickwelltaphouse.com/",
+      "w": 1440,
+      "h": 1000
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/84770f_e1cc76ebf28941b1ace2a0a2b64ea0b0~mv2_d_4256_2828_s_4_2.jpg/v1/crop/x_1025,y_0,w_3080,h_2828/fill/w_962,h_880,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_e1cc76ebf28941b1ace2a0a2b64ea0b0~mv2_d_4256_2828_s_4_2.jpg",
+        "page": "https://www.brickwelltaphouse.com/",
+        "w": 962,
+        "h": 880
+      },
+      {
+        "url": "https://static.wixstatic.com/media/40c8d0_f9eb185d45384f5c8b629b16970605fc~mv2.jpg/v1/fill/w_960,h_407,al_c,q_85,enc_avif,quality_auto/40c8d0_f9eb185d45384f5c8b629b16970605fc~mv2.jpg",
+        "page": "https://www.brickwelltaphouse.com/about-4",
+        "w": 960,
+        "h": 407
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "797a76b7d8b0",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/81179e9a2a284ecb8f28265d9ec650f8.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/81179e9a2a284ecb8f28265d9ec650f8.jpg",
+          "why": "neon sign graphic, primarily text-based signage"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/0ef509642a5043dbacc9f2cbbbee866e.jpg/v1/crop/x_402,y_0,w_1757,h_1600/fill/w_1052,h_958,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Guitar%20in%20Flames.jpg",
+          "why": "stock-style illustration of flaming guitar, not a real venue photo"
+        }
+      ]
+    }
+  },
   "bridgette-bar": {
     "checked_at": "2026-11-07",
     "pages": [
@@ -3937,6 +4337,66 @@
       ]
     }
   },
+  "buffalo-bob-s-canadian-pub": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.buffalobobs.ca/",
+      "https://www.buffalobobs.ca/services-3",
+      "https://www.buffalobobs.ca/book-the-backroom",
+      "https://www.buffalobobs.ca/about-us"
+    ],
+    "cover_problem": "review: logo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/nsplsh_b1a0d52d5f684b75870683803c916c22~mv2.jpg/v1/fill/w_1440,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_b1a0d52d5f684b75870683803c916c22~mv2.jpg",
+      "page": "https://www.buffalobobs.ca/book-the-backroom",
+      "w": 1440,
+      "h": 1200
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/nsplsh_b18d534006ee4a5f8cd966139e6b893b~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_b18d534006ee4a5f8cd966139e6b893b~mv2.jpg",
+        "page": "https://www.buffalobobs.ca/services-3",
+        "w": 1440,
+        "h": 1000
+      },
+      {
+        "url": "https://static.wixstatic.com/media/db2f2100a889448dad51659b3d61b735.jpg/v1/crop/x_205,y_0,w_1569,h_1080/fill/w_964,h_664,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Nightlife.jpg",
+        "page": "https://www.buffalobobs.ca/about-us",
+        "w": 964,
+        "h": 664
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "2f125298e6a5",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/61e250_0b0234e98e334d0ca9ca2d63968627ff%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/61e250_0b0234e98e334d0ca9ca2d63968627ff%7Emv2.jpeg",
+          "why": "logo"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/61e250_ac61370990bb497f94112cd34f4cf909~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/61e250_ac61370990bb497f94112cd34f4cf909~mv2.jpg",
+          "why": "extreme close-up of barrels, doesn't show venue"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/nsplsh_554572576f51456f4d7263~mv2_d_6000_4000_s_4_2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsplsh_554572576f51456f4d7263~mv2_d_6000_4000_s_4_2.jpg",
+          "why": "beer bottles outdoors, not at venue"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/72671b_3597d39e99d54a1ab0ad002ca71c8189~mv2.jpg/v1/fill/w_1198,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72671b_3597d39e99d54a1ab0ad002ca71c8189~mv2.jpg",
+          "why": "promotional flyer with prices and text"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/72671b_48858d18efd34b428f8aed8bfb361711~mv2.jpg/v1/fill/w_1200,h_1190,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/72671b_48858d18efd34b428f8aed8bfb361711~mv2.jpg",
+          "why": "trivia night poster, mostly text"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/61e250_0b0234e98e334d0ca9ca2d63968627ff%7Emv2.jpeg/v1/fit/w_2500,h_1330,al_c/61e250_0b0234e98e334d0ca9ca2d63968627ff%7Emv2.jpeg",
+          "why": "logo duplicate"
+        }
+      ]
+    }
+  },
   "burgoo": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -4026,6 +4486,70 @@
         {
           "url": "https://cdn.prod.website-files.com/64626a93453ebafe7c2a143a/646280ad7b312de8feb5a551_cprime-review03.jpg",
           "why": "group photo posing"
+        }
+      ]
+    }
+  },
+  "cabin-brewing-company": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.cabinbrewing.ca/",
+      "https://www.cabinbrewing.ca/events",
+      "https://www.cabinbrewing.ca/who",
+      "https://www.cabinbrewing.ca/menu"
+    ],
+    "cover_problem": "review: logo wordmark",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5a5590fc0abd0444cba48ff0/1612805838038-T33D6KMMSKQ5BIKPCP1O/Cabin+Brewing+Company+Taproom+6+%282%29.jpg",
+      "page": "https://www.cabinbrewing.ca/",
+      "w": 2500,
+      "h": 1667
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5a5590fc0abd0444cba48ff0/1574914985887-GXC9K581T7Q59V3XU9MN/Cabin+Brewing+Company+Taproom+1+.jpg",
+        "page": "https://www.cabinbrewing.ca/",
+        "w": 2500,
+        "h": 1667
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5a5590fc0abd0444cba48ff0/1548694399891-WMDV1IJ43FYFXVZY1POK/Cabin+Brewing+Company+Taproom+5.jpg",
+        "page": "https://www.cabinbrewing.ca/",
+        "w": 2500,
+        "h": 1667
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5a5590fc0abd0444cba48ff0/1548694364045-TT1LVH97JGXQNP4SK662/Cabin+Brewing+Company+taproom+3.jpg",
+        "page": "https://www.cabinbrewing.ca/",
+        "w": 2500,
+        "h": 1667
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5a5590fc0abd0444cba48ff0/6864df39-5ec5-425f-8d35-8e042ca4ef95/Cabin+Taproom+LP+1.jpg",
+        "page": "https://www.cabinbrewing.ca/events",
+        "w": 1536,
+        "h": 1024
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "02c87a0afba9",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/5a5590fc0abd0444cba48ff0/t/5ae7f817575d1f30835632de/1525151772685/CAB-002+Postcards-1+Rainbow.jpg?format=1500w",
+          "why": "logo wordmark"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a5590fc0abd0444cba48ff0/1574914985603-8B8GVG8HEYGYKCA9ZFNK/Cabin+Brewing+Company+taproom+4+.jpg",
+          "why": "near-duplicate of photo4"
+        },
+        {
+          "url": "http://static1.squarespace.com/static/5a5590fc0abd0444cba48ff0/t/5ae7f817575d1f30835632de/1525151772685/CAB-002+Postcards-1+Rainbow.jpg?format=1500w",
+          "why": "duplicate logo"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5a5590fc0abd0444cba48ff0/1548694365718-D5AB0ONME5GVN4RYE7ME/Cabin+Brewing+Company+taproom+2.jpg",
+          "why": "light fixture detail, not venue view"
         }
       ]
     }
@@ -5141,6 +5665,15 @@
       ]
     }
   },
+  "chances-abbotsford": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://abbotsfordchances.ca/.well-known/sgcaptcha/?r=%2F&y=ipr:159.60.175.139:1794161122.159"
+    ],
+    "cover_problem": null,
+    "cover": null,
+    "gallery": []
+  },
   "chao-mami": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -5500,6 +6033,48 @@
         {
           "url": "https://images.prismic.io/chop/ZwBr6bVsGrYSwaDX_Richmond.png?auto=format%2Ccompress&rect=0%2C200%2C5140%2C2741&w=1281&h=683",
           "why": "logo signage is primary subject"
+        }
+      ]
+    }
+  },
+  "citizen-brewing-company": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.citizenbrewingcompany.com/",
+      "https://www.citizenbrewingcompany.com/pages/about",
+      "https://www.citizenbrewingcompany.com/our-menu",
+      "https://www.citizenbrewingcompany.com/events"
+    ],
+    "cover_problem": "tiny file",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/667c7d4e464f5d417fb259a8/7d46a910-2edf-4611-95e9-4e7d0c44ee08/Beer+Church+Background+-+Citizen+Brewing+Company+Patio.jpg",
+      "page": "https://www.citizenbrewingcompany.com/",
+      "w": 1640,
+      "h": 922
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/667c7d4e464f5d417fb259a8/3ca25284-64d9-4ff6-9da1-d5bb0a71c425/Citizen+Brewing+Company+Exterior+Phoot.jpg",
+        "page": "https://www.citizenbrewingcompany.com/",
+        "w": 1080,
+        "h": 800
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "999761a6784f",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/667c7d4e464f5d417fb259a8/965a4c64-d960-4997-b6cd-d081fb94e6fa/Booking+Call+To+Action.jpg",
+          "why": "black-and-white event photo, group posing"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/667c7d4e464f5d417fb259a8/04aaeace-f77d-431f-851b-1a888e451b21/Citizen+Brewing+Company+Exterior.jpg",
+          "why": "near-duplicate of photo3"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/667c7d4e464f5d417fb259a8/6dfeaf01-db06-4186-a4c5-6033e3ae2a9a/Citizen+Brewing+Company+Keg.jpg",
+          "why": "logo graphic close-up"
         }
       ]
     }
@@ -7972,6 +8547,78 @@
       ]
     }
   },
+  "flores-pine": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.floresandpine.com/",
+      "https://www.floresandpine.com/gatherings",
+      "https://www.floresandpine.com/events",
+      "https://www.floresandpine.com/about-us"
+    ],
+    "cover_problem": "review: chef portrait",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/0a7a31_91626199771b45aa924d65e4976f949c~mv2.jpg/v1/fit/w_1500,h_1000,q_90,enc_avif,quality_auto/0a7a31_91626199771b45aa924d65e4976f949c~mv2.jpg",
+      "page": "https://www.floresandpine.com/gatherings",
+      "w": 1500,
+      "h": 1000
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/e086d1_6abc3c023dad43b787dce818ae7ce62b~mv2.jpg/v1/fit/w_2905,h_1935,q_90,enc_avif,quality_auto/e086d1_6abc3c023dad43b787dce818ae7ce62b~mv2.jpg",
+        "page": "https://www.floresandpine.com/events",
+        "w": 2902,
+        "h": 1935
+      },
+      {
+        "url": "https://static.wixstatic.com/media/e49425_e44435112d4247cb954344224bbc8380~mv2.jpg/v1/fit/w_2835,h_1890,q_90,enc_avif,quality_auto/e49425_e44435112d4247cb954344224bbc8380~mv2.jpg",
+        "page": "https://www.floresandpine.com/gatherings",
+        "w": 2835,
+        "h": 1890
+      },
+      {
+        "url": "https://static.wixstatic.com/media/e49425_81e07a02af954268b148b58e16557b1d~mv2.jpg/v1/fit/w_1600,h_1066,q_90,enc_avif,quality_auto/e49425_81e07a02af954268b148b58e16557b1d~mv2.jpg",
+        "page": "https://www.floresandpine.com/gatherings",
+        "w": 1598,
+        "h": 1066
+      },
+      {
+        "url": "https://static.wixstatic.com/media/0a7a31_809268ee1fc1447186a34f5ae7914c2e~mv2.jpg/v1/fit/w_1500,h_999,q_90,enc_avif,quality_auto/0a7a31_809268ee1fc1447186a34f5ae7914c2e~mv2.jpg",
+        "page": "https://www.floresandpine.com/events",
+        "w": 1498,
+        "h": 999
+      },
+      {
+        "url": "https://static.wixstatic.com/media/0a7a31_6b108943f053448c94c7e28094ce2c74~mv2.jpg/v1/fit/w_1500,h_999,q_90,enc_avif,quality_auto/0a7a31_6b108943f053448c94c7e28094ce2c74~mv2.jpg",
+        "page": "https://www.floresandpine.com/events",
+        "w": 1498,
+        "h": 999
+      },
+      {
+        "url": "https://static.wixstatic.com/media/e49425_1d79ad8b09d04f2b9a910fbd4a5d2a2b~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e49425_1d79ad8b09d04f2b9a910fbd4a5d2a2b~mv2.jpg",
+        "page": "https://www.floresandpine.com/gatherings",
+        "w": 1440,
+        "h": 1000
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "6c31013c8b99",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/0a7a31_1420b05a84a94772bd61f9c1f7faa85f~mv2.jpg/v1/fill/w_1000,h_679,al_c/0a7a31_1420b05a84a94772bd61f9c1f7faa85f~mv2.jpg",
+          "why": "chef portrait"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/0a7a31_22efde1b993d424391d7335eac999681~mv2.jpg/v1/fit/w_2047,h_1259,q_90,enc_avif,quality_auto/0a7a31_22efde1b993d424391d7335eac999681~mv2.jpg",
+          "why": "wedding couple photo"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/e49425_17a9abee982b4dffab611001792c65be~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e49425_17a9abee982b4dffab611001792c65be~mv2.jpg",
+          "why": "event crowd gathering"
+        }
+      ]
+    }
+  },
   "flying-beaver-bar-grill": {
     "checked_at": "2026-10-24",
     "error": "page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigating to \"https://theflyingbeaver.com/\", waiting until \"domcontentloaded\"\n",
@@ -8544,6 +9191,66 @@
       ]
     }
   },
+  "freestyle-social-club": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.freestylesocialclub.ca/",
+      "https://www.freestylesocialclub.ca/events"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://cdn.prod.website-files.com/62b1dfad2c19304fe4362a9e/63408d308b49d42e4c88d05d_A7306771-2.jpg",
+      "page": "https://www.freestylesocialclub.ca/events",
+      "w": 1564,
+      "h": 1080
+    },
+    "gallery": [
+      {
+        "url": "https://cdn.prod.website-files.com/62b1dfad2c19304fe4362a9e/637272826426b2578f4ce8ad_SocialUploadRes-2824-2.jpg",
+        "page": "https://www.freestylesocialclub.ca/events",
+        "w": 2304,
+        "h": 1730
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/62b1dfad2c19304fe4362a9e/697a4ef16c2db190d8b9b0d7_Yellow%20Door%20Bistro-24%20(1).jpg",
+        "page": "https://www.freestylesocialclub.ca/",
+        "w": 1867,
+        "h": 2591
+      },
+      {
+        "url": "https://cdn.prod.website-files.com/62b1dfad2c19304fe4362a9e/63408a79b03930556e8d511c_A7306930-2.jpg",
+        "page": "https://www.freestylesocialclub.ca/",
+        "w": 1080,
+        "h": 1350
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "8f92a9b3b510",
+      "rejected": [
+        {
+          "url": "https://cdn.prod.website-files.com/62b1dfad2c19304fe4362a9e/63b5e333b690721e898c99e1_SocialUploadRes-2814.jpg",
+          "why": "event photo of group posing"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/62b1dfad2c19304fe4362a9e/6373f0b63c5d3a1d74a4c3a7_SocialUploadRes-2809.jpg",
+          "why": "people as subject"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/62b1dfad2c19304fe4362a9e/6373f265d48e32757e6a27cc_SocialUploadRes-6417.jpg",
+          "why": "group photo of people"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/640a4cc91241b79e52eefc4a/65a1cf47b57960b02c6b2ad5_A7306771-2-01.jpg",
+          "why": "near-duplicate of photo5"
+        },
+        {
+          "url": "https://cdn.prod.website-files.com/62b1dfad2c19304fe4362a9e/640a689b1ffa990dbfbc4368_Picture3.jpg",
+          "why": "pool/resort area, not plausibly this venue"
+        }
+      ]
+    }
+  },
   "french-creek-pub-vancouver": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -8653,6 +9360,37 @@
       "at": "2026-10-24",
       "key": "8730171ec3e8",
       "rejected": []
+    }
+  },
+  "gator-s-sports-pub": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.gatorscalgary.com/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/8f6718_20cb5eb9f6084e1aa1e0db8f848d42ca~mv2.png/v1/fill/w_1960,h_952,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/8f6718_20cb5eb9f6084e1aa1e0db8f848d42ca~mv2.png",
+      "page": "https://www.gatorscalgary.com/",
+      "w": 1960,
+      "h": 952
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/8f6718_f8947541673544d5b025c5eed2ce141f~mv2.jpg/v1/fill/w_1024,h_469,al_c,q_85,enc_avif,quality_auto/8f6718_f8947541673544d5b025c5eed2ce141f~mv2.jpg",
+        "page": "https://www.gatorscalgary.com/",
+        "w": 1024,
+        "h": 469
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "a0b48410ed04",
+      "rejected": [
+        {
+          "url": "https://static.parastorage.com/services/restaurant-menus-showcase-ooi/bdef6d579d3d9fd065b351c9e92993be119e5cfffa4a75d17b176d77/media/menus_side_image.7077f229.jpeg",
+          "why": "styled flat-lay food photography on neutral background, not a venue photo"
+        }
+      ]
     }
   },
   "georgie-s-local-kitchen-bar": {
@@ -8776,6 +9514,102 @@
       ]
     }
   },
+  "glenn-s-job-site-1-sports-bar": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://glennsjobsite.ca/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://glennsjobsite.ca/wp-content/uploads/2026/06/glenns-job-site-sports-bar-003.webp",
+      "page": "https://glennsjobsite.ca/",
+      "w": 810,
+      "h": 1080
+    },
+    "gallery": [
+      {
+        "url": "https://glennsjobsite.ca/wp-content/uploads/2026/06/glenns-job-site-sports-bar-3.webp",
+        "page": "https://glennsjobsite.ca/",
+        "w": 1440,
+        "h": 1080
+      },
+      {
+        "url": "https://glennsjobsite.ca/wp-content/uploads/2026/06/glenns-job-site-sports-bar-12.webp",
+        "page": "https://glennsjobsite.ca/",
+        "w": 810,
+        "h": 1080
+      },
+      {
+        "url": "https://glennsjobsite.ca/wp-content/uploads/2026/06/glenns-job-site-sports-bar-8.webp",
+        "page": "https://glennsjobsite.ca/",
+        "w": 810,
+        "h": 1080
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "cddee8b726f7",
+      "rejected": [
+        {
+          "url": "https://glennsjobsite.ca/wp-content/uploads/2026/06/glenns-job-site-sports-bar-002.webp",
+          "why": "aerial exterior strip mall view, not venue interior"
+        },
+        {
+          "url": "https://glennsjobsite.ca/wp-content/uploads/2026/06/r875-Glenns-Job-Site-1-Sports-Bar-interior.jpg",
+          "why": "person as subject (performer at microphone)"
+        },
+        {
+          "url": "https://glennsjobsite.ca/wp-content/uploads/2026/07/Final-Glenns-JS1-2026-Pub-Food-Menu-01.webp",
+          "why": "menu poster with promotional text"
+        },
+        {
+          "url": "https://glennsjobsite.ca/wp-content/uploads/2026/07/Final-Glenns-JS1-2026-Pub-Food-Menu-06.webp",
+          "why": "happy hour promotional poster"
+        },
+        {
+          "url": "https://glennsjobsite.ca/wp-content/uploads/2026/06/glenns-job-site-sports-bar-4.webp",
+          "why": "near-duplicate of photo2 (same gaming area, photo2 shows more room context)"
+        }
+      ]
+    }
+  },
+  "globefish-sushi-kensington": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.globefishkensington.ca/"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/533316_fce42323ff9e467aaba39b845bef4be4~mv2.jpg/v1/fill/w_600,h_800,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/533316_fce42323ff9e467aaba39b845bef4be4~mv2.jpg",
+      "page": "https://www.globefishkensington.ca/",
+      "w": 600,
+      "h": 800
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/533316_6795c464149a4119be3d419c51cc057b~mv2.jpg/v1/fill/w_600,h_800,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/533316_6795c464149a4119be3d419c51cc057b~mv2.jpg",
+        "page": "https://www.globefishkensington.ca/",
+        "w": 600,
+        "h": 800
+      },
+      {
+        "url": "https://static.wixstatic.com/media/533316_1a92683aa99c4b48a26012404147ebca~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/533316_1a92683aa99c4b48a26012404147ebca~mv2.jpg",
+        "page": "https://www.globefishkensington.ca/",
+        "w": 1440,
+        "h": 1000
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "4b9c68da3c32",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/533316_6e8abb0d676842bf909d4b17c84ba274~mv2.png/v1/fill/w_500,h_653,al_c,q_85,usm_2.00_1.00_0.00,enc_avif,quality_auto/533316_6e8abb0d676842bf909d4b17c84ba274~mv2.png",
+          "why": "promotional poster with text, mostly menu/promo"
+        }
+      ]
+    }
+  },
   "glowbal": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -8846,6 +9680,67 @@
         {
           "url": "https://www.glowbalgroup.com/glowbal/corp-event-2.jpg",
           "why": "black and white historic photo"
+        }
+      ]
+    }
+  },
+  "goro-gun": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.goroandgun.ca/",
+      "https://www.goroandgun.ca/about",
+      "https://www.goroandgun.ca/gallery"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/63111e3c4f750b6b035c8f5e/b0466134-b49e-4a2f-ba8b-1f954ab1aebb/GORO_GUN-1921.jpg",
+      "page": "https://www.goroandgun.ca/gallery",
+      "w": 2500,
+      "h": 1667
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/63111e3c4f750b6b035c8f5e/8d4d91b7-86c2-4295-9496-f9d526364589/20220518_0360_FINAL_LOWRES.jpg",
+        "page": "https://www.goroandgun.ca/",
+        "w": 2500,
+        "h": 1667
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/63111e3c4f750b6b035c8f5e/671a2e2e-67a1-4cac-a75e-ddaef49a2cc2/20220518_0198_FINAL_LOWRES.jpg",
+        "page": "https://www.goroandgun.ca/gallery",
+        "w": 2500,
+        "h": 1667
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/63111e3c4f750b6b035c8f5e/a2d6a455-2998-4fc3-9b64-1ee89dcf8787/20220518_0258_FINAL_LOWRES.jpg",
+        "page": "https://www.goroandgun.ca/gallery",
+        "w": 2500,
+        "h": 1667
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/63111e3c4f750b6b035c8f5e/15fff018-1e29-4a43-9072-85c726414e65/20220518_0204_FINAL_LOWRES.jpg",
+        "page": "https://www.goroandgun.ca/gallery",
+        "w": 2500,
+        "h": 1667
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/63111e3c4f750b6b035c8f5e/1662760799150-VZS5E2YZV6TSWQP0HJSO/20220518_0177_FINAL_LOWRES.jpg",
+        "page": "https://www.goroandgun.ca/gallery",
+        "w": 1667,
+        "h": 1667
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "3badb0d9e446",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/63111e3c4f750b6b035c8f5e/87f8e62a-39b1-4cb5-9092-8e7421d42672/20220518_0416_FINAL_LOWRES.jpg",
+          "why": "near-duplicate of photo1 - same noodle bowl"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/63111e3c4f750b6b035c8f5e/48ab6e1c-1aef-4f9f-97b9-b34799ad1a7e/GORO_GUN-1948.jpg",
+          "why": "logo and signage prominent"
         }
       ]
     }
@@ -9500,6 +10395,52 @@
       "rejected": []
     }
   },
+  "gyu-kaku-japanese-bbq": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.gyu-kaku.com/calgary/",
+      "https://www.gyu-kaku.com/locations-menus/"
+    ],
+    "cover_problem": "dark",
+    "cover": {
+      "url": "https://www.gyu-kaku.com/wp-content/uploads/2017/10/harvard-square-interior.jpg",
+      "page": "https://www.gyu-kaku.com/locations-menus/",
+      "w": 940,
+      "h": 526
+    },
+    "gallery": [
+      {
+        "url": "https://www.gyu-kaku.com/wp-content/uploads/2017/10/calgary-interior-v1.jpg",
+        "page": "https://www.gyu-kaku.com/calgary/",
+        "w": 1216,
+        "h": 1632
+      },
+      {
+        "url": "https://www.gyu-kaku.com/wp-content/uploads/2017/10/calgary-interior.jpg",
+        "page": "https://www.gyu-kaku.com/calgary/",
+        "w": 1216,
+        "h": 1632
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "82caecb249f9",
+      "rejected": [
+        {
+          "url": "https://www.gyu-kaku.com/wp-content/uploads/2017/10/calgary-interior-v3.jpg",
+          "why": "signage/logo on building exterior"
+        },
+        {
+          "url": "https://www.gyu-kaku.com/wp-content/uploads/2020/07/webbanner_gyuathome_hq2007.jpg",
+          "why": "promotional graphic, mostly text and illustration"
+        },
+        {
+          "url": "https://www.gyu-kaku.com/wp-content/uploads/2016/05/calgary-banner.jpg",
+          "why": "duplicate of photo3"
+        }
+      ]
+    }
+  },
   "h-tasting-lounge": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -9673,6 +10614,25 @@
           "why": "composite two-panel image, awkward presentation format"
         }
       ]
+    }
+  },
+  "harajuku-izakaya-restaurant-japanese": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.harajuku.ca/"
+    ],
+    "cover_problem": "tiny file",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/58ed0a2b579fb356c866cc0a/1491935645176-T41CYOAFROWMRMRNV35U/Interior1.jpg",
+      "page": "https://www.harajuku.ca/",
+      "w": 2500,
+      "h": 1667
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-11-08",
+      "key": "49b69b5cf8e0",
+      "rejected": []
     }
   },
   "harold-s-kitchen-bar": {
@@ -10154,6 +11114,25 @@
         {
           "url": "https://heyheybarandgrill.ca/wp-content/uploads/2025/12/beef-dip-img.webp",
           "why": "near-duplicate of photo1"
+        }
+      ]
+    }
+  },
+  "hidden-spot-entertainment-and-arcade-bar": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://hiddenspotyyc.com/"
+    ],
+    "cover_problem": "shape",
+    "cover": null,
+    "gallery": [],
+    "review": {
+      "at": "2026-11-08",
+      "key": "7640129954c7",
+      "rejected": [
+        {
+          "url": "https://hiddenspotyyc.com/wp-content/uploads/2024/06/game_card_bg.jpg",
+          "why": "near-duplicate of photo1, same scene and angle"
         }
       ]
     }
@@ -11531,6 +12510,48 @@
       ]
     }
   },
+  "juliets-castle-sports-bar-and-lounge": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://julietscastle.com/",
+      "https://julietscastle.com/events/",
+      "https://julietscastle.com/about/",
+      "https://julietscastle.com/location/"
+    ],
+    "cover_problem": "tiny file",
+    "cover": {
+      "url": "https://julietscastle.com/wp-content/uploads/2021/05/slider-image-r.jpeg",
+      "page": "https://julietscastle.com/",
+      "w": 1920,
+      "h": 880
+    },
+    "gallery": [
+      {
+        "url": "https://julietscastle.com/wp-content/uploads/2021/05/eat-bbq-wings.jpeg",
+        "page": "https://julietscastle.com/",
+        "w": 637,
+        "h": 467
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "24337bee8ce0",
+      "rejected": [
+        {
+          "url": "https://julietscastle.com/wp-content/uploads/2021/05/drink-beer-cheers.jpeg",
+          "why": "people posing as main subject"
+        },
+        {
+          "url": "https://julietscastle.com/wp-content/uploads/2021/05/juliets-castle-sign-2.jpeg",
+          "why": "sign/wordmark - logo painted on surface"
+        },
+        {
+          "url": "https://julietscastle.com/wp-content/uploads/2021/05/play-air-hockey.jpeg",
+          "why": "people posing as main subject"
+        }
+      ]
+    }
+  },
   "junction": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -12128,6 +13149,105 @@
       ]
     }
   },
+  "koto-sushi-izakaya": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.kotosushiyyc.com/"
+    ],
+    "cover_problem": "graphic",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/3970d0_39136b0655814a61bec6ba2259b8c532~mv2.jpg/v1/fill/w_4450,h_3021,q_90,enc_avif,quality_auto/3970d0_39136b0655814a61bec6ba2259b8c532~mv2.jpg",
+      "page": "https://www.kotosushiyyc.com/",
+      "w": 4450,
+      "h": 3021
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/3970d0_87120cefc67547198cd6492042215206~mv2.jpg/v1/fill/w_4450,h_3021,q_90,enc_avif,quality_auto/3970d0_87120cefc67547198cd6492042215206~mv2.jpg",
+        "page": "https://www.kotosushiyyc.com/",
+        "w": 4450,
+        "h": 3021
+      },
+      {
+        "url": "https://static.wixstatic.com/media/b3987c0a7cc6ba77b2c5090a4e0962b0.jpg/v1/fill/w_1268,h_860,q_90,enc_avif,quality_auto/b3987c0a7cc6ba77b2c5090a4e0962b0.jpg",
+        "page": "https://www.kotosushiyyc.com/",
+        "w": 1268,
+        "h": 860
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "207529deabbe",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/ce30c1f9e83a0af84e7502dca3fe5c5e.jpg/v1/fill/w_1268,h_860,q_90,enc_avif,quality_auto/ce30c1f9e83a0af84e7502dca3fe5c5e.jpg",
+          "why": "near-duplicate of photo2 (sushi close-up with chopsticks, less variety shown)"
+        }
+      ]
+    }
+  },
+  "kujira-sushi-izakaya": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://kujirayyc.com/",
+      "https://kujirayyc.com/events"
+    ],
+    "cover_problem": "graphic",
+    "cover": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/547998_website_v1/interior_full_width.jpg",
+      "page": "https://kujirayyc.com/",
+      "w": 1382,
+      "h": 708
+    },
+    "gallery": [
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/ee/5eafaa8d1546e5bb9302b10760d075/:original",
+        "page": "https://kujirayyc.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/e1/60504d8b9743018178e6288de56bab/:original",
+        "page": "https://kujirayyc.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/6b/44045eb56e473abb8fbf6d29270749/:original",
+        "page": "https://kujirayyc.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/547998_website_v1/video_poster.jpg",
+        "page": "https://kujirayyc.com/",
+        "w": 1382,
+        "h": 777
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/547998_website_v1/catering_right.jpg",
+        "page": "https://kujirayyc.com/",
+        "w": 847,
+        "h": 898
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/547998_website_v1/order_left.jpg",
+        "page": "https://kujirayyc.com/",
+        "w": 847,
+        "h": 898
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "807985ad89a2",
+      "rejected": [
+        {
+          "url": "https://static.spotapps.co/assets/admin/hybrid_approach/holiday_party/website_casual.jpg",
+          "why": "holiday party promo flyer, mostly text"
+        }
+      ]
+    }
+  },
   "kypriaki-mediterranean-grill": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -12665,6 +13785,49 @@
       ]
     }
   },
+  "le-charme": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.lecharme.ca/"
+    ],
+    "cover_problem": "review: mostly text - restaurant name, tagline, address, and menu details overlay the fo",
+    "cover": {
+      "url": "https://www.lecharme.ca/images/about-food.jpg",
+      "page": "https://www.lecharme.ca/",
+      "w": 960,
+      "h": 720
+    },
+    "gallery": [
+      {
+        "url": "https://www.lecharme.ca/images/gallery-trout.jpg",
+        "page": "https://www.lecharme.ca/",
+        "w": 960,
+        "h": 720
+      },
+      {
+        "url": "https://www.lecharme.ca/images/gallery-schnitzel.jpg",
+        "page": "https://www.lecharme.ca/",
+        "w": 960,
+        "h": 682
+      },
+      {
+        "url": "https://www.lecharme.ca/images/hero-bar.jpg",
+        "page": "https://www.lecharme.ca/",
+        "w": 960,
+        "h": 720
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "3d6d8a4bdd8f",
+      "rejected": [
+        {
+          "url": "https://www.lecharme.ca/images/og-image.jpg",
+          "why": "mostly text - restaurant name, tagline, address, and menu details overlay the fo"
+        }
+      ]
+    }
+  },
   "library-square-pub": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -13194,6 +14357,69 @@
         {
           "url": "https://localpubliceatery.com/app/uploads/2023/05/Wide_Web_06.jpg",
           "why": "duplicate of photo1"
+        }
+      ]
+    }
+  },
+  "loco-lou-s-2-0-arcade-bar-grill": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://locolous.ca/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/50/3f1040631947b6a554f7e270f49b29/:original",
+      "page": "https://locolous.ca/",
+      "w": 1800,
+      "h": 1200
+    },
+    "gallery": [
+      {
+        "url": "https://static.spotapps.co/spots/7b/52960d80d140509232b7dedd685936/full",
+        "page": "https://locolous.ca/",
+        "w": 800,
+        "h": 800
+      },
+      {
+        "url": "https://static.spotapps.co/spots/6a/a2b885517e43ae9f75b661150b2b7a/full",
+        "page": "https://locolous.ca/",
+        "w": 800,
+        "h": 800
+      },
+      {
+        "url": "https://static.spotapps.co/spots/de/548782bb97429a8a99a8a8614127d5/full",
+        "page": "https://locolous.ca/",
+        "w": 800,
+        "h": 800
+      },
+      {
+        "url": "https://static.spotapps.co/spots/da/20912826304ff2b0810b3c3eb3fd61/full",
+        "page": "https://locolous.ca/",
+        "w": 800,
+        "h": 800
+      },
+      {
+        "url": "https://static.spotapps.co/spots/8e/9437b69e9244d7be83d248adfd0b4a/full",
+        "page": "https://locolous.ca/",
+        "w": 800,
+        "h": 800
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "3024f32a45e9",
+      "rejected": [
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/384286_website_v1/reservations_left.jpg",
+          "why": "near-duplicate of photo1"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/93/4fbeaeaae749d88f579e94c830568d/full",
+          "why": "person as subject (close-up of hand/arm)"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/ee/3a8a7b0ec3423e946d55e991d6dd57/full",
+          "why": "near-duplicate of photo9"
         }
       ]
     }
@@ -17977,6 +19203,48 @@
       ]
     }
   },
+  "pepe-s-chophouse": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.pepeschophouse.com/",
+      "https://www.pepeschophouse.com/about-us/"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://www.pepeschophouse.com/wp-content/uploads/2018/11/JDP_9139-1.jpg",
+      "page": "https://www.pepeschophouse.com/",
+      "w": 3600,
+      "h": 1964
+    },
+    "gallery": [
+      {
+        "url": "https://www.pepeschophouse.com/wp-content/uploads/2024/05/main_food.jpg",
+        "page": "https://www.pepeschophouse.com/",
+        "w": 1200,
+        "h": 1200
+      },
+      {
+        "url": "https://www.pepeschophouse.com/wp-content/uploads/2024/05/home_drink.jpg",
+        "page": "https://www.pepeschophouse.com/",
+        "w": 1200,
+        "h": 1200
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "04aaa31f2dce",
+      "rejected": [
+        {
+          "url": "https://www.pepeschophouse.com/wp-content/uploads/2026/04/IMG_4739-crop.jpg",
+          "why": "group photo of staff posing"
+        },
+        {
+          "url": "https://www.pepeschophouse.com/wp-content/uploads/2024/05/sign_patio-1.jpg",
+          "why": "sign graphic with business name and logo"
+        }
+      ]
+    }
+  },
   "pidgin-restaurant": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -18492,6 +19760,66 @@
         {
           "url": "https://i0.wp.com/www.legion119.ca/wp-content/uploads/2024/11/QR-LEGION-2-1.png?w=871&ssl=1",
           "why": "poster/flyer about poppy campaign, mostly text"
+        }
+      ]
+    }
+  },
+  "pour-decisions": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://pourdecisionsyyc.com/",
+      "https://pourdecisionsyyc.com/calgary-pour-decisions-about",
+      "https://pourdecisionsyyc.com/calgary-pour-decisions-food-menu",
+      "https://pourdecisionsyyc.com/calgary-pour-decisions-drink-menu"
+    ],
+    "cover_problem": "dark",
+    "cover": {
+      "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/29/c5b0c0be414c64bc9910c092c92e4a/:original",
+      "page": "https://pourdecisionsyyc.com/",
+      "w": 1800,
+      "h": 1200
+    },
+    "gallery": [
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/39/664ab332304d96b8e382f95dbb7c2c/:original",
+        "page": "https://pourdecisionsyyc.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/384287_website_v1/about_r.jpg",
+        "page": "https://pourdecisionsyyc.com/",
+        "w": 1200,
+        "h": 800
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "291d440b84a6",
+      "rejected": [
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/384287_website_v1/slide1.jpg",
+          "why": "close-up of pool table, no venue context"
+        },
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/384287_website_v1/slide2.jpg",
+          "why": "gambling machines, appears to be different venue"
+        },
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/384287_website_v1/main.jpg",
+          "why": "close-up of pool cue and table, no room context"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/24/9730553d0541ac9b47e423810e12dd/full",
+          "why": "neon sign graphic, not venue photography"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/18/dcf6a5c95c4d9d96ec5364c82dbdb9/full",
+          "why": "close-up of decorative lamp, insufficient venue context"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/71/93487cf75b41f9ab8b4db28e1d6efa/full",
+          "why": "miniature hockey table game, not actual venue photo"
         }
       ]
     }
@@ -19364,6 +20692,37 @@
       ]
     }
   },
+  "redheads-japa-cafe": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "http://redheadscafe.com/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://redheadscafe.com/wp-content/uploads/2020/02/909.jpg",
+      "page": "http://redheadscafe.com/",
+      "w": 1999,
+      "h": 1992
+    },
+    "gallery": [
+      {
+        "url": "https://redheadscafe.com/wp-content/uploads/2026/02/Curry2-1770956758814.png",
+        "page": "http://redheadscafe.com/",
+        "w": 1703,
+        "h": 2271
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "4ac2d381ac6d",
+      "rejected": [
+        {
+          "url": "https://redheadscafe.com/wp-content/uploads/2025/02/contact-us-banner.png",
+          "why": "stock scenic photo (Mount Fuji), not plausibly this venue"
+        }
+      ]
+    }
+  },
   "reflections-the-garden-terrace": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -19543,6 +20902,33 @@
           "why": "promotional flyer with mostly text"
         }
       ]
+    }
+  },
+  "restaurant-62": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.restaurant62.ca/",
+      "https://www.restaurant62.ca/home/private-dining-inquiries/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://www.restaurant62.ca/wp-content/uploads/2016/07/IMG_0413-2.jpg",
+      "page": "https://www.restaurant62.ca/home/private-dining-inquiries/",
+      "w": 4000,
+      "h": 2662
+    },
+    "gallery": [
+      {
+        "url": "https://www.restaurant62.ca/wp-content/uploads/2016/07/Restaurant-62_SharaleePrang-165-1.jpg",
+        "page": "https://www.restaurant62.ca/",
+        "w": 4000,
+        "h": 2662
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "57abc074d3f9",
+      "rejected": []
     }
   },
   "revelwoods-tavern-terrace": {
@@ -20632,6 +22018,17 @@
         }
       ]
     }
+  },
+  "shandhar-hut-indian-cuisine-sardis": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://shandharhut.com/",
+      "https://shandharhut.com/our-story/",
+      "https://shandharhut.com/our-articles/"
+    ],
+    "cover_problem": "unreadable",
+    "cover": null,
+    "gallery": []
   },
   "shark-club-sports-bar-grill": {
     "checked_at": "2026-11-07",
@@ -23714,6 +25111,56 @@
       ]
     }
   },
+  "the-brickworks": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.thebrickworks.ca/",
+      "https://www.thebrickworks.ca/about",
+      "https://www.thebrickworks.ca/events",
+      "https://www.thebrickworks.ca/copy-of-events-groups"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/b551e1_4b348902dcb54987b52dd0fecd653306~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b551e1_4b348902dcb54987b52dd0fecd653306~mv2.jpg",
+      "page": "https://www.thebrickworks.ca/",
+      "w": 1440,
+      "h": 1000
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/b551e1_b709222d459244f8ba30270e48148942~mv2.jpg/v1/fill/w_823,h_623,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b551e1_b709222d459244f8ba30270e48148942~mv2.jpg",
+        "page": "https://www.thebrickworks.ca/",
+        "w": 823,
+        "h": 623
+      },
+      {
+        "url": "https://static.wixstatic.com/media/b551e1_57af91fe43504e03bac1dd5a9e9413d0~mv2.jpg/v1/fill/w_432,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b551e1_57af91fe43504e03bac1dd5a9e9413d0~mv2.jpg",
+        "page": "https://www.thebrickworks.ca/events",
+        "w": 432,
+        "h": 460
+      },
+      {
+        "url": "https://static.wixstatic.com/media/b551e1_3e2e5dabecc144968efb62c834bc9d8a~mv2.jpg/v1/fill/w_432,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b551e1_3e2e5dabecc144968efb62c834bc9d8a~mv2.jpg",
+        "page": "https://www.thebrickworks.ca/events",
+        "w": 432,
+        "h": 460
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "6741cee453f5",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/b551e1_229e2ff9a32647f4895a5c1b160a0b56~mv2.jpg/v1/fill/w_1440,h_735,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b551e1_229e2ff9a32647f4895a5c1b160a0b56~mv2.jpg",
+          "why": "person as subject - hands and tattoo featured"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/b551e1_e3d67d2e00194cabacda9887b7578373~mv2.jpg/v1/fill/w_823,h_655,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b551e1_e3d67d2e00194cabacda9887b7578373~mv2.jpg",
+          "why": "near-duplicate of photo6, which is better lit"
+        }
+      ]
+    }
+  },
   "the-broken-seal": {
     "checked_at": "2026-11-03",
     "pages": [
@@ -25993,6 +27440,56 @@
         {
           "url": "https://static.wixstatic.com/media/5b3dad_68a48c9461e843538bafbc09754dc0de~mv2.jpg/v1/fill/w_640,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/294958848_548243013398349_1289247972394795532_n.jpg",
           "why": "appears to be a market or event vendor, not the venue"
+        }
+      ]
+    }
+  },
+  "the-park-kitchen-bar": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.parkkitchen.ca/",
+      "https://www.parkkitchen.ca/new-index-1",
+      "https://www.parkkitchen.ca/location-preview",
+      "https://www.parkkitchen.ca/location-preview"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/62055dbd88310106b662f9a5/1649718363408-G8JRHVOYZ3ZH9QB1SIEJ/newcover.png",
+      "page": "https://www.parkkitchen.ca/",
+      "w": 1983,
+      "h": 1186
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/62055dbd88310106b662f9a5/1683921235170-583GFNBXOEXPYC2Q3H57/image-asset.jpeg",
+        "page": "https://www.parkkitchen.ca/",
+        "w": 1440,
+        "h": 1440
+      }
+    ],
+    "review": {
+      "at": "2026-11-08",
+      "key": "d5c1381dbc69",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62055dbd88310106b662f9a5/1695940476319-T63PTANWUJHJH9EGICVI/DSC07150.jpg",
+          "why": "wrong venue, building across water"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62055dbd88310106b662f9a5/1644518885629-Q1EHQPMXSV15ACTSC1VD/Artboard+33.png",
+          "why": "people as subject, hands eating, overlay graphics"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62055dbd88310106b662f9a5/1695940036922-EMWBBF2YCOFTIOUNFKPH/The+Park+Kitchen+%2B+Bar+Autumn.PNG",
+          "why": "signage is the subject"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62055dbd88310106b662f9a5/1650389348847-PB2G4J5AS3021PQTYB3I/newcover.png",
+          "why": "styled flat lay, stock-like product photo"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/62055dbd88310106b662f9a5/1649708097765-95LDOWVEMDVHQRCV4HN9/gallery2.png",
+          "why": "person is subject, close-up of hands holding drinks"
         }
       ]
     }
@@ -28314,6 +29811,28 @@
         {
           "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2025/12/events-banner-1-dark-top.jpg",
           "why": "outdoor festival or street fair, not the restaurant venue"
+        }
+      ]
+    }
+  },
+  "unfiltered-wine-bar": {
+    "checked_at": "2026-11-08",
+    "pages": [
+      "https://www.winebarunfiltered.com/",
+      "https://www.winebarunfiltered.com/about",
+      "https://www.winebarunfiltered.com/request-private-event",
+      "https://www.winebarunfiltered.com/corporate-experiences"
+    ],
+    "cover_problem": null,
+    "cover": null,
+    "gallery": [],
+    "review": {
+      "at": "2026-11-08",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://657e15cf0a8a4c55ae9e.cdn6.editmysite.com/uploads/b/657e15cf0a8a4c55ae9ef00520af174c47c023340d124d89449b5c804ce242f8/A81085E1-275F-4249-A85A-FF89CBB4D8C3_1762283388.jpeg?width=2400&optimize=medium",
+          "why": "people posing as main subject"
         }
       ]
     }
