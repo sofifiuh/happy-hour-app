@@ -7458,6 +7458,69 @@
       ]
     }
   },
+  "dosa-club-indian-kitchen-bar": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://www.dosaclub.ca/",
+      "https://www.dosaclub.ca/about",
+      "https://www.dosaclub.ca/home/gallery-images"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://www.dosaclub.ca/themes/web_v31/images/dosaclub/loc-abbotsford.jpg",
+      "page": "https://www.dosaclub.ca/about",
+      "w": 1000,
+      "h": 668
+    },
+    "gallery": [
+      {
+        "url": "https://res.cloudinary.com/gagan/image/upload/q_auto,f_auto/v1792054530/rxhgql2hv4j6me8zxpr6.jpg",
+        "page": "https://www.dosaclub.ca/",
+        "w": 1600,
+        "h": 1074
+      },
+      {
+        "url": "https://res.cloudinary.com/gagan/image/upload/q_auto,f_auto/v1792054551/rwsi0ycqgysauckykq6z.jpg",
+        "page": "https://www.dosaclub.ca/",
+        "w": 1200,
+        "h": 800
+      },
+      {
+        "url": "https://res.cloudinary.com/gagan/image/upload/q_auto,f_auto/v1788602774/rrknbqcatepis2sokbre.png",
+        "page": "https://www.dosaclub.ca/",
+        "w": 3168,
+        "h": 1344
+      },
+      {
+        "url": "https://res.cloudinary.com/gagan/image/upload/w_600,q_auto,f_auto/v1788599282/guadzoz0yi5pwjbkqoht.jpg",
+        "page": "https://www.dosaclub.ca/home/gallery-images",
+        "w": 600,
+        "h": 825
+      }
+    ],
+    "review": {
+      "at": "2026-11-09",
+      "key": "dc800da25c1d",
+      "rejected": [
+        {
+          "url": "https://res.cloudinary.com/gagan/image/upload/q_auto,f_auto/v1788541427/ey5tiotj0ezxmq3clv93.jpg",
+          "why": "near-duplicate of photo4, less attractive daytime version"
+        },
+        {
+          "url": "https://www.dosaclub.ca/themes/web_v31/images/dosaclub/loc-chilliwack.jpg",
+          "why": "near-duplicate of photo7, less attractive daytime version"
+        },
+        {
+          "url": "https://files.elfsightcdn.com/eafe4a4d-3436-495d-b748-5bdce62d911d/4c5ad7fa-7dc3-4396-9c70-d0f93b44c67d/WhatsApp-Image-2026-09-25-at-10-43-34-AM.jpg",
+          "why": "promotional flyer with pricing text"
+        },
+        {
+          "url": "https://res.cloudinary.com/gagan/image/upload/w_600,q_auto,f_auto/v1788576325/wj3aoh8synr4vwq7xnis.webp",
+          "why": "black and white photograph"
+        }
+      ]
+    }
+  },
   "dovetail": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -8139,6 +8202,63 @@
         {
           "url": "https://eternalabundance.ca/wp-content/uploads/2016/07/DSC_7660-e1479547446484.jpg",
           "why": "market shelf display, not dining/bar/food service area"
+        }
+      ]
+    }
+  },
+  "eve-lounge": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://eveloungeyyc.com/reservation/",
+      "https://eveloungeyyc.com/about-us/",
+      "https://eveloungeyyc.com/gallery/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://eveloungeyyc.com/wp-content/uploads/2023/11/IMG_4647-scaled.jpg",
+      "page": "https://eveloungeyyc.com/about-us/",
+      "w": 1600,
+      "h": 1200
+    },
+    "gallery": [
+      {
+        "url": "https://eveloungeyyc.com/wp-content/uploads/2023/11/IMG_4651-scaled.jpg",
+        "page": "https://eveloungeyyc.com/reservation/",
+        "w": 1600,
+        "h": 1200
+      }
+    ],
+    "review": {
+      "at": "2026-11-09",
+      "key": "93fd7765ed4f",
+      "rejected": [
+        {
+          "url": "https://eveloungeyyc.com/wp-content/uploads/2024/12/IMG_7949-2048x1496.jpg",
+          "why": "group photo, people as primary subject"
+        },
+        {
+          "url": "https://eveloungeyyc.com/wp-content/uploads/2024/07/IMG_2024071315104218-2048x1365.jpeg",
+          "why": "group photo posing, people as primary subject"
+        },
+        {
+          "url": "https://eveloungeyyc.com/wp-content/uploads/2024/07/IMG_2024071315104215-2048x1365.jpeg",
+          "why": "people as primary subject"
+        },
+        {
+          "url": "https://eveloungeyyc.com/wp-content/uploads/2024/07/IMG_2024071315104214-2048x1365.jpeg",
+          "why": "close-up portrait of people"
+        },
+        {
+          "url": "https://eveloungeyyc.com/wp-content/uploads/2024/07/IMG_2024071315104217-2048x1365.jpeg",
+          "why": "event photo of crowd posing"
+        },
+        {
+          "url": "https://eveloungeyyc.com/wp-content/uploads/2024/07/IMG_2024071315104220-2048x1365.jpg",
+          "why": "two people, event/portrait photo"
+        },
+        {
+          "url": "https://eveloungeyyc.com/wp-content/uploads/2024/07/IMG_202407131510420-2048x1365.jpg",
+          "why": "people as primary subject at bar"
         }
       ]
     }
@@ -10954,6 +11074,69 @@
     "cover": null,
     "gallery": []
   },
+  "head-over-heels": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://headoverheelsyyc.com/",
+      "https://headoverheelsyyc.com/events/",
+      "https://headoverheelsyyc.com/gallery/"
+    ],
+    "cover_problem": "graphic",
+    "cover": {
+      "url": "https://headoverheelsyyc.com/assets/images/price3-59120250.avif",
+      "page": "https://headoverheelsyyc.com/",
+      "w": 576,
+      "h": 536
+    },
+    "gallery": [
+      {
+        "url": "https://headoverheelsyyc.com/assets/images/hero.jpg",
+        "page": "https://headoverheelsyyc.com/",
+        "w": 1920,
+        "h": 1280
+      },
+      {
+        "url": "https://headoverheelsyyc.com/assets/images/banner2-0eacd2f5.avif",
+        "page": "https://headoverheelsyyc.com/events/",
+        "w": 640,
+        "h": 600
+      },
+      {
+        "url": "https://headoverheelsyyc.com/assets/images/price1-a3bf8628.avif",
+        "page": "https://headoverheelsyyc.com/",
+        "w": 576,
+        "h": 536
+      },
+      {
+        "url": "https://headoverheelsyyc.com/assets/images/vid1-03b8b62a.avif",
+        "page": "https://headoverheelsyyc.com/",
+        "w": 640,
+        "h": 762
+      }
+    ],
+    "review": {
+      "at": "2026-11-09",
+      "key": "8e3abc59472e",
+      "rejected": [
+        {
+          "url": "https://headoverheelsyyc.com/assets/images/oct-2.webp",
+          "why": "promo flyer with text, portrait photo subject"
+        },
+        {
+          "url": "https://headoverheelsyyc.com/assets/images/oct-3.webp",
+          "why": "promo flyer with text"
+        },
+        {
+          "url": "https://headoverheelsyyc.com/assets/images/price2-0f4afa60.avif",
+          "why": "person crowd-surfing as primary subject"
+        },
+        {
+          "url": "https://headoverheelsyyc.com/assets/images/vid1-d223bc03.avif",
+          "why": "near-duplicate of photo8"
+        }
+      ]
+    }
+  },
   "hello-nori-park-royal": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -13149,6 +13332,71 @@
       ]
     }
   },
+  "kon-ya-japan": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://konyajapan.com/",
+      "https://konyajapan.com/events"
+    ],
+    "cover_problem": null,
+    "cover": null,
+    "gallery": [
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/36/ef6832440643cf870e44df2f39faee/:original",
+        "page": "https://konyajapan.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/84/c4995fec83487582ba54ea81d055f7/:original",
+        "page": "https://konyajapan.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/64/17acd68efc41b192808efe93724a1b/:original",
+        "page": "https://konyajapan.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://static.spotapps.co/spots/39/78ec775c9b43ceb2207b8dd81ee05f/:original",
+        "page": "https://konyajapan.com/",
+        "w": 1200,
+        "h": 1600
+      },
+      {
+        "url": "https://static.spotapps.co/spots/ee/5daf0d9f3043aabf56fc415e9fb85a/w926",
+        "page": "https://konyajapan.com/",
+        "w": 926,
+        "h": 617
+      },
+      {
+        "url": "https://static.spotapps.co/spots/78/4578ae5fc84225a906bf4d55a60017/w926",
+        "page": "https://konyajapan.com/",
+        "w": 926,
+        "h": 617
+      }
+    ],
+    "review": {
+      "at": "2026-11-09",
+      "key": "c993b611bbc4",
+      "rejected": [
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/572166_website_v2/video_poster.jpg",
+          "why": "video screenshot with watermark"
+        },
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/572166_website_v2/events_page_back.jpg",
+          "why": "duplicate of photo1"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/ea/d1cbb8f893456aa49b0495b0074466/full",
+          "why": "near-duplicate of photo2, photo2 is better"
+        }
+      ]
+    }
+  },
   "koto-sushi-izakaya": {
     "checked_at": "2026-11-08",
     "pages": [
@@ -13280,6 +13528,26 @@
       "at": "2026-10-24",
       "key": "d85b4e3a73d3",
       "rejected": []
+    }
+  },
+  "l-a-vietnamese-kitchen-bar": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://luavkb.com/",
+      "https://luavkb.com/visit"
+    ],
+    "cover_problem": "review: logo/wordmark",
+    "cover": null,
+    "gallery": [],
+    "review": {
+      "at": "2026-11-09",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://luavkb.com/assets/favicon/og-image.png",
+          "why": "logo/wordmark"
+        }
+      ]
     }
   },
   "l-abattoir": {
@@ -14945,6 +15213,73 @@
       ]
     }
   },
+  "lvl-three-bar-lounge": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://lvlthree.ca/",
+      "https://lvlthree.ca/calgary-lvl-three-bar-and-lounge-events"
+    ],
+    "cover_problem": null,
+    "cover": null,
+    "gallery": [
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/7f/f18cd1bc054ef5abd3620aa3ab6f1b/:original",
+        "page": "https://lvlthree.ca/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/98/3f117b2b174ed5aef7fbe5a2311ee5/:original",
+        "page": "https://lvlthree.ca/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/84/944bd6f3824b719a017592fe6466dd/:original",
+        "page": "https://lvlthree.ca/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/460615_website_v1/reservations_left.jpg",
+        "page": "https://lvlthree.ca/",
+        "w": 1200,
+        "h": 800
+      },
+      {
+        "url": "https://static.spotapps.co/spots/5e/af7b9fddcc4755b5034bc38d060e52/w926",
+        "page": "https://lvlthree.ca/calgary-lvl-three-bar-and-lounge-events",
+        "w": 926,
+        "h": 618
+      },
+      {
+        "url": "https://static.spotapps.co/spots/76/4ddc6dec264655a821beeffa52f926/full",
+        "page": "https://lvlthree.ca/",
+        "w": 800,
+        "h": 800
+      },
+      {
+        "url": "https://static.spotapps.co/spots/9c/fda8684dd74c3eb3e66b2b0b43a6c9/full",
+        "page": "https://lvlthree.ca/",
+        "w": 800,
+        "h": 800
+      }
+    ],
+    "review": {
+      "at": "2026-11-09",
+      "key": "14aeab37f564",
+      "rejected": [
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/460615_website_v1/socials_share.jpg",
+          "why": "duplicate of photo1"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/25/3fdd35a1fe4786b821a3c9cab6975f/full",
+          "why": "near-duplicate of photo2, similar appetizer plate"
+        }
+      ]
+    }
+  },
   "mad-hatter-bistro": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -16583,6 +16918,50 @@
         {
           "url": "https://images.squarespace-cdn.com/content/v1/5893aaaccd0f68ddeaf2184c/1560959879987-1P6M7UWPMLCGY7N113KZ/IMG_5355.jpg",
           "why": "near-duplicate of photo1, same grilled meat close-up"
+        }
+      ]
+    }
+  },
+  "mio-stone-grill-and-sushi": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://www.miosushi.ca/",
+      "https://www.miosushi.ca/about"
+    ],
+    "cover_problem": "dark",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/fab6df_16beb8dd61d945dbb5046635e7610abd~mv2.jpg/v1/fill/w_620,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fab6df_16beb8dd61d945dbb5046635e7610abd~mv2.jpg",
+      "page": "https://www.miosushi.ca/",
+      "w": 620,
+      "h": 400
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/fab6df_9f82f708cf4344ffbaf1c3b107313ce1~mv2.jpg/v1/fill/w_620,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fab6df_9f82f708cf4344ffbaf1c3b107313ce1~mv2.jpg",
+        "page": "https://www.miosushi.ca/",
+        "w": 620,
+        "h": 400
+      },
+      {
+        "url": "https://static.wixstatic.com/media/fab6df_8ed4e10affbe4b60aea67fa04dc80255~mv2.jpg/v1/fill/w_640,h_790,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fab6df_8ed4e10affbe4b60aea67fa04dc80255~mv2.jpg",
+        "page": "https://www.miosushi.ca/",
+        "w": 640,
+        "h": 790
+      },
+      {
+        "url": "https://static.wixstatic.com/media/fab6df_f015b66a3adc49879dbb1c794aef0dc2%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/fab6df_f015b66a3adc49879dbb1c794aef0dc2%7Emv2.jpg",
+        "page": "https://www.miosushi.ca/",
+        "w": 1994,
+        "h": 1330
+      }
+    ],
+    "review": {
+      "at": "2026-11-09",
+      "key": "50967ede3d7c",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/fab6df_9dfc52f47b2e4cbfb0a68e8a6360c7e2~mv2.jpg/v1/fill/w_1440,h_968,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fab6df_9dfc52f47b2e4cbfb0a68e8a6360c7e2~mv2.jpg",
+          "why": "cityscape, not the venue"
         }
       ]
     }
@@ -20904,6 +21283,61 @@
       ]
     }
   },
+  "rendesvouz-cosmopolitan-cuisine-ultra-lounge": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://rendesvouz.ca/",
+      "https://rendesvouz.ca/events/",
+      "https://rendesvouz.ca/events/catering/",
+      "https://rendesvouz.ca/experience/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://rendesvouz.ca/wp-content/uploads/2021/03/6.jpg",
+      "page": "https://rendesvouz.ca/events/",
+      "w": 1921,
+      "h": 1282
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-11-09",
+      "key": "98eeaaba557e",
+      "rejected": [
+        {
+          "url": "https://rendesvouz.ca/wp-content/uploads/2022/11/KKPhotography_Rendesvouz-203.jpg",
+          "why": "sign-focused entrance"
+        },
+        {
+          "url": "https://rendesvouz.ca/wp-content/uploads/2021/03/15-1.jpg",
+          "why": "duplicate of photo1"
+        },
+        {
+          "url": "https://rendesvouz.ca/wp-content/uploads/2022/11/KKPhotography_Rendesvouz-22-1.jpg",
+          "why": "crowd posing/event photo"
+        },
+        {
+          "url": "https://rendesvouz.ca/wp-content/uploads/2022/11/Courtyard-Calgary.jpg",
+          "why": "different venue (Courtyard Hotel)"
+        },
+        {
+          "url": "https://rendesvouz.ca/wp-content/uploads/2022/11/Chairmans-Steakhouse.jpg",
+          "why": "different venue (Chairman's Steakhouse)"
+        },
+        {
+          "url": "https://rendesvouz.ca/wp-content/uploads/2022/11/Alvins-Jazz-Club.jpg",
+          "why": "sign/logo only (Atelier)"
+        },
+        {
+          "url": "https://rendesvouz.ca/wp-content/uploads/2022/11/Image-About-section.jpg",
+          "why": "logo/signage only"
+        },
+        {
+          "url": "https://rendesvouz.ca/wp-content/uploads/2022/11/Residence-Inn.jpg",
+          "why": "different venue (Residence Inn)"
+        }
+      ]
+    }
+  },
   "restaurant-62": {
     "checked_at": "2026-11-08",
     "pages": [
@@ -22271,6 +22705,69 @@
         {
           "url": "https://shelteryyc.com/wp-content/uploads/2018/10/shelter-cocktail-bar-calgary-buyout-events-1024x682.jpg",
           "why": "near-duplicate of photo7, same lounge area from different angle"
+        }
+      ]
+    }
+  },
+  "sho-sushi-bar-kitchen": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://shosushi.ca/"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/b05bcce6-2d0a-41f2-a346-e9f5150eb8e2/DSCF6782.jpg",
+      "page": "https://shosushi.ca/",
+      "w": 2500,
+      "h": 1667
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1624774414941-XL78SNAUI8FFRTRB0BY2/20210531_190603.jpg",
+        "page": "https://shosushi.ca/",
+        "w": 2500,
+        "h": 1215
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1624774421292-EPAJMSO2N5LH80KL54YP/20210531_173631.jpg",
+        "page": "https://shosushi.ca/",
+        "w": 2500,
+        "h": 1215
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1624429054518-HO935MYOUG6E1IEVHJFJ/IMG_9412.jpg",
+        "page": "https://shosushi.ca/",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1628537919782-RMR1TKUL5KL6AUJJTGSI/IMG_8478.jpg",
+        "page": "https://shosushi.ca/",
+        "w": 1080,
+        "h": 1350
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1624429061694-34LN2SNGAWEXZ4385OXV/IMG_9590.jpg",
+        "page": "https://shosushi.ca/",
+        "w": 1080,
+        "h": 1350
+      }
+    ],
+    "review": {
+      "at": "2026-11-09",
+      "key": "4502080f7106",
+      "rejected": [
+        {
+          "url": "https://video.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/d6efc6e6-457a-4b69-ab7b-eb40df662537/thumbnail",
+          "why": "chef/kitchen staff working, people as subject"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1efbc8ba-89e5-4a85-9dc4-9104575a7c09/sho+sushi+seasonal+take+out+menu+%282%29.jpg",
+          "why": "promotional overlay with text"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1624429061895-ZRCSN03G374TGR4T4IN1/IMG_9601.jpg",
+          "why": "near-duplicate of photo4"
         }
       ]
     }
@@ -24605,6 +25102,45 @@
         {
           "url": "https://tequilacocina.com/photos/vibe-sombreros.jpg",
           "why": "group photo of people (subject is the men, not the venue)"
+        }
+      ]
+    }
+  },
+  "texas-lounge": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://www.texaslounge.ca/",
+      "https://www.texaslounge.ca/Events",
+      "https://www.texaslounge.ca/Gallery",
+      "https://www.texaslounge.ca/events"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://www.texaslounge.ca/Portals/6/ThemePluginPro/uploads/2024/4/3/TexasLoungeBottles.png",
+      "page": "https://www.texaslounge.ca/",
+      "w": 1440,
+      "h": 1080
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-11-09",
+      "key": "903994046174",
+      "rejected": [
+        {
+          "url": "https://www.texaslounge.ca/Portals/6/ThemePluginPro/uploads/2024/4/3/TexasLoungeEntrance.png",
+          "why": "painted logo is primary subject"
+        },
+        {
+          "url": "https://www.texaslounge.ca/Portals/6/adam/Gallery7/1d6olU84SUSH1Hel569uuw/Images/318537327_6014373498594395_1074976080645454204_n.jpg?w=466&quality=75&mode=max",
+          "why": "group photo with people as subject"
+        },
+        {
+          "url": "https://www.texaslounge.ca/Portals/6/adam/Gallery7/1d6olU84SUSH1Hel569uuw/Images/318973390_6014372335261178_6707143265330056532_n.jpg?w=466&quality=75&mode=max",
+          "why": "close-up of people as subject"
+        },
+        {
+          "url": "https://www.texaslounge.ca/Portals/6/adam/Gallery7/1d6olU84SUSH1Hel569uuw/Images/318897905_6014373235261088_8309483430879877166_n.jpg?w=466&quality=75&mode=max",
+          "why": "crowd event photo"
         }
       ]
     }
@@ -30714,6 +31250,68 @@
       "rejected": []
     }
   },
+  "wxyz-bar-lounge": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://www.marriott.com/en-us/hotels/yycul-aloft-calgary-university/dining/",
+      "https://www.marriott.com/meeting-event-hotels/meeting-planning.mi",
+      "https://www.marriott.com/loyalty.mi",
+      "https://www.marriott.com/en-us/hotels/yycul-aloft-calgary-university/rooms/"
+    ],
+    "cover_problem": "review: prominent logo graphic on architectural element",
+    "cover": {
+      "url": "https://cache.marriott.com/content/dam/marriott-renditions/YYCUL/yycul-wxyz-lobby-2748-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+      "page": "https://www.marriott.com/en-us/hotels/yycul-aloft-calgary-university/dining/",
+      "w": 1336,
+      "h": 751
+    },
+    "gallery": [
+      {
+        "url": "https://cache.marriott.com/content/dam/marriott-renditions/YYCUL/yycul-refuel-5611-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+        "page": "https://www.marriott.com/en-us/hotels/yycul-aloft-calgary-university/dining/",
+        "w": 1336,
+        "h": 751
+      }
+    ],
+    "review": {
+      "at": "2026-11-09",
+      "key": "9b8858dc7f3b",
+      "rejected": [
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/yycul-pool-wide-2744:Wide-Hor?wid=1336&fit=constrain",
+          "why": "prominent logo graphic on architectural element"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/mc-ngodt-working-30421:Wide-Hor?wid=1340&fit=constrain",
+          "why": "person portrait/headshot"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/yycul-pool-wide-2744:Wide-Hor?wid=1336&fit=constrain",
+          "why": "near-duplicate of photo1, same pool area and logo"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/YYCUL/yycul-queens-5606-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1140px:*",
+          "why": "hotel room, not restaurant/bar space"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/YYCUL/yycul-standard-room-2746-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1140px:*",
+          "why": "hotel room, not restaurant/bar space"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/pdt-GettyImages-522935821-756816936548092:Wide-Hor?wid=2880&hei=1152",
+          "why": "coastal scenic photo, not this venue"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/YYCUL/yycul-bathroom-5605-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1140px:*",
+          "why": "bathroom interior, not dining/bar space"
+        },
+        {
+          "url": "https://www.marriott.com/content/dam/marriott-renditions/dm-static-renditions/digital-merchandising/global/en_us/hero/assets/pdt-uber-waiting4pu2-030-291313843451036-square.jpg.transform/mcom-hp-transform-738x738/image.jpg",
+          "why": "people as subjects at exterior entrance"
+        }
+      ]
+    }
+  },
   "yaletown-brewing-company": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -30982,6 +31580,41 @@
         {
           "url": "https://zawarestaurant.com/wp-content/uploads/2022/08/about-zawa.jpg",
           "why": "signage/text-based image"
+        }
+      ]
+    }
+  },
+  "zephyr-caf-at-the-bag": {
+    "checked_at": "2026-11-09",
+    "pages": [
+      "https://zephyrcafe.ca/"
+    ],
+    "cover_problem": "review: logo sign is the primary visual element",
+    "cover": {
+      "url": "https://zephyrcafe.ca/wp-content/uploads/2021/10/Photo-2023-05-17-1-31-38-PM.jpg",
+      "page": "https://zephyrcafe.ca/",
+      "w": 1616,
+      "h": 1080
+    },
+    "gallery": [
+      {
+        "url": "https://zephyrcafe.ca/wp-content/uploads/2026/05/BAG_Winter_FB026-scaled-e1778176558654.jpg",
+        "page": "https://zephyrcafe.ca/",
+        "w": 1702,
+        "h": 1796
+      }
+    ],
+    "review": {
+      "at": "2026-11-09",
+      "key": "7870f2aef496",
+      "rejected": [
+        {
+          "url": "https://zephyrcafe.ca/wp-content/uploads/2025/01/bag-sign-zephyr-sign-2025-1024x576.jpg",
+          "why": "logo sign is the primary visual element"
+        },
+        {
+          "url": "https://zephyrcafe.ca/wp-content/uploads/2025/01/bag-sign-zephyr-sign-2025-edited-1-scaled.jpg",
+          "why": "near-duplicate of photo1, logo sign prominently featured"
         }
       ]
     }

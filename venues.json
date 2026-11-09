@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-09-a8151c58",
+ "data_version": "2026-11-09-53ffcea3",
  "venues": [
   {
    "id": "ancora",
@@ -8702,7 +8702,50 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/7f/f18cd1bc054ef5abd3620aa3ab6f1b/:original",
+     "credit_name": "LVL Three Bar & Lounge",
+     "credit_url": "https://lvlthree.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/98/3f117b2b174ed5aef7fbe5a2311ee5/:original",
+     "credit_name": "LVL Three Bar & Lounge",
+     "credit_url": "https://lvlthree.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/84/944bd6f3824b719a017592fe6466dd/:original",
+     "credit_name": "LVL Three Bar & Lounge",
+     "credit_url": "https://lvlthree.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/460615_website_v1/reservations_left.jpg",
+     "credit_name": "LVL Three Bar & Lounge",
+     "credit_url": "https://lvlthree.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/5e/af7b9fddcc4755b5034bc38d060e52/w926",
+     "credit_name": "LVL Three Bar & Lounge",
+     "credit_url": "https://lvlthree.ca/calgary-lvl-three-bar-and-lounge-events",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/76/4ddc6dec264655a821beeffa52f926/full",
+     "credit_name": "LVL Three Bar & Lounge",
+     "credit_url": "https://lvlthree.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/9c/fda8684dd74c3eb3e66b2b0b43a6c9/full",
+     "credit_name": "LVL Three Bar & Lounge",
+     "credit_url": "https://lvlthree.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8790,7 +8833,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://eveloungeyyc.com/wp-content/uploads/2023/11/IMG_4651-scaled.jpg",
+     "credit_name": "Eve Lounge",
+     "credit_url": "https://eveloungeyyc.com/reservation/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8881,10 +8931,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/eve-lounge.jpg",
-    "credit_name": "Prem Saini",
-    "credit_url": "https://maps.google.com/maps/contrib/116791383541699044697",
-    "source": "google_places"
+    "url": "https://eveloungeyyc.com/wp-content/uploads/2023/11/IMG_4647-scaled.jpg",
+    "credit_name": "Eve Lounge",
+    "credit_url": "https://eveloungeyyc.com/about-us/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-09",
    "primary_type": null,
@@ -9004,10 +9054,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/texas-lounge.jpg",
-    "credit_name": "J B",
-    "credit_url": "https://maps.google.com/maps/contrib/107623675691815466951",
-    "source": "google_places"
+    "url": "https://www.texaslounge.ca/Portals/6/ThemePluginPro/uploads/2024/4/3/TexasLoungeBottles.png",
+    "credit_name": "Texas Lounge",
+    "credit_url": "https://www.texaslounge.ca/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-09",
    "primary_type": null,
@@ -9040,7 +9090,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cache.marriott.com/content/dam/marriott-renditions/YYCUL/yycul-refuel-5611-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+     "credit_name": "WXYZ Bar & Lounge",
+     "credit_url": "https://www.marriott.com/en-us/hotels/yycul-aloft-calgary-university/dining/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9085,7 +9142,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://cache.marriott.com/is/image/marriotts7prod/yycul-pool-wide-2744:Wide-Hor?wid=1336&fit=constrain",
+    "url": "https://cache.marriott.com/content/dam/marriott-renditions/YYCUL/yycul-wxyz-lobby-2748-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
     "credit_name": "WXYZ Bar & Lounge",
     "credit_url": "https://www.marriott.com/en-us/hotels/yycul-aloft-calgary-university/dining/",
     "source": "official_website"
@@ -9121,7 +9178,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1624774414941-XL78SNAUI8FFRTRB0BY2/20210531_190603.jpg",
+     "credit_name": "Sho Sushi Bar & Kitchen",
+     "credit_url": "https://shosushi.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1624774421292-EPAJMSO2N5LH80KL54YP/20210531_173631.jpg",
+     "credit_name": "Sho Sushi Bar & Kitchen",
+     "credit_url": "https://shosushi.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1624429054518-HO935MYOUG6E1IEVHJFJ/IMG_9412.jpg",
+     "credit_name": "Sho Sushi Bar & Kitchen",
+     "credit_url": "https://shosushi.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1628537919782-RMR1TKUL5KL6AUJJTGSI/IMG_8478.jpg",
+     "credit_name": "Sho Sushi Bar & Kitchen",
+     "credit_url": "https://shosushi.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/1624429061694-34LN2SNGAWEXZ4385OXV/IMG_9590.jpg",
+     "credit_name": "Sho Sushi Bar & Kitchen",
+     "credit_url": "https://shosushi.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9293,9 +9381,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/60d2c425896dc86e10232fd4/t/6160788f9567bb7d02ddbdc3/1633712271641/sho+logo+transparent.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/60d2c425896dc86e10232fd4/b05bcce6-2d0a-41f2-a346-e9f5150eb8e2/DSCF6782.jpg",
     "credit_name": "Sho Sushi Bar & Kitchen",
-    "credit_url": "https://www.shosushi.ca/",
+    "credit_url": "https://shosushi.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-09",
@@ -9329,7 +9417,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://res.cloudinary.com/gagan/image/upload/q_auto,f_auto/v1792054530/rxhgql2hv4j6me8zxpr6.jpg",
+     "credit_name": "Dosa Club Indian Kitchen & Bar",
+     "credit_url": "https://www.dosaclub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://res.cloudinary.com/gagan/image/upload/q_auto,f_auto/v1792054551/rwsi0ycqgysauckykq6z.jpg",
+     "credit_name": "Dosa Club Indian Kitchen & Bar",
+     "credit_url": "https://www.dosaclub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://res.cloudinary.com/gagan/image/upload/q_auto,f_auto/v1788602774/rrknbqcatepis2sokbre.png",
+     "credit_name": "Dosa Club Indian Kitchen & Bar",
+     "credit_url": "https://www.dosaclub.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://res.cloudinary.com/gagan/image/upload/w_600,q_auto,f_auto/v1788599282/guadzoz0yi5pwjbkqoht.jpg",
+     "credit_name": "Dosa Club Indian Kitchen & Bar",
+     "credit_url": "https://www.dosaclub.ca/home/gallery-images",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9468,10 +9581,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/dosa-club-indian-kitchen-bar.jpg",
+    "url": "https://www.dosaclub.ca/themes/web_v31/images/dosaclub/loc-abbotsford.jpg",
     "credit_name": "Dosa Club Indian Kitchen & Bar",
-    "credit_url": "https://maps.google.com/maps/contrib/114924612612750863311",
-    "source": "google_places"
+    "credit_url": "https://www.dosaclub.ca/about",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-09",
    "primary_type": null,
@@ -9504,7 +9617,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://zephyrcafe.ca/wp-content/uploads/2026/05/BAG_Winter_FB026-scaled-e1778176558654.jpg",
+     "credit_name": "Zephyr Café at The BAG",
+     "credit_url": "https://zephyrcafe.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9547,7 +9667,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://zephyrcafe.ca/wp-content/uploads/2025/01/bag-sign-zephyr-sign-2025-1024x576.jpg",
+    "url": "https://zephyrcafe.ca/wp-content/uploads/2021/10/Photo-2023-05-17-1-31-38-PM.jpg",
     "credit_name": "Zephyr Café at The BAG",
     "credit_url": "https://zephyrcafe.ca/",
     "source": "official_website"
@@ -9583,7 +9703,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.wixstatic.com/media/fab6df_9f82f708cf4344ffbaf1c3b107313ce1~mv2.jpg/v1/fill/w_620,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fab6df_9f82f708cf4344ffbaf1c3b107313ce1~mv2.jpg",
+     "credit_name": "Mio Stone Grill and Sushi",
+     "credit_url": "https://www.miosushi.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/fab6df_8ed4e10affbe4b60aea67fa04dc80255~mv2.jpg/v1/fill/w_640,h_790,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fab6df_8ed4e10affbe4b60aea67fa04dc80255~mv2.jpg",
+     "credit_name": "Mio Stone Grill and Sushi",
+     "credit_url": "https://www.miosushi.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/fab6df_f015b66a3adc49879dbb1c794aef0dc2%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/fab6df_f015b66a3adc49879dbb1c794aef0dc2%7Emv2.jpg",
+     "credit_name": "Mio Stone Grill and Sushi",
+     "credit_url": "https://www.miosushi.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9628,7 +9767,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/fab6df_f015b66a3adc49879dbb1c794aef0dc2%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/fab6df_f015b66a3adc49879dbb1c794aef0dc2%7Emv2.jpg",
+    "url": "https://static.wixstatic.com/media/fab6df_16beb8dd61d945dbb5046635e7610abd~mv2.jpg/v1/fill/w_620,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/fab6df_16beb8dd61d945dbb5046635e7610abd~mv2.jpg",
     "credit_name": "Mio Stone Grill and Sushi",
     "credit_url": "https://www.miosushi.ca/",
     "source": "official_website"
@@ -9664,7 +9803,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://headoverheelsyyc.com/assets/images/hero.jpg",
+     "credit_name": "Head Over Heels",
+     "credit_url": "https://headoverheelsyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://headoverheelsyyc.com/assets/images/banner2-0eacd2f5.avif",
+     "credit_name": "Head Over Heels",
+     "credit_url": "https://headoverheelsyyc.com/events/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://headoverheelsyyc.com/assets/images/price1-a3bf8628.avif",
+     "credit_name": "Head Over Heels",
+     "credit_url": "https://headoverheelsyyc.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://headoverheelsyyc.com/assets/images/vid1-03b8b62a.avif",
+     "credit_name": "Head Over Heels",
+     "credit_url": "https://headoverheelsyyc.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9851,7 +10015,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://headoverheelsyyc.com/assets/images/logo-b.png",
+    "url": "https://headoverheelsyyc.com/assets/images/price3-59120250.avif",
     "credit_name": "Head Over Heels",
     "credit_url": "https://headoverheelsyyc.com/",
     "source": "official_website"
@@ -9957,9 +10121,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://rendesvouz.ca/wp-content/uploads/2021/03/15-1.jpg",
+    "url": "https://rendesvouz.ca/wp-content/uploads/2021/03/6.jpg",
     "credit_name": "Rendesvouz - Cosmopolitan Cuisine & Ultra Lounge",
-    "credit_url": "https://rendesvouz.ca/",
+    "credit_url": "https://rendesvouz.ca/events/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-09",
@@ -9993,7 +10157,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/36/ef6832440643cf870e44df2f39faee/:original",
+     "credit_name": "Kon'ya Japan",
+     "credit_url": "https://konyajapan.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/84/c4995fec83487582ba54ea81d055f7/:original",
+     "credit_name": "Kon'ya Japan",
+     "credit_url": "https://konyajapan.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/64/17acd68efc41b192808efe93724a1b/:original",
+     "credit_name": "Kon'ya Japan",
+     "credit_url": "https://konyajapan.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/39/78ec775c9b43ceb2207b8dd81ee05f/:original",
+     "credit_name": "Kon'ya Japan",
+     "credit_url": "https://konyajapan.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/ee/5daf0d9f3043aabf56fc415e9fb85a/w926",
+     "credit_name": "Kon'ya Japan",
+     "credit_url": "https://konyajapan.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/78/4578ae5fc84225a906bf4d55a60017/w926",
+     "credit_name": "Kon'ya Japan",
+     "credit_url": "https://konyajapan.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10164,12 +10365,7 @@
      }
     ]
    },
-   "cover_image": {
-    "url": "https://luavkb.com/assets/favicon/og-image.png",
-    "credit_name": "LÚA Vietnamese Kitchen + Bar",
-    "credit_url": "https://luavkb.com/",
-    "source": "official_website"
-   },
+   "cover_image": null,
    "last_synced_at": "2026-11-09",
    "primary_type": null,
    "reservable": null,
