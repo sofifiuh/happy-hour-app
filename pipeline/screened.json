@@ -18663,7 +18663,7 @@
     "id": "no-1-beef-noodle",
     "name": "No. 1 Beef Noodle",
     "verdict": "hours_only",
-    "checked_at": "2026-11-08"
+    "checked_at": "2026-11-09"
   },
   "ChIJdWULgytyhlQR9EUQyHopKL0": {
     "id": "davie-dosa-company",
@@ -27033,7 +27033,7 @@
     "id": "wxyz-bar-lounge",
     "name": "WXYZ Bar & Lounge",
     "verdict": "hours_only",
-    "checked_at": "2026-11-06"
+    "checked_at": "2026-11-09"
   },
   "ChIJnSKyVx_5hlQRl0awwK9SfIY": {
     "id": "glass-half-full-beverages",
@@ -28462,5 +28462,473 @@
     "name": "NOBUSHI Kitchen+Bar",
     "verdict": "no_happy_hour",
     "checked_at": "2026-11-08"
+  },
+  "ChIJR1cUe7RlcVMRvJk1Y4Tl-pA": {
+    "id": "aspire-lounge-international-calgary-airport",
+    "name": "Aspire Lounge International, Calgary Airport",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJtQoV5EkLhlQRhM0oy6rwsoI": {
+    "id": "air-canada-maple-leaf-lounge-domestic",
+    "name": "Air Canada Maple Leaf Lounge - Domestic",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJpRcbpxFkcVMRxEb1B5njPm8": {
+    "id": "air-canada-lounge-calgary-airport",
+    "name": "Air Canada Lounge - Calgary Airport",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJp73EfxpkcVMRZo4ovilj_5E": {
+    "id": "aspire-amex-lounge-concourse-a-calgary-airport",
+    "name": "Aspire AMEX Lounge (Concourse A), Calgary Airport",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJOT_R9NhvcVMRmcDNYbQUEi0": {
+    "id": "hideout-lounge-bar",
+    "name": "Hideout Lounge & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJDaqItrBlcVMRdtvfHRj2kOk": {
+    "id": "viet-lounge",
+    "name": "Viet Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJHdmbjqlpcVMR9mrW9na0NqU": {
+    "id": "360-grill-and-lounge",
+    "name": "360 Grill and Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJA3T5NuFxcVMRM24PiKkt2G8": {
+    "id": "ajito",
+    "name": "Ajito",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJoVF2_DNvcVMRvekmpvXdLd4": {
+    "id": "vyb-social",
+    "name": "VYB Social",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJYTR5jIFxcVMRowLOABAbh5I": {
+    "id": "lvl-three-bar-lounge",
+    "name": "LVL Three Bar & Lounge",
+    "verdict": "published",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJK15XzGFpcVMRSBsqdouZBLI": {
+    "id": "the-lookout-yyc",
+    "name": "The Lookout YYC",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJJwcnUm9vcVMR3U9pVPvOuCg": {
+    "id": "chi-cha-lounge-bar",
+    "name": "CHI-CHA Lounge & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJCUZI8ntkcVMRp_qUCAjuhwg": {
+    "id": "xs-lounge-and-grill",
+    "name": "XS Lounge and Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJiXHyhgtvcVMRzdHFH85O-Ks": {
+    "id": "the-den",
+    "name": "The Den",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJWUDYYmFvcVMR6JRjzhK0ksU": {
+    "id": "papi-bar-nightclub",
+    "name": "PAPI Bar & Nightclub",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJVVWFV0sjh1QRv33n-j6iiWI": {
+    "id": "the-living-room-at-pangea",
+    "name": "The Living Room at Pangea",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJAeHM0EdxcVMRIKeWWHHHy5g": {
+    "id": "eve-lounge",
+    "name": "Eve Lounge",
+    "verdict": "published",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJiXHyhgtvcVMRejg1ONFNc2o": {
+    "id": "last-defence-lounge",
+    "name": "Last Defence Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJY92cPEFjcVMRJllRe4rHTXs": {
+    "id": "xhale-lounge",
+    "name": "Xhale Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJi-Drn81xhlQRfc_WzhEgCgY": {
+    "id": "pax-romana",
+    "name": "Pax Romana",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJpeL-ZQ9kcVMRTs8u145rAEc": {
+    "id": "yyc-lounge",
+    "name": "YYC Lounge",
+    "verdict": "error",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJm_fyl35HhFQRxA0LiVEGhko": {
+    "id": "toptracer-lounge-at-cultus",
+    "name": "Toptracer Lounge at Cultus",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJH-kvNDdLhFQRZLdY9b_qr4k": {
+    "id": "v-cafe",
+    "name": "V Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJu2mdo_tkcVMRLc3GOAXdADA": {
+    "id": "jetz-bar-and-lounge",
+    "name": "Jetz Bar and Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJAy_0XC9lcVMRJqYmqus1lgw": {
+    "id": "twelve-fifty-lounge",
+    "name": "Twelve Fifty Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJzfe_ehxwcVMR2YKFgSNRAtQ": {
+    "id": "texas-lounge",
+    "name": "Texas Lounge",
+    "verdict": "published",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJvfcD1FRxcVMRVZrO8GPc69Y": {
+    "id": "votex-lounge",
+    "name": "Votex Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJ5QY_zhxlcVMRi2eZ8cMC5tQ": {
+    "id": "red-room-lounge",
+    "name": "Red Room Lounge",
+    "verdict": "error",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJt91CZahwcVMRoH0R8sQ0W9w": {
+    "id": "elbow-room-lounge",
+    "name": "Elbow Room Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJr7EuwmFpcVMR1UHGxAMYC5s": {
+    "id": "lynx-lounge",
+    "name": "Lynx Lounge",
+    "verdict": "error",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJrQdmmPtvcVMRGlpe5ycDwVk": {
+    "id": "liquid-lounge",
+    "name": "Liquid Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJtSaVm6NxcVMR8uqB63cUkH8": {
+    "id": "alumni-lounge",
+    "name": "Alumni Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJ-ZC6w7pmcVMRBNqeSZCsl34": {
+    "id": "kinjo-sushi-grill-district",
+    "name": "Kinjo Sushi & Grill District",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJUY08Zf1wcVMRz-dnlaZBuSM": {
+    "id": "sho-sushi-bar-kitchen",
+    "name": "Sho Sushi Bar & Kitchen",
+    "verdict": "published",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJMSyQruJvcVMRYYZbuxuFxt4": {
+    "id": "japanese-village",
+    "name": "Japanese Village",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJQWJJhzULhlQROqk-OJVrNnc": {
+    "id": "plaza-premium-lounge-domestic-departures",
+    "name": "Plaza Premium Lounge (Domestic Departures)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJCwhKJNjhc1MRbDlyqEZAyhw": {
+    "id": "smitty-s-restaurant-lounge-airdrie",
+    "name": "Smitty's Restaurant & Lounge - Airdrie",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJxyXbn8M_hFQRdjS3yVfImy4": {
+    "id": "dosa-club-indian-kitchen-bar",
+    "name": "Dosa Club Indian Kitchen & Bar",
+    "verdict": "published",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJy36m1jh3cVMRZL9SjkJdjSw": {
+    "id": "ryuko-south-japanese-kitchen-bar",
+    "name": "Ryuko South - Japanese Kitchen + Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJnffzIhb4hlQRZgH3z214Cds": {
+    "id": "zephyr-caf-at-the-bag",
+    "name": "Zephyr Café at The BAG",
+    "verdict": "hours_only",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJTahV6NdxhlQRbgNjd8Ox0-s": {
+    "id": "abadan-lounge",
+    "name": "Abadan Lounge",
+    "verdict": "error",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJiXxD_TNxcVMRSfzeREgPs2Q": {
+    "id": "jinya-ramen-bar-macleod",
+    "name": "JINYA Ramen Bar - Macleod",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJlzBpy696cVMRnBT-aB8Kwzw": {
+    "id": "rouge",
+    "name": "Rouge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJZaustFaZcVMR1QmEvG1Zm88": {
+    "id": "masala-lounge-grill",
+    "name": "Masala Lounge & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJtWrX4152hlQR7ocC-CIDvpo": {
+    "id": "neptune-noodle-bar-burnaby",
+    "name": "Neptune Noodle Bar (Burnaby)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJPb1GV3w_cVMRPxiK0uaBk84": {
+    "id": "sakura-sushi-grill",
+    "name": "Sakura Sushi & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJ_3ckqdJlcVMR54tBVoQcSOE": {
+    "id": "tobe-teppanyaki-lounge",
+    "name": "Tobe Teppanyaki Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJsW6832xfcVMR-seCrprixjs": {
+    "id": "zenbu",
+    "name": "Zenbu",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJUcDTMwtvhlQRgohHNwdtoxo": {
+    "id": "krave-kulture-yogurt",
+    "name": "Krave Kulture Yogurt",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJu0Ptg5pfcVMR5aGMxFm6_Hk": {
+    "id": "mio-stone-grill-and-sushi",
+    "name": "Mio Stone Grill and Sushi",
+    "verdict": "hours_only",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJF5ehnIiXcVMRf6X-iqAgiqw": {
+    "id": "yokozuna",
+    "name": "YokoZuna",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJW6LDJQCZcVMRWKbDsByflU4": {
+    "id": "kenko-sushi",
+    "name": "Kenko Sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJtZ-F_ThpcVMRCC5S_XI_MMg": {
+    "id": "kan-sushi-grill",
+    "name": "Kan Sushi & Grill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJ2-PxIp1xcVMRGUir5eAM6mI": {
+    "id": "tokyo-street-market-macleod-trail",
+    "name": "Tokyo Street Market Macleod Trail",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJU57iSLlpcVMRj55gSibQi0E": {
+    "id": "day-day-bistro-sushi-teriyaki-ramen",
+    "name": "Day Day Bistro - Sushi • Teriyaki • Ramen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJFUI8ZABvcVMRZBTeYe9fr3g": {
+    "id": "ryuko-beltline-japanese-kitchen-bar",
+    "name": "Ryuko Beltline - Japanese Kitchen + Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJD_A05CZpcVMREQ4iivoDZmw": {
+    "id": "jun-katsu",
+    "name": "Jun katsu",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJxxPbnsmXcVMRWtINksTzdQ0": {
+    "id": "the-social-kabob-authentic-east-indian-restaurant",
+    "name": "The Social Kabob Authentic East Indian Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJmZfqL8ppcVMR5HZihashi6k": {
+    "id": "shijo-cafe-japanese-brunch-and-sushi",
+    "name": "Shijo Cafe-Japanese Brunch and sushi",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJBUhcWsFjcVMR4sEDNWaex08": {
+    "id": "head-over-heels",
+    "name": "Head Over Heels",
+    "verdict": "published",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJZyExm9JxcVMRIiuWG8VWKOU": {
+    "id": "globefish-marda-loop-sushi-izakaya",
+    "name": "Globefish Marda Loop Sushi & Izakaya",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJVyG_LgKdcVMRTcwid1iYyYA": {
+    "id": "rendesvouz-cosmopolitan-cuisine-ultra-lounge",
+    "name": "Rendesvouz - Cosmopolitan Cuisine & Ultra Lounge",
+    "verdict": "published",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJt-VXyt0_cVMRBC9wrCElQxs": {
+    "id": "azito-japanese-restaurant",
+    "name": "AZITO Japanese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJew4jtq9vcVMRhwjPRavHolI": {
+    "id": "fame-lounge",
+    "name": "Fame lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJw9rxgKKZcVMRNS-JRdFBsik": {
+    "id": "uncle-k-korean-fried-chicken-katsu",
+    "name": "UNCLE K (Korean Fried Chicken & Katsu )",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJR5qD1x74hlQRoeIOg9NYWcE": {
+    "id": "chances-casino-squamish",
+    "name": "Chances Casino Squamish",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJHzRDczSYcVMRiXo9t0bQ6gU": {
+    "id": "yume-sushi-okotoks",
+    "name": "Yume Sushi Okotoks",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJ4y8S5mI_cVMRMgz_pPKba3Y": {
+    "id": "yoshigrill",
+    "name": "Yoshigrill",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJM0bdjRFpcVMRvU7WWq5EUqo": {
+    "id": "ryuko-beacon-hill-japanese-kitchen-bar",
+    "name": "Ryuko Beacon Hill - Japanese Kitchen + Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJpZUZvaX3hlQRlhfka4pgF_8": {
+    "id": "sky-pilot-restaurant",
+    "name": "Sky Pilot Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJ6e0czNxncVMRzQYlE1nsy6o": {
+    "id": "kon-ya-japan",
+    "name": "Kon'ya Japan",
+    "verdict": "published",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJD4gkClA_cVMRfDaTlIf1NLQ": {
+    "id": "totoro-japanese-house",
+    "name": "TOTORO JAPANESE HOUSE",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJmwvh84FvcVMRtrGhOwPpY88": {
+    "id": "avenue-16-kitchen-bar",
+    "name": "Avenue 16 Kitchen & Bar",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJ9R1EJtJncVMRTOGNXyvG__A": {
+    "id": "koi-japanese-restaurant",
+    "name": "Koi Japanese Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJX4_6BbLnhVQRtPmeTqNFnJg": {
+    "id": "yolks",
+    "name": "Yolks",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJs58kXY1xhlQR6l1iaXk0s2Q": {
+    "id": "l-a-vietnamese-kitchen-bar",
+    "name": "LÚA Vietnamese Kitchen + Bar",
+    "verdict": "published",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJ3__ejPRvcVMRg8U3xZkGcBA": {
+    "id": "dlc-lounge",
+    "name": "Dlc Lounge",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
+  },
+  "ChIJX1jkmctxhlQR_oIWNHj-lug": {
+    "id": "lounge-banquet-hall",
+    "name": "Lounge Banquet Hall",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-09"
   }
 }

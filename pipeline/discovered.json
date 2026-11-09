@@ -25,6 +25,1286 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "lvl-three-bar-lounge",
+    "name": "LVL Three Bar & Lounge",
+    "formatted_address": "818 16 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.038345299999996,
+        "lng": -114.08043330000001
+      }
+    },
+    "formatted_phone_number": "(403) 471-1498",
+    "website": "http://lvlthree.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "20:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://lvlthree.ca/specials",
+      "deals": [
+        {
+          "name": "Appetizers",
+          "price": "50% off",
+          "category": "food",
+          "description": "50% off all appetizers"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/460615_website_v1/socials_share.jpg",
+      "credit_name": "LVL Three Bar & Lounge",
+      "credit_url": "http://lvlthree.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "eve-lounge",
+    "name": "Eve Lounge",
+    "formatted_address": "311 17 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0376878,
+        "lng": -114.069155
+      }
+    },
+    "formatted_phone_number": "(403) 474-7755",
+    "website": "https://eveloungeyyc.com/reservation/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "12:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "18:00",
+          "end": null,
+          "label": "Dusk Special"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://eveloungeyyc.com/menu/",
+      "deals": [
+        {
+          "name": "House Beer",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Highball",
+          "price": "$5",
+          "category": "drink",
+          "description": "1 oz pour"
+        },
+        {
+          "name": "Tapas",
+          "price": "$3 OFF",
+          "category": "food",
+          "description": "Discount on all tapas items"
+        },
+        {
+          "name": "Regular Hookah Pipe",
+          "price": "$12.95",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Regular Hookah Refill",
+          "price": "$10.95",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "texas-lounge",
+    "name": "Texas Lounge",
+    "formatted_address": "Entrance in Parking lot behind Model Milk, 308b 17 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.038154,
+        "lng": -114.06925
+      }
+    },
+    "formatted_phone_number": "(403) 229-0911",
+    "website": "http://www.texaslounge.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0
+          ],
+          "start": "11:00",
+          "end": "03:00",
+          "label": "All day Sunday"
+        },
+        {
+          "days": [
+            1
+          ],
+          "start": "15:00",
+          "end": null,
+          "label": "All day Monday"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.texaslounge.ca/",
+      "deals": [
+        {
+          "name": "Domestic Beer",
+          "price": "$5.25",
+          "category": "drink",
+          "description": "Monday, Friday-Sunday"
+        },
+        {
+          "name": "PBR",
+          "price": "$5.25",
+          "category": "drink",
+          "description": "Tuesday"
+        },
+        {
+          "name": "1oz Well Highballs",
+          "price": "$5.25",
+          "category": "drink",
+          "description": "Monday, Wednesday, Friday-Sunday"
+        },
+        {
+          "name": "2oz Well Highballs",
+          "price": "$9.00",
+          "category": "drink",
+          "description": "Thursday"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "wxyz-bar-lounge",
+    "name": "WXYZ Bar & Lounge",
+    "formatted_address": "Inside Aloft Hotel, 2359 Banff Trail NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.069049,
+        "lng": -114.1153138
+      }
+    },
+    "formatted_phone_number": "(403) 289-1973",
+    "website": "https://www.marriott.com/en-us/hotels/yycul-aloft-calgary-university/dining/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "17:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.marriott.com/en-us/hotels/yycul-aloft-calgary-university/dining/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://cache.marriott.com/is/image/marriotts7prod/yycul-pool-wide-2744:Wide-Hor?wid=1336&fit=constrain",
+      "credit_name": "WXYZ Bar & Lounge",
+      "credit_url": "https://www.marriott.com/en-us/hotels/yycul-aloft-calgary-university/dining/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "sho-sushi-bar-kitchen",
+    "name": "Sho Sushi Bar & Kitchen",
+    "formatted_address": "7212 Macleod Trl SE #110, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.988929999999996,
+        "lng": -114.07095819999999
+      }
+    },
+    "formatted_phone_number": "(403) 252-5199",
+    "website": "https://www.shosushi.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.shosushi.ca/happyhour",
+      "deals": [
+        {
+          "name": "Beer",
+          "price": "Buy 2 get 1 free",
+          "category": "drink",
+          "description": "Ask server for details"
+        },
+        {
+          "name": "Mojito",
+          "price": "$8",
+          "category": "drink",
+          "description": "Vodka, lime juice, mint"
+        },
+        {
+          "name": "Sangria (Red)",
+          "price": "$8",
+          "category": "drink",
+          "description": "Red wine, ginger ale, fruit"
+        },
+        {
+          "name": "Sangria (White)",
+          "price": "$8",
+          "category": "drink",
+          "description": "White wine, apple juice, fruit"
+        },
+        {
+          "name": "Ocean Breeze",
+          "price": "$8",
+          "category": "drink",
+          "description": "Gin, sake, bols blue, prosecco"
+        },
+        {
+          "name": "Caesar",
+          "price": "$8",
+          "category": "drink",
+          "description": "Vodka, clamato juice, tabasco, worcestershire, celery, salt, pepperoncini"
+        },
+        {
+          "name": "Chicken Yakitori",
+          "price": "$4.5",
+          "category": "food",
+          "description": "2 skewers"
+        },
+        {
+          "name": "Chicken Wings Yakitori",
+          "price": "$4.5",
+          "category": "food",
+          "description": "2 skewers"
+        },
+        {
+          "name": "Beef Yakitori",
+          "price": "$5.5",
+          "category": "food",
+          "description": "2 skewers"
+        },
+        {
+          "name": "Lamb Yakitori",
+          "price": "$5.5",
+          "category": "food",
+          "description": "2 skewers"
+        },
+        {
+          "name": "Pan Fried Shrimp Dumpling",
+          "price": "$8",
+          "category": "food",
+          "description": "Shrimp & vegetable (6pcs)"
+        },
+        {
+          "name": "Gyoza",
+          "price": "$8",
+          "category": "food",
+          "description": "Chicken & vegetable dumpling (6pcs)"
+        },
+        {
+          "name": "Beef Udon Noodle Soup",
+          "price": "$8",
+          "category": "food",
+          "description": "Sliced beef, boiled egg, mushroom, spinach, green onion, tempura bits"
+        },
+        {
+          "name": "Chicken Karraage",
+          "price": "$9",
+          "category": "food",
+          "description": "Deep fried chicken, chilli aioli, matcha salt (5pcs)"
+        },
+        {
+          "name": "Japanese Calamari",
+          "price": "$9",
+          "category": "food",
+          "description": "Surume squid, egg tartare & shiso salsa sauce"
+        },
+        {
+          "name": "Tuna Tataki",
+          "price": "$12",
+          "category": "food",
+          "description": "Seared albacore tuna, cucumber, chili oil, onion sauce, micro green"
+        },
+        {
+          "name": "Pressed Salmon",
+          "price": "$8",
+          "category": "food",
+          "description": "Sockeye salmon, salmon caviar, avocado, microgreens, olive oil chips, homemade creamy sauce (4pcs)"
+        },
+        {
+          "name": "Ninja Roll",
+          "price": "$8",
+          "category": "food",
+          "description": "Unagi & avocado with seared basil mayo & salmon, unagi sauce, tempura crumb & micro green (5pcs)"
+        },
+        {
+          "name": "Dynamite Roll",
+          "price": "$8",
+          "category": "food",
+          "description": "Tempura shrimp & mayo topped smoked salmon, avocado with avocado sauce & tobiko (5pcs)"
+        },
+        {
+          "name": "Rainbow Roll",
+          "price": "$8",
+          "category": "food",
+          "description": "Tempura shrimp, mayo, topped salmon, mango & avocado with mango sauce sweet spicy sauce & tobiko (5pcs)"
+        },
+        {
+          "name": "Small Fisherman Bowl",
+          "price": "$9.8",
+          "category": "food",
+          "description": "Chef's assorted sashimi, pickled daikon, shiso leaf, sweet soy, sushi rice"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/60d2c425896dc86e10232fd4/t/6160788f9567bb7d02ddbdc3/1633712271641/sho+logo+transparent.png?format=1500w",
+      "credit_name": "Sho Sushi Bar & Kitchen",
+      "credit_url": "https://www.shosushi.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "dosa-club-indian-kitchen-bar",
+    "name": "Dosa Club Indian Kitchen & Bar",
+    "formatted_address": "45850 Yale Rd Unit 500B, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.166094099999995,
+        "lng": -121.9577345
+      }
+    },
+    "formatted_phone_number": "(604) 515-4410",
+    "website": "https://dosaclub.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://dosaclub.ca/happy-hour",
+      "deals": [
+        {
+          "name": "Masala Fries",
+          "price": "$6.99",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Mini Sambar Idli",
+          "price": "$8.99",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Pav Bhaji",
+          "price": "$10.49",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Butter Poutine",
+          "price": "$10.49",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Chat Papri",
+          "price": "$10.49",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Wings (8 Pcs)",
+          "price": "$10.99",
+          "category": "food",
+          "description": "Salt & Pepper, Honey Garlic, or Hot"
+        },
+        {
+          "name": "Noodle Spring Rolls",
+          "price": "$11.49",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Fish Pakora",
+          "price": "$11.99",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Chilli Mushroom",
+          "price": "$11.99",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Coconut Prawns (8 Pcs)",
+          "price": "$11.99",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Chicken 65 (Dry)",
+          "price": "$12.49",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Chilli Fried Momos",
+          "price": "$12.49",
+          "category": "food",
+          "description": "Veg or Non-Veg"
+        },
+        {
+          "name": "Malai Soya Chaap (12 Pcs)",
+          "price": "$13.99",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "zephyr-caf-at-the-bag",
+    "name": "Zephyr Café at The BAG",
+    "formatted_address": "41950 Government Rd, Brackendale, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.7678574,
+        "lng": -123.1502726
+      }
+    },
+    "formatted_phone_number": "(604) 898-3333",
+    "website": "https://zephyrcafe.ca/",
+    "happy_hour": {
+      "days": [
+        3,
+        4,
+        5,
+        6,
+        0
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://zephyrcafe.ca/wp-content/uploads/2026/07/DRINKS-1-791x1024.png",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://zephyrcafe.ca/wp-content/uploads/2025/01/bag-sign-zephyr-sign-2025-1024x576.jpg",
+      "credit_name": "Zephyr Café at The BAG",
+      "credit_url": "https://zephyrcafe.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "mio-stone-grill-and-sushi",
+    "name": "Mio Stone Grill and Sushi",
+    "formatted_address": "2100 Market St #111, Airdrie, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.269449099999996,
+        "lng": -113.99423619999999
+      }
+    },
+    "formatted_phone_number": "(587) 775-9987",
+    "website": "https://www.miosushi.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "16:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.miosushi.ca/copy-of-menu",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/fab6df_f015b66a3adc49879dbb1c794aef0dc2%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/fab6df_f015b66a3adc49879dbb1c794aef0dc2%7Emv2.jpg",
+      "credit_name": "Mio Stone Grill and Sushi",
+      "credit_url": "https://www.miosushi.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "head-over-heels",
+    "name": "Head Over Heels",
+    "formatted_address": "4310 104 Ave NE #5118, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.1475485,
+        "lng": -113.97311769999999
+      }
+    },
+    "formatted_phone_number": "(587) 355-7708",
+    "website": "https://headoverheelsyyc.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": "16:00",
+      "end": "19:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://headoverheelsyyc.com/menu",
+      "deals": [
+        {
+          "name": "Wings",
+          "price": "$1.00/wing",
+          "category": "food",
+          "description": "Your choice of flavour, minimum order of 12"
+        },
+        {
+          "name": "Pizza",
+          "price": "$15.00",
+          "category": "food",
+          "description": "Your choice of veggie or chicken pizza"
+        },
+        {
+          "name": "Veggie Platter",
+          "price": "$15.00",
+          "category": "food",
+          "description": "Samosas, spring rolls, mozzarella sticks, fries, onion rings"
+        },
+        {
+          "name": "Regular Fries",
+          "price": "$6.00",
+          "category": "food",
+          "description": "Classic golden fries, perfectly crisped and seasoned"
+        },
+        {
+          "name": "Corona",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "Light Mexican lager"
+        },
+        {
+          "name": "Budweiser",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "Crisp, classic American lager"
+        },
+        {
+          "name": "Heineken",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "Iconic Dutch pilsner"
+        },
+        {
+          "name": "Stella",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "Belgian pilsner"
+        },
+        {
+          "name": "Virgin Mojito",
+          "price": "$8.00",
+          "category": "drink",
+          "description": "Fresh mint, lime, and soda"
+        },
+        {
+          "name": "Virgin Mint Lemonade",
+          "price": "$8.00",
+          "category": "drink",
+          "description": "Bright, minty lemonade over ice"
+        },
+        {
+          "name": "Smirnoff",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "Classic vodka (1 oz)"
+        },
+        {
+          "name": "Bacardi Gold",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "Aged golden rum (1 oz)"
+        },
+        {
+          "name": "Bacardi White",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "Light, crisp rum (1 oz)"
+        },
+        {
+          "name": "Bombay Sapphire",
+          "price": "$7.00",
+          "category": "drink",
+          "description": "Crisp London dry gin (1 oz)"
+        },
+        {
+          "name": "Grey Goose",
+          "price": "$10.00",
+          "category": "drink",
+          "description": "Smooth French vodka (1 oz)"
+        },
+        {
+          "name": "Malibu",
+          "price": "$9.00",
+          "category": "drink",
+          "description": "Sweet tropical coconut rum (1 oz)"
+        },
+        {
+          "name": "Captain Morgan",
+          "price": "$9.00",
+          "category": "drink",
+          "description": "Spiced rum (1 oz)"
+        },
+        {
+          "name": "Santa's Spritz",
+          "price": "$12.00",
+          "category": "drink",
+          "description": "Prosecco and Sour Puss Red"
+        },
+        {
+          "name": "Mistletoe Martini",
+          "price": "$12.00",
+          "category": "drink",
+          "description": "Vodka and Sour Puss Green with cherry"
+        },
+        {
+          "name": "Frosty Fizz",
+          "price": "$12.00",
+          "category": "drink",
+          "description": "Gin and Sour Puss Green with soda"
+        },
+        {
+          "name": "Merry & Bubbly",
+          "price": "$12.00",
+          "category": "drink",
+          "description": "Vodka, Sour Puss Red, and soda water"
+        },
+        {
+          "name": "Regular Shisha",
+          "price": "$20.00",
+          "category": "drink",
+          "description": "Classic single-flavour shisha"
+        },
+        {
+          "name": "Premium Shisha",
+          "price": "$25.00",
+          "category": "drink",
+          "description": "Premium mixed-flavour shisha"
+        },
+        {
+          "name": "Exotic Shisha",
+          "price": "$35.00",
+          "category": "drink",
+          "description": "Exotic mixed-flavour shisha"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://headoverheelsyyc.com/assets/images/logo-b.png",
+      "credit_name": "Head Over Heels",
+      "credit_url": "https://headoverheelsyyc.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "rendesvouz-cosmopolitan-cuisine-ultra-lounge",
+    "name": "Rendesvouz - Cosmopolitan Cuisine & Ultra Lounge",
+    "formatted_address": "3750 Market St, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.879780999999994,
+        "lng": -113.95574549999999
+      }
+    },
+    "formatted_phone_number": "(587) 349-8653",
+    "website": "https://rendesvouz.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://rendesvouz.ca/menu",
+      "deals": [
+        {
+          "name": "Appetizers",
+          "price": "25% off",
+          "category": "food",
+          "description": "25% off appetizers"
+        },
+        {
+          "name": "Well Highballs",
+          "price": "$6",
+          "category": "drink",
+          "description": "1 oz pour"
+        },
+        {
+          "name": "Vintage Blonde Lager",
+          "price": "$7",
+          "category": "drink",
+          "description": "16 oz draught"
+        },
+        {
+          "name": "Select Wine",
+          "price": "$8",
+          "category": "drink",
+          "description": "6 oz glass"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://rendesvouz.ca/wp-content/uploads/2021/03/15-1.jpg",
+      "credit_name": "Rendesvouz - Cosmopolitan Cuisine & Ultra Lounge",
+      "credit_url": "https://rendesvouz.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "kon-ya-japan",
+    "name": "Kon'ya Japan",
+    "formatted_address": "8 Nolan Hill Blvd NW #602, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.1726013,
+        "lng": -114.15774169999999
+      }
+    },
+    "formatted_phone_number": "(587) 353-8868",
+    "website": "https://konyajapan.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "16:00",
+      "end": "19:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://konyajapan.com/specials",
+      "deals": [
+        {
+          "name": "Sapporo",
+          "price": "$6.99",
+          "category": "drink",
+          "description": "16oz draft"
+        },
+        {
+          "name": "Asahi",
+          "price": "$6.99",
+          "category": "drink",
+          "description": "16oz draft"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/572166_website_v2/events_page_back.jpg",
+      "credit_name": "Kon'ya Japan",
+      "credit_url": "https://konyajapan.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "l-a-vietnamese-kitchen-bar",
+    "name": "LÚA Vietnamese Kitchen + Bar",
+    "formatted_address": "150 Esplanade W #210, North Vancouver, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.3121467,
+        "lng": -123.0811691
+      }
+    },
+    "formatted_phone_number": "(604) 770-3863",
+    "website": "https://luavkb.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "16:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:00",
+          "end": "22:00",
+          "label": "Happy Hour Evening"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://luavkb.com/menu.html",
+      "deals": [
+        {
+          "name": "Beer",
+          "price": "$6",
+          "category": "drink",
+          "description": "All draft & canned selection"
+        },
+        {
+          "name": "Wine",
+          "price": "$8-12/5oz, $15-18/8oz, $48/bottle",
+          "category": "drink",
+          "description": "All wines (Sauvignon Blanc, Pinot Noir, Cabernet Merlot, Rosé)"
+        },
+        {
+          "name": "Spirits",
+          "price": "$7-9",
+          "category": "drink",
+          "description": "1 oz pours: Rye, Scotch, Tequila, Whiskey"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://luavkb.com/assets/favicon/og-image.png",
+      "credit_name": "LÚA Vietnamese Kitchen + Bar",
+      "credit_url": "https://luavkb.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-09"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "gyu-kaku-japanese-bbq",
     "name": "Gyu-Kaku Japanese BBQ",
     "formatted_address": "638 6 Ave SW #100, Calgary, AB",
@@ -28328,6 +29608,7 @@
     "website": "https://localpubliceatery.com/lpe-river-district/",
     "happy_hour": {
       "days": [
+        0,
         1,
         2,
         3,
@@ -28347,7 +29628,7 @@
             4
           ],
           "start": "21:00",
-          "end": "00:00",
+          "end": null,
           "label": "Late night"
         },
         {
@@ -28356,14 +29637,21 @@
             6
           ],
           "start": "22:00",
-          "end": "00:00",
+          "end": null,
           "label": "Late night"
         }
       ],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://localpubliceatery.com/lpe-river-district/",
-      "deals": []
+      "source_url": "https://localpubliceatery.com/neighbourhoods/river-district/menu",
+      "deals": [
+        {
+          "name": "Chips & Salsa",
+          "price": "$5",
+          "category": "food",
+          "description": "Listed under Happy Hour on the River District menu."
+        }
+      ]
     },
     "cover_image": {
       "url": "https://localpubliceatery.com/app/uploads/2023/05/Wide_Web_06-1024x683.jpg",
@@ -28371,7 +29659,7 @@
       "credit_url": "https://localpubliceatery.com/lpe-river-district/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-09"
   },
   {
     "place_id": null,

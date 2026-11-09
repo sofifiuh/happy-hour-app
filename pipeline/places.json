@@ -30780,5 +30780,209 @@
     },
     "matched_name": "Kujira Sushi & Izakaya",
     "synced_at": "2026-11-08"
+  },
+  "lvl-three-bar-lounge": {
+    "place_id": "ChIJYTR5jIFxcVMRowLOABAbh5I",
+    "rating": 4.4,
+    "user_ratings_total": 430,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "LVL Three Bar & Lounge",
+    "synced_at": "2026-11-09"
+  },
+  "eve-lounge": {
+    "place_id": "ChIJAeHM0EdxcVMRIKeWWHHHy5g",
+    "rating": 4.5,
+    "user_ratings_total": 244,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Eve Lounge",
+    "synced_at": "2026-11-09"
+  },
+  "texas-lounge": {
+    "place_id": "ChIJzfe_ehxwcVMR2YKFgSNRAtQ",
+    "rating": 3.8,
+    "user_ratings_total": 50,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Texas Lounge",
+    "synced_at": "2026-11-09"
+  },
+  "wxyz-bar-lounge": {
+    "place_id": "ChIJ__-_qKNvcVMRvCBB4KMPT18",
+    "rating": 4.1,
+    "user_ratings_total": 18,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "WXYZ Bar & Lounge",
+    "synced_at": "2026-11-09"
+  },
+  "sho-sushi-bar-kitchen": {
+    "place_id": "ChIJUY08Zf1wcVMRz-dnlaZBuSM",
+    "rating": 4.5,
+    "user_ratings_total": 2212,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Sho Sushi Bar & Kitchen",
+    "synced_at": "2026-11-09"
+  },
+  "dosa-club-indian-kitchen-bar": {
+    "place_id": "ChIJxyXbn8M_hFQRdjS3yVfImy4",
+    "rating": 4.8,
+    "user_ratings_total": 1528,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Dosa Club Indian Kitchen & Bar",
+    "synced_at": "2026-11-09"
+  },
+  "zephyr-caf-at-the-bag": {
+    "place_id": "ChIJnffzIhb4hlQRZgH3z214Cds",
+    "rating": 4.4,
+    "user_ratings_total": 1192,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Zephyr Café at The BAG",
+    "synced_at": "2026-11-09"
+  },
+  "mio-stone-grill-and-sushi": {
+    "place_id": "ChIJu0Ptg5pfcVMR5aGMxFm6_Hk",
+    "rating": 4.6,
+    "user_ratings_total": 658,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Mio Stone Grill and Sushi",
+    "synced_at": "2026-11-09"
+  },
+  "head-over-heels": {
+    "place_id": "ChIJBUhcWsFjcVMR4sEDNWaex08",
+    "rating": 4,
+    "user_ratings_total": 402,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Head Over Heels",
+    "synced_at": "2026-11-09"
+  },
+  "rendesvouz-cosmopolitan-cuisine-ultra-lounge": {
+    "place_id": "ChIJVyG_LgKdcVMRTcwid1iYyYA",
+    "rating": 4,
+    "user_ratings_total": 366,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Rendesvouz - Cosmopolitan Cuisine & Ultra Lounge",
+    "synced_at": "2026-11-09"
+  },
+  "kon-ya-japan": {
+    "place_id": "ChIJ6e0czNxncVMRzQYlE1nsy6o",
+    "rating": 4.3,
+    "user_ratings_total": 140,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Kon'ya Japan",
+    "synced_at": "2026-11-09"
+  },
+  "l-a-vietnamese-kitchen-bar": {
+    "place_id": "ChIJs58kXY1xhlQR6l1iaXk0s2Q",
+    "rating": 4.9,
+    "user_ratings_total": 70,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "LÚA Vietnamese Kitchen + Bar",
+    "synced_at": "2026-11-09"
   }
 }
