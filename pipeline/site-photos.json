@@ -2122,6 +2122,74 @@
       ]
     }
   },
+  "bar-annabelle": {
+    "checked_at": "2026-11-10",
+    "pages": [
+      "https://annabelleskitchen.ca/",
+      "https://annabelleskitchen.ca/events",
+      "https://annabelleskitchen.ca/locations",
+      "https://annabelleskitchen.ca/about"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/1d/8b1cd17e164d8386bd7f6f7d74bf08/:original",
+      "page": "https://annabelleskitchen.ca/",
+      "w": 1800,
+      "h": 1200
+    },
+    "gallery": [
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/4e/b584cb80f9425ba23fa1c052412e3f/:original",
+        "page": "https://annabelleskitchen.ca/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/e3/eb62ef8d83417c8b6e3f4b7b7219e5/:original",
+        "page": "https://annabelleskitchen.ca/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/about/aboutuspg_slide01.jpg",
+        "page": "https://annabelleskitchen.ca/about",
+        "w": 1382,
+        "h": 921
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/about/aboutuspg_slide02.jpg",
+        "page": "https://annabelleskitchen.ca/about",
+        "w": 1382,
+        "h": 921
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/about/aboutuspg_slide03.jpg",
+        "page": "https://annabelleskitchen.ca/about",
+        "w": 1382,
+        "h": 921
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/about/aboutuspg_left.jpg",
+        "page": "https://annabelleskitchen.ca/about",
+        "w": 1200,
+        "h": 800
+      }
+    ],
+    "review": {
+      "at": "2026-11-10",
+      "key": "adf83c0731bf",
+      "rejected": [
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/food_back.jpg",
+          "why": "duplicate of photo1"
+        },
+        {
+          "url": "https://static.spotapps.co/assets/admin/hybrid_approach/holiday_party/website_casual.jpg",
+          "why": "promotional poster with text"
+        }
+      ]
+    }
+  },
   "bar-asra": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -12775,6 +12843,70 @@
     "cover": null,
     "gallery": []
   },
+  "kama": {
+    "checked_at": "2026-11-10",
+    "pages": [
+      "https://kamacalgary.com/",
+      "https://kamacalgary.com/about",
+      "https://kamacalgary.com/party",
+      "https://kamacalgary.com/events"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://static.spotapps.co/spots/91/cfb55f77f64b99a9222abe4a6b9245/wide_full",
+      "page": "https://kamacalgary.com/party",
+      "w": 1200,
+      "h": 630
+    },
+    "gallery": [
+      {
+        "url": "https://static.spotapps.co/spots/4c/95a92c525c432699a941f3d19fae7f/:original",
+        "page": "https://kamacalgary.com/",
+        "w": 3024,
+        "h": 2016
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/306415_website_v1/about_2.jpg",
+        "page": "https://kamacalgary.com/about",
+        "w": 1500,
+        "h": 1001
+      },
+      {
+        "url": "https://static.spotapps.co/spots/8f/6a6a488bf9427aabfe768234d573ec/wide_full",
+        "page": "https://kamacalgary.com/party",
+        "w": 1200,
+        "h": 630
+      },
+      {
+        "url": "https://static.spotapps.co/spots/c6/2db354192f4528b66bfe03c048ff42/wide_full",
+        "page": "https://kamacalgary.com/party",
+        "w": 1200,
+        "h": 630
+      }
+    ],
+    "review": {
+      "at": "2026-11-10",
+      "key": "d0f90f495166",
+      "rejected": [
+        {
+          "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/79/23b8606b8c46ff9384d74836e75a4c/:original",
+          "why": "person as primary subject"
+        },
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/306415_website_v1/about_1.jpg",
+          "why": "near-duplicate of photo1"
+        },
+        {
+          "url": "https://static.spotapps.co/assets/admin/hybrid_approach/holiday_party/website_casual.jpg",
+          "why": "holiday party promotional flyer, mostly text"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/9f/8bd6584aeb49f88779cf0f828f09e0/wide_full",
+          "why": "near-duplicate of photo9"
+        }
+      ]
+    }
+  },
   "karakoram-restaurant": {
     "checked_at": "2026-10-25",
     "pages": [
@@ -14227,6 +14359,51 @@
         {
           "url": "https://www.liftbarandgrill.com/wp-content/uploads/2020/04/visit-1.png",
           "why": "close-up of hands preparing microgreens, subject is person"
+        }
+      ]
+    }
+  },
+  "lil-chef-bistro": {
+    "checked_at": "2026-11-10",
+    "pages": [
+      "https://www.lilchefbistro.ca/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/f24bc5_c57b6f246dd544a6a675af66ba43edd6~mv2.jpg/v1/fill/w_486,h_608,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Happy-hour-1.jpg",
+      "page": "https://www.lilchefbistro.ca/",
+      "w": 486,
+      "h": 608
+    },
+    "gallery": [
+      {
+        "url": "https://static.wixstatic.com/media/f24bc5_12b3e5ea0e554469a105a948023a1d5f~mv2.jpg/v1/fill/w_1600,h_1184,al_c/f24bc5_12b3e5ea0e554469a105a948023a1d5f~mv2.jpg",
+        "page": "https://www.lilchefbistro.ca/",
+        "w": 1600,
+        "h": 1184
+      },
+      {
+        "url": "https://static.wixstatic.com/media/f24bc5_c0e4aca05bf344a288ca304803db0ff6~mv2.webp/v1/fill/w_1440,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f24bc5_c0e4aca05bf344a288ca304803db0ff6~mv2.webp",
+        "page": "https://www.lilchefbistro.ca/",
+        "w": 1440,
+        "h": 684
+      }
+    ],
+    "review": {
+      "at": "2026-11-10",
+      "key": "483df2288510",
+      "rejected": [
+        {
+          "url": "https://static.wixstatic.com/media/f24bc5_5b63cc1a959d4877b6d4ef5dc86e9044~mv2.jpg/v1/fill/w_571,h_422,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_3325.jpg",
+          "why": "product display with price labels and text"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/f24bc5_7d4d900a998940c7a7efdf096dd526ea~mv2.webp/v1/fill/w_486,h_608,fp_0.59_0.18,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Lil-Chef-72.webp",
+          "why": "person (chef) as main subject"
+        },
+        {
+          "url": "https://static.wixstatic.com/media/f24bc5_fb1cf665465e4b5088b4d24dda3d8dc9~mv2.jpg/v1/crop/x_379,y_0,w_847,h_1058/fill/w_486,h_608,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Lil-Chef-Welcome-2.jpg",
+          "why": "near-duplicate of photo1, same dish"
         }
       ]
     }
@@ -19624,6 +19801,45 @@
       ]
     }
   },
+  "petalo": {
+    "checked_at": "2026-11-10",
+    "pages": [
+      "https://www.petaloyyc.com/",
+      "https://www.petaloyyc.com/our-story",
+      "https://www.petaloyyc.com/reservations"
+    ],
+    "cover_problem": "graphic",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6a3189fcba31557f9767f8e3/508a5e3b-c107-4af7-abe2-94e5f7b9b380/DSC09019.JPG",
+      "page": "https://www.petaloyyc.com/",
+      "w": 2500,
+      "h": 1670
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6a3189fcba31557f9767f8e3/53b80aaa-b19e-41c2-9aa7-9d457fa7350c/449FC01D-E0F4-4EC6-B0F3-AAE16FE248BA_1_201_a.jpeg",
+        "page": "https://www.petaloyyc.com/reservations",
+        "w": 2500,
+        "h": 1670
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6a3189fcba31557f9767f8e3/1fddcb34-9bf9-4490-b634-8e08f14c6ffe/DSC08992.JPG",
+        "page": "https://www.petaloyyc.com/",
+        "w": 2500,
+        "h": 1670
+      }
+    ],
+    "review": {
+      "at": "2026-11-10",
+      "key": "16b956ae6d16",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6a3189fcba31557f9767f8e3/27c3e229-d1e7-4f32-94eb-835554eb96a1/7711779B-7D50-427E-B5B7-18033C22743B_1_201_a.jpeg",
+          "why": "near-duplicate of photo1's dish, tighter crop"
+        }
+      ]
+    }
+  },
   "pidgin-restaurant": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -22004,6 +22220,70 @@
         {
           "url": "https://i0.wp.com/sabafoods.ca/wp-content/uploads/2024/07/birthday-cake-at-a-birthday-party-e1722394520288.jpg?fit=600%2C400&ssl=1",
           "why": "people as subject, event/party photo"
+        }
+      ]
+    }
+  },
+  "salt-pepper": {
+    "checked_at": "2026-11-10",
+    "pages": [
+      "https://saltnpepper.ca/",
+      "https://saltnpepper.ca/our-story/",
+      "https://saltnpepper.ca/gallery/",
+      "https://saltnpepper.ca/gallery/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/inside-03.jpg",
+      "page": "https://saltnpepper.ca/",
+      "w": 1602,
+      "h": 1202
+    },
+    "gallery": [
+      {
+        "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/inside-restaurant.jpg",
+        "page": "https://saltnpepper.ca/our-story/",
+        "w": 1900,
+        "h": 1425
+      },
+      {
+        "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/carnitas-tacos.jpg",
+        "page": "https://saltnpepper.ca/",
+        "w": 1911,
+        "h": 1293
+      },
+      {
+        "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/outdoor-patio-01.jpg",
+        "page": "https://saltnpepper.ca/",
+        "w": 1692,
+        "h": 1280
+      },
+      {
+        "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/chips-salsas.jpg",
+        "page": "https://saltnpepper.ca/our-story/",
+        "w": 1364,
+        "h": 982
+      }
+    ],
+    "review": {
+      "at": "2026-11-10",
+      "key": "1408fe00cdc6",
+      "rejected": [
+        {
+          "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/outside-restaurant.jpg",
+          "why": "exterior sign with text and graphics, mostly wordmark signage"
+        },
+        {
+          "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/sylvio.jpg",
+          "why": "chef portrait, people as subject"
+        },
+        {
+          "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/alex-cooking.jpg",
+          "why": "staff/team photo in kitchen, people as subject"
+        },
+        {
+          "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/alejandro.jpg",
+          "why": "staff member with food, people portrait"
         }
       ]
     }
@@ -29634,6 +29914,13 @@
       "https://tipsie.ca/"
     ],
     "cover_problem": "missing",
+    "cover": null,
+    "gallery": []
+  },
+  "tipsy-pig-kitchen-bar": {
+    "checked_at": "2026-11-10",
+    "error": "page.goto: Timeout 40000ms exceeded.\nCall log:\n  - navigating to \"http://tipsypigkb.com/\", waiting until \"domcontentloaded\"\n",
+    "pages": [],
     "cover": null,
     "gallery": []
   },

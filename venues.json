@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-10-61c9bf07",
+ "data_version": "2026-11-10-e7c67af6",
  "venues": [
   {
    "id": "ancora",
@@ -8852,7 +8852,44 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/4e/b584cb80f9425ba23fa1c052412e3f/:original",
+     "credit_name": "Bar Annabelle",
+     "credit_url": "https://annabelleskitchen.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/e3/eb62ef8d83417c8b6e3f4b7b7219e5/:original",
+     "credit_name": "Bar Annabelle",
+     "credit_url": "https://annabelleskitchen.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/about/aboutuspg_slide01.jpg",
+     "credit_name": "Bar Annabelle",
+     "credit_url": "https://annabelleskitchen.ca/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/about/aboutuspg_slide02.jpg",
+     "credit_name": "Bar Annabelle",
+     "credit_url": "https://annabelleskitchen.ca/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/about/aboutuspg_slide03.jpg",
+     "credit_name": "Bar Annabelle",
+     "credit_url": "https://annabelleskitchen.ca/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/about/aboutuspg_left.jpg",
+     "credit_name": "Bar Annabelle",
+     "credit_url": "https://annabelleskitchen.ca/about",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8914,9 +8951,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/food_back.jpg",
+    "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/1d/8b1cd17e164d8386bd7f6f7d74bf08/:original",
     "credit_name": "Bar Annabelle",
-    "credit_url": "http://annabelleskitchen.ca/",
+    "credit_url": "https://annabelleskitchen.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-10",
@@ -8950,7 +8987,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/inside-restaurant.jpg",
+     "credit_name": "Salt & Pepper",
+     "credit_url": "https://saltnpepper.ca/our-story/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/carnitas-tacos.jpg",
+     "credit_name": "Salt & Pepper",
+     "credit_url": "https://saltnpepper.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/outdoor-patio-01.jpg",
+     "credit_name": "Salt & Pepper",
+     "credit_url": "https://saltnpepper.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/chips-salsas.jpg",
+     "credit_name": "Salt & Pepper",
+     "credit_url": "https://saltnpepper.ca/our-story/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9020,10 +9082,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/salt-pepper.jpg",
+    "url": "https://saltnpepper.ca/wp-content/uploads/2025/03/inside-03.jpg",
     "credit_name": "Salt & Pepper",
-    "credit_url": "https://maps.google.com/maps/contrib/110560121942960684487",
-    "source": "google_places"
+    "credit_url": "https://saltnpepper.ca/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-10",
    "primary_type": null,
@@ -9056,7 +9118,20 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.wixstatic.com/media/f24bc5_12b3e5ea0e554469a105a948023a1d5f~mv2.jpg/v1/fill/w_1600,h_1184,al_c/f24bc5_12b3e5ea0e554469a105a948023a1d5f~mv2.jpg",
+     "credit_name": "Lil Chef Bistro",
+     "credit_url": "https://www.lilchefbistro.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/f24bc5_c0e4aca05bf344a288ca304803db0ff6~mv2.webp/v1/fill/w_1440,h_684,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f24bc5_c0e4aca05bf344a288ca304803db0ff6~mv2.webp",
+     "credit_name": "Lil Chef Bistro",
+     "credit_url": "https://www.lilchefbistro.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9098,7 +9173,7 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://static.wixstatic.com/media/f24bc5_12b3e5ea0e554469a105a948023a1d5f~mv2.jpg/v1/fill/w_1600,h_1184,al_c/f24bc5_12b3e5ea0e554469a105a948023a1d5f~mv2.jpg",
+    "url": "https://static.wixstatic.com/media/f24bc5_c57b6f246dd544a6a675af66ba43edd6~mv2.jpg/v1/fill/w_486,h_608,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Happy-hour-1.jpg",
     "credit_name": "Lil Chef Bistro",
     "credit_url": "https://www.lilchefbistro.ca/",
     "source": "official_website"
@@ -9134,7 +9209,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.spotapps.co/spots/4c/95a92c525c432699a941f3d19fae7f/:original",
+     "credit_name": "Kama",
+     "credit_url": "https://kamacalgary.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/306415_website_v1/about_2.jpg",
+     "credit_name": "Kama",
+     "credit_url": "https://kamacalgary.com/about",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/8f/6a6a488bf9427aabfe768234d573ec/wide_full",
+     "credit_name": "Kama",
+     "credit_url": "https://kamacalgary.com/party",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/spots/c6/2db354192f4528b66bfe03c048ff42/wide_full",
+     "credit_name": "Kama",
+     "credit_url": "https://kamacalgary.com/party",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9238,9 +9338,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/306415_website_v1/shared_image.jpg",
+    "url": "https://static.spotapps.co/spots/91/cfb55f77f64b99a9222abe4a6b9245/wide_full",
     "credit_name": "Kama",
-    "credit_url": "http://kamacalgary.com/",
+    "credit_url": "https://kamacalgary.com/party",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-10",
@@ -9274,7 +9374,20 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/6a3189fcba31557f9767f8e3/53b80aaa-b19e-41c2-9aa7-9d457fa7350c/449FC01D-E0F4-4EC6-B0F3-AAE16FE248BA_1_201_a.jpeg",
+     "credit_name": "Petalo",
+     "credit_url": "https://www.petaloyyc.com/reservations",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/6a3189fcba31557f9767f8e3/1fddcb34-9bf9-4490-b634-8e08f14c6ffe/DSC08992.JPG",
+     "credit_name": "Petalo",
+     "credit_url": "https://www.petaloyyc.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9377,7 +9490,7 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/6a3189fcba31557f9767f8e3/t/6a5f7eb67f36c5521de3782f/1784643254754/Petalo+Logo++%288%29.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/6a3189fcba31557f9767f8e3/508a5e3b-c107-4af7-abe2-94e5f7b9b380/DSC09019.JPG",
     "credit_name": "Petalo",
     "credit_url": "https://www.petaloyyc.com/",
     "source": "official_website"
