@@ -25,6 +25,605 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "tipsy-pig-kitchen-bar",
+    "name": "Tipsy Pig Kitchen + Bar",
+    "formatted_address": "2060 Symons Valley Pkwy NW #3018, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.174042199999995,
+        "lng": -114.1088155
+      }
+    },
+    "formatted_phone_number": "(403) 453-3332",
+    "website": "http://tipsypigkb.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "11:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0
+          ],
+          "start": "00:00",
+          "end": null,
+          "label": "All Day Sunday"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://tipsypigkb.com/wp-content/uploads/2026/08/Happy_Hour_Menu_Food.jpg",
+      "deals": [
+        {
+          "name": "Chicken Wings",
+          "price": "$15",
+          "category": "food",
+          "description": "Prepared fresh daily, dusted, forno baked & crispy fry finished with creamy asiago dip + choose a flavour"
+        },
+        {
+          "name": "10' Margarita Pizza",
+          "price": "$12",
+          "category": "food",
+          "description": "Mozzarella + Parmigiano Reggiano + Tipsy tomato sauce + fresh basil"
+        },
+        {
+          "name": "Bruschetta",
+          "price": "$14",
+          "category": "food",
+          "description": "Seasoned diced tomatoes + onions + olive oil + basil + Parmesan cheese / toasted crostini with balsamic reduction"
+        },
+        {
+          "name": "Reuben Sandwich",
+          "price": "$19",
+          "category": "food",
+          "description": "Montreal smoked meat + mustard chipotle mayo + sauerkraut + pickles + Swiss cheese / marble rye bread + fries or house salad"
+        },
+        {
+          "name": "BBQ Chicken Caesar Salad",
+          "price": "$19",
+          "category": "food",
+          "description": "House marinated BBQ chicken + Caesar salad"
+        },
+        {
+          "name": "House Craft Beers",
+          "price": "$5",
+          "category": "drink",
+          "description": "15 oz - Lucky Pig varieties (Lager, Light Lager, Red, Hazy IPA), Lucky Babe, Lucky Berry"
+        },
+        {
+          "name": "Caesar",
+          "price": "$7",
+          "category": "drink",
+          "description": "Vodka, Gin, or Tequila"
+        },
+        {
+          "name": "The Palmer",
+          "price": "$7",
+          "category": "drink",
+          "description": "Iced tea + lemonade + flavored vodka (raspberry, blueberry, peach)"
+        },
+        {
+          "name": "Fuzzy Mule",
+          "price": "$7",
+          "category": "drink",
+          "description": "Peach vodka + ginger beer + peach slush"
+        },
+        {
+          "name": "Wine",
+          "price": "$6-9",
+          "category": "drink",
+          "description": "House Red or White (Italy) - $6 for 6 oz, $9 for 9 oz"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-10"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "bar-annabelle",
+    "name": "Bar Annabelle",
+    "formatted_address": "109a, 8 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0453081,
+        "lng": -114.0636919
+      }
+    },
+    "formatted_phone_number": "(403) 263-5330",
+    "website": "http://annabelleskitchen.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://annabelleskitchen.ca/food-menu",
+      "deals": [
+        {
+          "name": "Pizzas",
+          "price": "$18",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "House Red & White Wine",
+          "price": "$8",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Spritz",
+          "price": "$8",
+          "category": "drink",
+          "description": "Aperol/Hugo/Sole"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/306383_website_v1/food_back.jpg",
+      "credit_name": "Bar Annabelle",
+      "credit_url": "http://annabelleskitchen.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-10"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "salt-pepper",
+    "name": "Salt & Pepper",
+    "formatted_address": "6515 Bowness Rd NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.086647299999996,
+        "lng": -114.18279469999999
+      }
+    },
+    "formatted_phone_number": "(403) 247-4402",
+    "website": "http://saltnpepper.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://saltnpepper.ca/menus/happy-hour",
+      "deals": [
+        {
+          "name": "Chips & Salsa",
+          "price": "$4",
+          "category": "food",
+          "description": "with house tequila"
+        },
+        {
+          "name": "Taquitos",
+          "price": "$6.50",
+          "category": "food",
+          "description": "with Corona"
+        },
+        {
+          "name": "Bean & Cheese Molletes",
+          "price": "$8",
+          "category": "food",
+          "description": "with 5 oz house wine"
+        },
+        {
+          "name": "Chorizo & Baked Cheese",
+          "price": "$12",
+          "category": "food",
+          "description": "with double margarita"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-10"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "lil-chef-bistro",
+    "name": "Lil Chef Bistro",
+    "formatted_address": "40365 Tantalus Rd, Squamish, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.7400565,
+        "lng": -123.1324046
+      }
+    },
+    "formatted_phone_number": "(604) 390-2433",
+    "website": "https://www.lilchefbistro.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.lilchefbistro.ca/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://static.wixstatic.com/media/f24bc5_12b3e5ea0e554469a105a948023a1d5f~mv2.jpg/v1/fill/w_1600,h_1184,al_c/f24bc5_12b3e5ea0e554469a105a948023a1d5f~mv2.jpg",
+      "credit_name": "Lil Chef Bistro",
+      "credit_url": "https://www.lilchefbistro.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-10"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "kama",
+    "name": "Kama",
+    "formatted_address": "211 11 Ave SW #211, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.042336999999996,
+        "lng": -114.06717499999999
+      }
+    },
+    "formatted_phone_number": "(403) 266-7062",
+    "website": "http://kamacalgary.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:30",
+      "end": "17:30",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://kamacalgary.com/food-menu?menu_id=1429798",
+      "deals": [
+        {
+          "name": "Chorizo Iberico",
+          "price": "$10",
+          "category": "food",
+          "description": "Spanish cured meat"
+        },
+        {
+          "name": "Jamón Serrano",
+          "price": "$10",
+          "category": "food",
+          "description": "Spanish ham, arugula, manchego"
+        },
+        {
+          "name": "Grilled Halloumi",
+          "price": "$10",
+          "category": "food",
+          "description": "Pomegranate honey, apple, mint"
+        },
+        {
+          "name": "Pork Belly",
+          "price": "$10",
+          "category": "food",
+          "description": "Sherry piquillo glaze, pineapple, peanuts"
+        },
+        {
+          "name": "Turkish Mushroom Dumplings",
+          "price": "$10",
+          "category": "food",
+          "description": "Toasted buckwheat, smoked labneh"
+        },
+        {
+          "name": "Mezze Trio",
+          "price": "$17",
+          "category": "food",
+          "description": "Choose 3 with Turkish pita: hummus, tapenade, labneh, tzatziki, cucumber, tomatoes, olives, or blue cheese"
+        },
+        {
+          "name": "Feature Cocktail",
+          "price": "$10",
+          "category": "drink",
+          "description": "Rotating featured cocktail"
+        },
+        {
+          "name": "Feature Wine",
+          "price": "$8",
+          "category": "drink",
+          "description": "Red or white"
+        },
+        {
+          "name": "Draught Beers",
+          "price": "$7",
+          "category": "drink",
+          "description": "Select draft beers"
+        },
+        {
+          "name": "Zamalek",
+          "price": "$4",
+          "category": "drink",
+          "description": "Hibiscus juice"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/306415_website_v1/shared_image.jpg",
+      "credit_name": "Kama",
+      "credit_url": "http://kamacalgary.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-10"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "petalo",
+    "name": "Petalo",
+    "formatted_address": "3811 Edmonton Trl, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.086479999999995,
+        "lng": -114.0519195
+      }
+    },
+    "formatted_phone_number": "(403) 277-0766",
+    "website": "https://www.petaloyyc.com/",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.petaloyyc.com/s/HAPPY-HOUR-MENU.pdf",
+      "deals": [
+        {
+          "name": "Negroni",
+          "price": "$10",
+          "category": "drink",
+          "description": "2oz"
+        },
+        {
+          "name": "Petalo Rossini",
+          "price": "$10",
+          "category": "drink",
+          "description": "Strawberry puree, prosecco"
+        },
+        {
+          "name": "Wine",
+          "price": "$8",
+          "category": "drink",
+          "description": "5oz, red, white, or rosé"
+        },
+        {
+          "name": "High Balls",
+          "price": "$8",
+          "category": "drink",
+          "description": "1oz"
+        },
+        {
+          "name": "Peroni",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Peroni 0.0%",
+          "price": "$8",
+          "category": "drink",
+          "description": "Non-alcoholic"
+        },
+        {
+          "name": "All Pizzas",
+          "price": "$15",
+          "category": "food",
+          "description": "Margherita, Carni, Prosciutto Fresco, or Truffle Mushroom"
+        },
+        {
+          "name": "Potato Croquette",
+          "price": "$8",
+          "category": "food",
+          "description": "Tapenade crema, piperade"
+        },
+        {
+          "name": "Arancini de Scampi",
+          "price": "$8",
+          "category": "food",
+          "description": "Prawn, vodka sauce, basil pesto, garlic cream"
+        },
+        {
+          "name": "Mini Antipasti",
+          "price": "$15",
+          "category": "food",
+          "description": "Chef's choice meats and cheese, crostini"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6a3189fcba31557f9767f8e3/t/6a5f7eb67f36c5521de3782f/1784643254754/Petalo+Logo++%288%29.png?format=1500w",
+      "credit_name": "Petalo",
+      "credit_url": "https://www.petaloyyc.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-10"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "lvl-three-bar-lounge",
     "name": "LVL Three Bar & Lounge",
     "formatted_address": "818 16 Ave SW, Calgary, AB",
@@ -62743,21 +63342,23 @@
     "website": "http://www.pierseven.ca/",
     "happy_hour": {
       "days": [
-        0,
-        1,
-        2,
         3,
         4,
-        5,
-        6
+        5
       ],
       "start": "14:30",
-      "end": "17:30",
+      "end": "18:00",
       "extra_windows": [],
       "verified": false,
       "verified_source": null,
-      "source_url": "http://www.pierseven.ca/happy-hour/",
+      "source_url": "http://www.pierseven.ca/happy-hour",
       "deals": [
+        {
+          "name": "Bottles of Wine",
+          "price": "50% off",
+          "category": "drink",
+          "description": "Half price on bottles of wine during happy hour"
+        },
         {
           "name": "Yam Fries",
           "price": "$9",
@@ -62783,7 +63384,7 @@
           "description": ""
         },
         {
-          "name": "Prime Cheese Burger + Fries",
+          "name": "Prime Cheeseburger + Fries",
           "price": "$17",
           "category": "food",
           "description": ""
@@ -62798,7 +63399,7 @@
           "name": "Prawn Cocktail",
           "price": "$15",
           "category": "food",
-          "description": "Gluten friendly"
+          "description": "Gluten free"
         },
         {
           "name": "Pier 7 Poke",
@@ -62816,19 +63417,19 @@
           "name": "Oysters",
           "price": "$1.99",
           "category": "food",
-          "description": "Minimum order 1/2 dozen"
+          "description": "Minimum order of half a dozen"
         },
         {
           "name": "Sangria",
           "price": "$10",
           "category": "drink",
-          "description": "Red, White & Rosé; 5oz"
+          "description": "Red, white or rosé, 5oz"
         },
         {
           "name": "Bellini",
           "price": "$9",
           "category": "drink",
-          "description": "1oz"
+          "description": "Listed as 1oz"
         },
         {
           "name": "Aperol Spritz",
@@ -62838,15 +63439,15 @@
         },
         {
           "name": "Pier 7 House White",
-          "price": "$7/$10",
+          "price": "$7 / $10",
           "category": "drink",
-          "description": "5oz/8oz"
+          "description": "5oz / 8oz"
         },
         {
           "name": "Pier 7 House Red",
-          "price": "$7/$10",
+          "price": "$7 / $10",
           "category": "drink",
-          "description": "5oz/8oz"
+          "description": "5oz / 8oz"
         },
         {
           "name": "Mionetto Prosecco",
@@ -62880,7 +63481,7 @@
       "credit_url": "http://www.pierseven.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-10"
   },
   {
     "place_id": null,

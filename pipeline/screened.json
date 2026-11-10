@@ -18663,7 +18663,7 @@
     "id": "no-1-beef-noodle",
     "name": "No. 1 Beef Noodle",
     "verdict": "hours_only",
-    "checked_at": "2026-11-09"
+    "checked_at": "2026-11-10"
   },
   "ChIJdWULgytyhlQR9EUQyHopKL0": {
     "id": "davie-dosa-company",
@@ -28930,5 +28930,143 @@
     "name": "Lounge Banquet Hall",
     "verdict": "no_happy_hour",
     "checked_at": "2026-11-09"
+  },
+  "ChIJA_TaL-NvcVMRFf2Jp4VuZ_s": {
+    "id": "barcelona-tavern",
+    "name": "Barcelona Tavern",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJcYPJXydwcVMRh28ROkujAEI": {
+    "id": "chilitos-taberna",
+    "name": "Chilitos Taberna",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJd6vFs-tlcVMRnlcVY10nJ4g": {
+    "id": "fortuna-s-row",
+    "name": "Fortuna's Row",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJ6wSv1a1ncVMRBBbCfFTFCWA": {
+    "id": "tipsy-pig-kitchen-bar",
+    "name": "Tipsy Pig Kitchen + Bar",
+    "verdict": "published",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJDefc8M1xcVMRlt-LIyumaDI": {
+    "id": "bar-milpa",
+    "name": "Bar Milpa",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJ4QMNZIJAhFQR2Nm13HsY9q4": {
+    "id": "chilliwack-airport-restaurant",
+    "name": "Chilliwack Airport Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJVVUplf1vcVMR_kOpBySdjOo": {
+    "id": "bar-annabelle",
+    "name": "Bar Annabelle",
+    "verdict": "published",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJxTySR51KhFQR0d_HPeywQeE": {
+    "id": "paliotti-s-italian-restaurant",
+    "name": "Paliotti's Italian Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJ062SlmI1hFQRHmaM7jETARg": {
+    "id": "ann-marie-s-cafe",
+    "name": "Ann Marie's Cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJbe-tNefVhVQRAHIevxUDVKk": {
+    "id": "stacked-pancake-breakfast-house",
+    "name": "Stacked Pancake & Breakfast House",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJ3SrWpltwhlQRQoadjPH1kcg": {
+    "id": "blvd-bistro",
+    "name": "BLVD Bistro",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJ8SV8zSlHhFQRw7hYwMghsh0": {
+    "id": "fiesta-loca",
+    "name": "Fiesta Loca",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJpUxW5MJucVMRSuWj0fifXOM": {
+    "id": "salt-pepper",
+    "name": "Salt & Pepper",
+    "verdict": "published",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJ853Gle5vcVMR1lgT47jUrkU": {
+    "id": "bodega-mexican-restaurant",
+    "name": "Bodega Mexican Restaurant",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJ4y_uM7pAhFQR5ckjIrGIsCk": {
+    "id": "coconut-thai-restaurant-chilliwack",
+    "name": "Coconut Thai Restaurant (Chilliwack)",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJI0pGnAH5hlQR8BkQEL7oCbw": {
+    "id": "lil-chef-bistro",
+    "name": "Lil Chef Bistro",
+    "verdict": "hours_only",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJjRj6-B1xcVMRUSP_TMYEPPc": {
+    "id": "kama",
+    "name": "Kama",
+    "verdict": "published",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJJ5MO9gQ_cVMRrX5FQoST_JQ": {
+    "id": "cabeza-grande",
+    "name": "Cabeza Grande",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJu3rf6fNHhFQROfBUECAnIzQ": {
+    "id": "south-sumas-bistro",
+    "name": "South Sumas Bistro",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJXZ2kQvRfcVMRLL5b2UG4gag": {
+    "id": "the-cravery",
+    "name": "The Cravery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJifyRtGFvcVMRVc64VA3EDqU": {
+    "id": "punto-latino-yyc",
+    "name": "Punto Latino YYC",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJxfBTbI93cVMRXUSN6wRPHnQ": {
+    "id": "flora-euro-kitchen",
+    "name": "Flora Euro Kitchen",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-10"
+  },
+  "ChIJwVGwyN1lcVMRhkiM9GWKNSo": {
+    "id": "petalo",
+    "name": "Petalo",
+    "verdict": "published",
+    "checked_at": "2026-11-10"
   }
 }

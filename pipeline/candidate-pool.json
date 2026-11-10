@@ -35,167 +35,23 @@
     "found_via": "requeue hours_only",
     "found_at": "2026-11-07"
   },
-  "ChIJZyExm9JxcVMRIiuWG8VWKOU": {
-    "id": "globefish-marda-loop-sushi-izakaya",
-    "name": "Globefish Marda Loop Sushi & Izakaya",
-    "website": "http://globefish.ca/",
-    "formatted_address": "2009 33 Ave SW Ste 1, Calgary, AB",
+  "ChIJbe-tNefVhVQRAHIevxUDVKk": {
+    "id": "stacked-pancake-breakfast-house",
+    "name": "Stacked Pancake & Breakfast House",
+    "website": "https://www.stackedpancakehouse.ca/restaurant/pitt-meadows-lougheed",
+    "formatted_address": "19800 Lougheed Hwy unit 361, Pitt Meadows, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 51.023747,
-        "lng": -114.107418
+        "lat": 49.2214053,
+        "lng": -122.67307099999998
       }
     },
-    "formatted_phone_number": "(403) 249-8866",
+    "formatted_phone_number": "(604) 430-9001",
     "places": {
-      "place_id": "ChIJZyExm9JxcVMRIiuWG8VWKOU",
-      "rating": 4.4,
-      "user_ratings_total": 384,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Globefish Marda Loop Sushi & Izakaya",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJZyExm9JxcVMRIiuWG8VWKOU",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya Marda Loop Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJMSyQruJvcVMRYYZbuxuFxt4": {
-    "id": "japanese-village",
-    "name": "Japanese Village",
-    "website": "http://www.japanese-village.ca/",
-    "formatted_address": "317 10 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.043348699999996,
-        "lng": -114.06919020000001
-      }
-    },
-    "formatted_phone_number": "(403) 262-2738",
-    "places": {
-      "place_id": "ChIJMSyQruJvcVMRYYZbuxuFxt4",
-      "rating": 4.3,
-      "user_ratings_total": 2021,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Japanese Village",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJMSyQruJvcVMRYYZbuxuFxt4",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya East Village Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJ2-PxIp1xcVMRGUir5eAM6mI": {
-    "id": "tokyo-street-market-macleod-trail",
-    "name": "Tokyo Street Market Macleod Trail",
-    "website": "https://tokyostreetmarket.com/macleod/",
-    "formatted_address": "5828 Macleod Trl SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.001612300000005,
-        "lng": -114.0711908
-      }
-    },
-    "formatted_phone_number": "(587) 356-3288",
-    "places": {
-      "place_id": "ChIJ2-PxIp1xcVMRGUir5eAM6mI",
-      "rating": 4.1,
-      "user_ratings_total": 529,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Tokyo Street Market Macleod Trail",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJ2-PxIp1xcVMRGUir5eAM6mI",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya East Village Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJ_3ckqdJlcVMR54tBVoQcSOE": {
-    "id": "tobe-teppanyaki-lounge",
-    "name": "Tobe Teppanyaki Lounge",
-    "website": "http://www.tobeyyc.ca/",
-    "formatted_address": "901 64 Ave NE #4160, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1087267,
-        "lng": -114.0391065
-      }
-    },
-    "formatted_phone_number": "(403) 730-8826",
-    "places": {
-      "place_id": "ChIJ_3ckqdJlcVMR54tBVoQcSOE",
-      "rating": 4.5,
-      "user_ratings_total": 694,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Tobe Teppanyaki Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJ_3ckqdJlcVMR54tBVoQcSOE",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya East Village Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJA3T5NuFxcVMRM24PiKkt2G8": {
-    "id": "ajito",
-    "name": "Ajito",
-    "website": "http://www.ajito.ca/",
-    "formatted_address": "7212 Macleod Trl SE #110, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.9889298,
-        "lng": -114.07067140000001
-      }
-    },
-    "formatted_phone_number": "(403) 252-7099",
-    "places": {
-      "place_id": "ChIJA3T5NuFxcVMRM24PiKkt2G8",
+      "place_id": "ChIJbe-tNefVhVQRAHIevxUDVKk",
       "rating": 4.6,
-      "user_ratings_total": 646,
+      "user_ratings_total": 1547,
       "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -206,284 +62,32 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Ajito",
-      "synced_at": "2026-11-09"
+      "matched_name": "Stacked Pancake & Breakfast House",
+      "synced_at": "2026-11-10"
     },
-    "place_id": "ChIJA3T5NuFxcVMRM24PiKkt2G8",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "izakaya Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJy36m1jh3cVMRZL9SjkJdjSw": {
-    "id": "ryuko-south-japanese-kitchen-bar",
-    "name": "Ryuko South - Japanese Kitchen + Bar",
-    "website": "http://ryuko.ca/",
-    "formatted_address": "13200 Macleod Trl, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.9339339,
-        "lng": -114.06714319999999
-      }
-    },
-    "formatted_phone_number": "(403) 815-1849",
-    "places": {
-      "place_id": "ChIJy36m1jh3cVMRZL9SjkJdjSw",
-      "rating": 4.7,
-      "user_ratings_total": 1518,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Ryuko South - Japanese Kitchen + Bar",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJy36m1jh3cVMRZL9SjkJdjSw",
-    "city": "Calgary",
+    "place_id": "ChIJbe-tNefVhVQRAHIevxUDVKk",
+    "city": "Pitt Meadows",
     "is_bar": false,
-    "found_via": "izakaya Calgary AB",
-    "found_at": "2026-11-09"
+    "found_via": "tapas bar Pitt Meadows BC",
+    "found_at": "2026-11-10"
   },
-  "ChIJ6e0czNxncVMRzQYlE1nsy6o": {
-    "id": "kon-ya-japan",
-    "name": "Kon'ya Japan",
-    "website": "https://konyajapan.com/",
-    "formatted_address": "8 Nolan Hill Blvd NW #602, Calgary, AB",
+  "ChIJ3SrWpltwhlQRQoadjPH1kcg": {
+    "id": "blvd-bistro",
+    "name": "BLVD Bistro",
+    "website": "http://www.blvdbistro.ca/",
+    "formatted_address": "636 Queensbury Ave, North Vancouver, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 51.1726013,
-        "lng": -114.15774169999999
+        "lat": 49.3121583,
+        "lng": -123.05694290000001
       }
     },
-    "formatted_phone_number": "(587) 353-8868",
+    "formatted_phone_number": null,
     "places": {
-      "place_id": "ChIJ6e0czNxncVMRzQYlE1nsy6o",
-      "rating": 4.3,
-      "user_ratings_total": 140,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Kon'ya Japan",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJ6e0czNxncVMRzQYlE1nsy6o",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJiXxD_TNxcVMRSfzeREgPs2Q": {
-    "id": "jinya-ramen-bar-macleod",
-    "name": "JINYA Ramen Bar - Macleod",
-    "website": "https://www.jinyaramenbar.com/locations/macleod-south/",
-    "formatted_address": "8810 Macleod Trl suite 110, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.9746921,
-        "lng": -114.0707187
-      }
-    },
-    "formatted_phone_number": "(403) 385-3181",
-    "places": {
-      "place_id": "ChIJiXxD_TNxcVMRSfzeREgPs2Q",
-      "rating": 4.8,
-      "user_ratings_total": 928,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "JINYA Ramen Bar - Macleod",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJiXxD_TNxcVMRSfzeREgPs2Q",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJUY08Zf1wcVMRz-dnlaZBuSM": {
-    "id": "sho-sushi-bar-kitchen",
-    "name": "Sho Sushi Bar & Kitchen",
-    "website": "https://www.shosushi.ca/",
-    "formatted_address": "7212 Macleod Trl SE #110, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.988929999999996,
-        "lng": -114.07095819999999
-      }
-    },
-    "formatted_phone_number": "(403) 252-5199",
-    "places": {
-      "place_id": "ChIJUY08Zf1wcVMRz-dnlaZBuSM",
-      "rating": 4.5,
-      "user_ratings_total": 2212,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Sho Sushi Bar & Kitchen",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJUY08Zf1wcVMRz-dnlaZBuSM",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJFUI8ZABvcVMRZBTeYe9fr3g": {
-    "id": "ryuko-beltline-japanese-kitchen-bar",
-    "name": "Ryuko Beltline - Japanese Kitchen + Bar",
-    "website": "http://ryuko.ca/",
-    "formatted_address": "1004 14 St SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.043866099999995,
-        "lng": -114.09448689999999
-      }
-    },
-    "formatted_phone_number": "(403) 605-3786",
-    "places": {
-      "place_id": "ChIJFUI8ZABvcVMRZBTeYe9fr3g",
-      "rating": 4.7,
-      "user_ratings_total": 447,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Ryuko Beltline - Japanese Kitchen + Bar",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJFUI8ZABvcVMRZBTeYe9fr3g",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya South Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJM0bdjRFpcVMRvU7WWq5EUqo": {
-    "id": "ryuko-beacon-hill-japanese-kitchen-bar",
-    "name": "Ryuko Beacon Hill - Japanese Kitchen + Bar",
-    "website": "https://www.ryuko.ca/",
-    "formatted_address": "12024 Sarcee Trl NW #210, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1607674,
-        "lng": -114.16204809999999
-      }
-    },
-    "formatted_phone_number": "(368) 550-2993",
-    "places": {
-      "place_id": "ChIJM0bdjRFpcVMRvU7WWq5EUqo",
-      "rating": 4.5,
-      "user_ratings_total": 162,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Ryuko Beacon Hill - Japanese Kitchen + Bar",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJM0bdjRFpcVMRvU7WWq5EUqo",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya South Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJmZfqL8ppcVMR5HZihashi6k": {
-    "id": "shijo-cafe-japanese-brunch-and-sushi",
-    "name": "Shijo Cafe-Japanese Brunch and sushi",
-    "website": "http://shijocafe.ca/",
-    "formatted_address": "2 Royal Vista Link NW #3115, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.153458199999996,
-        "lng": -114.2032306
-      }
-    },
-    "formatted_phone_number": "(825) 513-5553",
-    "places": {
-      "place_id": "ChIJmZfqL8ppcVMR5HZihashi6k",
-      "rating": 4.5,
-      "user_ratings_total": 437,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Shijo Cafe-Japanese Brunch and sushi",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJmZfqL8ppcVMR5HZihashi6k",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJ9R1EJtJncVMRTOGNXyvG__A": {
-    "id": "koi-japanese-restaurant",
-    "name": "Koi Japanese Restaurant",
-    "website": "http://koirestaurant.ca/",
-    "formatted_address": "340 Sage Vly Cmn NW Unit 108, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.182687200000004,
-        "lng": -114.15818180000001
-      }
-    },
-    "formatted_phone_number": "(587) 352-7666",
-    "places": {
-      "place_id": "ChIJ9R1EJtJncVMRTOGNXyvG__A",
+      "place_id": "ChIJ3SrWpltwhlQRQoadjPH1kcg",
       "rating": 4.6,
-      "user_ratings_total": 113,
+      "user_ratings_total": 1311,
       "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -494,644 +98,104 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Koi Japanese Restaurant",
-      "synced_at": "2026-11-09"
+      "matched_name": "BLVD Bistro",
+      "synced_at": "2026-11-10"
     },
-    "place_id": "ChIJ9R1EJtJncVMRTOGNXyvG__A",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJtZ-F_ThpcVMRCC5S_XI_MMg": {
-    "id": "kan-sushi-grill",
-    "name": "Kan Sushi & Grill",
-    "website": "https://kansushiyyc.ca/",
-    "formatted_address": "500 Royal Oak Dr NW #124, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1388683,
-        "lng": -114.2338082
-      }
-    },
-    "formatted_phone_number": "(403) 454-8688",
-    "places": {
-      "place_id": "ChIJtZ-F_ThpcVMRCC5S_XI_MMg",
-      "rating": 4.7,
-      "user_ratings_total": 530,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Kan Sushi & Grill",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJtZ-F_ThpcVMRCC5S_XI_MMg",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJD_A05CZpcVMREQ4iivoDZmw": {
-    "id": "jun-katsu",
-    "name": "Jun katsu",
-    "website": "https://www.junkatsuyyc.com/",
-    "formatted_address": "20 Crowfoot Crescent NW #420, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1257276,
-        "lng": -114.198574
-      }
-    },
-    "formatted_phone_number": "(403) 475-8881",
-    "places": {
-      "place_id": "ChIJD_A05CZpcVMREQ4iivoDZmw",
-      "rating": 4.7,
-      "user_ratings_total": 443,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Jun katsu",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJD_A05CZpcVMREQ4iivoDZmw",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJU57iSLlpcVMRj55gSibQi0E": {
-    "id": "day-day-bistro-sushi-teriyaki-ramen",
-    "name": "Day Day Bistro - Sushi • Teriyaki • Ramen",
-    "website": "https://www.daydaybistro.com/",
-    "formatted_address": "6 Crowfoot Cir NW #101, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.123339699999995,
-        "lng": -114.2029179
-      }
-    },
-    "formatted_phone_number": "(825) 540-1415",
-    "places": {
-      "place_id": "ChIJU57iSLlpcVMRj55gSibQi0E",
-      "rating": 4.8,
-      "user_ratings_total": 450,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Day Day Bistro - Sushi • Teriyaki • Ramen",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJU57iSLlpcVMRj55gSibQi0E",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJsW6832xfcVMR-seCrprixjs": {
-    "id": "zenbu",
-    "name": "Zenbu",
-    "website": "https://www.clover.com/online-ordering/zenbu-airdrie",
-    "formatted_address": "35 MacKenzie Way SW #5104, Airdrie, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.2913682,
-        "lng": -114.0246662
-      }
-    },
-    "formatted_phone_number": "(403) 948-3997",
-    "places": {
-      "place_id": "ChIJsW6832xfcVMR-seCrprixjs",
-      "rating": 4.6,
-      "user_ratings_total": 693,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Zenbu",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJsW6832xfcVMR-seCrprixjs",
-    "city": "Airdrie",
-    "is_bar": false,
-    "found_via": "izakaya Airdrie AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJu0Ptg5pfcVMR5aGMxFm6_Hk": {
-    "id": "mio-stone-grill-and-sushi",
-    "name": "Mio Stone Grill and Sushi",
-    "website": "https://www.miosushi.ca/",
-    "formatted_address": "2100 Market St #111, Airdrie, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.269449099999996,
-        "lng": -113.99423619999999
-      }
-    },
-    "formatted_phone_number": "(587) 775-9987",
-    "places": {
-      "place_id": "ChIJu0Ptg5pfcVMR5aGMxFm6_Hk",
-      "rating": 4.6,
-      "user_ratings_total": 658,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Mio Stone Grill and Sushi",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJu0Ptg5pfcVMR5aGMxFm6_Hk",
-    "city": "Airdrie",
-    "is_bar": false,
-    "found_via": "izakaya Airdrie AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJ-ZC6w7pmcVMRBNqeSZCsl34": {
-    "id": "kinjo-sushi-grill-district",
-    "name": "Kinjo Sushi & Grill District",
-    "website": "https://www.kinjosushiandgrill.com/",
-    "formatted_address": "11135 14 St NE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1526995,
-        "lng": -114.0286003
-      }
-    },
-    "formatted_phone_number": "(587) 755-5888",
-    "places": {
-      "place_id": "ChIJ-ZC6w7pmcVMRBNqeSZCsl34",
-      "rating": 4.4,
-      "user_ratings_total": 4653,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Kinjo Sushi & Grill District",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJ-ZC6w7pmcVMRBNqeSZCsl34",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "izakaya Northeast Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJt-VXyt0_cVMRBC9wrCElQxs": {
-    "id": "azito-japanese-restaurant",
-    "name": "AZITO Japanese Restaurant",
-    "website": "https://azitocochrane.ca/",
-    "formatted_address": "116 Grande Blvd #1105, Cochrane, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.186368099999996,
-        "lng": -114.4731065
-      }
-    },
-    "formatted_phone_number": "(403) 932-9339",
-    "places": {
-      "place_id": "ChIJt-VXyt0_cVMRBC9wrCElQxs",
-      "rating": 4.9,
-      "user_ratings_total": 340,
-      "price_level": 4,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "AZITO Japanese Restaurant",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJt-VXyt0_cVMRBC9wrCElQxs",
-    "city": "Cochrane",
-    "is_bar": false,
-    "found_via": "izakaya Cochrane AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJD4gkClA_cVMRfDaTlIf1NLQ": {
-    "id": "totoro-japanese-house",
-    "name": "TOTORO JAPANESE HOUSE",
-    "website": "https://totorojapanesehouse.ca/",
-    "formatted_address": "214 Grande Blvd, Cochrane, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.186632499999995,
-        "lng": -114.4750085
-      }
-    },
-    "formatted_phone_number": "(403) 981-3333",
-    "places": {
-      "place_id": "ChIJD4gkClA_cVMRfDaTlIf1NLQ",
-      "rating": 4.7,
-      "user_ratings_total": 131,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "TOTORO JAPANESE HOUSE",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJD4gkClA_cVMRfDaTlIf1NLQ",
-    "city": "Cochrane",
-    "is_bar": false,
-    "found_via": "izakaya Cochrane AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJPb1GV3w_cVMRPxiK0uaBk84": {
-    "id": "sakura-sushi-grill",
-    "name": "Sakura Sushi & Grill",
-    "website": "https://sakurasushiandgrill.ca/",
-    "formatted_address": "130 Quarry St W #20, Cochrane, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1839282,
-        "lng": -114.47241240000001
-      }
-    },
-    "formatted_phone_number": "(403) 851-0007",
-    "places": {
-      "place_id": "ChIJPb1GV3w_cVMRPxiK0uaBk84",
-      "rating": 4.7,
-      "user_ratings_total": 756,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Sakura Sushi & Grill",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJPb1GV3w_cVMRPxiK0uaBk84",
-    "city": "Cochrane",
-    "is_bar": false,
-    "found_via": "izakaya Cochrane AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJ4y8S5mI_cVMRMgz_pPKba3Y": {
-    "id": "yoshigrill",
-    "name": "Yoshigrill",
-    "website": "http://yoshi-grill.square.site/",
-    "formatted_address": "204 5th Ave #1, Cochrane, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1882672,
-        "lng": -114.4744941
-      }
-    },
-    "formatted_phone_number": "(403) 981-9888",
-    "places": {
-      "place_id": "ChIJ4y8S5mI_cVMRMgz_pPKba3Y",
-      "rating": 4.3,
-      "user_ratings_total": 209,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Yoshigrill",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJ4y8S5mI_cVMRMgz_pPKba3Y",
-    "city": "Cochrane",
-    "is_bar": false,
-    "found_via": "izakaya Cochrane AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJF5ehnIiXcVMRf6X-iqAgiqw": {
-    "id": "yokozuna",
-    "name": "YokoZuna",
-    "website": "https://yokozunasushiandgrill.com/",
-    "formatted_address": "200 Southridge Dr, Okotoks, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.7070473,
-        "lng": -113.9767006
-      }
-    },
-    "formatted_phone_number": "(403) 995-8141",
-    "places": {
-      "place_id": "ChIJF5ehnIiXcVMRf6X-iqAgiqw",
-      "rating": 4.7,
-      "user_ratings_total": 574,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "YokoZuna",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJF5ehnIiXcVMRf6X-iqAgiqw",
-    "city": "Okotoks",
-    "is_bar": false,
-    "found_via": "izakaya Okotoks AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJW6LDJQCZcVMRWKbDsByflU4": {
-    "id": "kenko-sushi",
-    "name": "Kenko Sushi",
-    "website": "https://kenkosushi.order-online.ai/#/",
-    "formatted_address": "10 D’arcy Ranch Dr #208, Okotoks, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.741296299999995,
-        "lng": -113.97683599999999
-      }
-    },
-    "formatted_phone_number": "(587) 757-1999",
-    "places": {
-      "place_id": "ChIJW6LDJQCZcVMRWKbDsByflU4",
-      "rating": 4.5,
-      "user_ratings_total": 561,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Kenko Sushi",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJW6LDJQCZcVMRWKbDsByflU4",
-    "city": "Okotoks",
-    "is_bar": false,
-    "found_via": "izakaya Okotoks AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJHzRDczSYcVMRiXo9t0bQ6gU": {
-    "id": "yume-sushi-okotoks",
-    "name": "Yume Sushi Okotoks",
-    "website": "http://www.yumesushiokotoks.com/",
-    "formatted_address": "97 Elizabeth St, Okotoks, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.725661099999996,
-        "lng": -113.9807778
-      }
-    },
-    "formatted_phone_number": "(403) 982-9891",
-    "places": {
-      "place_id": "ChIJHzRDczSYcVMRiXo9t0bQ6gU",
-      "rating": 4.4,
-      "user_ratings_total": 249,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Yume Sushi Okotoks",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJHzRDczSYcVMRiXo9t0bQ6gU",
-    "city": "Okotoks",
-    "is_bar": false,
-    "found_via": "izakaya Okotoks AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJw9rxgKKZcVMRNS-JRdFBsik": {
-    "id": "uncle-k-korean-fried-chicken-katsu",
-    "name": "UNCLE K (Korean Fried Chicken & Katsu )",
-    "website": "http://www.unclek.ca/",
-    "formatted_address": "31 Southridge Dr #195, Okotoks, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.7141153,
-        "lng": -113.9752381
-      }
-    },
-    "formatted_phone_number": "(403) 995-0388",
-    "places": {
-      "place_id": "ChIJw9rxgKKZcVMRNS-JRdFBsik",
-      "rating": 4.7,
-      "user_ratings_total": 297,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "UNCLE K (Korean Fried Chicken & Katsu )",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJw9rxgKKZcVMRNS-JRdFBsik",
-    "city": "Okotoks",
-    "is_bar": false,
-    "found_via": "izakaya Okotoks AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJxxPbnsmXcVMRWtINksTzdQ0": {
-    "id": "the-social-kabob-authentic-east-indian-restaurant",
-    "name": "The Social Kabob Authentic East Indian Restaurant",
-    "website": "http://thesocialkabob.com/",
-    "formatted_address": "200 Southridge Dr #263, Okotoks, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.7077674,
-        "lng": -113.9770812
-      }
-    },
-    "formatted_phone_number": "(403) 995-0303",
-    "places": {
-      "place_id": "ChIJxxPbnsmXcVMRWtINksTzdQ0",
-      "rating": 4.9,
-      "user_ratings_total": 442,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The Social Kabob Authentic East Indian Restaurant",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJxxPbnsmXcVMRWtINksTzdQ0",
-    "city": "Okotoks",
-    "is_bar": false,
-    "found_via": "izakaya Okotoks AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJX4_6BbLnhVQRtPmeTqNFnJg": {
-    "id": "yolks",
-    "name": "Yolks",
-    "website": "https://yolks.ca/",
-    "formatted_address": "1200 56 St, Delta, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.02487800000001,
-        "lng": -123.06686089999998
-      }
-    },
-    "formatted_phone_number": "(604) 952-6904",
-    "places": {
-      "place_id": "ChIJX4_6BbLnhVQRtPmeTqNFnJg",
-      "rating": 4.8,
-      "user_ratings_total": 94,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Yolks",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJX4_6BbLnhVQRtPmeTqNFnJg",
-    "city": "Delta",
-    "is_bar": false,
-    "found_via": "lounge Tsawwassen BC",
-    "found_at": "2026-11-09"
-  },
-  "ChIJUcDTMwtvhlQRgohHNwdtoxo": {
-    "id": "krave-kulture-yogurt",
-    "name": "Krave Kulture Yogurt",
-    "website": "http://www.kravekulture.ca/",
-    "formatted_address": "3151 Edgemont Blvd, North Vancouver, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.3381356,
-        "lng": -123.1029968
-      }
-    },
-    "formatted_phone_number": "(604) 770-1723",
-    "places": {
-      "place_id": "ChIJUcDTMwtvhlQRgohHNwdtoxo",
-      "rating": 4.8,
-      "user_ratings_total": 686,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Krave Kulture Yogurt",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJUcDTMwtvhlQRgohHNwdtoxo",
+    "place_id": "ChIJ3SrWpltwhlQRQoadjPH1kcg",
     "city": "North Vancouver",
     "is_bar": false,
-    "found_via": "lounge Edgemont North Vancouver",
-    "found_at": "2026-11-09"
+    "found_via": "tapas bar Edgemont North Vancouver",
+    "found_at": "2026-11-10"
   },
-  "ChIJH-kvNDdLhFQRZLdY9b_qr4k": {
-    "id": "v-cafe",
-    "name": "V Cafe",
-    "website": "https://heyzine.com/flip-book/c3dbe7147f.html#page/2",
-    "formatted_address": "2603 W Railway St #110, Abbotsford, BC",
+  "ChIJxTySR51KhFQR0d_HPeywQeE": {
+    "id": "paliotti-s-italian-restaurant",
+    "name": "Paliotti's Italian Restaurant",
+    "website": "http://paliottisitalianrestaurants.ca/abbotsford-italian-restaurant/",
+    "formatted_address": "33886 Essendene Ave, Abbotsford, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 49.0493867,
-        "lng": -122.28917179999999
+        "lat": 49.0488383,
+        "lng": -122.28690239999999
       }
     },
-    "formatted_phone_number": "(604) 744-0882",
+    "formatted_phone_number": "(604) 855-1888",
     "places": {
-      "place_id": "ChIJH-kvNDdLhFQRZLdY9b_qr4k",
+      "place_id": "ChIJxTySR51KhFQR0d_HPeywQeE",
+      "rating": 4.1,
+      "user_ratings_total": 2042,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Paliotti's Italian Restaurant",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJxTySR51KhFQR0d_HPeywQeE",
+    "city": "Abbotsford",
+    "is_bar": false,
+    "found_via": "tapas bar Downtown Abbotsford BC",
+    "found_at": "2026-11-10"
+  },
+  "ChIJ062SlmI1hFQRHmaM7jETARg": {
+    "id": "ann-marie-s-cafe",
+    "name": "Ann Marie's Cafe",
+    "website": "http://www.annmariescafe.ca/",
+    "formatted_address": "33771 George Ferguson Wy, Abbotsford, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.050359,
+        "lng": -122.2899312
+      }
+    },
+    "formatted_phone_number": "(604) 852-2610",
+    "places": {
+      "place_id": "ChIJ062SlmI1hFQRHmaM7jETARg",
       "rating": 4.6,
-      "user_ratings_total": 85,
+      "user_ratings_total": 1758,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Ann Marie's Cafe",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJ062SlmI1hFQRHmaM7jETARg",
+    "city": "Abbotsford",
+    "is_bar": false,
+    "found_via": "tapas bar Downtown Abbotsford BC",
+    "found_at": "2026-11-10"
+  },
+  "ChIJ8SV8zSlHhFQRw7hYwMghsh0": {
+    "id": "fiesta-loca",
+    "name": "Fiesta Loca",
+    "website": "https://www.facebook.com/Fiesta-Loca-296624123681808/?ref=ts&fref=ts",
+    "formatted_address": "9339 Main St, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1715855,
+        "lng": -121.95524069999999
+      }
+    },
+    "formatted_phone_number": "(604) 846-1122",
+    "places": {
+      "place_id": "ChIJ8SV8zSlHhFQRw7hYwMghsh0",
+      "rating": 4.7,
+      "user_ratings_total": 1236,
       "price_level": 1,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -1142,104 +206,212 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "V Cafe",
-      "synced_at": "2026-11-09"
+      "matched_name": "Fiesta Loca",
+      "synced_at": "2026-11-10"
     },
-    "place_id": "ChIJH-kvNDdLhFQRZLdY9b_qr4k",
-    "city": "Abbotsford",
-    "is_bar": true,
-    "found_via": "lounge Downtown Abbotsford BC",
-    "found_at": "2026-11-09"
-  },
-  "ChIJm_fyl35HhFQRxA0LiVEGhko": {
-    "id": "toptracer-lounge-at-cultus",
-    "name": "Toptracer Lounge at Cultus",
-    "website": "https://golfcultus.com/",
-    "formatted_address": "4000 Columbia Valley Rd, Cultus Lake, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.073762599999995,
-        "lng": -121.96731489999999
-      }
-    },
-    "formatted_phone_number": "(604) 858-9902",
-    "places": {
-      "place_id": "ChIJm_fyl35HhFQRxA0LiVEGhko",
-      "rating": 4.7,
-      "user_ratings_total": 118,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Toptracer Lounge at Cultus",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJm_fyl35HhFQRxA0LiVEGhko",
-    "city": "Cultus Lake",
-    "is_bar": true,
-    "found_via": "lounge Chilliwack BC",
-    "found_at": "2026-11-09"
-  },
-  "ChIJxyXbn8M_hFQRdjS3yVfImy4": {
-    "id": "dosa-club-indian-kitchen-bar",
-    "name": "Dosa Club Indian Kitchen & Bar",
-    "website": "https://dosaclub.ca/",
-    "formatted_address": "45850 Yale Rd Unit 500B, Chilliwack, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.166094099999995,
-        "lng": -121.9577345
-      }
-    },
-    "formatted_phone_number": "(604) 515-4410",
-    "places": {
-      "place_id": "ChIJxyXbn8M_hFQRdjS3yVfImy4",
-      "rating": 4.8,
-      "user_ratings_total": 1528,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Dosa Club Indian Kitchen & Bar",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJxyXbn8M_hFQRdjS3yVfImy4",
+    "place_id": "ChIJ8SV8zSlHhFQRw7hYwMghsh0",
     "city": "Chilliwack",
     "is_bar": false,
-    "found_via": "lounge Chilliwack BC",
-    "found_at": "2026-11-09"
+    "found_via": "tapas bar Chilliwack BC",
+    "found_at": "2026-11-10"
   },
-  "ChIJR5qD1x74hlQRoeIOg9NYWcE": {
-    "id": "chances-casino-squamish",
-    "name": "Chances Casino Squamish",
-    "website": "https://squamishchances.com/",
-    "formatted_address": "9000 Valley Dr, Squamish, BC",
+  "ChIJu3rf6fNHhFQROfBUECAnIzQ": {
+    "id": "south-sumas-bistro",
+    "name": "South Sumas Bistro",
+    "website": "https://southsumasbistro.ca/",
+    "formatted_address": "44489 S Sumas Rd, Chilliwack, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 49.691468,
-        "lng": -123.14503619999998
+        "lat": 49.1185561,
+        "lng": -121.99322419999999
       }
     },
-    "formatted_phone_number": "(604) 892-2946",
+    "formatted_phone_number": "(604) 847-7144",
     "places": {
-      "place_id": "ChIJR5qD1x74hlQRoeIOg9NYWcE",
-      "rating": 3.7,
-      "user_ratings_total": 254,
+      "place_id": "ChIJu3rf6fNHhFQROfBUECAnIzQ",
+      "rating": 4.7,
+      "user_ratings_total": 339,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "South Sumas Bistro",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJu3rf6fNHhFQROfBUECAnIzQ",
+    "city": "Chilliwack",
+    "is_bar": false,
+    "found_via": "tapas bar Chilliwack BC",
+    "found_at": "2026-11-10"
+  },
+  "ChIJ4QMNZIJAhFQR2Nm13HsY9q4": {
+    "id": "chilliwack-airport-restaurant",
+    "name": "Chilliwack Airport Restaurant",
+    "website": "https://chilliwackairportrestaurant.com/",
+    "formatted_address": "46244 Airport Rd, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1549583,
+        "lng": -121.9435791
+      }
+    },
+    "formatted_phone_number": "(604) 227-3628",
+    "places": {
+      "place_id": "ChIJ4QMNZIJAhFQR2Nm13HsY9q4",
+      "rating": 4.4,
+      "user_ratings_total": 482,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Chilliwack Airport Restaurant",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJ4QMNZIJAhFQR2Nm13HsY9q4",
+    "city": "Chilliwack",
+    "is_bar": true,
+    "found_via": "tapas bar Chilliwack BC",
+    "found_at": "2026-11-10"
+  },
+  "ChIJ4y_uM7pAhFQR5ckjIrGIsCk": {
+    "id": "coconut-thai-restaurant-chilliwack",
+    "name": "Coconut Thai Restaurant (Chilliwack)",
+    "website": "http://coconutthailandres.wixsite.com/mysite",
+    "formatted_address": "7355 Vedder Rd #6, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.1359443,
+        "lng": -121.9598816
+      }
+    },
+    "formatted_phone_number": "(604) 846-4489",
+    "places": {
+      "place_id": "ChIJ4y_uM7pAhFQR5ckjIrGIsCk",
+      "rating": 4.6,
+      "user_ratings_total": 813,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Coconut Thai Restaurant (Chilliwack)",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJ4y_uM7pAhFQR5ckjIrGIsCk",
+    "city": "Chilliwack",
+    "is_bar": false,
+    "found_via": "tapas bar Sardis Chilliwack BC",
+    "found_at": "2026-11-10"
+  },
+  "ChIJI0pGnAH5hlQR8BkQEL7oCbw": {
+    "id": "lil-chef-bistro",
+    "name": "Lil Chef Bistro",
+    "website": "https://www.lilchefbistro.ca/",
+    "formatted_address": "40365 Tantalus Rd, Squamish, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.7400565,
+        "lng": -123.1324046
+      }
+    },
+    "formatted_phone_number": "(604) 390-2433",
+    "places": {
+      "place_id": "ChIJI0pGnAH5hlQR8BkQEL7oCbw",
+      "rating": 4.5,
+      "user_ratings_total": 747,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Lil Chef Bistro",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJI0pGnAH5hlQR8BkQEL7oCbw",
+    "city": "Squamish",
+    "is_bar": false,
+    "found_via": "tapas bar Squamish BC",
+    "found_at": "2026-11-10"
+  },
+  "ChIJA_TaL-NvcVMRFf2Jp4VuZ_s": {
+    "id": "barcelona-tavern",
+    "name": "Barcelona Tavern",
+    "website": "http://barcelonatavern.ca/",
+    "formatted_address": "318 8 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.04582,
+        "lng": -114.0687224
+      }
+    },
+    "formatted_phone_number": "(403) 265-6555",
+    "places": {
+      "place_id": "ChIJA_TaL-NvcVMRFf2Jp4VuZ_s",
+      "rating": 4.1,
+      "user_ratings_total": 1574,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Barcelona Tavern",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJA_TaL-NvcVMRFf2Jp4VuZ_s",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "tapas bar Downtown Calgary AB",
+    "found_at": "2026-11-10"
+  },
+  "ChIJjRj6-B1xcVMRUSP_TMYEPPc": {
+    "id": "kama",
+    "name": "Kama",
+    "website": "http://kamacalgary.com/",
+    "formatted_address": "211 11 Ave SW #211, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.042336999999996,
+        "lng": -114.06717499999999
+      }
+    },
+    "formatted_phone_number": "(403) 266-7062",
+    "places": {
+      "place_id": "ChIJjRj6-B1xcVMRUSP_TMYEPPc",
+      "rating": 4.6,
+      "user_ratings_total": 673,
       "price_level": null,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -1250,31 +422,247 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Chances Casino Squamish",
-      "synced_at": "2026-11-09"
+      "matched_name": "Kama",
+      "synced_at": "2026-11-10"
     },
-    "place_id": "ChIJR5qD1x74hlQRoeIOg9NYWcE",
-    "city": "Squamish",
+    "place_id": "ChIJjRj6-B1xcVMRUSP_TMYEPPc",
+    "city": "Calgary",
     "is_bar": false,
-    "found_via": "lounge Squamish BC",
-    "found_at": "2026-11-09"
+    "found_via": "tapas bar Downtown Calgary AB",
+    "found_at": "2026-11-10"
   },
-  "ChIJpZUZvaX3hlQRlhfka4pgF_8": {
-    "id": "sky-pilot-restaurant",
-    "name": "Sky Pilot Restaurant",
-    "website": "https://www.seatoskygondola.com/facilities/dining-and-food/",
-    "formatted_address": "36800 BC-99, Squamish, BC",
+  "ChIJDefc8M1xcVMRlt-LIyumaDI": {
+    "id": "bar-milpa",
+    "name": "Bar Milpa",
+    "website": "http://barmilpa.ca/",
+    "formatted_address": "1531 5 St SW, Calgary, AB",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 49.671102,
-        "lng": -123.13131360000001
+        "lat": 51.038166999999994,
+        "lng": -114.0746028
       }
     },
-    "formatted_phone_number": "(604) 892-2557",
+    "formatted_phone_number": "(403) 452-6155",
     "places": {
-      "place_id": "ChIJpZUZvaX3hlQRlhfka4pgF_8",
+      "place_id": "ChIJDefc8M1xcVMRlt-LIyumaDI",
+      "rating": 4.3,
+      "user_ratings_total": 661,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Bar Milpa",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJDefc8M1xcVMRlt-LIyumaDI",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "tapas bar Downtown Calgary AB",
+    "found_at": "2026-11-10"
+  },
+  "ChIJd6vFs-tlcVMRnlcVY10nJ4g": {
+    "id": "fortuna-s-row",
+    "name": "Fortuna's Row",
+    "website": "https://fortunasrow.com/",
+    "formatted_address": "421 Riverfront Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0495178,
+        "lng": -114.0544714
+      }
+    },
+    "formatted_phone_number": "(403) 243-0069",
+    "places": {
+      "place_id": "ChIJd6vFs-tlcVMRnlcVY10nJ4g",
+      "rating": 4.4,
+      "user_ratings_total": 1015,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Fortuna's Row",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJd6vFs-tlcVMRnlcVY10nJ4g",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "tapas bar Downtown Calgary AB",
+    "found_at": "2026-11-10"
+  },
+  "ChIJVVUplf1vcVMR_kOpBySdjOo": {
+    "id": "bar-annabelle",
+    "name": "Bar Annabelle",
+    "website": "http://annabelleskitchen.ca/",
+    "formatted_address": "109a, 8 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0453081,
+        "lng": -114.0636919
+      }
+    },
+    "formatted_phone_number": "(403) 263-5330",
+    "places": {
+      "place_id": "ChIJVVUplf1vcVMR_kOpBySdjOo",
+      "rating": 4.5,
+      "user_ratings_total": 55,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Bar Annabelle",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJVVUplf1vcVMR_kOpBySdjOo",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "tapas bar Downtown Calgary AB",
+    "found_at": "2026-11-10"
+  },
+  "ChIJcYPJXydwcVMRh28ROkujAEI": {
+    "id": "chilitos-taberna",
+    "name": "Chilitos Taberna",
+    "website": "http://www.chilitos.ca/",
+    "formatted_address": "1309 17 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.037617,
+        "lng": -114.09222969999999
+      }
+    },
+    "formatted_phone_number": "(403) 228-5528",
+    "places": {
+      "place_id": "ChIJcYPJXydwcVMRh28ROkujAEI",
       "rating": 4.2,
+      "user_ratings_total": 1334,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Chilitos Taberna",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJcYPJXydwcVMRh28ROkujAEI",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "tapas bar 17th Avenue SW Calgary AB",
+    "found_at": "2026-11-10"
+  },
+  "ChIJifyRtGFvcVMRVc64VA3EDqU": {
+    "id": "punto-latino-yyc",
+    "name": "Punto Latino YYC",
+    "website": "https://www.puntolatinoyyc.com/",
+    "formatted_address": "3220 17 Ave SW Shaganappi Plaza, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0380318,
+        "lng": -114.13387200000001
+      }
+    },
+    "formatted_phone_number": "(403) 594-9600",
+    "places": {
+      "place_id": "ChIJifyRtGFvcVMRVc64VA3EDqU",
+      "rating": 4.6,
+      "user_ratings_total": 234,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Punto Latino YYC",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJifyRtGFvcVMRVc64VA3EDqU",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "tapas bar 17th Avenue SW Calgary AB",
+    "found_at": "2026-11-10"
+  },
+  "ChIJ853Gle5vcVMR1lgT47jUrkU": {
+    "id": "bodega-mexican-restaurant",
+    "name": "Bodega Mexican Restaurant",
+    "website": "https://bodegamexrest.ca/?utm_source=google",
+    "formatted_address": "318A 10 St NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.054816100000004,
+        "lng": -114.0857472
+      }
+    },
+    "formatted_phone_number": "(249) 421-1511",
+    "places": {
+      "place_id": "ChIJ853Gle5vcVMR1lgT47jUrkU",
+      "rating": 4.6,
+      "user_ratings_total": 955,
+      "price_level": null,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Bodega Mexican Restaurant",
+      "synced_at": "2026-11-10"
+    },
+    "place_id": "ChIJ853Gle5vcVMR1lgT47jUrkU",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "tapas bar Bridgeland Calgary AB",
+    "found_at": "2026-11-10"
+  },
+  "ChIJxfBTbI93cVMRXUSN6wRPHnQ": {
+    "id": "flora-euro-kitchen",
+    "name": "Flora Euro Kitchen",
+    "website": "http://floraeurokitchen.com/",
+    "formatted_address": "14919 Deer Ridge Dr SE #119, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.930040899999995,
+        "lng": -114.0249992
+      }
+    },
+    "formatted_phone_number": "(587) 329-2448",
+    "places": {
+      "place_id": "ChIJxfBTbI93cVMRXUSN6wRPHnQ",
+      "rating": 4.7,
       "user_ratings_total": 157,
       "price_level": 2,
       "business_status": "OPERATIONAL",
@@ -1286,1184 +674,32 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Sky Pilot Restaurant",
-      "synced_at": "2026-11-09"
+      "matched_name": "Flora Euro Kitchen",
+      "synced_at": "2026-11-10"
     },
-    "place_id": "ChIJpZUZvaX3hlQRlhfka4pgF_8",
-    "city": "Squamish",
-    "is_bar": false,
-    "found_via": "lounge Squamish BC",
-    "found_at": "2026-11-09"
-  },
-  "ChIJnffzIhb4hlQRZgH3z214Cds": {
-    "id": "zephyr-caf-at-the-bag",
-    "name": "Zephyr Café at The BAG",
-    "website": "https://zephyrcafe.ca/",
-    "formatted_address": "41950 Government Rd, Brackendale, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.7678574,
-        "lng": -123.1502726
-      }
-    },
-    "formatted_phone_number": "(604) 898-3333",
-    "places": {
-      "place_id": "ChIJnffzIhb4hlQRZgH3z214Cds",
-      "rating": 4.4,
-      "user_ratings_total": 1192,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Zephyr Café at The BAG",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJnffzIhb4hlQRZgH3z214Cds",
-    "city": "Brackendale",
-    "is_bar": false,
-    "found_via": "lounge Squamish BC",
-    "found_at": "2026-11-09"
-  },
-  "ChIJVVWFV0sjh1QRv33n-j6iiWI": {
-    "id": "the-living-room-at-pangea",
-    "name": "The Living Room at Pangea",
-    "website": "https://www.pangeapod.com/the-living-room",
-    "formatted_address": "4333 Sunrise Alley, Whistler, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.114323299999995,
-        "lng": -122.95551569999999
-      }
-    },
-    "formatted_phone_number": "(604) 962-1011",
-    "places": {
-      "place_id": "ChIJVVWFV0sjh1QRv33n-j6iiWI",
-      "rating": 4.3,
-      "user_ratings_total": 255,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The Living Room at Pangea",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJVVWFV0sjh1QRv33n-j6iiWI",
-    "city": "Whistler",
-    "is_bar": true,
-    "found_via": "lounge Whistler BC",
-    "found_at": "2026-11-09"
-  },
-  "ChIJew4jtq9vcVMRhwjPRavHolI": {
-    "id": "fame-lounge",
-    "name": "Fame lounge",
-    "website": "https://famelounge.ca/",
-    "formatted_address": "112 8 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0458042,
-        "lng": -114.06379709999999
-      }
-    },
-    "formatted_phone_number": "(403) 454-6009",
-    "places": {
-      "place_id": "ChIJew4jtq9vcVMRhwjPRavHolI",
-      "rating": 4.8,
-      "user_ratings_total": 324,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Fame lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJew4jtq9vcVMRhwjPRavHolI",
+    "place_id": "ChIJxfBTbI93cVMRXUSN6wRPHnQ",
     "city": "Calgary",
     "is_bar": false,
-    "found_via": "lounge Downtown Calgary AB",
-    "found_at": "2026-11-09"
+    "found_via": "tapas bar Calgary AB",
+    "found_at": "2026-11-10"
   },
-  "ChIJJwcnUm9vcVMR3U9pVPvOuCg": {
-    "id": "chi-cha-lounge-bar",
-    "name": "CHI-CHA Lounge & Bar",
-    "website": "https://chichalounge.ca/",
-    "formatted_address": "815 8 Ave SW #100, Calgary, AB",
+  "ChIJwVGwyN1lcVMRhkiM9GWKNSo": {
+    "id": "petalo",
+    "name": "Petalo",
+    "website": "https://www.petaloyyc.com/",
+    "formatted_address": "3811 Edmonton Trl, Calgary, AB",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 51.0459149,
-        "lng": -114.0799105
+        "lat": 51.086479999999995,
+        "lng": -114.0519195
       }
     },
-    "formatted_phone_number": "(403) 371-9909",
+    "formatted_phone_number": "(403) 277-0766",
     "places": {
-      "place_id": "ChIJJwcnUm9vcVMR3U9pVPvOuCg",
-      "rating": 4.3,
-      "user_ratings_total": 398,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "CHI-CHA Lounge & Bar",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJJwcnUm9vcVMR3U9pVPvOuCg",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Downtown Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJWUDYYmFvcVMR6JRjzhK0ksU": {
-    "id": "papi-bar-nightclub",
-    "name": "PAPI Bar & Nightclub",
-    "website": "https://papicalgary.ca/",
-    "formatted_address": "630 8 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0461773,
-        "lng": -114.07565699999999
-      }
-    },
-    "formatted_phone_number": "(587) 400-3212",
-    "places": {
-      "place_id": "ChIJWUDYYmFvcVMR6JRjzhK0ksU",
-      "rating": 4.1,
-      "user_ratings_total": 300,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "PAPI Bar & Nightclub",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJWUDYYmFvcVMR6JRjzhK0ksU",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Downtown Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJYTR5jIFxcVMRowLOABAbh5I": {
-    "id": "lvl-three-bar-lounge",
-    "name": "LVL Three Bar & Lounge",
-    "website": "http://lvlthree.ca/",
-    "formatted_address": "818 16 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.038345299999996,
-        "lng": -114.08043330000001
-      }
-    },
-    "formatted_phone_number": "(403) 471-1498",
-    "places": {
-      "place_id": "ChIJYTR5jIFxcVMRowLOABAbh5I",
-      "rating": 4.4,
-      "user_ratings_total": 430,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "LVL Three Bar & Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJYTR5jIFxcVMRowLOABAbh5I",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Beltline Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJOT_R9NhvcVMRmcDNYbQUEi0": {
-    "id": "hideout-lounge-bar",
-    "name": "Hideout Lounge & Bar",
-    "website": "http://hideoutyyc.com/",
-    "formatted_address": "1504 16 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.038638,
-        "lng": -114.09505120000001
-      }
-    },
-    "formatted_phone_number": "(403) 918-8678",
-    "places": {
-      "place_id": "ChIJOT_R9NhvcVMRmcDNYbQUEi0",
-      "rating": 4.4,
-      "user_ratings_total": 832,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Hideout Lounge & Bar",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJOT_R9NhvcVMRmcDNYbQUEi0",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Beltline Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJVyG_LgKdcVMRTcwid1iYyYA": {
-    "id": "rendesvouz-cosmopolitan-cuisine-ultra-lounge",
-    "name": "Rendesvouz - Cosmopolitan Cuisine & Ultra Lounge",
-    "website": "https://rendesvouz.ca/",
-    "formatted_address": "3750 Market St, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.879780999999994,
-        "lng": -113.95574549999999
-      }
-    },
-    "formatted_phone_number": "(587) 349-8653",
-    "places": {
-      "place_id": "ChIJVyG_LgKdcVMRTcwid1iYyYA",
-      "rating": 4,
-      "user_ratings_total": 366,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Rendesvouz - Cosmopolitan Cuisine & Ultra Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJVyG_LgKdcVMRTcwid1iYyYA",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "lounge Kensington Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJAeHM0EdxcVMRIKeWWHHHy5g": {
-    "id": "eve-lounge",
-    "name": "Eve Lounge",
-    "website": "https://eveloungeyyc.com/reservation/",
-    "formatted_address": "311 17 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0376878,
-        "lng": -114.069155
-      }
-    },
-    "formatted_phone_number": "(403) 474-7755",
-    "places": {
-      "place_id": "ChIJAeHM0EdxcVMRIKeWWHHHy5g",
-      "rating": 4.5,
-      "user_ratings_total": 244,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Eve Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJAeHM0EdxcVMRIKeWWHHHy5g",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge 17th Avenue SW Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJvfcD1FRxcVMRVZrO8GPc69Y": {
-    "id": "votex-lounge",
-    "name": "Votex Lounge",
-    "website": "https://thevotex.co/",
-    "formatted_address": "219 17 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0375524,
-        "lng": -114.06721979999999
-      }
-    },
-    "formatted_phone_number": "(587) 405-9296",
-    "places": {
-      "place_id": "ChIJvfcD1FRxcVMRVZrO8GPc69Y",
-      "rating": 3.6,
-      "user_ratings_total": 21,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Votex Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJvfcD1FRxcVMRVZrO8GPc69Y",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge 17th Avenue SW Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJzfe_ehxwcVMR2YKFgSNRAtQ": {
-    "id": "texas-lounge",
-    "name": "Texas Lounge",
-    "website": "http://www.texaslounge.ca/",
-    "formatted_address": "Entrance in Parking lot behind Model Milk, 308b 17 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.038154,
-        "lng": -114.06925
-      }
-    },
-    "formatted_phone_number": "(403) 229-0911",
-    "places": {
-      "place_id": "ChIJzfe_ehxwcVMR2YKFgSNRAtQ",
-      "rating": 3.8,
-      "user_ratings_total": 50,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Texas Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJzfe_ehxwcVMR2YKFgSNRAtQ",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge 17th Avenue SW Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJrQdmmPtvcVMRGlpe5ycDwVk": {
-    "id": "liquid-lounge",
-    "name": "Liquid Lounge",
-    "website": "https://www.marriott.com/hotels/hotel-information/restaurant/yycwi-the-westin-calgary/",
-    "formatted_address": "320 4 Ave SW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0498404,
-        "lng": -114.0694135
-      }
-    },
-    "formatted_phone_number": "(403) 266-1611",
-    "places": {
-      "place_id": "ChIJrQdmmPtvcVMRGlpe5ycDwVk",
-      "rating": 4.2,
-      "user_ratings_total": 6,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Liquid Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJrQdmmPtvcVMRGlpe5ycDwVk",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Mission 4th Street Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJ5QY_zhxlcVMRi2eZ8cMC5tQ": {
-    "id": "red-room-lounge",
-    "name": "Red Room Lounge",
-    "website": "https://posh.vip/g/Redroomafterdark",
-    "formatted_address": "314 3 St SE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0496961,
-        "lng": -114.05453019999999
-      }
-    },
-    "formatted_phone_number": "(825) 454-0984",
-    "places": {
-      "place_id": "ChIJ5QY_zhxlcVMRi2eZ8cMC5tQ",
-      "rating": 3.4,
-      "user_ratings_total": 16,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Red Room Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJ5QY_zhxlcVMRi2eZ8cMC5tQ",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Inglewood Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJlzBpy696cVMRnBT-aB8Kwzw": {
-    "id": "rouge",
-    "name": "Rouge",
-    "website": "http://www.rougecalgary.com/",
-    "formatted_address": "1240 8 Ave SE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0422794,
-        "lng": -114.03362779999999
-      }
-    },
-    "formatted_phone_number": "(403) 531-2767",
-    "places": {
-      "place_id": "ChIJlzBpy696cVMRnBT-aB8Kwzw",
-      "rating": 4.6,
-      "user_ratings_total": 787,
-      "price_level": 4,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Rouge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJlzBpy696cVMRnBT-aB8Kwzw",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "lounge Inglewood Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJ3__ejPRvcVMRg8U3xZkGcBA": {
-    "id": "dlc-lounge",
-    "name": "Dlc Lounge",
-    "website": "https://dlclounge.ca/",
-    "formatted_address": "118 5 Ave SE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.048592299999996,
-        "lng": -114.06182079999999
-      }
-    },
-    "formatted_phone_number": "(403) 264-8147",
-    "places": {
-      "place_id": "ChIJ3__ejPRvcVMRg8U3xZkGcBA",
-      "rating": 5,
-      "user_ratings_total": 49,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Dlc Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJ3__ejPRvcVMRg8U3xZkGcBA",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "lounge East Village Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJtSaVm6NxcVMR8uqB63cUkH8": {
-    "id": "alumni-lounge",
-    "name": "Alumni Lounge",
-    "website": "https://www.scotiabanksaddledome.com/alumni-lounge/",
-    "formatted_address": "Saddledome Rise SE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.037202099999995,
-        "lng": -114.0525624
-      }
-    },
-    "formatted_phone_number": null,
-    "places": {
-      "place_id": "ChIJtSaVm6NxcVMR8uqB63cUkH8",
-      "rating": 5,
-      "user_ratings_total": 3,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Alumni Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJtSaVm6NxcVMR8uqB63cUkH8",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Bridgeland Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJR1cUe7RlcVMRvJk1Y4Tl-pA": {
-    "id": "aspire-lounge-international-calgary-airport",
-    "name": "Aspire Lounge International, Calgary Airport",
-    "website": "https://www.aspirelounges.com/airport-lounges/calgary-international-airport-aspire-lounge-international/",
-    "formatted_address": "2000 Airport Rd NE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.129849199999995,
-        "lng": -114.00304489999999
-      }
-    },
-    "formatted_phone_number": null,
-    "places": {
-      "place_id": "ChIJR1cUe7RlcVMRvJk1Y4Tl-pA",
-      "rating": 4.3,
-      "user_ratings_total": 2390,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Aspire Lounge International, Calgary Airport",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJR1cUe7RlcVMRvJk1Y4Tl-pA",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJpeL-ZQ9kcVMRTs8u145rAEc": {
-    "id": "yyc-lounge",
-    "name": "YYC Lounge",
-    "website": "http://executivelounges.com/airports/Calgary-international-airport",
-    "formatted_address": "2001 Airport Rd NE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.13108640000001,
-        "lng": -114.0085325
-      }
-    },
-    "formatted_phone_number": "(403) 250-2609",
-    "places": {
-      "place_id": "ChIJpeL-ZQ9kcVMRTs8u145rAEc",
-      "rating": 4.2,
-      "user_ratings_total": 138,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "YYC Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJpeL-ZQ9kcVMRTs8u145rAEc",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJpRcbpxFkcVMRxEb1B5njPm8": {
-    "id": "air-canada-lounge-calgary-airport",
-    "name": "Air Canada Lounge - Calgary Airport",
-    "website": "https://www.aircanada.com/us/en/aco/home/fly/premium-services/maple-leaf-lounges/maple-leaf-lounge-details.html#/!lounge@calgary",
-    "formatted_address": "Concourse C, Calgary International Airport, Concourse C, Airport Airport, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.129756699999994,
-        "lng": -114.00877229999999
-      }
-    },
-    "formatted_phone_number": null,
-    "places": {
-      "place_id": "ChIJpRcbpxFkcVMRxEb1B5njPm8",
-      "rating": 4.2,
-      "user_ratings_total": 1233,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Air Canada Lounge - Calgary Airport",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJpRcbpxFkcVMRxEb1B5njPm8",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJp73EfxpkcVMRZo4ovilj_5E": {
-    "id": "aspire-amex-lounge-concourse-a-calgary-airport",
-    "name": "Aspire AMEX Lounge (Concourse A), Calgary Airport",
-    "website": "https://www.westjet.com/en-ca/book-trip/business-travel/airport-lounges/chinook",
-    "formatted_address": "2000 Airport Rd NE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.132734400000004,
-        "lng": -114.0120199
-      }
-    },
-    "formatted_phone_number": "(403) 648-6425",
-    "places": {
-      "place_id": "ChIJp73EfxpkcVMRZo4ovilj_5E",
-      "rating": 3.6,
-      "user_ratings_total": 859,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Aspire AMEX Lounge (Concourse A), Calgary Airport",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJp73EfxpkcVMRZo4ovilj_5E",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJHdmbjqlpcVMR9mrW9na0NqU": {
-    "id": "360-grill-and-lounge",
-    "name": "360 Grill and Lounge",
-    "website": "https://www.360-grill.com/",
-    "formatted_address": "50 Nolanridge Ct NW Unit 105, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1706096,
-        "lng": -114.1686515
-      }
-    },
-    "formatted_phone_number": "(403) 618-0204",
-    "places": {
-      "place_id": "ChIJHdmbjqlpcVMR9mrW9na0NqU",
-      "rating": 3.8,
-      "user_ratings_total": 693,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "360 Grill and Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJHdmbjqlpcVMR9mrW9na0NqU",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJiXHyhgtvcVMRejg1ONFNc2o": {
-    "id": "last-defence-lounge",
-    "name": "Last Defence Lounge",
-    "website": "http://www.lastdefencelounge.ca/",
-    "formatted_address": "350 MSC, 2500, University Dr NW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.078130699999996,
-        "lng": -114.13135439999999
-      }
-    },
-    "formatted_phone_number": "(403) 220-7973",
-    "places": {
-      "place_id": "ChIJiXHyhgtvcVMRejg1ONFNc2o",
-      "rating": 4,
-      "user_ratings_total": 216,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Last Defence Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJiXHyhgtvcVMRejg1ONFNc2o",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJiXHyhgtvcVMRzdHFH85O-Ks": {
-    "id": "the-den",
-    "name": "The Den",
-    "website": "http://den.su.ucalgary.ca/",
-    "formatted_address": "2500 University Dr NW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.0783309,
-        "lng": -114.13070019999999
-      }
-    },
-    "formatted_phone_number": "(403) 220-5175",
-    "places": {
-      "place_id": "ChIJiXHyhgtvcVMRzdHFH85O-Ks",
-      "rating": 4,
-      "user_ratings_total": 380,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The Den",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJiXHyhgtvcVMRzdHFH85O-Ks",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJr7EuwmFpcVMR1UHGxAMYC5s": {
-    "id": "lynx-lounge",
-    "name": "Lynx Lounge",
-    "website": "https://lynxridge.com/the-lookout-kitchen-bar/",
-    "formatted_address": "8 Lynx Ridge Blvd, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1152879,
-        "lng": -114.257953
-      }
-    },
-    "formatted_phone_number": "(403) 930-7359",
-    "places": {
-      "place_id": "ChIJr7EuwmFpcVMR1UHGxAMYC5s",
-      "rating": 4.3,
-      "user_ratings_total": 11,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Lynx Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJr7EuwmFpcVMR1UHGxAMYC5s",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJ__-_qKNvcVMRvCBB4KMPT18": {
-    "id": "wxyz-bar-lounge",
-    "name": "WXYZ Bar & Lounge",
-    "website": "https://www.marriott.com/en-us/hotels/yycul-aloft-calgary-university/dining/",
-    "formatted_address": "Inside Aloft Hotel, 2359 Banff Trail NW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.069049,
-        "lng": -114.1153138
-      }
-    },
-    "formatted_phone_number": "(403) 289-1973",
-    "places": {
-      "place_id": "ChIJ__-_qKNvcVMRvCBB4KMPT18",
-      "rating": 4.1,
-      "user_ratings_total": 18,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "WXYZ Bar & Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJ__-_qKNvcVMRvCBB4KMPT18",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJmwvh84FvcVMRtrGhOwPpY88": {
-    "id": "avenue-16-kitchen-bar",
-    "name": "Avenue 16 Kitchen & Bar",
-    "website": "http://www.avenue16kitchen.ca/",
-    "formatted_address": "8220 Bowridge Crescent NW, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.083465499999996,
-        "lng": -114.20675779999999
-      }
-    },
-    "formatted_phone_number": "(403) 202-4408",
-    "places": {
-      "place_id": "ChIJmwvh84FvcVMRtrGhOwPpY88",
-      "rating": 4.1,
-      "user_ratings_total": 116,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Avenue 16 Kitchen & Bar",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJmwvh84FvcVMRtrGhOwPpY88",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "lounge Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJK15XzGFpcVMRSBsqdouZBLI": {
-    "id": "the-lookout-yyc",
-    "name": "The Lookout YYC",
-    "website": "https://lynxridge.com/the-lookout-yyc/",
-    "formatted_address": "8 Lynx Ridge Blvd, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1152535,
-        "lng": -114.2581263
-      }
-    },
-    "formatted_phone_number": "(403) 930-7359",
-    "places": {
-      "place_id": "ChIJK15XzGFpcVMRSBsqdouZBLI",
-      "rating": 4.5,
-      "user_ratings_total": 400,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "The Lookout YYC",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJK15XzGFpcVMRSBsqdouZBLI",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northwest Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJt91CZahwcVMRoH0R8sQ0W9w": {
-    "id": "elbow-room-lounge",
-    "name": "Elbow Room Lounge",
-    "website": "http://www.glenmoreinn.com/elbow-room-lounge.php",
-    "formatted_address": "1000 Glenmore Ct SE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 50.980388999999995,
-        "lng": -113.996911
-      }
-    },
-    "formatted_phone_number": "(403) 279-8611",
-    "places": {
-      "place_id": "ChIJt91CZahwcVMRoH0R8sQ0W9w",
-      "rating": 4.7,
-      "user_ratings_total": 14,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Elbow Room Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJt91CZahwcVMRoH0R8sQ0W9w",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge South Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJBUhcWsFjcVMR4sEDNWaex08": {
-    "id": "head-over-heels",
-    "name": "Head Over Heels",
-    "website": "https://headoverheelsyyc.com/",
-    "formatted_address": "4310 104 Ave NE #5118, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1475485,
-        "lng": -113.97311769999999
-      }
-    },
-    "formatted_phone_number": "(587) 355-7708",
-    "places": {
-      "place_id": "ChIJBUhcWsFjcVMR4sEDNWaex08",
-      "rating": 4,
-      "user_ratings_total": 402,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Head Over Heels",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJBUhcWsFjcVMR4sEDNWaex08",
-    "city": "Calgary",
-    "is_bar": false,
-    "found_via": "lounge Northeast Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJY92cPEFjcVMRJllRe4rHTXs": {
-    "id": "xhale-lounge",
-    "name": "Xhale Lounge",
-    "website": "https://xhaleloungeyyc.ca/",
-    "formatted_address": "6815 Temple Dr NE Bay 8, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.091882299999995,
-        "lng": -113.9389597
-      }
-    },
-    "formatted_phone_number": "(587) 333-9011",
-    "places": {
-      "place_id": "ChIJY92cPEFjcVMRJllRe4rHTXs",
-      "rating": 4.4,
-      "user_ratings_total": 193,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Xhale Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJY92cPEFjcVMRJllRe4rHTXs",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northeast Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJDaqItrBlcVMRdtvfHRj2kOk": {
-    "id": "viet-lounge",
-    "name": "Viet Lounge",
-    "website": "http://vietlounge.ca/",
-    "formatted_address": "901 64 Ave NE #5108, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.1084052,
-        "lng": -114.0408198
-      }
-    },
-    "formatted_phone_number": "(403) 457-8438",
-    "places": {
-      "place_id": "ChIJDaqItrBlcVMRdtvfHRj2kOk",
-      "rating": 4.2,
-      "user_ratings_total": 808,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Viet Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJDaqItrBlcVMRdtvfHRj2kOk",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northeast Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJAy_0XC9lcVMRJqYmqus1lgw": {
-    "id": "twelve-fifty-lounge",
-    "name": "Twelve Fifty Lounge",
-    "website": "https://www.ihg.com/holidayinn/hotels/us/en/calgary/yycat/hoteldetail/dining",
-    "formatted_address": "1250 McKinnon Dr NE, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.065833299999994,
-        "lng": -114.01194439999999
-      }
-    },
-    "formatted_phone_number": "(403) 230-1999",
-    "places": {
-      "place_id": "ChIJAy_0XC9lcVMRJqYmqus1lgw",
-      "rating": 3.5,
-      "user_ratings_total": 67,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Twelve Fifty Lounge",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJAy_0XC9lcVMRJqYmqus1lgw",
-    "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northeast Calgary AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJoVF2_DNvcVMRvekmpvXdLd4": {
-    "id": "vyb-social",
-    "name": "VYB Social",
-    "website": "https://vybsocial.ca/",
-    "formatted_address": "1104 6 Ave SW #201, Calgary, AB",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 51.048316,
-        "lng": -114.08626799999999
-      }
-    },
-    "formatted_phone_number": "(403) 984-6324",
-    "places": {
-      "place_id": "ChIJoVF2_DNvcVMRvekmpvXdLd4",
+      "place_id": "ChIJwVGwyN1lcVMRhkiM9GWKNSo",
       "rating": 4.9,
-      "user_ratings_total": 578,
+      "user_ratings_total": 92,
       "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -2474,32 +710,32 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "VYB Social",
-      "synced_at": "2026-11-09"
+      "matched_name": "Petalo",
+      "synced_at": "2026-11-10"
     },
-    "place_id": "ChIJoVF2_DNvcVMRvekmpvXdLd4",
+    "place_id": "ChIJwVGwyN1lcVMRhkiM9GWKNSo",
     "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northeast Calgary AB",
-    "found_at": "2026-11-09"
+    "is_bar": false,
+    "found_via": "tapas bar Calgary AB",
+    "found_at": "2026-11-10"
   },
-  "ChIJCUZI8ntkcVMRp_qUCAjuhwg": {
-    "id": "xs-lounge-and-grill",
-    "name": "XS Lounge and Grill",
-    "website": "https://www.choicehotels.com/alberta/calgary/radisson-hotels/cnc28/dining?mc=llgoxxpx",
-    "formatted_address": "6620 36 St NE, Calgary, AB",
+  "ChIJ6wSv1a1ncVMRBBbCfFTFCWA": {
+    "id": "tipsy-pig-kitchen-bar",
+    "name": "Tipsy Pig Kitchen + Bar",
+    "website": "http://tipsypigkb.com/",
+    "formatted_address": "2060 Symons Valley Pkwy NW #3018, Calgary, AB",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 51.1119476,
-        "lng": -113.9802977
+        "lat": 51.174042199999995,
+        "lng": -114.1088155
       }
     },
-    "formatted_phone_number": "(587) 350-8427",
+    "formatted_phone_number": "(403) 453-3332",
     "places": {
-      "place_id": "ChIJCUZI8ntkcVMRp_qUCAjuhwg",
-      "rating": 3.8,
-      "user_ratings_total": 397,
+      "place_id": "ChIJ6wSv1a1ncVMRBBbCfFTFCWA",
+      "rating": 4.1,
+      "user_ratings_total": 752,
       "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -2510,32 +746,32 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "XS Lounge and Grill",
-      "synced_at": "2026-11-09"
+      "matched_name": "Tipsy Pig Kitchen + Bar",
+      "synced_at": "2026-11-10"
     },
-    "place_id": "ChIJCUZI8ntkcVMRp_qUCAjuhwg",
+    "place_id": "ChIJ6wSv1a1ncVMRBBbCfFTFCWA",
     "city": "Calgary",
     "is_bar": true,
-    "found_via": "lounge Northeast Calgary AB",
-    "found_at": "2026-11-09"
+    "found_via": "tapas bar Northwest Calgary AB",
+    "found_at": "2026-11-10"
   },
-  "ChIJu2mdo_tkcVMRLc3GOAXdADA": {
-    "id": "jetz-bar-and-lounge",
-    "name": "Jetz Bar and Lounge",
-    "website": "https://www.jetzbar.com/",
-    "formatted_address": "19 St NE, Calgary, AB",
+  "ChIJpUxW5MJucVMRSuWj0fifXOM": {
+    "id": "salt-pepper",
+    "name": "Salt & Pepper",
+    "website": "http://saltnpepper.ca/",
+    "formatted_address": "6515 Bowness Rd NW, Calgary, AB",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 51.092023499999996,
-        "lng": -114.01232069999999
+        "lat": 51.086647299999996,
+        "lng": -114.18279469999999
       }
     },
-    "formatted_phone_number": "(403) 291-4600",
+    "formatted_phone_number": "(403) 247-4402",
     "places": {
-      "place_id": "ChIJu2mdo_tkcVMRLc3GOAXdADA",
-      "rating": 3.9,
-      "user_ratings_total": 79,
+      "place_id": "ChIJpUxW5MJucVMRSuWj0fifXOM",
+      "rating": 4.2,
+      "user_ratings_total": 1149,
       "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -2546,33 +782,33 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Jetz Bar and Lounge",
-      "synced_at": "2026-11-09"
+      "matched_name": "Salt & Pepper",
+      "synced_at": "2026-11-10"
     },
-    "place_id": "ChIJu2mdo_tkcVMRLc3GOAXdADA",
+    "place_id": "ChIJpUxW5MJucVMRSuWj0fifXOM",
     "city": "Calgary",
-    "is_bar": true,
-    "found_via": "lounge Northeast Calgary AB",
-    "found_at": "2026-11-09"
+    "is_bar": false,
+    "found_via": "tapas bar Northwest Calgary AB",
+    "found_at": "2026-11-10"
   },
-  "ChIJCwhKJNjhc1MRbDlyqEZAyhw": {
-    "id": "smitty-s-restaurant-lounge-airdrie",
-    "name": "Smitty's Restaurant & Lounge - Airdrie",
-    "website": "https://smittys.ca/location/airdrie/",
-    "formatted_address": "191 East Lake Crescent NE #2, Airdrie, AB",
+  "ChIJXZ2kQvRfcVMRLL5b2UG4gag": {
+    "id": "the-cravery",
+    "name": "The Cravery",
+    "website": "https://thecravery.ca/",
+    "formatted_address": "401 Coopers Blvd SW #407, Airdrie, AB",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 51.28640300000001,
-        "lng": -113.99812610000001
+        "lat": 51.2577627,
+        "lng": -114.0225258
       }
     },
-    "formatted_phone_number": "(403) 945-1225",
+    "formatted_phone_number": "(403) 945-6663",
     "places": {
-      "place_id": "ChIJCwhKJNjhc1MRbDlyqEZAyhw",
-      "rating": 4.6,
-      "user_ratings_total": 1633,
-      "price_level": null,
+      "place_id": "ChIJXZ2kQvRfcVMRLL5b2UG4gag",
+      "rating": 4.4,
+      "user_ratings_total": 336,
+      "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
         "outdoor_seating": null,
@@ -2582,140 +818,32 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Smitty's Restaurant & Lounge - Airdrie",
-      "synced_at": "2026-11-09"
+      "matched_name": "The Cravery",
+      "synced_at": "2026-11-10"
     },
-    "place_id": "ChIJCwhKJNjhc1MRbDlyqEZAyhw",
+    "place_id": "ChIJXZ2kQvRfcVMRLL5b2UG4gag",
     "city": "Airdrie",
     "is_bar": false,
-    "found_via": "lounge Airdrie AB",
-    "found_at": "2026-11-09"
+    "found_via": "tapas bar Airdrie AB",
+    "found_at": "2026-11-10"
   },
-  "ChIJZaustFaZcVMR1QmEvG1Zm88": {
-    "id": "masala-lounge-grill",
-    "name": "Masala Lounge & Grill",
-    "website": "https://www.masalaloungeandgrill.ca/",
-    "formatted_address": "235 Milligan Dr #407, Okotoks, AB",
+  "ChIJJ5MO9gQ_cVMRrX5FQoST_JQ": {
+    "id": "cabeza-grande",
+    "name": "Cabeza Grande",
+    "website": "https://www.cabeza-grande.com/",
+    "formatted_address": "23 Heartland Blvd #2125, Cochrane, AB",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 50.7318402,
-        "lng": -113.94983889999999
+        "lat": 51.20318,
+        "lng": -114.50565990000001
       }
     },
-    "formatted_phone_number": "(587) 757-0171",
+    "formatted_phone_number": "(403) 981-8226",
     "places": {
-      "place_id": "ChIJZaustFaZcVMR1QmEvG1Zm88",
-      "rating": 4.8,
-      "user_ratings_total": 773,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Masala Lounge & Grill",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJZaustFaZcVMR1QmEvG1Zm88",
-    "city": "Okotoks",
-    "is_bar": false,
-    "found_via": "lounge Okotoks AB",
-    "found_at": "2026-11-09"
-  },
-  "ChIJi-Drn81xhlQRfc_WzhEgCgY": {
-    "id": "pax-romana",
-    "name": "Pax Romana",
-    "website": "https://paxromana.ca/",
-    "formatted_address": "1670 Commercial Dr, Vancouver, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.269951299999995,
-        "lng": -123.06948089999999
-      }
-    },
-    "formatted_phone_number": "(604) 336-3357",
-    "places": {
-      "place_id": "ChIJi-Drn81xhlQRfc_WzhEgCgY",
-      "rating": 4.4,
-      "user_ratings_total": 140,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Pax Romana",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJi-Drn81xhlQRfc_WzhEgCgY",
-    "city": "Vancouver",
-    "is_bar": true,
-    "found_via": "lounge Commercial Drive Vancouver",
-    "found_at": "2026-11-09"
-  },
-  "ChIJX1jkmctxhlQR_oIWNHj-lug": {
-    "id": "lounge-banquet-hall",
-    "name": "Lounge Banquet Hall",
-    "website": "http://gilane.ca/",
-    "formatted_address": "222 B Pemberton Ave, North Vancouver, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.3196474,
-        "lng": -123.10759949999999
-      }
-    },
-    "formatted_phone_number": "(778) 340-7000",
-    "places": {
-      "place_id": "ChIJX1jkmctxhlQR_oIWNHj-lug",
+      "place_id": "ChIJJ5MO9gQ_cVMRrX5FQoST_JQ",
       "rating": 4.1,
-      "user_ratings_total": 21,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Lounge Banquet Hall",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJX1jkmctxhlQR_oIWNHj-lug",
-    "city": "North Vancouver",
-    "is_bar": false,
-    "found_via": "lounge North Vancouver BC",
-    "found_at": "2026-11-09"
-  },
-  "ChIJTahV6NdxhlQRbgNjd8Ox0-s": {
-    "id": "abadan-lounge",
-    "name": "Abadan Lounge",
-    "website": "https://www.abadan.ca/",
-    "formatted_address": "1431 Marine Dr, North Vancouver, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.3233794,
-        "lng": -123.11392120000001
-      }
-    },
-    "formatted_phone_number": "(778) 504-2004",
-    "places": {
-      "place_id": "ChIJTahV6NdxhlQRbgNjd8Ox0-s",
-      "rating": 4.5,
-      "user_ratings_total": 1131,
+      "user_ratings_total": 422,
       "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -2726,157 +854,13 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Abadan Lounge",
-      "synced_at": "2026-11-09"
+      "matched_name": "Cabeza Grande",
+      "synced_at": "2026-11-10"
     },
-    "place_id": "ChIJTahV6NdxhlQRbgNjd8Ox0-s",
-    "city": "North Vancouver",
+    "place_id": "ChIJJ5MO9gQ_cVMRrX5FQoST_JQ",
+    "city": "Cochrane",
     "is_bar": false,
-    "found_via": "lounge North Vancouver BC",
-    "found_at": "2026-11-09"
-  },
-  "ChIJs58kXY1xhlQR6l1iaXk0s2Q": {
-    "id": "l-a-vietnamese-kitchen-bar",
-    "name": "LÚA Vietnamese Kitchen + Bar",
-    "website": "https://luavkb.com/",
-    "formatted_address": "150 Esplanade W #210, North Vancouver, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.3121467,
-        "lng": -123.0811691
-      }
-    },
-    "formatted_phone_number": "(604) 770-3863",
-    "places": {
-      "place_id": "ChIJs58kXY1xhlQR6l1iaXk0s2Q",
-      "rating": 4.9,
-      "user_ratings_total": 70,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "LÚA Vietnamese Kitchen + Bar",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJs58kXY1xhlQR6l1iaXk0s2Q",
-    "city": "North Vancouver",
-    "is_bar": false,
-    "found_via": "lounge North Vancouver BC",
-    "found_at": "2026-11-09"
-  },
-  "ChIJtWrX4152hlQR7ocC-CIDvpo": {
-    "id": "neptune-noodle-bar-burnaby",
-    "name": "Neptune Noodle Bar (Burnaby)",
-    "website": "https://www.neptunegroup.ca/wn-burnaby",
-    "formatted_address": "4405 Central Blvd 2 FL, Burnaby, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.2264579,
-        "lng": -123.00401500000001
-      }
-    },
-    "formatted_phone_number": "(778) 379-0639",
-    "places": {
-      "place_id": "ChIJtWrX4152hlQR7ocC-CIDvpo",
-      "rating": 3,
-      "user_ratings_total": 759,
-      "price_level": 2,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Neptune Noodle Bar (Burnaby)",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJtWrX4152hlQR7ocC-CIDvpo",
-    "city": "Burnaby",
-    "is_bar": false,
-    "found_via": "lounge Metrotown Burnaby",
-    "found_at": "2026-11-09"
-  },
-  "ChIJQWJJhzULhlQROqk-OJVrNnc": {
-    "id": "plaza-premium-lounge-domestic-departures",
-    "name": "Plaza Premium Lounge (Domestic Departures)",
-    "website": "https://www.plazapremiumlounge.com/en-uk/find/americas/canada/vancouver/vancouver-international-airport/domestic-departures?utm_source=google&utm_medium=organic&utm_campaign=mybusiness&utm_content=YVR_Dom_Dep",
-    "formatted_address": "3211 Grant McConachie Wy, Richmond, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.192639199999995,
-        "lng": -123.18142939999998
-      }
-    },
-    "formatted_phone_number": "(437) 837-1124",
-    "places": {
-      "place_id": "ChIJQWJJhzULhlQROqk-OJVrNnc",
-      "rating": 4.1,
-      "user_ratings_total": 1996,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Plaza Premium Lounge (Domestic Departures)",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJQWJJhzULhlQROqk-OJVrNnc",
-    "city": "Richmond",
-    "is_bar": false,
-    "found_via": "lounge Richmond BC",
-    "found_at": "2026-11-09"
-  },
-  "ChIJtQoV5EkLhlQRhM0oy6rwsoI": {
-    "id": "air-canada-maple-leaf-lounge-domestic",
-    "name": "Air Canada Maple Leaf Lounge - Domestic",
-    "website": "https://www.aircanada.com/ca/en/aco/home/fly/premium-services/maple-leaf-lounges/maple-leaf-lounge-details.html#/!lounge@vancouver",
-    "formatted_address": "Richmond, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.1949957,
-        "lng": -123.18183909999999
-      }
-    },
-    "formatted_phone_number": "(888) 247-2262",
-    "places": {
-      "place_id": "ChIJtQoV5EkLhlQRhM0oy6rwsoI",
-      "rating": 3.9,
-      "user_ratings_total": 2142,
-      "price_level": null,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Air Canada Maple Leaf Lounge - Domestic",
-      "synced_at": "2026-11-09"
-    },
-    "place_id": "ChIJtQoV5EkLhlQRhM0oy6rwsoI",
-    "city": "Richmond",
-    "is_bar": true,
-    "found_via": "lounge Richmond BC",
-    "found_at": "2026-11-09"
+    "found_via": "tapas bar Cochrane AB",
+    "found_at": "2026-11-10"
   }
 }

@@ -30984,5 +30984,107 @@
     },
     "matched_name": "LÚA Vietnamese Kitchen + Bar",
     "synced_at": "2026-11-09"
+  },
+  "tipsy-pig-kitchen-bar": {
+    "place_id": "ChIJ6wSv1a1ncVMRBBbCfFTFCWA",
+    "rating": 4.1,
+    "user_ratings_total": 752,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Tipsy Pig Kitchen + Bar",
+    "synced_at": "2026-11-10"
+  },
+  "bar-annabelle": {
+    "place_id": "ChIJVVUplf1vcVMR_kOpBySdjOo",
+    "rating": 4.5,
+    "user_ratings_total": 55,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Bar Annabelle",
+    "synced_at": "2026-11-10"
+  },
+  "salt-pepper": {
+    "place_id": "ChIJpUxW5MJucVMRSuWj0fifXOM",
+    "rating": 4.2,
+    "user_ratings_total": 1149,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Salt & Pepper",
+    "synced_at": "2026-11-10"
+  },
+  "lil-chef-bistro": {
+    "place_id": "ChIJI0pGnAH5hlQR8BkQEL7oCbw",
+    "rating": 4.5,
+    "user_ratings_total": 747,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Lil Chef Bistro",
+    "synced_at": "2026-11-10"
+  },
+  "kama": {
+    "place_id": "ChIJjRj6-B1xcVMRUSP_TMYEPPc",
+    "rating": 4.6,
+    "user_ratings_total": 673,
+    "price_level": null,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Kama",
+    "synced_at": "2026-11-10"
+  },
+  "petalo": {
+    "place_id": "ChIJwVGwyN1lcVMRhkiM9GWKNSo",
+    "rating": 4.9,
+    "user_ratings_total": 92,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Petalo",
+    "synced_at": "2026-11-10"
   }
 }
