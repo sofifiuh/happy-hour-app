@@ -18663,7 +18663,7 @@
     "id": "no-1-beef-noodle",
     "name": "No. 1 Beef Noodle",
     "verdict": "hours_only",
-    "checked_at": "2026-11-10"
+    "checked_at": "2026-11-11"
   },
   "ChIJdWULgytyhlQR9EUQyHopKL0": {
     "id": "davie-dosa-company",
@@ -29068,5 +29068,11 @@
     "name": "Petalo",
     "verdict": "published",
     "checked_at": "2026-11-10"
+  },
+  "ChIJb_ZUIQALhlQR592KGycQw1I": {
+    "id": "hao-s-tapas-kitchen",
+    "name": "Hao's Tapas Kitchen",
+    "verdict": "error",
+    "checked_at": "2026-11-11"
   }
 }

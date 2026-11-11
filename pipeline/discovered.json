@@ -27349,6 +27349,7 @@
     "website": "http://www.sprezzatura.ca/",
     "happy_hour": {
       "days": [
+        0,
         1,
         2,
         3,
@@ -27356,27 +27357,18 @@
         5,
         6
       ],
-      "start": "14:30",
+      "start": "11:30",
       "end": "17:30",
-      "extra_windows": [
-        {
-          "days": [
-            0
-          ],
-          "start": "11:30",
-          "end": "21:00",
-          "label": "All Day"
-        }
-      ],
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
       "source_url": "https://sprezzatura.ca/happy-hour",
       "deals": [
         {
-          "name": "House Wine",
+          "name": "House wine bottles or carafes",
           "price": "50% off",
           "category": "drink",
-          "description": "All bottles or carafes; Wednesdays all-day (dine-in only)"
+          "description": "Half price on all bottles or carafes of house wine, all day Wednesday (Wine Wednesday promotion). Dine-in only."
         }
       ]
     },
@@ -27386,7 +27378,7 @@
       "credit_url": "http://www.sprezzatura.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-11"
   },
   {
     "place_id": null,
@@ -76266,7 +76258,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-10-30",
+    "last_synced_at": "2026-11-11",
     "cover_image": null
   },
   {
