@@ -35,24 +35,24 @@
     "found_via": "requeue hours_only",
     "found_at": "2026-11-07"
   },
-  "ChIJb_ZUIQALhlQR592KGycQw1I": {
-    "id": "hao-s-tapas-kitchen",
-    "name": "Hao's Tapas Kitchen",
-    "website": "https://h5.auroratech.top/#/shop?id=605",
-    "formatted_address": "6451 Buswell St #190, Richmond, BC",
+  "ChIJJcD3c_QzhFQRlKOHm3onh64": {
+    "id": "mission-city-pizza",
+    "name": "Mission City Pizza",
+    "website": "https://www.missioncitypizza.com/",
+    "formatted_address": "33638 7th Ave, Mission, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 49.1666836,
-        "lng": -123.134097
+        "lat": 49.1395708,
+        "lng": -122.2931044
       }
     },
-    "formatted_phone_number": "(778) 939-6766",
+    "formatted_phone_number": "(604) 826-5900",
     "places": {
-      "place_id": "ChIJb_ZUIQALhlQR592KGycQw1I",
-      "rating": 4.4,
-      "user_ratings_total": 148,
-      "price_level": 2,
+      "place_id": "ChIJJcD3c_QzhFQRlKOHm3onh64",
+      "rating": 4.6,
+      "user_ratings_total": 1117,
+      "price_level": 1,
       "business_status": "OPERATIONAL",
       "amenities": {
         "outdoor_seating": null,
@@ -62,13 +62,85 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Hao's Tapas Kitchen",
-      "synced_at": "2026-11-11"
+      "matched_name": "Mission City Pizza",
+      "synced_at": "2026-11-12"
     },
-    "place_id": "ChIJb_ZUIQALhlQR592KGycQw1I",
-    "city": "Richmond",
+    "place_id": "ChIJJcD3c_QzhFQRlKOHm3onh64",
+    "city": "Mission",
     "is_bar": false,
-    "found_via": "tapas bar Richmond BC",
-    "found_at": "2026-11-11"
+    "found_via": "drink specials Mission BC",
+    "found_at": "2026-11-12"
+  },
+  "ChIJvxpgDgAzhFQR11KYpzIIUcc": {
+    "id": "red-swan-pizza-mission",
+    "name": "Red Swan Pizza - Mission",
+    "website": "http://www.redswanpizza.com/",
+    "formatted_address": "Next to Sushi Te Japanese Restaurant, 32423 Lougheed Hwy #113, Mission, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.134161299999995,
+        "lng": -122.32746399999999
+      }
+    },
+    "formatted_phone_number": "(604) 287-0677",
+    "places": {
+      "place_id": "ChIJvxpgDgAzhFQR11KYpzIIUcc",
+      "rating": 4.6,
+      "user_ratings_total": 207,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Red Swan Pizza - Mission",
+      "synced_at": "2026-11-12"
+    },
+    "place_id": "ChIJvxpgDgAzhFQR11KYpzIIUcc",
+    "city": "Mission",
+    "is_bar": false,
+    "found_via": "drink specials Mission BC",
+    "found_at": "2026-11-12"
+  },
+  "ChIJmzG68etBhFQRSJrvgj0LfzU": {
+    "id": "boardwalk-burgers-chilliwack",
+    "name": "Boardwalk Burgers - Chilliwack",
+    "website": "https://www.boardwalkburgers.ca/",
+    "formatted_address": "Cottonwood Ct, 45585 Luckakuck Way, Chilliwack, BC",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 49.142595899999996,
+        "lng": -121.9635576
+      }
+    },
+    "formatted_phone_number": "(604) 705-2010",
+    "places": {
+      "place_id": "ChIJmzG68etBhFQRSJrvgj0LfzU",
+      "rating": 4.7,
+      "user_ratings_total": 565,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Boardwalk Burgers - Chilliwack",
+      "synced_at": "2026-11-12"
+    },
+    "place_id": "ChIJmzG68etBhFQRSJrvgj0LfzU",
+    "city": "Chilliwack",
+    "is_bar": false,
+    "found_via": "drink specials Sardis Chilliwack BC",
+    "found_at": "2026-11-12"
   }
 }

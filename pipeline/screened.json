@@ -18663,7 +18663,7 @@
     "id": "no-1-beef-noodle",
     "name": "No. 1 Beef Noodle",
     "verdict": "hours_only",
-    "checked_at": "2026-11-11"
+    "checked_at": "2026-11-12"
   },
   "ChIJdWULgytyhlQR9EUQyHopKL0": {
     "id": "davie-dosa-company",
@@ -29074,5 +29074,23 @@
     "name": "Hao's Tapas Kitchen",
     "verdict": "error",
     "checked_at": "2026-11-11"
+  },
+  "ChIJJcD3c_QzhFQRlKOHm3onh64": {
+    "id": "mission-city-pizza",
+    "name": "Mission City Pizza",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-12"
+  },
+  "ChIJmzG68etBhFQRSJrvgj0LfzU": {
+    "id": "boardwalk-burgers-chilliwack",
+    "name": "Boardwalk Burgers - Chilliwack",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-12"
+  },
+  "ChIJvxpgDgAzhFQR11KYpzIIUcc": {
+    "id": "red-swan-pizza-mission",
+    "name": "Red Swan Pizza - Mission",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-12"
   }
 }
