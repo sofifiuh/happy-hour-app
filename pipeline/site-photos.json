@@ -6253,6 +6253,64 @@
       ]
     }
   },
+  "cold-beer-pizza": {
+    "checked_at": "2026-11-13",
+    "pages": [
+      "https://coldbeerpizza.com/",
+      "https://coldbeerpizza.com/calgary-17th-ave-cold-beer-and-pizza-events"
+    ],
+    "cover_problem": "graphic",
+    "cover": {
+      "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/c2/db72dd02f0423ca15e1f803397c0a2/:original",
+      "page": "https://coldbeerpizza.com/",
+      "w": 960,
+      "h": 1200
+    },
+    "gallery": [
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/f6/d18e074c42473e86108be13b0910d3/:original",
+        "page": "https://coldbeerpizza.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/fa/3203a2768541678e512383a9c408dc/:original",
+        "page": "https://coldbeerpizza.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/384278_website_v1/catering.jpg",
+        "page": "https://coldbeerpizza.com/",
+        "w": 930,
+        "h": 754
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/fe/4a51ab74fd463fa076c0075fd0a8d0/:original",
+        "page": "https://coldbeerpizza.com/",
+        "w": 1800,
+        "h": 1200
+      }
+    ],
+    "review": {
+      "at": "2026-11-13",
+      "key": "aacec8ae963e",
+      "rejected": [
+        {
+          "url": "https://static.spotapps.co/new_website_videos/384278_videos/384278_video_desktop_v1.jpg",
+          "why": "sign/wordmark, primarily text"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/66/a1ee801b394d6ea2e70648724f59ae/full",
+          "why": "wall of posters/signage, not showing venue function"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/0c/616d4b822340cf9dd4661fc84d50ba/full",
+          "why": "promo sign, mostly text"
+        }
+      ]
+    }
+  },
   "collective-goods": {
     "checked_at": "2026-10-24",
     "pages": [

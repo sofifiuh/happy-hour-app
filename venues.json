@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-13-dcf7f4d9",
+ "data_version": "2026-11-13-c87b84f2",
  "venues": [
   {
    "id": "ancora",
@@ -8702,7 +8702,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/f6/d18e074c42473e86108be13b0910d3/:original",
+     "credit_name": "Cold Beer & Pizza",
+     "credit_url": "https://coldbeerpizza.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/fa/3203a2768541678e512383a9c408dc/:original",
+     "credit_name": "Cold Beer & Pizza",
+     "credit_url": "https://coldbeerpizza.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/384278_website_v1/catering.jpg",
+     "credit_name": "Cold Beer & Pizza",
+     "credit_url": "https://coldbeerpizza.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/fe/4a51ab74fd463fa076c0075fd0a8d0/:original",
+     "credit_name": "Cold Beer & Pizza",
+     "credit_url": "https://coldbeerpizza.com/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8776,9 +8801,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/384278_website_v1/shared_image.jpg",
+    "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/c2/db72dd02f0423ca15e1f803397c0a2/:original",
     "credit_name": "Cold Beer & Pizza",
-    "credit_url": "http://coldbeerpizza.com/",
+    "credit_url": "https://coldbeerpizza.com/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-13",
