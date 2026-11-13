@@ -31086,5 +31086,22 @@
     },
     "matched_name": "Petalo",
     "synced_at": "2026-11-10"
+  },
+  "cold-beer-pizza": {
+    "place_id": "ChIJ2ZUOukNxcVMRSRpoqTeX0O0",
+    "rating": 4.6,
+    "user_ratings_total": 399,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Cold Beer & Pizza",
+    "synced_at": "2026-11-13"
   }
 }

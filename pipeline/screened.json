@@ -18663,7 +18663,7 @@
     "id": "no-1-beef-noodle",
     "name": "No. 1 Beef Noodle",
     "verdict": "hours_only",
-    "checked_at": "2026-11-12"
+    "checked_at": "2026-11-13"
   },
   "ChIJdWULgytyhlQR9EUQyHopKL0": {
     "id": "davie-dosa-company",
@@ -29092,5 +29092,35 @@
     "name": "Red Swan Pizza - Mission",
     "verdict": "no_happy_hour",
     "checked_at": "2026-11-12"
+  },
+  "ChIJ2ZUOukNxcVMRSRpoqTeX0O0": {
+    "id": "cold-beer-pizza",
+    "name": "Cold Beer & Pizza",
+    "verdict": "published",
+    "checked_at": "2026-11-13"
+  },
+  "ChIJ1zj70m75hlQR_K85rGrprcw": {
+    "id": "flipside-burgers",
+    "name": "Flipside Burgers",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-13"
+  },
+  "ChIJCXGDhkxvcVMRyLJ9EJpqAJ4": {
+    "id": "kups-kensington",
+    "name": "Kups Kensington",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-13"
+  },
+  "ChIJvWWq-wpvcVMRgJoC8d7yCmo": {
+    "id": "matador-pizza-hillhurst",
+    "name": "Matador Pizza Hillhurst",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-13"
+  },
+  "ChIJiff94tgRhFQRlLTyJL-lBuo": {
+    "id": "harrison-lillooet-cafe",
+    "name": "Harrison lillooet cafe",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-13"
   }
 }

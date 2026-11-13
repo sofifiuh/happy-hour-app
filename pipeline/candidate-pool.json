@@ -35,24 +35,24 @@
     "found_via": "requeue hours_only",
     "found_at": "2026-11-07"
   },
-  "ChIJJcD3c_QzhFQRlKOHm3onh64": {
-    "id": "mission-city-pizza",
-    "name": "Mission City Pizza",
-    "website": "https://www.missioncitypizza.com/",
-    "formatted_address": "33638 7th Ave, Mission, BC",
+  "ChIJiff94tgRhFQRlLTyJL-lBuo": {
+    "id": "harrison-lillooet-cafe",
+    "name": "Harrison lillooet cafe",
+    "website": "https://www.harrisonlillooetcafe.com/",
+    "formatted_address": "140 Lillooet Rd, Harrison Hot Springs, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 49.1395708,
-        "lng": -122.2931044
+        "lat": 49.302395100000005,
+        "lng": -121.78720059999999
       }
     },
-    "formatted_phone_number": "(604) 826-5900",
+    "formatted_phone_number": "(604) 735-6555",
     "places": {
-      "place_id": "ChIJJcD3c_QzhFQRlKOHm3onh64",
-      "rating": 4.6,
-      "user_ratings_total": 1117,
-      "price_level": 1,
+      "place_id": "ChIJiff94tgRhFQRlLTyJL-lBuo",
+      "rating": 4.2,
+      "user_ratings_total": 34,
+      "price_level": 2,
       "business_status": "OPERATIONAL",
       "amenities": {
         "outdoor_seating": null,
@@ -62,68 +62,68 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Mission City Pizza",
-      "synced_at": "2026-11-12"
+      "matched_name": "Harrison lillooet cafe",
+      "synced_at": "2026-11-13"
     },
-    "place_id": "ChIJJcD3c_QzhFQRlKOHm3onh64",
-    "city": "Mission",
+    "place_id": "ChIJiff94tgRhFQRlLTyJL-lBuo",
+    "city": "Harrison Hot Springs",
     "is_bar": false,
-    "found_via": "drink specials Mission BC",
-    "found_at": "2026-11-12"
+    "found_via": "drink specials Harrison Hot Springs BC",
+    "found_at": "2026-11-13"
   },
-  "ChIJvxpgDgAzhFQR11KYpzIIUcc": {
-    "id": "red-swan-pizza-mission",
-    "name": "Red Swan Pizza - Mission",
-    "website": "http://www.redswanpizza.com/",
-    "formatted_address": "Next to Sushi Te Japanese Restaurant, 32423 Lougheed Hwy #113, Mission, BC",
+  "ChIJ1zj70m75hlQR_K85rGrprcw": {
+    "id": "flipside-burgers",
+    "name": "Flipside Burgers",
+    "website": "http://flipsideburgers.ca/",
+    "formatted_address": "38927 Queens Way, Squamish, BC",
     "address_components": null,
     "geometry": {
       "location": {
-        "lat": 49.134161299999995,
-        "lng": -122.32746399999999
+        "lat": 49.7174255,
+        "lng": -123.15565159999998
       }
     },
-    "formatted_phone_number": "(604) 287-0677",
+    "formatted_phone_number": "(604) 849-0146",
     "places": {
-      "place_id": "ChIJvxpgDgAzhFQR11KYpzIIUcc",
-      "rating": 4.6,
-      "user_ratings_total": 207,
-      "price_level": 1,
-      "business_status": "OPERATIONAL",
-      "amenities": {
-        "outdoor_seating": null,
-        "serves_cocktails": null,
-        "serves_beer": null,
-        "serves_wine": null,
-        "live_music": null,
-        "good_for_groups": null
-      },
-      "matched_name": "Red Swan Pizza - Mission",
-      "synced_at": "2026-11-12"
-    },
-    "place_id": "ChIJvxpgDgAzhFQR11KYpzIIUcc",
-    "city": "Mission",
-    "is_bar": false,
-    "found_via": "drink specials Mission BC",
-    "found_at": "2026-11-12"
-  },
-  "ChIJmzG68etBhFQRSJrvgj0LfzU": {
-    "id": "boardwalk-burgers-chilliwack",
-    "name": "Boardwalk Burgers - Chilliwack",
-    "website": "https://www.boardwalkburgers.ca/",
-    "formatted_address": "Cottonwood Ct, 45585 Luckakuck Way, Chilliwack, BC",
-    "address_components": null,
-    "geometry": {
-      "location": {
-        "lat": 49.142595899999996,
-        "lng": -121.9635576
-      }
-    },
-    "formatted_phone_number": "(604) 705-2010",
-    "places": {
-      "place_id": "ChIJmzG68etBhFQRSJrvgj0LfzU",
+      "place_id": "ChIJ1zj70m75hlQR_K85rGrprcw",
       "rating": 4.7,
-      "user_ratings_total": 565,
+      "user_ratings_total": 938,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Flipside Burgers",
+      "synced_at": "2026-11-13"
+    },
+    "place_id": "ChIJ1zj70m75hlQR_K85rGrprcw",
+    "city": "Squamish",
+    "is_bar": false,
+    "found_via": "drink specials Squamish BC",
+    "found_at": "2026-11-13"
+  },
+  "ChIJCXGDhkxvcVMRyLJ9EJpqAJ4": {
+    "id": "kups-kensington",
+    "name": "Kups Kensington",
+    "website": "https://www.urkups.com/",
+    "formatted_address": "10 St NW A314, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.054657999999996,
+        "lng": -114.0857439
+      }
+    },
+    "formatted_phone_number": "(587) 355-0801",
+    "places": {
+      "place_id": "ChIJCXGDhkxvcVMRyLJ9EJpqAJ4",
+      "rating": 4.9,
+      "user_ratings_total": 140,
       "price_level": 1,
       "business_status": "OPERATIONAL",
       "amenities": {
@@ -134,13 +134,85 @@
         "live_music": null,
         "good_for_groups": null
       },
-      "matched_name": "Boardwalk Burgers - Chilliwack",
-      "synced_at": "2026-11-12"
+      "matched_name": "Kups Kensington",
+      "synced_at": "2026-11-13"
     },
-    "place_id": "ChIJmzG68etBhFQRSJrvgj0LfzU",
-    "city": "Chilliwack",
+    "place_id": "ChIJCXGDhkxvcVMRyLJ9EJpqAJ4",
+    "city": "Calgary",
     "is_bar": false,
-    "found_via": "drink specials Sardis Chilliwack BC",
-    "found_at": "2026-11-12"
+    "found_via": "drink specials Kensington Calgary AB",
+    "found_at": "2026-11-13"
+  },
+  "ChIJvWWq-wpvcVMRgJoC8d7yCmo": {
+    "id": "matador-pizza-hillhurst",
+    "name": "Matador Pizza Hillhurst",
+    "website": "https://matadorpizza.com/hillhurst/",
+    "formatted_address": "1986 Kensington Rd NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0528286,
+        "lng": -114.10521949999999
+      }
+    },
+    "formatted_phone_number": "(403) 283-0387",
+    "places": {
+      "place_id": "ChIJvWWq-wpvcVMRgJoC8d7yCmo",
+      "rating": 4.9,
+      "user_ratings_total": 73,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Matador Pizza Hillhurst",
+      "synced_at": "2026-11-13"
+    },
+    "place_id": "ChIJvWWq-wpvcVMRgJoC8d7yCmo",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "drink specials Kensington Calgary AB",
+    "found_at": "2026-11-13"
+  },
+  "ChIJ2ZUOukNxcVMRSRpoqTeX0O0": {
+    "id": "cold-beer-pizza",
+    "name": "Cold Beer & Pizza",
+    "website": "http://coldbeerpizza.com/",
+    "formatted_address": "1019 17 Ave SW #102, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0376823,
+        "lng": -114.0854219
+      }
+    },
+    "formatted_phone_number": "(825) 540-1434",
+    "places": {
+      "place_id": "ChIJ2ZUOukNxcVMRSRpoqTeX0O0",
+      "rating": 4.6,
+      "user_ratings_total": 399,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Cold Beer & Pizza",
+      "synced_at": "2026-11-13"
+    },
+    "place_id": "ChIJ2ZUOukNxcVMRSRpoqTeX0O0",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "drink specials 17th Avenue SW Calgary AB",
+    "found_at": "2026-11-13"
   }
 }

@@ -25,6 +25,99 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "cold-beer-pizza",
+    "name": "Cold Beer & Pizza",
+    "formatted_address": "1019 17 Ave SW #102, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0376823,
+        "lng": -114.0854219
+      }
+    },
+    "formatted_phone_number": "(825) 540-1434",
+    "website": "http://coldbeerpizza.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://coldbeerpizza.com/calgary-17th-ave-cold-beer-and-pizza-happy-hours-specials",
+      "deals": [
+        {
+          "name": "House Beers",
+          "price": "$5.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Tap Line",
+          "price": "$6.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Highballs",
+          "price": "$5.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Wine",
+          "price": "$6.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Appetizers",
+          "price": "1/2 off",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/384278_website_v1/shared_image.jpg",
+      "credit_name": "Cold Beer & Pizza",
+      "credit_url": "http://coldbeerpizza.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-13"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "tipsy-pig-kitchen-bar",
     "name": "Tipsy Pig Kitchen + Bar",
     "formatted_address": "2060 Symons Valley Pkwy NW #3018, Calgary, AB",
@@ -23842,7 +23935,7 @@
       "credit_url": "http://neverlandtea.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-11-08"
+    "last_synced_at": "2026-11-13"
   },
   {
     "place_id": null,
