@@ -59016,53 +59016,107 @@
     "website": "https://loambistro.ca/",
     "happy_hour": {
       "days": [
-        1,
-        2,
-        4,
-        5
+        5,
+        6,
+        0
       ],
-      "start": "09:00",
-      "end": "11:00",
-      "extra_windows": [],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "09:00",
+          "end": "10:00",
+          "label": "Morning Happy Hour"
+        }
+      ],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://loambistro.ca/happy-hour",
+      "source_url": "https://www.loambistro.ca/menu",
       "deals": [
         {
-          "name": "Breakfast Sando",
-          "price": "$11",
+          "name": "Chili Garlic Prawns",
+          "price": "$17",
           "category": "food",
-          "description": "Brioche sandwich with bacon, ham and a sunny-side egg"
+          "description": "Three head-on tiger prawns marinated in chili, garlic and lemon, seared and torched, red pepper & cashew sauce"
         },
         {
-          "name": "Creamy Mushroom Scramble",
+          "name": "Peach & Arugula Salad",
           "price": "$12",
           "category": "food",
-          "description": "Creamy mushrooms and soft scrambled eggs on toasted sourdough (vegetarian)"
+          "description": "Arugula, peaches, candied pecans, Parmesan, lemon-honey vinaigrette"
         },
         {
-          "name": "Ham Benny",
-          "price": "$14",
+          "name": "Banana Leaf Fish",
+          "price": "$19",
           "category": "food",
-          "description": "Brioche with smoked ham, poached eggs and house hollandaise"
+          "description": "Spice-marinated ling cod steamed in banana leaf on greens, coconut curry sauce; add coconut lime rice +$4"
         },
         {
-          "name": "Smoked Salmon Croissant Benny",
-          "price": "$15",
+          "name": "Hot Honey 'Nduja Carrots",
+          "price": "$13",
           "category": "food",
-          "description": "Butter croissant with smoked salmon, poached egg and house hollandaise"
+          "description": "Carrots braised in orange juice, glazed with 'nduja and honey, on garlic Greek yogurt"
         },
         {
-          "name": "Petite Lobster Benny",
-          "price": "$18",
+          "name": "Whipped Brie",
+          "price": "$16",
           "category": "food",
-          "description": "Butter-poached lobster on brioche with egg, house hollandaise and greens"
+          "description": "Brie whipped with mascarpone and cream, mango chutney, pistachio crumb, fried rosemary, focaccia"
         },
         {
-          "name": "Signature Drinks",
-          "price": "$2 off",
+          "name": "Beef Tartare",
+          "price": "$16",
+          "category": "food",
+          "description": "Beef tartare on toasted shokupan, truffle aioli, Parmesan (2 pieces)"
+        },
+        {
+          "name": "Negroni",
+          "price": "$16",
           "category": "drink",
-          "description": "All signature drinks"
+          "description": "Cocktail"
+        },
+        {
+          "name": "Espresso White Russian",
+          "price": "$15",
+          "category": "drink",
+          "description": "Cocktail"
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "$14",
+          "category": "drink",
+          "description": "Cocktail"
+        },
+        {
+          "name": "Yuzu Gin Fizz",
+          "price": "$14",
+          "category": "drink",
+          "description": "Gin, yuzu, lemon"
+        },
+        {
+          "name": "Matcha Gin Soda",
+          "price": "$14",
+          "category": "drink",
+          "description": "Cocktail"
+        },
+        {
+          "name": "Thai Milk Tea Vodka",
+          "price": "$13",
+          "category": "drink",
+          "description": "Cocktail"
+        },
+        {
+          "name": "Loam Lava",
+          "price": "$12",
+          "category": "drink",
+          "description": "Vodka, orange juice, Earl Grey blue matcha"
         }
       ]
     },
@@ -59072,7 +59126,7 @@
       "credit_url": "https://loambistro.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-14"
   },
   {
     "place_id": null,
