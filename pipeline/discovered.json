@@ -28234,30 +28234,13 @@
     "website": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace",
     "happy_hour": {
       "days": [
-        1,
-        2,
-        3,
         4,
-        5
+        5,
+        6
       ],
-      "start": "15:00",
-      "end": "17:00",
-      "extra_windows": [
-        {
-          "days": [
-            0,
-            1,
-            2,
-            3,
-            4,
-            5,
-            6
-          ],
-          "start": "21:00",
-          "end": "23:00",
-          "label": "Golden Hour"
-        }
-      ],
+      "start": "21:00",
+      "end": "23:00",
+      "extra_windows": [],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace",
@@ -28269,7 +28252,7 @@
       "credit_url": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver/dining/reflections-terrace",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-15"
   },
   {
     "place_id": null,
@@ -34188,7 +34171,7 @@
           "name": "17oz Lager",
           "price": "$5",
           "category": "drink",
-          "description": "17oz lager"
+          "description": "17oz lager for $5"
         },
         {
           "name": "Pitchers",
@@ -34206,12 +34189,12 @@
           "name": "Aperol Spritz",
           "price": "$6",
           "category": "drink",
-          "description": "Aperol Spritz"
+          "description": "Aperol Spritz for $6"
         }
       ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-11-07"
+    "last_synced_at": "2026-11-15"
   },
   {
     "place_id": null,

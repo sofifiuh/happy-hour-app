@@ -34,5 +34,113 @@
     "is_bar": false,
     "found_via": "requeue hours_only",
     "found_at": "2026-11-07"
+  },
+  "ChIJn-s9FNJxcVMRUMnniNJ_LJY": {
+    "id": "boogie-s-burgers-marda-loop",
+    "name": "Boogie’s Burgers Marda Loop",
+    "website": "http://boogiesburgers.com/",
+    "formatted_address": "2129 33 Ave SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0237738,
+        "lng": -114.11126589999999
+      }
+    },
+    "formatted_phone_number": "(403) 454-2902",
+    "places": {
+      "place_id": "ChIJn-s9FNJxcVMRUMnniNJ_LJY",
+      "rating": 4.4,
+      "user_ratings_total": 1731,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Boogie’s Burgers Marda Loop",
+      "synced_at": "2026-11-15"
+    },
+    "place_id": "ChIJn-s9FNJxcVMRUMnniNJ_LJY",
+    "city": "Calgary",
+    "is_bar": false,
+    "found_via": "drink specials Marda Loop Calgary AB",
+    "found_at": "2026-11-15"
+  },
+  "ChIJu6-a3lZwcVMRsaQZjVvUv0w": {
+    "id": "o-sullivan-s-restaurant-bar",
+    "name": "O'Sullivan's Restaurant & Bar",
+    "website": "http://www.osullivans.ca/",
+    "formatted_address": "5809 Macleod Trl SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.001596899999996,
+        "lng": -114.0723563
+      }
+    },
+    "formatted_phone_number": "(403) 253-5886",
+    "places": {
+      "place_id": "ChIJu6-a3lZwcVMRsaQZjVvUv0w",
+      "rating": 4.3,
+      "user_ratings_total": 1232,
+      "price_level": 1,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "O'Sullivan's Restaurant & Bar",
+      "synced_at": "2026-11-15"
+    },
+    "place_id": "ChIJu6-a3lZwcVMRsaQZjVvUv0w",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "drink specials Marda Loop Calgary AB",
+    "found_at": "2026-11-15"
+  },
+  "ChIJzzqm7Od6cVMRjVnphIpZW8k": {
+    "id": "big-al-s-bar-grill",
+    "name": "Big Al's Bar & Grill",
+    "website": "http://www.bigalsbargrill.ca/slider/banner1/",
+    "formatted_address": "1915 31 St SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.036941999999996,
+        "lng": -113.99053699999999
+      }
+    },
+    "formatted_phone_number": "(403) 272-3477",
+    "places": {
+      "place_id": "ChIJzzqm7Od6cVMRjVnphIpZW8k",
+      "rating": 4.3,
+      "user_ratings_total": 1360,
+      "price_level": 2,
+      "business_status": "OPERATIONAL",
+      "amenities": {
+        "outdoor_seating": null,
+        "serves_cocktails": null,
+        "serves_beer": null,
+        "serves_wine": null,
+        "live_music": null,
+        "good_for_groups": null
+      },
+      "matched_name": "Big Al's Bar & Grill",
+      "synced_at": "2026-11-15"
+    },
+    "place_id": "ChIJzzqm7Od6cVMRjVnphIpZW8k",
+    "city": "Calgary",
+    "is_bar": true,
+    "found_via": "drink specials Calgary AB",
+    "found_at": "2026-11-15"
   }
 }
