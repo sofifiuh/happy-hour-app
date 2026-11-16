@@ -18663,7 +18663,7 @@
     "id": "no-1-beef-noodle",
     "name": "No. 1 Beef Noodle",
     "verdict": "hours_only",
-    "checked_at": "2026-11-15"
+    "checked_at": "2026-11-16"
   },
   "ChIJdWULgytyhlQR9EUQyHopKL0": {
     "id": "davie-dosa-company",
@@ -29133,12 +29133,18 @@
     "id": "o-sullivan-s-restaurant-bar",
     "name": "O'Sullivan's Restaurant & Bar",
     "verdict": "published",
-    "checked_at": "2026-11-15"
+    "checked_at": "2026-11-16"
   },
   "ChIJn-s9FNJxcVMRUMnniNJ_LJY": {
     "id": "boogie-s-burgers-marda-loop",
     "name": "Boogie’s Burgers Marda Loop",
     "verdict": "no_happy_hour",
     "checked_at": "2026-11-15"
+  },
+  "ChIJG2FcV9NucVMRM-2nxH-jJ5Y": {
+    "id": "silver-point-pub-eatery",
+    "name": "Silver Point Pub & Eatery",
+    "verdict": "no_happy_hour",
+    "checked_at": "2026-11-16"
   }
 }

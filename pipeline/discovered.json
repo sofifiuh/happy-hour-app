@@ -68914,57 +68914,55 @@
         1,
         2,
         3,
-        4,
-        5,
-        6
+        4
       ],
-      "start": "17:00",
-      "end": "18:00",
+      "start": "21:00",
+      "end": "23:30",
       "verified": false,
       "verified_source": null,
       "source_url": "https://guu-izakaya.com/Davie_QR",
       "deals": [
         {
-          "name": "Sapporo",
-          "price": "$6",
+          "name": "Sapporo Draft",
+          "price": "$6 pint / $18 pitcher",
           "category": "drink",
-          "description": "16oz pint; $18 for 60oz pitcher"
+          "description": "16oz pint or 60oz pitcher"
         },
         {
           "name": "Draft Seasonal Beer",
-          "price": "$7.5",
+          "price": "$7.5 pint / $21 pitcher",
           "category": "drink",
-          "description": "16oz pint; $21 for 60oz pitcher. Ask your server for the seasonal selection"
+          "description": "16oz pint or 60oz pitcher; ask your server"
         },
         {
           "name": "House White Wine",
-          "price": "$6",
+          "price": "$6 / 5oz, $16.5 / 16oz",
           "category": "drink",
-          "description": "5oz glass; $16.5 for 16oz"
+          "description": "House white wine"
         },
         {
           "name": "House Red Wine",
-          "price": "$6",
+          "price": "$6 / 5oz, $16.5 / 16oz",
           "category": "drink",
-          "description": "5oz glass; $16.5 for 16oz"
+          "description": "House red wine"
         },
         {
           "name": "Sparkling Red Sangria",
-          "price": "$8",
+          "price": "$8 glass / $30 pitcher",
           "category": "drink",
-          "description": "200ml glass; $30 for 800ml pitcher"
+          "description": "200ml glass or 800ml pitcher"
         },
         {
           "name": "Sparkling White Sangria",
-          "price": "$8",
+          "price": "$8 glass / $30 pitcher",
           "category": "drink",
-          "description": "200ml glass; $30 for 800ml pitcher"
+          "description": "200ml glass or 800ml pitcher"
         },
         {
-          "name": "Van Go Funk sake (Fukushima)",
-          "price": "$22",
+          "name": "Kita no Shizuku Sake",
+          "price": "$22 / 9oz, $39 / 16oz",
           "category": "drink",
-          "description": "9oz; $39 for 16oz"
+          "description": "Sake from Fukushima"
         },
         {
           "name": "Happy Tequila Shot",
@@ -68976,7 +68974,7 @@
           "name": "3 Kinds Assorted Sashimi",
           "price": "$28",
           "category": "food",
-          "description": "Chef's choice of three sashimi"
+          "description": "Chef's choice"
         },
         {
           "name": "3 Kinds Assorted Oden",
@@ -68984,9 +68982,28 @@
           "category": "food",
           "description": "Your pick (no more than two of each item) or chef's pick"
         }
+      ],
+      "extra_windows": [
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "01:00",
+          "label": "Fri-Sat happy hour until close"
+        },
+        {
+          "days": [
+            0
+          ],
+          "start": "17:00",
+          "end": "22:30",
+          "label": "Sunday all-day happy hour"
+        }
       ]
     },
-    "last_synced_at": "2026-08-30",
+    "last_synced_at": "2026-11-16",
     "cover_image": {
       "url": "https://guu-izakaya.com/wp-content/uploads/2017/01/cropped-Kobachi_0084.jpg",
       "credit_name": "Guu Davie",

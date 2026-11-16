@@ -40,3 +40,4 @@ One row per refresh run (written by `pipeline/refresh.js`).
 | 2026-11-13 | 665 → 666 | 1 | 0 | Cold Beer & Pizza |
 | 2026-11-14 | 666 → 666 | 0 | 0 | — |
 | 2026-11-15 | 666 → 666 | 0 | 0 | — |
+| 2026-11-16 | 666 → 666 | 0 | 0 | — |
