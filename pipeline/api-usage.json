@@ -76,6 +76,10 @@
     "2026-11-16": {
       "text_enterprise": 1,
       "nearby_enterprise": 0
+    },
+    "2026-11-17": {
+      "text_enterprise": 0,
+      "nearby_enterprise": 0
     }
   }
 }

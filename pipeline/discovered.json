@@ -1922,7 +1922,7 @@
         6
       ],
       "start": "14:00",
-      "end": "16:00",
+      "end": "17:00",
       "extra_windows": [
         {
           "days": [
@@ -1930,13 +1930,20 @@
             1,
             2,
             3,
-            4,
+            4
+          ],
+          "start": "20:00",
+          "end": "21:00",
+          "label": "Late night (until close)"
+        },
+        {
+          "days": [
             5,
             6
           ],
           "start": "20:00",
-          "end": "22:00",
-          "label": "Happy Hour Evening"
+          "end": "21:30",
+          "label": "Late night (until close)"
         }
       ],
       "verified": false,
@@ -1944,22 +1951,106 @@
       "source_url": "https://luavkb.com/menu.html",
       "deals": [
         {
-          "name": "Beer",
-          "price": "$6",
-          "category": "drink",
-          "description": "All draft & canned selection"
+          "name": "Smoked Olives",
+          "price": "$9",
+          "category": "food",
+          "description": "Smoked green olives, lime & lemon zest. Vegan, gluten-free."
+        },
+        {
+          "name": "Grilled Brisket Sliders",
+          "price": "$6 ea, 2 for $11",
+          "category": "food",
+          "description": "Grilled brisket with truffle aioli, lettuce, pickled daikon & carrot."
+        },
+        {
+          "name": "Lemongrass Chicken Sliders",
+          "price": "$6 ea, 2 for $11",
+          "category": "food",
+          "description": "Grilled lemongrass chicken with jalapeño aioli, lettuce, pickled daikon & carrot."
+        },
+        {
+          "name": "Char-Grilled Baby Octopus",
+          "price": "$16",
+          "category": "food",
+          "description": "Baby octopus marinated in chili lemongrass, jalapeño & lime sauce. Gluten-free."
+        },
+        {
+          "name": "Crispy Calamari",
+          "price": "$16",
+          "category": "food",
+          "description": "Coconut milk-marinated calamari, red onion, serrano, chili flakes, herbs, jalapeño aioli."
+        },
+        {
+          "name": "Garlic Chicken Wings",
+          "price": "$12",
+          "category": "food",
+          "description": "6 pc crispy fried wings with truffle aioli and pickled daikon & carrot."
+        },
+        {
+          "name": "Pork Spring Rolls",
+          "price": "$9.5",
+          "category": "food",
+          "description": "2 pc crispy rolls with pickled daikon, carrot & nước chấm."
+        },
+        {
+          "name": "Sweet & Sour Fried Tofu",
+          "price": "$13",
+          "category": "food",
+          "description": "Crispy fried tofu in sweet & sour glaze, topped with black & white sesame seeds. Vegan."
         },
         {
           "name": "Wine",
-          "price": "$8-12/5oz, $15-18/8oz, $48/bottle",
+          "price": "$8-10 (5 oz), $13-15 (8 oz), $48 btl",
           "category": "drink",
-          "description": "All wines (Sauvignon Blanc, Pinot Noir, Cabernet Merlot, Rosé)"
+          "description": "Oyster Bay Sauvignon Blanc, Stoneboat Pinot Noir, Dirty Laundry Hush Rosé, Mionetto Prosecco Brut."
+        },
+        {
+          "name": "Draft Beer",
+          "price": "$6.5",
+          "category": "drink",
+          "description": "16 oz Blood Orange IPA or Kölsch house lager."
+        },
+        {
+          "name": "Hanoi Beer",
+          "price": "$6.5",
+          "category": "drink",
+          "description": "330 mL can."
+        },
+        {
+          "name": "Asahi / Guinness",
+          "price": "$7.5",
+          "category": "drink",
+          "description": "Asahi Super Dry 330 mL bottle; Guinness 440 mL can."
         },
         {
           "name": "Spirits",
-          "price": "$7-9",
+          "price": "$8-9",
           "category": "drink",
-          "description": "1 oz pours: Rye, Scotch, Tequila, Whiskey"
+          "description": "1 oz neat or on the rocks: Sons of Vancouver Rye $9; Johnnie Walker Black, Espolòn Blanco, Jameson $8."
+        },
+        {
+          "name": "Sparkling Soda",
+          "price": "$6.5",
+          "category": "drink",
+          "description": "Lychee Yakult, Yuzu, Mojito, Ginger or Spiced Hibiscus. Add vodka or gin (1 oz) for $3.5."
+        },
+        {
+          "name": "Vietnamese Coffee",
+          "price": "$5.5",
+          "category": "drink",
+          "description": "Espresso with sweetened condensed milk."
+        },
+        {
+          "name": "S.Pellegrino",
+          "price": "$6.5",
+          "category": "drink",
+          "description": "Sparkling water."
+        },
+        {
+          "name": "Soft Drinks",
+          "price": "$3.5",
+          "category": "drink",
+          "description": "Coke, Coke Zero or Ginger Ale."
         }
       ]
     },
@@ -1969,7 +2060,7 @@
       "credit_url": "https://luavkb.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-11-09"
+    "last_synced_at": "2026-11-17"
   },
   {
     "place_id": null,
@@ -24964,21 +25055,105 @@
       "days": [
         0,
         1,
+        2,
         3,
         4,
         5,
         6
       ],
-      "start": "15:00",
-      "end": "17:00",
-      "extra_windows": [],
+      "start": "14:00",
+      "end": "17:30",
+      "extra_windows": [
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "21:30",
+          "end": "23:00",
+          "label": "Late night"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://www.g3kitchen.com/",
-      "deals": []
+      "deals": [
+        {
+          "name": "Samosa",
+          "price": "$8",
+          "category": "food",
+          "description": "Traditional Indian pastry stuffed with savoury potato filling, served with tamarind and mint chutneys."
+        },
+        {
+          "name": "Yam Fries",
+          "price": "$7",
+          "category": "food",
+          "description": "Crispy golden yam fries served with house chipotle aioli."
+        },
+        {
+          "name": "Chicken Wings",
+          "price": "$13",
+          "category": "food",
+          "description": "Choice of salt & pepper, peri-peri, or Frank's hot sauce."
+        },
+        {
+          "name": "Cheese and Chutney Toastie",
+          "price": "$6",
+          "category": "food",
+          "description": "House-made pineapple chutney and melted Swiss cheese on grilled sourdough."
+        },
+        {
+          "name": "House Marinated Olives",
+          "price": "$7",
+          "category": "food",
+          "description": "Olives steeped in an aromatic blend of herbs, garlic, and citrus peel."
+        },
+        {
+          "name": "Apple and Fennel Salad",
+          "price": "$11",
+          "category": "food",
+          "description": "Crisp shaved apple and fennel tossed in a bright house dressing."
+        },
+        {
+          "name": "Poppadums with Chutney",
+          "price": "$4",
+          "category": "food",
+          "description": "3 pieces served with chutney."
+        },
+        {
+          "name": "Hummus with Pita",
+          "price": "$12",
+          "category": "food",
+          "description": "Hummus served with pita."
+        },
+        {
+          "name": "Select Beer Cans",
+          "price": "$6",
+          "category": "drink",
+          "description": "355 ml cans; ask server for today's featured local and imported cans."
+        },
+        {
+          "name": "House Red or White Wine",
+          "price": "$6 (5oz) / $8 (8oz)",
+          "category": "drink",
+          "description": "Carefully selected red or white house pour."
+        },
+        {
+          "name": "Yaletown Highballs",
+          "price": "$6 (1oz) / $9 (2oz)",
+          "category": "drink",
+          "description": "Choice of house vodka, rum, gin, or whiskey with mixer."
+        },
+        {
+          "name": "Feature Cocktails",
+          "price": "$10",
+          "category": "drink",
+          "description": "Martini, Negroni, or Mango Sunset."
+        }
+      ]
     },
     "cover_image": null,
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-17"
   },
   {
     "place_id": null,
@@ -45414,16 +45589,8 @@
         6
       ],
       "start": "15:00",
-      "end": "18:00",
+      "end": "17:30",
       "extra_windows": [
-        {
-          "days": [
-            3
-          ],
-          "start": "18:00",
-          "end": null,
-          "label": "All Night (drinks only)"
-        },
         {
           "days": [
             5,
@@ -45432,12 +45599,20 @@
           ],
           "start": "21:00",
           "end": null,
-          "label": "Late Night"
+          "label": "Late night (drinks)"
+        },
+        {
+          "days": [
+            3
+          ],
+          "start": "15:00",
+          "end": null,
+          "label": "Wednesday all night (drinks only)"
         }
       ],
       "verified": false,
       "verified_source": null,
-      "source_url": "https://divavancouver.com/our-menus",
+      "source_url": "https://www.divavancouver.com/our-menus",
       "deals": [
         {
           "name": "Truffle Fries",
@@ -45446,32 +45621,32 @@
           "description": ""
         },
         {
-          "name": "Wild Mushroom Arancini",
+          "name": "Roasted Carrot & Hummus",
+          "price": "$18",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Deviled Eggs with Bacon",
           "price": "$12",
           "category": "food",
           "description": ""
         },
         {
-          "name": "Pork Belly Tacos",
+          "name": "Brussels Sprouts",
           "price": "$14",
           "category": "food",
           "description": ""
         },
         {
           "name": "Smoked Chorizo Meatballs",
-          "price": "$14",
+          "price": "$15",
           "category": "food",
           "description": "2 pieces"
         },
         {
-          "name": "Roasted Cauliflower & Hummus",
-          "price": "$15",
-          "category": "food",
-          "description": ""
-        },
-        {
-          "name": "Scallop Crudo",
-          "price": "$21",
+          "name": "Grilled Chicken Skewers",
+          "price": "$19",
           "category": "food",
           "description": ""
         },
@@ -45482,28 +45657,22 @@
           "description": ""
         },
         {
-          "name": "Miso Black Cod",
-          "price": "$21",
+          "name": "Miso Glazed Sablefish",
+          "price": "$22",
           "category": "food",
           "description": ""
         },
         {
-          "name": "Grilled Chicken Skewer",
-          "price": "$18",
+          "name": "Kalbi Short Rib",
+          "price": "$24",
           "category": "food",
           "description": ""
         },
         {
-          "name": "Margherita Pizza",
-          "price": "$19",
+          "name": "Dungeness Crab Dip",
+          "price": "$26",
           "category": "food",
-          "description": ""
-        },
-        {
-          "name": "Deviled Eggs with Bacon",
-          "price": "$12",
-          "category": "food",
-          "description": ""
+          "description": "Limited quantities"
         },
         {
           "name": "Margarita",
@@ -45524,8 +45693,8 @@
           "description": ""
         },
         {
-          "name": "La Marca Prosecco",
-          "price": "$14",
+          "name": "Aperol Spritz",
+          "price": "$12",
           "category": "drink",
           "description": ""
         },
@@ -45533,28 +45702,40 @@
           "name": "Grapefruit Spritz",
           "price": "$8",
           "category": "drink",
+          "description": "Spirit-free"
+        },
+        {
+          "name": "La Marca Prosecco",
+          "price": "$14",
+          "category": "drink",
           "description": ""
         },
         {
           "name": "House Wine 5oz",
-          "price": "$7",
+          "price": "$8",
           "category": "drink",
-          "description": "Red, White, or Rosé"
+          "description": "House red, white, rosé"
         },
         {
           "name": "House Wine 8oz",
-          "price": "$11",
+          "price": "$12",
           "category": "drink",
-          "description": "Red, White, or Rosé"
+          "description": "House red, white, rosé"
         },
         {
           "name": "Draft Beer 16oz",
-          "price": "$6",
+          "price": "$7",
           "category": "drink",
-          "description": "Lager or IPA (Hazy IPA +$1)"
+          "description": "Lager, IPA; Hazy IPA +$1"
         },
         {
           "name": "Stella Artois 16oz",
+          "price": "$9",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Draft Apple Cider",
           "price": "$8",
           "category": "drink",
           "description": ""
@@ -45563,31 +45744,25 @@
           "name": "Well Spirit & Soda 1oz",
           "price": "$6",
           "category": "drink",
-          "description": ""
+          "description": "Tequila +$1"
         },
         {
           "name": "Well Spirit & Soda 2oz",
           "price": "$10",
           "category": "drink",
-          "description": ""
-        },
-        {
-          "name": "Aperol Spritz",
-          "price": "$12",
-          "category": "drink",
-          "description": ""
+          "description": "Tequila +$2"
         },
         {
           "name": "Bartender's Feature Cocktail",
           "price": "$18",
           "category": "drink",
-          "description": "Weekly special"
+          "description": "Ask about this week's special"
         },
         {
           "name": "Wine of the Moment",
           "price": "$18",
           "category": "drink",
-          "description": "Feature wine"
+          "description": "Ask about today's feature wine by the glass or bottle"
         }
       ]
     },
@@ -45597,7 +45772,7 @@
       "credit_url": "https://divavancouver.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-17"
   },
   {
     "place_id": null,
