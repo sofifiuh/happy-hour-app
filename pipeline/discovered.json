@@ -42690,7 +42690,7 @@
       "credit_url": "http://www.elwoods.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-11-06"
+    "last_synced_at": "2026-11-18"
   },
   {
     "place_id": null,
@@ -48160,7 +48160,50 @@
       ],
       "start": "16:00",
       "end": "20:00",
-      "extra_windows": [],
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "15:00",
+          "end": "17:30",
+          "label": "Match Eatery happy hour"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Match late happy hour (food only)"
+        },
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "15:30",
+          "end": "17:30",
+          "label": "ATLAS happy hour"
+        }
+      ],
       "verified": false,
       "verified_source": null,
       "source_url": "https://cascadescasino.ca/casino-happy-hour/",
@@ -48191,7 +48234,7 @@
       "credit_url": "https://cascadescasino.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-10-27"
+    "last_synced_at": "2026-11-18"
   },
   {
     "place_id": null,
@@ -76580,7 +76623,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-11-11",
+    "last_synced_at": "2026-11-18",
     "cover_image": null
   },
   {
