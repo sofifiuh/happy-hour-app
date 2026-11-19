@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-19-03d0e5b9",
+ "data_version": "2026-11-19-5e4c38b6",
  "venues": [
   {
    "id": "ancora",
@@ -8702,7 +8702,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/video_poster_new.jpg",
+     "credit_name": "O'Sullivan's Restaurant & Bar",
+     "credit_url": "https://osullivans.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/drinks.jpg",
+     "credit_name": "O'Sullivan's Restaurant & Bar",
+     "credit_url": "https://osullivans.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/parties.jpg",
+     "credit_name": "O'Sullivan's Restaurant & Bar",
+     "credit_url": "https://osullivans.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8790,9 +8809,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/shared_image.jpg",
+    "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/catering.jpg",
     "credit_name": "O'Sullivan's Restaurant & Bar",
-    "credit_url": "http://www.osullivans.ca/",
+    "credit_url": "https://osullivans.ca/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-19",

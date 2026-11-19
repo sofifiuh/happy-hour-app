@@ -18627,6 +18627,72 @@
       ]
     }
   },
+  "o-sullivan-s-restaurant-bar": {
+    "checked_at": "2026-11-19",
+    "pages": [
+      "https://osullivans.ca/",
+      "https://osullivans.ca/calgary-o-sullivan-s-restaurant-and-bar-locations",
+      "https://osullivans.ca/calgary-o-sullivan-s-restaurant-and-bar-events",
+      "https://osullivans.ca/calgary-o-sullivan-s-restaurant-and-bar-about"
+    ],
+    "cover_problem": "review: logo overlay on food item",
+    "cover": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/catering.jpg",
+      "page": "https://osullivans.ca/",
+      "w": 1300,
+      "h": 1292
+    },
+    "gallery": [
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/video_poster_new.jpg",
+        "page": "https://osullivans.ca/",
+        "w": 1920,
+        "h": 1080
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/drinks.jpg",
+        "page": "https://osullivans.ca/",
+        "w": 1300,
+        "h": 1298
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/parties.jpg",
+        "page": "https://osullivans.ca/",
+        "w": 1300,
+        "h": 1265
+      }
+    ],
+    "review": {
+      "at": "2026-11-19",
+      "key": "fdaa66dc5e14",
+      "rejected": [
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/shared_image.jpg",
+          "why": "logo overlay on food item"
+        },
+        {
+          "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/bf/2baf730f1545f3839f5de54b88b5d5/:original",
+          "why": "exterior near-duplicate of photo3"
+        },
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/about_2_page.jpg",
+          "why": "sign/neon logo only"
+        },
+        {
+          "url": "https://static.spotapps.co/assets/admin/hybrid_approach/holiday_party/website_casual.jpg",
+          "why": "promotional poster with text"
+        },
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/custom.jpg",
+          "why": "person's hand prominent with logo badge"
+        },
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/menu_new.jpg",
+          "why": "close-up of person's hand with food"
+        }
+      ]
+    }
+  },
   "ocean-beach-hotel": {
     "checked_at": "2026-10-24",
     "pages": [
