@@ -31103,5 +31103,22 @@
     },
     "matched_name": "Cold Beer & Pizza",
     "synced_at": "2026-11-13"
+  },
+  "o-sullivan-s-restaurant-bar": {
+    "place_id": "ChIJu6-a3lZwcVMRsaQZjVvUv0w",
+    "rating": 4.3,
+    "user_ratings_total": 1232,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "O'Sullivan's Restaurant & Bar",
+    "synced_at": "2026-11-15"
   }
 }

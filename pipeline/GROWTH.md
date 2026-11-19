@@ -43,3 +43,4 @@ One row per refresh run (written by `pipeline/refresh.js`).
 | 2026-11-16 | 666 → 666 | 0 | 0 | — |
 | 2026-11-17 | 666 → 666 | 0 | 0 | — |
 | 2026-11-18 | 666 → 666 | 0 | 0 | — |
+| 2026-11-19 | 666 → 667 | 1 | 0 | O'Sullivan's Restaurant & Bar |

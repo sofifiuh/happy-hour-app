@@ -25,6 +25,113 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "o-sullivan-s-restaurant-bar",
+    "name": "O'Sullivan's Restaurant & Bar",
+    "formatted_address": "5809 Macleod Trl SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.001596899999996,
+        "lng": -114.0723563
+      }
+    },
+    "formatted_phone_number": "(403) 253-5886",
+    "website": "http://www.osullivans.ca/",
+    "happy_hour": {
+      "days": [
+        0
+      ],
+      "start": "12:00",
+      "end": "23:59",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "http://www.osullivans.ca/specials",
+      "deals": [
+        {
+          "name": "Caesar",
+          "price": "$5.99",
+          "category": "drink",
+          "description": "1 oz"
+        },
+        {
+          "name": "Screwdriver",
+          "price": "$5.99",
+          "category": "drink",
+          "description": "1 oz"
+        },
+        {
+          "name": "Caesar",
+          "price": "$8.00",
+          "category": "drink",
+          "description": "Double (2 oz)"
+        },
+        {
+          "name": "Screwdriver",
+          "price": "$8.00",
+          "category": "drink",
+          "description": "Double (2 oz)"
+        },
+        {
+          "name": "Spinach & Artichoke Dip",
+          "price": "50% off",
+          "category": "food",
+          "description": "With naan bread"
+        },
+        {
+          "name": "Chicken Wings",
+          "price": "50% off",
+          "category": "food",
+          "description": "1 lb"
+        },
+        {
+          "name": "Deep Fried Pickles",
+          "price": "50% off",
+          "category": "food",
+          "description": "Served with ranch dip"
+        },
+        {
+          "name": "Chicken Fingers",
+          "price": "50% off",
+          "category": "food",
+          "description": "With dipping sauce"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/409563_website_v1/shared_image.jpg",
+      "credit_name": "O'Sullivan's Restaurant & Bar",
+      "credit_url": "http://www.osullivans.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-19"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "cold-beer-pizza",
     "name": "Cold Beer & Pizza",
     "formatted_address": "1019 17 Ave SW #102, Calgary, AB",
@@ -76623,7 +76730,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-11-18",
+    "last_synced_at": "2026-11-19",
     "cover_image": null
   },
   {
