@@ -1,0 +1,296 @@
+{
+  "year": 2026,
+  "asOf": "2026-11-19",
+  "venues": 567,
+  "regions": [
+    {
+      "key": "lower-mainland",
+      "name": "the Lower Mainland",
+      "short": "the Lower Mainland",
+      "awards": [
+        {
+          "key": "best",
+          "title": "Best happy hour",
+          "winners": [
+            {
+              "id": "the-village-taphouse",
+              "name": "The Village Taphouse",
+              "where": "West Vancouver",
+              "why": "Hangout Score 8.8 out of 10"
+            }
+          ]
+        },
+        {
+          "key": "pint",
+          "title": "Cheapest pint",
+          "price": 4,
+          "winners": [
+            {
+              "id": "the-aroma-bistro-bar-abbotsford",
+              "name": "The Aroma Bistro & Bar Abbotsford",
+              "where": "Abbotsford",
+              "why": "$4 House Lager"
+            },
+            {
+              "id": "the-highwayman-pub",
+              "name": "The Highwayman Pub",
+              "where": "Abbotsford",
+              "why": "$4 Angry Otter Lager"
+            },
+            {
+              "id": "harry-s-fish-chips",
+              "name": "Harry's Fish & Chips",
+              "where": "Delta",
+              "why": "$4 Craft Beer 16oz"
+            }
+          ]
+        },
+        {
+          "key": "wine",
+          "title": "Cheapest glass of wine",
+          "price": 4.5,
+          "winners": [
+            {
+              "id": "14th-avenue-pub",
+              "name": "14th Avenue Pub",
+              "where": "Mission",
+              "why": "$4.50 House Wine"
+            },
+            {
+              "id": "green-timbers-pub",
+              "name": "Green Timbers Pub",
+              "where": "Surrey",
+              "why": "$4.50 House Wine"
+            }
+          ]
+        },
+        {
+          "key": "oyster",
+          "title": "Cheapest oysters",
+          "price": 1.5,
+          "winners": [
+            {
+              "id": "arc-restaurant",
+              "name": "Arc Restaurant",
+              "where": "Downtown Vancouver",
+              "why": "$1.50 Oysters"
+            },
+            {
+              "id": "acqua-restaurant-patio-and-bar",
+              "name": "Acqua Restaurant, Patio and Bar",
+              "where": "Burnaby",
+              "why": "$1.50 Fresh Oysters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "calgary",
+      "name": "Calgary",
+      "short": "Calgary",
+      "awards": [
+        {
+          "key": "best",
+          "title": "Best happy hour",
+          "winners": [
+            {
+              "id": "403-local",
+              "name": "403 Local",
+              "where": "Calgary",
+              "why": "Hangout Score 8.0 out of 10"
+            }
+          ]
+        },
+        {
+          "key": "pint",
+          "title": "Cheapest pint",
+          "price": 4.99,
+          "winners": [
+            {
+              "id": "cowboys-taphouse",
+              "name": "Cowboys Taphouse",
+              "where": "Calgary",
+              "why": "$4.99 Cowboys draft 16oz"
+            }
+          ]
+        },
+        {
+          "key": "wine",
+          "title": "Cheapest glass of wine",
+          "price": 5,
+          "winners": [
+            {
+              "id": "hidden-spot-entertainment-and-arcade-bar",
+              "name": "Hidden Spot Entertainment and Arcade Bar",
+              "where": "Calgary",
+              "why": "$5 House Wine"
+            },
+            {
+              "id": "pig-duke-neighbourhood-pub",
+              "name": "Pig & Duke Neighbourhood Pub",
+              "where": "Calgary",
+              "why": "$5 House Wine"
+            },
+            {
+              "id": "one-night-stan-s-bar-room-divery",
+              "name": "One Night Stan's Bar Room & Divery",
+              "where": "Calgary",
+              "why": "$5 Wine"
+            },
+            {
+              "id": "the-derrick-gin-mill-kitchen",
+              "name": "The Derrick Gin Mill & Kitchen",
+              "where": "Calgary",
+              "why": "$5 Bubbles"
+            }
+          ]
+        },
+        {
+          "key": "highball",
+          "title": "Cheapest highball",
+          "price": 4,
+          "winners": [
+            {
+              "id": "nixx-neighbourhood-pub",
+              "name": "Nixx Neighbourhood Pub",
+              "where": "Calgary",
+              "why": "$4 Hi-balls"
+            },
+            {
+              "id": "courtyard",
+              "name": "Courtyard",
+              "where": "Calgary",
+              "why": "$4 Hi-Balls"
+            }
+          ]
+        },
+        {
+          "key": "oyster",
+          "title": "Cheapest oysters",
+          "price": 1,
+          "winners": [
+            {
+              "id": "koto-sushi-izakaya",
+              "name": "Koto Sushi & Izakaya",
+              "where": "Calgary",
+              "why": "$1 Oyster"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "slug": "vancouver",
+      "name": "Vancouver",
+      "kind": "city",
+      "winner": {
+        "id": "bimini-s-since-1975",
+        "name": "Bimini's Since 1975",
+        "where": "Kitsilano",
+        "why": "Hangout Score 8.6 out of 10"
+      }
+    },
+    {
+      "slug": "downtown",
+      "name": "Downtown Vancouver",
+      "kind": "area",
+      "winner": {
+        "id": "two-parrots-bar-grill",
+        "name": "Two Parrots Bar & Grill",
+        "where": "Downtown Vancouver",
+        "why": "Hangout Score 8.0 out of 10"
+      }
+    },
+    {
+      "slug": "north-vancouver",
+      "name": "North Vancouver",
+      "kind": "city",
+      "winner": {
+        "id": "the-lobby-restaurant-lounge",
+        "name": "The Lobby Restaurant & Lounge",
+        "where": "North Vancouver",
+        "why": "Hangout Score 8.0 out of 10"
+      }
+    },
+    {
+      "slug": "west-end",
+      "name": "West End",
+      "kind": "area",
+      "winner": {
+        "id": "coco-rico-cafe",
+        "name": "Coco Rico Cafe",
+        "where": "West End",
+        "why": "Hangout Score 7.9 out of 10"
+      }
+    },
+    {
+      "slug": "yaletown",
+      "name": "Yaletown",
+      "kind": "area",
+      "winner": {
+        "id": "hapa-izakaya-yaletown",
+        "name": "Hapa Izakaya Yaletown",
+        "where": "Yaletown",
+        "why": "Hangout Score 8.5 out of 10"
+      }
+    },
+    {
+      "slug": "kitsilano",
+      "name": "Kitsilano",
+      "kind": "area",
+      "winner": {
+        "id": "bimini-s-since-1975",
+        "name": "Bimini's Since 1975",
+        "where": "Kitsilano",
+        "why": "Hangout Score 8.6 out of 10"
+      }
+    },
+    {
+      "slug": "mount-pleasant",
+      "name": "Mount Pleasant",
+      "kind": "area",
+      "winner": {
+        "id": "steamworks-mount-pleasant",
+        "name": "Steamworks Mount Pleasant",
+        "where": "Mount Pleasant",
+        "why": "Hangout Score 7.7 out of 10"
+      }
+    },
+    {
+      "slug": "richmond",
+      "name": "Richmond",
+      "kind": "city",
+      "winner": {
+        "id": "the-canadian-brewhouse-grill-richmond",
+        "name": "The Canadian Brewhouse & Grill (Richmond)",
+        "where": "Richmond",
+        "why": "Hangout Score 8.0 out of 10"
+      }
+    },
+    {
+      "slug": "surrey",
+      "name": "Surrey",
+      "kind": "city",
+      "winner": {
+        "id": "brewster-s-sports-pub",
+        "name": "Brewster's Sports Pub",
+        "where": "Surrey",
+        "why": "Hangout Score 8.6 out of 10"
+      }
+    },
+    {
+      "slug": "commercial-drive",
+      "name": "Commercial Drive",
+      "kind": "area",
+      "winner": {
+        "id": "mum-s-the-word",
+        "name": "Mum's The Word",
+        "where": "Commercial Drive",
+        "why": "Hangout Score 7.0 out of 10"
+      }
+    }
+  ]
+}

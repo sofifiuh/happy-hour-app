@@ -31,11 +31,21 @@ export function badgeText(v, ranked) {
   return { kind: "basic", top: "Find our happy hour on", main: "A Little Hang", alt: "Find our happy hour on A Little Hang" };
 }
 
+// A five-point star centred on the 40x40 tile (award badges).
+const STAR = (() => {
+  const pts = [];
+  for (let i = 0; i < 10; i++) {
+    const r = i % 2 ? 6.2 : 14, a = -Math.PI / 2 + (i * Math.PI) / 5;
+    pts.push(`${(28 + r * Math.cos(a)).toFixed(2)} ${(28.6 + r * Math.sin(a)).toFixed(2)}`);
+  }
+  return `M${pts.join("L")}Z`;
+})();
+
 const xml = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
 
 // faces: { display, sans } opentype fonts; logo: LOGO_PATH (viewBox 0 0 130 124).
-export function badgeSvg({ top, main, alt }, { faces, logo, theme = "dark" }) {
-  const t = THEMES[theme];
+export function badgeSvg({ top, main, alt }, { faces, logo, theme = "dark", award = false }) {
+  const t = award ? { ...THEMES[theme], tile: "#ecfe54", top: theme === "light" ? "#465200" : "#ecfe54" } : THEMES[theme];
   const TOP_SIZE = 11.5, X = 58, PAD = 16;
   // Long list names ("#3 best in South Granville & Fairview") step down a size.
   const MAIN_SIZE = faces.display.getAdvanceWidth(main, 18) > 260 ? 16 : 18;
@@ -44,7 +54,9 @@ export function badgeSvg({ top, main, alt }, { faces, logo, theme = "dark" }) {
   const mainPath = faces.display.getPath(main, X, 42, MAIN_SIZE).toPathData(2);
   // The logo, 26 wide, centred on a 40×40 orange tile.
   const s = 26 / 130;
-  const tile = `<rect x="8" y="8" width="40" height="40" rx="10" fill="${t.tile}"/><path transform="translate(${(28 - 65 * s).toFixed(2)} ${(28 - 62 * s).toFixed(2)}) scale(${s.toFixed(4)})" d="${logo}" fill="${t.mark}"/>`;
+  const tile = award
+    ? `<rect x="8" y="8" width="40" height="40" rx="10" fill="${t.tile}"/><path d="${STAR}" fill="#1b1b1b"/>`
+    : `<rect x="8" y="8" width="40" height="40" rx="10" fill="${t.tile}"/><path transform="translate(${(28 - 65 * s).toFixed(2)} ${(28 - 62 * s).toFixed(2)}) scale(${s.toFixed(4)})" d="${logo}" fill="${t.mark}"/>`;
   const frame = t.stroke
     ? `<rect x=".5" y=".5" width="${w - 1}" height="${BADGE_H - 1}" rx="11.5" fill="${t.bg}" stroke="${t.stroke}"/>`
     : `<rect width="${w}" height="${BADGE_H}" rx="12" fill="${t.bg}"/>`;

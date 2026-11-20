@@ -30,6 +30,8 @@ import { AREAS, BEST_FLOOR, BEST_FRESH_DAYS, bestPath, buildHubs, hubPath, isAlb
 import { cheapestDrink, hoursFacts, isNonAlc, WEIGHTS } from "./hang-score.mjs";
 import { buildIndex, KINDS, MIN_SAMPLE } from "./price-index.mjs";
 import { BADGE_H, badgeSvg, badgeText, TOP_SCORE } from "./badges.mjs";
+import { embedPage } from "./embed.mjs";
+import { awardBadge, awardsPage, awardsPath, loadAwards, winsOf } from "./awards.mjs";
 
 const BASE = "https://alittlehang.com";
 const SITE = "A Little Hang";
@@ -59,6 +61,8 @@ const CITIES = citiesPhrase(hubIndex, 4);
 // Fields the app doesn't ship (Google place id, price level) from the source.
 const source = new Map(JSON.parse(readFileSync(resolve(web, "../venues.json"), "utf8")).venues.map((v) => [v.id, v]));
 const logo = readFileSync(resolve(web, "src/components/logo-path.ts"), "utf8").match(/LOGO_PATH =\s*"([^"]+)"/)[1];
+// This year's awards, frozen when they were picked (null before the first).
+const AWARDS = loadAwards(web);
 
 const esc = (s) => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const summary = scheduleSummary;
@@ -604,6 +608,69 @@ a:focus-visible{outline:2px solid var(--orange)}
 .tiles span:last-child{color:var(--dim);font-size:14px}
 @media (max-width:30rem){.topnav>a:not(.cta){padding:0 8px}.cta{padding:0 12px}}
 @media (prefers-reduced-motion:reduce){.feature{transition:none}.feature:hover{transform:none}}
+.wb{display:grid;gap:14px;margin:24px 0 0}
+.wb-controls{display:grid;gap:14px;padding:18px;border-radius:24px;background:var(--ink-2)}
+.seg{display:flex;flex-wrap:wrap;gap:6px;border:0;margin:0;padding:0;min-width:0}
+.seg legend,.wb-field>label{display:block;padding:0;margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.wb-field>label small{text-transform:none;letter-spacing:0;font-weight:400}
+.seg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.seg label{position:relative;min-width:0}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:flex;align-items:center;justify-content:center;height:100%;min-height:44px;padding:6px 10px;border-radius:22px;background:var(--ink-3);font-size:14px;font-weight:600;line-height:1.2;text-align:center;cursor:pointer;transition:background-color .2s,color .2s}
+.seg input:checked+span{background:var(--cream);color:var(--ink)}
+.seg input:focus-visible+span{outline:2px solid var(--orange);outline-offset:2px}
+.seg.small span{min-height:44px;padding:0 12px}
+.wb select,.wb input[type=search],.wb input[type=text]{width:100%;min-height:46px;padding:0 14px;border:1px solid var(--line);border-radius:14px;background:var(--ink-3);color:var(--cream);font:inherit;font-size:16px}
+.wb select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--dim) 50%),linear-gradient(135deg,var(--dim) 50%,transparent 50%);background-position:calc(100% - 20px) 50%,calc(100% - 15px) 50%;background-size:5px 5px;background-repeat:no-repeat;padding-right:36px}
+.wb select:focus,.wb input:focus{outline:2px solid var(--orange);outline-offset:1px}
+.wb-row{display:flex;gap:8px}
+.wb-btn{flex:none;min-height:46px;padding:0 18px;border:0;border-radius:14px;background:var(--cream);color:var(--ink);font:600 15px "Funnel Sans",sans-serif;cursor:pointer}
+.wb-link{margin:8px 0 0;min-height:36px;padding:4px 0;border:0;background:none;color:var(--orange);font:600 14px "Funnel Sans",sans-serif;cursor:pointer}
+.wb-found{list-style:none;margin:6px 0 0;padding:0;display:grid;gap:4px}
+.wb-found button{width:100%;min-height:40px;padding:8px 12px;border:0;border-radius:12px;background:var(--ink-3);color:var(--cream);text-align:left;font:14px "Funnel Sans",sans-serif;cursor:pointer}
+.wb-found button:hover{background:var(--line)}
+.wb-note{font-size:14px;color:var(--dim)}
+.wb-pair{display:grid;grid-template-columns:minmax(0,1fr) 9rem;gap:14px;align-items:end}
+@media (max-width:30rem){.wb-pair{grid-template-columns:1fr}}
+.wb[data-mode=place] .only-near,.wb[data-mode=place] .only-venue,.wb[data-mode=near] .only-place,.wb[data-mode=near] .only-venue,.wb[data-mode=venue] .only-place,.wb[data-mode=venue] .only-near,.wb[data-mode=venue] .not-venue{display:none}
+.wb[data-mode=venue] .wb-pair{grid-template-columns:1fr}
+.wb-stage{padding:16px;border-radius:24px;background:var(--ink-3)}
+.wb-stage:has([data-surface=light]){background:#ece6d8}
+.wb-cap{margin:0 0 10px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.wb-stage:has([data-surface=light]) .wb-cap{color:#625c53}
+.wb-preview{max-width:440px;margin:0 auto;min-height:120px}
+.wb-outhead{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.wb-outhead h2{margin:0}
+.wb-out{padding:4px 0 0}
+.wb-out .cta{border:0;cursor:pointer;font-family:inherit}
+.wb-out .cta:disabled{opacity:.5;cursor:default}
+.wb-out .cite{margin-top:10px}
+.tiles.uses{grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.tiles.uses div{display:flex;flex-direction:column;gap:4px;height:100%;padding:16px;border-radius:20px;background:var(--ink-2)}
+.tiles.uses span{color:var(--dim);font-size:14px}
+.widgetlink{display:flex;align-items:center;gap:12px;margin:28px 0 0;padding:14px 16px;border-radius:20px;border:1px dashed var(--line);text-decoration:none;font-weight:600}
+.widgetlink:hover{background:var(--ink-2)}
+.widgetlink .tag{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--orange);color:#1b1b1b;font:800 15px "Funnel Display",sans-serif}
+.widgetlink small{display:block;font-weight:400;color:var(--dim);font-size:13px}
+.awards{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:10px}
+.aw{padding:16px 18px;border-radius:20px;background:var(--ink-2)}
+.aw.win1{grid-column:1/-1;background:#ff4900;color:#1b1b1b;padding:20px 22px}
+.awk{margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--lime)}
+.awk span{display:inline-block;margin-left:6px;padding:2px 8px;border-radius:999px;background:var(--ink-3);color:var(--dim);letter-spacing:.04em;white-space:nowrap}
+.aw.win1 .awk{color:#1b1b1b}
+.awn{margin:8px 0 0;font:700 20px/1.15 "Funnel Display",system-ui,sans-serif;letter-spacing:-.01em}
+.awk+.awn{margin-top:0}
+.aw.win1 .awn{font-size:clamp(26px,5vw,34px);font-weight:800}
+.awn a{text-decoration:none}
+.awn a:hover{text-decoration:underline}
+.aww{margin:2px 0 0;font-size:14px;color:var(--dim)}
+.aww b{color:var(--pink);font-weight:600}
+.aw.win1 .aww,.aw.win1 .aww b{color:#1b1b1b}
+.awplaces b{color:var(--cream)!important;text-align:right}
+.awplaces b a{text-decoration:none}
+.awplaces small{display:block;color:var(--pink);font-weight:600;font-size:12px}
+.awchips{margin:14px 0 0}
+.awchips a{background:var(--ink-3)}
 .badgeprev{display:flex;padding:24px;border-radius:20px;margin:12px 0 0}
 .badgeprev.dark{background:#2f2d2b}
 .badgeprev.light{background:#f5f1e7}
@@ -667,7 +734,7 @@ ${script ? `    <script type="module" src="${script}"></script>\n` : ""}  </body
 function footerHtml() {
   const cities = places.filter((p) => p.kind === "city");
   return `<footer>
-<ul class="chips">${cities.map((c) => `<li><a href="${hubPath(c.slug)}">${esc(c.name)}</a></li>`).join("")}${bestBySlug.has("metro") ? `<li><a href="${bestPath("metro")}">Best happy hours, ranked</a></li>` : ""}<li><a href="/research/">Research and data</a></li><li><a href="/happy-hour-index/">Happy hour prices</a></li><li><a href="/spots/">All spots A–Z</a></li><li><a href="/about/">About</a></li></ul>
+<ul class="chips">${cities.map((c) => `<li><a href="${hubPath(c.slug)}">${esc(c.name)}</a></li>`).join("")}${bestBySlug.has("metro") ? `<li><a href="${bestPath("metro")}">Best happy hours, ranked</a></li>` : ""}<li><a href="/research/">Research and data</a></li><li><a href="/happy-hour-index/">Happy hour prices</a></li>${AWARDS ? `<li><a href="${awardsPath(AWARDS.year)}">Awards ${AWARDS.year}</a></li>` : ""}<li><a href="/embed/">Widget for your site</a></li><li><a href="/spots/">All spots A–Z</a></li><li><a href="/about/">About</a></li></ul>
 <p>Times and deals come from each venue's own menu and are re-checked every night. Something wrong? Tell us from the venue's page.</p>
 </footer>`;
 }
@@ -828,7 +895,8 @@ ${related
   .map((r) => `<h2>${esc(r.title)}</h2>\n<ul class="chips">${r.links.map((l) => `<li><a href="${l.path}">${esc(l.label)}${l.count ? ` <small>${l.count}</small>` : ""}</a></li>`).join("")}</ul>`)
   .join("\n")}
 <h2>Questions about happy hours ${esc(where.in)}</h2>
-<div class="faq">${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("")}</div>`;
+<div class="faq">${faq.map((f) => `<h3>${esc(f.q)}</h3><p>${esc(f.a)}</p>`).join("")}</div>
+${topic ? "" : `<a class="widgetlink" href="/embed/?place=${encodeURIComponent(slug)}"><span class="tag">&lt;/&gt;</span><span>Put ${esc(where.in.replace(/^in /, ""))}'s live happy hours on your website<small>A free widget for hotels, blogs and neighbourhood groups. Updates itself.</small></span></a>`}`;
   write(`happy-hour/${slug}/index.html`, hubDoc({ path, title, description, jsonld, body, image }));
   sitemapDates.set(path, updated);
   return path;
@@ -1422,6 +1490,8 @@ ${asOf ? `<p class="meta">Data as of <time datetime="${asOf}">${esc(fmtDate(asOf
 <span class="fgo">Read the index →</span>
 </a>
 
+${AWARDS ? `<a class="bestlink" href="${awardsPath(AWARDS.year)}"><span class="tag">★</span><span>The A Little Hang Awards ${AWARDS.year}<small>The best and cheapest happy hours of the year, picked by the numbers</small></span></a>` : ""}
+
 <h2>Use our research</h2>
 <div class="use">
 <ol class="steps">
@@ -1454,8 +1524,10 @@ ${asOf ? `<p class="meta">Data as of <time datetime="${asOf}">${esc(fmtDate(asOf
 <h2 id="guides">Day, deal and vibe guides</h2>
 <ul class="chips">${guides.map((t) => chip(hubPath(t.slug), t.label, t.venues.length)).join("")}</ul>
 
+<h2>Live happy hours on your site</h2>
+<p class="lede">Hotels, neighbourhood groups and local blogs can show which happy hours are on right now near them, with a free widget that updates itself. <a href="/embed/">Make one in a minute</a>.</p>
 <h2>For venues</h2>
-<p class="lede">Every venue page has a free badge that shows your rank or Hangout Score and updates by itself. Find your spot in the <a href="/spots/">A–Z list</a> and tap "Get a badge for your site".</p>
+<p class="lede">Every venue page has a free badge that shows your rank or Hangout Score and updates by itself. Find your spot in the <a href="/spots/">A–Z list</a> and tap "Get a badge for your site". Or <a href="/embed/">embed your live happy hour</a>, with an "on now" status, times and deals.</p>
 <h2>How we collect it</h2>
 <ul class="method">
 <li>Times, deals and prices come from each venue's own website, menu PDF or menu photo. Each venue's page links to the exact source.</li>
@@ -1471,6 +1543,26 @@ await researchPage();
 // badge/<id>.svg (dark), badge/<id>-light.svg, and badge/<id>/ with a
 // preview and the embed code (scripts/badges.mjs). The pages are for venue
 // owners following "Get your badge", so they stay out of search.
+// A winner's award badges, first on its badge page.
+function awardHtml(v) {
+  const wins = AWARDS ? winsOf(AWARDS, v.id) : [];
+  if (!wins.length) return "";
+  const y = AWARDS.year;
+  const code = (w, light) => `<a href="${BASE}${awardsPath(y)}#${w.anchor}"><img src="${BASE}${awardBadge(y, v.id, w.n, light)}" alt="${esc(`${v.name}: ${w.line}, A Little Hang Awards ${y}`)}" height="${BADGE_H}" loading="lazy"></a>`;
+  return `<h2>Your ${wins.length > 1 ? `${wins.length} awards` : "award"}</h2>
+<p class="lede">Congratulations! ${esc(v.name)} won ${wins.map((w) => esc(w.line)).join(" and ")} in the <a href="${awardsPath(y)}">A Little Hang Awards ${y}</a>. Show it off on your website:</p>
+${wins
+  .map(
+    (w) => `<div class="badgeprev dark"><img src="${awardBadge(y, v.id, w.n)}" alt="${esc(w.line)}" height="${BADGE_H}"></div>
+<pre class="cite"><code>${esc(code(w))}</code></pre>
+<p class="meta">For light backgrounds:</p>
+<div class="badgeprev light"><img src="${awardBadge(y, v.id, w.n, true)}" alt="${esc(w.line)}" height="${BADGE_H}"></div>
+<pre class="cite"><code>${esc(code(w, true))}</code></pre>`,
+  )
+  .join("\n")}
+<h2>Your everyday badge</h2>
+`;
+}
 function badgePage(v, says) {
   const path = `/badge/${v.id}/`;
   // The alt stays true whatever the badge says next month (rank and score change nightly; the SVG's own title follows them).
@@ -1478,7 +1570,7 @@ function badgePage(v, says) {
   const body = `<nav class="crumbs" aria-label="Breadcrumb"><a href="/">${SITE}</a> › <a href="/spots/${v.id}">${esc(v.name)}</a> › <span>Badge</span></nav>
 <h1>Badge for ${esc(v.name)}</h1>
 <p class="lede">Add this badge to your website so guests can check your happy hour times and deals on ${SITE}. It's free, and it updates on its own: it shows your rank if you're on a best-of list, or your Hangout Score if it's ${TOP_SCORE} or higher.</p>
-<div class="badgeprev dark"><img src="/badge/${v.id}.svg" alt="${esc(says.alt)}" height="${BADGE_H}"></div>
+${awardHtml(v)}<div class="badgeprev dark"><img src="/badge/${v.id}.svg" alt="${esc(says.alt)}" height="${BADGE_H}"></div>
 <p class="meta">For light backgrounds:</p>
 <div class="badgeprev light"><img src="/badge/${v.id}-light.svg" alt="${esc(says.alt)}" height="${BADGE_H}"></div>
 <h2>Embed code</h2>
@@ -1486,6 +1578,7 @@ function badgePage(v, says) {
 <pre class="cite"><code>${esc(embed("dark"))}</code></pre>
 <p class="meta">Light version:</p>
 <pre class="cite"><code>${esc(embed("light"))}</code></pre>
+<a class="widgetlink" href="/embed/?venue=${encodeURIComponent(v.id)}"><span class="tag">&lt;/&gt;</span><span>Or show your live happy hour<small>A widget with an "on now" status, your times and your deals. Free, and it updates itself.</small></span></a>
 <h2>Good to know</h2>
 <ul class="method">
 <li>Your listing, score and rank never depend on adding the badge, and no venue can pay for them. <a href="/about/#hang-score">How the Hangout Score works</a>.</li>
@@ -1501,6 +1594,11 @@ for (const v of venues) {
 }
 
 // ---------- venue pages ----------
+// ---------- live widget for other sites (scripts/embed.mjs) ----------
+await embedPage({ venues, places, hubDoc, write, SITE_GRAPH, WEBSITE_ID, breadcrumb, faqPage, esc, font, logo, BASE, SITE, TOP_SCORE, newest, sitemapDates, here, web });
+// ---------- the yearly awards (scripts/awards.mjs; frozen in awards/<year>.json) ----------
+if (AWARDS) awardsPage({ hubDoc, write, SITE_GRAPH, WEBSITE_ID, breadcrumb, esc, BASE, SITE, sitemapDates, faces, logo, badgeSvg, venueIds: new Set(venues.map((v) => v.id)) }, AWARDS);
+
 mkdirSync(resolve(dist, "og"), { recursive: true });
 let n = 0;
 for (const v of venues) {
