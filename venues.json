@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-20-907c4899",
+ "data_version": "2026-11-20-390f7557",
  "venues": [
   {
    "id": "ancora",
@@ -8702,7 +8702,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://prairiedog.bbq.beer/wp-content/uploads/2026/01/IMG_0564-scaled-jpg.avif",
+     "credit_name": "Prairie Dog Brewing",
+     "credit_url": "https://prairiedog.bbq.beer/brewpub-calgary-chinook/event-bookings/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://prairiedog.bbq.beer/wp-content/uploads/2026/03/Dining-Room-Corner-View-2048x1152.avif",
+     "credit_name": "Prairie Dog Brewing",
+     "credit_url": "https://prairiedog.bbq.beer/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://prairiedog.bbq.beer/wp-content/uploads/2025/06/IMG_2292a.jpg",
+     "credit_name": "Prairie Dog Brewing",
+     "credit_url": "https://prairiedog.bbq.beer/events/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://prairiedog.bbq.beer/wp-content/uploads/2024/06/SIGNATURE-FULLER-PIT-2-1-1024x683.jpg",
+     "credit_name": "Prairie Dog Brewing",
+     "credit_url": "https://prairiedog.bbq.beer/brewpub-calgary-chinook/event-bookings/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8822,7 +8847,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/476321_website_v1/social.jpg",
+     "credit_name": "Kilt & Caber Ale House",
+     "credit_url": "https://kiltandcaber.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/ec/bee9b02e2848c588dfc820670e6677/:original",
+     "credit_name": "Kilt & Caber Ale House",
+     "credit_url": "https://kiltandcaber.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/8e/9f27bad78843039aaf96354a20a7ce/:original",
+     "credit_name": "Kilt & Caber Ale House",
+     "credit_url": "https://kiltandcaber.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://static.spotapps.co/website_images/ab_websites/476321_website_v1/about_main.jpg",
+     "credit_name": "Kilt & Caber Ale House",
+     "credit_url": "https://kiltandcaber.com/about",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -8943,9 +8993,9 @@
     ]
    },
    "cover_image": {
-    "url": "https://static.spotapps.co/website_images/ab_websites/476321_website_v1/social.jpg",
+    "url": "https://static.spotapps.co/website_images/ab_websites/476321_website_v1/events_bg.jpg",
     "credit_name": "Kilt & Caber Ale House",
-    "credit_url": "http://www.kiltandcaber.com/",
+    "credit_url": "https://kiltandcaber.com/about",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-20",
@@ -8979,7 +9029,38 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://matadorpizza.com/wp-content/uploads/2026/01/20230603_161214-1-scaled-1.jpg",
+     "credit_name": "Matador Pizza",
+     "credit_url": "https://matadorpizza.com/varsity/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://matadorpizza.com/wp-content/uploads/2026/06/IMG_9772-scaled-uai-1920x1280.jpeg",
+     "credit_name": "Matador Pizza",
+     "credit_url": "https://matadorpizza.com/varsity/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://matadorpizza.com/wp-content/uploads/2026/07/IMG_6226-scaled-e1783634645403-uai-1580x1053.jpg",
+     "credit_name": "Matador Pizza",
+     "credit_url": "https://matadorpizza.com/varsity/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://matadorpizza.com/wp-content/uploads/2026/01/matador_pizza_about_pizza.jpg",
+     "credit_name": "Matador Pizza",
+     "credit_url": "https://matadorpizza.com/varsity/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://matadorpizza.com/wp-content/uploads/2026/04/image2.jpeg",
+     "credit_name": "Matador Pizza",
+     "credit_url": "https://matadorpizza.com/varsity/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9077,10 +9158,10 @@
     ]
    },
    "cover_image": {
-    "url": "photos/matador-pizza.jpg",
-    "credit_name": "Lisa Torry",
-    "credit_url": "https://maps.google.com/maps/contrib/101384693457054264612",
-    "source": "google_places"
+    "url": "https://matadorpizza.com/wp-content/uploads/2026/05/0N2Hdq6g.jpeg",
+    "credit_name": "Matador Pizza",
+    "credit_url": "https://matadorpizza.com/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-20",
    "primary_type": null,
@@ -9113,7 +9194,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://jclubgrillandbar.ca/_next/image/?url=%2Fimages%2Fseafood-slide4.webp&w=3840&q=75&dpl=dpl_91MzMjdkCRmS6m2UQtm86dCdZMpC",
+     "credit_name": "J Club Grill & Bar",
+     "credit_url": "https://jclubgrillandbar.ca/our-menu/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://jclubgrillandbar.ca/_next/image/?url=%2Fimages%2Fhero-slide-2.webp&w=3840&q=75&dpl=dpl_91MzMjdkCRmS6m2UQtm86dCdZMpC",
+     "credit_name": "J Club Grill & Bar",
+     "credit_url": "https://jclubgrillandbar.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://jclubgrillandbar.ca/images/sweet-potato-fries.webp",
+     "credit_name": "J Club Grill & Bar",
+     "credit_url": "https://jclubgrillandbar.ca/our-menu/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9306,7 +9406,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://jclubgrillandbar.ca/images/12-1.webp",
+    "url": "https://jclubgrillandbar.ca/_next/image/?url=%2Fimages%2Fdsc05743.webp&w=3840&q=75&dpl=dpl_91MzMjdkCRmS6m2UQtm86dCdZMpC",
     "credit_name": "J Club Grill & Bar",
     "credit_url": "https://jclubgrillandbar.ca/",
     "source": "official_website"
@@ -9342,7 +9442,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/6aa07311ee71981818838b25/e802da3f-d61d-4bb8-b1f8-2ccf40506856/May-Monza-8432.jpg",
+     "credit_name": "Enoteca Monza Pizzeria Moderna",
+     "credit_url": "https://www.monzaitaliankitchen.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/6aa07311ee71981818838b25/8089c046-78bf-46f7-8307-b91f986613c4/May-Monza-6214.jpg",
+     "credit_name": "Enoteca Monza Pizzeria Moderna",
+     "credit_url": "https://www.monzaitaliankitchen.com/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/6aa07311ee71981818838b25/487e4b70-2a54-46bc-9867-233de8b2af2a/IMG_5490.JPG",
+     "credit_name": "Enoteca Monza Pizzeria Moderna",
+     "credit_url": "https://www.monzaitaliankitchen.com/about",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9477,9 +9596,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/6aa07311ee71981818838b25/t/6aa078c6e3e0023882c3b03f/1788901574160/MONZA_FULL_LOGO_WHITE.png?format=1500w",
+    "url": "http://static1.squarespace.com/static/6aa07311ee71981818838b25/t/6ae256abc3687c4b5194ee39/1793218219363/IMG_5814.JPG?format=1500w",
     "credit_name": "Enoteca Monza Pizzeria Moderna",
-    "credit_url": "https://www.monzaitaliankitchen.com/",
+    "credit_url": "https://www.monzaitaliankitchen.com/about",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-20",
@@ -9646,12 +9765,7 @@
      }
     ]
    },
-   "cover_image": {
-    "url": "https://www.redlobster.ca/ecomm/images/togo-logo.png",
-    "credit_name": "Red Lobster",
-    "credit_url": "https://www.redlobster.ca/seafood-restaurants/locations/ab/calgary/100-6100-macleod-trail-sw",
-    "source": "official_website"
-   },
+   "cover_image": null,
    "last_synced_at": "2026-11-20",
    "primary_type": null,
    "reservable": null,
@@ -9683,7 +9797,14 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/5d02c963f41c850001672cca/1719807034203-O9OTBA8L05KMRL2O6GJV/MadeWithLove.png",
+     "credit_name": "Blue Star Diner",
+     "credit_url": "https://www.bluestardiner.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9788,9 +9909,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/5d02c963f41c850001672cca/t/5d07ee2262a30e0001609ebd/1560800804119/BlueStar_Logo_light.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/5d02c963f41c850001672cca/1591807097789-K3IGXDOLN03TMAL87RCR/image-asset.jpeg",
     "credit_name": "Blue Star Diner",
-    "credit_url": "http://bluestardiner.ca/",
+    "credit_url": "https://www.bluestardiner.ca/about-us",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-20",
@@ -9824,7 +9945,32 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/b3ff6257-8243-4359-bf58-6f3cb9227342/starbellyseptember-47.jpg",
+     "credit_name": "Starbelly Open Kitchen & Lounge",
+     "credit_url": "https://www.starbelly.ca/gallery",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/4a36b8ee-a19a-4f93-ac8c-3c7ded13a39d/starbellyseptember-56.jpg",
+     "credit_name": "Starbelly Open Kitchen & Lounge",
+     "credit_url": "https://www.starbelly.ca/gallery",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/ed02f7aa-b37e-416f-ad94-4245415ae8f9/SP+Edit-527.jpg",
+     "credit_name": "Starbelly Open Kitchen & Lounge",
+     "credit_url": "https://www.starbelly.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/023afe66-9cb2-426d-ac29-c538838e81f9/SP+Edit-1550.jpg",
+     "credit_name": "Starbelly Open Kitchen & Lounge",
+     "credit_url": "https://www.starbelly.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -9957,9 +10103,9 @@
     ]
    },
    "cover_image": {
-    "url": "http://static1.squarespace.com/static/61bb98925cd0da31e351f426/t/61cc9019c6008b0004aa6be9/1640796185553/Starbelly+W+Web.png?format=1500w",
+    "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/ec4512dd-42dc-40d9-a081-985967557f54/SP+Edit-758.jpg",
     "credit_name": "Starbelly Open Kitchen & Lounge",
-    "credit_url": "http://www.starbelly.ca/",
+    "credit_url": "https://www.starbelly.ca/about",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-20",
@@ -10244,7 +10390,26 @@
    "opening_hours": {
     "weekday_text": []
    },
-   "photos": [],
+   "photos": [
+    {
+     "url": "https://famoso.ca/wp-content/uploads/2026/06/Artboard-2.jpg",
+     "credit_name": "Famoso Italian Pizzeria - Westhills",
+     "credit_url": "https://famoso.ca/our-story/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://famoso.ca/wp-content/uploads/2026/07/HERO_1920x1280_2.png",
+     "credit_name": "Famoso Italian Pizzeria - Westhills",
+     "credit_url": "https://famoso.ca/",
+     "source": "official_website"
+    },
+    {
+     "url": "https://famoso.ca/wp-content/uploads/2026/07/HERO_1920x1280_3.png",
+     "credit_name": "Famoso Italian Pizzeria - Westhills",
+     "credit_url": "https://famoso.ca/",
+     "source": "official_website"
+    }
+   ],
    "amenities": {
     "outdoor_seating": null,
     "gluten_free_options": null,
@@ -10304,9 +10469,9 @@
     "deals": []
    },
    "cover_image": {
-    "url": "https://famoso.ca/wp-content/uploads/2026/06/Section-1_1-1.png",
+    "url": "https://famoso.ca/wp-content/uploads/2026/06/Artboard-3.jpg",
     "credit_name": "Famoso Italian Pizzeria - Westhills",
-    "credit_url": "https://famoso.ca/",
+    "credit_url": "https://famoso.ca/our-story/",
     "source": "official_website"
    },
    "last_synced_at": "2026-11-20",
@@ -10383,10 +10548,10 @@
     "deals": []
    },
    "cover_image": {
-    "url": "photos/pho-time-authentic-vietnamese-cuisine.jpg",
+    "url": "https://photime.ca/wp-content/uploads/2020/06/45-2-2048x1427.jpg",
     "credit_name": "PHO TIME Authentic Vietnamese Cuisine",
-    "credit_url": "https://maps.google.com/maps/contrib/114746857164546122897",
-    "source": "google_places"
+    "credit_url": "https://photime.ca/",
+    "source": "official_website"
    },
    "last_synced_at": "2026-11-20",
    "primary_type": null,

@@ -3440,6 +3440,59 @@
       ]
     }
   },
+  "blue-star-diner": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "https://www.bluestardiner.ca/",
+      "https://www.bluestardiner.ca/about-us",
+      "https://www.bluestardiner.ca/our-suppliers"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5d02c963f41c850001672cca/1591807097789-K3IGXDOLN03TMAL87RCR/image-asset.jpeg",
+      "page": "https://www.bluestardiner.ca/about-us",
+      "w": 640,
+      "h": 426
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/5d02c963f41c850001672cca/1719807034203-O9OTBA8L05KMRL2O6GJV/MadeWithLove.png",
+        "page": "https://www.bluestardiner.ca/",
+        "w": 1621,
+        "h": 834
+      }
+    ],
+    "review": {
+      "at": "2026-11-20",
+      "key": "29ce7f379d36",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5d02c963f41c850001672cca/1782880522904-48489125AN3FJXM8V3UK/AllSpecials.jpg",
+          "why": "promotional graphic, mostly text"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5d02c963f41c850001672cca/1782880537678-24KP8SJ6VWGFY5BO4BWD/HappyHour.jpg",
+          "why": "promotional graphic, mostly text"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5d02c963f41c850001672cca/1782880564515-THZEHQAM7CTW5EP1KLG0/Wednesdays.jpg",
+          "why": "promotional special graphic with overlay text"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5d02c963f41c850001672cca/1719807034372-S4O706SVXJ3AGQEF14LQ/Thursdays.png",
+          "why": "promotional special graphic with overlay text"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5d02c963f41c850001672cca/1719807084340-ARDORRTW99J5RPSPGSPS/Tuesday.png",
+          "why": "promotional special graphic with overlay text"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/5d02c963f41c850001672cca/1719807042097-6QGSZ8RBUPDG3CATY8JS/Breakfast.png",
+          "why": "promotional special graphic with overlay text"
+        }
+      ]
+    }
+  },
   "bodega-on-main": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -8312,6 +8365,58 @@
       ]
     }
   },
+  "enoteca-monza-pizzeria-moderna": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "https://www.monzaitaliankitchen.com/",
+      "https://www.monzaitaliankitchen.com/about"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "http://static1.squarespace.com/static/6aa07311ee71981818838b25/t/6ae256abc3687c4b5194ee39/1793218219363/IMG_5814.JPG?format=1500w",
+      "page": "https://www.monzaitaliankitchen.com/about",
+      "w": 2500,
+      "h": 1667
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6aa07311ee71981818838b25/e802da3f-d61d-4bb8-b1f8-2ccf40506856/May-Monza-8432.jpg",
+        "page": "https://www.monzaitaliankitchen.com/",
+        "w": 2500,
+        "h": 1667
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6aa07311ee71981818838b25/8089c046-78bf-46f7-8307-b91f986613c4/May-Monza-6214.jpg",
+        "page": "https://www.monzaitaliankitchen.com/",
+        "w": 2436,
+        "h": 1624
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/6aa07311ee71981818838b25/487e4b70-2a54-46bc-9867-233de8b2af2a/IMG_5490.JPG",
+        "page": "https://www.monzaitaliankitchen.com/about",
+        "w": 2500,
+        "h": 1667
+      }
+    ],
+    "review": {
+      "at": "2026-11-20",
+      "key": "2406ed8e4d5b",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6aa07311ee71981818838b25/a94ea71c-d90f-40e9-b818-664d2d4c7e3b/Monza-August-3871.jpg",
+          "why": "people as the subject"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6aa07311ee71981818838b25/1791390281464-1LA8YG5IZV3XUN9P0NSK/Monza_Holiday+Bookings+2026_Web.png",
+          "why": "promotional flyer, mostly text"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/6aa07311ee71981818838b25/24ba5a24-7946-4246-8c9c-4d51a7a01964/PAT07188.jpg",
+          "why": "person as the subject holding drink"
+        }
+      ]
+    }
+  },
   "eternal-abundance-organic-market-eatery": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -8385,6 +8490,68 @@
         {
           "url": "https://eveloungeyyc.com/wp-content/uploads/2024/07/IMG_202407131510420-2048x1365.jpg",
           "why": "people as primary subject at bar"
+        }
+      ]
+    }
+  },
+  "famoso-italian-pizzeria-westhills": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "https://famoso.ca/",
+      "https://famoso.ca/happy-hour-food/",
+      "https://famoso.ca/locations/",
+      "https://famoso.ca/our-story/"
+    ],
+    "cover_problem": "shape",
+    "cover": {
+      "url": "https://famoso.ca/wp-content/uploads/2026/06/Artboard-3.jpg",
+      "page": "https://famoso.ca/our-story/",
+      "w": 1920,
+      "h": 1280
+    },
+    "gallery": [
+      {
+        "url": "https://famoso.ca/wp-content/uploads/2026/06/Artboard-2.jpg",
+        "page": "https://famoso.ca/our-story/",
+        "w": 1920,
+        "h": 1280
+      },
+      {
+        "url": "https://famoso.ca/wp-content/uploads/2026/07/HERO_1920x1280_2.png",
+        "page": "https://famoso.ca/",
+        "w": 1920,
+        "h": 1280
+      },
+      {
+        "url": "https://famoso.ca/wp-content/uploads/2026/07/HERO_1920x1280_3.png",
+        "page": "https://famoso.ca/",
+        "w": 1920,
+        "h": 1280
+      }
+    ],
+    "review": {
+      "at": "2026-11-20",
+      "key": "f2239d10d911",
+      "rejected": [
+        {
+          "url": "https://famoso.ca/wp-content/uploads/2026/05/Locations.png",
+          "why": "primarily logo and storefront signage"
+        },
+        {
+          "url": "https://famoso.ca/wp-content/uploads/2026/06/Section-3_1-2.png",
+          "why": "styled ingredient flat-lay, not plausibly from this venue"
+        },
+        {
+          "url": "https://famoso.ca/wp-content/uploads/2026/06/Artboard-1.jpg",
+          "why": "staff portrait wearing branded clothing"
+        },
+        {
+          "url": "https://famoso.ca/wp-content/uploads/2026/06/Famoso-Beginning.png",
+          "why": "black and white/historic photo of different venue"
+        },
+        {
+          "url": "https://famoso.ca/wp-content/uploads/2026/06/Growth.png",
+          "why": "exterior focused on signage, not venue atmosphere"
         }
       ]
     }
@@ -12346,6 +12513,71 @@
       ]
     }
   },
+  "j-club-grill-bar": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "https://jclubgrillandbar.ca/",
+      "https://jclubgrillandbar.ca/our-menu/",
+      "https://jclubgrillandbar.ca/about-us/"
+    ],
+    "cover_problem": "review: promotional image with overlay text",
+    "cover": {
+      "url": "https://jclubgrillandbar.ca/_next/image/?url=%2Fimages%2Fdsc05743.webp&w=3840&q=75&dpl=dpl_91MzMjdkCRmS6m2UQtm86dCdZMpC",
+      "page": "https://jclubgrillandbar.ca/",
+      "w": 2400,
+      "h": 1350
+    },
+    "gallery": [
+      {
+        "url": "https://jclubgrillandbar.ca/_next/image/?url=%2Fimages%2Fseafood-slide4.webp&w=3840&q=75&dpl=dpl_91MzMjdkCRmS6m2UQtm86dCdZMpC",
+        "page": "https://jclubgrillandbar.ca/our-menu/",
+        "w": 1920,
+        "h": 1280
+      },
+      {
+        "url": "https://jclubgrillandbar.ca/_next/image/?url=%2Fimages%2Fhero-slide-2.webp&w=3840&q=75&dpl=dpl_91MzMjdkCRmS6m2UQtm86dCdZMpC",
+        "page": "https://jclubgrillandbar.ca/",
+        "w": 1678,
+        "h": 937
+      },
+      {
+        "url": "https://jclubgrillandbar.ca/images/sweet-potato-fries.webp",
+        "page": "https://jclubgrillandbar.ca/our-menu/",
+        "w": 500,
+        "h": 500
+      }
+    ],
+    "review": {
+      "at": "2026-11-20",
+      "key": "ad39ffe5241a",
+      "rejected": [
+        {
+          "url": "https://jclubgrillandbar.ca/images/12-1.webp",
+          "why": "promotional image with overlay text"
+        },
+        {
+          "url": "https://jclubgrillandbar.ca/images/hours-bg.webp",
+          "why": "formal event setup, unclear if this venue"
+        },
+        {
+          "url": "https://jclubgrillandbar.ca/_next/image/?url=%2Fimages%2Fdsc05702.webp&w=3840&q=75&dpl=dpl_91MzMjdkCRmS6m2UQtm86dCdZMpC",
+          "why": "storefront sign and logo graphics"
+        },
+        {
+          "url": "https://jclubgrillandbar.ca/images/about-restaurant.webp",
+          "why": "near-duplicate of photo4, bar interior"
+        },
+        {
+          "url": "https://jclubgrillandbar.ca/images/12-1.webp",
+          "why": "duplicate of photo1 with overlay text"
+        },
+        {
+          "url": "https://jclubgrillandbar.ca/images/doorstep-3.webp",
+          "why": "promotional graphic with text and illustration"
+        }
+      ]
+    }
+  },
   "jack-lonsdale-s-public-house": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -13229,6 +13461,69 @@
         {
           "url": "https://static.wixstatic.com/media/84770f_d8577d21c28e4df4bb87efacef645019.jpg/v1/fill/w_900,h_990,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_d8577d21c28e4df4bb87efacef645019.jpg",
           "why": "extreme macro close-up of tap handles - doesn't convey venue atmosphere or appea"
+        }
+      ]
+    }
+  },
+  "kilt-caber-ale-house": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "https://kiltandcaber.com/",
+      "https://kiltandcaber.com/events",
+      "https://kiltandcaber.com/about"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/476321_website_v1/events_bg.jpg",
+      "page": "https://kiltandcaber.com/about",
+      "w": 1920,
+      "h": 1280
+    },
+    "gallery": [
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/476321_website_v1/social.jpg",
+        "page": "https://kiltandcaber.com/",
+        "w": 1920,
+        "h": 1280
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/ec/bee9b02e2848c588dfc820670e6677/:original",
+        "page": "https://kiltandcaber.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/8e/9f27bad78843039aaf96354a20a7ce/:original",
+        "page": "https://kiltandcaber.com/",
+        "w": 1800,
+        "h": 1200
+      },
+      {
+        "url": "https://static.spotapps.co/website_images/ab_websites/476321_website_v1/about_main.jpg",
+        "page": "https://kiltandcaber.com/about",
+        "w": 960,
+        "h": 640
+      }
+    ],
+    "review": {
+      "at": "2026-11-20",
+      "key": "73371310c98d",
+      "rejected": [
+        {
+          "url": "https://static.spotapps.co/website_images/ab_websites/476321_website_v1/video_poster.jpg",
+          "why": "near-duplicate of photo4, overly tight close-up"
+        },
+        {
+          "url": "https://static.spotapps.co/assets/admin/hybrid_approach/holiday_party/website_casual.jpg",
+          "why": "promotional flyer, mostly text"
+        },
+        {
+          "url": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/4a/c02ae7abc4416fb176c966f8aeade5/:original",
+          "why": "near-duplicate of photo2"
+        },
+        {
+          "url": "https://static.spotapps.co/spots/43/7b7efa2e4745fbbd82b43ada8368b0/w926",
+          "why": "New Years promo poster, mostly text"
         }
       ]
     }
@@ -16325,6 +16620,71 @@
         {
           "url": "https://imagedelivery.net/aPDHOWLzkdlEAMvg3YLQug/production-6zwk1exf2nluywlnzdzofm4bds29/large",
           "why": "duplicate of photo1"
+        }
+      ]
+    }
+  },
+  "matador-pizza": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "https://matadorpizza.com/",
+      "https://matadorpizza.com/varsity/",
+      "https://matadorpizza.com/hillhurst/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://matadorpizza.com/wp-content/uploads/2026/05/0N2Hdq6g.jpeg",
+      "page": "https://matadorpizza.com/",
+      "w": 1024,
+      "h": 768
+    },
+    "gallery": [
+      {
+        "url": "https://matadorpizza.com/wp-content/uploads/2026/01/20230603_161214-1-scaled-1.jpg",
+        "page": "https://matadorpizza.com/varsity/",
+        "w": 2560,
+        "h": 1920
+      },
+      {
+        "url": "https://matadorpizza.com/wp-content/uploads/2026/06/IMG_9772-scaled-uai-1920x1280.jpeg",
+        "page": "https://matadorpizza.com/varsity/",
+        "w": 1920,
+        "h": 1280
+      },
+      {
+        "url": "https://matadorpizza.com/wp-content/uploads/2026/07/IMG_6226-scaled-e1783634645403-uai-1580x1053.jpg",
+        "page": "https://matadorpizza.com/varsity/",
+        "w": 1580,
+        "h": 1053
+      },
+      {
+        "url": "https://matadorpizza.com/wp-content/uploads/2026/01/matador_pizza_about_pizza.jpg",
+        "page": "https://matadorpizza.com/varsity/",
+        "w": 1500,
+        "h": 800
+      },
+      {
+        "url": "https://matadorpizza.com/wp-content/uploads/2026/04/image2.jpeg",
+        "page": "https://matadorpizza.com/varsity/",
+        "w": 1920,
+        "h": 2560
+      }
+    ],
+    "review": {
+      "at": "2026-11-20",
+      "key": "011f02f00565",
+      "rejected": [
+        {
+          "url": "https://matadorpizza.com/wp-content/uploads/2026/06/IMG_8492-scaled-uai-2560x1706.jpg",
+          "why": "near-duplicate of photo1"
+        },
+        {
+          "url": "https://matadorpizza.com/wp-content/uploads/2026/03/knzwhq5plcg-uai-1600x1066.jpg",
+          "why": "not venue - cityscape/aerial view"
+        },
+        {
+          "url": "https://matadorpizza.com/wp-content/uploads/2026/01/matador_pizza_home_1.jpg",
+          "why": "mostly branded boxes and phone number"
         }
       ]
     }
@@ -19964,6 +20324,35 @@
       ]
     }
   },
+  "pho-mr-q-vietnamese-restaurant": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "https://phomrq.com/.well-known/sgcaptcha/?r=%2F%3Futm_source%3DGoogle%26utm_medium%3DGMB&y=ipr:3.41.210.69:1795207382.269"
+    ],
+    "cover_problem": null,
+    "cover": null,
+    "gallery": []
+  },
+  "pho-time-authentic-vietnamese-cuisine": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "https://photime.ca/",
+      "https://photime.ca/gallery/"
+    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://photime.ca/wp-content/uploads/2020/06/45-2-2048x1427.jpg",
+      "page": "https://photime.ca/",
+      "w": 2048,
+      "h": 1427
+    },
+    "gallery": [],
+    "review": {
+      "at": "2026-11-20",
+      "key": "123dc785635c",
+      "rejected": []
+    }
+  },
   "pidgin-restaurant": {
     "checked_at": "2026-10-24",
     "pages": [
@@ -20602,6 +20991,69 @@
         {
           "url": "https://images.squarespace-cdn.com/content/v1/5db9f5cc0e8af224964d841a/1573170364636-03NQQSMUWAMIDU8I9843/David+Sikula.png",
           "why": "person portrait"
+        }
+      ]
+    }
+  },
+  "prairie-dog-brewing": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "https://prairiedog.bbq.beer/",
+      "https://prairiedog.bbq.beer/brewpub-calgary-chinook/event-bookings/",
+      "https://prairiedog.bbq.beer/events/",
+      "https://prairiedog.bbq.beer/events-activities/live-music/"
+    ],
+    "cover_problem": null,
+    "cover": null,
+    "gallery": [
+      {
+        "url": "https://prairiedog.bbq.beer/wp-content/uploads/2026/01/IMG_0564-scaled-jpg.avif",
+        "page": "https://prairiedog.bbq.beer/brewpub-calgary-chinook/event-bookings/",
+        "w": 2560,
+        "h": 1707
+      },
+      {
+        "url": "https://prairiedog.bbq.beer/wp-content/uploads/2026/03/Dining-Room-Corner-View-2048x1152.avif",
+        "page": "https://prairiedog.bbq.beer/",
+        "w": 2048,
+        "h": 1152
+      },
+      {
+        "url": "https://prairiedog.bbq.beer/wp-content/uploads/2025/06/IMG_2292a.jpg",
+        "page": "https://prairiedog.bbq.beer/events/",
+        "w": 1284,
+        "h": 993
+      },
+      {
+        "url": "https://prairiedog.bbq.beer/wp-content/uploads/2024/06/SIGNATURE-FULLER-PIT-2-1-1024x683.jpg",
+        "page": "https://prairiedog.bbq.beer/brewpub-calgary-chinook/event-bookings/",
+        "w": 1024,
+        "h": 683
+      }
+    ],
+    "review": {
+      "at": "2026-11-20",
+      "key": "8296f3c93b15",
+      "rejected": [
+        {
+          "url": "https://prairiedog.bbq.beer/wp-content/uploads/2026/04/POP-Trivia-website-file-1.png",
+          "why": "promo flyer, mostly text"
+        },
+        {
+          "url": "https://prairiedog.bbq.beer/wp-content/uploads/2026/03/Prairie-Dog-CoFounder-Gerad-Serves-Pint-scaled-copy.webp",
+          "why": "bartender portrait"
+        },
+        {
+          "url": "https://prairiedog.bbq.beer/wp-content/uploads/2024/07/Earl-Morgan-Band.jpg",
+          "why": "musician headshots with logo"
+        },
+        {
+          "url": "https://prairiedog.bbq.beer/wp-content/uploads/2024/06/PDB-9-scaled-1-1024x684.jpg",
+          "why": "duplicate of photo1"
+        },
+        {
+          "url": "https://prairiedog.bbq.beer/wp-content/uploads/2024/07/Stage-Trusses-jpg.avif",
+          "why": "construction photo, not operational venue"
         }
       ]
     }
@@ -21296,6 +21748,25 @@
         {
           "url": "https://static.wixstatic.com/media/2cf2fd_bd154dc5cceb4174972a0310e548ff8f~mv2.jpg/v1/fill/w_2195,h_2980,q_90,enc_avif,quality_auto/2cf2fd_bd154dc5cceb4174972a0310e548ff8f~mv2.jpg",
           "why": "close-up of person holding drink - person as subject"
+        }
+      ]
+    }
+  },
+  "red-lobster": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "http://validate.perfdrive.com/?ssa=e1ae3dc5-7cee-4ee1-835b-dd8f81ca9fdc&ssb=18513248052&ssc=https%3A%2F%2Fwww.redlobster.ca%2Fseafood-restaurants%2Flocations%2Fab%2Fcalgary%2F100-6100-macleod-trail-sw%2F&ssi=ba12a3ed-baf2-4b34-8419-8ced940a1e9a&ssk=support@shieldsquare.com&ssm=76557652792428830134010177961300&ssn=6ea8345007fc567c3c620c4496fb75512ea16f964504-940c-4aa8-968715&sso=39bea11d-912b5bc1adb9f3b1264580d137b2bef9252792e55b36da87&ssp=56251190291795235280179528261683444&ssq=55822130737869530463807378972551286493539&ssr=My40MS4yMTAuNjk=&sst=Mozilla/5.0%20(Macintosh;%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/126.0.0.0%20Safari/537.36&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA2Zjk2NDUwNC05NDBjLTRhYTgtOTExZC05MTJiNWJjMWFkYjkxLTE3OTUyMDczNzg1ODkyNjQtMDA1N2E2MWI4MzQxM2JmZmYzMjEzIiwicmQiOiJyZWRsb2JzdGVyLmNhIiwidXpteCI6IjdmYzAwMGU5ZWM2MWVlLWYwMmYtNGJkNS1iNWE0LTFlMjkwOTRlNjEyNjEtMTc5NTIwNzM3ODU4OTI2NC0wMGU5YjE1ZTQwMmZmYzY4ZDhiMTMifQ=="
+    ],
+    "cover_problem": "review: logo",
+    "cover": null,
+    "gallery": [],
+    "review": {
+      "at": "2026-11-20",
+      "key": "da39a3ee5e6b",
+      "rejected": [
+        {
+          "url": "https://www.redlobster.ca/ecomm/images/togo-logo.png",
+          "why": "logo"
         }
       ]
     }
@@ -24509,6 +24980,70 @@
         {
           "url": "https://d2zjr4930cxu48.cloudfront.net/event/335308/Screenshot_2025-10-02_at_9.54.13%E2%80%AFAM.png?1788387851",
           "why": "promotional event poster, mostly text"
+        }
+      ]
+    }
+  },
+  "starbelly-open-kitchen-lounge": {
+    "checked_at": "2026-11-20",
+    "pages": [
+      "https://www.starbelly.ca/",
+      "https://www.starbelly.ca/about",
+      "https://www.starbelly.ca/gallery",
+      "https://www.starbelly.ca/events"
+    ],
+    "cover_problem": "transparent graphic",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/ec4512dd-42dc-40d9-a081-985967557f54/SP+Edit-758.jpg",
+      "page": "https://www.starbelly.ca/about",
+      "w": 2500,
+      "h": 1667
+    },
+    "gallery": [
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/b3ff6257-8243-4359-bf58-6f3cb9227342/starbellyseptember-47.jpg",
+        "page": "https://www.starbelly.ca/gallery",
+        "w": 2500,
+        "h": 1669
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/4a36b8ee-a19a-4f93-ac8c-3c7ded13a39d/starbellyseptember-56.jpg",
+        "page": "https://www.starbelly.ca/gallery",
+        "w": 2500,
+        "h": 1669
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/ed02f7aa-b37e-416f-ad94-4245415ae8f9/SP+Edit-527.jpg",
+        "page": "https://www.starbelly.ca/",
+        "w": 2500,
+        "h": 1667
+      },
+      {
+        "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/023afe66-9cb2-426d-ac29-c538838e81f9/SP+Edit-1550.jpg",
+        "page": "https://www.starbelly.ca/",
+        "w": 2500,
+        "h": 1665
+      }
+    ],
+    "review": {
+      "at": "2026-11-20",
+      "key": "45bcf9fbcf9c",
+      "rejected": [
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/f1ef1a17-1224-4ec9-b4f3-9bfb00c4b426/starbellyseptember-37.jpg",
+          "why": "person is the subject"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/ecf44a0e-d857-4f12-a846-358a2fd004c8/starbellyseptember-1.jpg",
+          "why": "sign/logo prominent"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/55a075d4-0f52-4456-afd2-e716da5fb59c/starbellyseptember-68.jpg",
+          "why": "guests as subject"
+        },
+        {
+          "url": "https://images.squarespace-cdn.com/content/v1/61bb98925cd0da31e351f426/bafb2cb2-e526-425c-97d4-612134d92005/SP+Edit-543.jpg",
+          "why": "chef as subject"
         }
       ]
     }
