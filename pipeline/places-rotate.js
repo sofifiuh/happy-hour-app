@@ -97,7 +97,8 @@ const QUERIES = [
   "mexican restaurant", "rooftop patio",
 ];
 // Nearby Search circles over the new areas' main strips (lat, lng, radius m).
-// Metro Vancouver's grid lives in places-discover.js and was swept already.
+// Metro Vancouver's grid lives in places-discover.js and was swept already;
+// its main strips are revisited here too.
 // Calgary's core strips are at the end.
 const NEW_CIRCLES = [
   [49.2193, -122.6018, 600], // Maple Ridge downtown
@@ -124,6 +125,57 @@ const NEW_CIRCLES = [
   [51.0330, -114.0710, 500], // Mission / 4th St SW
   [51.0380, -114.0230, 500], // Inglewood
   [51.0450, -114.0450, 500], // East Village
+  // Added 2026-11-20 to use the idle free Nearby budget (Text Search's 900
+  // runs out mid-month; Nearby had ~800 left). Same areas, more strips.
+  [51.0530, -114.0400, 500], // Bridgeland
+  [51.0200, -114.1000, 600], // Marda Loop
+  [51.0640, -114.0420, 600], // Renfrew / Edmonton Trail
+  [50.9980, -114.0720, 700], // Chinook / Macleod Trail
+  [50.9850, -114.0420, 600], // Deerfoot Meadows
+  [50.9600, -113.9930, 700], // Quarry Park
+  [50.9050, -114.0640, 700], // Shawnessy
+  [50.9130, -113.9580, 700], // McKenzie Towne
+  [50.8770, -113.9520, 700], // Seton
+  [51.0170, -114.1730, 700], // Signal Hill / West Hills
+  [51.0890, -114.1520, 600], // University District
+  [51.0860, -114.1310, 600], // Brentwood Calgary
+  [51.1240, -114.2060, 700], // Crowfoot
+  [51.1530, -114.0640, 700], // Country Hills
+  [51.0750, -113.9890, 700], // Sunridge
+  [51.2920, -114.0140, 700], // Airdrie downtown
+  [51.1890, -114.4680, 700], // Cochrane
+  [50.7270, -113.9750, 700], // Okotoks
+  [49.2800, -123.1210, 400], // Granville St
+  [49.2840, -123.1080, 400], // Gastown
+  [49.2750, -123.1210, 400], // Yaletown
+  [49.2810, -123.1330, 400], // Davie Village
+  [49.2900, -123.1370, 400], // Robson / Denman
+  [49.2680, -123.1600, 500], // Kitsilano W 4th
+  [49.2640, -123.1650, 500], // Kitsilano W Broadway
+  [49.2620, -123.1010, 500], // Main St
+  [49.2700, -123.0700, 500], // Commercial Dr
+  [49.2700, -123.1110, 400], // Olympic Village
+  [49.2490, -123.1150, 500], // Cambie Village
+  [49.2610, -123.1390, 500], // South Granville
+  [49.3110, -123.0830, 500], // Lonsdale Quay
+  [49.3200, -123.0730, 500], // Central Lonsdale
+  [49.3270, -123.1560, 500], // Ambleside
+  [49.2270, -123.0000, 600], // Metrotown
+  [49.2670, -123.0000, 600], // Brentwood Burnaby
+  [49.2810, -123.0130, 500], // Burnaby Heights
+  [49.1690, -123.1370, 600], // Richmond Centre
+  [49.1250, -123.1830, 500], // Steveston
+  [49.2780, -122.7960, 600], // Coquitlam Centre
+  [49.2830, -122.8350, 500], // Port Moody Brewers Row
+  [49.2010, -122.9120, 500], // New Westminster Columbia St
+  [49.1890, -122.8010, 600], // Guildford
+  [49.1890, -122.8490, 600], // Surrey Central
+  [49.1320, -122.8460, 600], // Newton
+  [49.0490, -122.7800, 600], // South Surrey
+  [49.0170, -122.8030, 500], // White Rock Marine Dr
+  [49.1040, -122.6600, 600], // Langley City
+  [49.1680, -122.5780, 500], // Fort Langley
+  [49.0890, -123.0820, 500], // Ladner
 ];
 const TYPE_GROUPS = [["bar", "pub", "wine_bar", "night_club", "brewery", "winery"], ["restaurant"]];
 
