@@ -1678,5 +1678,26 @@
     "credit_url": "https://maps.google.com/maps/contrib/100732677084360967918",
     "photo_name": "places/ChIJ6wSv1a1ncVMRBBbCfFTFCWA/photos/AV-0GLcZKRXk5X3eg5GNiUheK7t0CHvScx_FdYFlHUXps-PJLg0nSCkFcEbU1pxKmcDW3eN80ZIlLVft1vgwbvPzZTnRP--scsjAEig-GEFQ8IpQ3mS7vVPQ-mCn2OW8xbRdkGag_2XIzB8gOyHzgiaJMBAFxJvNQ_wholFhLGtZYYwopkj8elxNHArD8QKN5wBJ9L3tHxYlxNG-RSnizBIhuqofOVzBAtT3Cr70PB3BcAgkCFF-6Efv_0tzb6kw3zPl6V33IDPX6IabqHt9_K37VUIArRjR3B7T3hKfx3CWlyplxnMCEaooxsYyf_5Y44L1SUtyDhSZ3ePl45ERx2SEwJ2cDQvvaOFzu6Da_NJsnnyghwN9xY1_CbgZli9T4waGozB7trqkQ_CT0bzKnvF143JM8O0",
     "fetched_at": "2026-11-10"
+  },
+  "pho-time-authentic-vietnamese-cuisine": {
+    "url": "photos/pho-time-authentic-vietnamese-cuisine.jpg",
+    "credit_name": "PHO TIME Authentic Vietnamese Cuisine",
+    "credit_url": "https://maps.google.com/maps/contrib/114746857164546122897",
+    "photo_name": "places/ChIJO1oB0dd1cVMRnfgWDZqUsPY/photos/AV-0GLc8PdgbVpSm-lD2JjuRK6EYIOMMvxk7wzMbFD4WEO1jaGdsnfJ8u6DYx8hk9ns-3MDduAiEwOlqHw7gQynEpKvnBIH9KUIyppKfmhFIbg6UtbGJh8HyWdBfh2akxRBbehMPalwapiLd8kbct-Zxlmq2YA0IhZz2_WXqxyV3WVMtU0ktbNVyu6w7bVg0aX-_636xEAU_lBKbgcmfT6VMfoIV6L7yGGdUBjGhPuy8v5M0KEqCQ40Pi9cw8uHHTyXGbMrNzmKdgg3NwHVgCE6OZFhqxlS6h79BbexDme0VxmycY0tLKty1h31FAm85Fg13HiMiKmYz9ZP_YJ-UYwkihM_4cmLcMRF97XBZSlDUgp-vxow5caTgGgodombWOsgH3NvG8sMFjylOhEElS9YXmnmp0rg",
+    "fetched_at": "2026-11-20"
+  },
+  "pho-mr-q-vietnamese-restaurant": {
+    "url": "photos/pho-mr-q-vietnamese-restaurant.jpg",
+    "credit_name": "Pho Mr.Q Vietnamese Restaurant",
+    "credit_url": "https://maps.google.com/maps/contrib/117608040012914009038",
+    "photo_name": "places/ChIJDbYoEYRpcVMRswfIBiOkBsg/photos/AV-0GLdrW_EqLx1PkFC9sJC42XdRJlkHNic1qrVy89XwdnxQp52lKNrafF7Fi5-aO4RqG7i7hxUJ3d2IwlAtSRXTU8qwCho_TIAZhDU1Mw1EcGpd70ChQf_TQB6eSvUpts6O9HI7KVjUr8cc1zZa5MMdRk2zhwNOsHA18t77l6XsURpDjXlE4YjgrU6Sf330XsTvwvysgfR2bgGdOnVb_uALHSZw-9nD5m4yCr1eft38lo-N7M9wB-Q5oqSLUElFXESRRwbP_xNaKH5BD6ffKEtJZrnEo6si5ImdyTjEEtQmaaRPNQ2Xo3nCvvE2LqWVabvMjbYNW5sycisADFeI3qD9xh9iYPBuHRGUOm_q_6zskAoKfzt3AsBX1zj7A5k2XqrOAf1b1yxmzLlspPWzVFXNGiQ1LOm1",
+    "fetched_at": "2026-11-20"
+  },
+  "matador-pizza": {
+    "url": "photos/matador-pizza.jpg",
+    "credit_name": "Lisa Torry",
+    "credit_url": "https://maps.google.com/maps/contrib/101384693457054264612",
+    "photo_name": "places/ChIJfXGq7yJvcVMR4AXbKI9hvnU/photos/AV-0GLfGT-UnI7dofjGOqZcpqtnMkw-eLT4OgaxEdcNFsWwpwm5M4giMLhDiZ40EPTrns6x42Wpt8cZwhuKaseAImeIOfaaHGC9egYlnBp9oGe_AcH5VhHGSBH4Y2LyYmgxVjClGv35Pv8_CEGMo5aNKdJBBHl-c-yrLMhZr9cy227vEPwXwx_cDblqEn6-qNeHupC4_QiqhRBNavzvUFWfxiNLMh8-iR-oj-6PCZvCqcPRTlOCu9hxi1eUq_jih56ey4WHhJQ2KeruAmwSImCAhSU3bd8FrehoRjykNMridfgJCWwfr83BlNLvckgoNYMUIyOTR7rSXZddCr6HCW2YxgEnhYRaGtqlPagng8WwTPIdgxxTADsB8BirfQZt45d4_-lAUyRI5BYD4eLtacHqhnI39p8tkIus",
+    "fetched_at": "2026-11-20"
   }
 }

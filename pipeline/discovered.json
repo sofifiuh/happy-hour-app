@@ -25,6 +25,1521 @@
       "transit": null
     },
     "data_source": "discovery",
+    "id": "prairie-dog-brewing",
+    "name": "Prairie Dog Brewing",
+    "formatted_address": "105D 58 Ave SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0009777,
+        "lng": -114.06338079999999
+      }
+    },
+    "formatted_phone_number": "(403) 407-2448",
+    "website": "https://prairiedog.bbq.beer/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "11:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Happier Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://prairiedog.bbq.beer/brewpub-calgary-chinook/menu/",
+      "deals": [
+        {
+          "name": "House Draft Pints",
+          "price": "$6.50",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Corn Fritters",
+          "price": "$3 off",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Nachos",
+          "price": "$3 off",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Smoked Chicken Wings",
+          "price": "$3 off",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "5oz House Wine Pours",
+          "price": "20% off",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://prairiedog.bbq.beer/wp-content/uploads/2024/06/PDB-9-scaled-1-1024x684.jpg",
+      "credit_name": "Prairie Dog Brewing",
+      "credit_url": "https://prairiedog.bbq.beer/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "kilt-caber-ale-house",
+    "name": "Kilt & Caber Ale House",
+    "formatted_address": "53 High St SE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9152384,
+        "lng": -113.9611022
+      }
+    },
+    "formatted_phone_number": "(403) 257-6297",
+    "website": "http://www.kiltandcaber.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "22:00",
+          "end": null,
+          "label": "Late Night Happy Hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://kiltandcaber.com/food-menu?menu_id=1043460",
+      "deals": [
+        {
+          "name": "Americana Sliders",
+          "price": "$3.50",
+          "category": "food",
+          "description": "Each"
+        },
+        {
+          "name": "Chipotle & Jalapeño Dip",
+          "price": "$13.00",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Steak Bites",
+          "price": "$13.00",
+          "category": "food",
+          "description": "1/2 lb Alberta sirloin, sweet soy glaze, Japanese steak sauce, toasted sesame seeds"
+        },
+        {
+          "name": "Highballs",
+          "price": "$5.00",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "House Wine",
+          "price": "$6.00",
+          "category": "drink",
+          "description": "Red or white, 5 oz"
+        },
+        {
+          "name": "Domestic Bottles & Draught",
+          "price": "$6.00",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "2515 Crafted Lager",
+          "price": "$4.50",
+          "category": "drink",
+          "description": "454 ml"
+        },
+        {
+          "name": "Skinny Marg",
+          "price": "$10.00",
+          "category": "drink",
+          "description": "1.5 oz"
+        },
+        {
+          "name": "Shaft",
+          "price": "$8.00",
+          "category": "drink",
+          "description": "1.5 oz"
+        },
+        {
+          "name": "Sparkling Lemonade",
+          "price": "$11.00",
+          "category": "drink",
+          "description": "1.75 oz"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://static.spotapps.co/website_images/ab_websites/476321_website_v1/social.jpg",
+      "credit_name": "Kilt & Caber Ale House",
+      "credit_url": "http://www.kiltandcaber.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "matador-pizza",
+    "name": "Matador Pizza",
+    "formatted_address": "4625 Varsity Dr NW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.092842,
+        "lng": -114.15360899999999
+      }
+    },
+    "formatted_phone_number": "(403) 286-3133",
+    "website": "https://www.matadorpizza.com/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": "14:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://matadorpizza.com/varsity/matador-wine-list/",
+      "deals": [
+        {
+          "name": "Cocktails",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Pabst Blue Ribbon",
+          "price": "$7",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "House Wine",
+          "price": "$7",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Chicken Fingers & Fries",
+          "price": "$12",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Short Ribs",
+          "price": "$12",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Haddock Dippers",
+          "price": "$12",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Zucchini Sticks",
+          "price": "$11",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Small Caesar Salad",
+          "price": "$7",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Sweet Potato Fries",
+          "price": "$6",
+          "category": "food",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "j-club-grill-bar",
+    "name": "J Club Grill & Bar",
+    "formatted_address": "26 Mckenzie Towne Gate S E #500, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.9160259,
+        "lng": -113.9617456
+      }
+    },
+    "formatted_phone_number": "(403) 474-7700",
+    "website": "https://jclubgrillandbar.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://jclubgrillandbar.ca/happy-hour",
+      "deals": [
+        {
+          "name": "Butter chicken poutine",
+          "price": "$18",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Dry ribs",
+          "price": "$13",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "J's breaded chicken wings",
+          "price": "$14",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Pork & Kimchi Gyoza",
+          "price": "$10",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Traditional poutine",
+          "price": "$12",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Deep fried dill pickle",
+          "price": "$10",
+          "category": "food",
+          "description": "with dill sour cream"
+        },
+        {
+          "name": "Onion rings",
+          "price": "$10",
+          "category": "food",
+          "description": "with sriracha dip"
+        },
+        {
+          "name": "Spinach artichoke dip and chips",
+          "price": "$9",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Korean BBQ cauliflower",
+          "price": "$10",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Parmesan Fries",
+          "price": "$8",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Sweet Potato Fries",
+          "price": "$8",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Lager Chips",
+          "price": "$7",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "House red or white wine",
+          "price": "$7",
+          "category": "drink",
+          "description": "6oz"
+        },
+        {
+          "name": "House red or white wine",
+          "price": "$10",
+          "category": "drink",
+          "description": "9oz"
+        },
+        {
+          "name": "House larger",
+          "price": "$5.75",
+          "category": "drink",
+          "description": "16oz"
+        },
+        {
+          "name": "House larger",
+          "price": "$7",
+          "category": "drink",
+          "description": "20oz"
+        },
+        {
+          "name": "Ceasar",
+          "price": "$7.75",
+          "category": "drink",
+          "description": "1 oz"
+        },
+        {
+          "name": "Ceasar",
+          "price": "$10.75",
+          "category": "drink",
+          "description": "2 oz"
+        },
+        {
+          "name": "House rail spirits",
+          "price": "$6.50",
+          "category": "drink",
+          "description": "1 oz (Vodka, Gin, Tequila, White rum, Rye)"
+        },
+        {
+          "name": "Highball",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "$9.99",
+          "category": "drink",
+          "description": "1.5 oz"
+        },
+        {
+          "name": "Hugo Spritz",
+          "price": "$10.99",
+          "category": "drink",
+          "description": "1.5 oz"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://jclubgrillandbar.ca/images/12-1.webp",
+      "credit_name": "J Club Grill & Bar",
+      "credit_url": "https://jclubgrillandbar.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "enoteca-monza-pizzeria-moderna",
+    "name": "Enoteca Monza Pizzeria Moderna",
+    "formatted_address": "3625 Shaganappi Trail NW j012, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0847461,
+        "lng": -114.1539631
+      }
+    },
+    "formatted_phone_number": "(587) 326-7270",
+    "website": "https://www.monzaitaliankitchen.com/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Late-night happy hour"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.monzaitaliankitchen.com/",
+      "deals": [
+        {
+          "name": "Vino",
+          "price": "$8",
+          "category": "drink",
+          "description": "Ruffino Chianti, Pinot Grigio"
+        },
+        {
+          "name": "Birra",
+          "price": "$8",
+          "category": "drink",
+          "description": "Stanley Park Trail Hopper IPA, Stella, Bud & Bud Light"
+        },
+        {
+          "name": "Signature Cocktails",
+          "price": "$7",
+          "category": "drink",
+          "description": "Sicilian Margarita, Ciao Bella, Monza Caesar"
+        },
+        {
+          "name": "Spritz",
+          "price": "$7",
+          "category": "drink",
+          "description": "Sunset Spritz, Hugo Spritz, Aperol Spritz"
+        },
+        {
+          "name": "Frozen & Classics",
+          "price": "$7",
+          "category": "drink",
+          "description": "Aperol Peach Bellini, Frozen Espresso Martini, Espresso Martini, Negroni, Lychee Martini, Amaretto Sour"
+        },
+        {
+          "name": "High Balls",
+          "price": "$6",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Zuppa",
+          "price": "$8",
+          "category": "food",
+          "description": "House-made pork, beef and veal meatball Italian wedding soup"
+        },
+        {
+          "name": "Focaccia",
+          "price": "$8",
+          "category": "food",
+          "description": "Freshly baked herb focaccia, roasted garlic, olive oil, balsamic vinegar, Parmesan"
+        },
+        {
+          "name": "Truffle Parmesan Fries",
+          "price": "$6",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Condividere (Pick 3)",
+          "price": "$39",
+          "category": "food",
+          "description": "Selection includes whipped ricotta dip, beet carpaccio, bruschetta rustica, mozzarella fritti, polpette, arancini, zucchini fritti"
+        },
+        {
+          "name": "Monza Chop",
+          "price": "$20",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Caprese Burger",
+          "price": "$20",
+          "category": "food",
+          "description": "House-made beef burger, crispy pancetta, spiced tomato pepper sauce, fior di latte"
+        },
+        {
+          "name": "Pizza",
+          "price": "$19",
+          "category": "food",
+          "description": "Quattro Formaggi, Pepperoni, Pollaro"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/6aa07311ee71981818838b25/t/6aa078c6e3e0023882c3b03f/1788901574160/MONZA_FULL_LOGO_WHITE.png?format=1500w",
+      "credit_name": "Enoteca Monza Pizzeria Moderna",
+      "credit_url": "https://www.monzaitaliankitchen.com/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "red-lobster",
+    "name": "Red Lobster",
+    "formatted_address": "6100 Macleod Trl SW #100, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.998701999999994,
+        "lng": -114.07087709999999
+      }
+    },
+    "formatted_phone_number": "(403) 252-8818",
+    "website": "https://www.redlobster.ca/seafood-restaurants/locations/ab/calgary/100-6100-macleod-trail-sw",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.redlobster.ca/happy-hour/",
+      "deals": [
+        {
+          "name": "Smoked Caesar",
+          "price": "$7",
+          "category": "drink",
+          "description": "Select Cocktail"
+        },
+        {
+          "name": "Classic Margarita",
+          "price": "$7",
+          "category": "drink",
+          "description": "Select Cocktail"
+        },
+        {
+          "name": "Triple Berry Sangria",
+          "price": "$7",
+          "category": "drink",
+          "description": "Select Cocktail"
+        },
+        {
+          "name": "Tropical White Sangria",
+          "price": "$7",
+          "category": "drink",
+          "description": "Select Cocktail"
+        },
+        {
+          "name": "Sparkling Strawberry Margarita",
+          "price": "$7",
+          "category": "drink",
+          "description": "Seasonal exclusive with Cuervo Silver and strawberry"
+        },
+        {
+          "name": "Coors Light Draft",
+          "price": "$7",
+          "category": "drink",
+          "description": "12oz"
+        },
+        {
+          "name": "Alexander Keith's IPA Draft",
+          "price": "$7",
+          "category": "drink",
+          "description": "12oz"
+        },
+        {
+          "name": "Jackson-Triggs Cabernet Merlot",
+          "price": "$7",
+          "category": "drink",
+          "description": "6oz pour"
+        },
+        {
+          "name": "Jackson-Triggs Pinot Grigio",
+          "price": "$7",
+          "category": "drink",
+          "description": "6oz pour"
+        },
+        {
+          "name": "Calamari",
+          "price": "$2 off",
+          "category": "food",
+          "description": "Select Starter"
+        },
+        {
+          "name": "Escargot",
+          "price": "$2 off",
+          "category": "food",
+          "description": "Select Starter"
+        },
+        {
+          "name": "Garlic Shrimp Flatbread",
+          "price": "$2 off",
+          "category": "food",
+          "description": "Select Starter"
+        },
+        {
+          "name": "Island Jumbo Coconut Shrimp",
+          "price": "$2 off",
+          "category": "food",
+          "description": "Select Starter"
+        },
+        {
+          "name": "Mozzarella Cheesesticks",
+          "price": "$2 off",
+          "category": "food",
+          "description": "Select Starter"
+        },
+        {
+          "name": "Seafood-Stuffed Mushrooms",
+          "price": "$2 off",
+          "category": "food",
+          "description": "Select Starter"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "https://www.redlobster.ca/ecomm/images/togo-logo.png",
+      "credit_name": "Red Lobster",
+      "credit_url": "https://www.redlobster.ca/seafood-restaurants/locations/ab/calgary/100-6100-macleod-trail-sw",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "blue-star-diner",
+    "name": "Blue Star Diner",
+    "formatted_address": "809 1 Ave NE, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.0531722,
+        "lng": -114.0448694
+      }
+    },
+    "formatted_phone_number": "(403) 261-9998",
+    "website": "http://bluestardiner.ca/",
+    "happy_hour": {
+      "days": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            2
+          ],
+          "start": "15:00",
+          "end": null,
+          "label": "Taqueria Tuesday (3pm–close, dine-in onl"
+        },
+        {
+          "days": [
+            3
+          ],
+          "start": "15:00",
+          "end": null,
+          "label": "Burger & Beer Wednesday (3pm–close, dine"
+        },
+        {
+          "days": [
+            4
+          ],
+          "start": "15:00",
+          "end": null,
+          "label": "Pasta & Wine Thursday (3pm–close, dine-i"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.bluestardiner.ca/s/BSD-Dinner-temporary.pdf",
+      "deals": [
+        {
+          "name": "Blue Star Blonde",
+          "price": "$6",
+          "category": "drink",
+          "description": "Beer on tap, 16oz"
+        },
+        {
+          "name": "Caesar",
+          "price": "$8",
+          "category": "drink",
+          "description": "Doubles $10"
+        },
+        {
+          "name": "Margarita",
+          "price": "$8",
+          "category": "drink",
+          "description": "Doubles $10"
+        },
+        {
+          "name": "Aperol Spritz",
+          "price": "$9",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "House Wine",
+          "price": "$6/5oz, $10/9oz",
+          "category": "drink",
+          "description": ""
+        },
+        {
+          "name": "Premium House",
+          "price": "$8/5oz, $12/9oz",
+          "category": "drink",
+          "description": ""
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/5d02c963f41c850001672cca/t/5d07ee2262a30e0001609ebd/1560800804119/BlueStar_Logo_light.png?format=1500w",
+      "credit_name": "Blue Star Diner",
+      "credit_url": "http://bluestardiner.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "starbelly-open-kitchen-lounge",
+    "name": "Starbelly Open Kitchen & Lounge",
+    "formatted_address": "19489 Seton Crescent SE #220, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.8817417,
+        "lng": -113.9579528
+      }
+    },
+    "formatted_phone_number": "(403) 570-0133",
+    "website": "http://www.starbelly.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "15:00",
+      "end": "18:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": null,
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://www.starbelly.ca/s/Happy-Hour-Starbelly-2026.jpg",
+      "deals": [
+        {
+          "name": "Truffle Fries",
+          "price": "$10",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Baked Brie",
+          "price": "$15",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Beet + Prawn Salad",
+          "price": "$19",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Starbelly Burger",
+          "price": "$20",
+          "category": "food",
+          "description": ""
+        },
+        {
+          "name": "Starbelly Lager",
+          "price": "$6",
+          "category": "drink",
+          "description": "Beer"
+        },
+        {
+          "name": "Railyard IPA",
+          "price": "$6",
+          "category": "drink",
+          "description": "Beer"
+        },
+        {
+          "name": "House White",
+          "price": "$8-12",
+          "category": "drink",
+          "description": "5oz-8oz"
+        },
+        {
+          "name": "House Red",
+          "price": "$8-12",
+          "category": "drink",
+          "description": "5oz-8oz"
+        },
+        {
+          "name": "Prosecco",
+          "price": "$8",
+          "category": "drink",
+          "description": "5oz"
+        },
+        {
+          "name": "Smoked Old Fashioned",
+          "price": "$12",
+          "category": "drink",
+          "description": "Cocktail"
+        },
+        {
+          "name": "Moscow Mule",
+          "price": "$9",
+          "category": "drink",
+          "description": "Cocktail"
+        },
+        {
+          "name": "Dark N'Stormy",
+          "price": "$9",
+          "category": "drink",
+          "description": "Cocktail"
+        }
+      ]
+    },
+    "cover_image": {
+      "url": "http://static1.squarespace.com/static/61bb98925cd0da31e351f426/t/61cc9019c6008b0004aa6be9/1640796185553/Starbelly+W+Web.png?format=1500w",
+      "credit_name": "Starbelly Open Kitchen & Lounge",
+      "credit_url": "http://www.starbelly.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "pho-mr-q-vietnamese-restaurant",
+    "name": "Pho Mr.Q Vietnamese Restaurant",
+    "formatted_address": "20 Crowfoot Crescent NW #730, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.125390100000004,
+        "lng": -114.1978386
+      }
+    },
+    "formatted_phone_number": "(403) 454-7787",
+    "website": "https://phomrq.com/?utm_source=Google&utm_medium=GMB",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            5,
+            6
+          ],
+          "start": "21:00",
+          "end": "23:00",
+          "label": "Late night"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://phomrq.com/wp-content/uploads/2024/01/MrQ-menu-happy-hour-250508-final-01.jpg",
+      "deals": [
+        {
+          "name": "Deep Fried Wontons",
+          "price": "15% off",
+          "category": "food",
+          "description": "Appetizer"
+        },
+        {
+          "name": "Fried Fish Cake",
+          "price": "15% off",
+          "category": "food",
+          "description": "Appetizer"
+        },
+        {
+          "name": "Shrimp Papaya Salad",
+          "price": "15% off",
+          "category": "food",
+          "description": "With shredded green papaya, tomato, chili, lime"
+        },
+        {
+          "name": "Spring Rolls (Pork)",
+          "price": "15% off",
+          "category": "food",
+          "description": "Served with fish sauce dipping"
+        },
+        {
+          "name": "Chicken Wings",
+          "price": "15% off",
+          "category": "food",
+          "description": "8 pieces, various sauce options"
+        },
+        {
+          "name": "BBQ Pork And Spring Rolls",
+          "price": "15% off",
+          "category": "food",
+          "description": "Topped with veggies on rice vermicelli"
+        },
+        {
+          "name": "BBQ Chicken & Spring Rolls",
+          "price": "15% off",
+          "category": "food",
+          "description": "Topped with veggies on rice vermicelli"
+        },
+        {
+          "name": "Stir Fried Lemongrass Beef",
+          "price": "15% off",
+          "category": "food",
+          "description": "And spring rolls with veggies on rice vermicelli"
+        },
+        {
+          "name": "Lemon Grass Fried Tofu",
+          "price": "15% off",
+          "category": "food",
+          "description": "With veggies on rice vermicelli"
+        },
+        {
+          "name": "Pineapple Chicken Fried Rice",
+          "price": "15% off",
+          "category": "food",
+          "description": "With jasmine rice and pineapple"
+        },
+        {
+          "name": "Tom Yum Pineapple Chicken Fried Rice",
+          "price": "15% off",
+          "category": "food",
+          "description": "With tom yum paste and spices"
+        },
+        {
+          "name": "Vietnamese Beef Salad",
+          "price": "15% off",
+          "category": "food",
+          "description": "Charbroiled beef with spicy dressing"
+        },
+        {
+          "name": "Pho Taco",
+          "price": "15% off",
+          "category": "food",
+          "description": "Beef flank with fresh herbs and veggies"
+        },
+        {
+          "name": "Savory Onion Cake",
+          "price": "15% off",
+          "category": "food",
+          "description": "Rice flour based appetizer"
+        },
+        {
+          "name": "Sate Beef & Sate Chicken",
+          "price": "10% off",
+          "category": "food",
+          "description": "Vietnamese bánh mì style"
+        },
+        {
+          "name": "Vegetarian Salad Rolls",
+          "price": "15% off",
+          "category": "food",
+          "description": "3 rolls vegetarian option"
+        },
+        {
+          "name": "Vietnamese Coffee (Espresso)",
+          "price": "25% off",
+          "category": "drink",
+          "description": "Cold blended with various flavors"
+        },
+        {
+          "name": "Fresh Juices",
+          "price": "25% off",
+          "category": "drink",
+          "description": "Lemon, orange, coconut, or soy milk options"
+        },
+        {
+          "name": "Yogurt Milk Shake",
+          "price": "25% off",
+          "category": "drink",
+          "description": "With lychee popping or jelly"
+        },
+        {
+          "name": "Cocktail",
+          "price": "25% off",
+          "category": "drink",
+          "description": "2 oz pour, tropical and specialty selections"
+        },
+        {
+          "name": "Wine",
+          "price": "25% off",
+          "category": "drink",
+          "description": "Sparkling, Rose, White, and Red selections"
+        },
+        {
+          "name": "Bubble Tea",
+          "price": "25% off",
+          "category": "drink",
+          "description": "Single flavor or mixed"
+        },
+        {
+          "name": "Milk Tea",
+          "price": "25% off",
+          "category": "drink",
+          "description": "Black milk, green pandan, and pearl options"
+        },
+        {
+          "name": "Fruit Tea",
+          "price": "25% off",
+          "category": "drink",
+          "description": "Lemon ice tea, strawberry, kiwi options"
+        },
+        {
+          "name": "Ice Cream",
+          "price": "20% off",
+          "category": "drink",
+          "description": "Various flavor and preparation options"
+        },
+        {
+          "name": "Beer",
+          "price": "25% off",
+          "category": "drink",
+          "description": "Imported and domestic selections"
+        },
+        {
+          "name": "Sake",
+          "price": "25% off",
+          "category": "drink",
+          "description": "Japanese sake selections"
+        }
+      ]
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "famoso-italian-pizzeria-westhills",
+    "name": "Famoso Italian Pizzeria - Westhills",
+    "formatted_address": "125 Stewart Green SW, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 51.01687,
+        "lng": -114.1689089
+      }
+    },
+    "formatted_phone_number": "(403) 242-2222",
+    "website": "https://famoso.ca/",
+    "happy_hour": {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [
+        {
+          "days": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "20:00",
+          "end": null,
+          "label": "Evening"
+        }
+      ],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://famoso.ca/happy-hour-food/",
+      "deals": []
+    },
+    "cover_image": {
+      "url": "https://famoso.ca/wp-content/uploads/2026/06/Section-1_1-1.png",
+      "credit_name": "Famoso Italian Pizzeria - Westhills",
+      "credit_url": "https://famoso.ca/",
+      "source": "official_website"
+    },
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
+    "id": "pho-time-authentic-vietnamese-cuisine",
+    "name": "PHO TIME Authentic Vietnamese Cuisine",
+    "formatted_address": "275 Shawville Blvd SE #31, Calgary, AB",
+    "address_components": null,
+    "geometry": {
+      "location": {
+        "lat": 50.901383,
+        "lng": -114.0679888
+      }
+    },
+    "formatted_phone_number": "(403) 256-6296",
+    "website": "https://photime.ca/",
+    "happy_hour": {
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": "14:00",
+      "end": "17:00",
+      "extra_windows": [],
+      "verified": false,
+      "verified_source": null,
+      "source_url": "https://photime.ca/",
+      "deals": []
+    },
+    "cover_image": null,
+    "last_synced_at": "2026-11-20"
+  },
+  {
+    "place_id": null,
+    "international_phone_number": null,
+    "types": [
+      "restaurant",
+      "bar",
+      "food",
+      "point_of_interest",
+      "establishment"
+    ],
+    "business_status": "OPERATIONAL",
+    "price_level": null,
+    "rating": null,
+    "user_ratings_total": null,
+    "opening_hours": {
+      "weekday_text": []
+    },
+    "photos": [],
+    "amenities": {
+      "outdoor_seating": null,
+      "gluten_free_options": null,
+      "wheelchair_accessible_entrance": null,
+      "parking": null,
+      "transit": null
+    },
+    "data_source": "discovery",
     "id": "o-sullivan-s-restaurant-bar",
     "name": "O'Sullivan's Restaurant & Bar",
     "formatted_address": "5809 Macleod Trl SW, Calgary, AB",
@@ -34685,61 +36200,79 @@
     "website": "http://ilcappello.ca/",
     "happy_hour": {
       "days": [
-        1,
         2,
         3,
         4,
-        5
+        5,
+        6
       ],
       "start": "16:30",
       "end": "18:00",
       "extra_windows": [
         {
           "days": [
-            1,
             2,
             3,
             4,
-            5
+            5,
+            6
           ],
           "start": "20:30",
           "end": null,
-          "label": "Late Night Aperitivo"
+          "label": "Late night"
         }
       ],
       "verified": false,
       "verified_source": null,
-      "source_url": "http://ilcappello.ca/",
+      "source_url": "https://www.dolceamore.ca/ilcappello-drinks-menu",
       "deals": [
         {
-          "name": "Pizza Margherita Classica",
+          "name": "Warm Sicilian Olives",
+          "price": "$8",
+          "category": "food",
+          "description": "Le Monelle; fennel, orange, garlic, EVOO; gluten-free, vegetarian"
+        },
+        {
+          "name": "Montanarine Fritte Trio",
+          "price": "$12",
+          "category": "food",
+          "description": "Le Tre Cicciotte; plump little fried doughs, seasonal dress"
+        },
+        {
+          "name": "Bruschetta Trio",
+          "price": "$11",
+          "category": "food",
+          "description": "Pane Ben Vestito; Tuscan chicken liver pâté, mushroom, seasonal"
+        },
+        {
+          "name": "Gnocco Fritto",
+          "price": "$21",
+          "category": "food",
+          "description": "Cuscini e Coperte; fried dough, prosciutto, mortadella, house-made mascarpone"
+        },
+        {
+          "name": "Romaine Salad",
+          "price": "$16",
+          "category": "food",
+          "description": "Pera e la Bestia; grilled pear, gorgonzola DOP, toasted hazelnuts, balsamic; gluten-free, vegetarian"
+        },
+        {
+          "name": "Bucatini Rosati",
           "price": "$19",
           "category": "food",
-          "description": "Stuzzichini offering"
+          "description": "L'Arrosita; rosé sauce, roasted San Marzano, house-made mascarpone, marsala; vegetarian"
         },
         {
-          "name": "Cheese & Charcuterie",
-          "price": "$23",
+          "name": "8\" Calabrese Pizza",
+          "price": "$19",
           "category": "food",
-          "description": "Stuzzichini offering"
+          "description": "La Calabrese; spicy tomato sauce, flor di latte, fennel sausage, nduja"
         },
         {
-          "name": "For the Table Menu Items",
-          "price": "$5 off",
-          "category": "food",
-          "description": "Discount on appetizers"
-        },
-        {
-          "name": "Negroni & Spritz Bars",
-          "price": "$5 off",
+          "name": "Negroni Bar, Spritz Bar and pints of beer on tap",
+          "price": "$3 off",
           "category": "drink",
-          "description": "Discount on Negroni and Spritz selections"
-        },
-        {
-          "name": "Peroni Nastro Azzurro",
-          "price": "$7",
-          "category": "drink",
-          "description": "Pints"
+          "description": "Discount applies to Negroni Bar drinks, Spritz Bar drinks and draft beer pints"
         }
       ]
     },
@@ -34749,7 +36282,7 @@
       "credit_url": "http://ilcappello.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-09-03"
+    "last_synced_at": "2026-11-20"
   },
   {
     "place_id": null,
@@ -76730,7 +78263,7 @@
       "deals": [],
       "extra_windows": []
     },
-    "last_synced_at": "2026-11-19",
+    "last_synced_at": "2026-11-20",
     "cover_image": null
   },
   {

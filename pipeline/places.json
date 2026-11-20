@@ -31120,5 +31120,192 @@
     },
     "matched_name": "O'Sullivan's Restaurant & Bar",
     "synced_at": "2026-11-15"
+  },
+  "prairie-dog-brewing": {
+    "place_id": "ChIJmyopa1hwcVMRGM7hPwIc854",
+    "rating": 4.3,
+    "user_ratings_total": 3073,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Prairie Dog Brewing",
+    "synced_at": "2026-11-20"
+  },
+  "kilt-caber-ale-house": {
+    "place_id": "ChIJrfgZd5R3cVMRjUcNFIHvLqw",
+    "rating": 4.4,
+    "user_ratings_total": 1738,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Kilt & Caber Ale House",
+    "synced_at": "2026-11-20"
+  },
+  "matador-pizza": {
+    "place_id": "ChIJfXGq7yJvcVMR4AXbKI9hvnU",
+    "rating": 4.4,
+    "user_ratings_total": 1456,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Matador Pizza",
+    "synced_at": "2026-11-20"
+  },
+  "j-club-grill-bar": {
+    "place_id": "ChIJQ4C-z4R3cVMR9h-ncjalgpc",
+    "rating": 4.8,
+    "user_ratings_total": 934,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "J Club Grill & Bar",
+    "synced_at": "2026-11-20"
+  },
+  "enoteca-monza-pizzeria-moderna": {
+    "place_id": "ChIJA9cDQgBvcVMR-kUkaSn2MLs",
+    "rating": 4.4,
+    "user_ratings_total": 318,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Enoteca Monza Pizzeria Moderna",
+    "synced_at": "2026-11-20"
+  },
+  "red-lobster": {
+    "place_id": "ChIJKXxPq_hwcVMREy656Ymom4s",
+    "rating": 4.2,
+    "user_ratings_total": 4246,
+    "price_level": 3,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Red Lobster",
+    "synced_at": "2026-11-20"
+  },
+  "blue-star-diner": {
+    "place_id": "ChIJgbf2JFJlcVMR_ifc_6c-Ui8",
+    "rating": 4.6,
+    "user_ratings_total": 3025,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Blue Star Diner",
+    "synced_at": "2026-11-20"
+  },
+  "starbelly-open-kitchen-lounge": {
+    "place_id": "ChIJNb7amXqdcVMRMO8LqgFJU2M",
+    "rating": 4.2,
+    "user_ratings_total": 1843,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Starbelly Open Kitchen & Lounge",
+    "synced_at": "2026-11-20"
+  },
+  "pho-mr-q-vietnamese-restaurant": {
+    "place_id": "ChIJDbYoEYRpcVMRswfIBiOkBsg",
+    "rating": 4.3,
+    "user_ratings_total": 1090,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Pho Mr.Q Vietnamese Restaurant",
+    "synced_at": "2026-11-20"
+  },
+  "famoso-italian-pizzeria-westhills": {
+    "place_id": "ChIJL-LD_gFycVMRlhi1EoJJfgs",
+    "rating": 4.2,
+    "user_ratings_total": 960,
+    "price_level": 2,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "Famoso Italian Pizzeria - Westhills",
+    "synced_at": "2026-11-20"
+  },
+  "pho-time-authentic-vietnamese-cuisine": {
+    "place_id": "ChIJO1oB0dd1cVMRnfgWDZqUsPY",
+    "rating": 3.9,
+    "user_ratings_total": 665,
+    "price_level": 1,
+    "business_status": "OPERATIONAL",
+    "amenities": {
+      "outdoor_seating": null,
+      "serves_cocktails": null,
+      "serves_beer": null,
+      "serves_wine": null,
+      "live_music": null,
+      "good_for_groups": null
+    },
+    "matched_name": "PHO TIME Authentic Vietnamese Cuisine",
+    "synced_at": "2026-11-20"
   }
 }
