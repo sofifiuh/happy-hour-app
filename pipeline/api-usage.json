@@ -21,10 +21,6 @@
     "details_enterprise": 393
   },
   "daily": {
-    "2026-11-06": {
-      "text_enterprise": 165,
-      "nearby_enterprise": 0
-    },
     "2026-11-07": {
       "text_enterprise": 182,
       "nearby_enterprise": 0
@@ -80,6 +76,10 @@
     "2026-11-20": {
       "text_enterprise": 0,
       "nearby_enterprise": 98
+    },
+    "2026-11-21": {
+      "text_enterprise": 0,
+      "nearby_enterprise": 0
     }
   }
 }
