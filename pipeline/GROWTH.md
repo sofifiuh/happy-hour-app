@@ -46,3 +46,4 @@ One row per refresh run (written by `pipeline/refresh.js`).
 | 2026-11-19 | 666 → 667 | 1 | 0 | O'Sullivan's Restaurant & Bar |
 | 2026-11-20 | 667 → 678 | 11 | 0 | Prairie Dog Brewing, Kilt & Caber Ale House, Matador Pizza, J Club Grill & Bar, Enoteca Monza Pizzeria Moderna, Red Lobster, Blue Star Diner, Starbelly Open Kitchen & Lounge, Pho Mr.Q Vietnamese Restaurant, Famoso Italian Pizzeria - Westhills, PHO TIME Authentic Vietnamese Cuisine |
 | 2026-11-21 | 678 → 678 | 0 | 0 | — |
+| 2026-11-22 | 678 → 678 | 0 | 0 | — |

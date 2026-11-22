@@ -75559,10 +75559,10 @@
         6
       ],
       "start": "14:00",
-      "end": "18:00",
+      "end": "19:00",
       "verified": false,
       "verified_source": null,
-      "source_url": "https://switch-vancouver.ca/wp-content/uploads/2025/10/HAPPY-HOUR-MENU-2025-10.pdf",
+      "source_url": "https://switch-vancouver.ca/wp-content/uploads/2026/11/HAPPY-HOUR-MENU.pdf",
       "deals": [
         {
           "name": "Edamame",
@@ -75572,73 +75572,89 @@
         },
         {
           "name": "Olive Tapenade",
-          "price": "$4.50",
+          "price": "$4.95",
           "category": "food",
           "description": "Chopped olives, capers, parsley, crostini"
         },
         {
           "name": "Mixed Nuts",
-          "price": "$5.50",
+          "price": "$5.95",
           "category": "food",
           "description": "Rotating blend"
         },
         {
           "name": "Chips & Pineapple Salsa",
-          "price": "$6.50",
+          "price": "$6.95",
           "category": "food",
           "description": "Corn tortilla chips, fresh pineapple salsa"
         },
         {
           "name": "Sockeye Salmon Dip",
-          "price": "$7.50",
+          "price": "$7.95",
           "category": "food",
           "description": "Smoked sockeye salmon, cream cheese, horseradish, capers, dill, crostini"
         },
         {
-          "name": "Yuzu Mimosa",
-          "price": "$3.50",
-          "category": "drink",
-          "description": "Zero proof"
-        },
-        {
-          "name": "Non-Alcoholic Beer",
+          "name": "0.0 Beer",
           "price": "$4.50",
           "category": "drink",
-          "description": "Ask server for selections"
+          "description": "Non-alcoholic beer; ask server for selections"
+        },
+        {
+          "name": "Pineapple Ginger Punch",
+          "price": "$4.50",
+          "category": "drink",
+          "description": "Pineapple purée, house made low-sugar ginger beer, lime juice (non-alcoholic)"
         },
         {
           "name": "Crystal",
-          "price": "$5.50",
-          "category": "drink",
-          "description": "Premium craft lager, 5.0%, 420ml"
-        },
-        {
-          "name": "Guinness",
           "price": "$6.50",
           "category": "drink",
-          "description": "Irish stout, 4.2%, 420ml"
+          "description": "Craft lager, 420ml"
+        },
+        {
+          "name": "Go Easy",
+          "price": "$6.95",
+          "category": "drink",
+          "description": "Dry hopped hazy pale ale, 420ml"
+        },
+        {
+          "name": "Rock Creek",
+          "price": "$6.95",
+          "category": "drink",
+          "description": "Semi dry pear cider, 420ml"
         },
         {
           "name": "White Peaks",
-          "price": "$7.50",
+          "price": "$7.95",
           "category": "drink",
-          "description": "Low-sugar black tea with lemon, 5.0%, 420ml"
+          "description": "Low sugar black tea vodka with lemon, 420ml"
         },
         {
-          "name": "Fizzy One",
-          "price": "$8.50",
+          "name": "Quails' Gate Chardonnay",
+          "price": "$9.95",
           "category": "drink",
-          "description": "Brut sparkling wine, 150ml"
+          "description": "150ml glass of wine"
         },
         {
           "name": "Karaoke Room Rate",
-          "price": "$5.00",
+          "price": "$5 per person",
           "category": "drink",
-          "description": "Happy Hour Karaoke room rate per person; minimum charge of $5.00 applies. Runs 2pm-6pm daily and all day Wednesday"
+          "description": "Happy hour karaoke room rate per person; base room charge of $5 applies. Not a food or drink item, but listed on the happy hour menu."
+        }
+      ],
+      "extra_windows": [
+        {
+          "days": [
+            3
+          ],
+          "start": "14:00",
+          "end": "02:00",
+          "label": "Wednesday all-day karaoke room rate"
         }
       ]
     },
-    "last_synced_at": "2026-08-31",
+    "last_synced_at": "2026-11-22",
     "cover_image": null
   },
   {
