@@ -61938,55 +61938,61 @@
           "name": "Lime Margarita",
           "price": "$10",
           "category": "drink",
-          "description": "Tequila Blanco, lime juice, simple syrup, salt rim; 2oz. Substitute Mezcal +$3"
+          "description": "2oz Tequila Blanco, lime juice, simple syrup, salt rim. Substitute Mezcal +$3."
         },
         {
-          "name": "Jalapéno Margarita",
+          "name": "Jalapeño Margarita",
           "price": "$11",
           "category": "drink",
-          "description": "2oz Tequila Reposado, lime juice, house-made jalapeño simple syrup, jalapeño salt rim. Mezcal +$3; Don Julio Reposado or Casamigos Reposado +$5"
+          "description": "2oz Tequila Reposado, lime juice, house-made jalapeño simple syrup, jalapeño salt rim. Substitute Mezcal +$3; Don Julio or Casamigos Reposado +$5."
         },
         {
           "name": "Spicy Mango Margarita",
           "price": "$13",
           "category": "drink",
-          "description": "2oz Tequila Blanco, mango, lime juice, fire bitters, tajin rim. Substitute Mezcal +$3"
+          "description": "2oz Tequila Blanco, mango, lime juice, fire bitters, tajin rim. Substitute Mezcal +$3."
         },
         {
           "name": "Coconut Margarita",
           "price": "$11",
           "category": "drink",
-          "description": "2oz Tequila Blanco, lime juice, coconut. Mezcal +$3; Don Julio Reposado or Casamigos Reposado +$5"
+          "description": "2oz Tequila Blanco, lime juice, coconut. Substitute Mezcal +$3; Don Julio or Casamigos Reposado +$5."
         },
         {
           "name": "Guava Margarita",
           "price": "$13",
           "category": "drink",
-          "description": "2oz Tequila Blanco, guava, lime juice. Substitute Mezcal +$3"
+          "description": "2oz Tequila Blanco, guava, lime juice. Substitute Mezcal +$3."
         },
         {
           "name": "Passion Fruit Mezcal Margarita",
           "price": "$14",
           "category": "drink",
-          "description": "2oz Mezcal, Cointreau, lime, passion fruit puree, salted rim"
+          "description": "Mezcal, Cointreau, lime, passion fruit puree, salted rim. 2oz."
         },
         {
           "name": "House Wine",
           "price": "$6",
           "category": "drink",
-          "description": "House red or white wine, 5 oz"
+          "description": "House red or white wine, 5 oz."
         },
         {
           "name": "Tequila Shot",
           "price": "$5",
           "category": "drink",
-          "description": "Tequila Blanco"
+          "description": "Tequila Blanco."
         },
         {
           "name": "Draft Beer",
-          "price": "Happy hour price not listed",
+          "price": "",
           "category": "drink",
-          "description": "All draft beer, 14 oz; price not shown on the happy hour menu"
+          "description": "All draft beer, 14 oz. Price not shown on the menu page."
+        },
+        {
+          "name": "Tacos",
+          "price": "$4",
+          "category": "food",
+          "description": "$4 tacos during happy hour, 2pm-5pm weekdays (per homepage)."
         }
       ]
     },
@@ -61996,7 +62002,7 @@
       "credit_url": "https://www.tapsandtacos.ca/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-11-02"
+    "last_synced_at": "2026-11-23"
   },
   {
     "place_id": null,
