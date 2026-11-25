@@ -2271,33 +2271,28 @@
       "https://www.barcorso.ca/our-story",
       "https://www.barcorso.ca/events"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: logo/wordmark",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/ae468d_e30363139bd8454c96f851b941527cdd~mv2.png/v1/fill/w_969,h_673,al_c,q_90,enc_avif,quality_auto/ae468d_e30363139bd8454c96f851b941527cdd~mv2.png",
+      "page": "https://www.barcorso.ca/",
+      "w": 969,
+      "h": 673
+    },
     "gallery": [
       {
         "url": "https://static.wixstatic.com/media/746711_02c8e789e3e942748234d8732c622722~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/746711_02c8e789e3e942748234d8732c622722~mv2.jpg",
         "page": "https://www.barcorso.ca/our-story",
         "w": 1440,
         "h": 1000
-      },
-      {
-        "url": "https://static.wixstatic.com/media/ae468d_e30363139bd8454c96f851b941527cdd~mv2.png/v1/fill/w_969,h_673,al_c,q_90,enc_avif,quality_auto/ae468d_e30363139bd8454c96f851b941527cdd~mv2.png",
-        "page": "https://www.barcorso.ca/",
-        "w": 969,
-        "h": 673
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "7b10105ff6d3",
+      "at": "2026-11-25",
+      "key": "463fb38a030c",
       "rejected": [
         {
-          "url": "https://static.wixstatic.com/media/ae468d_ee507800d4024a9cbfca3356f3734e0e~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ae468d_ee507800d4024a9cbfca3356f3734e0e~mv2.jpg",
-          "why": "near-duplicate of photo1"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/ae468d_d937d43f297f465fa6aaf2e5b5dcd3aef000.jpg/v1/fill/w_1440,h_660,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/ae468d_d937d43f297f465fa6aaf2e5b5dcd3aef000.jpg",
-          "why": "blurry composite, primarily wine bottles not venue"
+          "url": "https://static.wixstatic.com/media/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png/v1/fit/w_2500,h_1330,al_c/ae468d_4c44e75bc3fb439d8e3e6be7af43182d%7Emv2.png",
+          "why": "logo/wordmark"
         }
       ]
     }
@@ -2387,20 +2382,16 @@
     "pages": [
       "https://www.barneysonmain.com/"
     ],
-    "cover_problem": null,
+    "cover_problem": "review: blank image",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "fedfc3cc6743",
+      "at": "2026-11-25",
+      "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/603e7c92e01ee01a42875c57/caae5961-e8e4-43bd-bc66-d0cc44dbfec6/IMG_2594.jpeg",
-          "why": "focuses on bartender staff member as subject"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/603e7c92e01ee01a42875c57/cab5db70-55ff-4c48-a81f-eba5bbde16b7/PHOTO-2026-02-03-13-32-08.jpg",
-          "why": "duplicate of photo1"
+          "url": "http://static1.squarespace.com/static/603e7c92e01ee01a42875c57/t/6171815ce10c62405d14466a/1634828636745/logo.png?format=1500w",
+          "why": "blank image"
         }
       ]
     }
@@ -6239,48 +6230,16 @@
       "https://www.comotaperia.com/",
       "https://www.comotaperia.com/pages/about-us"
     ],
-    "cover_problem": null,
+    "cover_problem": "review: logo wordmark",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "8446405f3f3c",
+      "at": "2026-11-25",
+      "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://www.comotaperia.com/cdn/shop/files/Como__Taperia_RNM_LessNoise_Nov24_2020-103-2_1500x.jpg?v=1614336914",
-          "why": "retail merchandise display, not venue space"
-        },
-        {
-          "url": "https://www.comotaperia.com/cdn/shop/collections/Como__Taperia_RNM_LessNoise_Nov24_2020-103-2_1500x.jpg?v=1606419866",
-          "why": "coasters and merchandise on counter, not venue"
-        },
-        {
-          "url": "https://www.comotaperia.com/cdn/shop/files/DSC05803_2200x.jpg?v=1777231770",
-          "why": "duplicate of photo1 - same dish"
-        },
-        {
-          "url": "https://www.comotaperia.com/cdn/shop/collections/A_CoI_mo__Taperia_RNM_LessNoise_Nov24_2020-130_1500x.jpg?v=1606420202",
-          "why": "branded napkins with logo printed on surface"
-        },
-        {
-          "url": "https://www.comotaperia.com/cdn/shop/files/0EC08026-12FB-4FA3-AFDE-3C63820ED852_1200x.jpg?v=1760306327",
-          "why": "Michelin guide - mostly text/graphic overlay"
-        },
-        {
-          "url": "https://www.comotaperia.com/cdn/shop/files/Ultramar_Image-01_2200x.png?v=1788799936",
-          "why": "harbor/marina scene - not plausibly this venue"
-        },
-        {
-          "url": "https://www.comotaperia.com/cdn/shop/products/A_CoI_mo__Taperia_RNM_LessNoise_Nov24_2020-130_800x.jpg?v=1689199331",
-          "why": "duplicate of photo5 - branded napkins"
-        },
-        {
-          "url": "https://www.comotaperia.com/cdn/shop/files/Screen_Shot_2022-01-28_at_4.28.00_PM_1500x.png?v=1643416249",
-          "why": "promotional text overlay - mostly graphic"
-        },
-        {
-          "url": "https://www.comotaperia.com/cdn/shop/files/Como__Taperia_RNM_LessNoise_Nov24_2020-103-2_750x960_crop_center.jpg?v=1614336914",
-          "why": "retail merchandise display, similar to photo2"
+          "url": "https://cdn.shopify.com/s/files/1/0494/0723/0110/files/Como_Logo_Rotated2.png?height=628&pad_color=f7ecde&v=1614315207&width=1200",
+          "why": "logo wordmark"
         }
       ]
     }
@@ -6846,17 +6805,12 @@
     }
   },
   "dahlia": {
-    "checked_at": "2026-10-26",
+    "checked_at": "2026-11-25",
     "pages": [
       "https://dahlia-restaurant.ca/"
     ],
-    "cover_problem": "tiny file",
-    "cover": {
-      "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-1.jpg",
-      "page": "https://dahlia-restaurant.ca/",
-      "w": 797,
-      "h": 900
-    },
+    "cover_problem": null,
+    "cover": null,
     "gallery": [
       {
         "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-3.jpg",
@@ -6872,16 +6826,20 @@
       }
     ],
     "review": {
-      "at": "2026-10-26",
+      "at": "2026-11-25",
       "key": "2ad4d96379e9",
       "rejected": [
+        {
+          "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-1.jpg",
+          "why": "near-duplicate of photo1"
+        },
         {
           "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-2.jpg",
           "why": "people as subject"
         },
         {
           "url": "https://dahlia-restaurant.ca/wp-content/uploads/2025/06/events-at-dahlia.jpg",
-          "why": "text overlay (promo graphic)"
+          "why": "promotional text overlay"
         },
         {
           "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-5.jpg",
@@ -6896,23 +6854,21 @@
       "https://www.daviesocial.ca/",
       "https://www.daviesocial.ca/about"
     ],
-    "cover_problem": "dark",
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://static.wixstatic.com/media/b777c5_daa1f482d76245379dbc4ece4de5209d~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b777c5_daa1f482d76245379dbc4ece4de5209d~mv2.jpg",
-        "page": "https://www.daviesocial.ca/",
-        "w": 1440,
-        "h": 1000
-      }
-    ],
+    "cover_problem": "review: logo wordmark",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/b777c5_daa1f482d76245379dbc4ece4de5209d~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b777c5_daa1f482d76245379dbc4ece4de5209d~mv2.jpg",
+      "page": "https://www.daviesocial.ca/",
+      "w": 1440,
+      "h": 1000
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "03d453f9e353",
+      "at": "2026-11-25",
+      "key": "0a93f3f24b90",
       "rejected": [
         {
-          "url": "https://static.wixstatic.com/media/11062b_8afde548d3904e5486ebaf2c5a920dd6~mv2.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_8afde548d3904e5486ebaf2c5a920dd6~mv2.jpg",
-          "why": "near-duplicate of photo1.jpg"
+          "url": "https://static.wixstatic.com/media/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/b777c5_3396126030b44bfd93905807443f6ee8%7Emv2.jpg",
+          "why": "logo wordmark"
         }
       ]
     }
@@ -7121,45 +7077,21 @@
       "https://www.dibeppe.com/happy-hour-menu",
       "https://www.dibeppe.com/our-story"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://www.dibeppe.com/_astro/bar.Bt9nk_lB_Z21YtTJ.webp",
-        "page": "https://www.dibeppe.com/",
-        "w": 2000,
-        "h": 1333
-      },
-      {
-        "url": "https://www.dibeppe.com/_astro/og.0MdHQWUo_JwISG.jpg",
-        "page": "https://www.dibeppe.com/",
-        "w": 1200,
-        "h": 800
-      }
-    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://www.dibeppe.com/_astro/bar.Bt9nk_lB_Z21YtTJ.webp",
+      "page": "https://www.dibeppe.com/",
+      "w": 2000,
+      "h": 1333
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "fa82aaf4bd47",
+      "at": "2026-11-25",
+      "key": "e53350258beb",
       "rejected": [
         {
-          "url": "https://www.dibeppe.com/_astro/story-hero.BGAf2i63_Z1gVQYU.webp",
-          "why": "signage and logos (Giro d'Italia posters)"
-        },
-        {
-          "url": "https://www.dibeppe.com/_astro/Copy%20of%20DSC07966.fK8z0BeI_h1CA9.webp",
-          "why": "person as subject with visible menu"
-        },
-        {
-          "url": "https://www.dibeppe.com/_astro/story-pride.DavJZoVB_ZOxmEJ.webp",
-          "why": "black and white historic photo"
-        },
-        {
-          "url": "https://www.dibeppe.com/_astro/story-team.eDyXriTl_m1wh2.webp",
-          "why": "staff portrait"
-        },
-        {
-          "url": "https://www.dibeppe.com/_astro/story-merch.B3d-VYDR_1ozSA4.webp",
-          "why": "merchandise with repeated text"
+          "url": "https://www.dibeppe.com/_astro/og.0MdHQWUo_JwISG.jpg",
+          "why": "duplicate of photo1.jpg"
         }
       ]
     }
@@ -7389,15 +7321,14 @@
       "https://www.dominionkitchen.com/",
       "https://www.dominionkitchen.com/our-story"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: blank or corrupted image",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/5e5845c62aa1030a16f53952/98dbe112-817f-4ae2-a9ee-7f43c675d21d/DOM-0450+%281%29.jpg",
+      "page": "https://www.dominionkitchen.com/our-story",
+      "w": 2500,
+      "h": 1667
+    },
     "gallery": [
-      {
-        "url": "https://images.squarespace-cdn.com/content/v1/5e5845c62aa1030a16f53952/98dbe112-817f-4ae2-a9ee-7f43c675d21d/DOM-0450+%281%29.jpg",
-        "page": "https://www.dominionkitchen.com/our-story",
-        "w": 2500,
-        "h": 1667
-      },
       {
         "url": "https://images.squarespace-cdn.com/content/v1/5e5845c62aa1030a16f53952/eccd888e-de51-4628-8eb5-164bb681c77a/DOM-0597.jpg",
         "page": "https://www.dominionkitchen.com/our-story",
@@ -7406,16 +7337,12 @@
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "2a8cc87e519b",
+      "at": "2026-11-25",
+      "key": "aad22f0ac644",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/5e5845c62aa1030a16f53952/efaa997e-9bc1-473e-bde8-2c1141b78874/DOM-0625.jpg",
-          "why": "duplicate of photo1"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/5e5845c62aa1030a16f53952/ec8ce82e-19fd-4389-958b-81e69a2f92cd/0D5A0150+%282%29.jpg",
-          "why": "close-up of hands pouring drink, subject is the action not the venue"
+          "url": "http://static1.squarespace.com/static/5e5845c62aa1030a16f53952/t/5e5847666a8485210ba723fe/1582843755127/Dominion-Wordmark-Signature-White-01.png?format=1500w",
+          "why": "blank or corrupted image"
         }
       ]
     }
@@ -11339,25 +11266,18 @@
     "pages": [
       "https://www.hestiakitchenlab.ca/"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://static.wixstatic.com/media/11062b_c996aa7f864f4893b59aeb454ec36a0cf000.jpg/v1/fill/w_1440,h_933,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_c996aa7f864f4893b59aeb454ec36a0cf000.jpg",
-        "page": "https://www.hestiakitchenlab.ca/",
-        "w": 1440,
-        "h": 933
-      }
-    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/11062b_c996aa7f864f4893b59aeb454ec36a0cf000.jpg/v1/fill/w_1440,h_933,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_c996aa7f864f4893b59aeb454ec36a0cf000.jpg",
+      "page": "https://www.hestiakitchenlab.ca/",
+      "w": 1440,
+      "h": 933
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "ba38245a2d7c",
-      "rejected": [
-        {
-          "url": "https://static.wixstatic.com/media/0400d7_c91bf388e6a149979772073dcda9a94b~mv2.jpg/v1/fill/w_3600,h_3250,q_90,enc_avif,quality_auto/0400d7_c91bf388e6a149979772073dcda9a94b~mv2.jpg",
-          "why": "duplicate of photo1"
-        }
-      ]
+      "at": "2026-11-25",
+      "key": "a3bf6870d12c",
+      "rejected": []
     }
   },
   "heyhey-bar-grill": {
@@ -11547,8 +11467,13 @@
       "https://www.holytaco.ca/about",
       "https://www.holytaco.ca/new-webminster"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: logo and wordmark",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/6977f17571277d0314f845c1/bf9f1d02-f7a8-4221-a6af-298f741f06e5/Mesa+mexicana+de+quesadillas+y+tacos.png?format=1500w",
+      "page": "https://www.holytaco.ca/",
+      "w": 1448,
+      "h": 1086
+    },
     "gallery": [
       {
         "url": "https://images.squarespace-cdn.com/content/v1/6977f17571277d0314f845c1/2b3582a6-8897-44e2-b871-cccdd4fad30b/Quesabirria.png?format=2500w",
@@ -11557,22 +11482,10 @@
         "h": 1003
       },
       {
-        "url": "https://images.squarespace-cdn.com/content/v1/6977f17571277d0314f845c1/bf9f1d02-f7a8-4221-a6af-298f741f06e5/Mesa+mexicana+de+quesadillas+y+tacos.png?format=1500w",
-        "page": "https://www.holytaco.ca/",
-        "w": 1448,
-        "h": 1086
-      },
-      {
         "url": "https://images.squarespace-cdn.com/content/v1/6977f17571277d0314f845c1/7f2b7ac7-28eb-453f-904c-25e606ef7e62/Burrito+y+quesadilla+en+tabla+r%C3%BAstica.png?format=1500w",
         "page": "https://www.holytaco.ca/new-webminster",
         "w": 1448,
         "h": 1086
-      },
-      {
-        "url": "https://images.squarespace-cdn.com/content/v1/6977f17571277d0314f845c1/a056ad51-69bf-417d-a799-a7dc8feef57e/Quesabirrias_vancouver.png?format=2500w",
-        "page": "https://www.holytaco.ca/new-webminster",
-        "w": 1774,
-        "h": 887
       },
       {
         "url": "https://images.squarespace-cdn.com/content/v1/6977f17571277d0314f845c1/a2a00503-c6ca-49d2-b8af-bbfa50d8279c/Tres+tacos+de+pollo+sobre+tabla.png?format=1000w",
@@ -11588,20 +11501,16 @@
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "ad37d24f92a0",
+      "at": "2026-11-25",
+      "key": "4730c61ba5eb",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/6977f17571277d0314f845c1/3f908206-26ac-4d33-9a2a-5b783d330603/foodtruckvancouver.png?format=1500w",
-          "why": "person cooking on griddle"
+          "url": "http://static1.squarespace.com/static/6977f17571277d0314f845c1/t/6998c5bccc268137590cbe02/1771619772450/Best+Birria+Tacos+in+Vancouver.png?format=1500w",
+          "why": "logo and wordmark"
         },
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/6977f17571277d0314f845c1/2b3582a6-8897-44e2-b871-cccdd4fad30b/Quesabirria.png?format=1000w",
-          "why": "person as subject"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/6977f17571277d0314f845c1/078b9bd0-1b04-4df1-9000-540d08857fa3/WhatsApp+Image+2026-01-24+at+13.38.25.jpeg?format=1000w",
-          "why": "person as subject"
+          "url": "https://images.squarespace-cdn.com/content/v1/6977f17571277d0314f845c1/a056ad51-69bf-417d-a799-a7dc8feef57e/Quesabirrias_vancouver.png?format=2500w",
+          "why": "near-duplicate of photo2"
         }
       ]
     }
@@ -11979,53 +11888,21 @@
       "https://www.hynesirishpub.com/venure-hire",
       "https://www.hynesirishpub.com/about-us"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://static.wixstatic.com/media/c2afbc_a8330a4455f242fea45b1aeb0bd81b97~mv2.jpg/v1/fill/w_720,h_544,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c2afbc_a8330a4455f242fea45b1aeb0bd81b97~mv2.jpg",
-        "page": "https://www.hynesirishpub.com/",
-        "w": 720,
-        "h": 544
-      },
-      {
-        "url": "https://static.wixstatic.com/media/c2afbc_b96fa6ad004f426da582ae69de629b26f000.jpg/v1/fill/w_1440,h_586,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/c2afbc_b96fa6ad004f426da582ae69de629b26f000.jpg",
-        "page": "https://www.hynesirishpub.com/events-1",
-        "w": 1440,
-        "h": 586
-      }
-    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/c2afbc_a8330a4455f242fea45b1aeb0bd81b97~mv2.jpg/v1/fill/w_720,h_544,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c2afbc_a8330a4455f242fea45b1aeb0bd81b97~mv2.jpg",
+      "page": "https://www.hynesirishpub.com/",
+      "w": 720,
+      "h": 544
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "4403e431ec17",
+      "at": "2026-11-25",
+      "key": "a663736d23cd",
       "rejected": [
         {
-          "url": "https://static.wixstatic.com/media/c2afbc_de36842fee044c39828158fb3fa782aa~mv2.jpg/v1/crop/x_168,y_0,w_2401,h_1824/fill/w_1332,h_1010,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/s-15.jpg",
-          "why": "group photo posing"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/c2afbc_cfde8794c868444ca6ad2ea048490710~mv2.jpg/v1/fill/w_1437,h_810,q_90,enc_avif,quality_auto/c2afbc_cfde8794c868444ca6ad2ea048490710~mv2.jpg",
-          "why": "people portrait"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/c2afbc_c8f9dcd4b0614acdbd6ef8800e16ec39f000.jpg/v1/fill/w_1440,h_725,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/c2afbc_c8f9dcd4b0614acdbd6ef8800e16ec39f000.jpg",
-          "why": "close-up of signage/wordmark"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/c2afbc_46f35c252b4040b4a58e3aecf42d1f29~mv2.jpg/v1/fill/w_1078,h_728,q_90,enc_avif,quality_auto/c2afbc_46f35c252b4040b4a58e3aecf42d1f29~mv2.jpg",
-          "why": "event photo of people posing"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/c2afbc_c1681342091340449a1ac722ece737c7~mv2.jpg/v1/fill/w_720,h_524,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c2afbc_c1681342091340449a1ac722ece737c7~mv2.jpg",
-          "why": "duplicate of photo1"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/c2afbc_3d7564e9794b4cdbbeb2be00d3d8d04f~mv2.jpg/v1/fill/w_720,h_613,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c2afbc_3d7564e9794b4cdbbeb2be00d3d8d04f~mv2.jpg",
-          "why": "person holding drink (person as subject)"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/c2afbc_cfde8794c868444ca6ad2ea048490710~mv2.jpg/v1/fill/w_640,h_583,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c2afbc_cfde8794c868444ca6ad2ea048490710~mv2.jpg",
-          "why": "people portrait"
+          "url": "https://static.wixstatic.com/media/c2afbc_b96fa6ad004f426da582ae69de629b26f000.jpg/v1/fill/w_1440,h_586,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/c2afbc_b96fa6ad004f426da582ae69de629b26f000.jpg",
+          "why": "people as subject (musician's hands), poor image quality"
         }
       ]
     }
@@ -14742,27 +14619,21 @@
     "pages": [
       "https://www.littlemexicocantina.ca/"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://static.wixstatic.com/media/11062b_c996aa7f864f4893b59aeb454ec36a0cf000.jpg/v1/fill/w_1440,h_1000,al_b,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_c996aa7f864f4893b59aeb454ec36a0cf000.jpg",
-        "page": "https://www.littlemexicocantina.ca/",
-        "w": 1440,
-        "h": 1000
-      }
-    ],
+    "cover_problem": "review: promo graphic with text overlay and logo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/11062b_c996aa7f864f4893b59aeb454ec36a0cf000.jpg/v1/fill/w_1440,h_1000,al_b,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/11062b_c996aa7f864f4893b59aeb454ec36a0cf000.jpg",
+      "page": "https://www.littlemexicocantina.ca/",
+      "w": 1440,
+      "h": 1000
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "4dcf00ed3dda",
+      "at": "2026-11-25",
+      "key": "d2e4156ffd6e",
       "rejected": [
         {
           "url": "https://static.wixstatic.com/media/a0d525_e00ad1eb2c6e4fc1998c775e2d2854a7%7Emv2.png/v1/fit/w_2500,h_1330,al_c/a0d525_e00ad1eb2c6e4fc1998c775e2d2854a7%7Emv2.png",
-          "why": "logo, venue name and tagline text overlay - promotional material"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a0d525_eaaae675961e4c7a90c3c43ca2b06494~mv2.jpg/v1/fill/w_1440,h_1200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a0d525_eaaae675961e4c7a90c3c43ca2b06494~mv2.jpg",
-          "why": "near-duplicate of photo1.jpg"
+          "why": "promo graphic with text overlay and logo"
         }
       ]
     }
@@ -15062,47 +14933,21 @@
       "https://www.londonpubvan.com/",
       "https://www.londonpubvan.com/events"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://static.wixstatic.com/media/a87bfc_6ae2a18004004755afa19caf030b8e85~mv2.jpg/v1/fill/w_3469,h_1614,q_90,enc_avif,quality_auto/a87bfc_6ae2a18004004755afa19caf030b8e85~mv2.jpg",
-        "page": "https://www.londonpubvan.com/",
-        "w": 3469,
-        "h": 1614
-      }
-    ],
+    "cover_problem": "review: sign graphic ('PENNY LANE' wordmark) and people as subjects",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/a87bfc_6ae2a18004004755afa19caf030b8e85~mv2.jpg/v1/fill/w_3469,h_1614,q_90,enc_avif,quality_auto/a87bfc_6ae2a18004004755afa19caf030b8e85~mv2.jpg",
+      "page": "https://www.londonpubvan.com/",
+      "w": 3469,
+      "h": 1614
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "01f6c3bbb8af",
+      "at": "2026-11-25",
+      "key": "4bc4046ec31d",
       "rejected": [
         {
           "url": "https://static.wixstatic.com/media/746711_e476f92ae61d4f149f6ee6feab4e4e12~mv2.jpg/v1/fill/w_2500,h_1662,al_c/746711_e476f92ae61d4f149f6ee6feab4e4e12~mv2.jpg",
-          "why": "crowd of people as subject"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/0e6cba_849da61a524c43759b61f86db782fcc1~mv2.jpg/v1/fill/w_1572,h_1024,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/pool%20photo_JPG.jpg",
-          "why": "black and white photo"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a87bfc_8a45134bd6b54bb9853c969d38916c1c~mv2.jpg/v1/fill/w_3591,h_1670,q_90,enc_avif,quality_auto/a87bfc_8a45134bd6b54bb9853c969d38916c1c~mv2.jpg",
-          "why": "person playing darts as subject"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a87bfc_8eea15d93ecb4b1b94c932cdcdaa837b~mv2.jpg/v1/fill/w_3591,h_1670,q_90,enc_avif,quality_auto/a87bfc_8eea15d93ecb4b1b94c932cdcdaa837b~mv2.jpg",
-          "why": "person playing pinball as subject"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/a87bfc_603b075fa45f468598c71092f05fbec5~mv2.jpg/v1/fill/w_3591,h_1670,fp_0.73_0.6,q_90,enc_avif,quality_auto/a87bfc_603b075fa45f468598c71092f05fbec5~mv2.jpg",
-          "why": "duplicate of photo1"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/0e6cba_87172531371e48e58beb20dfb19c401c~mv2.jpg/v1/fill/w_864,h_1044,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/img_4813_JPG.jpg",
-          "why": "close-up of person holding drink"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/746711_e98172d0d4094929b7657bcdac3d23f2~mv2.jpg/v1/fill/w_1536,h_1044,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/img_1451_JPG.jpg",
-          "why": "interior with signage/text as focus"
+          "why": "sign graphic ('PENNY LANE' wordmark) and people as subjects"
         }
       ]
     }
@@ -15879,24 +15724,16 @@
       "https://www.mainstreetbeer.ca/tasting-room-menu-brathaus",
       "https://www.mainstreetbeer.ca/happy-hour"
     ],
-    "cover_problem": null,
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "476caa79f447",
+      "at": "2026-11-25",
+      "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/5e39fb52039c6a4e75b14e99/620ae293-dddd-4345-9626-28db33ad6683/KCL_Gallery_1920x1080.jpg",
-          "why": "branded design graphic, logo focus"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/5e39fb52039c6a4e75b14e99/270c9943-4ac7-4113-823d-7b1d5ef936b8/WEB_NewCans_2026-05-15.jpg",
-          "why": "product labeling focus, not venue experience"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/5e39fb52039c6a4e75b14e99/1607980953117-YH64GFGS0FD968SASXVG/MSB-Brew-Day-5-4356_Web.jpg",
-          "why": "duplicate of photo1"
+          "url": "http://static1.squarespace.com/static/5e39fb52039c6a4e75b14e99/t/665f5520dfa487303d924ded/1717523744702/Main+Street+Brewing+Wordmark.jpg?format=1500w",
+          "why": "logo/wordmark"
         }
       ]
     }
@@ -16107,51 +15944,21 @@
       "https://www.mangosvancouver.com/private-events",
       "https://www.mangosvancouver.com/menu/happy-hour-and-daily-specials"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/674a1cfc67d9965c3ab2978f_IMG_8598.avif",
-        "page": "https://www.mangosvancouver.com/",
-        "w": 1536,
-        "h": 2048
-      }
-    ],
+    "cover_problem": "review: people as subject",
+    "cover": {
+      "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/674a1cfc67d9965c3ab2978f_IMG_8598.avif",
+      "page": "https://www.mangosvancouver.com/",
+      "w": 1536,
+      "h": 2048
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "878be44c9795",
+      "at": "2026-11-25",
+      "key": "5eddd358c5e3",
       "rejected": [
-        {
-          "url": "https://uploads.tickettailor.com/v1/production/userfiles/acfi9eknr1vur6wguu5s.jpg",
-          "why": "unfocused bokeh, doesn't show venue"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/674a1cc88b0beadad2ed48d6_Texto%20del%20pa%CC%81rrafo%20-%2015.avif",
-          "why": "event photo with crowd posing"
-        },
         {
           "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/674a1c8cba87c699b9dc1531_5.jpg",
           "why": "people as subject"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/66e514d04b537205d465734c/696571d200eb9cbfd67ae3bd_Banner_Taco-tuesday.jpg",
-          "why": "promotional flyer, mostly text"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/66e514d04b537205d465734c/696572568abbc5c2c5625228_Banner_Wings-wednesdays.jpg",
-          "why": "promotional flyer, mostly text"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/66e514d04b537205d465734c/69657205584e788fe5c6d2fa_banner_Burritos-thursday.jpg",
-          "why": "promotional flyer, mostly text"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/66ed18e5db551da37bd0dfa0_2148716315.jpg",
-          "why": "stock-looking generic food photography"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/66e4aa1187500023f415575c/674a1cb167d9965c3ab22c7a__DSC0347%20(1).avif",
-          "why": "duplicate of photo1"
         }
       ]
     }
@@ -16194,27 +16001,21 @@
     "pages": [
       "https://marcellopizzeria.com/"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://marcellopizzeria.com/wp-content/uploads/2019/11/MARCELLO_CREATION05_SEP04.png",
-        "page": "https://marcellopizzeria.com/",
-        "w": 1080,
-        "h": 1080
-      }
-    ],
+    "cover_problem": "review: illustration/clip art, not a photograph of the venue",
+    "cover": {
+      "url": "https://marcellopizzeria.com/wp-content/uploads/2019/11/MARCELLO_CREATION05_SEP04.png",
+      "page": "https://marcellopizzeria.com/",
+      "w": 1080,
+      "h": 1080
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "01867efae171",
+      "at": "2026-11-25",
+      "key": "1080d7547d57",
       "rejected": [
         {
-          "url": "https://marcellopizzeria.com/wp-content/uploads/2019/11/ORANGETREE_PATTERN_02.jpg",
-          "why": "orchard/garden scene, not the venue"
-        },
-        {
-          "url": "https://marcellopizzeria.com/wp-content/uploads/2019/11/MARCELLO_HEADER_01.jpg",
-          "why": "duplicate of photo1"
+          "url": "https://marcellopizzeria.com/wp-content/uploads/2019/11/ORANGE_ILLUSTRATION_02.jpg",
+          "why": "illustration/clip art, not a photograph of the venue"
         }
       ]
     }
@@ -18483,39 +18284,21 @@
       "https://www.novarestaurant.ca/",
       "https://www.novarestaurant.ca/about"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://cdn.prod.website-files.com/69cae6668fe820e7bc2e2f28/6a207d2a102f1fc9e6795788_P1522882.avif",
-        "page": "https://www.novarestaurant.ca/",
-        "w": 810,
-        "h": 1080
-      }
-    ],
+    "cover_problem": "review: logo wordmark",
+    "cover": {
+      "url": "https://cdn.prod.website-files.com/69cae6668fe820e7bc2e2f28/6a207d2a102f1fc9e6795788_P1522882.avif",
+      "page": "https://www.novarestaurant.ca/",
+      "w": 810,
+      "h": 1080
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "1de7cb3412de",
+      "at": "2026-11-25",
+      "key": "7a4fcf8ac50e",
       "rejected": [
         {
-          "url": "https://cdn.prod.website-files.com/69cae6668fe820e7bc2e2f28/6a1f268f2de5b4d2adfcffeb_P1500874.avif",
-          "why": "bartender as subject"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/69cae6668fe820e7bc2e2f28/6a2884d57ebc32947f7ec7ef_Thomas.avif",
-          "why": "staff portrait"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/69cae6668fe820e7bc2e2f28/6a2884d5bb33b04a9cb26128_Prash.avif",
-          "why": "staff portrait"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/69cae6668fe820e7bc2e2f28/6a2884d4c450fd8484bc5a28_Max.avif",
-          "why": "staff portrait"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/69cae6668fe820e7bc2e2f28/6a207db794790b69dc207a86_P1500554.avif",
-          "why": "duplicate of photo1"
+          "url": "https://cdn.prod.website-files.com/69cae6668fe820e7bc2e2f28/6a2080e825ac29d0435c4f4f_On%20Dark%20BG.png",
+          "why": "logo wordmark"
         }
       ]
     }
@@ -18782,12 +18565,6 @@
     "cover": null,
     "gallery": [
       {
-        "url": "https://images.squarespace-cdn.com/content/v1/61185ddde306641394d0d9c2/d6e905c7-86fc-4390-a8f6-3654791e9b8d/Ora+King+Salmon+Soba.JPG",
-        "page": "https://okiniyvr.com/",
-        "w": 2500,
-        "h": 1668
-      },
-      {
         "url": "https://images.squarespace-cdn.com/content/v1/61185ddde306641394d0d9c2/cd62527b-2825-4816-a8d7-99486cbee305/Caesar+Salad.JPG",
         "page": "https://okiniyvr.com/about",
         "w": 2500,
@@ -18795,20 +18572,12 @@
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "f1e17cdcc415",
+      "at": "2026-11-25",
+      "key": "321121cb4ed5",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/61185ddde306641394d0d9c2/ba963da1-cc73-4bd2-8582-6f7d26d394d5/Okini.JPG",
-          "why": "people portrait"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/61185ddde306641394d0d9c2/1709435930120-O0VHF6RXZQSB9481Y8UL/VCW2024%2BLine%2BUp.jpg",
-          "why": "duplicate of photo1"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/61185ddde306641394d0d9c2/1706253867832-1V9VBRGGOF6WLH180YEC/Tobiko%2Band%2Bthe%2BTramp.jpg",
-          "why": "illustration, not venue"
+          "url": "https://images.squarespace-cdn.com/content/v1/61185ddde306641394d0d9c2/d6e905c7-86fc-4390-a8f6-3654791e9b8d/Ora+King+Salmon+Soba.JPG",
+          "why": "near-duplicate of photo1, same dish and composition"
         }
       ]
     }
@@ -21065,24 +20834,16 @@
       "https://www.randbbrewing.com/",
       "https://www.randbbrewing.com/about-us-contact"
     ],
-    "cover_problem": null,
+    "cover_problem": "review: logo",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "bafc6d535e87",
+      "at": "2026-11-25",
+      "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://static.wixstatic.com/media/2c4e1c_d041a98c12c8472c889d4b26d60783ad~mv2.jpg/v1/fill/w_1250,h_834,al_c/2c4e1c_d041a98c12c8472c889d4b26d60783ad~mv2.jpg",
-          "why": "person as subject (staff)"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/d634d2_55209d48f6c9445b945d0eeb4f5973c9~mv2.jpg/v1/fill/w_720,h_666,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d634d2_55209d48f6c9445b945d0eeb4f5973c9~mv2.jpg",
-          "why": "branded product/logo focus"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/4c75c6_e9c958a85ff54acd99e37787b7a63f0d~mv2.jpg/v1/fill/w_475,h_671,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/4c75c6_e9c958a85ff54acd99e37787b7a63f0d~mv2.jpg",
-          "why": "near-duplicate of photo1"
+          "url": "https://static.wixstatic.com/media/386bde_45ce85663ab04d1f8bb75428dc2491c2%7Emv2.png/v1/fit/w_2500,h_1330,al_c/386bde_45ce85663ab04d1f8bb75428dc2491c2%7Emv2.png",
+          "why": "logo"
         }
       ]
     }
@@ -21151,53 +20912,25 @@
       "https://www.railandriversteakandseafood.com/",
       "https://www.railandriversteakandseafood.com/events"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/seafood_platter-1920w.jpg",
-        "page": "https://www.railandriversteakandseafood.com/",
-        "w": 1574,
-        "h": 2000
-      },
-      {
-        "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/fairhaven_group_langley_gift_cards_new-1920w.jpg?jxl&v=jxl",
-        "page": "https://www.railandriversteakandseafood.com/",
-        "w": 1200,
-        "h": 1063
-      }
-    ],
+    "cover_problem": "review: logo wordmark is the dominant element",
+    "cover": {
+      "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/seafood_platter-1920w.jpg",
+      "page": "https://www.railandriversteakandseafood.com/",
+      "w": 1574,
+      "h": 2000
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "0114dee694bf",
+      "at": "2026-11-25",
+      "key": "3280a4109e14",
       "rejected": [
         {
           "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/rail_river_bistro_share_image-1920w.jpg",
-          "why": "logo/wordmark overlay and promotional graphic"
+          "why": "logo wordmark is the dominant element"
         },
         {
-          "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/Fairhaven+Santa+Brunch-1920w.jpg",
-          "why": "promotional flyer, mostly text"
-        },
-        {
-          "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/pexels-photo-428124-f0b07bb2-1920w.jpeg",
-          "why": "menu or placemat, mostly text"
-        },
-        {
-          "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/KV1-1920w.jpg",
-          "why": "duplicate of photo1"
-        },
-        {
-          "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/20261107+-+Johnny+Perrotta-1920w.png",
-          "why": "wrong venue, Yuk Yuk's comedy show promo"
-        },
-        {
-          "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/20261121+-+Julie+Kim-1920w.png",
-          "why": "wrong venue, Yuk Yuk's comedy show promo"
-        },
-        {
-          "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/Canada+nov+-26-1920w.png",
-          "why": "promotional flyer, mostly text"
+          "url": "https://irp.cdn-website.com/70ac8689/dms3rep/multi/opt/fairhaven_group_langley_gift_cards_new-1920w.jpg?jxl&v=jxl",
+          "why": "mostly text and branding overlay"
         }
       ]
     }
@@ -22591,35 +22324,18 @@
     ],
     "cover_problem": null,
     "cover": null,
-    "gallery": [
-      {
-        "url": "https://static.wixstatic.com/media/9fcea2_d360954c73824399af3b18074326204b~mv2.jpg/v1/fill/w_2223,h_1875,q_90,enc_avif,quality_auto/9fcea2_d360954c73824399af3b18074326204b~mv2.jpg",
-        "page": "https://www.sappertondistricttaphouse.com/",
-        "w": 2223,
-        "h": 1875
-      },
-      {
-        "url": "https://static.wixstatic.com/media/9fcea2_f582072cdd034729afec84bfdec84d16~mv2.png/v1/fill/w_1024,h_875,al_c,q_90,enc_avif,quality_auto/9fcea2_f582072cdd034729afec84bfdec84d16~mv2.png",
-        "page": "https://www.sappertondistricttaphouse.com/",
-        "w": 1024,
-        "h": 875
-      }
-    ],
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "36ea13bb43db",
+      "at": "2026-11-25",
+      "key": "15f8724c758e",
       "rejected": [
         {
-          "url": "https://static.wixstatic.com/media/9fcea2_9f033af051e54b0a817f77841a38c5f4~mv2.jpg/v1/fill/w_2500,h_1875,al_c/9fcea2_9f033af051e54b0a817f77841a38c5f4~mv2.jpg",
-          "why": "person's arm is subject"
+          "url": "https://static.wixstatic.com/media/9fcea2_d360954c73824399af3b18074326204b~mv2.jpg/v1/fill/w_2223,h_1875,q_90,enc_avif,quality_auto/9fcea2_d360954c73824399af3b18074326204b~mv2.jpg",
+          "why": "styled cocktail on generic background, doesn't show venue"
         },
         {
-          "url": "https://static.wixstatic.com/media/9fcea2_9f033af051e54b0a817f77841a38c5f4~mv2.jpg/v1/fill/w_1440,h_1000,al_t,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/9fcea2_9f033af051e54b0a817f77841a38c5f4~mv2.jpg",
-          "why": "near-duplicate of photo2"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/9fcea2_3d3868f8d9cd4331b42c26d2777536f0~mv2.jpg/v1/fill/w_2222,h_1874,q_90,enc_avif,quality_auto/9fcea2_3d3868f8d9cd4331b42c26d2777536f0~mv2.jpg",
-          "why": "near-duplicate of photo1"
+          "url": "https://static.wixstatic.com/media/9fcea2_f582072cdd034729afec84bfdec84d16~mv2.png/v1/fill/w_1024,h_875,al_c,q_90,enc_avif,quality_auto/9fcea2_f582072cdd034729afec84bfdec84d16~mv2.png",
+          "why": "styled beer photo on generic background, doesn't show venue"
         }
       ]
     }
@@ -23677,8 +23393,13 @@
       "https://persesocialcorner.com/home/locations-2/",
       "https://persesocialcorner.com/home/events/"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://persesocialcorner.com/wp-content/uploads/2026/07/2.jpg",
+      "page": "https://persesocialcorner.com/home/book-your-event-social-corner/",
+      "w": 2000,
+      "h": 2000
+    },
     "gallery": [
       {
         "url": "https://persesocialcorner.com/wp-content/uploads/2024/09/3-1.jpg",
@@ -23703,35 +23424,12 @@
         "page": "https://persesocialcorner.com/home/book-your-event-social-corner/",
         "w": 2000,
         "h": 2000
-      },
-      {
-        "url": "https://persesocialcorner.com/wp-content/uploads/2026/07/2.jpg",
-        "page": "https://persesocialcorner.com/home/book-your-event-social-corner/",
-        "w": 2000,
-        "h": 2000
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "f3bedbd8d01d",
-      "rejected": [
-        {
-          "url": "https://persesocialcorner.com/wp-content/uploads/2026/07/Untitled-design-2.jpg",
-          "why": "primarily exterior signage/logo on building"
-        },
-        {
-          "url": "https://persesocialcorner.com/wp-content/uploads/2024/09/2-1.jpg",
-          "why": "duplicate of photo6 - same burger, lesser presentation"
-        },
-        {
-          "url": "https://persesocialcorner.com/wp-content/uploads/2026/07/4.jpg",
-          "why": "close-up of chandelier fixture only, doesn't show venue"
-        },
-        {
-          "url": "https://persesocialcorner.com/wp-content/uploads/2026/07/11.jpg",
-          "why": "duplicate of photo1 - identical dining room"
-        }
-      ]
+      "at": "2026-11-25",
+      "key": "bcf6d6ba43f8",
+      "rejected": []
     }
   },
   "social-corner-yaletown": {
@@ -23825,15 +23523,14 @@
     "pages": [
       "https://www.songyvr.com/"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: logo/wordmark",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/637bd7471883712f534a69d5/0288c86d-90df-4a2d-b660-ed9a0069fe1c/5X1A4443.jpg",
+      "page": "https://www.songyvr.com/",
+      "w": 2500,
+      "h": 1667
+    },
     "gallery": [
-      {
-        "url": "https://images.squarespace-cdn.com/content/v1/637bd7471883712f534a69d5/0288c86d-90df-4a2d-b660-ed9a0069fe1c/5X1A4443.jpg",
-        "page": "https://www.songyvr.com/",
-        "w": 2500,
-        "h": 1667
-      },
       {
         "url": "https://images.squarespace-cdn.com/content/v1/637bd7471883712f534a69d5/e95c3f55-07e4-4afd-aa17-9866145528ac/Song-1410.jpg",
         "page": "https://www.songyvr.com/",
@@ -23848,9 +23545,14 @@
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "b86a214a2e23",
-      "rejected": []
+      "at": "2026-11-25",
+      "key": "089ac0861b2d",
+      "rejected": [
+        {
+          "url": "http://static1.squarespace.com/static/637bd7471883712f534a69d5/t/63880bff5e0e99379d87d31c/1669860351856/kksong_logo_bluepatternSQ.jpg?format=1500w",
+          "why": "logo/wordmark"
+        }
+      ]
     }
   },
   "sons-of-vancouver-distillery": {
@@ -23860,53 +23562,28 @@
       "https://www.sonsofvancouver.ca/menu-4",
       "https://www.sonsofvancouver.ca/about"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: logo/wordmark",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/663e672e7e6d3a5a7924d2ff/d5018622-3afa-420a-8a14-2b007d61ff7f/SOV2023-Spring-25.jpg",
+      "page": "https://www.sonsofvancouver.ca/menu-4",
+      "w": 1068,
+      "h": 801
+    },
     "gallery": [
       {
         "url": "https://images.squarespace-cdn.com/content/v1/663e672e7e6d3a5a7924d2ff/e6f06343-6932-4b94-8c3d-037ea35ccb04/SOV-TheDistillery-74.jpg",
         "page": "https://www.sonsofvancouver.ca/",
         "w": 2500,
         "h": 1669
-      },
-      {
-        "url": "https://images.squarespace-cdn.com/content/v1/663e672e7e6d3a5a7924d2ff/d5018622-3afa-420a-8a14-2b007d61ff7f/SOV2023-Spring-25.jpg",
-        "page": "https://www.sonsofvancouver.ca/menu-4",
-        "w": 1068,
-        "h": 801
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "257d4bd8ee55",
+      "at": "2026-11-25",
+      "key": "28b3ec04d485",
       "rejected": [
         {
-          "url": "https://images.squarespace-cdn.com/content/v1/663e672e7e6d3a5a7924d2ff/c5061b73-d4a6-44a1-af64-8a80873484d2/SOV-TheDistillery-22.jpg",
-          "why": "person as subject"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/663e672e7e6d3a5a7924d2ff/6d2350b3-3f12-4ff0-907e-2b1db82f59a8/SOV2023-Spring-31.jpg",
-          "why": "person as subject making drink"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/663e672e7e6d3a5a7924d2ff/d203b00a-c441-48c8-84b8-cf44c10996b1/SOV_January2023-31.jpg",
-          "why": "group photo of staff"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/663e672e7e6d3a5a7924d2ff/02ff1efe-0a27-4bf9-8160-a028b72b5034/SOV_whiskyMenu_March2024-17.jpg",
-          "why": "duplicate of photo1"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/663e672e7e6d3a5a7924d2ff/a15bde7a-417d-4bc1-bd00-da6160eccfba/SOV_stepBrother_June2025-6.jpg",
-          "why": "person as subject making drink"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/663e672e7e6d3a5a7924d2ff/72d8ea2b-89c6-416d-8604-62621ffe45b4/SOV_CrewwPhotos_Feb2026-4.jpg",
-          "why": "person as subject"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/663e672e7e6d3a5a7924d2ff/7676c173-3691-4a8d-97cd-13fdc3d205aa/SOV_sovOldFashioned_June2025-1.jpg",
-          "why": "person as subject making drink"
+          "url": "http://static1.squarespace.com/static/663e672e7e6d3a5a7924d2ff/t/663e89be1ba768047ee21cfc/1715374526835/S0fV_SofV+only.png?format=1500w",
+          "why": "logo/wordmark"
         }
       ]
     }
@@ -25041,43 +24718,21 @@
       "https://www.tableaubarbistro.com/",
       "https://www.tableaubarbistro.com/events"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://static.wixstatic.com/media/fc95b3_5c9166f2d6454841907ef3fb0d4e9c38~mv2.jpg/v1/fill/w_1440,h_931,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc95b3_5c9166f2d6454841907ef3fb0d4e9c38~mv2.jpg",
-        "page": "https://www.tableaubarbistro.com/",
-        "w": 1440,
-        "h": 931
-      }
-    ],
+    "cover_problem": "review: black-and-white photo",
+    "cover": {
+      "url": "https://static.wixstatic.com/media/fc95b3_5c9166f2d6454841907ef3fb0d4e9c38~mv2.jpg/v1/fill/w_1440,h_931,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc95b3_5c9166f2d6454841907ef3fb0d4e9c38~mv2.jpg",
+      "page": "https://www.tableaubarbistro.com/",
+      "w": 1440,
+      "h": 931
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "ee921ccc6038",
+      "at": "2026-11-25",
+      "key": "f8c8f0076694",
       "rejected": [
         {
-          "url": "https://static.wixstatic.com/media/fc95b3_25f219b35cf0403c97839712896abc0ef000.jpg/v1/fill/w_1440,h_1000,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/fc95b3_25f219b35cf0403c97839712896abc0ef000.jpg",
-          "why": "close-up with prominent hand/person"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/fc95b3_78eb442d48dc4ba5b9f38673fb68e4aa~mv2.jpg/v1/fill/w_1440,h_1000,al_b,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc95b3_78eb442d48dc4ba5b9f38673fb68e4aa~mv2.jpg",
-          "why": "black and white"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/fc95b3_b3a815fec25b4fcc958b94bb89009ae4~mv2.png/v1/fill/w_1440,h_688,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/fc95b3_b3a815fec25b4fcc958b94bb89009ae4~mv2.png",
-          "why": "near-duplicate of photo1"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/fc95b3_edce9eb146d847eaa70a56ef107f9ebe~mv2.jpg/v1/crop/x_643,y_0,w_1714,h_1688/fill/w_938,h_924,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/4_edited.jpg",
-          "why": "black and white"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/fc95b3_e2a58d78c7914983aa91907cc9f6a36c~mv2.jpg/v1/fill/w_818,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5672.jpg",
-          "why": "exact duplicate of photo1"
-        },
-        {
-          "url": "https://static.wixstatic.com/media/fc95b3_d38eec6efa7a4bdd8a16fe2392b6c791~mv2.png/v1/fill/w_1200,h_1080,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Tableau.png",
-          "why": "promotional image, mostly text"
+          "url": "https://static.wixstatic.com/media/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg/v1/fit/w_2500,h_1330,al_c/fc95b3_19ef881016f849558266b1ef2de2b039%7Emv2.jpg",
+          "why": "black-and-white photo"
         }
       ]
     }
@@ -26258,33 +25913,28 @@
       "https://www.freehouse.co/events-booking",
       "https://www.freehouse.co/locations/butcher-and-bullock"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: neon sign text, not venue interior or service",
+    "cover": {
+      "url": "https://www.datocms-assets.com/75587/1664254616-restaurant-toronto-walrus-cocktail-cheers.jpg?auto=format&fit=max&w=1200",
+      "page": "https://www.freehouse.co/events-booking",
+      "w": 1200,
+      "h": 800
+    },
     "gallery": [
       {
         "url": "https://www.datocms-assets.com/75587/1664222269-restaurant-vancouver-ballyhoo-appetizers.jpg?auto=format&fit=max&w=1200",
         "page": "https://www.freehouse.co/locations",
         "w": 1200,
         "h": 800
-      },
-      {
-        "url": "https://www.datocms-assets.com/75587/1664254616-restaurant-toronto-walrus-cocktail-cheers.jpg?auto=format&fit=max&w=1200",
-        "page": "https://www.freehouse.co/events-booking",
-        "w": 1200,
-        "h": 800
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "895e4cd5564f",
+      "at": "2026-11-25",
+      "key": "3586e9578df5",
       "rejected": [
         {
           "url": "https://www.datocms-assets.com/75587/1663200050-restaurant-vancouver-butcherbullock-neon-sign.jpg?auto=format&fit=max&w=1200",
-          "why": "primarily sign graphics and text"
-        },
-        {
-          "url": "https://www.datocms-assets.com/75587/1774912998-freehouse-lamplighter-vancouver-pub-square-burger.jpg?auto=format&q=40&dpr=0.25",
-          "why": "duplicate of photo1"
+          "why": "neon sign text, not venue interior or service"
         }
       ]
     }
@@ -26296,35 +25946,21 @@
       "https://cambiepubs.com/events",
       "https://cambiepubs.com/your-cambie-story"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/679ab8679ca36805e5855be9_IMG_7703.avif",
-        "page": "https://cambiepubs.com/",
-        "w": 1500,
-        "h": 1000
-      }
-    ],
+    "cover_problem": "review: screenshot of website mockup, not a photo of the venue",
+    "cover": {
+      "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/679ab8679ca36805e5855be9_IMG_7703.avif",
+      "page": "https://cambiepubs.com/",
+      "w": 1500,
+      "h": 1000
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "2abdb04bf30d",
+      "at": "2026-11-25",
+      "key": "f226736d1a36",
       "rejected": [
         {
           "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/6925144e26dafdde14d3a2c2_6916abb8d2861347aa74ab12_691014e720de4e6f3fec889b_CambiePub%25281%2529.avif",
-          "why": "website screenshots and menu, mostly text"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/6ae3c4b343ba24f6aa983200_Home%20ppage%20Slider%20Happy%20Hour%20Update.png",
-          "why": "promotional poster, mostly text"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/62fea9f2f54272f93427d228_cambie-background.avif",
-          "why": "illustration/clip art, not actual photo"
-        },
-        {
-          "url": "https://cdn.prod.website-files.com/62fea9f2f542729be727d1af/62fea9f2f5427243f127d227_cambie-exterior.avif",
-          "why": "near-duplicate of photo1"
+          "why": "screenshot of website mockup, not a photo of the venue"
         }
       ]
     }
@@ -26400,15 +26036,14 @@
       "https://thecharlatanrestaurant.com/",
       "https://thecharlatanrestaurant.com/spaces/"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: logo/text graphic only",
+    "cover": {
+      "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/spaces-bar-1.jpg",
+      "page": "https://thecharlatanrestaurant.com/spaces/",
+      "w": 640,
+      "h": 400
+    },
     "gallery": [
-      {
-        "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/spaces-bar-1.jpg",
-        "page": "https://thecharlatanrestaurant.com/spaces/",
-        "w": 640,
-        "h": 400
-      },
       {
         "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/spaces-lounge.jpg",
         "page": "https://thecharlatanrestaurant.com/spaces/",
@@ -26417,36 +26052,12 @@
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "f86a1438751b",
+      "at": "2026-11-25",
+      "key": "70290f6db9dc",
       "rejected": [
         {
-          "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2021/03/foot-1.jpg",
-          "why": "decorative lighting fixture, mostly graphic"
-        },
-        {
-          "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2021/03/HAPPY-2.jpg",
-          "why": "person as subject, close-up portrait with drink"
-        },
-        {
-          "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/bg-patio.jpg",
-          "why": "too blurry to identify venue details"
-        },
-        {
-          "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/bg-lounge.jpg",
-          "why": "too blurry, crowd photo"
-        },
-        {
-          "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/bg-bar-2.jpg",
-          "why": "too blurry"
-        },
-        {
-          "url": "https://www.thecharlatanrestaurant.com/wp-content/uploads/2016/06/bg-den-1.jpg",
-          "why": "too blurry"
-        },
-        {
-          "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2016/06/patio.jpg",
-          "why": "duplicate of photo1, same patio and angle"
+          "url": "https://thecharlatanrestaurant.com/wp-content/uploads/2019/07/logo.png",
+          "why": "logo/text graphic only"
         }
       ]
     }
@@ -26491,42 +26102,9 @@
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "60996cc2730e",
-      "rejected": [
-        {
-          "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/ciderhouse-full-home.jpg",
-          "why": "person as subject holding branded glass"
-        },
-        {
-          "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/events-2.jpg",
-          "why": "collage of people as subjects (staff/performers)"
-        },
-        {
-          "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/about-us.jpg",
-          "why": "person as subject in right panel"
-        },
-        {
-          "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/about-2.jpg",
-          "why": "near-duplicate of photo1 (same drink, scene)"
-        },
-        {
-          "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/about-3.jpg",
-          "why": "person as subject (portrait with drink)"
-        },
-        {
-          "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/events-2-1.jpg",
-          "why": "person doing activity (DJ/event photo), unclear venue"
-        },
-        {
-          "url": "https://ciderhouserules.ca/wp-content/uploads/2024/01/events-3.jpg",
-          "why": "person as subject (musician/staff)"
-        },
-        {
-          "url": "http://ciderhouserules.ca/wp-content/uploads/2024/01/events-1.jpg",
-          "why": "person as subject (staff/event photo)"
-        }
-      ]
+      "at": "2026-11-25",
+      "key": "2f0c22182e69",
+      "rejected": []
     }
   },
   "the-clayton-public-house": {
@@ -26862,15 +26440,14 @@
     "pages": [
       "https://farmhouseon10th.com/"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://farmhouseon10th.com/assets/images/room.jpg",
+      "page": "https://farmhouseon10th.com/",
+      "w": 5685,
+      "h": 2881
+    },
     "gallery": [
-      {
-        "url": "https://farmhouseon10th.com/assets/images/room.jpg",
-        "page": "https://farmhouseon10th.com/",
-        "w": 5685,
-        "h": 2881
-      },
       {
         "url": "https://farmhouseon10th.com/assets/images/wine.jpg",
         "page": "https://farmhouseon10th.com/",
@@ -26885,18 +26462,9 @@
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "dae7778ec760",
-      "rejected": [
-        {
-          "url": "https://farmhouseon10th.com/assets/images/menu.jpg",
-          "why": "duplicate of photo1"
-        },
-        {
-          "url": "https://farmhouseon10th.com/static/media/popup.848784e5a72a357cadb9.png",
-          "why": "promotional image with text overlay"
-        }
-      ]
+      "at": "2026-11-25",
+      "key": "cfba6890ab91",
+      "rejected": []
     }
   },
   "the-flamingo-room": {
@@ -28176,37 +27744,18 @@
       "https://narrowgroup.ca/project/the-narrow/",
       "https://narrowgroup.ca/about/"
     ],
-    "cover_problem": null,
-    "cover": null,
-    "gallery": [
-      {
-        "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2025/12/Submenu-2-Compressed.webp",
-        "page": "https://narrowgroup.ca/project/the-narrow/",
-        "w": 1000,
-        "h": 667
-      }
-    ],
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2025/12/Submenu-2-Compressed.webp",
+      "page": "https://narrowgroup.ca/project/the-narrow/",
+      "w": 1000,
+      "h": 667
+    },
+    "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "5f0eb7ec8161",
-      "rejected": [
-        {
-          "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2025/12/Submenu-compressed.webp",
-          "why": "art gallery, people viewing artwork, not this venue"
-        },
-        {
-          "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2025/12/events-banner-1-dark-top.jpg",
-          "why": "carnival/festival scene, not this venue"
-        },
-        {
-          "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2025/12/submenu-compressed-1.webp",
-          "why": "motorcycle museum, not this venue"
-        },
-        {
-          "url": "https://narrowgroup.ca/2020baby/wp-content/uploads/2020/05/narrow-group.jpg",
-          "why": "duplicate of photo1"
-        }
-      ]
+      "at": "2026-11-25",
+      "key": "320e12036a74",
+      "rejected": []
     }
   },
   "the-notorious-grey-fox-taps-patio": {
@@ -30445,47 +29994,25 @@
       "https://www.tradingpostbrewing.com/upcoming-events",
       "https://www.tradingpostbrewing.com/brewery-tastingroom"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: a better photo",
+    "cover": {
+      "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/4b294a9d-e377-465b-a030-fe97930af314/1DX_2095.jpg",
+      "page": "https://www.tradingpostbrewing.com/brewery-tastingroom",
+      "w": 2500,
+      "h": 3125
+    },
     "gallery": [
       {
         "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/870addf6-6cb5-4bef-80f7-ac954dc9381b/1DX_0129.jpg",
         "page": "https://www.tradingpostbrewing.com/brewery-tastingroom",
         "w": 2500,
         "h": 3125
-      },
-      {
-        "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/4b294a9d-e377-465b-a030-fe97930af314/1DX_2095.jpg",
-        "page": "https://www.tradingpostbrewing.com/brewery-tastingroom",
-        "w": 2500,
-        "h": 3125
       }
     ],
     "review": {
-      "at": "2026-11-24",
-      "key": "4adb8f22dcfd",
-      "rejected": [
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/1704659084252-XIUIUFF64F1XOZ71GG10/1DX_2117.jpg",
-          "why": "industrial brewing equipment, not guest-facing"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/938493b4-6be7-4ce3-85b2-40b1724e6328/1DX_0020.jpg",
-          "why": "people as subject (hands close-up)"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/c5f352b5-44cf-46b9-ae43-27ede79c347a/A48I4190.jpg",
-          "why": "person as subject holding food"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/a6eea22e-dbf8-4f3a-81ff-f0c83a04b485/Tasting+Room+events.jpg",
-          "why": "duplicate of photo1"
-        },
-        {
-          "url": "https://images.squarespace-cdn.com/content/v1/65833e46b62242013a8e05b3/99db2c7e-e121-41be-a984-2982e46e635a/1DX_2094.jpg",
-          "why": "merchandise display area, not dining/bar experience"
-        }
-      ]
+      "at": "2026-11-25",
+      "key": "19e3614d521e",
+      "rejected": []
     }
   },
   "tugboat-annie-s-pub-grille": {
@@ -31539,48 +31066,16 @@
       "https://wedgewoodhotel.com/dining/special-events-holidays/",
       "https://wedgewoodhotel.com/dining/in-room-dining/"
     ],
-    "cover_problem": null,
+    "cover_problem": "review: logo/wordmark",
     "cover": null,
     "gallery": [],
     "review": {
-      "at": "2026-11-24",
-      "key": "e9845f62312f",
+      "at": "2026-11-25",
+      "key": "da39a3ee5e6b",
       "rejected": [
         {
-          "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/lorenapierce_p-74.jpg",
-          "why": "event photo of group posing at wedding ceremony"
-        },
-        {
-          "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/Wedgewood-Hotel-Lobby-Photoshoot-2000x0-c-default.jpg",
-          "why": "near-duplicate of photo1"
-        },
-        {
-          "url": "https://wedgewoodhotel.com/wp-content/uploads/2025/12/BDP8265.jpg",
-          "why": "close-up of person in spa robe"
-        },
-        {
-          "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/Wedgewood_Hotel_312.jpg",
-          "why": "guest bedroom, not public dining or bar area"
-        },
-        {
-          "url": "https://a.omappapi.com/users/40ad677185f8/images/76564834d2421795535465-pop-up_Black-Friday-e-gift-02.jpg?width=1200",
-          "why": "person as subject holding gifts"
-        },
-        {
-          "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/Junior-Suite-Living-Room-scaled-768x0-c-default.jpg",
-          "why": "guest room/living area"
-        },
-        {
-          "url": "https://wedgewoodhotel.com/wp-content/uploads/2026/07/DSDDF-DeluxeSuiteTwoDoubles-ConnectingDoors-768x0-c-default.jpg",
-          "why": "guest room hallway"
-        },
-        {
-          "url": "https://wedgewoodhotel.com/wp-content/uploads/2024/03/BDP8577-768x0-c-default.jpg",
-          "why": "spa treatment with person as subject"
-        },
-        {
-          "url": "https://wedgewoodhotel.com/wp-content/uploads/2023/05/EKB-ExecutiveKingRoom-Bedroom-768x0-c-default.jpg",
-          "why": "guest bedroom"
+          "url": "https://wedgewoodhotel.com/wp-content/uploads/2022/11/Open-Graph-Image-2.png",
+          "why": "logo/wordmark"
         }
       ]
     }
