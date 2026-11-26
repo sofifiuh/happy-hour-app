@@ -6809,41 +6809,28 @@
     "pages": [
       "https://dahlia-restaurant.ca/"
     ],
-    "cover_problem": null,
-    "cover": null,
+    "cover_problem": "review: logo/wordmark",
+    "cover": {
+      "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-4.jpg",
+      "page": "https://dahlia-restaurant.ca/",
+      "w": 797,
+      "h": 900
+    },
     "gallery": [
       {
         "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-3.jpg",
         "page": "https://dahlia-restaurant.ca/",
         "w": 797,
         "h": 900
-      },
-      {
-        "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-4.jpg",
-        "page": "https://dahlia-restaurant.ca/",
-        "w": 797,
-        "h": 900
       }
     ],
     "review": {
-      "at": "2026-11-25",
-      "key": "2ad4d96379e9",
+      "at": "2026-11-26",
+      "key": "9db8fac0dcca",
       "rejected": [
         {
-          "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-1.jpg",
-          "why": "near-duplicate of photo1"
-        },
-        {
-          "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-2.jpg",
-          "why": "people as subject"
-        },
-        {
-          "url": "https://dahlia-restaurant.ca/wp-content/uploads/2025/06/events-at-dahlia.jpg",
-          "why": "promotional text overlay"
-        },
-        {
-          "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-5.jpg",
-          "why": "people as subject"
+          "url": "https://dahlia-restaurant.ca/wp-content/uploads/2023/09/main-logo.png",
+          "why": "logo/wordmark"
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
- "data_version": "2026-11-26-302c97f4",
+ "data_version": "2026-11-26-0b830094",
  "venues": [
   {
    "id": "ancora",
@@ -41019,12 +41019,6 @@
      "credit_name": "Dahlia",
      "credit_url": "https://dahlia-restaurant.ca/",
      "source": "official_website"
-    },
-    {
-     "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-4.jpg",
-     "credit_name": "Dahlia",
-     "credit_url": "https://dahlia-restaurant.ca/",
-     "source": "official_website"
     }
    ],
    "amenities": {
@@ -41146,7 +41140,7 @@
     ]
    },
    "cover_image": {
-    "url": "https://dahlia-restaurant.ca/wp-content/uploads/2023/09/main-logo.png",
+    "url": "https://dahlia-restaurant.ca/wp-content/uploads/2024/06/about-carousel-4.jpg",
     "credit_name": "Dahlia",
     "credit_url": "https://dahlia-restaurant.ca/",
     "source": "official_website"
