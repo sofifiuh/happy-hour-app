@@ -5932,27 +5932,27 @@
       "deals": [
         {
           "name": "House Sake",
-          "price": "$5.00",
+          "price": "$5",
           "category": "drink",
-          "description": "5 oz"
+          "description": "5oz pour"
         },
         {
           "name": "Pinot Grigio",
-          "price": "$5.00",
+          "price": "$5",
           "category": "drink",
-          "description": "6 oz"
+          "description": "6oz glass"
         },
         {
           "name": "Cabernet Merlot",
-          "price": "$5.00",
+          "price": "$5",
           "category": "drink",
-          "description": "6 oz"
+          "description": "6oz glass"
         },
         {
           "name": "Sapporo Draft",
-          "price": "$5.00",
+          "price": "$5",
           "category": "drink",
-          "description": "12 oz"
+          "description": "12oz draft"
         }
       ]
     },
@@ -5962,7 +5962,7 @@
       "credit_url": "http://kujirayyc.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-11-08"
+    "last_synced_at": "2026-11-26"
   },
   {
     "place_id": null,

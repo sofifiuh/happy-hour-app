@@ -1741,5 +1741,40 @@
     "credit_url": "https://maps.google.com/maps/contrib/104898014695525764653",
     "photo_name": "places/ChIJh6CLUpbXhVQR7e1wOGfsv40/photos/AV-0GLdlMpWmWEGGi9NOYeipfpq2l1h6J_-CH9ZlmEBySaVyk3UXgft2OaeWfKQNTUdnotfDKajEnP8npSVoLwZSUGahKqXrHxxYP1Y3K5DMBbIR5Ja_WPpgC13hX_Wu0w8kjMJQ2led3RVEwurzn3uymucfwTXR-ZhV93Opg50v8qNBm6GTB9nr_e9RkezKlD3VSnSFfLItHDDxrb5sh7G__lBaoaf1qanzcP_Ss5O_JUq1Y89ghqSF8-xxp8eNVUZvZ-OdI-LTn13PNT1iL1xp1PFohnCBtK2DkL6YtdQSRIwCFDwcPDhOGBD9JR4YhMA5R5qtj7BSHqXx91OhSajP3wvlO11xnIZk2mskqLatTzCtfQhr-0AwoDQT0zkYPSL4GHfyBMnObp8X63dU-0IQXkhgHpBmDYQ",
     "fetched_at": "2026-11-25"
+  },
+  "wedgewood-hotel-spa": {
+    "url": "photos/wedgewood-hotel-spa.jpg",
+    "credit_name": "Wedgewood Hotel & Spa",
+    "credit_url": "https://maps.google.com/maps/contrib/102432471192790084258",
+    "photo_name": "places/ChIJC-yI8X9xhlQRW_dizpXab-A/photos/AV-0GLff5BLa92zNqobrPgn8JCZCbcyIoRg7oMUMbxJxzBzJryI5e6C0W8WAiQog4YuVHIX62YYuAGHzPJPLcEw_IYzNbweW-ErrmowWd1srbhIERRMtFF4ela76br6us6Fa7u4wfJbYSNJzS8lx80WTd7xL8zPSfQ3ij4EoaZ6xHAJkFJ7e_cJt7xTYwHKTBf0qZHA1xFzVpkBoLobqRzkev2K8u8SbqdAzWRu6tgneRDn06X1WWpzCKQ3fpBCojMYEXGtfgi9cnLq6iXpbVqGqwXfm3_TdG73Nkfzf0lPPUJoFyU-BLIgbS_LzkeOawdsQmlQDh3D_OYEqzhc-lnmAcqJGBvOopRUSLt-E-oDZZCbWTLnSG9rsxQKRq4FKkvQc4gyT3QjcJ9BIosv46ptZI4zlBUihSEA",
+    "fetched_at": "2026-11-26"
+  },
+  "barney-s-on-main": {
+    "url": "photos/barney-s-on-main.jpg",
+    "credit_name": "Rob Butler",
+    "credit_url": "https://maps.google.com/maps/contrib/106458439571200651489",
+    "photo_name": "places/ChIJs2TNw-FzhlQR3qzNYvCwR3w/photos/AV-0GLcGAzRpdg-1taBFJQuNvpeiwCT-8bUWfb56PrRaH3tNLpHyOfFFipdf8fk_SFScBTQsdbjfjgQnjmg2TToQgihf_xYtzqJkgvo00F2SFdtHQ51hiK2stHk6lJOxyt7OmLL880F9qaUa-HQkTNcn7HrawVuxvDv5fxIsQejuZhOakBF5iN70YZdvsJdJZ1Pb8EZQLTWd_yX1I2jYJEB7G5oDca8kiIBFcnwSJZ4uPCANJ8M6ZPhjoyEXaeqwVWVHhFhkB9Yf_nF7EQ5UsJdg833gbnUjQUGlz10cUH6MdXWkAkdH1CVQIgvznEIA_KDlc8Lx-Or-_s1MPqtPpbvw1roDMjqdRK4XDHw6YEwgUNGFxBlQupX3runlyq7JFUsZVgS9JoSv5gdrdtECuBljCcWPWw",
+    "fetched_at": "2026-11-26"
+  },
+  "main-street-brewing-co": {
+    "url": "photos/main-street-brewing-co.jpg",
+    "credit_name": "Andre Lucas Ribeiro",
+    "credit_url": "https://maps.google.com/maps/contrib/114917610608175614966",
+    "photo_name": "places/ChIJVRfsn19xhlQRz8RcxJPGDPU/photos/AV-0GLdnJ_w06OmuB3EoAn4nIMHe_m-q4N_TjUSlM3Y2O1byvJtqGMZaFSjDlKvfuyHzMCzKkR_mWBj-kKvQRSsRXtgoQ_9Gax0PXQBk4L8p48BRs_8q-kpbD5sfH2nYkJ_vwDz2iQDeOgnS4-YXXGaB6dv_REewwAV3SyIPK9_lURWnACLLCC5vfyJcEMFmcL_q736b57TXq747r-2xGwhjt4MesLXZXAd0h5pB3mtchA7zL6kGkM7GZzLM0pljA0ywGGtdAlL1xgdtAHm20lfXGrZGVP06Qq8h02Cbs2kuKNUwL0nA2R5XIUk4lLsgDff51orfn_Xjt5fSV8l1jyHwG_9nOg44ioRSYDg3SvY6UKd2fNEV4dEdt0LffbI4YmNGfqljLtsHBUprDgRD-QlY38gAn-GK5dM",
+    "fetched_at": "2026-11-26"
+  },
+  "r-b-brewing-co-ale-pizza-house": {
+    "url": "photos/r-b-brewing-co-ale-pizza-house.jpg",
+    "credit_name": "R&B Brewing Co. | Ale & Pizza House",
+    "credit_url": "https://maps.google.com/maps/contrib/100612969260173247441",
+    "photo_name": "places/ChIJFw7ZEGBxhlQRbkip7_rmQxo/photos/AV-0GLettM_7H4ggh47wUTYdLnNx-U4QoKRNX3W79G-vXGKnjxrelDibbuTk0UpBpAxlNyYyrS7wiCc-JoXq8RpjncJvaBI9jKleMic8JVRR03pn_03-18ClHzCtA4lgT79DfLwI9C8-_lNwoKszfg-sQ4n_AQuZ6PAHfUy4pYlRspjMKODaeOmNzW_TFTnQ6ywaGZd8jln0fpj0u2t_R2nPuDgl75LseTTHDD-L59O5EYkZN_4dNa7MfX3z8qAFsbSjx0J7Os2DuzZHL-om0Gf3WHqxGapBmatid2PUICXg5nBlVc0H3f_VJYpbe_fImC946OZodywMP_2W0q6Kxp3VqBOzamrhpnPaGK3tWskBzuzxBJaWfbIJbllkMA_S2Lep797hXWG9Ru4TbFTBIZGmls405tKGLkuMRvagiW-NxoRAsg",
+    "fetched_at": "2026-11-26"
+  },
+  "como-taperia": {
+    "url": "photos/como-taperia.jpg",
+    "credit_name": "Como Taperia",
+    "credit_url": "https://maps.google.com/maps/contrib/106961657342129273364",
+    "photo_name": "places/ChIJQ5f_MMBxhlQR9R17HcWGvUA/photos/AV-0GLcy5txnPE2urt1bxcdpWiIqWyJsXL3eas9wOPJe_xPjk4VwrTzomos9itdr9FkZ5YuwA5xtTtx2KvUqA9HXm2QGmJmhyv4LcQE_W5SudPtwN8A7gUoLzCAS0syKaROsP8zaNC_vKr20iublgbOnlVwrypBhwHilLXuF3o6OXSepbjr5SW46CeqOSDC3kmrYhxaGXRsYTuo2NVARZ9OeCBQPqmogz4p2ba4xB4WkmHWqGeJDbNiudLGQHOnDHGO62jQSb_xg7YTQfVZ3ov9LNHfyaJ5gN8wsL915N20Trizq4GLU3l3V6029zVk-FqdITrDv87Bo7Re2mHZ5WaTcg6xeUOS_fE_9Y8UZ6mcgbXFDZAOdbZ_DT1UzzYg22OFFZV-EmBtN9A1oXnnbAdu06WBtfzlJRT0",
+    "fetched_at": "2026-11-26"
   }
 }
