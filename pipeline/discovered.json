@@ -30869,31 +30869,24 @@
     "website": "http://www.rongsithaimill.com/",
     "happy_hour": {
       "days": [
-        0,
         2,
         3,
         4,
         5,
-        6
+        6,
+        0
       ],
       "start": "16:00",
-      "end": "17:00",
+      "end": "17:30",
       "extra_windows": [
         {
           "days": [
-            0,
             2,
             3,
-            4
-          ],
-          "start": "21:00",
-          "end": "22:30",
-          "label": "Late night"
-        },
-        {
-          "days": [
+            4,
             5,
-            6
+            6,
+            0
           ],
           "start": "21:00",
           "end": "23:00",
@@ -30911,7 +30904,7 @@
       "credit_url": "http://www.rongsithaimill.com/",
       "source": "official_website"
     },
-    "last_synced_at": "2026-10-24"
+    "last_synced_at": "2026-11-27"
   },
   {
     "place_id": null,
@@ -31556,7 +31549,7 @@
       "deals": []
     },
     "cover_image": null,
-    "last_synced_at": "2026-11-06"
+    "last_synced_at": "2026-11-27"
   },
   {
     "place_id": null,
